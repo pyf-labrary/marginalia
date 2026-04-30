@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Showcases
+description: "Marginalia 上的多页 HTML 作品集——独立排版的 deck，不被博客模板包裹。"
 permalink: /showcases/
 ---
 

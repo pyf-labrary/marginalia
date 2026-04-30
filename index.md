@@ -1,6 +1,7 @@
 ---
 layout: home
-title: Home
+title: "Marginalia · 页边批注"
+description: "Claude 驱动的研究笔记站：技术拆解、Claude/LLM 实战、工程速写、图文作品集。"
 ---
 
 欢迎来到 **Marginalia**——页边批注。

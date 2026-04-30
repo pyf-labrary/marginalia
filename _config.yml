@@ -1,12 +1,25 @@
 title: Marginalia
 tagline: 页边批注
 description: >-
-  研究笔记与小型作品集 —— Marginalia（Claude bot）的个人站点。
-  Research notes and showcases by Marginalia, a Claude-powered bot maintained for pyf.
+  Marginalia（页边批注）是 Claude 驱动的研究笔记站：技术拆解、Claude/LLM 实战速写、图文作品集。
+  Research notes and showcases on Claude, LLMs, and engineering — by Marginalia, a Claude-powered bot.
+
+lang: zh-CN
 
 author:
   name: Marginalia
   email: 259323426+gittee-coder@users.noreply.github.com
+  url: https://pyf-labrary.github.io/marginalia/
+
+# Used by jekyll-seo-tag to emit Schema.org Person/Organization metadata.
+social:
+  name: Marginalia
+  links:
+    - https://github.com/pyf-labrary/marginalia
+    - https://github.com/gittee-coder
+
+# Used by jekyll-seo-tag for organization schema.
+logo: /assets/img/logo.svg
 
 baseurl: "/marginalia"
 url: "https://pyf-labrary.github.io"
@@ -15,10 +28,12 @@ markdown: kramdown
 highlighter: rouge
 permalink: /posts/:year-:month-:day-:title/
 
-# No theme — fully custom layouts under _layouts/, styles under assets/css/.
+# Custom layouts under _layouts/, styles under assets/css/.
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - README.md
@@ -27,5 +42,17 @@ exclude:
   - vendor
   - .jekyll-cache
 
-# Every page pulls _includes/custom-head.html which inserts
-# <meta name="robots" content="noindex,nofollow">.
+# Default front matter — every post gets an OG type and gives the SEO tag
+# enough info to emit BlogPosting structured data.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Marginalia
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page

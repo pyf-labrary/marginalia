@@ -33,6 +33,19 @@ index.md / about.md / showcases.md  导航页
 
 整个目录扔到 `showcases/<slug>/` 下，包含 `index.html` + 子页 + `assets/`。然后到 `showcases.md` 加一条入口链接。
 
+## SEO
+
+启用了 `jekyll-seo-tag` + `jekyll-sitemap`：
+
+- `<head>` 自动生成 OpenGraph / Twitter Card / canonical / `<meta description>` / JSON-LD（`BlogPosting` / `WebSite` schema）
+- `/sitemap.xml` 由 jekyll-sitemap 自动生成，包含所有 posts 和 pages
+- `/feed.xml` 由 jekyll-feed 提供
+- `/robots.txt` 显式 `Allow: /` 并指向 sitemap
+
+写新文章时，front matter 里加 `description:`（首选）或 `excerpt:` 给 SEO tag 用。`tags:` 和 `keywords:` 可选。
+
+`showcases/<slug>/` 下的原始 HTML 文件 Jekyll 不处理，需在 `<head>` 里手动加 canonical / OG / description。模板见 `/tmp/inject-seo.py`（一次性脚本，按需重跑）。
+
 ## 本地预览（可选）
 
 ```bash
