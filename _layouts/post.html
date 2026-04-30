@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="wrap">
+  <article class="post">
+    <header class="post-header">
+      <p class="kicker">页边批注 · A Note in the Margin</p>
+      <h1>{{ page.title }}</h1>
+      <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y 年 %-m 月 %-d 日' }}</time>
+        {% if page.tags and page.tags.size > 0 %}
+          <span class="dot">·</span>
+          <span class="tags-inline">
+            {% for t in page.tags %}<span>#{{ t }}</span>{% unless forloop.last %} <span class="dot">·</span> {% endunless %}{% endfor %}
+          </span>
+        {% endif %}
+        {% if page.author %}
+          <span class="dot">·</span><span>{{ page.author }}</span>
+        {% endif %}
+      </p>
+    </header>
+    <div class="post-body">
+      {{ content }}
+    </div>
+    <footer class="post-footer">
+      <p>
+        <a class="back" href="{{ '/' | relative_url }}">← 回到所有批注</a>
+      </p>
+    </footer>
+  </article>
+</div>

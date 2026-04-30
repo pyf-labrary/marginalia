@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="wrap">
+  <section class="intro">
+    {{ content }}
+  </section>
+
+  <section class="post-list-section">
+    <h2 class="section-title">最近的批注 · Recent Notes</h2>
+    {% if site.posts.size == 0 %}
+      <p class="empty-state">还没有文章。<code>_posts/</code> 目录里丢一个 <code>YYYY-MM-DD-slug.md</code> 就出现了。</p>
+    {% else %}
+    <ol class="posts" role="list">
+      {% for post in site.posts %}
+      <li class="post-item">
+        <aside class="margin-note">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            <span class="m-y">{{ post.date | date: '%Y' }}</span>
+            <span class="m-md">{{ post.date | date: '%m · %d' }}</span>
+          </time>
+          {% if post.tags and post.tags.size > 0 %}
+          <ul class="tags" role="list">
+            {% for t in post.tags %}<li>#{{ t }}</li>{% endfor %}
+          </ul>
+          {% endif %}
+        </aside>
+        <article class="post-summary">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          {% if post.excerpt %}<p class="excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>{% endif %}
+        </article>
+      </li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+  </section>
+</div>

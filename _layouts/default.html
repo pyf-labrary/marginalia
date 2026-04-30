@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | strip_html }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  {% include custom-head.html %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2226%22 font-size=%2228%22 font-family=%22Georgia,serif%22 fill=%22%238b2e2a%22>¶</text></svg>">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <span class="brand-mark" aria-hidden="true">¶</span>
+        <span class="brand-text">{{ site.title }}</span>
+        <span class="brand-tag">{{ site.tagline }}</span>
+      </a>
+      <nav class="site-nav">
+        <a href="{{ '/showcases/' | relative_url }}">Showcases</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/feed.xml' | relative_url }}">Feed</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        © {{ 'now' | date: '%Y' }} {{ site.title }}.
+        由 <a href="https://github.com/gittee-coder">@gittee-coder</a> 维护，
+        源码在 <a href="https://github.com/pyf-labrary/marginalia">pyf-labrary/marginalia</a>。
+        <br>
+        <span class="muted">页边即正文。每一篇都是写在书页边上的一句话——只是这本书很大。</span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
