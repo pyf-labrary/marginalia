@@ -22,3 +22,11 @@ permalink: /showcases/
 → [打开 Showcase](/marginalia/showcases/claude-vs-codex-2026/)
 
 *整理时间：2026-04-30。*
+
+## AI Agent 产品全景 · 2026 春
+
+13 页深度横评：中外 28 款主流 AI agent 按 5 条产品线分组对比——终端 CLI、IDE 插件、桌面通用、云端自主 agent、agent 搭建平台。每条线给出选型建议与价格预警。
+
+→ [打开 Showcase](/marginalia/showcases/agent-landscape-2026/)
+
+*整理时间：2026-04-30。*

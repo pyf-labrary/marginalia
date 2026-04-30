@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent 产品全景 2026 — 中外主流 Agent 软件深度对比</title>
+<meta name="description" content="中外 28 款主流 AI agent 软件按 5 条产品线深度对比：终端 CLI（Claude Code / Codex CLI / Qwen Code / Aider / OpenCode）、IDE 插件（Cursor / Windsurf / Cline / Copilot / 通义灵码 / CodeBuddy / 文心快码 / CodeGeeX）、桌面通用（Claude Desktop / ChatGPT / Kimi / 豆包 / OpenClaw / QClaw）、云端自主 agent（Devin / Manus / OpenHands / Replit Agent / Hermes）、Agent 搭建平台（Coze / Dify）。模型、定价、用量、适合场景与购买建议一份就够。">
+<link rel="canonical" href="https://pyf-labrary.github.io/marginalia/showcases/agent-landscape-2026/">
+<meta property="og:title" content="AI Agent 产品全景 2026 — 中外主流 Agent 软件深度对比">
+<meta property="og:description" content="中外 28 款主流 AI agent 软件按 5 条产品线深度对比：终端 CLI（Claude Code / Codex CLI / Qwen Code / Aider / OpenCode）、IDE 插件（Cursor / Windsurf / Cline / Copilot / 通义灵码 / CodeBuddy / 文心快码 / CodeGeeX）、桌面通用（Claude Desktop / ChatGPT / Kimi / 豆包 / OpenClaw / QClaw）、云端自主 agent（Devin / Manus / OpenHands / Replit Agent / Hermes）、Agent 搭建平台（Coze / Dify）。模型、定价、用量、适合场景与购买建议一份就够。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://pyf-labrary.github.io/marginalia/showcases/agent-landscape-2026/">
+<meta property="og:site_name" content="Marginalia">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI Agent 产品全景 2026 — 中外主流 Agent 软件深度对比">
+<meta name="twitter:description" content="中外 28 款主流 AI agent 软件按 5 条产品线深度对比：终端 CLI（Claude Code / Codex CLI / Qwen Code / Aider / OpenCode）、IDE 插件（Cursor / Windsurf / Cline / Copilot / 通义灵码 / CodeBuddy / 文心快码 / CodeGeeX）、桌面通用（Claude Desktop / ChatGPT / Kimi / 豆包 / OpenClaw / QClaw）、云端自主 agent（Devin / Manus / OpenHands / Replit Agent / Hermes）、Agent 搭建平台（Coze / Dify）。模型、定价、用量、适合场景与购买建议一份就够。">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg: #07080F;
+    --bg2: #0C0F1C;
+    --bg3: #131829;
+    --surface: rgba(255,255,255,0.04);
+    --surface2: rgba(255,255,255,0.07);
+    --surface3: rgba(255,255,255,0.10);
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.16);
+    --text: #F1F5F9;
+    --text2: #94A3B8;
+    --text3: #64748B;
+
+    --line1: #22D3EE;   /* CLI · cyan */
+    --line2: #A78BFA;   /* IDE · purple */
+    --line3: #FB923C;   /* Desktop · orange */
+    --line4: #34D399;   /* Cloud · green */
+    --line5: #F472B6;   /* Platform · pink */
+    --gold: #FBBF24;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', 'Noto Sans SC', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+    height: 100vh;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Deck wrapper ── */
+  #deck {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 56px 72px 110px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s cubic-bezier(.4,0,.2,1), transform 0.5s cubic-bezier(.4,0,.2,1);
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .slide.active { opacity: 1; transform: translateY(0); pointer-events: all; }
+  .slide.exit  { opacity: 0; transform: translateY(-20px); }
+
+  /* Subtle grid background */
+  .slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 64px 64px;
+    pointer-events: none;
+    mask-image: radial-gradient(ellipse at 50% 50%, #000 30%, transparent 80%);
+  }
+
+  .slide-inner { position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; min-height: 0; }
+
+  /* ── Header ── */
+  .slide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .slide-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--text3);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .slide-title {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+  .slide-sub {
+    font-size: 13px;
+    color: var(--text2);
+    margin-top: 6px;
+    font-weight: 400;
+  }
+  .header-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 6px 12px;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text2);
+    flex-shrink: 0;
+  }
+
+  /* ── Cover ── */
+  .cover {
+    justify-content: center;
+    align-items: stretch;
+    padding: 80px 100px 110px;
+    text-align: left;
+  }
+  .cover .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    color: var(--line1);
+    margin-bottom: 18px;
+  }
+  .cover h1 {
+    font-size: 88px;
+    font-weight: 800;
+    line-height: 1.0;
+    letter-spacing: -0.035em;
+    margin-bottom: 18px;
+  }
+  .cover h1 .grad {
+    background: linear-gradient(120deg, var(--line1) 0%, var(--line2) 30%, var(--line3) 55%, var(--line4) 80%, var(--line5) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .cover .lede {
+    font-size: 21px;
+    color: var(--text2);
+    max-width: 900px;
+    line-height: 1.55;
+    font-weight: 300;
+    margin-bottom: 36px;
+  }
+  .cover .meta-row {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 32px;
+  }
+  .cover .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .cover .meta-k {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: var(--text3);
+    text-transform: uppercase;
+  }
+  .cover .meta-v {
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 500;
+  }
+  .cover-orbs {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.5;
+  }
+  .orb-1 { width: 480px; height: 480px; top: -120px; right: -100px; background: radial-gradient(circle, var(--line2) 0%, transparent 70%); }
+  .orb-2 { width: 380px; height: 380px; bottom: -80px; left: -80px; background: radial-gradient(circle, var(--line1) 0%, transparent 70%); }
+  .orb-3 { width: 320px; height: 320px; top: 30%; left: 40%; background: radial-gradient(circle, var(--line5) 0%, transparent 70%); opacity: 0.3; }
+
+  /* ── Overview slide ── */
+  .lines-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-top: 18px;
+    flex: 1;
+  }
+  .line-card {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+    overflow: hidden;
+  }
+  .line-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--accent);
+  }
+  .line-card .line-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.15em;
+  }
+  .line-card .line-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .line-card .line-en {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text3);
+    letter-spacing: 0.05em;
+  }
+  .line-card .line-desc {
+    font-size: 12px;
+    color: var(--text2);
+    line-height: 1.55;
+  }
+  .line-card .line-products {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .line-card .pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: var(--surface2);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .line-card.l1 { --accent: var(--line1); }
+  .line-card.l2 { --accent: var(--line2); }
+  .line-card.l3 { --accent: var(--line3); }
+  .line-card.l4 { --accent: var(--line4); }
+  .line-card.l5 { --accent: var(--line5); }
+
+  /* ── Methodology bar ── */
+  .method-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+  .method-cell {
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+  }
+  .method-cell .mh {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--text3);
+    margin-bottom: 4px;
+  }
+  .method-cell .mv {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  /* ── Product line section header ── */
+  .line-banner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 12%, transparent) 0%, transparent 80%);
+    border-left: 3px solid var(--accent);
+  }
+  .line-banner .line-num-big {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .line-banner .line-banner-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .line-banner .line-banner-sub {
+    font-size: 12px;
+    color: var(--text2);
+    margin-top: 2px;
+  }
+
+  .l1 { --accent: var(--line1); }
+  .l2 { --accent: var(--line2); }
+  .l3 { --accent: var(--line3); }
+  .l4 { --accent: var(--line4); }
+  .l5 { --accent: var(--line5); }
+
+  /* ── Product card grid (per-line cards slide) ── */
+  .product-grid {
+    display: grid;
+    gap: 10px;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .pg-2col { grid-template-columns: 1fr 1fr; }
+  .pg-3col { grid-template-columns: repeat(3, 1fr); }
+  .pg-4col { grid-template-columns: repeat(4, 1fr); }
+
+  .product-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    overflow: hidden;
+    min-height: 0;
+  }
+  .product-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--accent);
+    opacity: 0.7;
+  }
+  .product-card .pc-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 2px;
+  }
+  .product-card .pc-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .product-card .pc-vendor {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--text3);
+    letter-spacing: 0.08em;
+  }
+  .product-card .pc-tag {
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .product-card .pc-row {
+    display: flex;
+    gap: 6px;
+    font-size: 10.5px;
+    line-height: 1.35;
+    color: var(--text2);
+  }
+  .product-card .pc-k {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text3);
+    flex-shrink: 0;
+    width: 38px;
+    font-size: 9.5px;
+  }
+  .product-card .pc-v {
+    color: var(--text);
+    flex: 1;
+    font-size: 10.5px;
+  }
+  .product-card .pc-price {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ── Recommendation slide ── */
+  .recos {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 18px;
+    flex: 1;
+    min-height: 0;
+  }
+  .reco-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+  }
+  .reco-card {
+    padding: 14px 18px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+  }
+  .reco-when {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .reco-pick {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .reco-why {
+    font-size: 12px;
+    color: var(--text2);
+    line-height: 1.55;
+  }
+  .reco-side {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .reco-side h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+  }
+  .reco-side .side-block {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .reco-side .side-block:last-child { border-bottom: none; }
+  .reco-side .side-k {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text3);
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+  }
+  .reco-side .side-v {
+    font-size: 12.5px;
+    color: var(--text2);
+    line-height: 1.6;
+  }
+  .reco-side .side-v strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .reco-side .side-v .hl {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ── Cheat sheet ── */
+  .cheat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    flex: 1;
+  }
+  .cheat-col {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 18px 18px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cheat-col h5 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--text3);
+    margin-bottom: 4px;
+  }
+  .cheat-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    padding: 8px 0;
+    border-top: 1px dashed var(--border);
+    font-size: 12px;
+    line-height: 1.35;
+    align-items: center;
+  }
+  .cheat-row:first-of-type { border-top: none; }
+  .cheat-row .cr-k {
+    color: var(--text2);
+  }
+  .cheat-row .cr-v {
+    font-weight: 700;
+    color: var(--text);
+    text-align: right;
+    font-size: 12px;
+  }
+  .cheat-row.hl1 .cr-v { color: var(--line1); }
+  .cheat-row.hl2 .cr-v { color: var(--line2); }
+  .cheat-row.hl3 .cr-v { color: var(--line3); }
+  .cheat-row.hl4 .cr-v { color: var(--line4); }
+  .cheat-row.hl5 .cr-v { color: var(--line5); }
+
+  /* ── Sources ── */
+  .sources-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    flex: 1;
+  }
+  .src-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+    padding: 16px 18px;
+  }
+  .src-card h6 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .src-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .src-card li {
+    font-size: 11.5px;
+    color: var(--text2);
+    line-height: 1.45;
+    padding-left: 14px;
+    position: relative;
+  }
+  .src-card li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--text3);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .src-card.l1 { --accent: var(--line1); }
+  .src-card.l2 { --accent: var(--line2); }
+  .src-card.l3 { --accent: var(--line3); }
+  .src-card.l4 { --accent: var(--line4); }
+  .src-card.l5 { --accent: var(--line5); }
+
+  /* ── Bottom note ── */
+  .bottom-note {
+    margin-top: 14px;
+    padding: 12px 16px;
+    background: rgba(251,191,36,0.05);
+    border: 1px solid rgba(251,191,36,0.18);
+    border-radius: 8px;
+    font-size: 11.5px;
+    color: var(--text2);
+    line-height: 1.5;
+  }
+  .bottom-note strong { color: var(--gold); }
+
+  /* ── Highlight inline pills ── */
+  .pill-inline {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin: 0 1px;
+    background: var(--surface3);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  /* ── Nav ── */
+  #nav {
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: rgba(7,8,15,0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 10px 18px;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    z-index: 100;
+  }
+  #dots { display: flex; gap: 6px; }
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--surface3);
+    transition: all 0.25s;
+    cursor: pointer;
+  }
+  .dot.active { background: var(--text); width: 22px; border-radius: 4px; }
+  .nav-btn {
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    color: var(--text2);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    letter-spacing: 0.08em;
+    transition: all 0.2s;
+  }
+  .nav-btn:hover { color: var(--text); border-color: var(--text); }
+  #slide-counter {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text3);
+    letter-spacing: 0.08em;
+    min-width: 56px;
+    text-align: center;
+  }
+
+  /* ── Compact text utilities ── */
+  .small { font-size: 11px; color: var(--text2); }
+  .mono  { font-family: 'JetBrains Mono', monospace; }
+  .strong { color: var(--text); font-weight: 600; }
+
+  /* ── Responsive (mostly viewport scaling) ── */
+  @media (max-width: 1280px) {
+    .slide { padding: 40px 56px 110px; }
+    .cover h1 { font-size: 64px; }
+    .slide-title { font-size: 24px; }
+  }
+
+  /* Hide scrollbars where present */
+  .reco-list::-webkit-scrollbar { display: none; }
+</style>
+</head>
+<body>
+
+<div id="deck">
+
+<!-- ───────────── 1 · Cover ───────────── -->
+<div class="slide active cover" id="s1">
+  <div class="cover-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="slide-inner" style="justify-content:center">
+    <div class="eyebrow">MARGINALIA · LANDSCAPE REPORT</div>
+    <h1>AI Agent <span class="grad">产品全景</span><br>2026 春</h1>
+    <p class="lede">
+      从终端 CLI 到 IDE 插件，从桌面客户端到云端自主 agent，再到 agent 搭建平台——
+      <span class="strong" style="color:var(--text)">中外 28 款主流产品</span>，分 5 条产品线深度对比。
+      模型、定价、用量、适用场景、购买建议，一份就够。
+    </p>
+    <div class="meta-row">
+      <div class="meta-item">
+        <span class="meta-k">DATE</span>
+        <span class="meta-v">2026-04-30</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k">PRODUCT LINES</span>
+        <span class="meta-v">CLI · IDE · Desktop · Cloud · Platform</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k">VENDORS</span>
+        <span class="meta-v">Anthropic · OpenAI · 阿里 · 腾讯 · 字节 · Moonshot · 百度 · 智谱 · OSS</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-k">SLIDES</span>
+        <span class="meta-v">16 页 · 用 ←/→ 导航</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ───────────── 2 · Overview ───────────── -->
+<div class="slide" id="s2">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label">00 · Overview</div>
+        <div class="slide-title">五条产品线 · 一张全景图</div>
+        <div class="slide-sub">同线对比：每款产品只与<strong style="color:var(--text)">同产品线</strong>的对手比较，避免拿 IDE 跟终端 CLI 硬比</div>
+      </div>
+      <span class="header-tag">28 PRODUCTS · 5 LINES</span>
+    </div>
+
+    <div class="method-row">
+      <div class="method-cell">
+        <div class="mh">SCOPE</div>
+        <div class="mv">中外公开发售或开源的 agent 软件，截至 2026-04-30</div>
+      </div>
+      <div class="method-cell">
+        <div class="mh">PRICING</div>
+        <div class="mv">优先取美元/人民币的官方挂牌价；促销标注时效</div>
+      </div>
+      <div class="method-cell">
+        <div class="mh">MODELS</div>
+        <div class="mv">列出默认模型 + 可切换的关键模型，注明上下文窗口</div>
+      </div>
+      <div class="method-cell">
+        <div class="mh">EXCLUDED</div>
+        <div class="mv">已停服/合并产品、纯 API SDK、未公开订阅的研究版</div>
+      </div>
+    </div>
+
+    <div class="lines-grid">
+      <div class="line-card l1">
+        <div>
+          <div class="line-num">LINE · 01</div>
+          <div class="line-name">终端 CLI<br>编码 agent</div>
+          <div class="line-en">Terminal Coding</div>
+        </div>
+        <div class="line-desc">在 shell 跑、读写文件、执行命令、长时序任务首选。开发者工作流的核心。</div>
+        <div class="line-products">
+          <span class="pill">Claude Code</span>
+          <span class="pill">Codex CLI</span>
+          <span class="pill">Qwen Code</span>
+          <span class="pill">Aider</span>
+          <span class="pill">OpenCode</span>
+        </div>
+      </div>
+      <div class="line-card l2">
+        <div>
+          <div class="line-num">LINE · 02</div>
+          <div class="line-name">IDE 编码<br>agent</div>
+          <div class="line-en">IDE-Integrated</div>
+        </div>
+        <div class="line-desc">VS Code/JetBrains 插件或 IDE-fork，深度嵌入编辑流程，含补全 + agent 模式。</div>
+        <div class="line-products">
+          <span class="pill">Cursor</span>
+          <span class="pill">Windsurf</span>
+          <span class="pill">Cline</span>
+          <span class="pill">Copilot</span>
+          <span class="pill">通义灵码</span>
+          <span class="pill">CodeBuddy</span>
+          <span class="pill">文心快码</span>
+          <span class="pill">CodeGeeX</span>
+        </div>
+      </div>
+      <div class="line-card l3">
+        <div>
+          <div class="line-num">LINE · 03</div>
+          <div class="line-name">桌面通用 /<br>个人 agent</div>
+          <div class="line-en">Desktop &amp; Personal</div>
+        </div>
+        <div class="line-desc">非编程场景的桌面 AI 助手——日常对话、文件、邮件、聊天 app 自动化。</div>
+        <div class="line-products">
+          <span class="pill">Claude Desktop</span>
+          <span class="pill">ChatGPT Desktop</span>
+          <span class="pill">Kimi</span>
+          <span class="pill">豆包</span>
+          <span class="pill">OpenClaw</span>
+          <span class="pill">QClaw 腾讯</span>
+        </div>
+      </div>
+      <div class="line-card l4">
+        <div>
+          <div class="line-num">LINE · 04</div>
+          <div class="line-name">云端自主<br>agent</div>
+          <div class="line-en">Autonomous Cloud</div>
+        </div>
+        <div class="line-desc">扔过去一个 ticket，云端 VM 自己跑、提 PR、跟你汇报。SaaS 异步派单。</div>
+        <div class="line-products">
+          <span class="pill">Devin</span>
+          <span class="pill">Manus</span>
+          <span class="pill">OpenHands</span>
+          <span class="pill">Replit Agent</span>
+          <span class="pill">Hermes</span>
+        </div>
+      </div>
+      <div class="line-card l5">
+        <div>
+          <div class="line-num">LINE · 05</div>
+          <div class="line-name">Agent<br>搭建平台</div>
+          <div class="line-en">Agent Builders</div>
+        </div>
+        <div class="line-desc">低代码 / 可视化拖拽搭建对话机器人 + 工作流 + RAG，发布到聊天渠道。</div>
+        <div class="line-products">
+          <span class="pill">Coze 扣子</span>
+          <span class="pill">Dify</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═════════════════════════════════════════════════════════════════ -->
+<!-- ═════════════════ LINE 1 · Terminal CLI ═════════════════════════ -->
+<!-- ═════════════════════════════════════════════════════════════════ -->
+
+<!-- ───────────── 3 · L1 products ───────────── -->
+<div class="slide l1" id="s3">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label" style="color:var(--line1)">LINE 01 · Terminal CLI</div>
+        <div class="slide-title">终端 CLI 编码 agent</div>
+        <div class="slide-sub">开发者直连模型的最短路径——读文件、跑命令、写 patch，长任务最强一档</div>
+      </div>
+      <span class="header-tag" style="color:var(--line1);border-color:var(--line1)">5 PRODUCTS</span>
+    </div>
+
+    <div class="line-banner l1">
+      <div class="line-num-big">01</div>
+      <div>
+        <div class="line-banner-title">面向开发者，运行在终端</div>
+        <div class="line-banner-sub">前端 = stdin/stdout · 多文件 patch · 直接 spawn shell · 本地代码 100% 在你机器上</div>
+      </div>
+    </div>
+
+    <div class="product-grid pg-3col" style="grid-template-rows:1fr 1fr">
+      <!-- Claude Code -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Claude Code</span><span class="pc-vendor">ANTHROPIC</span></div>
+        <div class="pc-tag">前沿模型 + 长任务王者</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">Sonnet 4.6 默认 · <strong>Opus 4.7</strong> 高阶 · 1M 上下文</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">Pro $20 / Max $100 / Max $200 / Team $100/座</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">5 小时滚动窗 + 周配额；重度用户省约 93% vs API</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">MCP 生态最深 · Cowork 视觉派单 · Chrome 集成 beta</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">日级别 agentic 重构 / 多文件长链路任务</span></div>
+      </div>
+
+      <!-- Codex CLI -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Codex CLI</span><span class="pc-vendor">OPENAI</span></div>
+        <div class="pc-tag">已经付 ChatGPT 钱 = 免费送</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v"><strong>GPT-5.5</strong>（默认）· 5.4-mini 廉价子任务 · 5.3-codex-spark</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">随 ChatGPT Plus $20 / Pro $100 / Pro $200 免费</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">Pro $100 限时 10x（至 5/31），Pro $200 长期 20x</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">Rust 开源 CLI · Codex web/VS Code 同生态 · 异步沙盒</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">已是 ChatGPT 订阅用户；偏好云端并行任务</span></div>
+      </div>
+
+      <!-- Qwen Code -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Qwen Code</span><span class="pc-vendor">ALIBABA</span></div>
+        <div class="pc-tag">国产开源 + 价格屠夫</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">Qwen3-Coder-Plus / Flash / 480B-A35B / Next</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">CLI 完全免费 · 按 token 计 · OpenRouter 有 480B 免费档</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">百炼分级计费 · 上下文缓存进一步降本</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">Apache 2.0 真开源 · 多协议（OpenAI/Claude/Gemini）兼容</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">中国大陆 / 强成本敏感 / 需要本地化部署</span></div>
+      </div>
+
+      <!-- Aider -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Aider</span><span class="pc-vendor">OSS</span></div>
+        <div class="pc-tag">CLI 编码 agent 的鼻祖</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">完全 BYOK：Claude / GPT-5.x / DeepSeek / Gemini / Ollama</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">软件免费（Apache 2.0）· 只付你选的 API token</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">取决于 provider；周处理 ~15B tokens（部署量最大）</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">git 一等公民（自动 commit）· 全仓库映射 · 100+ 语言</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">需要最大 provider 自由 + 不接受任何锁定的开发者</span></div>
+      </div>
+
+      <!-- OpenCode -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">OpenCode</span><span class="pc-vendor">SST · OSS</span></div>
+        <div class="pc-tag">增长最快的 OSS CLI</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">75+ provider 切换：Claude / GPT / Gemini / Qwen / 本地</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">软件完全免费 · BYOK 或本地 Ollama</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">147K stars · 4 月已 6.5M 月活开发者，星速 4.5x Claude Code</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">Bubble Tea TUI · build/plan 双模式 · 事件溯源同步</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">想要 Claude Code UX 但拒绝 Anthropic 锁定的用户</span></div>
+      </div>
+
+      <!-- Empty card / fact -->
+      <div class="product-card" style="--accent:var(--gold);background:rgba(251,191,36,0.04)">
+        <div class="pc-head"><span class="pc-name" style="color:var(--gold)">⚠ 注意：QClaw 不在本线</span><span class="pc-vendor">FACT-CHECK</span></div>
+        <div class="pc-tag" style="color:var(--gold)">QClaw 是腾讯桌面 agent，非 CLI</div>
+        <div class="pc-row"><span class="pc-v" style="font-size:11px;line-height:1.5">QClaw 实为 OpenClaw 的腾讯产品化版本，主打 WeChat/QQ 远程操控 PC，<strong>不是终端编码工具</strong>，归入 Line 03。同理 OpenClaw 也归桌面线。</span></div>
+        <div class="pc-row"><span class="pc-v" style="font-size:11px;line-height:1.5;color:var(--text2)">下一线 IDE 编码 agent 中，腾讯的 <strong style="color:var(--text)">CodeBuddy</strong> 才是真正的编码 agent 产品。</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ───────────── 4 · L1 recommendations ───────────── -->
+<div class="slide l1" id="s4">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label" style="color:var(--line1)">LINE 01 · Recommendation</div>
+        <div class="slide-title">CLI 怎么选？看你是谁、有多少预算</div>
+      </div>
+      <span class="header-tag" style="color:var(--line1);border-color:var(--line1)">DECISION</span>
+    </div>
+
+    <div class="recos">
+      <div class="reco-list">
+        <div class="reco-card">
+          <div class="reco-when">情形 A · 严肃工程 / 长任务</div>
+          <div class="reco-pick">→ Claude Code Max ($100 起)</div>
+          <div class="reco-why">Opus 4.7 + 1M 上下文 + Cowork 视觉派单。日级别 agentic 重构 / 多文件长链路任务的工业标准。重度用户相比直接 API 节省约 93%。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 B · 已是 ChatGPT 订阅</div>
+          <div class="reco-pick">→ Codex CLI（免费随附）</div>
+          <div class="reco-why">无需额外开支。Pro $100 在 5/31 前限时 10x 用量是性价比窗口。缺点：你被 OpenAI 模型锁定。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 C · 国内 / 强成本敏感</div>
+          <div class="reco-pick">→ Qwen Code</div>
+          <div class="reco-why">真开源 + 真国产 + token 屠价。Qwen3-Coder 480B 在 OpenRouter 还有免费档可白嫖。多协议兼容，可以无痛切回 Claude/GPT。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 D · 极致 provider 自由</div>
+          <div class="reco-pick">→ Aider</div>
+          <div class="reco-why">15B tokens/周处理量、4.1M 安装、39K stars——OSS CLI 的稳态王者。git 集成强到可以把它当版本控制的延伸。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 E · 想要 Claude Code 的 UX 但要免费</div>
+          <div class="reco-pick">→ OpenCode</div>
+          <div class="reco-why">147K stars，星速比 Claude Code 还快 4.5 倍，UI/UX 是这一代 OSS CLI 中最像商用产品的。可以塞 DeepSeek / Qwen / 本地 Ollama。</div>
+        </div>
+      </div>
+
+      <div class="reco-side">
+        <h4>💡 同线对比要点</h4>
+        <div class="side-block">
+          <div class="side-k">价格区间</div>
+          <div class="side-v">免费起 → Max <span class="hl">$200/mo</span>。OSS 三款（Aider/OpenCode/Qwen Code）软件完全免费，只付 token。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">模型上限</div>
+          <div class="side-v">Claude Code 独家 <strong>Opus 4.7</strong> + 1M 上下文。Codex 独家 <strong>GPT-5.5</strong>。其他都靠 BYOK。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">国内可用性</div>
+          <div class="side-v">Claude / Codex 需自备网络方案。<span class="hl">Qwen Code</span> 是唯一无障碍的官方国内方案。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">隐藏成本</div>
+          <div class="side-v">BYOK 看似免费，重度使用一个月 token 账单可能超过 Claude Max $100。先估算再选。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═════════════════════════════════════════════════════════════════ -->
+<!-- ═════════════════ LINE 2 · IDE-Integrated ═══════════════════════ -->
+<!-- ═════════════════════════════════════════════════════════════════ -->
+
+<!-- ───────────── 5 · L2 products ───────────── -->
+<div class="slide l2" id="s5">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label" style="color:var(--line2)">LINE 02 · IDE-Integrated</div>
+        <div class="slide-title">IDE 编码 agent</div>
+        <div class="slide-sub">VS Code 插件、JetBrains 插件、IDE-fork——深度嵌入编辑流程，补全 + agent 模式合体</div>
+      </div>
+      <span class="header-tag" style="color:var(--line2);border-color:var(--line2)">8 PRODUCTS</span>
+    </div>
+
+    <div class="product-grid pg-4col" style="grid-template-rows:1fr 1fr;gap:9px">
+      <!-- Cursor -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Cursor</span><span class="pc-vendor">ANYSPHERE</span></div>
+        <div class="pc-tag">类目共识第一名</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">Claude / GPT-5.x / Gemini 全档可切</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">Pro $20 · Pro+ $60 · Ultra $200 · Business $40/座</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">Credit 制度（套餐价 = 当月点数额度）</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">直接想要"开箱即用最强"的专业开发者</span></div>
+      </div>
+
+      <!-- Windsurf -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Windsurf</span><span class="pc-vendor">COGNITION</span></div>
+        <div class="pc-tag">$15 进 agent IDE 的最低门槛</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">Claude / GPT-4o / Gemini · 自研 SWE-1.5</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">Free · Pro $15 · Teams $30/座 · Ent ~$60+</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">Pro 50 次/日 · Teams 75 次/日/人（3 月改制后）</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">预算紧 / 想比 Cursor 省 $5</span></div>
+      </div>
+
+      <!-- Cline -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Cline</span><span class="pc-vendor">CLINE.BOT · OSS</span></div>
+        <div class="pc-tag">VS Code 插件中最火的 agent</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">完全 BYOK · plan/act 双模式</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">插件免费 · Teams $20/座（前 10 座免费至 Q1）</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">轻度 $5–50/月 · 重度可到 $100+</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">坚守 VS Code 不想转 Cursor / Windsurf</span></div>
+      </div>
+
+      <!-- Copilot -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">GitHub Copilot</span><span class="pc-vendor">MICROSOFT</span></div>
+        <div class="pc-tag">个人入门最便宜的"严肃"产品</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">Claude / GPT-5.x / Gemini · o-series</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">Pro $10 · Pro+ $39 · Business $19/座</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">⚠ 6/1 起全面切换为 token 用量计费</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">GitHub 原生团队 / 企业合规要求高</span></div>
+      </div>
+
+      <!-- 通义灵码 -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">通义灵码 Lingma</span><span class="pc-vendor">ALIBABA</span></div>
+        <div class="pc-tag">国内 agent IDE 第一梯队</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">基于 Qwen-Coder · 强 RL 调优</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">个人专业 ¥59（限免中）· 企业 ¥79–159/座</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">免费档 50 轮/月 + 50 单测方法/月</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">阿里云生态企业 / 中文 prompt 体验优先</span></div>
+      </div>
+
+      <!-- CodeBuddy 腾讯 -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">CodeBuddy 腾讯</span><span class="pc-vendor">TENCENT CLOUD</span></div>
+        <div class="pc-tag">国内免费 + DeepSeek + 混元</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">混元 turbos/T1/2.0 · DeepSeek R1/V3 可切</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">个人免费（Craft 50/日）· 企业 ¥158/座（5/15 后涨价）</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">免费档 50 Craft credits/天</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">想白嫖 DeepSeek + 国内代理稳定</span></div>
+      </div>
+
+      <!-- 文心快码 -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">文心快码 Comate</span><span class="pc-vendor">BAIDU</span></div>
+        <div class="pc-tag">ERNIE 5.0 加持 · 价格屠夫</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">ERNIE 5.0（2.4T 多模态原生）</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">免费档 · Zulu agent ¥59/月（前 50 次免费）</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">API ¥0.004/千 input · 自称仅 GPT-4.5 的 1%</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">百度云客户 / 中文注释生成质量要求高</span></div>
+      </div>
+
+      <!-- CodeGeeX -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">CodeGeeX</span><span class="pc-vendor">ZHIPU 智谱</span></div>
+        <div class="pc-tag">个人完全免费 + 私有部署</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">GLM-5（744B 开源）+ GLM-4.x Flash 免费</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">个人 0 元 · 企业按需（含微调）· GLM Coding ~$10–80/月</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">个人无限免费；GLM-5 较 4.7 涨价 30%</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">个人零成本起步 / 企业要私有化 + 微调</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ───────────── 6 · L2 recommendations ───────────── -->
+<div class="slide l2" id="s6">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label" style="color:var(--line2)">LINE 02 · Recommendation</div>
+        <div class="slide-title">IDE agent 怎么选？</div>
+      </div>
+      <span class="header-tag" style="color:var(--line2);border-color:var(--line2)">DECISION</span>
+    </div>
+
+    <div class="recos">
+      <div class="reco-list">
+        <div class="reco-card">
+          <div class="reco-when">情形 A · 主流 / 不差钱</div>
+          <div class="reco-pick">→ Cursor Pro $20 起</div>
+          <div class="reco-why">行业共识第一。补全 / agent / MCP / 云端 agent / 多文件编辑全栈最好。预算到位时无脑选。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 B · 预算紧</div>
+          <div class="reco-pick">→ Windsurf Pro $15 / Copilot Pro $10</div>
+          <div class="reco-why">Windsurf 给 Cascade 多文件 agent + 自研 SWE-1.5。Copilot 个人入门最便宜（$10），但 6/1 后改 token 计费要重新算账。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 C · VS Code 死忠 / OSS 信仰</div>
+          <div class="reco-pick">→ Cline（BYOK）</div>
+          <div class="reco-why">VS Code 中最火 OSS agent，plan/act 分离做得最干净。BYOK = 你能塞 DeepSeek 当主力压成本。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 D · 国内开发者 / 团队</div>
+          <div class="reco-pick">→ CodeBuddy（个人）/ 通义灵码（企业）</div>
+          <div class="reco-why">CodeBuddy 个人免费档好用，DeepSeek + 混元双引擎。通义灵码企业版 ¥79/座最有性价比，3 月新增 Quest 自主编程。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 E · 完全零成本起步</div>
+          <div class="reco-pick">→ CodeGeeX 个人版 / 文心快码免费档</div>
+          <div class="reco-why">CodeGeeX 个人无限免费 + 强私有化。文心快码靠 ERNIE 5.0 中文质量好，价格屠到 GPT-4.5 的 1%。</div>
+        </div>
+      </div>
+
+      <div class="reco-side">
+        <h4>💡 同线对比要点</h4>
+        <div class="side-block">
+          <div class="side-k">价格区间</div>
+          <div class="side-v">个人免费 → Cursor Ultra <span class="hl">$200/mo</span>。中位数 ~$20/月。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">国内 vs 国外</div>
+          <div class="side-v">国外 4 款（Cursor / Windsurf / Cline / Copilot）模型更前沿；国内 4 款（灵码 / CodeBuddy / 文心 / CodeGeeX）<span class="hl">价格便宜 5–10×</span>且无网络障碍。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">⚠ Copilot 6/1 改制</div>
+          <div class="side-v">Pro/Pro+ 月度用户自动迁移到 <strong>token 用量计费</strong>。原来"无限"补全用户重新算账。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">⚠ 腾讯云 5/15 涨价</div>
+          <div class="side-v">CodeBuddy 企业版价格涨幅 <strong>up to 154%</strong>。锁价要赶在 5/15 前下单。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═════════════════════════════════════════════════════════════════ -->
+<!-- ═════════════════ LINE 3 · Desktop / Personal ═══════════════════ -->
+<!-- ═════════════════════════════════════════════════════════════════ -->
+
+<!-- ───────────── 7 · L3 products ───────────── -->
+<div class="slide l3" id="s7">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label" style="color:var(--line3)">LINE 03 · Desktop &amp; Personal</div>
+        <div class="slide-title">桌面通用 / 个人 agent</div>
+        <div class="slide-sub">不只是聊天——文件、邮件、日历、聊天 app 自动化。Claw 系是这条线的现象级产品</div>
+      </div>
+      <span class="header-tag" style="color:var(--line3);border-color:var(--line3)">6 PRODUCTS</span>
+    </div>
+
+    <div class="product-grid pg-3col" style="grid-template-rows:1fr 1fr;gap:9px">
+      <!-- Claude Desktop -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Claude Desktop</span><span class="pc-vendor">ANTHROPIC</span></div>
+        <div class="pc-tag">Chat + Cowork + Code 三合一</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">Sonnet 4.6 默认 · Opus 4.7（Pro+）· 1M 上下文（Max+）</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">绑定订阅：Pro $20 / Max $100 / Max $200 / Team / Ent</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">Cowork 视觉派单 GA · Desktop Extensions · Chrome 集成 beta</span></div>
+        <div class="pc-row"><span class="pc-k">平台</span><span class="pc-v">macOS · Windows · Win ARM（无 Linux）</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">已是 Claude 订阅 + 想要桌面文件/日历/邮件集成</span></div>
+      </div>
+
+      <!-- ChatGPT Desktop -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">ChatGPT Desktop</span><span class="pc-vendor">OPENAI</span></div>
+        <div class="pc-tag">多模态最全 + 60+ 应用连接器</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">GPT-5.5 · GPT-5.5 Pro（Pro 档）· 5.4-mini · o-series</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">Free（带广告）· Go $8 · Plus $20 · Pro $100 · Pro $200</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">高级语音+视频 · Images 2.0 · Sora 视频 · Codex agent 内置</span></div>
+        <div class="pc-row"><span class="pc-k">平台</span><span class="pc-v">macOS · Windows</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">需要语音+视频+图像+代理一锅端的通用用户</span></div>
+      </div>
+
+      <!-- Kimi -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Kimi（含 Kimi Claw）</span><span class="pc-vendor">MOONSHOT 月之暗面</span></div>
+        <div class="pc-tag">长上下文之王 + 国产持久 agent</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">Kimi K2.6（262K 上下文 · $0.60/M token · SWE-Bench 65.8%）</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">Kimi Claw 需 Allegretto+：<strong>¥199/月起</strong></span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">引爆"Claw"命名潮 · 思考/非思考双模 · 文/图/视频 input</span></div>
+        <div class="pc-row"><span class="pc-k">平台</span><span class="pc-v">桌面 Win/Mac · 网页 · 移动</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">长文档/超长代码库分析、研究人员</span></div>
+      </div>
+
+      <!-- 豆包 -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">豆包 Doubao</span><span class="pc-vendor">BYTEDANCE</span></div>
+        <div class="pc-tag">国民级免费 + 价格地板</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">Doubao 2.0 Pro / Lite / Mini / Code · Seeduplex 全双工语音</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">C 端免费 · 火山引擎 PAYG（"1 元 = 125 万 token"）</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">2.0 自称对标 GPT-5.2 / Gemini 3 Pro · 视觉空间推理强</span></div>
+        <div class="pc-row"><span class="pc-k">平台</span><span class="pc-v">桌面 · 网页 · 移动（中国市场覆盖最广）</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">大众消费者免费用 · 企业要超低单价 token</span></div>
+      </div>
+
+      <!-- OpenClaw -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">OpenClaw</span><span class="pc-vendor">OSS · STEINBERGER</span></div>
+        <div class="pc-tag">史上最快增长 OSS（一月 250K stars）</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">完全 LLM-agnostic · BYOK 或本地</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">免费 / OSS · 你只付选用模型的 API token</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">本机跑 · 通过 WhatsApp/TG/Slack/iMessage 等 20+ 渠道接入</span></div>
+        <div class="pc-row"><span class="pc-k">平台</span><span class="pc-v">macOS / Linux / WSL2 · 一月内 20M MAU</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">极客 / 隐私优先 / 想要自己的"私人助理"</span></div>
+      </div>
+
+      <!-- QClaw 腾讯 -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">QClaw 腾讯</span><span class="pc-vendor">TENCENT</span></div>
+        <div class="pc-tag">OpenClaw 的腾讯产品化版本</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">捆绑 Kimi · MiniMax · DeepSeek</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">邀请制 · "Founding QClaws"前 2 万号（公开定价未公布）</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">国内版 WeChat/QQ 远程操控 PC · 海外版接 WhatsApp/TG</span></div>
+        <div class="pc-row"><span class="pc-k">平台</span><span class="pc-v">Windows · macOS（一键安装）</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">不想折腾 OpenClaw + 信任腾讯捆绑的中国用户</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ───────────── 8 · L3 recommendations ───────────── -->
+<div class="slide l3" id="s8">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label" style="color:var(--line3)">LINE 03 · Recommendation</div>
+        <div class="slide-title">桌面 agent 怎么选？</div>
+      </div>
+      <span class="header-tag" style="color:var(--line3);border-color:var(--line3)">DECISION</span>
+    </div>
+
+    <div class="recos">
+      <div class="reco-list">
+        <div class="reco-card">
+          <div class="reco-when">情形 A · 编码 + 通用对话一体化</div>
+          <div class="reco-pick">→ Claude Desktop</div>
+          <div class="reco-why">Chat / Cowork / Code 三个 tab 一个 app，桌面端 Extensions 一键接文件、日历、邮件、消息。前提是已经在 Claude Pro/Max 订阅上。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 B · 多模态全场景</div>
+          <div class="reco-pick">→ ChatGPT Desktop</div>
+          <div class="reco-why">语音+视频+图像+视频生成+ Codex agent 一锅端。Free 档美国带广告，全球 Go $8 是最便宜进 ChatGPT 高级模型的方式。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 C · 长文档 / 研究 / 中文</div>
+          <div class="reco-pick">→ Kimi（K2.6）</div>
+          <div class="reco-why">262K 上下文 + $0.60/M 单价是这一代国产模型最猛的组合。Kimi Claw 是中国版"持久 agent"产品，¥199/月起。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 D · 大众消费 / 完全免费</div>
+          <div class="reco-pick">→ 豆包</div>
+          <div class="reco-why">中国 C 端覆盖最广 + 完全免费。Doubao 2.0 自称对标 GPT-5.2，企业要做大量低成本 token 也是火山引擎首选。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 E · 想要自己的私人 agent</div>
+          <div class="reco-pick">→ OpenClaw（极客）/ QClaw（小白）</div>
+          <div class="reco-why">OpenClaw 一月 20M MAU + 250K stars，自托管 + 任意聊天渠道接入。QClaw 是腾讯把它产品化了——一键装 + 国内合规 + 模型已经捆好。</div>
+        </div>
+      </div>
+
+      <div class="reco-side">
+        <h4>💡 同线对比要点</h4>
+        <div class="side-block">
+          <div class="side-k">"Claw"是什么？</div>
+          <div class="side-v">月之暗面 Kimi Claw 引爆的命名潮：指能跨 session 持久记忆 + 主动协助的桌面 agent。<span class="hl">OpenClaw、QClaw 都是这一波</span>的产物。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">编码 vs 通用</div>
+          <div class="side-v">Claude Desktop 是唯一把"编码 + 通用对话"做进一个 app 的（嵌 Claude Code）。其余偏纯通用助手。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">免费档比较</div>
+          <div class="side-v">豆包 / OpenClaw 真免费；ChatGPT Free 美国带广告；Claude / Kimi Claw 必须付订阅才解锁。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">隐私 / 数据驻留</div>
+          <div class="side-v">OpenClaw 本机跑 = 最私密。其余皆云端推理；国内三家（Kimi / 豆包 / QClaw）数据驻留中国大陆。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═════════════════════════════════════════════════════════════════ -->
+<!-- ═════════════════ LINE 4 · Autonomous Cloud ═════════════════════ -->
+<!-- ═════════════════════════════════════════════════════════════════ -->
+
+<!-- ───────────── 9 · L4 products ───────────── -->
+<div class="slide l4" id="s9">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label" style="color:var(--line4)">LINE 04 · Autonomous Cloud</div>
+        <div class="slide-title">云端自主 agent</div>
+        <div class="slide-sub">扔过去一个 ticket，云端 VM 跑完提 PR 给你看 diff——异步派单的工业化范式</div>
+      </div>
+      <span class="header-tag" style="color:var(--line4);border-color:var(--line4)">5 PRODUCTS</span>
+    </div>
+
+    <div class="product-grid pg-3col" style="grid-template-rows:1fr 1fr;gap:9px">
+      <!-- Devin -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Devin</span><span class="pc-vendor">COGNITION</span></div>
+        <div class="pc-tag">类目开创者 · 2.0 大砍价</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">Cognition 自研栈（前沿模型 + RL 微调）</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">Free · <strong>Pro $20</strong>（从 $500 砍到 $20）· Max $80</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">ACU 计费 · 1 ACU ≈ 15 分钟工作 · 折合 $8–9/活跃小时</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">VM + 浏览器 + 模型推理一锅端 · Slack/Linear 派单</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">外包重复性 ticket：依赖升级、lint 修复、迁移类</span></div>
+      </div>
+
+      <!-- Manus -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Manus</span><span class="pc-vendor">BUTTERFLY EFFECT</span></div>
+        <div class="pc-tag">通用任务 · 不止于代码</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">多模型编排（前沿模型混用）</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">Free（300 日刷新点）· Standard $20 · Customizable $40 · Extended $200</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">Credit 制 · 免费档可同时跑 5 个任务</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">浏览器 + 代码 + 研究 + 文档生成全任务通用</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">任务跨编码 + 浏览 + 调研（如竞品分析 + 原型）</span></div>
+      </div>
+
+      <!-- OpenHands -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">OpenHands</span><span class="pc-vendor">ALL-HANDS-AI · OSS</span></div>
+        <div class="pc-tag">Devin 的开源平替（前 OpenDevin）</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">完全 BYOK · 或用 OpenHands LLM provider（按成本计无加价）</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">OSS 自托管免费 · Cloud 个人 BYOK 免费 · 企业按需</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">受限于你选的 provider</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">完整 ticket / Git provider 集成 · OpenHands Index 基准榜</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">企业要 Devin 的能力 + 数据/模型完全自主可控</span></div>
+      </div>
+
+      <!-- Replit Agent -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Replit Agent</span><span class="pc-vendor">REPLIT</span></div>
+        <div class="pc-tag">从 prompt 到部署一条龙</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">多模型混用（Claude / GPT 等）· Agent 3 当前版本</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">Starter Free · Core $20 · <strong>Pro $100</strong>（含 15 协作位）· 企业按需</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">Credit 制 · Core 月清 · Pro 可滚 1 个月</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">写完就托管 · 三档算力（Economy / Power / Turbo）</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">独立开发者 · vibe coder · MVP / 原型快速发布</span></div>
+      </div>
+
+      <!-- Hermes -->
+      <div class="product-card">
+        <div class="pc-head"><span class="pc-name">Hermes Agent</span><span class="pc-vendor">NOUS RESEARCH · OSS</span></div>
+        <div class="pc-tag">持久记忆 + 自我成长（Feb 2026）</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">Nous Portal · OpenRouter 200+ · NIM · OpenAI · 任意</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">免费 / OSS · 仅付 LLM 成本</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">$5/月 VPS 即可跑 · 也可 GPU 集群 / serverless</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v"><strong>跨 session 持久记忆</strong> + 技能自演进 · 110K stars/10 周</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v">想要 agent 越用越懂你 + 不接受 SaaS 锁定</span></div>
+      </div>
+
+      <!-- Decision card -->
+      <div class="product-card" style="--accent:var(--gold);background:rgba(251,191,36,0.04)">
+        <div class="pc-head"><span class="pc-name" style="color:var(--gold)">⚡ 类目大事件</span><span class="pc-vendor">2026 Q1</span></div>
+        <div class="pc-tag" style="color:var(--gold)">Devin 从 $500 砍到 $20</div>
+        <div class="pc-row"><span class="pc-v" style="font-size:11px;line-height:1.5">2025 年 Devin 还要 $500/月，Devin 2.0 直接砍到 $20——意味着<strong>云端 autonomous agent 进入消费级</strong>。整个赛道竞争核心从"是否可用"切到"用量 + 集成"。</span></div>
+        <div class="pc-row"><span class="pc-v" style="font-size:11px;line-height:1.5;color:var(--text2)">Hermes 是后来的开源黑马（2/25 发布，10 周 110K stars），把"持久记忆"做成了头号差异化。</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ───────────── 10 · L4 recommendations ───────────── -->
+<div class="slide l4" id="s10">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label" style="color:var(--line4)">LINE 04 · Recommendation</div>
+        <div class="slide-title">云端 agent 怎么选？</div>
+      </div>
+      <span class="header-tag" style="color:var(--line4);border-color:var(--line4)">DECISION</span>
+    </div>
+
+    <div class="recos">
+      <div class="reco-list">
+        <div class="reco-card">
+          <div class="reco-when">情形 A · 一堆重复性 ticket 想外包</div>
+          <div class="reco-pick">→ Devin Pro $20</div>
+          <div class="reco-why">类目开创者，Slack/Linear 集成最成熟。砍价后 $20 进场，针对依赖升级 / lint / 迁移类工业化场景仍是首选。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 B · 任务跨编码 + 浏览 + 调研</div>
+          <div class="reco-pick">→ Manus</div>
+          <div class="reco-why">通用度更广——既能写代码，又能开浏览器抓数据、生成报告。$20 起、任务并发 5 个，对知识工作者友好。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 C · 企业自托管 + 数据合规</div>
+          <div class="reco-pick">→ OpenHands</div>
+          <div class="reco-why">Devin 的开源平替，可以自己部署 Docker，模型完全 BYOK，没有 provider 加价。SOC / 私有化场景的事实标准。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 D · 想从 prompt 直接发布产品</div>
+          <div class="reco-pick">→ Replit Agent Pro $100</div>
+          <div class="reco-why">写完即托管，15 个协作位（人均 ~$6.67），独立开发者最便宜的 "team" 方案。Agent 3 把 vibe-coding 做到能直接交付。</div>
+        </div>
+        <div class="reco-card">
+          <div class="reco-when">情形 E · 个人长期持久 agent</div>
+          <div class="reco-pick">→ Hermes Agent</div>
+          <div class="reco-why">真正跨 session 持久记忆 + 技能自演进，能在便宜 VPS 上长期运行——是个"陪伴 agent"。OSS + BYOK 完全可控。</div>
+        </div>
+      </div>
+
+      <div class="reco-side">
+        <h4>💡 同线对比要点</h4>
+        <div class="side-block">
+          <div class="side-k">价格区间</div>
+          <div class="side-v">免费 → Devin Max <span class="hl">$80</span> / Replit Pro <span class="hl">$100</span> / Manus Extended <span class="hl">$200</span>。Hermes / OpenHands OSS 软件免费。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">商业 vs 开源</div>
+          <div class="side-v">商业三家（Devin / Manus / Replit）省心、有 SLA。开源两家（OpenHands / Hermes）零软件成本但要自己运维。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">编码 vs 通用</div>
+          <div class="side-v">Devin / OpenHands / Replit 偏代码；<strong>Manus / Hermes</strong> 是真通用任务。</div>
+        </div>
+        <div class="side-block">
+          <div class="side-k">⚠ ACU / Credit 陷阱</div>
+          <div class="side-v">Devin ACU、Manus credits、Replit credits 都不是 token，是经过 markup 的虚拟单位。重度任务可能比裸 API 贵。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═════════════════════════════════════════════════════════════════ -->
+<!-- ═════════════════ LINE 5 · Builder Platforms ════════════════════ -->
+<!-- ═════════════════════════════════════════════════════════════════ -->
+
+<!-- ───────────── 11 · L5 products + reco合并 ───────────── -->
+<div class="slide l5" id="s11">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label" style="color:var(--line5)">LINE 05 · Agent Builders</div>
+        <div class="slide-title">Agent 搭建平台</div>
+        <div class="slide-sub">拖拽搭建对话机器人 + 工作流 + RAG，发布到聊天渠道——非开发者的最短路径</div>
+      </div>
+      <span class="header-tag" style="color:var(--line5);border-color:var(--line5)">2 PRODUCTS</span>
+    </div>
+
+    <div class="product-grid pg-2col" style="grid-template-rows:1fr;gap:14px;margin-bottom:14px">
+      <!-- Coze -->
+      <div class="product-card" style="padding:18px 22px">
+        <div class="pc-head"><span class="pc-name" style="font-size:18px">Coze 扣子</span><span class="pc-vendor">BYTEDANCE</span></div>
+        <div class="pc-tag" style="font-size:13px">非开发者首选 · Bot 工厂</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">Coze.com：GPT-4o + Claude；Coze.cn：豆包系</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">海外 Free / Premium $9 / Plus $39 · 国内基础免费 + 资源点 PAYG</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">海外 GPT-4o 1–100 次/日；国内"资源点"按调用类型扣</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">最强拖拽 bot builder · 飞书/Discord/Telegram/网页发布</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v"><strong style="color:var(--text)">PM / 运营 / 客服团队</strong>：不写代码做面向用户的 bot</span></div>
+      </div>
+
+      <!-- Dify -->
+      <div class="product-card" style="padding:18px 22px">
+        <div class="pc-head"><span class="pc-name" style="font-size:18px">Dify</span><span class="pc-vendor">DIFY · OSS</span></div>
+        <div class="pc-tag" style="font-size:13px">开发者首选 · OSS 自托管</div>
+        <div class="pc-row"><span class="pc-k">模型</span><span class="pc-v">OpenAI / Claude / Llama 2 / Azure / HF / Replicate</span></div>
+        <div class="pc-row"><span class="pc-k">价格</span><span class="pc-v pc-price">Sandbox Free · Pro $59 · Team $159 · 自托管 OSS = 免费</span></div>
+        <div class="pc-row"><span class="pc-k">用量</span><span class="pc-v">云端 Pro 5K 消息/月、50 应用；自托管无限</span></div>
+        <div class="pc-row"><span class="pc-k">特色</span><span class="pc-v">OSS 一等公民 · 全套 agent + RAG · 学生/教师免费</span></div>
+        <div class="pc-row"><span class="pc-k">适合</span><span class="pc-v"><strong style="color:var(--text)">开发团队 / 创业公司</strong>：要做 LLM SaaS 又要 OSS 灵活</span></div>
+      </div>
+    </div>
+
+    <div class="reco-side" style="padding:16px 22px">
+      <h4>💡 二选一速判</h4>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <div>
+          <div class="side-k">选 Coze 当：</div>
+          <div class="side-v" style="margin-top:6px">业务方 / 非开发者要做客户向 bot · 没工程团队 · 字节生态 / 需要发布到飞书/抖音 · 不在乎数据出境（海外版）。</div>
+        </div>
+        <div>
+          <div class="side-k">选 Dify 当：</div>
+          <div class="side-v" style="margin-top:6px">要把 agent 做进自家 SaaS · 模型/数据要 OSS 灵活 · 计划私有化部署 · 要 RAG 知识库做严肃客户支持。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═════════════════════════════════════════════════════════════════ -->
+<!-- ═════════════════ Cheat Sheet + Sources ═════════════════════════ -->
+<!-- ═════════════════════════════════════════════════════════════════ -->
+
+<!-- ───────────── 12 · Cheat sheet ───────────── -->
+<div class="slide" id="s12">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label">Quick Pick</div>
+        <div class="slide-title">"我应该买哪个" · 一页速查表</div>
+        <div class="slide-sub">按典型用户类型直接给推荐，不用再翻前面 10 张</div>
+      </div>
+      <span class="header-tag">CHEAT SHEET</span>
+    </div>
+
+    <div class="cheat">
+      <div class="cheat-col">
+        <h5>👨‍💻 个人 / 小团队</h5>
+        <div class="cheat-row hl1"><div class="cr-k">想要全网最强编码</div><div class="cr-v">Claude Code Max</div></div>
+        <div class="cheat-row hl1"><div class="cr-k">已订 ChatGPT</div><div class="cr-v">Codex CLI（免费）</div></div>
+        <div class="cheat-row hl2"><div class="cr-k">主流 IDE 体验</div><div class="cr-v">Cursor Pro</div></div>
+        <div class="cheat-row hl2"><div class="cr-k">入门最便宜</div><div class="cr-v">Copilot Pro $10</div></div>
+        <div class="cheat-row hl3"><div class="cr-k">桌面通用</div><div class="cr-v">Claude Desktop</div></div>
+        <div class="cheat-row hl3"><div class="cr-k">多模态全能</div><div class="cr-v">ChatGPT Desktop</div></div>
+        <div class="cheat-row hl4"><div class="cr-k">从原型到上线</div><div class="cr-v">Replit Agent</div></div>
+        <div class="cheat-row hl4"><div class="cr-k">个人持久 agent</div><div class="cr-v">Hermes Agent</div></div>
+      </div>
+
+      <div class="cheat-col">
+        <h5>🇨🇳 中国大陆开发者</h5>
+        <div class="cheat-row hl1"><div class="cr-k">CLI 编码</div><div class="cr-v">Qwen Code</div></div>
+        <div class="cheat-row hl2"><div class="cr-k">IDE 个人免费</div><div class="cr-v">CodeBuddy 腾讯</div></div>
+        <div class="cheat-row hl2"><div class="cr-k">IDE 企业方案</div><div class="cr-v">通义灵码</div></div>
+        <div class="cheat-row hl2"><div class="cr-k">中文质量第一</div><div class="cr-v">文心快码</div></div>
+        <div class="cheat-row hl2"><div class="cr-k">私有化部署</div><div class="cr-v">CodeGeeX 企业版</div></div>
+        <div class="cheat-row hl3"><div class="cr-k">长文档分析</div><div class="cr-v">Kimi K2.6</div></div>
+        <div class="cheat-row hl3"><div class="cr-k">大众 / 免费</div><div class="cr-v">豆包</div></div>
+        <div class="cheat-row hl3"><div class="cr-k">桌面 Claw 体验</div><div class="cr-v">QClaw 腾讯</div></div>
+      </div>
+
+      <div class="cheat-col">
+        <h5>🏢 企业 / 团队</h5>
+        <div class="cheat-row hl1"><div class="cr-k">前沿模型 + 合规</div><div class="cr-v">Claude Code Team</div></div>
+        <div class="cheat-row hl2"><div class="cr-k">GitHub 原生</div><div class="cr-v">Copilot Business</div></div>
+        <div class="cheat-row hl2"><div class="cr-k">成本敏感</div><div class="cr-v">Windsurf Teams</div></div>
+        <div class="cheat-row hl4"><div class="cr-k">外包重复 ticket</div><div class="cr-v">Devin Pro</div></div>
+        <div class="cheat-row hl4"><div class="cr-k">数据自主可控</div><div class="cr-v">OpenHands 自托管</div></div>
+        <div class="cheat-row hl4"><div class="cr-k">通用任务派单</div><div class="cr-v">Manus Team</div></div>
+        <div class="cheat-row hl5"><div class="cr-k">非开发者做 bot</div><div class="cr-v">Coze 扣子</div></div>
+        <div class="cheat-row hl5"><div class="cr-k">做 LLM SaaS</div><div class="cr-v">Dify Team / 自托管</div></div>
+      </div>
+    </div>
+
+    <div class="bottom-note">
+      ⚠ <strong>价格变动预警</strong>：Codex Pro $100 的 10x 用量 5/31 后降回 5x；Copilot 6/1 起全面切 token 计费；腾讯云 5/15 起 CodeBuddy 企业版涨幅最高 154%；Devin 已从 $500 砍到 $20，但 ACU 计费机制不变。下单前请重新核价。
+    </div>
+  </div>
+</div>
+
+<!-- ───────────── 13 · Sources ───────────── -->
+<div class="slide" id="s13">
+  <div class="slide-inner">
+    <div class="slide-header">
+      <div>
+        <div class="slide-label">References</div>
+        <div class="slide-title">来源 · 全部数据均可追溯</div>
+        <div class="slide-sub">官方定价页、官方博客、可信第三方评测，截至 2026-04-30</div>
+      </div>
+      <span class="header-tag">SOURCES</span>
+    </div>
+
+    <div class="sources-grid" style="grid-template-columns:repeat(3, 1fr)">
+      <div class="src-card l1">
+        <h6>LINE 01 · CLI</h6>
+        <ul>
+          <li>claude.com/pricing · platform.claude.com docs</li>
+          <li>developers.openai.com/codex/pricing</li>
+          <li>qwen.ai/qwencode · github.com/QwenLM/qwen-code</li>
+          <li>aider.chat · opencode.ai</li>
+          <li>Tembo 2026 CLI 工具横评</li>
+        </ul>
+      </div>
+      <div class="src-card l2">
+        <h6>LINE 02 · IDE</h6>
+        <ul>
+          <li>cursor.com/pricing · windsurf.com/pricing</li>
+          <li>cline.bot/pricing · GitHub Copilot 计费迁移公告</li>
+          <li>lingma.aliyun.com/pricing</li>
+          <li>copilot.tencent.com/ide · InfoQ CodeBuddy 评测</li>
+          <li>comate.baidu.com/zh/pricing · 智谱 GLM Coding Plan</li>
+        </ul>
+      </div>
+      <div class="src-card l3">
+        <h6>LINE 03 · Desktop</h6>
+        <ul>
+          <li>support.claude.com / code.claude.com/docs</li>
+          <li>chatgpt.com/pricing · TechCrunch ChatGPT Pro $100</li>
+          <li>cnblogs Kimi K2.6 评测 · OSChina Moonshot 付费</li>
+          <li>Sina Doubao 2.0 发布 / 火山引擎报价</li>
+          <li>github.com/openclaw · QClaw 海外 beta · ClawPro</li>
+        </ul>
+      </div>
+      <div class="src-card l4">
+        <h6>LINE 04 · Cloud Agent</h6>
+        <ul>
+          <li>devin.ai/pricing · cognition.ai blog</li>
+          <li>VentureBeat — Devin 2.0 $20</li>
+          <li>manus.im/pricing</li>
+          <li>openhands.dev/pricing · GitHub OpenHands</li>
+          <li>replit.com/pricing · Replit Pro 公告 · Hermes Nous</li>
+        </ul>
+      </div>
+      <div class="src-card l5">
+        <h6>LINE 05 · Builder</h6>
+        <ul>
+          <li>coze.cn/open/docs/coze_pro/enterprise_plan</li>
+          <li>Landian — Coze 海外定价</li>
+          <li>CSDN — Coze.cn 资源点</li>
+          <li>dify.ai/pricing</li>
+        </ul>
+      </div>
+      <div class="src-card" style="--accent:var(--gold)">
+        <h6 style="color:var(--gold)">METHODOLOGY</h6>
+        <ul>
+          <li>所有定价/限额取自官方 2026-04 及之前公告</li>
+          <li>模型默认值取截至 2026-04-30 的现行设置</li>
+          <li>Claw 类产品的事实核查由 OpenClaw GitHub + 腾讯官方稿确认</li>
+          <li>促销 / 临时优惠均明确标注时效</li>
+          <li>有 [uncertain] 标记的定价均为推算值</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /deck -->
+
+<!-- ═══════════════════════════════════════════════════════════════ NAV ═════════════════════════════════════════════════════════════════════ -->
+<div id="nav">
+  <button class="nav-btn" onclick="changeSlide(-1)">←</button>
+  <div id="dots"></div>
+  <span id="slide-counter">1 / 13</span>
+  <button class="nav-btn" onclick="changeSlide(1)">→</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+  const total = slides.length;
+
+  const dotsEl = document.getElementById('dots');
+  slides.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.onclick = () => goTo(i);
+    dotsEl.appendChild(d);
+  });
+
+  function goTo(n) {
+    if (n < 0 || n >= total) return;
+    slides[current].classList.remove('active');
+    slides[current].classList.add('exit');
+    const prev = current;
+    current = n;
+    requestAnimationFrame(() => {
+      slides[current].classList.add('active');
+    });
+    setTimeout(() => slides[prev].classList.remove('exit'), 600);
+    document.querySelectorAll('.dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+    document.getElementById('slide-counter').textContent = `${current + 1} / ${total}`;
+  }
+
+  function changeSlide(dir) { goTo(current + dir); }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') changeSlide(1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp') changeSlide(-1);
+  });
+</script>
+</body>
+</html>
