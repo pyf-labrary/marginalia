@@ -33,10 +33,6 @@ index.md / about.md / showcases.md  导航页
 
 整个目录扔到 `showcases/<slug>/` 下，包含 `index.html` + 子页 + `assets/`。然后到 `showcases.md` 加一条入口链接。
 
-## 隐私
-
-所有页面带 `<meta name="robots" content="noindex,nofollow">`。直链可访问，搜索引擎不主动收录。
-
 ## 本地预览（可选）
 
 ```bash
