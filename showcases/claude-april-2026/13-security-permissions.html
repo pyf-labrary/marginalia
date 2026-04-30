@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>13 · 安全与权限演进</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .layer-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 18px;
+  }
+  .layer {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 60px 1fr 200px;
+    gap: 16px;
+    align-items: center;
+  }
+  .layer .num {
+    font-family: var(--serif);
+    font-size: 30px;
+    color: var(--accent);
+    font-style: italic;
+    text-align: center;
+    line-height: 1;
+  }
+  .layer .body h5 { color: var(--text); font-size: 16px; margin-bottom: 4px; }
+  .layer .body p { color: var(--muted); font-size: 13px; line-height: 1.55; }
+  .layer .ver-tag {
+    text-align: right;
+    color: var(--muted-2);
+    font-family: var(--mono);
+    font-size: 11.5px;
+  }
+
+  .alert-box {
+    background: rgba(239,107,107,0.06);
+    border: 1px solid rgba(239,107,107,0.3);
+    border-left: 4px solid var(--danger);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 12px 0;
+  }
+  .alert-box h6 {
+    color: var(--danger);
+    font-size: 13px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+  .alert-box p { color: var(--text); font-size: 13.5px; line-height: 1.6; }
+</style>
+</head>
+<body
+  data-page-no="13" data-page-total="17" data-progress="76.47"
+  data-prev="12-windows-native.html"
+  data-next="14-enterprise-rbac.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:76.47%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Intro ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part III · 13 · 安全</div>
+    <h2 class="section">权限与安全：<br>4 月一半 commit 都<em>围绕这件事</em></h2>
+
+    <p class="lead">
+      如果只能用一句话概括 4 月的安全主题，那就是：<strong>能力升级时，边界<u>同步</u>加固</strong>。
+      Opus 4.7 让 Claude 更聪明、更能干——但 Bash 权限、OAuth、sandbox、危险路径检测也<strong>同步</strong>变严。
+      下面分四层看。
+    </p>
+
+    <div class="grid-4" style="margin-top: 30px;">
+      <div class="card">
+        <div class="num">1</div>
+        <h4>命令层</h4>
+        <p>Bash 权限规则收紧 / wrapper 检测 / read-only 免提示。</p>
+      </div>
+      <div class="card">
+        <div class="num">2</div>
+        <h4>认证层</h4>
+        <p>OAuth 全链修复 / 钥匙串竞态 / token 撤销自愈。</p>
+      </div>
+      <div class="card">
+        <div class="num">3</div>
+        <h4>沙箱层</h4>
+        <p>子进程 PID 隔离 / 网络域名拦截 / 危险路径检测。</p>
+      </div>
+      <div class="card">
+        <div class="num">4</div>
+        <h4>策略层</h4>
+        <p>条件 hook / Auto Mode 守门 / 不可逆操作必确认。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: Bash permissions ===== -->
+  <section class="slide">
+    <div class="eyebrow">13.1 · 第 1 层 · 命令</div>
+    <h2 class="section">Bash 权限：<em>更细</em>，<em>更聪明</em></h2>
+
+    <div class="layer-stack">
+      <div class="layer">
+        <div class="num">①</div>
+        <div class="body">
+          <h5>find -exec / -delete 不再自动批准</h5>
+          <p>过去一条 <code>Bash(find:*)</code> 规则放行所有 find——但 find 可以删文件、改权限、执行命令。
+          v2.1.113 起，<strong>find -exec / -delete 单独剥出</strong>，需要更明确的授权。</p>
+        </div>
+        <div class="ver-tag">v2.1.113</div>
+      </div>
+
+      <div class="layer">
+        <div class="num">②</div>
+        <div class="body">
+          <h5>wrapper 命令检测：env / sudo / watch</h5>
+          <p>过去 <code>sudo rm -rf</code> 因为 sudo 不在 deny 规则里就放行了——
+          v2.1.113 起，<strong>Bash deny 规则匹配 wrapper</strong>：env / sudo / watch / xargs / time 等。
+          deny <code>rm -rf</code> 时，<code>sudo rm -rf</code>、<code>env rm -rf</code> 同样被拦截。</p>
+        </div>
+        <div class="ver-tag">v2.1.113</div>
+      </div>
+
+      <div class="layer">
+        <div class="num">③</div>
+        <div class="body">
+          <h5>Read-only 全局命令免提示</h5>
+          <p>区分 read 和 write——<code>ls *.ts</code>、<code>cd dir &amp;&amp;</code>、<code>cat</code>、<code>pwd</code>、<code>which</code>
+          这类纯 read-only 操作不再每次弹权限对话。<strong>消除合理摩擦</strong>，但不放松对 write 的把关。</p>
+        </div>
+        <div class="ver-tag">v2.1.111</div>
+      </div>
+
+      <div class="layer">
+        <div class="num">④</div>
+        <div class="body">
+          <h5>Bash 权限旁路修复（一系列）</h5>
+          <p>修复多个绕过场景：<strong>转义 flag</strong>（<code>rm -rf\</code> 这类 trick）、
+          <strong>网络重定向</strong>（<code>cmd &gt; /dev/tcp/...</code>）、
+          <strong>env 前缀</strong>（<code>FOO=bar cmd</code>）。这些是 red team 找出来的 attack vectors。</p>
+        </div>
+        <div class="ver-tag">v2.1.111-113</div>
+      </div>
+
+      <div class="layer">
+        <div class="num">⑤</div>
+        <div class="body">
+          <h5>PowerShell 危险命令检测</h5>
+          <p>Windows 用 PowerShell 时，同样的危险检测逻辑生效——
+          <code>Remove-Item -Recurse C:\Windows</code>、<code>Stop-Computer</code>、
+          <code>Set-ExecutionPolicy</code> 等都被识别为危险操作。</p>
+        </div>
+        <div class="ver-tag">v2.1.111+</div>
+      </div>
+    </div>
+
+    <div class="alert-box" style="margin-top: 20px;">
+      <h6>哲学：能力越大，确认越细</h6>
+      <p>这条主线在 4 月所有安全更新里反复出现。它对应"<strong>Harmless 不是少做，而是边界清楚</strong>"——
+      Claude 仍然能执行 find -exec、能 sudo、能 PowerShell——但<strong>用户必须明确授权</strong>，而不是搭便车。</p>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: OAuth & sandbox ===== -->
+  <section class="slide">
+    <div class="eyebrow">13.2 · 第 2-3 层 · 认证 + 沙箱</div>
+    <h2 class="section">OAuth 全链修复 · Sandbox 加固</h2>
+
+    <div class="grid-2">
+      <div>
+        <h3 class="sub">认证层 · OAuth 修复合集</h3>
+
+        <div class="layer">
+          <div class="num">A</div>
+          <div class="body">
+            <h5>token 没 expires_in 不再每小时弹窗</h5>
+            <p>有些 OAuth provider 不返回 expires_in——过去 Claude 假设 1h 过期，每小时弹一次。
+            v2.1.118 修复——按 provider 实际行为推断。</p>
+          </div>
+          <div class="ver-tag">v2.1.118</div>
+        </div>
+
+        <div class="layer" style="margin-top: 8px;">
+          <div class="num">B</div>
+          <div class="body">
+            <h5>token 被撤销时自愈刷新</h5>
+            <p>服务端撤销 token 时，过去客户端死循环重试——
+            v2.1.118 改为弹出重新授权 UI，不再静默失败。</p>
+          </div>
+          <div class="ver-tag">v2.1.118</div>
+        </div>
+
+        <div class="layer" style="margin-top: 8px;">
+          <div class="num">C</div>
+          <div class="body">
+            <h5>步进式授权能在已有 scope 时再询问</h5>
+            <p>用户先授权 read 权限——后来需要 write，过去因为已有 token 不再询问。
+            修复后会显式 re-consent。</p>
+          </div>
+          <div class="ver-tag">v2.1.118</div>
+        </div>
+
+        <div class="layer" style="margin-top: 8px;">
+          <div class="num">D</div>
+          <div class="body">
+            <h5>macOS 钥匙串竞态修复</h5>
+            <p>多个进程同时访问 Keychain 时，旧 token 覆盖新 token——v2.1.118 加锁。</p>
+          </div>
+          <div class="ver-tag">v2.1.118</div>
+        </div>
+
+        <div class="layer" style="margin-top: 8px;">
+          <div class="num">E</div>
+          <div class="body">
+            <h5>RFC 9728 Protected Resource Metadata</h5>
+            <p>MCP HTTP OAuth 现在符合 RFC 9728——和外部系统对接的标准合规性提升。</p>
+          </div>
+          <div class="ver-tag">v2.1.119</div>
+        </div>
+
+        <div class="layer" style="margin-top: 8px;">
+          <div class="num">F</div>
+          <div class="body">
+            <h5>OAuth 401 重试循环</h5>
+            <p>设置 <code>DISABLE_EXPERIMENTAL_BETAS=1</code> 时出现 401 重试循环——v2.1.123 修复。</p>
+          </div>
+          <div class="ver-tag">v2.1.123</div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="sub">沙箱层 · 网络与文件系统</h3>
+
+        <div class="layer">
+          <div class="num">G</div>
+          <div class="body">
+            <h5>sandbox.network.deniedDomains</h5>
+            <p>新增 setting——按域名屏蔽外网请求。
+              <strong>"不让 Claude 访问内网/敏感域名"</strong> 用一行配置实现。</p>
+          </div>
+          <div class="ver-tag">v2.1.113</div>
+        </div>
+
+        <div class="layer" style="margin-top: 8px;">
+          <div class="num">H</div>
+          <div class="body">
+            <h5>子进程 PID namespace 隔离</h5>
+            <p>Claude 派发的子进程在独立 PID namespace 中——
+            杀进程不会误伤宿主，也无法看到宿主进程列表。</p>
+          </div>
+          <div class="ver-tag">v2.1.111+</div>
+        </div>
+
+        <div class="layer" style="margin-top: 8px;">
+          <div class="num">I</div>
+          <div class="body">
+            <h5>macOS 系统目录视为危险删除目标</h5>
+            <p><code>/private/{etc,var,tmp,home}</code> 路径——
+            即使用户授权了 <code>rm -rf</code>，也会再次确认这些路径。</p>
+          </div>
+          <div class="ver-tag">v2.1.113</div>
+        </div>
+
+        <div class="layer" style="margin-top: 8px;">
+          <div class="num">J</div>
+          <div class="body">
+            <h5>流式空闲处理</h5>
+            <p>API 流式响应空闲超 5 分钟自动中止并重试——
+            避免"挂起的连接"持续耗费配额。</p>
+          </div>
+          <div class="ver-tag">v2.1.116+</div>
+        </div>
+
+        <div class="alert-box" style="margin-top: 14px;">
+          <h6>典型部署示例</h6>
+          <p style="font-family: var(--mono); font-size: 12px; color: var(--text);">
+{ "sandbox": {<br>
+&nbsp;&nbsp;"network": { "deniedDomains": [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"*.internal", "metadata.google", "169.254.169.254"<br>
+&nbsp;&nbsp;] }<br>
+}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 4: Policy layer ===== -->
+  <section class="slide">
+    <div class="eyebrow">13.3 · 第 4 层 · 策略</div>
+    <h2 class="section">策略层：用户自主权<br>是<em>不可让渡的</em></h2>
+
+    <p class="lead" style="font-size: 17px;">
+      最值得强调的一点：哪怕在 <strong>Auto Mode（用户主动开启的连续自主执行）</strong> 下，
+      Anthropic 仍然要求 Claude <strong>对不可逆操作显式 ask</strong>。
+      不是 AI 决定"用户开了 auto 就什么都行"。
+    </p>
+
+    <h3 class="sub" style="margin-top: 22px;">Auto Mode 下仍需确认的动作（系统提示原文）</h3>
+    <pre class="code"><span class="label">Auto Mode 内置守门规则（节选）</span>
+✗ 删除文件 / 分支 / 数据库表
+✗ kill 进程
+✗ rm -rf
+✗ 覆盖未提交的修改
+✗ 强推 (push --force)
+✗ git reset --hard
+✗ amend 已发布的 commit
+✗ 移除/降级依赖
+✗ 修改 CI/CD 流水线
+✗ 推代码 / 创建/关闭/评论 PR / Issue
+✗ 发消息（Slack / 邮件 / GitHub）
+✗ 上传到第三方工具（diagram renderer / pastebin / gist）
+✗ 修改共享基础设施或权限</pre>
+
+    <div class="grid-2" style="margin-top: 22px;">
+      <div>
+        <h3 class="sub">条件 Hook · 把策略表达成代码</h3>
+        <pre class="code"><span class="label">.claude/hooks.json</span>
+{
+  <span class="s">"PreToolUse"</span>: [
+    {
+      <span class="s">"matcher"</span>: {<span class="s">"type"</span>: <span class="s">"Bash"</span>},
+      <span class="s">"if"</span>: <span class="s">"command =~ '^git push'"</span>,
+      <span class="s">"command"</span>: <span class="s">"./scripts/check-branch-policy.sh"</span>
+    },
+    {
+      <span class="s">"matcher"</span>: {<span class="s">"type"</span>: <span class="s">"mcp_tool"</span>, <span class="s">"name"</span>: <span class="s">"slack.send_message"</span>},
+      <span class="s">"if"</span>: <span class="s">"channel =~ '^#prod-'"</span>,
+      <span class="s">"command"</span>: <span class="s">"./scripts/require-double-confirm.sh"</span>
+    }
+  ]
+}</pre>
+      </div>
+
+      <div>
+        <h3 class="sub">真实场景</h3>
+        <div class="row-feat"><span class="dot"></span><span><strong>合规：</strong>所有写 prod DB 触发 ServiceNow 工单 + 审批</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>财务：</strong>session 启动时检查月度 token 预算，超额阻断</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>安全：</strong>PostToolUse 自动 redact API key / 信用卡号 / 邮箱</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>追踪：</strong>Stop 事件写入团队 audit log + Datadog</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>开发：</strong>git push 之前必须先跑 lint + unit test</span></div>
+
+        <div class="alert-box" style="margin-top: 18px;">
+          <h6>策略 vs 默认值的关系</h6>
+          <p>"用户自主权" 不等于"什么都让 AI 决定"——
+          它是"用户能<strong>定义</strong>规则"。Auto Mode 是用户决定的；
+          condition hook 是用户定义的；deny 规则是用户配置的。
+          AI 只是<strong>执行者</strong>。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 5: Mapping ===== -->
+  <section class="slide">
+    <div class="eyebrow">13.4 · 设计哲学映射</div>
+    <h2 class="section">"<em>能力 ↔ 边界</em>" 永远<br>同步上升</h2>
+
+    <p class="lead" style="font-size: 18px;">
+      4 月安全更新的累积效果：Claude Code 比 3 月明显<strong>更聪明</strong>，但同时<strong>更难误用</strong>。
+      这是 Anthropic 一贯立场——能力提升不允许"先发布、再修补"。
+    </p>
+
+    <table class="compare" style="margin-top: 22px;">
+      <thead>
+        <tr><th>更新</th><th>对应原则</th><th>体现</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feature">find -exec / -delete 单独授权</td>
+          <td class="principle-tag">Harmless</td>
+          <td>能力越大，授权颗粒越细——不让"通配规则"成为 attack surface。</td>
+        </tr>
+        <tr>
+          <td class="feature">wrapper 命令检测</td>
+          <td class="principle-tag">Harmless</td>
+          <td>不让 sudo / env 等成为绕过路径——deny 规则覆盖完整命令树。</td>
+        </tr>
+        <tr>
+          <td class="feature">Read-only 命令免提示</td>
+          <td class="principle-tag">理解意图 + Helpful</td>
+          <td>区分"看"和"改"——只对真正可能破坏的动作设防。</td>
+        </tr>
+        <tr>
+          <td class="feature">OAuth 全链修复</td>
+          <td class="principle-tag">Honest</td>
+          <td>承认 OAuth 复杂——把脆弱处一个个修扎实，而不是用变通绕开。</td>
+        </tr>
+        <tr>
+          <td class="feature">deniedDomains</td>
+          <td class="principle-tag">用户自主</td>
+          <td>策略可表达——"不能访问内网" 用一行 setting 实现。</td>
+        </tr>
+        <tr>
+          <td class="feature">PID namespace 隔离</td>
+          <td class="principle-tag">Harmless</td>
+          <td>子进程不能"看见"或"误伤"宿主——即使被 prompt injection 也限制最大伤害。</td>
+        </tr>
+        <tr>
+          <td class="feature">Auto Mode 仍需确认</td>
+          <td class="principle-tag">用户自主</td>
+          <td>不可逆动作不让渡——哪怕用户开了 auto，也保留 stop point。</td>
+        </tr>
+        <tr>
+          <td class="feature">条件 Hook</td>
+          <td class="principle-tag">用户自主</td>
+          <td>策略表达力到位——团队/合规要求都能精确编码进规则。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="hint" style="margin-top: 24px;">
+      下一页：把权限设计从单机延伸到组织——RBAC + SCIM + 企业治理。
+    </p>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Security &amp; Permissions</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">13 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

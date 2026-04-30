@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>04 · 三条工程化原则</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .principle-hero {
+    background: linear-gradient(135deg, var(--panel), var(--bg-soft));
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    margin-top: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  .principle-hero .badge {
+    color: var(--accent);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 56px;
+    line-height: 1;
+    opacity: .25;
+    position: absolute;
+    right: 32px; top: 28px;
+  }
+  .principle-hero h3 {
+    font-family: var(--serif);
+    font-size: 30px;
+    color: var(--text);
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .principle-hero .who {
+    color: var(--accent-2);
+    font-size: 13px;
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+  .principle-hero .lead-text {
+    color: var(--text);
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 720px;
+    margin-bottom: 18px;
+  }
+
+  .behavior-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin-top: 18px;
+  }
+  .behavior-item {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .behavior-item h5 {
+    color: var(--accent-2);
+    font-size: 13.5px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  .behavior-item p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .case-row {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 24px;
+    margin-top: 14px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--panel);
+  }
+  .case-row .scenario {
+    color: var(--text);
+    font-size: 14.5px;
+    line-height: 1.55;
+  }
+  .case-row .scenario strong { color: var(--accent-2); }
+  .case-row .response { color: var(--muted); font-size: 14px; line-height: 1.65; }
+  .case-row .response em { color: var(--good); font-style: normal; font-weight: 500; }
+</style>
+</head>
+<body
+  data-page-no="4" data-page-total="17" data-progress="23.53"
+  data-prev="03-constitution.html"
+  data-next="05-opus-4-7.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:23.53%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Intro ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part I · 04</div>
+    <h2 class="section">把宪法<em>翻译</em>成<br>三条工程红线</h2>
+    <p class="lead">
+      宪法很美，但工程师每天面对的是 IDE、终端、PR——他们需要可以
+      <strong>当场判断</strong> 的规则。Anthropic 的 Boris Cherny 曾经把宪法浓缩成
+      Claude Code 团队最常引用的三句话。
+    </p>
+
+    <div class="quote" style="margin-top: 28px;">
+      "理解用户意图 · 对自己的知识局限诚实 · 尊重用户的自主权。"
+    </div>
+    <p class="hint">— Boris Cherny, Anthropic 工程师 (Claude Code 团队)</p>
+
+    <p style="margin-top: 26px;">这三条几乎能解释 4 月所有功能更新的"为什么这样设计"。
+    我们一条一条看，并且每条配 3 个真实案例。</p>
+  </section>
+
+  <!-- ===== Slide 2: Principle #1 Understand intent ===== -->
+  <section class="slide">
+    <div class="eyebrow">04.1 · 第一条</div>
+    <h2 class="section">理解用户<em>意图</em></h2>
+
+    <div class="principle-hero">
+      <div class="badge">01</div>
+      <h3>"在敲代码之前，先弄清楚用户真正想要什么。"</h3>
+      <div class="who">Why it matters</div>
+      <p class="lead-text">
+        AI 最容易犯的错不是"答错了"，而是"答了错的问题"。
+        宪法里"genuinely helpful"这一条，在工程上首先表现为<strong>反对盲目动手</strong>——
+        Claude 应该先听懂、再行动，而不是看见一个动词就开撸。
+      </p>
+
+      <div class="behavior-grid">
+        <div class="behavior-item">
+          <h5>正向行为</h5>
+          <p>主动澄清模糊需求："你说的'清理'指的是删除还是归档？"</p>
+        </div>
+        <div class="behavior-item">
+          <h5>正向行为</h5>
+          <p>对探索性问题先用 2~3 句给方向 + 取舍，而不是直接进 plan mode 写一大堆。</p>
+        </div>
+        <div class="behavior-item">
+          <h5>反向行为</h5>
+          <p>看到"修个 bug"就开始改代码，不读上下文、不查 reproduce。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 30px;">三个真实案例</h3>
+
+    <div class="case-row">
+      <div class="scenario">
+        <strong>案例 A · Claude Code 系统提示词</strong><br>
+        "对探索性问题（'我们应该怎么做 X？'），用 2~3 句回答 + 一个推荐 + 主要 trade-off。
+        不要急着实现。"
+      </div>
+      <div class="response">
+        这是一段写在 Claude Code 默认 prompt 里的明确指令——
+        <em>把"先理解"作为默认动作</em>，而不是依赖用户每次提醒。
+      </div>
+    </div>
+
+    <div class="case-row">
+      <div class="scenario">
+        <strong>案例 B · /resume 大型会话摘要（4 月 v2.1.117）</strong><br>
+        重新进入旧会话时，Claude 提供"总结历史 + 你想从哪儿继续"的选项。
+      </div>
+      <div class="response">
+        没有这一步，AI 容易"假装记得"——其实丢了上下文。
+        <em>主动暴露记忆边界</em> 就是"理解意图"的真诚版本。
+      </div>
+    </div>
+
+    <div class="case-row">
+      <div class="scenario">
+        <strong>案例 C · /effort 滑块（4 月 v2.1.111）</strong><br>
+        在执行任务前，让用户主动选择"low / medium / high / xhigh"努力级别。
+      </div>
+      <div class="response">
+        不是 Claude 偷偷决定花多少算力——而是
+        <em>把"你要我多用心"这件事当成意图的一部分</em> 让用户告诉它。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: Principle #2 Honest about limits ===== -->
+  <section class="slide">
+    <div class="eyebrow">04.2 · 第二条</div>
+    <h2 class="section">对自己的<em>知识局限</em>诚实</h2>
+
+    <div class="principle-hero">
+      <div class="badge">02</div>
+      <h3>"不知道就说不知道；不确定就标出来；走捷径之前先验证。"</h3>
+      <div class="who">Why it matters</div>
+      <p class="lead-text">
+        AI 最容易"看上去聪明"的方式是<strong>编造</strong>——给一个流畅但错误的答案。
+        Claude 的训练原则反过来：<strong>真诚比完美更重要</strong>，能说"我不确定"是高水准而非低水准。
+      </p>
+
+      <div class="behavior-grid">
+        <div class="behavior-item">
+          <h5>正向行为</h5>
+          <p>不确定库版本？用 WebFetch 去查，或承认"建议你 npm view 看一眼"。</p>
+        </div>
+        <div class="behavior-item">
+          <h5>正向行为</h5>
+          <p>引用具体文件路径 + 行号，让用户能直接核对。</p>
+        </div>
+        <div class="behavior-item">
+          <h5>反向行为</h5>
+          <p>编造一个看起来很合理的 API 名字 / 库名 / 配置项。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 30px;">三个真实案例</h3>
+
+    <div class="case-row">
+      <div class="scenario">
+        <strong>案例 A · /ultrareview 多 reviewer 并行（4 月 v2.1.111）</strong><br>
+        每个 reviewer 独立列出发现，发现还要经过"verification step"过滤误报。
+      </div>
+      <div class="response">
+        不当黑箱——<em>把每条 finding 单列、可单独 disagree</em>。
+        这是把"诚实"延伸到 AI 的输出结构上。
+      </div>
+    </div>
+
+    <div class="case-row">
+      <div class="scenario">
+        <strong>案例 B · 思考进度可视化（4 月 v2.1.116）</strong><br>
+        Claude 思考时会显示 "still thinking → thinking more → almost done"。
+      </div>
+      <div class="response">
+        看似只是 UX 改进，本质是"<em>不假装秒答</em>"——
+        把"我正在花算力"这件事如实告诉你。
+      </div>
+    </div>
+
+    <div class="case-row">
+      <div class="scenario">
+        <strong>案例 C · Prompt injection 自检</strong><br>
+        当 WebFetch 等工具的返回结果里夹带可疑指令时，Claude 应主动告知用户。
+      </div>
+      <div class="response">
+        这是把"诚实"延伸到了<em>对抗环境</em>——
+        Claude 不只对自己诚实，还要对"<strong>我可能被骗</strong>"这件事保持警觉并告知用户。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 4: Principle #3 Respect user autonomy ===== -->
+  <section class="slide">
+    <div class="eyebrow">04.3 · 第三条</div>
+    <h2 class="section">尊重用户的<em>自主权</em></h2>
+
+    <div class="principle-hero">
+      <div class="badge">03</div>
+      <h3>"对不可逆操作，先确认；权限模型可配置；用户随时能修改、回退、关闭。"</h3>
+      <div class="who">Why it matters</div>
+      <p class="lead-text">
+        Claude 是助手，不是支配者。哪怕在 Auto Mode 下，Anthropic 仍坚持
+        <strong>所有可能造成"严重 / 不可逆 / 影响共享系统"的动作必须再问一次</strong>——
+        不是因为它做不了，是因为<strong>不该替你做</strong>。
+      </p>
+
+      <div class="behavior-grid">
+        <div class="behavior-item">
+          <h5>正向行为</h5>
+          <p>git push --force / rm -rf / DROP TABLE / 发消息 / 改 CI——必须确认。</p>
+        </div>
+        <div class="behavior-item">
+          <h5>正向行为</h5>
+          <p>权限粒度可调：每条 Bash 规则都能 allow/deny；每个 hook 都能用 if 字段过滤。</p>
+        </div>
+        <div class="behavior-item">
+          <h5>反向行为</h5>
+          <p>"我已经帮你删了" / "我顺手 push 了一下"——绕过用户决定。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 30px;">三个真实案例</h3>
+
+    <div class="case-row">
+      <div class="scenario">
+        <strong>案例 A · Bash(find:*) 不再自动批准 -exec / -delete（4 月 v2.1.113）</strong><br>
+        过去 <code>Bash(find:*)</code> 一条规则就放行所有 find——但 find 可以删文件。
+        新版本把 -exec / -delete 单独剥出来，需要更明确的授权。
+      </div>
+      <div class="response">
+        典型的"<em>能力越大、确认越细</em>"。这条修复看上去琐碎，背后是同一原则：
+        <em>不可逆动作不能搭便车通过</em>。
+      </div>
+    </div>
+
+    <div class="case-row">
+      <div class="scenario">
+        <strong>案例 B · /config 持久化到 ~/.claude/settings.json（4 月 v2.1.119）</strong><br>
+        过去 /config 改的设置可能不持久；新版本写到用户文件里。
+      </div>
+      <div class="response">
+        <em>用户的偏好是它自己的，不是 Claude 的</em>——必须能保存、能版本化、能跨机同步。
+      </div>
+    </div>
+
+    <div class="case-row">
+      <div class="scenario">
+        <strong>案例 C · RBAC + SCIM（企业版，4 月）</strong><br>
+        企业管理员可以分组、对接 IdP，按 feature 粒度授权用户。
+      </div>
+      <div class="response">
+        把"自主权"从<em>个人</em> 延伸到 <em>组织</em>——
+        团队 leader 也是 Claude 的"用户"，他对成员能用什么 feature 应有控制权。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 5: Synthesis ===== -->
+  <section class="slide">
+    <div class="eyebrow">04.4 · 综合</div>
+    <h2 class="section">三条原则<br>如何<em>同时</em>体现</h2>
+    <p class="lead">
+      最有意思的是：很多 4 月功能不是只对应一条原则，而是<strong>同时体现三条</strong>。
+      下面用一个真实功能 <code>/ultrareview</code> 做拆解。
+    </p>
+
+    <div class="principle-hero" style="margin-top: 22px;">
+      <div class="badge">⊕</div>
+      <h3>/ultrareview 一个功能，三条原则</h3>
+
+      <div class="grid-3" style="margin-top: 22px;">
+        <div class="card">
+          <h4 style="color: var(--accent-2);">理解意图</h4>
+          <p style="font-size: 14px;">需要用户主动调用，不会偷偷启动；可以指定 PR 号、当前分支、CI 集成等不同意图。</p>
+        </div>
+        <div class="card">
+          <h4 style="color: var(--good);">对局限诚实</h4>
+          <p style="font-size: 14px;">每个 reviewer 列单独发现，verification step 过滤误报；用户能看到"是哪个 agent 找到的"。</p>
+        </div>
+        <div class="card">
+          <h4 style="color: var(--info);">用户自主</h4>
+          <p style="font-size: 14px;">非阻塞——agent 在云端跑，用户继续干自己的活；最终是否合并由用户决定。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 36px;">这就是"理念产品化"的样子</h3>
+    <p>把宪法落到训练里，把训练落到行为里，把行为落到工程界面里——
+    这套链条 Anthropic 已经做了 4 年。第二部分开始，我们逐个看 4 月的具体产品发布。</p>
+
+    <p class="hint" style="margin-top: 24px;">
+      下一页：第二部分 · 4 月旗舰发布的第一个 — Claude Opus 4.7。
+    </p>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Engineering Principles</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">4 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

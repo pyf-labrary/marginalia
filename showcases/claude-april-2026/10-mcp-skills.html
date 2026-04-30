@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10 · MCP / Skills / Hooks</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .pillar-stack {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 18px;
+  }
+  .pillar-stack .col {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px;
+    height: 100%;
+  }
+  .pillar-stack .col h3 {
+    color: var(--text);
+    font-size: 19px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .pillar-stack .col h3 .ico {
+    color: var(--accent);
+    font-size: 22px;
+  }
+  .pillar-stack .col .tag-line {
+    color: var(--accent-2);
+    font-family: var(--mono);
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+
+  .change-list .change {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .change-list .change h5 {
+    color: var(--text);
+    font-size: 14.5px;
+    margin-bottom: 4px;
+  }
+  .change-list .change p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .change-list .change .v-tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    color: var(--accent-2);
+    background: rgba(204,120,92,0.08);
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-right: 6px;
+  }
+</style>
+</head>
+<body
+  data-page-no="10" data-page-total="17" data-progress="58.82"
+  data-prev="09-ultrareview-effort.html"
+  data-next="11-themes-vim-ui.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:58.82%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Intro ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part III · 10</div>
+    <h2 class="section">扩展性三件套：<br>MCP · Skills · Hooks</h2>
+    <p class="lead" style="font-size: 18px;">
+      Claude Code 的核心是<strong>可扩展性</strong>——不是"我们做好一切"，而是"我们提供框架，你扩它"。
+      4 月在三个方向都做了重要打磨。
+    </p>
+
+    <div class="pillar-stack">
+      <div class="col">
+        <h3><span class="ico">🔌</span>MCP</h3>
+        <div class="tag-line">Model Context Protocol</div>
+        <p>把外部工具/服务接入 Claude 的开放协议。
+          你能让 Claude 操作你的数据库、Jira、内部 API、向量库——任何能写成 MCP server 的东西。</p>
+      </div>
+      <div class="col">
+        <h3><span class="ico">🧩</span>Skills</h3>
+        <div class="tag-line">可调用的能力包</div>
+        <p>预打包的工作流——比如 init 项目骨架、运行 security review、跑 ESLint 修复。
+          类似"宏 + 提示词模板"的组合。</p>
+      </div>
+      <div class="col">
+        <h3><span class="ico">🪝</span>Hooks</h3>
+        <div class="tag-line">事件钩子</div>
+        <p>在工具调用前/后、用户提交前、模型响应后等关键事件上挂自定义逻辑。
+          配置驱动、不写代码也能用。</p>
+      </div>
+    </div>
+
+    <p style="margin-top: 28px;">
+      这三者的关系：<strong>MCP 提供工具 → Skills 把工具组合成能力 → Hooks 在能力执行的关键节点插入控制</strong>。
+      下面三页各看一面。
+    </p>
+  </section>
+
+  <!-- ===== Slide 2: MCP ===== -->
+  <section class="slide">
+    <div class="eyebrow">10.1 · MCP</div>
+    <h2 class="section">MCP · 4 月关键更新</h2>
+
+    <div class="grid-2">
+      <div class="change-list">
+        <div class="change">
+          <h5><span class="v-tag">v2.1.121</span>alwaysLoad 配置选项</h5>
+          <p>过去 MCP 工具是 lazy load——首次使用时延迟加载，可能几秒卡顿。
+          <code>alwaysLoad: true</code> 让指定 server 启动就加载，避免延迟。
+          代价：启动稍慢，但运行时无感。<strong>对生产可靠性敏感的工作流推荐</strong>。</p>
+        </div>
+        <div class="change">
+          <h5><span class="v-tag">v2.1.117</span>并发连接默认</h5>
+          <p>本地 MCP server + claude.ai MCP server 现在并发连接。
+          老实现是串行——5 个 server 配下来启动等好几秒。
+          新实现：所有 server 同时握手，启动时间几乎只决定于最慢的那个。</p>
+        </div>
+        <div class="change">
+          <h5><span class="v-tag">v2.1.118</span>Hooks 支持 MCP 工具调用</h5>
+          <p><code>type: "mcp_tool"</code> 让 hook 能拦截 MCP 工具调用——
+          可以用来强制审批、记日志、改写参数、阻止特定操作。<br>
+          典型用例：所有 production 数据库写操作必须二次确认。</p>
+        </div>
+        <div class="change">
+          <h5><span class="v-tag">v2.1.118</span>OAuth 修复（关键）</h5>
+          <p>修复一系列长期 OAuth 问题：① token 没 expires_in 时不再每小时重认证；
+          ② 步进式授权能在已有 scope 时弹出新意图；
+          ③ token 被撤销时自愈刷新；④ macOS 钥匙串竞态修了。
+          这些 4 月之前是社区抱怨的高频项。</p>
+        </div>
+        <div class="change">
+          <h5><span class="v-tag">v2.1.119</span>RFC 9728 支持</h5>
+          <p>MCP HTTP OAuth 现在符合 RFC 9728 (Protected Resource Metadata)——
+          提升与外部系统对接的标准合规性。修复 OAuth 发现返回非 JSON 时连接失败。</p>
+        </div>
+        <div class="change">
+          <h5><span class="v-tag">v2.1.122</span>/mcp 显示连接器隐藏关系</h5>
+          <p>当手动添加的 server 与 claude.ai 内置连接器同名时，
+          /mcp 现在能告诉你"哪个被覆盖了"——避免"为啥我配了没生效"的迷惑。</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="sub">MCP 配置示例</h3>
+        <pre class="code"><span class="label">~/.claude/mcp.json</span>
+{
+  <span class="s">"servers"</span>: {
+    <span class="s">"postgres"</span>: {
+      <span class="s">"command"</span>: <span class="s">"mcp-postgres"</span>,
+      <span class="s">"args"</span>: [<span class="s">"--readonly"</span>],
+      <span class="s">"alwaysLoad"</span>: <span class="v">true</span>,    <span class="c"># 启动即加载</span>
+      <span class="s">"env"</span>: {
+        <span class="s">"DATABASE_URL"</span>: <span class="s">"$PG_URL"</span>
+      }
+    },
+    <span class="s">"jira"</span>: {
+      <span class="s">"command"</span>: <span class="s">"mcp-jira"</span>,
+      <span class="s">"oauth"</span>: {
+        <span class="s">"clientId"</span>: <span class="s">"..."</span>,
+        <span class="s">"scope"</span>: [<span class="s">"read:jira-work"</span>]
+      },
+      <span class="s">"headersHelper"</span>: <span class="s">"./jira-auth.sh"</span>
+    }
+  }
+}</pre>
+
+        <h3 class="sub" style="margin-top: 20px;">配套 Hook 示例</h3>
+        <pre class="code"><span class="label">~/.claude/hooks.json</span>
+{
+  <span class="s">"PreToolUse"</span>: [{
+    <span class="s">"matcher"</span>: {
+      <span class="s">"type"</span>: <span class="s">"mcp_tool"</span>,
+      <span class="s">"name"</span>: <span class="s">"postgres.execute_*"</span>
+    },
+    <span class="s">"if"</span>: <span class="s">"environment == 'production'"</span>,
+    <span class="s">"command"</span>: <span class="s">"./scripts/require-approval.sh"</span>
+  }]
+}</pre>
+        <p class="hint">↑ 生产环境下任何 postgres 写操作都先经过 approval 脚本。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: Skills ===== -->
+  <section class="slide">
+    <div class="eyebrow">10.2 · Skills</div>
+    <h2 class="section">Skills · 让常用工作流"<em>开箱即用</em>"</h2>
+
+    <div class="grid-2">
+      <div>
+        <p>Skills 是 Claude Code 的"小程序生态"——你或团队可以打包一个特定能力（含提示词、工具调用顺序、配置），
+        分发给整个项目使用。4 月围绕 Skills 做了几件事：</p>
+
+        <div class="change-list" style="margin-top: 14px;">
+          <div class="change">
+            <h5><span class="v-tag">v2.1.111</span>/skills 按 token 数排序</h5>
+            <p>按 <code>t</code> 切换排序——让你看到哪些 skill 上下文成本高。
+              对本身就是 prompt 的 skill 来说，token 数是真实成本。</p>
+          </div>
+          <div class="change">
+            <h5><span class="v-tag">v2.1.121</span>/skills 类型过滤搜索</h5>
+            <p>新增搜索框，可按类型 / 关键词过滤——长 skill 列表不用滚到底。</p>
+          </div>
+          <div class="change">
+            <h5><span class="v-tag">v2.1.111</span>新增 /less-permission-prompts</h5>
+            <p>这是一个内置 skill——扫描你最近的会话，识别频繁出现的 read-only Bash / MCP 调用，
+              提议加到 allowlist 减少授权弹窗。<strong>是"减少摩擦"的体现</strong>。</p>
+          </div>
+          <div class="change">
+            <h5><span class="v-tag">v2.1.111</span>/powerup 系统</h5>
+            <p>引入 /powerup——新用户的交互式 onboarding。
+              比 docs 更主动，让首次用户在几分钟内体验关键功能。</p>
+          </div>
+          <div class="change">
+            <h5><span class="v-tag">v2.1.111</span>Skill 访问内置 slash 命令</h5>
+            <p>Skills 现在能调用内置 slash 命令——意味着 skill 能用 /resume、/effort 等核心能力组合自己的工作流。</p>
+          </div>
+          <div class="change">
+            <h5><span class="v-tag">v2.1.120</span>${CLAUDE_EFFORT} 变量</h5>
+            <p>Skill 内可以引用当前努力级别——同一个 skill 在不同 effort 下行为不同（比如 low effort 跳过深度检查）。</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="sub">一个 Skill 的样子</h3>
+        <pre class="code"><span class="label">.claude/skills/setup-feature-flag.md</span>
+---
+name: setup-feature-flag
+description: Wire up a new GrowthBook flag
+type: development
+trigger: "add a feature flag"
+---
+
+You are setting up a feature flag in this codebase.
+
+Steps:
+1. Read .growthbook/flags.yaml to see existing flags
+2. Add the new flag with $${KEY} as the user provided
+3. Update server-side gate in src/flags/index.ts
+4. Add a test in src/flags/index.test.ts
+5. Open a PR draft
+
+If $${CLAUDE_EFFORT} is xhigh, also:
+- Add a kill-switch hook
+- Document rollout plan
+- Schedule a /loop check in 2 weeks
+</pre>
+
+        <h3 class="sub" style="margin-top: 20px;">Skill 生态的设计哲学</h3>
+        <div class="card-soft">
+          <h4>① 团队 &gt; 个人</h4>
+          <p>Skills 默认放在 <code>.claude/skills/</code>——和代码一起 git commit，
+            团队成员自动同步。不是"装在我电脑上的 plugin"，是"项目内的能力"。</p>
+        </div>
+        <div class="card-soft" style="margin-top: 12px;">
+          <h4>② 文本 &gt; 代码</h4>
+          <p>Skill 是 markdown，不是 JS——任何团队成员都能读、能改、能 review。
+            技术门槛极低。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 4: Hooks ===== -->
+  <section class="slide">
+    <div class="eyebrow">10.3 · Hooks</div>
+    <h2 class="section">Hooks · 配置驱动的自动化</h2>
+
+    <p>Hooks 让你在事件点插入自定义脚本——不写代码（指 JS / Python），只配 JSON。
+    4 月的 Hook 升级让它从"小修补"变成"<strong>可信赖的策略层</strong>"。</p>
+
+    <div class="grid-2" style="margin-top: 18px;">
+      <div>
+        <h3 class="sub">支持的事件点</h3>
+        <table class="compare">
+          <tr><td class="feature">UserPromptSubmit</td><td>用户按回车前——可拦截/改写 prompt</td></tr>
+          <tr><td class="feature">PreToolUse</td><td>工具调用前——可强制审批/改参数/拒绝</td></tr>
+          <tr><td class="feature">PostToolUse</td><td>工具调用后——可改输出（v2.1.121 新）</td></tr>
+          <tr><td class="feature">SessionStart</td><td>新会话开始</td></tr>
+          <tr><td class="feature">Stop</td><td>Claude 停止响应（写日志/触发后续）</td></tr>
+        </table>
+
+        <h3 class="sub" style="margin-top: 22px;">条件 Hook (v2.1.118 新)</h3>
+        <pre class="code"><span class="c"># if 字段使用权限规则语法过滤执行</span>
+{
+  <span class="s">"PreToolUse"</span>: [{
+    <span class="s">"matcher"</span>: {<span class="s">"type"</span>: <span class="s">"Bash"</span>},
+    <span class="s">"if"</span>: <span class="s">"command =~ '^rm -rf'"</span>,
+    <span class="s">"command"</span>: <span class="s">"./scripts/double-confirm.sh"</span>
+  }]
+}</pre>
+      </div>
+
+      <div>
+        <h3 class="sub">PostToolUse 改写输出 (v2.1.121 新)</h3>
+        <pre class="code"><span class="label">scripts/redact-secrets.sh</span>
+<span class="c">#!/bin/bash</span>
+<span class="c"># 接收 tool 的原始输出 from stdin</span>
+<span class="c"># 通过 hookSpecificOutput.updatedToolOutput 替换</span>
+
+INPUT=$(cat)
+REDACTED=$(echo <span class="s">"$INPUT"</span> | sed -E <span class="s">'s/sk-[A-Za-z0-9]+/[REDACTED]/g'</span>)
+
+cat &lt;&lt;EOF
+{
+  <span class="s">"hookSpecificOutput"</span>: {
+    <span class="s">"updatedToolOutput"</span>: <span class="s">"$REDACTED"</span>
+  }
+}
+EOF</pre>
+        <p class="hint">↑ 在 Claude 看到工具输出之前自动 redact 密钥——
+        是"对 prompt injection 防御"的具体落地。</p>
+
+        <h3 class="sub" style="margin-top: 22px;">真实使用场景</h3>
+        <div class="row-feat"><span class="dot"></span><span><strong>合规：</strong>所有 prod DB 写操作触发 ServiceNow 工单</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>成本：</strong>session 启动时检查月度 token 预算</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>安全：</strong>PostToolUse 自动 redact 密钥</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>追踪：</strong>Stop 事件写入团队 audit log</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 5: Mapping ===== -->
+  <section class="slide">
+    <div class="eyebrow">10.4 · 设计哲学映射</div>
+    <h2 class="section">扩展性背后<br>的 "<em>哲学声明</em>"</h2>
+
+    <div class="grid-2">
+      <div>
+        <p class="lead" style="font-size: 17px;">
+          Anthropic 把"扩展性"做得这么厚，本身就是哲学的体现：
+          <strong>不替用户决定什么是好工具，而是把控制权下放到用户手里</strong>。
+        </p>
+
+        <div class="card-soft" style="margin-top: 18px;">
+          <h3 class="sub" style="color: var(--accent-2);">核心立场</h3>
+          <p>"Claude Code 不假设它知道你的项目长什么样、你的合规要求是什么、你的预算上限有多少——
+          所以它给你 MCP 接你的工具、给你 Skills 表达你的工作流、给你 Hooks 定义你的策略。"</p>
+        </div>
+      </div>
+
+      <div>
+        <table class="compare">
+          <tr>
+            <td class="feature">MCP alwaysLoad / 并发</td>
+            <td class="principle-tag">Helpful</td>
+            <td>消除摩擦——让"接外部工具"成本接近零。</td>
+          </tr>
+          <tr>
+            <td class="feature">OAuth 全链修复</td>
+            <td class="principle-tag">Honest</td>
+            <td>承认 OAuth 的复杂性——做扎实而不是回避。</td>
+          </tr>
+          <tr>
+            <td class="feature">Skills · 团队级 markdown</td>
+            <td class="principle-tag">用户自主</td>
+            <td>把"工作流"做成代码资产——团队拥有，团队改。</td>
+          </tr>
+          <tr>
+            <td class="feature">/less-permission-prompts</td>
+            <td class="principle-tag">理解意图</td>
+            <td>主动观察用户重复行为，提议优化——是"理解"的进阶版。</td>
+          </tr>
+          <tr>
+            <td class="feature">Hooks 条件 if 字段</td>
+            <td class="principle-tag">用户自主</td>
+            <td>策略可精确表达，不是"all or nothing"。</td>
+          </tr>
+          <tr>
+            <td class="feature">PostToolUse 改写输出</td>
+            <td class="principle-tag">Harmless</td>
+            <td>用户能在 Claude 看到工具输出前 redact 敏感信息——防 prompt injection。</td>
+          </tr>
+        </table>
+
+        <p class="hint" style="margin-top: 22px;">
+          下一页：主题 / Vim / UI 改进——开发者每天都会感受到的体验提升。
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · MCP / Skills / Hooks</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">10 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

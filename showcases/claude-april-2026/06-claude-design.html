@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>06 · Claude Design</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .hero-design {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 36px;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .design-canvas {
+    aspect-ratio: 4/3;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: linear-gradient(135deg, #1e1e1e, #0e0e0e);
+    position: relative;
+  }
+  .design-canvas .pseudo-slide {
+    position: absolute;
+    border-radius: 6px;
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    box-shadow: 0 8px 24px rgba(0,0,0,.4);
+  }
+  .design-canvas .pseudo-slide.s1 { top: 16%; left: 10%; width: 56%; height: 60%; transform: rotate(-3deg); }
+  .design-canvas .pseudo-slide.s2 { top: 22%; left: 30%; width: 56%; height: 58%; transform: rotate(2deg); border-color: var(--accent); }
+  .design-canvas .pseudo-slide .bar { background: var(--accent); height: 6px; border-radius: 2px; margin: 14px; width: 42%; }
+  .design-canvas .pseudo-slide .text { background: var(--line); height: 4px; border-radius: 2px; margin: 8px 14px; }
+  .design-canvas .pseudo-slide .text.short { width: 30%; }
+  .design-canvas .pseudo-slide .text.mid { width: 60%; }
+  .design-canvas .pseudo-slide .text.long { width: 80%; }
+  .design-canvas .pseudo-slide .img-block {
+    background: rgba(204,120,92,0.15);
+    border: 1px dashed rgba(204,120,92,0.4);
+    margin: 14px;
+    height: 36%;
+    border-radius: 4px;
+  }
+  .design-canvas .label-tag {
+    position: absolute;
+    bottom: 14px; right: 16px;
+    color: var(--accent-2);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .1em;
+  }
+
+  .step-list {
+    counter-reset: step;
+    margin-top: 16px;
+  }
+  .step-list .step {
+    counter-increment: step;
+    display: flex;
+    gap: 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .step-list .step::before {
+    content: counter(step);
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--accent);
+    font-size: 28px;
+    width: 36px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .step-list .step h5 {
+    color: var(--text);
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .step-list .step p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body
+  data-page-no="6" data-page-total="17" data-progress="35.29"
+  data-prev="05-opus-4-7.html"
+  data-next="07-cowork.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:35.29%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Hero ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part II · 06 · Anthropic Labs</div>
+    <span class="badge-date">2026-04-17 · research preview</span>
+    <h2 class="section" style="margin-top: 6px;">Claude <em>Design</em>：<br>对话即<em>设计</em>，输出即<em>交付物</em></h2>
+
+    <div class="hero-design">
+      <div>
+        <p class="lead" style="font-size: 18px;">
+          这是 Anthropic 第一次让 Claude 直接产出"<strong>可视化交付物</strong>"——
+          不是 markdown 描述，不是图片建议，而是真正的<strong>原型 / 幻灯片 / 一页纸</strong>。
+        </p>
+
+        <div class="card-soft" style="margin-top: 22px;">
+          <h3 class="sub">一句话总结</h3>
+          <p style="color: var(--text); font-family: var(--serif); font-size: 18px; line-height: 1.55;">
+          "用对话替代 Figma 工具栏——你说想要什么，Claude 直接做给你看。"
+          </p>
+        </div>
+
+        <div class="grid-3" style="margin-top: 22px;">
+          <div class="card">
+            <h4>受众</h4>
+            <p style="font-size: 13.5px;">Pro / Max / Team / Enterprise 订阅用户均可用，包含在订阅额度内。</p>
+          </div>
+          <div class="card">
+            <h4>访问</h4>
+            <p style="font-size: 13.5px;"><code>claude.ai/design</code> 直达；移动端通过 Claude.ai 应用进入。</p>
+          </div>
+          <div class="card">
+            <h4>底层模型</h4>
+            <p style="font-size: 13.5px;">Opus 4.7 驱动——3× 视觉是核心前提（能"看懂"上传的设计图）。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-canvas">
+        <div class="pseudo-slide s1">
+          <div class="bar"></div>
+          <div class="text long"></div>
+          <div class="text mid"></div>
+          <div class="img-block"></div>
+          <div class="text short"></div>
+        </div>
+        <div class="pseudo-slide s2">
+          <div class="bar"></div>
+          <div class="text mid"></div>
+          <div class="text short"></div>
+          <div class="img-block"></div>
+        </div>
+        <div class="label-tag">CLAUDE.AI/DESIGN · LIVE PREVIEW</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: Capabilities ===== -->
+  <section class="slide">
+    <div class="eyebrow">06.1 · 能做什么</div>
+    <h2 class="section">五种主要交付物</h2>
+
+    <div class="grid-3" style="margin-top: 18px;">
+      <div class="card">
+        <div class="num">①</div>
+        <h4>Pitch decks · 演示文稿</h4>
+        <p>一句话需求 → 完整幻灯片组。可指定行业、风格、语调（formal/casual/technical），
+        Claude 自动选择封面、过渡、图表样式。</p>
+      </div>
+      <div class="card">
+        <div class="num">②</div>
+        <h4>Prototypes · 交互原型</h4>
+        <p>静态 mock-up 可一键转成<strong>可交互</strong>原型——按钮可点、表单可填、状态可切。
+        分享链接给同事/用户测试，无需写代码或开 PR。</p>
+      </div>
+      <div class="card">
+        <div class="num">③</div>
+        <h4>One-pagers</h4>
+        <p>产品介绍页、营销 landing、内部公告——单页 + 响应式 + 可导出。</p>
+      </div>
+      <div class="card">
+        <div class="num">④</div>
+        <h4>UI mock-ups</h4>
+        <p>从粗糙草图到高保真界面——可针对 Web / iOS / Android 不同端调整组件库。</p>
+      </div>
+      <div class="card">
+        <div class="num">⑤</div>
+        <h4>Marketing collateral</h4>
+        <p>海报、社交媒体卡片、邮件 banner——支持你公司的品牌调色板与字体规范。</p>
+      </div>
+      <div class="card" style="border-color: var(--accent);">
+        <div class="num" style="color: var(--accent-3);">⑥</div>
+        <h4>Codebase 联动</h4>
+        <p><strong>把 Claude 指向你的代码仓库</strong>——它会读取已有组件，让设计输出与现有
+        UI 系统保持一致。Design 与 Claude Code 之间能无缝交接。</p>
+      </div>
+    </div>
+
+    <div class="card-soft" style="margin-top: 26px;">
+      <h3 class="sub">关键差异：不是单纯的"AI 画图"</h3>
+      <p>Claude Design 的核心不是 "用 AI 画一张图片"——市面上做这事的工具很多。
+      它的核心是<strong>"对话式编辑 + 设计系统集成 + 可分享交互"</strong>三位一体。
+      你能 inline 评论某个元素、用 Claude 做的 custom slider 调参、自动套用公司 design system。
+      这对企业团队的吸引力远大于"再多一个 AI 图生成器"。</p>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: How to use ===== -->
+  <section class="slide">
+    <div class="eyebrow">06.2 · 使用方法</div>
+    <h2 class="section">从输入到导出 · 五步走</h2>
+
+    <div class="step-list">
+      <div class="step">
+        <div>
+          <h5>启动一个项目</h5>
+          <p>登录 <code>claude.ai/design</code> → "New Project" → 选择类型（Slide / Prototype / One-pager / Mock-up）。
+          也可以从模板开始。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h5>提供素材（可选）</h5>
+          <p>三种入口：① 纯文字描述；② 上传 DOCX / PPTX / XLSX / 图片；③ 指向代码仓库（让 Claude 读组件库）。
+          Opus 4.7 的 3× 视觉在这一步起决定性作用——能看清你贴的设计稿细节。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h5>对话式迭代</h5>
+          <p>"把第 3 页改成深色模式"、"加一个 CTA 按钮"、"标题字号大一点"——
+          直接说就好。也可以 inline 在某个元素上评论，或用 Claude 自己生成的 slider 调参。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h5>套用 design system</h5>
+          <p>团队首次配置时上传一次品牌指南/Figma library；之后每个新项目都自动应用——
+          颜色、字体、组件，全程一致。这是与"通用 AI 设计工具"最大的差别。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h5>导出与分享</h5>
+          <p>导出 PDF / PPTX / 静态站点；或生成<strong>可分享链接</strong>——
+          同事点开能交互、能评论。Prototype 模式下还能用作用户测试。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 24px;">一段示例对话</h3>
+    <pre class="code"><span class="label">CONVERSATION</span>
+<span class="k">User:</span> 给一家做企业 SaaS 的 B 轮公司做一份 12 页融资 deck
+       目标读者是美元基金合伙人 重点突出 ARR 增长曲线
+       和北美客户拓展进度
+
+<span class="k">Claude:</span> ✓ 已生成 12 页框架（封面/问题/方案/产品 demo/
+        市场规模/牵引力/团队/财务/竞品/路线图/融资额度/Q&amp;A）
+
+        <span class="c"># 你可以做的下一步：</span>
+        - 上传你的 ARR 数据 csv，我会替换第 7 页的图表
+        - 如果有 Figma library，我可以套用品牌色
+        - 想换叙事顺序就直接告诉我
+
+<span class="k">User:</span> 把第 7 页的图改成 "MoM 增长率" 而不是绝对值
+
+<span class="k">Claude:</span> ✓ 第 7 页已更新 · 现在显示 18% MoM
+        <span class="c"># 想看动画过渡效果吗？</span></pre>
+  </section>
+
+  <!-- ===== Slide 4: Mapping ===== -->
+  <section class="slide">
+    <div class="eyebrow">06.3 · 设计哲学映射</div>
+    <h2 class="section">为什么这是<br>非常 "Anthropic" 的产品？</h2>
+
+    <div class="grid-2">
+      <div>
+        <p class="lead" style="font-size: 17px;">
+          Claude Design 的发布策略本身就在演示三条原则：
+        </p>
+
+        <div class="card-soft" style="margin-top: 18px;">
+          <h3 class="sub" style="color: var(--accent-2);">理解意图（极致版）</h3>
+          <p>用户要的本来就不是"PPT 制作建议"，是 PPT 本身。
+          以前 AI 帮你写 PPT 大纲——你还是要打开 Keynote 复制粘贴。
+          Design 把 Helpful 推到了"<strong>最后一公里完成</strong>"的层级。</p>
+        </div>
+
+        <div class="card-soft" style="margin-top: 14px;">
+          <h3 class="sub" style="color: var(--good);">对局限诚实</h3>
+          <p>明确叫"research preview"——Anthropic 没有把它包装成"成熟产品"。
+          这种克制本身就是一种诚实：<strong>承认它在某些设计场景仍然不够好</strong>。</p>
+        </div>
+
+        <div class="card-soft" style="margin-top: 14px;">
+          <h3 class="sub" style="color: var(--info);">用户自主权</h3>
+          <p>每个元素都可以 inline 评论、直接编辑、用 slider 调参——
+          Claude 不是"做完了甩给你"，而是<strong>和你一起边做边改</strong>。
+          导出的产物归你，可以脱离 Claude 单独使用。</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="sub">本 PPT 的存在意义</h3>
+        <div class="card" style="background: var(--bg-soft); border-color: var(--accent);">
+          <h4 style="color: var(--accent);">你正在看的这份 PPT</h4>
+          <p>就是"Claude 风格设计哲学"的一次现场演示——
+          同样的极简排版、Anthropic 橙、衬线/无衬线对比、克制的动效——
+          虽然不是 Claude Design 直出，但<strong>它的设计语言在影响整个生态</strong>。</p>
+        </div>
+
+        <h3 class="sub" style="margin-top: 24px;">和 Claude Code 的协作</h3>
+        <div class="row-feat"><span class="dot"></span><span>Design 产出 mock-up → Code 实现 React 组件</span></div>
+        <div class="row-feat"><span class="dot"></span><span>Code 改了组件 → Design 自动更新关联设计</span></div>
+        <div class="row-feat"><span class="dot"></span><span>设计 review 循环：Design 出方案 → /ultrareview 审 → Design 改</span></div>
+
+        <p class="hint" style="margin-top: 22px;">
+          下一页：Cowork——把 Claude 从"一次会话"变成"持续在线的同事"。
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Design</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">6 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

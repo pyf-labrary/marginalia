@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>12 · Native Binary &amp; Windows</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .compare-arch {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-top: 18px;
+  }
+  .compare-arch .col {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px;
+  }
+  .compare-arch .col.before { opacity: .85; }
+  .compare-arch .col.after { border-color: var(--accent); }
+  .compare-arch .col h4 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .compare-arch .col.before h4 { color: var(--muted); }
+  .compare-arch .col.after h4 { color: var(--accent); }
+  .compare-arch .col li {
+    list-style: none;
+    padding: 6px 0 6px 22px;
+    position: relative;
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.55;
+  }
+  .compare-arch .col.before li::before { content: "—"; position: absolute; left: 0; color: var(--muted-2); }
+  .compare-arch .col.after li::before { content: "✓"; position: absolute; left: 0; color: var(--good); }
+
+  .stat-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 18px;
+  }
+  .stat-block .cell {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .stat-block .cell .v {
+    font-family: var(--serif);
+    font-size: 32px;
+    color: var(--accent);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .stat-block .cell .l {
+    color: var(--muted);
+    font-size: 12.5px;
+    margin-top: 6px;
+  }
+
+  .platform-mat {
+    display: grid;
+    grid-template-columns: 130px repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 14px;
+  }
+  .platform-mat > div {
+    background: var(--panel);
+    padding: 12px 14px;
+    color: var(--text);
+    font-size: 13.5px;
+  }
+  .platform-mat .h { color: var(--muted); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; background: var(--bg-soft); }
+  .platform-mat .ok { color: var(--good); font-weight: 600; }
+  .platform-mat .partial { color: var(--warn); font-weight: 600; }
+  .platform-mat .none { color: var(--danger); font-weight: 600; }
+</style>
+</head>
+<body
+  data-page-no="12" data-page-total="17" data-progress="70.59"
+  data-prev="11-themes-vim-ui.html"
+  data-next="13-security-permissions.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:70.59%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Native binary ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part III · 12 · 跨平台</div>
+    <span class="badge-date">2026-04-17 · v2.1.113</span>
+    <h2 class="section" style="margin-top: 6px;">Native Binary：<br>JS bundle 时代<em>结束</em></h2>
+
+    <p class="lead" style="font-size: 18px;">
+      过去 Claude Code 是一个 npm 包——node_modules + 几百 MB 依赖 + 启动时 require 一堆。
+      v2.1.113 起，CLI 直接构建为<strong>本机二进制</strong>，不再依赖 Node.js 安装。
+    </p>
+
+    <div class="compare-arch">
+      <div class="col before">
+        <h4>Before · JavaScript bundle</h4>
+        <ul>
+          <li>需要 Node.js 18+ 装在机器上</li>
+          <li>启动时间：1.5~3 秒（require 链）</li>
+          <li>内存基线：120~200 MB</li>
+          <li>升级要走 npm/yarn/pnpm</li>
+          <li>npm 注册表偶尔抽风</li>
+          <li>node_modules 占盘 ~400 MB</li>
+        </ul>
+      </div>
+      <div class="col after">
+        <h4>After · Native binary</h4>
+        <ul>
+          <li>单文件二进制，无运行时依赖</li>
+          <li>启动时间：&lt; 200ms（冷启）</li>
+          <li>内存基线：30~60 MB</li>
+          <li>升级直接覆盖二进制 / claude update</li>
+          <li>不依赖外部包源</li>
+          <li>磁盘占用 ~80 MB</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stat-block">
+      <div class="cell">
+        <div class="v">×8</div>
+        <div class="l">启动速度提升（典型场景）</div>
+      </div>
+      <div class="cell">
+        <div class="v">−70%</div>
+        <div class="l">内存占用降低</div>
+      </div>
+      <div class="cell">
+        <div class="v">−80%</div>
+        <div class="l">磁盘占用降低</div>
+      </div>
+    </div>
+
+    <div class="card-soft" style="margin-top: 22px;">
+      <h3 class="sub">为什么这值得专门一章？</h3>
+      <p>因为这是<strong>架构级</strong>变化——它影响后续所有功能：
+      ① 启动快意味着 IDE 集成体验顺；② 不依赖 Node 让 Windows 用户终于"开箱即用"；
+      ③ 单文件二进制让企业部署/沙箱化简单。这是 4 月最被低估的更新之一。</p>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: Windows ===== -->
+  <section class="slide">
+    <div class="eyebrow">12.1 · Windows</div>
+    <h2 class="section">Windows 用户终于"<em>解放</em>"</h2>
+
+    <p>Claude Code 起源时假定一个 *nix 环境——Windows 用户被迫装 Git Bash 当 shell。
+    4 月把这个假设打破。</p>
+
+    <div class="grid-2" style="margin-top: 18px;">
+      <div>
+        <h3 class="sub">关键里程碑</h3>
+
+        <div class="card">
+          <h4><span class="badge-version">v2.1.111</span>PowerShell 工具预览</h4>
+          <p style="font-size: 13.5px;">通过 <code>CLAUDE_CODE_USE_POWERSHELL_TOOL=1</code> 开启——
+          Bash 工具变为 PowerShell 工具，命令以 PowerShell 语法解释。
+          仍是逐步推出阶段。</p>
+        </div>
+        <div class="card" style="margin-top: 12px;">
+          <h4><span class="badge-version">v2.1.113</span>Ctrl+Backspace 删词</h4>
+          <p style="font-size: 13.5px;">补齐了 Windows 终端用户期待的"按词删除"快捷键——
+          从此 Windows 体验和 macOS / Linux 对齐。</p>
+        </div>
+        <div class="card" style="margin-top: 12px; border-color: var(--accent);">
+          <h4><span class="badge-version" style="color: var(--accent);">v2.1.120 ★</span>Git Bash 不再必需</h4>
+          <p style="font-size: 13.5px;">这是真正的解放——Claude Code 检测不到 Git for Windows 时，
+          自动用 PowerShell 作为 shell tool。<strong>开箱即用 · 零配置</strong>。</p>
+        </div>
+        <div class="card" style="margin-top: 12px;">
+          <h4><span class="badge-version">v2.1.119</span>CRLF 粘贴修复</h4>
+          <p style="font-size: 13.5px;">Windows 剪贴板的 \r\n 不再造成额外空白行——
+          从浏览器/Word 复制代码到 Claude Code 不会再出乱码空行。</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="sub">Bash → PowerShell 命令翻译</h3>
+        <pre class="code"><span class="label">用户输入 → PowerShell 实际执行</span>
+<span class="c"># Bash style</span>
+ls -la <span class="o">|</span> grep test
+<span class="c"># PowerShell 翻译</span>
+Get-ChildItem -Force <span class="o">|</span> Where-Object { $_.Name -match <span class="s">'test'</span> }
+
+<span class="c"># Bash style</span>
+cat package.json <span class="o">|</span> jq <span class="s">'.scripts'</span>
+<span class="c"># PowerShell 翻译</span>
+Get-Content package.json <span class="o">|</span> ConvertFrom-Json <span class="o">|</span>
+  Select-Object -ExpandProperty scripts
+
+<span class="c"># 危险命令检测</span>
+rm -rf node_modules
+<span class="c"># PowerShell 实现 + 危险路径检查</span>
+Remove-Item -Recurse -Force node_modules
+<span class="c"># （Claude 仍会先确认）</span></pre>
+
+        <h3 class="sub" style="margin-top: 22px;">设计权衡</h3>
+        <div class="row-feat"><span class="dot"></span><span><strong>不强迫学 PowerShell：</strong>用户输入仍可用 Bash 习惯，Claude 在内部翻译。</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>危险检测同步加强：</strong>PowerShell 翻译不绕开权限规则——所有 Bash deny 规则适用。</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>Git Bash 仍可选：</strong>装了 Git Bash 的用户保留旧体验——不强制迁移。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: Multi-platform matrix ===== -->
+  <section class="slide">
+    <div class="eyebrow">12.2 · 跨平台对照</div>
+    <h2 class="section">三大平台支持矩阵</h2>
+
+    <p>4 月结束时，Claude Code 在三大平台上的能力差距已经显著缩小：</p>
+
+    <div class="platform-mat">
+      <div class="h">能力</div>
+      <div class="h">macOS</div>
+      <div class="h">Linux</div>
+      <div class="h">Windows</div>
+
+      <div>Native binary</div>
+      <div class="ok">✓ 支持</div>
+      <div class="ok">✓ 支持</div>
+      <div class="ok">✓ 支持</div>
+
+      <div>Shell 工具</div>
+      <div>Bash · zsh</div>
+      <div>Bash · zsh · fish</div>
+      <div>PowerShell · Git Bash</div>
+
+      <div>Vim 模式</div>
+      <div class="ok">✓ 完整</div>
+      <div class="ok">✓ 完整</div>
+      <div class="ok">✓ 完整（含 visual）</div>
+
+      <div>OAuth 钥匙串</div>
+      <div class="ok">✓ Keychain</div>
+      <div class="ok">✓ libsecret</div>
+      <div class="ok">✓ Credential Manager</div>
+
+      <div>Sandbox 隔离</div>
+      <div class="ok">✓ Seatbelt</div>
+      <div class="ok">✓ namespaces</div>
+      <div class="partial">○ AppContainer (限制)</div>
+
+      <div>危险路径检测</div>
+      <div class="ok">✓ /private/{etc,var,tmp}</div>
+      <div class="ok">✓ /etc /usr 等</div>
+      <div class="ok">✓ C:\Windows 等</div>
+
+      <div>tmux/multiplexer</div>
+      <div class="ok">✓ 完整</div>
+      <div class="ok">✓ 完整</div>
+      <div class="partial">○ 通过 WSL</div>
+
+      <div>IDE 扩展</div>
+      <div class="ok">✓ VS Code · JetBrains</div>
+      <div class="ok">✓ VS Code · JetBrains</div>
+      <div class="ok">✓ VS Code · JetBrains</div>
+
+      <div>系统目录保护</div>
+      <div class="ok">✓ /private/{etc,var}</div>
+      <div class="ok">✓ /etc /sys /proc</div>
+      <div class="ok">✓ C:\Windows · Program Files</div>
+    </div>
+
+    <p class="hint" style="margin-top: 18px;">
+      唯一仍有差距的是 sandbox/tmux 这类深度系统集成——
+      Windows 上仍建议通过 WSL 获得最佳体验。
+    </p>
+  </section>
+
+  <!-- ===== Slide 4: Cross-Git platform ===== -->
+  <section class="slide">
+    <div class="eyebrow">12.3 · 不止 GitHub</div>
+    <h2 class="section">代码托管平台<br>都能从 PR <em>"resume"</em></h2>
+
+    <p>Claude Code 不只为 GitHub 用户服务——v2.1.119 起，<code>--from-pr</code> 支持多平台：</p>
+
+    <div class="grid-3" style="margin-top: 16px;">
+      <div class="card">
+        <h4>🐙 GitHub</h4>
+        <p>原生支持 · PR 编号或完整 URL · 包括 GitHub Enterprise 自建实例。</p>
+        <pre class="code" style="margin-top:8px;font-size:12px;">claude --from-pr \
+  https://github.com/org/repo/pull/123</pre>
+      </div>
+      <div class="card">
+        <h4>🦊 GitLab</h4>
+        <p>支持 GitLab.com 和自建实例的 Merge Request。</p>
+        <pre class="code" style="margin-top:8px;font-size:12px;">claude --from-pr \
+  https://gitlab.com/org/repo/-/merge_requests/45</pre>
+      </div>
+      <div class="card">
+        <h4>🪣 Bitbucket</h4>
+        <p>Bitbucket Cloud + Server 都支持。</p>
+        <pre class="code" style="margin-top:8px;font-size:12px;">claude --from-pr \
+  https://bitbucket.org/org/repo/pull-requests/12</pre>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 26px;">prUrlTemplate · 自定义代码审查 URL</h3>
+    <pre class="code"><span class="label">~/.claude/settings.json</span>
+{
+  <span class="s">"prUrlTemplate"</span>: <span class="s">"https://review.internal.company.com/pr/{number}"</span>
+}
+
+<span class="c"># 现在 Claude 在 PR 链接里指向你公司的内部审查工具</span>
+<span class="c"># 而不是 GitHub.com</span></pre>
+
+    <p style="margin-top: 18px;">这个小功能反映了 Anthropic 的一个重要立场：
+    <strong>不假设你用 GitHub.com</strong>。大型企业大多有自己的代码托管 + 审查链路——
+    Claude Code 应该融入<strong>你的</strong>流程，而不是反过来。</p>
+
+    <div class="card-soft" style="margin-top: 22px;">
+      <h3 class="sub">同样的精神：Vertex AI / Bedrock 的诸多修复</h3>
+      <p>4 月几乎每个版本都有 Vertex AI 或 Bedrock 的修复——
+      <code>count_tokens</code> 在代理网关后返回 400、
+      Vertex AI / Bedrock 返回 invalid_request_error 的结构化输出查询、
+      Bedrock 推理配置 ARN 上不显示 effort 选项……
+      这些都是大企业用户才会触发的边缘情况——而 Anthropic 选择修，不让"小众"成为"被忽略"。</p>
+    </div>
+  </section>
+
+  <!-- ===== Slide 5: Mapping ===== -->
+  <section class="slide">
+    <div class="eyebrow">12.4 · 设计哲学映射</div>
+    <h2 class="section">"跨平台努力"<br>背后的承诺</h2>
+
+    <p class="lead" style="font-size: 18px;">
+      做跨平台是真贵的——native binary 要为每个 OS / 架构维护工具链；
+      PowerShell 翻译要写大量边缘情况；多 Git 平台支持要测试多种 OAuth 流程。
+      Anthropic 选择投入，是一种<strong>哲学声明</strong>：
+      Claude 不是 SF/纽约 Mac+GitHub 工程师的专属工具。
+    </p>
+
+    <table class="compare" style="margin-top: 22px;">
+      <thead>
+        <tr><th>更新</th><th>对应原则</th><th>体现</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feature">Native binary</td>
+          <td class="principle-tag">Helpful</td>
+          <td>消除安装摩擦——尤其对非工程师角色（设计师、PM）。</td>
+        </tr>
+        <tr>
+          <td class="feature">Git Bash 不再必需</td>
+          <td class="principle-tag">Helpful</td>
+          <td>Windows 用户开箱即用——不再"先装 5 件东西才能用 Claude"。</td>
+        </tr>
+        <tr>
+          <td class="feature">PowerShell 翻译</td>
+          <td class="principle-tag">理解意图</td>
+          <td>不强迫用户学新 shell——用户用 Bash 习惯，AI 在内部翻译。</td>
+        </tr>
+        <tr>
+          <td class="feature">多 Git 平台 --from-pr</td>
+          <td class="principle-tag">Helpful</td>
+          <td>不假设你用 GitHub——融入用户的现有 stack。</td>
+        </tr>
+        <tr>
+          <td class="feature">prUrlTemplate</td>
+          <td class="principle-tag">用户自主</td>
+          <td>用户自定义内部审查链接——AI 不强加路径。</td>
+        </tr>
+        <tr>
+          <td class="feature">Vertex/Bedrock 修复</td>
+          <td class="principle-tag">Helpful</td>
+          <td>大企业用户的边缘情况照顾到——能力下沉到合规敏感的客户。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="hint" style="margin-top: 24px;">
+      下一页：4 月在"权限与安全"上做了什么——这一块的修复量惊人。
+    </p>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Native &amp; Cross-Platform</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">12 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

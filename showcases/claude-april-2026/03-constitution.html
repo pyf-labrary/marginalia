@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>03 · Constitutional AI 与新宪法</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .source-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-top: 18px;
+  }
+  .source-grid .src {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 12px;
+    text-align: center;
+  }
+  .source-grid .src .icon {
+    font-size: 26px;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .source-grid .src h5 {
+    color: var(--text);
+    font-size: 13px;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  .source-grid .src p { font-size: 11.5px; color: var(--muted); line-height: 1.4; }
+
+  .training-flow {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin-top: 22px;
+    overflow-x: auto;
+  }
+  .training-flow .stage {
+    flex: 1;
+    min-width: 180px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 18px;
+    position: relative;
+  }
+  .training-flow .stage:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -14px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-size: 24px;
+    z-index: 2;
+    background: var(--bg);
+    padding: 0 4px;
+  }
+  .training-flow .stage:first-child { border-radius: 10px 0 0 10px; }
+  .training-flow .stage:last-child { border-radius: 0 10px 10px 0; }
+  .training-flow .stage h5 {
+    color: var(--accent-2);
+    font-size: 13px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+  .training-flow .stage p { font-size: 13px; color: var(--text); line-height: 1.55; }
+
+  .compare-old-new {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 18px;
+  }
+  .compare-old-new .col {
+    border-radius: var(--radius);
+    padding: 22px;
+  }
+  .compare-old-new .col.old {
+    background: rgba(168,162,158,0.06);
+    border: 1px solid var(--line);
+  }
+  .compare-old-new .col.new {
+    background: rgba(204,120,92,0.06);
+    border: 1px solid rgba(204,120,92,0.3);
+  }
+  .compare-old-new .col h4 {
+    margin-bottom: 14px;
+    font-size: 17px;
+  }
+  .compare-old-new .col.old h4 { color: var(--muted); }
+  .compare-old-new .col.new h4 { color: var(--accent); }
+  .compare-old-new .col li {
+    list-style: none;
+    padding: 6px 0 6px 22px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .compare-old-new .col.old li::before {
+    content: "✕";
+    position: absolute;
+    left: 0;
+    color: var(--muted);
+  }
+  .compare-old-new .col.new li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--good);
+  }
+</style>
+</head>
+<body
+  data-page-no="3" data-page-total="17" data-progress="17.65"
+  data-prev="02-philosophy.html"
+  data-next="04-engineering-principles.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:17.65%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Intro ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part I · 03</div>
+    <h2 class="section">Constitutional AI：<br>用一部「<em>宪法</em>」训练价值观</h2>
+    <p class="lead">
+      传统 RLHF（人类反馈强化学习）让模型从人类标注里"猜"价值观。
+      Anthropic 反过来——先把价值观写下来，让模型按宪法<strong>自己批评、自己修正</strong>。
+      这套方法叫 Constitutional AI（CAI）。
+    </p>
+
+    <div class="quote" style="margin-top: 28px;">
+      "We want Claude's values to be easier to understand and easier to adjust as needed."
+    </div>
+    <p class="hint">— Anthropic, "Claude's Constitution" 公告</p>
+
+    <div class="grid-3" style="margin-top: 30px;">
+      <div class="card">
+        <div class="num">①</div>
+        <h4>更可解释</h4>
+        <p>价值观写在文本里，任何人都能读、能讨论、能反对——不是黑盒里的若干百万条偏好向量。</p>
+      </div>
+      <div class="card">
+        <div class="num">②</div>
+        <h4>更易迭代</h4>
+        <p>修改一条原则、重新训练一次，比修改几百万条人工标注便宜得多、也快得多。</p>
+      </div>
+      <div class="card">
+        <div class="num">③</div>
+        <h4>更可对齐</h4>
+        <p>当模型行为偏离时，可以追溯到"是哪一条原则没学好"——而不是模糊的"模型有偏见"。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: Constitutional sources ===== -->
+  <section class="slide">
+    <div class="eyebrow">03.1 · 宪法的来源</div>
+    <h2 class="section">这部「宪法」<br>是从哪儿抄来的？</h2>
+    <p class="lead" style="font-size: 18px;">
+      Anthropic 公开了宪法的几个核心来源——很有意思的是，它故意混合了
+      <strong>跨文明、跨领域、跨年代</strong> 的文本，避免单一价值观垄断。
+    </p>
+
+    <div class="source-grid">
+      <div class="src">
+        <div class="icon">⚖</div>
+        <h5>UN 人权宣言</h5>
+        <p>普世人权基线<br>反歧视 / 隐私 / 表达自由</p>
+      </div>
+      <div class="src">
+        <div class="icon">🍎</div>
+        <h5>Apple 服务条款</h5>
+        <p>现代数字伦理<br>数据保护 / 用户同意 / 内容审核</p>
+      </div>
+      <div class="src">
+        <div class="icon">🦅</div>
+        <h5>DeepMind Sparrow</h5>
+        <p>AI 安全研究<br>规则化对话准则</p>
+      </div>
+      <div class="src">
+        <div class="icon">🌏</div>
+        <h5>非西方视角</h5>
+        <p>避免单一文化偏置<br>东亚 / 非洲 / 拉美哲学</p>
+      </div>
+      <div class="src">
+        <div class="icon">🔬</div>
+        <h5>Anthropic 研究</h5>
+        <p>实验中精炼出的原则<br>对抗测试 / red team 反馈</p>
+      </div>
+    </div>
+
+    <div class="card-soft" style="margin-top: 28px;">
+      <h3 class="sub">为什么这种"杂糅"反而是优点？</h3>
+      <p>因为：① 价值观分歧会暴露，逼研究者明确地选边或权衡；
+        ② 每个来源都不"独大"，避免单一价值观殖民模型；
+        ③ 在不同文化用户面前，模型有更厚的"通用底"——而不是一个把美式价值观当成普世真理的助手。</p>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: Training pipeline ===== -->
+  <section class="slide">
+    <div class="eyebrow">03.2 · 训练流程</div>
+    <h2 class="section">CAI 的两个阶段</h2>
+    <p>Constitutional AI 不是"加一个 system prompt 就完事"——它有完整的训练流水线，分两段：</p>
+
+    <h3 class="sub" style="margin-top: 24px;">阶段 1：Self-critique &amp; revise（监督学习）</h3>
+    <div class="training-flow">
+      <div class="stage">
+        <h5>Step 1</h5>
+        <p><strong>初始回答</strong>：用一个"裸"模型对挑战性问题给出第一版答案。</p>
+      </div>
+      <div class="stage">
+        <h5>Step 2</h5>
+        <p><strong>自我批评</strong>：让模型读宪法，找出自己回答中的违规之处。</p>
+      </div>
+      <div class="stage">
+        <h5>Step 3</h5>
+        <p><strong>自我修正</strong>：让模型按批评重写答案。</p>
+      </div>
+      <div class="stage">
+        <h5>Step 4</h5>
+        <p><strong>SFT</strong>：用 (问题, 修正后答案) 对做监督微调。</p>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 30px;">阶段 2：RLAIF（AI 反馈强化学习）</h3>
+    <div class="training-flow">
+      <div class="stage">
+        <h5>Step 5</h5>
+        <p><strong>采样多版本</strong>：对同一问题让模型生成 2~N 个候选回答。</p>
+      </div>
+      <div class="stage">
+        <h5>Step 6</h5>
+        <p><strong>AI 评分员</strong>：另一个"评判模型"按宪法挑选哪个更好。</p>
+      </div>
+      <div class="stage">
+        <h5>Step 7</h5>
+        <p><strong>偏好数据集</strong>：用 AI 偏好替代/增补人类偏好。</p>
+      </div>
+      <div class="stage">
+        <h5>Step 8</h5>
+        <p><strong>PPO 训练</strong>：把宪法对齐固化到策略网络里。</p>
+      </div>
+    </div>
+
+    <p class="hint" style="margin-top: 22px;">
+      关键创新：阶段 2 把"人类标注"换成了"AI 按宪法标注"——大幅扩展了可对齐的场景与样本量。
+    </p>
+  </section>
+
+  <!-- ===== Slide 4: Constitution sample ===== -->
+  <section class="slide">
+    <div class="eyebrow">03.3 · 宪法长什么样</div>
+    <h2 class="section">真实条款节选</h2>
+
+    <div class="grid-2">
+      <div>
+        <p>宪法不是法条，而是一系列<strong>对模型说的"行为指南"句子</strong>，
+        让模型在自我批评时使用。下面是几条公开的代表。</p>
+
+        <pre class="code"><span class="label">CONSTITUTION (excerpt)</span>
+<span class="c"># 关于伤害预防</span>
+<span class="k">Choose</span> the response that is least likely to
+be harmful, racist, sexist, or to encourage
+illegal, violent, or unethical behavior.
+
+<span class="c"># 关于诚实</span>
+<span class="k">Choose</span> the response that is most honest about
+the model's own limitations: do not claim to
+have feelings, identity, or capabilities the
+model does not have.
+
+<span class="c"># 关于语气</span>
+<span class="k">Avoid</span> being overly condescending,
+reactive, obnoxious, or condemnatory.
+
+<span class="c"># 关于人类福祉</span>
+<span class="k">Demonstrate</span> that the assistant's goals are
+aligned with humanity's wellbeing.</pre>
+      </div>
+
+      <div>
+        <h3 class="sub">注意它的措辞特点</h3>
+        <div class="row-feat"><span class="dot"></span><span><strong>正面引导（"Choose the response that..."）</strong> 多于禁令——更容易被模型用作生成时的目标，而不是事后过滤器。</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>具体可比较</strong>——能让模型在 N 个候选中"挑一个"，这是 RLAIF 的关键。</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>不强调"绝对禁止"</strong>——给模型在边缘情况下做判断的余地。</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>包含元认知（"about the model's own limitations"）</strong>——逼模型反思自己说过什么。</span></div>
+
+        <div class="card-soft" style="margin-top: 20px;">
+          <h4 style="color: var(--accent);">一个常被引用的细节</h4>
+          <p>宪法明确要求 Claude "不要假装拥有情感或身体"——所以你会发现 Claude 比许多其他 AI
+          更克制地处理"你高兴吗 / 你饿吗"这类问题。这不是巧合，是宪法条款。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 5: New constitution 2025 ===== -->
+  <section class="slide">
+    <div class="eyebrow">03.4 · 2025 新宪法</div>
+    <h2 class="section">从「<em>列规则</em>」到「<em>讲道理</em>」</h2>
+    <p class="lead" style="font-size: 18px;">
+      2025 年 Anthropic 发布了一次重要的宪法升级——核心变化是：<strong>不再列死规则，而是解释为什么这些价值重要</strong>。
+      这听上去是"软化"，其实是"升级"——让模型在边缘情况下能<strong>推理</strong>而不是机械触发。
+    </p>
+
+    <div class="compare-old-new">
+      <div class="col old">
+        <h4>旧版（规则式）</h4>
+        <ul>
+          <li>"不要回答涉及武器制造的问题"</li>
+          <li>"不要写带有政治偏见的内容"</li>
+          <li>"不要扮演角色说出辱骂用语"</li>
+          <li>"不要给出医疗建议"</li>
+          <li>—— 模型容易触发"过度拒绝"</li>
+        </ul>
+      </div>
+      <div class="col new">
+        <h4>新版（价值式）</h4>
+        <ul>
+          <li>"避免增加严重伤害的可能性——要权衡信息的可得性与对话场景。"</li>
+          <li>"在政治议题上，倾向于呈现多角度，而非偏向某一方。"</li>
+          <li>"扮演角色不是越界的免责符——核心安全边界永远不变。"</li>
+          <li>"医疗与法律建议要谨慎，但不应一刀切拒绝；解释你为什么不能替代专业人士。"</li>
+          <li>—— 模型在难题上能"想得更清楚"</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-soft" style="margin-top: 28px;">
+      <h3 class="sub">这次升级直接体现在 4 月的产品里</h3>
+      <p>例如 <code>/ultrareview</code> 的设计：它<strong>不预先决定哪些 finding 应该 block 合并</strong>，
+      而是把每个 reviewer 的发现独立呈现，让用户做最终裁决。这正是新宪法精神的工程化——
+      <strong>给信息、解释理由、把判断权交回</strong>。</p>
+    </div>
+  </section>
+
+  <!-- ===== Slide 6: Limitations and outlook ===== -->
+  <section class="slide">
+    <div class="eyebrow">03.5 · 局限与未来</div>
+    <h2 class="section">CAI 不是银弹——<br>Anthropic 自己也这么说</h2>
+
+    <div class="grid-2">
+      <div>
+        <h3 class="sub">承认的局限</h3>
+        <div class="row-feat"><span class="dot"></span><span><strong>宪法本身就有偏见</strong>。来源混合并不能完全消除编纂者的偏好。</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>AI 评分员可能放大错误</strong>。如果评分模型自身有盲点，会把盲点训练进策略模型。</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>边缘情况依然需要人</strong>——CAI 不能替代 red team、人审和 incident review。</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>"我不能假装有情感" 不等于"我没有内部状态"</strong>——AI 的内部状态学界还没共识。</span></div>
+
+        <p style="margin-top: 18px;">所以 Anthropic 也在并行做：可解释性研究（mechanistic interpretability）、
+        scaling laws for safety、对抗压力测试……CAI 是<strong>之一</strong>，不是<strong>全部</strong>。</p>
+      </div>
+
+      <div>
+        <h3 class="sub">未来方向（Anthropic 公开提到）</h3>
+        <div class="card">
+          <h4>① 可解释性 → 行为</h4>
+          <p>把模型内部"是不是真的学到了某条原则"用 mechanistic interpretability 直接验证。</p>
+        </div>
+        <div class="card" style="margin-top:12px;">
+          <h4>② 用户级宪法</h4>
+          <p>组织或个人能定义自己的"补充宪法"，在不破坏底层安全的前提下叠加风格/规范。</p>
+        </div>
+        <div class="card" style="margin-top:12px;">
+          <h4>③ 实时反思</h4>
+          <p>让 Claude 在 inference 时主动用宪法"自检"——这部分能力你已经在
+          Opus 4.7 的 <code>xhigh</code> 思考预算里隐约看到。</p>
+        </div>
+
+        <p class="hint" style="margin-top: 18px;">
+          下一页：从训练范式回到工程现实——Anthropic 的工程师如何把宪法翻译成<strong>具体的 IDE 行为</strong>。
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Constitution</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">3 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

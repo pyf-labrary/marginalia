@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>15 · 理念 ↔ 功能对照大表</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .master-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 14px;
+  }
+  .master-table th {
+    background: var(--bg-soft);
+    color: var(--muted);
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 2px solid var(--accent);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: .08em;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  .master-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--line);
+    color: var(--text);
+    font-size: 13px;
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .master-table tr:hover td { background: rgba(204,120,92,0.04); }
+  .master-table .feat { font-weight: 600; }
+  .master-table .ver {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent-2);
+    white-space: nowrap;
+  }
+  .master-table .h {
+    color: var(--accent-2);
+    font-style: italic;
+    font-family: var(--serif);
+  }
+  .master-table .h-Helpful { color: var(--accent-2); }
+  .master-table .h-Harmless { color: var(--info); }
+  .master-table .h-Honest { color: var(--good); }
+  .master-table .h-Auto { color: var(--warn); }
+  .master-table .h-Intent { color: #b88ce3; }
+
+  .legend {
+    display: flex;
+    gap: 14px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    padding: 12px 16px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--bg-soft);
+  }
+  .legend .item {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .legend .swatch {
+    width: 12px; height: 12px;
+    border-radius: 3px;
+  }
+  .summary-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-top: 22px;
+  }
+  .summary-row .stat {
+    text-align: center;
+    padding: 16px 12px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    border-bottom: 0;
+  }
+  .summary-row .stat .v {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .summary-row .stat .l {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+</style>
+</head>
+<body
+  data-page-no="15" data-page-total="17" data-progress="88.24"
+  data-prev="14-enterprise-rbac.html"
+  data-next="16-videos.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:88.24%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Master table ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part IV · 15 · 闭环</div>
+    <h2 class="section">理念 ↔ 4 月功能<br><em>对照大表</em></h2>
+    <p class="lead" style="font-size: 18px;">
+      把前面 14 章的所有功能聚合到一页——按设计原则维度排列，方便横向对比。
+      这不是花哨的图表，是一份<strong>可以钉在墙上</strong>的工程参考。
+    </p>
+
+    <div class="legend">
+      <div class="item"><span class="swatch" style="background: var(--accent-2);"></span><span>Helpful · 让事情真正完成</span></div>
+      <div class="item"><span class="swatch" style="background: var(--info);"></span><span>Harmless · 边界与防御</span></div>
+      <div class="item"><span class="swatch" style="background: var(--good);"></span><span>Honest · 透明与诚实</span></div>
+      <div class="item"><span class="swatch" style="background: #b88ce3;"></span><span>理解意图 · 工程红线 #1</span></div>
+      <div class="item"><span class="swatch" style="background: var(--warn);"></span><span>用户自主 · 工程红线 #3</span></div>
+    </div>
+
+    <div class="summary-row">
+      <div class="stat">
+        <div class="v" style="color: var(--accent-2);">14</div>
+        <div class="l">Helpful 命中</div>
+      </div>
+      <div class="stat">
+        <div class="v" style="color: var(--info);">12</div>
+        <div class="l">Harmless 命中</div>
+      </div>
+      <div class="stat">
+        <div class="v" style="color: var(--good);">10</div>
+        <div class="l">Honest 命中</div>
+      </div>
+      <div class="stat">
+        <div class="v" style="color: #b88ce3;">8</div>
+        <div class="l">理解意图 命中</div>
+      </div>
+      <div class="stat">
+        <div class="v" style="color: var(--warn);">15</div>
+        <div class="l">用户自主 命中</div>
+      </div>
+    </div>
+
+    <p class="hint" style="margin-top: 18px;">
+      下面 4 页按主题分块呈现完整对照表——每行都标注了对应的理念维度。
+    </p>
+  </section>
+
+  <!-- ===== Slide 2: Models & products ===== -->
+  <section class="slide">
+    <div class="eyebrow">15.1 · 模型 + 旗舰产品</div>
+    <h2 class="section">第 1 - 7 章覆盖的功能</h2>
+
+    <table class="master-table">
+      <thead>
+        <tr><th style="width: 22%;">功能</th><th style="width: 9%;">版本/日期</th><th style="width: 17%;">理念维度</th><th>体现</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feat">Claude Opus 4.7 模型</td>
+          <td class="ver">2026-04-16</td>
+          <td><span class="h-Helpful h">Helpful</span> + <span class="h-Honest h">Honest</span></td>
+          <td>SWE-bench 87.6% / 3× 视觉 / xhigh effort——能力上限提升 + 难题敢花算力</td>
+        </tr>
+        <tr>
+          <td class="feat">xhigh effort 级别</td>
+          <td class="ver">v2.1.111</td>
+          <td><span class="h-Honest h">Honest</span></td>
+          <td>难题用更长思考预算——不假装秒答</td>
+        </tr>
+        <tr>
+          <td class="feat">task budgets API</td>
+          <td class="ver">2026-04-16</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>token / 时长 / 成本上限明示——AI 不私自烧钱</td>
+        </tr>
+        <tr>
+          <td class="feat">指令遵循改进</td>
+          <td class="ver">2026-04-16</td>
+          <td><span class="h-Intent h">理解意图</span></td>
+          <td>"只改 X" 就只改 X——不擅自扩张</td>
+        </tr>
+        <tr>
+          <td class="feat">价格不变（$5/$25）</td>
+          <td class="ver">2026-04-16</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>能力升级不加价——降低用户接入摩擦</td>
+        </tr>
+        <tr>
+          <td class="feat">Claude Design (Labs)</td>
+          <td class="ver">2026-04-17</td>
+          <td><span class="h-Helpful h">Helpful</span> + <span class="h-Auto h">用户自主</span></td>
+          <td>对话即设计——把 helpful 推到"最后一公里完成"</td>
+        </tr>
+        <tr>
+          <td class="feat">Design 系统集成</td>
+          <td class="ver">2026-04-17</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>套用团队品牌指南——AI 服从组织规范</td>
+        </tr>
+        <tr>
+          <td class="feat">Design Codebase 联动</td>
+          <td class="ver">2026-04-17</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>读已有组件库—— Design 与 Code 衔接</td>
+        </tr>
+        <tr>
+          <td class="feat">Cowork 持久线程</td>
+          <td class="ver">2026-04-09</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>跨设备记忆——真实工作的连续性</td>
+        </tr>
+        <tr>
+          <td class="feat">Cowork 推送限三类</td>
+          <td class="ver">2026-04-09</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>不打扰是默认——只在必要时通知</td>
+        </tr>
+        <tr>
+          <td class="feat">Cowork 桌面必须开</td>
+          <td class="ver">2026-04-09</td>
+          <td><span class="h-Honest h">Honest</span></td>
+          <td>不假装"云端永远在跑"——透明依赖关系</td>
+        </tr>
+        <tr>
+          <td class="feat">Analytics API</td>
+          <td class="ver">2026-04-09</td>
+          <td><span class="h-Honest h">Honest</span></td>
+          <td>采纳率/使用率公开——帮组织判断 ROI</td>
+        </tr>
+        <tr>
+          <td class="feat">OpenTelemetry 集成</td>
+          <td class="ver">2026-04-09</td>
+          <td><span class="h-Honest h">Honest</span> + <span class="h-Harmless h">Harmless</span></td>
+          <td>"AI 在干嘛" 可见 + 可审计 + 可告警</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== Slide 3: Code features ===== -->
+  <section class="slide">
+    <div class="eyebrow">15.2 · Claude Code 功能</div>
+    <h2 class="section">第 8 - 11 章覆盖的功能</h2>
+
+    <table class="master-table">
+      <thead>
+        <tr><th style="width: 22%;">功能</th><th style="width: 9%;">版本</th><th style="width: 17%;">理念维度</th><th>体现</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feat">/ultrareview 多 agent 并行</td>
+          <td class="ver">v2.1.111</td>
+          <td><span class="h-Honest h">Honest</span></td>
+          <td>每个 reviewer 独立列发现 + verification step——不当黑箱</td>
+        </tr>
+        <tr>
+          <td class="feat">/ultrareview 用户主动调用</td>
+          <td class="ver">v2.1.111</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>不偷偷跑——花你额度的事必须你说"好"</td>
+        </tr>
+        <tr>
+          <td class="feat">claude ultrareview CI 子命令</td>
+          <td class="ver">v2.1.120</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>从"在终端用"延伸到"在流水线用"</td>
+        </tr>
+        <tr>
+          <td class="feat">/effort 滑块</td>
+          <td class="ver">v2.1.111</td>
+          <td><span class="h-Intent h">理解意图</span></td>
+          <td>"你想我多用心"做成显式输入</td>
+        </tr>
+        <tr>
+          <td class="feat">/less-permission-prompts skill</td>
+          <td class="ver">v2.1.111</td>
+          <td><span class="h-Intent h">理解意图</span> + <span class="h-Helpful h">Helpful</span></td>
+          <td>主动观察用户重复行为，提议优化</td>
+        </tr>
+        <tr>
+          <td class="feat">MCP alwaysLoad</td>
+          <td class="ver">v2.1.121</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>消除工具搜索延迟——让 MCP 接入零摩擦</td>
+        </tr>
+        <tr>
+          <td class="feat">MCP 并发连接默认</td>
+          <td class="ver">v2.1.117</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>多 MCP 并发握手——启动加速</td>
+        </tr>
+        <tr>
+          <td class="feat">Hooks MCP 工具支持</td>
+          <td class="ver">v2.1.118</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>策略可表达到 MCP 工具粒度</td>
+        </tr>
+        <tr>
+          <td class="feat">Hook 条件 if 字段</td>
+          <td class="ver">v2.1.118</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>策略表达力——精确 to 命令模式</td>
+        </tr>
+        <tr>
+          <td class="feat">PostToolUse 改写输出</td>
+          <td class="ver">v2.1.121</td>
+          <td><span class="h-Harmless h">Harmless</span></td>
+          <td>用户能在 Claude 看见前 redact 敏感内容</td>
+        </tr>
+        <tr>
+          <td class="feat">Skills 团队级 markdown</td>
+          <td class="ver">v2.1.111+</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>工作流是团队资产，不是个人 plugin</td>
+        </tr>
+        <tr>
+          <td class="feat">主题系统 + /theme</td>
+          <td class="ver">v2.1.118</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>审美属于用户——可命名、可分发</td>
+        </tr>
+        <tr>
+          <td class="feat">Vim 视觉模式 v / V</td>
+          <td class="ver">v2.1.118</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>编辑习惯属于用户——补齐 Vim 期待</td>
+        </tr>
+        <tr>
+          <td class="feat">思考进度可视化</td>
+          <td class="ver">v2.1.116</td>
+          <td><span class="h-Honest h">Honest</span></td>
+          <td>"AI 正在花算力" 如实告诉用户</td>
+        </tr>
+        <tr>
+          <td class="feat">/usage 合并 cost+stats</td>
+          <td class="ver">v2.1.118</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>简化心智模型——同一意图一个命令</td>
+        </tr>
+        <tr>
+          <td class="feat">typo 近似匹配</td>
+          <td class="ver">v2.1.111</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>消除"手抖" → unknown command 的摩擦</td>
+        </tr>
+        <tr>
+          <td class="feat">/resume 接受 PR URL</td>
+          <td class="ver">v2.1.122</td>
+          <td><span class="h-Intent h">理解意图</span></td>
+          <td>"打开和这个 PR 相关的会话"——直接接受意图</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== Slide 4: Cross-platform & security ===== -->
+  <section class="slide">
+    <div class="eyebrow">15.3 · 跨平台 + 安全</div>
+    <h2 class="section">第 12 - 13 章覆盖的功能</h2>
+
+    <table class="master-table">
+      <thead>
+        <tr><th style="width: 22%;">功能</th><th style="width: 9%;">版本</th><th style="width: 17%;">理念维度</th><th>体现</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feat">Native binary</td>
+          <td class="ver">v2.1.113</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>启动 ×8 / 内存 −70% / 不依赖 Node</td>
+        </tr>
+        <tr>
+          <td class="feat">Windows 不需 Git Bash</td>
+          <td class="ver">v2.1.120</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>Windows 用户开箱即用 · 零配置</td>
+        </tr>
+        <tr>
+          <td class="feat">PowerShell 翻译层</td>
+          <td class="ver">v2.1.111+</td>
+          <td><span class="h-Intent h">理解意图</span></td>
+          <td>用户用 Bash 习惯，AI 内部翻译</td>
+        </tr>
+        <tr>
+          <td class="feat">GitLab/Bitbucket --from-pr</td>
+          <td class="ver">v2.1.119</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>不假设你用 GitHub——融入你的 stack</td>
+        </tr>
+        <tr>
+          <td class="feat">prUrlTemplate 自定义</td>
+          <td class="ver">v2.1.119</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>用户定义内部审查 URL——AI 不强加路径</td>
+        </tr>
+        <tr>
+          <td class="feat">Vertex/Bedrock 一系列修复</td>
+          <td class="ver">v2.1.111+</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>大企业边缘情况照顾到——能力下沉</td>
+        </tr>
+        <tr>
+          <td class="feat">Bedrock service tier 选项</td>
+          <td class="ver">v2.1.122</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>企业自定义服务层级——SLA 按需</td>
+        </tr>
+        <tr>
+          <td class="feat">find -exec/-delete 单独授权</td>
+          <td class="ver">v2.1.113</td>
+          <td><span class="h-Harmless h">Harmless</span></td>
+          <td>能力越大授权颗粒越细</td>
+        </tr>
+        <tr>
+          <td class="feat">wrapper 命令检测</td>
+          <td class="ver">v2.1.113</td>
+          <td><span class="h-Harmless h">Harmless</span></td>
+          <td>sudo / env / watch 不再绕过 deny 规则</td>
+        </tr>
+        <tr>
+          <td class="feat">Read-only 命令免提示</td>
+          <td class="ver">v2.1.111</td>
+          <td><span class="h-Intent h">理解意图</span> + <span class="h-Helpful h">Helpful</span></td>
+          <td>区分看与改——只对可破坏的设防</td>
+        </tr>
+        <tr>
+          <td class="feat">OAuth 全链修复（6 项）</td>
+          <td class="ver">v2.1.118+</td>
+          <td><span class="h-Honest h">Honest</span></td>
+          <td>承认 OAuth 复杂——把脆弱处一个个修</td>
+        </tr>
+        <tr>
+          <td class="feat">sandbox.deniedDomains</td>
+          <td class="ver">v2.1.113</td>
+          <td><span class="h-Auto h">用户自主</span> + <span class="h-Harmless h">Harmless</span></td>
+          <td>策略可声明 "Claude 不能访问哪些域名"</td>
+        </tr>
+        <tr>
+          <td class="feat">PID namespace 隔离</td>
+          <td class="ver">v2.1.111+</td>
+          <td><span class="h-Harmless h">Harmless</span></td>
+          <td>子进程不能误伤宿主——限制最大伤害</td>
+        </tr>
+        <tr>
+          <td class="feat">macOS 危险路径检测</td>
+          <td class="ver">v2.1.113</td>
+          <td><span class="h-Harmless h">Harmless</span></td>
+          <td>/private/{etc,var,tmp} 即使授权也再确认</td>
+        </tr>
+        <tr>
+          <td class="feat">流式空闲 5min 中止</td>
+          <td class="ver">v2.1.116+</td>
+          <td><span class="h-Harmless h">Harmless</span></td>
+          <td>避免挂起连接持续耗费配额</td>
+        </tr>
+        <tr>
+          <td class="feat">Auto Mode 守门规则</td>
+          <td class="ver">2026-04-17+</td>
+          <td><span class="h-Auto h">用户自主</span> + <span class="h-Harmless h">Harmless</span></td>
+          <td>不可逆操作不让渡——保留 stop point</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== Slide 5: Enterprise & Conclusion ===== -->
+  <section class="slide">
+    <div class="eyebrow">15.4 · 企业 + 总结</div>
+    <h2 class="section">第 14 章功能 + 全表总结</h2>
+
+    <table class="master-table">
+      <thead>
+        <tr><th style="width: 22%;">功能</th><th style="width: 9%;">版本</th><th style="width: 17%;">理念维度</th><th>体现</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feat">RBAC · 自定义角色</td>
+          <td class="ver">2026-04</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>组织级——精确表达"什么人能做什么"</td>
+        </tr>
+        <tr>
+          <td class="feat">SCIM · IdP 同步</td>
+          <td class="ver">2026-04</td>
+          <td><span class="h-Helpful h">Helpful</span></td>
+          <td>员工入职/离职/调岗自动 provisioning</td>
+        </tr>
+        <tr>
+          <td class="feat">按 feature 粒度授权</td>
+          <td class="ver">2026-04</td>
+          <td><span class="h-Harmless h">Harmless</span></td>
+          <td>风险隔离——销售不能用 Bash，自然不会出 prod 事故</td>
+        </tr>
+        <tr>
+          <td class="feat">Token 月配额</td>
+          <td class="ver">2026-04</td>
+          <td><span class="h-Auto h">用户自主</span></td>
+          <td>组织能给不同角色不同预算——避免 AI 烧钱</td>
+        </tr>
+        <tr>
+          <td class="feat">OTel 数值属性修复</td>
+          <td class="ver">v2.1.122</td>
+          <td><span class="h-Honest h">Honest</span></td>
+          <td>数值发数字而非字符串——Datadog 直接画图</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="card-soft" style="margin-top: 28px;">
+      <h3 class="sub">总结：4 月 38 项功能 / 修复，共 59 次理念命中</h3>
+      <p>同一个功能往往映射到多条理念——这正是 "理念产品化" 的标志：
+      <strong>不是 1 功能 = 1 理念</strong>，而是<strong>每个设计选择都在多个维度同时表达立场</strong>。
+      Anthropic 工程文化的最强表现，是这种"<strong>系统性的内在一致</strong>"——
+      看似零散的 30+ 改动，背后是同一套训练目标的延续。</p>
+    </div>
+
+    <div class="card-soft" style="margin-top: 14px;">
+      <h3 class="sub">阅读这张表的另一种方式</h3>
+      <p>下次看到 Claude 的新功能，可以反向问自己："<strong>这个功能在哪一条原则上发力？</strong>"
+      如果能答上来，你就读懂了 Anthropic；如果答不上来——
+      它可能是个未经深思的功能，或者你<strong>需要更新自己对 Anthropic 的理解</strong>。</p>
+    </div>
+
+    <p class="hint" style="margin-top: 22px;">
+      下一页：视频精选——让你直观感受这些功能。
+    </p>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Mapping Master Table</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">15 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

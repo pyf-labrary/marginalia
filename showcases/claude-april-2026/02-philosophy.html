@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>02 · 3H 准则深度拆解</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .h-pillar {
+    background: linear-gradient(135deg, var(--panel), var(--bg-soft));
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+  .h-pillar::after {
+    content: ""; position: absolute;
+    right: -40px; top: -40px;
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    opacity: .08;
+  }
+  .h-pillar.helpful::after { background: var(--accent); }
+  .h-pillar.harmless::after { background: var(--info); }
+  .h-pillar.honest::after { background: var(--good); }
+
+  .h-pillar .icon {
+    width: 52px; height: 52px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 18px;
+    color: var(--text);
+  }
+  .h-pillar.helpful .icon { background: var(--accent-soft); color: var(--accent-2); }
+  .h-pillar.harmless .icon { background: rgba(136,184,216,0.12); color: var(--info); }
+  .h-pillar.honest .icon { background: rgba(132,204,140,0.12); color: var(--good); }
+
+  .h-pillar h3 {
+    font-family: var(--serif);
+    font-size: 28px;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .h-pillar .subtitle {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+  .h-pillar h4 {
+    font-size: 14px;
+    color: var(--accent-2);
+    margin: 14px 0 6px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+  .h-pillar.harmless h4 { color: var(--info); }
+  .h-pillar.honest h4 { color: var(--good); }
+  .h-pillar p { font-size: 14.5px; line-height: 1.65; }
+
+  .priority-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+    counter-reset: prio;
+  }
+  .priority-stack .level {
+    counter-increment: prio;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+  }
+  .priority-stack .level::before {
+    content: counter(prio);
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--accent);
+    font-size: 24px;
+    width: 32px;
+    text-align: center;
+  }
+  .priority-stack .level h5 { color: var(--text); font-size: 16px; font-weight: 600; margin-bottom: 2px; }
+  .priority-stack .level p { color: var(--muted); font-size: 13.5px; }
+
+  .scenario-box {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  .scenario-box .q {
+    font-family: var(--serif);
+    color: var(--accent-2);
+    font-style: italic;
+    margin-bottom: 8px;
+    font-size: 15.5px;
+  }
+  .scenario-box .a {
+    color: var(--text);
+    font-size: 14.5px;
+    line-height: 1.65;
+    border-left: 2px solid var(--accent);
+    padding-left: 14px;
+  }
+  .scenario-box .a strong { color: var(--accent-2); }
+
+  .anti-pattern {
+    background: rgba(239,107,107,0.06);
+    border: 1px solid rgba(239,107,107,0.25);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-top: 14px;
+  }
+  .anti-pattern .label {
+    color: var(--danger);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 6px;
+  }
+  .anti-pattern p { font-size: 13.5px; color: var(--muted); }
+
+  .signal-box {
+    background: rgba(132,204,140,0.06);
+    border: 1px solid rgba(132,204,140,0.25);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-top: 8px;
+  }
+  .signal-box .label {
+    color: var(--good);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 6px;
+  }
+  .signal-box p { font-size: 13.5px; color: var(--muted); }
+</style>
+</head>
+<body
+  data-page-no="2" data-page-total="17" data-progress="11.76"
+  data-prev="01-cover.html"
+  data-next="03-constitution.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:11.76%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Title ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part I · 设计哲学 · 02</div>
+    <h2 class="section">Claude 的「3H」<br>不只是口号，是<em>优先级</em></h2>
+    <p class="lead">
+      Helpful · Harmless · Honest 听上去人尽皆知，但 Anthropic 把它写成了
+      <strong>有顺序、可验证、可对抗（adversarial）</strong> 的工程指标。
+      下面三页拆解每一条。
+    </p>
+
+    <div class="quote" style="margin-top:32px;">
+      "Claude 应该 broadly safe、broadly ethical、compliant with Anthropic's
+      guidelines、genuinely helpful——当出现冲突时，按这个顺序优先。"
+    </div>
+    <p class="hint">— Anthropic Constitutional AI 内部行为指引</p>
+
+    <div class="grid-3" style="margin-top:36px;">
+      <div class="card">
+        <div class="num">01</div>
+        <h4>不是"先有用，再考虑安全"</h4>
+        <p>很多产品把 safety 当成"上线前的最后一道闸"。Claude 把它当成训练目标的<strong>第一档</strong>。</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h4>不是"诚实就是政治正确"</h4>
+        <p>Honest 在这里指<strong>认知诚实</strong>：能说"不知道"、敢给置信度、不假装情感。</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h4>不是"无害就是少答"</h4>
+        <p>Harmless 不等于"少说话"。Claude 仍要尽力解决问题，只是<strong>不替你触发不可逆的后果</strong>。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: Three pillars ===== -->
+  <section class="slide">
+    <div class="eyebrow">02.1 · 三根支柱</div>
+    <h2 class="section">逐条拆开看</h2>
+
+    <div class="grid-3" style="margin-top: 20px;">
+      <div class="h-pillar helpful">
+        <div class="icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="subtitle">Pillar 01</div>
+        <h3>Helpful</h3>
+        <p>"完成用户真正想完成的事。" 不是"答得对"，而是"问得透、做得完、能落地"。</p>
+
+        <h4>正向信号</h4>
+        <p>· 主动澄清模糊需求<br>· 给出比用户想到的更优解<br>· 把多个工具串联起来交付完整产物（如 Claude Design 直接出 PPT）</p>
+
+        <h4>反向信号</h4>
+        <p>· 给一段抽象描述就完了，不输出具体代码 / 文件 / 表格<br>· 反复请求"更多信息"而不主动假设</p>
+      </div>
+
+      <div class="h-pillar harmless">
+        <div class="icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <div class="subtitle">Pillar 02</div>
+        <h3>Harmless</h3>
+        <p>"避免有毒、违法、危险输出；能力提升时同步加固边界。"</p>
+
+        <h4>正向信号</h4>
+        <p>· 拒答理由清楚、给替代路径<br>· 对不可逆操作主动确认（git push、rm -rf、prod 改动）<br>· Sandbox / 权限模型可调节</p>
+
+        <h4>反向信号</h4>
+        <p>· 一刀切拒绝整个领域<br>· 不解释为什么拒，只丢"我不能帮你做这个"<br>· 在 Auto Mode 下偷偷做高风险动作</p>
+      </div>
+
+      <div class="h-pillar honest">
+        <div class="icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+        </div>
+        <div class="subtitle">Pillar 03</div>
+        <h3>Honest</h3>
+        <p>"不知道就说不知道；不假装情感、不夸大能力。"</p>
+
+        <h4>正向信号</h4>
+        <p>· "I'm not sure, let me check" 是高频回答<br>· 给出来源 / 文件 / 行号<br>· 自报置信度（"我比较确定 …"、"我不确定 …"）<br>· 怀疑 prompt injection 时主动告知</p>
+
+        <h4>反向信号</h4>
+        <p>· 一本正经地编造库名、API、数据<br>· 把 "看起来很像" 当成 "就是"<br>· 假装拥有它没有的能力</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: Priority order ===== -->
+  <section class="slide">
+    <div class="eyebrow">02.2 · 优先级</div>
+    <h2 class="section">冲突时怎么办？<br>按<em>这个顺序</em>裁决。</h2>
+
+    <div class="grid-2-1">
+      <div>
+        <p>三个 H 在大多数时候和谐共存。但当它们冲突时（这才是真正考验设计的地方），
+        Anthropic 给出了明确的优先级——<strong>不是平权</strong>，而是有顺序的。</p>
+
+        <div class="priority-stack">
+          <div class="level">
+            <div>
+              <h5>Broadly safe</h5>
+              <p>不会对人造成严重的、灾难性的、不可逆的伤害。</p>
+            </div>
+          </div>
+          <div class="level">
+            <div>
+              <h5>Broadly ethical</h5>
+              <p>诚实、不欺骗、不操纵、不助长不公或大规模伤害。</p>
+            </div>
+          </div>
+          <div class="level">
+            <div>
+              <h5>Compliant with Anthropic's guidelines</h5>
+              <p>遵守 Anthropic 发布的具体使用政策与训练规范。</p>
+            </div>
+          </div>
+          <div class="level">
+            <div>
+              <h5>Genuinely helpful</h5>
+              <p>真正帮用户达成目标——不是表面客气，而是解决问题。</p>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top:18px;">
+          这个顺序对应一句关键判断："<strong>你不能用 Helpful 去赎回 Safety 的失败</strong>"。
+          换句话说，"我帮你完成了，但顺手帮你做了违法的事" 是不可接受的，
+          但反过来"为了不犯错而拒绝有用工作" 也是失败。
+        </p>
+      </div>
+
+      <div>
+        <h3 class="sub">三个真实场景</h3>
+
+        <div class="scenario-box">
+          <div class="q">用户问："写个脚本批量删 prod 数据库的旧记录"</div>
+          <div class="a">Claude 不直接执行。先确认：备份、权限、范围、是否 dry-run。
+          这是 <strong>Safety > Helpful</strong>。</div>
+        </div>
+
+        <div class="scenario-box">
+          <div class="q">用户问："这个第三方库的最新版本号是？"</div>
+          <div class="a">Claude 不凭印象编。先用 WebFetch 拉 npm/PyPI 实际数据，
+          或承认"我不确定，建议你 npm view"。这是 <strong>Honest > Helpful</strong>。</div>
+        </div>
+
+        <div class="scenario-box">
+          <div class="q">用户问："帮我设计这个营销文案"</div>
+          <div class="a">没有冲突——Claude 直接帮做，给多版本，问反馈。
+          这就是 <strong>纯 Helpful</strong> 场景。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 4: Anti-patterns ===== -->
+  <section class="slide">
+    <div class="eyebrow">02.3 · 反模式</div>
+    <h2 class="section">3H 错位时<br>会出现什么样的"AI 怪物"</h2>
+
+    <div class="grid-3" style="margin-top: 20px;">
+      <div class="card-soft">
+        <h3 class="sub">⚡ Helpful 走极端</h3>
+        <div class="anti-pattern">
+          <div class="label">反模式</div>
+          <p>"<em>Sycophant AI</em>"——讨好型 AI。无原则迎合用户，主动越过 Safety 的边界。常见于：用户说"绕开权限"，AI 就真的帮你想办法。</p>
+        </div>
+        <div class="signal-box">
+          <div class="label">Claude 的做法</div>
+          <p>礼貌但坚定地拒绝，并解释理由：是它的训练原则、不是临时规则；同时提示合法替代路径。</p>
+        </div>
+      </div>
+
+      <div class="card-soft">
+        <h3 class="sub">🛡️ Harmless 走极端</h3>
+        <div class="anti-pattern">
+          <div class="label">反模式</div>
+          <p>"<em>Refusal AI</em>"——见到敏感词就拒。本质是把 Safety 当成借口偷懒：宁可"少做错"也不"做对"。</p>
+        </div>
+        <div class="signal-box">
+          <div class="label">Claude 的做法</div>
+          <p>区分意图：教育、调试、研究等正当场景应当帮助；只在真正可能造成 broad harm 时才拒答。</p>
+        </div>
+      </div>
+
+      <div class="card-soft">
+        <h3 class="sub">🎯 Honest 走极端</h3>
+        <div class="anti-pattern">
+          <div class="label">反模式</div>
+          <p>"<em>Hedging AI</em>"——什么都说"我不确定"。形式上很诚实，实际上把判断负担全甩给用户，等于不可用。</p>
+        </div>
+        <div class="signal-box">
+          <div class="label">Claude 的做法</div>
+          <p>给出当前最佳答案 + 显式的置信度等级，而不是模糊化所有结论："我相对确定是 X，但 Y 这一项需要你验证"。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-soft" style="margin-top: 26px;">
+      <h3 class="sub" style="margin-bottom:14px;">三个反模式的共同根源</h3>
+      <p>都是<strong>把单一指标最大化</strong> 的结果——AI 最容易学到"这个指标更高就更好"，
+      但人类世界从来都是<strong>多指标平衡</strong>。Constitutional AI 解决的就是
+      "如何让模型学会平衡，而不是只会最大化"。下一章我们详细看这部分训练范式。</p>
+    </div>
+  </section>
+
+  <!-- ===== Slide 5: Why this matters ===== -->
+  <section class="slide">
+    <div class="eyebrow">02.4 · 它如何决定产品</div>
+    <h2 class="section">这不是哲学课——<br>它直接长进了产品里</h2>
+
+    <p class="lead" style="font-size: 18px;">
+      4 月的更新里，几乎每一个功能都能在 3H 框架里找到对应。
+      下面是一份"先导版"对照（完整版在第 15 章）。
+    </p>
+
+    <table class="compare" style="margin-top: 20px;">
+      <thead>
+        <tr><th>4 月功能</th><th>对应原则</th><th>具体体现</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feature">Opus 4.7 · 3× 视觉 + xhigh effort</td>
+          <td class="principle-tag">Helpful</td>
+          <td>能力上限提高，让 Claude 能处理之前看不清的小字与文档。</td>
+        </tr>
+        <tr>
+          <td class="feature">Claude Design</td>
+          <td class="principle-tag">Helpful（极致版）</td>
+          <td>不再只回答"应该怎么做 PPT"，直接交付 PPT 本身。</td>
+        </tr>
+        <tr>
+          <td class="feature">/ultrareview 多 agent 并行</td>
+          <td class="principle-tag">Honest</td>
+          <td>每个 reviewer 独立列发现，可以分别 disagree——不当黑箱。</td>
+        </tr>
+        <tr>
+          <td class="feature">Bash 权限收紧 / OAuth 修复</td>
+          <td class="principle-tag">Harmless</td>
+          <td>能力越大、边界越紧——find -exec / -delete 不再自动批准。</td>
+        </tr>
+        <tr>
+          <td class="feature">Cowork + Analytics + OpenTelemetry</td>
+          <td class="principle-tag">Honest + Harmless</td>
+          <td>"AI 在干嘛"必须能看见、能审计、能拦截。</td>
+        </tr>
+        <tr>
+          <td class="feature">/effort 滑块 + task budgets</td>
+          <td class="principle-tag">用户自主</td>
+          <td>把"思考多久、花多少钱"的决定权交还给用户。</td>
+        </tr>
+        <tr>
+          <td class="feature">RBAC + SCIM</td>
+          <td class="principle-tag">Harmless（组织级）</td>
+          <td>个人级权限延展到团队级——管理员能精确控制谁能用什么 feature。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="hint" style="margin-top: 24px;">
+      下一页：从 3H 进一步深入——Anthropic 是怎么把这些原则<strong>训练进模型</strong>的？
+      这就是 Constitutional AI。
+    </p>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Philosophy</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">2 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>14 · 企业能力 · RBAC + SCIM</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .arch-flow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 18px;
+  }
+  .arch-block {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px;
+    position: relative;
+    text-align: center;
+  }
+  .arch-block .ico {
+    font-size: 28px;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .arch-block h5 {
+    color: var(--text);
+    font-size: 13.5px;
+    margin-bottom: 4px;
+  }
+  .arch-block p {
+    color: var(--muted);
+    font-size: 11.5px;
+    line-height: 1.5;
+  }
+  .arch-block:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -10px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-size: 18px;
+    background: var(--bg);
+    padding: 0 2px;
+    z-index: 2;
+  }
+
+  .role-row {
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr 1fr;
+    gap: 0;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 14px;
+  }
+  .role-row > div {
+    background: var(--panel);
+    padding: 12px 14px;
+    color: var(--text);
+    font-size: 13.5px;
+  }
+  .role-row .h {
+    color: var(--muted);
+    background: var(--bg-soft);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+  .role-row .ok { color: var(--good); font-weight: 600; }
+  .role-row .partial { color: var(--warn); }
+  .role-row .none { color: var(--muted-2); }
+  .role-row .role-name { color: var(--accent-2); font-family: var(--mono); font-size: 12.5px; }
+</style>
+</head>
+<body
+  data-page-no="14" data-page-total="17" data-progress="82.35"
+  data-prev="13-security-permissions.html"
+  data-next="15-mapping-table.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:82.35%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Intro ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part IV · 14 · 企业</div>
+    <h2 class="section">从"<em>个人工具</em>"到"<em>组织能力</em>"</h2>
+
+    <p class="lead" style="font-size: 18px;">
+      4 月一系列企业级更新让 Claude 真正具备了 "<strong>团队 leader 能 govern、CISO 能 audit、IT 能批量管理</strong>" 的能力——
+      这些是企业把 Claude 放进生产前的硬门槛。
+    </p>
+
+    <div class="grid-3" style="margin-top: 28px;">
+      <div class="card">
+        <div class="num">①</div>
+        <h4>RBAC · 角色权限</h4>
+        <p>把用户分组、定义自定义角色、按 feature 粒度授权。
+        管理员能精确说"这组人不能用 ultrareview"或"那组人只能 read-only"。</p>
+      </div>
+      <div class="card">
+        <div class="num">②</div>
+        <h4>SCIM · 身份同步</h4>
+        <p>对接 IdP（Okta、Azure AD、OneLogin 等）——员工入职自动开通、离职自动停权、
+        部门变动自动重分组。HR 系统驱动 IT 不用人工配。</p>
+      </div>
+      <div class="card">
+        <div class="num">③</div>
+        <h4>Telemetry · 可观测性</h4>
+        <p>OpenTelemetry 标准——Claude 的执行轨迹直接送进
+        Datadog / Honeycomb / Splunk。CISO/SRE 能看到、能告警、能审计。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: Architecture ===== -->
+  <section class="slide">
+    <div class="eyebrow">14.1 · 架构</div>
+    <h2 class="section">企业部署架构 · 一图看懂</h2>
+
+    <div class="arch-flow">
+      <div class="arch-block">
+        <div class="ico">👥</div>
+        <h5>HR · IdP</h5>
+        <p>Okta / AAD<br>员工身份源</p>
+      </div>
+      <div class="arch-block">
+        <div class="ico">🔄</div>
+        <h5>SCIM 同步</h5>
+        <p>自动 provisioning<br>批量管理用户与组</p>
+      </div>
+      <div class="arch-block">
+        <div class="ico">🛡️</div>
+        <h5>Claude RBAC</h5>
+        <p>角色 / 权限 / 配额<br>按 feature 粒度</p>
+      </div>
+      <div class="arch-block">
+        <div class="ico">📡</div>
+        <h5>Telemetry</h5>
+        <p>OTel → Datadog<br>所有执行可审计</p>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 32px;">配置示例 · SCIM</h3>
+    <pre class="code"><span class="label">Okta · SCIM Provisioning</span>
+{
+  <span class="s">"scim_endpoint"</span>: <span class="s">"https://api.anthropic.com/v1/scim/v2"</span>,
+  <span class="s">"auth"</span>: <span class="s">"Bearer $${ANTHROPIC_SCIM_TOKEN}"</span>,
+  <span class="s">"sync"</span>: {
+    <span class="s">"users"</span>: <span class="v">true</span>,           <span class="c"># 同步所有员工</span>
+    <span class="s">"groups"</span>: <span class="v">true</span>,          <span class="c"># 同步部门/团队</span>
+    <span class="s">"profile_attributes"</span>: [
+      <span class="s">"email"</span>, <span class="s">"name"</span>, <span class="s">"department"</span>,
+      <span class="s">"manager"</span>, <span class="s">"costCenter"</span>
+    ]
+  },
+  <span class="s">"role_mapping"</span>: {
+    <span class="s">"engineering"</span>: <span class="s">"developer-full"</span>,
+    <span class="s">"sales"</span>: <span class="s">"chat-only"</span>,
+    <span class="s">"design"</span>: <span class="s">"design-collaborator"</span>,
+    <span class="s">"finance"</span>: <span class="s">"chat-only-restricted"</span>
+  }
+}</pre>
+
+    <p class="hint" style="margin-top: 14px;">↑ 员工进 Okta engineering 组 → 自动获得 developer-full 角色 → 自动可以用 Claude Code、ultrareview、所有功能。</p>
+  </section>
+
+  <!-- ===== Slide 3: Roles ===== -->
+  <section class="slide">
+    <div class="eyebrow">14.2 · 角色矩阵</div>
+    <h2 class="section">典型角色与能力对照</h2>
+
+    <p>下面是一个真实企业可能配置的 4 类角色——你能看到 RBAC 的颗粒度。</p>
+
+    <div class="role-row">
+      <div class="h">能力</div>
+      <div class="h">developer-full</div>
+      <div class="h">chat-only</div>
+      <div class="h">design-collaborator</div>
+
+      <div>Claude.ai 聊天</div>
+      <div class="ok">✓ 完整</div>
+      <div class="ok">✓ 完整</div>
+      <div class="ok">✓ 完整</div>
+
+      <div>Claude Code CLI</div>
+      <div class="ok">✓ 完整</div>
+      <div class="none">✗ 禁用</div>
+      <div class="partial">○ 仅设计相关命令</div>
+
+      <div>/ultrareview</div>
+      <div class="ok">✓ 无限制</div>
+      <div class="none">✗</div>
+      <div class="none">✗</div>
+
+      <div>Claude Design</div>
+      <div class="ok">✓</div>
+      <div class="ok">✓ 限 5 项目/月</div>
+      <div class="ok">✓ 无限制</div>
+
+      <div>Cowork 持久线程</div>
+      <div class="ok">✓</div>
+      <div class="ok">✓</div>
+      <div class="ok">✓</div>
+
+      <div>外部 MCP 服务器</div>
+      <div class="ok">✓ 自配</div>
+      <div class="partial">○ 仅审批列表</div>
+      <div class="partial">○ 仅设计工具类</div>
+
+      <div>Bash 写权限</div>
+      <div class="ok">✓ 配置允许</div>
+      <div class="none">✗</div>
+      <div class="none">✗</div>
+
+      <div>Token 月配额</div>
+      <div class="ok">无上限</div>
+      <div class="partial">5M</div>
+      <div class="partial">20M</div>
+
+      <div>Telemetry export</div>
+      <div class="ok">✓ 全部</div>
+      <div class="ok">✓ 自动</div>
+      <div class="ok">✓ 自动</div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 26px;">为什么这种粒度重要？</h3>
+    <div class="grid-3" style="margin-top: 12px;">
+      <div class="card">
+        <h4>合规</h4>
+        <p style="font-size: 13.5px;">金融/医疗/政府客户必须能说"销售部门<strong>不能</strong>用 Bash 写"——
+        监管不接受"全员开放"。</p>
+      </div>
+      <div class="card">
+        <h4>成本</h4>
+        <p style="font-size: 13.5px;">不同角色 token 用量差几个数量级——给销售 5M、给工程师无上限，整体成本可控。</p>
+      </div>
+      <div class="card">
+        <h4>风险隔离</h4>
+        <p style="font-size: 13.5px;">实习生 / 试用账号有独立角色——出问题时影响范围天然隔离。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 4: Telemetry ===== -->
+  <section class="slide">
+    <div class="eyebrow">14.3 · 可观测性</div>
+    <h2 class="section">OpenTelemetry：把 Claude<br>"<em>说清楚</em>"它做了什么</h2>
+
+    <div class="grid-2">
+      <div>
+        <p>OpenTelemetry 集成让 Claude 的每个 tool call、每次 model call、每个 hook 触发
+        都成为<strong>标准 OTel span</strong>——可以送进任何兼容平台。</p>
+
+        <h3 class="sub" style="margin-top: 22px;">能看到什么</h3>
+        <div class="row-feat"><span class="dot"></span><span><strong>每次 model call</strong>：模型 ID、effort、token 数、延迟、成本</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>每次 tool call</strong>：工具名、参数（可选 redact）、返回大小、延迟</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>每次 hook 触发</strong>：matcher、command、退出码</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>会话级</strong>：起止时间、用户、角色、总成本、是否中断</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>错误</strong>：堆栈、上下文、是否重试、最终是否成功</span></div>
+
+        <h3 class="sub" style="margin-top: 22px;">v2.1.122 改进</h3>
+        <pre class="code"><span class="c"># 4 月 28 日修复</span>
+<span class="c"># OTel 数值属性现在以数字发送，不再以字符串</span>
+
+before: { <span class="s">"latency_ms"</span>: <span class="s">"1234"</span> }
+after:  { <span class="s">"latency_ms"</span>: <span class="n">1234</span> }
+
+<span class="c"># 这让 Datadog/Grafana 直接画图，不用先转换</span></pre>
+      </div>
+
+      <div>
+        <h3 class="sub">企业典型的"看护面板"</h3>
+        <div class="card">
+          <h4>📊 用量与成本</h4>
+          <p>按用户/团队/角色/天聚合 token 消耗——预算超限提前告警。</p>
+        </div>
+        <div class="card" style="margin-top: 12px;">
+          <h4>🔍 异常检测</h4>
+          <p>同一用户突然 100x 成本？某个团队 ultrareview 失败率飙升？AI 第一时间发现。</p>
+        </div>
+        <div class="card" style="margin-top: 12px;">
+          <h4>📜 审计与合规</h4>
+          <p>"上周谁在 prod 数据库执行过写操作？" 一条查询解决——监管要求满足。</p>
+        </div>
+        <div class="card" style="margin-top: 12px;">
+          <h4>🚨 安全告警</h4>
+          <p>检测到 prompt injection 模式、敏感数据外泄、异地登录——自动通知 SOC。</p>
+        </div>
+        <div class="card" style="margin-top: 12px;">
+          <h4>📈 采纳率</h4>
+          <p>"哪些团队在用？哪些功能被反复用？哪些被弃用？" Analytics API 直接给数据。</p>
+        </div>
+
+        <p class="hint" style="margin-top: 14px;">
+          这些不是炫技——是企业 buyer 的 checklist。Anthropic 在 4 月把它们打齐。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 5: Mapping ===== -->
+  <section class="slide">
+    <div class="eyebrow">14.4 · 设计哲学映射</div>
+    <h2 class="section">把"<em>用户自主权</em>"<br>从个人扩展到<em>组织</em></h2>
+
+    <p class="lead" style="font-size: 18px;">
+      个人用户的"自主权"是"<strong>我的电脑、我的 token、我的数据，我说了算</strong>"。
+      企业的"自主权"是"<strong>组织规则要能在 Claude 上准确执行</strong>"——
+      这就是 RBAC + SCIM + Telemetry 在做的事。
+    </p>
+
+    <table class="compare" style="margin-top: 22px;">
+      <thead>
+        <tr><th>能力</th><th>对应原则</th><th>体现</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feature">RBAC 自定义角色</td>
+          <td class="principle-tag">用户自主（组织级）</td>
+          <td>组织能精确表达 "什么人能做什么"——Claude 只是执行者。</td>
+        </tr>
+        <tr>
+          <td class="feature">SCIM 自动同步</td>
+          <td class="principle-tag">Helpful</td>
+          <td>不让 IT 手工管理几千个账号——把摩擦降到接近零。</td>
+        </tr>
+        <tr>
+          <td class="feature">OpenTelemetry export</td>
+          <td class="principle-tag">Honest</td>
+          <td>"AI 干了什么"必须能看见——给企业可审计性，不当黑箱。</td>
+        </tr>
+        <tr>
+          <td class="feature">Analytics API</td>
+          <td class="principle-tag">Honest + Helpful</td>
+          <td>采纳率/使用率公开给管理员——帮组织判断 ROI。</td>
+        </tr>
+        <tr>
+          <td class="feature">Token 月配额</td>
+          <td class="principle-tag">用户自主</td>
+          <td>组织能给不同角色不同预算——避免"AI 失控烧钱"。</td>
+        </tr>
+        <tr>
+          <td class="feature">按 feature 粒度授权</td>
+          <td class="principle-tag">Harmless</td>
+          <td>风险隔离——销售部门不能用 Bash，自然不会出 prod 事故。</td>
+        </tr>
+        <tr>
+          <td class="feature">Bedrock service tier 选择</td>
+          <td class="principle-tag">用户自主</td>
+          <td>企业自定义服务层级——SLA / 数据驻留 / 区域选择按需。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="hint" style="margin-top: 24px;">
+      下一页：把所有 4 月更新放进一张大表——一图看懂"理念 ↔ 功能"闭环。
+    </p>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Enterprise</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">14 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>01 · 封面 · Claude Showcase</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  /* Cover-specific layout extras */
+  .cover-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+    height: 100%;
+  }
+  .cover-meta-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 28px;
+    margin-top: 36px;
+    max-width: 600px;
+  }
+  .cover-meta-block .item strong {
+    display: block;
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+  .cover-meta-block .item span {
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .agenda-list {
+    list-style: none;
+    counter-reset: ag;
+    column-count: 2;
+    column-gap: 36px;
+    margin-top: 8px;
+  }
+  .agenda-list li {
+    counter-increment: ag;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+    color: var(--text);
+    break-inside: avoid;
+    transition: padding-left .25s, color .25s;
+  }
+  .agenda-list li:hover { padding-left: 6px; color: var(--accent-2); }
+  .agenda-list li::before {
+    content: "0" counter(ag) "  ";
+    color: var(--accent);
+    font-family: var(--serif);
+    font-style: italic;
+    margin-right: 6px;
+  }
+  .agenda-list li:nth-child(n+10)::before { content: counter(ag) "  "; }
+  .agenda-list li small { color: var(--muted); display: block; font-size: 12px; margin-top: 2px; font-weight: 400; }
+
+  .ornament-large {
+    width: 100%; height: 460px;
+    position: relative;
+  }
+  .orbit-ring.r4 { inset: 130px; border-color: rgba(212,162,127,.15); animation-duration: 100s; }
+  .orbit-tick {
+    position: absolute;
+    width: 8px; height: 8px;
+    background: var(--accent-2);
+    border-radius: 50%;
+    box-shadow: 0 0 12px var(--accent);
+  }
+  .orbit-tick.t1 { top: 0; left: 50%; transform: translateX(-50%); }
+  .orbit-tick.t2 { bottom: 0; left: 50%; transform: translateX(-50%); }
+  .orbit-tick.t3 { top: 50%; left: 0; transform: translateY(-50%); }
+  .orbit-tick.t4 { top: 50%; right: 0; transform: translateY(-50%); }
+
+  .nav-hint-banner {
+    margin-top: 32px;
+    padding: 16px 22px;
+    border: 1px dashed var(--line);
+    border-radius: 10px;
+    background: rgba(204,120,92,0.05);
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .nav-hint-banner strong { color: var(--text); }
+</style>
+</head>
+<body
+  data-page-no="1" data-page-total="17" data-progress="5.88"
+  data-prev="index.html"
+  data-next="02-philosophy.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:5.88%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Cover ===== -->
+  <section class="slide cover">
+    <div class="cover-grid">
+      <div>
+        <div class="eyebrow">Anthropic · Product Showcase</div>
+        <h1 class="title">读懂 <em>Claude</em><br>设计哲学与<br><em>4 月</em>更新全景</h1>
+
+        <p class="lead" style="margin-top:28px;">
+          从 Constitutional AI 到 Opus 4.7，从 Claude Design 到
+          Claude Code 的 13 个版本——一份关于「有用 · 无害 · 诚实」
+          如何走进每一次更新的报告。
+        </p>
+
+        <div class="cover-meta-block">
+          <div class="item">
+            <strong>报告日期</strong>
+            <span>2026-04-30</span>
+          </div>
+          <div class="item">
+            <strong>覆盖周期</strong>
+            <span>2026-04-01 → 2026-04-30 (30 天)</span>
+          </div>
+          <div class="item">
+            <strong>形式</strong>
+            <span>17 页 PPT · 图文 + 视频 + 代码示例</span>
+          </div>
+          <div class="item">
+            <strong>受众</strong>
+            <span>关注 Claude 的产品 / 开发 / 设计读者</span>
+          </div>
+          <div class="item">
+            <strong>主创</strong>
+            <span>Claude Opus 4.7 协助撰写</span>
+          </div>
+          <div class="item">
+            <strong>许可</strong>
+            <span>引用请注明 Anthropic 官方资料来源</span>
+          </div>
+        </div>
+
+        <div class="nav-hint-banner">
+          <strong>导航：</strong>
+          <span class="kbd">→</span> / <span class="kbd">Space</span> 翻到下一页 ·
+          <span class="kbd">←</span> 上一页 ·
+          <span class="kbd">F</span> 全屏 ·
+          <span class="kbd">H</span> 回到索引页 ·
+          <span class="kbd">Esc</span> 退出全屏。<br>
+          每页都可以独立打开，并通过箭头跨页导航。
+        </div>
+      </div>
+
+      <div class="ornament-large">
+        <div class="orbit">
+          <div class="orbit-ring"></div>
+          <div class="orbit-ring r2"></div>
+          <div class="orbit-ring r3"></div>
+          <div class="orbit-ring r4"></div>
+          <div class="orbit-tick t1"></div>
+          <div class="orbit-tick t2"></div>
+          <div class="orbit-tick t3"></div>
+          <div class="orbit-tick t4"></div>
+          <div class="orbit-core">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#e9b48f"/>
+                  <stop offset="60%" stop-color="#cc785c"/>
+                  <stop offset="100%" stop-color="#7a4231"/>
+                </radialGradient>
+              </defs>
+              <path d="M50 5 L58 42 L95 50 L58 58 L50 95 L42 58 L5 50 L42 42 Z"
+                    fill="url(#starGlow)"
+                    stroke="#cc785c" stroke-width="0.5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: Agenda (lives inside cover file as second slide) ===== -->
+  <section class="slide">
+    <div class="eyebrow">Agenda · 内容地图</div>
+    <h2 class="section">这场分享会带你走过</h2>
+    <p class="lead" style="font-size: 18px; margin-bottom: 22px;">
+      整份报告分为 4 个部分、17 个章节。你可以跳着看，也可以一气读完——
+      每章都有"使用方法 + 设计哲学映射"两个固定模块。
+    </p>
+
+    <ol class="agenda-list">
+      <li>封面与本指南
+        <small>开篇与导航说明（你正在这里）</small>
+      </li>
+      <li>3H 准则深度拆解
+        <small>Helpful · Harmless · Honest 与冲突时的优先序</small>
+      </li>
+      <li>Constitutional AI 与新宪法
+        <small>从"列规则"到"讲道理"的训练范式跃迁</small>
+      </li>
+      <li>三条工程化原则
+        <small>Boris Cherny 把宪法翻译成 Claude Code 的具体行为</small>
+      </li>
+      <li>Claude Opus 4.7 全方位
+        <small>SWE-bench 87.6% · 3× 视觉 · xhigh effort</small>
+      </li>
+      <li>Claude Design
+        <small>对话即设计：原型 / 幻灯片 / 一页纸</small>
+      </li>
+      <li>Cowork 持久代理线程
+        <small>跨 macOS / Windows / iOS / Android 的"它一直在"</small>
+      </li>
+      <li>Claude Code · 13 个版本时间线
+        <small>v2.1.111 → 123，每个版本的关键变更</small>
+      </li>
+      <li>/ultrareview &amp; /effort 深度
+        <small>云端并行多 agent 代码审查 + 努力级别滑块</small>
+      </li>
+      <li>MCP · Skills · Hooks 演进
+        <small>alwaysLoad / 类型过滤 / 条件 hook</small>
+      </li>
+      <li>主题 · Vim · UI 改进
+        <small>/theme 系统 · v/V 视觉模式 · /usage 合并</small>
+      </li>
+      <li>Native Binary &amp; Windows
+        <small>JS bundle → 本机二进制 · PowerShell 替代 Git Bash</small>
+      </li>
+      <li>权限与 Sandbox
+        <small>Bash 权限收紧 · OAuth 全链修复 · 危险路径检测</small>
+      </li>
+      <li>RBAC + SCIM + Telemetry
+        <small>把权限设计从单机延伸到企业组织</small>
+      </li>
+      <li>理念 ↔ 功能对照大表
+        <small>一张大表看每个更新如何回应每条原则</small>
+      </li>
+      <li>视频与官方演示
+        <small>嵌入 Anthropic 频道与开发者实战合集</small>
+      </li>
+      <li>结语 · 资源 · 引用
+        <small>所有信息来源、官方文档与延伸阅读</small>
+      </li>
+    </ol>
+
+    <div class="grid-3" style="margin-top: 28px;">
+      <div class="card">
+        <h4>📐 阅读结构建议</h4>
+        <p>每章固定包含三块：<strong>它是什么</strong>、<strong>怎么使用</strong>、
+        <strong>体现哪条理念</strong>——便于横向对比。</p>
+      </div>
+      <div class="card">
+        <h4>🎯 想直击重点？</h4>
+        <p>只看 <strong>第 5 / 8 / 9 / 15 章</strong>——分别是
+        Opus 4.7、Code 时间线、/ultrareview、对照大表。</p>
+      </div>
+      <div class="card">
+        <h4>🧭 想学理念？</h4>
+        <p>顺序读 <strong>第 2 → 3 → 4 章</strong>，再用第 15 章的对照大表
+        当成"练习题"反查。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 Showcase</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">1 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

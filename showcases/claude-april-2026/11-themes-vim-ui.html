@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>11 · 主题 · Vim · UI</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .theme-preview {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    margin-top: 16px;
+  }
+  .theme-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border-bottom: 1px solid var(--line);
+  }
+  .theme-row:last-child { border-bottom: none; }
+  .theme-row .label {
+    background: var(--bg-soft);
+    padding: 14px 16px;
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 12px;
+    border-right: 1px solid var(--line);
+  }
+  .theme-row .swatch {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+  }
+  .theme-row .swatch .color {
+    width: 28px; height: 28px;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+  }
+  .theme-row .swatch .name {
+    color: var(--muted);
+    font-size: 12.5px;
+    margin-left: 8px;
+  }
+
+  .vim-cheat {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .vim-cheat .key {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 12px;
+    align-items: center;
+  }
+  .vim-cheat .key code {
+    font-size: 14px;
+    background: var(--bg-soft);
+    color: var(--accent-2);
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .vim-cheat .key span {
+    color: var(--text);
+    font-size: 13.5px;
+  }
+
+  .ui-improve {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 8px 0;
+  }
+  .ui-improve h5 {
+    color: var(--text);
+    font-size: 14.5px;
+    margin-bottom: 4px;
+  }
+  .ui-improve h5 .ver {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent-2);
+    background: rgba(204,120,92,0.08);
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-right: 6px;
+  }
+  .ui-improve p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body
+  data-page-no="11" data-page-total="17" data-progress="64.71"
+  data-prev="10-mcp-skills.html"
+  data-next="12-windows-native.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:64.71%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Intro ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part III · 11</div>
+    <h2 class="section">体验三件事：<br>主题 · Vim · UI 打磨</h2>
+    <p class="lead" style="font-size: 18px;">
+      4 月围绕"开发者每天感受到的小事"做了大量打磨——这些不是头条新闻，
+      但累计起来决定了"<strong>用 Claude Code 顺不顺手</strong>"。
+    </p>
+
+    <div class="grid-3" style="margin-top: 28px;">
+      <div class="card">
+        <div class="num">🎨</div>
+        <h4>主题系统</h4>
+        <p>v2.1.111 新增 "Auto (match terminal)"；v2.1.118 引入 <code>/theme</code> 命名主题；
+        插件可通过 themes/ 目录提供主题。</p>
+      </div>
+      <div class="card">
+        <div class="num">⌨️</div>
+        <h4>Vim 视觉模式</h4>
+        <p>v2.1.118 加入 visual mode（<code>v</code>）和 visual line mode（<code>V</code>）——
+        Vim 用户终于不用强迫自己用箭头键。</p>
+      </div>
+      <div class="card">
+        <div class="num">🪟</div>
+        <h4>UI 全面优化</h4>
+        <p>滚动、对话框、URL 可点击、长输入框、思考进度提示——
+        十几处肉眼可见的体验改进。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: Themes ===== -->
+  <section class="slide">
+    <div class="eyebrow">11.1 · 主题</div>
+    <h2 class="section">主题系统：从"切换"到"<em>共建</em>"</h2>
+
+    <div class="grid-2">
+      <div>
+        <p>4 月主题系统经历两步演进：</p>
+
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.111</span>"Auto (match terminal)" 选项</h5>
+          <p>不再需要手动切换深浅色——Claude Code 检测终端的 light/dark mode 自动跟随。
+          对在 macOS Time Schedule 自动切换主题的用户尤其友好。</p>
+        </div>
+
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.118</span>/theme 命名主题与插件主题</h5>
+          <p>用 <code>/theme</code> 创建并切换命名主题；
+          插件可在 <code>themes/</code> 目录中提供主题——意味着你能 <code>npm install</code> 一个主题。
+          团队可以发布"公司主题"，所有人共享品牌色彩。</p>
+        </div>
+
+        <h3 class="sub" style="margin-top: 22px;">如何创建一个主题</h3>
+        <pre class="code"><span class="label">~/.claude/themes/dracula.json</span>
+{
+  <span class="s">"name"</span>: <span class="s">"dracula"</span>,
+  <span class="s">"description"</span>: <span class="s">"Dracula color scheme"</span>,
+  <span class="s">"colors"</span>: {
+    <span class="s">"background"</span>: <span class="s">"#282a36"</span>,
+    <span class="s">"foreground"</span>: <span class="s">"#f8f8f2"</span>,
+    <span class="s">"accent"</span>: <span class="s">"#bd93f9"</span>,
+    <span class="s">"comment"</span>: <span class="s">"#6272a4"</span>,
+    <span class="s">"green"</span>: <span class="s">"#50fa7b"</span>,
+    <span class="s">"red"</span>: <span class="s">"#ff5555"</span>
+  }
+}</pre>
+        <pre class="code">$ /theme dracula
+✓ Theme switched to "dracula"</pre>
+      </div>
+
+      <div>
+        <h3 class="sub">官方/社区主题示例</h3>
+        <div class="theme-preview">
+          <div class="theme-row">
+            <div class="label">default</div>
+            <div class="swatch">
+              <div class="color" style="background: #cc785c;"></div>
+              <div class="color" style="background: #d4a27f;"></div>
+              <div class="color" style="background: #1c1c1c;"></div>
+              <div class="color" style="background: #f5f3ee;"></div>
+              <span class="name">Anthropic 橙 · 暗色</span>
+            </div>
+          </div>
+          <div class="theme-row">
+            <div class="label">solarized-dark</div>
+            <div class="swatch">
+              <div class="color" style="background: #002b36;"></div>
+              <div class="color" style="background: #268bd2;"></div>
+              <div class="color" style="background: #cb4b16;"></div>
+              <div class="color" style="background: #93a1a1;"></div>
+              <span class="name">护眼经典</span>
+            </div>
+          </div>
+          <div class="theme-row">
+            <div class="label">github-light</div>
+            <div class="swatch">
+              <div class="color" style="background: #ffffff;"></div>
+              <div class="color" style="background: #0969da;"></div>
+              <div class="color" style="background: #1a7f37;"></div>
+              <div class="color" style="background: #cf222e;"></div>
+              <span class="name">GitHub 风</span>
+            </div>
+          </div>
+          <div class="theme-row">
+            <div class="label">monokai</div>
+            <div class="swatch">
+              <div class="color" style="background: #272822;"></div>
+              <div class="color" style="background: #f92672;"></div>
+              <div class="color" style="background: #a6e22e;"></div>
+              <div class="color" style="background: #fd971f;"></div>
+              <span class="name">高对比经典</span>
+            </div>
+          </div>
+          <div class="theme-row">
+            <div class="label">auto</div>
+            <div class="swatch">
+              <span class="name" style="color: var(--text);">↓ 跟随终端 light/dark 自动切换</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="sub" style="margin-top: 22px;">设计哲学体现</h3>
+        <div class="row-feat"><span class="dot"></span><span><strong>用户自主</strong>：审美属于用户——把"长什么样"完全交给开发者。</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>团队级</strong>：插件目录共享——主题不是个人偏好，是团队资产。</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>跟随上下文</strong>：auto 模式体现"理解意图"——你已经在终端选了 dark，AI 不再多问。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: Vim ===== -->
+  <section class="slide">
+    <div class="eyebrow">11.2 · Vim</div>
+    <h2 class="section">Vim 视觉模式终于来了</h2>
+
+    <div class="grid-2">
+      <div>
+        <p>Claude Code 早就有 Vim normal/insert mode——但<strong>没有 visual mode</strong>。
+        想批量删几行得用 <code>3dd</code> 数行数。
+        v2.1.118 把 visual / visual-line mode 补齐——Vim 用户大胜利。</p>
+
+        <h3 class="sub" style="margin-top: 22px;">Visual Mode 速查</h3>
+        <div class="vim-cheat">
+          <div class="key"><code>v</code><span>进入字符 visual</span></div>
+          <div class="key"><code>V</code><span>进入行 visual</span></div>
+          <div class="key"><code>h j k l</code><span>移动选区</span></div>
+          <div class="key"><code>w b e</code><span>按词扩选</span></div>
+          <div class="key"><code>$ ^</code><span>到行尾/首</span></div>
+          <div class="key"><code>gg G</code><span>到文件首/尾</span></div>
+          <div class="key"><code>d</code><span>剪切选区</span></div>
+          <div class="key"><code>y</code><span>复制选区</span></div>
+          <div class="key"><code>c</code><span>剪切并进 insert</span></div>
+          <div class="key"><code>&gt; &lt;</code><span>缩进 / 反缩进</span></div>
+          <div class="key"><code>~</code><span>切换大小写</span></div>
+          <div class="key"><code>Esc</code><span>退出 visual</span></div>
+        </div>
+
+        <h3 class="sub" style="margin-top: 22px;">配置方式</h3>
+        <pre class="code">$ /config editor vim
+✓ Editor mode: vim
+
+<span class="c"># 或在 settings.json:</span>
+{ <span class="s">"editor"</span>: { <span class="s">"mode"</span>: <span class="s">"vim"</span> } }</pre>
+      </div>
+
+      <div>
+        <h3 class="sub">细节到位的小修复</h3>
+
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.111</span>Ctrl+U 清空整个输入</h5>
+          <p>过去 Ctrl+U 只删行首到光标——现在<strong>整个输入缓冲清空</strong>。
+          按 <code>Ctrl+Y</code> 可恢复（类似 vim 的 putback）。</p>
+        </div>
+
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.111</span>Ctrl+L 强制全屏重绘</h5>
+          <p>当 tmux / 屏幕错乱时，<code>Ctrl+L</code> 强制 Claude Code 重绘整个 UI——
+          不需要重启进程。</p>
+        </div>
+
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.119</span>多行粘贴修复</h5>
+          <p>修复 CRLF（Windows 剪贴板）插入额外空白行；
+            修复 kitty 键盘协议下多行粘贴丢失换行。
+            这两个看似小，实际严重影响日常工作。</p>
+        </div>
+
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.121</span>对话框可滚动</h5>
+          <p>溢出终端的对话框现支持<strong>箭头键 / PgUp / PgDn 滚动</strong>。
+            过去对话太长就丢失下半部分。</p>
+        </div>
+
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.121</span>输入提示不跳回底部</h5>
+          <p>全屏模式下，向上滚动查看历史时，输入提示<strong>不再被强行拉回底部</strong>——
+            可以边读历史边写指令。</p>
+        </div>
+
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.113</span>长 URL 在换行后保持可点击</h5>
+          <p>过去 URL 被换行就失效——v2.1.113 修复，<strong>点 URL 任意行都能打开完整 URL</strong>。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 4: UI improvements list ===== -->
+  <section class="slide">
+    <div class="eyebrow">11.3 · UI 综合</div>
+    <h2 class="section">"日活级"小提升 · 完整清单</h2>
+    <p>下面这些是 4 月里特别值得开发者关注的"<strong>每天都会用到</strong>"的体验提升——
+    单看不显眼，连起来感受很大。</p>
+
+    <div class="grid-2" style="margin-top: 18px;">
+      <div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.116</span>思考进度可视化</h5>
+          <p>"still thinking → thinking more → almost done" 内联提示——
+          告诉你 Claude 不是卡了，是真在想。</p>
+        </div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.116</span>/config 搜索匹配选项值</h5>
+          <p>搜 "vim" 也能找到 editor mode—— 不需要记设置项的精确名字。</p>
+        </div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.116</span>/doctor 即时打开</h5>
+          <p>过去要等 Claude 当前轮次完——现在响应中也能开 /doctor 看诊断。</p>
+        </div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.118</span>合并 /cost + /stats → /usage</h5>
+          <p>两个命令做着相似事——合并成一个，查 token / 费用 / 使用统计一处看。</p>
+        </div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.122</span>/resume 搜索框接受 PR URL</h5>
+          <p>粘贴 PR URL 直接定位到该 PR 关联的会话——不用记会话名。</p>
+        </div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.111</span>typo 近似匹配</h5>
+          <p><code>claude udpate</code> → "Did you mean <code>claude update</code>?" ——
+          不再因手抖看到 unknown command 报错。</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.111</span>计划文件按提示命名</h5>
+          <p>过去 plan 文件用时间戳命名——现在按提示生成 <code>fix-auth-race-snug-otter.md</code>，
+          一眼就知道是哪个任务的 plan。</p>
+        </div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.119</span>CLAUDE_CODE_HIDE_CWD</h5>
+          <p>启动 logo 中默认显示工作目录——某些演示场景下不想暴露路径。
+          这个环境变量隐藏它。</p>
+        </div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.122</span>tmux 闲时不再每秒重绘两次</h5>
+          <p>远程控制会话空闲时 UI 抖动——修复后 tmux 用户终于不再"光标乱跳"。</p>
+        </div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.116</span>VS Code/Cursor/Windsurf 全屏滚动平滑</h5>
+          <p>全屏模式下 VS Code 系列 IDE 的滚动卡顿被修——长会话不再"hello shutter"。</p>
+        </div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.111</span>Read-only Bash 全局命令免提示</h5>
+          <p><code>ls *.ts</code>、<code>cd dir &amp;&amp;</code>、<code>pwd</code>、<code>cat</code> 这类
+          read-only 操作不再每次弹权限对话框。</p>
+        </div>
+        <div class="ui-improve">
+          <h5><span class="ver">v2.1.111</span>Max 订户 auto mode in Opus 4.7</h5>
+          <p>auto mode 自动按任务难度选最佳模型——
+          Max 订户在 Opus 4.7 中可用，效率与成本兼得。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 5: Mapping ===== -->
+  <section class="slide">
+    <div class="eyebrow">11.4 · 设计哲学映射</div>
+    <h2 class="section">"小修小补"<br>背后的同一条原则</h2>
+
+    <p class="lead" style="font-size: 18px;">
+      这一页所有更新都没有 headline——但它们体现了一种工程文化：<strong>把摩擦当成 bug</strong>。
+      Claude Code 团队相信，开发者每天用工具 50 次，每次省 1 秒，一年是 2.5 小时。
+    </p>
+
+    <table class="compare" style="margin-top: 22px;">
+      <thead>
+        <tr><th>更新</th><th>对应原则</th><th>体现</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feature">主题系统 + Vim visual</td>
+          <td class="principle-tag">用户自主</td>
+          <td>工具属于用户——"我想怎么用就怎么用"是默认权利。</td>
+        </tr>
+        <tr>
+          <td class="feature">思考进度可视化</td>
+          <td class="principle-tag">Honest</td>
+          <td>不假装秒答——把"我正在花算力"如实告诉用户。</td>
+        </tr>
+        <tr>
+          <td class="feature">Read-only 命令免提示</td>
+          <td class="principle-tag">理解意图</td>
+          <td>区分 read 和 write，不一刀切——读不改的命令不必每次确认。</td>
+        </tr>
+        <tr>
+          <td class="feature">typo 近似匹配</td>
+          <td class="principle-tag">Helpful</td>
+          <td>消除摩擦——不让"手抖"成为流程阻断。</td>
+        </tr>
+        <tr>
+          <td class="feature">/usage 合并</td>
+          <td class="principle-tag">Helpful</td>
+          <td>简化心智模型——同一意图一个命令。</td>
+        </tr>
+        <tr>
+          <td class="feature">/resume 接受 PR URL</td>
+          <td class="principle-tag">理解意图</td>
+          <td>用户的真实意图是"打开和这个 PR 相关的会话"——直接接受这个意图作为入口。</td>
+        </tr>
+        <tr>
+          <td class="feature">长 URL 可点击</td>
+          <td class="principle-tag">Helpful</td>
+          <td>看似细节，但断开的 URL 是日常 UX 痛点——修复一次，受益每天。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="hint" style="margin-top: 24px;">
+      下一页：跨平台与 native binary——同样深的工程功夫。
+    </p>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Themes / Vim / UI</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">11 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

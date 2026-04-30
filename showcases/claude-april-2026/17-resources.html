@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>17 · 结语 · 资源 · 引用</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .resource-grid .res {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: var(--text);
+    border-bottom: 1px solid var(--line);
+    transition: border-color .25s, transform .25s;
+  }
+  .resource-grid .res:hover {
+    border-color: var(--accent);
+    transform: translateX(4px);
+  }
+  .resource-grid .res .label {
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 4px;
+  }
+  .resource-grid .res h5 {
+    color: var(--text);
+    font-size: 14.5px;
+    margin-bottom: 4px;
+  }
+  .resource-grid .res code {
+    color: var(--accent-2);
+    font-size: 12px;
+    background: transparent;
+    padding: 0;
+  }
+  .resource-grid .res p {
+    color: var(--muted);
+    font-size: 12.5px;
+    line-height: 1.55;
+    margin-top: 4px;
+  }
+
+  .closing-hero {
+    text-align: center;
+    padding: 60px 40px;
+    background:
+      radial-gradient(900px 500px at 50% 50%, rgba(204,120,92,0.18), transparent 60%),
+      var(--bg);
+    border-radius: var(--radius-lg);
+    margin-top: 16px;
+  }
+  .closing-hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: 1.1;
+    color: var(--text);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  .closing-hero h1 em {
+    color: var(--accent);
+    font-style: italic;
+  }
+  .closing-hero p {
+    color: var(--text);
+    font-family: var(--serif);
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .credits {
+    margin-top: 24px;
+    padding: 18px 22px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--bg-soft);
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .credits strong { color: var(--text); }
+</style>
+</head>
+<body
+  data-page-no="17" data-page-total="17" data-progress="100"
+  data-prev="16-videos.html"
+  data-next="index.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:100%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Closing manifesto ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part IV · 17 · 结语</div>
+
+    <div class="closing-hero">
+      <h1><em>Safety is a design requirement,</em><br>not a constraint.</h1>
+      <p>4 月的 38 项更新看似零散——模型升级、产品发布、命令重构、bug 修复。
+      但当你把它们放在 3H + 三条工程红线的坐标里，会看到同一条主线：
+      <strong style="color: var(--text);">让 AI 在变强的同时变得更值得托付</strong>。</p>
+    </div>
+
+    <div class="grid-3" style="margin-top: 28px;">
+      <div class="card">
+        <h4>📖 如果只记住一件事</h4>
+        <p>"<strong>能力 ↔ 边界</strong>"永远同步上升——这是 Anthropic 区别于其他 AI 实验室的
+        最显著文化标签。</p>
+      </div>
+      <div class="card">
+        <h4>🔭 如果只关注一个趋势</h4>
+        <p><strong>从单机到组织</strong>——RBAC、SCIM、OpenTelemetry 让 Claude 成为
+        企业可治理的协作层。</p>
+      </div>
+      <div class="card">
+        <h4>🎯 如果只看一个功能</h4>
+        <p><strong>/ultrareview</strong> 是"理念产品化"的最佳样本——
+        三条原则同时落地的工程典范。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: Resources ===== -->
+  <section class="slide">
+    <div class="eyebrow">17.1 · 官方资源</div>
+    <h2 class="section">完整资源列表 · 按主题</h2>
+
+    <h3 class="sub" style="margin-top: 14px;">设计哲学 · 必读</h3>
+    <div class="resource-grid">
+      <a class="res" href="https://www.anthropic.com/news/claudes-constitution" target="_blank">
+        <div class="label">Article · Anthropic</div>
+        <h5>Claude's Constitution</h5>
+        <code>anthropic.com/news/claudes-constitution</code>
+        <p>Constitutional AI 的开山公告——理解 Claude 的根。</p>
+      </a>
+      <a class="res" href="https://www.anthropic.com/news/claude-new-constitution" target="_blank">
+        <div class="label">Article · Anthropic</div>
+        <h5>Claude's New Constitution (2025)</h5>
+        <code>anthropic.com/news/claude-new-constitution</code>
+        <p>从"列规则"到"讲道理"——价值观训练范式升级。</p>
+      </a>
+    </div>
+
+    <h3 class="sub" style="margin-top: 22px;">4 月发布 · 官方公告</h3>
+    <div class="resource-grid">
+      <a class="res" href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">
+        <div class="label">Release · 2026-04-16</div>
+        <h5>Claude Opus 4.7</h5>
+        <code>anthropic.com/news/claude-opus-4-7</code>
+        <p>SWE-bench 87.6% / 3× 视觉 / xhigh effort 全数据。</p>
+      </a>
+      <a class="res" href="https://www.anthropic.com/news/claude-design-anthropic-labs" target="_blank">
+        <div class="label">Release · 2026-04-17</div>
+        <h5>Introducing Claude Design</h5>
+        <code>anthropic.com/news/claude-design-anthropic-labs</code>
+        <p>Anthropic Labs 的设计协作产品发布。</p>
+      </a>
+      <a class="res" href="https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" target="_blank">
+        <div class="label">Help Center</div>
+        <h5>Get started with Claude Cowork</h5>
+        <code>support.claude.com</code>
+        <p>Cowork 持久代理线程的官方上手指南。</p>
+      </a>
+      <a class="res" href="https://support.claude.com/en/articles/14604416-get-started-with-claude-design" target="_blank">
+        <div class="label">Help Center</div>
+        <h5>Get started with Claude Design</h5>
+        <code>support.claude.com</code>
+        <p>Claude Design 的官方教程。</p>
+      </a>
+    </div>
+
+    <h3 class="sub" style="margin-top: 22px;">Claude Code · 文档与变更日志</h3>
+    <div class="resource-grid">
+      <a class="res" href="https://code.claude.com/docs/en/changelog" target="_blank">
+        <div class="label">Docs · 官方</div>
+        <h5>Claude Code Changelog</h5>
+        <code>code.claude.com/docs/en/changelog</code>
+        <p>4 月 13 个版本的完整 release notes。</p>
+      </a>
+      <a class="res" href="https://github.com/anthropics/claude-code/releases" target="_blank">
+        <div class="label">GitHub</div>
+        <h5>Claude Code Releases</h5>
+        <code>github.com/anthropics/claude-code/releases</code>
+        <p>每个版本的 binary 下载 + 详细 commit。</p>
+      </a>
+      <a class="res" href="https://code.claude.com/docs/en/code-review" target="_blank">
+        <div class="label">Docs</div>
+        <h5>/ultrareview 文档</h5>
+        <code>code.claude.com/docs/en/code-review</code>
+        <p>多 agent 代码审查的完整使用指南。</p>
+      </a>
+      <a class="res" href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank">
+        <div class="label">Platform</div>
+        <h5>API Platform Release Notes</h5>
+        <code>platform.claude.com/docs/en/release-notes</code>
+        <p>API 与 Managed Agents 的更新。</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: External references ===== -->
+  <section class="slide">
+    <div class="eyebrow">17.2 · 第三方资源</div>
+    <h2 class="section">独立分析 · benchmark · 社区</h2>
+
+    <div class="resource-grid">
+      <a class="res" href="https://www.vellum.ai/blog/claude-opus-4-7-benchmarks-explained" target="_blank">
+        <div class="label">Benchmark · Vellum</div>
+        <h5>Claude Opus 4.7 Benchmarks Explained</h5>
+        <code>vellum.ai/blog/claude-opus-4-7-benchmarks-explained</code>
+        <p>独立 benchmark 解读，对比 GPT-5.4 / Gemini 3.1 Pro。</p>
+      </a>
+      <a class="res" href="https://llm-stats.com/blog/research/claude-opus-4-7-launch" target="_blank">
+        <div class="label">Benchmark · LLM Stats</div>
+        <h5>Opus 4.7 Launch Coverage</h5>
+        <code>llm-stats.com/models/claude-opus-4-7</code>
+        <p>价格、上下文、性能全维度对比。</p>
+      </a>
+      <a class="res" href="https://www.mindstudio.ai/blog/claude-opus-47-benchmark-breakdown" target="_blank">
+        <div class="label">Analysis · MindStudio</div>
+        <h5>Vision · Coding · Financial Breakdown</h5>
+        <code>mindstudio.ai/blog/claude-opus-47-benchmark-breakdown</code>
+        <p>按行业拆解 Opus 4.7 的能力增益。</p>
+      </a>
+      <a class="res" href="https://lushbinary.com/blog/claude-opus-4-7-developer-guide-benchmarks-vision-migration/" target="_blank">
+        <div class="label">Guide · Lushbinary</div>
+        <h5>Opus 4.7 Developer Migration Guide</h5>
+        <code>lushbinary.com/.../opus-4-7-developer-guide</code>
+        <p>从 4.6 升级到 4.7 的代码迁移注意事项。</p>
+      </a>
+      <a class="res" href="https://www.claudedirectory.org/blog/ultrareview-claude-code-guide" target="_blank">
+        <div class="label">Guide · Claude Directory</div>
+        <h5>Ultrareview 完整指南</h5>
+        <code>claudedirectory.org/blog/ultrareview-claude-code-guide</code>
+        <p>多 agent 代码审查的实战教程。</p>
+      </a>
+      <a class="res" href="https://claudefa.st/blog/guide/changelog" target="_blank">
+        <div class="label">Aggregator · ClaudeFast</div>
+        <h5>Claude Code 2026 Changelog 聚合</h5>
+        <code>claudefa.st/blog/guide/changelog</code>
+        <p>第三方对 Claude Code 全部版本的整理。</p>
+      </a>
+      <a class="res" href="https://thenextweb.com/news/anthropic-claude-opus-4-7-coding-agentic-benchmarks-release" target="_blank">
+        <div class="label">News · TNW</div>
+        <h5>Opus 4.7 上线媒体报道</h5>
+        <code>thenextweb.com/.../opus-4-7</code>
+        <p>主流媒体视角的 Opus 4.7 发布解读。</p>
+      </a>
+      <a class="res" href="https://time.com/7354738/claude-constitution-ai-alignment/" target="_blank">
+        <div class="label">News · TIME</div>
+        <h5>Anthropic Publishes Claude AI's New Constitution</h5>
+        <code>time.com/7354738</code>
+        <p>对宪法升级的主流媒体长篇报道。</p>
+      </a>
+    </div>
+
+    <h3 class="sub" style="margin-top: 24px;">Cowork 安全 · 第三方分析</h3>
+    <div class="resource-grid">
+      <a class="res" href="https://pluto.security/blog/inside-claude-cowork-how-anthropics-autonomous-agent-actually-works/" target="_blank">
+        <div class="label">Security · Pluto</div>
+        <h5>Inside Claude Cowork · 反向工程分析</h5>
+        <code>pluto.security/blog/inside-claude-cowork</code>
+        <p>独立安全研究人员对 Cowork 架构的拆解。</p>
+      </a>
+      <a class="res" href="https://aifordevelopers.substack.com/p/the-complete-guide-to-claude-cowork" target="_blank">
+        <div class="label">Guide · Substack</div>
+        <h5>Complete Guide to Claude Cowork</h5>
+        <code>aifordevelopers.substack.com</code>
+        <p>从开发者视角的 Cowork 完整使用指南。</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Slide 4: How to use this report ===== -->
+  <section class="slide">
+    <div class="eyebrow">17.3 · 使用本报告</div>
+    <h2 class="section">这份报告的<em>用法</em></h2>
+
+    <div class="grid-2">
+      <div>
+        <h3 class="sub">📦 文件结构</h3>
+        <pre class="code"><span class="label">claude-showcase/</span>
+claude-showcase/
+├── index.html              <span class="c"># 入口索引</span>
+├── 01-cover.html           <span class="c"># 封面 + Agenda</span>
+├── 02-philosophy.html      <span class="c"># 3H 准则</span>
+├── 03-constitution.html    <span class="c"># Constitutional AI</span>
+├── 04-engineering-...      <span class="c"># 工程红线</span>
+├── 05-opus-4-7.html        <span class="c"># 模型升级</span>
+├── 06-claude-design.html   <span class="c"># Design</span>
+├── 07-cowork.html          <span class="c"># Cowork</span>
+├── 08-claude-code-...      <span class="c"># 13 版本</span>
+├── 09-ultrareview-...      <span class="c"># /ultrareview</span>
+├── 10-mcp-skills.html      <span class="c"># MCP/Skills/Hooks</span>
+├── 11-themes-vim-ui.html   <span class="c"># 体验</span>
+├── 12-windows-native.html  <span class="c"># 跨平台</span>
+├── 13-security-perm...     <span class="c"># 安全</span>
+├── 14-enterprise-rbac.html <span class="c"># 企业</span>
+├── 15-mapping-table.html   <span class="c"># 对照表</span>
+├── 16-videos.html          <span class="c"># 视频</span>
+├── 17-resources.html       <span class="c"># 本页</span>
+└── assets/
+    ├── styles.css          <span class="c"># 共享样式</span>
+    └── deck.js             <span class="c"># 翻页/键盘</span></pre>
+      </div>
+
+      <div>
+        <h3 class="sub">🧭 导航</h3>
+        <table class="compare">
+          <tr><td class="feature">→ Space PageDown</td><td>下一页（含跨文件）</td></tr>
+          <tr><td class="feature">← PageUp</td><td>上一页</td></tr>
+          <tr><td class="feature">F</td><td>切换全屏</td></tr>
+          <tr><td class="feature">H</td><td>回到 index.html</td></tr>
+          <tr><td class="feature">Home / End</td><td>当前页内首/末张幻灯片</td></tr>
+          <tr><td class="feature">Esc</td><td>退出全屏</td></tr>
+          <tr><td class="feature">触屏</td><td>左右滑动翻页</td></tr>
+        </table>
+
+        <h3 class="sub" style="margin-top: 22px;">🎬 演讲建议</h3>
+        <div class="row-feat"><span class="dot"></span><span><strong>30 分钟版</strong>：第 4 / 5 / 9 / 15 章</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>60 分钟版</strong>：上述 + 6 / 7 / 13 / 14 章</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>90 分钟版</strong>：完整 17 页</span></div>
+        <div class="row-feat"><span class="dot"></span><span><strong>异步阅读</strong>：建议从 index.html 进入，按 part 顺序读</span></div>
+
+        <h3 class="sub" style="margin-top: 22px;">🔄 更新维护</h3>
+        <p style="font-size: 13.5px;">每个章节是独立的 HTML 文件——
+        某个产品有新功能时，可以只更新对应文件。
+        共享 CSS/JS 在 assets/ 下，确保风格一致。</p>
+      </div>
+    </div>
+
+    <div class="credits">
+      <strong>致谢</strong>：本报告基于 Anthropic 官方公告、Claude Help Center、Claude Code Changelog（GitHub）、
+      以及 Vellum / LLM Stats / MindStudio / TIME / TNW 等第三方分析。
+      所有数据截至 2026-04-30。
+      引用本报告时请注明 Anthropic 官方资料来源。
+      <br><br>
+      <strong>报告作者</strong>：由 Claude Opus 4.7 协助撰写 ·
+      <strong>设计语言</strong>：参考 Anthropic 官网风格 ·
+      <strong>技术栈</strong>：纯 HTML + CSS + Vanilla JS · 无依赖 ·
+      <strong>许可</strong>：内部学习交流使用，禁止商用转载。
+    </div>
+  </section>
+
+  <!-- ===== Slide 5: Final ===== -->
+  <section class="slide end">
+    <div class="eyebrow" style="text-align: center;">Fin.</div>
+    <h1 class="title">谢谢观看 ·<br><em>Until the next release.</em></h1>
+    <p class="lead" style="margin: 24px auto 0;">
+      Claude 的下一次更新可能就在几小时后——
+      但理解它的设计哲学，让每一次更新都不再"突然"。
+    </p>
+
+    <div style="margin-top: 50px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+      <button onclick="location.href='index.html'"
+              style="background: var(--accent); color: var(--text); border: none;
+                     padding: 12px 26px; border-radius: 999px; font-size: 14px;
+                     cursor: pointer; font-family: inherit;">
+        ⌂ 回到索引页
+      </button>
+      <button onclick="location.href='01-cover.html'"
+              style="background: transparent; color: var(--text); border: 1px solid var(--line);
+                     padding: 12px 26px; border-radius: 999px; font-size: 14px;
+                     cursor: pointer; font-family: inherit;">
+        ↻ 重新阅读
+      </button>
+    </div>
+
+    <p class="hint" style="margin-top: 60px;">
+      报告生成于 2026-04-30 · Powered by Claude Opus 4.7
+    </p>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · End</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">17 / 17</span>
+    <button id="next">回到首页 ↻</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

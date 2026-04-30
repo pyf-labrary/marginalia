@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude 产品理念与 4 月更新全景 · 索引</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  body.single { overflow: auto; }
+  .index-hero {
+    padding: 80px 80px 40px;
+    background:
+      radial-gradient(900px 500px at 80% 0%, rgba(204,120,92,0.18), transparent 60%),
+      radial-gradient(700px 400px at 0% 100%, rgba(212,162,127,0.12), transparent 60%),
+      var(--bg);
+  }
+  .index-hero .meta { margin-top: 32px; display: flex; gap: 32px; flex-wrap: wrap; }
+  .index-hero .meta span strong { display: block; color: var(--text); font-size: 15px; margin-bottom: 4px; }
+  .index-hero .meta span { color: var(--muted); font-size: 13.5px; }
+  .index-section { padding: 50px 80px; }
+  .index-section + .index-section { padding-top: 20px; }
+  .index-section h2 {
+    font-family: var(--serif);
+    font-size: 28px;
+    color: var(--text);
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .index-section h2 .num {
+    color: var(--accent); font-style: italic; margin-right: 12px;
+  }
+  .index-section .desc {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 22px;
+    max-width: 720px;
+  }
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 30px 0 0;
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .stat-row .stat-cell {
+    text-align: left;
+  }
+  .stat-row .v {
+    font-family: var(--serif);
+    font-size: 44px;
+    color: var(--accent);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .stat-row .l { color: var(--muted); font-size: 13px; margin-top: 6px; }
+  .footer {
+    padding: 30px 80px 50px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+  @media (max-width: 980px) {
+    .index-hero, .index-section, .footer { padding-left: 24px; padding-right: 24px; }
+    .stat-row { grid-template-columns: repeat(2, 1fr); }
+    .index-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body class="single" data-page-no="0" data-page-total="17" data-progress="0">
+
+<div class="progress" id="progress" style="width:0;"></div>
+
+<header class="index-hero">
+  <div class="eyebrow">Anthropic · Claude · April 2026</div>
+  <h1 class="title" style="margin-top:8px;">读懂 <em>Claude</em> 设计哲学<br>与 <em>4 月</em>更新全景</h1>
+  <p class="lead" style="margin-top:24px;">
+    一份 17 页的深度报告：从 Constitutional AI 的训练范式，到 Opus 4.7、
+    Claude Design、Cowork、Claude Code 13 个版本——逐一拆解每个 4 月更新如何
+    回应「有用 · 无害 · 诚实」的设计哲学。
+  </p>
+  <div class="meta">
+    <span><strong>报告日期</strong>2026-04-30</span>
+    <span><strong>覆盖周期</strong>2026-04-01 ~ 2026-04-30</span>
+    <span><strong>结构</strong>17 页 · 每页独立可读</span>
+    <span><strong>导航</strong>箭头翻页 · F 全屏 · H 回首页</span>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat-cell">
+      <div class="v">3</div>
+      <div class="l">核心理念 · Helpful / Harmless / Honest</div>
+    </div>
+    <div class="stat-cell">
+      <div class="v">13</div>
+      <div class="l">Claude Code 版本 · v2.1.111 → 123</div>
+    </div>
+    <div class="stat-cell">
+      <div class="v">4</div>
+      <div class="l">重大产品发布 · Opus 4.7 / Design / Cowork / Creative</div>
+    </div>
+    <div class="stat-cell">
+      <div class="v">87.6<span style="font-size:24px;">%</span></div>
+      <div class="l">Opus 4.7 · SWE-bench Verified 得分</div>
+    </div>
+  </div>
+</header>
+
+<section class="index-section">
+  <h2><span class="num">Part I</span>设计哲学</h2>
+  <p class="desc">从 Anthropic 的"宪法式"训练方法到 Boris Cherny 的三条工程红线，理解 Claude 为什么是它现在的样子。</p>
+  <div class="index-grid">
+    <a class="index-card" href="01-cover.html">
+      <div class="ix">01 · 封面</div>
+      <h4>开篇 + Agenda</h4>
+      <p>一图读懂这场分享会的 17 个章节。</p>
+    </a>
+    <a class="index-card" href="02-philosophy.html">
+      <div class="ix">02 · 理念</div>
+      <h4>3H 准则深度拆解</h4>
+      <p>Helpful · Harmless · Honest——优先级与冲突处理。</p>
+    </a>
+    <a class="index-card" href="03-constitution.html">
+      <div class="ix">03 · 训练范式</div>
+      <h4>Constitutional AI 与新宪法</h4>
+      <p>从"列规则"到"讲道理"——为什么这是 Anthropic 的护城河。</p>
+    </a>
+    <a class="index-card" href="04-engineering-principles.html">
+      <div class="ix">04 · 工程红线</div>
+      <h4>三条工程化原则</h4>
+      <p>理解意图 · 对局限诚实 · 尊重用户自主权。</p>
+    </a>
+  </div>
+</section>
+
+<section class="index-section">
+  <h2><span class="num">Part II</span>4 月旗舰发布</h2>
+  <p class="desc">三款重磅产品——Opus 4.7、Claude Design、Cowork——从功能到使用方法到设计哲学映射。</p>
+  <div class="index-grid">
+    <a class="index-card" href="05-opus-4-7.html">
+      <div class="ix">05 · 模型</div>
+      <h4>Claude Opus 4.7</h4>
+      <p>SWE-bench 87.6% · 3× 视觉 · xhigh effort · task budgets。</p>
+    </a>
+    <a class="index-card" href="06-claude-design.html">
+      <div class="ix">06 · Anthropic Labs</div>
+      <h4>Claude Design</h4>
+      <p>对话即设计：原型、幻灯片、一页纸。</p>
+    </a>
+    <a class="index-card" href="07-cowork.html">
+      <div class="ix">07 · 跨设备</div>
+      <h4>Cowork 持久代理线程</h4>
+      <p>桌面交代任务，手机继续接管，回家结果躺好。</p>
+    </a>
+  </div>
+</section>
+
+<section class="index-section">
+  <h2><span class="num">Part III</span>Claude Code · 13 个版本</h2>
+  <p class="desc">4 月每 2 天一个版本——挑出最值得开发者关注的 6 大主题。</p>
+  <div class="index-grid">
+    <a class="index-card" href="08-claude-code-overview.html">
+      <div class="ix">08 · 时间线</div>
+      <h4>13 版本全景</h4>
+      <p>v2.1.111 → 123 · 每个版本的关键变更。</p>
+    </a>
+    <a class="index-card" href="09-ultrareview-effort.html">
+      <div class="ix">09 · 重点功能</div>
+      <h4>/ultrareview &amp; /effort</h4>
+      <p>云端并行多 agent 审查 · 努力级别滑块。</p>
+    </a>
+    <a class="index-card" href="10-mcp-skills.html">
+      <div class="ix">10 · 扩展性</div>
+      <h4>MCP · Skills · Hooks</h4>
+      <p>alwaysLoad / 类型过滤 / 条件 hook。</p>
+    </a>
+    <a class="index-card" href="11-themes-vim-ui.html">
+      <div class="ix">11 · 体验</div>
+      <h4>主题 · Vim · UI</h4>
+      <p>/theme 切换 · v/V 视觉模式 · /usage 合并。</p>
+    </a>
+    <a class="index-card" href="12-windows-native.html">
+      <div class="ix">12 · 跨平台</div>
+      <h4>Native Binary &amp; Windows</h4>
+      <p>JS bundle → 本机二进制 · PowerShell 替代 Git Bash。</p>
+    </a>
+    <a class="index-card" href="13-security-permissions.html">
+      <div class="ix">13 · 安全</div>
+      <h4>权限与 Sandbox</h4>
+      <p>Bash 权限收紧 · OAuth 全链修复 · 危险路径检测。</p>
+    </a>
+  </div>
+</section>
+
+<section class="index-section">
+  <h2><span class="num">Part IV</span>企业、闭环与资源</h2>
+  <p class="desc">从个人工具到组织级能力，最后用一张表把所有更新映射回三条原则。</p>
+  <div class="index-grid">
+    <a class="index-card" href="14-enterprise-rbac.html">
+      <div class="ix">14 · 企业</div>
+      <h4>RBAC + SCIM + Telemetry</h4>
+      <p>把权限设计从单机延伸到组织。</p>
+    </a>
+    <a class="index-card" href="15-mapping-table.html">
+      <div class="ix">15 · 闭环</div>
+      <h4>理念 ↔ 功能对照大表</h4>
+      <p>一张大表看每个更新如何回应每条原则。</p>
+    </a>
+    <a class="index-card" href="16-videos.html">
+      <div class="ix">16 · 视频</div>
+      <h4>视频与官方演示</h4>
+      <p>嵌入 Anthropic 频道与开发者实战合集。</p>
+    </a>
+    <a class="index-card" href="17-resources.html">
+      <div class="ix">17 · 结语</div>
+      <h4>结语 · 资源 · 引用</h4>
+      <p>所有信息来源、官方文档与延伸阅读。</p>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>报告生成于 2026-04-30 · 由 Claude Opus 4.7 协助撰写 · 数据来自 anthropic.com、code.claude.com、github.com/anthropics/claude-code</p>
+  <p style="margin-top:10px;">提示：每页可独立打开、独立分享；按 <span class="kbd">→</span> 顺序浏览全部 17 页。</p>
+</footer>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 Showcase · Index</div>
+  <div class="pager">
+    <button id="prev" disabled style="opacity:.4;">← 上一页</button>
+    <span class="counter" id="counter">封面索引</span>
+    <button id="next" onclick="location.href='01-cover.html'">开始浏览 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

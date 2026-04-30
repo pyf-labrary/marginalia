@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>16 · 视频与官方演示</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .video-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 18px;
+  }
+  .video-card .video-wrap { margin-bottom: 14px; }
+  .video-card h4 {
+    color: var(--text);
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+  .video-card .desc {
+    color: var(--muted);
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .video-card .meta {
+    display: flex; gap: 10px;
+    color: var(--muted-2);
+    font-size: 11.5px;
+    margin-top: 8px;
+  }
+  .video-card .meta span {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: var(--mono);
+  }
+
+  .channel-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 18px;
+  }
+
+  .topics-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .topic-pill {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: all .25s;
+  }
+  .topic-pill:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .topic-pill h5 {
+    color: var(--text);
+    font-size: 13.5px;
+    margin-bottom: 4px;
+  }
+  .topic-pill p {
+    color: var(--muted);
+    font-size: 11.5px;
+  }
+</style>
+</head>
+<body
+  data-page-no="16" data-page-total="17" data-progress="94.12"
+  data-prev="15-mapping-table.html"
+  data-next="17-resources.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:94.12%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Intro ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part IV · 16</div>
+    <h2 class="section">看官方演示<br>把"看不见的更新"<em>看见</em></h2>
+    <p class="lead" style="font-size: 18px;">
+      文字描述 80% 够用，但 PPT、对话动效、CLI 实际操作还是<strong>看视频更直观</strong>。
+      下面是 4 月相关的官方/社区视频精选。点开即看（嵌入 YouTube）。
+    </p>
+
+    <div class="card-soft" style="margin-top: 30px;">
+      <h3 class="sub">观看建议</h3>
+      <p>① 本页所有视频通过 YouTube iframe 嵌入；如本地受限可右键 "在新标签页打开" 跳转。<br>
+      ② Anthropic 官方视频通常是发布日同步上线——精炼、信息密度高。<br>
+      ③ 社区视频（开发者实战）适合看真实工作流——比官方更"冒险"。</p>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: Official channels ===== -->
+  <section class="slide">
+    <div class="eyebrow">16.1 · 官方频道</div>
+    <h2 class="section">Anthropic 官方频道</h2>
+
+    <div class="channel-grid">
+      <div class="video-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=UUrDwWp7EBBv4NwvScIpBDOA"
+                  title="Anthropic 官方频道"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <h4>Anthropic 主频道</h4>
+        <p class="desc">Claude 模型发布、研究成果、产品演示——4 月覆盖 Opus 4.7 发布、
+        Constitutional AI 解读、Claude Design 介绍。</p>
+        <div class="meta">
+          <span>youtube.com/@anthropic</span>
+          <span>uploaded weekly</span>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/t_LBECIQQqs"
+                  title="Introducing Claude Design by Anthropic Labs"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <h4>Introducing Claude Design</h4>
+        <p class="desc">官方 4 月 17 日发布视频——从空白页面开始，几分钟内做出一份 pitch deck。
+        Claude Design 的最佳介绍。</p>
+        <div class="meta">
+          <span>2026-04-17</span>
+          <span>~3 min</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="channel-grid" style="margin-top: 20px;">
+      <div class="video-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLf2m23nhTg1OAitdXyVTgWHCcM2OKHaRl"
+                  title="Anthropic 产品发布合集"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <h4>Anthropic 产品发布合集</h4>
+        <p class="desc">Opus 4.7、Cowork、Claude Design——4 月所有产品发布的官方演示在此。
+        也包括 March 的 Sonnet 4.5 发布回顾。</p>
+        <div class="meta">
+          <span>playlist</span>
+          <span>~30 videos</span>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=UUrDwWp7EBBv4NwvScIpBDOA"
+                  title="Anthropic Research Talks"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <h4>Research Talks</h4>
+        <p class="desc">Constitutional AI、可解释性、对齐研究——更深入的技术分享。
+        想理解"为什么 Claude 这样设计"必看。</p>
+        <div class="meta">
+          <span>technical</span>
+          <span>30~60 min</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: Developer demos ===== -->
+  <section class="slide">
+    <div class="eyebrow">16.2 · 开发者实战</div>
+    <h2 class="section">Claude Code 实战合集</h2>
+
+    <div class="channel-grid">
+      <div class="video-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PL5jhxefQuOqDt4XmXPXc3yELaCTZBLnBc"
+                  title="Claude Code 实战合集"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <h4>Claude Code · 开发者实战</h4>
+        <p class="desc">/ultrareview 真实使用、Skills 编写、MCP server 开发、企业部署——
+        来自社区的 case study，比官方更"敢做"。</p>
+        <div class="meta">
+          <span>community</span>
+          <span>weekly updates</span>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLf2m23nhTg1NRzxI3VEFV6Z5tAhmlOdT8"
+                  title="Claude Code 教程合集"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <h4>Claude Code · 教程入门</h4>
+        <p class="desc">从安装、基本命令、到 plan mode、subagent fork——
+        新手快速上手的内容合集。</p>
+        <div class="meta">
+          <span>tutorial</span>
+          <span>~20 videos</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 26px;">推荐观看顺序</h3>
+    <div class="topics-list">
+      <div class="topic-pill">
+        <h5>① Opus 4.7 发布</h5>
+        <p>了解模型基础</p>
+      </div>
+      <div class="topic-pill">
+        <h5>② Claude Design 演示</h5>
+        <p>感受"对话即设计"</p>
+      </div>
+      <div class="topic-pill">
+        <h5>③ /ultrareview 实战</h5>
+        <p>看多 agent 怎么协作</p>
+      </div>
+      <div class="topic-pill">
+        <h5>④ Cowork 跨设备</h5>
+        <p>持久线程的真实场景</p>
+      </div>
+      <div class="topic-pill">
+        <h5>⑤ Skills 编写</h5>
+        <p>把工作流变成资产</p>
+      </div>
+      <div class="topic-pill">
+        <h5>⑥ Hook 实战</h5>
+        <p>合规策略的代码化</p>
+      </div>
+      <div class="topic-pill">
+        <h5>⑦ Constitutional AI</h5>
+        <p>训练范式深入</p>
+      </div>
+      <div class="topic-pill">
+        <h5>⑧ 企业部署</h5>
+        <p>RBAC + SCIM + OTel</p>
+      </div>
+      <div class="topic-pill">
+        <h5>⑨ 互操作演示</h5>
+        <p>Claude Code + Design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 4: Showcase visuals ===== -->
+  <section class="slide">
+    <div class="eyebrow">16.3 · 静态演示</div>
+    <h2 class="section">如果只能看一张图……</h2>
+
+    <p>视频之外，Anthropic 4 月发布了一些"<strong>可分享的视觉内容</strong>"——
+    适合放进自己的演示、文档、博客。</p>
+
+    <div class="grid-2" style="margin-top: 18px;">
+      <div class="video-card">
+        <h4>📊 Opus 4.7 Benchmark 卡</h4>
+        <p class="desc">官方一图对比表——SWE-bench / OSWorld / MCP-Atlas 全部数据。
+        在 anthropic.com/news/claude-opus-4-7 可下载高清版。</p>
+        <pre class="code" style="margin-top: 10px; font-size: 11.5px;">SWE-bench Pro       64.3%   (4.6: 53.4%)
+SWE-bench Verified  87.6%   (4.6: 80.8%)
+MCP-Atlas           77.3%   (4.6: 75.8%)
+OSWorld-Verified    78.0%   (4.6: 72.7%)
+XBOW Vision         98.5%   (4.6: 54.5%)</pre>
+      </div>
+
+      <div class="video-card">
+        <h4>🎨 Claude Design 案例库</h4>
+        <p class="desc">claude.ai/design 主页有"Showcase"——
+        来自真实用户的设计作品。包括启动 deck、产品页、海报。
+        点开能看完整对话记录——学习"<strong>怎么向 Claude 描述设计需求</strong>"。</p>
+      </div>
+
+      <div class="video-card">
+        <h4>📜 宪法全文</h4>
+        <p class="desc">anthropic.com/news/claudes-constitution
+        + anthropic.com/news/claude-new-constitution。
+        是理解 Claude 的最权威单一资料——值得通读。</p>
+      </div>
+
+      <div class="video-card">
+        <h4>📈 Claude Code Changelog</h4>
+        <p class="desc">github.com/anthropics/claude-code/releases ——
+        每个版本的完整 changelog。本 PPT 第 8 章已浓缩，但完整版细节更多。</p>
+      </div>
+    </div>
+
+    <div class="card-soft" style="margin-top: 24px;">
+      <h3 class="sub">如果你想做一次内部分享</h3>
+      <p>本 PPT 已经覆盖了从理念到 4 月每个具体功能的完整链路——
+      可以直接用作公司内的 "What's new in Claude" 分享材料。
+      推荐组合：<strong>第 4-5-9-15 章</strong>（约 30 分钟）作为快速版，
+      <strong>全 17 页</strong>（约 90 分钟）作为深度版。</p>
+    </div>
+
+    <p class="hint" style="margin-top: 18px;">
+      下一页：结语 + 完整资源列表。
+    </p>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Videos</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">16 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

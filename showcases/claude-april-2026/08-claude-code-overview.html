@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>08 · Claude Code · 13 个版本时间线</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .version-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .version-row .v-meta {
+    text-align: right;
+    padding-right: 18px;
+    border-right: 1px solid var(--line);
+  }
+  .version-row .v-meta .ver {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent-2);
+    margin-bottom: 4px;
+  }
+  .version-row .v-meta .date {
+    color: var(--muted);
+    font-size: 12px;
+    font-family: var(--serif);
+    font-style: italic;
+  }
+  .version-row .v-meta .star {
+    color: var(--accent);
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .version-row .v-content h5 {
+    color: var(--text);
+    font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  .version-row .v-content p {
+    color: var(--muted);
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin-bottom: 4px;
+  }
+  .version-row .v-content .tags {
+    margin-top: 6px;
+  }
+  .version-row .v-content .tag {
+    display: inline-block;
+    font-size: 11px;
+    background: var(--bg-soft);
+    color: var(--muted);
+    padding: 2px 8px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    margin-right: 4px;
+    font-family: var(--mono);
+  }
+  .version-row .v-content .tag.feat { color: var(--accent-2); border-color: rgba(204,120,92,0.3); }
+  .version-row .v-content .tag.fix { color: var(--info); border-color: rgba(136,184,216,0.3); }
+  .version-row .v-content .tag.perf { color: var(--good); border-color: rgba(132,204,140,0.3); }
+  .version-row .v-content .tag.sec { color: var(--warn); border-color: rgba(233,184,114,0.3); }
+
+  .stat-bar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    padding: 18px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin: 16px 0 24px;
+  }
+  .stat-bar .cell {
+    text-align: left;
+  }
+  .stat-bar .cell .v {
+    font-family: var(--serif);
+    font-size: 30px;
+    color: var(--accent);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .stat-bar .cell .l {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body
+  data-page-no="8" data-page-total="17" data-progress="47.06"
+  data-prev="07-cowork.html"
+  data-next="09-ultrareview-effort.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:47.06%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Intro ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part III · 08 · Claude Code</div>
+    <h2 class="section">Claude Code · 4 月<br>13 个版本，<em>每两天一发布</em></h2>
+    <p class="lead">
+      4 月 1 日到 29 日，Claude Code 从 v2.1.111 到 v2.1.123——
+      平均每 <strong>2.2 天</strong> 一个版本。这一页是全景时间线，下一页拆 /ultrareview 等重点功能。
+    </p>
+
+    <div class="stat-bar">
+      <div class="cell">
+        <div class="v">13</div>
+        <div class="l">版本数</div>
+      </div>
+      <div class="cell">
+        <div class="v">~2 天</div>
+        <div class="l">平均发布间隔</div>
+      </div>
+      <div class="cell">
+        <div class="v">3</div>
+        <div class="l">Major 功能</div>
+      </div>
+      <div class="cell">
+        <div class="v">40+</div>
+        <div class="l">细节修复</div>
+      </div>
+      <div class="cell">
+        <div class="v">5</div>
+        <div class="l">主题大类</div>
+      </div>
+    </div>
+
+    <h3 class="sub">本页阅读建议</h3>
+    <p>每个版本只挑 2-3 条最值得关注的——完整 changelog 见
+    <code>github.com/anthropics/claude-code/releases</code>。
+    标星 ★ 的版本是"必看"——v2.1.111（Opus 4.7 接入）、v2.1.118（主题与 Vim）、v2.1.119（配置持久化）、v2.1.120（Windows 解放）。</p>
+  </section>
+
+  <!-- ===== Slide 2: April 16-17 ===== -->
+  <section class="slide">
+    <div class="eyebrow">08.1 · 上半月（前两周）</div>
+    <h2 class="section">v2.1.111 → v2.1.115</h2>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.111</div>
+        <div class="date">04-16</div>
+        <div class="star">★ 必看</div>
+      </div>
+      <div class="v-content">
+        <h5>Opus 4.7 接入 + /ultrareview 上线</h5>
+        <p>4.7 的 xhigh 努力级别可用；Max 订户在 4.7 中可用 auto mode；
+          /effort 改为交互式滑块；新增 /ultrareview 云端并行多 agent 代码审查；
+          新增 /less-permission-prompts 技能（提议常见 read-only 命令的 allowlist）；
+          "Auto (match terminal)" 主题选项；Windows PowerShell 工具逐步推出（CLAUDE_CODE_USE_POWERSHELL_TOOL）；
+          Read-only bash 全局命令免提示；近似匹配 typo 建议（claude udpate → "Did you mean update?"）；
+          计划文件按提示命名（fix-auth-race-snug-otter.md）；/skills 支持按估计 token 数排序；
+          Ctrl+U 清空整个输入缓冲；Ctrl+L 强制全屏重绘。</p>
+        <div class="tags"><span class="tag feat">feat: opus-4-7</span><span class="tag feat">feat: ultrareview</span><span class="tag feat">feat: effort-slider</span><span class="tag feat">feat: themes</span></div>
+      </div>
+    </div>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.112</div>
+        <div class="date">04-16</div>
+      </div>
+      <div class="v-content">
+        <h5>Hotfix · auto mode 模型可用性</h5>
+        <p>修复 auto mode 下 "claude-opus-4-7 is temporarily unavailable" 错误——
+        4.7 上线当天的紧急修复。</p>
+        <div class="tags"><span class="tag fix">fix: auto-mode</span></div>
+      </div>
+    </div>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.113</div>
+        <div class="date">04-17</div>
+        <div class="star">★ 必看</div>
+      </div>
+      <div class="v-content">
+        <h5>Native binary 替代 JS bundle · 安全收紧</h5>
+        <p>CLI 现在生成<strong>本机 Claude Code 二进制</strong>而不是捆绑 JavaScript——
+        启动更快、内存更省；新增 <code>sandbox.network.deniedDomains</code> 设置阻止特定域名；
+        Windows Ctrl+Backspace 删除前一个单词；长 URL 在换行时保持可点击；
+        macOS <code>/private/{etc,var,tmp,home}</code> 路径视为危险删除目标；
+        Bash deny 规则匹配 env / sudo / watch 等 wrapper 命令；
+        <code>Bash(find:*)</code> 规则不再自动批准 <code>find -exec</code> / <code>-delete</code>。</p>
+        <div class="tags"><span class="tag feat">feat: native-binary</span><span class="tag sec">sec: bash-perms</span><span class="tag sec">sec: sandbox</span></div>
+      </div>
+    </div>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.114</div>
+        <div class="date">04-18</div>
+      </div>
+      <div class="v-content">
+        <h5>Subagent 权限对话修复</h5>
+        <p>修复 agent 团队成员请求工具权限时权限对话框崩溃。
+        小修但影响 multi-agent workflow 的稳定性。</p>
+        <div class="tags"><span class="tag fix">fix: agent-perms</span></div>
+      </div>
+    </div>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.115</div>
+        <div class="date">—</div>
+      </div>
+      <div class="v-content">
+        <h5>未发布（跳号）</h5>
+        <p>内部测试版本，未对外发布。</p>
+        <div class="tags"><span class="tag">internal</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: April 20-22 ===== -->
+  <section class="slide">
+    <div class="eyebrow">08.2 · 中间周</div>
+    <h2 class="section">v2.1.116 → v2.1.117</h2>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.116</div>
+        <div class="date">04-20</div>
+      </div>
+      <div class="v-content">
+        <h5>性能 · 思考可视化</h5>
+        <p><code>/resume</code> 大型会话快 <strong>67%</strong>（40MB+ 会话）；
+          VS Code / Cursor / Windsurf 全屏滚动更平滑；
+          思考微调显示进度提示（"still thinking → thinking more → almost done"）；
+          <code>/config</code> 搜索匹配选项值（搜索 "vim" 找到编辑器模式）；
+          <code>/doctor</code> 在 Claude 响应时可打开，无需等待当前轮次完成。</p>
+        <div class="tags"><span class="tag perf">perf: resume-67%</span><span class="tag feat">feat: thinking-progress</span><span class="tag feat">feat: config-search</span></div>
+      </div>
+    </div>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.117</div>
+        <div class="date">04-22</div>
+      </div>
+      <div class="v-content">
+        <h5>Subagent fork · 会话总结 · 并发 MCP</h5>
+        <p>外部构建支持 <code>CLAUDE_CODE_FORK_SUBAGENT=1</code> 启用 fork 子代理；
+          Agent frontmatter <code>mcpServers</code> 通过 <code>--agent</code> 加载；
+          <code>/resume</code> 提供"总结大型陈旧会话"的选项——把超长历史摘要后继续；
+          本地和 claude.ai MCP 服务器并发连接成为默认，启动更快。</p>
+        <div class="tags"><span class="tag feat">feat: subagent-fork</span><span class="tag feat">feat: session-summary</span><span class="tag perf">perf: parallel-mcp</span></div>
+      </div>
+    </div>
+
+    <div class="card-soft" style="margin-top: 24px;">
+      <h3 class="sub">这两个版本的共同主题：<em>大会话不再是噩梦</em></h3>
+      <p>67% 的 /resume 提速 + 总结陈旧会话 + 并发 MCP——
+      这三件事联合解决了 Claude Code 用户最常抱怨的"打开旧项目慢得想哭"。
+      看起来是性能修复，本质上是"<strong>让长上下文真的可用</strong>"——
+      与 Opus 4.7 的 200K 上下文相辅相成。</p>
+    </div>
+  </section>
+
+  <!-- ===== Slide 4: April 23-28 ===== -->
+  <section class="slide">
+    <div class="eyebrow">08.3 · 下半月</div>
+    <h2 class="section">v2.1.118 → v2.1.123</h2>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.118</div>
+        <div class="date">04-23</div>
+        <div class="star">★ 必看</div>
+      </div>
+      <div class="v-content">
+        <h5>主题系统 · Vim 视觉模式 · /usage 合并</h5>
+        <p>新增 <code>/theme</code> 创建并切换命名自定义主题；插件可在 themes/ 目录提供主题；
+          Vim 模式新增视觉模式（<code>v</code>）和视觉行模式（<code>V</code>）；
+          合并 <code>/cost</code> 和 <code>/stats</code> 为 <code>/usage</code>；
+          Hooks 支持 MCP 工具调用（<code>type: "mcp_tool"</code>）；
+          修复 MCP OAuth 不含 expires_in 时每小时重新认证；
+          修复 macOS 钥匙串竞态导致 MCP 令牌被覆盖。</p>
+        <div class="tags"><span class="tag feat">feat: themes</span><span class="tag feat">feat: vim-visual</span><span class="tag fix">fix: oauth</span></div>
+      </div>
+    </div>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.119</div>
+        <div class="date">04-23</div>
+        <div class="star">★ 必看</div>
+      </div>
+      <div class="v-content">
+        <h5>配置持久化 · 多 Git 平台支持</h5>
+        <p><code>/config</code> 设置现持久化到 <code>~/.claude/settings.json</code>；
+          <code>prUrlTemplate</code> 设置指向自定义代码审查 URL；
+          <code>CLAUDE_CODE_HIDE_CWD</code> 环境变量隐藏启动 logo 中的工作目录；
+          <code>--from-pr</code> 支持 GitLab MR / Bitbucket PR / GitHub Enterprise URL；
+          修复 CRLF 内容（Windows 剪贴板）插入额外空白行；
+          修复多行粘贴在 kitty 键盘协议中丢失换行符。</p>
+        <div class="tags"><span class="tag feat">feat: persistent-config</span><span class="tag feat">feat: gitlab-bitbucket</span><span class="tag fix">fix: crlf-paste</span></div>
+      </div>
+    </div>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.120</div>
+        <div class="date">04-28</div>
+        <div class="star">★ 必看</div>
+      </div>
+      <div class="v-content">
+        <h5>Windows 不再依赖 Git Bash · ultrareview CI 化</h5>
+        <p>Windows: Git for Windows (Git Bash) 不再必需——无 Git 时使用 PowerShell；
+          <code>claude ultrareview [target]</code> 非交互式子命令支持 CI；
+          Skills 支持 <code>${CLAUDE_EFFORT}</code> 引用当前努力级别；
+          修复 <code>/branch</code> 产生包含 "缺少 tool_result 块" 错误的 fork；
+          修复 Vertex AI 在代理网关后 count_tokens 返回 400。</p>
+        <div class="tags"><span class="tag feat">feat: powershell</span><span class="tag feat">feat: ci-ultrareview</span><span class="tag fix">fix: branch-fork</span></div>
+      </div>
+    </div>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.121</div>
+        <div class="date">04-28</div>
+      </div>
+      <div class="v-content">
+        <h5>MCP alwaysLoad · /skills 类型过滤</h5>
+        <p><code>alwaysLoad</code> MCP 服务器配置选项跳过工具搜索延迟；
+          <code>claude plugin prune</code> 删除孤立的自动安装依赖；
+          <code>/skills</code> 添加类型过滤搜索框；
+          PostToolUse hooks 支持通过 <code>hookSpecificOutput.updatedToolOutput</code> 替换所有工具输出；
+          全屏模式：输入提示不再在滚动后跳回底部；
+          溢出终端的对话框现支持箭头键 / PgUp / PgDn 滚动。</p>
+        <div class="tags"><span class="tag feat">feat: alwaysload</span><span class="tag feat">feat: skills-filter</span><span class="tag feat">feat: hook-output</span></div>
+      </div>
+    </div>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.122</div>
+        <div class="date">04-28</div>
+      </div>
+      <div class="v-content">
+        <h5>大型综合更新</h5>
+        <p>新增 <code>ANTHROPIC_BEDROCK_SERVICE_TIER</code> 环境变量选择 Bedrock 服务层级；
+          <code>/resume</code> 搜索框支持粘贴 PR URL 直接查找对应会话；
+          <code>/mcp</code> 显示被手动添加服务器隐藏的 claude.ai 连接器；
+          OpenTelemetry 数值属性作为数字而非字符串发送；
+          修复 Vertex AI / Bedrock 返回 invalid_request_error 的结构化输出查询；
+          修复图像被错误调整为 2576px 而非 2000px 限制；
+          修复远程控制会话空闲状态每秒重绘两次导致 tmux 卡顿。</p>
+        <div class="tags"><span class="tag feat">feat: bedrock-tier</span><span class="tag fix">fix: vertex-structured</span><span class="tag fix">fix: tmux-flicker</span></div>
+      </div>
+    </div>
+
+    <div class="version-row">
+      <div class="v-meta">
+        <div class="ver">v2.1.123</div>
+        <div class="date">04-29</div>
+      </div>
+      <div class="v-content">
+        <h5>OAuth 401 循环修复</h5>
+        <p>修复 OAuth 认证在设置 <code>DISABLE_EXPERIMENTAL_BETAS=1</code> 时出现 401 重试循环——
+          月底最后一个修复，进入 5 月前的稳定化。</p>
+        <div class="tags"><span class="tag fix">fix: oauth-loop</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 5: Themes summary ===== -->
+  <section class="slide">
+    <div class="eyebrow">08.4 · 总结</div>
+    <h2 class="section">5 大主题 · 一图看完</h2>
+
+    <table class="compare" style="margin-top: 18px;">
+      <thead>
+        <tr><th style="width: 22%;">主题</th><th style="width: 38%;">主要更新</th><th>设计哲学映射</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feature">🧠 模型能力</td>
+          <td>Opus 4.7 接入 / xhigh effort / /effort 滑块 / auto mode for Max</td>
+          <td class="principle-tag">Helpful — 能力上限提升 + 用户自主选择档位</td>
+        </tr>
+        <tr>
+          <td class="feature">🛡️ 权限与安全</td>
+          <td>Bash 权限收紧 / OAuth 修复 / sandbox.deniedDomains / 危险路径检测</td>
+          <td class="principle-tag">Harmless — 能力变强同步加固边界</td>
+        </tr>
+        <tr>
+          <td class="feature">⚡ 性能</td>
+          <td>Native binary / /resume 67% / 并发 MCP / 启动加速</td>
+          <td class="principle-tag">Helpful — 摩擦更少，长上下文真的可用</td>
+        </tr>
+        <tr>
+          <td class="feature">🎨 体验</td>
+          <td>主题系统 / Vim 视觉模式 / /usage 合并 / 思考进度可视化 / 配置持久化</td>
+          <td class="principle-tag">用户自主 — 工具属于用户，可定制可保存</td>
+        </tr>
+        <tr>
+          <td class="feature">🌐 跨平台</td>
+          <td>Windows PowerShell / GitLab + Bitbucket + GHE / claude ultrareview CI</td>
+          <td class="principle-tag">Helpful — 不只为 Mac/GitHub 用户服务</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="hint" style="margin-top: 24px;">
+      下一页起，每章拆一个具体主题——先从最受关注的 /ultrareview 开始。
+    </p>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Code Timeline</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">8 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

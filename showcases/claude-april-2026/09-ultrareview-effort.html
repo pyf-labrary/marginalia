@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>09 · /ultrareview &amp; /effort</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .agent-cluster {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 16px;
+  }
+  .agent {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px;
+    position: relative;
+  }
+  .agent .role {
+    font-size: 12px;
+    color: var(--accent-2);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 6px;
+  }
+  .agent h5 {
+    color: var(--text);
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .agent p {
+    color: var(--muted);
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+  .agent .scope {
+    margin-top: 10px;
+    font-size: 11.5px;
+    color: var(--muted-2);
+  }
+  .agent.security { border-color: rgba(239,107,107,0.3); }
+  .agent.security .role { color: var(--danger); }
+  .agent.correctness { border-color: rgba(204,120,92,0.3); }
+  .agent.architecture { border-color: rgba(136,184,216,0.3); }
+  .agent.architecture .role { color: var(--info); }
+  .agent.performance { border-color: rgba(132,204,140,0.3); }
+  .agent.performance .role { color: var(--good); }
+  .agent.tests { border-color: rgba(233,184,114,0.3); }
+  .agent.tests .role { color: var(--warn); }
+  .agent.style { border-color: rgba(168,162,158,0.3); }
+  .agent.style .role { color: var(--muted); }
+
+  .effort-slider {
+    margin: 18px 0;
+    padding: 18px 20px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+  .effort-slider .track {
+    position: relative;
+    height: 36px;
+    margin-top: 14px;
+  }
+  .effort-slider .track::before {
+    content: "";
+    position: absolute;
+    top: 16px; left: 0; right: 0;
+    height: 2px;
+    background: var(--line);
+  }
+  .effort-slider .stop {
+    position: absolute;
+    top: 0;
+    width: 60px;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+  .effort-slider .stop .dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--bg-soft);
+    border: 2px solid var(--muted);
+    margin: 12px auto 4px;
+  }
+  .effort-slider .stop.active .dot {
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(204,120,92,0.25);
+  }
+  .effort-slider .stop .lbl {
+    color: var(--muted);
+    font-size: 11.5px;
+    font-family: var(--mono);
+  }
+  .effort-slider .stop.active .lbl { color: var(--accent-2); }
+
+  .timeline-mini {
+    display: flex;
+    margin: 16px 0;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .timeline-mini .step {
+    flex: 1;
+    padding: 14px 16px;
+    border-right: 1px solid var(--line);
+    background: var(--panel);
+    text-align: center;
+  }
+  .timeline-mini .step:last-child { border-right: none; }
+  .timeline-mini .step .t {
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .timeline-mini .step h6 {
+    color: var(--text);
+    font-size: 13px;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  .timeline-mini .step p {
+    color: var(--muted);
+    font-size: 11.5px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body
+  data-page-no="9" data-page-total="17" data-progress="52.94"
+  data-prev="08-claude-code-overview.html"
+  data-next="10-mcp-skills.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:52.94%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Hero ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part III · 09 · 重点功能</div>
+    <h2 class="section">/ultrareview：把代码审查<br>交给"<em>一群 Claude</em>"</h2>
+
+    <p class="lead" style="font-size: 18px;">
+      4 月最受开发者关注的功能。它在云端启动一队<strong>专长不同的 reviewer agent</strong>——
+      安全、正确性、架构、性能、测试、风格——并行分析你的 diff，最后汇总成一个高信号、低噪音的清单。
+    </p>
+
+    <div class="grid-3" style="margin-top: 24px;">
+      <div class="card">
+        <div class="num">⏱</div>
+        <h4>10–20 分钟</h4>
+        <p>典型完成时间——agents 在 Anthropic 云端跑，不占你本地资源。
+        非阻塞——你继续干别的事，结果以 CLI 通知形式回来。</p>
+      </div>
+      <div class="card">
+        <div class="num">✓</div>
+        <h4>独立验证</h4>
+        <p>每个 finding 在报告前都过一道<strong>verification step</strong>——
+        Agent 独立检查"这个发现是不是真存在 / 真有影响"——大幅降低误报。</p>
+      </div>
+      <div class="card">
+        <div class="num">3</div>
+        <h4>免费额度</h4>
+        <p>Pro / Max 计划在 5 月 5 日前每账号 3 次免费——
+        鼓励试用。研究 preview 阶段，正式定价待定。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: How it works ===== -->
+  <section class="slide">
+    <div class="eyebrow">09.1 · 工作原理</div>
+    <h2 class="section">六个 reviewer 各司其职</h2>
+
+    <div class="agent-cluster">
+      <div class="agent security">
+        <div class="role">Reviewer 01</div>
+        <h5>🔐 Security</h5>
+        <p>找 SQL 注入、XSS、命令注入、敏感数据泄漏、不安全的反序列化、auth 绕过。
+          特别关注 OWASP Top 10 类问题。</p>
+        <div class="scope">扫描深度：跨文件 · 跨函数</div>
+      </div>
+      <div class="agent correctness">
+        <div class="role">Reviewer 02</div>
+        <h5>🎯 Correctness</h5>
+        <p>逻辑错误、边界条件、空指针、异常处理遗漏、并发数据竞争、
+          类型不匹配——传统 reviewer 最关注的部分。</p>
+        <div class="scope">扫描深度：单文件 + diff 上下文</div>
+      </div>
+      <div class="agent architecture">
+        <div class="role">Reviewer 03</div>
+        <h5>🏛️ Architecture</h5>
+        <p>耦合度、模块边界破坏、循环依赖、违反既有抽象、
+          引入了不应该存在的 cross-layer 调用。看的是"长期债务"。</p>
+        <div class="scope">扫描深度：跨模块 · 项目级</div>
+      </div>
+      <div class="agent performance">
+        <div class="role">Reviewer 04</div>
+        <h5>⚡ Performance</h5>
+        <p>N+1 查询、O(n²) 循环、内存泄漏、不必要的同步阻塞、
+          热路径上的异常昂贵操作——结合 hot path 静态推断。</p>
+        <div class="scope">扫描深度：函数级 + 调用图</div>
+      </div>
+      <div class="agent tests">
+        <div class="role">Reviewer 05</div>
+        <h5>🧪 Tests</h5>
+        <p>覆盖率缺口、关键 case 没测、测试本身的脆弱性（依赖时间、随机性、外部 API）、
+          mock 用错——不只是"有没有写测试"，而是"测试质量怎么样"。</p>
+        <div class="scope">扫描深度：测试文件 + 关联实现</div>
+      </div>
+      <div class="agent style">
+        <div class="role">Reviewer 06</div>
+        <h5>📝 Style</h5>
+        <p>命名一致性、注释质量、复杂度、与项目现有 convention 的偏离——
+        不是 linter 替代品，关注 linter 抓不到的"<strong>读起来的感觉</strong>"。</p>
+        <div class="scope">扫描深度：单文件 + 项目惯例</div>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 26px;">完整流程</h3>
+    <div class="timeline-mini">
+      <div class="step">
+        <div class="t">T+0</div>
+        <h6>启动</h6>
+        <p>用户运行 /ultrareview</p>
+      </div>
+      <div class="step">
+        <div class="t">T+30s</div>
+        <h6>Sandbox 启动</h6>
+        <p>云端拉取 diff + 上下文</p>
+      </div>
+      <div class="step">
+        <div class="t">T+2~15min</div>
+        <h6>并行分析</h6>
+        <p>6 个 agent 各自扫描</p>
+      </div>
+      <div class="step">
+        <div class="t">T+15~18min</div>
+        <h6>验证</h6>
+        <p>每个 finding 独立验证</p>
+      </div>
+      <div class="step">
+        <div class="t">T+18~20min</div>
+        <h6>聚合</h6>
+        <p>合并、去重、排序</p>
+      </div>
+      <div class="step">
+        <div class="t">完成</div>
+        <h6>CLI 通知</h6>
+        <p>用户在终端看到结果</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: How to use ===== -->
+  <section class="slide">
+    <div class="eyebrow">09.2 · 使用方法</div>
+    <h2 class="section">三种调用方式</h2>
+
+    <div class="grid-2">
+      <div>
+        <h3 class="sub">方式 1 · 当前分支</h3>
+        <pre class="code"><span class="label">claude code</span>
+$ /ultrareview
+
+<span class="c"># 默认审查当前分支 vs base branch 的 diff</span>
+<span class="c"># 不需要 push，不需要 GitHub 远端</span></pre>
+
+        <h3 class="sub" style="margin-top: 20px;">方式 2 · 指定 PR</h3>
+        <pre class="code"><span class="label">claude code</span>
+$ /ultrareview 1234
+
+<span class="c"># GitHub PR #1234</span>
+<span class="c"># 也支持 GitLab MR / Bitbucket PR</span>
+<span class="c">#（v2.1.119+）</span></pre>
+
+        <h3 class="sub" style="margin-top: 20px;">方式 3 · CI 集成（v2.1.120+）</h3>
+        <pre class="code"><span class="label">.github/workflows/review.yml</span>
+- name: Run ultrareview
+  run: |
+    claude ultrareview origin/main \
+      --output review.md \
+      --severity high \
+      --format json
+  env:
+    ANTHROPIC_API_KEY: ${{ secrets.CLAUDE_KEY }}</pre>
+      </div>
+
+      <div>
+        <h3 class="sub">输出长什么样</h3>
+        <pre class="code"><span class="label">/ultrareview · 输出示例</span>
+<span class="c"># Ultrareview · auth-rewrite branch</span>
+<span class="c"># 4 confirmed findings · 18 false positives filtered</span>
+
+<span class="k">[HIGH] Security · auth/middleware.go:42</span>
+  Session token compared with == (timing attack)
+  <span class="c"># Verified by independent agent run</span>
+  <span class="c"># Suggested fix: use subtle.ConstantTimeCompare</span>
+
+<span class="k">[MED] Correctness · handlers/login.go:88</span>
+  Error path returns 200 instead of 401
+  <span class="c"># Reproduces in test (see proof_login_test.go)</span>
+
+<span class="k">[MED] Tests · handlers/login_test.go</span>
+  No coverage for the empty-username case
+  <span class="c"># Suggested test added inline below</span>
+
+<span class="k">[LOW] Style · auth/util.go:120</span>
+  Function name "doIt" doesn't match repo convention
+  <span class="c"># 12 similar functions use "execute*" prefix</span>
+
+<span class="o">───────────────────────────────────────</span>
+<span class="c"># Skipped findings (low confidence): 18</span>
+<span class="c"># Total agent runtime: 14m 22s</span>
+<span class="c"># Cost: 1 of your 3 free runs</span></pre>
+
+        <p class="hint" style="margin-top: 14px;">
+          注意每条 finding 都有<strong>验证依据</strong>——这是"对局限诚实"的具象。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 4: /effort ===== -->
+  <section class="slide">
+    <div class="eyebrow">09.3 · /effort</div>
+    <h2 class="section">/effort：思考多久，<br>用户说了算</h2>
+
+    <p class="lead" style="font-size: 17px;">
+      Claude Code 一直有努力级别的概念，4 月把它做成了<strong>交互式滑块</strong>——
+      用 ↑/↓ 选择，回车确认。简单但重要。
+    </p>
+
+    <div class="effort-slider">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3 class="sub" style="margin: 0;">Effort Level</h3>
+        <span style="color: var(--muted); font-size: 13px;">↑ ↓ navigate · Enter confirm</span>
+      </div>
+      <div class="track">
+        <div class="stop" style="left: 12.5%;">
+          <div class="dot"></div>
+          <div class="lbl">low</div>
+        </div>
+        <div class="stop" style="left: 37.5%;">
+          <div class="dot"></div>
+          <div class="lbl">medium</div>
+        </div>
+        <div class="stop active" style="left: 62.5%;">
+          <div class="dot"></div>
+          <div class="lbl">high</div>
+        </div>
+        <div class="stop" style="left: 87.5%;">
+          <div class="dot"></div>
+          <div class="lbl">xhigh ★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-4" style="margin-top: 22px;">
+      <div class="card">
+        <h4>low</h4>
+        <p style="font-size: 13px;">最快、最便宜——简单查询、纯文本编辑、单文件小改。
+          思考预算几乎为 0。</p>
+      </div>
+      <div class="card">
+        <h4>medium</h4>
+        <p style="font-size: 13px;">日常默认——多步骤但范围可控的任务。
+          适合 90% 的常规开发场景。</p>
+      </div>
+      <div class="card">
+        <h4>high</h4>
+        <p style="font-size: 13px;">长链路、跨文件——需要真正"想清楚"才动手。
+          多数 PR 级修改建议用这档。</p>
+      </div>
+      <div class="card" style="border-color: var(--accent);">
+        <h4 style="color: var(--accent);">xhigh ★</h4>
+        <p style="font-size: 13px;">Opus 4.7 专属——<strong>最长思考预算</strong>。
+          适合棘手的并发 bug、架构重构、复杂数据处理。</p>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 30px;">和 task budgets 配合</h3>
+    <pre class="code"><span class="label">配合使用</span>
+<span class="c"># API 端</span>
+thinking={
+    <span class="s">"effort"</span>: <span class="s">"xhigh"</span>,           <span class="c"># 努力级别</span>
+    <span class="s">"budget_tokens"</span>: <span class="n">64000</span>,      <span class="c"># 但仍设上限</span>
+}
+
+<span class="c"># Claude Code 端</span>
+$ /effort xhigh           <span class="c"># 切换</span>
+$ /budget tokens=64000    <span class="c"># 上限</span>
+$ /budget cost=2.50       <span class="c"># 也可按美元限</span></pre>
+
+    <p style="margin-top: 16px;">
+      这套设计的核心理念：<strong>把"思考多深"和"花多少钱"都明示给用户</strong>。
+      Claude 不会"偷偷思考很久花你 50 美元"——你设定上限，它会在到达前主动总结当前进度并停止。
+    </p>
+  </section>
+
+  <!-- ===== Slide 5: Mapping ===== -->
+  <section class="slide">
+    <div class="eyebrow">09.4 · 设计哲学映射</div>
+    <h2 class="section">为什么这两个功能<br>是 "理念产品化" 的范例？</h2>
+
+    <table class="compare" style="margin-top: 14px;">
+      <thead>
+        <tr><th>设计选择</th><th>对应原则</th><th>具体体现</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feature">/ultrareview 必须用户主动调用</td>
+          <td class="principle-tag">用户自主</td>
+          <td>不在你不知情时跑——它要花你的额度，要花时间，所以你要明确说"好"。</td>
+        </tr>
+        <tr>
+          <td class="feature">每个 reviewer 列单独发现</td>
+          <td class="principle-tag">Honest</td>
+          <td>不用单一 "AI says it's bad" 黑箱——你能看到每条结论的归属与依据。</td>
+        </tr>
+        <tr>
+          <td class="feature">Verification step 过滤误报</td>
+          <td class="principle-tag">Honest</td>
+          <td>承认 "AI 第一遍可能错"——通过独立验证降低假阳性，比"虚高准确率"更诚实。</td>
+        </tr>
+        <tr>
+          <td class="feature">非阻塞 · 异步通知</td>
+          <td class="principle-tag">尊重时间</td>
+          <td>不绑架你的注意力——10~20 min 期间你照常工作。</td>
+        </tr>
+        <tr>
+          <td class="feature">/effort 滑块</td>
+          <td class="principle-tag">理解意图</td>
+          <td>把"你想让我多用心"做成显式输入，而不是 Claude 私自决定。</td>
+        </tr>
+        <tr>
+          <td class="feature">task budgets</td>
+          <td class="principle-tag">用户自主</td>
+          <td>"花多少钱"由你定，不是 AI 私自烧——到上限会主动停。</td>
+        </tr>
+        <tr>
+          <td class="feature">CI 子命令 (claude ultrareview)</td>
+          <td class="principle-tag">Helpful</td>
+          <td>从"在终端用"扩展到"在流水线用"——能力下沉到团队层。</td>
+        </tr>
+        <tr>
+          <td class="feature">3 次免费 + 5 月 5 日截止</td>
+          <td class="principle-tag">Honest</td>
+          <td>定价待定但额度透明——不在用户不知情时扣费。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="hint" style="margin-top: 24px;">
+      下一页：MCP / Skills / Hooks——4 月围绕"扩展性"的诸多更新。
+    </p>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · /ultrareview &amp; /effort</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">9 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

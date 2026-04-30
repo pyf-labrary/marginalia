@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>05 · Claude Opus 4.7</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .hero-banner {
+    background: linear-gradient(135deg, rgba(204,120,92,0.18), rgba(204,120,92,0.04));
+    border: 1px solid rgba(204,120,92,0.35);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+  }
+  .hero-banner .left { flex: 1; }
+  .hero-banner .left .ver {
+    font-family: var(--serif);
+    font-size: 36px;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .hero-banner .left p { color: var(--text); font-size: 15px; line-height: 1.6; max-width: 600px;}
+  .hero-banner .right {
+    text-align: right;
+    border-left: 1px solid rgba(204,120,92,0.3);
+    padding-left: 28px;
+  }
+  .hero-banner .right .price {
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .hero-banner .right .price-l { color: var(--muted); font-size: 12px; }
+
+  .bench-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 18px;
+  }
+  .bench-cell {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 16px;
+  }
+  .bench-cell .name {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 8px;
+  }
+  .bench-cell .v {
+    font-family: var(--serif);
+    font-size: 32px;
+    color: var(--accent);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .bench-cell .v small { font-size: 16px; color: var(--accent-2); }
+  .bench-cell .delta {
+    margin-top: 8px;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--good);
+  }
+  .bench-cell .vs {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 11.5px;
+    line-height: 1.5;
+  }
+
+  .feature-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px;
+    height: 100%;
+  }
+  .feature-card .ic {
+    width: 40px; height: 40px;
+    background: var(--accent-soft);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    margin-bottom: 14px;
+    font-size: 20px;
+  }
+  .feature-card h4 { color: var(--text); font-size: 16px; margin-bottom: 8px; }
+  .feature-card p { color: var(--muted); font-size: 13.5px; line-height: 1.6; }
+</style>
+</head>
+<body
+  data-page-no="5" data-page-total="17" data-progress="29.41"
+  data-prev="04-engineering-principles.html"
+  data-next="06-claude-design.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:29.41%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Hero ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part II · 05 · 4 月旗舰</div>
+    <span class="badge-date">2026-04-16</span>
+    <h2 class="section" style="margin-top: 6px;">Claude <em>Opus 4.7</em><br>4 月最重磅的一次模型升级</h2>
+
+    <div class="hero-banner">
+      <div class="left">
+        <div class="ver">claude-opus-4-7</div>
+        <p>同样的定价、显著更强的能力——4.7 在编码、agents、视觉、复杂多步骤任务上全面提升。
+          官方表述：<strong>"在重要工作上提供更高的彻底性与一致性"</strong>。</p>
+      </div>
+      <div class="right">
+        <div class="price">$5 / $25</div>
+        <div class="price-l">per million input / output tokens</div>
+        <div class="price" style="margin-top: 12px;">200K</div>
+        <div class="price-l">context window</div>
+      </div>
+    </div>
+
+    <p class="lead" style="margin-top: 28px; font-size: 18px;">
+      它不是一次小修小补，而是一次<strong>能力曲线的明显跃迁</strong>——
+      下面三页拆解 benchmark、新能力、和它如何接入到 Claude Code / API。
+    </p>
+  </section>
+
+  <!-- ===== Slide 2: Benchmarks ===== -->
+  <section class="slide">
+    <div class="eyebrow">05.1 · 数据</div>
+    <h2 class="section">Benchmark 全面跃迁</h2>
+    <p class="lead" style="font-size: 17px;">
+      4.7 的提升不是"+1%"级别——在多个关键 benchmark 上是<strong>两位数</strong>跳跃。
+    </p>
+
+    <div class="bench-grid">
+      <div class="bench-cell">
+        <div class="name">SWE-bench Verified</div>
+        <div class="v">87.6<small>%</small></div>
+        <div class="delta">↑ 6.8 pts vs 4.6 (80.8%)</div>
+        <div class="vs">领先 Gemini 3.1 Pro (80.6%) · GPT-5.4</div>
+      </div>
+      <div class="bench-cell">
+        <div class="name">SWE-bench Pro (多语言)</div>
+        <div class="v">64.3<small>%</small></div>
+        <div class="delta">↑ 10.9 pts vs 4.6 (53.4%)</div>
+        <div class="vs">领先 GPT-5.4 (57.7%) · Gemini (54.2%)</div>
+      </div>
+      <div class="bench-cell">
+        <div class="name">XBOW 视觉精度</div>
+        <div class="v">98.5<small>%</small></div>
+        <div class="delta">↑ 44.0 pts vs 4.6 (54.5%)</div>
+        <div class="vs">enables autonomous pen-testing 工作流</div>
+      </div>
+      <div class="bench-cell">
+        <div class="name">MCP-Atlas</div>
+        <div class="v">77.3<small>%</small></div>
+        <div class="delta">↑ 1.5 pts vs 4.6 (75.8%)</div>
+        <div class="vs">领先 GPT-5.4 (68.1%) · Gemini 3.1 Pro (73.9%)</div>
+      </div>
+      <div class="bench-cell">
+        <div class="name">OSWorld-Verified</div>
+        <div class="v">78.0<small>%</small></div>
+        <div class="delta">↑ 5.3 pts vs 4.6 (72.7%)</div>
+        <div class="vs">领先 GPT-5.4 (75.0%) · 接近 Mythos (79.6%)</div>
+      </div>
+      <div class="bench-cell">
+        <div class="name">视觉分辨率</div>
+        <div class="v">3.75<small>MP</small></div>
+        <div class="delta">↑ 3× vs 之前所有 Claude 模型</div>
+        <div class="vs">2576px 长边——能看清扫描合同的小字</div>
+      </div>
+      <div class="bench-cell">
+        <div class="name">Effort 级别</div>
+        <div class="v">+1</div>
+        <div class="delta">新增 xhigh 介于 high 和 max 之间</div>
+        <div class="vs">长链路、深思考任务专用</div>
+      </div>
+      <div class="bench-cell">
+        <div class="name">价格</div>
+        <div class="v">≡</div>
+        <div class="delta">不变 · $5 / $25 per MTok</div>
+        <div class="vs">能力升级 · 价格持平 · 性价比净涨</div>
+      </div>
+    </div>
+
+    <div class="card-soft" style="margin-top: 26px;">
+      <h3 class="sub">为什么这次 SWE-bench 提升尤其重要？</h3>
+      <p>SWE-bench 是<strong>真实开源 GitHub issue 修复任务</strong>——比所有 unit test benchmark 更接近实际工作。
+      4.7 在 Verified 子集到 87.6%、Pro 多语言子集到 64.3%——意味着 Claude 现在能在
+      <strong>不同语言的真实代码库</strong>里独立修复半数以上的真 bug。
+      这不再是"很会写 hello world"，而是"能在生产代码里站稳"。</p>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: Capabilities ===== -->
+  <section class="slide">
+    <div class="eyebrow">05.2 · 新能力</div>
+    <h2 class="section">四个最值得关注的能力升级</h2>
+
+    <div class="grid-2" style="margin-top: 18px;">
+      <div class="feature-card">
+        <div class="ic">👁</div>
+        <h4>3× 视觉分辨率</h4>
+        <p>从约 1.25 MP 提升到 3.75 MP（长边 2576 像素）。这意味着 Claude 终于能"看清"——
+        扫描合同的脚注、技术图纸的尺寸标注、财报里小字脚注都不再模糊。
+        企业文档分析的准确率显著提升。</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic">🧠</div>
+        <h4>xhigh effort 级别</h4>
+        <p>介于 <code>high</code> 和 <code>max</code> 之间的新档位——
+        给最难的题留出更长思考预算，但不会无限消耗算力。
+        在 Claude Code 里通过 <code>/effort</code> 滑块切换。</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic">⏱</div>
+        <h4>Task budgets</h4>
+        <p>开发者可以显式设定 <strong>budget_tokens / time / cost</strong> 上限——
+        Claude 在到达上限前会主动总结当前进度、给出最佳停留点，而不是悄悄超支。
+        这是"用户自主权"在 API 层面的具象。</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic">🎯</div>
+        <h4>更好的指令遵循</h4>
+        <p>一个不容易量化但真实的提升——4.7 更少"自作主张"。
+        如果你说"只改 X 文件、不要重构"，它会照办；
+        如果你限定输出格式，它会严格遵守。在长会话里尤其明显。</p>
+      </div>
+    </div>
+
+    <h3 class="sub" style="margin-top: 30px;">如何升级 / 切换</h3>
+    <pre class="code"><span class="label">API · Python</span>
+<span class="k">from</span> anthropic <span class="k">import</span> Anthropic
+
+client = Anthropic()
+resp = client.messages.create(
+    model=<span class="s">"claude-opus-4-7"</span>,           <span class="c"># 新模型 ID</span>
+    max_tokens=<span class="n">4096</span>,
+    thinking=<span class="v">{
+        "type": "enabled",
+        "effort": "xhigh",                <span class="c"># 新档位</span>
+        "budget_tokens": <span class="n">64000</span>          <span class="c"># task budget</span>
+    }</span>,
+    messages=[{<span class="s">"role"</span>: <span class="s">"user"</span>, <span class="s">"content"</span>: <span class="s">"..."</span>}]
+)</pre>
+
+    <pre class="code"><span class="label">Claude Code · 终端</span>
+<span class="c"># 切换默认模型</span>
+$ /model claude-opus-4-7
+
+<span class="c"># 调努力级别</span>
+$ /effort
+  ◯ low      <span class="c"># 快、便宜</span>
+  ◯ medium
+  ● high
+  ◯ xhigh    <span class="c"># Opus 4.7 专属，最长思考预算</span>
+
+<span class="c"># Max 订户：开启 auto mode 自动选择最佳模型</span>
+$ /auto on</pre>
+  </section>
+
+  <!-- ===== Slide 4: Use cases ===== -->
+  <section class="slide">
+    <div class="eyebrow">05.3 · 实战场景</div>
+    <h2 class="section">4.7 适合用在哪？</h2>
+
+    <div class="grid-3" style="margin-top: 18px;">
+      <div class="card">
+        <div class="num">①</div>
+        <h4>长链路 agentic 编码</h4>
+        <p>给一个 issue，让它读 repo、跑测试、修 bug、写 PR——多步骤场景下比 4.6 显著更稳定。
+        SWE-bench Pro 64.3% 是这种任务的代表。</p>
+      </div>
+      <div class="card">
+        <div class="num">②</div>
+        <h4>金融 / 法律文档分析</h4>
+        <p>3× 视觉让它能处理扫描版合同、年报、技术规格书——
+        小字、表格、图标注都能识别。XBOW 视觉精度从 54% 跳到 98%。</p>
+      </div>
+      <div class="card">
+        <div class="num">③</div>
+        <h4>OS-level agent / 桌面自动化</h4>
+        <p>OSWorld-Verified 78%——能可靠地执行"打开 Excel、填表、保存到 SharePoint"这种
+        跨应用任务。这是 Cowork 能跨设备协作的底层能力支撑。</p>
+      </div>
+      <div class="card">
+        <div class="num">④</div>
+        <h4>大型 monorepo 重构</h4>
+        <p>200K 上下文 + xhigh effort + 更好指令遵循，一次性"全 repo 替换 / 跨文件改名 / 升级框架"
+        变得更可行。结合 /ultrareview 双保险。</p>
+      </div>
+      <div class="card">
+        <div class="num">⑤</div>
+        <h4>安全审计 / pen-test</h4>
+        <p>XBOW 视觉精度跃升让 autonomous pen-testing 工作流首次成为可能——
+        Claude 能"看着"应用截图找漏洞，而不是只读源码。</p>
+      </div>
+      <div class="card">
+        <div class="num">⑥</div>
+        <h4>设计交付（与 Claude Design 联动）</h4>
+        <p>Claude Design 由 Opus 4.7 驱动——能"看懂"上传的设计稿与 Figma 截图，
+        准确产出新的 mock-up。下一章详细讲。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 5: Mapping ===== -->
+  <section class="slide">
+    <div class="eyebrow">05.4 · 闭环</div>
+    <h2 class="section">Opus 4.7 ↔ 设计哲学</h2>
+
+    <div class="grid-2-1">
+      <div>
+        <table class="compare">
+          <thead>
+            <tr><th>升级点</th><th>对应原则</th><th>具体体现</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature">3× 视觉分辨率</td>
+              <td class="principle-tag">Helpful</td>
+              <td>能力域扩展——之前看不清的文档现在能看清。</td>
+            </tr>
+            <tr>
+              <td class="feature">xhigh effort</td>
+              <td class="principle-tag">Honest</td>
+              <td>难题敢花算力——不假装秒答；思考预算明示给用户。</td>
+            </tr>
+            <tr>
+              <td class="feature">task budgets</td>
+              <td class="principle-tag">用户自主</td>
+              <td>把成本/时长上限决定权交还给用户，而不是 AI 私自决定。</td>
+            </tr>
+            <tr>
+              <td class="feature">更好指令遵循</td>
+              <td class="principle-tag">理解意图</td>
+              <td>"只改 X" 就只改 X——不擅自扩张范围。</td>
+            </tr>
+            <tr>
+              <td class="feature">价格不变</td>
+              <td class="principle-tag">Helpful</td>
+              <td>能力升级不加价——降低用户接入新模型的摩擦。</td>
+            </tr>
+            <tr>
+              <td class="feature">SWE-bench Pro 跃升</td>
+              <td class="principle-tag">Helpful</td>
+              <td>多语言真实代码库——能力下沉到非英语 / 非主流语言项目。</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="card-soft" style="margin-top: 22px;">
+          <h3 class="sub">一个有意思的细节</h3>
+          <p>4.7 的<strong>"更好指令遵循"</strong>是被很多开发者反复提到的。
+          这看似平淡，但其实回应了一种长期 trade-off：
+          模型越聪明，越容易"自作主张"。Anthropic 用 4.7 证明了
+          <strong>聪明和听话可以并行</strong>。</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="sub">迁移 checklist</h3>
+        <div class="row-feat"><span class="dot"></span><span>API 用户：把 model id 改成 <code>claude-opus-4-7</code>，价格不变。</span></div>
+        <div class="row-feat"><span class="dot"></span><span>Claude Code：<code>/model claude-opus-4-7</code>。</span></div>
+        <div class="row-feat"><span class="dot"></span><span>评估 effort 级别——<code>xhigh</code> 适合长链路；常规任务保持 <code>high</code>。</span></div>
+        <div class="row-feat"><span class="dot"></span><span>设置 <code>budget_tokens</code> 上限——避免长会话花光预算。</span></div>
+        <div class="row-feat"><span class="dot"></span><span>Vertex AI / Bedrock 用户：检查 inference profile ARN 是否 v2.1.120 之后。</span></div>
+        <div class="row-feat"><span class="dot"></span><span>Sonnet 4 / 4.5 用户注意：1M 上下文 beta 在 4-30 退役。</span></div>
+
+        <p class="hint" style="margin-top: 22px;">下一页：Claude Design——同样由 Opus 4.7 驱动的设计协作产品。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Opus 4.7</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">5 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>

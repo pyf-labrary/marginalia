@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>07 · Cowork 持久代理线程</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .device-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 18px;
+  }
+  .device-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px;
+    text-align: center;
+  }
+  .device-card .ico {
+    font-size: 32px;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .device-card h5 { color: var(--text); font-size: 14px; margin-bottom: 4px; }
+  .device-card p { color: var(--muted); font-size: 12px; line-height: 1.5; }
+
+  .scenario-flow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin: 16px 0;
+  }
+  .scenario-flow .moment {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px;
+    position: relative;
+  }
+  .scenario-flow .moment .time {
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .scenario-flow .moment .where {
+    color: var(--muted);
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 8px;
+  }
+  .scenario-flow .moment p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .scenario-flow .moment:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -10px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-size: 18px;
+    background: var(--bg);
+    padding: 0 2px;
+  }
+
+  .check-row {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 10px 0;
+  }
+  .check-row h5 {
+    color: var(--text);
+    font-size: 15px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .check-row h5 .badge {
+    font-size: 11px;
+    background: var(--accent-soft);
+    color: var(--accent-2);
+    padding: 2px 8px;
+    border-radius: 999px;
+  }
+  .check-row p {
+    color: var(--muted);
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body
+  data-page-no="7" data-page-total="17" data-progress="41.18"
+  data-prev="06-claude-design.html"
+  data-next="08-claude-code-overview.html"
+  data-index="index.html">
+
+<div class="progress" id="progress" style="width:41.18%;"></div>
+
+<div class="deck">
+
+  <!-- ===== Slide 1: Hero ===== -->
+  <section class="slide">
+    <div class="eyebrow">Part II · 07</div>
+    <span class="badge-date">2026-04-09 · GA</span>
+    <h2 class="section" style="margin-top: 6px;">Cowork：把 Claude 从<br>"一次会话" 变成 "<em>持续在线的同事</em>"</h2>
+
+    <p class="lead" style="font-size: 18px;">
+      过去 Claude 是"一次对话一段记忆"——你关掉窗口，它就忘了。
+      Cowork 改变了这件事：<strong>同一个持久代理线程跨设备运行</strong>，
+      你在桌面交代任务、外出时手机继续接管、回家电脑里看到结果已经躺好。
+    </p>
+
+    <div class="quote" style="margin-top: 28px;">
+      "你给 Claude 一个任务——它会判断该用哪种能力，
+      在 Claude Code 里跑代码，在 Cowork 里做知识工作，
+      做完发消息告诉你结果。"
+    </div>
+    <p class="hint">— Anthropic Cowork 文档</p>
+
+    <div class="device-grid">
+      <div class="device-card">
+        <div class="ico">💻</div>
+        <h5>macOS</h5>
+        <p>Claude Desktop 桌面应用</p>
+      </div>
+      <div class="device-card">
+        <div class="ico">🪟</div>
+        <h5>Windows x64</h5>
+        <p>Claude Desktop 桌面应用</p>
+      </div>
+      <div class="device-card">
+        <div class="ico">📱</div>
+        <h5>iOS</h5>
+        <p>Claude.ai 手机应用</p>
+      </div>
+      <div class="device-card">
+        <div class="ico">🤖</div>
+        <h5>Android</h5>
+        <p>Claude.ai 手机应用</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 2: A day with Cowork ===== -->
+  <section class="slide">
+    <div class="eyebrow">07.1 · 一天的样子</div>
+    <h2 class="section">真实场景：<br>给 Claude 一个跨时段任务</h2>
+
+    <div class="scenario-flow">
+      <div class="moment">
+        <div class="time">09:14</div>
+        <div class="where">桌面 · 公司</div>
+        <p>"Claude，把昨天的客户访谈录音整理成一份内部备忘录，对比上周提到的痛点，
+        最后给销售团队一份要点摘要。"</p>
+      </div>
+      <div class="moment">
+        <div class="time">10:30</div>
+        <div class="where">手机 · 通勤</div>
+        <p>地铁里收到推送："已整理初稿，发现有两个新痛点。要不要补一段对应解决方案？"
+        你在手机上回："好，简短一点。"</p>
+      </div>
+      <div class="moment">
+        <div class="time">11:45</div>
+        <div class="where">桌面 · 客户公司</div>
+        <p>打开桌面 Claude——同一个线程，状态显示"已完成"。
+        看到完整备忘录、销售要点、和你建议的两段补充。</p>
+      </div>
+      <div class="moment">
+        <div class="time">14:20</div>
+        <div class="where">手机 · 午后</div>
+        <p>"把这份备忘录改成英文，发给 SF 办公室。" Claude 处理后通过推送通知确认发送。</p>
+      </div>
+    </div>
+
+    <div class="card-soft" style="margin-top: 22px;">
+      <h3 class="sub">关键不同：是同一个 Claude，还是同一个线程？</h3>
+      <p>是<strong>同一个线程</strong>——它保留之前的上下文（用户偏好、文档版本、对话历史）。
+      不像 ChatGPT 跨设备需要手动切到同一会话，Cowork 的设计假设是
+      "<strong>用户视角下，Claude 一直在</strong>"，设备只是访问入口。</p>
+    </div>
+
+    <div class="card-soft" style="margin-top: 18px;">
+      <h3 class="sub">"什么时候它通知我？"</h3>
+      <p>三种情况会触发推送：① 任务完成；② Claude 需要确认才能继续（比如要 push 代码、发邮件等不可逆操作）；
+      ③ 出现明确错误。<strong>它不会因为"我有个有意思的想法"打扰你</strong>——
+      这是"尊重用户自主权"在通知策略上的具象。</p>
+    </div>
+  </section>
+
+  <!-- ===== Slide 3: Architecture ===== -->
+  <section class="slide">
+    <div class="eyebrow">07.2 · 架构</div>
+    <h2 class="section">Cowork 是怎么工作的？</h2>
+
+    <div class="grid-2-1">
+      <div>
+        <h3 class="sub">两个核心子系统</h3>
+
+        <div class="check-row">
+          <h5>Cowork（知识工作）<span class="badge">本机执行</span></h5>
+          <p>跑在你的 Claude Desktop 里——文档处理、邮件起草、表格分析、跨应用自动化。
+          需要你的电脑保持唤醒、应用打开。Claude 能看到你授权的文件 / 应用 / 浏览器。</p>
+        </div>
+
+        <div class="check-row">
+          <h5>Claude Code（开发任务）<span class="badge">自动调度</span></h5>
+          <p>当任务涉及代码——比如 "修个 bug"、"加一个 endpoint"——
+          Claude 自动 spin up Claude Code 会话；不需要你手动切工具。</p>
+        </div>
+
+        <div class="check-row">
+          <h5>持久线程后台</h5>
+          <p>Anthropic 云端保存对话状态、任务进度、待确认的 checkpoints。
+          你换设备时，从云端拉取最新状态——本地只是渲染端。</p>
+        </div>
+
+        <div class="check-row">
+          <h5>推送通道</h5>
+          <p>Claude 移动端注册 push token；任务完成 / 需要确认时由后端发推送。
+          桌面端打开时显示 inline 通知 + 振动可选。</p>
+        </div>
+
+        <h3 class="sub" style="margin-top: 22px;">怎么开</h3>
+        <pre class="code"><span class="label">Claude Desktop · Settings</span>
+<span class="c"># Pro / Max 计划</span>
+✓ Enable Cowork (persistent agent thread)
+✓ Sync across devices
+✓ Allow notifications on mobile
+✓ Share telemetry to Datadog/Honeycomb (optional)</pre>
+      </div>
+
+      <div>
+        <h3 class="sub">企业增强（4 月新加）</h3>
+        <div class="card">
+          <h4>📊 Analytics API</h4>
+          <p>管理员能拿到每个用户/团队的 engagement &amp; adoption metrics——
+          多少任务、平均时长、采纳率、哪些功能没人用。</p>
+        </div>
+        <div class="card" style="margin-top: 12px;">
+          <h4>📡 OpenTelemetry 接入</h4>
+          <p>Claude 的执行轨迹（每个 tool call、每次 model call）能 export 到你自己的
+          可观测平台——Datadog、Honeycomb、Splunk 都可。这是企业把 Claude 放进生产的关键。</p>
+        </div>
+        <div class="card" style="margin-top: 12px;">
+          <h4>🔐 RBAC + SCIM</h4>
+          <p>把用户分组、对接 IdP 自动同步、按 feature 粒度授权。
+          单独的"AI 试用"组、"工程师全功能"组、"销售只读"组等划分。</p>
+        </div>
+
+        <p class="hint" style="margin-top: 18px;">
+          这三件能力让 Cowork 从"个人增强工具"变成 "<strong>企业可治理的协作层</strong>"——
+          也是 4 月最被低估的更新之一。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slide 4: Limitations ===== -->
+  <section class="slide">
+    <div class="eyebrow">07.3 · 用之前要知道</div>
+    <h2 class="section">Cowork 的<em>限制</em>与<em>注意事项</em></h2>
+
+    <div class="grid-2">
+      <div>
+        <h3 class="sub">能做什么</h3>
+        <div class="row-feat"><span class="dot"></span><span>持久线程跨设备记忆</span></div>
+        <div class="row-feat"><span class="dot"></span><span>自动判断 Cowork（知识工作）vs Claude Code（开发任务）</span></div>
+        <div class="row-feat"><span class="dot"></span><span>桌面应用执行需要电脑唤醒 + 应用打开</span></div>
+        <div class="row-feat"><span class="dot"></span><span>推送通知 · 任务完成 / 需确认 / 出错三类</span></div>
+        <div class="row-feat"><span class="dot"></span><span>企业版有 Analytics API + OpenTelemetry + RBAC</span></div>
+        <div class="row-feat"><span class="dot"></span><span>Pro / Max / Team / Enterprise 均可用，beta 阶段</span></div>
+
+        <h3 class="sub" style="margin-top: 26px;">还做不到（4 月态）</h3>
+        <div class="row-feat" style="opacity:.8;"><span class="dot" style="background: var(--muted)"></span><span style="color: var(--muted-2)">电脑关机时无法继续——它不是云端 agent，需要本地 desktop 执行</span></div>
+        <div class="row-feat" style="opacity:.8;"><span class="dot" style="background: var(--muted)"></span><span style="color: var(--muted-2)">不可同时多人协作同一线程——目前是 single-user</span></div>
+        <div class="row-feat" style="opacity:.8;"><span class="dot" style="background: var(--muted)"></span><span style="color: var(--muted-2)">第三方应用集成需要单独授权（与 MCP 协议生态相关）</span></div>
+      </div>
+
+      <div>
+        <h3 class="sub">设计哲学映射</h3>
+        <table class="compare">
+          <tr>
+            <td class="feature">持久线程</td>
+            <td class="principle-tag">Helpful</td>
+            <td>真实工作不是"一次性"的——记忆是协作前提。</td>
+          </tr>
+          <tr>
+            <td class="feature">桌面端必须打开</td>
+            <td class="principle-tag">Honest</td>
+            <td>不假装"云端永远在跑"——透明地告诉你执行依赖你的电脑。</td>
+          </tr>
+          <tr>
+            <td class="feature">推送限三类</td>
+            <td class="principle-tag">用户自主</td>
+            <td>不打扰是默认；只在必要时通知，避免成为下一个干扰源。</td>
+          </tr>
+          <tr>
+            <td class="feature">Analytics + OTel</td>
+            <td class="principle-tag">Honest</td>
+            <td>"AI 在干嘛"必须能看见——给企业的可审计性。</td>
+          </tr>
+          <tr>
+            <td class="feature">RBAC + SCIM</td>
+            <td class="principle-tag">用户自主（组织级）</td>
+            <td>把权限设计延伸到"谁能让 Claude 做什么"。</td>
+          </tr>
+          <tr>
+            <td class="feature">"需确认才继续"</td>
+            <td class="principle-tag">Harmless</td>
+            <td>不可逆操作即使在 Auto Mode 下也必须显式 ask。</td>
+          </tr>
+        </table>
+
+        <div class="card-soft" style="margin-top: 22px;">
+          <h3 class="sub">Cowork 与 ChatGPT 的本质区别</h3>
+          <p>ChatGPT Memory 是"<strong>记住事实</strong>"——名字、偏好、地址。
+          Cowork 的持久线程是"<strong>记住任务</strong>"——这件事进行到哪一步、
+          下一步该等谁、出错时怎么回退。前者是知识库，后者是状态机。</p>
+        </div>
+
+        <p class="hint" style="margin-top: 18px;">
+          下一部分：Claude Code · 13 个版本时间线。开发者最关注的部分。
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="hud">
+  <div class="brand">Claude · April 2026 · Cowork</div>
+  <div class="pager">
+    <button id="home">⌂ 索引</button>
+    <button id="prev">← 上一页</button>
+    <span class="counter" id="counter">7 / 17</span>
+    <button id="next">下一页 →</button>
+    <button id="full">⛶</button>
+  </div>
+</div>
+
+<script src="assets/deck.js"></script>
+</body>
+</html>
