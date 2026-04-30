@@ -16,18 +16,38 @@ index.md / about.md / showcases.md  导航页
 
 ## 加文章
 
-1. 在 `_posts/` 新建文件 `YYYY-MM-DD-some-title.md`
-2. 顶部 front matter：
-   ```yaml
-   ---
-   layout: post
-   title: "标题"
-   date: 2026-05-01
-   tags: [tag1, tag2]
-   ---
-   ```
-3. 写正文（Markdown 或 HTML 同样支持，扩展名分别用 `.md` / `.html`）
-4. `git push` 到 `main`，约 30–90 秒后上线
+### 一键脚本（推荐）
+
+```bash
+scripts/publish.py path/to/some-note.md \
+  --tags "tag1,tag2" \
+  --description "1–2 句信息密度高的摘要，进搜索结果" \
+  --keywords "逗号分隔关键词"
+```
+
+脚本会：
+- 用第一行 `# title` 当作 post 标题（自动剥掉，避免重复 H1）
+- 用紧跟其后的 blockquote 当作 description（除非 `--description` 显式给出）
+- 用文件 mtime 当作 post 日期（除非 `--date` 给出，固定为 12:00 +0800 让 UTC 日期对齐）
+- 用源文件名当作 slug（除非 `--slug`）
+- 写到 `_posts/YYYY-MM-DD-slug.md`
+- `git add` + `git commit` + `git push`（用 `~/.config/gh/org_pyf-labrary.token` 自动认证）
+
+常用开关：`--no-push`（只 commit）、`--no-commit`（只写文件）、`--force`（覆盖已存在 post）。
+
+### 手工方式
+
+也可以直接在 `_posts/` 建文件 `YYYY-MM-DD-some-title.md`，顶部写 front matter：
+```yaml
+---
+layout: post
+title: "标题"
+date: 2026-05-01 12:00:00 +0800
+description: "SEO 摘要"
+tags: [tag1, tag2]
+---
+```
+正文支持 `.md` 或 `.html`（扩展名分别）。push 到 `main`，约 30–90 秒上线。
 
 ## 加多页 showcase
 
