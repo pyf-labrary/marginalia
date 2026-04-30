@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude vs Codex 2026 — 订阅计划深度对比</title>
+<meta name="description" content="Claude 与 OpenAI Codex 2026 年订阅计划深度对比——价格、用量限制、Token/配额机制、功能特性、性能基准与选择建议，单页幻灯版。">
+<link rel="canonical" href="https://pyf-labrary.github.io/marginalia/showcases/claude-vs-codex-2026/">
+<meta property="og:title" content="Claude vs Codex 2026 — 订阅计划深度对比">
+<meta property="og:description" content="Claude 与 OpenAI Codex 2026 年订阅计划深度对比——价格、用量限制、Token/配额机制、功能特性、性能基准与选择建议，单页幻灯版。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://pyf-labrary.github.io/marginalia/showcases/claude-vs-codex-2026/">
+<meta property="og:site_name" content="Marginalia">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Claude vs Codex 2026 — 订阅计划深度对比">
+<meta name="twitter:description" content="Claude 与 OpenAI Codex 2026 年订阅计划深度对比——价格、用量限制、Token/配额机制、功能特性、性能基准与选择建议，单页幻灯版。">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+
+  :root {
+    --claude-color: #CC785C;
+    --codex-color: #10A37F;
+    --accent: #60A5FA;
+    --accent2: #A78BFA;
+    --bg: #050A14;
+    --bg2: #0B1120;
+    --bg3: #111827;
+    --surface: rgba(255,255,255,0.04);
+    --surface2: rgba(255,255,255,0.07);
+    --border: rgba(255,255,255,0.08);
+    --text: #F1F5F9;
+    --text2: #94A3B8;
+    --text3: #64748B;
+    --glow-blue: 0 0 30px rgba(96,165,250,0.3);
+    --glow-claude: 0 0 30px rgba(204,120,92,0.35);
+    --glow-codex: 0 0 30px rgba(16,163,127,0.35);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+    height: 100vh;
+    user-select: none;
+  }
+
+  /* ── PRESENTATION WRAPPER ── */
+  #deck {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 64px;
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.55s cubic-bezier(.4,0,.2,1), transform 0.55s cubic-bezier(.4,0,.2,1);
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+  }
+  .slide.exit {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+
+  /* Grid background */
+  .slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(96,165,250,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(96,165,250,0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+  }
+
+  /* ── NAVIGATION ── */
+  #nav {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 100;
+    background: rgba(11,17,32,0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 10px 20px;
+  }
+  .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--text3);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .dot.active { background: var(--accent); width: 24px; border-radius: 4px; box-shadow: 0 0 10px rgba(96,165,250,0.6); }
+  .nav-btn {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text2);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s;
+    letter-spacing: 0.5px;
+  }
+  .nav-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  #slide-counter {
+    font-size: 11px;
+    color: var(--text3);
+    font-family: 'JetBrains Mono', monospace;
+    min-width: 40px;
+    text-align: center;
+  }
+
+  /* ── SLIDE 1: TITLE ── */
+  #s1 { background: radial-gradient(ellipse 80% 60% at 50% 50%, #0D1F3C 0%, var(--bg) 70%); }
+
+  .s1-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+  .s1-title {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1.05;
+    text-align: center;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+  }
+  .s1-title .claude { color: var(--claude-color); }
+  .s1-title .vs {
+    font-size: 48px;
+    color: var(--text3);
+    padding: 0 16px;
+    font-weight: 300;
+  }
+  .s1-title .codex { color: var(--codex-color); }
+
+  .s1-subtitle {
+    font-size: 18px;
+    color: var(--text2);
+    margin-top: 24px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  .s1-tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 36px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tag {
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border: 1px solid;
+    letter-spacing: 0.5px;
+  }
+  .tag-blue { border-color: rgba(96,165,250,0.4); color: var(--accent); background: rgba(96,165,250,0.07); }
+  .tag-orange { border-color: rgba(204,120,92,0.4); color: var(--claude-color); background: rgba(204,120,92,0.07); }
+  .tag-green { border-color: rgba(16,163,127,0.4); color: var(--codex-color); background: rgba(16,163,127,0.07); }
+
+  .s1-glow {
+    position: absolute;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    filter: blur(120px);
+    pointer-events: none;
+  }
+  .glow-left { background: rgba(204,120,92,0.12); left: -100px; top: 50%; transform: translateY(-50%); }
+  .glow-right { background: rgba(16,163,127,0.12); right: -100px; top: 50%; transform: translateY(-50%); }
+
+  /* ── SLIDE HEADER ── */
+  .slide-header {
+    width: 100%;
+    margin-bottom: 32px;
+    flex-shrink: 0;
+  }
+  .slide-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    opacity: 0.7;
+  }
+  .slide-title {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
+  }
+
+  /* ── SLIDE 2: PRICING ── */
+  #s2 { background: var(--bg); justify-content: flex-start; padding-top: 52px; }
+
+  .price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .brand-col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .brand-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: 1px solid;
+    margin-bottom: 4px;
+  }
+  .brand-header.claude { border-color: rgba(204,120,92,0.3); background: rgba(204,120,92,0.06); }
+  .brand-header.codex  { border-color: rgba(16,163,127,0.3); background: rgba(16,163,127,0.06); }
+
+  .brand-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .brand-dot.claude { background: var(--claude-color); box-shadow: 0 0 10px rgba(204,120,92,0.6); }
+  .brand-dot.codex  { background: var(--codex-color); box-shadow: 0 0 10px rgba(16,163,127,0.6); }
+
+  .brand-name { font-size: 18px; font-weight: 700; }
+  .brand-name.claude { color: var(--claude-color); }
+  .brand-name.codex  { color: var(--codex-color); }
+  .brand-sub  { font-size: 12px; color: var(--text3); margin-left: auto; font-family: 'JetBrains Mono', monospace; }
+
+  .plan-card {
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    padding: 20px 22px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+    flex: 1;
+  }
+  .plan-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+  .plan-card.claude::before { background: linear-gradient(90deg, var(--claude-color), transparent); }
+  .plan-card.codex::before  { background: linear-gradient(90deg, var(--codex-color), transparent); }
+
+  .plan-tier {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text3);
+    margin-bottom: 6px;
+  }
+
+  .plan-price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 14px;
+  }
+  .price-num {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+  .price-num.claude { color: var(--claude-color); }
+  .price-num.codex  { color: var(--codex-color); }
+  .price-unit { font-size: 14px; color: var(--text3); font-weight: 400; }
+
+  .plan-mult {
+    position: absolute;
+    top: 18px; right: 18px;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: 'JetBrains Mono', monospace;
+    opacity: 0.18;
+  }
+  .plan-mult.claude { color: var(--claude-color); }
+  .plan-mult.codex  { color: var(--codex-color); }
+
+  .plan-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .plan-stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12.5px;
+  }
+  .stat-label { color: var(--text2); }
+  .stat-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .stat-val.claude { color: var(--claude-color); }
+  .stat-val.codex  { color: var(--codex-color); }
+
+  .highlight-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .badge-orange { background: rgba(204,120,92,0.2); color: #F4A882; border: 1px solid rgba(204,120,92,0.3); }
+  .badge-green  { background: rgba(16,163,127,0.2); color: #34D399; border: 1px solid rgba(16,163,127,0.3); }
+  .badge-blue   { background: rgba(96,165,250,0.15); color: var(--accent); border: 1px solid rgba(96,165,250,0.25); }
+  .badge-purple { background: rgba(167,139,250,0.15); color: var(--accent2); border: 1px solid rgba(167,139,250,0.25); }
+  .badge-red    { background: rgba(248,113,113,0.15); color: #F87171; border: 1px solid rgba(248,113,113,0.25); }
+
+  /* ── SLIDE 3: USAGE LIMITS ── */
+  #s3 { background: var(--bg); justify-content: flex-start; padding-top: 52px; }
+
+  .usage-hero {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .usage-divider { background: var(--border); }
+
+  .usage-brand {
+    padding: 0 28px;
+  }
+  .usage-brand:first-child { padding-left: 0; }
+  .usage-brand:last-child  { padding-right: 0; }
+
+  .usage-brand-title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .usage-tiers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .usage-tier {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .usage-tier-name {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text3);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .usage-big {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    line-height: 1;
+  }
+  .usage-big.claude { color: var(--claude-color); }
+  .usage-big.codex  { color: var(--codex-color); }
+
+  .usage-unit {
+    font-size: 13px;
+    color: var(--text2);
+    margin-top: 4px;
+    font-weight: 400;
+  }
+
+  .usage-bar {
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 10px;
+    background: var(--surface2);
+    overflow: hidden;
+  }
+  .usage-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 1s cubic-bezier(.4,0,.2,1) 0.3s;
+  }
+  .fill-pro    { width: 0%; }
+  .fill-5x     { width: 0%; }
+  .fill-20x    { width: 0%; }
+  .slide.active .fill-pro  { width: 10%; }
+  .slide.active .fill-5x   { width: 50%; }
+  .slide.active .fill-20x  { width: 100%; }
+
+  .fill-claude { background: linear-gradient(90deg, var(--claude-color), #F4A882); }
+  .fill-codex  { background: linear-gradient(90deg, var(--codex-color), #34D399); }
+
+  .reset-info {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+  }
+  .reset-card {
+    flex: 1;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .reset-card-title { font-size: 11px; color: var(--text3); margin-bottom: 6px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.5px; }
+  .reset-card-body  { font-size: 13px; color: var(--text); font-weight: 500; }
+
+  /* ── SLIDE 4: TOKEN & QUOTA ── */
+  #s4 { background: var(--bg); justify-content: flex-start; padding-top: 52px; }
+
+  .token-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .token-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    position: relative;
+    overflow: hidden;
+  }
+  .token-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    filter: blur(30px);
+    pointer-events: none;
+  }
+  .token-card.claude::after { background: rgba(204,120,92,0.2); }
+  .token-card.codex::after  { background: rgba(16,163,127,0.2); }
+
+  .token-card-title {
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text3);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .quota-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .quota-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+  .quota-icon {
+    width: 28px; height: 28px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .qi-orange { background: rgba(204,120,92,0.15); }
+  .qi-green  { background: rgba(16,163,127,0.15); }
+  .qi-blue   { background: rgba(96,165,250,0.15); }
+
+  .quota-content { flex: 1; }
+  .quota-label { font-size: 12px; color: var(--text2); margin-bottom: 3px; }
+  .quota-value { font-size: 14px; font-weight: 600; color: var(--text); }
+
+  .vs-badge-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 14px 0 8px;
+    font-size: 12px;
+    color: var(--text3);
+  }
+  .vs-line { flex: 1; height: 1px; background: var(--border); }
+
+  /* ── SLIDE 5: FEATURE COMPARE ── */
+  #s5 { background: var(--bg); justify-content: flex-start; padding-top: 52px; }
+
+  .feature-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 13px;
+  }
+  .feature-table thead th {
+    padding: 12px 16px;
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 1px;
+    color: var(--text3);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    font-weight: 400;
+  }
+  .feature-table thead th.claude { color: var(--claude-color); }
+  .feature-table thead th.codex  { color: var(--codex-color); }
+  .feature-table tbody tr {
+    border-radius: 8px;
+    transition: background 0.15s;
+  }
+  .feature-table tbody tr:hover { background: var(--surface); }
+  .feature-table tbody td {
+    padding: 11px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    vertical-align: middle;
+  }
+  .feature-table tbody td:first-child { color: var(--text2); font-size: 12.5px; }
+
+  .check { color: #34D399; font-size: 16px; }
+  .cross { color: #F87171; font-size: 16px; }
+  .part  { color: #FBBF24; font-size: 16px; }
+
+  .feat-highlight {
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .feat-hl-orange { color: var(--claude-color); }
+  .feat-hl-green  { color: var(--codex-color); }
+
+  /* ── SLIDE 6: BENCHMARK ── */
+  #s6 { background: var(--bg); justify-content: flex-start; padding-top: 52px; }
+
+  .bench-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    width: 100%;
+  }
+
+  .bench-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+  }
+  .bench-title { font-size: 12px; color: var(--text3); font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
+
+  .bench-row { margin-bottom: 14px; }
+  .bench-row:last-child { margin-bottom: 0; }
+  .bench-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+  .bench-model { font-size: 13px; font-weight: 500; }
+  .bench-score {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .bench-score.claude { color: var(--claude-color); }
+  .bench-score.codex  { color: var(--codex-color); }
+  .bench-score.leader { font-size: 17px; }
+
+  .bench-bar-bg { height: 6px; border-radius: 3px; background: var(--surface2); overflow: hidden; }
+  .bench-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    width: 0%;
+    transition: width 1s cubic-bezier(.4,0,.2,1) 0.4s;
+  }
+  .slide.active .bench-bar-fill { width: var(--target-width); }
+
+  .winner-tag {
+    font-size: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 999px;
+  }
+  .winner-claude { background: rgba(204,120,92,0.2); color: var(--claude-color); border: 1px solid rgba(204,120,92,0.3); }
+  .winner-codex  { background: rgba(16,163,127,0.2); color: var(--codex-color);  border: 1px solid rgba(16,163,127,0.3); }
+
+  .bench-note {
+    margin-top: 14px;
+    font-size: 11.5px;
+    color: var(--text3);
+    line-height: 1.6;
+    padding: 12px 14px;
+    background: var(--surface);
+    border-radius: 8px;
+    border-left: 2px solid var(--accent);
+  }
+
+  /* ── SLIDE 7: WHO CHOOSES WHAT ── */
+  #s7 { background: var(--bg); justify-content: flex-start; padding-top: 52px; }
+
+  .choose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .choose-card {
+    border-radius: 16px;
+    border: 1px solid;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .choose-card.claude { border-color: rgba(204,120,92,0.25); background: rgba(204,120,92,0.04); }
+  .choose-card.codex  { border-color: rgba(16,163,127,0.25); background: rgba(16,163,127,0.04); }
+
+  .choose-card::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    filter: blur(60px);
+  }
+  .choose-card.claude::before { background: rgba(204,120,92,0.15); }
+  .choose-card.codex::before  { background: rgba(16,163,127,0.15); }
+
+  .choose-logo {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .choose-logo.claude { color: var(--claude-color); }
+  .choose-logo.codex  { color: var(--codex-color); }
+
+  .choose-tagline {
+    font-size: 13px;
+    color: var(--text2);
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+
+  .choose-reason {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .reason-icon { flex-shrink: 0; margin-top: 1px; }
+
+  .bottom-note {
+    width: 100%;
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 12px;
+    color: var(--text3);
+    line-height: 1.6;
+    text-align: center;
+  }
+  .bottom-note strong { color: var(--text2); }
+
+  /* ── RESPONSIVE TWEAKS ── */
+  @media (max-height: 700px) {
+    .slide { padding: 32px 48px; }
+    .slide-title { font-size: 30px; }
+    .price-num { font-size: 36px; }
+    .usage-big { font-size: 28px; }
+    .s1-title { font-size: 54px; }
+  }
+</style>
+</head>
+<body>
+
+<div id="deck">
+
+  <!-- ══ SLIDE 1: TITLE ══ -->
+  <div class="slide active" id="s1">
+    <div class="s1-glow glow-left"></div>
+    <div class="s1-glow glow-right"></div>
+    <div class="s1-eyebrow">AI Coding Agent · 订阅计划深度对比 · 2026</div>
+    <div class="s1-title">
+      <span class="claude">Claude</span>
+      <span class="vs">vs</span>
+      <span class="codex">Codex</span>
+    </div>
+    <div class="s1-subtitle">价格 · 用量 · Token · 云任务 · 性能基准 · 选择建议</div>
+    <div class="s1-tags">
+      <span class="tag tag-orange">Pro / Max 5x / Max 20x</span>
+      <span class="tag tag-blue">数据截至 2026年4月30日</span>
+      <span class="tag tag-green">Plus / Pro $100 / Pro $200</span>
+    </div>
+  </div>
+
+  <!-- ══ SLIDE 2: PRICING ══ -->
+  <div class="slide" id="s2">
+    <div class="slide-header">
+      <div class="slide-label">01 — Price</div>
+      <div class="slide-title">价格对比</div>
+    </div>
+    <div class="price-grid">
+
+      <!-- CLAUDE COLUMN -->
+      <div class="brand-col">
+        <div class="brand-header claude">
+          <div class="brand-dot claude"></div>
+          <span class="brand-name claude">Claude</span>
+          <span class="brand-sub">by Anthropic</span>
+        </div>
+
+        <div class="plan-card claude">
+          <div class="plan-mult claude">1x</div>
+          <div class="plan-tier">Pro · 基础档</div>
+          <div class="plan-price">
+            <span class="price-num claude">$20</span>
+            <span class="price-unit">/月</span>
+          </div>
+          <div class="plan-stats">
+            <div class="plan-stat"><span class="stat-label">配额倍率</span><span class="stat-val claude">1× 基准</span></div>
+            <div class="plan-stat"><span class="stat-label">5h 对话数</span><span class="stat-val claude">~40–45 条</span></div>
+            <div class="plan-stat"><span class="stat-label">定时任务</span><span class="stat-val claude">15 次/天</span></div>
+            <div class="plan-stat"><span class="stat-label">超额</span><span class="highlight-badge badge-blue">按API价付费</span></div>
+          </div>
+        </div>
+
+        <div class="plan-card claude">
+          <div class="plan-mult claude">5x</div>
+          <div class="plan-tier">Max 5x · 中级档</div>
+          <div class="plan-price">
+            <span class="price-num claude">$100</span>
+            <span class="price-unit">/月</span>
+          </div>
+          <div class="plan-stats">
+            <div class="plan-stat"><span class="stat-label">配额倍率</span><span class="stat-val claude">5× Pro</span></div>
+            <div class="plan-stat"><span class="stat-label">5h 对话数</span><span class="stat-val claude">~225 条</span></div>
+            <div class="plan-stat"><span class="stat-label">定时任务</span><span class="stat-val claude">15 次/天</span></div>
+            <div class="plan-stat"><span class="stat-label">单条成本</span><span class="highlight-badge badge-orange">与Pro相同</span></div>
+          </div>
+        </div>
+
+        <div class="plan-card claude">
+          <div class="plan-mult claude">20x</div>
+          <div class="plan-tier">Max 20x · 旗舰档</div>
+          <div class="plan-price">
+            <span class="price-num claude">$200</span>
+            <span class="price-unit">/月</span>
+          </div>
+          <div class="plan-stats">
+            <div class="plan-stat"><span class="stat-label">配额倍率</span><span class="stat-val claude">20× Pro</span></div>
+            <div class="plan-stat"><span class="stat-label">5h 对话数</span><span class="stat-val claude">~900 条</span></div>
+            <div class="plan-stat"><span class="stat-label">定时任务</span><span class="stat-val claude">15 次/天</span></div>
+            <div class="plan-stat"><span class="stat-label">性价比</span><span class="highlight-badge badge-orange">单条成本减半↓</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CODEX COLUMN -->
+      <div class="brand-col">
+        <div class="brand-header codex">
+          <div class="brand-dot codex"></div>
+          <span class="brand-name codex">Codex</span>
+          <span class="brand-sub">by OpenAI</span>
+        </div>
+
+        <div class="plan-card codex">
+          <div class="plan-mult codex">1x</div>
+          <div class="plan-tier">Plus · 基础档</div>
+          <div class="plan-price">
+            <span class="price-num codex">$20</span>
+            <span class="price-unit">/月</span>
+          </div>
+          <div class="plan-stats">
+            <div class="plan-stat"><span class="stat-label">配额倍率</span><span class="stat-val codex">1× 基准</span></div>
+            <div class="plan-stat"><span class="stat-label">5h 对话数</span><span class="stat-val codex">~20–100 条</span></div>
+            <div class="plan-stat"><span class="stat-label">云端任务/5h</span><span class="stat-val codex">10–60 个</span></div>
+            <div class="plan-stat"><span class="stat-label">超额</span><span class="highlight-badge badge-blue">绑API Key</span></div>
+          </div>
+        </div>
+
+        <div class="plan-card codex">
+          <div class="plan-mult codex">5x</div>
+          <div class="plan-tier">Pro $100 · 中级档</div>
+          <div class="plan-price">
+            <span class="price-num codex">$100</span>
+            <span class="price-unit">/月</span>
+          </div>
+          <div class="plan-stats">
+            <div class="plan-stat"><span class="stat-label">配额倍率</span><span class="stat-val codex">5× Plus</span></div>
+            <div class="plan-stat"><span class="stat-label">5h 对话数</span><span class="stat-val codex">~100–500 条</span></div>
+            <div class="plan-stat"><span class="stat-label">云端任务/5h</span><span class="stat-val codex">50–300 个</span></div>
+            <div class="plan-stat"><span class="stat-label">促销</span><span class="highlight-badge badge-purple">10× 至5月31日⚡</span></div>
+          </div>
+        </div>
+
+        <div class="plan-card codex">
+          <div class="plan-mult codex">20x</div>
+          <div class="plan-tier">Pro $200 · 旗舰档</div>
+          <div class="plan-price">
+            <span class="price-num codex">$200</span>
+            <span class="price-unit">/月</span>
+          </div>
+          <div class="plan-stats">
+            <div class="plan-stat"><span class="stat-label">配额倍率</span><span class="stat-val codex">20× Plus</span></div>
+            <div class="plan-stat"><span class="stat-label">5h 对话数</span><span class="stat-val codex">~400–2000 条</span></div>
+            <div class="plan-stat"><span class="stat-label">云端任务/5h</span><span class="stat-val codex">100–600 个</span></div>
+            <div class="plan-stat"><span class="stat-label">定位</span><span class="highlight-badge badge-green">重度全天候用户</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ SLIDE 3: USAGE LIMITS ══ -->
+  <div class="slide" id="s3">
+    <div class="slide-header">
+      <div class="slide-label">02 — Usage</div>
+      <div class="slide-title">用量限制对比</div>
+    </div>
+
+    <div class="usage-hero">
+      <!-- CLAUDE -->
+      <div class="usage-brand">
+        <div class="usage-brand-title">
+          <div class="brand-dot claude"></div>
+          <span style="color:var(--claude-color)">Claude</span>
+        </div>
+        <div class="usage-tiers">
+          <div class="usage-tier">
+            <div class="usage-tier-name">Pro · 1x</div>
+            <div class="usage-big claude">~40–45</div>
+            <div class="usage-unit">条对话 / 5小时窗口</div>
+            <div class="usage-bar"><div class="usage-bar-fill fill-claude fill-pro"></div></div>
+          </div>
+          <div class="usage-tier">
+            <div class="usage-tier-name">Max 5x</div>
+            <div class="usage-big claude">~225</div>
+            <div class="usage-unit">条对话 / 5小时窗口</div>
+            <div class="usage-bar"><div class="usage-bar-fill fill-claude fill-5x"></div></div>
+          </div>
+          <div class="usage-tier">
+            <div class="usage-tier-name">Max 20x</div>
+            <div class="usage-big claude">~900</div>
+            <div class="usage-unit">条对话 / 5小时窗口</div>
+            <div class="usage-bar"><div class="usage-bar-fill fill-claude fill-20x"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="usage-divider"></div>
+
+      <!-- CODEX -->
+      <div class="usage-brand">
+        <div class="usage-brand-title">
+          <div class="brand-dot codex"></div>
+          <span style="color:var(--codex-color)">Codex</span>
+        </div>
+        <div class="usage-tiers">
+          <div class="usage-tier">
+            <div class="usage-tier-name">Plus · 1x</div>
+            <div class="usage-big codex">10–60</div>
+            <div class="usage-unit">云端任务 / 5小时窗口</div>
+            <div class="usage-bar"><div class="usage-bar-fill fill-codex fill-pro"></div></div>
+          </div>
+          <div class="usage-tier">
+            <div class="usage-tier-name">Pro $100 · 5x</div>
+            <div class="usage-big codex">50–300</div>
+            <div class="usage-unit">云端任务 / 5小时窗口</div>
+            <div class="usage-bar"><div class="usage-bar-fill fill-codex fill-5x"></div></div>
+          </div>
+          <div class="usage-tier">
+            <div class="usage-tier-name">Pro $200 · 20x</div>
+            <div class="usage-big codex">100–600</div>
+            <div class="usage-unit">云端任务 / 5小时窗口</div>
+            <div class="usage-bar"><div class="usage-bar-fill fill-codex fill-20x"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reset-info">
+      <div class="reset-card">
+        <div class="reset-card-title">🔄 Claude 重置机制</div>
+        <div class="reset-card-body"><span style="color:var(--claude-color);font-weight:700">双重限制</span>：每5小时滚动窗口 + 每周配额（All models & Sonnet 独立计算）</div>
+      </div>
+      <div class="reset-card">
+        <div class="reset-card-title">🔄 Codex 重置机制</div>
+        <div class="reset-card-body"><span style="color:var(--codex-color);font-weight:700">单一限制</span>：仅每5小时滚动窗口，无独立周配额，结构更简单</div>
+      </div>
+      <div class="reset-card">
+        <div class="reset-card-title">📅 定时任务</div>
+        <div class="reset-card-body">Claude：<span style="color:var(--claude-color);font-weight:700">15次/天</span> 免费 Routine&nbsp;&nbsp;｜&nbsp;&nbsp;Codex：<span style="color:var(--text3)">无内置定时任务</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SLIDE 4: TOKEN & QUOTA ══ -->
+  <div class="slide" id="s4">
+    <div class="slide-header">
+      <div class="slide-label">03 — Token & Quota</div>
+      <div class="slide-title">Token 与配额机制</div>
+    </div>
+    <div class="token-grid">
+
+      <div class="token-card claude">
+        <div class="token-card-title">Claude · Token 机制</div>
+        <div class="quota-item">
+          <div class="quota-icon qi-orange">📦</div>
+          <div class="quota-content">
+            <div class="quota-label">Token 计量方式</div>
+            <div class="quota-value">订阅配额池扣减（不透明，不显示具体token数）</div>
+          </div>
+        </div>
+        <div class="quota-item">
+          <div class="quota-icon qi-orange">🔁</div>
+          <div class="quota-content">
+            <div class="quota-label">双重配额</div>
+            <div class="quota-value">All models 周配额 + Sonnet only 周配额（独立触发）</div>
+          </div>
+        </div>
+        <div class="quota-item">
+          <div class="quota-icon qi-blue">⚡</div>
+          <div class="quota-content">
+            <div class="quota-label">Routine Token 归属</div>
+            <div class="quota-value">共用 All models 周配额，无专属池</div>
+          </div>
+        </div>
+        <div class="quota-item">
+          <div class="quota-icon qi-orange">💳</div>
+          <div class="quota-content">
+            <div class="quota-label">超额处理</div>
+            <div class="quota-value">开启 Extra Usage → 按API标准价格付费</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="token-card codex">
+        <div class="token-card-title">Codex · Token 机制</div>
+        <div class="quota-item">
+          <div class="quota-icon qi-green">📦</div>
+          <div class="quota-content">
+            <div class="quota-label">Token 计量方式</div>
+            <div class="quota-value">2026.4起按实际token透明计量（输入/缓存/输出分开）</div>
+          </div>
+        </div>
+        <div class="quota-item">
+          <div class="quota-icon qi-green">🔁</div>
+          <div class="quota-content">
+            <div class="quota-label">限制结构</div>
+            <div class="quota-value">单一5小时窗口，不同模型分开计量（GPT-5.4 / mini / Codex）</div>
+          </div>
+        </div>
+        <div class="quota-item">
+          <div class="quota-icon qi-blue">☁️</div>
+          <div class="quota-content">
+            <div class="quota-label">云端任务独立计量</div>
+            <div class="quota-value">Cloud tasks 有专属限额，与本地对话分开统计</div>
+          </div>
+        </div>
+        <div class="quota-item">
+          <div class="quota-icon qi-green">💳</div>
+          <div class="quota-content">
+            <div class="quota-label">超额处理</div>
+            <div class="quota-value">绑定 API Key → 按量计费，无缝切换</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="token-card" style="grid-column:1/-1; background: var(--surface2);">
+        <div class="token-card-title">⚠️ 关键差异</div>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;">
+          <div style="flex:1;min-width:200px">
+            <div style="font-size:12px;color:var(--text3);margin-bottom:6px">Claude 限制更复杂</div>
+            <div style="font-size:13px;color:var(--text);line-height:1.6">5小时窗口 <strong style="color:var(--accent)">+</strong> 周配额 <strong style="color:var(--accent)">+</strong> Sonnet独立子限额，三重叠加，任一触顶均受限</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="font-size:12px;color:var(--text3);margin-bottom:6px">Codex 计量更透明</div>
+            <div style="font-size:13px;color:var(--text);line-height:1.6">Token用量可在设置 → Usage 面板实时查看，知道自己花了多少</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="font-size:12px;color:var(--text3);margin-bottom:6px">Routine 免费额度</div>
+            <div style="font-size:13px;color:var(--text);line-height:1.6">Claude 每天 <strong style="color:var(--claude-color)">15次</strong> 免费定时任务，Codex 无此功能</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ SLIDE 5: FEATURE COMPARE ══ -->
+  <div class="slide" id="s5">
+    <div class="slide-header">
+      <div class="slide-label">04 — Features</div>
+      <div class="slide-title">功能特性对比</div>
+    </div>
+    <table class="feature-table" style="width:100%">
+      <thead>
+        <tr>
+          <th style="width:28%">功能维度</th>
+          <th class="claude" style="width:36%">Claude (Pro / Max)</th>
+          <th class="codex"  style="width:36%">Codex (Plus / Pro)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>运行模式</td>
+          <td><span class="check">●</span> <span class="feat-highlight feat-hl-orange">本地 CLI</span>（代码不离本机）</td>
+          <td><span class="check">●</span> 本地 CLI <span class="feat-highlight feat-hl-green">+ 云端沙盒</span>双模式</td>
+        </tr>
+        <tr>
+          <td>云端异步任务</td>
+          <td><span class="cross">✕</span> 无云端隔离容器</td>
+          <td><span class="check">✓</span> <span class="feat-highlight feat-hl-green">独立沙盒运行，返回 diff</span></td>
+        </tr>
+        <tr>
+          <td>定时自动任务</td>
+          <td><span class="check">✓</span> <span class="feat-highlight feat-hl-orange">Routine：15次/天免费</span></td>
+          <td><span class="cross">✕</span> 无内置定时功能</td>
+        </tr>
+        <tr>
+          <td>多智能体</td>
+          <td><span class="check">✓</span> 支持（2026.2起）</td>
+          <td><span class="check">✓</span> 支持（2026.2起）</td>
+        </tr>
+        <tr>
+          <td>数据隐私</td>
+          <td><span class="check">✓</span> <span class="feat-highlight feat-hl-orange">代码始终在本地</span></td>
+          <td><span class="part">△</span> 云任务时代码上传沙盒</td>
+        </tr>
+        <tr>
+          <td>Token 透明度</td>
+          <td><span class="cross">✕</span> 用量不透明</td>
+          <td><span class="check">✓</span> <span class="feat-highlight feat-hl-green">实时 Token 面板</span></td>
+        </tr>
+        <tr>
+          <td>超额后继续用</td>
+          <td><span class="check">✓</span> 开 Extra Usage 按API价</td>
+          <td><span class="check">✓</span> 绑 API Key 无缝切换</td>
+        </tr>
+        <tr>
+          <td>可用模型</td>
+          <td><span class="feat-highlight feat-hl-orange">Claude Sonnet / Opus 系列</span></td>
+          <td><span class="feat-highlight feat-hl-green">GPT-5.4 / mini / GPT-5.3-Codex</span></td>
+        </tr>
+        <tr>
+          <td>优先新功能</td>
+          <td><span class="check">✓</span> Max 订阅者优先访问</td>
+          <td><span class="part">△</span> Pro 订阅者优先</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;display:flex;gap:10px;font-size:12px;color:var(--text3);align-items:center">
+      <span><span class="check" style="font-size:13px">●</span> 支持</span>
+      <span style="margin:0 4px">·</span>
+      <span><span class="cross" style="font-size:13px">✕</span> 不支持</span>
+      <span style="margin:0 4px">·</span>
+      <span><span class="part" style="font-size:13px">△</span> 部分支持</span>
+      <div style="flex:1"></div>
+      <span style="font-family:'JetBrains Mono',monospace">数据截至 2026.04.30</span>
+    </div>
+  </div>
+
+  <!-- ══ SLIDE 6: BENCHMARK ══ -->
+  <div class="slide" id="s6">
+    <div class="slide-header">
+      <div class="slide-label">05 — Benchmark</div>
+      <div class="slide-title">性能基准测试</div>
+    </div>
+    <div class="bench-grid">
+
+      <div class="bench-card">
+        <div class="bench-title">SWE-bench Verified（代码修复）</div>
+
+        <div class="bench-row">
+          <div class="bench-meta">
+            <span class="bench-model" style="color:var(--claude-color)">Claude Opus 4.6</span>
+            <div style="display:flex;align-items:center;gap:8px">
+              <span class="winner-tag winner-claude">👑 领先</span>
+              <span class="bench-score claude leader">80.8%</span>
+            </div>
+          </div>
+          <div class="bench-bar-bg">
+            <div class="bench-bar-fill" style="background:var(--claude-color);--target-width:80.8%"></div>
+          </div>
+        </div>
+
+        <div class="bench-row">
+          <div class="bench-meta">
+            <span class="bench-model" style="color:var(--codex-color)">GPT-5.3-Codex</span>
+            <span class="bench-score codex">56.8%</span>
+          </div>
+          <div class="bench-bar-bg">
+            <div class="bench-bar-fill" style="background:var(--codex-color);--target-width:56.8%"></div>
+          </div>
+        </div>
+
+        <div class="bench-row">
+          <div class="bench-meta">
+            <span class="bench-model" style="color:var(--text3)">Claude Sonnet 4.6</span>
+            <span class="bench-score" style="color:var(--claude-color)">55.4%</span>
+          </div>
+          <div class="bench-bar-bg">
+            <div class="bench-bar-fill" style="background:linear-gradient(90deg,var(--claude-color),#F4A882);opacity:0.6;--target-width:55.4%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bench-card">
+        <div class="bench-title">Terminal-Bench 2.0（终端任务）</div>
+
+        <div class="bench-row">
+          <div class="bench-meta">
+            <span class="bench-model" style="color:var(--codex-color)">GPT-5.3-Codex</span>
+            <div style="display:flex;align-items:center;gap:8px">
+              <span class="winner-tag winner-codex">👑 领先</span>
+              <span class="bench-score codex leader">77.3%</span>
+            </div>
+          </div>
+          <div class="bench-bar-bg">
+            <div class="bench-bar-fill" style="background:var(--codex-color);--target-width:77.3%"></div>
+          </div>
+        </div>
+
+        <div class="bench-row">
+          <div class="bench-meta">
+            <span class="bench-model" style="color:var(--claude-color)">Claude Opus 4.6</span>
+            <span class="bench-score claude">~70%</span>
+          </div>
+          <div class="bench-bar-bg">
+            <div class="bench-bar-fill" style="background:var(--claude-color);--target-width:70%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bench-card" style="grid-column:1/-1">
+        <div class="bench-title">综合能力评估</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+          <div style="text-align:center;padding:14px;background:var(--surface);border-radius:10px">
+            <div style="font-size:11px;color:var(--text3);margin-bottom:8px;font-family:'JetBrains Mono',monospace">代码修复能力</div>
+            <div style="font-size:22px;font-weight:800;color:var(--claude-color)">Claude</div>
+            <div style="font-size:11px;color:var(--text3);margin-top:4px">领先 +24pp</div>
+          </div>
+          <div style="text-align:center;padding:14px;background:var(--surface);border-radius:10px">
+            <div style="font-size:11px;color:var(--text3);margin-bottom:8px;font-family:'JetBrains Mono',monospace">终端自动化</div>
+            <div style="font-size:22px;font-weight:800;color:var(--codex-color)">Codex</div>
+            <div style="font-size:11px;color:var(--text3);margin-top:4px">Terminal-Bench #1</div>
+          </div>
+          <div style="text-align:center;padding:14px;background:var(--surface);border-radius:10px">
+            <div style="font-size:11px;color:var(--text3);margin-bottom:8px;font-family:'JetBrains Mono',monospace">云端异步任务</div>
+            <div style="font-size:22px;font-weight:800;color:var(--codex-color)">Codex</div>
+            <div style="font-size:11px;color:var(--text3);margin-top:4px">独占功能</div>
+          </div>
+          <div style="text-align:center;padding:14px;background:var(--surface);border-radius:10px">
+            <div style="font-size:11px;color:var(--text3);margin-bottom:8px;font-family:'JetBrains Mono',monospace">数据隐私</div>
+            <div style="font-size:22px;font-weight:800;color:var(--claude-color)">Claude</div>
+            <div style="font-size:11px;color:var(--text3);margin-top:4px">本地运行</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ SLIDE 7: CHOOSE ══ -->
+  <div class="slide" id="s7">
+    <div class="slide-header">
+      <div class="slide-label">06 — Decision</div>
+      <div class="slide-title">如何选择？</div>
+    </div>
+    <div class="choose-grid">
+
+      <div class="choose-card claude">
+        <div class="choose-logo claude">
+          🟠 Claude Max
+        </div>
+        <div class="choose-tagline">追求代码能力上限 · 重视隐私 · 需要自动化工作流</div>
+
+        <div class="choose-reason">
+          <span class="reason-icon">✅</span>
+          <span>SWE-bench 领先，代码修复能力更强（80.8% vs 56.8%）</span>
+        </div>
+        <div class="choose-reason">
+          <span class="reason-icon">✅</span>
+          <span>代码完全在本机运行，对数据隐私要求高的场景首选</span>
+        </div>
+        <div class="choose-reason">
+          <span class="reason-icon">✅</span>
+          <span>Routine 定时任务：<strong style="color:var(--claude-color)">15次/天免费</strong>，无需额外配置</span>
+        </div>
+        <div class="choose-reason">
+          <span class="reason-icon">✅</span>
+          <span>Max 20x 性价比优：$200 获 20x 用量，单条成本比 Max 5x 减半</span>
+        </div>
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+          <span class="highlight-badge badge-orange">Pro $20/mo</span>
+          <span class="highlight-badge badge-orange">Max 5x $100/mo</span>
+          <span class="highlight-badge badge-orange">Max 20x $200/mo</span>
+        </div>
+      </div>
+
+      <div class="choose-card codex">
+        <div class="choose-logo codex">
+          🟢 Codex Pro
+        </div>
+        <div class="choose-tagline">需要云端并行任务 · 喜欢透明计量 · 重度 GPT 用户</div>
+
+        <div class="choose-reason">
+          <span class="reason-icon">✅</span>
+          <span>云端沙盒异步任务：扔给它跑，自己去干别的，回来看 diff</span>
+        </div>
+        <div class="choose-reason">
+          <span class="reason-icon">✅</span>
+          <span>Token 用量透明可见，清楚知道每次任务花了多少资源</span>
+        </div>
+        <div class="choose-reason">
+          <span class="reason-icon">✅</span>
+          <span>Terminal-Bench 领先，终端自动化任务表现更强</span>
+        </div>
+        <div class="choose-reason">
+          <span class="reason-icon">⚡</span>
+          <span>Pro $100 促销：<strong style="color:var(--codex-color)">10x 用量至5月31日</strong>，窗口期性价比极高</span>
+        </div>
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+          <span class="highlight-badge badge-green">Plus $20/mo</span>
+          <span class="highlight-badge badge-purple">Pro $100 ⚡促销10x</span>
+          <span class="highlight-badge badge-green">Pro $200/mo</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="bottom-note">
+      ⚠️ <strong>Codex Pro $100 的 10x 用量为限时促销，2026年6月1日起降回标准 5x</strong>，选择前请注意时效性。两款产品均支持超额付费，可先从低档位试用再升级。
+    </div>
+  </div>
+
+</div><!-- /deck -->
+
+<!-- NAV -->
+<div id="nav">
+  <button class="nav-btn" onclick="changeSlide(-1)">← 上一页</button>
+  <div id="dots"></div>
+  <span id="slide-counter">1 / 7</span>
+  <button class="nav-btn" onclick="changeSlide(1)">下一页 →</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+  const total = slides.length;
+
+  // Build dots
+  const dotsEl = document.getElementById('dots');
+  slides.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.onclick = () => goTo(i);
+    dotsEl.appendChild(d);
+  });
+
+  function goTo(n) {
+    if (n < 0 || n >= total) return;
+    slides[current].classList.remove('active');
+    slides[current].classList.add('exit');
+    setTimeout(() => slides[current < total ? current : 0].classList.remove('exit'), 550);
+
+    const prev = current;
+    current = n;
+
+    requestAnimationFrame(() => {
+      slides[current].classList.add('active');
+    });
+
+    setTimeout(() => slides[prev].classList.remove('exit'), 600);
+
+    // Update dots
+    document.querySelectorAll('.dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+    document.getElementById('slide-counter').textContent = `${current + 1} / ${total}`;
+  }
+
+  function changeSlide(dir) { goTo(current + dir); }
+
+  // Keyboard nav
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') changeSlide(1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp') changeSlide(-1);
+  });
+</script>
+</body>
+</html>

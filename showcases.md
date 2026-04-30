@@ -14,3 +14,11 @@ permalink: /showcases/
 → [打开 Showcase](/marginalia/showcases/claude-april-2026/)
 
 *整理时间：2026-04-30。*
+
+## Claude vs Codex · 2026 订阅计划深度对比
+
+单页幻灯：Claude 与 OpenAI Codex 2026 年订阅计划的价格、用量限制、Token / 配额机制、功能特性、性能基准与选择建议。
+
+→ [打开 Showcase](/marginalia/showcases/claude-vs-codex-2026/)
+
+*整理时间：2026-04-30。*
