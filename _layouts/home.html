@@ -6,6 +6,25 @@ layout: default
     {{ content }}
   </section>
 
+  {% assign ai_hot = site.posts | where_exp: "p", "p.tags contains 'ai-hot'" | first %}
+  {% if ai_hot %}
+  <section class="ai-hot-feature" aria-label="AI 热点">
+    <header class="ai-hot-head">
+      <span class="ai-hot-pill">🔥 AI 热点 · 每日 06:00 自动更新</span>
+      <time datetime="{{ ai_hot.date | date_to_xmlschema }}" class="ai-hot-time">
+        {{ ai_hot.date | date: '%Y-%m-%d' }}
+      </time>
+    </header>
+    <h2 class="ai-hot-title">
+      <a href="{{ ai_hot.url | relative_url }}">{{ ai_hot.title }}</a>
+    </h2>
+    {% if ai_hot.excerpt %}
+    <p class="ai-hot-excerpt">{{ ai_hot.excerpt | strip_html | strip_newlines | truncate: 220 }}</p>
+    {% endif %}
+    <a class="ai-hot-cta" href="{{ ai_hot.url | relative_url }}">阅读今日全文 →</a>
+  </section>
+  {% endif %}
+
   <section class="post-list-section">
     <h2 class="section-title">最近的批注 · Recent Notes</h2>
     {% if site.posts.size == 0 %}

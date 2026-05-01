@@ -415,9 +415,94 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 
+/* ---- AI Hot featured card (home page) ---- */
+.ai-hot-feature {
+  margin: 2rem 0 3rem;
+  padding: 1.6rem 1.6rem 1.4rem;
+  background: linear-gradient(180deg, var(--bg-tint) 0%, var(--bg) 100%);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
+  position: relative;
+}
+.ai-hot-feature::before {
+  content: "";
+  position: absolute;
+  top: -1px; right: -1px;
+  width: 40px; height: 40px;
+  background: linear-gradient(135deg, transparent 50%, var(--accent-soft) 50%);
+  opacity: 0.25;
+  border-radius: 0 4px 0 0;
+}
+.ai-hot-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .9rem;
+  flex-wrap: wrap;
+}
+.ai-hot-pill {
+  font-family: var(--sans);
+  font-size: .78rem;
+  letter-spacing: .04em;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.ai-hot-time {
+  font-family: var(--mono);
+  font-size: .82rem;
+  color: var(--muted);
+}
+.ai-hot-title {
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  line-height: 1.3;
+  margin: .2rem 0 .7rem;
+  color: var(--ink);
+  font-weight: 700;
+}
+.ai-hot-title a {
+  color: inherit;
+  border-bottom: none;
+  text-decoration: none;
+}
+.ai-hot-title a:hover { color: var(--accent); }
+.ai-hot-excerpt {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.ai-hot-cta {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: .9rem;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+}
+.ai-hot-cta:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+/* AI 晨报正文：图片美化 + 板块分隔 */
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+  margin: 1.2rem auto;
+  display: block;
+  box-shadow: 0 1px 3px rgba(31, 29, 27, 0.08);
+}
+
 /* ---- Mobile ---- */
 @media (max-width: 720px) {
   body { font-size: 17px; }
+  .ai-hot-feature { padding: 1.2rem 1.1rem 1rem; }
+  .ai-hot-title { font-size: 1.35rem; }
   .site-main { padding: 2.5rem 0 3rem; }
   .header-wrap { flex-direction: column; align-items: flex-start; gap: .8rem; padding: 1.1rem 0; }
   .site-nav { gap: 1.2rem; }
