@@ -499,32 +499,35 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
   box-shadow: 0 1px 3px rgba(31, 29, 27, 0.08);
 }
 
-/* AI Hot 文章页：双栏布局（左侧粘性 TOC + 右侧正文） */
+/* AI Hot 文章页：双栏布局（左侧正文 + 右侧粘性 TOC） */
 .ai-hot-wrap {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 1.5rem;
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 240px;
   gap: 3rem;
+  align-items: start;
 }
 .ai-hot-post {
-  grid-column: 2;
+  grid-column: 1;
   min-width: 0;
 }
 .ai-hot-post .post-header {
   margin-top: 0;
 }
 .ai-hot-toc {
-  grid-column: 1;
-  grid-row: 2;
+  grid-column: 2;
+  align-self: start;
 }
 .ai-hot-toc .toc-inner {
   position: sticky;
-  top: 6.5rem;
+  top: 6rem;
   padding: 1.2rem 1rem;
   border-left: 2px solid var(--rule);
   font-family: var(--sans);
+  max-height: calc(100vh - 8rem);
+  overflow-y: auto;
 }
 .ai-hot-toc .toc-title {
   font-size: .78rem;
