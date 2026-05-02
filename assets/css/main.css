@@ -667,7 +667,7 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
   .ai-hot-title { font-size: 1.35rem; }
   .ai-hot-toc-mobile ul { grid-template-columns: 1fr; }
   .site-main { padding: 2.5rem 0 3rem; }
-  .header-wrap { flex-direction: column; align-items: flex-start; gap: .8rem; padding: 1.1rem 0; }
+  .header-wrap { flex-direction: column; align-items: flex-start; gap: .8rem; padding: 1.1rem 1.5rem; }
   .site-nav { gap: 1.2rem; }
   .brand-tag { display: none; }
   h1 { font-size: 2.1rem; }

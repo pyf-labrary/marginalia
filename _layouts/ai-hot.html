@@ -61,22 +61,44 @@ layout: default
 {% if page.sections and page.sections.size > 0 %}
 <script>
 (function(){
-  var links = document.querySelectorAll('.ai-hot-toc a[data-target]');
-  if (!links.length || !('IntersectionObserver' in window)) return;
-  var byId = {};
-  links.forEach(function(a){ byId[a.dataset.target] = a; });
-  var observer = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if (e.isIntersecting && byId[e.target.id]) {
-        links.forEach(function(a){ a.classList.remove('active'); });
-        byId[e.target.id].classList.add('active');
+  var links = Array.prototype.slice.call(
+    document.querySelectorAll('.ai-hot-toc a[data-target]')
+  );
+  if (!links.length) return;
+  var sections = links.map(function(a){
+    return { id: a.dataset.target, el: document.getElementById(a.dataset.target), link: a };
+  }).filter(function(s){ return s.el; });
+  if (!sections.length) return;
+
+  // 阈值：视口顶部下方 120px（避开 sticky site-header）
+  var THRESHOLD = 120;
+  var ticking = false;
+
+  function update(){
+    ticking = false;
+    var current = sections[0];
+    for (var i = 0; i < sections.length; i++) {
+      var top = sections[i].el.getBoundingClientRect().top;
+      if (top - THRESHOLD <= 0) {
+        current = sections[i];
+      } else {
+        break;
       }
-    });
-  }, { rootMargin: '-30% 0px -60% 0px' });
-  Object.keys(byId).forEach(function(id){
-    var el = document.getElementById(id);
-    if (el) observer.observe(el);
-  });
+    }
+    links.forEach(function(a){ a.classList.remove('active'); });
+    if (current) current.link.classList.add('active');
+  }
+
+  function onScroll(){
+    if (!ticking) {
+      window.requestAnimationFrame(update);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  update();
 })();
 </script>
 {% endif %}
