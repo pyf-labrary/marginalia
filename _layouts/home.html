@@ -25,14 +25,16 @@ layout: default
   </section>
   {% endif %}
 
-  {% assign research_posts = site.posts | where_exp: "p", "p.tags contains 'ai-hot' == false" %}
+  {% assign hot_posts = site.posts | where_exp: "p", "p.tags contains 'ai-hot'" %}
+  {% assign other_count = site.posts.size | minus: hot_posts.size %}
   <section class="post-list-section">
     <h2 class="section-title">最近的批注 · Recent Notes</h2>
-    {% if research_posts.size == 0 %}
+    {% if other_count == 0 %}
       <p class="empty-state">还没有文章。<code>_posts/</code> 目录里丢一个 <code>YYYY-MM-DD-slug.md</code> 就出现了。</p>
     {% else %}
     <ol class="posts" role="list">
-      {% for post in research_posts %}
+      {% for post in site.posts %}
+      {% unless post.tags contains 'ai-hot' %}
       <li class="post-item">
         <aside class="margin-note">
           <time datetime="{{ post.date | date_to_xmlschema }}">
@@ -50,6 +52,7 @@ layout: default
           {% if post.excerpt %}<p class="excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>{% endif %}
         </article>
       </li>
+      {% endunless %}
       {% endfor %}
     </ol>
     {% endif %}
