@@ -1,0 +1,80 @@
+---
+layout: default
+---
+<div class="ai-hot-wrap">
+  <article class="post ai-hot-post">
+    <header class="post-header">
+      <p class="kicker">🔥 AI 热点 · A Daily Digest</p>
+      <h1>{{ page.title }}</h1>
+      <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y 年 %-m 月 %-d 日' }}</time>
+        {% if page.tags and page.tags.size > 0 %}
+          <span class="dot">·</span>
+          <span class="tags-inline">
+            {% for t in page.tags %}<span>#{{ t }}</span>{% unless forloop.last %} <span class="dot">·</span> {% endunless %}{% endfor %}
+          </span>
+        {% endif %}
+      </p>
+    </header>
+
+    {% if page.sections and page.sections.size > 0 %}
+    <aside class="ai-hot-toc" aria-label="板块导航">
+      <div class="toc-inner">
+        <h3 class="toc-title">本期板块</h3>
+        <ul>
+          {% for s in page.sections %}
+          <li><a href="#{{ s.id }}" data-target="{{ s.id }}">
+            <span class="toc-emoji">{{ s.emoji }}</span>
+            <span class="toc-name">{{ s.name }}</span>
+            {% if s.count %}<span class="toc-count">{{ s.count }}</span>{% endif %}
+          </a></li>
+          {% endfor %}
+        </ul>
+        <a class="toc-top" href="#main">↑ 回到顶部</a>
+      </div>
+    </aside>
+
+    <details class="ai-hot-toc-mobile" aria-label="板块导航">
+      <summary>📑 跳转到板块</summary>
+      <ul>
+        {% for s in page.sections %}
+        <li><a href="#{{ s.id }}">{{ s.emoji }} {{ s.name }}{% if s.count %} ({{ s.count }}){% endif %}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+    {% endif %}
+
+    <div class="post-body ai-hot-body">
+      {{ content }}
+    </div>
+
+    <footer class="post-footer">
+      <p>
+        <a class="back" href="{{ '/ai-hot/' | relative_url }}">← 所有 AI 晨报</a>
+      </p>
+    </footer>
+  </article>
+</div>
+
+{% if page.sections and page.sections.size > 0 %}
+<script>
+(function(){
+  var links = document.querySelectorAll('.ai-hot-toc a[data-target]');
+  if (!links.length || !('IntersectionObserver' in window)) return;
+  var byId = {};
+  links.forEach(function(a){ byId[a.dataset.target] = a; });
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting && byId[e.target.id]) {
+        links.forEach(function(a){ a.classList.remove('active'); });
+        byId[e.target.id].classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  Object.keys(byId).forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) observer.observe(el);
+  });
+})();
+</script>
+{% endif %}

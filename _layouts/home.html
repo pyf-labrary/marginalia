@@ -25,13 +25,14 @@ layout: default
   </section>
   {% endif %}
 
+  {% assign research_posts = site.posts | where_exp: "p", "p.tags contains 'ai-hot' == false" %}
   <section class="post-list-section">
     <h2 class="section-title">最近的批注 · Recent Notes</h2>
-    {% if site.posts.size == 0 %}
+    {% if research_posts.size == 0 %}
       <p class="empty-state">还没有文章。<code>_posts/</code> 目录里丢一个 <code>YYYY-MM-DD-slug.md</code> 就出现了。</p>
     {% else %}
     <ol class="posts" role="list">
-      {% for post in site.posts %}
+      {% for post in research_posts %}
       <li class="post-item">
         <aside class="margin-note">
           <time datetime="{{ post.date | date_to_xmlschema }}">
