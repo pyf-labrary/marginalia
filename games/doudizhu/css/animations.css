@@ -1,0 +1,649 @@
+/* ===== Keyframe Animations ===== */
+
+/* Fade In */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Slide animations */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+/* Scale animations */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+@keyframes scalePop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+@keyframes scaleBounce {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Card dealing animation */
+@keyframes dealCard {
+    from {
+        opacity: 0;
+        transform: translateY(-100px) rotateY(180deg) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateY(0) scale(1);
+    }
+}
+
+@keyframes dealCardLeft {
+    from {
+        opacity: 0;
+        transform: translate(200px, -100px) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+@keyframes dealCardRight {
+    from {
+        opacity: 0;
+        transform: translate(-200px, -100px) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+/* Card play animation */
+@keyframes playCard {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes playCardFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-80px) scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes playCardFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(80px) scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* Flip animation */
+@keyframes flipCard {
+    0% {
+        transform: perspective(400px) rotateY(0);
+    }
+    50% {
+        transform: perspective(400px) rotateY(90deg);
+    }
+    100% {
+        transform: perspective(400px) rotateY(0);
+    }
+}
+
+/* Pulse */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(79, 195, 247, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(79, 195, 247, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(79, 195, 247, 0.3);
+    }
+}
+
+@keyframes pulseGoldGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 213, 79, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(255, 213, 79, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 213, 79, 0.3);
+    }
+}
+
+/* Shake */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 50%, 90% { transform: translateX(-4px); }
+    30%, 70% { transform: translateX(4px); }
+}
+
+/* Bounce */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Float */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Rotate */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-180deg) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
+/* Bomb explosion */
+@keyframes bombExplode {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    40% {
+        transform: scale(0.9);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(0.98);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bombShake {
+    0%, 100% { transform: translate(0, 0) rotate(0); }
+    10% { transform: translate(-3px, -2px) rotate(-1deg); }
+    20% { transform: translate(3px, 2px) rotate(1deg); }
+    30% { transform: translate(-4px, 0) rotate(0); }
+    40% { transform: translate(4px, -1px) rotate(1deg); }
+    50% { transform: translate(-2px, 2px) rotate(-1deg); }
+    60% { transform: translate(3px, 1px) rotate(0); }
+    70% { transform: translate(-3px, -2px) rotate(-1deg); }
+    80% { transform: translate(2px, 1px) rotate(1deg); }
+    90% { transform: translate(-1px, -1px) rotate(0); }
+}
+
+/* Rocket */
+@keyframes rocketLaunch {
+    0% {
+        transform: translateY(100px) scale(0.5);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(-10px) scale(1.1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(5px) scale(0.95);
+    }
+    70% {
+        transform: translateY(-3px) scale(1.02);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Spring */
+@keyframes springUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60px) scaleY(0.8);
+    }
+    40% {
+        transform: translateY(-10px) scaleY(1.05);
+    }
+    60% {
+        transform: translateY(5px) scaleY(0.98);
+    }
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
+    }
+}
+
+/* Result animations */
+@keyframes winCelebrate {
+    0% {
+        transform: scale(0.3) rotate(-15deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1) rotate(5deg);
+    }
+    70% {
+        transform: scale(0.95) rotate(-2deg);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes loseSadness {
+    0% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Confetti */
+@keyframes confettiFall {
+    0% {
+        transform: translateY(-100px) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Timer countdown */
+@keyframes timerPulse {
+    0% {
+        border-color: var(--color-primary);
+    }
+    50% {
+        border-color: var(--color-danger);
+    }
+    100% {
+        border-color: var(--color-primary);
+    }
+}
+
+@keyframes timerRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Text animations */
+@keyframes textReveal {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes textGlow {
+    0%, 100% {
+        text-shadow: 0 0 5px rgba(255, 213, 79, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 213, 79, 0.8), 0 0 40px rgba(255, 213, 79, 0.4);
+    }
+}
+
+/* Particle effect placeholder */
+@keyframes particleFly {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--px, 50px), var(--py, -80px)) scale(0);
+        opacity: 0;
+    }
+}
+
+/* ===== Animation Utility Classes ===== */
+.anim-fade-in {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.anim-fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+.anim-slide-up {
+    animation: slideInUp 0.4s ease forwards;
+}
+
+.anim-slide-down {
+    animation: slideInDown 0.4s ease forwards;
+}
+
+.anim-slide-left {
+    animation: slideInLeft 0.4s ease forwards;
+}
+
+.anim-slide-right {
+    animation: slideInRight 0.4s ease forwards;
+}
+
+.anim-scale-in {
+    animation: scaleIn 0.3s ease forwards;
+}
+
+.anim-scale-bounce {
+    animation: scaleBounce 0.5s ease forwards;
+}
+
+.anim-deal-card {
+    animation: dealCard 0.3s ease forwards;
+}
+
+.anim-play-card {
+    animation: playCard 0.3s ease forwards;
+}
+
+.anim-play-left {
+    animation: playCardFromLeft 0.3s ease forwards;
+}
+
+.anim-play-right {
+    animation: playCardFromRight 0.3s ease forwards;
+}
+
+.anim-flip {
+    animation: flipCard 0.6s ease forwards;
+}
+
+.anim-pulse {
+    animation: pulse 1.5s ease infinite;
+}
+
+.anim-pulse-glow {
+    animation: pulseGlow 2s ease infinite;
+}
+
+.anim-pulse-gold {
+    animation: pulseGoldGlow 2s ease infinite;
+}
+
+.anim-shake {
+    animation: shake 0.5s ease;
+}
+
+.anim-bounce {
+    animation: bounce 1s ease;
+}
+
+.anim-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.anim-rotate {
+    animation: rotate 2s linear infinite;
+}
+
+.anim-bomb {
+    animation: bombExplode 0.6s ease forwards;
+}
+
+.anim-bomb-shake {
+    animation: bombShake 0.5s ease;
+}
+
+.anim-rocket {
+    animation: rocketLaunch 0.8s ease forwards;
+}
+
+.anim-spring-up {
+    animation: springUp 0.6s ease forwards;
+}
+
+.anim-win {
+    animation: winCelebrate 0.8s ease forwards;
+}
+
+.anim-lose {
+    animation: loseSadness 0.5s ease forwards;
+}
+
+.anim-text-glow {
+    animation: textGlow 2s ease infinite;
+}
+
+/* ===== Transition Classes ===== */
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.transition-fast {
+    transition: all 0.15s ease;
+}
+
+.transition-slow {
+    transition: all 0.5s ease;
+}
+
+/* ===== Screen Transitions ===== */
+.screen-enter {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.screen-leave {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+/* ===== Card Sort Animation ===== */
+.card-sorting {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ===== Stagger delay helpers ===== */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.1s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.2s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.3s; }
+.stagger-7 { animation-delay: 0.35s; }
+.stagger-8 { animation-delay: 0.4s; }
+.stagger-9 { animation-delay: 0.45s; }
+.stagger-10 { animation-delay: 0.5s; }
+.stagger-11 { animation-delay: 0.55s; }
+.stagger-12 { animation-delay: 0.6s; }
+.stagger-13 { animation-delay: 0.65s; }
+.stagger-14 { animation-delay: 0.7s; }
+.stagger-15 { animation-delay: 0.75s; }
+.stagger-16 { animation-delay: 0.8s; }
+.stagger-17 { animation-delay: 0.85s; }
+
+/* ===== Special Effects ===== */
+.glow-effect {
+    position: relative;
+}
+
+.glow-effect::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(45deg,
+        var(--color-primary),
+        var(--color-gold),
+        var(--color-primary)
+    );
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    filter: blur(8px);
+}
+
+.glow-effect:hover::after {
+    opacity: 0.6;
+}
+
+/* Sparkle effect */
+.sparkle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: var(--color-gold);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: particleFly 0.8s ease-out forwards;
+}
+
+/* Win confetti pieces */
+.confetti-piece {
+    position: fixed;
+    width: 8px;
+    height: 16px;
+    top: -20px;
+    z-index: 9999;
+    animation: confettiFall 3s ease-in forwards;
+}

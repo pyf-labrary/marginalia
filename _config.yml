@@ -35,6 +35,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+collections:
+  games:
+    output: false
+
 exclude:
   - README.md
   - Gemfile

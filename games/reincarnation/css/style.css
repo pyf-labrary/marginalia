@@ -1,0 +1,867 @@
+/* ============================================================
+   重生模拟器 - 样式表
+   ============================================================ */
+
+:root {
+    --bg-dark: #0a0a18;
+    --bg-card: #12122a;
+    --bg-card2: #1a1a3a;
+    --bg-hover: #22224a;
+    --purple: #7c5cbf;
+    --purple-light: #a080e0;
+    --pink: #e05090;
+    --pink-light: #f080b0;
+    --blue: #4090e0;
+    --cyan: #40c0c0;
+    --gold: #e0b040;
+    --green: #40c080;
+    --red: #e05050;
+    --orange: #e09040;
+    --text-primary: #e0e0f0;
+    --text-secondary: #9090b0;
+    --text-dim: #606080;
+    --border: #2a2a50;
+    --shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+    --glow-purple: 0 0 20px rgba(124, 92, 191, 0.4);
+    --glow-pink: 0 0 20px rgba(224, 80, 144, 0.4);
+    --transition: all 0.3s ease;
+    --radius: 12px;
+    --radius-sm: 8px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC',
+                 'Hiragino Sans GB', 'Microsoft YaHei', 'Segoe UI', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#app {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* ============================================================
+   屏幕切换
+   ============================================================ */
+.screen {
+    display: none;
+    min-height: 100vh;
+    animation: fadeIn 0.4s ease;
+}
+
+.screen.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   开始屏幕
+   ============================================================ */
+#screen-start {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#screen-start.active { display: flex; }
+
+.stars-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(124, 92, 191, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 30%, rgba(64, 144, 224, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse at 50% 80%, rgba(224, 80, 144, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.start-content {
+    text-align: center;
+    z-index: 1;
+    padding: 40px 20px;
+    max-width: 480px;
+    width: 100%;
+}
+
+.title-decoration {
+    color: var(--purple-light);
+    font-size: 18px;
+    letter-spacing: 8px;
+    margin-bottom: 16px;
+}
+
+.game-title {
+    font-size: clamp(36px, 8vw, 64px);
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--purple-light), var(--pink-light), var(--gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.game-subtitle {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: var(--text-dim);
+    margin-bottom: 20px;
+}
+
+.game-desc {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.start-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.global-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.stat-item { text-align: center; }
+.stat-val { display: block; font-size: 24px; font-weight: 700; color: var(--gold); }
+.stat-lbl { font-size: 12px; color: var(--text-dim); }
+.stat-divider { color: var(--border); font-size: 20px; }
+
+/* ============================================================
+   按钮
+   ============================================================ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    letter-spacing: 1px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--purple), var(--pink));
+    color: white;
+    box-shadow: var(--shadow);
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow), var(--glow-purple);
+}
+
+.btn-secondary {
+    background: var(--bg-card2);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background: var(--bg-hover);
+    border-color: var(--purple);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--purple-light);
+    border: 1px solid var(--purple);
+}
+
+.btn-outline:hover:not(:disabled) {
+    background: rgba(124, 92, 191, 0.1);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid transparent;
+}
+
+.btn-ghost:hover:not(:disabled) {
+    color: var(--text-primary);
+    border-color: var(--border);
+}
+
+.btn-glow {
+    box-shadow: var(--shadow), 0 0 30px rgba(124, 92, 191, 0.3);
+}
+
+.btn-glow:hover:not(:disabled) {
+    box-shadow: var(--shadow), 0 0 40px rgba(124, 92, 191, 0.5);
+}
+
+.btn-large { padding: 16px 40px; font-size: 18px; }
+.btn-sm { padding: 8px 16px; font-size: 13px; }
+.btn-back { display: block; margin: 20px auto 0; }
+.btn-icon { font-size: 18px; }
+
+/* ============================================================
+   出生屏幕
+   ============================================================ */
+.birth-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+.screen-title-row { text-align: center; margin-bottom: 24px; }
+.screen-title { font-size: 26px; font-weight: 700; color: var(--text-primary); }
+.screen-hint { color: var(--text-secondary); font-size: 14px; margin-top: 6px; }
+
+.birth-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+}
+
+.birth-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.birth-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.birth-info-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+}
+
+.birth-info-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.section-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-dim);
+    margin-bottom: 12px;
+}
+
+.section-hint { font-size: 12px; color: var(--purple-light); letter-spacing: 0; text-transform: none; }
+
+.birth-attrs-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.attr-item {
+    text-align: center;
+}
+
+.attr-icon { font-size: 20px; display: block; margin-bottom: 4px; }
+.attr-name { font-size: 11px; color: var(--text-dim); display: block; margin-bottom: 4px; }
+.attr-value { font-size: 20px; font-weight: 700; display: block; }
+.attr-bar { height: 4px; border-radius: 2px; background: var(--bg-hover); margin-top: 4px; overflow: hidden; }
+.attr-bar-fill { height: 100%; border-radius: 2px; transition: width 0.6s ease; }
+
+.attr-total-row {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-align: right;
+}
+
+.attr-total-score { font-size: 16px; font-weight: 700; color: var(--gold); }
+.attr-total-grade { font-size: 13px; margin-left: 6px; }
+
+.reroll-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.reroll-hint { font-size: 13px; color: var(--text-dim); }
+
+.talent-section { margin-bottom: 24px; }
+
+.talent-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.talent-card {
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.talent-card:hover {
+    border-color: var(--purple);
+    background: var(--bg-hover);
+}
+
+.talent-card.selected {
+    border-color: var(--pink);
+    background: rgba(224, 80, 144, 0.1);
+    box-shadow: var(--glow-pink);
+}
+
+.talent-card-icon { font-size: 24px; flex-shrink: 0; }
+.talent-card-info { flex: 1; }
+.talent-card-name { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+.talent-card-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.4; }
+
+.birth-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ============================================================
+   人生屏幕
+   ============================================================ */
+.life-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.life-header {
+    padding: 16px 20px 12px;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+}
+
+.life-identity {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.life-name { font-size: 18px; font-weight: 700; }
+.life-meta { font-size: 13px; color: var(--text-secondary); }
+.life-age-box { float: right; margin-top: -32px; text-align: center; }
+.life-age-num { font-size: 36px; font-weight: 900; color: var(--gold); line-height: 1; }
+.life-age-unit { font-size: 14px; color: var(--text-secondary); margin-left: 2px; }
+
+.life-attrs-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.life-attr-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+    min-width: 0;
+}
+
+.life-attr-icon { font-size: 14px; flex-shrink: 0; }
+.life-attr-track {
+    flex: 1;
+    height: 6px;
+    background: var(--bg-hover);
+    border-radius: 3px;
+    overflow: hidden;
+}
+.life-attr-fill { height: 100%; border-radius: 3px; transition: width 0.5s ease; }
+.life-attr-val { font-size: 12px; color: var(--text-secondary); min-width: 24px; text-align: right; }
+
+.life-main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.event-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 16px;
+    animation: slideIn 0.35s ease;
+    box-shadow: var(--shadow);
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.event-age-tag {
+    display: inline-block;
+    background: rgba(124, 92, 191, 0.2);
+    color: var(--purple-light);
+    border: 1px solid rgba(124, 92, 191, 0.3);
+    border-radius: 20px;
+    padding: 2px 12px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.event-body {
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--text-primary);
+    white-space: pre-wrap;
+}
+
+.event-effects-bar {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.effect-tag {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.effect-pos { background: rgba(64, 192, 128, 0.15); color: var(--green); }
+.effect-neg { background: rgba(224, 80, 80, 0.15); color: var(--red); }
+.effect-neu { background: rgba(64, 144, 224, 0.15); color: var(--blue); }
+
+.choice-panel {
+    margin-bottom: 16px;
+    animation: slideIn 0.3s ease;
+}
+
+.choice-prompt {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    padding-left: 4px;
+}
+
+.choices-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.choice-btn {
+    background: var(--bg-card2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    text-align: left;
+    color: var(--text-primary);
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+    line-height: 1.5;
+}
+
+.choice-btn:hover {
+    background: var(--bg-hover);
+    border-color: var(--purple);
+    transform: translateX(4px);
+}
+
+.choice-btn.selected {
+    border-color: var(--pink);
+    background: rgba(224, 80, 144, 0.1);
+}
+
+.life-log-panel {
+    position: absolute;
+    inset: 0;
+    background: var(--bg-dark);
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius);
+}
+
+.log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+}
+
+.btn-icon-only {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+.log-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px 20px;
+}
+
+.log-entry {
+    display: flex;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(42, 42, 80, 0.5);
+    font-size: 13px;
+}
+
+.log-entry-age {
+    flex-shrink: 0;
+    width: 36px;
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.log-entry-title { color: var(--text-secondary); flex: 1; }
+
+.life-footer {
+    padding: 12px 20px;
+    background: var(--bg-card);
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.btn-next { flex: 1; padding: 14px; font-size: 16px; }
+
+/* ============================================================
+   死亡/总结屏幕
+   ============================================================ */
+.death-wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+.death-hero { text-align: center; margin-bottom: 28px; }
+.death-icon-large { font-size: 56px; margin-bottom: 12px; }
+.death-title { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+.death-cause-text { font-size: 15px; color: var(--text-secondary); }
+
+.summary-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.summary-name-group .s-name { font-size: 22px; font-weight: 800; }
+.summary-name-group .s-title { font-size: 14px; color: var(--gold); margin-top: 4px; }
+.summary-age-group { text-align: right; }
+.summary-age-group .s-age { font-size: 36px; font-weight: 900; color: var(--gold); }
+.summary-age-group .s-age-label { font-size: 13px; color: var(--text-secondary); }
+
+.summary-final-attrs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.summary-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.summary-stat-item { text-align: center; }
+.summary-stat-val { display: block; font-size: 18px; font-weight: 700; color: var(--cyan); }
+.summary-stat-label { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+
+.highlights-section { margin-bottom: 20px; }
+.highlights-list { margin-top: 12px; display: flex; flex-direction: column; gap: 8px; }
+
+.highlight-item {
+    background: var(--bg-card);
+    border-left: 3px solid var(--purple);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 10px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.highlight-age { color: var(--gold); font-weight: 600; margin-right: 8px; }
+
+.new-achievements-section { margin-bottom: 20px; }
+.new-achievements-list { margin-top: 12px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+
+.new-ach-item {
+    background: rgba(224, 176, 64, 0.1);
+    border: 1px solid rgba(224, 176, 64, 0.3);
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.new-ach-icon { font-size: 20px; }
+.new-ach-name { font-size: 13px; font-weight: 600; }
+
+.death-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+/* ============================================================
+   成就/历史页面
+   ============================================================ */
+.page-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+.page-header { margin-bottom: 20px; }
+.page-header h2 { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
+.page-subtitle { font-size: 14px; color: var(--text-secondary); }
+
+.ach-progress-row { display: flex; align-items: center; gap: 12px; margin-top: 8px; font-size: 13px; color: var(--text-secondary); }
+.ach-progress-track { flex: 1; max-width: 200px; height: 6px; background: var(--bg-hover); border-radius: 3px; overflow: hidden; }
+.ach-progress-fill { height: 100%; background: linear-gradient(90deg, var(--purple), var(--pink)); border-radius: 3px; transition: width 0.5s ease; }
+
+.filter-row { display: flex; gap: 8px; margin-bottom: 16px; }
+.filter-btn {
+    padding: 6px 16px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 13px;
+    transition: var(--transition);
+}
+
+.filter-btn.active, .filter-btn:hover {
+    border-color: var(--purple);
+    color: var(--purple-light);
+    background: rgba(124, 92, 191, 0.1);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.ach-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    transition: var(--transition);
+}
+
+.ach-card.unlocked {
+    border-color: rgba(224, 176, 64, 0.4);
+    background: rgba(224, 176, 64, 0.05);
+}
+
+.ach-card.locked { opacity: 0.5; filter: grayscale(0.5); }
+
+.ach-card-icon { font-size: 24px; flex-shrink: 0; }
+.ach-card-info { flex: 1; min-width: 0; }
+.ach-card-name { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+.ach-card-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.4; }
+.ach-card-rarity { font-size: 11px; margin-top: 6px; padding: 2px 8px; border-radius: 10px; display: inline-block; }
+.rarity-common { background: rgba(144, 144, 176, 0.2); color: var(--text-secondary); }
+.rarity-rare { background: rgba(64, 144, 224, 0.2); color: var(--blue); }
+.rarity-epic { background: rgba(124, 92, 191, 0.2); color: var(--purple-light); }
+.rarity-legendary { background: rgba(224, 176, 64, 0.2); color: var(--gold); }
+
+.history-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+
+.history-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.history-item:hover { border-color: var(--purple); transform: translateX(4px); }
+
+.hist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.hist-name { font-size: 16px; font-weight: 700; }
+.hist-age { font-size: 18px; font-weight: 800; color: var(--gold); }
+.hist-meta { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+.hist-title { font-size: 14px; color: var(--purple-light); font-style: italic; }
+
+/* ============================================================
+   成就弹窗
+   ============================================================ */
+.ach-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--bg-card2);
+    border: 1px solid rgba(224, 176, 64, 0.5);
+    border-radius: var(--radius);
+    padding: 12px 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(224, 176, 64, 0.2);
+    transition: var(--transition);
+    z-index: 1000;
+    min-width: 240px;
+}
+
+.ach-toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.ach-toast.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ach-toast-inner { display: flex; gap: 12px; align-items: center; }
+.ach-toast-icon { font-size: 28px; }
+.ach-toast-label { font-size: 12px; color: var(--gold); font-weight: 600; letter-spacing: 1px; }
+.ach-toast-name { font-size: 15px; font-weight: 700; margin-top: 2px; }
+
+/* ============================================================
+   滚动条美化
+   ============================================================ */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--purple); }
+
+/* ============================================================
+   动画
+   ============================================================ */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.pulsing { animation: pulse 1.5s ease infinite; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+.floating { animation: float 3s ease infinite; }
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-3px); }
+    80% { transform: translateX(3px); }
+}
+
+.shaking { animation: shake 0.5s ease; }
+
+/* ============================================================
+   响应式
+   ============================================================ */
+@media (max-width: 520px) {
+    .birth-attrs-grid { grid-template-columns: repeat(3, 1fr); }
+    .talent-grid { grid-template-columns: 1fr; }
+    .achievements-grid { grid-template-columns: 1fr; }
+    .new-achievements-list { grid-template-columns: 1fr; }
+    .summary-final-attrs { grid-template-columns: repeat(3, 1fr); }
+    .global-stats { flex-wrap: wrap; gap: 16px; }
+    .stat-divider { display: none; }
+}
+
+/* ============================================================
+   空状态
+   ============================================================ */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-dim);
+    font-size: 15px;
+}
+
+.empty-icon { font-size: 40px; margin-bottom: 12px; }

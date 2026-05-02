@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重生模拟器</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+
+    <!-- 开始屏幕 -->
+    <div id="screen-start" class="screen active">
+        <div class="stars-bg" id="stars-bg"></div>
+        <div class="start-content">
+            <div class="title-wrapper">
+                <div class="title-decoration">✦ ✦ ✦</div>
+                <h1 class="game-title">重生模拟器</h1>
+                <p class="game-subtitle">REINCARNATION SIMULATOR</p>
+                <p class="game-desc">你将以何种身份降临这个世界？<br>每一次重生，都是全新的命运篇章</p>
+            </div>
+            <div class="start-buttons">
+                <button id="btn-new-life" class="btn btn-primary btn-glow">
+                    <span class="btn-icon">✨</span>
+                    <span>开始新生</span>
+                </button>
+                <button id="btn-achievements" class="btn btn-secondary">
+                    <span class="btn-icon">🏆</span>
+                    <span>成就大厅</span>
+                </button>
+                <button id="btn-history" class="btn btn-secondary">
+                    <span class="btn-icon">📜</span>
+                    <span>历史记录</span>
+                </button>
+            </div>
+            <div class="global-stats" id="global-stats">
+                <div class="stat-item">
+                    <span class="stat-val" id="total-lives-display">0</span>
+                    <span class="stat-lbl">次轮回</span>
+                </div>
+                <div class="stat-divider">|</div>
+                <div class="stat-item">
+                    <span class="stat-val" id="max-age-display">0</span>
+                    <span class="stat-lbl">最长寿命</span>
+                </div>
+                <div class="stat-divider">|</div>
+                <div class="stat-item">
+                    <span class="stat-val" id="ach-count-display">0</span>
+                    <span class="stat-lbl">成就达成</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 出生屏幕 -->
+    <div id="screen-birth" class="screen">
+        <div class="birth-wrapper">
+            <div class="screen-title-row">
+                <h2 class="screen-title">命运之轮转动...</h2>
+                <p class="screen-hint">你的新生命即将降临</p>
+            </div>
+
+            <div class="birth-card">
+                <div class="birth-info-grid" id="birth-info-grid">
+                    <!-- JS生成 -->
+                </div>
+                <div class="birth-attrs-section">
+                    <div class="section-label">初始属性</div>
+                    <div class="birth-attrs-grid" id="birth-attrs-grid">
+                        <!-- JS生成 -->
+                    </div>
+                    <div class="attr-total-row">
+                        总评分: <span class="attr-total-score" id="attr-total-score">0</span>
+                        <span class="attr-total-grade" id="attr-total-grade"></span>
+                    </div>
+                </div>
+                <div class="reroll-row">
+                    <button id="btn-reroll" class="btn btn-outline">
+                        🎲 重新投掷命运
+                    </button>
+                    <span class="reroll-hint">剩余次数: <span id="reroll-count">3</span></span>
+                </div>
+            </div>
+
+            <div class="talent-section">
+                <div class="section-label">选择天赋 <span class="section-hint">— 与你共度一生的特殊能力</span></div>
+                <div class="talent-grid" id="talent-grid">
+                    <!-- JS生成 -->
+                </div>
+            </div>
+
+            <div class="birth-footer">
+                <button id="btn-back-birth" class="btn btn-ghost">← 返回</button>
+                <button id="btn-start-life" class="btn btn-primary" disabled>踏上旅途 →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 人生屏幕 -->
+    <div id="screen-life" class="screen">
+        <div class="life-wrapper">
+
+            <!-- 顶部信息栏 -->
+            <div class="life-header">
+                <div class="life-identity">
+                    <span class="life-name" id="life-name">某人</span>
+                    <span class="life-meta" id="life-meta"></span>
+                </div>
+                <div class="life-age-box">
+                    <span class="life-age-num" id="life-age-num">0</span>
+                    <span class="life-age-unit">岁</span>
+                </div>
+                <div class="life-attrs-row" id="life-attrs-row">
+                    <!-- JS生成属性条 -->
+                </div>
+            </div>
+
+            <!-- 主事件区域 -->
+            <div class="life-main">
+                <div class="event-card" id="event-card">
+                    <div class="event-age-tag" id="event-age-tag"></div>
+                    <div class="event-body" id="event-body">
+                        <!-- 事件内容 -->
+                    </div>
+                    <div class="event-effects-bar" id="event-effects-bar">
+                        <!-- 属性变化展示 -->
+                    </div>
+                </div>
+
+                <!-- 选择面板 -->
+                <div class="choice-panel" id="choice-panel" style="display:none">
+                    <div class="choice-prompt">你会怎么做？</div>
+                    <div class="choices-list" id="choices-list">
+                        <!-- 选项按钮 -->
+                    </div>
+                </div>
+
+                <!-- 历史日志 -->
+                <div class="life-log-panel" id="life-log-panel" style="display:none">
+                    <div class="log-header">
+                        <span>人生日志</span>
+                        <button id="btn-close-log" class="btn-icon-only">✕</button>
+                    </div>
+                    <div class="log-scroll" id="log-scroll">
+                        <!-- 日志条目 -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部控制栏 -->
+            <div class="life-footer">
+                <button id="btn-show-log" class="btn btn-ghost btn-sm">📋 日志</button>
+                <button id="btn-next" class="btn btn-primary btn-next">继续人生 ▶</button>
+                <button id="btn-auto" class="btn btn-ghost btn-sm">⚡ 自动</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 死亡/总结屏幕 -->
+    <div id="screen-death" class="screen">
+        <div class="death-wrapper">
+            <div class="death-hero">
+                <div class="death-icon-large" id="death-icon-large">⚰️</div>
+                <h2 class="death-title" id="death-title">人生终章</h2>
+                <p class="death-cause-text" id="death-cause-text"></p>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-row" id="summary-identity-row">
+                    <!-- 角色基本信息 -->
+                </div>
+                <div class="summary-final-attrs" id="summary-final-attrs">
+                    <!-- 最终属性 -->
+                </div>
+                <div class="summary-stats-grid" id="summary-stats-grid">
+                    <!-- 人生统计数字 -->
+                </div>
+            </div>
+
+            <div class="highlights-section" id="highlights-section">
+                <div class="section-label">✦ 人生高光时刻 ✦</div>
+                <div class="highlights-list" id="highlights-list">
+                    <!-- JS生成 -->
+                </div>
+            </div>
+
+            <div class="new-achievements-section" id="new-achievements-section" style="display:none">
+                <div class="section-label">🏆 新解锁成就</div>
+                <div class="new-achievements-list" id="new-achievements-list">
+                    <!-- JS生成 -->
+                </div>
+            </div>
+
+            <div class="death-buttons">
+                <button id="btn-reincarnate" class="btn btn-primary btn-glow btn-large">
+                    🔄 轮回重生
+                </button>
+                <button id="btn-to-main" class="btn btn-secondary">
+                    🏠 返回主菜单
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 成就大厅 -->
+    <div id="screen-achievements" class="screen">
+        <div class="page-wrapper">
+            <div class="page-header">
+                <h2>🏆 成就大厅</h2>
+                <div class="ach-progress-row">
+                    <span id="ach-progress-text">0 / 0 已解锁</span>
+                    <div class="ach-progress-track">
+                        <div class="ach-progress-fill" id="ach-progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-row">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="unlocked">已解锁</button>
+                <button class="filter-btn" data-filter="locked">未解锁</button>
+            </div>
+            <div class="achievements-grid" id="achievements-grid">
+                <!-- JS生成 -->
+            </div>
+            <button class="btn btn-ghost btn-back" id="btn-back-ach">← 返回</button>
+        </div>
+    </div>
+
+    <!-- 历史记录 -->
+    <div id="screen-history" class="screen">
+        <div class="page-wrapper">
+            <div class="page-header">
+                <h2>📜 历史记录</h2>
+                <p class="page-subtitle">你所走过的每一段人生</p>
+            </div>
+            <div class="history-list" id="history-list">
+                <!-- JS生成 -->
+            </div>
+            <button class="btn btn-ghost btn-back" id="btn-back-hist">← 返回</button>
+        </div>
+    </div>
+
+    <!-- 成就解锁弹窗 -->
+    <div id="ach-toast" class="ach-toast hidden">
+        <div class="ach-toast-inner">
+            <span class="ach-toast-icon">🏆</span>
+            <div class="ach-toast-text">
+                <div class="ach-toast-label">成就解锁！</div>
+                <div class="ach-toast-name" id="ach-toast-name"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/events_childhood.js"></script>
+<script src="js/events_teen.js"></script>
+<script src="js/events_adult.js"></script>
+<script src="js/events_late.js"></script>
+<script src="js/achievements.js"></script>
+<script src="js/character.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>斗地主</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/themes.css">
+</head>
+<body>
+    <div id="app">
+        <!-- 开始界面 -->
+        <div id="start-screen" class="screen active">
+            <div class="start-container">
+                <div class="game-logo">
+                    <h1>斗 地 主</h1>
+                    <p class="subtitle">经典扑克牌游戏</p>
+                </div>
+                <div class="start-menu">
+                    <button id="btn-start" class="btn btn-primary btn-large">
+                        <span class="btn-icon">▶</span>
+                        开始游戏
+                    </button>
+                    <button id="btn-settings" class="btn btn-secondary">
+                        <span class="btn-icon">⚙</span>
+                        游戏设置
+                    </button>
+                    <button id="btn-rules" class="btn btn-secondary">
+                        <span class="btn-icon">📖</span>
+                        游戏规则
+                    </button>
+                    <button id="btn-tutorial" class="btn btn-secondary">
+                        <span class="btn-icon">🎓</span>
+                        新手教程
+                    </button>
+                    <button id="btn-stats" class="btn btn-secondary">
+                        <span class="btn-icon">📊</span>
+                        数据统计
+                    </button>
+                    <button id="btn-history" class="btn btn-secondary">
+                        <span class="btn-icon">📋</span>
+                        对局历史
+                    </button>
+                    <button id="btn-spectate" class="btn btn-secondary">
+                        <span class="btn-icon">👁</span>
+                        AI观战
+                    </button>
+                </div>
+                <div class="version-info">v2.0.0</div>
+            </div>
+        </div>
+
+        <!-- 设置界面 -->
+        <div id="settings-screen" class="screen">
+            <div class="panel">
+                <div class="panel-header">
+                    <h2>游戏设置</h2>
+                    <button id="btn-settings-close" class="btn-close">✕</button>
+                </div>
+                <div class="panel-body">
+                    <div class="setting-group">
+                        <label>AI难度</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="difficulty" value="easy"> 简单
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="difficulty" value="normal" checked> 普通
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="difficulty" value="hard"> 困难
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-group">
+                        <label>游戏速度</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="speed" value="slow"> 慢速
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="speed" value="normal" checked> 正常
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="speed" value="fast"> 快速
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-group">
+                        <label>音效</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="sound-toggle" checked>
+                            <label for="sound-toggle" class="toggle-slider"></label>
+                        </div>
+                    </div>
+                    <div class="setting-group">
+                        <label>卡牌样式</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="card-style" value="classic" checked> 经典
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="card-style" value="modern"> 现代
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-group">
+                        <label>主题配色</label>
+                        <div id="theme-selector"></div>
+                    </div>
+                    <div class="setting-group">
+                        <label>记牌器</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="counter-toggle-setting">
+                            <label for="counter-toggle-setting" class="toggle-slider"></label>
+                        </div>
+                    </div>
+                    <div class="setting-group">
+                        <label>手牌分析</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="analysis-toggle-setting">
+                            <label for="analysis-toggle-setting" class="toggle-slider"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button id="btn-settings-save" class="btn btn-primary">保存设置</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 规则界面 -->
+        <div id="rules-screen" class="screen">
+            <div class="panel panel-large">
+                <div class="panel-header">
+                    <h2>游戏规则</h2>
+                    <button id="btn-rules-close" class="btn-close">✕</button>
+                </div>
+                <div class="panel-body rules-content">
+                    <div class="rules-section">
+                        <h3>基本规则</h3>
+                        <p>斗地主是一款三人扑克牌游戏，使用一副54张牌（含大小王）。</p>
+                        <p>一名玩家为"地主"，另外两名为"农民"。地主一人对抗两名农民。</p>
+                    </div>
+                    <div class="rules-section">
+                        <h3>发牌</h3>
+                        <p>每人发17张牌，剩余3张为底牌。叫地主后底牌归地主所有，地主共20张牌。</p>
+                    </div>
+                    <div class="rules-section">
+                        <h3>叫地主</h3>
+                        <p>玩家依次可以选择"叫地主"（1分）、"叫地主"（2分）、"叫地主"（3分）或"不叫"。</p>
+                        <p>叫分最高者成为地主。如果所有人都不叫，则重新发牌。</p>
+                    </div>
+                    <div class="rules-section">
+                        <h3>牌型</h3>
+                        <ul>
+                            <li><strong>单张：</strong>任意一张牌</li>
+                            <li><strong>对子：</strong>两张点数相同的牌</li>
+                            <li><strong>三条：</strong>三张点数相同的牌</li>
+                            <li><strong>三带一：</strong>三张相同+一张单牌</li>
+                            <li><strong>三带二：</strong>三张相同+一对</li>
+                            <li><strong>顺子：</strong>五张或以上连续单牌（不含2和王）</li>
+                            <li><strong>连对：</strong>三对或以上连续对子（不含2和王）</li>
+                            <li><strong>飞机：</strong>两组或以上连续三条</li>
+                            <li><strong>飞机带翅膀：</strong>飞机+等数量单牌或对子</li>
+                            <li><strong>炸弹：</strong>四张点数相同的牌（可以打任何牌型）</li>
+                            <li><strong>火箭：</strong>大小王（最大，可以打任何牌型）</li>
+                            <li><strong>四带二：</strong>四张相同+两张单牌或两对</li>
+                        </ul>
+                    </div>
+                    <div class="rules-section">
+                        <h3>出牌规则</h3>
+                        <p>地主先出牌，然后逆时针轮流出牌。</p>
+                        <p>出牌时必须打过上家的牌（相同牌型且更大），或者出炸弹/火箭。</p>
+                        <p>也可以选择"不出"（过牌）。</p>
+                    </div>
+                    <div class="rules-section">
+                        <h3>胜负判定</h3>
+                        <p>地主先出完所有牌则地主胜，任意一名农民先出完牌则农民胜。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 游戏界面 -->
+        <div id="game-screen" class="screen">
+            <!-- 顶部信息栏 -->
+            <div class="game-header">
+                <div class="game-info">
+                    <span id="game-multiplier" class="multiplier">底分: 1</span>
+                    <span id="game-bomb-count" class="bomb-count">炸弹: 0</span>
+                </div>
+                <div class="game-actions-top">
+                    <button id="btn-auto-play" class="btn btn-small btn-auto-play" title="托管模式 (T)">
+                        <span class="auto-play-icon">🤖</span>
+                        <span class="auto-play-text">托管</span>
+                    </button>
+                    <button id="btn-menu" class="btn btn-small btn-icon-only" title="菜单">☰</button>
+                </div>
+            </div>
+
+            <!-- 左侧玩家 -->
+            <div class="player-area player-left">
+                <div class="player-info">
+                    <div class="avatar" id="avatar-left">
+                        <div class="avatar-img">🤖</div>
+                        <div id="role-left" class="role-badge hidden"></div>
+                    </div>
+                    <div class="player-name" id="name-left">电脑A</div>
+                    <div class="card-count" id="count-left">17张</div>
+                </div>
+                <div class="player-cards-back" id="cards-left"></div>
+                <div class="player-play-area" id="play-left"></div>
+                <div class="player-action" id="action-left"></div>
+            </div>
+
+            <!-- 右侧玩家 -->
+            <div class="player-area player-right">
+                <div class="player-info">
+                    <div class="avatar" id="avatar-right">
+                        <div class="avatar-img">🤖</div>
+                        <div id="role-right" class="role-badge hidden"></div>
+                    </div>
+                    <div class="player-name" id="name-right">电脑B</div>
+                    <div class="card-count" id="count-right">17张</div>
+                </div>
+                <div class="player-cards-back" id="cards-right"></div>
+                <div class="player-play-area" id="play-right"></div>
+                <div class="player-action" id="action-right"></div>
+            </div>
+
+            <!-- 底牌区域 -->
+            <div id="dizhu-cards" class="dizhu-cards hidden">
+                <div class="dizhu-label">底牌</div>
+                <div id="dizhu-cards-container" class="dizhu-cards-container"></div>
+            </div>
+
+            <!-- 中央信息区 -->
+            <div id="center-info" class="center-info">
+                <div id="game-message" class="game-message"></div>
+            </div>
+
+            <!-- 底部玩家（人类玩家） -->
+            <div class="player-area player-bottom">
+                <div class="player-play-area" id="play-bottom"></div>
+                <div class="player-action" id="action-bottom"></div>
+                <!-- 叫地主区域 -->
+                <div id="bid-area" class="bid-area hidden">
+                    <div class="bid-buttons">
+                        <button id="btn-bid-1" class="btn btn-bid">1分</button>
+                        <button id="btn-bid-2" class="btn btn-bid">2分</button>
+                        <button id="btn-bid-3" class="btn btn-bid">3分</button>
+                        <button id="btn-no-bid" class="btn btn-bid btn-nobid">不叫</button>
+                    </div>
+                </div>
+                <!-- 操作按钮 -->
+                <div id="play-buttons" class="play-buttons hidden">
+                    <button id="btn-hint" class="btn btn-hint">提示</button>
+                    <button id="btn-pass" class="btn btn-pass">不出</button>
+                    <button id="btn-play" class="btn btn-play">出牌</button>
+                </div>
+                <div id="hand-cards" class="hand-cards"></div>
+                <div class="player-bottom-info">
+                    <div class="avatar" id="avatar-bottom">
+                        <div class="avatar-img">😊</div>
+                        <div id="role-bottom" class="role-badge hidden"></div>
+                    </div>
+                    <div class="player-name" id="name-bottom">你</div>
+                </div>
+            </div>
+
+            <!-- 游戏暂停菜单 -->
+            <div id="pause-menu" class="pause-menu hidden">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>游戏菜单</h2>
+                        <button id="btn-pause-close" class="btn-close">✕</button>
+                    </div>
+                    <div class="panel-body menu-body">
+                        <button id="btn-resume" class="btn btn-primary menu-btn">继续游戏</button>
+                        <button id="btn-restart" class="btn btn-secondary menu-btn">重新开始</button>
+                        <button id="btn-quit" class="btn btn-danger menu-btn">退出游戏</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 结算界面 -->
+        <div id="result-screen" class="screen">
+            <div class="result-panel">
+                <div id="result-icon" class="result-icon"></div>
+                <h2 id="result-title" class="result-title"></h2>
+                <div id="result-detail" class="result-detail"></div>
+                <div class="result-score-board">
+                    <div class="score-row header">
+                        <span>玩家</span>
+                        <span>身份</span>
+                        <span>得分</span>
+                    </div>
+                    <div id="score-rows"></div>
+                </div>
+                <div class="result-stats" id="result-stats"></div>
+                <div class="result-buttons">
+                    <button id="btn-play-again" class="btn btn-primary btn-large">再来一局</button>
+                    <button id="btn-back-home" class="btn btn-secondary">返回主页</button>
+                </div>
+            </div>
+        </div>
+        <!-- 统计界面 -->
+        <div id="stats-screen" class="screen">
+            <div class="panel panel-large panel-scroll">
+                <div class="panel-header">
+                    <h2>数据统计</h2>
+                    <button id="btn-stats-close" class="btn-close">✕</button>
+                </div>
+                <div class="panel-body" id="stats-content"></div>
+            </div>
+        </div>
+
+        <!-- 历史界面 -->
+        <div id="history-screen" class="screen">
+            <div class="panel panel-large panel-scroll">
+                <div class="panel-header">
+                    <h2>对局历史</h2>
+                    <button id="btn-history-close" class="btn-close">✕</button>
+                </div>
+                <div class="panel-body">
+                    <div id="history-stats" class="history-stats-section"></div>
+                    <div id="history-list" class="history-list"></div>
+                    <div class="history-actions">
+                        <button id="btn-clear-history" class="btn btn-small btn-danger">清除全部历史</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/constants.js"></script>
+    <script src="js/card.js"></script>
+    <script src="js/deck.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/card-counter.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/tutorial.js"></script>
+    <script src="js/statistics-ui.js"></script>
+    <script src="js/leaderboard.js"></script>
+    <script src="js/replay.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/multiplayer-sim.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
