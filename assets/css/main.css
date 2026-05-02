@@ -499,34 +499,36 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
   box-shadow: 0 1px 3px rgba(31, 29, 27, 0.08);
 }
 
-/* AI Hot 文章页：双栏布局（左侧正文 + 右侧粘性 TOC） */
+/* AI Hot 文章页：双栏布局（左侧粘性 TOC + 右侧正文） */
 .ai-hot-wrap {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 1.5rem;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 240px;
+  grid-template-columns: 240px minmax(0, 1fr);
   gap: 3rem;
-  align-items: start;
+  /* 不设 align-items: start — 让 grid item 默认 stretch，
+     这样 .ai-hot-toc 占满整列高度，内部 .toc-inner 才有滚动余地能 sticky */
 }
 .ai-hot-post {
-  grid-column: 1;
+  grid-column: 2;
   min-width: 0;
 }
 .ai-hot-post .post-header {
   margin-top: 0;
 }
 .ai-hot-toc {
-  grid-column: 2;
-  align-self: start;
+  grid-column: 1;
+  grid-row: 1;
+  /* 默认 stretch — 关键：必须撑满文章高度，sticky 才有滚动空间 */
 }
 .ai-hot-toc .toc-inner {
   position: sticky;
   top: 6rem;
-  padding: 1.2rem 1rem;
-  border-left: 2px solid var(--rule);
+  padding: 1.2rem 1rem 1rem;
+  border-right: 2px solid var(--rule);
   font-family: var(--sans);
-  max-height: calc(100vh - 8rem);
+  max-height: calc(100vh - 7rem);
   overflow-y: auto;
 }
 .ai-hot-toc .toc-title {
