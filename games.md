@@ -6,6 +6,28 @@ permalink: /games/
 ---
 
 <style>
+  /* —— dark-mode site chrome (only on this page) —— */
+  body { background: #0c0c10; }
+  body::before {
+    background: linear-gradient(90deg, #8b2e2a 0, #8b2e2a 28%, #1a1a22 28%) !important;
+  }
+  .site-header {
+    background: rgba(12, 12, 16, 0.78) !important;
+    border-bottom-color: rgba(245, 239, 225, 0.08) !important;
+  }
+  .site-header .brand { color: #f5efe1 !important; }
+  .site-header .brand-mark { color: #d97570 !important; }
+  .site-header .brand-tag { color: rgba(245, 239, 225, 0.55) !important; }
+  .site-header .site-nav a { color: rgba(245, 239, 225, 0.78) !important; }
+  .site-header .site-nav a:hover { color: #d97570 !important; }
+  .site-footer {
+    background: #0c0c10;
+    color: rgba(245, 239, 225, 0.55);
+    border-top: 1px solid rgba(245, 239, 225, 0.08);
+  }
+  .site-footer a { color: rgba(245, 239, 225, 0.85); border-bottom-color: rgba(245, 239, 225, 0.25); }
+  .site-footer .muted { color: rgba(245, 239, 225, 0.4); }
+
   /* —— full-bleed dark gallery shell —— */
   .games-shell {
     position: relative;
