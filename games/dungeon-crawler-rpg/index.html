@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暗影地牢 - Shadow Dungeon RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 开始界面 -->
+    <div id="start-screen" class="screen active">
+        <div class="title-container">
+            <h1 class="game-title">暗影地牢</h1>
+            <p class="game-subtitle">Shadow Dungeon RPG</p>
+            <div class="title-art">
+                <pre class="ascii-art">
+    ⚔️  ╔══════════════════════╗  ⚔️
+       ║  深入黑暗的地下城    ║
+       ║  击败远古的邪恶      ║
+       ║  成为传说中的英雄    ║
+       ╚══════════════════════╝
+                </pre>
+            </div>
+        </div>
+        <div class="start-menu">
+            <button id="btn-new-game" class="menu-btn primary-btn">开始新游戏</button>
+            <button id="btn-load-game" class="menu-btn">读取存档</button>
+            <button id="btn-how-to-play" class="menu-btn">游戏说明</button>
+        </div>
+        <div id="class-select" class="hidden">
+            <h2>选择你的职业</h2>
+            <div class="class-grid">
+                <div class="class-card" data-class="warrior">
+                    <div class="class-icon">⚔️</div>
+                    <h3>战士</h3>
+                    <p>高生命值和防御，近战专精</p>
+                    <div class="class-stats">
+                        <span>❤️ HP: 120</span>
+                        <span>⚡ MP: 30</span>
+                        <span>🗡️ ATK: 15</span>
+                        <span>🛡️ DEF: 12</span>
+                    </div>
+                </div>
+                <div class="class-card" data-class="mage">
+                    <div class="class-icon">🔮</div>
+                    <h3>法师</h3>
+                    <p>强大的魔法攻击，低生命值</p>
+                    <div class="class-stats">
+                        <span>❤️ HP: 70</span>
+                        <span>⚡ MP: 100</span>
+                        <span>🗡️ ATK: 8</span>
+                        <span>🛡️ DEF: 5</span>
+                    </div>
+                </div>
+                <div class="class-card" data-class="rogue">
+                    <div class="class-icon">🗡️</div>
+                    <h3>盗贼</h3>
+                    <p>高暴击和闪避，灵活多变</p>
+                    <div class="class-stats">
+                        <span>❤️ HP: 85</span>
+                        <span>⚡ MP: 50</span>
+                        <span>🗡️ ATK: 13</span>
+                        <span>🛡️ DEF: 7</span>
+                    </div>
+                </div>
+                <div class="class-card" data-class="paladin">
+                    <div class="class-icon">✨</div>
+                    <h3>圣骑士</h3>
+                    <p>攻守兼备，拥有治疗能力</p>
+                    <div class="class-stats">
+                        <span>❤️ HP: 100</span>
+                        <span>⚡ MP: 60</span>
+                        <span>🗡️ ATK: 11</span>
+                        <span>🛡️ DEF: 10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="name-input-area">
+                <label for="player-name">输入你的名字：</label>
+                <input type="text" id="player-name" maxlength="12" placeholder="勇者">
+                <button id="btn-start-adventure" class="menu-btn primary-btn">开始冒险</button>
+            </div>
+        </div>
+        <div id="how-to-play" class="hidden">
+            <h2>游戏说明</h2>
+            <div class="help-content">
+                <h3>🎮 操作方式</h3>
+                <p>WASD / 方向键：移动角色</p>
+                <p>I：打开/关闭背包</p>
+                <p>C：打开/关闭角色面板</p>
+                <p>Q：打开/关闭任务日志</p>
+                <p>M：打开/关闭地图</p>
+                <p>E：交互/拾取</p>
+                <p>空格：确认/攻击</p>
+                <p>ESC：暂停/返回</p>
+                <h3>⚔️ 战斗系统</h3>
+                <p>遇到怪物时进入回合制战斗</p>
+                <p>选择攻击、技能、道具或逃跑</p>
+                <p>合理使用技能和道具是生存的关键</p>
+                <h3>🏰 探索地牢</h3>
+                <p>每层地牢随机生成，寻找楼梯前往下一层</p>
+                <p>击败BOSS可获得稀有装备</p>
+                <p>完成任务获得经验和奖励</p>
+            </div>
+            <button id="btn-back-help" class="menu-btn">返回</button>
+        </div>
+    </div>
+
+    <!-- 主游戏界面 -->
+    <div id="game-screen" class="screen">
+        <div id="game-header">
+            <div id="player-info-bar">
+                <span id="header-name" class="header-item">勇者</span>
+                <span id="header-class" class="header-item">战士</span>
+                <span id="header-level" class="header-item">Lv.1</span>
+                <div id="header-hp-bar" class="mini-bar">
+                    <div class="mini-bar-fill hp-fill"></div>
+                    <span class="mini-bar-text">100/100</span>
+                </div>
+                <div id="header-mp-bar" class="mini-bar">
+                    <div class="mini-bar-fill mp-fill"></div>
+                    <span class="mini-bar-text">50/50</span>
+                </div>
+                <div id="header-exp-bar" class="mini-bar exp-bar-mini">
+                    <div class="mini-bar-fill exp-fill"></div>
+                    <span class="mini-bar-text">0/100</span>
+                </div>
+            </div>
+            <div id="floor-info">
+                <span id="current-floor">地牢 第1层</span>
+                <span id="gold-display">💰 0</span>
+            </div>
+            <div id="header-buttons">
+                <button class="icon-btn" id="btn-inventory" title="背包(I)">🎒</button>
+                <button class="icon-btn" id="btn-character" title="角色(C)">📊</button>
+                <button class="icon-btn" id="btn-quest-log" title="任务(Q)">📜</button>
+                <button class="icon-btn" id="btn-minimap" title="地图(M)">🗺️</button>
+                <button class="icon-btn" id="btn-save" title="保存">💾</button>
+                <button class="icon-btn" id="btn-settings" title="设置">⚙️</button>
+            </div>
+        </div>
+
+        <div id="game-main">
+            <div id="game-canvas-container">
+                <canvas id="game-canvas" width="800" height="600"></canvas>
+                <div id="damage-numbers"></div>
+                <div id="interaction-prompt" class="hidden">
+                    <span>按 E 交互</span>
+                </div>
+            </div>
+            <div id="game-log">
+                <h3>📋 游戏日志</h3>
+                <div id="log-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 战斗界面 -->
+    <div id="combat-screen" class="screen">
+        <div id="combat-scene">
+            <div id="enemy-area">
+                <div id="enemy-display">
+                    <div id="enemy-sprite" class="combat-sprite"></div>
+                    <div id="enemy-info">
+                        <h3 id="enemy-name">怪物</h3>
+                        <span id="enemy-level">Lv.1</span>
+                        <div id="enemy-hp-bar" class="combat-bar">
+                            <div class="combat-bar-fill enemy-hp-fill"></div>
+                            <span class="combat-bar-text">100/100</span>
+                        </div>
+                        <div id="enemy-status-effects"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="combat-effects"></div>
+            <div id="combat-vs">⚔️ VS ⚔️</div>
+            <div id="player-combat-area">
+                <div id="player-combat-info">
+                    <h3 id="combat-player-name">勇者</h3>
+                    <div id="combat-hp-bar" class="combat-bar">
+                        <div class="combat-bar-fill player-hp-fill"></div>
+                        <span class="combat-bar-text">100/100</span>
+                    </div>
+                    <div id="combat-mp-bar" class="combat-bar">
+                        <div class="combat-bar-fill player-mp-fill"></div>
+                        <span class="combat-bar-text">50/50</span>
+                    </div>
+                    <div id="player-status-effects"></div>
+                </div>
+            </div>
+        </div>
+        <div id="combat-log">
+            <div id="combat-log-content"></div>
+        </div>
+        <div id="combat-actions">
+            <div id="main-actions">
+                <button class="combat-btn" id="btn-attack">⚔️ 攻击</button>
+                <button class="combat-btn" id="btn-skills">🔮 技能</button>
+                <button class="combat-btn" id="btn-items">🎒 道具</button>
+                <button class="combat-btn" id="btn-defend">🛡️ 防御</button>
+                <button class="combat-btn" id="btn-flee">🏃 逃跑</button>
+            </div>
+            <div id="skill-list" class="action-submenu hidden"></div>
+            <div id="item-list" class="action-submenu hidden"></div>
+        </div>
+    </div>
+
+    <!-- 背包界面 -->
+    <div id="inventory-panel" class="panel hidden">
+        <div class="panel-header">
+            <h2>🎒 背包</h2>
+            <button class="close-btn" data-close="inventory-panel">✕</button>
+        </div>
+        <div class="panel-body">
+            <div id="inventory-tabs">
+                <button class="inv-tab active" data-tab="all">全部</button>
+                <button class="inv-tab" data-tab="weapon">武器</button>
+                <button class="inv-tab" data-tab="armor">防具</button>
+                <button class="inv-tab" data-tab="accessory">饰品</button>
+                <button class="inv-tab" data-tab="consumable">消耗品</button>
+                <button class="inv-tab" data-tab="material">材料</button>
+            </div>
+            <div id="inventory-grid"></div>
+            <div id="item-detail">
+                <h3 id="detail-item-name">选择一个物品</h3>
+                <p id="detail-item-desc"></p>
+                <div id="detail-item-stats"></div>
+                <div id="detail-item-actions"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 角色面板 -->
+    <div id="character-panel" class="panel hidden">
+        <div class="panel-header">
+            <h2>📊 角色信息</h2>
+            <button class="close-btn" data-close="character-panel">✕</button>
+        </div>
+        <div class="panel-body">
+            <div id="char-basic-info">
+                <div id="char-avatar"></div>
+                <div id="char-name-level">
+                    <h3 id="char-name">勇者</h3>
+                    <p id="char-class-level">战士 Lv.1</p>
+                    <div id="char-exp-bar" class="stat-bar">
+                        <div class="stat-bar-fill exp-fill"></div>
+                        <span class="stat-bar-text">EXP: 0/100</span>
+                    </div>
+                </div>
+            </div>
+            <div id="char-stats-grid">
+                <div class="stat-row"><span class="stat-label">❤️ 生命值</span><span id="char-hp" class="stat-value">100/100</span></div>
+                <div class="stat-row"><span class="stat-label">⚡ 魔法值</span><span id="char-mp" class="stat-value">50/50</span></div>
+                <div class="stat-row"><span class="stat-label">🗡️ 攻击力</span><span id="char-atk" class="stat-value">10</span></div>
+                <div class="stat-row"><span class="stat-label">🛡️ 防御力</span><span id="char-def" class="stat-value">5</span></div>
+                <div class="stat-row"><span class="stat-label">🎯 命中率</span><span id="char-hit" class="stat-value">95%</span></div>
+                <div class="stat-row"><span class="stat-label">💨 闪避率</span><span id="char-dodge" class="stat-value">5%</span></div>
+                <div class="stat-row"><span class="stat-label">💥 暴击率</span><span id="char-crit" class="stat-value">5%</span></div>
+                <div class="stat-row"><span class="stat-label">⚡ 速度</span><span id="char-speed" class="stat-value">10</span></div>
+            </div>
+            <div id="char-equipment">
+                <h3>装备栏</h3>
+                <div class="equip-slots">
+                    <div class="equip-slot" data-slot="weapon"><span class="slot-label">武器</span><span class="slot-item">空</span></div>
+                    <div class="equip-slot" data-slot="head"><span class="slot-label">头盔</span><span class="slot-item">空</span></div>
+                    <div class="equip-slot" data-slot="body"><span class="slot-label">铠甲</span><span class="slot-item">空</span></div>
+                    <div class="equip-slot" data-slot="legs"><span class="slot-label">护腿</span><span class="slot-item">空</span></div>
+                    <div class="equip-slot" data-slot="feet"><span class="slot-label">鞋子</span><span class="slot-item">空</span></div>
+                    <div class="equip-slot" data-slot="accessory1"><span class="slot-label">饰品1</span><span class="slot-item">空</span></div>
+                    <div class="equip-slot" data-slot="accessory2"><span class="slot-label">饰品2</span><span class="slot-item">空</span></div>
+                </div>
+            </div>
+            <div id="char-skill-points" class="hidden">
+                <h3>技能点分配 (可用: <span id="available-sp">0</span>)</h3>
+                <div id="skill-tree"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 任务面板 -->
+    <div id="quest-panel" class="panel hidden">
+        <div class="panel-header">
+            <h2>📜 任务日志</h2>
+            <button class="close-btn" data-close="quest-panel">✕</button>
+        </div>
+        <div class="panel-body">
+            <div id="quest-tabs">
+                <button class="quest-tab active" data-tab="active">进行中</button>
+                <button class="quest-tab" data-tab="completed">已完成</button>
+            </div>
+            <div id="quest-list"></div>
+            <div id="quest-detail">
+                <h3 id="quest-detail-name">选择一个任务</h3>
+                <p id="quest-detail-desc"></p>
+                <div id="quest-detail-objectives"></div>
+                <div id="quest-detail-rewards"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 商店面板 -->
+    <div id="shop-panel" class="panel hidden">
+        <div class="panel-header">
+            <h2>🏪 商店</h2>
+            <button class="close-btn" data-close="shop-panel">✕</button>
+        </div>
+        <div class="panel-body">
+            <div id="shop-tabs">
+                <button class="shop-tab active" data-tab="buy">购买</button>
+                <button class="shop-tab" data-tab="sell">出售</button>
+            </div>
+            <div id="shop-gold">💰 <span id="shop-gold-amount">0</span></div>
+            <div id="shop-items"></div>
+            <div id="shop-item-detail">
+                <h3 id="shop-detail-name">选择一个商品</h3>
+                <p id="shop-detail-desc"></p>
+                <div id="shop-detail-stats"></div>
+                <div id="shop-detail-actions"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 地图面板 -->
+    <div id="map-panel" class="panel hidden">
+        <div class="panel-header">
+            <h2>🗺️ 地牢地图</h2>
+            <button class="close-btn" data-close="map-panel">✕</button>
+        </div>
+        <div class="panel-body">
+            <canvas id="minimap-canvas" width="400" height="400"></canvas>
+            <div id="map-legend">
+                <span class="legend-item"><span class="legend-color" style="background:#4a9"></span> 玩家</span>
+                <span class="legend-item"><span class="legend-color" style="background:#e55"></span> 怪物</span>
+                <span class="legend-item"><span class="legend-color" style="background:#fd0"></span> 宝箱</span>
+                <span class="legend-item"><span class="legend-color" style="background:#88f"></span> 楼梯</span>
+                <span class="legend-item"><span class="legend-color" style="background:#f80"></span> NPC</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 对话框 -->
+    <div id="dialog-box" class="hidden">
+        <div id="dialog-portrait"></div>
+        <div id="dialog-content">
+            <h3 id="dialog-speaker">NPC</h3>
+            <p id="dialog-text"></p>
+            <div id="dialog-choices"></div>
+        </div>
+        <span id="dialog-continue">▼ 点击继续</span>
+    </div>
+
+    <!-- 通知 -->
+    <div id="notification-area"></div>
+
+    <!-- 设置面板 -->
+    <div id="settings-panel" class="panel hidden">
+        <div class="panel-header">
+            <h2>⚙️ 设置</h2>
+            <button class="close-btn" data-close="settings-panel">✕</button>
+        </div>
+        <div class="panel-body">
+            <div class="setting-row">
+                <label>音效音量</label>
+                <input type="range" id="sfx-volume" min="0" max="100" value="70">
+            </div>
+            <div class="setting-row">
+                <label>动画速度</label>
+                <select id="anim-speed">
+                    <option value="fast">快速</option>
+                    <option value="normal" selected>正常</option>
+                    <option value="slow">慢速</option>
+                </select>
+            </div>
+            <div class="setting-row">
+                <label>自动保存</label>
+                <input type="checkbox" id="auto-save" checked>
+            </div>
+            <div class="setting-row">
+                <button id="btn-save-settings" class="menu-btn">保存设置</button>
+                <button id="btn-quit-game" class="menu-btn danger-btn">返回主菜单</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 游戏结束 -->
+    <div id="gameover-screen" class="screen">
+        <div class="gameover-content">
+            <h1 class="gameover-title">你倒下了...</h1>
+            <div id="gameover-stats"></div>
+            <button id="btn-revive" class="menu-btn primary-btn">复活（回到上一层）</button>
+            <button id="btn-gameover-quit" class="menu-btn">返回主菜单</button>
+        </div>
+    </div>
+
+    <!-- 胜利界面 -->
+    <div id="victory-screen" class="screen">
+        <div class="victory-content">
+            <h1 class="victory-title">🏆 恭喜通关！</h1>
+            <div id="victory-stats"></div>
+            <button id="btn-continue-playing" class="menu-btn primary-btn">继续探索</button>
+            <button id="btn-victory-quit" class="menu-btn">返回主菜单</button>
+        </div>
+    </div>
+
+    <!-- 升级提示 -->
+    <div id="levelup-overlay" class="overlay hidden">
+        <div class="levelup-content">
+            <h2>⬆️ 等级提升！</h2>
+            <p id="levelup-info"></p>
+            <div id="levelup-stats"></div>
+            <button id="btn-levelup-ok" class="menu-btn primary-btn">确定</button>
+        </div>
+    </div>
+
+    <!-- 战利品界面 -->
+    <div id="loot-overlay" class="overlay hidden">
+        <div class="loot-content">
+            <h2>🎁 战利品</h2>
+            <div id="loot-items"></div>
+            <div id="loot-gold"></div>
+            <div id="loot-exp"></div>
+            <button id="btn-loot-ok" class="menu-btn primary-btn">收下</button>
+        </div>
+    </div>
+
+    <!-- 锻造面板 -->
+    <div id="forge-panel" class="panel hidden">
+        <div class="panel-header">
+            <h2>🔨 锻造</h2>
+            <button class="close-btn" data-close="forge-panel">✕</button>
+        </div>
+        <div class="panel-body">
+            <div id="forge-recipes"></div>
+            <div id="forge-detail">
+                <h3 id="forge-item-name">选择配方</h3>
+                <div id="forge-materials"></div>
+                <div id="forge-result"></div>
+                <button id="btn-forge" class="menu-btn primary-btn" disabled>锻造</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game-data.js"></script>
+    <script src="game-engine.js"></script>
+    <script src="game-ui.js"></script>
+</body>
+</html>

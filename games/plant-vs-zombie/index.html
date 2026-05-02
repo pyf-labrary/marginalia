@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>植物大战僵尸 - Plants vs Zombies</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+@font-face {
+  font-family: 'GameFont';
+  src: local('Arial Black'), local('Impact');
+}
+
+body {
+  background: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#game-wrapper {
+  position: relative;
+  background: #2d1b0e;
+  border-radius: 16px;
+  box-shadow:
+    0 0 0 4px #5d3a1a,
+    0 0 0 8px #3d2010,
+    0 0 40px rgba(0,0,0,0.5);
+  padding: 8px;
+  transform-origin: top center;
+}
+
+#top-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: linear-gradient(180deg, #5d3a1a 0%, #3d2010 100%);
+  border-radius: 10px 10px 0 0;
+  min-height: 70px;
+}
+
+#sun-display {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #1a0a00;
+  border-radius: 8px;
+  padding: 6px 14px;
+  border: 2px solid #8B6914;
+  flex-shrink: 0;
+}
+
+#sun-icon {
+  width: 32px; height: 32px;
+  background: radial-gradient(circle at 40% 35%, #FFE082, #FF8F00);
+  border-radius: 50%;
+  box-shadow: 0 0 8px #FFD700;
+  animation: sun-glow 2s ease-in-out infinite;
+}
+
+@keyframes sun-glow {
+  0%, 100% { box-shadow: 0 0 8px #FFD700; }
+  50% { box-shadow: 0 0 16px #FFD700, 0 0 24px #FFA000; }
+}
+
+#sun-count {
+  color: #FFD700;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: 'GameFont', 'Arial Black', Impact, sans-serif;
+  min-width: 40px;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(255,215,0,0.5);
+}
+
+#plant-cards {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+  justify-content: center;
+}
+
+.plant-card {
+  width: 64px; height: 80px;
+  background: linear-gradient(180deg, #4a3520 0%, #2a1a0a 100%);
+  border: 2px solid #6b4423;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  transition: all 0.15s;
+  position: relative;
+  overflow: hidden;
+}
+
+.plant-card:hover {
+  border-color: #a0c040;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.plant-card.selected {
+  border-color: #4CAF50;
+  box-shadow: 0 0 12px rgba(76,175,80,0.6), inset 0 0 12px rgba(76,175,80,0.2);
+  transform: translateY(-2px);
+}
+
+.plant-card.disabled {
+  cursor: not-allowed;
+  filter: grayscale(0.6);
+}
+
+.plant-card .cooldown-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  background: rgba(0,0,0,0.65);
+  pointer-events: none;
+}
+
+.plant-card .cooldown-overlay.hidden { display: none; }
+
+.plant-card.disabled:hover {
+  transform: none;
+  border-color: #6b4423;
+  box-shadow: none;
+}
+
+.plant-card canvas {
+  width: 40px; height: 40px;
+  pointer-events: none;
+}
+
+.plant-card .name {
+  color: #c0a870;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.plant-card .cost {
+  color: #FFD700;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+#shovel-btn {
+  width: 50px; height: 80px;
+  background: linear-gradient(180deg, #4a3520 0%, #2a1a0a 100%);
+  border: 2px solid #6b4423;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  transition: all 0.15s;
+  font-size: 28px;
+  color: #c0a870;
+  flex-shrink: 0;
+}
+
+#shovel-btn:hover {
+  border-color: #a0c040;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+#shovel-btn.active {
+  border-color: #FF6B6B;
+  box-shadow: 0 0 12px rgba(255,107,107,0.6), inset 0 0 12px rgba(255,107,107,0.2);
+  transform: translateY(-2px);
+  color: #FF6B6B;
+}
+
+#shovel-btn .label {
+  font-size: 9px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1;
+}
+
+#wave-info {
+  color: #e0c080;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: right;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
+#wave-info .wave-num {
+  color: #FF6B6B;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#game-canvas {
+  display: block;
+  border-radius: 0 0 10px 10px;
+  cursor: crosshair;
+  image-rendering: auto;
+}
+
+#overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.75);
+  border-radius: 16px;
+  z-index: 10;
+  pointer-events: all;
+}
+
+#overlay.hidden { display: none; }
+
+.overlay-box {
+  text-align: center;
+  color: white;
+}
+
+.overlay-box h1 {
+  font-family: 'GameFont', 'Arial Black', Impact, sans-serif;
+  font-size: 48px;
+  color: #FFD700;
+  text-shadow: 3px 3px 0 #8B6914, 0 0 30px rgba(255,215,0,0.4);
+  margin-bottom: 8px;
+}
+
+.overlay-box h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.overlay-box .subtitle {
+  font-size: 18px;
+  color: #c0a870;
+  margin-bottom: 24px;
+}
+
+.overlay-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: 'GameFont', 'Arial Black', Impact, sans-serif;
+  color: #fff;
+  background: linear-gradient(180deg, #4CAF50 0%, #2E7D32 100%);
+  border: 3px solid #1B5E20;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.overlay-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(76,175,80,0.5);
+}
+
+.overlay-btn.warning {
+  background: linear-gradient(180deg, #f44336 0%, #b71c1c 100%);
+  border-color: #7f0000;
+}
+
+.overlay-btn.warning:hover {
+  box-shadow: 0 6px 20px rgba(244,67,54,0.5);
+}
+
+#particles {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes float-up {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-60px) scale(1.5); }
+}
+</style>
+</head>
+<body>
+
+<div id="game-wrapper">
+  <div id="top-bar">
+    <div id="sun-display">
+      <div id="sun-icon"></div>
+      <span id="sun-count">150</span>
+    </div>
+    <div id="plant-cards"></div>
+    <button id="shovel-btn" title="铲除植物 (R键)">
+      <span style="font-size:24px;">&#9874;</span>
+      <span class="label">铲除</span>
+    </button>
+    <div id="wave-info">
+      波次 <span class="wave-num" id="wave-num">1</span>/10
+    </div>
+  </div>
+  <canvas id="game-canvas"></canvas>
+  <div id="overlay">
+    <div class="overlay-box" id="overlay-content"></div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// PLANTS VS ZOMBIES - Complete Game
+// ============================================================
+
+const canvas = document.getElementById('game-canvas');
+const ctx = canvas.getContext('2d');
+
+// --- Canvas Setup ---
+const GRID_ROWS = 5;
+const GRID_COLS = 9;
+const CELL_W = 90;
+const CELL_H = 100;
+const GRID_X = 45;
+const GRID_Y = 10;
+const CANVAS_W = GRID_X * 2 + GRID_COLS * CELL_W;  // 900
+const CANVAS_H = GRID_Y + GRID_ROWS * CELL_H + 30;  // 540
+
+canvas.width = CANVAS_W;
+canvas.height = CANVAS_H;
+
+// --- Plant Configs ---
+const PLANT_TYPES = {
+  SUNFLOWER: {
+    id: 'SUNFLOWER', name: '向日葵', cost: 50, hp: 100,
+    cooldown: 300, sunInterval: 480, sunAmount: 25,
+    color: '#FFD700', color2: '#8B4513',
+  },
+  PEASHOOTER: {
+    id: 'PEASHOOTER', name: '豌豆射手', cost: 100, hp: 100,
+    cooldown: 180, shootInterval: 90, damage: 20,
+    color: '#4CAF50', color2: '#2E7D32', projectileSpeed: 5,
+  },
+  SNOWPEA: {
+    id: 'SNOWPEA', name: '寒冰射手', cost: 175, hp: 100,
+    cooldown: 180, shootInterval: 90, damage: 20, slow: true, slowDuration: 180,
+    color: '#64B5F6', color2: '#1565C0', projectileSpeed: 5,
+  },
+  WALLNUT: {
+    id: 'WALLNUT', name: '坚果墙', cost: 50, hp: 400, maxHp: 400,
+    cooldown: 600,
+    color: '#A1887F', color2: '#5D4037',
+  },
+  CHERRYBOMB: {
+    id: 'CHERRYBOMB', name: '樱桃炸弹', cost: 150, hp: 1,
+    cooldown: 900, explosionRadius: 1, explosionDamage: 1800,
+    color: '#F44336', color2: '#B71C1C', fuseTime: 60,
+  },
+};
+
+// --- Zombie Configs ---
+const ZOMBIE_TYPES = {
+  NORMAL:   { id: 'NORMAL',   name: '普通僵尸', hp: 100, speed: 0.35, damage: 20, eatInterval: 60, color: '#9E9E9E' },
+  CONEHEAD: { id: 'CONEHEAD', name: '路障僵尸', hp: 200, speed: 0.35, damage: 20, eatInterval: 60, color: '#FF9800', hat: 'cone' },
+  BUCKETHEAD:{ id: 'BUCKETHEAD',name:'铁桶僵尸', hp: 500, speed: 0.25, damage: 25, eatInterval: 50, color: '#607D8B', hat: 'bucket' },
+};
+
+// --- Wave Definitions ---
+const WAVES = [
+  { zombies: [{ type: 'NORMAL', count: 3 }], delay: 60 },
+  { zombies: [{ type: 'NORMAL', count: 5 }], delay: 60 },
+  { zombies: [{ type: 'NORMAL', count: 4 }, { type: 'CONEHEAD', count: 2 }], delay: 60 },
+  { zombies: [{ type: 'NORMAL', count: 5 }, { type: 'CONEHEAD', count: 3 }], delay: 60 },
+  { zombies: [{ type: 'CONEHEAD', count: 5 }, { type: 'NORMAL', count: 5 }], delay: 45, flag: true },
+  { zombies: [{ type: 'NORMAL', count: 6 }, { type: 'CONEHEAD', count: 4 }, { type: 'BUCKETHEAD', count: 1 }], delay: 45 },
+  { zombies: [{ type: 'CONEHEAD', count: 6 }, { type: 'BUCKETHEAD', count: 2 }], delay: 45 },
+  { zombies: [{ type: 'NORMAL', count: 8 }, { type: 'CONEHEAD', count: 5 }, { type: 'BUCKETHEAD', count: 3 }], delay: 40, flag: true },
+  { zombies: [{ type: 'CONEHEAD', count: 8 }, { type: 'BUCKETHEAD', count: 4 }], delay: 35 },
+  { zombies: [{ type: 'NORMAL', count: 10 }, { type: 'CONEHEAD', count: 8 }, { type: 'BUCKETHEAD', count: 6 }], delay: 30, flag: true },
+];
+
+// --- Game State ---
+let gameState = 'menu'; // menu | playing | win | lose
+let sun = 150;
+let grid = Array.from({ length: GRID_ROWS }, () => Array(GRID_COLS).fill(null));
+let plants = [];
+let zombies = [];
+let projectiles = [];
+let suns = [];
+let particles = [];
+let selectedPlant = null;
+let currentWave = 0;
+let waveActive = false;
+let waveZombiesLeft = [];
+let waveSpawnTimer = 0;
+let waveDelayTimer = 0;
+let betweenWaves = true;
+let frameCount = 0;
+let mouseX = 0, mouseY = 0;
+let mouseOnCanvas = false;
+let hoveredCell = null;
+let cooldowns = {};
+let shovelMode = false;
+let paused = false;
+let totalWaves = WAVES.length;
+
+// --- Audio Context for simple SFX ---
+let audioCtx = null;
+function initAudio() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+}
+function playBeep(freq, duration, type = 'square', vol = 0.08) {
+  if (!audioCtx) return;
+  try {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = type;
+    osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+    gain.gain.setValueAtTime(vol, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + duration);
+  } catch(e) {}
+}
+
+function sfxPlace()   { playBeep(600, 0.1, 'square', 0.06); playBeep(900, 0.08, 'square', 0.05); }
+function sfxShoot()   { playBeep(200, 0.08, 'square', 0.04); }
+function sfxHit()     { playBeep(80, 0.12, 'sawtooth', 0.06); }
+function sfxSun()     { playBeep(1200, 0.1, 'sine', 0.05); playBeep(1600, 0.08, 'sine', 0.04); }
+function sfxExplode() { playBeep(40, 0.3, 'sawtooth', 0.15); }
+function sfxLose()    { playBeep(100, 0.5, 'sawtooth', 0.1); playBeep(60, 0.6, 'sawtooth', 0.1); }
+function sfxWin()     {
+  [523, 659, 784, 1047].forEach((f, i) => {
+    setTimeout(() => playBeep(f, 0.2, 'square', 0.06), i * 120);
+  });
+}
+
+// --- Helper: Grid from pixel ---
+function pixelToGrid(px, py) {
+  const col = Math.floor((px - GRID_X) / CELL_W);
+  const row = Math.floor((py - GRID_Y) / CELL_H);
+  if (col >= 0 && col < GRID_COLS && row >= 0 && row < GRID_ROWS) {
+    return { row, col };
+  }
+  return null;
+}
+
+function gridToPixel(row, col) {
+  return {
+    x: GRID_X + col * CELL_W + CELL_W / 2,
+    y: GRID_Y + row * CELL_H + CELL_H / 2,
+  };
+}
+
+// --- Entity Classes ---
+class Plant {
+  constructor(type, row, col) {
+    const cfg = PLANT_TYPES[type];
+    this.type = type;
+    this.row = row;
+    this.col = col;
+    this.hp = cfg.hp;
+    this.maxHp = cfg.hp;
+    this.shootTimer = cfg.shootInterval || 0;
+    this.sunTimer = cfg.sunInterval || 0;
+    this.fuseTimer = cfg.fuseTime || 0;
+    this.exploded = false;
+    this.animFrame = 0;
+    const pos = gridToPixel(row, col);
+    this.x = pos.x;
+    this.y = pos.y;
+  }
+}
+
+class Zombie {
+  constructor(type, row) {
+    const cfg = ZOMBIE_TYPES[type];
+    this.type = type;
+    this.row = row;
+    this.hp = cfg.hp;
+    this.maxHp = cfg.hp;
+    this.speed = cfg.speed;
+    this.damage = cfg.damage;
+    this.eatInterval = cfg.eatInterval;
+    this.eatTimer = 0;
+    this.slowed = false;
+    this.slowTimer = 0;
+    const pos = gridToPixel(row, GRID_COLS);
+    this.x = pos.x + 40 + Math.random() * 200;
+    this.y = pos.y;
+    this.targetY = pos.y;
+    this.eating = false;
+    this.targetPlant = null;
+    this.dead = false;
+    this.animFrame = Math.random() * 100 | 0;
+  }
+}
+
+class Projectile {
+  constructor(x, y, row, damage, isSnow = false) {
+    this.x = x;
+    this.y = y;
+    this.row = row;
+    this.damage = damage;
+    this.isSnow = isSnow;
+    this.speed = 5;
+    this.dead = false;
+    this.radius = 6;
+  }
+}
+
+class SunEntity {
+  constructor(x, y, targetY, amount = 25) {
+    this.x = x;
+    this.y = y;
+    this.targetY = targetY;
+    this.amount = amount;
+    this.lifetime = 600; // 10 seconds
+    this.collected = false;
+    this.dead = false;
+    this.animFrame = 0;
+  }
+}
+
+class Particle {
+  constructor(x, y, color, life = 20) {
+    this.x = x;
+    this.y = y;
+    this.vx = (Math.random() - 0.5) * 4;
+    this.vy = (Math.random() - 0.5) * 4 - 2;
+    this.color = color;
+    this.life = life;
+    this.maxLife = life;
+    this.radius = 2 + Math.random() * 3;
+  }
+}
+
+// --- Drawing Functions ---
+
+function drawLawn() {
+  // Sky gradient
+  const skyGrad = ctx.createLinearGradient(0, 0, 0, CANVAS_H);
+  skyGrad.addColorStop(0, '#87CEEB');
+  skyGrad.addColorStop(0.15, '#B0E0B0');
+  skyGrad.addColorStop(0.3, '#90D890');
+  ctx.fillStyle = skyGrad;
+  ctx.fillRect(0, 0, CANVAS_W, CANVAS_H);
+
+  // Draw grass strips and grid
+  for (let row = 0; row < GRID_ROWS; row++) {
+    for (let col = 0; col < GRID_COLS; col++) {
+      const x = GRID_X + col * CELL_W;
+      const y = GRID_Y + row * CELL_H;
+      const light = (row + col) % 2 === 0;
+      ctx.fillStyle = light ? '#7EC850' : '#6AB840';
+      ctx.fillRect(x + 1, y + 1, CELL_W - 2, CELL_H - 2);
+
+      // Subtle grass texture lines
+      ctx.fillStyle = light ? 'rgba(0,0,0,0.03)' : 'rgba(255,255,255,0.03)';
+      for (let gx = x + 5; gx < x + CELL_W - 5; gx += 8) {
+        ctx.fillRect(gx, y + 8, 2, CELL_H - 16);
+      }
+    }
+  }
+
+  // Grid lines
+  ctx.strokeStyle = 'rgba(0,0,0,0.1)';
+  ctx.lineWidth = 1;
+  for (let row = 0; row <= GRID_ROWS; row++) {
+    ctx.beginPath();
+    ctx.moveTo(GRID_X, GRID_Y + row * CELL_H);
+    ctx.lineTo(GRID_X + GRID_COLS * CELL_W, GRID_Y + row * CELL_H);
+    ctx.stroke();
+  }
+  for (let col = 0; col <= GRID_COLS; col++) {
+    ctx.beginPath();
+    ctx.moveTo(GRID_X + col * CELL_W, GRID_Y);
+    ctx.lineTo(GRID_X + col * CELL_W, GRID_Y + GRID_ROWS * CELL_H);
+    ctx.stroke();
+  }
+
+  // Right side path (zombie entrance)
+  ctx.fillStyle = '#8B7355';
+  ctx.fillRect(GRID_X + GRID_COLS * CELL_W, GRID_Y, CANVAS_W - GRID_X - GRID_COLS * CELL_W, GRID_ROWS * CELL_H);
+  ctx.fillStyle = '#A0896E';
+  for (let row = 0; row < GRID_ROWS; row++) {
+    ctx.fillRect(GRID_X + GRID_COLS * CELL_W + 5, GRID_Y + row * CELL_H + 10, CANVAS_W - GRID_X - GRID_COLS * CELL_W - 10, CELL_H - 20);
+  }
+}
+
+function drawSunflower(ctx, x, y, scale = 1) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.scale(scale, scale);
+
+  // Stem
+  ctx.fillStyle = '#4CAF50';
+  ctx.fillRect(-3, 0, 6, 20);
+
+  // Leaves
+  ctx.fillStyle = '#66BB6A';
+  ctx.beginPath();
+  ctx.ellipse(-8, 10, 8, 4, -0.4, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.beginPath();
+  ctx.ellipse(8, 10, 8, 4, 0.4, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Petals
+  const petalCount = 10;
+  for (let i = 0; i < petalCount; i++) {
+    const angle = (i / petalCount) * Math.PI * 2 + Math.sin(frameCount * 0.03) * 0.1;
+    const px = Math.cos(angle) * 14;
+    const py = Math.sin(angle) * 14 - 2;
+    ctx.fillStyle = '#FFD700';
+    ctx.beginPath();
+    ctx.ellipse(px, py, 7, 10, angle, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#FFC107';
+    ctx.beginPath();
+    ctx.ellipse(px, py, 4, 7, angle, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Center
+  const centerGrad = ctx.createRadialGradient(0, -2, 2, 0, -2, 11);
+  centerGrad.addColorStop(0, '#5D4037');
+  centerGrad.addColorStop(1, '#3E2723');
+  ctx.fillStyle = centerGrad;
+  ctx.beginPath();
+  ctx.arc(0, -2, 11, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Face
+  ctx.fillStyle = '#1a0a00';
+  ctx.beginPath(); ctx.arc(-4, -4, 2, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(4, -4, 2, 0, Math.PI * 2); ctx.fill();
+  ctx.strokeStyle = '#1a0a00';
+  ctx.lineWidth = 1.2;
+  ctx.beginPath();
+  ctx.arc(0, 0, 5, 0.2, Math.PI - 0.2);
+  ctx.stroke();
+
+  ctx.restore();
+}
+
+function drawPeashooterBase(ctx, x, y, scale, headColor, headColor2) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.scale(scale, scale);
+
+  // Stem
+  ctx.fillStyle = '#4CAF50';
+  ctx.fillRect(-3, 4, 6, 16);
+
+  // Leaves at base
+  ctx.fillStyle = '#66BB6A';
+  ctx.beginPath();
+  ctx.ellipse(-10, 10, 10, 5, -0.3, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.beginPath();
+  ctx.ellipse(10, 10, 10, 5, 0.3, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Head
+  const headGrad = ctx.createRadialGradient(-2, -6, 3, 0, 0, 14);
+  headGrad.addColorStop(0, headColor);
+  headGrad.addColorStop(1, headColor2);
+  ctx.fillStyle = headGrad;
+  ctx.beginPath();
+  ctx.arc(0, -2, 14, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Mouth tube
+  ctx.fillStyle = headColor;
+  ctx.fillRect(10, -8, 10, 10);
+  ctx.fillStyle = headColor2;
+  ctx.fillRect(18, -6, 4, 6);
+  ctx.fillStyle = '#333';
+  ctx.beginPath();
+  ctx.arc(22, -3, 3, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Eyes
+  ctx.fillStyle = '#fff';
+  ctx.beginPath(); ctx.arc(-4, -7, 5, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(5, -7, 5, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#111';
+  ctx.beginPath(); ctx.arc(-3, -7, 2.5, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(6, -7, 2.5, 0, Math.PI * 2); ctx.fill();
+
+  ctx.restore();
+}
+
+function drawPeashooter(ctx, x, y, scale = 1) {
+  drawPeashooterBase(ctx, x, y, scale, '#4CAF50', '#2E7D32');
+}
+
+function drawSnowPea(ctx, x, y, scale = 1) {
+  drawPeashooterBase(ctx, x, y, scale, '#81D4FA', '#1565C0');
+
+  // Ice crystals
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.scale(scale, scale);
+  for (let i = 0; i < 4; i++) {
+    const angle = (i / 4) * Math.PI * 2 + frameCount * 0.02;
+    const ix = Math.cos(angle) * 16;
+    const iy = Math.sin(angle) * 16 - 2;
+    ctx.fillStyle = 'rgba(200,230,255,0.6)';
+    ctx.beginPath();
+    ctx.arc(ix, iy, 3, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  ctx.restore();
+}
+
+function drawWallNut(ctx, x, y, scale = 1) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.scale(scale, scale);
+
+  // Body
+  const nutGrad = ctx.createLinearGradient(-15, 0, 15, 0);
+  nutGrad.addColorStop(0, '#A1887F');
+  nutGrad.addColorStop(0.3, '#D7CCC8');
+  nutGrad.addColorStop(0.5, '#EFEBE9');
+  nutGrad.addColorStop(0.7, '#D7CCC8');
+  nutGrad.addColorStop(1, '#8D6E63');
+  ctx.fillStyle = nutGrad;
+  ctx.beginPath();
+  ctx.ellipse(0, -2, 16, 18, 0, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.strokeStyle = '#5D4037';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.ellipse(0, -2, 16, 18, 0, 0, Math.PI * 2);
+  ctx.stroke();
+
+  // Shell texture lines
+  ctx.strokeStyle = 'rgba(93,64,55,0.2)';
+  ctx.lineWidth = 1;
+  for (let i = -10; i <= 10; i += 7) {
+    ctx.beginPath();
+    ctx.moveTo(i, -18);
+    ctx.quadraticCurveTo(i, -2, i, 14);
+    ctx.stroke();
+  }
+
+  // Determined face
+  ctx.fillStyle = '#3E2723';
+  ctx.beginPath(); ctx.arc(-5, -6, 2.5, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(5, -6, 2.5, 0, Math.PI * 2); ctx.fill();
+  // Determined mouth
+  ctx.strokeStyle = '#3E2723';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(-6, 4);
+  ctx.lineTo(6, 4);
+  ctx.stroke();
+  // Eyebrows
+  ctx.beginPath();
+  ctx.moveTo(-8, -10); ctx.lineTo(-2, -8);
+  ctx.moveTo(8, -10); ctx.lineTo(2, -8);
+  ctx.stroke();
+
+  ctx.restore();
+}
+
+function drawCherryBomb(ctx, x, y, scale = 1) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.scale(scale, scale);
+
+  const bob = Math.sin(frameCount * 0.15) * 2;
+
+  // Stems
+  ctx.strokeStyle = '#4CAF50';
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.moveTo(-6, -10 + bob);
+  ctx.quadraticCurveTo(-8, -22 + bob, -4, -28 + bob);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(6, -10 + bob);
+  ctx.quadraticCurveTo(8, -22 + bob, 4, -28 + bob);
+  ctx.stroke();
+
+  // Left cherry
+  const cherry1 = ctx.createRadialGradient(-7, -4 + bob, 3, -7, -4 + bob, 13);
+  cherry1.addColorStop(0, '#EF5350');
+  cherry1.addColorStop(0.7, '#C62828');
+  cherry1.addColorStop(1, '#8E0000');
+  ctx.fillStyle = cherry1;
+  ctx.beginPath();
+  ctx.arc(-7, -4 + bob, 13, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Right cherry
+  const cherry2 = ctx.createRadialGradient(7, -4 + bob, 3, 7, -4 + bob, 13);
+  cherry2.addColorStop(0, '#EF5350');
+  cherry2.addColorStop(0.7, '#C62828');
+  cherry2.addColorStop(1, '#8E0000');
+  ctx.fillStyle = cherry2;
+  ctx.beginPath();
+  ctx.arc(7, -4 + bob, 13, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Angry faces
+  ctx.fillStyle = '#fff';
+  ctx.beginPath(); ctx.arc(-11, -7 + bob, 4, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(3, -7 + bob, 4, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#000';
+  ctx.beginPath(); ctx.arc(-10, -7 + bob, 2, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(4, -7 + bob, 2, 0, Math.PI * 2); ctx.fill();
+
+  // Angry eyebrows
+  ctx.strokeStyle = '#000';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(-15, -13 + bob); ctx.lineTo(-9, -10 + bob);
+  ctx.moveTo(1, -10 + bob); ctx.lineTo(7, -13 + bob);
+  ctx.stroke();
+
+  // Angry mouths
+  ctx.beginPath();
+  ctx.arc(-7, -1 + bob, 4, 0, Math.PI);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(7, -1 + bob, 4, 0, Math.PI);
+  ctx.stroke();
+
+  ctx.restore();
+}
+
+function drawPlantCard(canvas, type) {
+  const cctx = canvas.getContext('2d');
+  canvas.width = 40;
+  canvas.height = 40;
+  cctx.clearRect(0, 0, 40, 40);
+
+  const drawMap = {
+    SUNFLOWER: (c, x, y) => drawSunflower(c, x, y + 5, 0.9),
+    PEASHOOTER: (c, x, y) => drawPeashooter(c, x, y + 5, 0.9),
+    SNOWPEA: (c, x, y) => drawSnowPea(c, x, y + 5, 0.9),
+    WALLNUT: (c, x, y) => drawWallNut(c, x, y + 5, 0.85),
+    CHERRYBOMB: (c, x, y) => drawCherryBomb(c, x, y + 5, 0.75),
+  };
+
+  if (drawMap[type]) {
+    drawMap[type](cctx, 20, 15);
+  }
+}
+
+function drawZombie(ctx, x, y, type, frame) {
+  ctx.save();
+  ctx.translate(x, y);
+
+  const cfg = ZOMBIE_TYPES[type];
+  const wobble = Math.sin(frame * 0.1) * 3;
+  const armSwing = Math.sin(frame * 0.15) * 5;
+
+  // Shadow
+  ctx.fillStyle = 'rgba(0,0,0,0.2)';
+  ctx.beginPath();
+  ctx.ellipse(0, 22, 14, 4, 0, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Legs animation
+  ctx.fillStyle = '#5D4037';
+  ctx.fillRect(-10, 10, 8, 14);
+  ctx.fillRect(2, 10, 8, 14);
+
+  // Body / shirt
+  ctx.fillStyle = '#757575';
+  ctx.fillRect(-13, -4, 26, 18);
+  // Tattered details
+  ctx.fillStyle = '#616161';
+  ctx.fillRect(-10, -2, 8, 8);
+  ctx.fillRect(2, -2, 8, 6);
+
+  // Tie
+  ctx.fillStyle = '#B71C1C';
+  ctx.beginPath();
+  ctx.moveTo(0, -2);
+  ctx.lineTo(-3, 6);
+  ctx.lineTo(0, 12);
+  ctx.lineTo(3, 6);
+  ctx.closePath();
+  ctx.fill();
+
+  // Arms
+  ctx.fillStyle = '#9E9E9E';
+  ctx.save();
+  ctx.translate(-13, 0);
+  ctx.rotate(-0.3 + armSwing * 0.02);
+  ctx.fillRect(0, -2, 14, 5);
+  ctx.restore();
+  ctx.save();
+  ctx.translate(13, 0);
+  ctx.rotate(0.3 - armSwing * 0.02);
+  ctx.fillRect(-14, -2, 14, 5);
+  ctx.restore();
+
+  // Hands
+  ctx.fillStyle = '#A5D6A7';
+  ctx.beginPath();
+  ctx.arc(-24 + wobble, 4, 4, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.beginPath();
+  ctx.arc(24 - wobble, 4, 4, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Head
+  ctx.fillStyle = '#A5D6A7';
+  ctx.beginPath();
+  ctx.arc(0, -10, 12, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Eyes
+  ctx.fillStyle = '#FFEB3B';
+  ctx.beginPath(); ctx.arc(-4, -12, 4, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(4, -12, 4, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#B71C1C';
+  ctx.beginPath(); ctx.arc(-4, -12, 2, 0, Math.PI * 2); ctx.fill();
+  ctx.beginPath(); ctx.arc(4, -12, 2, 0, Math.PI * 2); ctx.fill();
+
+  // Mouth
+  ctx.fillStyle = '#4E342E';
+  ctx.beginPath();
+  ctx.arc(0, -3, 4, 0, Math.PI);
+  ctx.fill();
+
+  // Hat/Headgear
+  if (cfg.hat === 'cone') {
+    ctx.fillStyle = '#FF9800';
+    ctx.beginPath();
+    ctx.moveTo(-10, -16);
+    ctx.lineTo(0, -38);
+    ctx.lineTo(10, -16);
+    ctx.closePath();
+    ctx.fill();
+    ctx.strokeStyle = '#E65100';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    // Stripes
+    ctx.strokeStyle = '#FFB74D';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(-7, -20); ctx.lineTo(7, -20);
+    ctx.moveTo(-5, -25); ctx.lineTo(5, -25);
+    ctx.moveTo(-3, -30); ctx.lineTo(3, -30);
+    ctx.stroke();
+  } else if (cfg.hat === 'bucket') {
+    ctx.fillStyle = '#78909C';
+    ctx.fillRect(-11, -28, 22, 16);
+    ctx.fillStyle = '#90A4AE';
+    ctx.fillRect(-10, -27, 20, 14);
+    // Handle
+    ctx.strokeStyle = '#546E7A';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    ctx.arc(0, -18, 10, Math.PI, 0);
+    ctx.stroke();
+  }
+
+  ctx.restore();
+}
+
+function drawProjectile(ctx, x, y, isSnow) {
+  ctx.save();
+  ctx.translate(x, y);
+  if (isSnow) {
+    const grad = ctx.createRadialGradient(0, 0, 2, 0, 0, 6);
+    grad.addColorStop(0, '#E3F2FD');
+    grad.addColorStop(0.5, '#90CAF9');
+    grad.addColorStop(1, '#42A5F5');
+    ctx.fillStyle = grad;
+  } else {
+    const grad = ctx.createRadialGradient(0, 0, 2, 0, 0, 6);
+    grad.addColorStop(0, '#81C784');
+    grad.addColorStop(0.5, '#4CAF50');
+    grad.addColorStop(1, '#2E7D32');
+    ctx.fillStyle = grad;
+  }
+  ctx.beginPath();
+  ctx.arc(0, 0, 6, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.fillStyle = 'rgba(255,255,255,0.4)';
+  ctx.beginPath();
+  ctx.arc(-1, -1, 2, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+}
+
+function drawSun(ctx, x, y, scale = 1) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.scale(scale, scale);
+
+  const glow = ctx.createRadialGradient(0, 0, 5, 0, 0, 20);
+  glow.addColorStop(0, 'rgba(255,235,59,0.8)');
+  glow.addColorStop(0.5, 'rgba(255,193,7,0.4)');
+  glow.addColorStop(1, 'rgba(255,152,0,0)');
+  ctx.fillStyle = glow;
+  ctx.beginPath();
+  ctx.arc(0, 0, 20, 0, Math.PI * 2);
+  ctx.fill();
+
+  const sunGrad = ctx.createRadialGradient(-2, -3, 2, 0, 0, 11);
+  sunGrad.addColorStop(0, '#FFF9C4');
+  sunGrad.addColorStop(0.4, '#FFD54F');
+  sunGrad.addColorStop(1, '#FF8F00');
+  ctx.fillStyle = sunGrad;
+  ctx.beginPath();
+  ctx.arc(0, 0, 11, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Rays
+  for (let i = 0; i < 8; i++) {
+    const angle = (i / 8) * Math.PI * 2 + frameCount * 0.03;
+    ctx.fillStyle = '#FFD54F';
+    ctx.beginPath();
+    ctx.arc(Math.cos(angle) * 13, Math.sin(angle) * 13, 3, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  ctx.restore();
+}
+
+function drawHoverHighlight(row, col) {
+  const x = GRID_X + col * CELL_W;
+  const y = GRID_Y + row * CELL_H;
+  const canPlace = !grid[row][col];
+  ctx.fillStyle = canPlace ? 'rgba(255,255,255,0.3)' : 'rgba(255,0,0,0.3)';
+  ctx.fillRect(x + 2, y + 2, CELL_W - 4, CELL_H - 4);
+  ctx.strokeStyle = canPlace ? '#fff' : '#f44';
+  ctx.lineWidth = 2;
+  ctx.setLineDash([4, 4]);
+  ctx.strokeRect(x + 4, y + 4, CELL_W - 8, CELL_H - 8);
+  ctx.setLineDash([]);
+}
+
+function drawPlantOnGrid(plant) {
+  const drawMap = {
+    SUNFLOWER: drawSunflower,
+    PEASHOOTER: drawPeashooter,
+    SNOWPEA: drawSnowPea,
+    WALLNUT: drawWallNut,
+    CHERRYBOMB: drawCherryBomb,
+  };
+  if (drawMap[plant.type]) {
+    drawMap[plant.type](ctx, plant.x, plant.y);
+  }
+}
+
+// --- Game Logic ---
+
+function canPlacePlant(row, col) {
+  return grid[row][col] === null;
+}
+
+function placePlant(type, row, col) {
+  const cfg = PLANT_TYPES[type];
+  if (sun < cfg.cost) return false;
+  if (!canPlacePlant(row, col)) return false;
+  if (cooldowns[type] && cooldowns[type] > 0) return false;
+
+  sun -= cfg.cost;
+  const plant = new Plant(type, row, col);
+  grid[row][col] = plant;
+  plants.push(plant);
+  cooldowns[type] = cfg.cooldown;
+  sfxPlace();
+  updateUI();
+  return true;
+}
+
+function spawnZombie(type) {
+  const row = Math.floor(Math.random() * GRID_ROWS);
+  const zombie = new Zombie(type, row);
+  zombies.push(zombie);
+}
+
+function explodeCherryBomb(plant) {
+  if (plant.exploded) return;
+  plant.exploded = true;
+
+  const { row, col } = plant;
+  const radius = PLANT_TYPES.CHERRYBOMB.explosionRadius;
+  const damage = PLANT_TYPES.CHERRYBOMB.explosionDamage;
+
+  // Screen shake particles
+  for (let i = 0; i < 40; i++) {
+    particles.push(new Particle(plant.x, plant.y, '#F44336', 30 + Math.random() * 20));
+    particles.push(new Particle(plant.x, plant.y, '#FF9800', 20 + Math.random() * 15));
+  }
+
+  // Damage zombies in range
+  for (const zombie of zombies) {
+    const dRow = Math.abs(zombie.row - row);
+    const dCol = Math.abs((zombie.x - GRID_X) / CELL_W - col);
+    if (dRow <= radius && dCol <= radius + 1) {
+      zombie.hp -= damage;
+      for (let i = 0; i < 10; i++) {
+        particles.push(new Particle(zombie.x, zombie.y, '#FF6F00', 15));
+      }
+    }
+  }
+
+  // Remove the cherry bomb
+  grid[row][col] = null;
+  plants = plants.filter(p => p !== plant);
+  sfxExplode();
+}
+
+function startWave(waveIndex) {
+  if (waveIndex >= totalWaves) {
+    endGame('win');
+    return;
+  }
+  currentWave = waveIndex;
+  const waveDef = WAVES[waveIndex];
+  waveZombiesLeft = [];
+  for (const group of waveDef.zombies) {
+    for (let i = 0; i < group.count; i++) {
+      waveZombiesLeft.push(group.type);
+    }
+  }
+  // Shuffle
+  for (let i = waveZombiesLeft.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [waveZombiesLeft[i], waveZombiesLeft[j]] = [waveZombiesLeft[j], waveZombiesLeft[i]];
+  }
+  waveSpawnTimer = 0;
+  waveActive = true;
+  betweenWaves = false;
+  updateUI();
+}
+
+function endGame(result) {
+  gameState = result;
+  if (result === 'win') sfxWin();
+  if (result === 'lose') sfxLose();
+  showOverlay(result);
+}
+
+function resetGame() {
+  gameState = 'playing';
+  sun = 150;
+  grid = Array.from({ length: GRID_ROWS }, () => Array(GRID_COLS).fill(null));
+  plants = [];
+  zombies = [];
+  projectiles = [];
+  suns = [];
+  particles = [];
+  selectedPlant = null;
+  shovelMode = false;
+  paused = false;
+  updateShovelButton();
+  currentWave = 0;
+  waveActive = false;
+  waveZombiesLeft = [];
+  waveSpawnTimer = 0;
+  waveDelayTimer = 180;
+  betweenWaves = true;
+  cooldowns = {};
+  updateUI();
+  hideOverlay();
+}
+
+function updateUI() {
+  document.getElementById('sun-count').textContent = sun;
+  document.getElementById('wave-num').textContent = currentWave + 1;
+
+  const cards = document.querySelectorAll('.plant-card');
+  cards.forEach(card => {
+    const type = card.dataset.type;
+    const cfg = PLANT_TYPES[type];
+    const onCooldown = cooldowns[type] && cooldowns[type] > 0;
+    const cdOverlay = card.querySelector('.cooldown-overlay');
+
+    if (sun < cfg.cost || onCooldown) {
+      card.classList.add('disabled');
+    } else {
+      card.classList.remove('disabled');
+    }
+
+    if (onCooldown && cdOverlay) {
+      cdOverlay.classList.remove('hidden');
+      const pct = cooldowns[type] / cfg.cooldown;
+      cdOverlay.style.height = (pct * 100) + '%';
+    } else if (cdOverlay) {
+      cdOverlay.classList.add('hidden');
+    }
+  });
+
+  // Update wave progress indicator
+  const waveEl = document.getElementById('wave-info');
+  if (waveActive && waveZombiesLeft.length > 0) {
+    const waveDef = WAVES[currentWave];
+    const totalInWave = waveDef.zombies.reduce((s, g) => s + g.count, 0);
+    const spawned = totalInWave - waveZombiesLeft.length;
+    waveEl.innerHTML = `波次 <span class="wave-num" id="wave-num">${currentWave+1}</span>/${totalWaves}<br><small>僵尸 ${spawned}/${totalInWave+spawned-spawned} 🧟 ${zombies.length}存活</small>`;
+  } else if (betweenWaves) {
+    waveEl.innerHTML = `波次 <span class="wave-num" id="wave-num">${currentWave+1}</span>/${totalWaves}<br><small>即将到来...</small>`;
+  }
+}
+
+// --- Rendering ---
+
+function render() {
+  ctx.clearRect(0, 0, CANVAS_W, CANVAS_H);
+
+  drawLawn();
+
+  // Draw hover highlight
+  if (selectedPlant && hoveredCell && mouseOnCanvas) {
+    drawHoverHighlight(hoveredCell.row, hoveredCell.col);
+  }
+
+  // Draw plants
+  for (const plant of plants) {
+    // HP bar for damaged wall-nuts
+    if (plant.type === 'WALLNUT' && plant.hp < plant.maxHp) {
+      const barW = 30;
+      const barH = 4;
+      const barX = plant.x - barW / 2;
+      const barY = plant.y - 26;
+      const pct = plant.hp / plant.maxHp;
+      ctx.fillStyle = '#333';
+      ctx.fillRect(barX - 1, barY - 1, barW + 2, barH + 2);
+      ctx.fillStyle = pct > 0.5 ? '#4CAF50' : pct > 0.25 ? '#FFC107' : '#F44336';
+      ctx.fillRect(barX, barY, barW * pct, barH);
+    }
+
+    // Cherry bomb fuse animation
+    if (plant.type === 'CHERRYBOMB') {
+      const flicker = Math.sin(frameCount * 0.5) * 0.3 + 0.7;
+      ctx.globalAlpha = flicker;
+      drawPlantOnGrid(plant);
+      ctx.globalAlpha = 1;
+    } else {
+      drawPlantOnGrid(plant);
+    }
+  }
+
+  // Draw projectiles
+  for (const proj of projectiles) {
+    drawProjectile(ctx, proj.x, proj.y, proj.isSnow);
+  }
+
+  // Draw zombies
+  for (const zombie of zombies) {
+    const shakeX = zombie.eating ? Math.sin(frameCount * 0.8) * 2 : 0;
+    const shakeY = zombie.eating ? Math.cos(frameCount * 1.1) * 1.5 : 0;
+    drawZombie(ctx, zombie.x + shakeX, zombie.y + shakeY, zombie.type, zombie.animFrame);
+
+    // HP bar
+    if (zombie.hp < zombie.maxHp) {
+      const barW = 30;
+      const barH = 4;
+      const barX = zombie.x - barW / 2;
+      const barY = zombie.y - 35;
+      const pct = zombie.hp / zombie.maxHp;
+      ctx.fillStyle = '#333';
+      ctx.fillRect(barX - 1, barY - 1, barW + 2, barH + 2);
+      ctx.fillStyle = pct > 0.5 ? '#4CAF50' : pct > 0.25 ? '#FFC107' : '#F44336';
+      ctx.fillRect(barX, barY, barW * pct, barH);
+    }
+  }
+
+  // Draw suns
+  for (const s of suns) {
+    drawSun(ctx, s.x, s.y);
+  }
+
+  // Draw particles
+  for (const p of particles) {
+    const alpha = p.life / p.maxLife;
+    ctx.fillStyle = p.color.replace(')', `,${alpha})`).replace('rgb', 'rgba');
+    if (p.color.startsWith('#')) {
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = p.color;
+    }
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.radius * alpha, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+
+  // Pause overlay
+  if (paused) {
+    ctx.fillStyle = 'rgba(0,0,0,0.5)';
+    ctx.fillRect(0, 0, CANVAS_W, CANVAS_H);
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 48px "GameFont", "Arial Black", Impact, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('已暂停', CANVAS_W / 2, CANVAS_H / 2);
+    ctx.font = '18px "Segoe UI", system-ui, sans-serif';
+    ctx.fillText('按 空格键 继续', CANVAS_W / 2, CANVAS_H / 2 + 40);
+    ctx.textAlign = 'start';
+  }
+}
+
+// --- Game Loop ---
+
+function update() {
+  if (gameState !== 'playing') return;
+  if (paused) return;
+  frameCount++;
+
+  // Update cooldowns
+  for (const key in cooldowns) {
+    if (cooldowns[key] > 0) cooldowns[key]--;
+  }
+
+  // Wave management
+  if (betweenWaves) {
+    waveDelayTimer--;
+    if (waveDelayTimer <= 0) {
+      startWave(currentWave);
+    }
+  }
+
+  if (waveActive) {
+    waveSpawnTimer--;
+    if (waveSpawnTimer <= 0 && waveZombiesLeft.length > 0) {
+      const type = waveZombiesLeft.shift();
+      spawnZombie(type);
+      const waveDef = WAVES[currentWave];
+      waveSpawnTimer = waveDef.delay + Math.random() * 30;
+    }
+
+    // Check if wave complete
+    if (waveZombiesLeft.length === 0 && zombies.length === 0) {
+      waveActive = false;
+      betweenWaves = true;
+      waveDelayTimer = 240; // 4 seconds between waves
+      currentWave++;
+      if (currentWave >= totalWaves) {
+        endGame('win');
+        return;
+      }
+      updateUI();
+    }
+  }
+
+  // Natural sun fall
+  if (frameCount % 420 === 0) {
+    const sx = GRID_X + Math.random() * GRID_COLS * CELL_W;
+    const sunEntity = new SunEntity(sx, -20, GRID_Y + Math.random() * GRID_ROWS * CELL_H, 50);
+    suns.push(sunEntity);
+  }
+
+  // Update plants
+  for (const plant of plants) {
+    plant.animFrame++;
+
+    // Sun production
+    if (plant.type === 'SUNFLOWER') {
+      plant.sunTimer--;
+      if (plant.sunTimer <= 0) {
+        plant.sunTimer = PLANT_TYPES.SUNFLOWER.sunInterval;
+        const sunEntity = new SunEntity(
+          plant.x + (Math.random() - 0.5) * 30,
+          plant.y - 20,
+          plant.y + 20 + Math.random() * 30,
+          25
+        );
+        suns.push(sunEntity);
+      }
+    }
+
+    // Shooting
+    if (plant.type === 'PEASHOOTER' || plant.type === 'SNOWPEA') {
+      // Check if there's a zombie in this row
+      const hasTarget = zombies.some(z => z.row === plant.row && z.x > plant.x && z.hp > 0);
+      if (hasTarget) {
+        plant.shootTimer--;
+        if (plant.shootTimer <= 0) {
+          const cfg = PLANT_TYPES[plant.type];
+          plant.shootTimer = cfg.shootInterval;
+          const proj = new Projectile(
+            plant.x + 15, plant.y - 5, plant.row,
+            cfg.damage, plant.type === 'SNOWPEA'
+          );
+          projectiles.push(proj);
+          sfxShoot();
+        }
+      }
+    }
+
+    // Cherry bomb fuse
+    if (plant.type === 'CHERRYBOMB') {
+      plant.fuseTimer--;
+      if (plant.fuseTimer <= 0) {
+        explodeCherryBomb(plant);
+      }
+    }
+  }
+
+  // Update projectiles
+  for (const proj of projectiles) {
+    proj.x += proj.speed;
+    if (proj.x > CANVAS_W) {
+      proj.dead = true;
+    }
+
+    // Check collision with zombies
+    for (const zombie of zombies) {
+      if (zombie.dead || proj.dead) continue;
+      if (zombie.row !== proj.row) continue;
+      const dx = proj.x - zombie.x;
+      const dy = proj.y - zombie.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < 20) {
+        zombie.hp -= proj.damage;
+        if (proj.isSnow) {
+          zombie.slowed = true;
+          zombie.slowTimer = PLANT_TYPES.SNOWPEA.slowDuration;
+        }
+        proj.dead = true;
+        for (let i = 0; i < 4; i++) {
+          particles.push(new Particle(proj.x, proj.y, proj.isSnow ? '#90CAF9' : '#81C784', 10));
+        }
+        sfxHit();
+        break;
+      }
+    }
+  }
+
+  // Cleanup projectiles
+  projectiles = projectiles.filter(p => !p.dead);
+
+  // Update zombies
+  for (const zombie of zombies) {
+    if (zombie.dead) continue;
+    zombie.animFrame++;
+
+    // Slow effect
+    if (zombie.slowed) {
+      zombie.slowTimer--;
+      if (zombie.slowTimer <= 0) {
+        zombie.slowed = false;
+      }
+    }
+
+    // Check if eating a plant in the same row
+    zombie.eating = false;
+    zombie.targetPlant = null;
+    for (const plant of plants) {
+      if (plant.row !== zombie.row) continue;
+      if (plant.exploded) continue;
+      const dx = zombie.x - plant.x;
+      if (dx > -10 && dx < 35) {
+        if (plant.type === 'CHERRYBOMB') {
+          explodeCherryBomb(plant);
+          break;
+        }
+        zombie.eating = true;
+        zombie.targetPlant = plant;
+        break;
+      }
+    }
+
+    if (zombie.eating && zombie.targetPlant) {
+      zombie.eatTimer--;
+      if (zombie.eatTimer <= 0) {
+        zombie.eatTimer = zombie.eatInterval;
+        zombie.targetPlant.hp -= zombie.damage;
+        if (zombie.targetPlant.hp <= 0) {
+          const p = zombie.targetPlant;
+          grid[p.row][p.col] = null;
+          plants = plants.filter(pl => pl !== p);
+          zombie.eating = false;
+          zombie.targetPlant = null;
+          zombie.eatTimer = 30;
+        }
+      }
+    } else {
+      zombie.eatTimer = zombie.eatInterval;
+      const speed = zombie.slowed ? zombie.speed * 0.4 : zombie.speed;
+      zombie.x -= speed;
+      // Move toward row center
+      const targetY = gridToPixel(zombie.row, 0).y;
+      zombie.y += (targetY - zombie.y) * 0.05;
+    }
+
+    // Zombie reached the house!
+    if (zombie.x < GRID_X - 10) {
+      endGame('lose');
+      return;
+    }
+  }
+
+  // Cleanup dead zombies
+  for (const zombie of zombies) {
+    if (zombie.hp <= 0 && !zombie.dead) {
+      zombie.dead = true;
+      for (let i = 0; i < 15; i++) {
+        particles.push(new Particle(zombie.x, zombie.y, '#757575', 20));
+      }
+    }
+  }
+  zombies = zombies.filter(z => !z.dead);
+
+  // Update suns
+  for (const s of suns) {
+    s.animFrame++;
+    s.lifetime--;
+    if (s.lifetime <= 0) s.dead = true;
+    if (!s.collected && s.y < s.targetY) {
+      s.y += 0.5;
+    }
+  }
+  suns = suns.filter(s => !s.dead);
+
+  // Update particles
+  for (const p of particles) {
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vy += 0.1;
+    p.life--;
+  }
+  particles = particles.filter(p => p.life > 0);
+
+  // Update UI periodically
+  if (frameCount % 10 === 0) {
+    updateUI();
+  }
+}
+
+function gameLoop() {
+  update();
+  render();
+  requestAnimationFrame(gameLoop);
+}
+
+// --- Event Handlers ---
+
+canvas.addEventListener('mousemove', (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = CANVAS_W / rect.width;
+  const scaleY = CANVAS_H / rect.height;
+  mouseX = (e.clientX - rect.left) * scaleX;
+  mouseY = (e.clientY - rect.top) * scaleY;
+  mouseOnCanvas = true;
+  hoveredCell = pixelToGrid(mouseX, mouseY);
+});
+
+canvas.addEventListener('mouseleave', () => {
+  mouseOnCanvas = false;
+  hoveredCell = null;
+});
+
+canvas.addEventListener('click', (e) => {
+  if (gameState !== 'playing') return;
+  initAudio();
+
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = CANVAS_W / rect.width;
+  const scaleY = CANVAS_H / rect.height;
+  const cx = (e.clientX - rect.left) * scaleX;
+  const cy = (e.clientY - rect.top) * scaleY;
+
+  // Check sun collection
+  for (const s of suns) {
+    const dx = cx - s.x;
+    const dy = cy - s.y;
+    if (Math.sqrt(dx * dx + dy * dy) < 20) {
+      s.collected = true;
+      s.dead = true;
+      sun += s.amount;
+      sfxSun();
+      updateUI();
+      return;
+    }
+  }
+
+  // Shovel mode - remove plant
+  if (shovelMode) {
+    const cell = pixelToGrid(cx, cy);
+    if (cell && grid[cell.row][cell.col]) {
+      const plant = grid[cell.row][cell.col];
+      grid[cell.row][cell.col] = null;
+      plants = plants.filter(p => p !== plant);
+      sfxPlace();
+    }
+    return;
+  }
+
+  // Place plant
+  if (selectedPlant) {
+    const cell = pixelToGrid(cx, cy);
+    if (cell && canPlacePlant(cell.row, cell.col)) {
+      const success = placePlant(selectedPlant, cell.row, cell.col);
+      if (success) {
+        // Keep selection for multi-placement; uncomment below for single placement
+        // selectedPlant = null;
+        // updateCardSelection();
+      }
+    }
+  }
+});
+
+canvas.addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+  selectedPlant = null;
+  updateCardSelection();
+});
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  if (gameState !== 'playing') {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      if (gameState === 'menu') startGame();
+      else if (gameState === 'win' || gameState === 'lose') resetGame();
+    }
+    return;
+  }
+
+  const keys = ['1', '2', '3', '4', '5'];
+  const types = ['SUNFLOWER', 'PEASHOOTER', 'SNOWPEA', 'WALLNUT', 'CHERRYBOMB'];
+  const idx = keys.indexOf(e.key);
+  if (idx >= 0) {
+    selectedPlant = (selectedPlant === types[idx]) ? null : types[idx];
+    updateCardSelection();
+  }
+  if (e.key === 'Escape') {
+    selectedPlant = null;
+    shovelMode = false;
+    updateCardSelection();
+    updateShovelButton();
+  }
+  if (e.key === 'r' || e.key === 'R') {
+    e.preventDefault();
+    shovelMode = !shovelMode;
+    if (shovelMode) { selectedPlant = null; updateCardSelection(); }
+    updateShovelButton();
+  }
+  if (e.key === 'p' || e.key === 'P' || e.key === ' ') {
+    e.preventDefault();
+    if (gameState === 'playing') {
+      paused = !paused;
+    }
+  }
+});
+
+// --- Plant Card UI ---
+
+function createPlantCards() {
+  const container = document.getElementById('plant-cards');
+  const types = ['SUNFLOWER', 'PEASHOOTER', 'SNOWPEA', 'WALLNUT', 'CHERRYBOMB'];
+
+  types.forEach(type => {
+    const cfg = PLANT_TYPES[type];
+    const card = document.createElement('div');
+    card.className = 'plant-card';
+    card.dataset.type = type;
+
+    const iconCanvas = document.createElement('canvas');
+    drawPlantCard(iconCanvas, type);
+    card.appendChild(iconCanvas);
+
+    const nameSpan = document.createElement('span');
+    nameSpan.className = 'name';
+    nameSpan.textContent = cfg.name;
+    card.appendChild(nameSpan);
+
+    const costSpan = document.createElement('span');
+    costSpan.className = 'cost';
+    costSpan.textContent = `☀${cfg.cost}`;
+    card.appendChild(costSpan);
+
+    const cdOverlay = document.createElement('div');
+    cdOverlay.className = 'cooldown-overlay hidden';
+    card.appendChild(cdOverlay);
+
+    card.addEventListener('click', () => {
+      if (gameState !== 'playing') return;
+      if (sun < cfg.cost) return;
+      if (cooldowns[type] && cooldowns[type] > 0) return;
+      selectedPlant = (selectedPlant === type) ? null : type;
+      updateCardSelection();
+    });
+
+    container.appendChild(card);
+  });
+}
+
+function updateCardSelection() {
+  const cards = document.querySelectorAll('.plant-card');
+  cards.forEach(card => {
+    if (card.dataset.type === selectedPlant) {
+      card.classList.add('selected');
+    } else {
+      card.classList.remove('selected');
+    }
+  });
+}
+
+function updateShovelButton() {
+  const btn = document.getElementById('shovel-btn');
+  if (shovelMode) {
+    btn.classList.add('active');
+  } else {
+    btn.classList.remove('active');
+  }
+  canvas.style.cursor = shovelMode ? 'pointer' : 'crosshair';
+}
+
+// --- Overlay ---
+
+function showOverlay(type) {
+  const overlay = document.getElementById('overlay');
+  const content = document.getElementById('overlay-content');
+  overlay.classList.remove('hidden');
+
+  if (type === 'menu') {
+    content.innerHTML = `
+      <h1>植物大战僵尸</h1>
+      <div class="subtitle">Plants vs Zombies</div>
+      <p style="color:#c0a870;margin-bottom:20px;font-size:14px;line-height:1.8">
+        选择植物卡片，点击草坪放置植物<br>
+        阻止僵尸到达左侧！<br>
+        键盘快捷键: 1-5 选择植物 | ESC 取消选择
+      </p>
+      <button class="overlay-btn" onclick="startGame()">开始游戏</button>
+    `;
+  } else if (type === 'win') {
+    content.innerHTML = `
+      <h1>🎉 胜利！</h1>
+      <div class="subtitle">你成功抵御了所有僵尸！</div>
+      <p style="color:#c0a870;margin-bottom:20px;font-size:16px;">
+        完成了全部 ${totalWaves} 波攻击
+      </p>
+      <button class="overlay-btn" onclick="resetGame()">再来一局</button>
+    `;
+  } else if (type === 'lose') {
+    content.innerHTML = `
+      <h1>💀 失败</h1>
+      <div class="subtitle">僵尸吃掉了你的脑子！</div>
+      <p style="color:#c0a870;margin-bottom:20px;font-size:16px;">
+        坚持到了第 ${currentWave + 1} 波
+      </p>
+      <button class="overlay-btn warning" onclick="resetGame()">重新开始</button>
+    `;
+  }
+}
+
+function hideOverlay() {
+  document.getElementById('overlay').classList.add('hidden');
+}
+
+function startGame() {
+  initAudio();
+  resetGame();
+}
+
+// Make functions available globally for onclick handlers
+window.startGame = startGame;
+window.resetGame = resetGame;
+
+// --- Auto-scale to fit viewport ---
+function autoScale() {
+  const wrapper = document.getElementById('game-wrapper');
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  const wrapperW = CANVAS_W + 16; // + padding
+  const wrapperH = CANVAS_H + 78;  // + top bar + padding
+  const scaleX = (vw - 20) / wrapperW;
+  const scaleY = (vh - 20) / wrapperH;
+  const scale = Math.min(scaleX, scaleY, 1.0);
+  wrapper.style.transform = `scale(${scale})`;
+}
+
+window.addEventListener('resize', autoScale);
+
+// --- Initialize ---
+function init() {
+  createPlantCards();
+
+  document.getElementById('shovel-btn').addEventListener('click', () => {
+    if (gameState !== 'playing') return;
+    shovelMode = !shovelMode;
+    if (shovelMode) { selectedPlant = null; updateCardSelection(); }
+    updateShovelButton();
+  });
+
+  autoScale();
+  showOverlay('menu');
+  updateUI();
+  requestAnimationFrame(gameLoop);
+}
+
+init();
+</script>
+</body>
+</html>
