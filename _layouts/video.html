@@ -1,0 +1,230 @@
+---
+layout: default
+---
+<style>
+  body { background: #0a0a0e; }
+  body::before {
+    background: linear-gradient(90deg, #8b2e2a 0, #8b2e2a 28%, #1a1a22 28%) !important;
+  }
+  .site-header {
+    background: rgba(10, 10, 14, 0.78) !important;
+    border-bottom-color: rgba(245, 239, 225, 0.08) !important;
+  }
+  .site-header .brand { color: #f5efe1 !important; }
+  .site-header .brand-mark { color: #d97570 !important; }
+  .site-header .brand-tag { color: rgba(245, 239, 225, 0.55) !important; }
+  .site-header .site-nav a { color: rgba(245, 239, 225, 0.78) !important; }
+  .site-header .site-nav a:hover { color: #d97570 !important; }
+  .site-footer {
+    background: #0a0a0e;
+    color: rgba(245, 239, 225, 0.55);
+    border-top: 1px solid rgba(245, 239, 225, 0.08);
+  }
+  .site-footer a { color: rgba(245, 239, 225, 0.85); border-bottom-color: rgba(245, 239, 225, 0.25); }
+  .site-footer .muted { color: rgba(245, 239, 225, 0.4); }
+
+  .v-shell {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: -3.5rem;
+    margin-bottom: -4rem;
+    padding: 4rem 0 6rem;
+    background: #0a0a0e;
+    color: #ece6d8;
+    font-family: var(--serif);
+  }
+  .v-shell::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(900px 600px at 12% 0%, rgba(217, 117, 112, 0.08), transparent 60%),
+      radial-gradient(700px 500px at 88% 100%, rgba(240, 194, 138, 0.05), transparent 60%);
+  }
+  .v-wrap {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .v-back {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(245, 239, 225, 0.5);
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: color 0.2s ease;
+  }
+  .v-back:hover { color: #d97570; }
+
+  .v-meta-top {
+    font-size: 0.78rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: #d97570;
+    margin-bottom: 1rem;
+  }
+  .v-title {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    line-height: 1.1;
+    color: #f5efe1;
+    font-weight: 700;
+    margin: 0 0 1rem;
+    letter-spacing: -0.005em;
+  }
+  .v-title em { font-style: italic; color: #f0c28a; }
+  .v-lede {
+    font-size: 1.1rem;
+    line-height: 1.65;
+    color: rgba(245, 239, 225, 0.72);
+    max-width: 60ch;
+    margin: 0 0 2.5rem;
+  }
+
+  .v-player {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+  }
+  .v-player video { width: 100%; height: 100%; display: block; }
+
+  .v-stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem 2rem;
+    margin: 2.5rem 0 2.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(245, 239, 225, 0.08);
+    border-bottom: 1px solid rgba(245, 239, 225, 0.08);
+  }
+  .v-stat label {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(245, 239, 225, 0.45);
+    margin-bottom: 0.4rem;
+  }
+  .v-stat b {
+    display: block;
+    font-size: 1.05rem;
+    color: #f5efe1;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+
+  .v-body {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgba(245, 239, 225, 0.82);
+  }
+  .v-body h2 {
+    font-size: 1.35rem;
+    color: #f5efe1;
+    margin: 2.5rem 0 1rem;
+    border-left: 3px solid #d97570;
+    padding-left: 0.75rem;
+  }
+  .v-body h3 {
+    font-size: 1.1rem;
+    color: #f5efe1;
+    margin: 1.6rem 0 0.6rem;
+  }
+  .v-body a {
+    color: #f0c28a;
+    border-bottom: 1px solid rgba(240, 194, 138, 0.35);
+    text-decoration: none;
+  }
+  .v-body a:hover { border-bottom-color: #f0c28a; }
+  .v-body code {
+    background: rgba(245, 239, 225, 0.06);
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 0.92em;
+    color: #f0c28a;
+  }
+  .v-body ul, .v-body ol { padding-left: 1.5rem; }
+  .v-body li { margin-bottom: 0.35rem; }
+  .v-body blockquote {
+    border-left: 3px solid rgba(245, 239, 225, 0.2);
+    padding-left: 1rem;
+    margin: 1.2rem 0;
+    color: rgba(245, 239, 225, 0.6);
+    font-style: italic;
+  }
+  .v-body hr {
+    border: 0;
+    border-top: 1px solid rgba(245, 239, 225, 0.1);
+    margin: 2.5rem 0;
+  }
+
+  .v-sources {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(245, 239, 225, 0.1);
+    font-size: 0.9rem;
+    color: rgba(245, 239, 225, 0.55);
+  }
+  .v-sources h3 {
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(245, 239, 225, 0.5);
+    margin: 0 0 0.8rem;
+  }
+  .v-sources ul { list-style: none; padding: 0; margin: 0; }
+  .v-sources li { margin-bottom: 0.4rem; line-height: 1.55; }
+  .v-sources a { color: #f0c28a; border-bottom: 1px dashed rgba(240, 194, 138, 0.3); text-decoration: none; }
+</style>
+
+<div class="v-shell">
+  <div class="v-wrap">
+    <a class="v-back" href="{{ '/videos/' | relative_url }}">← All videos</a>
+
+    {% if page.vol %}<div class="v-meta-top">{{ page.vol }}</div>{% endif %}
+    <h1 class="v-title">{{ page.title }}</h1>
+    {% if page.lede %}<p class="v-lede">{{ page.lede }}</p>{% endif %}
+
+    <div class="v-player">
+      <video
+        controls
+        preload="metadata"
+        {% if page.poster %}poster="{{ page.poster | relative_url }}"{% endif %}
+      >
+        <source src="{{ page.video | relative_url }}" type="video/mp4">
+        你的浏览器不支持视频标签。
+      </video>
+    </div>
+
+    <div class="v-stat-row">
+      {% if page.duration %}<div class="v-stat"><label>时长</label><b>{{ page.duration }}</b></div>{% endif %}
+      {% if page.resolution %}<div class="v-stat"><label>分辨率</label><b>{{ page.resolution }}</b></div>{% endif %}
+      {% if page.date %}<div class="v-stat"><label>发布</label><b>{{ page.date | date: "%Y-%m-%d" }}</b></div>{% endif %}
+      {% if page.cost %}<div class="v-stat"><label>制作成本</label><b>{{ page.cost }}</b></div>{% endif %}
+      {% if page.stack %}<div class="v-stat"><label>技术栈</label><b>{{ page.stack }}</b></div>{% endif %}
+    </div>
+
+    <div class="v-body">
+      {{ content }}
+    </div>
+
+    {% if page.sources and page.sources.size > 0 %}
+    <div class="v-sources">
+      <h3>Sources</h3>
+      <ul>
+        {% for s in page.sources %}
+          <li><a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</div>

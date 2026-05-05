@@ -38,6 +38,9 @@ plugins:
 collections:
   games:
     output: false
+  videos:
+    output: true
+    permalink: /videos/:name/
 
 exclude:
   - README.md
