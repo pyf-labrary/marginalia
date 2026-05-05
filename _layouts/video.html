@@ -18,16 +18,33 @@ layout: default
       </p>
     </header>
 
-    <div class="video-player">
-      <video
-        controls
-        preload="metadata"
-        {% if page.poster %}poster="{{ page.poster | relative_url }}"{% endif %}
-      >
-        <source src="{{ page.video | relative_url }}" type="video/mp4">
-        你的浏览器不支持视频标签。
-      </video>
+    <div class="video-player{% if page.bvid %} video-player--bili{% endif %}">
+      {% if page.bvid %}
+        <iframe
+          src="//player.bilibili.com/player.html?bvid={{ page.bvid }}&autoplay=0&high_quality=1&danmaku=0"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          referrerpolicy="no-referrer"
+          loading="lazy"
+        ></iframe>
+      {% else %}
+        <video
+          controls
+          preload="metadata"
+          {% if page.poster %}poster="{{ page.poster | relative_url }}"{% endif %}
+        >
+          <source src="{{ page.video | relative_url }}" type="video/mp4">
+          你的浏览器不支持视频标签。
+        </video>
+      {% endif %}
     </div>
+    {% if page.bvid %}
+      <p class="video-bili-link">
+        视频托管于 B 站 ·
+        <a href="https://www.bilibili.com/video/{{ page.bvid }}" target="_blank" rel="noopener">在 B 站打开</a>
+      </p>
+    {% endif %}
 
     <dl class="video-stats">
       {% if page.duration %}<div><dt>时长</dt><dd>{{ page.duration }}</dd></div>{% endif %}
@@ -93,11 +110,26 @@ layout: default
     box-shadow: 0 6px 18px rgba(31, 29, 27, 0.08);  /* 柔和阴影，去掉重影 */
     margin-bottom: 1.8rem;
   }
-  .video-player video {
+  .video-player video,
+  .video-player iframe {
     width: 100%; height: 100%; display: block;
     border-radius: 2px;
-    background: var(--bg-tint);                      /* video 元素自身底色也是米白 */
+    background: var(--bg-tint);                      /* 元素自身底色也是米白 */
   }
+  .video-player--bili iframe { border: 0; }
+  .video-bili-link {
+    margin: -1.2rem 0 1.8rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    text-align: right;
+  }
+  .video-bili-link a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(139, 46, 42, 0.35);
+  }
+  .video-bili-link a:hover { border-bottom-style: solid; }
 
   .video-stats {
     display: grid;
