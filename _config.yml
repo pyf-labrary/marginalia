@@ -28,6 +28,11 @@ markdown: kramdown
 highlighter: rouge
 permalink: /posts/:year-:month-:day-:title/
 
+# publish.py 给 post 打 12:00 +0800 时间戳；从国内傍晚 push 时
+# 该时间换算成 UTC 仍在未来，Jekyll 默认会跳过 future posts，
+# 主页会"看不到刚发的文章"。开 future:true 永久修掉。
+future: true
+
 # Custom layouts under _layouts/, styles under assets/css/.
 
 plugins:
