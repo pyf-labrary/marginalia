@@ -1,7 +1,14 @@
 ---
 layout: default
 ---
-<div class="wrap">
+<div class="post-wrap">
+  <aside class="post-toc" aria-label="目录" hidden>
+    <details class="toc-details" open>
+      <summary class="toc-title">本页目录</summary>
+      <nav id="toc"></nav>
+    </details>
+  </aside>
+
   <article class="post">
     <header class="post-header">
       <p class="kicker">页边批注 · A Note in the Margin</p>
@@ -29,3 +36,5 @@ layout: default
     </footer>
   </article>
 </div>
+
+<script src="{{ '/assets/js/toc.js' | relative_url }}" defer></script>

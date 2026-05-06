@@ -362,6 +362,122 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
   padding-top: 1.5rem;
   border-top: 1px solid var(--rule);
 }
+
+/* ---- Post page · Table of Contents ----
+ * Default (mobile / narrow): TOC is a collapsed <details> above the article.
+ * Wide screens (≥1100px): TOC becomes a sticky sidebar to the LEFT of the
+ * article. Article keeps its 720px reading measure; .post-wrap widens to
+ * accommodate the sidebar without re-flowing the body. */
+.post-wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.post-toc {
+  font-family: var(--sans);
+  font-size: .86rem;
+  line-height: 1.55;
+  margin: 0 0 2rem;
+  border-left: 2px solid var(--rule);
+  padding-left: 1rem;
+}
+.post-toc[hidden] { display: none; }
+.toc-details > .toc-title {
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-size: .72rem;
+  color: var(--accent);
+  list-style: none;
+  user-select: none;
+}
+.toc-details > .toc-title::-webkit-details-marker { display: none; }
+.toc-details > .toc-title::before {
+  content: "▸";
+  display: inline-block;
+  width: 1em;
+  margin-right: .15em;
+  transition: transform .15s ease;
+  color: var(--muted);
+}
+.toc-details[open] > .toc-title::before { transform: rotate(90deg); }
+.toc-details[open] > .toc-title { margin-bottom: .9rem; }
+
+#toc .toc-list,
+#toc .toc-sub {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#toc .toc-sub {
+  margin: .15rem 0 .35rem .9rem;
+  padding-left: .6rem;
+  border-left: 1px solid var(--rule-soft);
+}
+#toc li { margin: .25rem 0; }
+#toc a {
+  display: block;
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding: .12rem .35rem;
+  border-radius: 2px;
+  border-bottom: none;
+  background: none;
+  transition: color .12s, background-color .12s;
+  word-break: break-word;
+}
+#toc .toc-h3 a {
+  font-size: .82rem;
+  color: var(--muted);
+}
+#toc a:hover {
+  color: var(--accent);
+  background: var(--rule-soft);
+}
+#toc a.active {
+  color: var(--accent);
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--rule-soft) 0%, transparent 90%);
+}
+#toc a.active::before {
+  content: "";
+  display: inline-block;
+  width: .35em;
+  height: .35em;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: .55em;
+  vertical-align: middle;
+}
+
+@media (min-width: 1100px) {
+  .post-wrap {
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: 240px minmax(0, 720px);
+    gap: 3rem;
+    align-items: start;
+  }
+  .post-toc {
+    position: sticky;
+    top: 5rem;
+    margin: 0;
+    max-height: calc(100vh - 7rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    /* hide scrollbar by default; show on hover for power users */
+    scrollbar-width: thin;
+    scrollbar-color: var(--rule) transparent;
+  }
+  .post-toc::-webkit-scrollbar { width: 6px; }
+  .post-toc::-webkit-scrollbar-thumb {
+    background: var(--rule);
+    border-radius: 3px;
+  }
+  .toc-details > .toc-title { cursor: default; }
+  /* On wide screens always show; the disclosure triangle is decoration only. */
+}
 .back {
   font-family: var(--sans);
   font-size: .92rem;
