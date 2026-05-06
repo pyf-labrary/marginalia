@@ -415,7 +415,11 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
   padding-left: .6rem;
   border-left: 1px solid var(--rule-soft);
 }
-#toc li { margin: .25rem 0; }
+#toc li {
+  margin: .25rem 0;
+  position: relative;
+}
+#toc li.has-children { padding-left: 1.05rem; }
 #toc a {
   display: block;
   color: var(--ink-soft);
@@ -427,10 +431,8 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
   transition: color .12s, background-color .12s;
   word-break: break-word;
 }
-#toc .toc-h3 a {
-  font-size: .82rem;
-  color: var(--muted);
-}
+#toc .toc-h3 a { font-size: .84rem; color: var(--ink-soft); }
+#toc .toc-h4 a { font-size: .8rem; color: var(--muted); }
 #toc a:hover {
   color: var(--accent);
   background: var(--rule-soft);
@@ -450,6 +452,30 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
   margin-right: .55em;
   vertical-align: middle;
 }
+
+/* Collapse / expand toggle on parent list items. */
+#toc .toc-toggle {
+  position: absolute;
+  left: 0;
+  top: .15rem;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: .75rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform .15s ease, color .12s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#toc .toc-toggle:hover { color: var(--accent); }
+#toc li.expanded > .toc-toggle { transform: rotate(90deg); }
+#toc li.has-children > .toc-sub { display: none; }
+#toc li.has-children.expanded > .toc-sub { display: block; }
 
 @media (min-width: 1100px) {
   .post-wrap {
