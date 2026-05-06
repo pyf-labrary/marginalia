@@ -323,7 +323,7 @@ const Physics = (() => {
         const entities = Engine.getEntities();
 
         for (const entity of entities) {
-            if (!entity.active || !entity.isEnemy) continue;
+            if (!entity.active || !entity.isEnemy || entity.squished) continue;
 
             if (entity.shellMode && !entity.shellMoving) {
                 if (checkEntityCollision(player, entity)) {

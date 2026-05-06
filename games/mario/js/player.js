@@ -60,6 +60,9 @@ const Player = (() => {
     let swimTimer = 0;
     let prevX = 0;
     let prevY = 0;
+    let cheatScale = 1.0;
+    let godMode = false;
+    let infiniteLives = false;
 
     function spawn(tileX, tileY) {
         state = 'small';
@@ -69,9 +72,9 @@ const Player = (() => {
 
         entity = {
             x: tileX * TILE,
-            y: tileY * TILE - SMALL_HEIGHT,
-            width: SMALL_WIDTH,
-            height: SMALL_HEIGHT,
+            y: tileY * TILE - Math.round(SMALL_HEIGHT * cheatScale),
+            width: Math.round(SMALL_WIDTH * cheatScale),
+            height: Math.round(SMALL_HEIGHT * cheatScale),
             vx: 0,
             vy: 0,
             onGround: false,
@@ -103,12 +106,14 @@ const Player = (() => {
         const prevState = state;
         const prevFireMode = fireMode;
         const isBigState = prevState === 'big' || prevState === 'fire';
+        const h = Math.round((isBigState ? BIG_HEIGHT : SMALL_HEIGHT) * cheatScale);
+        const w = Math.round((isBigState ? BIG_WIDTH : SMALL_WIDTH) * cheatScale);
 
         entity = {
             x: tileX * TILE,
-            y: tileY * TILE - (isBigState ? BIG_HEIGHT : SMALL_HEIGHT),
-            width: isBigState ? BIG_WIDTH : SMALL_WIDTH,
-            height: isBigState ? BIG_HEIGHT : SMALL_HEIGHT,
+            y: tileY * TILE - h,
+            width: w,
+            height: h,
             vx: 0,
             vy: 0,
             onGround: false,
@@ -263,7 +268,8 @@ const Player = (() => {
         const maxSpeed = running ? RUN_SPEED : WALK_SPEED;
 
         if (crouching && entity.onGround) {
-            entity.vx *= (1 - FRICTION * 2);
+            const slideFriction = Math.abs(entity.vx) > WALK_SPEED ? 0.02 : FRICTION;
+            entity.vx *= (1 - slideFriction);
             if (Math.abs(entity.vx) < 0.1) entity.vx = 0;
             return;
         }
@@ -375,14 +381,16 @@ const Player = (() => {
     }
 
     function handleCrouch() {
+        const scaledSmallH = Math.round(SMALL_HEIGHT * cheatScale);
+        const scaledBigH = Math.round(BIG_HEIGHT * cheatScale);
         if (Input.isPressed('down') && entity.onGround && isBig()) {
             if (!crouching) {
                 crouching = true;
-                entity.y += BIG_HEIGHT - SMALL_HEIGHT;
-                entity.height = SMALL_HEIGHT;
+                entity.y += scaledBigH - scaledSmallH;
+                entity.height = scaledSmallH;
             }
         } else if (crouching) {
-            const testY = entity.y - (BIG_HEIGHT - SMALL_HEIGHT);
+            const testY = entity.y - (scaledBigH - scaledSmallH);
             const level = Engine.getCurrentLevel();
             const col = Math.floor((entity.x + entity.width / 2) / TILE);
             const row = Math.floor(testY / TILE);
@@ -391,7 +399,7 @@ const Player = (() => {
             if (!Physics.isSolid(tile)) {
                 crouching = false;
                 entity.y = testY;
-                entity.height = BIG_HEIGHT;
+                entity.height = scaledBigH;
             }
         }
     }
@@ -411,9 +419,9 @@ const Player = (() => {
 
         const endCol = Math.floor((entity.x + entity.width / 2) / TILE);
         const endRow = Math.floor(entity.y / TILE);
-        for (let r = endRow; r <= bottomRow; r++) {
+        for (let r = endRow; r < level.height; r++) {
             const t = Physics.getTile(level, endCol, r);
-            if (t === 61) {
+            if (t === 60 || t === 61) {
                 startFlagSlide(endCol, r);
                 break;
             }
@@ -541,28 +549,38 @@ const Player = (() => {
             if (Math.floor(invincibleTimer / 50) % 2 === 0) return;
         }
 
-        const drawX = entity.x - camera.x;
-        const drawY = entity.y - camera.y;
-
         const big = isBig();
         let spriteState = 'normal';
         if (starPower) spriteState = 'star';
         else if (fireMode) spriteState = 'fire';
 
+        const spriteBig = big && !crouching && !isDead;
+        const s = cheatScale;
+        const baseW = spriteBig ? BIG_WIDTH : SMALL_WIDTH;
+        const baseH = spriteBig ? BIG_HEIGHT : SMALL_HEIGHT;
+        const drawX = entity.x - camera.x + (entity.width - baseW * s) / 2;
+        const drawY = entity.y - camera.y + (entity.height - baseH * s);
+
+        ctx.save();
+        ctx.translate(drawX, drawY);
+        ctx.scale(s, s);
+
         if (isDead) {
-            Sprites.drawMario(ctx, drawX, drawY, 'normal', direction, 0, false);
+            Sprites.drawMario(ctx, 0, 0, 'normal', direction, 0, false);
+            ctx.restore();
             return;
         }
 
         if (!entity.onGround && !flagSliding) {
-            Sprites.drawMarioJumping(ctx, drawX, drawY, spriteState, direction, big);
+            Sprites.drawMarioJumping(ctx, 0, 0, spriteState, direction, big);
         } else if (crouching) {
-            Sprites.drawMario(ctx, drawX, drawY, spriteState, direction, 0, false);
+            Sprites.drawMario(ctx, 0, 0, spriteState, direction, 0, false);
         } else if (skidding) {
-            Sprites.drawMario(ctx, drawX, drawY, spriteState, -direction, 0, big);
+            Sprites.drawMario(ctx, 0, 0, spriteState, -direction, 0, big);
         } else {
-            Sprites.drawMario(ctx, drawX, drawY, spriteState, direction, animFrame, big);
+            Sprites.drawMario(ctx, 0, 0, spriteState, direction, animFrame, big);
         }
+        ctx.restore();
     }
 
     function die() {
@@ -576,8 +594,8 @@ const Player = (() => {
         fireMode = false;
         starPower = false;
         crouching = false;
-        entity.width = SMALL_WIDTH;
-        entity.height = SMALL_HEIGHT;
+        entity.width = Math.round(SMALL_WIDTH * cheatScale);
+        entity.height = Math.round(SMALL_HEIGHT * cheatScale);
 
         Audio.stopMusic();
         Audio.play('die');
@@ -587,7 +605,7 @@ const Player = (() => {
     }
 
     function takeDamage() {
-        if (isInvincible || isDead || starPower) return;
+        if (godMode || isInvincible || isDead || starPower) return;
 
         if (state === 'fire') {
             setFireMode(false);
@@ -608,9 +626,9 @@ const Player = (() => {
         state = 'small';
         shrinkTimer = 300;
         const feetY = entity.y + entity.height;
-        entity.width = SMALL_WIDTH;
-        entity.height = SMALL_HEIGHT;
-        entity.y = feetY - SMALL_HEIGHT;
+        entity.width = Math.round(SMALL_WIDTH * cheatScale);
+        entity.height = Math.round(SMALL_HEIGHT * cheatScale);
+        entity.y = feetY - entity.height;
     }
 
     function growToBig() {
@@ -618,9 +636,9 @@ const Player = (() => {
             state = 'big';
             growTimer = 300;
             const feetY = entity.y + entity.height;
-            entity.width = BIG_WIDTH;
-            entity.height = BIG_HEIGHT;
-            entity.y = feetY - BIG_HEIGHT;
+            entity.width = Math.round(BIG_WIDTH * cheatScale);
+            entity.height = Math.round(BIG_HEIGHT * cheatScale);
+            entity.y = feetY - entity.height;
             Audio.play('powerUp');
         }
     }
@@ -652,6 +670,26 @@ const Player = (() => {
         invincibleTimer = duration;
     }
 
+    function setCheatScale(s) {
+        s = Math.max(0.3, Math.min(5.0, s));
+        if (!entity) { cheatScale = s; return; }
+        const big = isBig();
+        const baseW = big ? BIG_WIDTH : SMALL_WIDTH;
+        const baseH = big ? BIG_HEIGHT : SMALL_HEIGHT;
+        const feetY = entity.y + entity.height;
+        const centerX = entity.x + entity.width / 2;
+        cheatScale = s;
+        entity.width = Math.round(baseW * s);
+        entity.height = Math.round(baseH * s);
+        entity.x = centerX - entity.width / 2;
+        entity.y = feetY - entity.height;
+    }
+    function getCheatScale() { return cheatScale; }
+    function setGodMode(v) { godMode = !!v; }
+    function isGodMode() { return godMode; }
+    function setInfiniteLives(v) { infiniteLives = !!v; }
+    function hasInfiniteLives() { return infiniteLives; }
+
     function setState(s) { state = s; }
     function getState() { return state; }
     function isBig() { return state === 'big' || state === 'fire'; }
@@ -675,9 +713,9 @@ const Player = (() => {
         if (!save || !entity) return;
         if (save.state === 'big' || save.state === 'fire') {
             state = save.state;
-            entity.width = BIG_WIDTH;
-            entity.height = BIG_HEIGHT;
-            entity.y -= (BIG_HEIGHT - SMALL_HEIGHT);
+            entity.width = Math.round(BIG_WIDTH * cheatScale);
+            entity.height = Math.round(BIG_HEIGHT * cheatScale);
+            entity.y -= Math.round((BIG_HEIGHT - SMALL_HEIGHT) * cheatScale);
         }
         if (save.fireMode) fireMode = true;
     }
@@ -688,6 +726,8 @@ const Player = (() => {
         getEntity, getState, setState, isBig, hasStarPower, hasFireMode,
         getDirection, isDying, isInvincible: isInvincibleNow,
         getAnimFrame, isOnGround, getPrevPos, isCrouching, isSkidding,
-        getSaveState, restoreSaveState
+        getSaveState, restoreSaveState,
+        setCheatScale, getCheatScale, setGodMode, isGodMode,
+        setInfiniteLives, hasInfiniteLives
     };
 })();

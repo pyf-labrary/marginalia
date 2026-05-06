@@ -102,7 +102,7 @@ const UI = (() => {
     }
 
     function getVisibleScreen() {
-        const screens = ['main-menu', 'pause-menu', 'settings-menu', 'game-over-screen', 'level-complete-screen'];
+        const screens = ['cheat-menu', 'victory-screen', 'main-menu', 'pause-menu', 'settings-menu', 'game-over-screen', 'level-complete-screen'];
         for (const id of screens) {
             const el = document.getElementById(id);
             if (el && !el.classList.contains('hidden')) return el;
@@ -356,40 +356,60 @@ const UI = (() => {
     function showVictoryScreen() {
         hideScreen('level-complete-screen');
 
-        const overlay = document.getElementById('level-complete-screen');
-        const h2 = overlay.querySelector('h2');
-        if (h2) h2.textContent = '恭喜通关！';
+        setText('victory-score', String(Engine.getScore()).padStart(6, '0'));
+        setText('victory-coins', `×${String(Engine.getCoins()).padStart(2, '0')}`);
+        setText('victory-lives', `×${String(Engine.getLives()).padStart(2, '0')}`);
 
-        showScreen('level-complete-screen');
+        showScreen('victory-screen');
 
-        Particles.createFireworkBurst(
-            Engine.CANVAS_WIDTH / 2,
-            Engine.CANVAS_HEIGHT / 3,
-            '#ff6b6b'
-        );
+        const colors = ['#ff6b6b', '#ffd700', '#00ff88', '#ff69b4', '#00bfff', '#ff8c00'];
+        let fireworkInterval = null;
+        let count = 0;
 
-        setTimeout(() => {
+        function launchFirework() {
+            if (count > 30) { clearInterval(fireworkInterval); return; }
             Particles.createFireworkBurst(
-                Engine.CANVAS_WIDTH / 3,
-                Engine.CANVAS_HEIGHT / 4,
-                '#ffd700'
+                80 + Math.random() * (Engine.CANVAS_WIDTH - 160),
+                40 + Math.random() * (Engine.CANVAS_HEIGHT / 2),
+                colors[Math.floor(Math.random() * colors.length)]
             );
-        }, 500);
+            count++;
+        }
+        launchFirework();
+        fireworkInterval = setInterval(launchFirework, 800);
 
-        setTimeout(() => {
-            Particles.createFireworkBurst(
-                Engine.CANVAS_WIDTH * 2 / 3,
-                Engine.CANVAS_HEIGHT / 4,
-                '#00ff88'
-            );
-        }, 1000);
+        Audio.stopMusic();
+        Audio.play('flagpole');
+        setTimeout(() => Audio.playMusic('victory'), 600);
 
-        setTimeout(() => {
-            hideScreen('level-complete-screen');
+        const cleanup = () => {
+            clearInterval(fireworkInterval);
+            Audio.stopMusic();
+        };
+
+        const restartBtn = document.querySelector('[data-action="victory-restart"]');
+        const quitBtn = document.querySelector('#victory-screen [data-action="quit"]');
+
+        const onRestart = () => {
+            cleanup();
+            hideScreen('victory-screen');
+            Engine.resetGame();
+            startGame('1-1');
+            restartBtn.removeEventListener('click', onRestart);
+            quitBtn.removeEventListener('click', onQuit);
+        };
+        const onQuit = () => {
+            cleanup();
+            hideScreen('victory-screen');
             showScreen('main-menu');
             Engine.setState('menu');
-            Audio.stopMusic();
-        }, 6000);
+            menuIndex = 0;
+            restartBtn.removeEventListener('click', onRestart);
+            quitBtn.removeEventListener('click', onQuit);
+        };
+
+        restartBtn.addEventListener('click', onRestart);
+        quitBtn.addEventListener('click', onQuit);
     }
 
     function onFrame({ fps }) {
@@ -466,7 +486,7 @@ const UI = (() => {
         { type: 'goomba', name: '栗子怪', desc: '最基础的敌人，踩一脚即可消灭' },
         { type: 'koopa', name: '慢慢龟', desc: '踩后缩入壳中，可以踢出消灭其他敌人' },
         { type: 'koopaRed', name: '红龟', desc: '比绿龟更聪明，不会走下悬崖' },
-        { type: 'piranha', name: '食人花', desc: '从管道中伸出的危险植物' },
+        { type: 'piranha', name: '霸王花', desc: '从水管中周期性伸出的危险植物，玩家靠近时会缩回' },
         { type: 'buzzyBeetle', name: '钢盔龟', desc: '火球无效！只能踩或用星星消灭' },
         { type: 'hammerBro', name: '锤子兄弟', desc: '会跳跃并投掷锤子的强敌' },
         { type: 'bulletBill', name: '炮弹', desc: '从炮台发射的高速飞行敌人' },
@@ -509,22 +529,24 @@ const UI = (() => {
             spriteContainer.className = 'bestiary-sprite';
 
             const miniCanvas = document.createElement('canvas');
-            miniCanvas.width = 32;
-            miniCanvas.height = 32;
+            miniCanvas.width = 48;
+            miniCanvas.height = 64;
+            miniCanvas.style.width = '48px';
+            miniCanvas.style.height = '64px';
             const miniCtx = miniCanvas.getContext('2d');
             miniCtx.imageSmoothingEnabled = false;
 
             switch (enemy.type) {
-                case 'goomba': Sprites.drawGoomba(miniCtx, 2, 2, 0, false); break;
-                case 'koopa': Sprites.drawKoopa(miniCtx, 2, -8, 0, -1, 'green'); break;
-                case 'koopaRed': Sprites.drawKoopa(miniCtx, 2, -8, 0, -1, 'red'); break;
-                case 'piranha': Sprites.drawPiranha(miniCtx, 2, 0, 0); break;
-                case 'hammerBro': Sprites.drawHammerBro(miniCtx, 2, -16, 0, -1); break;
-                case 'bulletBill': Sprites.drawBulletBill(miniCtx, 2, 4, -1); break;
-                case 'blooper': Sprites.drawBlooper(miniCtx, 2, 0, 0); break;
+                case 'goomba': Sprites.drawGoomba(miniCtx, 10, 18, 0, false); break;
+                case 'koopa': Sprites.drawKoopa(miniCtx, 10, 10, 0, -1, 'green'); break;
+                case 'koopaRed': Sprites.drawKoopa(miniCtx, 10, 10, 0, -1, 'red'); break;
+                case 'piranha': Sprites.drawPiranha(miniCtx, 10, 16, 0); break;
+                case 'hammerBro': Sprites.drawHammerBro(miniCtx, 10, 12, 0, -1); break;
+                case 'bulletBill': Sprites.drawBulletBill(miniCtx, 10, 20, -1); break;
+                case 'blooper': Sprites.drawBlooper(miniCtx, 10, 16, 0); break;
                 default:
                     miniCtx.fillStyle = unlocked ? '#e52521' : '#666';
-                    miniCtx.fillRect(4, 4, 24, 24);
+                    miniCtx.fillRect(10, 18, 28, 28);
             }
 
             spriteContainer.appendChild(miniCanvas);

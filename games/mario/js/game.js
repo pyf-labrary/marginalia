@@ -33,6 +33,8 @@ const Game = (() => {
         UI.setLoadingProgress(85, '准备就绪...');
         setupDebugTools();
         setupEventHandlers();
+        setupCheatListener();
+        setupCheatMenuHandlers();
 
         UI.setLoadingProgress(100, '完成！');
 
@@ -153,6 +155,260 @@ const Game = (() => {
                 Engine.saveProgress();
             }
         });
+    }
+
+    let cheatsUnlocked = false;
+    let cheatMenuOpen = false;
+    const cheatKeyBuffer = [];
+    const CHEAT_BUFFER_MAX = 30;
+
+    const CHEAT_CODES = [
+        { seq: 'mario',      action: 'unlock',  toast: '🔓 "MARIO" — 秘籍解锁！' },
+        { seq: 'iddqd',      action: 'god',     toast: '💀 "IDDQD" — 上帝模式！' },
+        { seq: 'power',      action: 'star',    toast: '⭐ "POWER" — 无敌星！' },
+        { seq: 'big',        action: 'big',     toast: '🍄 "BIG" — 变大！' },
+        { seq: 'tiny',       action: 'tiny',    toast: '🐜 "TINY" — 迷你模式！' },
+        { seq: 'giant',      action: 'giant',   toast: '🏔 "GIANT" — 巨人模式！' },
+        { seq: 'fire',       action: 'fire',    toast: '🔥 "FIRE" — 火焰模式！' },
+        { seq: 'rich',       action: 'coins',   toast: '💰 "RICH" — 大富翁！' },
+        { seq: 'life',       action: 'lives',   toast: '💚 "LIFE" — 生命+10！' },
+    ];
+
+    const KONAMI = ['up','up','down','down','left','right','left','right'];
+    let konamiIdx = 0;
+
+    function setupCheatListener() {
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Backquote') {
+                e.preventDefault();
+                if (cheatsUnlocked) toggleCheatMenu();
+                return;
+            }
+
+            const konamiMap = {
+                'ArrowUp': 'up', 'ArrowDown': 'down',
+                'ArrowLeft': 'left', 'ArrowRight': 'right'
+            };
+            if (konamiMap[e.key] || konamiMap[e.code]) {
+                const dir = konamiMap[e.key] || konamiMap[e.code];
+                if (dir === KONAMI[konamiIdx]) {
+                    konamiIdx++;
+                    if (konamiIdx >= KONAMI.length) {
+                        konamiIdx = 0;
+                        unlockCheats();
+                        UI.showToast('↑↑↓↓←→←→ — Konami Code 秘籍全开！', 'success');
+                        Player.setGodMode(true);
+                        Player.setInfiniteLives(true);
+                        Player.growToBig();
+                        Player.setFireMode(true);
+                        Player.activateStarPower();
+                    }
+                } else {
+                    konamiIdx = dir === KONAMI[0] ? 1 : 0;
+                }
+            }
+
+            if (e.key.length === 1 && /[a-zA-Z]/.test(e.key)) {
+                cheatKeyBuffer.push(e.key.toLowerCase());
+                if (cheatKeyBuffer.length > CHEAT_BUFFER_MAX) {
+                    cheatKeyBuffer.splice(0, cheatKeyBuffer.length - CHEAT_BUFFER_MAX);
+                }
+                const typed = cheatKeyBuffer.join('');
+                for (const code of CHEAT_CODES) {
+                    if (typed.endsWith(code.seq)) {
+                        executeCheatCode(code);
+                        cheatKeyBuffer.length = 0;
+                        break;
+                    }
+                }
+            }
+        });
+    }
+
+    function executeCheatCode(code) {
+        UI.showToast(code.toast, 'success');
+        switch (code.action) {
+            case 'unlock': unlockCheats(); break;
+            case 'god':
+                unlockCheats();
+                Player.setGodMode(true);
+                syncCheatUI();
+                break;
+            case 'star': Player.activateStarPower(); break;
+            case 'big': Player.growToBig(); break;
+            case 'tiny':
+                Player.setCheatScale(0.4);
+                syncCheatUI();
+                break;
+            case 'giant':
+                Player.setCheatScale(3.0);
+                syncCheatUI();
+                break;
+            case 'fire':
+                Player.growToBig();
+                Player.setFireMode(true);
+                break;
+            case 'coins':
+                Engine.setCoins(99);
+                break;
+            case 'lives':
+                Engine.setLives(Engine.getLives() + 10);
+                break;
+        }
+    }
+
+    function unlockCheats() {
+        if (cheatsUnlocked) return;
+        cheatsUnlocked = true;
+        const toast = document.getElementById('cheat-unlock-toast');
+        if (toast) {
+            toast.classList.remove('hidden');
+            setTimeout(() => toast.classList.add('hidden'), 4000);
+        }
+    }
+
+    function toggleCheatMenu() {
+        cheatMenuOpen = !cheatMenuOpen;
+        const el = document.getElementById('cheat-menu');
+        if (!el) return;
+        if (cheatMenuOpen) {
+            syncCheatUI();
+            el.classList.remove('hidden');
+            el.style.display = 'flex';
+            if (Engine.getState() === 'playing' && !Engine.isPaused()) {
+                Engine.togglePause();
+            }
+        } else {
+            el.classList.add('hidden');
+            el.style.display = 'none';
+            if (Engine.isPaused()) {
+                Engine.togglePause();
+            }
+        }
+    }
+
+    function syncCheatUI() {
+        const scaleSlider = document.getElementById('cheat-scale');
+        const scaleVal = document.getElementById('cheat-scale-val');
+        const speedSlider = document.getElementById('cheat-speed');
+        const speedVal = document.getElementById('cheat-speed-val');
+        const godToggle = document.getElementById('cheat-god');
+        const livesToggle = document.getElementById('cheat-inf-lives');
+
+        if (scaleSlider) scaleSlider.value = Player.getCheatScale();
+        if (scaleVal) scaleVal.textContent = Player.getCheatScale().toFixed(1) + 'x';
+        if (speedSlider) speedSlider.value = Engine.getGameSpeed();
+        if (speedVal) speedVal.textContent = Engine.getGameSpeed().toFixed(1) + 'x';
+        if (godToggle) {
+            const thumb = godToggle.querySelector('.toggle-thumb');
+            if (thumb) thumb.classList.toggle('active', Player.isGodMode());
+        }
+        if (livesToggle) {
+            const thumb = livesToggle.querySelector('.toggle-thumb');
+            if (thumb) thumb.classList.toggle('active', Player.hasInfiniteLives());
+        }
+    }
+
+    function setupCheatMenuHandlers() {
+        const scaleSlider = document.getElementById('cheat-scale');
+        if (scaleSlider) {
+            scaleSlider.addEventListener('input', () => {
+                const v = parseFloat(scaleSlider.value);
+                Player.setCheatScale(v);
+                const valEl = document.getElementById('cheat-scale-val');
+                if (valEl) valEl.textContent = v.toFixed(1) + 'x';
+            });
+        }
+
+        const speedSlider = document.getElementById('cheat-speed');
+        if (speedSlider) {
+            speedSlider.addEventListener('input', () => {
+                const v = parseFloat(speedSlider.value);
+                Engine.setGameSpeed(v);
+                const valEl = document.getElementById('cheat-speed-val');
+                if (valEl) valEl.textContent = v.toFixed(1) + 'x';
+            });
+        }
+
+        const godToggle = document.getElementById('cheat-god');
+        if (godToggle) {
+            godToggle.addEventListener('click', () => {
+                Player.setGodMode(!Player.isGodMode());
+                const thumb = godToggle.querySelector('.toggle-thumb');
+                if (thumb) thumb.classList.toggle('active', Player.isGodMode());
+                UI.showToast(Player.isGodMode() ? '上帝模式已开启' : '上帝模式已关闭', 'success');
+            });
+        }
+
+        const livesToggle = document.getElementById('cheat-inf-lives');
+        if (livesToggle) {
+            livesToggle.addEventListener('click', () => {
+                Player.setInfiniteLives(!Player.hasInfiniteLives());
+                const thumb = livesToggle.querySelector('.toggle-thumb');
+                if (thumb) thumb.classList.toggle('active', Player.hasInfiniteLives());
+                UI.showToast(Player.hasInfiniteLives() ? '无限生命已开启' : '无限生命已关闭', 'success');
+            });
+        }
+
+        document.querySelectorAll('.cheat-action').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const cheat = btn.dataset.cheat;
+                applyCheatAction(cheat);
+            });
+        });
+
+        document.querySelectorAll('[data-action="close-cheat"]').forEach(btn => {
+            btn.addEventListener('click', () => toggleCheatMenu());
+        });
+    }
+
+    function applyCheatAction(cheat) {
+        switch (cheat) {
+            case 'big':
+                Player.growToBig();
+                UI.showToast('🍄 变大！', 'success');
+                break;
+            case 'fire':
+                Player.growToBig();
+                Player.setFireMode(true);
+                UI.showToast('🔥 火焰模式！', 'success');
+                break;
+            case 'star':
+                Player.activateStarPower();
+                UI.showToast('⭐ 无敌星！', 'success');
+                break;
+            case 'lives10':
+                Engine.setLives(Engine.getLives() + 10);
+                UI.showToast('💚 生命 +10！', 'success');
+                break;
+            case 'coins99':
+                Engine.setCoins(99);
+                UI.showToast('💰 金币 ×99！', 'success');
+                break;
+            case 'score':
+                Engine.addScore(50000);
+                UI.showToast('✨ +50000 分！', 'success');
+                break;
+            case 'skip':
+                Engine.levelComplete();
+                UI.showToast('⏩ 跳过关卡！', 'success');
+                break;
+            case 'tiny':
+                Player.setCheatScale(0.4);
+                syncCheatUI();
+                UI.showToast('🐜 迷你模式！', 'success');
+                break;
+            case 'giant':
+                Player.setCheatScale(3.0);
+                syncCheatUI();
+                UI.showToast('🏔 巨人模式！', 'success');
+                break;
+            case 'reset-scale':
+                Player.setCheatScale(1.0);
+                syncCheatUI();
+                UI.showToast('↩ 恢复原始大小', 'success');
+                break;
+        }
     }
 
     function setupDebugTools() {

@@ -192,6 +192,96 @@
             </div>
         </div>
 
+        <div id="cheat-menu" class="menu-screen hidden">
+            <div class="menu-content cheat-panel">
+                <h2>🎮 秘籍菜单</h2>
+                <div class="cheat-grid">
+                    <div class="cheat-row">
+                        <label>马里奥大小</label>
+                        <div class="cheat-slider-wrap">
+                            <input type="range" id="cheat-scale" class="cheat-slider" min="0.3" max="5" step="0.1" value="1">
+                            <span id="cheat-scale-val" class="cheat-val">1.0x</span>
+                        </div>
+                    </div>
+                    <div class="cheat-row">
+                        <label>游戏速度</label>
+                        <div class="cheat-slider-wrap">
+                            <input type="range" id="cheat-speed" class="cheat-slider" min="0.2" max="3" step="0.1" value="1">
+                            <span id="cheat-speed-val" class="cheat-val">1.0x</span>
+                        </div>
+                    </div>
+                    <div class="cheat-row">
+                        <label>上帝模式（不受伤）</label>
+                        <div class="toggle-switch" id="cheat-god">
+                            <div class="toggle-thumb"></div>
+                        </div>
+                    </div>
+                    <div class="cheat-row">
+                        <label>无限生命</label>
+                        <div class="toggle-switch" id="cheat-inf-lives">
+                            <div class="toggle-thumb"></div>
+                        </div>
+                    </div>
+                    <div class="cheat-btns">
+                        <button class="menu-btn cheat-action" data-cheat="big">变大</button>
+                        <button class="menu-btn cheat-action" data-cheat="fire">火焰模式</button>
+                        <button class="menu-btn cheat-action" data-cheat="star">无敌星</button>
+                        <button class="menu-btn cheat-action" data-cheat="lives10">+10 生命</button>
+                        <button class="menu-btn cheat-action" data-cheat="coins99">金币 ×99</button>
+                        <button class="menu-btn cheat-action" data-cheat="score">+50000 分</button>
+                        <button class="menu-btn cheat-action" data-cheat="skip">跳过关卡</button>
+                        <button class="menu-btn cheat-action" data-cheat="tiny">迷你模式</button>
+                        <button class="menu-btn cheat-action" data-cheat="giant">巨人模式</button>
+                        <button class="menu-btn cheat-action" data-cheat="reset-scale">恢复原始大小</button>
+                    </div>
+                </div>
+                <div class="cheat-hint">按 ` 或 ESC 关闭</div>
+                <div class="menu-options">
+                    <button class="menu-btn" data-action="close-cheat">关闭</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="victory-screen" class="menu-screen hidden">
+            <div class="menu-content victory-content">
+                <div class="victory-crown">👑</div>
+                <h2 class="victory-title">恭喜通关！</h2>
+                <div class="victory-stats">
+                    <div class="stat-row"><span>最终得分</span><span id="victory-score">000000</span></div>
+                    <div class="stat-row"><span>收集金币</span><span id="victory-coins">×00</span></div>
+                    <div class="stat-row"><span>剩余生命</span><span id="victory-lives">×00</span></div>
+                </div>
+                <div class="credits-scroll">
+                    <div class="credits-inner">
+                        <p class="credits-heading">— STAFF —</p>
+                        <p class="credits-role">游戏设计 & 程序</p>
+                        <p class="credits-name">SUPER MARIO HTML5</p>
+                        <p class="credits-role">关卡设计</p>
+                        <p class="credits-name">World Builder</p>
+                        <p class="credits-role">美术 & 精灵</p>
+                        <p class="credits-name">Canvas Pixel Artist</p>
+                        <p class="credits-role">音效引擎</p>
+                        <p class="credits-name">Web Audio Maestro</p>
+                        <p class="credits-role">物理引擎</p>
+                        <p class="credits-name">Collision Wizard</p>
+                        <p class="credits-role">特别感谢</p>
+                        <p class="credits-name">Nintendo 原版灵感</p>
+                        <p class="credits-name">所有玩家们</p>
+                        <p class="credits-divider">✦ ✦ ✦</p>
+                        <p class="credits-secret">在主菜单输入 "mario" 解锁秘籍哦~</p>
+                    </div>
+                </div>
+                <div class="menu-options" style="margin-top:16px">
+                    <button class="menu-btn active" data-action="victory-restart">从头再来</button>
+                    <button class="menu-btn" data-action="quit">返回菜单</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="cheat-unlock-toast" class="cheat-unlock-toast hidden">
+            🔓 秘籍已解锁！按 ` 键打开作弊菜单
+        </div>
+
         <div id="transition-overlay"></div>
 
         <div id="loading-screen" class="menu-screen">

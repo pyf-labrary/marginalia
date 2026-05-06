@@ -158,6 +158,8 @@ const Levels = (() => {
         level.enemies = [
             { type: 'goomba', x: 22, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 40, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 38.5, y: LEVEL_HEIGHT - 4 },
+            { type: 'piranha', x: 46.5, y: LEVEL_HEIGHT - 5 },
             { type: 'goomba', x: 51, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 52, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 80, y: LEVEL_HEIGHT - 2 },
@@ -250,6 +252,7 @@ const Levels = (() => {
             { type: 'goomba', x: 45, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 46, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 50, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 55.5, y: LEVEL_HEIGHT - 4 },
             { type: 'buzzyBeetle', x: 65, y: LEVEL_HEIGHT - 2 },
             { type: 'buzzyBeetle', x: 67, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 100, y: 4 },
@@ -549,9 +552,11 @@ const Levels = (() => {
         level.enemies = [
             { type: 'goomba', x: 12, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 24, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 32.5, y: LEVEL_HEIGHT - 4 },
             { type: 'koopa', x: 30, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 35, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 36, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 38.5, y: LEVEL_HEIGHT - 5 },
             { type: 'koopa', x: 48, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 55, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 62, y: 6 },
@@ -565,6 +570,7 @@ const Levels = (() => {
             { type: 'goomba', x: 131, y: 8 },
             { type: 'goomba', x: 133, y: 8 },
             { type: 'koopa', x: 148, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 156.5, y: LEVEL_HEIGHT - 6 },
             { type: 'goomba', x: 165, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 167, y: LEVEL_HEIGHT - 2 }
         ];
@@ -677,8 +683,10 @@ const Levels = (() => {
             { type: 'goomba', x: 46, y: 6 },
             { type: 'goomba', x: 48, y: 6 },
             { type: 'koopa', x: 53, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 65.5, y: LEVEL_HEIGHT - 4 },
             { type: 'goomba', x: 68, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 70, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 72.5, y: LEVEL_HEIGHT - 5 },
             { type: 'buzzyBeetle', x: 87, y: 8 },
             { type: 'buzzyBeetle', x: 89, y: 8 },
             { type: 'goomba', x: 95, y: LEVEL_HEIGHT - 2 },
@@ -1003,7 +1011,9 @@ const Levels = (() => {
         level.enemies = [
             { type: 'goomba', x: 10, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 18, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 20.5, y: LEVEL_HEIGHT - 4 },
             { type: 'koopa', x: 28, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 30.5, y: LEVEL_HEIGHT - 5 },
             { type: 'goomba', x: 36, y: 6 },
             { type: 'goomba', x: 38, y: 6 },
             { type: 'koopaRed', x: 63, y: 9 },
@@ -1015,8 +1025,10 @@ const Levels = (() => {
             { type: 'goomba', x: 106, y: LEVEL_HEIGHT - 2 },
             { type: 'buzzyBeetle', x: 109, y: 8 },
             { type: 'koopa', x: 124, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 126.5, y: LEVEL_HEIGHT - 6 },
             { type: 'goomba', x: 130, y: LEVEL_HEIGHT - 2 },
             { type: 'goomba', x: 135, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 138.5, y: LEVEL_HEIGHT - 7 },
             { type: 'goomba', x: 155, y: 8 },
             { type: 'goomba', x: 157, y: 8 },
             { type: 'koopa', x: 160, y: 8 }
@@ -1081,7 +1093,7 @@ const Levels = (() => {
         setTileRange(level, 70, 3, 70, LEVEL_HEIGHT - 2, 7);
         setTileRange(level, 70, 9, 70, 10, 0);
         setTileRange(level, 80, 3, 80, LEVEL_HEIGHT - 2, 7);
-        setTileRange(level, 80, 5, 80, 6, 0);
+        setTileRange(level, 80, 7, 80, 9, 0);
 
         // Floating blocks
         setTileRange(level, 85, 9, 92, 9, 2);
@@ -1136,7 +1148,9 @@ const Levels = (() => {
             { type: 'koopa', x: 132, y: 8 },
             { type: 'goomba', x: 135, y: 8 },
             { type: 'goomba', x: 138, y: 8 },
+            { type: 'piranha', x: 148.5, y: LEVEL_HEIGHT - 4 },
             { type: 'koopa', x: 152, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 155.5, y: LEVEL_HEIGHT - 5 },
             { type: 'goomba', x: 163, y: LEVEL_HEIGHT - 2 }
         ];
 
@@ -1412,6 +1426,429 @@ const Levels = (() => {
         return level;
     }
 
+    // ========== World 4 ==========
+
+    function generateLevel_4_1() {
+        const level = createEmptyLevel(LEVEL_WIDTH, LEVEL_HEIGHT);
+        level.theme = 'overworld';
+        level.worldId = '4-1';
+        level.spawnX = 3;
+        level.spawnY = LEVEL_HEIGHT - 3;
+        level.timeLimit = 350;
+
+        setTileRange(level, 0, LEVEL_HEIGHT - 2, LEVEL_WIDTH - 1, LEVEL_HEIGHT - 1, 1);
+
+        setTileRange(level, 16, LEVEL_HEIGHT - 2, 18, LEVEL_HEIGHT - 1, 0);
+        setTileRange(level, 24, LEVEL_HEIGHT - 2, 27, LEVEL_HEIGHT - 1, 0);
+
+        setTileRange(level, 20, 9, 22, 9, 3);
+        level.blockContents = { '20,9': 'mushroom', '21,9': 'coin', '22,9': 'coin' };
+
+        buildPipe(level, 32, LEVEL_HEIGHT - 2, 3);
+        buildPipe(level, 40, LEVEL_HEIGHT - 2, 5);
+        setTileRange(level, 36, LEVEL_HEIGHT - 2, 38, LEVEL_HEIGHT - 1, 0);
+
+        setTileRange(level, 48, 7, 55, 7, 2);
+        setTileRange(level, 51, 7, 51, 7, 3);
+        level.blockContents['51,7'] = 'fireFlower';
+        setTileRange(level, 48, 11, 55, 11, 20);
+
+        setTileRange(level, 60, LEVEL_HEIGHT - 2, 64, LEVEL_HEIGHT - 1, 0);
+        setTileRange(level, 62, 9, 62, 9, 2);
+        setTileRange(level, 64, 7, 64, 7, 2);
+        setTileRange(level, 66, 5, 66, 5, 2);
+
+        buildStaircase(level, 72, LEVEL_HEIGHT - 2, 5, 1);
+        setTileRange(level, 77, LEVEL_HEIGHT - 2, 80, LEVEL_HEIGHT - 1, 0);
+        buildStaircase(level, 85, LEVEL_HEIGHT - 2, 5, -1);
+
+        setTileRange(level, 90, 8, 95, 8, 2);
+        setTileRange(level, 92, 8, 92, 8, 3);
+        level.blockContents['92,8'] = 'star';
+
+        setTileRange(level, 100, LEVEL_HEIGHT - 2, 103, LEVEL_HEIGHT - 1, 0);
+        setTileRange(level, 101, 9, 102, 9, 20);
+
+        buildPipe(level, 110, LEVEL_HEIGHT - 2, 4);
+        buildPipe(level, 118, LEVEL_HEIGHT - 2, 3);
+        setTileRange(level, 115, LEVEL_HEIGHT - 2, 116, LEVEL_HEIGHT - 1, 0);
+
+        setTileRange(level, 125, 6, 132, 6, 2);
+        setTileRange(level, 128, 6, 128, 6, 3);
+        level.blockContents['128,6'] = 'mushroom';
+        setTileRange(level, 125, 10, 132, 10, 2);
+
+        setTileRange(level, 140, LEVEL_HEIGHT - 2, 144, LEVEL_HEIGHT - 1, 0);
+        setTileRange(level, 141, 10, 143, 10, 20);
+
+        buildStaircase(level, 155, LEVEL_HEIGHT - 2, 6, 1);
+        buildStaircase(level, 165, LEVEL_HEIGHT - 2, 4, -1);
+        buildFlagPole(level, 195, LEVEL_HEIGHT - 2);
+
+        level.enemies = [
+            { type: 'koopa', x: 14, y: LEVEL_HEIGHT - 2 },
+            { type: 'goomba', x: 22, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 32.5, y: LEVEL_HEIGHT - 4 },
+            { type: 'goomba', x: 34, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 40.5, y: LEVEL_HEIGHT - 6 },
+            { type: 'hammerBro', x: 50, y: 6 },
+            { type: 'goomba', x: 53, y: 10 },
+            { type: 'koopa', x: 58, y: LEVEL_HEIGHT - 2 },
+            { type: 'buzzyBeetle', x: 75, y: LEVEL_HEIGHT - 2 },
+            { type: 'buzzyBeetle', x: 77, y: LEVEL_HEIGHT - 2 },
+            { type: 'hammerBro', x: 92, y: 7 },
+            { type: 'goomba', x: 105, y: LEVEL_HEIGHT - 2 },
+            { type: 'koopa', x: 108, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 110.5, y: LEVEL_HEIGHT - 5 },
+            { type: 'goomba', x: 113, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 118.5, y: LEVEL_HEIGHT - 4 },
+            { type: 'hammerBro', x: 127, y: 5 },
+            { type: 'goomba', x: 130, y: 9 },
+            { type: 'koopa', x: 148, y: LEVEL_HEIGHT - 2 },
+            { type: 'buzzyBeetle', x: 150, y: LEVEL_HEIGHT - 2 },
+            { type: 'goomba', x: 160, y: LEVEL_HEIGHT - 2 },
+            { type: 'goomba', x: 162, y: LEVEL_HEIGHT - 2 }
+        ];
+
+        level.items = [
+            { type: 'coin', x: 49, y: 5 },
+            { type: 'coin', x: 50, y: 5 },
+            { type: 'coin', x: 51, y: 5 },
+            { type: 'coin', x: 63, y: 5 },
+            { type: 'coin', x: 65, y: 3 },
+            { type: 'coin', x: 126, y: 4 },
+            { type: 'coin', x: 127, y: 4 },
+            { type: 'coin', x: 128, y: 4 },
+            { type: 'coin', x: 156, y: 5 },
+            { type: 'coin', x: 157, y: 4 },
+            { type: 'coin', x: 158, y: 3 }
+        ];
+
+        addCloudPattern(level);
+        return level;
+    }
+
+    function generateLevel_4_2() {
+        const level = createEmptyLevel(LEVEL_WIDTH, LEVEL_HEIGHT);
+        level.theme = 'underground';
+        level.worldId = '4-2';
+        level.spawnX = 3;
+        level.spawnY = LEVEL_HEIGHT - 3;
+        level.timeLimit = 400;
+
+        setTileRange(level, 0, LEVEL_HEIGHT - 2, LEVEL_WIDTH - 1, LEVEL_HEIGHT - 1, 7);
+        setTileRange(level, 0, 0, LEVEL_WIDTH - 1, 0, 7);
+
+        setTileRange(level, 12, 9, 18, 9, 2);
+        setTileRange(level, 15, 9, 15, 9, 3);
+        level.blockContents = { '15,9': 'mushroom' };
+
+        setTileRange(level, 22, 4, 38, 4, 7);
+        setTileRange(level, 22, 10, 30, 10, 7);
+        setTileRange(level, 30, 4, 30, 10, 7);
+        setTileRange(level, 30, 7, 30, 8, 0);
+
+        setTileRange(level, 34, 10, 38, 10, 7);
+        setTileRange(level, 38, 4, 38, 10, 7);
+        setTileRange(level, 38, 6, 38, 7, 0);
+
+        setTileRange(level, 44, LEVEL_HEIGHT - 2, 47, LEVEL_HEIGHT - 1, 0);
+
+        setTileRange(level, 52, 4, 68, 4, 7);
+        setTileRange(level, 52, 8, 60, 8, 7);
+        setTileRange(level, 60, 4, 60, 8, 7);
+        setTileRange(level, 60, 5, 60, 6, 0);
+        setTileRange(level, 64, 8, 68, 8, 7);
+        setTileRange(level, 68, 4, 68, 8, 7);
+        setTileRange(level, 68, 6, 68, 7, 0);
+
+        setTileRange(level, 55, 7, 55, 7, 3);
+        level.blockContents['55,7'] = 'fireFlower';
+
+        setTileRange(level, 75, 9, 82, 9, 2);
+        setTileRange(level, 78, 9, 78, 9, 3);
+        level.blockContents['78,9'] = 'star';
+        setTileRange(level, 75, 5, 82, 5, 2);
+
+        setTileRange(level, 88, LEVEL_HEIGHT - 2, 91, LEVEL_HEIGHT - 1, 0);
+
+        setTileRange(level, 96, 3, 115, 3, 7);
+        setTileRange(level, 96, 10, 106, 10, 7);
+        setTileRange(level, 106, 3, 106, 10, 7);
+        setTileRange(level, 106, 7, 106, 9, 0);
+        setTileRange(level, 110, 10, 115, 10, 7);
+        setTileRange(level, 115, 3, 115, 10, 7);
+        setTileRange(level, 115, 5, 115, 6, 0);
+
+        setTileRange(level, 100, 9, 100, 9, 3);
+        level.blockContents['100,9'] = 'mushroom';
+
+        setTileRange(level, 120, 8, 130, 8, 2);
+        setTileRange(level, 125, 8, 125, 8, 3);
+        level.blockContents['125,8'] = 'coin';
+
+        buildPipe(level, 140, LEVEL_HEIGHT - 2, 3);
+
+        setTileRange(level, 150, 5, 165, 5, 7);
+        buildStaircase(level, 170, LEVEL_HEIGHT - 2, 4, 1);
+        buildFlagPole(level, 195, LEVEL_HEIGHT - 2);
+
+        level.enemies = [
+            { type: 'buzzyBeetle', x: 14, y: LEVEL_HEIGHT - 2 },
+            { type: 'goomba', x: 24, y: LEVEL_HEIGHT - 2 },
+            { type: 'goomba', x: 26, y: LEVEL_HEIGHT - 2 },
+            { type: 'buzzyBeetle', x: 33, y: LEVEL_HEIGHT - 2 },
+            { type: 'goomba', x: 54, y: 7 },
+            { type: 'goomba', x: 56, y: 7 },
+            { type: 'buzzyBeetle', x: 65, y: 7 },
+            { type: 'koopa', x: 77, y: LEVEL_HEIGHT - 2 },
+            { type: 'hammerBro', x: 80, y: 4 },
+            { type: 'goomba', x: 98, y: 9 },
+            { type: 'goomba', x: 100, y: 9 },
+            { type: 'buzzyBeetle', x: 111, y: 9 },
+            { type: 'koopa', x: 122, y: LEVEL_HEIGHT - 2 },
+            { type: 'goomba', x: 125, y: LEVEL_HEIGHT - 2 },
+            { type: 'goomba', x: 128, y: LEVEL_HEIGHT - 2 },
+            { type: 'piranha', x: 140.5, y: LEVEL_HEIGHT - 4 },
+            { type: 'hammerBro', x: 155, y: 4 }
+        ];
+
+        level.items = [
+            { type: 'coin', x: 25, y: 8 },
+            { type: 'coin', x: 26, y: 8 },
+            { type: 'coin', x: 53, y: 6 },
+            { type: 'coin', x: 54, y: 6 },
+            { type: 'coin', x: 55, y: 6 },
+            { type: 'coin', x: 76, y: 3 },
+            { type: 'coin', x: 77, y: 3 },
+            { type: 'coin', x: 78, y: 3 },
+            { type: 'coin', x: 99, y: 7 },
+            { type: 'coin', x: 100, y: 7 },
+            { type: 'coin', x: 121, y: 6 },
+            { type: 'coin', x: 122, y: 6 },
+            { type: 'coin', x: 123, y: 6 }
+        ];
+
+        return level;
+    }
+
+    function generateLevel_4_3() {
+        const level = createEmptyLevel(LEVEL_WIDTH, LEVEL_HEIGHT);
+        level.theme = 'night';
+        level.worldId = '4-3';
+        level.spawnX = 3;
+        level.spawnY = LEVEL_HEIGHT - 3;
+        level.timeLimit = 300;
+
+        setTileRange(level, 0, LEVEL_HEIGHT - 2, 8, LEVEL_HEIGHT - 1, 1);
+
+        setTileRange(level, 12, 11, 16, 11, 20);
+        setTileRange(level, 20, 9, 25, 9, 20);
+        setTileRange(level, 22, 9, 22, 9, 3);
+        level.blockContents = { '22,9': 'mushroom' };
+
+        setTileRange(level, 30, 7, 34, 7, 20);
+        setTileRange(level, 38, 10, 42, 10, 20);
+        setTileRange(level, 46, 8, 50, 8, 20);
+        setTileRange(level, 48, 8, 48, 8, 3);
+        level.blockContents['48,8'] = 'fireFlower';
+
+        setTileRange(level, 55, 6, 58, 6, 20);
+        setTileRange(level, 62, 9, 66, 9, 20);
+        setTileRange(level, 70, 7, 74, 7, 20);
+        setTileRange(level, 72, 7, 72, 7, 3);
+        level.blockContents['72,7'] = 'star';
+
+        setTileRange(level, 78, 10, 82, 10, 20);
+        setTileRange(level, 86, 8, 90, 8, 20);
+        setTileRange(level, 94, 6, 98, 6, 20);
+
+        setTileRange(level, 103, 9, 107, 9, 20);
+        setTileRange(level, 111, 7, 115, 7, 20);
+        setTileRange(level, 113, 7, 113, 7, 3);
+        level.blockContents['113,7'] = 'mushroom';
+
+        setTileRange(level, 119, 10, 124, 10, 20);
+        setTileRange(level, 128, 8, 132, 8, 20);
+        setTileRange(level, 136, 6, 142, 6, 20);
+
+        setTileRange(level, 148, LEVEL_HEIGHT - 2, 155, LEVEL_HEIGHT - 1, 1);
+        buildStaircase(level, 155, LEVEL_HEIGHT - 2, 5, 1);
+        setTileRange(level, 162, LEVEL_HEIGHT - 2, LEVEL_WIDTH - 1, LEVEL_HEIGHT - 1, 1);
+        buildFlagPole(level, 195, LEVEL_HEIGHT - 2);
+
+        level.enemies = [
+            { type: 'koopa', x: 14, y: 10 },
+            { type: 'goomba', x: 22, y: 8 },
+            { type: 'koopaRed', x: 32, y: 6 },
+            { type: 'goomba', x: 39, y: 9 },
+            { type: 'goomba', x: 41, y: 9 },
+            { type: 'koopa', x: 47, y: 7 },
+            { type: 'koopaRed', x: 56, y: 5 },
+            { type: 'goomba', x: 63, y: 8 },
+            { type: 'goomba', x: 65, y: 8 },
+            { type: 'hammerBro', x: 71, y: 6 },
+            { type: 'goomba', x: 80, y: 9 },
+            { type: 'koopa', x: 87, y: 7 },
+            { type: 'koopaRed', x: 95, y: 5 },
+            { type: 'goomba', x: 104, y: 8 },
+            { type: 'hammerBro', x: 112, y: 6 },
+            { type: 'goomba', x: 121, y: 9 },
+            { type: 'koopa', x: 129, y: 7 },
+            { type: 'koopaRed', x: 138, y: 5 },
+            { type: 'goomba', x: 140, y: 5 }
+        ];
+
+        level.items = [
+            { type: 'coin', x: 13, y: 9 },
+            { type: 'coin', x: 15, y: 9 },
+            { type: 'coin', x: 31, y: 5 },
+            { type: 'coin', x: 33, y: 5 },
+            { type: 'coin', x: 56, y: 4 },
+            { type: 'coin', x: 57, y: 4 },
+            { type: 'coin', x: 87, y: 6 },
+            { type: 'coin', x: 88, y: 6 },
+            { type: 'coin', x: 95, y: 4 },
+            { type: 'coin', x: 96, y: 4 },
+            { type: 'coin', x: 129, y: 6 },
+            { type: 'coin', x: 130, y: 6 },
+            { type: 'coin', x: 137, y: 4 },
+            { type: 'coin', x: 138, y: 4 },
+            { type: 'coin', x: 139, y: 4 }
+        ];
+
+        addCloudPattern(level);
+        return level;
+    }
+
+    function generateLevel_4_4() {
+        const level = createEmptyLevel(240, LEVEL_HEIGHT);
+        level.theme = 'castle';
+        level.worldId = '4-4';
+        level.spawnX = 3;
+        level.spawnY = LEVEL_HEIGHT - 3;
+        level.timeLimit = 450;
+
+        setTileRange(level, 0, LEVEL_HEIGHT - 2, 239, LEVEL_HEIGHT - 1, 7);
+        setTileRange(level, 0, 0, 239, 0, 7);
+
+        setTileRange(level, 15, 9, 20, 9, 2);
+        setTileRange(level, 17, 9, 17, 9, 3);
+        level.blockContents = { '17,9': 'mushroom' };
+
+        setTileRange(level, 25, 6, 25, LEVEL_HEIGHT - 2, 7);
+        setTileRange(level, 25, 9, 25, 10, 0);
+
+        setTileRange(level, 30, LEVEL_HEIGHT - 2, 34, LEVEL_HEIGHT - 1, 0);
+        setTileRange(level, 31, 10, 33, 10, 20);
+        setTileRange(level, 32, 10, 32, 10, 50);
+
+        setTileRange(level, 40, 4, 55, 4, 7);
+        setTileRange(level, 40, 10, 48, 10, 7);
+        setTileRange(level, 48, 4, 48, 10, 7);
+        setTileRange(level, 48, 7, 48, 9, 0);
+        setTileRange(level, 52, 10, 55, 10, 7);
+        setTileRange(level, 55, 4, 55, 10, 7);
+        setTileRange(level, 55, 6, 55, 7, 0);
+
+        setTileRange(level, 44, 9, 44, 9, 3);
+        level.blockContents['44,9'] = 'fireFlower';
+
+        setTileRange(level, 62, 6, 62, LEVEL_HEIGHT - 2, 7);
+        setTileRange(level, 62, 8, 62, 9, 0);
+
+        setTileRange(level, 68, LEVEL_HEIGHT - 2, 72, LEVEL_HEIGHT - 1, 0);
+
+        setTileRange(level, 78, 8, 85, 8, 2);
+        setTileRange(level, 81, 8, 81, 8, 3);
+        level.blockContents['81,8'] = 'star';
+
+        setTileRange(level, 90, 5, 90, LEVEL_HEIGHT - 2, 7);
+        setTileRange(level, 90, 8, 90, 10, 0);
+        setTileRange(level, 98, 5, 98, LEVEL_HEIGHT - 2, 7);
+        setTileRange(level, 98, 6, 98, 7, 0);
+
+        setTileRange(level, 105, LEVEL_HEIGHT - 2, 110, LEVEL_HEIGHT - 1, 0);
+        setTileRange(level, 106, 10, 109, 10, 20);
+
+        setTileRange(level, 115, 4, 130, 4, 7);
+        setTileRange(level, 115, 9, 122, 9, 7);
+        setTileRange(level, 122, 4, 122, 9, 7);
+        setTileRange(level, 122, 6, 122, 7, 0);
+        setTileRange(level, 126, 9, 130, 9, 7);
+        setTileRange(level, 130, 4, 130, 9, 7);
+        setTileRange(level, 130, 7, 130, 8, 0);
+
+        setTileRange(level, 118, 8, 118, 8, 3);
+        level.blockContents['118,8'] = 'mushroom';
+
+        setTileRange(level, 138, 6, 138, LEVEL_HEIGHT - 2, 7);
+        setTileRange(level, 138, 9, 138, 10, 0);
+        setTileRange(level, 145, 6, 145, LEVEL_HEIGHT - 2, 7);
+        setTileRange(level, 145, 7, 145, 8, 0);
+
+        setTileRange(level, 150, LEVEL_HEIGHT - 2, 155, LEVEL_HEIGHT - 1, 0);
+        setTileRange(level, 151, 10, 154, 10, 20);
+
+        setTileRange(level, 162, 8, 170, 8, 2);
+        setTileRange(level, 166, 8, 166, 8, 3);
+        level.blockContents['166,8'] = 'fireFlower';
+
+        setTileRange(level, 175, 5, 175, LEVEL_HEIGHT - 2, 7);
+        setTileRange(level, 175, 9, 175, 11, 0);
+        setTileRange(level, 182, 5, 182, LEVEL_HEIGHT - 2, 7);
+        setTileRange(level, 182, 6, 182, 7, 0);
+
+        setTileRange(level, 188, LEVEL_HEIGHT - 2, 192, LEVEL_HEIGHT - 1, 0);
+
+        buildStaircase(level, 200, LEVEL_HEIGHT - 2, 5, 1);
+        buildFlagPole(level, 220, LEVEL_HEIGHT - 2);
+
+        level.enemies = [
+            { type: 'buzzyBeetle', x: 12, y: LEVEL_HEIGHT - 2 },
+            { type: 'goomba', x: 18, y: LEVEL_HEIGHT - 2 },
+            { type: 'hammerBro', x: 42, y: 9 },
+            { type: 'buzzyBeetle', x: 45, y: 9 },
+            { type: 'goomba', x: 53, y: 9 },
+            { type: 'koopa', x: 65, y: LEVEL_HEIGHT - 2 },
+            { type: 'hammerBro', x: 80, y: 7 },
+            { type: 'goomba', x: 83, y: LEVEL_HEIGHT - 2 },
+            { type: 'buzzyBeetle', x: 93, y: LEVEL_HEIGHT - 2 },
+            { type: 'buzzyBeetle', x: 95, y: LEVEL_HEIGHT - 2 },
+            { type: 'hammerBro', x: 117, y: 8 },
+            { type: 'goomba', x: 119, y: 8 },
+            { type: 'buzzyBeetle', x: 127, y: 8 },
+            { type: 'koopa', x: 140, y: LEVEL_HEIGHT - 2 },
+            { type: 'koopa', x: 143, y: LEVEL_HEIGHT - 2 },
+            { type: 'hammerBro', x: 164, y: 7 },
+            { type: 'goomba', x: 167, y: LEVEL_HEIGHT - 2 },
+            { type: 'buzzyBeetle', x: 178, y: LEVEL_HEIGHT - 2 },
+            { type: 'buzzyBeetle', x: 180, y: LEVEL_HEIGHT - 2 },
+            { type: 'hammerBro', x: 195, y: LEVEL_HEIGHT - 2, direction: -1 },
+            { type: 'goomba', x: 198, y: LEVEL_HEIGHT - 2 }
+        ];
+
+        level.items = [
+            { type: 'coin', x: 42, y: 7 },
+            { type: 'coin', x: 43, y: 7 },
+            { type: 'coin', x: 44, y: 7 },
+            { type: 'coin', x: 79, y: 6 },
+            { type: 'coin', x: 80, y: 6 },
+            { type: 'coin', x: 81, y: 6 },
+            { type: 'coin', x: 107, y: 8 },
+            { type: 'coin', x: 108, y: 8 },
+            { type: 'coin', x: 116, y: 6 },
+            { type: 'coin', x: 117, y: 6 },
+            { type: 'coin', x: 152, y: 8 },
+            { type: 'coin', x: 153, y: 8 },
+            { type: 'coin', x: 163, y: 6 },
+            { type: 'coin', x: 164, y: 6 },
+            { type: 'coin', x: 165, y: 6 }
+        ];
+
+        return level;
+    }
+
     const levelGenerators = {
         '1-1': generateLevel_1_1,
         '1-2': generateLevel_1_2,
@@ -1424,7 +1861,11 @@ const Levels = (() => {
         '3-1': generateLevel_3_1,
         '3-2': generateLevel_3_2,
         '3-3': generateLevel_3_3,
-        '3-4': generateLevel_3_4
+        '3-4': generateLevel_3_4,
+        '4-1': generateLevel_4_1,
+        '4-2': generateLevel_4_2,
+        '4-3': generateLevel_4_3,
+        '4-4': generateLevel_4_4
     };
 
     function getLevel(worldId) {
@@ -1438,7 +1879,8 @@ const Levels = (() => {
     const LEVEL_THEMES = {
         '1-1': 'overworld', '1-2': 'underground', '1-3': 'overworld', '1-4': 'castle',
         '2-1': 'overworld', '2-2': 'underground', '2-3': 'overworld', '2-4': 'castle',
-        '3-1': 'night',     '3-2': 'underground', '3-3': 'overworld', '3-4': 'castle'
+        '3-1': 'night',     '3-2': 'underground', '3-3': 'overworld', '3-4': 'castle',
+        '4-1': 'overworld', '4-2': 'underground', '4-3': 'night',     '4-4': 'castle'
     };
 
     function getLevelList() {

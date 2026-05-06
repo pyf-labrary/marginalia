@@ -66,7 +66,7 @@ body {
     max-width: 1280px;
     max-height: 720px;
     overflow: hidden;
-    background: var(--sky-blue);
+    background: #000;
     border-radius: 4px;
     box-shadow: 0 0 60px rgba(92, 148, 252, 0.3);
 }
@@ -701,7 +701,7 @@ body {
 
 .bestiary-sprite {
     width: 48px;
-    height: 48px;
+    height: 64px;
     display: flex;
     align-items: center;
     justify-content: center;

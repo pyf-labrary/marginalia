@@ -81,8 +81,12 @@ const Engine = (() => {
         const scaleY = containerH / CANVAS_HEIGHT;
         const scale = Math.min(scaleX, scaleY);
 
-        canvas.style.width = (CANVAS_WIDTH * scale) + 'px';
-        canvas.style.height = (CANVAS_HEIGHT * scale) + 'px';
+        const w = CANVAS_WIDTH * scale;
+        const h = CANVAS_HEIGHT * scale;
+        canvas.style.width = w + 'px';
+        canvas.style.height = h + 'px';
+        canvas.style.marginLeft = ((containerW - w) / 2) + 'px';
+        canvas.style.marginTop = ((containerH - h) / 2) + 'px';
 
         emit('resize', { width: containerW, height: containerH, scale });
     }
@@ -387,9 +391,10 @@ const Engine = (() => {
     }
 
     function killPlayer() {
-        lives--;
-        UI.updateHUD('lives', lives);
-
+        if (!Player.hasInfiniteLives()) {
+            lives--;
+            UI.updateHUD('lives', lives);
+        }
         emit('playerDied');
         Player.die();
     }
@@ -536,6 +541,9 @@ const Engine = (() => {
     function getScore() { return score; }
     function getCoins() { return coins; }
     function getLives() { return lives; }
+    function setLives(n) { lives = Math.max(0, n); UI.updateHUD('lives', lives); }
+    function setScore(n) { score = Math.max(0, n); UI.updateHUD('score', score); }
+    function setCoins(n) { coins = Math.max(0, n); UI.updateHUD('coins', coins); }
     function getFPS() { return fps; }
     function getCurrentLevel() { return currentLevel; }
     function getWorldId() { return worldId; }
@@ -556,7 +564,7 @@ const Engine = (() => {
         addScore, addCoin, addLife, killPlayer, respawnPlayer, levelComplete,
         screenShake, freeze, triggerSlowMotion, transition,
         resetGame, togglePause, saveProgress, loadProgress, hasSaveData,
-        getCamera, getScore, getCoins, getLives, getFPS,
+        getCamera, getScore, getCoins, getLives, setLives, setScore, setCoins, getFPS,
         getCurrentLevel, getWorldId, setWorldId, isPaused,
         getCanvas, getContext, getDeltaTime, getGameSpeed, setGameSpeed,
         on, emit, off, handleResize
