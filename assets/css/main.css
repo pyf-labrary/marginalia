@@ -432,7 +432,6 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
   word-break: break-word;
 }
 #toc .toc-h3 a { font-size: .84rem; color: var(--ink-soft); }
-#toc .toc-h4 a { font-size: .8rem; color: var(--muted); }
 #toc a:hover {
   color: var(--accent);
   background: var(--rule-soft);

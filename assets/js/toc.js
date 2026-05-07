@@ -1,6 +1,8 @@
 // Build a sticky TOC for posts. kramdown emits id="..." on headings (incl.
-// Chinese), so we just read them. Hierarchy: H2 (top, never collapses) →
-// H3 (collapsible, expanded by default) → H4 (collapsible, collapsed by default).
+// Chinese), so we just read them. TOC shows H2 + H3 only.
+// Default state: only H2 visible (top level) — H3 are collapsed under their
+// H2 parent and revealed by the chevron toggle. Scroll-spy still auto-expands
+// the ancestor branch when a deep heading enters the viewport.
 (function () {
   'use strict';
 
@@ -9,14 +11,14 @@
   const aside = document.querySelector('.post-toc');
   if (!body || !tocEl || !aside) return;
 
-  const headings = Array.from(body.querySelectorAll('h2, h3, h4')).filter(h => h.id);
+  const headings = Array.from(body.querySelectorAll('h2, h3')).filter(h => h.id);
   if (headings.length < 3) return;
 
-  // Build nested list. Stack tracks open <ul> at each depth.
-  // depth: 2=H2 list, 3=H3 list under an H2, 4=H4 list under an H3.
+  // Build nested list. liStack[2] tracks the most recent H2 <li> so H3s can
+  // attach to it.
   const root = document.createElement('ul');
   root.className = 'toc-list';
-  const liStack = { 2: null, 3: null }; // most recent <li> at depth 2 and 3
+  const liStack = { 2: null };
 
   const makeLi = (h) => {
     const li = document.createElement('li');
@@ -60,20 +62,12 @@
     if (h.tagName === 'H2') {
       root.appendChild(li);
       liStack[2] = li;
-      liStack[3] = null;
     } else if (h.tagName === 'H3') {
       const parent = liStack[2];
       if (!parent) { root.appendChild(li); return; }
-      // H3 list under H2 — expanded by default
-      const sub = ensureSub(parent, 3, true);
-      sub.appendChild(li);
-      liStack[3] = li;
-    } else if (h.tagName === 'H4') {
-      const parent = liStack[3] || liStack[2];
-      if (!parent) { root.appendChild(li); return; }
-      // H4 list — collapsed by default
-      const isUnderH3 = parent.classList.contains('toc-h3');
-      const sub = ensureSub(parent, 4, !isUnderH3);
+      // H3 list under H2 — collapsed by default; user wants only the top
+      // level visible until they click in.
+      const sub = ensureSub(parent, 3, false);
       sub.appendChild(li);
     }
   });
