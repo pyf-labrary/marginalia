@@ -125,7 +125,7 @@ def render_desc(script_json: dict, fm_lede: str | None, post_body: str) -> str:
             lines.append(f"· {re.split(r'[。！？]', sc['text'], maxsplit=1)[0]}。")
     lines.append("")
     lines.append("制作：Remotion + MiniMax + ffmpeg，全自动流水线。")
-    lines.append("文字稿：https://marginalia.pyf.cool/videos/")
+    lines.append("文字稿：https://pyf-labrary.github.io/marginalia/videos/")
     return "\n".join(lines).strip()
 
 
