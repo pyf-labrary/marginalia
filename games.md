@@ -102,7 +102,9 @@ permalink: /games/
     grid-column: span 6;
     text-decoration: none;
     color: inherit;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;          /* stretch to row height so the frame can fill it */
     isolation: isolate;
   }
   /* break-the-grid sizing — every Nth card spans differently */
@@ -117,7 +119,9 @@ permalink: /games/
   .game-frame {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 10;     /* baseline ratio when the card stands alone */
+    flex: 1 1 auto;            /* stretch to fill the card's grid-row height */
+    min-height: 0;
     overflow: hidden;
     border-radius: 2px;
     background: #1a1410;
