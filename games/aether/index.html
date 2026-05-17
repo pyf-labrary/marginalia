@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>AETHER — A Flight of Light</title>
+<meta name="description" content="A meditative 3D flight game. Steer a spirit of light, gather golden motes, revive eight sleeping monoliths, and bring back the dawn.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --void:    #07071a;
+    --dusk:    #2a1a52;
+    --spirit:  #ffb060;
+    --revive:  #7df9ff;
+    --ink:     #e8e4f7;
+    --ink-dim: rgba(232, 228, 247, 0.55);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: var(--void); color: var(--ink); font-family: "JetBrains Mono", ui-monospace, monospace; cursor: none; }
+  body { user-select: none; -webkit-user-select: none; }
+  #app { position: fixed; inset: 0; }
+  canvas { display: block; }
+
+  /* Custom cursor — a small glowing crosshair */
+  #cursor {
+    position: fixed; top: 0; left: 0; width: 22px; height: 22px;
+    transform: translate(-50%, -50%);
+    pointer-events: none; z-index: 100;
+    mix-blend-mode: screen;
+  }
+  #cursor::before, #cursor::after {
+    content: ""; position: absolute; background: var(--spirit);
+    box-shadow: 0 0 8px var(--spirit), 0 0 18px rgba(255,176,96,0.6);
+  }
+  #cursor::before { top: 50%; left: 0; right: 0; height: 1px; transform: translateY(-50%); }
+  #cursor::after  { left: 50%; top: 0; bottom: 0; width: 1px; transform: translateX(-50%); }
+  #cursor .dot {
+    position: absolute; inset: 8px; border: 1px solid var(--spirit); border-radius: 50%;
+    box-shadow: 0 0 12px var(--spirit);
+  }
+
+  /* TITLE */
+  #title {
+    position: fixed; inset: 0; z-index: 50;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: radial-gradient(ellipse at center, rgba(10,10,31,0.0) 0%, rgba(7,7,26,0.55) 70%);
+    transition: opacity 1.4s ease;
+    pointer-events: auto;
+  }
+  #title.hidden { opacity: 0; pointer-events: none; }
+  #title .eyebrow {
+    font-size: 11px; letter-spacing: 0.6em; text-transform: uppercase;
+    color: var(--ink-dim); margin-bottom: 20px;
+  }
+  #title h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-size: clamp(56px, 10vw, 130px);
+    letter-spacing: 0.32em;
+    color: var(--ink);
+    text-shadow: 0 0 32px rgba(255,176,96,0.32), 0 0 80px rgba(125,249,255,0.12);
+    margin-left: 0.32em; /* compensate for letter-spacing */
+    animation: breathe 6s ease-in-out infinite;
+  }
+  @keyframes breathe {
+    0%, 100% { text-shadow: 0 0 32px rgba(255,176,96,0.32), 0 0 80px rgba(125,249,255,0.12); }
+    50%      { text-shadow: 0 0 48px rgba(255,176,96,0.55), 0 0 120px rgba(125,249,255,0.22); }
+  }
+  #title .tagline {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300; font-style: italic;
+    font-size: 22px; color: var(--ink-dim);
+    margin-top: 12px; letter-spacing: 0.04em;
+  }
+  .howto {
+    list-style: none;
+    margin-top: 32px;
+    padding: 22px 32px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(7, 7, 26, 0.65);
+    backdrop-filter: blur(6px);
+    max-width: 580px;
+    text-align: left;
+  }
+  .howto li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 17px; color: rgba(232, 228, 247, 0.88);
+    line-height: 1.5;
+    padding: 6px 0;
+  }
+  .howto li + li { margin-top: 0; }
+  .howto li b { color: var(--spirit); font-weight: 500; font-style: normal; }
+  .howto .txt { flex: 1; }
+  .howto .num {
+    flex: 0 0 32px;
+    padding-top: 4px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px; letter-spacing: 0.2em;
+    color: var(--ink-dim);
+  }
+  #start-btn {
+    margin-top: 32px;
+    background: none; border: 1px solid rgba(255,176,96,0.4);
+    color: var(--ink);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px; letter-spacing: 0.4em; text-transform: uppercase;
+    padding: 18px 42px; cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative; overflow: hidden;
+  }
+  #start-btn:hover {
+    border-color: var(--spirit); color: var(--spirit);
+    background: rgba(255,176,96,0.06);
+    box-shadow: 0 0 32px rgba(255,176,96,0.25), inset 0 0 16px rgba(255,176,96,0.08);
+    letter-spacing: 0.5em;
+  }
+  #title .controls {
+    margin-top: 28px;
+    font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-dim);
+    display: flex; gap: 32px;
+  }
+  #title .controls b { color: var(--ink); font-weight: 400; margin-right: 8px; }
+
+  /* HUD */
+  #hud {
+    position: fixed; inset: 0; z-index: 40; pointer-events: none;
+    opacity: 0; transition: opacity 1.4s ease;
+  }
+  #hud:not(.hidden) { opacity: 1; }
+  #hud.hidden { opacity: 0; }
+
+  /* Energy bar (top-left) */
+  .panel-tl {
+    position: absolute; top: 32px; left: 32px;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .panel-tl .label {
+    font-size: 9px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  #energy {
+    width: 220px; height: 2px; background: rgba(255,255,255,0.08);
+    position: relative; overflow: hidden;
+  }
+  #energy-fill {
+    height: 100%; width: 0%;
+    background: linear-gradient(90deg, var(--spirit), #ffd58a);
+    box-shadow: 0 0 12px var(--spirit), 0 0 24px rgba(255,176,96,0.5);
+    transition: width 0.5s cubic-bezier(0.3, 0, 0.1, 1);
+  }
+  .ticks {
+    display: flex; justify-content: space-between; width: 220px; margin-top: 2px;
+  }
+  .ticks span {
+    width: 1px; height: 4px; background: rgba(255,255,255,0.2);
+  }
+
+  /* Monolith counter (top-right) */
+  .panel-tr {
+    position: absolute; top: 32px; right: 32px;
+    text-align: right;
+  }
+  .panel-tr .label {
+    font-size: 9px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: var(--ink-dim); margin-bottom: 8px;
+  }
+  #mono-counter {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300; font-size: 42px; letter-spacing: 0.1em;
+    color: var(--ink);
+    text-shadow: 0 0 18px rgba(125,249,255,0.4);
+  }
+
+  /* Bottom hint */
+  #hint {
+    position: absolute; bottom: 48px; left: 50%; transform: translate(-50%, 10px);
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic; font-size: 22px;
+    color: var(--ink); opacity: 0;
+    letter-spacing: 0.04em;
+    text-shadow: 0 0 18px rgba(0,0,0,0.7);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    text-align: center;
+    max-width: 80vw;
+  }
+  #hint.show { opacity: 0.95; transform: translate(-50%, 0); }
+
+  /* Corner tick marks */
+  .corner {
+    position: absolute; width: 18px; height: 18px;
+    border-color: rgba(255, 255, 255, 0.18);
+    border-style: solid; border-width: 0;
+  }
+  .corner.tl { top: 24px; left: 24px; border-top-width: 1px; border-left-width: 1px; }
+  .corner.tr { top: 24px; right: 24px; border-top-width: 1px; border-right-width: 1px; }
+  .corner.bl { bottom: 24px; left: 24px; border-bottom-width: 1px; border-left-width: 1px; }
+  .corner.br { bottom: 24px; right: 24px; border-bottom-width: 1px; border-right-width: 1px; }
+
+  /* Finale overlay */
+  #finale {
+    position: fixed; inset: 0; z-index: 60;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column;
+    pointer-events: none; opacity: 0;
+    transition: opacity 3s ease-in;
+    text-align: center;
+    /* Subtle bottom-weighted darken — keeps text readable without
+       killing the spectacle. */
+    background:
+      radial-gradient(ellipse at 50% 80%, rgba(7,7,26,0.55) 0%, rgba(7,7,26,0.0) 60%),
+      linear-gradient(to bottom, rgba(7,7,26,0.0) 0%, rgba(7,7,26,0.0) 40%, rgba(7,7,26,0.65) 100%);
+  }
+  #finale.show { opacity: 1; pointer-events: auto; }
+  #finale .glyph {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300; font-size: clamp(48px, 9vw, 140px);
+    letter-spacing: 0.4em;
+    color: #fff5e0;
+    text-shadow: 0 0 40px rgba(255,200,140,0.7), 0 0 110px rgba(255,200,140,0.35);
+    margin-left: 0.4em;
+    animation: dawnBreathe 5s ease-in-out infinite;
+  }
+  @keyframes dawnBreathe {
+    0%, 100% { text-shadow: 0 0 40px rgba(255,200,140,0.7), 0 0 110px rgba(255,200,140,0.35); }
+    50%      { text-shadow: 0 0 60px rgba(255,220,170,0.85), 0 0 160px rgba(255,220,170,0.5); }
+  }
+  #finale .stanza {
+    margin-top: 36px;
+    font-family: "Cormorant Garamond", serif; font-style: italic;
+    font-weight: 300;
+    font-size: clamp(18px, 2.2vw, 26px);
+    color: rgba(255,245,224,0.92);
+    line-height: 1.85;
+    max-width: 640px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 2s ease 2s, transform 2s ease 2s;
+  }
+  #finale.show .stanza { opacity: 1; transform: translateY(0); }
+  #finale .stanza .line { display: block; }
+  #finale .stanza .line + .line { margin-top: 6px; }
+
+  #finale .actions {
+    margin-top: 56px;
+    display: flex; gap: 20px;
+    opacity: 0;
+    transition: opacity 1.5s ease 6s;
+  }
+  #finale.show .actions { opacity: 1; }
+  #finale .btn {
+    background: none;
+    border: 1px solid rgba(255,200,140,0.4);
+    color: rgba(255,245,224,0.92);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase;
+    padding: 14px 32px; cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  #finale .btn:hover {
+    border-color: #fff5e0;
+    color: #fff;
+    background: rgba(255, 220, 170, 0.06);
+    box-shadow: 0 0 24px rgba(255, 200, 140, 0.3);
+    letter-spacing: 0.5em;
+  }
+  #finale .credits {
+    margin-top: 60px;
+    font-size: 9px; letter-spacing: 0.5em; text-transform: uppercase;
+    color: rgba(255,245,224,0.4);
+  }
+
+  /* DAWN headline floats high; poem & buttons sit in the dark bottom strip */
+  #finale {
+    justify-content: flex-end;
+    padding-bottom: 8vh;
+  }
+  #finale .glyph {
+    margin-top: 6vh;
+    margin-bottom: auto;
+  }
+  #finale .stanza { margin-top: 0; }
+
+  /* Pause overlay */
+  #pause {
+    position: fixed; inset: 0; z-index: 70;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; text-align: center;
+    background: rgba(7, 7, 26, 0.65);
+    backdrop-filter: blur(8px);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+  #pause.show { opacity: 1; pointer-events: auto; }
+  #pause .glyph {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300; font-size: clamp(48px, 8vw, 110px);
+    letter-spacing: 0.45em;
+    color: var(--ink);
+    margin-left: 0.45em;
+    text-shadow: 0 0 32px rgba(255,176,96,0.3);
+  }
+  #pause .sub {
+    margin-top: 18px;
+    font-family: "Cormorant Garamond", serif; font-style: italic;
+    font-size: 20px;
+    color: var(--ink-dim);
+  }
+  #pause .actions {
+    margin-top: 44px;
+    display: flex; gap: 18px;
+  }
+  #pause .btn {
+    background: none;
+    border: 1px solid rgba(255,176,96,0.4);
+    color: var(--ink);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase;
+    padding: 14px 32px; cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  #pause .btn:hover {
+    border-color: var(--spirit); color: var(--spirit);
+    background: rgba(255,176,96,0.06);
+    box-shadow: 0 0 20px rgba(255,176,96,0.2);
+    letter-spacing: 0.5em;
+  }
+  #pause .kbd {
+    margin-top: 36px;
+    font-size: 10px; letter-spacing: 0.4em; text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+
+  /* Autopilot button */
+  .autopilot-btn {
+    position: absolute;
+    bottom: 32px; right: 32px;
+    pointer-events: auto;
+    background: rgba(7, 7, 26, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,176,96,0.3);
+    color: rgba(232, 228, 247, 0.85);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+    padding: 12px 18px;
+    display: flex; align-items: center; gap: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .autopilot-btn:hover {
+    border-color: var(--spirit);
+    color: var(--spirit);
+    box-shadow: 0 0 18px rgba(255,176,96,0.15);
+  }
+  .autopilot-btn.on {
+    border-color: var(--revive);
+    color: var(--revive);
+    background: rgba(125, 249, 255, 0.05);
+    box-shadow: 0 0 24px rgba(125,249,255,0.25);
+  }
+  .autopilot-btn .ap-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    transition: all 0.3s ease;
+  }
+  .autopilot-btn.on .ap-dot {
+    background: var(--revive);
+    box-shadow: 0 0 8px var(--revive), 0 0 16px var(--revive);
+    animation: apPulse 1.4s ease-in-out infinite;
+  }
+  @keyframes apPulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.4; }
+  }
+  .autopilot-btn .ap-key {
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    padding: 1px 6px;
+    font-size: 9px;
+    opacity: 0.7;
+  }
+
+  /* Vignette */
+  #vignette {
+    position: fixed; inset: 0; z-index: 30; pointer-events: none;
+    background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.55) 100%);
+    transition: background 0.6s ease;
+  }
+  /* Intensified vignette when approaching the world's edge — feels like
+     gravitational pull of the void. */
+  #vignette.at-edge {
+    background: radial-gradient(ellipse at center, transparent 25%, rgba(20,10,40,0.7) 65%, rgba(0,0,0,0.95) 100%);
+  }
+
+  /* Objective marker */
+  #marker {
+    position: fixed; top: 0; left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none; z-index: 35;
+    width: 56px; height: 56px;
+    transition: opacity 0.6s ease;
+    opacity: 1;
+  }
+  #marker.hidden { opacity: 0; }
+  #marker.offscreen .ring, #marker.offscreen .ring.r2 {
+    border-color: rgba(255, 224, 170, 0.85);
+  }
+  #marker .ring {
+    position: absolute; inset: 18px;
+    border: 1px solid rgba(255, 224, 170, 0.6);
+    border-radius: 50%;
+    animation: pulse 2.2s ease-in-out infinite;
+  }
+  #marker .ring.r2 {
+    inset: 8px;
+    border-color: rgba(255, 224, 170, 0.3);
+    animation-delay: 0.6s;
+  }
+  #marker.target-monolith .ring,
+  #marker.target-monolith .ring.r2 { border-color: rgba(125, 249, 255, 0.7); }
+  #marker.target-monolith .label { color: rgba(125, 249, 255, 0.95); }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.7; }
+    50%      { transform: scale(1.3); opacity: 0.25; }
+  }
+  #marker .label {
+    position: absolute; top: 100%; left: 50%;
+    transform: translate(-50%, 6px);
+    font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase;
+    color: rgba(255, 224, 170, 0.95);
+    white-space: nowrap;
+    text-shadow: 0 0 8px rgba(0,0,0,0.8);
+  }
+  #marker .dist {
+    position: absolute; bottom: 100%; left: 50%;
+    transform: translate(-50%, -6px);
+    font-size: 10px; color: rgba(255, 255, 255, 0.7);
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 8px rgba(0,0,0,0.8);
+  }
+</style>
+</head>
+<body data-screen-label="AETHER game">
+  <div id="app"></div>
+  <div id="vignette"></div>
+
+  <!-- Custom cursor -->
+  <div id="cursor"><div class="dot"></div></div>
+
+  <!-- Objective marker — drifts over the current target -->
+  <div id="marker" class="hidden">
+    <div class="ring"></div>
+    <div class="ring r2"></div>
+    <div class="label" id="marker-label">Starlight</div>
+    <div class="dist" id="marker-dist"></div>
+  </div>
+
+  <!-- HUD -->
+  <div id="hud" class="hidden">
+    <div class="corner tl"></div><div class="corner tr"></div>
+    <div class="corner bl"></div><div class="corner br"></div>
+
+    <div class="panel-tl">
+      <div class="label">Starlight</div>
+      <div id="energy"><div id="energy-fill"></div></div>
+      <div class="ticks"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="panel-tr">
+      <div class="label">Monoliths Revived</div>
+      <div id="mono-counter">0 / 0</div>
+    </div>
+
+    <!-- Autopilot toggle -->
+    <button id="autopilot-btn" class="autopilot-btn" title="Autopilot — toggle with A">
+      <span class="ap-dot"></span>
+      <span class="ap-label">Autopilot</span>
+      <span class="ap-key">A</span>
+    </button>
+
+    <div id="hint"></div>
+  </div>
+
+  <!-- Title -->
+  <div id="title">
+    <div class="eyebrow">A Flight of Light</div>
+    <h1>AETHER</h1>
+    <div class="tagline">Carry starlight to the sleeping monoliths.</div>
+
+    <ol class="howto">
+      <li><span class="num">01</span><span class="txt">Steer with your <b>mouse</b>. The spirit flies forward on its own.</span></li>
+      <li><span class="num">02</span><span class="txt">Collect <b>4 golden motes</b> to charge your light.</span></li>
+      <li><span class="num">03</span><span class="txt">Find a tall <b>monolith</b> (look for the violet beam) and fly close to revive it.</span></li>
+      <li><span class="num">04</span><span class="txt">Revive all <b>8 monoliths</b> to bring back the dawn.</span></li>
+    </ol>
+
+    <button id="start-btn">Begin</button>
+    <div class="controls">
+      <span><b>Mouse</b> Steer</span>
+      <span><b>W · Space</b> Ascend</span>
+      <span><b>S · Shift</b> Slow</span>
+    </div>
+  </div>
+
+  <!-- Pause overlay -->
+  <div id="pause">
+    <div class="glyph">PAUSED</div>
+    <div class="sub">The flight is held in stillness.</div>
+    <div class="actions">
+      <button class="btn" id="resume-btn">Resume</button>
+      <button class="btn" id="quit-btn">Return to Title</button>
+    </div>
+    <div class="kbd">ESC · P to resume</div>
+  </div>
+
+  <!-- Finale -->
+  <div id="finale">
+    <div class="glyph">DAWN</div>
+    <div class="stanza">
+      <span class="line">The long night is over.</span>
+      <span class="line">Eight pillars sing, the sky remembers warmth,</span>
+      <span class="line">and you — small spirit — carried the spark.</span>
+    </div>
+    <div class="actions">
+      <button class="btn" id="free-fly-btn">Fly On</button>
+      <button class="btn" id="restart-btn">Begin Again</button>
+    </div>
+    <div class="credits">AETHER · A Flight of Light</div>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="src/main.js"></script>
+
+  <script>
+    // Custom cursor follows the mouse for cinematic feel.
+    const c = document.getElementById('cursor');
+    window.addEventListener('mousemove', e => {
+      c.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%,-50%)`;
+    });
+  </script>
+</body>
+</html>
