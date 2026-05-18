@@ -419,8 +419,8 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
 #toc li {
   margin: .25rem 0;
   position: relative;
+  padding-left: 1.05rem;
 }
-#toc li.has-children { padding-left: 1.05rem; }
 #toc a {
   display: block;
   color: var(--ink-soft);
