@@ -414,10 +414,64 @@
   async function fetchWikiSummary(lang, title) {
     const key = lang + ':' + title;
     if (wikiCache.has(key)) return wikiCache.get(key);
-    const url = `https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
-    const p = fetch(url, { headers: { Accept: 'application/json' }, redirect: 'follow' })
-      .then((r) => r.ok ? r.json() : null)
-      .catch(() => null);
+
+    const tryRest = async (t) => {
+      const url = `https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(t)}?redirect=true`;
+      try {
+        const r = await fetch(url, { headers: { Accept: 'application/json' }, redirect: 'follow' });
+        if (r.ok) return await r.json();
+      } catch (e) {}
+      return null;
+    };
+
+    const tryAction = async (t) => {
+      const url = `https://${lang}.wikipedia.org/w/api.php?action=query&prop=extracts|pageimages|description&exintro=1&explaintext=1&piprop=thumbnail|original&pithumbsize=600&titles=${encodeURIComponent(t)}&redirects=1&format=json&formatversion=2&origin=*`;
+      try {
+        const r = await fetch(url);
+        if (!r.ok) return null;
+        const j = await r.json();
+        const page = j && j.query && j.query.pages && j.query.pages[0];
+        if (!page || page.missing) return null;
+        const thumb = (page.thumbnail && page.thumbnail.source)
+          || (page.original && page.original.source);
+        return {
+          title: page.title,
+          description: page.description || '',
+          extract: page.extract || '',
+          thumbnail: thumb ? { source: thumb } : null,
+        };
+      } catch (e) { return null; }
+    };
+
+    const trySearch = async (t) => {
+      const url = `https://${lang}.wikipedia.org/w/api.php?action=opensearch&search=${encodeURIComponent(t)}&limit=1&namespace=0&format=json&origin=*`;
+      try {
+        const r = await fetch(url);
+        if (!r.ok) return null;
+        const j = await r.json();
+        // opensearch returns [query, [titles], [descriptions], [urls]]
+        if (j && j[1] && j[1][0]) return j[1][0];
+      } catch (e) {}
+      return null;
+    };
+
+    const p = (async () => {
+      // Try REST summary first (fast, has thumb metadata)
+      let data = await tryRest(title);
+      if (data && data.type !== 'disambiguation' && data.extract) return data;
+      // Fallback to action API (handles redirects + variants robustly)
+      const data2 = await tryAction(title);
+      if (data2) return data2;
+      // Final fallback: search for the closest article title, then re-fetch
+      const found = await trySearch(title);
+      if (found && found !== title) {
+        const data3 = await tryRest(found);
+        if (data3 && data3.extract) return data3;
+        const data4 = await tryAction(found);
+        if (data4) return data4;
+      }
+      return data; // could be null or disambiguation
+    })();
     wikiCache.set(key, p);
     return p;
   }
