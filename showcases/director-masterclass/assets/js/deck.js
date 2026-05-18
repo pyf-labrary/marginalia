@@ -187,32 +187,46 @@
   if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
   if (backdrop) backdrop.addEventListener('click', closeDrawer);
 
-  // ===== Compact card tap-to-expand (mobile) =====
-  document.querySelectorAll('.card-grid.card-compact .card').forEach((card) => {
-    card.addEventListener('click', (e) => {
-      // Don't trigger on link clicks within the card
-      if (e.target.closest('a')) return;
-      // Use hover on devices with fine pointer; toggle .expanded on touch
-      const hasHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-      if (hasHover) return;
-      card.classList.toggle('expanded');
-      // Close others
-      document.querySelectorAll('.card-grid.card-compact .card.expanded').forEach((c) => {
-        if (c !== card) c.classList.remove('expanded');
+  // ===== Compact-card tooltip popups: flip & mobile tap =====
+  // For desktop, hover triggers a CSS popup; we just need to flip up/down based
+  // on each card's vertical position so the popup doesn't get clipped below
+  // the viewport. For mobile, click toggles .expanded.
+  function flipIfNeeded(card) {
+    const rect = card.getBoundingClientRect();
+    const spaceBelow = window.innerHeight - rect.bottom;
+    const spaceAbove = rect.top;
+    if (spaceBelow < 180 && spaceAbove > spaceBelow) {
+      card.classList.add('popup-up');
+    } else {
+      card.classList.remove('popup-up');
+    }
+  }
+  function bindCompact(selector) {
+    document.querySelectorAll(selector).forEach((el) => {
+      el.addEventListener('mouseenter', () => flipIfNeeded(el));
+      el.addEventListener('click', (e) => {
+        if (e.target.closest('a')) return;
+        const hasHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+        if (hasHover) return;
+        flipIfNeeded(el);
+        // Toggle this one; close all others in same grid
+        const wasExpanded = el.classList.contains('expanded');
+        document.querySelectorAll(selector + '.expanded').forEach((other) => {
+          other.classList.remove('expanded');
+        });
+        if (!wasExpanded) el.classList.add('expanded');
       });
     });
-  });
+  }
+  bindCompact('.card-grid.card-compact .card');
+  bindCompact('.director-grid.director-grid-compact .director');
 
-  document.querySelectorAll('.director-grid.director-grid-compact .director').forEach((d) => {
-    d.addEventListener('click', (e) => {
-      if (e.target.closest('a')) return;
-      const hasHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-      if (hasHover) return;
-      d.classList.toggle('expanded');
-      document.querySelectorAll('.director-grid.director-grid-compact .director.expanded').forEach((c) => {
-        if (c !== d) c.classList.remove('expanded');
-      });
-    });
+  // Close any expanded card if user taps outside it
+  document.addEventListener('click', (e) => {
+    const hasHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (hasHover) return;
+    if (e.target.closest('.card-grid.card-compact .card, .director-grid.director-grid-compact .director')) return;
+    document.querySelectorAll('.expanded').forEach((c) => c.classList.remove('expanded'));
   });
 
 })();
