@@ -432,6 +432,22 @@
   @media (max-width: 540px) {
     .card-grid.card-4col { grid-template-columns: 1fr; }
   }
+
+  /* Force 1 row × 6 cols for 6 cards (used for 色彩 mood swatches) */
+  .card-grid.card-6col {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .card-grid.card-6col .card { padding: 16px 12px 14px; }
+  @media (max-width: 1200px) {
+    .card-grid.card-6col { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 720px) {
+    .card-grid.card-6col { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .card-grid.card-6col { grid-template-columns: 1fr; }
+  }
   
   .card {
     padding: 24px;
@@ -1681,11 +1697,12 @@
      Long side fills container, short side natural height, no crop.
      Caption strip below image (paper-tone label). */
   .inline-figure {
-    margin: 12px 0 18px;
+    margin: 12px auto 18px;
     padding: 0;
-    max-width: 880px;
+    max-width: 1080px;
     width: 100%;
     position: relative;
+    text-align: center;
   }
   .inline-figure img {
     display: block;
