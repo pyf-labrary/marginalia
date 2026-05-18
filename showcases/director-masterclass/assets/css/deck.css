@@ -407,6 +407,17 @@
   @media (max-width: 720px) {
     .card-grid.card-2col { grid-template-columns: 1fr; }
   }
+
+  /* Force 2 rows × 3 cols for the 6 angle cards */
+  .card-grid.card-3col {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  @media (max-width: 900px) {
+    .card-grid.card-3col { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .card-grid.card-3col { grid-template-columns: 1fr; }
+  }
   
   .card {
     padding: 24px;
@@ -1637,6 +1648,20 @@
     align-items: start;
   }
   .slide-stack .row-2col .quote { margin-top: 0; }
+
+  /* ===== Slide-centered: narrow content column centered in slide ===== */
+  .slide.slide-centered { align-items: center; }
+  .slide.slide-centered .centered-col {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .slide.slide-centered .centered-col .shot-strip {
+    max-width: 100%;
+  }
+  .slide.slide-centered .centered-col .lede {
+    max-width: 100%;
+  }
 
   /* ===== Inline shot-strip (景别 6-step illustration) ===== */
   /* Sits right under the lede, constrained to lede max-width (720px),
