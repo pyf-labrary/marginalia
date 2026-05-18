@@ -67,7 +67,8 @@ python3 /tmp/inject-round5.py
 | R2 | `942c1e4` | favicon；左上 ◉ MASTERCLASS 改为返 index；右上「目录」按钮 + 抽屉式 TOC；70 项导演/电影/术语自动加 zh-wiki 外链；8 个密集卡片网格切 compact；移动端响应式 |
 | R3 | `7ffdd67` | cover 加电影厅 hero 图（视频占位）；景别 6 SVG 替为真实剧照 21:9 渐近条；光影/色彩内联配图；tooltip-popup 替代展开式；`.chapter-pager` 改 fixed + z-index 220 解决点击拦截 |
 | R4 | `4cf26ab` | tooltip 改 paper-tone 样式（与黑卡片对比鲜明）+ JS bounds-check / hover-bridge；右下 ◂▸ nav-btn 删除；上一页/下一页改为片内 slide 翻页；BGM `currentTime` 每秒持久化 sessionStorage 跨章续播；inline-hero 改 `background-size: contain` 不裁切；§2.1/§2.2 运镜卡片也切 compact |
-| R5 | _本轮_ | 拉取 chapter-6 vision i2v 视频替换静图；目录按钮移至左上 MASTERCLASS 下方 + 抽屉从左侧滑入；21:9 strip 改为 bottom-band 大底+渐变；ELS/LS/MS/MCU/CU/ECU 加 `data-tip` 解释 tooltip；§1.2 拍摄角度重排（lede+quote 左右 → 6 卡片下方 + 卡片 popup 中嵌入 16:9 真实剧照）；本 BUILD-LOG.md |
+| R5 | `4cf26ab+` | 拉取 chapter-6 vision i2v 视频替换静图；目录按钮移至左上 MASTERCLASS 下方 + 抽屉从左侧滑入；21:9 strip 改为 bottom-band 大底+渐变；ELS/LS/MS/MCU/CU/ECU 加 `data-tip` 解释 tooltip；§1.2 拍摄角度重排（lede+quote 左右 → 6 卡片下方 + 卡片 popup 中嵌入 16:9 真实剧照）；本 BUILD-LOG.md |
+| R6 | _本轮_ | ① cover hero video（373a17b8 空旷影棚导演背影）从 Dreamina 拉下来 cover-cinema.mp4 替代 webm 占位；② §1.1 景别 bottom-band → `.shot-strip` figure：图在 lede 下、宽度=lede（720px）、无渐变、底部 ELS → ECU 金色箭头条；③ §1.3 轴线 SVG 大改：520×360 viewBox、双角色头部剪影 A/B + 红色虚线轴 + 上半圆 180° 安全弧 gold 渐变（MASTER/OTS-A/OTS-B 三机位 + 视线虚线）+ 下半圆禁区红色渐变（JUMP-LINE 机位带 ✗ 红叉 + "越轴 → 左右反转" 警告）；④ §2.1/§2.2 12 张卡片加 `data-move` + JS 注入内联 SVG 动画 demo（push/pull/pan/tilt/dolly/crane/follow/arc/handheld/steadicam/crashzoom/whippan），CSS keyframes 仅在 hover 时播放，paused by default 不耗 CPU；⑤ §2.2 进阶运镜重排为 lede+quote 顶部 + 3×2 卡片网格（card-2col）；⑥ `.ext-link` hover Wikipedia REST summary 预览 popup（缩略图 16:9 + 标题 + description + 5 行 extract + "阅读全文" 链接，paper-tone 浮起卡片，bounds-check 位置） |
 
 ---
 

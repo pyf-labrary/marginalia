@@ -51,18 +51,30 @@
 </div>
 </div>
 </section>
-<section class="slide has-bottom-band">
+<section class="slide">
 <div class="eyebrow reveal">§ 1.1 · Shot Sizes</div>
 <h2 class="heading reveal">景别 / <span class="accent">距离即态度</span></h2>
 <p class="lede reveal">
     景别是观众与被摄主体的<span class="ink-mark">心理距离</span>。镜头越远,观众越冷静客观;镜头越近,情绪越紧张私密。导演的第一个决定,永远是"我让观众站在哪里"。
   </p>
-<ul class="spec-list reveal" style="margin-top: 40px;">
+<figure class="shot-strip reveal">
+<img alt="景别从大全景到大特写六阶递进" src="assets/images/inline-shot-sizes-strip.jpg"/>
+<div class="shot-strip-axis">
+<span class="axis-tip axis-tip-left">ELS</span>
+<span class="axis-arrow" aria-hidden="true">
+<span class="axis-line"></span>
+<span class="axis-head"></span>
+</span>
+<span class="axis-tip axis-tip-right">ECU</span>
+<span class="axis-label">远 → 近 · Distance Compresses</span>
+</div>
+</figure>
+<ul class="spec-list reveal" style="margin-top: 28px;">
 <li><span class="term" data-tip="Extreme Long Shot / Long Shot · 大远景与全景的合称——讲故事「在哪里」。">ELS / LS</span><span class="def"><strong>环境优先。</strong>讲故事的"在哪里"。建立空间、孤立角色、营造规模感。多用于开篇与转场。</span></li>
 <li><span class="term" data-tip="Medium Shot · 中景。从腰部到头部，最自然、最中立的「对话景别」。">MS</span><span class="def"><strong>对话单位。</strong>展示人物与环境的关系,信息量最均衡的"中立"景别。</span></li>
 <li><span class="term" data-tip="Close-Up / Extreme Close-Up · 特写与大特写的合称——情绪的临界点。">CU / ECU</span><span class="def"><strong>情绪武器。</strong>剥离环境、放大表情。慎用——用得太多就贬值了。它必须为情绪的临界点服务。</span></li>
 </ul>
-<div class="bottom-band" data-caption="ELS → ECU · 距离即态度"><img alt="景别从大全景到大特写六阶递进" src="assets/images/inline-shot-sizes-strip.jpg"/></div></section>
+</section>
 <section class="slide">
 <div class="eyebrow reveal">§ 1.2 · Camera Angles</div>
 <h2 class="heading reveal">拍摄角度 / <span class="accent">权力的几何学</span></h2>
@@ -118,28 +130,74 @@
 </div>
 </div>
 <div>
-<svg style="width:100%; height:auto; border:1px solid rgba(198,154,75,0.2); padding: 20px; background: rgba(20,16,9,0.4);" viewbox="0 0 400 280">
-<!-- 轴线 -->
-<line stroke="#b8231c" stroke-dasharray="4,4" stroke-width="1" x1="100" x2="300" y1="140" y2="140"></line>
-<text fill="#b8231c" font-family="JetBrains Mono" font-size="9" letter-spacing="2" text-anchor="middle" x="200" y="155">AXIS · 轴线</text>
-<!-- 角色 A -->
-<circle cx="100" cy="140" fill="#c69a4b" r="14"></circle>
-<text fill="#c69a4b" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="100" y="170">A</text>
-<!-- 角色 B -->
-<circle cx="300" cy="140" fill="#c69a4b" r="14"></circle>
-<text fill="#c69a4b" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="300" y="170">B</text>
-<!-- 安全机位 -->
-<g fill="none" opacity="0.7" stroke="#f1e6d0" stroke-width="1">
-<polygon fill="#f1e6d0" points="180,40 220,40 220,70 200,80 180,70"></polygon>
-<polygon fill="#f1e6d0" points="80,40 120,40 120,70 100,80 80,70"></polygon>
-<polygon fill="#f1e6d0" points="280,40 320,40 320,70 300,80 280,70"></polygon>
+<svg class="axis-diagram" viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient cx="50%" cy="100%" id="safeArc" r="65%">
+<stop offset="0%" stop-color="#c69a4b" stop-opacity="0.22"/>
+<stop offset="80%" stop-color="#c69a4b" stop-opacity="0.03"/>
+<stop offset="100%" stop-color="#c69a4b" stop-opacity="0"/>
+</radialGradient>
+<radialGradient cx="50%" cy="0%" id="dangerArc" r="65%">
+<stop offset="0%" stop-color="#b8231c" stop-opacity="0.26"/>
+<stop offset="80%" stop-color="#b8231c" stop-opacity="0.04"/>
+<stop offset="100%" stop-color="#b8231c" stop-opacity="0"/>
+</radialGradient>
+<g id="cam">
+<rect fill="none" height="14" rx="1.5" stroke="currentColor" stroke-width="1.4" width="20" x="-12" y="-7"/>
+<polygon fill="currentColor" points="-12,-3 -18,-7 -18,7 -12,3"/>
+<circle cx="-2" cy="0" fill="none" r="3.6" stroke="currentColor" stroke-width="1.2"/>
+<circle cx="6" cy="-4" fill="currentColor" r="1"/>
 </g>
-<text fill="#f1e6d0" font-family="JetBrains Mono" font-size="9" letter-spacing="2" text-anchor="middle" x="200" y="30">✓ SAFE SIDE 安全侧</text>
-<!-- 禁区 -->
-<g fill="none" opacity="0.5" stroke="#b8231c" stroke-width="1">
-<polygon fill="#b8231c" points="180,240 220,240 220,210 200,200 180,210"></polygon>
+<g id="head">
+<circle cx="0" cy="-6" fill="currentColor" r="7"/>
+<path d="M -11 12 Q -11 -1 0 -1 Q 11 -1 11 12 Z" fill="currentColor"/>
 </g>
-<text fill="#b8231c" font-family="JetBrains Mono" font-size="9" letter-spacing="2" text-anchor="middle" x="200" y="265">✗ 越轴 LINE CROSS</text>
+</defs>
+<!-- Safe-side dome (上半圆) -->
+<path d="M 70 180 A 190 190 0 0 1 450 180 Z" fill="url(#safeArc)"/>
+<!-- Forbidden zone (下半圆) -->
+<path d="M 70 180 A 190 190 0 0 0 450 180 Z" fill="url(#dangerArc)"/>
+<!-- Axis line -->
+<line stroke="#b8231c" stroke-dasharray="6,4" stroke-width="1.2" x1="120" x2="400" y1="180" y2="180"/>
+<line stroke="#b8231c" stroke-width="1.2" x1="120" x2="120" y1="174" y2="186"/>
+<line stroke="#b8231c" stroke-width="1.2" x1="400" x2="400" y1="174" y2="186"/>
+<text fill="#b8231c" font-family="JetBrains Mono" font-size="10" letter-spacing="2.5" text-anchor="middle" x="260" y="173">AXIS · 视线轴 180°</text>
+<!-- Eye-line between A and B -->
+<line stroke="#c69a4b" stroke-dasharray="2,3" stroke-opacity="0.55" stroke-width="1" x1="135" x2="385" y1="195" y2="195"/>
+<polygon fill="#c69a4b" fill-opacity="0.7" points="385,195 379,192 379,198"/>
+<polygon fill="#c69a4b" fill-opacity="0.7" points="135,195 141,192 141,198"/>
+<!-- Character A -->
+<g color="#c69a4b" transform="translate(120 180)"><use href="#head"/></g>
+<text fill="#c69a4b" font-family="JetBrains Mono" font-size="12" font-weight="600" text-anchor="middle" x="120" y="218">A</text>
+<text fill="#f1e6d0" font-family="Noto Serif SC, serif" font-size="11" opacity="0.65" text-anchor="middle" x="120" y="236">角色 A</text>
+<!-- Character B -->
+<g color="#c69a4b" transform="translate(400 180)"><use href="#head"/></g>
+<text fill="#c69a4b" font-family="JetBrains Mono" font-size="12" font-weight="600" text-anchor="middle" x="400" y="218">B</text>
+<text fill="#f1e6d0" font-family="Noto Serif SC, serif" font-size="11" opacity="0.65" text-anchor="middle" x="400" y="236">角色 B</text>
+<!-- Three safe-side camera positions -->
+<g color="#f1e6d0">
+<g transform="translate(260 70) rotate(90)"><use href="#cam"/></g>
+<text fill="#f1e6d0" font-family="JetBrains Mono" font-size="10" letter-spacing="2" text-anchor="middle" x="260" y="44">① MASTER</text>
+<line stroke="#f1e6d0" stroke-dasharray="1,3" stroke-opacity="0.4" stroke-width="0.8" x1="260" x2="260" y1="86" y2="170"/>
+<g transform="translate(130 100) rotate(60)"><use href="#cam"/></g>
+<text fill="#f1e6d0" font-family="JetBrains Mono" font-size="10" letter-spacing="2" text-anchor="middle" x="130" y="78">② OTS-A</text>
+<line stroke="#f1e6d0" stroke-dasharray="1,3" stroke-opacity="0.4" stroke-width="0.8" x1="142" x2="380" y1="114" y2="174"/>
+<g transform="translate(390 100) rotate(120)"><use href="#cam"/></g>
+<text fill="#f1e6d0" font-family="JetBrains Mono" font-size="10" letter-spacing="2" text-anchor="middle" x="390" y="78">③ OTS-B</text>
+<line stroke="#f1e6d0" stroke-dasharray="1,3" stroke-opacity="0.4" stroke-width="0.8" x1="378" x2="140" y1="114" y2="174"/>
+</g>
+<text fill="#c69a4b" font-family="JetBrains Mono" font-size="11" font-weight="500" letter-spacing="3" text-anchor="middle" x="260" y="22">✓ SAFE SIDE · 安全 180° 弧</text>
+<!-- Forbidden camera position -->
+<g color="#b8231c">
+<g transform="translate(260 295) rotate(270)"><use href="#cam"/></g>
+<line stroke="#b8231c" stroke-dasharray="1,3" stroke-opacity="0.55" stroke-width="0.8" x1="260" x2="260" y1="280" y2="190"/>
+</g>
+<g stroke="#b8231c" stroke-width="1.3" transform="translate(260 295)">
+<line x1="-9" x2="9" y1="-7" y2="7"/>
+<line x1="9" x2="-9" y1="-7" y2="7"/>
+</g>
+<text fill="#b8231c" font-family="JetBrains Mono" font-size="10" letter-spacing="2" text-anchor="middle" x="260" y="322">④ JUMP-LINE</text>
+<text fill="#b8231c" font-family="JetBrains Mono" font-size="11" font-weight="500" letter-spacing="3" text-anchor="middle" x="260" y="348">✗ CROSS · 越轴 → 左右反转</text>
 </svg>
 <p class="body" style="margin-top: 20px; font-size: 13px;">
         合法越轴的方法:① 主体移动带过轴线 ② 加入中性机位 ③ 推近至特写后切换 ④ 直接打破——表达混乱本身。

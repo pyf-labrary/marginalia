@@ -308,6 +308,39 @@
       });
     });
   }
+  // ===== Inject motion-demo SVG into camera-movement cards ([data-move]) =====
+  // The SVG is prepended into the card's tooltip <p>; CSS keyframes animate
+  // it (paused by default, plays only when .show-popup is set on the card).
+  const moveDemos = {
+    // Subject grows toward camera
+    push: '<svg class="md md-push" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="subject"><circle cx="50" cy="32" r="6"/><path d="M40 50 Q40 36 50 36 Q60 36 60 50 Z"/></g><text class="md-tag" x="6" y="11">PUSH IN →</text></svg>',
+    pull: '<svg class="md md-pull" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="subject"><circle cx="50" cy="32" r="6"/><path d="M40 50 Q40 36 50 36 Q60 36 60 50 Z"/></g><text class="md-tag" x="6" y="11">← PULL OUT</text></svg>',
+    // Background slides; subject mid
+    pan: '<svg class="md md-pan" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="bg"><line x1="10" y1="46" x2="22" y2="46"/><line x1="34" y1="46" x2="46" y2="46"/><line x1="58" y1="46" x2="70" y2="46"/><line x1="82" y1="46" x2="94" y2="46"/><polygon points="14,46 20,30 26,46"/><polygon points="62,46 72,22 82,46"/></g><path class="arc" d="M30 14 Q50 6 70 14" fill="none"/><polygon class="arrow" points="68,16 72,12 70,18"/><text class="md-tag" x="6" y="11">PAN ↺</text></svg>',
+    tilt: '<svg class="md md-tilt" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="bg"><line x1="20" y1="10" x2="80" y2="10"/><line x1="20" y1="22" x2="80" y2="22"/><line x1="20" y1="34" x2="80" y2="34"/><line x1="20" y1="46" x2="80" y2="46"/></g><path class="arc" d="M88 14 Q92 28 88 42" fill="none"/><polygon class="arrow" points="86,40 90,44 92,38"/><text class="md-tag" x="6" y="11">TILT ↕</text></svg>',
+    dolly: '<svg class="md md-dolly" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="bg"><polygon points="14,46 20,28 26,46"/><polygon points="62,46 72,20 82,46"/><polygon points="38,46 46,32 54,46"/></g><line class="track" x1="2" y1="50" x2="98" y2="50"/><polygon class="cam" points="48,48 54,48 56,52 52,54 46,54 46,52"/><text class="md-tag" x="6" y="11">DOLLY →</text></svg>',
+    crane: '<svg class="md md-crane" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="bg"><polygon points="14,50 70,50 60,30 24,30"/><line x1="32" y1="40" x2="52" y2="40"/></g><line class="arm" x1="80" y1="52" x2="80" y2="18"/><polygon class="cam" points="74,16 86,16 88,22 84,24 76,24 72,22"/><text class="md-tag" x="6" y="11">CRANE ↑</text></svg>',
+    // Subject moves; camera trails (subject stays centered)
+    follow: '<svg class="md md-follow" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="bg"><line x1="2" y1="46" x2="98" y2="46"/></g><g class="subject"><circle cx="50" cy="30" r="5"/><path d="M42 46 Q42 34 50 34 Q58 34 58 46 Z"/></g><g class="trail"><line x1="38" y1="44" x2="44" y2="44"/><line x1="58" y1="44" x2="62" y2="44"/></g><text class="md-tag" x="6" y="11">FOLLOW ↦</text></svg>',
+    arc: '<svg class="md md-arc" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><circle class="subject-c" cx="50" cy="30" r="4"/><ellipse class="orbit" cx="50" cy="32" rx="28" ry="10" fill="none"/><circle class="cam-dot" cx="78" cy="32" r="2.4"/><text class="md-tag" x="6" y="11">ARC ↻</text></svg>',
+    handheld: '<svg class="md md-handheld" viewBox="0 0 100 56"><g class="shake"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><circle class="subject-c" cx="50" cy="30" r="6"/><path class="subject-b" d="M40 48 Q40 34 50 34 Q60 34 60 48 Z"/></g><text class="md-tag" x="6" y="11">HANDHELD ↯</text></svg>',
+    steadicam: '<svg class="md md-steadicam" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><path class="glide" d="M8 36 Q30 18 50 32 T92 30" fill="none"/><circle class="cam-dot" cx="8" cy="36" r="2.4"/><text class="md-tag" x="6" y="11">STEADICAM ∼</text></svg>',
+    crashzoom: '<svg class="md md-crashzoom" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="rings"><circle cx="50" cy="30" r="20" fill="none"/><circle cx="50" cy="30" r="14" fill="none"/><circle cx="50" cy="30" r="8" fill="none"/></g><circle class="subject-c" cx="50" cy="30" r="3.2"/><text class="md-tag" x="6" y="11">CRASH ZOOM ⇉</text></svg>',
+    whippan: '<svg class="md md-whippan" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="streaks"><line x1="6" y1="20" x2="94" y2="20"/><line x1="6" y1="28" x2="94" y2="28"/><line x1="6" y1="36" x2="94" y2="36"/><line x1="6" y1="44" x2="94" y2="44"/></g><text class="md-tag" x="6" y="11">WHIP PAN ⤜</text></svg>',
+  };
+
+  document.querySelectorAll('.card[data-move]').forEach((card) => {
+    const kind = card.dataset.move;
+    const svg = moveDemos[kind];
+    if (!svg) return;
+    const p = card.querySelector(':scope > p');
+    if (!p) return;
+    const wrap = document.createElement('span');
+    wrap.className = 'move-demo';
+    wrap.innerHTML = svg;
+    p.insertBefore(wrap, p.firstChild);
+  });
+
   bindTooltip('.card-grid.card-compact .card');
   bindTooltip('.director-grid.director-grid-compact .director');
 
@@ -326,4 +359,123 @@
   document.addEventListener('scroll', () => {
     document.querySelectorAll('.show-popup').forEach(flipForBounds);
   }, true);
+
+  // ===== Wikipedia hover preview for .ext-link =====
+  const wikiCache = new Map();
+  let wikiPopup = null;
+  let wikiHideTimer = null;
+  let wikiCurrentLink = null;
+
+  function ensureWikiPopup() {
+    if (wikiPopup) return wikiPopup;
+    wikiPopup = document.createElement('div');
+    wikiPopup.className = 'wiki-popup';
+    wikiPopup.innerHTML = '<div class="wiki-loading">LOADING…</div>';
+    document.body.appendChild(wikiPopup);
+    wikiPopup.addEventListener('mouseenter', () => { clearTimeout(wikiHideTimer); });
+    wikiPopup.addEventListener('mouseleave', scheduleWikiHide);
+    return wikiPopup;
+  }
+
+  function scheduleWikiHide() {
+    clearTimeout(wikiHideTimer);
+    wikiHideTimer = setTimeout(() => {
+      if (wikiPopup) wikiPopup.classList.remove('show');
+      wikiCurrentLink = null;
+    }, 220);
+  }
+
+  function positionWikiPopup(anchorRect) {
+    if (!wikiPopup) return;
+    const pw = 360;
+    const ph = wikiPopup.offsetHeight || 240;
+    const margin = 12;
+    let left = anchorRect.left + anchorRect.width / 2 - pw / 2;
+    left = Math.max(margin, Math.min(window.innerWidth - pw - margin, left));
+    let top = anchorRect.bottom + 10;
+    if (top + ph > window.innerHeight - margin) {
+      top = anchorRect.top - ph - 10;
+    }
+    top = Math.max(margin, top);
+    wikiPopup.style.left = left + 'px';
+    wikiPopup.style.top = top + 'px';
+  }
+
+  function extractWikiTitle(href) {
+    try {
+      const u = new URL(href);
+      if (!/wikipedia\.org$/.test(u.hostname)) return null;
+      const m = u.pathname.match(/\/wiki\/(.+)$/);
+      if (!m) return null;
+      return { lang: u.hostname.split('.')[0], title: decodeURIComponent(m[1]) };
+    } catch (e) { return null; }
+  }
+
+  async function fetchWikiSummary(lang, title) {
+    const key = lang + ':' + title;
+    if (wikiCache.has(key)) return wikiCache.get(key);
+    const url = `https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
+    const p = fetch(url, { headers: { Accept: 'application/json' }, redirect: 'follow' })
+      .then((r) => r.ok ? r.json() : null)
+      .catch(() => null);
+    wikiCache.set(key, p);
+    return p;
+  }
+
+  function renderWikiPopup(data, anchorHref) {
+    if (!wikiPopup) return;
+    if (!data || data.type === 'disambiguation' && !data.extract) {
+      wikiPopup.innerHTML = '<div class="wiki-loading">无法加载预览。</div>';
+      return;
+    }
+    const thumb = data.thumbnail && data.thumbnail.source;
+    const desc = data.description || '';
+    const title = data.title || '';
+    const extract = data.extract || '';
+    wikiPopup.innerHTML = `
+      ${thumb ? `<img class="wiki-thumb" alt="" src="${thumb}">` : ''}
+      <div class="wiki-body">
+        <h4 class="wiki-title">${title}</h4>
+        ${desc ? `<p class="wiki-desc">${desc}</p>` : ''}
+        <p class="wiki-extract">${extract}</p>
+      </div>
+      <div class="wiki-foot">
+        <span>WIKIPEDIA</span>
+        <a href="${anchorHref}" target="_blank" rel="noopener noreferrer">阅读全文 →</a>
+      </div>
+    `;
+  }
+
+  function bindWikiPreview() {
+    document.querySelectorAll('a.ext-link').forEach((a) => {
+      const href = a.getAttribute('href') || '';
+      const info = extractWikiTitle(href);
+      if (!info) return;
+      a.dataset.wikiBound = '1';
+
+      a.addEventListener('mouseenter', async () => {
+        const hasHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+        if (!hasHover) return;
+        clearTimeout(wikiHideTimer);
+        const popup = ensureWikiPopup();
+        wikiCurrentLink = a;
+
+        const rect = a.getBoundingClientRect();
+        popup.innerHTML = '<div class="wiki-loading">LOADING…</div>';
+        popup.classList.add('show');
+        positionWikiPopup(rect);
+
+        const data = await fetchWikiSummary(info.lang, info.title);
+        if (wikiCurrentLink !== a) return;
+        renderWikiPopup(data, href);
+        positionWikiPopup(a.getBoundingClientRect());
+      });
+
+      a.addEventListener('mouseleave', (e) => {
+        if (wikiPopup && e.relatedTarget && wikiPopup.contains(e.relatedTarget)) return;
+        scheduleWikiHide();
+      });
+    });
+  }
+  bindWikiPreview();
 })();
