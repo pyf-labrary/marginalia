@@ -1694,9 +1694,9 @@
   }
   .hero-overlay {
     position: relative;
-    margin: 0 -8vw 24px;
+    margin: 0 0 24px;
     overflow: hidden;
-    width: calc(100% + 16vw);
+    width: 100%;
   }
   .hero-overlay > img {
     display: block;
@@ -1723,9 +1723,9 @@
   .hero-overlay-text {
     position: absolute;
     top: 0;
-    left: 8vw;
-    right: 8vw;
-    padding: 56px 0 0 0;
+    left: 0;
+    right: 0;
+    padding: 56px 32px 0;
     z-index: 3;
   }
   .hero-overlay-text .eyebrow { margin-bottom: 12px; }
