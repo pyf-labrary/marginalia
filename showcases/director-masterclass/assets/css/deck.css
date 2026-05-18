@@ -1693,6 +1693,117 @@
     max-width: 100%;
   }
 
+  /* ===== Slide-with-bottom-img (光影): image flush at slide bottom edge,
+     fades into the ink above where it meets the text. No frame/border. ===== */
+  .slide.slide-with-bottom-img {
+    padding-bottom: 0 !important;
+    justify-content: flex-start;
+  }
+  .slide.slide-with-bottom-img > *:not(.slide-bottom-img) {
+    position: relative;
+    z-index: 2;
+  }
+  .slide-bottom-img {
+    position: relative;
+    margin: 12px -8vw -80px;  /* bleed to slide edges + into padding */
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .slide-bottom-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 38vh;
+    object-fit: cover;
+    object-position: center top;
+    border: none;
+    box-shadow: none;
+  }
+  .slide-bottom-img::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 40%;
+    background: linear-gradient(180deg,
+      var(--ink) 0%,
+      rgba(10,8,5,0.92) 18%,
+      rgba(10,8,5,0.55) 50%,
+      rgba(10,8,5,0.12) 85%,
+      transparent 100%);
+    z-index: 2;
+    pointer-events: none;
+  }
+  .slide-bottom-img[data-caption]::after {
+    content: attr(data-caption);
+    position: absolute;
+    left: 8vw;
+    top: 16px;
+    z-index: 3;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    opacity: 0.65;
+    text-transform: uppercase;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+    pointer-events: none;
+  }
+
+  /* ===== 色彩 slide: lede + side-note side-by-side, full-bleed strip, 6-col cards aligned ===== */
+  .slide.slide-color {
+    justify-content: flex-start;
+  }
+  .row-2col-lede {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+    margin-top: 8px;
+  }
+  .row-2col-lede .lede { margin: 0; max-width: 100%; }
+  .row-2col-lede .side-note { margin: 0; }
+  @media (max-width: 800px) {
+    .row-2col-lede { grid-template-columns: 1fr; gap: 24px; }
+  }
+
+  .color-strip {
+    margin: 22px 0 0 0;
+    padding: 0;
+    width: 100%;
+  }
+  .color-strip img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 28vh;
+    object-fit: cover;
+    border: none;
+    box-shadow: 0 18px 32px rgba(0,0,0,0.45);
+    filter: contrast(1.05);
+  }
+  /* Color cards: 6 zero-gap columns aligned with the 6 image segments */
+  .card-grid.color-cards {
+    margin-top: 0 !important;
+    gap: 0;
+  }
+  .card-grid.color-cards .card {
+    border-radius: 0;
+    border-left: none;
+    border-top: 4px solid var(--gold);  /* top-color rail (overridden per-card via inline style? - keep gold default) */
+    padding: 14px 12px 14px;
+    background: rgba(241,230,208,0.025);
+    border-right: 1px solid rgba(241,230,208,0.06);
+  }
+  .card-grid.color-cards .card:last-child { border-right: none; }
+  .card-grid.color-cards .card .num { margin-bottom: 6px; }
+  /* Override inline border-left-color → use as border-top-color via custom selector */
+  .card-grid.color-cards .card[style*="border-left-color: #b8231c"] { border-top-color: #b8231c; }
+  .card-grid.color-cards .card[style*="border-left-color: #4a7ba7"] { border-top-color: #4a7ba7; }
+  .card-grid.color-cards .card[style*="border-left-color: #c69a4b"] { border-top-color: #c69a4b; }
+  .card-grid.color-cards .card[style*="border-left-color: #6b8e4e"] { border-top-color: #6b8e4e; }
+  .card-grid.color-cards .card[style*="border-left-color: #8a4a2a"] { border-top-color: #8a4a2a; }
+  .card-grid.color-cards .card[style*="border-left-color: #e8e8e8"] { border-top-color: #e8e8e8; }
+
   /* ===== Inline-figure (光影/色彩 full-image, no letterbox) =====
      Long side fills container, short side natural height, no crop.
      Caption strip below image (paper-tone label). */
