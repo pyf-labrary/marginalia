@@ -1,7 +1,4 @@
-// Director's Masterclass — per-page mini-deck navigation
-// Each page is a self-contained deck of N slides. On the last slide,
-// pressing → / clicking next navigates to data-next-url; on the first
-// slide, ← navigates to data-prev-url.
+// Director's Masterclass — per-page mini-deck navigation + ambient features
 
 (function () {
   const deck = document.getElementById('deck');
@@ -33,7 +30,6 @@
     }
     slides[current].classList.remove('active');
     slides[idx].classList.add('active');
-    // Restart reveal animations
     void slides[idx].offsetWidth;
     current = idx;
 
@@ -48,6 +44,12 @@
 
   document.addEventListener('keydown', (e) => {
     if (e.target.matches('input, textarea, select')) return;
+    // Don't intercept arrows when drawer is open and focus is on it
+    const drawerOpen = document.querySelector('.toc-drawer.open');
+    if (e.key === 'Escape' && drawerOpen) {
+      closeDrawer();
+      return;
+    }
     switch (e.key) {
       case 'ArrowRight':
       case 'ArrowDown':
@@ -76,49 +78,141 @@
   let touchStartX = 0;
   document.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; });
   document.addEventListener('touchend', (e) => {
+    if (document.querySelector('.toc-drawer.open')) return;
     const delta = e.changedTouches[0].clientX - touchStartX;
     if (Math.abs(delta) > 50) show(delta < 0 ? current + 1 : current - 1);
   });
 
   show(0);
 
-  // ===== Audio toggle =====
+  // ===== Audio: try autoplay, fall back to first-interaction =====
   const audio = document.getElementById('bgAudio');
   const audioBtn = document.getElementById('audioToggle');
-  if (audio && audioBtn) {
-    let playing = false;
-    audio.volume = 0.35;
+  let playing = false;
+  let userMuted = false;
+
+  function setIcon() {
+    if (!audioBtn) return;
+    audioBtn.textContent = playing ? '♪' : '♫';
+    audioBtn.classList.toggle('playing', playing);
+    audioBtn.title = playing ? '静音 (M)' : '播放配乐 (M)';
+  }
+
+  function tryPlay() {
+    if (!audio || userMuted) return;
+    const p = audio.play();
+    if (p && p.then) {
+      p.then(() => { playing = true; setIcon(); })
+       .catch(() => { /* blocked; wait for interaction */ });
+    } else {
+      playing = true; setIcon();
+    }
+  }
+
+  function stopPlay() {
+    if (!audio) return;
+    audio.pause();
+    playing = false;
+    setIcon();
+  }
+
+  if (audio) {
+    audio.volume = 0.32;
     audio.loop = true;
 
-    function setIcon() {
-      audioBtn.textContent = playing ? '♪' : '♫';
-      audioBtn.classList.toggle('playing', playing);
-      audioBtn.title = playing ? '静音' : '播放配乐';
-    }
+    // Restore previous state across chapter nav
+    try {
+      const prev = sessionStorage.getItem('deck-audio');
+      if (prev === 'paused') userMuted = true;
+    } catch (e) {}
+
     setIcon();
 
-    audioBtn.addEventListener('click', () => {
-      if (playing) {
-        audio.pause();
-        playing = false;
-        try { sessionStorage.setItem('deck-audio', 'paused'); } catch (e) {}
-      } else {
-        const p = audio.play();
-        if (p && p.catch) p.catch(() => {});
-        playing = true;
-        try { sessionStorage.setItem('deck-audio', 'playing'); } catch (e) {}
-      }
-      setIcon();
-    });
+    // Attempt autoplay (will silently fail if blocked)
+    if (!userMuted) tryPlay();
 
-    // Resume audio state across chapter navigation
-    try {
-      if (sessionStorage.getItem('deck-audio') === 'playing') {
-        const p = audio.play();
-        if (p && p.catch) p.catch(() => {});
-        playing = true;
-        setIcon();
-      }
-    } catch (e) {}
+    // First-interaction fallback: when autoplay is blocked, kick off on any
+    // user gesture (pointerdown / keydown / touchstart). One-shot.
+    if (!userMuted && !playing) {
+      const kickoff = () => {
+        if (!playing && !userMuted) tryPlay();
+        document.removeEventListener('pointerdown', kickoff, true);
+        document.removeEventListener('keydown', kickoff, true);
+        document.removeEventListener('touchstart', kickoff, true);
+      };
+      document.addEventListener('pointerdown', kickoff, true);
+      document.addEventListener('keydown', kickoff, true);
+      document.addEventListener('touchstart', kickoff, true);
+    }
+
+    if (audioBtn) {
+      audioBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (playing) {
+          userMuted = true;
+          stopPlay();
+          try { sessionStorage.setItem('deck-audio', 'paused'); } catch (err) {}
+        } else {
+          userMuted = false;
+          tryPlay();
+          try { sessionStorage.setItem('deck-audio', 'playing'); } catch (err) {}
+        }
+      });
+    }
   }
+
+  // 'M' key toggles audio
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'm' || e.key === 'M') {
+      if (audioBtn) audioBtn.click();
+    }
+  });
+
+  // ===== TOC drawer =====
+  const navTrigger = document.getElementById('navTrigger');
+  const drawer = document.getElementById('tocDrawer');
+  const backdrop = document.getElementById('tocBackdrop');
+  const drawerClose = document.getElementById('tocDrawerClose');
+
+  function openDrawer() {
+    if (drawer) drawer.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
+  }
+  function closeDrawer() {
+    if (drawer) drawer.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+  }
+
+  if (navTrigger) navTrigger.addEventListener('click', openDrawer);
+  if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+  if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+  // ===== Compact card tap-to-expand (mobile) =====
+  document.querySelectorAll('.card-grid.card-compact .card').forEach((card) => {
+    card.addEventListener('click', (e) => {
+      // Don't trigger on link clicks within the card
+      if (e.target.closest('a')) return;
+      // Use hover on devices with fine pointer; toggle .expanded on touch
+      const hasHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+      if (hasHover) return;
+      card.classList.toggle('expanded');
+      // Close others
+      document.querySelectorAll('.card-grid.card-compact .card.expanded').forEach((c) => {
+        if (c !== card) c.classList.remove('expanded');
+      });
+    });
+  });
+
+  document.querySelectorAll('.director-grid.director-grid-compact .director').forEach((d) => {
+    d.addEventListener('click', (e) => {
+      if (e.target.closest('a')) return;
+      const hasHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+      if (hasHover) return;
+      d.classList.toggle('expanded');
+      document.querySelectorAll('.director-grid.director-grid-compact .director.expanded').forEach((c) => {
+        if (c !== d) c.classList.remove('expanded');
+      });
+    });
+  });
+
 })();
