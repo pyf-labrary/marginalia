@@ -388,29 +388,35 @@
   function positionWikiPopup(anchorRect) {
     if (!wikiPopup) return;
     const margin = 12;
+    const gap = 14;  // distance between anchor and popup
     const vw = window.innerWidth;
     const vh = window.innerHeight;
 
-    // Clamp width to viewport so we never overflow horizontally
+    // Clamp width/height to viewport
     const targetW = Math.min(360, vw - margin * 2);
     wikiPopup.style.width = targetW + 'px';
     wikiPopup.style.maxWidth = (vw - margin * 2) + 'px';
-    // Clamp height: leave 24px above/below for safety
     wikiPopup.style.maxHeight = (vh - margin * 2) + 'px';
-
-    // Measure after width/height constraints applied
     const ph = Math.min(wikiPopup.offsetHeight || 240, vh - margin * 2);
 
-    let left = anchorRect.left + anchorRect.width / 2 - targetW / 2;
-    left = Math.max(margin, Math.min(vw - targetW - margin, left));
-
-    // Prefer below; if overflowing bottom, try above; else final clamp
-    let top = anchorRect.bottom + 10;
-    if (top + ph > vh - margin) {
-      const aboveTop = anchorRect.top - ph - 10;
-      if (aboveTop >= margin) top = aboveTop;
+    // Prefer side placement (right then left) so popup doesn't cover the anchor text
+    const spaceRight = vw - anchorRect.right - gap - margin;
+    const spaceLeft  = anchorRect.left - gap - margin;
+    let left, top;
+    if (spaceRight >= targetW) {
+      left = anchorRect.right + gap;
+    } else if (spaceLeft >= targetW) {
+      left = anchorRect.left - gap - targetW;
+    } else {
+      // Pick the side with more space; popup may be narrower than 360 since maxWidth clamps
+      if (spaceRight >= spaceLeft) {
+        left = Math.min(anchorRect.right + gap, vw - margin - targetW);
+      } else {
+        left = Math.max(margin, anchorRect.left - gap - targetW);
+      }
     }
-    // Final two-sided clamp — never let popup leave viewport
+    // Vertically center on anchor; clamp to viewport
+    top = anchorRect.top + anchorRect.height / 2 - ph / 2;
     top = Math.min(top, vh - margin - ph);
     top = Math.max(margin, top);
 
