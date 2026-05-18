@@ -912,7 +912,8 @@
     align-items: center;
     pointer-events: none;
   }
-  .chapter-pager a {
+  .chapter-pager a,
+  .chapter-pager .pager-btn {
     pointer-events: auto;
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
@@ -920,23 +921,23 @@
     color: var(--gold);
     text-transform: uppercase;
     text-decoration: none;
-    padding: 8px 14px;
-    border: 1px solid rgba(198,154,75,0.35);
-    background: rgba(10,8,5,0.5);
+    padding: 9px 16px;
+    border: 1px solid rgba(198,154,75,0.4);
+    background: rgba(10,8,5,0.65);
     transition: all 0.25s;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    font-weight: 400;
   }
-  .chapter-pager a:hover {
+  .chapter-pager a:hover,
+  .chapter-pager .pager-btn:hover {
     background: var(--gold);
     color: var(--ink);
     border-color: var(--gold);
   }
   .chapter-pager .label {
-    font-size: 9px;
-    opacity: 0.55;
-    margin-bottom: 2px;
-    display: block;
-    letter-spacing: 0.3em;
+    font-size: 11px;
+    letter-spacing: 0.25em;
   }
   .chapter-pager .target { font-weight: 500; }
 
@@ -1150,86 +1151,149 @@
   }
 
   /* ===== Floating tooltip-popup cards (compact mode) ===== */
-  /* Default: cards show ONLY title; description hidden.
-     Hover (desktop) or .expanded (tap on mobile) reveals a floating popup. */
+  /* JS-controlled: .show-popup class toggles popup visibility with a small
+     close-delay so the cursor can travel from card → popup without flicker.
+     Popup uses a visually distinct paper-tone bg (vs the dark card). */
 
   .card-grid.card-compact .card {
     cursor: help;
     position: relative;
     padding: 22px 22px 22px;
     min-height: 92px;
-    transition: all 0.25s;
+    transition: all 0.2s;
   }
   .card-grid.card-compact .card .num { margin-bottom: 10px; }
   .card-grid.card-compact .card h4 { margin-bottom: 0; }
 
-  /* Hide the description completely by default */
+  /* The popup is the <p> child, styled to look like an inverted "note" */
   .card-grid.card-compact .card > p {
     position: absolute;
-    left: -2px;
-    right: -2px;
-    top: calc(100% + 8px);
-    background: rgba(10,8,5,0.96);
-    border: 1px solid var(--gold);
-    border-left: 2px solid var(--blood);
-    padding: 16px 18px;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 4px);
+    background: var(--paper);
+    color: var(--ink);
+    border: none;
+    border-radius: 2px;
+    padding: 14px 18px;
     font-size: 13.5px;
-    line-height: 1.65;
-    color: var(--cream);
-    box-shadow: 0 18px 40px rgba(0,0,0,0.65), 0 0 0 1px rgba(198,154,75,0.1);
-    backdrop-filter: blur(12px);
+    line-height: 1.6;
+    box-shadow:
+      0 1px 0 rgba(255,255,255,0.5) inset,
+      0 22px 48px rgba(0,0,0,0.75),
+      0 0 0 1px rgba(198,154,75,0.6);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateY(-6px);
     transition: opacity 0.18s ease, transform 0.22s ease, visibility 0.18s;
     z-index: 80;
-    max-width: 320px;
-    width: max-content;
+    width: 260px;
+    max-width: min(320px, 84vw);
+    font-family: 'Noto Serif SC', 'Cormorant Garamond', serif;
+    font-weight: 400;
   }
-  /* If card is in the last row, flip popup to appear ABOVE */
+  /* Pointer notch */
+  .card-grid.card-compact .card > p::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background: var(--paper);
+    box-shadow: -1px -1px 0 rgba(198,154,75,0.6);
+  }
+  .card-grid.card-compact .card > p strong {
+    color: var(--blood);
+    font-weight: 600;
+  }
+  .card-grid.card-compact .card > p a.ext-link {
+    color: var(--rust);
+    border-bottom-color: var(--rust);
+  }
+  .card-grid.card-compact .card > p a.ext-link:hover {
+    color: var(--blood);
+    border-bottom-color: var(--blood);
+  }
+
+  /* Bounds-checking modifiers — JS toggles these */
   .card-grid.card-compact .card.popup-up > p {
     top: auto;
-    bottom: calc(100% + 8px);
-    transform: translateY(6px);
+    bottom: 100%;
+    transform: translate(-50%, -4px);
   }
-  .card-grid.card-compact .card:hover > p,
-  .card-grid.card-compact .card.expanded > p {
+  .card-grid.card-compact .card.popup-up > p::before {
+    top: auto;
+    bottom: -6px;
+    box-shadow: 1px 1px 0 rgba(198,154,75,0.6);
+  }
+  .card-grid.card-compact .card.popup-left > p {
+    left: auto;
+    right: 0;
+    transform: translate(0, 4px);
+  }
+  .card-grid.card-compact .card.popup-left > p::before {
+    left: auto;
+    right: 22px;
+    transform: rotate(45deg);
+  }
+  .card-grid.card-compact .card.popup-right > p {
+    left: 0;
+    transform: translate(0, 4px);
+  }
+  .card-grid.card-compact .card.popup-right > p::before {
+    left: 22px;
+    transform: rotate(45deg);
+  }
+  .card-grid.card-compact .card.popup-up.popup-left > p,
+  .card-grid.card-compact .card.popup-up.popup-right > p {
+    transform: translate(var(--tx, 0), -4px);
+  }
+  .card-grid.card-compact .card.popup-up.popup-left > p { --tx: 0; right: 0; left: auto; }
+  .card-grid.card-compact .card.popup-up.popup-right > p { --tx: 0; left: 0; right: auto; }
+
+  /* Reveal when .show-popup is set (JS managed) */
+  .card-grid.card-compact .card.show-popup > p {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
     pointer-events: auto;
   }
-  .card-grid.card-compact .card:hover,
-  .card-grid.card-compact .card.expanded {
-    background: rgba(241,230,208,0.05);
+  .card-grid.card-compact .card.show-popup > p { transform: translate(-50%, 0); }
+  .card-grid.card-compact .card.show-popup.popup-up > p { transform: translate(-50%, 0); }
+  .card-grid.card-compact .card.show-popup.popup-left > p,
+  .card-grid.card-compact .card.show-popup.popup-up.popup-left > p { transform: translate(0, 0); }
+  .card-grid.card-compact .card.show-popup.popup-right > p,
+  .card-grid.card-compact .card.show-popup.popup-up.popup-right > p { transform: translate(0, 0); }
+
+  .card-grid.card-compact .card.show-popup {
+    background: rgba(241,230,208,0.08);
     border-left-color: var(--blood);
     z-index: 70;
   }
+  .card-grid.card-compact .card:hover {
+    background: rgba(241,230,208,0.05);
+    border-left-color: var(--blood);
+  }
 
-  /* Subtle hint icon at card corner indicates there's more */
+  /* Subtle hint icon at card corner */
   .card-grid.card-compact .card::after {
-    content: '◦';
+    content: '⌕';
     position: absolute;
-    top: 14px;
+    top: 12px;
     right: 14px;
-    width: 14px;
-    height: 14px;
     color: var(--gold);
-    opacity: 0.45;
-    font-size: 18px;
-    line-height: 12px;
-    text-align: center;
-    transition: opacity 0.2s, transform 0.2s;
+    opacity: 0.35;
+    font-size: 13px;
+    transition: opacity 0.2s, color 0.2s;
   }
   .card-grid.card-compact .card:hover::after,
-  .card-grid.card-compact .card.expanded::after {
+  .card-grid.card-compact .card.show-popup::after {
     opacity: 1;
     color: var(--blood);
-    transform: scale(1.4);
   }
 
-  /* Director card popup pattern — applies to .style paragraph */
+  /* ===== Director card popup — same paper-tone style ===== */
   .director-grid.director-grid-compact .director {
     cursor: help;
     position: relative;
@@ -1237,43 +1301,74 @@
   }
   .director-grid.director-grid-compact .director .style {
     position: absolute;
-    left: -2px;
-    right: -2px;
-    top: calc(100% + 8px);
-    background: rgba(10,8,5,0.96);
-    border: 1px solid var(--gold);
-    border-left: 2px solid var(--blood);
-    padding: 16px 18px;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 4px);
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 2px;
+    padding: 14px 18px;
     font-size: 13.5px;
-    line-height: 1.65;
-    color: var(--cream);
-    box-shadow: 0 18px 40px rgba(0,0,0,0.65);
-    backdrop-filter: blur(12px);
+    line-height: 1.6;
+    box-shadow:
+      0 1px 0 rgba(255,255,255,0.5) inset,
+      0 22px 48px rgba(0,0,0,0.75),
+      0 0 0 1px rgba(198,154,75,0.6);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateY(-6px);
     transition: opacity 0.18s ease, transform 0.22s ease, visibility 0.18s;
     z-index: 80;
-    max-width: 320px;
-    width: max-content;
+    width: 260px;
+    max-width: min(320px, 84vw);
     margin: 0;
+    font-family: 'Noto Serif SC', 'Cormorant Garamond', serif;
+  }
+  .director-grid.director-grid-compact .director .style::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background: var(--paper);
+    box-shadow: -1px -1px 0 rgba(198,154,75,0.6);
   }
   .director-grid.director-grid-compact .director.popup-up .style {
     top: auto;
-    bottom: calc(100% + 8px);
-    transform: translateY(6px);
+    bottom: 100%;
+    transform: translate(-50%, -4px);
   }
-  .director-grid.director-grid-compact .director:hover .style,
-  .director-grid.director-grid-compact .director.expanded .style {
+  .director-grid.director-grid-compact .director.popup-up .style::before {
+    top: auto; bottom: -6px;
+    box-shadow: 1px 1px 0 rgba(198,154,75,0.6);
+  }
+  .director-grid.director-grid-compact .director.popup-left .style {
+    left: auto; right: 0;
+    transform: translate(0, 4px);
+  }
+  .director-grid.director-grid-compact .director.popup-left .style::before {
+    left: auto; right: 22px;
+  }
+  .director-grid.director-grid-compact .director.popup-right .style {
+    left: 0;
+    transform: translate(0, 4px);
+  }
+  .director-grid.director-grid-compact .director.popup-right .style::before {
+    left: 22px;
+  }
+  .director-grid.director-grid-compact .director.show-popup .style {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
     pointer-events: auto;
+    transform: translate(-50%, 0);
   }
-  .director-grid.director-grid-compact .director:hover,
-  .director-grid.director-grid-compact .director.expanded {
-    background: linear-gradient(180deg, rgba(241,230,208,0.06), rgba(184,35,28,0.1));
+  .director-grid.director-grid-compact .director.show-popup.popup-up .style { transform: translate(-50%, 0); }
+  .director-grid.director-grid-compact .director.show-popup.popup-left .style,
+  .director-grid.director-grid-compact .director.show-popup.popup-right .style { transform: translate(0, 0); }
+  .director-grid.director-grid-compact .director.show-popup {
+    background: linear-gradient(180deg, rgba(241,230,208,0.08), rgba(184,35,28,0.12));
     z-index: 70;
   }
 
@@ -1284,12 +1379,13 @@
       left: 4vw;
       right: 4vw;
     }
-    .chapter-pager a {
-      padding: 6px 10px;
-      font-size: 9px;
+    .chapter-pager a,
+    .chapter-pager .pager-btn {
+      padding: 8px 12px;
+      font-size: 10px;
       letter-spacing: 0.15em;
     }
-    .chapter-pager .label { font-size: 8px; letter-spacing: 0.2em; }
+    .chapter-pager .label { font-size: 10px; letter-spacing: 0.18em; }
     .top-bar .brand-link span.brand { font-size: 9px; }
     .top-bar .nav-trigger { font-size: 9px; padding: 3px 9px; }
     .top-bar .reel { display: none; }
@@ -1324,17 +1420,30 @@
   .cover.has-hero .roll,
   .cover.has-hero .frame-corners { position: relative; z-index: 5; }
 
-  /* Smaller inline-hero strips that don't overwhelm the slide */
+  /* Inline-hero variants — preserve full image (no cropping) via contain.
+     Cap height with vh so it never dominates a slide. */
   .inline-hero[data-caption*="Color"],
   .inline-hero[data-caption*="lighting"],
   .inline-hero.shot-strip {
     aspect-ratio: auto !important;
-    height: 160px;
     width: 100%;
-    max-height: 160px;
-    background-size: cover;
+    height: auto;
+    max-height: 28vh;
+    background-color: rgba(10,8,5,0.45);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+    border: 1px solid rgba(198,154,75,0.25);
   }
+  /* For the wide shot-strip image specifically, give it room to be wider */
   .inline-hero.shot-strip {
-    height: 180px;
+    aspect-ratio: 21/9 !important;
+    max-height: 30vh;
+  }
+  /* When inline-hero contains an explicit <img>, show it (override the prior display:none in injected markup) */
+  .inline-hero img {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
