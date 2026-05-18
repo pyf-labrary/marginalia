@@ -1447,3 +1447,185 @@
     height: 100%;
     object-fit: contain;
   }
+
+  /* ===== ROUND-5: left-side TOC + bottom-band hero + term tooltips ===== */
+
+  /* Top-left brand cluster: brand link + 目录 button stacked vertically */
+  .top-bar .brand-cluster {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .top-bar .brand-cluster .brand-link { pointer-events: auto; }
+  .top-bar .brand-cluster .nav-trigger {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+
+  /* Override top-bar layout to allow cluster to extend below the 32px letterbox */
+  .top-bar {
+    align-items: flex-start;
+    padding-top: 8px;
+  }
+
+  /* Left-side drawer override (default class is right-side) */
+  .toc-drawer.toc-drawer-left {
+    right: auto;
+    left: 0;
+    border-left: none;
+    border-right: 1px solid rgba(198,154,75,0.25);
+    transform: translateX(-100%);
+  }
+  .toc-drawer.toc-drawer-left.open { transform: translateX(0); }
+  .toc-drawer.toc-drawer-left .toc-drawer-close {
+    right: auto;
+    left: 28px;
+  }
+
+  /* ===== Bottom-band hero image (replaces letterboxed inline-hero) ===== */
+  /* The image occupies the bottom of the slide full-width, with a gradient
+     fade-to-black at the top that meets the text content cleanly. */
+  .slide.has-bottom-band {
+    justify-content: flex-start;
+    padding-bottom: 0 !important;
+  }
+  .bottom-band {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 46vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .bottom-band img,
+  .bottom-band .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-size: cover;
+    background-position: center;
+  }
+  /* Gradient fade-to-ink at the top of the band, plus subtle vignette */
+  .bottom-band::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background:
+      linear-gradient(180deg, var(--ink) 0%, rgba(10,8,5,0.85) 6%, rgba(10,8,5,0.45) 18%, rgba(10,8,5,0.05) 35%, transparent 60%);
+    pointer-events: none;
+  }
+  .bottom-band::after {
+    content: attr(data-caption);
+    position: absolute;
+    left: 8vw;
+    bottom: 14px;
+    z-index: 3;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    opacity: 0.55;
+    text-transform: uppercase;
+    pointer-events: none;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+  }
+  /* Slide content inside has-bottom-band uses ~50vh top area */
+  .slide.has-bottom-band > *:not(.bottom-band) {
+    position: relative;
+    z-index: 4;
+  }
+  .slide.has-bottom-band .content-top {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  /* ===== Inline term tooltips on .spec-list .term ===== */
+  /* When a term has [data-tip], it pops a small paper-tone explainer */
+  .spec-list .term[data-tip] {
+    position: relative;
+    cursor: help;
+    border-bottom: 1px dotted var(--gold);
+    padding-bottom: 1px;
+  }
+  .spec-list .term[data-tip]::after {
+    content: attr(data-tip);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    width: 240px;
+    max-width: 60vw;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Noto Serif SC', 'Cormorant Garamond', serif;
+    font-size: 12.5px;
+    line-height: 1.55;
+    letter-spacing: normal;
+    text-transform: none;
+    padding: 10px 14px;
+    border-radius: 2px;
+    box-shadow:
+      0 1px 0 rgba(255,255,255,0.5) inset,
+      0 18px 36px rgba(0,0,0,0.7),
+      0 0 0 1px rgba(198,154,75,0.6);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-4px);
+    transition: opacity 0.16s ease, transform 0.2s ease, visibility 0.16s;
+    z-index: 90;
+    white-space: normal;
+  }
+  .spec-list .term[data-tip]::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: calc(100% + 4px);
+    width: 8px;
+    height: 8px;
+    background: var(--paper);
+    transform: rotate(45deg);
+    box-shadow: -1px -1px 0 rgba(198,154,75,0.6);
+    opacity: 0;
+    transition: opacity 0.16s ease;
+    z-index: 91;
+  }
+  .spec-list .term[data-tip]:hover::after,
+  .spec-list .term[data-tip]:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  /* ===== Angle-card with image in tooltip ===== */
+  /* The popup <p> may now have a leading <img> as visual reference */
+  .card-grid.card-compact .card > p img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin: -14px -18px 10px;
+    width: calc(100% + 36px);
+    border-bottom: 1px solid rgba(198,154,75,0.4);
+    filter: contrast(1.05);
+  }
+
+  /* Layout: lede + quote 左右排, cards in their own row below */
+  .slide-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+  }
+  .slide-stack .row-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+  }
+  .slide-stack .row-2col .quote { margin-top: 0; }
