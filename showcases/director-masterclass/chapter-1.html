@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ⅰ 镜头语言基础 · 导演艺术大师课</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;0,800;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&family=Noto+Serif+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/deck.css">
+</head>
+<body>
+
+<div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+<div class="top-bar">
+  <span class="brand">◉ MASTERCLASS · 01</span>
+  <span class="reel" id="reelInfo">REEL 01 / 06</span>
+</div>
+
+<button id="audioToggle" class="audio-toggle" title="播放配乐">♫</button>
+<audio id="bgAudio" src="assets/music/main-theme.mp3" preload="metadata"></audio>
+
+<div class="deck" id="deck" data-chapter="01" data-total-chapters="06" data-prev-url="index.html" data-next-url="chapter-2.html">
+<section class="slide active chapter-slide has-hero">
+  <div class="hero-bg" style="background-image: url('assets/images/chapter-1-shot-language.jpg');"></div>
+  <div class="content-wrap">
+    <div class="chapter-tag reveal">Chapter One · 第一章 · 初级</div>
+    <h2 class="chapter-num reveal" style="font-size: clamp(140px, 20vw, 320px); margin-bottom: 12px;">Ⅰ</h2>
+    <h2 class="chapter-title reveal">
+      镜头语言<span class="italic">基础</span>
+    </h2>
+    <p class="chapter-desc reveal">
+      在按下录制键之前,你必须先学会"看"。镜头不是相机的属性,而是一种<span class="ink-mark">观察的语法</span>。本章建立你的视觉词典。
+    </p>
+    <div class="level-bar reveal">
+      <span class="on"></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="eyebrow reveal">§ 1.1 · Shot Sizes</div>
+  <h2 class="heading reveal">景别 / <span class="accent">距离即态度</span></h2>
+  <p class="lede reveal">
+    景别是观众与被摄主体的<span class="ink-mark">心理距离</span>。镜头越远,观众越冷静客观;镜头越近,情绪越紧张私密。导演的第一个决定,永远是"我让观众站在哪里"。
+  </p>
+  
+  <div class="shot-vis reveal">
+    <div class="shot-frame" data-label="远景 ELS">
+      <svg viewBox="0 0 100 54"><circle cx="50" cy="40" r="1.5" fill="#c69a4b"/><line x1="0" y1="48" x2="100" y2="48" stroke="#8a4a2a" stroke-width="0.5"/><path d="M0,48 Q30,30 60,42 T100,38" stroke="#8a4a2a" stroke-width="0.3" fill="none"/></svg>
+    </div>
+    <div class="shot-frame" data-label="全景 LS">
+      <svg viewBox="0 0 100 54"><rect x="48" y="28" width="4" height="14" fill="#c69a4b"/><circle cx="50" cy="26" r="1.5" fill="#c69a4b"/><line x1="0" y1="44" x2="100" y2="44" stroke="#8a4a2a" stroke-width="0.5"/></svg>
+    </div>
+    <div class="shot-frame" data-label="中景 MS">
+      <svg viewBox="0 0 100 54"><rect x="42" y="22" width="16" height="32" fill="#c69a4b"/><circle cx="50" cy="16" r="6" fill="#c69a4b"/></svg>
+    </div>
+    <div class="shot-frame" data-label="近景 MCU">
+      <svg viewBox="0 0 100 54"><rect x="32" y="32" width="36" height="22" fill="#c69a4b"/><circle cx="50" cy="20" r="14" fill="#c69a4b"/></svg>
+    </div>
+    <div class="shot-frame" data-label="特写 CU">
+      <svg viewBox="0 0 100 54"><circle cx="50" cy="32" r="26" fill="#c69a4b"/></svg>
+    </div>
+    <div class="shot-frame" data-label="大特写 ECU">
+      <svg viewBox="0 0 100 54"><ellipse cx="50" cy="27" rx="48" ry="22" fill="#c69a4b"/><ellipse cx="50" cy="27" rx="10" ry="5" fill="#0a0805"/><circle cx="50" cy="27" r="2" fill="#c69a4b"/></svg>
+    </div>
+  </div>
+  
+  <ul class="spec-list reveal" style="margin-top: 40px;">
+    <li><span class="term">ELS / LS</span><span class="def"><strong>环境优先。</strong>讲故事的"在哪里"。建立空间、孤立角色、营造规模感。多用于开篇与转场。</span></li>
+    <li><span class="term">MS</span><span class="def"><strong>对话单位。</strong>展示人物与环境的关系,信息量最均衡的"中立"景别。</span></li>
+    <li><span class="term">CU / ECU</span><span class="def"><strong>情绪武器。</strong>剥离环境、放大表情。慎用——用得太多就贬值了。它必须为情绪的临界点服务。</span></li>
+  </ul>
+</section>
+
+<section class="slide">
+  <div class="eyebrow reveal">§ 1.2 · Camera Angles</div>
+  <h2 class="heading reveal">拍摄角度 / <span class="accent">权力的几何学</span></h2>
+  
+  <div class="two-col reveal">
+    <div>
+      <p class="lede" style="margin-bottom: 24px;">
+        镜头的高度决定了观众与角色的<span class="ink-mark">权力关系</span>。在你抬起相机或蹲下之前,先问自己:这个画面应该让人觉得谁更强?
+      </p>
+      <div class="quote">
+        <p>"摄影机的角度,就是导演的态度。"</p>
+        <cite>—— 电影学院第一堂课</cite>
+      </div>
+    </div>
+    <div class="card-grid" style="margin-top: 0;">
+      <div class="card">
+        <div class="num">01 · LOW</div>
+        <h4>仰拍 <span class="en">Low Angle</span></h4>
+        <p>角色高于镜头。赋予<strong>力量、威严、压迫感</strong>。英雄出场、反派登台、巨物登场的首选。</p>
+      </div>
+      <div class="card">
+        <div class="num">02 · EYE</div>
+        <h4>平视 <span class="en">Eye Level</span></h4>
+        <p>与角色视线平行。<strong>中立、真实、共情</strong>。纪录片与日常对话的默认机位。</p>
+      </div>
+      <div class="card">
+        <div class="num">03 · HIGH</div>
+        <h4>俯拍 <span class="en">High Angle</span></h4>
+        <p>角色低于镜头。带来<strong>脆弱、孤独、被审视感</strong>。失败、迷茫、童年常用。</p>
+      </div>
+      <div class="card">
+        <div class="num">04 · BIRD</div>
+        <h4>鸟瞰 <span class="en">Bird's Eye</span></h4>
+        <p>近乎垂直俯视。强烈的<strong>抽离与命运感</strong>。上帝视角、地图式叙事、群像调度。</p>
+      </div>
+      <div class="card">
+        <div class="num">05 · DUTCH</div>
+        <h4>倾斜 <span class="en">Dutch Tilt</span></h4>
+        <p>画面歪斜。表现<strong>失衡、疯狂、危险将至</strong>。希区柯克与黑色电影的标志。</p>
+      </div>
+      <div class="card">
+        <div class="num">06 · OTS</div>
+        <h4>过肩 <span class="en">Over-the-Shoulder</span></h4>
+        <p>从一方肩后看另一方。对话中的<strong>视点建立</strong>,暗示倾听与权力博弈。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="eyebrow reveal">§ 1.3 · The 180° Rule</div>
+  <h2 class="heading reveal">轴线 / <span class="accent">观众的指南针</span></h2>
+  
+  <div class="two-col reveal">
+    <div>
+      <p class="lede">
+        当两个角色在画面里对话,他们之间存在一条<span class="ink-mark">看不见的线</span>——这就是轴线。摄影机必须始终待在轴线的同一侧,否则角色的"左/右"会瞬间反转,观众会失去方向。
+      </p>
+      
+      <div class="side-note" style="margin-top: 32px;">
+        <div class="label">导演笔记</div>
+        <p>当你<em>故意</em>越过轴线,那是一种暴力——它制造迷失感、关系破裂感、心理崩塌。轴线不是用来遵守的,是用来知道何时打破的。</p>
+      </div>
+    </div>
+    
+    <div>
+      <svg viewBox="0 0 400 280" style="width:100%; height:auto; border:1px solid rgba(198,154,75,0.2); padding: 20px; background: rgba(20,16,9,0.4);">
+        <!-- 轴线 -->
+        <line x1="100" y1="140" x2="300" y2="140" stroke="#b8231c" stroke-width="1" stroke-dasharray="4,4"/>
+        <text x="200" y="155" font-family="JetBrains Mono" font-size="9" fill="#b8231c" text-anchor="middle" letter-spacing="2">AXIS · 轴线</text>
+        
+        <!-- 角色 A -->
+        <circle cx="100" cy="140" r="14" fill="#c69a4b"/>
+        <text x="100" y="170" font-family="JetBrains Mono" font-size="10" fill="#c69a4b" text-anchor="middle">A</text>
+        
+        <!-- 角色 B -->
+        <circle cx="300" cy="140" r="14" fill="#c69a4b"/>
+        <text x="300" y="170" font-family="JetBrains Mono" font-size="10" fill="#c69a4b" text-anchor="middle">B</text>
+        
+        <!-- 安全机位 -->
+        <g stroke="#f1e6d0" stroke-width="1" fill="none" opacity="0.7">
+          <polygon points="180,40 220,40 220,70 200,80 180,70" fill="#f1e6d0"/>
+          <polygon points="80,40 120,40 120,70 100,80 80,70" fill="#f1e6d0"/>
+          <polygon points="280,40 320,40 320,70 300,80 280,70" fill="#f1e6d0"/>
+        </g>
+        <text x="200" y="30" font-family="JetBrains Mono" font-size="9" fill="#f1e6d0" text-anchor="middle" letter-spacing="2">✓ SAFE SIDE 安全侧</text>
+        
+        <!-- 禁区 -->
+        <g stroke="#b8231c" stroke-width="1" fill="none" opacity="0.5">
+          <polygon points="180,240 220,240 220,210 200,200 180,210" fill="#b8231c"/>
+        </g>
+        <text x="200" y="265" font-family="JetBrains Mono" font-size="9" fill="#b8231c" text-anchor="middle" letter-spacing="2">✗ 越轴 LINE CROSS</text>
+      </svg>
+      
+      <p class="body" style="margin-top: 20px; font-size: 13px;">
+        合法越轴的方法:① 主体移动带过轴线 ② 加入中性机位 ③ 推近至特写后切换 ④ 直接打破——表达混乱本身。
+      </p>
+    </div>
+  </div>
+</section>
+<div class="chapter-pager">
+  <a href="index.html"><span class="label">← Prev</span><span class="target">目录</span></a>
+  <a href="chapter-2.html"><span class="label">Next →</span><span class="target">Ⅱ 运镜技法</span></a>
+</div>
+
+</div>
+
+<div class="nav-chrome">
+  <div class="frame-counter" id="frameCounter">FRAME 01 / 01</div>
+  <div class="nav-buttons">
+    <button class="nav-btn" id="prevBtn">◂</button>
+    <button class="nav-btn" id="nextBtn">▸</button>
+  </div>
+</div>
+
+<script src="assets/js/deck.js"></script>
+</body>
+</html>

@@ -7,6 +7,14 @@ permalink: /showcases/
 
 带版式的多页作品集。每一份都是独立的 HTML deck，不走博客模板。
 
+## 导演艺术大师课 · The Director's Craft
+
+七页幻灯，从镜头语言基础到导演思维的完整大师课：六章共 29 个主题——景别 / 运镜 / 蒙太奇 / 构图 / 光影 / 色彩 / 调度 / 风格作者 / 视觉化思维。每章配 AI 生成的电影感剧照背景，第二章带循环运镜视频，全程配 MiniMax 生成的影厅级 BGM（右上角 ♫ 可切换）。
+
+→ [打开 Showcase](/marginalia/showcases/director-masterclass/)
+
+*整理时间：2026-05-18。*
+
 ## Claude · April 2026
 
 17 页幻灯版本的 Claude 全景速览：从模型代际、产品线、Claude Code 的工程哲学，到 MCP/Skills、企业 RBAC、视频与资源链接。
