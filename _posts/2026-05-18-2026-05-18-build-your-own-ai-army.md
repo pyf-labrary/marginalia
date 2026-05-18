@@ -16,19 +16,31 @@ tags: [AI军团, Claude Code, 工程化, 自动化]
 
 ## 0. TL;DR
 
-绝大多数人把 AI 用成「单兵 Copilot」——每次开会话、每次贴上下文、每次盯着 diff 点 ack。这其实没有把 LLM 的并发优势用出来。
+**一句话**：把 AI 从「单兵 Copilot」升级成「PM / Worker / Auditor 三层金字塔 + 权限矩阵 + canary 回路」的工程闭环，6 周内把日常研发自动化率从 35% 推到 85%。
 
-真正的「AI 军团」是把工程团队那一套抄一遍：
+**按 ROI 排，三个杠杆 + 一个长期项**：
 
-- **上层 PM**：一个稳重模型负责拆解、派工、验收
-- **中层 Worker**：多个便宜快模型并行干活
-- **下层 Auditor**：守门员模型做巡检、灰度判定、安全 review
-- **反馈回路**：监控/告警/issue tracker 反向回流，让军团知道上次干得好不好
-- **红线**：永远不交给 AI 自动执行的操作清单（force push / live deploy / DB migration / 真钱支付 …）
+| # | 杠杆 | 投入 | 预期增益 | 周期 |
+|---|---|---|---|---|
+| L1 | **Action Permission Matrix**（GREEN/YELLOW/ORANGE/RED 四档分级 + PreToolUse hook） | 2 天 | 砍掉 60% 人工 ack 摩擦 | Week 1 |
+| L2 | **反馈回路**（Sentry → issue tracker → PM agent → Worker → 反向回填） | 1 周 | 解锁「线上痛点 → hotfix」闭环 | Week 2-3 |
+| L3 | **Canary + 自动回滚**（低风险 PR 直接 auto-merge + 部署 beta） | 2 周 | 把「ack 每个 MR」降为「看灰度报告」 | Week 4-6 |
+| L4 | **PM/Worker/Auditor 金字塔常驻**（cron-driven 多 agent 编队） | 持续 | 让军团 24h 跑 | 后续 |
 
-经过实践，从「单兵 Copilot」到「85% 工程自动化」需要 **4-6 周搭基础设施**，不是堆 prompt，是搭工程闭环。
+**阶段性目标**：Week 1 → 50% / Week 3 → 65% / Week 6 → 80% / 稳态 → 85%。
 
-本文给一份完整的施工路线图。
+**终态指标**：
+
+- 每日 ack 次数 15+ → 3-5
+- P2/P3 bug 响应时长 4h → 20min
+- AI PR 平均生命周期 6h → 30min
+- 灰度逃逸次数 → 0（红线由规则拦）
+
+**成本**（10-20 人团队规模）：一次性投入 17 工作日 + 周维护 5.5h + 月 token 账单约 $700，月省 ~75h 个人时间。
+
+**永远不解锁的红线**：push 主干 / 生产 DB migration / 真钱支付 / 删生产资源 / 业务定价决策 — 硬编码 regex 拦截，不依赖 LLM 判断。
+
+**底线认知**：不是堆 prompt，是搭工程闭环。Prompt 优化的边际收益很快递减，工程闭环才是护城河。
 
 ---
 
