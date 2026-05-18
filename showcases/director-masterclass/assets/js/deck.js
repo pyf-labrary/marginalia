@@ -341,6 +341,38 @@
     p.insertBefore(wrap, p.firstChild);
   });
 
+  // ===== Composition card SVG diagrams ([data-compo]) =====
+  const compoDemos = {
+    // Rule of thirds: 2v + 2h gridlines + 4 hot-point dots
+    thirds: '<svg class="md md-compo" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="grid"><line x1="35" y1="2" x2="35" y2="54"/><line x1="67" y1="2" x2="67" y2="54"/><line x1="2" y1="20" x2="98" y2="20"/><line x1="2" y1="38" x2="98" y2="38"/></g><g class="dots"><circle cx="35" cy="20" r="2"/><circle cx="67" cy="20" r="2"/><circle cx="35" cy="38" r="2"/><circle cx="67" cy="38" r="2"/></g><text class="md-tag" x="6" y="11">RULE OF 3</text></svg>',
+    // Symmetry: vertical center axis + mirrored shapes
+    symmetry: '<svg class="md md-compo" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><line class="axis" x1="50" y1="6" x2="50" y2="52"/><g class="sym"><rect x="22" y="22" width="14" height="20" rx="1"/><rect x="64" y="22" width="14" height="20" rx="1"/><polygon points="22,22 29,14 36,22"/><polygon points="64,22 71,14 78,22"/></g><text class="md-tag" x="6" y="11">SYMMETRY</text></svg>',
+    // Leading lines: converging perspective toward vanishing point with subject
+    leading: '<svg class="md md-compo" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="lines"><line x1="2" y1="54" x2="50" y2="30"/><line x1="98" y1="54" x2="50" y2="30"/><line x1="2" y1="40" x2="50" y2="32"/><line x1="98" y1="40" x2="50" y2="32"/></g><circle class="vp" cx="50" cy="30" r="2.4"/><text class="md-tag" x="6" y="11">LEADING ↗</text></svg>',
+    // Framing: outer frame + inner frame containing a head
+    framing: '<svg class="md md-compo" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><rect class="inner" x="32" y="14" width="36" height="32" rx="1" fill="none"/><g class="subject"><circle cx="50" cy="26" r="4"/><path d="M 44 42 Q 44 30 50 30 Q 56 30 56 42 Z"/></g><text class="md-tag" x="6" y="11">FRAME-IN-FRAME</text></svg>',
+    // Negative space: tiny subject in lower-right, vast empty area
+    negspace: '<svg class="md md-compo" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="subject"><circle cx="84" cy="40" r="2.5"/><path d="M 80 50 Q 80 44 84 44 Q 88 44 88 50 Z"/></g><text class="md-tag" x="6" y="11">NEG SPACE</text><text class="md-hint" x="22" y="32">∅</text></svg>',
+    // Depth: three layers (foreground/mid/background)
+    depth: '<svg class="md md-compo" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="layer-bg" opacity="0.35"><polygon points="14,46 30,18 46,46"/><polygon points="50,46 66,22 82,46"/></g><g class="layer-mid" opacity="0.7"><rect x="32" y="24" width="36" height="22" rx="1"/></g><g class="layer-fg"><circle cx="22" cy="42" r="6"/><path d="M 14 52 Q 14 36 22 36 Q 30 36 30 52 Z"/></g><text class="md-tag" x="6" y="11">DEPTH ◇</text></svg>',
+    // Headroom: head with annotated empty space above
+    headroom: '<svg class="md md-compo" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><g class="subject"><circle cx="50" cy="38" r="5"/><path d="M 42 52 Q 42 42 50 42 Q 58 42 58 52 Z"/></g><g class="hr"><line x1="50" y1="14" x2="50" y2="30"/><polygon points="50,30 47,25 53,25"/><polygon points="50,14 47,19 53,19"/></g><text class="md-tag" x="6" y="11">HEAD ROOM</text></svg>',
+    // Diagonal: bold diagonal axis with subject on it
+    diagonal: '<svg class="md md-compo" viewBox="0 0 100 56"><rect class="frame" x="2" y="2" width="96" height="52" rx="1"/><line class="diag" x1="6" y1="50" x2="94" y2="10"/><g class="subject"><circle cx="50" cy="30" r="4"/></g><text class="md-tag" x="6" y="11">DIAGONAL ⤢</text></svg>',
+  };
+
+  document.querySelectorAll('.card[data-compo]').forEach((card) => {
+    const kind = card.dataset.compo;
+    const svg = compoDemos[kind];
+    if (!svg) return;
+    const p = card.querySelector(':scope > p');
+    if (!p) return;
+    const wrap = document.createElement('span');
+    wrap.className = 'move-demo';
+    wrap.innerHTML = svg;
+    p.insertBefore(wrap, p.firstChild);
+  });
+
   bindTooltip('.card-grid.card-compact .card');
   bindTooltip('.director-grid.director-grid-compact .director');
 

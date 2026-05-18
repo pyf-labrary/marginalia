@@ -1671,7 +1671,7 @@
   .slide-stack .row-2col .quote { margin-top: 0; }
 
   /* ===== Slide-centered: narrow content column centered in slide ===== */
-  .slide.slide-centered { align-items: center; }
+  .slide.slide-centered { align-items: center; justify-content: center; }
   .slide.slide-centered .centered-col {
     width: 100%;
     max-width: 880px;
@@ -1682,6 +1682,35 @@
   }
   .slide.slide-centered .centered-col .lede {
     max-width: 100%;
+  }
+
+  /* ===== Hero-layer slide (cover-style): image fills entire slide as
+     background, dark veil + content overlaid. Used for §4.2 光影. ===== */
+  .slide.hero-layer-slide { position: relative; }
+  .slide.hero-layer-slide .hero-layer-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.55;
+    z-index: 0;
+    filter: saturate(0.9) contrast(1.05);
+  }
+  .slide.hero-layer-slide .hero-layer-veil {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse at 30% 40%, rgba(10,8,5,0.55), rgba(10,8,5,0.92) 75%),
+      linear-gradient(180deg, rgba(10,8,5,0.7) 0%, rgba(10,8,5,0.4) 35%, rgba(10,8,5,0.85) 100%);
+  }
+  .slide.hero-layer-slide .hero-layer-content {
+    position: relative;
+    z-index: 5;
+    width: 100%;
   }
 
   /* ===== Hero-sandwich (光影): image with TOP + BOTTOM dark gradients,
@@ -1866,7 +1895,7 @@
 
   /* ===== 色彩 slide: lede + side-note side-by-side, full-bleed strip, 6-col cards aligned ===== */
   .slide.slide-color {
-    justify-content: flex-start;
+    justify-content: center;
   }
   .row-2col-lede {
     display: grid;
@@ -2251,3 +2280,20 @@
   .md-whippan .streaks line { animation: md-whip 0.6s linear infinite; }
 
   @keyframes md-fade { 0% { opacity: 1; } 100% { opacity: 0.2; } }
+
+  /* ===== Composition demos (static, geometric) ===== */
+  .md-compo .grid line { stroke: rgba(198,154,75,0.55); stroke-width: 0.5; stroke-dasharray: 2 2; }
+  .md-compo .dots circle { fill: #b8231c; }
+  .md-compo .axis { stroke: rgba(198,154,75,0.75); stroke-width: 0.6; stroke-dasharray: 3 2; }
+  .md-compo .sym rect, .md-compo .sym polygon { fill: #f1e6d0; opacity: 0.85; }
+  .md-compo .lines line { stroke: rgba(198,154,75,0.7); stroke-width: 0.6; }
+  .md-compo .vp { fill: #b8231c; }
+  .md-compo .inner { stroke: rgba(198,154,75,0.65); stroke-width: 0.8; stroke-dasharray: 2 2; }
+  .md-compo .subject circle, .md-compo .subject path { fill: #f1e6d0; }
+  .md-compo .md-hint { font-family: 'JetBrains Mono', monospace; font-size: 16px; fill: rgba(241,230,208,0.18); }
+  .md-compo .layer-bg polygon { fill: rgba(198,154,75,0.35); }
+  .md-compo .layer-mid rect { fill: rgba(241,230,208,0.45); }
+  .md-compo .layer-fg circle, .md-compo .layer-fg path { fill: #f1e6d0; }
+  .md-compo .hr line { stroke: #b8231c; stroke-width: 0.7; }
+  .md-compo .hr polygon { fill: #b8231c; }
+  .md-compo .diag { stroke: #c69a4b; stroke-width: 1.2; }
