@@ -1771,12 +1771,26 @@
     padding: 0;
     width: 100%;
   }
+  /* Show full 21:9 — short side completely visible (natural aspect, no crop) */
   .color-strip img {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 28vh;
-    object-fit: cover;
+    border: none;
+    box-shadow: 0 18px 32px rgba(0,0,0,0.45);
+    filter: contrast(1.05);
+  }
+
+  /* ===== Full-strip (光影 heading 下) — same treatment ===== */
+  .full-strip {
+    margin: 18px 0 22px;
+    padding: 0;
+    width: 100%;
+  }
+  .full-strip img {
+    display: block;
+    width: 100%;
+    height: auto;
     border: none;
     box-shadow: 0 18px 32px rgba(0,0,0,0.45);
     filter: contrast(1.05);
@@ -1931,7 +1945,8 @@
     position: fixed;
     z-index: 240;
     width: 360px;
-    max-width: calc(100vw - 32px);
+    max-width: calc(100vw - 24px);
+    max-height: calc(100vh - 24px);
     background: var(--paper);
     color: var(--ink);
     border-radius: 3px;
@@ -1946,7 +1961,10 @@
     transform: translateY(-4px);
     pointer-events: none;
     transition: opacity 0.18s ease, transform 0.22s ease;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
   }
   .wiki-popup.show {
     opacity: 1;

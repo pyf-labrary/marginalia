@@ -387,16 +387,33 @@
 
   function positionWikiPopup(anchorRect) {
     if (!wikiPopup) return;
-    const pw = 360;
-    const ph = wikiPopup.offsetHeight || 240;
     const margin = 12;
-    let left = anchorRect.left + anchorRect.width / 2 - pw / 2;
-    left = Math.max(margin, Math.min(window.innerWidth - pw - margin, left));
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+
+    // Clamp width to viewport so we never overflow horizontally
+    const targetW = Math.min(360, vw - margin * 2);
+    wikiPopup.style.width = targetW + 'px';
+    wikiPopup.style.maxWidth = (vw - margin * 2) + 'px';
+    // Clamp height: leave 24px above/below for safety
+    wikiPopup.style.maxHeight = (vh - margin * 2) + 'px';
+
+    // Measure after width/height constraints applied
+    const ph = Math.min(wikiPopup.offsetHeight || 240, vh - margin * 2);
+
+    let left = anchorRect.left + anchorRect.width / 2 - targetW / 2;
+    left = Math.max(margin, Math.min(vw - targetW - margin, left));
+
+    // Prefer below; if overflowing bottom, try above; else final clamp
     let top = anchorRect.bottom + 10;
-    if (top + ph > window.innerHeight - margin) {
-      top = anchorRect.top - ph - 10;
+    if (top + ph > vh - margin) {
+      const aboveTop = anchorRect.top - ph - 10;
+      if (aboveTop >= margin) top = aboveTop;
     }
+    // Final two-sided clamp — never let popup leave viewport
+    top = Math.min(top, vh - margin - ph);
     top = Math.max(margin, top);
+
     wikiPopup.style.left = left + 'px';
     wikiPopup.style.top = top + 'px';
   }
@@ -523,6 +540,13 @@
         if (wikiCurrentLink !== a) return;
         renderWikiPopup(data, href);
         positionWikiPopup(a.getBoundingClientRect());
+        // Re-position after image loads (changes popup height)
+        const img = popup.querySelector('img.wiki-thumb');
+        if (img && !img.complete) {
+          img.addEventListener('load', () => {
+            if (wikiCurrentLink === a) positionWikiPopup(a.getBoundingClientRect());
+          }, { once: true });
+        }
       });
 
       a.addEventListener('mouseleave', (e) => {
