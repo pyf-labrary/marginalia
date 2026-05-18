@@ -500,11 +500,17 @@
       return;
     }
     const thumb = data.thumbnail && data.thumbnail.source;
+    const tw = data.thumbnail && data.thumbnail.width;
+    const th = data.thumbnail && data.thumbnail.height;
     const desc = data.description || '';
     const title = data.title || '';
     const extract = data.extract || '';
+    // Pre-set aspect-ratio so layout is final before image bytes load
+    const imgStyle = (tw && th)
+      ? `style="aspect-ratio: ${tw} / ${th};"`
+      : '';
     wikiPopup.innerHTML = `
-      ${thumb ? `<img class="wiki-thumb" alt="" src="${thumb}">` : ''}
+      ${thumb ? `<img class="wiki-thumb" alt="" src="${thumb}" ${tw ? `width="${tw}" height="${th}"` : ''} ${imgStyle}>` : ''}
       <div class="wiki-body">
         <h4 class="wiki-title">${title}</h4>
         ${desc ? `<p class="wiki-desc">${desc}</p>` : ''}
@@ -539,14 +545,9 @@
         const data = await fetchWikiSummary(info.lang, info.title);
         if (wikiCurrentLink !== a) return;
         renderWikiPopup(data, href);
+        // Single positioning pass — aspect-ratio on img reserves final
+        // layout space immediately, so no jump when bytes arrive.
         positionWikiPopup(a.getBoundingClientRect());
-        // Re-position after image loads (changes popup height)
-        const img = popup.querySelector('img.wiki-thumb');
-        if (img && !img.complete) {
-          img.addEventListener('load', () => {
-            if (wikiCurrentLink === a) positionWikiPopup(a.getBoundingClientRect());
-          }, { once: true });
-        }
       });
 
       a.addEventListener('mouseleave', (e) => {

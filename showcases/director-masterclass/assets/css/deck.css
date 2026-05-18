@@ -433,21 +433,12 @@
     .card-grid.card-4col { grid-template-columns: 1fr; }
   }
 
-  /* Force 1 row × 6 cols for 6 cards (used for 色彩 mood swatches) */
+  /* Locked 1 row × 6 cols for 6 cards (色彩 mood swatches) — never wraps */
   .card-grid.card-6col {
     grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 12px;
   }
   .card-grid.card-6col .card { padding: 16px 12px 14px; }
-  @media (max-width: 1200px) {
-    .card-grid.card-6col { grid-template-columns: repeat(3, 1fr); }
-  }
-  @media (max-width: 720px) {
-    .card-grid.card-6col { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 480px) {
-    .card-grid.card-6col { grid-template-columns: 1fr; }
-  }
   
   .card {
     padding: 24px;
@@ -1693,6 +1684,68 @@
     max-width: 100%;
   }
 
+  /* ===== Hero-overlay: full-bleed image at top with heading/lede overlaid =====
+     Image takes its natural ratio (no crop). A linear-gradient veil at the top
+     fades from ink → transparent so text in the top region stays readable. */
+  .slide.hero-overlay-slide {
+    padding-top: 0 !important;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .hero-overlay {
+    position: relative;
+    margin: 0 -8vw 24px;
+    overflow: hidden;
+    width: calc(100% + 16vw);
+  }
+  .hero-overlay > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    object-fit: cover;
+  }
+  .hero-overlay-veil {
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 55%;
+    background: linear-gradient(180deg,
+      var(--ink) 0%,
+      rgba(10,8,5,0.95) 18%,
+      rgba(10,8,5,0.75) 38%,
+      rgba(10,8,5,0.35) 64%,
+      rgba(10,8,5,0.08) 86%,
+      transparent 100%);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .hero-overlay-text {
+    position: absolute;
+    top: 0;
+    left: 8vw;
+    right: 8vw;
+    padding: 56px 0 0 0;
+    z-index: 3;
+  }
+  .hero-overlay-text .eyebrow { margin-bottom: 12px; }
+  .hero-overlay-text .heading { margin-bottom: 0; }
+  /* For 色彩: tall overlay variant fits heading + row-2col-lede on image */
+  .hero-overlay-tall .hero-overlay-veil { height: 70%; }
+  .hero-overlay-tall .hero-overlay-text .row-2col-lede {
+    margin-top: 22px;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+  .hero-overlay-tall .hero-overlay-text .row-2col-lede .lede,
+  .hero-overlay-tall .hero-overlay-text .row-2col-lede .side-note {
+    color: var(--paper);
+  }
+  .hero-overlay-tall .hero-overlay-text .row-2col-lede .side-note {
+    background: rgba(184,35,28,0.18);
+    border-left-color: var(--blood);
+  }
+
   /* ===== Slide-with-bottom-img (光影): image flush at slide bottom edge,
      fades into the ink above where it meets the text. No frame/border. ===== */
   .slide.slide-with-bottom-img {
@@ -1974,10 +2027,10 @@
   .wiki-popup .wiki-thumb {
     display: block;
     width: 100%;
-    max-height: 280px;
-    object-fit: contain;
+    height: auto;
     background: #16110a;
     border-bottom: 1px solid rgba(198,154,75,0.4);
+    flex-shrink: 0;
   }
   .wiki-popup .wiki-body {
     padding: 12px 16px 14px;
