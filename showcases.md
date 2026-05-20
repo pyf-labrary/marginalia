@@ -9,9 +9,9 @@ permalink: /showcases/
 
 ## 导演艺术大师课 · The Director's Craft
 
-七页幻灯，从镜头语言基础到导演思维的完整大师课：六章共 29 个主题——景别 / 运镜 / 蒙太奇 / 构图 / 光影 / 色彩 / 调度 / 风格作者 / 视觉化思维。每章配 AI 生成的电影感剧照背景，第二章带循环运镜视频，全程配 MiniMax 生成的影厅级 BGM（右上角 ♫ 可切换）。
+七页幻灯，从镜头语言基础到导演思维的完整大师课：六章共 29 个主题——景别 / 运镜 / 蒙太奇 / 构图 / 光影 / 色彩 / 调度 / 风格作者 / 视觉化思维。每章配 AI 生成的电影感剧照背景，第二章带循环运镜视频，全程配 MiniMax 生成的影厅级 BGM（右上角 ♫ 可切换）。影音素材较多，外链托管，跳转打开。
 
-→ [打开 Showcase](/marginalia/showcases/director-masterclass/)
+→ [打开 Showcase](https://ftp.ssbx.site/showcases/director-masterclass/)
 
 *整理时间：2026-05-18。*
 
