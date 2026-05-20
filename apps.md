@@ -3,6 +3,7 @@ layout: page
 title: Apps
 description: "Marginalia 上的互动应用——独立的小站、教学工具、可玩的 demo，每一个都是 Claude 协作写出来的。"
 permalink: /apps/
+wide: true
 ---
 
 互动应用集合。和 [Showcases](/marginalia/showcases/) 的"静态 deck"不同，这里的每一个都是带后端逻辑或重交互的 SPA。

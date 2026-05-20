@@ -22,8 +22,8 @@
   --mono:  ui-monospace, 'SF Mono', SFMono-Regular, 'JetBrains Mono', Menlo, Consolas,
            'Liberation Mono', monospace;
 
-  --measure: 720px;
-  --wide:   880px;
+  --measure: 720px;   /* reading column — articles & prose pages */
+  --wide:   1080px;   /* header + listing/landing pages (cards, grids, catalogs) */
 }
 
 * { box-sizing: border-box; }
@@ -58,6 +58,8 @@ body::before {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+/* listing/landing pages (home, ai-hot, apps, videos, showcases) breathe wider */
+.wrap--wide { max-width: var(--wide); }
 .site-main { padding: 3.5rem 0 4rem; }
 
 /* ---- Header ---- */
@@ -236,6 +238,7 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
   border-bottom: 1px solid var(--rule);
   padding-bottom: 2.2rem;
   margin-bottom: 2.6rem;
+  max-width: var(--measure);   /* keep the lede readable even inside a wide wrap */
 }
 .intro p { margin-bottom: 1em; }
 .intro p:last-child { margin-bottom: 0; }

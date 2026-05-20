@@ -3,6 +3,7 @@ layout: page
 title: AI Hot · 每日 AI 晨报
 description: "Marginalia 的每日 AI 新闻汇编。每天 06:00 自动汇集前 24 小时的全网 AI 动态——模型发布、公司动态、研究论文、应用产品、行业观点、开源工具，分板块成稿。"
 permalink: /ai-hot/
+wide: true
 ---
 
 每天清晨 06:00 自动汇集前 24 小时的全网 AI 动态——来自官方博客、arXiv、Reddit、Hacker News、X，由大模型聚类去重、分板块成稿。
