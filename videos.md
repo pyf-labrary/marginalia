@@ -3,6 +3,7 @@ layout: page
 title: Videos
 description: "Marginalia 视频专栏——AI 周报与解释类视频。脚本生成、TTS 配音、Remotion 动效、AI B-roll，电视新闻播报感。"
 permalink: /videos/
+wide: true
 ---
 
 <style scoped>
