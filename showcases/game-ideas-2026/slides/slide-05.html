@@ -1,0 +1,61 @@
+<section class="slide" id="slide-5">
+  <div class="slide-header">
+    <span class="slide-number">05 / 20</span>
+    <span class="category-tag cat-mechanic">⚙️ 机制创新</span>
+  </div>
+  <h1 class="slide-title">反向银河城</h1>
+  <p class="slide-subtitle">Reverse Metroidvania</p>
+  <div class="slide-body">
+    <div class="concept-box">
+      <h3>🎯 核心概念</h3>
+      <p>传统银河城不断获得新能力解锁新区域。这个游戏反过来——从满技能开始，随着推进不断失去能力：先失去射击，再失去左移，再失去跳跃……世界程序化生成仍可通关的谜题。</p>
+    </div>
+    <div class="media-section">
+      <h3>🎬 参考作品展示</h3>
+      <div class="media-grid">
+        <div class="media-card">
+          <iframe src="https://www.youtube.com/embed/1rfbOLS5gYA" title="Hollow Knight Trailer" frameborder="0" allowfullscreen></iframe>
+          <p class="media-caption">《Hollow Knight》— 银河城标杆，能力获取驱动探索</p>
+        </div>
+        <div class="media-card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/504230/header.jpg" alt="Celeste">
+          <p class="media-caption">《Celeste》— 精确平台跳跃 + 情感叙事的完美结合</p>
+        </div>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="col">
+        <h3>🎮 核心机制</h3>
+        <ul>
+          <li><strong>能力递减系统</strong> — 每过一关失去一项能力，玩家可选择先放弃哪个</li>
+          <li><strong>程序化关卡</strong> — 根据剩余能力组合生成可通关谜题</li>
+          <li><strong>创意解法</strong> — 能力越少，需要越巧妙利用剩余能力</li>
+          <li><strong>情感叙事</strong> — 能力丧失与角色故事（衰老/牺牲）绑定</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>📋 设计要点</h3>
+        <ul>
+          <li><strong>核心挑战</strong>：确保任何能力组合下关卡都可通关</li>
+          <li><strong>选择的重量</strong>：让玩家纠结于放弃哪个能力</li>
+          <li><strong>参考</strong>：《Celeste》《Hollow Knight》《VVVVVV》</li>
+          <li><strong>最终关卡</strong>：几乎没有能力时的纯操作挑战</li>
+        </ul>
+      </div>
+    </div>
+    <div class="detail-box">
+      <h3>💡 深度设计思路</h3>
+      <p>8个能力有256种组合。解决方案：为每种"能力阶段"（8→6→4→2→0）预设关卡模板，模板内部有小范围随机变化。叙事层面，将能力丧失与角色记忆/身份绑定——失去"跳跃"时忘记童年快乐；失去"攻击"时放下愤怒。</p>
+      <p><strong>技术建议</strong>：Godot/Unity 2D + Tiled地图编辑器 + 模块化关卡拼接。</p>
+    </div>
+    <div class="ref-links">
+      <h3>🔗 参考资源</h3>
+      <ul>
+        <li><a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank">Hollow Knight on Steam</a></li>
+        <li><a href="https://store.steampowered.com/app/504230/Celeste/" target="_blank">Celeste on Steam</a></li>
+        <li><a href="https://www.mapeditor.org/" target="_blank">Tiled 地图编辑器</a></li>
+        <li><a href="https://joshmoody.org/blog/weird-indie-video-game-ideas/" target="_blank">灵感来源：joshmoody.org</a></li>
+      </ul>
+    </div>
+  </div>
+</section>

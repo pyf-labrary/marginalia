@@ -1,0 +1,61 @@
+<section class="slide" id="slide-18">
+  <div class="slide-header">
+    <span class="slide-number">18 / 20</span>
+    <span class="category-tag cat-hybrid">🔀 混合实验</span>
+  </div>
+  <h1 class="slide-title">自学习敌人潜行</h1>
+  <p class="slide-subtitle">Self-Learning Enemy Stealth</p>
+  <div class="slide-body">
+    <div class="concept-box">
+      <h3>🎯 核心概念</h3>
+      <p>只有一个关卡，但敌人AI会根据你之前的通关方式训练自己。每次重玩都更难，迫使你不断创造新策略。你的对手在进化——你能跟上吗？</p>
+    </div>
+    <div class="media-section">
+      <h3>🎬 参考作品展示</h3>
+      <div class="media-grid">
+        <div class="media-card">
+          <iframe src="https://www.youtube.com/embed/Cj3rrhGaFvo" title="Metal Gear Solid V Stealth" frameborder="0" allowfullscreen></iframe>
+          <p class="media-caption">《MGSV》— 敌人会适应玩家策略（戴头盔对抗爆头）</p>
+        </div>
+        <div class="media-card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/418240/header.jpg" alt="Shadow Tactics">
+          <p class="media-caption">《Shadow Tactics》— 精密潜行策略的参考</p>
+        </div>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="col">
+        <h3>🎮 核心机制</h3>
+        <ul>
+          <li><strong>AI学习</strong> — 敌人用NEAT算法训练，学习你的路线</li>
+          <li><strong>单关卡深度</strong> — 同一地图，无限种通关方式</li>
+          <li><strong>策略迭代</strong> — 旧策略失效，必须发明新方法</li>
+          <li><strong>难度曲线</strong> — 自然形成的个性化难度</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>📋 设计要点</h3>
+        <ul>
+          <li><strong>公平感</strong>：AI学习要透明，让玩家理解敌人在适应</li>
+          <li><strong>多路线设计</strong>：地图必须支持大量不同路线</li>
+          <li><strong>参考</strong>：《MGSV》适应系统、NEAT算法、《Alien: Isolation》</li>
+          <li><strong>回放系统</strong>：观看AI如何学习你的行为</li>
+        </ul>
+      </div>
+    </div>
+    <div class="detail-box">
+      <h3>💡 深度设计思路</h3>
+      <p>《MGSV》已经有简单版本：如果你总是爆头，敌人开始戴头盔。这个概念将其推向极致——用神经进化算法让敌人真正"学习"。可以加入"AI训练回放"功能，让玩家观看敌人是如何从菜鸟进化成高手的。</p>
+      <p><strong>技术建议</strong>：Unity + ML-Agents 或自实现NEAT。关键挑战是训练速度——需要在玩家两次游玩之间完成训练。可以用简化的状态空间加速。</p>
+    </div>
+    <div class="ref-links">
+      <h3>🔗 参考资源</h3>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies" target="_blank">NEAT算法 Wikipedia</a></li>
+        <li><a href="https://unity.com/products/machine-learning-agents" target="_blank">Unity ML-Agents</a></li>
+        <li><a href="https://store.steampowered.com/app/418240/Shadow_Tactics_Blades_of_the_Shogun/" target="_blank">Shadow Tactics on Steam</a></li>
+        <li><a href="https://joshmoody.org/blog/weird-indie-video-game-ideas/" target="_blank">灵感来源：joshmoody.org</a></li>
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+<section class="slide" id="slide-6">
+  <div class="slide-header">
+    <span class="slide-number">06 / 20</span>
+    <span class="category-tag cat-mechanic">⚙️ 机制创新</span>
+  </div>
+  <h1 class="slide-title">蝙蝠回声定位</h1>
+  <p class="slide-subtitle">Bat Echolocation</p>
+  <div class="slide-body">
+    <div class="concept-box">
+      <h3>🎯 核心概念</h3>
+      <p>屏幕全黑，每隔几秒发出一次声纳脉冲才能短暂"看见"周围环境。玩家扮演蝙蝠，靠声音导航和探索洞穴世界，声音本身也会引来危险。</p>
+    </div>
+    <div class="media-section">
+      <h3>🎬 参考作品展示</h3>
+      <div class="media-grid">
+        <div class="media-card">
+          <iframe src="https://www.youtube.com/embed/pKWIJMCEQ_Y" title="Stifled Echolocation Game" frameborder="0" allowfullscreen></iframe>
+          <p class="media-caption">《Stifled》— 用麦克风发声来"看见"世界的恐怖游戏</p>
+        </div>
+        <div class="media-card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/514830/header.jpg" alt="Stifled">
+          <p class="media-caption">声音是唯一的视觉来源，敌人通过麦克风听到你的恐惧</p>
+        </div>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="col">
+        <h3>🎮 核心机制</h3>
+        <ul>
+          <li><strong>声纳脉冲</strong> — 按键发出声波，短暂照亮周围轮廓</li>
+          <li><strong>声音即危险</strong> — 发声越频繁，越容易被捕食者发现</li>
+          <li><strong>频率调节</strong> — 不同频率的声波揭示不同类型的物体</li>
+          <li><strong>声景导航</strong> — 水流声、风声等环境音作为方向指引</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>📋 设计要点</h3>
+        <ul>
+          <li><strong>音频设计</strong>：这是一个"听觉优先"的游戏，音效是核心</li>
+          <li><strong>视觉风格</strong>：全黑背景 + 声波产生的白色轮廓线</li>
+          <li><strong>参考</strong>：《Stifled》《ECHOLOCAUTION》《Blind Flight》</li>
+          <li><strong>可选VR</strong>：空间音频在VR中效果极佳</li>
+        </ul>
+      </div>
+    </div>
+    <div class="detail-box">
+      <h3>💡 深度设计思路</h3>
+      <p>声纳视觉效果可以用shader实现：从玩家位置发出的圆形波纹，碰到物体表面时产生白色轮廓，然后逐渐消退。不同材质的物体反射不同颜色（石头=白色，水=蓝色，危险=红色）。</p>
+      <p><strong>技术建议</strong>：Unity + 自定义shader。核心是声波传播的物理模拟和视觉化。可以用麦克风输入作为可选控制方式。</p>
+    </div>
+    <div class="ref-links">
+      <h3>🔗 参考资源</h3>
+      <ul>
+        <li><a href="https://store.steampowered.com/app/514830/Stifled__Echolocation_Horror_Mystery/" target="_blank">Stifled on Steam</a></li>
+        <li><a href="https://store.steampowered.com/app/1545250/ECHOLOCAUTION/" target="_blank">ECHOLOCAUTION on Steam</a></li>
+        <li><a href="https://bfun2468.itch.io/echo-cave" target="_blank">Echo Cave — itch.io 回声定位游戏</a></li>
+        <li><a href="https://joshmoody.org/blog/weird-indie-video-game-ideas/" target="_blank">灵感来源：joshmoody.org</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
