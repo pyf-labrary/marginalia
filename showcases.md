@@ -47,3 +47,19 @@ S01·E01《恒伽达》立项手册：从《贤愚经》原典出发，七页 de
 → [打开 Showcase](/marginalia/showcases/agent-landscape-2026/)
 
 *整理时间：2026-04-30。*
+
+## Kiro · AWS Agentic IDE 全景
+
+两份独立 deck 看清 Kiro 这款 AWS 推出的 agentic IDE：一份是**全面能力介绍**（单页长卷，覆盖 AI 编码、AWS 集成、前后端 / 数据 / 数据库 / DevOps / 移动 / 测试 / 安全 / 文档 / 多语言支持与工作流），一份是**面向软件工程师的能力深度解析**（SE 视角的结构化拆解）。
+
+→ [打开·全面能力介绍](/marginalia/showcases/kiro-2026/)　|　→ [打开·SE 深度解析](/marginalia/showcases/kiro-2026/se/)
+
+*整理时间：2026-04-28。*
+
+## 20 个单机游戏设计灵感
+
+互动幻灯：20 个原创单机游戏概念提案，按叙事驱动 / 机制创新等维度分类，每个灵感给出核心玩法、卖点与一句话立意。左右翻页浏览。
+
+→ [打开 Showcase](/marginalia/showcases/game-ideas-2026/)
+
+*整理时间：2026-04-28。*

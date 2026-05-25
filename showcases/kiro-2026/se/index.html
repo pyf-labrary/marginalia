@@ -1,0 +1,2979 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Kiro AI · 软件工程全能力深度解析</title>
+<style>
+:root{
+  --bg:#0b1120;--bg2:#131c31;--bg3:#1a2744;
+  --accent:#3b82f6;--accent2:#8b5cf6;--accent3:#06b6d4;
+  --green:#10b981;--orange:#f59e0b;--red:#ef4444;--pink:#ec4899;
+  --text:#e2e8f0;--text2:#94a3b8;--border:#1e3a5f;
+  --slide-w:1200px;--slide-h:675px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans SC',sans-serif;background:#000;color:var(--text);overflow:hidden;height:100vh;}
+
+/* ===== Slide Container ===== */
+#deck{position:relative;width:100vw;height:100vh;overflow:hidden;}
+.slide{
+  position:absolute;top:0;left:0;width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .5s,transform .5s;
+  transform:translateX(60px);
+}
+.slide.active{opacity:1;pointer-events:auto;transform:translateX(0);}
+.slide.prev{opacity:0;transform:translateX(-60px);}
+
+.slide-inner{
+  width:min(var(--slide-w),95vw);height:min(var(--slide-h),90vh);
+  background:var(--bg);border:1px solid var(--border);border-radius:16px;
+  padding:48px 56px;overflow-y:auto;position:relative;
+  box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+.slide-inner::-webkit-scrollbar{width:4px;}
+.slide-inner::-webkit-scrollbar-thumb{background:var(--accent);border-radius:2px;}
+
+/* ===== Typography ===== */
+h1{font-size:2.6rem;font-weight:800;line-height:1.2;margin-bottom:12px;}
+h2{font-size:1.8rem;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+h3{font-size:1.2rem;font-weight:600;margin-bottom:10px;color:var(--accent);}
+h4{font-size:1rem;font-weight:600;margin-bottom:6px;}
+p,.li{font-size:.92rem;color:var(--text2);line-height:1.7;}
+ul{padding-left:20px;margin:8px 0;}
+li{font-size:.88rem;color:var(--text2);margin-bottom:5px;line-height:1.6;}
+li strong{color:var(--text);}
+.small{font-size:.8rem;color:var(--text2);}
+
+/* Gradient text */
+.grad{background:linear-gradient(135deg,var(--accent),var(--accent2),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.grad2{background:linear-gradient(135deg,var(--green),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.grad3{background:linear-gradient(135deg,var(--orange),var(--red));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.grad4{background:linear-gradient(135deg,var(--pink),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+
+/* ===== Layout helpers ===== */
+.cols{display:grid;gap:20px;}
+.cols-2{grid-template-columns:1fr 1fr;}
+.cols-3{grid-template-columns:1fr 1fr 1fr;}
+.cols-4{grid-template-columns:1fr 1fr 1fr 1fr;}
+
+.box{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:18px;}
+.box:hover{border-color:var(--accent);}
+.box h3{margin-bottom:8px;}
+.box-accent{border-left:3px solid var(--accent);background:var(--bg2);padding:14px 18px;border-radius:0 8px 8px 0;margin:8px 0;}
+.box-green{border-left:3px solid var(--green);}
+.box-purple{border-left:3px solid var(--accent2);}
+.box-orange{border-left:3px solid var(--orange);}
+.box-pink{border-left:3px solid var(--pink);}
+
+/* Tags */
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0;}
+.tag{padding:3px 12px;border-radius:14px;font-size:.75rem;font-weight:500;border:1px solid var(--border);}
+.tag-blue{background:rgba(59,130,246,.15);color:var(--accent);border-color:rgba(59,130,246,.3);}
+.tag-purple{background:rgba(139,92,246,.15);color:var(--accent2);border-color:rgba(139,92,246,.3);}
+.tag-cyan{background:rgba(6,182,212,.15);color:var(--accent3);border-color:rgba(6,182,212,.3);}
+.tag-green{background:rgba(16,185,129,.15);color:var(--green);border-color:rgba(16,185,129,.3);}
+.tag-orange{background:rgba(245,158,11,.15);color:var(--orange);border-color:rgba(245,158,11,.3);}
+.tag-pink{background:rgba(236,72,153,.15);color:var(--pink);border-color:rgba(236,72,153,.3);}
+
+/* Progress bar */
+.bar-wrap{margin:6px 0;}
+.bar-label{display:flex;justify-content:space-between;font-size:.78rem;margin-bottom:3px;}
+.bar{height:7px;background:var(--border);border-radius:4px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:4px;}
+
+/* Table */
+.tbl{width:100%;border-collapse:collapse;font-size:.85rem;margin:10px 0;}
+.tbl th,.tbl td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.tbl th{color:var(--accent);font-weight:600;font-size:.8rem;background:rgba(59,130,246,.05);}
+.tbl td{color:var(--text2);}
+
+/* Code */
+.code{background:#0d1117;border:1px solid var(--border);border-radius:6px;padding:12px 16px;font-family:'Fira Code',Consolas,monospace;font-size:.78rem;color:#c9d1d9;margin:8px 0;overflow-x:auto;line-height:1.5;}
+
+/* Slide number */
+.slide-num{position:absolute;bottom:16px;right:24px;font-size:.75rem;color:var(--text2);}
+/* Section label */
+.sec-label{position:absolute;top:16px;right:24px;font-size:.7rem;color:var(--accent);letter-spacing:1px;text-transform:uppercase;}
+
+/* ===== Controls ===== */
+#controls{
+  position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:100;
+  display:flex;align-items:center;gap:16px;
+  background:rgba(11,17,32,.9);border:1px solid var(--border);border-radius:12px;
+  padding:8px 20px;backdrop-filter:blur(10px);
+}
+#controls button{
+  background:none;border:1px solid var(--border);color:var(--text);
+  width:36px;height:36px;border-radius:8px;cursor:pointer;font-size:1rem;
+  display:flex;align-items:center;justify-content:center;transition:all .2s;
+}
+#controls button:hover{background:var(--accent);border-color:var(--accent);}
+#progress-text{font-size:.8rem;color:var(--text2);min-width:60px;text-align:center;}
+#progress-bar{width:200px;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+#progress-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .3s;}
+
+/* TOC slide */
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;}
+.toc-item{
+  display:flex;align-items:center;gap:10px;padding:8px 14px;
+  background:var(--bg2);border:1px solid var(--border);border-radius:8px;
+  cursor:pointer;transition:all .2s;font-size:.85rem;color:var(--text2);
+}
+.toc-item:hover{border-color:var(--accent);color:var(--accent);}
+.toc-num{font-weight:700;color:var(--accent);font-size:.9rem;min-width:28px;}
+
+/* Cover */
+.cover-center{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center;}
+.cover-center h1{font-size:3rem;margin-bottom:8px;}
+.cover-center .subtitle{font-size:1.2rem;color:var(--text2);margin-bottom:24px;}
+.cover-stats{display:flex;gap:32px;margin-top:20px;}
+.cover-stat{text-align:center;}
+.cover-stat .num{font-size:2rem;font-weight:700;color:var(--accent);}
+.cover-stat .lbl{font-size:.75rem;color:var(--text2);}
+
+/* Section divider */
+.divider-center{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center;}
+.divider-center h1{font-size:2.8rem;margin-bottom:12px;}
+.divider-center p{font-size:1.1rem;color:var(--text2);max-width:600px;}
+.divider-num{font-size:5rem;font-weight:800;opacity:.15;position:absolute;top:20px;left:40px;}
+
+/* Responsive */
+@media(max-width:800px){
+  .slide-inner{padding:24px 28px;}
+  h1{font-size:1.8rem;}h2{font-size:1.3rem;}
+  .cols-2,.cols-3,.cols-4{grid-template-columns:1fr;}
+  .toc-grid{grid-template-columns:1fr;}
+  .cover-stats{flex-wrap:wrap;gap:16px;}
+}
+</style>
+</head>
+<body>
+
+<div id="deck">
+<!-- SLIDES START -->
+
+<!-- SLIDE 1: Cover -->
+<div class="slide active">
+<div class="slide-inner">
+  <div class="cover-center">
+    <div style="font-size:.9rem;color:var(--accent);letter-spacing:3px;margin-bottom:16px;">KIRO AI · SOFTWARE ENGINEERING</div>
+    <h1 class="grad">软件工程全能力深度解析</h1>
+    <div class="subtitle">从需求分析到部署运维，覆盖软件开发生命周期每一个环节</div>
+    <div class="cover-stats">
+      <div class="cover-stat"><div class="num">50+</div><div class="lbl">编程语言</div></div>
+      <div class="cover-stat"><div class="num">100+</div><div class="lbl">框架/库</div></div>
+      <div class="cover-stat"><div class="num">15</div><div class="lbl">工程领域</div></div>
+      <div class="cover-stat"><div class="num">200+</div><div class="lbl">AWS 服务</div></div>
+    </div>
+    <div style="margin-top:32px;font-size:.8rem;color:var(--text2);">使用 ← → 方向键或底部按钮翻页 · 按 F 全屏</div>
+  </div>
+  <div class="slide-num">1</div>
+</div>
+</div>
+
+<!-- SLIDES PLACEHOLDER -->
+
+<!-- SLIDE 2: TOC -->
+<div class="slide"><div class="slide-inner">
+  <h2>📑 目录总览</h2>
+  <div class="toc-grid">
+    <div class="toc-item" onclick="goSlide(3)"><span class="toc-num">01</span>需求分析与建模</div>
+    <div class="toc-item" onclick="goSlide(8)"><span class="toc-num">02</span>系统设计与架构</div>
+    <div class="toc-item" onclick="goSlide(15)"><span class="toc-num">03</span>编程语言精通</div>
+    <div class="toc-item" onclick="goSlide(22)"><span class="toc-num">04</span>前端工程</div>
+    <div class="toc-item" onclick="goSlide(30)"><span class="toc-num">05</span>后端工程</div>
+    <div class="toc-item" onclick="goSlide(37)"><span class="toc-num">06</span>数据库工程</div>
+    <div class="toc-item" onclick="goSlide(43)"><span class="toc-num">07</span>API 设计与集成</div>
+    <div class="toc-item" onclick="goSlide(48)"><span class="toc-num">08</span>软件测试</div>
+    <div class="toc-item" onclick="goSlide(54)"><span class="toc-num">09</span>DevOps 与 CI/CD</div>
+    <div class="toc-item" onclick="goSlide(61)"><span class="toc-num">10</span>安全工程</div>
+    <div class="toc-item" onclick="goSlide(66)"><span class="toc-num">11</span>性能工程</div>
+    <div class="toc-item" onclick="goSlide(71)"><span class="toc-num">12</span>AI 辅助工程</div>
+    <div class="toc-item" onclick="goSlide(76)"><span class="toc-num">13</span>项目管理与协作</div>
+    <div class="toc-item" onclick="goSlide(80)"><span class="toc-num">14</span>总结与展望</div>
+    <div class="toc-item" onclick="goSlide(83)"><span class="toc-num">15</span>能力极限深度剖析</div>
+  </div>
+  <div class="slide-num">2</div>
+</div></div>
+
+<!-- ============ CHAPTER 1: 需求分析 ============ -->
+<!-- SLIDE 3: Divider -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">01</div>
+  <div class="divider-center">
+    <h1 class="grad">需求分析与建模</h1>
+    <p>软件工程的起点 — 理解问题比解决问题更重要。Kiro 能够帮助你从模糊的想法到清晰的需求规格。</p>
+  </div>
+  <div class="slide-num">3</div>
+</div></div>
+
+<!-- SLIDE 4 -->
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">01 · 需求分析</div>
+  <h2>📋 需求获取与分析</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>🎯 需求类型识别</h3>
+      <ul>
+        <li><strong>功能需求</strong>：用户故事编写（As a... I want... So that...）、用例图描述、功能点分解、验收标准定义（Given-When-Then）</li>
+        <li><strong>非功能需求</strong>：性能指标（响应时间/吞吐量/并发数）、可用性目标（99.9%/99.99%）、安全要求、可扩展性、可维护性</li>
+        <li><strong>约束条件</strong>：技术栈限制、预算约束、合规要求（GDPR/HIPAA/PCI-DSS）、时间线</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>📝 需求文档生成</h3>
+      <ul>
+        <li><strong>PRD（产品需求文档）</strong>：完整的产品需求描述，包括背景、目标、用户画像、功能列表、优先级排序</li>
+        <li><strong>SRS（软件需求规格说明）</strong>：IEEE 830 标准格式，详细的功能和非功能需求描述</li>
+        <li><strong>用户故事地图</strong>：按用户旅程组织的功能分解，识别 MVP 范围</li>
+        <li><strong>竞品分析报告</strong>：功能对比矩阵、技术栈分析、差异化策略</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">4</div>
+</div></div>
+
+<!-- SLIDE 5 -->
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">01 · 需求分析</div>
+  <h2>🔍 领域建模</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>📐 UML 建模能力</h3>
+      <ul>
+        <li><strong>用例图</strong>：Actor 识别、用例关系（include/extend/generalization）</li>
+        <li><strong>类图</strong>：实体关系、继承层次、接口定义、关联/聚合/组合</li>
+        <li><strong>序列图</strong>：对象交互时序、同步/异步消息、循环/条件片段</li>
+        <li><strong>状态图</strong>：状态转换、事件触发、守卫条件</li>
+        <li><strong>活动图</strong>：业务流程、并行分支、决策节点</li>
+      </ul>
+      <p class="small" style="margin-top:8px">Kiro 可以用 PlantUML/Mermaid 语法生成这些图的代码</p>
+    </div>
+    <div class="box">
+      <h3>🏛️ 领域驱动设计（DDD）</h3>
+      <ul>
+        <li><strong>战略设计</strong>：限界上下文（Bounded Context）划分、上下文映射（Context Map）、通用语言（Ubiquitous Language）定义</li>
+        <li><strong>战术设计</strong>：聚合根（Aggregate Root）、实体（Entity）、值对象（Value Object）、领域服务、领域事件</li>
+        <li><strong>仓储模式</strong>：Repository 接口设计、持久化策略</li>
+        <li><strong>防腐层</strong>：外部系统集成的隔离层设计</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">5</div>
+</div></div>
+
+<!-- SLIDE 6 -->
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">01 · 需求分析</div>
+  <h2>📊 需求分析实战示例</h2>
+  <div class="box-accent">
+    <h4>场景：电商平台订单系统需求分析</h4>
+    <p class="small">Kiro 可以从一句话需求 "做一个订单系统" 展开完整的需求分析：</p>
+  </div>
+  <div class="cols cols-3" style="margin-top:12px">
+    <div class="box">
+      <h3>👤 用户故事</h3>
+      <div class="code">作为买家，我想要：
+• 将商品加入购物车
+• 选择收货地址和支付方式
+• 提交订单并在线支付
+• 查看订单状态和物流信息
+• 申请退款/退货
+
+作为卖家，我想要：
+• 接收和处理订单
+• 管理发货和物流
+• 处理退款申请</div>
+    </div>
+    <div class="box">
+      <h3>🔄 状态机设计</h3>
+      <div class="code">待支付 → 已支付 → 待发货
+  ↓         ↓        ↓
+已取消   退款中    已发货
+            ↓        ↓
+          已退款   已签收
+                     ↓
+                  已完成/退货中</div>
+    </div>
+    <div class="box">
+      <h3>📏 非功能需求</h3>
+      <ul>
+        <li>下单接口 &lt;200ms 响应</li>
+        <li>支持 1000 QPS 并发下单</li>
+        <li>订单数据保留 3 年</li>
+        <li>支付信息 PCI-DSS 合规</li>
+        <li>99.99% 可用性</li>
+        <li>支持水平扩展</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">6</div>
+</div></div>
+
+<!-- SLIDE 7 -->
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">01 · 需求分析</div>
+  <h2>🛠️ 需求分析工具链</h2>
+  <div class="cols cols-2">
+    <div>
+      <h3>Kiro 可以生成的需求制品</h3>
+      <table class="tbl">
+        <tr><th>制品类型</th><th>格式</th><th>内容</th></tr>
+        <tr><td>PRD 文档</td><td>Markdown</td><td>完整产品需求描述</td></tr>
+        <tr><td>用户故事</td><td>Markdown/JIRA</td><td>标准格式用户故事</td></tr>
+        <tr><td>UML 图</td><td>PlantUML/Mermaid</td><td>各类 UML 图代码</td></tr>
+        <tr><td>API 契约</td><td>OpenAPI YAML</td><td>接口规格定义</td></tr>
+        <tr><td>数据模型</td><td>SQL DDL</td><td>数据库表结构</td></tr>
+        <tr><td>原型描述</td><td>HTML/Markdown</td><td>页面结构和交互说明</td></tr>
+        <tr><td>测试用例</td><td>Gherkin/Markdown</td><td>验收测试场景</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>需求分析流程</h3>
+      <div class="box-accent">
+        <p><strong>Step 1</strong>：理解业务背景和目标</p>
+      </div>
+      <div class="box-accent box-green">
+        <p><strong>Step 2</strong>：识别用户角色和核心用例</p>
+      </div>
+      <div class="box-accent box-purple">
+        <p><strong>Step 3</strong>：分解功能需求，定义验收标准</p>
+      </div>
+      <div class="box-accent box-orange">
+        <p><strong>Step 4</strong>：明确非功能需求和约束</p>
+      </div>
+      <div class="box-accent box-pink">
+        <p><strong>Step 5</strong>：输出需求文档和领域模型</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">7</div>
+</div></div>
+
+<!-- ============ CHAPTER 2: 系统设计 ============ -->
+<!-- SLIDE 8: Divider -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">02</div>
+  <div class="divider-center">
+    <h1 class="grad2">系统设计与架构</h1>
+    <p>从高层架构到详细设计，从单体应用到分布式系统，Kiro 具备完整的系统设计能力。</p>
+  </div>
+  <div class="slide-num">8</div>
+</div></div>
+
+<!-- SLIDE 9 -->
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">02 · 系统设计</div>
+  <h2>🏗️ 架构模式精通</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>单体架构</h3>
+      <ul>
+        <li><strong>分层架构</strong>：Controller → Service → Repository → Database，职责清晰分离</li>
+        <li><strong>模块化单体</strong>：按业务域划分模块，模块间通过接口通信，为未来拆分微服务做准备</li>
+        <li><strong>六边形架构</strong>：端口与适配器模式，业务逻辑与外部依赖解耦</li>
+        <li><strong>适用场景</strong>：中小型项目、团队规模 &lt;10 人、快速迭代期</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>微服务架构</h3>
+      <ul>
+        <li><strong>服务拆分</strong>：按业务能力/限界上下文拆分，单一职责</li>
+        <li><strong>通信模式</strong>：同步（REST/gRPC）+ 异步（消息队列/事件总线）</li>
+        <li><strong>数据管理</strong>：每服务独立数据库、Saga 分布式事务、最终一致性</li>
+        <li><strong>基础设施</strong>：服务发现、配置中心、API 网关、熔断限流、链路追踪</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cols cols-2" style="margin-top:12px">
+    <div class="box">
+      <h3>事件驱动架构</h3>
+      <ul>
+        <li>Event Sourcing：事件溯源，完整审计追踪</li>
+        <li>CQRS：命令查询职责分离，读写独立优化</li>
+        <li>Event Bus：松耦合的服务间通信</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Serverless 架构</h3>
+      <ul>
+        <li>FaaS：AWS Lambda / Azure Functions</li>
+        <li>BaaS：托管数据库、认证、存储</li>
+        <li>编排：Step Functions 状态机</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">9</div>
+</div></div>
+
+<!-- SLIDE 10 -->
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">02 · 系统设计</div>
+  <h2>📐 设计原则与模式</h2>
+  <div class="cols cols-2">
+    <div>
+      <h3>SOLID 原则</h3>
+      <div class="box-accent"><strong>S</strong> — 单一职责：一个类只有一个变化的原因</div>
+      <div class="box-accent box-green"><strong>O</strong> — 开闭原则：对扩展开放，对修改关闭</div>
+      <div class="box-accent box-purple"><strong>L</strong> — 里氏替换：子类可以替换父类使用</div>
+      <div class="box-accent box-orange"><strong>I</strong> — 接口隔离：客户端不应依赖不需要的接口</div>
+      <div class="box-accent box-pink"><strong>D</strong> — 依赖倒置：依赖抽象而非具体实现</div>
+    </div>
+    <div>
+      <h3>常用设计模式</h3>
+      <table class="tbl">
+        <tr><th>类别</th><th>模式</th></tr>
+        <tr><td>创建型</td><td>工厂、抽象工厂、建造者、单例、原型</td></tr>
+        <tr><td>结构型</td><td>适配器、桥接、组合、装饰器、外观、代理</td></tr>
+        <tr><td>行为型</td><td>策略、观察者、命令、状态、模板方法、迭代器、中介者</td></tr>
+        <tr><td>架构型</td><td>MVC、MVP、MVVM、Repository、Unit of Work</td></tr>
+        <tr><td>并发型</td><td>生产者-消费者、读写锁、线程池、Actor</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="slide-num">10</div>
+</div></div>
+
+<!-- SLIDE 11 -->
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">02 · 系统设计</div>
+  <h2>☁️ 云原生架构设计</h2>
+  <div class="cols cols-3">
+    <div class="box">
+      <h3>容器化设计</h3>
+      <ul>
+        <li>Docker 多阶段构建优化</li>
+        <li>镜像安全（非 root、最小基础镜像）</li>
+        <li>健康检查与优雅关闭</li>
+        <li>资源限制（CPU/Memory Limits）</li>
+        <li>日志标准化（stdout/stderr）</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Kubernetes 编排</h3>
+      <ul>
+        <li>Deployment 滚动更新策略</li>
+        <li>HPA/VPA 自动扩缩</li>
+        <li>Service Mesh（Istio）</li>
+        <li>Ingress 流量管理</li>
+        <li>ConfigMap/Secret 配置管理</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>AWS 云架构</h3>
+      <ul>
+        <li>Well-Architected 五大支柱</li>
+        <li>多 AZ / 多 Region 高可用</li>
+        <li>Auto Scaling 弹性伸缩</li>
+        <li>CDN + 边缘计算</li>
+        <li>成本优化策略</li>
+      </ul>
+    </div>
+  </div>
+  <div class="box-accent" style="margin-top:16px">
+    <h4>Kiro 的独特优势：直接调用 AWS CLI</h4>
+    <p class="small">Kiro 可以直接执行 AWS CLI 命令来查询资源状态、验证配置、排查问题。不需要切换窗口，在对话中直接完成云架构的设计、实施和验证。</p>
+  </div>
+  <div class="slide-num">11</div>
+</div></div>
+
+<!-- SLIDE 12 -->
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">02 · 系统设计</div>
+  <h2>🔄 分布式系统设计</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>核心挑战与解决方案</h3>
+      <ul>
+        <li><strong>一致性</strong>：强一致（2PC）、最终一致（Saga/补偿事务）、因果一致</li>
+        <li><strong>可用性</strong>：主从复制、多活架构、故障转移、降级策略</li>
+        <li><strong>分区容错</strong>：CAP 定理权衡、网络分区处理</li>
+        <li><strong>幂等性</strong>：请求去重、幂等键设计、重试安全</li>
+        <li><strong>分布式锁</strong>：Redis Redlock、ZooKeeper、数据库乐观锁</li>
+        <li><strong>分布式 ID</strong>：Snowflake、UUID v7、数据库序列</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>经典系统设计题</h3>
+      <p class="small">Kiro 可以完成以下系统设计：</p>
+      <ul>
+        <li>URL 短链接服务（哈希 + 分布式存储）</li>
+        <li>消息推送系统（WebSocket + 消息队列）</li>
+        <li>秒杀系统（限流 + 缓存 + 异步下单）</li>
+        <li>Feed 流系统（推拉结合 + 时间线）</li>
+        <li>搜索引擎（倒排索引 + 分词 + 排序）</li>
+        <li>文件存储系统（分片 + 副本 + 一致性哈希）</li>
+        <li>实时聊天系统（长连接 + 消息存储 + 已读回执）</li>
+        <li>支付系统（幂等 + 对账 + 分布式事务）</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">12</div>
+</div></div>
+
+<!-- SLIDE 13 -->
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">02 · 系统设计</div>
+  <h2>📄 架构文档输出</h2>
+  <div class="cols cols-2">
+    <div>
+      <h3>C4 模型文档</h3>
+      <div class="box">
+        <ul>
+          <li><strong>Level 1 — System Context</strong>：系统与外部用户/系统的关系</li>
+          <li><strong>Level 2 — Container</strong>：系统内部的容器（Web App、API、DB、MQ）</li>
+          <li><strong>Level 3 — Component</strong>：容器内部的组件和职责</li>
+          <li><strong>Level 4 — Code</strong>：关键组件的类图/代码结构</li>
+        </ul>
+      </div>
+      <h3 style="margin-top:16px">架构决策记录（ADR）</h3>
+      <div class="code">## ADR-001: 选择 PostgreSQL 作为主数据库
+**状态**: 已接受
+**上下文**: 需要支持复杂查询和事务
+**决策**: 使用 PostgreSQL 15+
+**理由**: JSON 支持、扩展生态、性能
+**后果**: 需要 DBA 运维能力</div>
+    </div>
+    <div>
+      <h3>Kiro 可生成的设计文档</h3>
+      <table class="tbl">
+        <tr><th>文档</th><th>内容</th></tr>
+        <tr><td>HLD（高层设计）</td><td>架构图、技术选型、部署拓扑</td></tr>
+        <tr><td>LLD（低层设计）</td><td>类图、序列图、数据模型</td></tr>
+        <tr><td>ADR</td><td>架构决策及理由记录</td></tr>
+        <tr><td>技术选型报告</td><td>方案对比、优劣分析</td></tr>
+        <tr><td>容量规划</td><td>QPS 估算、存储估算、成本估算</td></tr>
+        <tr><td>部署架构图</td><td>网络拓扑、服务依赖</td></tr>
+        <tr><td>灾难恢复计划</td><td>RTO/RPO、备份策略、切换流程</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="slide-num">13</div>
+</div></div>
+
+<!-- SLIDE 14 -->
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">02 · 系统设计</div>
+  <h2>🧩 系统设计实战：微服务电商平台</h2>
+  <div class="code" style="font-size:.72rem">
+┌─────────────┐     ┌──────────────┐     ┌──────────────┐
+│   CDN/WAF   │────▶│  API Gateway │────▶│ Auth Service │
+└─────────────┘     └──────┬───────┘     └──────────────┘
+                           │
+          ┌────────────────┼────────────────┐
+          ▼                ▼                ▼
+   ┌─────────────┐  ┌───────────┐  ┌──────────────┐
+   │ User Service│  │Order Svc  │  │Product Svc   │
+   │  (PostgreSQL)│  │(PostgreSQL)│  │(PostgreSQL)   │
+   └─────────────┘  └─────┬─────┘  └──────────────┘
+                          │ Event
+                    ┌─────▼──────┐
+                    │  Kafka /   │
+                    │ EventBridge│
+                    └─────┬──────┘
+          ┌───────────────┼───────────────┐
+          ▼               ▼               ▼
+   ┌────────────┐  ┌───────────┐  ┌────────────┐
+   │Payment Svc │  │Inventory  │  │Notification│
+   │ (Stripe)   │  │  Service  │  │  Service   │
+   └────────────┘  └───────────┘  └────────────┘
+  </div>
+  <div class="cols cols-3" style="margin-top:8px">
+    <div class="box"><h3>同步通信</h3><p class="small">REST/gRPC 用于查询操作、实时响应场景</p></div>
+    <div class="box"><h3>异步通信</h3><p class="small">Kafka/EventBridge 用于订单事件、库存扣减、通知</p></div>
+    <div class="box"><h3>数据隔离</h3><p class="small">每个服务独立数据库，通过事件保持最终一致</p></div>
+  </div>
+  <div class="slide-num">14</div>
+</div></div>
+
+<!-- SLIDE-BATCH-1-END -->
+
+<!-- ============ CHAPTER 3: 编程语言 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">03</div>
+  <div class="divider-center">
+    <h1 class="grad3">编程语言精通</h1>
+    <p>50+ 编程语言支持，从系统级到脚本语言，从传统到新兴，全面覆盖。</p>
+  </div>
+  <div class="slide-num">15</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">03 · 编程语言</div>
+  <h2>🐍 Python & JavaScript/TypeScript</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>Python（能力 98%）</h3>
+      <ul>
+        <li><strong>版本</strong>：3.8 → 3.12 全特性支持</li>
+        <li><strong>类型系统</strong>：typing 模块、Pydantic、mypy 静态检查</li>
+        <li><strong>异步</strong>：asyncio、async/await、aiohttp</li>
+        <li><strong>Web</strong>：FastAPI、Django、Flask、Starlette</li>
+        <li><strong>数据</strong>：Pandas、NumPy、Polars、PySpark</li>
+        <li><strong>ML</strong>：PyTorch、TensorFlow、scikit-learn、HuggingFace</li>
+        <li><strong>工具</strong>：Poetry、Ruff、Black、pytest</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>TypeScript/JavaScript（能力 97%）</h3>
+      <ul>
+        <li><strong>TS 类型体操</strong>：条件类型、映射类型、模板字面量、递归类型</li>
+        <li><strong>运行时</strong>：Node.js、Deno、Bun</li>
+        <li><strong>前端</strong>：React、Vue、Angular、Svelte</li>
+        <li><strong>后端</strong>：Express、Fastify、NestJS、tRPC</li>
+        <li><strong>构建</strong>：Vite、Webpack、esbuild、Rollup</li>
+        <li><strong>测试</strong>：Jest、Vitest、Playwright</li>
+        <li><strong>包管理</strong>：npm、yarn、pnpm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">16</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">03 · 编程语言</div>
+  <h2>☕ Java / Kotlin & Go</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>Java/Kotlin（能力 95%）</h3>
+      <ul>
+        <li><strong>Java 8→21</strong>：Lambda、Stream、Records、Sealed Classes、Virtual Threads</li>
+        <li><strong>Spring 全家桶</strong>：Boot、Cloud、Security、Data、WebFlux</li>
+        <li><strong>Kotlin 特性</strong>：协程、Flow、空安全、扩展函数、Compose Multiplatform</li>
+        <li><strong>构建</strong>：Maven、Gradle（Kotlin DSL）</li>
+        <li><strong>JVM 调优</strong>：GC 策略、内存分析、JIT 编译优化</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Go（能力 94%）</h3>
+      <ul>
+        <li><strong>并发</strong>：goroutine、channel、select、sync 包、context 传播</li>
+        <li><strong>泛型</strong>：Go 1.18+ 类型参数、约束接口</li>
+        <li><strong>Web</strong>：Gin、Echo、Fiber、标准库 net/http</li>
+        <li><strong>数据库</strong>：database/sql、sqlx、GORM、ent</li>
+        <li><strong>工具</strong>：cobra（CLI）、viper（配置）、zap（日志）</li>
+        <li><strong>gRPC</strong>：Protocol Buffers、流式通信、拦截器</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">17</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">03 · 编程语言</div>
+  <h2>🦀 Rust & C/C++</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>Rust（能力 93%）</h3>
+      <ul>
+        <li><strong>所有权系统</strong>：借用检查、生命周期标注、智能指针</li>
+        <li><strong>Trait 系统</strong>：泛型约束、关联类型、动态分发</li>
+        <li><strong>异步</strong>：async/await、Tokio、async-std</li>
+        <li><strong>Web</strong>：Actix-web、Axum、Tower 中间件</li>
+        <li><strong>数据库</strong>：SQLx（编译时检查）、Diesel</li>
+        <li><strong>宏</strong>：声明式宏、过程宏（derive/attribute/function-like）</li>
+        <li><strong>WASM</strong>：wasm-bindgen、wasm-pack</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>C/C++（能力 92%）</h3>
+      <ul>
+        <li><strong>C</strong>：C99/C11/C17、POSIX API、系统调用、内存管理、多线程（pthread）、网络编程（socket）</li>
+        <li><strong>C++ 现代特性</strong>：C++11→C++23、智能指针、移动语义、概念、协程、Ranges</li>
+        <li><strong>模板</strong>：模板元编程、SFINAE、Concepts</li>
+        <li><strong>构建</strong>：CMake、Bazel、Meson、Makefile</li>
+        <li><strong>库</strong>：STL、Boost、Qt、OpenCV</li>
+        <li><strong>内存安全</strong>：缓冲区溢出检测、ASAN/MSAN/TSAN</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">18</div>
+</div></div>
+
+<!-- SLIDE-BATCH-2A-END -->
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">03 · 编程语言</div>
+  <h2>💎 Ruby / PHP / Swift / Dart</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>Ruby（能力 90%）</h3>
+      <ul>
+        <li>Ruby 2.7→3.3、模式匹配、Ractor 并发</li>
+        <li>Rails 7（Turbo/Hotwire）、RSpec、Sidekiq</li>
+        <li>元编程、DSL 构建、Gem 开发</li>
+      </ul>
+      <h3 style="margin-top:12px">PHP（能力 90%）</h3>
+      <ul>
+        <li>PHP 7.4→8.3、类型声明、枚举、Fiber</li>
+        <li>Laravel、Symfony、WordPress 插件开发</li>
+        <li>Composer 包管理、PSR 标准</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Swift（能力 88%）</h3>
+      <ul>
+        <li>Swift 5.x、async/await、Actor、Macro</li>
+        <li>SwiftUI、UIKit、Combine、SPM</li>
+        <li>iOS/macOS 应用、Vapor 服务端</li>
+      </ul>
+      <h3 style="margin-top:12px">Dart（能力 88%）</h3>
+      <ul>
+        <li>Dart 3.x、空安全、Records、Patterns</li>
+        <li>Flutter Widget 系统、状态管理</li>
+        <li>Platform Channel、插件开发</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">19</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">03 · 编程语言</div>
+  <h2>🔬 函数式 & 其他语言</h2>
+  <div class="cols cols-3">
+    <div class="box">
+      <h3>Scala</h3>
+      <ul>
+        <li>Scala 2/3、类型类、Monad</li>
+        <li>Cats、ZIO、Akka Actor</li>
+        <li>Apache Spark Scala API</li>
+        <li>Play Framework</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Elixir</h3>
+      <ul>
+        <li>OTP（GenServer/Supervisor）</li>
+        <li>Phoenix LiveView</li>
+        <li>Ecto 数据库层</li>
+        <li>高并发容错系统</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Haskell</h3>
+      <ul>
+        <li>纯函数式、Monad/Functor</li>
+        <li>GADT、类型族</li>
+        <li>Stack/Cabal 构建</li>
+        <li>lens、aeson、servant</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cols cols-3" style="margin-top:12px">
+    <div class="box"><h3>R</h3><p class="small">tidyverse、ggplot2、Shiny、R Markdown 统计分析</p></div>
+    <div class="box"><h3>Lua</h3><p class="small">LuaJIT、元表机制、游戏脚本、OpenResty</p></div>
+    <div class="box"><h3>Shell/Bash</h3><p class="small">复杂脚本、sed/awk/grep 高级用法、系统自动化</p></div>
+  </div>
+  <div class="slide-num">20</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">03 · 编程语言</div>
+  <h2>📊 语言能力总览</h2>
+  <div class="cols cols-2">
+    <div>
+      <div class="bar-wrap"><div class="bar-label"><span>Python</span><span>98%</span></div><div class="bar"><div class="bar-fill" style="width:98%;background:linear-gradient(90deg,var(--accent),var(--accent2))"></div></div></div>
+      <div class="bar-wrap"><div class="bar-label"><span>TypeScript/JavaScript</span><span>97%</span></div><div class="bar"><div class="bar-fill" style="width:97%;background:linear-gradient(90deg,var(--accent),var(--accent3))"></div></div></div>
+      <div class="bar-wrap"><div class="bar-label"><span>Java/Kotlin</span><span>95%</span></div><div class="bar"><div class="bar-fill" style="width:95%;background:linear-gradient(90deg,var(--orange),var(--accent))"></div></div></div>
+      <div class="bar-wrap"><div class="bar-label"><span>Shell/Bash</span><span>95%</span></div><div class="bar"><div class="bar-fill" style="width:95%;background:linear-gradient(90deg,var(--green),var(--accent3))"></div></div></div>
+      <div class="bar-wrap"><div class="bar-label"><span>Go</span><span>94%</span></div><div class="bar"><div class="bar-fill" style="width:94%;background:linear-gradient(90deg,var(--accent3),var(--accent))"></div></div></div>
+    </div>
+    <div>
+      <div class="bar-wrap"><div class="bar-label"><span>Rust</span><span>93%</span></div><div class="bar"><div class="bar-fill" style="width:93%;background:linear-gradient(90deg,var(--red),var(--orange))"></div></div></div>
+      <div class="bar-wrap"><div class="bar-label"><span>C/C++</span><span>92%</span></div><div class="bar"><div class="bar-fill" style="width:92%;background:linear-gradient(90deg,var(--accent2),var(--pink))"></div></div></div>
+      <div class="bar-wrap"><div class="bar-label"><span>Ruby/PHP</span><span>90%</span></div><div class="bar"><div class="bar-fill" style="width:90%;background:linear-gradient(90deg,var(--red),var(--accent2))"></div></div></div>
+      <div class="bar-wrap"><div class="bar-label"><span>Swift/Dart</span><span>88%</span></div><div class="bar"><div class="bar-fill" style="width:88%;background:linear-gradient(90deg,var(--orange),var(--pink))"></div></div></div>
+      <div class="bar-wrap"><div class="bar-label"><span>Elixir/Haskell/Scala</span><span>85%</span></div><div class="bar"><div class="bar-fill" style="width:85%;background:linear-gradient(90deg,var(--accent2),var(--accent3))"></div></div></div>
+    </div>
+  </div>
+  <div class="box-accent" style="margin-top:16px">
+    <p class="small"><strong>核心优势</strong>：Kiro 不只是"知道语法"，而是理解每种语言的惯用写法（idiom）、生态系统、构建工具和最佳实践。写出来的代码是地道的，不是"用 A 语言的思维写 B 语言"。</p>
+  </div>
+  <div class="slide-num">21</div>
+</div></div>
+
+<!-- SLIDE-BATCH-2B-END -->
+
+<!-- ============ CHAPTER 4: 前端工程 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">04</div>
+  <div class="divider-center">
+    <h1 class="grad4">前端工程</h1>
+    <p>从 HTML/CSS 基础到现代框架，从构建工具到性能优化，覆盖前端开发全链路。</p>
+  </div>
+  <div class="slide-num">22</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">04 · 前端工程</div>
+  <h2>⚛️ React 生态深度</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>核心能力</h3>
+      <ul>
+        <li><strong>Hooks 全集</strong>：useState/useEffect/useContext/useReducer/useMemo/useCallback/useRef/useId</li>
+        <li><strong>自定义 Hooks</strong>：useDebounce、useFetch、useLocalStorage 等复用逻辑封装</li>
+        <li><strong>性能优化</strong>：React.memo、useMemo、useCallback、代码分割、虚拟列表</li>
+        <li><strong>React 19</strong>：use() Hook、Server Components、Actions、useFormStatus、useOptimistic</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>生态系统</h3>
+      <ul>
+        <li><strong>状态管理</strong>：Redux Toolkit / Zustand / Jotai / Recoil</li>
+        <li><strong>数据获取</strong>：TanStack Query / SWR / tRPC</li>
+        <li><strong>路由</strong>：React Router v6 / TanStack Router</li>
+        <li><strong>表单</strong>：React Hook Form + Zod 验证</li>
+        <li><strong>SSR</strong>：Next.js（App Router + Server Actions）</li>
+        <li><strong>测试</strong>：React Testing Library + Vitest</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">23</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">04 · 前端工程</div>
+  <h2>💚 Vue & Angular & 其他框架</h2>
+  <div class="cols cols-3">
+    <div class="box">
+      <h3>Vue 3</h3>
+      <ul>
+        <li>Composition API / &lt;script setup&gt;</li>
+        <li>ref/reactive/computed/watch</li>
+        <li>Pinia 状态管理</li>
+        <li>Vue Router 4 导航守卫</li>
+        <li>Nuxt 3 SSR/SSG</li>
+        <li>Element Plus / Naive UI</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Angular</h3>
+      <ul>
+        <li>Standalone Components</li>
+        <li>Signals 响应式</li>
+        <li>@defer 延迟加载</li>
+        <li>RxJS 响应式编程</li>
+        <li>NgRx 状态管理</li>
+        <li>Angular Material</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>其他</h3>
+      <ul>
+        <li><strong>Svelte/Kit</strong>：Runes、编译时优化</li>
+        <li><strong>Astro</strong>：Islands Architecture</li>
+        <li><strong>Solid.js</strong>：细粒度响应式</li>
+        <li><strong>htmx</strong>：超媒体驱动</li>
+        <li><strong>Qwik</strong>：可恢复性</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">24</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">04 · 前端工程</div>
+  <h2>🎨 CSS 与视觉实现</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>现代 CSS 特性</h3>
+      <ul>
+        <li><strong>布局</strong>：Grid（Subgrid）、Flexbox、Container Queries</li>
+        <li><strong>新特性</strong>：CSS Nesting、:has()、@layer 级联层、Scroll-driven Animations、View Transitions</li>
+        <li><strong>变量</strong>：Custom Properties 主题系统</li>
+        <li><strong>响应式</strong>：移动优先、流式布局、clamp()、视口单位</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>CSS 工具链</h3>
+      <ul>
+        <li><strong>Tailwind CSS</strong>：自定义配置、插件开发、JIT</li>
+        <li><strong>Sass/SCSS</strong>：变量、混入、函数、模块系统</li>
+        <li><strong>CSS-in-JS</strong>：Styled Components、Emotion</li>
+        <li><strong>动画</strong>：Framer Motion、GSAP、Lottie</li>
+        <li><strong>3D/Canvas</strong>：Three.js、Canvas API、SVG 动画</li>
+        <li><strong>可访问性</strong>：ARIA、语义化 HTML、键盘导航、对比度</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">25</div>
+</div></div>
+
+<!-- SLIDE-BATCH-2C-END -->
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">04 · 前端工程</div>
+  <h2>📦 构建工具与工程化</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>构建工具</h3>
+      <table class="tbl">
+        <tr><th>工具</th><th>特点</th><th>适用场景</th></tr>
+        <tr><td>Vite</td><td>极速 HMR、ESM 原生</td><td>现代项目首选</td></tr>
+        <tr><td>Webpack</td><td>生态丰富、Module Federation</td><td>大型/遗留项目</td></tr>
+        <tr><td>Rollup</td><td>Tree Shaking 优秀</td><td>库打包</td></tr>
+        <tr><td>esbuild</td><td>Go 实现、极速</td><td>开发工具链</td></tr>
+        <tr><td>Turbopack</td><td>Rust 实现、增量</td><td>Next.js 项目</td></tr>
+      </table>
+    </div>
+    <div class="box">
+      <h3>工程化配套</h3>
+      <ul>
+        <li><strong>Monorepo</strong>：Turborepo、Nx、pnpm Workspaces</li>
+        <li><strong>代码质量</strong>：ESLint（自定义规则）、Prettier、Stylelint</li>
+        <li><strong>Git Hooks</strong>：Husky + lint-staged + Commitlint</li>
+        <li><strong>包管理</strong>：npm/yarn/pnpm 锁文件机制、幽灵依赖处理</li>
+        <li><strong>类型检查</strong>：tsconfig 全配置项、Project References</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">26</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">04 · 前端工程</div>
+  <h2>📱 移动端与跨平台</h2>
+  <div class="cols cols-3">
+    <div class="box">
+      <h3>Flutter</h3>
+      <ul>
+        <li>Widget 系统（Stateless/Stateful）</li>
+        <li>状态管理：Riverpod/Bloc/Provider</li>
+        <li>导航：GoRouter</li>
+        <li>Platform Channel 原生交互</li>
+        <li>自定义绘制 CustomPainter</li>
+        <li>动画系统（隐式/显式/Hero）</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>React Native</h3>
+      <ul>
+        <li>核心组件与 FlatList 优化</li>
+        <li>React Navigation 导航</li>
+        <li>原生模块桥接</li>
+        <li>New Architecture（Fabric）</li>
+        <li>Expo 工具链</li>
+        <li>Reanimated 动画</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>原生开发</h3>
+      <ul>
+        <li><strong>iOS</strong>：SwiftUI、UIKit、Combine、Core Data</li>
+        <li><strong>Android</strong>：Jetpack Compose、ViewModel、Room、Hilt</li>
+        <li><strong>KMP</strong>：Kotlin Multiplatform 共享逻辑</li>
+        <li>推送通知、深度链接、生物识别</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">27</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">04 · 前端工程</div>
+  <h2>⚡ 前端性能优化</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>加载性能</h3>
+      <ul>
+        <li><strong>代码分割</strong>：路由级/组件级 lazy loading</li>
+        <li><strong>资源优化</strong>：图片压缩（WebP/AVIF）、字体子集化、SVG 精灵图</li>
+        <li><strong>缓存策略</strong>：Service Worker、HTTP 缓存头、CDN 配置</li>
+        <li><strong>预加载</strong>：prefetch/preload/preconnect</li>
+        <li><strong>SSR/SSG</strong>：首屏服务端渲染、静态生成</li>
+        <li><strong>Bundle 分析</strong>：webpack-bundle-analyzer、source-map-explorer</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>运行时性能</h3>
+      <ul>
+        <li><strong>虚拟列表</strong>：react-virtuoso、TanStack Virtual</li>
+        <li><strong>防抖节流</strong>：输入防抖、滚动节流</li>
+        <li><strong>Web Workers</strong>：计算密集任务离线处理</li>
+        <li><strong>渲染优化</strong>：减少重排重绘、will-change、合成层</li>
+        <li><strong>内存管理</strong>：避免内存泄漏、WeakRef/WeakMap</li>
+        <li><strong>Core Web Vitals</strong>：LCP/FID/CLS 优化</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">28</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">04 · 前端工程</div>
+  <h2>🖥️ 前端代码示例</h2>
+  <div class="cols cols-2">
+    <div>
+      <h3>React + TypeScript 自定义 Hook</h3>
+      <div class="code"><span style="color:#ff7b72">function</span> <span style="color:#d2a8ff">useFetch</span>&lt;T&gt;(url: <span style="color:#79c0ff">string</span>) {
+  <span style="color:#ff7b72">const</span> [data, setData] = useState&lt;T|<span style="color:#79c0ff">null</span>&gt;(<span style="color:#79c0ff">null</span>);
+  <span style="color:#ff7b72">const</span> [loading, setLoading] = useState(<span style="color:#79c0ff">true</span>);
+  <span style="color:#ff7b72">const</span> [error, setError] = useState&lt;Error|<span style="color:#79c0ff">null</span>&gt;(<span style="color:#79c0ff">null</span>);
+
+  useEffect(() =&gt; {
+    <span style="color:#ff7b72">const</span> ctrl = <span style="color:#ff7b72">new</span> AbortController();
+    fetch(url, { signal: ctrl.signal })
+      .then(r =&gt; r.json())
+      .then(setData)
+      .catch(setError)
+      .finally(() =&gt; setLoading(<span style="color:#79c0ff">false</span>));
+    <span style="color:#ff7b72">return</span> () =&gt; ctrl.abort();
+  }, [url]);
+
+  <span style="color:#ff7b72">return</span> { data, loading, error };
+}</div>
+    </div>
+    <div>
+      <h3>Vue 3 Composition API</h3>
+      <div class="code"><span style="color:#ff7b72">&lt;script setup lang="ts"&gt;</span>
+<span style="color:#ff7b72">import</span> { ref, computed, onMounted } <span style="color:#ff7b72">from</span> <span style="color:#a5d6ff">'vue'</span>
+
+<span style="color:#ff7b72">const</span> count = ref(<span style="color:#79c0ff">0</span>)
+<span style="color:#ff7b72">const</span> doubled = computed(() =&gt; count.value * <span style="color:#79c0ff">2</span>)
+
+<span style="color:#ff7b72">async function</span> <span style="color:#d2a8ff">fetchData</span>() {
+  <span style="color:#ff7b72">const</span> res = <span style="color:#ff7b72">await</span> fetch(<span style="color:#a5d6ff">'/api/data'</span>)
+  <span style="color:#8b949e">// handle response...</span>
+}
+
+onMounted(fetchData)
+<span style="color:#ff7b72">&lt;/script&gt;</span>
+
+<span style="color:#ff7b72">&lt;template&gt;</span>
+  &lt;button @click=<span style="color:#a5d6ff">"count++"</span>&gt;
+    {{ count }} × 2 = {{ doubled }}
+  &lt;/button&gt;
+<span style="color:#ff7b72">&lt;/template&gt;</span></div>
+    </div>
+  </div>
+  <div class="slide-num">29</div>
+</div></div>
+
+<!-- SLIDE-BATCH-3-END -->
+
+<!-- ============ CHAPTER 5: 后端工程 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">05</div>
+  <div class="divider-center">
+    <h1 class="grad">后端工程</h1>
+    <p>从 RESTful API 到微服务，从同步处理到异步消息，覆盖后端开发完整技术栈。</p>
+  </div>
+  <div class="slide-num">30</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">05 · 后端工程</div>
+  <h2>🚀 Node.js & Python 后端</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>Node.js 框架</h3>
+      <ul>
+        <li><strong>Express</strong>：中间件、路由、错误处理、请求验证</li>
+        <li><strong>Fastify</strong>：Schema 验证、插件系统、高性能序列化</li>
+        <li><strong>NestJS</strong>：模块化、DI、Guard/Interceptor/Pipe、微服务、CQRS</li>
+        <li><strong>tRPC</strong>：端到端类型安全 API</li>
+        <li><strong>ORM</strong>：Prisma、TypeORM、Drizzle、Mongoose</li>
+        <li><strong>实时</strong>：Socket.io、WebSocket、SSE</li>
+        <li><strong>队列</strong>：BullMQ（Redis）、Agenda</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Python 框架</h3>
+      <ul>
+        <li><strong>FastAPI</strong>：自动 OpenAPI、Pydantic 验证、依赖注入、异步</li>
+        <li><strong>Django</strong>：ORM、Admin、DRF 序列化器、Channels、信号</li>
+        <li><strong>Flask</strong>：Blueprint、扩展生态、应用工厂</li>
+        <li><strong>Celery</strong>：异步任务、定时任务、结果后端</li>
+        <li><strong>部署</strong>：Uvicorn/Gunicorn 配置调优</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">31</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">05 · 后端工程</div>
+  <h2>☕ Java Spring & Go & Rust 后端</h2>
+  <div class="cols cols-3">
+    <div class="box">
+      <h3>Spring 生态</h3>
+      <ul>
+        <li>Boot 自动配置 + Actuator</li>
+        <li>Cloud 微服务全家桶</li>
+        <li>Security OAuth2/JWT</li>
+        <li>Data JPA/MongoDB/Redis</li>
+        <li>WebFlux 响应式</li>
+        <li>Batch 批处理</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Go 后端</h3>
+      <ul>
+        <li>Gin/Echo/Fiber 框架</li>
+        <li>标准库 net/http</li>
+        <li>gRPC + Protobuf</li>
+        <li>Worker Pool 并发模式</li>
+        <li>sqlx / GORM / ent</li>
+        <li>cobra CLI 工具</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Rust 后端</h3>
+      <ul>
+        <li>Actix-web / Axum</li>
+        <li>Tokio 异步运行时</li>
+        <li>SQLx 编译时检查</li>
+        <li>Tower 中间件抽象</li>
+        <li>Serde 序列化</li>
+        <li>零成本抽象高性能</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">32</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">05 · 后端工程</div>
+  <h2>🔌 认证授权 & 中间件</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>认证方案</h3>
+      <ul>
+        <li><strong>JWT</strong>：签发/验证/刷新令牌轮换、密钥管理、Claims 设计</li>
+        <li><strong>OAuth 2.0</strong>：授权码流程、PKCE、客户端凭证、设备授权</li>
+        <li><strong>OIDC</strong>：ID Token、UserInfo 端点、SSO 集成</li>
+        <li><strong>Session</strong>：安全 Cookie（HttpOnly/Secure/SameSite）、Redis 存储</li>
+        <li><strong>MFA</strong>：TOTP（Google Authenticator）、WebAuthn/FIDO2</li>
+        <li><strong>API Key</strong>：密钥生成、速率限制、作用域控制</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>常用中间件</h3>
+      <ul>
+        <li><strong>缓存</strong>：Redis 缓存策略（Cache-Aside/Write-Through/Write-Behind）</li>
+        <li><strong>消息队列</strong>：RabbitMQ、Kafka、SQS/SNS</li>
+        <li><strong>搜索引擎</strong>：Elasticsearch 集成、全文搜索</li>
+        <li><strong>文件存储</strong>：S3 上传/下载、预签名 URL</li>
+        <li><strong>邮件/短信</strong>：SES、SendGrid、Twilio 集成</li>
+        <li><strong>日志</strong>：结构化日志、ELK Stack、CloudWatch</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">33</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">05 · 后端工程</div>
+  <h2>💡 后端代码示例</h2>
+  <div class="cols cols-2">
+    <div>
+      <h3>FastAPI + Pydantic</h3>
+      <div class="code"><span style="color:#ff7b72">from</span> fastapi <span style="color:#ff7b72">import</span> FastAPI, Depends
+<span style="color:#ff7b72">from</span> pydantic <span style="color:#ff7b72">import</span> BaseModel
+
+app = FastAPI()
+
+<span style="color:#ff7b72">class</span> <span style="color:#d2a8ff">UserCreate</span>(BaseModel):
+    email: <span style="color:#79c0ff">str</span>
+    password: <span style="color:#79c0ff">str</span>
+
+<span style="color:#d2a8ff">@app.post</span>(<span style="color:#a5d6ff">"/users"</span>, status_code=<span style="color:#79c0ff">201</span>)
+<span style="color:#ff7b72">async def</span> <span style="color:#d2a8ff">create_user</span>(
+    user: UserCreate,
+    db: Session = Depends(get_db)
+):
+    hashed = hash_password(user.password)
+    db_user = User(email=user.email,
+                   password=hashed)
+    db.add(db_user)
+    db.commit()
+    <span style="color:#ff7b72">return</span> {<span style="color:#a5d6ff">"id"</span>: db_user.id}</div>
+    </div>
+    <div>
+      <h3>Go Gin + 中间件</h3>
+      <div class="code"><span style="color:#ff7b72">func</span> <span style="color:#d2a8ff">main</span>() {
+  r := gin.Default()
+  r.Use(authMiddleware())
+  r.Use(rateLimiter(<span style="color:#79c0ff">100</span>))
+
+  api := r.Group(<span style="color:#a5d6ff">"/api/v1"</span>)
+  {
+    api.GET(<span style="color:#a5d6ff">"/users"</span>, listUsers)
+    api.POST(<span style="color:#a5d6ff">"/users"</span>, createUser)
+    api.GET(<span style="color:#a5d6ff">"/users/:id"</span>, getUser)
+  }
+
+  r.Run(<span style="color:#a5d6ff">":8080"</span>)
+}
+
+<span style="color:#ff7b72">func</span> <span style="color:#d2a8ff">authMiddleware</span>() gin.HandlerFunc {
+  <span style="color:#ff7b72">return func</span>(c *gin.Context) {
+    token := c.GetHeader(<span style="color:#a5d6ff">"Authorization"</span>)
+    claims, err := validateJWT(token)
+    <span style="color:#ff7b72">if</span> err != <span style="color:#79c0ff">nil</span> {
+      c.AbortWithStatus(<span style="color:#79c0ff">401</span>)
+      <span style="color:#ff7b72">return</span>
+    }
+    c.Set(<span style="color:#a5d6ff">"user"</span>, claims)
+    c.Next()
+  }
+}</div>
+    </div>
+  </div>
+  <div class="slide-num">34</div>
+</div></div>
+
+<!-- SLIDE-BATCH-4A-END -->
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">05 · 后端工程</div>
+  <h2>🔄 消息队列与异步处理</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>消息队列对比</h3>
+      <table class="tbl">
+        <tr><th>特性</th><th>RabbitMQ</th><th>Kafka</th><th>SQS</th></tr>
+        <tr><td>模型</td><td>消息代理</td><td>事件流</td><td>托管队列</td></tr>
+        <tr><td>顺序</td><td>队列内有序</td><td>分区内有序</td><td>FIFO 可选</td></tr>
+        <tr><td>吞吐</td><td>万级/秒</td><td>百万级/秒</td><td>万级/秒</td></tr>
+        <tr><td>持久化</td><td>可选</td><td>默认持久</td><td>默认持久</td></tr>
+        <tr><td>运维</td><td>自建</td><td>自建/MSK</td><td>全托管</td></tr>
+      </table>
+    </div>
+    <div class="box">
+      <h3>异步模式</h3>
+      <ul>
+        <li><strong>发布/订阅</strong>：一对多广播，解耦生产者消费者</li>
+        <li><strong>工作队列</strong>：任务分发，负载均衡</li>
+        <li><strong>事件溯源</strong>：事件日志，状态重建</li>
+        <li><strong>Saga 模式</strong>：分布式事务编排/协调</li>
+        <li><strong>死信队列</strong>：失败消息隔离处理</li>
+        <li><strong>延迟队列</strong>：定时任务、超时处理</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">35</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">05 · 后端工程</div>
+  <h2>🌐 实时通信</h2>
+  <div class="cols cols-3">
+    <div class="box">
+      <h3>WebSocket</h3>
+      <ul>
+        <li>全双工持久连接</li>
+        <li>心跳保活机制</li>
+        <li>断线重连策略</li>
+        <li>房间/频道管理</li>
+        <li>消息广播与定向推送</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Server-Sent Events</h3>
+      <ul>
+        <li>服务端单向推送</li>
+        <li>自动重连</li>
+        <li>事件类型过滤</li>
+        <li>适合通知、实时数据流</li>
+        <li>比 WS 更简单轻量</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>gRPC 流</h3>
+      <ul>
+        <li>Server Streaming</li>
+        <li>Client Streaming</li>
+        <li>Bidirectional Streaming</li>
+        <li>Protobuf 高效序列化</li>
+        <li>适合微服务间通信</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">36</div>
+</div></div>
+
+<!-- ============ CHAPTER 6: 数据库 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">06</div>
+  <div class="divider-center">
+    <h1 class="grad2">数据库工程</h1>
+    <p>从关系型到 NoSQL，从数据建模到查询优化，覆盖数据层完整技术栈。</p>
+  </div>
+  <div class="slide-num">37</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">06 · 数据库</div>
+  <h2>🐘 关系型数据库</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>PostgreSQL（首选推荐）</h3>
+      <ul>
+        <li><strong>高级 SQL</strong>：窗口函数、递归 CTE、LATERAL JOIN、GROUPING SETS</li>
+        <li><strong>JSON</strong>：jsonb 类型、路径查询、GIN 索引</li>
+        <li><strong>索引</strong>：B-tree/GIN/GiST/BRIN、部分索引、表达式索引、覆盖索引</li>
+        <li><strong>分区</strong>：Range/List/Hash 分区表</li>
+        <li><strong>扩展</strong>：PostGIS（地理）、pgvector（AI 向量）、TimescaleDB（时序）</li>
+        <li><strong>调优</strong>：EXPLAIN ANALYZE、PgBouncer 连接池、vacuum 策略</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>MySQL & SQLite</h3>
+      <ul>
+        <li><strong>MySQL 8.0+</strong>：窗口函数、CTE、JSON 增强、InnoDB 优化</li>
+        <li>主从复制、分库分表（ShardingSphere）</li>
+        <li>慢查询分析、索引优化建议</li>
+        <li><strong>SQLite</strong>：嵌入式数据库</li>
+        <li>WAL 模式、FTS5 全文搜索</li>
+        <li>适合移动端/桌面端/小型 Web</li>
+      </ul>
+      <h3 style="margin-top:12px">ORM 工具</h3>
+      <div class="tags">
+        <span class="tag tag-blue">Prisma</span><span class="tag tag-blue">TypeORM</span><span class="tag tag-blue">SQLAlchemy</span><span class="tag tag-green">Hibernate</span><span class="tag tag-green">GORM</span><span class="tag tag-purple">Drizzle</span><span class="tag tag-purple">Diesel</span>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">38</div>
+</div></div>
+
+<!-- SLIDE-BATCH-4B-END -->
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">06 · 数据库</div>
+  <h2>🍃 NoSQL 数据库</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>MongoDB</h3>
+      <ul>
+        <li>文档模型设计（嵌入 vs 引用）</li>
+        <li>聚合管道（$match/$group/$lookup/$unwind）</li>
+        <li>索引策略（复合/文本/地理空间/TTL）</li>
+        <li>Change Streams 实时监听</li>
+        <li>分片集群设计</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Redis</h3>
+      <ul>
+        <li>数据结构：String/Hash/List/Set/ZSet/Stream</li>
+        <li>缓存策略：Cache-Aside/Write-Through</li>
+        <li>分布式锁：Redlock 算法</li>
+        <li>限流：令牌桶/滑动窗口</li>
+        <li>集群/哨兵/持久化（RDB/AOF）</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cols cols-3" style="margin-top:12px">
+    <div class="box"><h3>DynamoDB</h3><p class="small">单表设计、GSI/LSI、Streams、DAX 缓存、按需/预置容量</p></div>
+    <div class="box"><h3>Elasticsearch</h3><p class="small">倒排索引、查询 DSL、聚合分析、中文分词（IK）、ILM</p></div>
+    <div class="box"><h3>其他</h3><p class="small">Neo4j（图）、Cassandra（宽列）、InfluxDB（时序）</p></div>
+  </div>
+  <div class="slide-num">39</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">06 · 数据库</div>
+  <h2>📐 数据建模与迁移</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>建模方法</h3>
+      <ul>
+        <li><strong>ER 建模</strong>：实体关系图、范式化（1NF→BCNF）与反范式化权衡</li>
+        <li><strong>文档建模</strong>：嵌入模式 vs 引用模式、数据冗余策略</li>
+        <li><strong>宽表建模</strong>：Cassandra 查询驱动设计</li>
+        <li><strong>图建模</strong>：节点/边/属性、遍历模式</li>
+        <li><strong>数仓建模</strong>：星型模型、雪花模型、维度建模</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>迁移工具</h3>
+      <table class="tbl">
+        <tr><th>工具</th><th>语言/框架</th></tr>
+        <tr><td>Flyway / Liquibase</td><td>Java / 通用</td></tr>
+        <tr><td>Alembic</td><td>Python (SQLAlchemy)</td></tr>
+        <tr><td>Prisma Migrate</td><td>Node.js</td></tr>
+        <tr><td>Django Migrations</td><td>Python (Django)</td></tr>
+        <tr><td>Rails Migrations</td><td>Ruby (Rails)</td></tr>
+        <tr><td>goose / golang-migrate</td><td>Go</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="slide-num">40</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">06 · 数据库</div>
+  <h2>⚡ SQL 优化实战</h2>
+  <div class="cols cols-2">
+    <div>
+      <h3>优化前（慢查询）</h3>
+      <div class="code"><span style="color:#8b949e">-- 全表扫描 + 子查询，耗时 3.2s</span>
+<span style="color:#ff7b72">SELECT</span> * <span style="color:#ff7b72">FROM</span> orders
+<span style="color:#ff7b72">WHERE</span> user_id <span style="color:#ff7b72">IN</span> (
+  <span style="color:#ff7b72">SELECT</span> id <span style="color:#ff7b72">FROM</span> users
+  <span style="color:#ff7b72">WHERE</span> created_at > <span style="color:#a5d6ff">'2024-01-01'</span>
+)
+<span style="color:#ff7b72">ORDER BY</span> created_at <span style="color:#ff7b72">DESC</span>;</div>
+      <h3 style="margin-top:12px">优化后</h3>
+      <div class="code"><span style="color:#8b949e">-- JOIN + 索引，耗时 12ms</span>
+<span style="color:#ff7b72">SELECT</span> o.* <span style="color:#ff7b72">FROM</span> orders o
+<span style="color:#ff7b72">JOIN</span> users u <span style="color:#ff7b72">ON</span> o.user_id = u.id
+<span style="color:#ff7b72">WHERE</span> u.created_at > <span style="color:#a5d6ff">'2024-01-01'</span>
+<span style="color:#ff7b72">ORDER BY</span> o.created_at <span style="color:#ff7b72">DESC</span>
+<span style="color:#ff7b72">LIMIT</span> <span style="color:#79c0ff">20</span>;
+
+<span style="color:#8b949e">-- 配套索引</span>
+<span style="color:#ff7b72">CREATE INDEX</span> idx_users_created
+  <span style="color:#ff7b72">ON</span> users(created_at);
+<span style="color:#ff7b72">CREATE INDEX</span> idx_orders_user_created
+  <span style="color:#ff7b72">ON</span> orders(user_id, created_at <span style="color:#ff7b72">DESC</span>);</div>
+    </div>
+    <div>
+      <h3>Kiro 的 SQL 优化能力</h3>
+      <ul>
+        <li>分析 EXPLAIN ANALYZE 输出</li>
+        <li>识别全表扫描、临时表、文件排序</li>
+        <li>推荐合适的索引策略</li>
+        <li>重写低效查询（子查询→JOIN）</li>
+        <li>分页优化（Cursor vs Offset）</li>
+        <li>批量操作优化</li>
+      </ul>
+      <h3 style="margin-top:12px">高级 SQL 能力</h3>
+      <ul>
+        <li>窗口函数（ROW_NUMBER/RANK/LAG/LEAD）</li>
+        <li>递归 CTE（树形结构遍历）</li>
+        <li>LATERAL JOIN（相关子查询优化）</li>
+        <li>GROUPING SETS / CUBE / ROLLUP</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">41</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">06 · 数据库</div>
+  <h2>🏗️ 数据架构模式</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>读写分离</h3>
+      <ul>
+        <li>主库写入、从库读取</li>
+        <li>读写路由中间件</li>
+        <li>复制延迟处理策略</li>
+        <li>适用：读多写少场景</li>
+      </ul>
+      <h3 style="margin-top:12px">分库分表</h3>
+      <ul>
+        <li>水平分片（按用户 ID/时间）</li>
+        <li>垂直分库（按业务域）</li>
+        <li>分布式 ID 生成</li>
+        <li>跨分片查询处理</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>缓存架构</h3>
+      <ul>
+        <li><strong>Cache-Aside</strong>：应用层控制缓存读写</li>
+        <li><strong>Write-Through</strong>：写入同时更新缓存</li>
+        <li><strong>Write-Behind</strong>：异步批量写入数据库</li>
+        <li><strong>缓存穿透</strong>：布隆过滤器/空值缓存</li>
+        <li><strong>缓存雪崩</strong>：随机过期时间/熔断</li>
+        <li><strong>缓存击穿</strong>：互斥锁/逻辑过期</li>
+      </ul>
+      <h3 style="margin-top:12px">多级缓存</h3>
+      <p class="small">本地缓存（Caffeine）→ 分布式缓存（Redis）→ 数据库</p>
+    </div>
+  </div>
+  <div class="slide-num">42</div>
+</div></div>
+
+<!-- ============ CHAPTER 7: API 设计 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">07</div>
+  <div class="divider-center">
+    <h1 class="grad3">API 设计与集成</h1>
+    <p>RESTful、GraphQL、gRPC — 不同场景的最佳 API 设计方案。</p>
+  </div>
+  <div class="slide-num">43</div>
+</div></div>
+
+<!-- SLIDE-BATCH-4C-END -->
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">07 · API 设计</div>
+  <h2>🌐 RESTful API 设计</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>设计规范</h3>
+      <ul>
+        <li><strong>资源命名</strong>：名词复数（/users, /orders）、嵌套资源（/users/:id/orders）</li>
+        <li><strong>HTTP 方法</strong>：GET 查询、POST 创建、PUT 全量更新、PATCH 部分更新、DELETE 删除</li>
+        <li><strong>状态码</strong>：200/201/204/400/401/403/404/409/422/429/500</li>
+        <li><strong>版本控制</strong>：URL（/v1/）、Header（Accept-Version）</li>
+        <li><strong>分页</strong>：Cursor 分页（推荐）vs Offset 分页</li>
+        <li><strong>过滤排序</strong>：?status=active&sort=-created_at</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>响应格式设计</h3>
+      <div class="code">{
+  <span style="color:#a5d6ff">"data"</span>: { <span style="color:#8b949e">/* 主体数据 */</span> },
+  <span style="color:#a5d6ff">"meta"</span>: {
+    <span style="color:#a5d6ff">"page"</span>: <span style="color:#79c0ff">1</span>,
+    <span style="color:#a5d6ff">"per_page"</span>: <span style="color:#79c0ff">20</span>,
+    <span style="color:#a5d6ff">"total"</span>: <span style="color:#79c0ff">156</span>,
+    <span style="color:#a5d6ff">"next_cursor"</span>: <span style="color:#a5d6ff">"abc123"</span>
+  },
+  <span style="color:#a5d6ff">"errors"</span>: [{
+    <span style="color:#a5d6ff">"code"</span>: <span style="color:#a5d6ff">"VALIDATION_ERROR"</span>,
+    <span style="color:#a5d6ff">"field"</span>: <span style="color:#a5d6ff">"email"</span>,
+    <span style="color:#a5d6ff">"message"</span>: <span style="color:#a5d6ff">"Invalid format"</span>
+  }]
+}</div>
+    </div>
+  </div>
+  <div class="slide-num">44</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">07 · API 设计</div>
+  <h2>📊 GraphQL & gRPC</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>GraphQL</h3>
+      <ul>
+        <li><strong>Schema 设计</strong>：类型定义、查询/变更/订阅</li>
+        <li><strong>解析器</strong>：字段级解析、DataLoader 解决 N+1</li>
+        <li><strong>工具</strong>：Apollo Server/Client、GraphQL Code Generator</li>
+        <li><strong>Federation</strong>：微服务 GraphQL 网关</li>
+        <li><strong>安全</strong>：查询深度限制、复杂度分析、持久化查询</li>
+      </ul>
+      <div class="code" style="font-size:.72rem"><span style="color:#ff7b72">type</span> User {
+  id: ID!
+  name: String!
+  orders(first: Int): [Order!]!
+}
+<span style="color:#ff7b72">type</span> Query {
+  user(id: ID!): User
+  users(filter: UserFilter): UserConnection!
+}</div>
+    </div>
+    <div class="box">
+      <h3>gRPC</h3>
+      <ul>
+        <li><strong>Protobuf</strong>：高效二进制序列化</li>
+        <li><strong>四种模式</strong>：Unary / Server Stream / Client Stream / Bidirectional</li>
+        <li><strong>拦截器</strong>：认证、日志、重试</li>
+        <li><strong>负载均衡</strong>：客户端/代理端</li>
+        <li><strong>健康检查</strong>：gRPC Health Checking Protocol</li>
+      </ul>
+      <div class="code" style="font-size:.72rem"><span style="color:#ff7b72">service</span> UserService {
+  <span style="color:#ff7b72">rpc</span> GetUser(GetUserReq)
+    <span style="color:#ff7b72">returns</span> (User);
+  <span style="color:#ff7b72">rpc</span> ListUsers(ListReq)
+    <span style="color:#ff7b72">returns</span> (<span style="color:#ff7b72">stream</span> User);
+}</div>
+    </div>
+  </div>
+  <div class="slide-num">45</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">07 · API 设计</div>
+  <h2>📋 API 文档与治理</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>OpenAPI / Swagger</h3>
+      <ul>
+        <li>OpenAPI 3.1 规范编写</li>
+        <li>Schema 复用（$ref / components）</li>
+        <li>请求/响应示例</li>
+        <li>认证方案描述（Bearer/OAuth2/API Key）</li>
+        <li>Swagger UI / Redoc 文档生成</li>
+        <li>代码生成（openapi-generator）</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>API 治理</h3>
+      <ul>
+        <li><strong>版本策略</strong>：URL 路径 / Header / 内容协商</li>
+        <li><strong>速率限制</strong>：令牌桶、滑动窗口、按用户/IP</li>
+        <li><strong>幂等性</strong>：Idempotency-Key Header</li>
+        <li><strong>向后兼容</strong>：新增字段可选、废弃字段标记</li>
+        <li><strong>错误规范</strong>：RFC 7807 Problem Details</li>
+        <li><strong>监控</strong>：延迟/错误率/吞吐量指标</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">46</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">07 · API 设计</div>
+  <h2>🔗 API 协议对比</h2>
+  <table class="tbl">
+    <tr><th>特性</th><th>REST</th><th>GraphQL</th><th>gRPC</th><th>WebSocket</th></tr>
+    <tr><td>协议</td><td>HTTP/1.1+</td><td>HTTP/1.1+</td><td>HTTP/2</td><td>WS</td></tr>
+    <tr><td>数据格式</td><td>JSON</td><td>JSON</td><td>Protobuf（二进制）</td><td>任意</td></tr>
+    <tr><td>类型安全</td><td>OpenAPI 可选</td><td>Schema 内置</td><td>Protobuf 内置</td><td>无</td></tr>
+    <tr><td>实时</td><td>轮询/SSE</td><td>Subscription</td><td>双向流</td><td>原生双向</td></tr>
+    <tr><td>性能</td><td>中等</td><td>中等</td><td>高</td><td>高</td></tr>
+    <tr><td>浏览器</td><td>✅ 原生</td><td>✅ 客户端库</td><td>⚠️ grpc-web</td><td>✅ 原生</td></tr>
+    <tr><td>最佳场景</td><td>公开 API、CRUD</td><td>灵活查询、BFF</td><td>微服务内部</td><td>实时通信</td></tr>
+  </table>
+  <div class="box-accent" style="margin-top:12px">
+    <p class="small"><strong>Kiro 的建议</strong>：对外 API 用 REST（简单通用），前端 BFF 用 GraphQL/tRPC（灵活高效），微服务间用 gRPC（高性能类型安全），实时场景用 WebSocket/SSE。</p>
+  </div>
+  <div class="slide-num">47</div>
+</div></div>
+
+<!-- SLIDE-BATCH-4D-END -->
+
+<!-- ============ CHAPTER 8: 测试 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">08</div>
+  <div class="divider-center">
+    <h1 class="grad4">软件测试</h1>
+    <p>从单元测试到端到端测试，从 TDD 到性能测试，Kiro 能写测试、跑测试、分析结果。</p>
+  </div>
+  <div class="slide-num">48</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">08 · 测试</div>
+  <h2>🔬 测试金字塔</h2>
+  <div class="cols cols-2">
+    <div>
+      <div class="code" style="text-align:center;font-size:.8rem">
+        ╱  E2E 测试  ╲     ← 少量，验证关键流程
+       ╱  集成测试    ╲    ← 适量，验证模块交互
+      ╱   单元测试     ╲   ← 大量，验证函数逻辑
+      ─────────────────</div>
+      <div class="box" style="margin-top:12px">
+        <h3>测试框架精通</h3>
+        <table class="tbl">
+          <tr><th>语言</th><th>框架</th></tr>
+          <tr><td>JS/TS</td><td>Jest、Vitest、Mocha、Playwright、Cypress</td></tr>
+          <tr><td>Python</td><td>pytest、unittest、Hypothesis</td></tr>
+          <tr><td>Java</td><td>JUnit 5、Mockito、TestContainers</td></tr>
+          <tr><td>Go</td><td>testing、testify、gomock</td></tr>
+          <tr><td>Rust</td><td>内置 #[test]、mockall、proptest</td></tr>
+          <tr><td>Ruby</td><td>RSpec、Minitest、FactoryBot</td></tr>
+        </table>
+      </div>
+    </div>
+    <div>
+      <div class="box">
+        <h3>单元测试</h3>
+        <ul>
+          <li>函数/方法级隔离测试</li>
+          <li>Mock/Stub/Spy 技术</li>
+          <li>依赖注入便于测试</li>
+          <li>边界条件和异常路径覆盖</li>
+        </ul>
+      </div>
+      <div class="box" style="margin-top:12px">
+        <h3>集成测试</h3>
+        <ul>
+          <li>Testcontainers（真实数据库/Redis）</li>
+          <li>API 集成测试（supertest/httpx）</li>
+          <li>消息队列集成验证</li>
+          <li>外部服务 Mock（WireMock/MSW）</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">49</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">08 · 测试</div>
+  <h2>🎯 E2E 测试 & 性能测试</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>端到端测试</h3>
+      <ul>
+        <li><strong>Playwright</strong>：多浏览器（Chrome/Firefox/Safari）、自动等待、网络拦截、视觉对比</li>
+        <li><strong>Cypress</strong>：时间旅行调试、自动重试、截图/录屏</li>
+        <li><strong>Page Object Model</strong>：页面对象封装，提高可维护性</li>
+        <li><strong>测试数据</strong>：Factory 模式生成、测试后清理</li>
+        <li><strong>CI 集成</strong>：并行执行、分片策略、Flaky 检测</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>性能测试</h3>
+      <ul>
+        <li><strong>k6</strong>：JavaScript 脚本、阈值检查、场景编排</li>
+        <li><strong>JMeter</strong>：GUI 设计、分布式压测</li>
+        <li><strong>Locust</strong>：Python 脚本、分布式</li>
+        <li><strong>测试类型</strong>：负载测试、压力测试、浸泡测试、峰值测试</li>
+        <li><strong>指标</strong>：P50/P95/P99 延迟、吞吐量、错误率</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">50</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">08 · 测试</div>
+  <h2>🛠️ TDD & 测试工程实践</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>TDD 红-绿-重构</h3>
+      <div class="box-accent" style="border-left-color:var(--red)"><strong>🔴 Red</strong>：先写一个失败的测试</div>
+      <div class="box-accent box-green"><strong>🟢 Green</strong>：写最少的代码让测试通过</div>
+      <div class="box-accent box-purple"><strong>🔵 Refactor</strong>：重构代码，保持测试通过</div>
+      <p class="small" style="margin-top:8px">Kiro 天然支持 TDD 工作流：你描述需求，Kiro 先写测试再写实现，确保代码从一开始就是可测试的。</p>
+    </div>
+    <div class="box">
+      <h3>测试工程化</h3>
+      <ul>
+        <li><strong>覆盖率</strong>：Istanbul/nyc、coverage.py、JaCoCo — 行/分支/路径覆盖</li>
+        <li><strong>变异测试</strong>：Stryker（JS）、PITest（Java）验证测试质量</li>
+        <li><strong>契约测试</strong>：Pact 消费者驱动契约</li>
+        <li><strong>快照测试</strong>：UI 组件快照、API 响应快照</li>
+        <li><strong>BDD</strong>：Cucumber/Gherkin Given-When-Then</li>
+        <li><strong>Flaky 管理</strong>：自动重试、隔离、标记</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">51</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">08 · 测试</div>
+  <h2>💡 测试代码示例</h2>
+  <div class="cols cols-2">
+    <div>
+      <h3>Jest + React Testing Library</h3>
+      <div class="code"><span style="color:#ff7b72">describe</span>(<span style="color:#a5d6ff">'UserProfile'</span>, () =&gt; {
+  <span style="color:#ff7b72">it</span>(<span style="color:#a5d6ff">'displays user name'</span>, <span style="color:#ff7b72">async</span> () =&gt; {
+    server.use(
+      rest.get(<span style="color:#a5d6ff">'/api/user/1'</span>, (req, res, ctx) =&gt;
+        res(ctx.json({ name: <span style="color:#a5d6ff">'Alice'</span> }))
+      )
+    );
+    render(&lt;UserProfile id=<span style="color:#a5d6ff">"1"</span> /&gt;);
+    <span style="color:#ff7b72">expect</span>(
+      <span style="color:#ff7b72">await</span> screen.findByText(<span style="color:#a5d6ff">'Alice'</span>)
+    ).toBeInTheDocument();
+  });
+
+  <span style="color:#ff7b72">it</span>(<span style="color:#a5d6ff">'shows error on failure'</span>, <span style="color:#ff7b72">async</span> () =&gt; {
+    server.use(
+      rest.get(<span style="color:#a5d6ff">'/api/user/1'</span>, (req, res, ctx) =&gt;
+        res(ctx.status(<span style="color:#79c0ff">500</span>))
+      )
+    );
+    render(&lt;UserProfile id=<span style="color:#a5d6ff">"1"</span> /&gt;);
+    <span style="color:#ff7b72">expect</span>(
+      <span style="color:#ff7b72">await</span> screen.findByRole(<span style="color:#a5d6ff">'alert'</span>)
+    ).toBeInTheDocument();
+  });
+});</div>
+    </div>
+    <div>
+      <h3>pytest + FastAPI</h3>
+      <div class="code"><span style="color:#ff7b72">import</span> pytest
+<span style="color:#ff7b72">from</span> httpx <span style="color:#ff7b72">import</span> AsyncClient
+
+<span style="color:#d2a8ff">@pytest.mark.asyncio</span>
+<span style="color:#ff7b72">async def</span> <span style="color:#d2a8ff">test_create_user</span>(client: AsyncClient):
+    resp = <span style="color:#ff7b72">await</span> client.post(
+        <span style="color:#a5d6ff">"/api/users"</span>,
+        json={
+            <span style="color:#a5d6ff">"email"</span>: <span style="color:#a5d6ff">"test@example.com"</span>,
+            <span style="color:#a5d6ff">"password"</span>: <span style="color:#a5d6ff">"Str0ng!Pass"</span>
+        }
+    )
+    <span style="color:#ff7b72">assert</span> resp.status_code == <span style="color:#79c0ff">201</span>
+    data = resp.json()
+    <span style="color:#ff7b72">assert</span> <span style="color:#a5d6ff">"id"</span> <span style="color:#ff7b72">in</span> data
+
+<span style="color:#d2a8ff">@pytest.mark.asyncio</span>
+<span style="color:#ff7b72">async def</span> <span style="color:#d2a8ff">test_duplicate_email</span>(client):
+    <span style="color:#8b949e"># 先创建一个用户</span>
+    <span style="color:#ff7b72">await</span> client.post(<span style="color:#a5d6ff">"/api/users"</span>,
+        json={<span style="color:#a5d6ff">"email"</span>: <span style="color:#a5d6ff">"dup@test.com"</span>,
+              <span style="color:#a5d6ff">"password"</span>: <span style="color:#a5d6ff">"Pass123!"</span>})
+    <span style="color:#8b949e"># 重复创建应返回 409</span>
+    resp = <span style="color:#ff7b72">await</span> client.post(<span style="color:#a5d6ff">"/api/users"</span>,
+        json={<span style="color:#a5d6ff">"email"</span>: <span style="color:#a5d6ff">"dup@test.com"</span>,
+              <span style="color:#a5d6ff">"password"</span>: <span style="color:#a5d6ff">"Pass123!"</span>})
+    <span style="color:#ff7b72">assert</span> resp.status_code == <span style="color:#79c0ff">409</span></div>
+    </div>
+  </div>
+  <div class="slide-num">52</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">08 · 测试</div>
+  <h2>📊 测试策略总结</h2>
+  <table class="tbl">
+    <tr><th>测试类型</th><th>目的</th><th>速度</th><th>覆盖</th><th>工具示例</th></tr>
+    <tr><td>单元测试</td><td>验证函数/方法逻辑</td><td>⚡ 毫秒级</td><td>代码路径</td><td>Jest/pytest/JUnit</td></tr>
+    <tr><td>集成测试</td><td>验证模块间交互</td><td>🔄 秒级</td><td>接口契约</td><td>Testcontainers/supertest</td></tr>
+    <tr><td>E2E 测试</td><td>验证用户完整流程</td><td>🐢 分钟级</td><td>业务流程</td><td>Playwright/Cypress</td></tr>
+    <tr><td>性能测试</td><td>验证系统承载能力</td><td>🐢 分钟级</td><td>性能指标</td><td>k6/JMeter/Locust</td></tr>
+    <tr><td>契约测试</td><td>验证 API 兼容性</td><td>⚡ 秒级</td><td>接口规范</td><td>Pact</td></tr>
+    <tr><td>安全测试</td><td>发现安全漏洞</td><td>🔄 分钟级</td><td>安全规则</td><td>OWASP ZAP/Semgrep</td></tr>
+  </table>
+  <div class="box-accent" style="margin-top:12px">
+    <p class="small"><strong>Kiro 的测试工作流</strong>：写代码后自动运行构建和测试验证。如果测试失败，Kiro 会分析失败原因并修复。新增功能时会同时编写对应的测试用例。</p>
+  </div>
+  <div class="slide-num">53</div>
+</div></div>
+
+<!-- SLIDE-BATCH-5A-END -->
+
+<!-- ============ CHAPTER 9: DevOps ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">09</div>
+  <div class="divider-center">
+    <h1 class="grad">DevOps 与 CI/CD</h1>
+    <p>从代码提交到生产部署，自动化一切可以自动化的环节。</p>
+  </div>
+  <div class="slide-num">54</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">09 · DevOps</div>
+  <h2>🐳 容器化技术</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>Docker 最佳实践</h3>
+      <ul>
+        <li><strong>多阶段构建</strong>：编译阶段 + 运行阶段，减小镜像体积</li>
+        <li><strong>基础镜像</strong>：Alpine / Distroless / Scratch 选择</li>
+        <li><strong>安全</strong>：非 root 用户、.dockerignore、安全扫描（Trivy）</li>
+        <li><strong>层缓存</strong>：依赖安装在前、代码复制在后</li>
+        <li><strong>健康检查</strong>：HEALTHCHECK 指令</li>
+      </ul>
+      <div class="code" style="font-size:.72rem"><span style="color:#ff7b72">FROM</span> node:20-alpine <span style="color:#ff7b72">AS</span> build
+<span style="color:#ff7b72">WORKDIR</span> /app
+<span style="color:#ff7b72">COPY</span> package*.json ./
+<span style="color:#ff7b72">RUN</span> npm ci
+<span style="color:#ff7b72">COPY</span> . .
+<span style="color:#ff7b72">RUN</span> npm run build
+
+<span style="color:#ff7b72">FROM</span> node:20-alpine
+<span style="color:#ff7b72">USER</span> node
+<span style="color:#ff7b72">COPY</span> --from=build /app/dist ./dist
+<span style="color:#ff7b72">CMD</span> ["node", "dist/main.js"]</div>
+    </div>
+    <div class="box">
+      <h3>Kubernetes 编排</h3>
+      <ul>
+        <li><strong>核心资源</strong>：Pod/Deployment/Service/ConfigMap/Secret</li>
+        <li><strong>高级</strong>：StatefulSet/DaemonSet/Job/CronJob</li>
+        <li><strong>扩缩</strong>：HPA/VPA/Cluster Autoscaler</li>
+        <li><strong>网络</strong>：Ingress/NetworkPolicy/Service Mesh</li>
+        <li><strong>配置管理</strong>：Helm Charts / Kustomize</li>
+        <li><strong>GitOps</strong>：ArgoCD / Flux</li>
+        <li><strong>安全</strong>：RBAC/Pod Security/OPA Gatekeeper</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">55</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">09 · DevOps</div>
+  <h2>🔄 CI/CD 流水线</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>GitHub Actions</h3>
+      <ul>
+        <li>工作流 YAML 编写</li>
+        <li>矩阵构建（多版本/多平台）</li>
+        <li>缓存策略（依赖/构建产物）</li>
+        <li>自定义 Action 开发</li>
+        <li>可重用工作流</li>
+        <li>环境保护规则</li>
+        <li>密钥管理（Secrets）</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>其他 CI/CD 工具</h3>
+      <ul>
+        <li><strong>GitLab CI</strong>：.gitlab-ci.yml、阶段/作业、Review Apps</li>
+        <li><strong>Jenkins</strong>：Jenkinsfile、Pipeline、共享库</li>
+        <li><strong>AWS CodePipeline</strong>：CodeBuild + CodeDeploy</li>
+        <li><strong>CircleCI</strong>：Orbs、并行执行</li>
+      </ul>
+      <h3 style="margin-top:12px">部署策略</h3>
+      <div class="tags">
+        <span class="tag tag-blue">滚动更新</span>
+        <span class="tag tag-green">蓝绿部署</span>
+        <span class="tag tag-orange">金丝雀发布</span>
+        <span class="tag tag-purple">A/B 测试</span>
+        <span class="tag tag-pink">Feature Flag</span>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">56</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">09 · DevOps</div>
+  <h2>📜 基础设施即代码（IaC）</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>Terraform</h3>
+      <ul>
+        <li>HCL 语法、Provider 配置</li>
+        <li>模块设计（可复用组件）</li>
+        <li>状态管理（S3 + DynamoDB 远程后端）</li>
+        <li>工作区（Workspace）多环境</li>
+        <li>导入现有资源</li>
+        <li>Terragrunt 大规模管理</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>AWS CDK & CloudFormation</h3>
+      <ul>
+        <li><strong>CDK</strong>：TypeScript/Python 编写基础设施</li>
+        <li>L1/L2/L3 Construct 层次</li>
+        <li>自定义 Construct 开发</li>
+        <li><strong>CloudFormation</strong>：YAML 模板</li>
+        <li>内置函数（!Ref/!Sub/!GetAtt）</li>
+        <li>StackSets 多账户部署</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cols cols-3" style="margin-top:12px">
+    <div class="box"><h3>Pulumi</h3><p class="small">通用编程语言编写 IaC</p></div>
+    <div class="box"><h3>Ansible</h3><p class="small">Playbook、角色、Vault 密钥</p></div>
+    <div class="box"><h3>Packer</h3><p class="small">机器镜像自动化构建</p></div>
+  </div>
+  <div class="slide-num">57</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">09 · DevOps</div>
+  <h2>📈 可观测性</h2>
+  <div class="cols cols-3">
+    <div class="box">
+      <h3>📋 日志</h3>
+      <ul>
+        <li>结构化日志（JSON 格式）</li>
+        <li>日志级别策略</li>
+        <li>ELK Stack 集中化</li>
+        <li>Fluent Bit 收集</li>
+        <li>CloudWatch Logs</li>
+        <li>日志采样与过滤</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>📊 指标</h3>
+      <ul>
+        <li>Prometheus + Grafana</li>
+        <li>PromQL 查询语言</li>
+        <li>告警规则配置</li>
+        <li>Recording Rules</li>
+        <li>CloudWatch Metrics</li>
+        <li>自定义业务指标</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>🔍 追踪</h3>
+      <ul>
+        <li>OpenTelemetry 统一标准</li>
+        <li>Jaeger / Zipkin</li>
+        <li>AWS X-Ray</li>
+        <li>分布式上下文传播</li>
+        <li>Span/Trace 分析</li>
+        <li>服务依赖地图</li>
+      </ul>
+    </div>
+  </div>
+  <div class="box-accent" style="margin-top:12px">
+    <p class="small"><strong>SRE 实践</strong>：SLI/SLO/SLA 定义 → 错误预算管理 → 容量规划 → 混沌工程（Chaos Monkey）→ 事故响应 Runbook</p>
+  </div>
+  <div class="slide-num">58</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">09 · DevOps</div>
+  <h2>☁️ AWS 服务深度集成</h2>
+  <div class="cols cols-3">
+    <div class="box">
+      <h3>计算</h3>
+      <ul><li>EC2 / Lambda / ECS / EKS</li><li>Fargate / App Runner</li><li>Auto Scaling</li><li>Spot 实例策略</li></ul>
+    </div>
+    <div class="box">
+      <h3>存储 & 数据库</h3>
+      <ul><li>S3 / EFS / FSx</li><li>RDS / Aurora / DynamoDB</li><li>ElastiCache</li><li>Redshift / Athena</li></ul>
+    </div>
+    <div class="box">
+      <h3>网络 & 安全</h3>
+      <ul><li>VPC / CloudFront / Route 53</li><li>IAM / WAF / Shield</li><li>Secrets Manager</li><li>Certificate Manager</li></ul>
+    </div>
+  </div>
+  <div class="cols cols-3" style="margin-top:12px">
+    <div class="box">
+      <h3>消息 & 集成</h3>
+      <ul><li>SQS / SNS / EventBridge</li><li>Step Functions</li><li>API Gateway / AppSync</li></ul>
+    </div>
+    <div class="box">
+      <h3>监控 & 运维</h3>
+      <ul><li>CloudWatch / CloudTrail</li><li>X-Ray / Systems Manager</li><li>Config / GuardDuty</li></ul>
+    </div>
+    <div class="box">
+      <h3>数据 & AI</h3>
+      <ul><li>Glue / Kinesis / EMR</li><li>SageMaker / Bedrock</li><li>Comprehend / Rekognition</li></ul>
+    </div>
+  </div>
+  <div class="slide-num">59</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">09 · DevOps</div>
+  <h2>🔄 CI/CD 流水线示例</h2>
+  <div class="code" style="font-size:.72rem"><span style="color:#8b949e"># .github/workflows/deploy.yml</span>
+<span style="color:#ff7b72">name</span>: Deploy
+<span style="color:#ff7b72">on</span>:
+  push: { branches: [main] }
+
+<span style="color:#ff7b72">jobs</span>:
+  <span style="color:#d2a8ff">test</span>:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm test -- --coverage
+      - run: pnpm build
+
+  <span style="color:#d2a8ff">deploy</span>:
+    needs: test
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: us-east-1
+      - run: aws ecs update-service --cluster prod --service api --force-new-deployment</div>
+  <div class="slide-num">60</div>
+</div></div>
+
+<!-- SLIDE-BATCH-5B-END -->
+
+<!-- ============ CHAPTER 10: 安全 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">10</div>
+  <div class="divider-center">
+    <h1 class="grad2">安全工程</h1>
+    <p>安全不是事后补救，而是从设计阶段就融入的核心要素。Kiro 默认遵循安全编码最佳实践。</p>
+  </div>
+  <div class="slide-num">61</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">10 · 安全</div>
+  <h2>🛡️ OWASP Top 10 防护</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>注入攻击防护</h3>
+      <ul>
+        <li><strong>SQL 注入</strong>：参数化查询、ORM、输入验证</li>
+        <li><strong>XSS</strong>：输出编码、CSP 头、DOMPurify</li>
+        <li><strong>CSRF</strong>：Token 验证、SameSite Cookie</li>
+        <li><strong>SSRF</strong>：URL 白名单、内网地址过滤</li>
+        <li><strong>命令注入</strong>：参数化执行、避免 shell=True</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>其他安全实践</h3>
+      <ul>
+        <li><strong>认证</strong>：bcrypt/Argon2 密码哈希、MFA</li>
+        <li><strong>授权</strong>：RBAC/ABAC 模型、最小权限</li>
+        <li><strong>加密</strong>：AES-256-GCM、TLS 1.3、KMS</li>
+        <li><strong>会话</strong>：HttpOnly/Secure/SameSite Cookie</li>
+        <li><strong>API</strong>：速率限制、请求大小限制</li>
+        <li><strong>依赖</strong>：漏洞扫描、版本锁定</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">62</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">10 · 安全</div>
+  <h2>🔍 安全审计与 DevSecOps</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>静态分析（SAST）</h3>
+      <ul>
+        <li><strong>SonarQube</strong>：代码质量 + 安全规则</li>
+        <li><strong>Semgrep</strong>：自定义规则、多语言</li>
+        <li><strong>CodeQL</strong>：GitHub 原生、数据流分析</li>
+        <li><strong>Snyk</strong>：依赖漏洞 + 代码扫描</li>
+        <li><strong>Dependabot</strong>：自动依赖更新 PR</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>运行时安全</h3>
+      <ul>
+        <li><strong>容器扫描</strong>：Trivy/Clair 镜像漏洞</li>
+        <li><strong>运行时监控</strong>：Falco 异常行为检测</li>
+        <li><strong>网络安全</strong>：WAF 规则、DDoS 防护</li>
+        <li><strong>密钥管理</strong>：Vault/AWS Secrets Manager</li>
+        <li><strong>审计日志</strong>：CloudTrail、操作追踪</li>
+      </ul>
+    </div>
+  </div>
+  <div class="box-accent" style="margin-top:12px">
+    <p class="small"><strong>DevSecOps 流水线</strong>：代码提交 → SAST 扫描 → 依赖检查 → 构建 → 容器扫描 → 部署 → DAST 扫描 → 运行时监控</p>
+  </div>
+  <div class="slide-num">63</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">10 · 安全</div>
+  <h2>🔐 认证授权架构</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>OAuth 2.0 / OIDC 流程</h3>
+      <div class="code" style="font-size:.72rem">用户 → 应用 → 授权服务器
+  ↓ 授权码（Authorization Code + PKCE）
+应用 → 授权服务器（换取 Token）
+  ↓ Access Token + Refresh Token + ID Token
+应用 → 资源服务器（Bearer Token）
+  ↓ 受保护的资源</div>
+      <ul style="margin-top:8px">
+        <li>授权码流程（Web 应用推荐）</li>
+        <li>PKCE（SPA/移动端必须）</li>
+        <li>客户端凭证（服务间通信）</li>
+        <li>设备授权（IoT/CLI）</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>授权模型</h3>
+      <table class="tbl">
+        <tr><th>模型</th><th>适用场景</th></tr>
+        <tr><td>RBAC（基于角色）</td><td>大多数应用，角色明确</td></tr>
+        <tr><td>ABAC（基于属性）</td><td>复杂策略，动态条件</td></tr>
+        <tr><td>ReBAC（基于关系）</td><td>社交/协作，关系驱动</td></tr>
+      </table>
+      <ul style="margin-top:8px">
+        <li><strong>策略引擎</strong>：OPA（Rego）、Cedar（AWS）</li>
+        <li><strong>JWT 最佳实践</strong>：短过期、刷新轮换、密钥轮转</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">64</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">10 · 安全</div>
+  <h2>📋 合规与供应链安全</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>合规框架</h3>
+      <ul>
+        <li><strong>GDPR</strong>：数据最小化、用户同意、删除权、DPO</li>
+        <li><strong>HIPAA</strong>：PHI 加密、访问控制、审计追踪</li>
+        <li><strong>PCI DSS</strong>：支付数据隔离、加密传输、定期扫描</li>
+        <li><strong>SOC 2</strong>：安全/可用性/处理完整性/保密性/隐私</li>
+        <li><strong>ISO 27001</strong>：信息安全管理体系</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>供应链安全</h3>
+      <ul>
+        <li><strong>依赖锁定</strong>：精确版本号、锁文件</li>
+        <li><strong>SBOM</strong>：软件物料清单生成</li>
+        <li><strong>签名验证</strong>：包签名、镜像签名（cosign）</li>
+        <li><strong>Typosquatting 检测</strong>：可疑包名警告</li>
+        <li><strong>许可证合规</strong>：开源许可证审查</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">65</div>
+</div></div>
+
+<!-- SLIDE-BATCH-5C-END -->
+
+<!-- ============ CHAPTER 11: 性能工程 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">11</div>
+  <div class="divider-center">
+    <h1 class="grad3">性能工程</h1>
+    <p>从前端加载到后端响应，从数据库查询到系统架构，全链路性能优化。</p>
+  </div>
+  <div class="slide-num">66</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">11 · 性能</div>
+  <h2>⚡ 后端性能优化</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>应用层优化</h3>
+      <ul>
+        <li><strong>缓存策略</strong>：多级缓存（本地→Redis→DB）、缓存预热、失效策略</li>
+        <li><strong>连接池</strong>：数据库连接池、HTTP 连接复用、gRPC 长连接</li>
+        <li><strong>异步处理</strong>：耗时操作异步化、消息队列削峰</li>
+        <li><strong>批量操作</strong>：批量插入/更新、DataLoader 合并查询</li>
+        <li><strong>算法优化</strong>：时间/空间复杂度分析、数据结构选择</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>数据库优化</h3>
+      <ul>
+        <li><strong>查询优化</strong>：EXPLAIN 分析、索引策略、查询重写</li>
+        <li><strong>读写分离</strong>：主写从读、复制延迟处理</li>
+        <li><strong>分库分表</strong>：水平分片、垂直拆分</li>
+        <li><strong>连接优化</strong>：PgBouncer/ProxySQL 连接池</li>
+        <li><strong>慢查询</strong>：慢查询日志分析、自动告警</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">67</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">11 · 性能</div>
+  <h2>🌐 前端 & 网络性能</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>Core Web Vitals</h3>
+      <ul>
+        <li><strong>LCP（最大内容绘制）</strong>：&lt;2.5s — 图片优化、预加载、SSR</li>
+        <li><strong>INP（交互到下一次绘制）</strong>：&lt;200ms — 减少主线程阻塞、代码分割</li>
+        <li><strong>CLS（累积布局偏移）</strong>：&lt;0.1 — 图片尺寸预留、字体加载策略</li>
+      </ul>
+      <h3 style="margin-top:12px">资源优化</h3>
+      <ul>
+        <li>图片：WebP/AVIF、响应式图片、懒加载</li>
+        <li>字体：子集化、font-display: swap</li>
+        <li>JS：Tree Shaking、代码分割、压缩</li>
+        <li>CSS：关键 CSS 内联、异步加载</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>网络优化</h3>
+      <ul>
+        <li><strong>CDN</strong>：静态资源分发、边缘缓存</li>
+        <li><strong>HTTP/2</strong>：多路复用、头部压缩、服务端推送</li>
+        <li><strong>HTTP/3</strong>：QUIC 协议、0-RTT 连接</li>
+        <li><strong>压缩</strong>：Brotli/Gzip 响应压缩</li>
+        <li><strong>DNS</strong>：预解析、DNS-over-HTTPS</li>
+        <li><strong>缓存</strong>：Cache-Control、ETag、Service Worker</li>
+      </ul>
+      <h3 style="margin-top:12px">架构级优化</h3>
+      <ul>
+        <li>边缘计算（Lambda@Edge/CloudFront Functions）</li>
+        <li>数据库就近部署（Global Tables）</li>
+        <li>异地多活架构</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">68</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">11 · 性能</div>
+  <h2>🔬 性能分析工具</h2>
+  <table class="tbl">
+    <tr><th>层级</th><th>工具</th><th>用途</th></tr>
+    <tr><td>前端</td><td>Lighthouse / WebPageTest / Chrome DevTools</td><td>页面加载、运行时性能分析</td></tr>
+    <tr><td>后端</td><td>pprof (Go) / py-spy (Python) / async-profiler (Java)</td><td>CPU/内存 Profiling</td></tr>
+    <tr><td>数据库</td><td>EXPLAIN ANALYZE / pg_stat_statements / slow query log</td><td>查询性能分析</td></tr>
+    <tr><td>网络</td><td>tcpdump / Wireshark / curl timing</td><td>网络延迟分析</td></tr>
+    <tr><td>系统</td><td>top / htop / vmstat / iostat / perf</td><td>系统资源监控</td></tr>
+    <tr><td>APM</td><td>Datadog / New Relic / AWS X-Ray</td><td>全链路追踪</td></tr>
+    <tr><td>负载</td><td>k6 / JMeter / Locust / wrk</td><td>压力测试</td></tr>
+  </table>
+  <div class="box-accent" style="margin-top:12px">
+    <p class="small"><strong>Kiro 的性能排障流程</strong>：收集指标 → 定位瓶颈（CPU/内存/IO/网络）→ 分析根因 → 实施优化 → 验证效果 → 建立基线</p>
+  </div>
+  <div class="slide-num">69</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">11 · 性能</div>
+  <h2>📊 高并发架构设计</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>限流策略</h3>
+      <ul>
+        <li><strong>令牌桶</strong>：平滑限流，允许突发</li>
+        <li><strong>滑动窗口</strong>：精确计数，防止边界问题</li>
+        <li><strong>漏桶</strong>：恒定速率处理</li>
+        <li><strong>分布式限流</strong>：Redis + Lua 脚本</li>
+      </ul>
+      <h3 style="margin-top:12px">降级策略</h3>
+      <ul>
+        <li>熔断器（Circuit Breaker）</li>
+        <li>服务降级（返回缓存/默认值）</li>
+        <li>负载卸载（Load Shedding）</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>扩展策略</h3>
+      <ul>
+        <li><strong>水平扩展</strong>：无状态服务 + 负载均衡</li>
+        <li><strong>垂直扩展</strong>：升级实例规格</li>
+        <li><strong>自动扩缩</strong>：基于 CPU/内存/自定义指标</li>
+        <li><strong>预测扩缩</strong>：基于历史模式预扩容</li>
+      </ul>
+      <h3 style="margin-top:12px">秒杀系统设计</h3>
+      <p class="small">CDN 静态化 → 前端限流 → API 网关限流 → Redis 预扣库存 → 异步下单 → 消息队列 → 订单服务</p>
+    </div>
+  </div>
+  <div class="slide-num">70</div>
+</div></div>
+
+<!-- SLIDE-BATCH-6A-END -->
+
+<!-- ============ CHAPTER 12: AI 工程 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">12</div>
+  <div class="divider-center">
+    <h1 class="grad4">AI 辅助工程</h1>
+    <p>从传统 ML 到 LLM 应用，从模型训练到生产部署，AI 工程的完整能力。</p>
+  </div>
+  <div class="slide-num">71</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">12 · AI 工程</div>
+  <h2>🧠 机器学习工程</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>ML 算法与框架</h3>
+      <ul>
+        <li><strong>scikit-learn</strong>：分类/回归/聚类/降维/特征工程/Pipeline</li>
+        <li><strong>XGBoost/LightGBM</strong>：梯度提升、特征重要性</li>
+        <li><strong>PyTorch</strong>：张量操作、自动微分、nn.Module、DataLoader、分布式训练</li>
+        <li><strong>TensorFlow/Keras</strong>：Sequential/Functional API、TFLite</li>
+        <li><strong>NLP</strong>：HuggingFace Transformers、文本分类、NER、文本生成</li>
+        <li><strong>CV</strong>：图像分类、目标检测（YOLO）、图像分割、OpenCV</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>MLOps</h3>
+      <ul>
+        <li><strong>实验跟踪</strong>：MLflow、Weights & Biases</li>
+        <li><strong>模型注册</strong>：版本管理、阶段标记</li>
+        <li><strong>特征存储</strong>：Feast、SageMaker Feature Store</li>
+        <li><strong>模型部署</strong>：SageMaker Endpoints、TorchServe、Triton</li>
+        <li><strong>模型监控</strong>：数据漂移检测、性能退化告警</li>
+        <li><strong>A/B 测试</strong>：模型版本对比、流量分配</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">72</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">12 · AI 工程</div>
+  <h2>🔗 LLM 应用开发</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>RAG 架构</h3>
+      <ul>
+        <li><strong>文档处理</strong>：加载 → 分块（Chunk）→ 嵌入生成</li>
+        <li><strong>向量存储</strong>：Pinecone/Weaviate/pgvector/Chroma</li>
+        <li><strong>检索策略</strong>：语义搜索、混合搜索（BM25+向量）、重排序</li>
+        <li><strong>生成</strong>：上下文注入、Prompt 模板、流式输出</li>
+        <li><strong>评估</strong>：RAGAS 框架、忠实度/相关性指标</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Agent 与工具链</h3>
+      <ul>
+        <li><strong>LangChain</strong>：Chain/Agent/Tool/Memory/Callback</li>
+        <li><strong>Prompt Engineering</strong>：Few-shot、CoT、ReAct、结构化输出</li>
+        <li><strong>API 集成</strong>：OpenAI/Anthropic/Bedrock/Ollama</li>
+        <li><strong>Function Calling</strong>：工具调用、JSON Schema</li>
+        <li><strong>Guardrails</strong>：输出验证、安全过滤</li>
+      </ul>
+    </div>
+  </div>
+  <div class="box-accent" style="margin-top:12px">
+    <p class="small"><strong>Kiro 本身就是 LLM Agent 的最佳实践</strong>：工具调用、多步推理、上下文管理、安全护栏 — 这些都是 Kiro 自身架构的核心组成部分。</p>
+  </div>
+  <div class="slide-num">73</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">12 · AI 工程</div>
+  <h2>📊 数据工程</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>数据处理</h3>
+      <ul>
+        <li><strong>Pandas/Polars</strong>：DataFrame 操作、GroupBy、Merge、时间序列</li>
+        <li><strong>PySpark</strong>：大规模分布式数据处理</li>
+        <li><strong>ETL</strong>：Airflow DAG、Prefect、Dagster</li>
+        <li><strong>数据清洗</strong>：缺失值、异常值、类型转换、去重</li>
+        <li><strong>格式转换</strong>：CSV/JSON/Parquet/Avro 互转</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>数据可视化</h3>
+      <ul>
+        <li><strong>Python</strong>：Matplotlib、Seaborn、Plotly、Bokeh</li>
+        <li><strong>JavaScript</strong>：D3.js、ECharts、Chart.js、Recharts</li>
+        <li><strong>仪表板</strong>：Grafana、Streamlit、Dash</li>
+        <li><strong>Jupyter</strong>：交互式数据探索和分析</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">74</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">12 · AI 工程</div>
+  <h2>☁️ AWS AI/ML 服务</h2>
+  <div class="cols cols-3">
+    <div class="box">
+      <h3>SageMaker</h3>
+      <ul>
+        <li>Notebook 实例</li>
+        <li>训练作业（分布式）</li>
+        <li>模型部署（Endpoint）</li>
+        <li>Pipeline 编排</li>
+        <li>Feature Store</li>
+        <li>Model Monitor</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Bedrock</h3>
+      <ul>
+        <li>基础模型 API 调用</li>
+        <li>知识库（RAG）</li>
+        <li>Agent 构建</li>
+        <li>模型微调</li>
+        <li>Guardrails 安全</li>
+        <li>模型评估</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>其他 AI 服务</h3>
+      <ul>
+        <li>Comprehend（NLP）</li>
+        <li>Rekognition（图像）</li>
+        <li>Transcribe（语音转文字）</li>
+        <li>Polly（文字转语音）</li>
+        <li>Translate（翻译）</li>
+        <li>Textract（文档提取）</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">75</div>
+</div></div>
+
+<!-- ============ CHAPTER 13: 项目管理 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">13</div>
+  <div class="divider-center">
+    <h1 class="grad">项目管理与协作</h1>
+    <p>软件工程不只是写代码，还包括文档、协作、流程和工具链管理。</p>
+  </div>
+  <div class="slide-num">76</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">13 · 项目管理</div>
+  <h2>📝 文档工程</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>技术文档</h3>
+      <ul>
+        <li><strong>API 文档</strong>：OpenAPI 规范、端点描述、示例</li>
+        <li><strong>架构文档</strong>：C4 模型、HLD/LLD、ADR</li>
+        <li><strong>README</strong>：项目介绍、安装、使用、贡献指南</li>
+        <li><strong>代码注释</strong>：JSDoc/Docstring/Javadoc/Rustdoc</li>
+        <li><strong>Runbook</strong>：故障处理手册、运维指南</li>
+        <li><strong>变更日志</strong>：Conventional Commits、CHANGELOG</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>商业文档</h3>
+      <ul>
+        <li><strong>PRD</strong>：产品需求文档</li>
+        <li><strong>技术方案</strong>：方案对比、选型报告</li>
+        <li><strong>项目计划</strong>：里程碑、风险评估</li>
+        <li><strong>会议纪要</strong>：决策记录、行动项</li>
+        <li><strong>技术博客</strong>：教程、深度解析</li>
+        <li><strong>多语言翻译</strong>：中英日韩技术文档</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">77</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">13 · 项目管理</div>
+  <h2>🔄 Git 工作流 & 代码审查</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>Git 工作流</h3>
+      <ul>
+        <li><strong>Trunk-based</strong>：短生命周期分支、频繁合并、Feature Flag</li>
+        <li><strong>GitFlow</strong>：develop/release/hotfix 分支模型</li>
+        <li><strong>GitHub Flow</strong>：main + feature 分支、PR 驱动</li>
+        <li><strong>Conventional Commits</strong>：feat/fix/chore/docs 前缀</li>
+        <li><strong>Git Hooks</strong>：pre-commit（lint）、commit-msg（规范）</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>代码审查</h3>
+      <ul>
+        <li><strong>审查维度</strong>：正确性、可读性、性能、安全、测试覆盖</li>
+        <li><strong>PR 描述</strong>：变更摘要、测试说明、截图</li>
+        <li><strong>自动化</strong>：CI 检查、代码覆盖率门槛、Lint 通过</li>
+        <li><strong>Kiro 辅助</strong>：自动代码审查、安全漏洞检测、改进建议</li>
+      </ul>
+      <h3 style="margin-top:12px">重构能力</h3>
+      <ul>
+        <li>提取函数/类、重命名、移动代码</li>
+        <li>JS→TS、Vue2→Vue3、Webpack→Vite 迁移</li>
+        <li>技术债务识别和清理</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">78</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">13 · 项目管理</div>
+  <h2>🏭 行业应用场景</h2>
+  <div class="cols cols-4">
+    <div class="box"><h3>🏦 金融</h3><p class="small">支付系统、风控引擎、交易系统、合规审计</p></div>
+    <div class="box"><h3>🏥 医疗</h3><p class="small">电子病历、远程医疗、影像处理、HIPAA 合规</p></div>
+    <div class="box"><h3>🛒 电商</h3><p class="small">订单系统、推荐引擎、搜索系统、秒杀</p></div>
+    <div class="box"><h3>🎮 游戏</h3><p class="small">服务端、匹配系统、实时通信、数据分析</p></div>
+    <div class="box"><h3>🎓 教育</h3><p class="small">在线学习、考试系统、自适应学习</p></div>
+    <div class="box"><h3>🏭 IoT</h3><p class="small">设备管理、数据采集、边缘计算</p></div>
+    <div class="box"><h3>🚗 物流</h3><p class="small">调度系统、路径优化、仓储管理</p></div>
+    <div class="box"><h3>📰 媒体</h3><p class="small">CMS、社交平台、音视频处理</p></div>
+  </div>
+  <div class="slide-num">79</div>
+</div></div>
+
+<!-- SLIDE-BATCH-6B-END -->
+
+<!-- ============ CHAPTER 14: 总结 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">14</div>
+  <div class="divider-center">
+    <h1 class="grad2">总结与展望</h1>
+    <p>回顾 Kiro 在软件工程全生命周期中的能力覆盖，以及能力边界。</p>
+  </div>
+  <div class="slide-num">80</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">14 · 总结</div>
+  <h2>🗺️ 软件工程能力全景图</h2>
+  <div class="cols cols-3">
+    <div class="box" style="border-left:3px solid var(--accent)">
+      <h3>📋 规划阶段</h3>
+      <ul>
+        <li>✅ 需求分析与建模</li>
+        <li>✅ 领域驱动设计</li>
+        <li>✅ 系统架构设计</li>
+        <li>✅ 技术选型评估</li>
+        <li>✅ 容量规划</li>
+      </ul>
+    </div>
+    <div class="box" style="border-left:3px solid var(--green)">
+      <h3>💻 开发阶段</h3>
+      <ul>
+        <li>✅ 50+ 编程语言</li>
+        <li>✅ 前端全框架</li>
+        <li>✅ 后端全技术栈</li>
+        <li>✅ 数据库设计与优化</li>
+        <li>✅ API 设计与文档</li>
+      </ul>
+    </div>
+    <div class="box" style="border-left:3px solid var(--accent2)">
+      <h3>🧪 质量阶段</h3>
+      <ul>
+        <li>✅ 单元/集成/E2E 测试</li>
+        <li>✅ TDD 工作流</li>
+        <li>✅ 代码审查</li>
+        <li>✅ 安全审计</li>
+        <li>✅ 性能测试</li>
+      </ul>
+    </div>
+    <div class="box" style="border-left:3px solid var(--orange)">
+      <h3>🚀 交付阶段</h3>
+      <ul>
+        <li>✅ CI/CD 流水线</li>
+        <li>✅ 容器化 & K8s</li>
+        <li>✅ IaC 基础设施</li>
+        <li>✅ 多种部署策略</li>
+        <li>✅ AWS 200+ 服务</li>
+      </ul>
+    </div>
+    <div class="box" style="border-left:3px solid var(--pink)">
+      <h3>📈 运维阶段</h3>
+      <ul>
+        <li>✅ 可观测性三支柱</li>
+        <li>✅ 性能优化</li>
+        <li>✅ 故障排查</li>
+        <li>✅ SRE 实践</li>
+        <li>✅ 安全运维</li>
+      </ul>
+    </div>
+    <div class="box" style="border-left:3px solid var(--accent3)">
+      <h3>🤖 AI 阶段</h3>
+      <ul>
+        <li>✅ ML 模型开发</li>
+        <li>✅ LLM 应用构建</li>
+        <li>✅ RAG 架构</li>
+        <li>✅ MLOps 流水线</li>
+        <li>✅ 数据工程</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">81</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">14 · 总结</div>
+  <h2>⚠️ 能力边界</h2>
+  <div class="cols cols-2">
+    <div class="box" style="border-color:rgba(16,185,129,.3)">
+      <h3 style="color:var(--green)">✅ Kiro 能做的</h3>
+      <ul>
+        <li>直接读写文件系统中的文本文件</li>
+        <li>执行终端命令（构建/测试/Git）</li>
+        <li>调用 AWS CLI API 管理云资源</li>
+        <li>AST 级别代码搜索和分析</li>
+        <li>联网搜索最新信息</li>
+        <li>多 Agent 并行处理复杂任务</li>
+        <li>生成所有文本格式的文件</li>
+        <li>MCP 协议扩展能力</li>
+      </ul>
+    </div>
+    <div class="box" style="border-color:rgba(239,68,68,.3)">
+      <h3 style="color:var(--red)">❌ Kiro 不能做的</h3>
+      <ul>
+        <li>生成图片/音频/视频等二进制文件</li>
+        <li>运行 GUI 程序</li>
+        <li>提供医疗/法律/金融专业建议</li>
+        <li>访问未授权的系统</li>
+        <li>保证代码 100% 无 Bug</li>
+        <li>替代人类做最终决策</li>
+        <li>处理超大二进制文件</li>
+        <li>跨会话记忆（需知识库）</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">82</div>
+</div></div>
+
+<!-- ============ CHAPTER 15: 能力极限 ============ -->
+<div class="slide"><div class="slide-inner">
+  <div class="divider-num">15</div>
+  <div class="divider-center">
+    <h1 class="grad3">能力极限深度剖析</h1>
+    <p>不吹不黑 — 客观分析 Kiro 的真实能力上限、适用边界和与人类工程师的对比。</p>
+  </div>
+  <div class="slide-num">83</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">15 · 能力极限</div>
+  <h2>📏 核心参数</h2>
+  <div class="cols cols-2">
+    <div class="box">
+      <h3>上下文窗口：~1M Tokens</h3>
+      <table class="tbl">
+        <tr><th>度量</th><th>约等于</th></tr>
+        <tr><td>英文单词</td><td>~75 万个</td></tr>
+        <tr><td>中文字符</td><td>~50 万字（约 3-4 本《哈利波特》）</td></tr>
+        <tr><td>代码行数</td><td>~3-5 万行</td></tr>
+        <tr><td>源文件数</td><td>~200-400 个文件</td></tr>
+        <tr><td>等价项目</td><td>一个完整的中型 SaaS 应用</td></tr>
+      </table>
+      <p class="small" style="margin-top:8px">这意味着 Kiro 可以一次性读懂一个中型项目的<strong>全部代码</strong>，理解文件间的依赖关系，然后做跨文件修改。</p>
+    </div>
+    <div class="box">
+      <h3>单次输出上限</h3>
+      <table class="tbl">
+        <tr><th>指标</th><th>数值</th></tr>
+        <tr><td>最大 Token 数</td><td>~15,000-25,000 tokens</td></tr>
+        <tr><td>等价代码行</td><td>~1,000-2,000 行</td></tr>
+        <tr><td>高质量区间</td><td>单次 500 行以内最佳</td></tr>
+        <tr><td>质量衰减点</td><td>超过 500 行后半段准确性下降</td></tr>
+      </table>
+      <p class="small" style="margin-top:8px">这就是为什么 Kiro 处理大型任务时会自动拆分成多次写入，而不是一次性输出。</p>
+    </div>
+  </div>
+  <div class="slide-num">84</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">15 · 能力极限</div>
+  <h2>🎯 一个直观的例子</h2>
+  <div class="box-accent">
+    <h4>场景：中型 SaaS 项目全量理解</h4>
+  </div>
+  <div class="code" style="margin-top:12px;font-size:.78rem">my-saas/
+├── frontend/          # React + TypeScript    ~8,000 行
+│   ├── components/    # 50+ 组件
+│   ├── hooks/         # 自定义 Hooks
+│   ├── pages/         # 路由页面
+│   └── store/         # 状态管理
+├── backend/           # FastAPI + Python      ~6,000 行
+│   ├── api/           # 路由处理
+│   ├── models/        # 数据模型
+│   ├── services/      # 业务逻辑
+│   └── core/          # 认证/配置/中间件
+├── infrastructure/    # Terraform + Docker    ~2,000 行
+├── tests/             # 各类测试             ~4,000 行
+└── docs/              # 文档                 ~2,000 行
+─────────────────────────────────────────────
+总计                                          ~22,000 行 ✅ 完全在上下文窗口内</div>
+  <div class="cols cols-3" style="margin-top:12px">
+    <div class="box">
+      <h3>✅ 能做到</h3>
+      <p class="small">一次性读完全部代码，理解整体架构和文件间依赖</p>
+    </div>
+    <div class="box">
+      <h3>✅ 能做到</h3>
+      <p class="small">跨文件重构：改认证方案时同时改后端、前端、测试、配置、文档</p>
+    </div>
+    <div class="box">
+      <h3>⚠️ 需分批</h3>
+      <p class="small">10 万行大型项目需要用搜索工具定位相关代码，分批处理</p>
+    </div>
+  </div>
+  <div class="slide-num">85</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">15 · 能力极限</div>
+  <h2>📊 能力分级：错误率视角</h2>
+  <div class="cols cols-3">
+    <div class="box" style="border-left:3px solid var(--green)">
+      <h3 style="color:var(--green)">🟢 很强（错误率 &lt;5%）</h3>
+      <ul>
+        <li>单文件 500 行以内的功能实现</li>
+        <li>明确需求的 CRUD / API / 组件</li>
+        <li>Bug 修复（给错误信息 + 代码）</li>
+        <li>代码审查和重构建议</li>
+        <li>配置文件 / CI-CD / Dockerfile</li>
+        <li>SQL 查询编写和优化</li>
+        <li>技术文档和 README 编写</li>
+        <li>Shell 脚本和自动化</li>
+      </ul>
+    </div>
+    <div class="box" style="border-left:3px solid var(--orange)">
+      <h3 style="color:var(--orange)">🟡 还行（需 1-2 轮修正）</h3>
+      <ul>
+        <li>跨 5-10 个文件的功能开发</li>
+        <li>复杂算法（DP、图算法）</li>
+        <li>从零搭建项目脚手架</li>
+        <li>系统设计和架构方案</li>
+        <li>数据库 Schema 设计</li>
+        <li>性能优化方案</li>
+        <li>安全审计和修复</li>
+        <li>复杂的正则表达式</li>
+      </ul>
+    </div>
+    <div class="box" style="border-left:3px solid var(--red)">
+      <h3 style="color:var(--red)">🔴 吃力（需多轮迭代）</h3>
+      <ul>
+        <li>超过 2000 行的单次连贯输出</li>
+        <li>运行时状态调试（内存泄漏、竞态）</li>
+        <li>极新技术（训练数据截止后）</li>
+        <li>需要视觉判断的 UI 微调</li>
+        <li>高度定制的业务逻辑（缺乏上下文）</li>
+        <li>跨多个微服务的分布式调试</li>
+        <li>硬件相关的底层优化</li>
+        <li>需要领域专家知识的决策</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">86</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">15 · 能力极限</div>
+  <h2>⚖️ Kiro vs 人类工程师</h2>
+  <table class="tbl">
+    <tr><th>维度</th><th>Kiro</th><th>人类高级工程师</th><th>谁更强</th></tr>
+    <tr><td>编码速度</td><td>秒级输出数百行代码</td><td>一天几百行高质量代码</td><td style="color:var(--accent)">Kiro ⚡</td></tr>
+    <tr><td>知识广度</td><td>50+ 语言、100+ 框架</td><td>精通 2-3 个技术栈</td><td style="color:var(--accent)">Kiro 📚</td></tr>
+    <tr><td>特定领域深度</td><td>中高级水平</td><td>可达专家级</td><td style="color:var(--green)">人类 🧠</td></tr>
+    <tr><td>创造性</td><td>组合已知模式</td><td>能发明新架构和算法</td><td style="color:var(--green)">人类 💡</td></tr>
+    <tr><td>一致性</td><td>不疲劳，但会"幻觉"</td><td>会疲劳，但有直觉</td><td style="color:var(--orange)">各有优劣</td></tr>
+    <tr><td>上下文容量</td><td>100 万 token 硬上限</td><td>靠记忆和文档，无硬上限</td><td style="color:var(--orange)">各有优劣</td></tr>
+    <tr><td>重复性工作</td><td>不厌烦，质量稳定</td><td>容易疲劳出错</td><td style="color:var(--accent)">Kiro 🔄</td></tr>
+    <tr><td>沟通理解</td><td>依赖文字描述精确度</td><td>能读懂言外之意</td><td style="color:var(--green)">人类 🗣️</td></tr>
+    <tr><td>调试直觉</td><td>系统化排查</td><td>"第六感"定位问题</td><td style="color:var(--green)">人类 🎯</td></tr>
+    <tr><td>学习新技术</td><td>需等模型更新</td><td>实时学习和实验</td><td style="color:var(--green)">人类 📖</td></tr>
+  </table>
+  <div class="slide-num">87</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">15 · 能力极限</div>
+  <h2>🔬 质量衰减曲线</h2>
+  <div class="cols cols-2">
+    <div>
+      <h3>输出长度 vs 质量</h3>
+      <div class="code" style="font-size:.78rem;line-height:1.8">
+质量
+ ▲
+ │ ████████████████████
+ │ █████████████████████
+ │ ██████████████████████  ← 0-200 行：几乎无错
+ │ █████████████████████
+ │ ████████████████████
+ │ ██████████████████     ← 200-500 行：偶有小错
+ │ ████████████████
+ │ ██████████████         ← 500-1000 行：需要审查
+ │ ██████████
+ │ ████████               ← 1000-2000 行：建议分批
+ │ █████
+ └──────────────────────▶ 输出长度（行）</div>
+    </div>
+    <div>
+      <h3>Kiro 的应对策略</h3>
+      <div class="box-accent">
+        <p><strong>自动分批</strong>：大型任务自动拆分成多次写入，每次保持在高质量区间</p>
+      </div>
+      <div class="box-accent box-green">
+        <p><strong>自动验证</strong>：每次修改后运行构建和测试，发现错误立即修复</p>
+      </div>
+      <div class="box-accent box-purple">
+        <p><strong>上下文压缩</strong>：接近窗口限制时自动压缩，保留关键信息继续工作</p>
+      </div>
+      <div class="box-accent box-orange">
+        <p><strong>子 Agent</strong>：复杂任务拆分给多个 Agent 并行处理，各自保持短上下文</p>
+      </div>
+      <div class="box-accent box-pink">
+        <p><strong>工具辅助</strong>：用 AST 搜索精确定位代码，避免"凭记忆"修改</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">88</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">15 · 能力极限</div>
+  <h2>🧪 实测：不同任务的表现</h2>
+  <table class="tbl">
+    <tr><th>任务类型</th><th>复杂度</th><th>预期耗时</th><th>首次正确率</th><th>说明</th></tr>
+    <tr><td>修复一个 TypeError</td><td>⭐</td><td>10 秒</td><td>~98%</td><td>读错误 + 定位 + 修复</td></tr>
+    <tr><td>写一个 React 组件</td><td>⭐⭐</td><td>30 秒</td><td>~95%</td><td>含 Props 类型、样式、测试</td></tr>
+    <tr><td>写一个 REST API 端点</td><td>⭐⭐</td><td>1 分钟</td><td>~93%</td><td>路由 + 验证 + 数据库 + 测试</td></tr>
+    <tr><td>配置 GitHub Actions CI</td><td>⭐⭐</td><td>30 秒</td><td>~95%</td><td>构建 + 测试 + 部署</td></tr>
+    <tr><td>设计数据库 Schema</td><td>⭐⭐⭐</td><td>2 分钟</td><td>~88%</td><td>表结构 + 索引 + 迁移</td></tr>
+    <tr><td>跨 5 文件重构</td><td>⭐⭐⭐</td><td>3 分钟</td><td>~85%</td><td>需要理解依赖关系</td></tr>
+    <tr><td>从零搭建项目</td><td>⭐⭐⭐⭐</td><td>5 分钟</td><td>~80%</td><td>多文件、多配置协调</td></tr>
+    <tr><td>复杂算法实现</td><td>⭐⭐⭐⭐</td><td>3 分钟</td><td>~78%</td><td>边界条件容易遗漏</td></tr>
+    <tr><td>微服务架构设计</td><td>⭐⭐⭐⭐⭐</td><td>5 分钟</td><td>~75%</td><td>方案合理但需人工评审</td></tr>
+    <tr><td>分布式系统调试</td><td>⭐⭐⭐⭐⭐</td><td>10+ 分钟</td><td>~60%</td><td>依赖运行时信息，需多轮</td></tr>
+  </table>
+  <div class="slide-num">89</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">15 · 能力极限</div>
+  <h2>💡 最佳使用策略</h2>
+  <div class="cols cols-2">
+    <div class="box" style="border-left:3px solid var(--green)">
+      <h3 style="color:var(--green)">✅ 这样用效果最好</h3>
+      <ul>
+        <li><strong>明确需求</strong>："用 FastAPI 写一个带 JWT 认证的用户 CRUD API" 比 "写个后端" 好 10 倍</li>
+        <li><strong>分步推进</strong>：大任务拆成小步骤，每步验证后再继续</li>
+        <li><strong>提供上下文</strong>：让 Kiro 先读现有代码再动手，匹配项目风格</li>
+        <li><strong>利用工具链</strong>：让 Kiro 跑测试、跑构建，自动发现和修复问题</li>
+        <li><strong>审查关键逻辑</strong>：业务核心代码人工过一遍</li>
+        <li><strong>保存会话</strong>：长任务用 /chat save 保存进度</li>
+      </ul>
+    </div>
+    <div class="box" style="border-left:3px solid var(--red)">
+      <h3 style="color:var(--red)">❌ 这样用效果差</h3>
+      <ul>
+        <li><strong>模糊指令</strong>："帮我优化一下" — 优化什么？性能？可读性？</li>
+        <li><strong>一次性要求太多</strong>："帮我写一个完整的电商系统" — 应该分模块</li>
+        <li><strong>不提供上下文</strong>：不让 Kiro 读现有代码就要求修改</li>
+        <li><strong>忽略验证</strong>：不跑测试就直接用生成的代码</li>
+        <li><strong>期望 100% 正确</strong>：任何 AI 都会犯错，关键是快速发现和修复</li>
+        <li><strong>用于最终决策</strong>：架构选型、技术方向应该人类决定</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-num">90</div>
+</div></div>
+
+<div class="slide"><div class="slide-inner">
+  <div class="sec-label">15 · 能力极限</div>
+  <h2>🎯 最诚实的定位</h2>
+  <div style="display:flex;flex-direction:column;align-items:center;margin-top:20px">
+    <div class="box" style="max-width:700px;text-align:center;border-color:var(--accent);padding:32px">
+      <h3 style="font-size:1.3rem;color:var(--text);margin-bottom:16px">把 Kiro 当成一个</h3>
+      <h2 style="font-size:1.6rem;margin-bottom:16px"><span class="grad">速度极快、知识面极广、但需要人类把关的中高级工程师</span></h2>
+      <p style="font-size:1rem;color:var(--text2);line-height:1.8">我最大的价值不是替代你思考，<br>而是替你执行 —— <strong style="color:var(--text)">你做决策，我写代码。</strong></p>
+    </div>
+    <div class="cols cols-3" style="margin-top:24px;max-width:700px">
+      <div style="text-align:center">
+        <div style="font-size:2rem">🧠</div>
+        <p class="small"><strong>人类负责</strong><br>架构决策、产品方向、代码审查</p>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:2rem">🤝</div>
+        <p class="small"><strong>协作完成</strong><br>需求分析、方案设计、复杂调试</p>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:2rem">🤖</div>
+        <p class="small"><strong>Kiro 负责</strong><br>编码实现、测试编写、配置部署</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">91</div>
+</div></div>
+
+<!-- SLIDE: Ending (updated) -->
+<div class="slide"><div class="slide-inner">
+  <div class="cover-center">
+    <div style="font-size:4rem;margin-bottom:16px;">🚀</div>
+    <h1 class="grad" style="font-size:2.8rem;">让 AI 处理工程细节<br>你专注于创造价值</h1>
+    <div class="subtitle" style="margin-top:16px">Kiro — 你的终端 AI 软件工程师</div>
+    <div style="margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
+      <span class="tag tag-blue" style="font-size:.85rem;padding:6px 18px">需求分析</span>
+      <span class="tag tag-purple" style="font-size:.85rem;padding:6px 18px">系统设计</span>
+      <span class="tag tag-cyan" style="font-size:.85rem;padding:6px 18px">编码实现</span>
+      <span class="tag tag-green" style="font-size:.85rem;padding:6px 18px">测试验证</span>
+      <span class="tag tag-orange" style="font-size:.85rem;padding:6px 18px">部署运维</span>
+      <span class="tag tag-pink" style="font-size:.85rem;padding:6px 18px">AI 工程</span>
+    </div>
+    <p class="small" style="margin-top:40px">共 92 页 · 覆盖 15 个软件工程核心领域 · 由 Kiro 自动生成</p>
+  </div>
+  <div class="slide-num">92</div>
+</div></div>
+
+</div><!-- /deck -->
+
+<div id="controls">
+  <button id="btn-prev" title="上一页">←</button>
+  <div id="progress-bar"><div id="progress-fill"></div></div>
+  <span id="progress-text">1 / ?</span>
+  <button id="btn-next" title="下一页">→</button>
+  <button id="btn-fs" title="全屏">⛶</button>
+</div>
+
+<script src="slides.js"></script>
+</body>
+</html>

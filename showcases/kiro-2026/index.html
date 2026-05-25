@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiro AI — 全面能力介绍</title>
+<style>
+:root {
+  --bg: #0a0e17;
+  --bg2: #111827;
+  --bg3: #1a2332;
+  --accent: #3b82f6;
+  --accent2: #8b5cf6;
+  --accent3: #06b6d4;
+  --text: #e2e8f0;
+  --text2: #94a3b8;
+  --border: #1e293b;
+  --green: #10b981;
+  --orange: #f59e0b;
+  --red: #ef4444;
+  --pink: #ec4899;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+
+/* Side Nav */
+#sidebar {
+  position: fixed; left: 0; top: 0; width: 260px; height: 100vh;
+  background: var(--bg2); border-right: 1px solid var(--border);
+  overflow-y: auto; z-index: 100; transition: transform .3s;
+  padding: 20px 0;
+}
+#sidebar.hidden { transform: translateX(-260px); }
+#sidebar .logo {
+  text-align: center; padding: 20px; font-size: 1.8rem; font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+}
+#sidebar .logo small { display:block; font-size:.7rem; color:var(--text2); -webkit-text-fill-color: var(--text2); font-weight:400; letter-spacing:0; }
+#sidebar nav a {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 24px; color: var(--text2); text-decoration: none;
+  font-size: .9rem; transition: all .2s; border-left: 3px solid transparent;
+}
+#sidebar nav a:hover, #sidebar nav a.active {
+  color: var(--accent); background: rgba(59,130,246,.08);
+  border-left-color: var(--accent);
+}
+#sidebar nav a .icon { font-size: 1.1rem; width: 24px; text-align: center; }
+
+/* Toggle btn */
+#menu-toggle {
+  position: fixed; left: 16px; top: 16px; z-index: 200;
+  background: var(--bg2); border: 1px solid var(--border); color: var(--text);
+  width: 40px; height: 40px; border-radius: 8px; cursor: pointer;
+  font-size: 1.2rem; display: none; align-items: center; justify-content: center;
+}
+
+/* Main */
+#main {
+  margin-left: 260px; min-height: 100vh; transition: margin .3s;
+}
+#main.full { margin-left: 0; }
+
+/* Hero */
+.hero {
+  padding: 100px 60px 80px;
+  background: linear-gradient(135deg, rgba(59,130,246,.12), rgba(139,92,246,.12));
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem; font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+.hero p { font-size: 1.15rem; color: var(--text2); max-width: 700px; margin: 0 auto 30px; }
+.hero .stats { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+.hero .stat { text-align: center; }
+.hero .stat .num { font-size: 2.2rem; font-weight: 700; color: var(--accent); }
+.hero .stat .label { font-size: .85rem; color: var(--text2); }
+
+/* Section */
+.section {
+  padding: 60px;
+  border-bottom: 1px solid var(--border);
+}
+.section:nth-child(even) { background: var(--bg2); }
+.section-header {
+  margin-bottom: 40px;
+}
+.section-header h2 {
+  font-size: 2rem; font-weight: 700; margin-bottom: 8px;
+  display: flex; align-items: center; gap: 12px;
+}
+.section-header h2 .icon { font-size: 1.6rem; }
+.section-header p { color: var(--text2); font-size: 1rem; max-width: 800px; }
+
+/* Cards */
+.card-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+}
+.card {
+  background: var(--bg3); border: 1px solid var(--border); border-radius: 12px;
+  padding: 28px; transition: transform .2s, border-color .2s;
+}
+.card:hover { transform: translateY(-4px); border-color: var(--accent); }
+.card h3 { font-size: 1.15rem; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.card h3 .badge {
+  font-size: .65rem; padding: 2px 8px; border-radius: 10px;
+  background: rgba(59,130,246,.2); color: var(--accent); font-weight: 600;
+}
+.card p, .card li { color: var(--text2); font-size: .92rem; }
+.card ul { padding-left: 18px; margin-top: 8px; }
+.card li { margin-bottom: 4px; }
+
+/* Detail blocks */
+.detail-block {
+  background: var(--bg3); border: 1px solid var(--border); border-radius: 12px;
+  margin-bottom: 24px; overflow: hidden;
+}
+.detail-block .block-header {
+  padding: 20px 28px; cursor: pointer; display: flex;
+  justify-content: space-between; align-items: center;
+  transition: background .2s;
+}
+.detail-block .block-header:hover { background: rgba(59,130,246,.05); }
+.detail-block .block-header h3 { font-size: 1.1rem; display: flex; align-items: center; gap: 10px; }
+.detail-block .block-header .arrow { transition: transform .3s; font-size: .8rem; color: var(--text2); }
+.detail-block .block-header .arrow.open { transform: rotate(90deg); }
+.detail-block .block-body {
+  max-height: 0; overflow: hidden; transition: max-height .4s ease;
+  padding: 0 28px;
+}
+.detail-block .block-body.open { max-height: 5000px; padding: 0 28px 24px; }
+.detail-block .block-body p { color: var(--text2); font-size: .92rem; margin-bottom: 10px; }
+.detail-block .block-body ul { padding-left: 18px; }
+.detail-block .block-body li { color: var(--text2); font-size: .92rem; margin-bottom: 6px; }
+
+/* Code block */
+.code-block {
+  background: #0d1117; border: 1px solid var(--border); border-radius: 8px;
+  padding: 16px 20px; margin: 12px 0; overflow-x: auto;
+  font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace;
+  font-size: .85rem; color: #c9d1d9; line-height: 1.6;
+}
+.code-block .kw { color: #ff7b72; }
+.code-block .str { color: #a5d6ff; }
+.code-block .fn { color: #d2a8ff; }
+.code-block .cm { color: #8b949e; }
+.code-block .num { color: #79c0ff; }
+
+/* Tag list */
+.tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.tag {
+  padding: 4px 14px; border-radius: 20px; font-size: .8rem; font-weight: 500;
+  border: 1px solid var(--border); color: var(--text2);
+}
+.tag.blue { background: rgba(59,130,246,.15); color: var(--accent); border-color: rgba(59,130,246,.3); }
+.tag.purple { background: rgba(139,92,246,.15); color: var(--accent2); border-color: rgba(139,92,246,.3); }
+.tag.cyan { background: rgba(6,182,212,.15); color: var(--accent3); border-color: rgba(6,182,212,.3); }
+.tag.green { background: rgba(16,185,129,.15); color: var(--green); border-color: rgba(16,185,129,.3); }
+.tag.orange { background: rgba(245,158,11,.15); color: var(--orange); border-color: rgba(245,158,11,.3); }
+.tag.pink { background: rgba(236,72,153,.15); color: var(--pink); border-color: rgba(236,72,153,.3); }
+
+/* Table */
+.info-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+.info-table th, .info-table td {
+  padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border);
+  font-size: .9rem;
+}
+.info-table th { color: var(--accent); font-weight: 600; background: rgba(59,130,246,.05); }
+.info-table td { color: var(--text2); }
+.info-table tr:hover td { background: rgba(59,130,246,.03); }
+
+/* Comparison */
+.compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 16px 0; }
+.compare-box {
+  background: var(--bg3); border: 1px solid var(--border); border-radius: 12px;
+  padding: 24px;
+}
+.compare-box h4 { margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.compare-box.yes { border-color: rgba(16,185,129,.3); }
+.compare-box.yes h4 { color: var(--green); }
+.compare-box.no { border-color: rgba(239,68,68,.3); }
+.compare-box.no h4 { color: var(--red); }
+.compare-box li { color: var(--text2); font-size: .9rem; margin-bottom: 6px; }
+
+/* Progress bar */
+.skill-bar { margin: 10px 0; }
+.skill-bar .label { display: flex; justify-content: space-between; font-size: .85rem; margin-bottom: 4px; }
+.skill-bar .bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.skill-bar .fill { height: 100%; border-radius: 4px; transition: width 1s ease; }
+
+/* Tabs */
+.tabs { display: flex; gap: 4px; margin-bottom: 20px; flex-wrap: wrap; }
+.tab-btn {
+  padding: 8px 20px; border-radius: 8px; border: 1px solid var(--border);
+  background: transparent; color: var(--text2); cursor: pointer;
+  font-size: .85rem; transition: all .2s;
+}
+.tab-btn:hover { border-color: var(--accent); color: var(--accent); }
+.tab-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* Search */
+#search-box {
+  width: 100%; padding: 12px 20px; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--bg3);
+  color: var(--text); font-size: 1rem; margin-bottom: 30px;
+  outline: none; transition: border-color .2s;
+}
+#search-box:focus { border-color: var(--accent); }
+
+/* Back to top */
+#back-top {
+  position: fixed; right: 24px; bottom: 24px; width: 44px; height: 44px;
+  border-radius: 50%; background: var(--accent); color: #fff; border: none;
+  cursor: pointer; font-size: 1.2rem; display: none;
+  align-items: center; justify-content: center; z-index: 100;
+  box-shadow: 0 4px 12px rgba(59,130,246,.4);
+}
+
+/* Footer */
+.footer {
+  padding: 40px 60px; text-align: center; color: var(--text2);
+  font-size: .85rem; border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #sidebar { transform: translateX(-260px); }
+  #sidebar.show { transform: translateX(0); }
+  #menu-toggle { display: flex; }
+  #main { margin-left: 0 !important; }
+  .hero { padding: 80px 24px 60px; }
+  .hero h1 { font-size: 2rem; }
+  .section { padding: 40px 24px; }
+  .card-grid { grid-template-columns: 1fr; }
+  .compare-grid { grid-template-columns: 1fr; }
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity .6s, transform .6s;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- Menu Toggle -->
+<button id="menu-toggle" aria-label="菜单">☰</button>
+
+<!-- Sidebar -->
+<div id="sidebar">
+  <div class="logo">KIRO AI<small>终端智能开发助手 · 全面能力手册</small></div>
+  <nav id="nav">
+    <a href="#hero"><span class="icon">🏠</span>概览</a>
+    <a href="#sec-overview"><span class="icon">📋</span>核心定位</a>
+    <a href="#sec-languages"><span class="icon">💻</span>编程语言</a>
+    <a href="#sec-frontend"><span class="icon">🎨</span>前端开发</a>
+    <a href="#sec-backend"><span class="icon">⚙️</span>后端开发</a>
+    <a href="#sec-database"><span class="icon">🗄️</span>数据库</a>
+    <a href="#sec-aws"><span class="icon">☁️</span>AWS 云服务</a>
+    <a href="#sec-devops"><span class="icon">🔧</span>DevOps</a>
+    <a href="#sec-testing"><span class="icon">🧪</span>测试</a>
+    <a href="#sec-security"><span class="icon">🔒</span>安全</a>
+    <a href="#sec-data"><span class="icon">📊</span>数据处理</a>
+    <a href="#sec-ai"><span class="icon">🤖</span>AI/ML</a>
+    <a href="#sec-mobile"><span class="icon">📱</span>移动开发</a>
+    <a href="#sec-docs"><span class="icon">📝</span>文档写作</a>
+    <a href="#sec-formats"><span class="icon">📦</span>输出格式</a>
+    <a href="#sec-workflow"><span class="icon">🔄</span>工作流</a>
+    <a href="#sec-industry"><span class="icon">🏭</span>行业应用</a>
+    <a href="#sec-limits"><span class="icon">⚠️</span>能力边界</a>
+    <a href="#sec-faq"><span class="icon">❓</span>常见问题</a>
+  </nav>
+</div>
+
+<!-- Main Content -->
+<div id="main">
+
+<!-- HERO -->
+<div class="hero" id="hero">
+  <h1>Kiro AI 全面能力手册</h1>
+  <p>Kiro 是一个运行在终端中的 AI 开发助手，能直接读写文件、执行命令、调用 AWS 服务、搜索代码库、联网查资料。以下是对 Kiro 所有能力的深度、专业、详尽介绍。</p>
+  <div class="stats">
+    <div class="stat"><div class="num">50+</div><div class="label">编程语言</div></div>
+    <div class="stat"><div class="num">100+</div><div class="label">框架/库</div></div>
+    <div class="stat"><div class="num">200+</div><div class="label">AWS 服务</div></div>
+    <div class="stat"><div class="num">20+</div><div class="label">输出格式</div></div>
+    <div class="stat"><div class="num">15+</div><div class="label">行业领域</div></div>
+  </div>
+</div>
+
+<!-- ==================== SECTION: 核心定位 ==================== -->
+<div class="section" id="sec-overview">
+  <div class="section-header fade-in">
+    <h2><span class="icon">📋</span>核心定位与架构</h2>
+    <p>Kiro 不是一个简单的聊天机器人，而是一个深度集成到开发者终端环境中的 AI 工程助手。它具备完整的系统交互能力，能够理解、修改和管理你的整个项目。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🎯 Kiro 是什么</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>Kiro 是由 Amazon 推出的 AI 驱动的命令行开发助手（CLI AI Agent）。它直接运行在你的终端中，通过自然语言交互来完成各种开发任务。与传统的 AI 聊天工具不同，Kiro 具备以下核心特征：</p>
+      <ul>
+        <li><strong>文件系统直接操作</strong>：Kiro 可以直接读取、创建、修改和删除你项目中的文件。不是给你看代码片段让你手动复制粘贴，而是直接帮你把代码写到正确的位置。这意味着你说"帮我在 src/utils 下创建一个日期处理工具"，Kiro 会直接创建文件并写入完整代码。</li>
+        <li><strong>终端命令执行</strong>：Kiro 可以执行 shell 命令，包括构建项目、运行测试、安装依赖、Git 操作等。它会在执行前告知你将要运行什么命令，确保透明和安全。</li>
+        <li><strong>代码库深度理解</strong>：通过 AST（抽象语法树）级别的代码搜索和分析，Kiro 能够理解你的代码结构、函数调用关系、类继承层次等。这不是简单的文本搜索，而是真正理解代码语义。</li>
+        <li><strong>AWS 原生集成</strong>：作为 Amazon 的产品，Kiro 可以直接调用 AWS CLI API，管理你的云资源，无需切换窗口或手动输入复杂的 AWS 命令。</li>
+        <li><strong>联网搜索能力</strong>：当遇到需要最新信息的问题时，Kiro 可以实时搜索互联网，获取最新的文档、解决方案和最佳实践。</li>
+        <li><strong>多 Agent 协作</strong>：对于复杂任务，Kiro 可以启动多个子 Agent 并行工作，比如一个负责研究、一个负责实现、一个负责审查，形成完整的工作流水线。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🏗️ 技术架构</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>Kiro 的技术架构设计围绕"安全、高效、可扩展"三个核心原则：</p>
+      <ul>
+        <li><strong>工具系统（Tool System）</strong>：Kiro 内置了一套丰富的工具集，包括文件读写工具、代码搜索工具、Shell 执行工具、AWS API 调用工具、网络搜索工具等。每个工具都有明确的权限控制，用户可以通过 <code>/tools trust</code> 命令管理工具的信任级别。</li>
+        <li><strong>MCP 协议支持</strong>：Kiro 支持 Model Context Protocol（MCP），可以连接外部 MCP 服务器来扩展能力。比如连接 Git MCP 服务器获得更强的版本控制能力，或连接自定义的业务 MCP 服务器来操作特定系统。</li>
+        <li><strong>Agent 配置系统</strong>：用户可以创建自定义 Agent 配置，定义特定的系统提示词、允许的工具集、MCP 服务器等。这使得 Kiro 可以针对不同项目和场景进行专门化配置。</li>
+        <li><strong>会话管理</strong>：Kiro 支持会话的保存、加载和恢复。你可以在工作中途保存进度，下次继续从断点处开始。会话按项目目录隔离，互不干扰。</li>
+        <li><strong>上下文窗口管理</strong>：当对话内容接近上下文窗口限制时，Kiro 会自动压缩上下文，保留关键信息，确保长时间工作不会中断。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>⚡ 工作模式</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>Kiro 支持多种工作模式，适应不同的使用场景：</p>
+      <ul>
+        <li><strong>交互模式（Interactive Mode）</strong>：默认模式，通过 <code>kiro-cli chat</code> 启动。你可以与 Kiro 进行多轮对话，逐步完成复杂任务。支持命令历史（Ctrl+R 搜索）、会话保存/加载等功能。</li>
+        <li><strong>无头模式（Headless Mode）</strong>：通过 <code>kiro-cli chat --no-interactive "你的指令"</code> 启动。适合在脚本和 CI/CD 流水线中使用。执行完指令后自动退出，可配合 <code>--trust-all-tools</code> 实现完全自动化。</li>
+        <li><strong>子 Agent 模式（Sub-Agent Mode）</strong>：Kiro 可以自动启动多个子 Agent 并行处理任务。比如同时研究三个技术方案，然后汇总比较。每个子 Agent 都是独立的会话，可以通过 Ctrl+G 监控进度。</li>
+        <li><strong>自定义 Agent 模式</strong>：通过 <code>--agent</code> 参数指定预配置的 Agent，比如 <code>kiro-cli chat --agent rust-expert</code> 使用专门针对 Rust 开发优化的 Agent 配置。</li>
+      </ul>
+      <p>每种模式都支持完整的工具集，区别在于交互方式和自动化程度。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🔐 安全机制</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>Kiro 在设计上将安全性放在首位，采用多层安全机制：</p>
+      <ul>
+        <li><strong>工具权限分级</strong>：每个工具都有三个权限级别 — allowed（自动执行）、requires-approval（需要确认）、denied（禁止使用）。默认情况下，大多数工具需要用户确认才能执行。</li>
+        <li><strong>操作风险评估</strong>：Kiro 会自动评估每个操作的风险级别。低风险操作（读文件、搜索代码）直接执行；中风险操作（安装依赖、修改配置）会告知用户；高风险操作（生产环境变更、数据删除、破坏性 Git 操作）必须获得用户明确确认。</li>
+        <li><strong>敏感信息保护</strong>：Kiro 不会在响应中回显密钥、密码等敏感信息。读取 .env 文件时会通过键名引用而非显示值。</li>
+        <li><strong>Git 安全</strong>：默认不会直接推送到 main/master 分支，不会执行 force push、reset --hard 等破坏性操作，除非用户明确要求。</li>
+        <li><strong>命令注入防护</strong>：构建 Shell 命令时使用正确的引号和转义，防止命令注入攻击。</li>
+        <li><strong>依赖安全</strong>：添加依赖时优先使用精确版本号，对可疑的包名（可能是 typosquatting）会发出警告。</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SECTION: 编程语言 ==================== -->
+<div class="section" id="sec-languages">
+  <div class="section-header fade-in">
+    <h2><span class="icon">💻</span>编程语言支持</h2>
+    <p>Kiro 支持几乎所有主流编程语言，从系统级语言到脚本语言，从传统语言到新兴语言，覆盖全面。以下按类别详细介绍每种语言的支持深度。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🔥 系统级语言（C / C++ / Rust / Zig）</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p><strong>C 语言</strong>：作为最基础的系统编程语言，Kiro 能够编写从简单的工具程序到复杂的系统级软件。支持 C99/C11/C17 标准，熟悉 POSIX API、系统调用、内存管理（malloc/free/mmap）、多线程编程（pthread）、网络编程（socket）、文件 I/O 等。能够编写 Makefile 和 CMakeLists.txt 构建配置。对常见的内存安全问题（缓冲区溢出、悬空指针、内存泄漏）有深入理解，能在代码审查中发现这些问题。</p>
+      <p><strong>C++</strong>：支持从 C++11 到 C++23 的现代 C++ 特性。包括智能指针（unique_ptr/shared_ptr）、移动语义、Lambda 表达式、模板元编程、概念（Concepts）、协程（Coroutines）、范围（Ranges）等。熟悉 STL 容器和算法、Boost 库、Qt 框架。能够编写高性能的数值计算、游戏引擎组件、嵌入式系统代码。支持 CMake、Bazel、Meson 等构建系统。</p>
+      <p><strong>Rust</strong>：深度支持 Rust 的所有权系统、生命周期、trait 系统、泛型、宏（声明式宏和过程宏）、异步编程（async/await + tokio/async-std）。熟悉 Cargo 生态系统，能够编写和发布 crate。擅长编写零成本抽象的高性能代码、WebAssembly 模块、命令行工具（clap）、Web 服务（Actix-web/Axum）、嵌入式系统（no_std）。能够帮助解决编译器错误，特别是生命周期和借用检查相关的问题。</p>
+      <p><strong>Zig</strong>：支持 Zig 的编译时计算（comptime）、错误处理、可选类型、内存分配器接口等特性。能够编写与 C 互操作的代码，利用 Zig 的构建系统。适合系统编程和性能敏感的场景。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>☕ JVM 语言（Java / Kotlin / Scala）</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p><strong>Java</strong>：全面支持 Java 8 到 Java 21 的所有特性。包括 Lambda 表达式、Stream API、Optional、Records、Sealed Classes、Pattern Matching、Virtual Threads（Project Loom）等。深度熟悉 Spring 生态系统（Spring Boot、Spring Cloud、Spring Security、Spring Data）、Jakarta EE、Hibernate/JPA、MyBatis。能够编写微服务架构、企业级应用、Android 应用（虽然现在更推荐 Kotlin）。熟悉 Maven 和 Gradle 构建工具，能够配置复杂的多模块项目。对 JVM 调优（GC 策略、内存配置、JIT 编译）有深入理解。</p>
+      <p><strong>Kotlin</strong>：支持 Kotlin 的所有现代特性，包括协程（Coroutines）、Flow、空安全类型系统、扩展函数、数据类、密封类、委托属性等。熟悉 Kotlin Multiplatform（KMP）、Ktor 服务端框架、Jetpack Compose（Android UI）、Kotlin/JS、Kotlin/Native。能够编写惯用的 Kotlin 代码，而不是"用 Kotlin 语法写 Java"。</p>
+      <p><strong>Scala</strong>：支持 Scala 2 和 Scala 3 的函数式编程特性，包括高阶函数、模式匹配、隐式转换/given、类型类、Monad、Actor 模型（Akka）。熟悉 Cats、ZIO、Play Framework、Apache Spark（Scala API）。能够编写类型安全的 DSL 和高度抽象的函数式代码。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🌐 Web 语言（JavaScript / TypeScript）</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p><strong>JavaScript</strong>：从 ES5 到 ES2024 的所有特性全面支持。包括 Promise/async-await、Proxy/Reflect、WeakRef、Temporal API、装饰器（Stage 3）、模块系统（ESM/CJS）等。深度理解事件循环（Event Loop）、闭包、原型链、this 绑定规则。熟悉 Node.js 运行时（文件系统、网络、子进程、Worker Threads、Stream）、Deno、Bun。能够编写高性能的服务端代码、CLI 工具、构建脚本、浏览器扩展等。</p>
+      <p><strong>TypeScript</strong>：这是 Kiro 最擅长的语言之一。支持所有 TypeScript 特性，包括高级类型系统（条件类型、映射类型、模板字面量类型、递归类型）、类型体操、声明文件编写（.d.ts）、项目引用（Project References）、装饰器。能够为复杂的 JavaScript 库编写类型定义，设计类型安全的 API。熟悉 tsconfig.json 的所有配置选项及其影响。</p>
+      <p>在 JS/TS 生态中，Kiro 熟悉的工具链包括：npm/yarn/pnpm 包管理器、Webpack/Vite/Rollup/esbuild 构建工具、ESLint/Prettier 代码质量工具、Jest/Vitest/Mocha 测试框架、Babel 转译器等。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🐍 脚本语言（Python / Ruby / PHP / Lua）</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p><strong>Python</strong>：这是 Kiro 最强的语言之一。支持 Python 3.8 到 3.12 的所有特性，包括类型提示（typing 模块）、数据类（dataclass）、结构化模式匹配（match/case）、异步编程（asyncio）、上下文管理器等。深度熟悉的库和框架包括：</p>
+      <ul>
+        <li>Web 框架：Django、Flask、FastAPI、Starlette、Tornado</li>
+        <li>数据科学：NumPy、Pandas、SciPy、Matplotlib、Seaborn、Plotly</li>
+        <li>机器学习：scikit-learn、TensorFlow、PyTorch、Hugging Face Transformers、LangChain</li>
+        <li>自动化：Selenium、Playwright、Scrapy、Beautiful Soup、Requests</li>
+        <li>工具：Poetry、PDM、Ruff、Black、mypy、pytest</li>
+      </ul>
+      <p><strong>Ruby</strong>：支持 Ruby 2.7 到 3.3 的特性，包括模式匹配、Ractor 并发、类型签名（RBS）。深度熟悉 Ruby on Rails（ActiveRecord、ActionCable、Turbo/Hotwire）、Sinatra、RSpec、Sidekiq。能够编写优雅的 Ruby 惯用代码，利用元编程能力构建 DSL。</p>
+      <p><strong>PHP</strong>：支持 PHP 7.4 到 8.3 的现代特性，包括类型声明、枚举、Fiber、只读属性、命名参数等。熟悉 Laravel、Symfony、WordPress（主题和插件开发）、Composer 包管理。能够编写现代化的 PHP 代码，而非过时的面条式代码。</p>
+      <p><strong>Lua</strong>：支持 Lua 5.1 到 5.4 以及 LuaJIT。熟悉 Lua 的元表（metatable）机制、协程、C API 集成。常用于游戏脚本（Love2D、Defold）、Nginx 配置（OpenResty）、嵌入式脚本引擎。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🔬 其他语言（Go / Swift / Dart / Elixir / Haskell / R 等）</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p><strong>Go</strong>：深度支持 Go 的并发模型（goroutine/channel）、接口系统、泛型（Go 1.18+）、错误处理模式。熟悉标准库（net/http、encoding/json、database/sql、context）以及常用框架（Gin、Echo、Fiber）。能够编写高性能的微服务、CLI 工具（cobra）、系统工具。熟悉 Go Modules 依赖管理和 Go 的测试惯例。</p>
+      <p><strong>Swift</strong>：支持 Swift 5.x 的所有特性，包括 async/await 并发、Actor 模型、Result Builder、Property Wrapper、Macro。熟悉 SwiftUI、UIKit、Combine、Swift Package Manager。能够编写 iOS/macOS 应用代码和服务端 Swift（Vapor）。</p>
+      <p><strong>Dart</strong>：支持 Dart 3.x 的特性，包括空安全、Records、Patterns、Sealed Classes。主要用于 Flutter 跨平台开发，熟悉 Flutter 的 Widget 系统、状态管理（Provider/Riverpod/Bloc）、平台通道（Platform Channel）。</p>
+      <p><strong>Elixir</strong>：支持 Elixir 的函数式编程特性、OTP 框架（GenServer、Supervisor）、宏系统。熟悉 Phoenix 框架（LiveView）、Ecto 数据库层。适合构建高并发、容错的分布式系统。</p>
+      <p><strong>Haskell</strong>：支持 Haskell 的纯函数式编程范式，包括 Monad、Functor、Applicative、类型类、GADT、类型族。熟悉 Stack/Cabal 构建工具、常用库（lens、aeson、servant、conduit）。</p>
+      <p><strong>R</strong>：支持 R 的统计计算和数据可视化能力。熟悉 tidyverse（dplyr、ggplot2、tidyr）、Shiny 交互式应用、R Markdown 报告生成。</p>
+      <p><strong>Shell/Bash</strong>：能够编写复杂的 Shell 脚本，包括参数解析、错误处理、管道操作、进程管理、文件处理。熟悉 sed、awk、grep、find、xargs 等核心工具的高级用法。支持 Bash、Zsh、Fish 的特定语法。</p>
+    </div>
+  </div>
+
+  <div class="fade-in" style="margin-top:24px">
+    <h3 style="margin-bottom:16px">语言能力概览</h3>
+    <div class="skill-bar"><div class="label"><span>Python</span><span>98%</span></div><div class="bar"><div class="fill" style="width:98%;background:linear-gradient(90deg,var(--accent),var(--accent2))"></div></div></div>
+    <div class="skill-bar"><div class="label"><span>TypeScript / JavaScript</span><span>97%</span></div><div class="bar"><div class="fill" style="width:97%;background:linear-gradient(90deg,var(--accent),var(--accent3))"></div></div></div>
+    <div class="skill-bar"><div class="label"><span>Java / Kotlin</span><span>95%</span></div><div class="bar"><div class="fill" style="width:95%;background:linear-gradient(90deg,var(--orange),var(--accent))"></div></div></div>
+    <div class="skill-bar"><div class="label"><span>Rust</span><span>93%</span></div><div class="bar"><div class="fill" style="width:93%;background:linear-gradient(90deg,var(--red),var(--orange))"></div></div></div>
+    <div class="skill-bar"><div class="label"><span>Go</span><span>94%</span></div><div class="bar"><div class="fill" style="width:94%;background:linear-gradient(90deg,var(--accent3),var(--accent))"></div></div></div>
+    <div class="skill-bar"><div class="label"><span>C / C++</span><span>92%</span></div><div class="bar"><div class="fill" style="width:92%;background:linear-gradient(90deg,var(--accent2),var(--pink))"></div></div></div>
+    <div class="skill-bar"><div class="label"><span>Ruby / PHP</span><span>90%</span></div><div class="bar"><div class="fill" style="width:90%;background:linear-gradient(90deg,var(--red),var(--accent2))"></div></div></div>
+    <div class="skill-bar"><div class="label"><span>Swift / Dart</span><span>88%</span></div><div class="bar"><div class="fill" style="width:88%;background:linear-gradient(90deg,var(--orange),var(--pink))"></div></div></div>
+    <div class="skill-bar"><div class="label"><span>Elixir / Haskell / Scala</span><span>85%</span></div><div class="bar"><div class="fill" style="width:85%;background:linear-gradient(90deg,var(--accent2),var(--accent3))"></div></div></div>
+    <div class="skill-bar"><div class="label"><span>Shell / Bash</span><span>95%</span></div><div class="bar"><div class="fill" style="width:95%;background:linear-gradient(90deg,var(--green),var(--accent3))"></div></div></div>
+  </div>
+</div>
+
+<!-- INSERTION POINT -->
+
+<!-- ==================== SECTION: 前端开发 ==================== -->
+<div class="section" id="sec-frontend">
+  <div class="section-header fade-in">
+    <h2><span class="icon">🎨</span>前端开发</h2>
+    <p>从传统网页到现代单页应用，从桌面端到移动端适配，Kiro 覆盖前端开发的方方面面。能够编写语义化、可访问、高性能的前端代码。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>⚛️ React 生态系统</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>React 是 Kiro 最擅长的前端框架之一，支持深度包括：</p>
+      <ul>
+        <li><strong>核心概念</strong>：函数组件、Hooks（useState/useEffect/useContext/useReducer/useMemo/useCallback/useRef）、自定义 Hooks 设计、组件生命周期管理、React.memo 性能优化、Suspense 和 lazy loading、Error Boundary 错误边界处理</li>
+        <li><strong>状态管理</strong>：Context API、Redux Toolkit（createSlice/createAsyncThunk/RTK Query）、Zustand、Jotai、Recoil、MobX。能够根据项目规模推荐合适的状态管理方案</li>
+        <li><strong>路由</strong>：React Router v6（嵌套路由、动态路由、路由守卫、数据加载器）、TanStack Router</li>
+        <li><strong>服务端渲染</strong>：Next.js（App Router/Pages Router、Server Components、Server Actions、ISR/SSG/SSR、中间件、API Routes）、Remix（loader/action 模式、嵌套路由、表单处理）</li>
+        <li><strong>样式方案</strong>：CSS Modules、Styled Components、Emotion、Tailwind CSS、Sass/SCSS、CSS-in-JS</li>
+        <li><strong>表单处理</strong>：React Hook Form、Formik、Zod/Yup 验证</li>
+        <li><strong>数据获取</strong>：TanStack Query（React Query）、SWR、Apollo Client（GraphQL）、tRPC</li>
+        <li><strong>测试</strong>：React Testing Library、Jest、Vitest、Cypress、Playwright 组件测试</li>
+        <li><strong>React 19 新特性</strong>：use() Hook、Server Components、Actions、useFormStatus、useOptimistic</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>💚 Vue 生态系统</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>Vue 2 和 Vue 3 均深度支持：</p>
+      <ul>
+        <li><strong>Vue 3 Composition API</strong>：ref/reactive、computed、watch/watchEffect、provide/inject、生命周期钩子、自定义组合函数（Composables）设计模式</li>
+        <li><strong>Vue 3 新特性</strong>：&lt;script setup&gt; 语法糖、Teleport、Suspense、defineProps/defineEmits 宏</li>
+        <li><strong>状态管理</strong>：Pinia（推荐）、Vuex 4。能够设计模块化的 Store 结构</li>
+        <li><strong>路由</strong>：Vue Router 4（导航守卫、路由元信息、动态路由匹配、滚动行为控制）</li>
+        <li><strong>SSR/SSG</strong>：Nuxt 3（服务端渲染、静态生成、混合渲染、Nitro 服务引擎、自动导入、模块系统）</li>
+        <li><strong>UI 库</strong>：Element Plus、Vuetify 3、Naive UI、Ant Design Vue、PrimeVue</li>
+        <li><strong>构建工具</strong>：Vite（Vue 官方推荐）、Vue CLI（旧项目维护）</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🅰️ Angular 与其他框架</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p><strong>Angular</strong>：支持 Angular 14+ 的现代特性，包括独立组件（Standalone Components）、信号（Signals）、延迟加载视图（@defer）、新的控制流语法（@if/@for/@switch）。熟悉 RxJS 响应式编程、Angular Material、NgRx 状态管理、Angular Universal（SSR）、Angular CLI。</p>
+      <p><strong>Svelte / SvelteKit</strong>：支持 Svelte 4/5 的编译时框架特性，包括 Runes（$state/$derived/$effect）、组件生命周期、Store、过渡动画。SvelteKit 的文件路由、服务端加载、表单 Actions。</p>
+      <p><strong>Astro</strong>：支持 Astro 的内容驱动架构，Islands Architecture、内容集合、多框架组件集成、静态站点生成。</p>
+      <p><strong>Solid.js</strong>：支持 Solid 的细粒度响应式系统、createSignal/createEffect/createMemo、SolidStart。</p>
+      <p><strong>htmx / Alpine.js</strong>：支持轻量级的超媒体驱动方案，适合不需要完整 SPA 框架的项目。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🎭 CSS 与视觉设计</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>Kiro 在 CSS 和视觉实现方面的能力：</p>
+      <ul>
+        <li><strong>现代 CSS</strong>：Grid 布局、Flexbox、Container Queries、CSS Nesting、:has() 选择器、CSS 变量（Custom Properties）、@layer 级联层、Subgrid、Scroll-driven Animations、View Transitions API</li>
+        <li><strong>预处理器</strong>：Sass/SCSS（变量、混入、函数、嵌套、模块系统）、Less、PostCSS（Autoprefixer、CSS Modules）</li>
+        <li><strong>CSS 框架</strong>：Tailwind CSS（自定义配置、插件开发、JIT 模式）、Bootstrap 5、Bulma、UnoCSS</li>
+        <li><strong>动画</strong>：CSS Animations/Transitions、Framer Motion（React）、GSAP、Lottie、Three.js（3D）、Canvas API、SVG 动画</li>
+        <li><strong>响应式设计</strong>：移动优先策略、断点设计、流式布局、响应式图片（srcset/picture）、视口单位（vw/vh/dvh）</li>
+        <li><strong>可访问性（A11y）</strong>：ARIA 属性、语义化 HTML、键盘导航、屏幕阅读器兼容、颜色对比度、焦点管理。Kiro 默认生成的代码都会考虑可访问性</li>
+        <li><strong>性能优化</strong>：关键 CSS 提取、CSS 代码分割、will-change 优化、合成层管理、减少重排重绘</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>📦 构建工具与工程化</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>Vite</strong>：配置、插件开发、多页面应用、库模式打包、SSR 配置、环境变量管理</li>
+        <li><strong>Webpack</strong>：Loader/Plugin 配置、代码分割（SplitChunks）、Tree Shaking、Module Federation（微前端）、性能优化</li>
+        <li><strong>其他</strong>：Rollup（库打包）、esbuild（极速构建）、Turbopack、Parcel</li>
+        <li><strong>Monorepo</strong>：Turborepo、Nx、pnpm Workspaces、Lerna。能够设计和配置大型 Monorepo 项目结构</li>
+        <li><strong>代码质量</strong>：ESLint（自定义规则和插件）、Prettier、Stylelint、Husky + lint-staged（Git Hooks）、Commitlint</li>
+        <li><strong>包管理</strong>：npm、yarn（Classic/Berry）、pnpm。理解各自的锁文件机制、幽灵依赖问题、依赖提升策略</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- INSERTION POINT 2 -->
+
+<!-- ==================== SECTION: 后端开发 ==================== -->
+<div class="section" id="sec-backend">
+  <div class="section-header fade-in">
+    <h2><span class="icon">⚙️</span>后端开发</h2>
+    <p>从 RESTful API 到 GraphQL，从单体应用到微服务架构，从同步处理到异步消息队列，Kiro 覆盖后端开发的完整技术栈。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🚀 Node.js 后端</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>Node.js 是 Kiro 最熟悉的后端运行时之一：</p>
+      <ul>
+        <li><strong>Express.js</strong>：中间件设计、路由组织、错误处理、请求验证（express-validator/Joi/Zod）、文件上传（multer）、会话管理、CORS 配置</li>
+        <li><strong>Fastify</strong>：Schema 验证、插件系统、装饰器、钩子、序列化优化。比 Express 更高性能的选择</li>
+        <li><strong>NestJS</strong>：模块化架构、依赖注入、装饰器、Guard/Interceptor/Pipe/Filter、微服务模式、WebSocket 网关、GraphQL 集成、CQRS 模式</li>
+        <li><strong>tRPC</strong>：端到端类型安全的 API 层，与 React/Next.js 深度集成</li>
+        <li><strong>实时通信</strong>：Socket.io、WebSocket（ws 库）、Server-Sent Events（SSE）</li>
+        <li><strong>任务队列</strong>：BullMQ（Redis 队列）、Agenda（MongoDB 队列）</li>
+        <li><strong>ORM/ODM</strong>：Prisma（类型安全 ORM）、TypeORM、Sequelize、Mongoose（MongoDB）、Drizzle ORM</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🐍 Python 后端</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>FastAPI</strong>：Kiro 最推荐的 Python Web 框架。自动 OpenAPI 文档生成、Pydantic 数据验证、依赖注入系统、异步支持、WebSocket、后台任务、中间件。能够设计生产级的 FastAPI 项目结构</li>
+        <li><strong>Django</strong>：MTV 架构、ORM（复杂查询、迁移、自定义 Manager）、Admin 后台定制、Django REST Framework（序列化器、视图集、权限、分页、过滤）、Celery 异步任务、Django Channels（WebSocket）、信号系统</li>
+        <li><strong>Flask</strong>：蓝图（Blueprint）、扩展生态（Flask-SQLAlchemy/Flask-Login/Flask-CORS）、应用工厂模式</li>
+        <li><strong>异步框架</strong>：Starlette、Tornado、aiohttp。理解 Python asyncio 事件循环和异步编程模式</li>
+        <li><strong>任务队列</strong>：Celery + Redis/RabbitMQ、Dramatiq、Huey、APScheduler</li>
+        <li><strong>ASGI/WSGI</strong>：Uvicorn、Gunicorn、Hypercorn 部署配置和性能调优</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>☕ Java / Go / Rust 后端</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p><strong>Java Spring 生态</strong>：</p>
+      <ul>
+        <li>Spring Boot：自动配置、Starter 依赖、Actuator 监控、Profile 环境管理</li>
+        <li>Spring Cloud：服务发现（Eureka/Consul）、配置中心、网关（Gateway）、熔断器（Resilience4j）、负载均衡</li>
+        <li>Spring Security：认证/授权、OAuth2/OIDC、JWT、方法级安全、CSRF 防护</li>
+        <li>Spring Data：JPA/Hibernate、MongoDB、Redis、Elasticsearch 的统一数据访问层</li>
+        <li>Spring WebFlux：响应式编程、Project Reactor、非阻塞 I/O</li>
+      </ul>
+      <p><strong>Go 后端</strong>：</p>
+      <ul>
+        <li>Gin/Echo/Fiber 框架：路由、中间件、请求绑定、验证</li>
+        <li>标准库 net/http：适合简单服务，无需框架</li>
+        <li>gRPC：Protocol Buffers 定义、服务端/客户端流、拦截器</li>
+        <li>数据库：database/sql + sqlx、GORM、ent</li>
+        <li>并发模式：Worker Pool、Fan-out/Fan-in、Pipeline、Context 取消传播</li>
+      </ul>
+      <p><strong>Rust 后端</strong>：</p>
+      <ul>
+        <li>Actix-web / Axum：高性能异步 Web 框架</li>
+        <li>SQLx：编译时检查的 SQL 查询</li>
+        <li>Tokio：异步运行时、任务调度、同步原语</li>
+        <li>Tower：中间件抽象层，服务组合</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🔌 API 设计与协议</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>RESTful API</strong>：资源命名规范、HTTP 方法语义、状态码使用、HATEOAS、版本控制策略（URL/Header/Query）、分页设计（Cursor/Offset）、过滤排序、批量操作</li>
+        <li><strong>GraphQL</strong>：Schema 设计（类型、查询、变更、订阅）、解析器实现、DataLoader（N+1 问题解决）、Apollo Server/Client、代码生成（GraphQL Code Generator）、Federation（微服务 GraphQL）</li>
+        <li><strong>gRPC</strong>：Protocol Buffers 3 定义、四种通信模式（Unary/Server-streaming/Client-streaming/Bidirectional）、拦截器、负载均衡、健康检查</li>
+        <li><strong>WebSocket</strong>：实时双向通信、心跳机制、重连策略、房间/频道管理</li>
+        <li><strong>消息队列</strong>：RabbitMQ（Exchange/Queue/Binding）、Apache Kafka（Topic/Partition/Consumer Group）、Redis Pub/Sub、Amazon SQS/SNS</li>
+        <li><strong>API 文档</strong>：OpenAPI/Swagger 规范编写、Postman 集合、API Blueprint</li>
+        <li><strong>认证授权</strong>：JWT（签发/验证/刷新）、OAuth 2.0（授权码/客户端凭证/PKCE）、OIDC、Session、API Key、mTLS</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🏗️ 架构模式</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>微服务架构</strong>：服务拆分策略、服务间通信（同步 REST/gRPC + 异步消息队列）、服务发现、配置中心、API 网关、分布式事务（Saga 模式）、熔断/限流/降级</li>
+        <li><strong>事件驱动架构</strong>：Event Sourcing、CQRS（命令查询职责分离）、Domain Events、Event Store</li>
+        <li><strong>领域驱动设计（DDD）</strong>：聚合根、实体、值对象、领域服务、仓储模式、限界上下文、防腐层</li>
+        <li><strong>清洁架构</strong>：依赖倒置、用例层、接口适配器、框架独立的业务逻辑</li>
+        <li><strong>Serverless</strong>：AWS Lambda 函数设计、冷启动优化、API Gateway 集成、Step Functions 编排</li>
+        <li><strong>单体模块化</strong>：模块化单体（Modular Monolith）设计，适合中小型项目的务实选择</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- INSERTION POINT 3 -->
+
+<!-- ==================== SECTION: 数据库 ==================== -->
+<div class="section" id="sec-database">
+  <div class="section-header fade-in">
+    <h2><span class="icon">🗄️</span>数据库技术</h2>
+    <p>从关系型数据库到 NoSQL，从数据建模到查询优化，从迁移管理到高可用架构，Kiro 覆盖数据库技术的完整生命周期。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🐘 关系型数据库</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p><strong>PostgreSQL</strong>：Kiro 最推荐的关系型数据库。支持的能力包括：</p>
+      <ul>
+        <li>高级 SQL：窗口函数（ROW_NUMBER/RANK/LAG/LEAD）、CTE（递归 CTE）、LATERAL JOIN、GROUPING SETS、JSON 操作（jsonb 类型、路径查询、索引）</li>
+        <li>索引优化：B-tree、GIN（全文搜索/JSON）、GiST（地理空间）、BRIN（时序数据）、部分索引、表达式索引、覆盖索引</li>
+        <li>高级特性：分区表（Range/List/Hash）、物化视图、触发器、存储过程（PL/pgSQL）、行级安全（RLS）、逻辑复制</li>
+        <li>性能调优：EXPLAIN ANALYZE 分析、查询计划优化、连接池（PgBouncer）、vacuum 策略、统计信息更新</li>
+        <li>扩展：PostGIS（地理空间）、pg_trgm（模糊搜索）、pgvector（向量搜索/AI）、TimescaleDB（时序数据）</li>
+      </ul>
+      <p><strong>MySQL / MariaDB</strong>：InnoDB 引擎优化、索引策略、慢查询分析、主从复制、分库分表（ShardingSphere）、MySQL 8.0 新特性（窗口函数、CTE、JSON 增强）。</p>
+      <p><strong>SQLite</strong>：嵌入式数据库，适合移动应用、桌面应用、小型 Web 应用。WAL 模式、FTS5 全文搜索、JSON 支持。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🍃 NoSQL 数据库</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p><strong>MongoDB</strong>：文档模型设计（嵌入 vs 引用）、聚合管道（$match/$group/$lookup/$unwind）、索引策略（复合索引、文本索引、地理空间索引）、Change Streams、事务支持、分片集群设计。</p>
+      <p><strong>Redis</strong>：数据结构（String/Hash/List/Set/Sorted Set/Stream/HyperLogLog）、持久化（RDB/AOF）、集群模式、哨兵模式、Lua 脚本、发布订阅、Redis Modules（RedisJSON/RediSearch/RedisGraph）。常见使用场景：缓存策略（Cache-Aside/Write-Through/Write-Behind）、分布式锁（Redlock）、限流（令牌桶/滑动窗口）、排行榜、会话存储。</p>
+      <p><strong>Amazon DynamoDB</strong>：单表设计（Single Table Design）、分区键/排序键设计、GSI/LSI、DynamoDB Streams、TTL、事务、DAX 缓存加速、容量模式（按需/预置）。</p>
+      <p><strong>Elasticsearch</strong>：倒排索引原理、Mapping 设计、查询 DSL（bool/match/term/range/nested）、聚合分析、分词器配置（中文分词 IK）、索引生命周期管理（ILM）、集群调优。</p>
+      <p><strong>其他</strong>：Cassandra（宽列存储、分布式写入）、Neo4j（图数据库、Cypher 查询）、InfluxDB（时序数据库）、Memcached（纯缓存）。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>📐 数据建模与迁移</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>关系建模</strong>：ER 图设计、范式化（1NF-BCNF）与反范式化权衡、外键约束、级联策略、多对多关系表设计</li>
+        <li><strong>迁移工具</strong>：Flyway、Liquibase、Alembic（Python）、Prisma Migrate、TypeORM Migrations、Django Migrations、Rails ActiveRecord Migrations</li>
+        <li><strong>数据建模模式</strong>：星型模型/雪花模型（数据仓库）、文档嵌入模式（MongoDB）、宽表模式（Cassandra）、图模型（Neo4j）</li>
+        <li><strong>数据库设计最佳实践</strong>：命名规范、索引策略、分区策略、归档策略、备份恢复方案</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- INSERTION POINT 4 -->
+
+<!-- ==================== SECTION: AWS ==================== -->
+<div class="section" id="sec-aws">
+  <div class="section-header fade-in">
+    <h2><span class="icon">☁️</span>AWS 云服务</h2>
+    <p>作为 Amazon 的产品，Kiro 对 AWS 有原生级别的支持。可以直接调用 AWS CLI API 来查询、配置和管理云资源，覆盖 200+ AWS 服务。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>💻 计算服务</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>EC2</strong>：实例管理（启动/停止/终止）、实例类型选择建议、安全组配置、密钥对管理、AMI 创建和管理、弹性 IP、置放群组、Spot 实例策略、Auto Scaling 组配置、启动模板</li>
+        <li><strong>Lambda</strong>：函数创建和部署、运行时选择、层（Layers）管理、环境变量、VPC 配置、并发控制（预置并发/保留并发）、死信队列、目标配置、Lambda@Edge、冷启动优化策略</li>
+        <li><strong>ECS</strong>：任务定义、服务配置、Fargate vs EC2 启动类型、负载均衡器集成、服务发现、自动扩缩、蓝绿部署、容量提供程序</li>
+        <li><strong>EKS</strong>：集群创建和管理、节点组配置、Fargate Profile、IRSA（IAM Roles for Service Accounts）、集群自动扩缩器、AWS Load Balancer Controller</li>
+        <li><strong>Elastic Beanstalk</strong>：应用部署、环境配置、平台选择、扩缩策略</li>
+        <li><strong>App Runner</strong>：容器化应用的简化部署</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🗄️ 存储与数据库服务</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>S3</strong>：桶管理、对象操作（上传/下载/复制/删除）、生命周期策略、版本控制、跨区域复制、访问控制（桶策略/ACL/访问点）、静态网站托管、预签名 URL、S3 Select、存储类别选择（Standard/IA/Glacier）、事件通知</li>
+        <li><strong>RDS</strong>：实例管理、参数组配置、多可用区部署、只读副本、自动备份和快照、性能洞察（Performance Insights）、代理（RDS Proxy）</li>
+        <li><strong>DynamoDB</strong>：表管理、容量规划、全局表（多区域）、备份恢复、DynamoDB Streams、PartiQL 查询</li>
+        <li><strong>ElastiCache</strong>：Redis/Memcached 集群管理、参数组、复制组、故障转移</li>
+        <li><strong>EFS / FSx</strong>：文件系统管理、挂载目标、性能模式选择</li>
+        <li><strong>Aurora</strong>：Serverless v2 配置、全局数据库、克隆、回溯</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🌐 网络与安全</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>VPC</strong>：VPC 设计（CIDR 规划）、子网（公有/私有）、路由表、NAT 网关、VPC 对等连接、Transit Gateway、VPC 端点（Gateway/Interface）、流日志</li>
+        <li><strong>IAM</strong>：用户/角色/策略管理、最小权限原则实施、策略文档编写（JSON）、条件键、权限边界、STS 临时凭证、跨账户访问</li>
+        <li><strong>CloudFront</strong>：分发配置、源站设置、缓存策略、行为配置、Lambda@Edge/CloudFront Functions、OAC（Origin Access Control）</li>
+        <li><strong>Route 53</strong>：域名管理、记录集配置、路由策略（简单/加权/延迟/故障转移/地理位置）、健康检查</li>
+        <li><strong>WAF / Shield</strong>：Web ACL 规则、速率限制、IP 集、正则匹配、托管规则组</li>
+        <li><strong>Secrets Manager / SSM Parameter Store</strong>：密钥管理、自动轮换、参数层次结构</li>
+        <li><strong>Certificate Manager</strong>：SSL/TLS 证书申请和管理、自动续期</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>📨 应用集成与消息</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>SQS</strong>：标准队列/FIFO 队列、死信队列、可见性超时、长轮询、消息去重</li>
+        <li><strong>SNS</strong>：主题管理、订阅（Lambda/SQS/HTTP/Email/SMS）、消息过滤、FIFO 主题</li>
+        <li><strong>EventBridge</strong>：事件总线、规则和目标、Schema Registry、调度器、管道</li>
+        <li><strong>Step Functions</strong>：状态机设计（Standard/Express）、任务状态、选择/并行/映射状态、错误处理、回调模式</li>
+        <li><strong>API Gateway</strong>：REST API / HTTP API / WebSocket API、阶段管理、使用计划、API 密钥、自定义域名、请求/响应转换</li>
+        <li><strong>AppSync</strong>：GraphQL API、解析器（VTL/JS）、数据源、实时订阅、缓存</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>📊 监控与运维</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>CloudWatch</strong>：指标监控、日志组/流管理、告警配置、仪表板、Logs Insights 查询、自定义指标、异常检测</li>
+        <li><strong>CloudTrail</strong>：API 调用审计、事件历史查询、组织级跟踪</li>
+        <li><strong>X-Ray</strong>：分布式追踪、服务地图、性能分析</li>
+        <li><strong>CloudFormation</strong>：模板编写（YAML/JSON）、堆栈管理、变更集、嵌套堆栈、StackSets（多账户/多区域）、漂移检测</li>
+        <li><strong>CDK</strong>：TypeScript/Python/Java 编写基础设施代码、Construct 库、L1/L2/L3 构造、自定义构造开发</li>
+        <li><strong>Systems Manager</strong>：Session Manager（安全远程访问）、Run Command、Patch Manager、Automation</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- INSERTION POINT 5 -->
+
+<!-- ==================== SECTION: DevOps ==================== -->
+<div class="section" id="sec-devops">
+  <div class="section-header fade-in">
+    <h2><span class="icon">🔧</span>DevOps 与基础设施</h2>
+    <p>从容器化到编排，从 CI/CD 到基础设施即代码，从监控到日志，Kiro 覆盖 DevOps 工程师的完整工具链。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🐳 容器技术</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p><strong>Docker</strong>：</p>
+      <ul>
+        <li>Dockerfile 编写：多阶段构建（Multi-stage Build）、层缓存优化、安全最佳实践（非 root 用户、最小基础镜像、.dockerignore）、构建参数（ARG/ENV）、健康检查（HEALTHCHECK）</li>
+        <li>Docker Compose：多服务编排、网络配置、卷管理、环境变量、依赖关系、Profile、扩缩</li>
+        <li>镜像优化：减小镜像体积（Alpine/Distroless/Scratch 基础镜像）、层合并、安全扫描（Trivy/Snyk）</li>
+        <li>Docker 网络：Bridge/Host/Overlay 网络模式、DNS 解析、端口映射</li>
+      </ul>
+      <p><strong>Kubernetes</strong>：</p>
+      <ul>
+        <li>核心资源：Pod、Deployment、Service、ConfigMap、Secret、PersistentVolume、Namespace</li>
+        <li>高级资源：StatefulSet、DaemonSet、Job/CronJob、HPA（水平自动扩缩）、VPA、PodDisruptionBudget</li>
+        <li>网络：Ingress（Nginx/Traefik/ALB）、NetworkPolicy、Service Mesh（Istio/Linkerd）</li>
+        <li>配置管理：Helm Charts 编写和管理、Kustomize、ArgoCD（GitOps）</li>
+        <li>监控：Prometheus + Grafana、metrics-server、日志收集（Fluentd/Fluent Bit）</li>
+        <li>安全：RBAC、Pod Security Standards、Network Policy、Secret 加密、OPA/Gatekeeper</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🔄 CI/CD 流水线</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>GitHub Actions</strong>：工作流编写（YAML）、自定义 Action 开发、矩阵构建、缓存策略、密钥管理、环境保护规则、可重用工作流、自托管 Runner</li>
+        <li><strong>GitLab CI</strong>：.gitlab-ci.yml 配置、阶段和作业、缓存和制品、环境、Review Apps、Auto DevOps</li>
+        <li><strong>Jenkins</strong>：Jenkinsfile（声明式/脚本式）、Pipeline 设计、共享库、Agent 配置、插件管理</li>
+        <li><strong>AWS CodePipeline</strong>：源/构建/部署阶段、CodeBuild 项目、CodeDeploy 部署组、跨账户部署</li>
+        <li><strong>通用实践</strong>：分支策略（GitFlow/Trunk-based）、语义化版本（SemVer）、变更日志自动生成、制品管理、蓝绿/金丝雀/滚动部署策略</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>📜 基础设施即代码（IaC）</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>Terraform</strong>：HCL 语法、Provider 配置、资源/数据源、模块设计（可复用模块）、状态管理（远程后端 S3+DynamoDB）、工作区（Workspace）、导入现有资源、Terragrunt</li>
+        <li><strong>AWS CloudFormation</strong>：模板编写、内置函数（!Ref/!Sub/!GetAtt/!If）、条件资源、自定义资源、嵌套堆栈、StackSets</li>
+        <li><strong>AWS CDK</strong>：TypeScript/Python 编写基础设施、Construct 层次、资产管理、上下文值、测试（assertions）</li>
+        <li><strong>Pulumi</strong>：通用编程语言编写 IaC、状态管理、策略即代码</li>
+        <li><strong>Ansible</strong>：Playbook 编写、角色设计、Inventory 管理、模块使用、Vault 密钥管理</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>📈 可观测性</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>日志</strong>：结构化日志设计（JSON 格式）、日志级别策略、ELK Stack（Elasticsearch + Logstash + Kibana）、Fluentd/Fluent Bit、CloudWatch Logs</li>
+        <li><strong>指标</strong>：Prometheus（PromQL 查询、告警规则、Recording Rules）、Grafana（仪表板设计、变量、告警）、StatsD、CloudWatch Metrics</li>
+        <li><strong>追踪</strong>：OpenTelemetry（Traces/Metrics/Logs 统一）、Jaeger、AWS X-Ray、分布式追踪上下文传播</li>
+        <li><strong>告警</strong>：告警策略设计、告警疲劳防治、PagerDuty/OpsGenie 集成、Runbook 编写</li>
+        <li><strong>SRE 实践</strong>：SLI/SLO/SLA 定义、错误预算、容量规划、混沌工程（Chaos Monkey）、事故响应流程</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- INSERTION POINT 6 -->
+
+<!-- ==================== SECTION: 测试 ==================== -->
+<div class="section" id="sec-testing">
+  <div class="section-header fade-in">
+    <h2><span class="icon">🧪</span>软件测试</h2>
+    <p>Kiro 不仅能写代码，还能写测试、跑测试、分析测试结果。测试驱动开发（TDD）是 Kiro 的核心工作方式之一。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🔬 测试类型与策略</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>单元测试</strong>：函数/方法级别的隔离测试。Mock/Stub/Spy 技术、依赖注入、测试替身（Test Double）。框架：Jest、Vitest、pytest、JUnit 5、Go testing、RSpec、PHPUnit</li>
+        <li><strong>集成测试</strong>：模块间交互测试。数据库集成测试（Testcontainers）、API 集成测试、消息队列集成测试。真实依赖 vs 模拟依赖的权衡</li>
+        <li><strong>端到端测试（E2E）</strong>：完整用户流程测试。Cypress（浏览器自动化）、Playwright（多浏览器支持）、Selenium。页面对象模式（Page Object Model）、测试数据管理、并行执行</li>
+        <li><strong>性能测试</strong>：负载测试（k6/JMeter/Locust）、压力测试、基准测试（Benchmark）。性能指标定义、瓶颈分析、性能回归检测</li>
+        <li><strong>契约测试</strong>：Pact（消费者驱动的契约测试）、API 兼容性验证</li>
+        <li><strong>快照测试</strong>：UI 组件快照（Jest Snapshot）、API 响应快照</li>
+        <li><strong>变异测试</strong>：Stryker（JS/TS）、PITest（Java）。通过代码变异验证测试质量</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🛠️ 测试工程实践</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>TDD（测试驱动开发）</strong>：红-绿-重构循环。Kiro 可以先写测试再写实现，确保代码从一开始就是可测试的</li>
+        <li><strong>BDD（行为驱动开发）</strong>：Cucumber/Gherkin 语法、Given-When-Then 模式、可执行规格说明</li>
+        <li><strong>测试覆盖率</strong>：Istanbul/nyc（JS）、coverage.py（Python）、JaCoCo（Java）。行覆盖、分支覆盖、路径覆盖分析</li>
+        <li><strong>测试数据管理</strong>：Factory 模式（Factory Bot/Faker）、Fixture、Seed 数据、测试数据隔离</li>
+        <li><strong>Mock 技术</strong>：HTTP Mock（MSW/nock/WireMock）、数据库 Mock、时间 Mock、文件系统 Mock</li>
+        <li><strong>CI 中的测试</strong>：并行测试执行、测试分片、Flaky Test 检测和管理、测试报告生成</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SECTION: 安全 ==================== -->
+<div class="section" id="sec-security">
+  <div class="section-header fade-in">
+    <h2><span class="icon">🔒</span>安全工程</h2>
+    <p>安全不是事后补救，而是从设计阶段就要考虑的核心要素。Kiro 默认生成的代码就遵循安全编码最佳实践。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🛡️ 应用安全</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>OWASP Top 10 防护</strong>：SQL 注入（参数化查询）、XSS（输出编码/CSP）、CSRF（Token 验证）、SSRF（URL 白名单）、不安全的反序列化、安全配置错误、敏感数据暴露</li>
+        <li><strong>认证安全</strong>：密码哈希（bcrypt/Argon2）、多因素认证（TOTP/WebAuthn）、会话管理（安全 Cookie 属性）、JWT 最佳实践（短过期时间、刷新令牌轮换、密钥管理）</li>
+        <li><strong>授权模型</strong>：RBAC（基于角色）、ABAC（基于属性）、ReBAC（基于关系）、策略引擎（OPA/Cedar）</li>
+        <li><strong>输入验证</strong>：白名单验证、类型检查、长度限制、正则表达式验证、文件上传安全（类型检查、大小限制、病毒扫描）</li>
+        <li><strong>加密</strong>：对称加密（AES-256-GCM）、非对称加密（RSA/ECDSA）、哈希（SHA-256/SHA-3）、TLS 配置、密钥管理（KMS/Vault）</li>
+        <li><strong>API 安全</strong>：速率限制、请求大小限制、API 密钥管理、OAuth 2.0 安全配置、CORS 策略</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🔍 安全审计与合规</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>代码审计</strong>：安全代码审查、静态分析（SAST）工具配置（SonarQube/Semgrep/CodeQL）、依赖漏洞扫描（Snyk/Dependabot/npm audit）</li>
+        <li><strong>基础设施安全</strong>：最小权限 IAM 策略、安全组规则审查、加密配置验证、日志审计、合规检查（AWS Config Rules）</li>
+        <li><strong>容器安全</strong>：镜像漏洞扫描（Trivy/Clair）、运行时安全（Falco）、Pod 安全策略、非 root 容器</li>
+        <li><strong>供应链安全</strong>：依赖锁定、SBOM（软件物料清单）生成、签名验证、可信发布流程</li>
+        <li><strong>合规框架</strong>：SOC 2、GDPR（数据保护）、HIPAA（医疗数据）、PCI DSS（支付数据）的技术实现要求</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- INSERTION POINT 7 -->
+
+<!-- ==================== SECTION: 数据处理 ==================== -->
+<div class="section" id="sec-data">
+  <div class="section-header fade-in">
+    <h2><span class="icon">📊</span>数据处理与分析</h2>
+    <p>从数据清洗到可视化，从 ETL 流水线到实时流处理，Kiro 能够处理各种规模和格式的数据任务。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🔄 数据处理与 ETL</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>Python 数据栈</strong>：Pandas（DataFrame 操作、GroupBy、Merge/Join、时间序列、大数据集优化）、NumPy（数组运算、线性代数、随机数生成）、Polars（高性能 DataFrame 库，Rust 实现）</li>
+        <li><strong>ETL 工具</strong>：Apache Airflow（DAG 编写、Operator、Sensor、XCom、连接管理）、Prefect、Dagster、Luigi</li>
+        <li><strong>大数据处理</strong>：Apache Spark（PySpark/Scala Spark、RDD/DataFrame/Dataset API、Spark SQL、Spark Streaming）、Apache Flink（流处理）、Apache Beam</li>
+        <li><strong>数据格式转换</strong>：CSV ↔ JSON ↔ XML ↔ YAML ↔ Parquet ↔ Avro ↔ ORC。编码处理（UTF-8/GBK/Latin-1）、大文件流式处理</li>
+        <li><strong>数据清洗</strong>：缺失值处理、异常值检测、数据类型转换、去重、标准化/归一化、正则表达式提取</li>
+        <li><strong>AWS 数据服务</strong>：Glue（ETL 作业、爬虫、数据目录）、Athena（S3 上的 SQL 查询）、Redshift（数据仓库）、Kinesis（实时流处理）、EMR（托管 Spark/Hadoop）</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>📈 数据可视化</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>Python 可视化</strong>：Matplotlib（高度自定义的静态图表）、Seaborn（统计可视化）、Plotly（交互式图表）、Bokeh（Web 交互式）、Altair（声明式可视化）</li>
+        <li><strong>JavaScript 可视化</strong>：D3.js（底层可视化库，完全自定义）、ECharts（丰富的图表类型，中文友好）、Chart.js（简单易用）、Recharts（React 图表）、Highcharts</li>
+        <li><strong>仪表板</strong>：Grafana（运维监控仪表板）、Streamlit（Python 快速数据应用）、Dash（Plotly 的 Web 框架）、Jupyter Notebook（交互式数据探索）</li>
+        <li><strong>图表类型</strong>：折线图、柱状图、饼图、散点图、热力图、桑基图、树图、地理地图、雷达图、箱线图、小提琴图、瀑布图等</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>📋 SQL 与查询优化</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>SQL 编写</strong>：复杂查询（多表 JOIN、子查询、CTE）、窗口函数（排名、累计、移动平均）、聚合分析、条件表达式（CASE WHEN）、集合操作（UNION/INTERSECT/EXCEPT）</li>
+        <li><strong>查询优化</strong>：执行计划分析（EXPLAIN）、索引优化建议、查询重写、避免全表扫描、减少临时表使用、优化 JOIN 顺序</li>
+        <li><strong>高级 SQL</strong>：递归查询（树形结构遍历）、PIVOT/UNPIVOT、JSON 查询、全文搜索、地理空间查询</li>
+        <li><strong>数据仓库 SQL</strong>：星型模型查询、维度建模、慢变维（SCD）处理、增量加载策略</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SECTION: AI/ML ==================== -->
+<div class="section" id="sec-ai">
+  <div class="section-header fade-in">
+    <h2><span class="icon">🤖</span>AI 与机器学习</h2>
+    <p>Kiro 能够编写机器学习代码、设计模型架构、构建 AI 应用。从传统 ML 到深度学习，从模型训练到部署推理。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🧠 机器学习</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>scikit-learn</strong>：分类（SVM/随机森林/XGBoost/LightGBM）、回归（线性/多项式/Ridge/Lasso）、聚类（K-Means/DBSCAN/层次聚类）、降维（PCA/t-SNE/UMAP）、特征工程（Pipeline/ColumnTransformer/特征选择）、模型评估（交叉验证/网格搜索/学习曲线）</li>
+        <li><strong>深度学习</strong>：PyTorch（张量操作、自动微分、nn.Module、DataLoader、训练循环、分布式训练）、TensorFlow/Keras（Sequential/Functional API、自定义层、TFLite 转换）</li>
+        <li><strong>NLP</strong>：Hugging Face Transformers（预训练模型加载、微调、Pipeline API）、文本分类、命名实体识别、文本生成、情感分析、文本嵌入</li>
+        <li><strong>计算机视觉</strong>：图像分类、目标检测（YOLO/Faster R-CNN）、图像分割、OpenCV 图像处理、数据增强（Albumentations）</li>
+        <li><strong>推荐系统</strong>：协同过滤、内容推荐、矩阵分解、深度推荐模型</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🔗 LLM 应用开发</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>LangChain</strong>：Chain 设计、Agent 构建、Tool 集成、Memory 管理、RAG（检索增强生成）Pipeline、Prompt 模板</li>
+        <li><strong>向量数据库</strong>：Pinecone、Weaviate、Milvus、Chroma、pgvector。嵌入生成、相似度搜索、索引策略</li>
+        <li><strong>Prompt Engineering</strong>：Few-shot/Zero-shot 提示、Chain-of-Thought、ReAct 模式、结构化输出（JSON Mode）</li>
+        <li><strong>API 集成</strong>：OpenAI API、Anthropic API、Amazon Bedrock、本地模型（Ollama/vLLM）</li>
+        <li><strong>RAG 架构</strong>：文档加载和分块、嵌入生成、检索策略（语义搜索/混合搜索）、重排序、上下文压缩</li>
+        <li><strong>MLOps</strong>：模型版本管理（MLflow/W&B）、实验跟踪、模型注册、A/B 测试、模型监控、SageMaker 部署</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- INSERTION POINT 8 -->
+
+<!-- ==================== SECTION: 移动开发 ==================== -->
+<div class="section" id="sec-mobile">
+  <div class="section-header fade-in">
+    <h2><span class="icon">📱</span>移动开发</h2>
+    <p>从原生开发到跨平台方案，Kiro 能够编写 iOS、Android 和跨平台移动应用代码。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>📱 跨平台框架</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>Flutter</strong>：Widget 系统（StatelessWidget/StatefulWidget）、布局（Row/Column/Stack/ListView）、导航（Navigator 2.0/GoRouter）、状态管理（Provider/Riverpod/Bloc/GetX）、平台通道（MethodChannel/EventChannel）、自定义绘制（CustomPainter）、动画（隐式/显式/Hero）、国际化、主题定制、插件开发</li>
+        <li><strong>React Native</strong>：核心组件、导航（React Navigation）、状态管理、原生模块桥接、Expo 工具链、性能优化（FlatList/memo/useMemo）、New Architecture（Fabric/TurboModules）</li>
+        <li><strong>Kotlin Multiplatform</strong>：共享业务逻辑、expect/actual 机制、Compose Multiplatform UI</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🍎 原生开发</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>iOS (Swift/SwiftUI)</strong>：SwiftUI 声明式 UI（View/Modifier/State/Binding/ObservableObject）、UIKit（ViewController/TableView/CollectionView）、Combine 响应式框架、Core Data/SwiftData 持久化、URLSession 网络、推送通知、App Clips、Widget</li>
+        <li><strong>Android (Kotlin)</strong>：Jetpack Compose（Composable/State/LazyColumn/Navigation）、传统 View 系统（Activity/Fragment/RecyclerView）、ViewModel/LiveData/Flow、Room 数据库、Retrofit 网络、WorkManager 后台任务、Hilt 依赖注入</li>
+        <li><strong>通用移动技术</strong>：推送通知（FCM/APNs）、深度链接、应用内购买、生物识别认证、离线优先架构、应用性能监控</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SECTION: 文档写作 ==================== -->
+<div class="section" id="sec-docs">
+  <div class="section-header fade-in">
+    <h2><span class="icon">📝</span>文档与写作</h2>
+    <p>Kiro 不仅是代码工具，也是强大的写作助手。能够生成各类技术文档、商业文档和创意内容。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>📄 技术文档</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>API 文档</strong>：OpenAPI/Swagger 规范编写、端点描述、请求/响应示例、错误码说明、认证说明、SDK 使用指南。能够从代码自动生成 API 文档框架</li>
+        <li><strong>架构文档</strong>：系统架构图描述（C4 模型）、高层设计文档（HLD）、低层设计文档（LLD）、技术选型报告、架构决策记录（ADR）</li>
+        <li><strong>README</strong>：项目介绍、安装指南、快速开始、配置说明、贡献指南、许可证。遵循最佳实践的 README 模板</li>
+        <li><strong>代码注释</strong>：JSDoc/TSDoc、Python Docstring（Google/NumPy/Sphinx 风格）、Javadoc、Rustdoc、GoDoc</li>
+        <li><strong>变更日志</strong>：Conventional Commits 规范、CHANGELOG.md 生成、版本发布说明</li>
+        <li><strong>运维文档</strong>：Runbook（故障处理手册）、部署指南、监控告警说明、灾难恢复计划</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>💼 商业与通用文档</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>产品文档</strong>：PRD（产品需求文档）、用户故事、验收标准、功能规格说明、竞品分析报告</li>
+        <li><strong>项目管理</strong>：项目计划、里程碑定义、风险评估、会议纪要、周报/月报模板</li>
+        <li><strong>技术博客</strong>：教程文章、技术深度解析、最佳实践分享、问题排查记录</li>
+        <li><strong>邮件与沟通</strong>：技术邮件草稿、代码审查反馈、技术方案提案、团队沟通模板</li>
+        <li><strong>翻译</strong>：中英日韩等多语言技术文档翻译，保持技术术语准确性</li>
+        <li><strong>演示文稿大纲</strong>：技术分享 PPT 大纲、架构评审材料、技术方案汇报结构</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SECTION: 输出格式 ==================== -->
+<div class="section" id="sec-formats">
+  <div class="section-header fade-in">
+    <h2><span class="icon">📦</span>输出格式</h2>
+    <p>Kiro 能够生成几乎所有文本格式的文件。以下是按类别整理的完整格式支持列表。</p>
+  </div>
+
+  <div class="card-grid fade-in">
+    <div class="card">
+      <h3>💻 源代码文件</h3>
+      <div class="tag-list">
+        <span class="tag blue">.py</span><span class="tag blue">.js</span><span class="tag blue">.ts</span><span class="tag blue">.tsx</span><span class="tag blue">.jsx</span><span class="tag blue">.java</span><span class="tag blue">.kt</span><span class="tag blue">.go</span><span class="tag blue">.rs</span><span class="tag blue">.c</span><span class="tag blue">.cpp</span><span class="tag blue">.h</span><span class="tag blue">.cs</span><span class="tag blue">.rb</span><span class="tag blue">.php</span><span class="tag blue">.swift</span><span class="tag blue">.dart</span><span class="tag blue">.scala</span><span class="tag blue">.ex</span><span class="tag blue">.hs</span><span class="tag blue">.lua</span><span class="tag blue">.r</span><span class="tag blue">.zig</span>
+      </div>
+      <p>支持所有主流编程语言的源代码文件，包括正确的语法、缩进和编码规范。</p>
+    </div>
+    <div class="card">
+      <h3>⚙️ 配置文件</h3>
+      <div class="tag-list">
+        <span class="tag purple">.json</span><span class="tag purple">.yaml/.yml</span><span class="tag purple">.toml</span><span class="tag purple">.ini</span><span class="tag purple">.xml</span><span class="tag purple">.env</span><span class="tag purple">.properties</span><span class="tag purple">.conf</span><span class="tag purple">.cfg</span><span class="tag purple">.hcl</span>
+      </div>
+      <p>各种配置文件格式，包括应用配置、构建工具配置、部署配置等。</p>
+    </div>
+    <div class="card">
+      <h3>📝 文档格式</h3>
+      <div class="tag-list">
+        <span class="tag green">.md</span><span class="tag green">.rst</span><span class="tag green">.adoc</span><span class="tag green">.tex</span><span class="tag green">.txt</span><span class="tag green">.csv</span>
+      </div>
+      <p>Markdown、reStructuredText、AsciiDoc、LaTeX 等文档格式，支持表格、代码块、数学公式等。</p>
+    </div>
+    <div class="card">
+      <h3>🌐 Web 文件</h3>
+      <div class="tag-list">
+        <span class="tag cyan">.html</span><span class="tag cyan">.css</span><span class="tag cyan">.scss</span><span class="tag cyan">.less</span><span class="tag cyan">.svg</span><span class="tag cyan">.vue</span><span class="tag cyan">.svelte</span><span class="tag cyan">.astro</span>
+      </div>
+      <p>完整的 Web 前端文件，包括语义化 HTML、响应式 CSS、SVG 图形等。</p>
+    </div>
+    <div class="card">
+      <h3>🔌 API 与协议</h3>
+      <div class="tag-list">
+        <span class="tag orange">.proto</span><span class="tag orange">.graphql</span><span class="tag orange">.openapi.yaml</span><span class="tag orange">.swagger.json</span><span class="tag orange">.wsdl</span><span class="tag orange">.thrift</span>
+      </div>
+      <p>API 定义文件、协议缓冲区、GraphQL Schema 等接口描述格式。</p>
+    </div>
+    <div class="card">
+      <h3>🏗️ 基础设施文件</h3>
+      <div class="tag-list">
+        <span class="tag pink">Dockerfile</span><span class="tag pink">docker-compose.yml</span><span class="tag pink">Makefile</span><span class="tag pink">Jenkinsfile</span><span class="tag pink">.github/workflows/*.yml</span><span class="tag pink">.gitlab-ci.yml</span><span class="tag pink">terraform/*.tf</span><span class="tag pink">k8s/*.yaml</span>
+      </div>
+      <p>容器配置、CI/CD 流水线、基础设施即代码、构建脚本等。</p>
+    </div>
+    <div class="card">
+      <h3>📊 数据文件</h3>
+      <div class="tag-list">
+        <span class="tag green">.sql</span><span class="tag green">.csv</span><span class="tag green">.json</span><span class="tag green">.jsonl</span><span class="tag green">.xml</span><span class="tag green">.graphql</span>
+      </div>
+      <p>数据库脚本、数据交换格式、查询文件等。</p>
+    </div>
+    <div class="card">
+      <h3>🧪 测试文件</h3>
+      <div class="tag-list">
+        <span class="tag orange">*.test.ts</span><span class="tag orange">*.spec.js</span><span class="tag orange">test_*.py</span><span class="tag orange">*_test.go</span><span class="tag orange">*.feature</span>
+      </div>
+      <p>各语言的测试文件，包括单元测试、集成测试、E2E 测试、BDD 特性文件。</p>
+    </div>
+  </div>
+</div>
+
+<!-- INSERTION POINT 9 -->
+
+<!-- ==================== SECTION: 工作流 ==================== -->
+<div class="section" id="sec-workflow">
+  <div class="section-header fade-in">
+    <h2><span class="icon">🔄</span>工作流与效率</h2>
+    <p>Kiro 不只是写代码的工具，更是一个完整的开发工作流助手。从项目初始化到部署上线，全程陪伴。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🚀 项目脚手架</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>Kiro 可以从零开始创建完整的项目结构：</p>
+      <ul>
+        <li><strong>前端项目</strong>：React/Vue/Angular/Svelte 项目初始化，包括路由、状态管理、样式方案、测试配置、ESLint/Prettier 配置、Git Hooks</li>
+        <li><strong>后端项目</strong>：Express/FastAPI/Spring Boot/Go 项目结构，包括分层架构、数据库连接、认证模块、日志配置、Docker 化</li>
+        <li><strong>全栈项目</strong>：Monorepo 结构（前端 + 后端 + 共享类型）、API 层设计、开发环境配置</li>
+        <li><strong>库/包项目</strong>：npm 包、PyPI 包、Cargo crate 的项目结构，包括构建配置、测试、文档、发布流程</li>
+        <li><strong>微服务项目</strong>：多服务项目结构、Docker Compose 编排、服务间通信、共享库</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🔍 代码审查与重构</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>代码审查</strong>：Kiro 可以审查代码质量，检查潜在的 Bug、安全漏洞、性能问题、可维护性问题。提供具体的改进建议和修复代码</li>
+        <li><strong>重构</strong>：提取函数/类、重命名、移动代码、简化条件逻辑、消除重复代码、应用设计模式。Kiro 会确保重构后的代码通过所有现有测试</li>
+        <li><strong>代码迁移</strong>：JavaScript → TypeScript 迁移、Vue 2 → Vue 3 迁移、Class Components → Hooks 迁移、Webpack → Vite 迁移。逐步迁移策略，确保每一步都可验证</li>
+        <li><strong>技术债务清理</strong>：识别和修复技术债务，包括过时的依赖、废弃的 API 使用、不一致的代码风格、缺失的错误处理</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>🐛 调试与排障</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>错误分析</strong>：分析错误信息、堆栈跟踪、日志输出，定位问题根因。不是简单地搜索错误信息，而是理解代码逻辑来推断问题所在</li>
+        <li><strong>系统排障</strong>：分析系统日志、网络连接问题、权限问题、配置错误。能够执行诊断命令并分析输出</li>
+        <li><strong>性能排障</strong>：分析慢查询、内存泄漏、CPU 瓶颈、网络延迟。提供具体的优化建议和代码修改</li>
+        <li><strong>AWS 排障</strong>：分析 CloudWatch 日志和指标、IAM 权限问题、网络连通性问题、服务配额限制</li>
+        <li><strong>构建排障</strong>：分析构建错误、依赖冲突、版本不兼容、环境差异问题</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>⚡ Git 工作流</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>日常操作</strong>：提交（遵循 Conventional Commits）、分支管理、合并/变基、Cherry-pick、Stash</li>
+        <li><strong>PR/MR 工作流</strong>：创建 Pull Request（GitHub）/ Merge Request（GitLab），编写描述、关联 Issue</li>
+        <li><strong>分支策略</strong>：GitFlow、Trunk-based Development、GitHub Flow 的实施和管理</li>
+        <li><strong>冲突解决</strong>：分析合并冲突，理解双方修改意图，提供合理的解决方案</li>
+        <li><strong>Git Hooks</strong>：pre-commit（代码格式化、Lint）、commit-msg（提交信息规范）、pre-push（测试）配置</li>
+        <li><strong>安全原则</strong>：Kiro 默认不会执行破坏性 Git 操作（force push、reset --hard），不会直接推送到主分支，会在提交前检查敏感文件</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- INSERTION POINT 10 -->
+
+<!-- ==================== SECTION: 行业应用 ==================== -->
+<div class="section" id="sec-industry">
+  <div class="section-header fade-in">
+    <h2><span class="icon">🏭</span>行业应用场景</h2>
+    <p>Kiro 的能力可以应用于各个行业的软件开发需求。以下是按行业分类的典型应用场景。</p>
+  </div>
+
+  <div class="card-grid fade-in">
+    <div class="card">
+      <h3>🏦 金融科技</h3>
+      <ul>
+        <li>支付系统开发（支付网关、对账系统、清算引擎）</li>
+        <li>风控系统（规则引擎、实时风控、反欺诈模型）</li>
+        <li>交易系统（订单匹配、行情推送、回测框架）</li>
+        <li>合规系统（KYC/AML 流程、审计日志、报表生成）</li>
+        <li>区块链/Web3（智能合约审查、DApp 前端、钱包集成）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🏥 医疗健康</h3>
+      <ul>
+        <li>电子病历系统（HL7 FHIR 标准、数据互操作）</li>
+        <li>远程医疗平台（视频通话集成、预约系统）</li>
+        <li>医学影像处理（DICOM 格式、图像分析 Pipeline）</li>
+        <li>健康数据分析（可穿戴设备数据、健康指标追踪）</li>
+        <li>HIPAA 合规实现（数据加密、访问控制、审计追踪）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🛒 电子商务</h3>
+      <ul>
+        <li>商品管理系统（SKU 管理、库存同步、价格策略）</li>
+        <li>订单系统（购物车、结算流程、订单状态机）</li>
+        <li>推荐引擎（协同过滤、个性化推荐、A/B 测试）</li>
+        <li>搜索系统（Elasticsearch 集成、分词、排序策略）</li>
+        <li>促销系统（优惠券、满减、秒杀、限时折扣）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🎮 游戏开发</h3>
+      <ul>
+        <li>游戏服务端（房间管理、匹配系统、排行榜）</li>
+        <li>游戏脚本（Lua/C# 游戏逻辑、AI 行为树）</li>
+        <li>实时通信（WebSocket、UDP 协议、状态同步）</li>
+        <li>数据分析（玩家行为分析、留存分析、付费分析）</li>
+        <li>工具开发（关卡编辑器、资源管理、构建流水线）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🎓 教育科技</h3>
+      <ul>
+        <li>在线学习平台（课程管理、视频播放、进度追踪）</li>
+        <li>考试系统（题库管理、自动评分、防作弊）</li>
+        <li>自适应学习（知识图谱、学习路径推荐）</li>
+        <li>互动教学（实时白板、代码沙箱、协作编辑）</li>
+        <li>数据分析（学习行为分析、成绩预测、教学效果评估）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🏭 工业物联网</h3>
+      <ul>
+        <li>设备管理平台（设备注册、固件更新、远程控制）</li>
+        <li>数据采集（MQTT/CoAP 协议、时序数据存储）</li>
+        <li>实时监控（仪表板、告警规则、异常检测）</li>
+        <li>边缘计算（AWS IoT Greengrass、本地推理）</li>
+        <li>数字孪生（3D 可视化、实时数据映射）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🚗 出行与物流</h3>
+      <ul>
+        <li>地图与导航（地理编码、路径规划、地理围栏）</li>
+        <li>调度系统（订单分配、路径优化、实时追踪）</li>
+        <li>仓储管理（WMS 系统、库位管理、拣货优化）</li>
+        <li>供应链（需求预测、库存优化、供应商管理）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>📰 内容与媒体</h3>
+      <ul>
+        <li>CMS 系统（内容管理、发布流程、多语言支持）</li>
+        <li>社交平台（Feed 流、消息系统、通知推送）</li>
+        <li>音视频处理（转码流水线、CDN 分发、直播系统）</li>
+        <li>搜索引擎（全文搜索、推荐算法、SEO 工具）</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- INSERTION POINT 11 -->
+
+<!-- ==================== SECTION: 能力边界 ==================== -->
+<div class="section" id="sec-limits">
+  <div class="section-header fade-in">
+    <h2><span class="icon">⚠️</span>能力边界</h2>
+    <p>了解 Kiro 的能力边界同样重要。以下是 Kiro 能做和不能做的事情的清晰对比。</p>
+  </div>
+
+  <div class="compare-grid fade-in">
+    <div class="compare-box yes">
+      <h4>✅ Kiro 能做的</h4>
+      <ul>
+        <li>读写本地文件系统中的任何文本文件</li>
+        <li>执行终端命令（构建、测试、Git 等）</li>
+        <li>直接调用 AWS CLI API 管理云资源</li>
+        <li>搜索和分析代码库（AST 级别）</li>
+        <li>联网搜索最新信息和文档</li>
+        <li>生成所有文本格式的文件</li>
+        <li>多 Agent 并行处理复杂任务</li>
+        <li>保存和恢复工作会话</li>
+        <li>连接 MCP 服务器扩展能力</li>
+        <li>编写和运行各种编程语言的代码</li>
+        <li>分析日志、排查问题、优化性能</li>
+        <li>编写技术文档、商业文档、翻译</li>
+        <li>设计数据库 Schema 和 API</li>
+        <li>配置 CI/CD 流水线和基础设施</li>
+      </ul>
+    </div>
+    <div class="compare-box no">
+      <h4>❌ Kiro 不能做的</h4>
+      <ul>
+        <li>生成图片、音频、视频等二进制媒体文件</li>
+        <li>运行 GUI 程序或操作图形界面</li>
+        <li>访问未授权的系统或网络</li>
+        <li>提供医疗诊断、法律咨询、金融投资建议</li>
+        <li>执行需要物理操作的任务</li>
+        <li>保证代码 100% 无 Bug（但会尽力测试验证）</li>
+        <li>替代人类做最终的架构决策和产品决策</li>
+        <li>处理超出上下文窗口的超大文件（但会自动管理上下文）</li>
+        <li>直接操作数据库中的生产数据（安全限制）</li>
+        <li>绕过操作系统的权限限制</li>
+        <li>生成恶意软件、攻击工具或有害内容</li>
+        <li>记住跨会话的信息（除非使用知识库功能）</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in" style="margin-top:24px">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>⚖️ 使用建议与最佳实践</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <ul>
+        <li><strong>信任但验证</strong>：Kiro 生成的代码会自动运行构建和测试来验证，但对于关键业务逻辑，建议人工审查</li>
+        <li><strong>渐进式信任</strong>：初次使用时保持默认的工具确认模式，熟悉后再使用 <code>--trust-all-tools</code></li>
+        <li><strong>明确意图</strong>：描述越清晰，结果越好。说"用 FastAPI 写一个带 JWT 认证的用户管理 API"比"写个后端"好得多</li>
+        <li><strong>利用上下文</strong>：Kiro 能读取你的项目文件，所以它会自动匹配你项目的代码风格和技术栈</li>
+        <li><strong>分步处理</strong>：对于大型任务，建议分步骤进行，每步验证后再继续</li>
+        <li><strong>保存会话</strong>：长时间工作时使用 <code>/chat save</code> 保存进度，避免意外丢失</li>
+        <li><strong>自定义 Agent</strong>：为常用的项目类型创建专门的 Agent 配置，提高效率</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SECTION: FAQ ==================== -->
+<div class="section" id="sec-faq">
+  <div class="section-header fade-in">
+    <h2><span class="icon">❓</span>常见问题</h2>
+    <p>关于 Kiro 的常见问题和解答。</p>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>Q: Kiro 和 ChatGPT/Claude 等聊天工具有什么区别？</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>最大的区别是 Kiro 能<strong>直接操作你的开发环境</strong>。普通聊天工具只能给你看代码片段，你需要手动复制粘贴。而 Kiro 可以直接读写文件、执行命令、运行测试、管理 Git、调用 AWS API。它不是一个"聊天窗口"，而是一个"AI 同事"，直接在你的项目里干活。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>Q: Kiro 会不会搞坏我的代码？</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>Kiro 有多层安全机制保护你的代码：1）默认情况下，文件修改和命令执行都需要你确认；2）Kiro 会自动评估操作风险，高风险操作必须获得明确许可；3）Kiro 不会执行破坏性 Git 操作（如 force push）；4）建议在使用 Kiro 前确保代码已提交到 Git，这样任何修改都可以轻松回滚。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>Q: 如何让 Kiro 跳过每次的确认提示？</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>有几种方式：1）启动时加 <code>--trust-all-tools</code> 参数；2）在会话中输入 <code>/tools trust-all</code>；3）只信任特定工具 <code>/tools trust execute_bash fs_write</code>；4）设置 shell alias：<code>alias kiro='kiro-cli chat --trust-all-tools'</code>。注意会话内的信任设置不会持久化，下次需要重新设置。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>Q: Kiro 支持哪些操作系统？</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>Kiro CLI 支持 macOS、Linux 和 Windows。日志文件位置因系统而异：macOS 在 <code>$TMPDIR/kiro-log/</code>，Linux 在 <code>$XDG_RUNTIME_DIR/kiro-log/</code>，Windows 在 <code>%TEMP%/kiro-log/logs/</code>。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>Q: 如何在 CI/CD 中使用 Kiro？</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>使用无头模式：<code>kiro-cli chat --no-interactive --trust-all-tools "你的指令"</code>。这会执行指令后自动退出。必须加 <code>--trust-all-tools</code>，否则工具确认提示会导致挂起。适合自动化代码审查、测试分析、文档生成等场景。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>Q: Kiro 能同时处理多个任务吗？</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>可以。Kiro 支持子 Agent（Sub-Agent）模式，可以启动多个 AI Agent 并行工作。比如同时研究三个技术方案，或者一个 Agent 写代码、另一个写测试。每个子 Agent 是独立的会话，可以通过 Ctrl+G 监控进度。这对于复杂的研究和实现任务特别有用。</p>
+    </div>
+  </div>
+
+  <div class="detail-block fade-in">
+    <div class="block-header" onclick="toggleBlock(this)">
+      <h3>Q: 如何扩展 Kiro 的能力？</h3>
+      <span class="arrow">▶</span>
+    </div>
+    <div class="block-body">
+      <p>通过 MCP（Model Context Protocol）服务器。你可以连接外部 MCP 服务器来给 Kiro 添加新的工具和能力。比如连接 Git MCP 服务器获得更强的版本控制能力，或连接自定义的业务 MCP 服务器来操作特定系统。使用 <code>/mcp add</code> 命令添加 MCP 服务器。企业用户还可以通过 MCP Registry 集中管理可用的服务器。</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>Kiro AI — 终端智能开发助手 · 全面能力手册</p>
+  <p style="margin-top:8px">本页面由 Kiro 自动生成 · 内容基于 Kiro CLI 实际能力 · 2026</p>
+</div>
+
+</div><!-- /main -->
+
+<!-- Back to top -->
+<button id="back-top" aria-label="回到顶部">↑</button>
+
+<script src="app.js"></script>
+</body>
+</html>

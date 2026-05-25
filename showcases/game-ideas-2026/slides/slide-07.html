@@ -1,0 +1,61 @@
+<section class="slide" id="slide-7">
+  <div class="slide-header">
+    <span class="slide-number">07 / 20</span>
+    <span class="category-tag cat-mechanic">⚙️ 机制创新</span>
+  </div>
+  <h1 class="slide-title">影子木偶平台跳跃</h1>
+  <p class="slide-subtitle">Shadow Puppet Platformer</p>
+  <div class="slide-body">
+    <div class="concept-box">
+      <h3>🎯 核心概念</h3>
+      <p>用摄像头捕捉玩家手臂的影子，在游戏中生成可踩踏的平台。玩家一只手控制角色移动，另一只手（或双手）在摄像头前做出手势来创造平台。</p>
+    </div>
+    <div class="media-section">
+      <h3>🎬 参考作品展示</h3>
+      <div class="media-grid">
+        <div class="media-card">
+          <iframe src="https://www.youtube.com/embed/fTGBfLBjS4I" title="Limbo Trailer" frameborder="0" allowfullscreen></iframe>
+          <p class="media-caption">《Limbo》— 光影美学的平台跳跃经典</p>
+        </div>
+        <div class="media-card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/48000/header.jpg" alt="Limbo">
+          <p class="media-caption">黑白剪影风格 — 影子木偶游戏的最佳视觉参考</p>
+        </div>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="col">
+        <h3>🎮 核心机制</h3>
+        <ul>
+          <li><strong>手势识别</strong> — 摄像头检测手臂/手掌轮廓</li>
+          <li><strong>影子平台</strong> — 手的影子变成游戏中的实体平台</li>
+          <li><strong>双手协作</strong> — 一手控制角色，一手创造路径</li>
+          <li><strong>光源互动</strong> — 游戏内光源位置影响影子方向和大小</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>📋 设计要点</h3>
+        <ul>
+          <li><strong>视觉风格</strong>：黑白剪影，类似皮影戏美学</li>
+          <li><strong>技术门槛</strong>：需要可靠的手势识别（MediaPipe）</li>
+          <li><strong>参考</strong>：《Limbo》《Inside》+ 体感游戏</li>
+          <li><strong>备选方案</strong>：鼠标绘制平台作为非摄像头替代</li>
+        </ul>
+      </div>
+    </div>
+    <div class="detail-box">
+      <h3>💡 深度设计思路</h3>
+      <p>用Google MediaPipe Hands做手势识别，将手部关键点转化为游戏内的碰撞体。视觉上，玩家的手变成游戏世界中的"巨人之手"，角色在手指上跳跃。可以设计"皮影戏"关卡主题，每关是一个传统故事。</p>
+      <p><strong>技术建议</strong>：Unity + MediaPipe（通过WebSocket桥接）或纯Web版用TensorFlow.js。备选方案：用鼠标画线生成平台。</p>
+    </div>
+    <div class="ref-links">
+      <h3>🔗 参考资源</h3>
+      <ul>
+        <li><a href="https://store.steampowered.com/app/48000/LIMBO/" target="_blank">Limbo on Steam</a></li>
+        <li><a href="https://mediapipe.dev/" target="_blank">Google MediaPipe 手势识别</a></li>
+        <li><a href="https://www.tensorflow.org/js" target="_blank">TensorFlow.js</a></li>
+        <li><a href="https://joshmoody.org/blog/weird-indie-video-game-ideas/" target="_blank">灵感来源：joshmoody.org</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
