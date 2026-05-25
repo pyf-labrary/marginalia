@@ -106,7 +106,7 @@ def extract_summary_bullets(post_body: str) -> list[str]:
     return bullets
 
 
-def render_desc(script_json: dict, fm_lede: str | None, post_body: str) -> str:
+def render_desc(script_json: dict, fm_lede: str | None, post_body: str, transcript_url: str | None = None) -> str:
     lines: list[str] = []
     if fm_lede:
         lines.append(fm_lede.strip())
@@ -125,7 +125,7 @@ def render_desc(script_json: dict, fm_lede: str | None, post_body: str) -> str:
             lines.append(f"· {re.split(r'[。！？]', sc['text'], maxsplit=1)[0]}。")
     lines.append("")
     lines.append("制作：Remotion + MiniMax + ffmpeg，全自动流水线。")
-    lines.append("文字稿：https://pyf-labrary.github.io/marginalia/videos/")
+    lines.append(f"完整文字稿与来源：{transcript_url or 'https://pyf-labrary.github.io/marginalia/videos/'}")
     return "\n".join(lines).strip()
 
 
@@ -219,7 +219,8 @@ def main() -> int:
     title_core = title_m.group(1).strip() if title_m else slug
     vol = vol_m.group(1).strip() if vol_m else ""
     bili_title = f"【AI 周报 W{slug.split('-w')[-1]}】{title_core}"[:80]
-    desc = render_desc(script_json, lede_m.group(1).strip() if lede_m else None, post_body)
+    transcript_url = f"https://pyf-labrary.github.io/marginalia/videos/{slug}/"
+    desc = render_desc(script_json, lede_m.group(1).strip() if lede_m else None, post_body, transcript_url)
 
     cmd = build_biliup_args(
         video=video,
