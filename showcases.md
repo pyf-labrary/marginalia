@@ -8,6 +8,14 @@ wide: true
 
 带版式的多页作品集。每一份都是独立的 HTML deck，不走博客模板。
 
+## AI 军团 · 作战日志看板（LIVE）
+
+一个自治多 agent 软件组织的对外作战日志：人只在飞书点「批准」，其余全自动——PM 分诊 GitHub Issue 并派工、Worker 建独立 worktree 改码开 PR、Auditor 只读审查、Redline 红线守卫在工具调用前确定性拦截。底座 Claude Code 骑 Claude Max，跑在自有 WSL + systemd 真 7×24。页面由执行账本 `runs.jsonl` 自动渲染、脱敏后内联——war-room 终端美学，含端到端闭环 pipeline 图与按角色染色的作战时间线。
+
+→ [打开看板](/marginalia/showcases/army-ops/)
+
+*整理时间：2026-05-26。*
+
 ## 导演艺术大师课 · The Director's Craft
 
 七页幻灯，从镜头语言基础到导演思维的完整大师课：六章共 29 个主题——景别 / 运镜 / 蒙太奇 / 构图 / 光影 / 色彩 / 调度 / 风格作者 / 视觉化思维。每章配 AI 生成的电影感剧照背景，第二章带循环运镜视频，全程配 MiniMax 生成的影厅级 BGM（右上角 ♫ 可切换）。影音素材较多，外链托管，跳转打开。
