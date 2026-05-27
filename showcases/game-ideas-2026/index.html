@@ -76,6 +76,7 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0a0a0
 <body>
 <div class="key-hint">← → 翻页 | M 目录 | F 全屏</div>
 <div id="slides-container"></div>
+<div id="loading" style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#0a0a0f;z-index:300;color:#888;font-size:14px;letter-spacing:2px">加载中… <span id="loading-count" style="color:#667eea;margin-left:8px">0 / 20</span></div>
 <nav class="nav-bar">
   <span class="progress-text" id="progress-left"></span>
   <div class="nav-center">
@@ -109,12 +110,16 @@ const dotsEl=document.getElementById('nav-dots');
 const tocGrid=document.getElementById('toc-grid');
 
 async function init(){
-  for(let i=0;i<slideFiles.length;i++){
-    try{
-      const r=await fetch(slideFiles[i]);
-      const html=await r.text();
-      container.insertAdjacentHTML('beforeend',html);
-    }catch(e){container.insertAdjacentHTML('beforeend','<section class="slide"><h1>Slide '+(i+1)+' 加载失败</h1></section>')}
+  const loadingCount=document.getElementById('loading-count');
+  let done=0;
+  // Fetch all 20 slides in parallel; render in order once all resolved.
+  const htmls=await Promise.all(slideFiles.map((f,i)=>
+    fetch(f).then(r=>r.text())
+      .catch(()=>'<section class="slide"><h1>Slide '+(i+1)+' 加载失败</h1></section>')
+      .then(h=>{ done++; if(loadingCount) loadingCount.textContent=done+' / 20'; return h; })
+  ));
+  for(let i=0;i<htmls.length;i++){
+    container.insertAdjacentHTML('beforeend',htmls[i]);
     const dot=document.createElement('div');
     dot.className='nav-dot';
     dot.onclick=(()=>{const idx=i;return()=>goTo(idx)})();
@@ -126,6 +131,8 @@ async function init(){
     tocGrid.appendChild(item);
   }
   goTo(0);
+  const loading=document.getElementById('loading');
+  if(loading) loading.style.display='none';
 }
 function goTo(i){
   const slides=container.querySelectorAll('.slide');
