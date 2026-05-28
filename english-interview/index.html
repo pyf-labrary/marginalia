@@ -69,12 +69,30 @@
 <script type="text/babel" data-presets="typescript,react" data-type="module">
 const { useState, useEffect, useRef, useCallback } = React;
 
-// ── 后端地址：默认同源；?api=https://xxx 覆盖；localStorage.apiBase 持久
+// ── 后端 + 鉴权：硬编码 endpoint，token 必须从 ?token=xxx 或 localStorage 读到
+//    没 token 就当未授权（按钮置灰提示去要 magic link）。这是公开站，必须挡白嫖。
+const DEFAULT_API_BASE = 'https://eng.panyifeng.xyz';
 const API_BASE = (() => {
   const p = new URLSearchParams(location.search).get('api');
   if (p) { localStorage.setItem('apiBase', p); return p; }
-  return localStorage.getItem('apiBase') || '';
+  const stored = localStorage.getItem('apiBase');
+  return (stored && stored.startsWith('http')) ? stored : DEFAULT_API_BASE;
 })();
+const AUTH_TOKEN = (() => {
+  const p = new URLSearchParams(location.search).get('token');
+  if (p) {
+    localStorage.setItem('authToken', p);
+    // 清掉 URL 上的 token 避免泄露
+    history.replaceState(null, '', location.pathname + location.hash);
+    return p;
+  }
+  return localStorage.getItem('authToken') || '';
+})();
+function authHeaders(extra) {
+  const h = extra || {};
+  if (AUTH_TOKEN) h['X-Auth-Token'] = AUTH_TOKEN;
+  return h;
+}
 
 const STYLES = [
   { id: 'mixed',      label: 'Mixed',      hint: '综合面' },
@@ -188,11 +206,16 @@ function App() {
 
   const startInterview = async () => {
     if (!apiBase) { setShowSettings(true); return; }
+    if (!AUTH_TOKEN) {
+      setError('未授权：缺少 token。请用 magic link 重新访问，或在 ⚙ 设置里填 token。');
+      setPhase('error'); return;
+    }
     setPhase('starting'); setError(null); setHistory([]); setSummary(null);
     setIdx(0); setTranscript('');
     try {
       const r = await fetch(apiBase + '/api/start', {
-        method: 'POST', headers: {'Content-Type': 'application/json'},
+        method: 'POST',
+        headers: authHeaders({'Content-Type': 'application/json'}),
         body: JSON.stringify({ style, accent, questions: nQuestions }),
       });
       if (!r.ok) throw new Error(await r.text());
@@ -243,7 +266,9 @@ function App() {
     fd.append('transcript', transcript);
     fd.append('current_question', question || '');
     try {
-      const r = await fetch(apiBase + '/api/turn', { method: 'POST', body: fd });
+      const r = await fetch(apiBase + '/api/turn', {
+        method: 'POST', headers: authHeaders(), body: fd,
+      });
       if (!r.ok) throw new Error(await r.text());
       const j = await r.json();
       setTranscript(j.transcript || transcript);
@@ -256,7 +281,8 @@ function App() {
         setPhase('finished');
         try {
           const r2 = await fetch(apiBase + '/api/summary', {
-            method: 'POST', headers: {'Content-Type': 'application/json'},
+            method: 'POST',
+            headers: authHeaders({'Content-Type': 'application/json'}),
             body: JSON.stringify({ transcript: j.transcript || transcript, style, accent }),
           });
           if (r2.ok) setSummary(await r2.json());
