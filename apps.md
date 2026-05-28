@@ -8,6 +8,18 @@ wide: true
 
 互动应用集合。和 [Showcases](/marginalia/showcases/) 的"静态 deck"不同，这里的每一个都是带后端逻辑或重交互的 SPA。
 
+## English Interview · Drill
+
+> 全英面试模拟 + 实时纠错——按住麦克风说英文，AI 面试官（英国 / 印度口音）现场给评分、地道改写、错误点评和中文教练点评。
+
+5 种面试风格（HSBC strengths-based / HireVue 单向自录 / 纯 STAR 行为面 / Tech 深挖 / Mixed）× 5 种口音（UK ♂♀ / IN ♂♀ / Panel 混音）。每场结束给 CEFR 估计 + 优势/待补 + 该背的地道表达。
+
+→ [打开 Interview Drill](/marginalia/english-interview/)（首次进去要在右上 ⚙ 填后端 API 地址）
+
+技术栈：React 18 + Tailwind via CDN（前端单文件无构建）+ FastAPI 后端（部署在 panyifeng.xyz）。LLM 走 DeepSeek V4 Flash，STT 走 faster-whisper tiny.en（本地 CPU），TTS 走 Microsoft Edge Neural（en-GB-Ryan / en-IN-Prabhat 等）。
+
+*上线时间：2026-05-28。*
+
 ## Cue · 影视配乐入门
 
 > 给小白做导演的配乐速通课。**可听 > 可读**——每一个名词都能在一秒内播出来。
