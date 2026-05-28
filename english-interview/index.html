@@ -200,9 +200,13 @@ function App() {
     return () => { a.pause(); audioRef.current = null; };
   }, [audioUrl]);
 
-  // 录音
+  // 录音 + 实时字幕（Web Speech API；不存，纯 UX）
   const mediaRef = useRef(null);
   const chunksRef = useRef([]);
+  const recogRef = useRef(null);
+  const [liveText, setLiveText] = useState('');     // 已确定的小段
+  const [interimText, setInterimText] = useState(''); // 浏览器正在猜的小段
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 
   const startInterview = async () => {
     if (!apiBase) { setShowSettings(true); return; }
@@ -243,6 +247,31 @@ function App() {
       };
       rec.start();
       setPhase('recording');
+
+      // 同步开启浏览器实时字幕（与录音并行，不冲突）
+      setLiveText(''); setInterimText('');
+      if (SR) {
+        try {
+          const r2 = new SR();
+          r2.lang = 'en-US';
+          r2.continuous = true;
+          r2.interimResults = true;
+          r2.onresult = (ev) => {
+            let interim = '', finals = '';
+            for (let i = ev.resultIndex; i < ev.results.length; i++) {
+              const t = ev.results[i][0].transcript;
+              if (ev.results[i].isFinal) finals += t;
+              else interim += t;
+            }
+            if (finals) setLiveText(prev => (prev + ' ' + finals).trim());
+            setInterimText(interim);
+          };
+          r2.onerror = () => {}; // 静默；浏览器不支持就退化为只显示完整 STT 结果
+          r2.onend = () => { recogRef.current = null; };
+          r2.start();
+          recogRef.current = r2;
+        } catch (e) { /* 浏览器拒绝 -> 退化 */ }
+      }
     } catch (e) {
       toast.show('麦克风权限被拒，去浏览器设置打开');
       setPhase('listening');
@@ -252,6 +281,8 @@ function App() {
   const endRecord = () => {
     const r = mediaRef.current;
     if (r && r.state !== 'inactive') r.stop();
+    const r2 = recogRef.current;
+    if (r2) { try { r2.stop(); } catch (e) {} }
   };
 
   const uploadTurn = async (blob, mime) => {
@@ -408,6 +439,25 @@ function App() {
               <p className="mt-6 text-[var(--muted)] text-sm">
                 {phase==='recording' ? <span className="blink">● 录音中 — 松开提交</span> : '按住说话'}
               </p>
+
+              {/* 实时字幕（录音时显示，提交后清空） */}
+              {phase==='recording' && (liveText || interimText) && (
+                <div className="mt-6 mx-5 max-w-2xl">
+                  <div className="text-[10px] mono tracking-widest text-[var(--gold)] mb-2">LIVE CAPTION · 实时字幕</div>
+                  <div className="bg-[var(--ink-2)] border border-[var(--line)] rounded-lg p-4 text-base leading-relaxed">
+                    <span>{liveText}</span>
+                    {interimText && <span className="text-[var(--muted)] italic"> {interimText}</span>}
+                  </div>
+                  <div className="text-[10px] text-[var(--muted)] mt-1.5">
+                    浏览器实时识别，仅供你看自己说了啥；提交后会用更准的 STT 重新转写做评分依据
+                  </div>
+                </div>
+              )}
+              {phase==='recording' && !SR && (
+                <div className="mt-4 text-[10px] text-[var(--muted)] italic">
+                  （此浏览器不支持 Web Speech，无实时字幕。建议用 iOS Safari / Chrome / Edge）
+                </div>
+              )}
             </div>
 
             {history.length > 0 && (
