@@ -175,7 +175,8 @@ function App() {
   const [showSettings, setShowSettings] = useState(!apiBase);
 
   // 状态机
-  const [phase, setPhase] = useState('idle'); // idle | starting | listening | recording | uploading | finished | error
+  // idle → starting → listening → recording → uploading → reviewing → (listening | finishing | finished) → error
+  const [phase, setPhase] = useState('idle');
   const [idx, setIdx] = useState(0);          // 已答 idx 题
   const [question, setQuestion] = useState(null);
   const [questionZh, setQuestionZh] = useState(null);
@@ -184,6 +185,8 @@ function App() {
   const [summary, setSummary] = useState(null);
   const [audioUrl, setAudioUrl] = useState(null);
   const [error, setError] = useState(null);
+  // 拿到下一题先存这，等用户点「下一题 →」才显示 + 播放
+  const [pendingNext, setPendingNext] = useState(null);
   const toast = useToast();
 
   useEffect(() => { localStorage.setItem('style', style); }, [style]);
@@ -307,9 +310,13 @@ function App() {
         idx: idx + 1, question, sttText: j.stt_text, feedback: j.feedback,
       }]);
       setIdx(i => i + 1);
+      // 把下一题先存起来；UI 进入 reviewing 显示反馈，等用户点「下一题 →」才暴露
+      setPendingNext(j.question ? {
+        question: j.question, question_zh: j.question_zh, audio_b64: j.audio_b64,
+      } : null);
+      setPhase('reviewing');
+      // 若是最后一题，提前拉总评，反正现在用户也在看反馈
       if (!j.question) {
-        // 结束 → 拉总评
-        setPhase('finished');
         try {
           const r2 = await fetch(apiBase + '/api/summary', {
             method: 'POST',
@@ -318,10 +325,6 @@ function App() {
           });
           if (r2.ok) setSummary(await r2.json());
         } catch {}
-      } else {
-        setQuestion(j.question); setQuestionZh(j.question_zh);
-        if (j.audio_b64) setAudioUrl(audioFromB64(j.audio_b64));
-        setPhase('listening');
       }
     } catch (e) {
       setError(String(e.message || e)); setPhase('error');
@@ -332,9 +335,24 @@ function App() {
     if (audioRef.current) { audioRef.current.currentTime = 0; audioRef.current.play().catch(()=>{}); }
   };
 
+  // 看完反馈点「下一题 →」/「看总评 →」
+  const proceedNext = () => {
+    if (pendingNext) {
+      setQuestion(pendingNext.question);
+      setQuestionZh(pendingNext.question_zh);
+      if (pendingNext.audio_b64) setAudioUrl(audioFromB64(pendingNext.audio_b64));
+      setPendingNext(null);
+      setLiveText(''); setInterimText('');
+      setPhase('listening');
+    } else {
+      setPhase('finished');
+    }
+  };
+
   const reset = () => {
     setPhase('idle'); setIdx(0); setQuestion(null); setQuestionZh(null);
     setTranscript(''); setHistory([]); setSummary(null); setAudioUrl(null); setError(null);
+    setPendingNext(null); setLiveText(''); setInterimText('');
   };
 
   // ── UI ──────────────────────────────────────────────────────────
@@ -460,12 +478,29 @@ function App() {
               )}
             </div>
 
-            {history.length > 0 && (
-              <section className="px-5 pb-6 border-t border-[var(--line)] max-h-[40vh] overflow-y-auto">
-                <div className="text-[10px] mono tracking-widest text-[var(--muted)] py-3">PREVIOUS · 上一题反馈</div>
-                {history.slice(-1).map(h => <FeedbackCard key={h.idx} item={h} />)}
-              </section>
-            )}
+          </div>
+        )}
+
+        {phase === 'reviewing' && history.length > 0 && (
+          <div className="flex-1 flex flex-col">
+            <div className="px-5 py-4 overflow-y-auto flex-1 pb-safe">
+              <div className="flex items-baseline justify-between mb-4">
+                <div>
+                  <div className="text-[10px] mono tracking-widest text-[var(--gold)]">REVIEW · 复盘</div>
+                  <h2 className="serif text-2xl mt-1">Q{history.slice(-1)[0].idx} feedback</h2>
+                </div>
+                <span className="text-[10px] mono text-[var(--muted)]">
+                  {pendingNext ? `${idx} / ${nQuestions}` : `final`}
+                </span>
+              </div>
+              {history.slice(-1).map(h => <FeedbackCard key={h.idx} item={h} expanded />)}
+            </div>
+            <div className="px-5 pb-safe pt-3 border-t border-[var(--line)] bg-[var(--ink)]">
+              <button onClick={proceedNext}
+                className="w-full py-3 rounded-full bg-[var(--hsbc)] hover:opacity-90 text-white serif text-lg tracking-wide">
+                {pendingNext ? `Next question  Q${idx + 1} →` : 'See debrief →'}
+              </button>
+            </div>
           </div>
         )}
 
