@@ -142,7 +142,7 @@ projects:
   cue:
     department: software
     worker_type: code
-    path: ~/claw/cue
+    path: ~/claw/apps/cue
     repo: pyf-labrary/cue          # push 即 GH Actions 部署
     test: "npm run test"
     worktree_base: ~/army/worktrees/cue
