@@ -8,6 +8,14 @@ wide: true
 
 带版式的多页作品集。每一份都是独立的 HTML deck，不走博客模板。
 
+## 智能体分层治理模型 · ARM
+
+20 页演讲 deck：从 OpenClaw「小龙虾」一夜爆火讲起——拆开它，你已经看见天然的分层；各家 agent 框架百花齐放，却没有一张共同的分层图。于是抛砖引玉，给出一套「分层治理模型」，把眼前乱象逐个**归位**，再用九条原理把它从分类法升级成能解释、能预测的理论；最后回到实践，展示照着这张图搭出的自治 AI 军团（army）。面向大众，术语可悬停看注解，侧边目录 + 键盘翻页。
+
+→ [打开 Showcase](/marginalia/showcases/arm/)
+
+*整理时间：2026-06-01。*
+
 ## AI 军团 · 作战日志看板（LIVE）
 
 一个自治多 agent 软件组织的对外作战日志：人只在飞书点「批准」，其余全自动——PM 分诊 GitHub Issue 并派工、Worker 建独立 worktree 改码开 PR、Auditor 只读审查、Redline 红线守卫在工具调用前确定性拦截。底座 Claude Code 骑 Claude Max，跑在自有 WSL + systemd 真 7×24。页面由执行账本 `runs.jsonl` 自动渲染、脱敏后内联——war-room 终端美学，含端到端闭环 pipeline 图与按角色染色的作战时间线。
