@@ -10,16 +10,16 @@ wide: true
 
 ## English Interview · Drill
 
-> 全英面试模拟 + 实时纠错——按住麦克风说英文，AI 面试官（英国 / 印度口音）现场给评分、地道改写、错误点评和中文教练点评。
+> 全英面试训练器：按住麦克风说英文，AI 面试官现场给评分、标准范答、地道改写、错误点评和中文教练点评。不会答？一键「看范答」。还能切「AI 对练」模式，让面试官 AI 与考生 AI 现场双语对答，你纯听 + 看中英字幕学。
 
-5 种面试风格（HSBC strengths-based / HireVue 单向自录 / 纯 STAR 行为面 / Tech 深挖 / Mixed）× 5 种口音（UK ♂♀ / IN ♂♀ / Panel 混音）。每场结束给 CEFR 估计 + 优势/待补 + 该背的地道表达。**为投递汇丰 / Standard Chartered / DBS / Citi 这类外资银行 + 同档外企远程 AI 岗的全英面试做的口语训练器。**
+全方位 7 大范围（综合·从零 / AI·LLM / 后端 / 系统设计 / CS 基础 / 行为面 / 个人项目）× 5 种面试风格 × 5 种口音（UK ♂♀ / IN ♂♀ / Panel 混音），题数 4–20。每题都给标准范答 + 答题要点，每场结束给 CEFR 估计 + 优势/待补 + 该背的地道表达。**为投递汇丰 / Standard Chartered / DBS / Citi 这类外资银行 + 同档外企远程 AI 岗的全英面试做的口语训练器。**
 
-→ [打开 Interview Drill](https://pyf-labrary.github.io/english-interview/)（私人 demo，需带访问 token）
+→ [打开 Interview Drill](https://eng.panyifeng.xyz/)（私人 demo，需带访问 token）
 → [源代码](https://github.com/pyf-labrary/english-interview)
 
-技术栈：FastAPI 后端 + 单文件 React/Tailwind 前端（无构建）。LLM 走 DeepSeek V4 Flash，STT 走 faster-whisper tiny.en（本地 CPU），TTS 走 Microsoft Edge Neural（en-GB-Ryan / en-IN-Prabhat 等），实时字幕走 Web Speech API。鉴权 + nginx 限流防白嫖。
+技术栈：FastAPI 后端 + React/Tailwind 前端（预编译、全资源同域自托管）。LLM 走 DeepSeek V4，STT 以浏览器 Web Speech 实时转写为主、faster-whisper base.en 服务器兜底，TTS 走 Microsoft Edge Neural（英 / 印口音，对练模式双声线）。鉴权 + nginx 限流防白嫖。
 
-*上线时间：2026-05-28。*
+*上线时间：2026-05-28；2026-06 加全方位主题 + 一键范答 + AI 对练观摩，前端改同域自托管。*
 
 ## Cue · 影视配乐入门
 
