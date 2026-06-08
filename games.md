@@ -112,10 +112,14 @@ permalink: /games/
   .game-card.is-hero .game-name { font-size: clamp(2rem, 3.4vw, 2.8rem); }
   .game-card.is-hero .game-meta { left: 2rem; right: 2rem; bottom: 1.8rem; }
   .game-card.is-hero .game-desc {   /* hero shows its blurb without needing hover */
-    max-height: 5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;          /* bound the height — ellipsis, never a hard mid-line cut */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: none;
     opacity: 1;
     margin-top: 0.5rem;
-    max-width: 46ch;
+    max-width: 54ch;
   }
   .game-card.is-hero .game-frame::after { opacity: 0.82; }
 
@@ -225,6 +229,9 @@ permalink: /games/
     .games-inner { padding: 0 1.2rem; }
     .games-grid { gap: 1.5rem; }
     .game-card { grid-column: span 12; }
+    /* short 16:9 frames have no room for a hero blurb on phones — title only */
+    .game-card.is-hero .game-desc { display: none; }
+    .game-card.is-hero .game-name { font-size: 1.6rem; }
   }
 </style>
 
