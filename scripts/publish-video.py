@@ -124,7 +124,7 @@ def render_desc(script_json: dict, fm_lede: str | None, post_body: str, transcri
                 continue
             lines.append(f"· {re.split(r'[。！？]', sc['text'], maxsplit=1)[0]}。")
     lines.append("")
-    lines.append("制作：Remotion + MiniMax + ffmpeg，全自动流水线。")
+    lines.append("制作：全自动 AI 视频流水线（Remotion + ffmpeg）。")
     lines.append(f"完整文字稿与来源：{transcript_url or 'https://pyf-labrary.github.io/marginalia/videos/'}")
     return "\n".join(lines).strip()
 
