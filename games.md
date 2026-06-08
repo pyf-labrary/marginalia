@@ -107,6 +107,17 @@ permalink: /games/
     flex-direction: column;
     isolation: isolate;
   }
+  /* —— featured hero: the newest game runs full width —— */
+  .game-card.is-hero { grid-column: span 12; }
+  .game-card.is-hero .game-name { font-size: clamp(2rem, 3.4vw, 2.8rem); }
+  .game-card.is-hero .game-meta { left: 2rem; right: 2rem; bottom: 1.8rem; }
+  .game-card.is-hero .game-desc {   /* hero shows its blurb without needing hover */
+    max-height: 5em;
+    opacity: 1;
+    margin-top: 0.5rem;
+    max-width: 46ch;
+  }
+  .game-card.is-hero .game-frame::after { opacity: 0.82; }
 
   .game-frame {
     position: relative;
@@ -233,7 +244,7 @@ permalink: /games/
     <div class="games-grid">
       {% for g in games %}
         {% assign is_external = g.play_url contains '://' %}
-        <a class="game-card" href="{% if is_external %}{{ g.play_url }}{% else %}{{ g.play_url | relative_url }}{% endif %}"{% if is_external %} target="_blank" rel="noopener"{% endif %}>
+        <a class="game-card{% if forloop.first %} is-hero{% endif %}" href="{% if is_external %}{{ g.play_url }}{% else %}{{ g.play_url | relative_url }}{% endif %}"{% if is_external %} target="_blank" rel="noopener"{% endif %}>
           <div class="game-frame">
             {% if g.cover contains '.svg' %}
               <img class="svg-cover" src="{{ g.cover | relative_url }}" alt="{{ g.title | escape }}" loading="lazy">
