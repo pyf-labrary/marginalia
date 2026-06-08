@@ -250,7 +250,8 @@ permalink: /games/
     {% else %}
     <div class="games-grid">
       {% for g in games %}
-        {% assign is_external = g.play_url contains '://' %}
+        {% assign is_external = false %}
+        {% if g.play_url contains '://' %}{% assign is_external = true %}{% endif %}
         <a class="game-card{% if forloop.first %} is-hero{% endif %}" href="{% if is_external %}{{ g.play_url }}{% else %}{{ g.play_url | relative_url }}{% endif %}"{% if is_external %} target="_blank" rel="noopener"{% endif %}>
           <div class="game-frame">
             {% if g.cover contains '.svg' %}
