@@ -91,37 +91,27 @@ permalink: /games/
     border: 0;
   }
 
-  /* —— masonry-ish grid —— */
+  /* —— gallery grid —— */
   .games-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    align-items: start;        /* honor each frame's aspect ratio, don't stretch */
     gap: 2.2rem 2rem;
   }
   .game-card {
     position: relative;
-    grid-column: span 6;
+    grid-column: span 6;       /* uniform 2-up → every cover keeps its native 16:9 */
     text-decoration: none;
     color: inherit;
     display: flex;
     flex-direction: column;
-    height: 100%;          /* stretch to row height so the frame can fill it */
     isolation: isolate;
   }
-  /* break-the-grid sizing — every Nth card spans differently */
-  .game-card:nth-child(7n+1) { grid-column: span 7; }
-  .game-card:nth-child(7n+2) { grid-column: span 5; }
-  .game-card:nth-child(7n+3) { grid-column: span 5; }
-  .game-card:nth-child(7n+4) { grid-column: span 7; }
-  .game-card:nth-child(7n+5) { grid-column: span 4; }
-  .game-card:nth-child(7n+6) { grid-column: span 8; }
-  .game-card:nth-child(7n+7) { grid-column: span 6; }
 
   .game-frame {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 10;     /* baseline ratio when the card stands alone */
-    flex: 1 1 auto;            /* stretch to fill the card's grid-row height */
-    min-height: 0;
+    aspect-ratio: 16 / 9;      /* matches the source covers → object-fit:cover never crops */
     overflow: hidden;
     border-radius: 2px;
     background: #1a1410;
@@ -131,9 +121,6 @@ permalink: /games/
       0 8px 24px -8px rgba(0,0,0,0.5);
     transition: transform 0.5s cubic-bezier(.2,.8,.2,1), box-shadow 0.5s;
   }
-  .game-card:nth-child(7n+2) .game-frame,
-  .game-card:nth-child(7n+5) .game-frame { aspect-ratio: 4 / 5; }
-  .game-card:nth-child(7n+6) .game-frame { aspect-ratio: 21 / 9; }
 
   .game-frame img,
   .game-frame .svg-cover {
@@ -226,19 +213,7 @@ permalink: /games/
     .games-shell { padding: 3rem 0 4rem; }
     .games-inner { padding: 0 1.2rem; }
     .games-grid { gap: 1.5rem; }
-    .game-card,
-    .game-card:nth-child(7n+1),
-    .game-card:nth-child(7n+2),
-    .game-card:nth-child(7n+3),
-    .game-card:nth-child(7n+4),
-    .game-card:nth-child(7n+5),
-    .game-card:nth-child(7n+6),
-    .game-card:nth-child(7n+7) {
-      grid-column: span 12;
-    }
-    .game-card:nth-child(7n+2) .game-frame,
-    .game-card:nth-child(7n+5) .game-frame,
-    .game-card:nth-child(7n+6) .game-frame { aspect-ratio: 16 / 10; }
+    .game-card { grid-column: span 12; }
   }
 </style>
 
