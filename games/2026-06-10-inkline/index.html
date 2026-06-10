@@ -186,7 +186,7 @@
     letter-spacing: .12em;
   }
   /* chapter select: seal-like stamps */
-  .chapsel { display: flex; align-items: center; gap: 14px; margin-bottom: 30px; }
+  .chapsel { display: flex; align-items: center; gap: 14px; margin-bottom: 30px; flex-wrap: wrap; justify-content: center; max-width: 86vw; }
   .chapsel-label { font-size: 12px; letter-spacing: .5em; color: var(--ink-soft); }
   .chap {
     font-family: inherit; font-size: 17px; font-weight: 700;
@@ -299,6 +299,9 @@
       <button class="chap" data-ch="0">一</button>
       <button class="chap" data-ch="1">二</button>
       <button class="chap" data-ch="2">三</button>
+      <button class="chap" data-ch="3">四</button>
+      <button class="chap" data-ch="4">五</button>
+      <button class="chap" data-ch="5">六</button>
     </div>
     <button class="btn" id="start">起 笔</button>
     <div class="footnote">素描 → 晕染 → 剪纸 · 三境轮转</div>
