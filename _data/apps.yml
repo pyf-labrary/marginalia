@@ -1,0 +1,22 @@
+# Apps 索引数据 —— 供首页卡片 / 搜索 / 归档页使用。
+- slug: claude-web-terminal
+  title: Claude Web Terminal
+  url: https://tty.panyifeng.xyz/
+  external: true
+  date: 2026-05-24
+  tags: [终端, Claude Code, tmux, 自托管]
+  description: 在浏览器里跑 Claude Code（或任意 shell）：PTY 经 WebSocket 桥到 xterm.js，tmux 持久会话，手机平板可远程接管。MIT 开源。
+- slug: english-interview
+  title: English Interview · Drill
+  url: https://eng.panyifeng.xyz/
+  external: true
+  date: 2026-05-31
+  tags: [英语, 口语, PWA, DeepSeek]
+  description: 英语口语训练 PWA：浏览器流式语音识别 + DeepSeek 评分范答对话 + Edge TTS，为外企英面练习而生。
+- slug: cue
+  title: Cue · 影视配乐入门
+  url: https://pyf-labrary.github.io/cue/
+  external: true
+  date: 2026-06-02
+  tags: [影视配乐, 教学, Tone.js, 互动]
+  description: 影视配乐入门互动教学站：M1–M6 六个模块，浏览器内合成器实时演示配乐如何塑造场景情绪。

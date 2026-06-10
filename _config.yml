@@ -63,6 +63,7 @@ defaults:
     values:
       layout: post
       author: Marginalia
+      image: /assets/img/site/hero.jpg
   - scope:
       path: ""
       type: pages

@@ -1,0 +1,65 @@
+# Showcase 索引数据 —— 供首页卡片 / 搜索 / 归档页使用。
+# showcases.md 仍是人读的详细介绍页；这里是机器可读的目录。
+- slug: arm
+  title: 智能体分层治理模型 · ARM
+  url: /showcases/arm/
+  date: 2026-06-01
+  tags: [agent, 治理, 演讲, deck]
+  description: 20 页演讲 deck：从 OpenClaw 爆火讲起，给出一套智能体分层治理模型，把 agent 乱象逐个归位，再用九条原理升级成能解释能预测的理论。
+- slug: army-ops
+  title: AI 军团 · 作战日志看板（LIVE）
+  url: /showcases/army-ops/
+  date: 2026-05-26
+  tags: [agent, 自动化, Claude Code, LIVE]
+  description: 自治多 agent 软件组织的对外作战日志：PM 分诊派工、Worker 改码开 PR、Auditor 审查、红线守卫拦截，人只点批准。war-room 终端美学。
+- slug: ai-director
+  title: AI 时代如何成为导演
+  url: https://ftp.ssbx.site/showcases/ai-director/
+  external: true
+  date: 2026-06-07
+  tags: [影视, AIGC, deck, 教学]
+  description: 面向学生的电影感七页 deck：传统影视工种分工 → 纯 AI 工具做电影的新范式；技能三象限、30 天上手路线图、短片九步拆解。
+- slug: director-masterclass
+  title: 导演艺术大师课 · The Director's Craft
+  url: https://ftp.ssbx.site/showcases/director-masterclass/
+  external: true
+  date: 2026-05-18
+  tags: [影视, 教学, deck, 镜头语言]
+  description: 六章 29 个主题的导演大师课：景别 / 运镜 / 蒙太奇 / 构图 / 光影 / 色彩 / 调度 / 风格作者，AI 生成剧照背景 + 循环运镜视频 + 影厅级 BGM。
+- slug: bodhi-pitch
+  title: 恒伽达 · BODHI 项目 Pitch Deck
+  url: https://ftp.ssbx.site/bodhi/docs/pitch-v2/
+  external: true
+  date: 2026-05-14
+  tags: [佛经, 短剧, AIGC, deck]
+  description: S01·E01《恒伽达》立项手册：从《贤愚经》原典出发，七页覆盖原典 / 剧情 / 佛理 / 人物 / 场景 / 样片。
+- slug: claude-april-2026
+  title: Claude · April 2026
+  url: /showcases/claude-april-2026/
+  date: 2026-04-29
+  tags: [Claude, LLM, deck]
+  description: 2026 年 4 月 Claude 生态全景速览。
+- slug: claude-vs-codex-2026
+  title: Claude vs Codex · 2026 订阅计划深度对比
+  url: /showcases/claude-vs-codex-2026/
+  date: 2026-04-30
+  tags: [Claude, Codex, 订阅, 对比]
+  description: 两大编码 agent 订阅计划的深度对比 deck。
+- slug: agent-landscape-2026
+  title: AI Agent 产品全景 · 2026 春
+  url: /showcases/agent-landscape-2026/
+  date: 2026-05-04
+  tags: [agent, 全景, deck]
+  description: 2026 春季 AI Agent 产品全景图。
+- slug: kiro-2026
+  title: Kiro · AWS Agentic IDE 全景
+  url: /showcases/kiro-2026/
+  date: 2026-05-06
+  tags: [Kiro, AWS, IDE, agent]
+  description: AWS Agentic IDE「Kiro」全面能力介绍 + SE 深度解析两份 deck。
+- slug: game-ideas-2026
+  title: 20 个单机游戏设计灵感
+  url: /showcases/game-ideas-2026/
+  date: 2026-05-08
+  tags: [游戏设计, 灵感, deck]
+  description: 20 个单机游戏设计灵感清单 deck。
