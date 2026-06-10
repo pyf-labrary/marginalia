@@ -30,6 +30,36 @@ layout: default
       {{ content }}
     </div>
     <footer class="post-footer">
+      {%- assign rel = "" | split: "" -%}
+      {%- if page.tags and page.tags.size > 0 -%}
+        {%- for p in site.posts -%}
+          {%- if p.url == page.url %}{% continue %}{% endif -%}
+          {%- if p.tags contains 'ai-hot' %}{% continue %}{% endif -%}
+          {%- assign score = 0 -%}
+          {%- for t in page.tags -%}
+            {%- if p.tags contains t %}{% assign score = score | plus: 1 %}{% endif -%}
+          {%- endfor -%}
+          {%- if score > 0 -%}
+            {%- capture key %}{{ score }}::{{ p.url }}::{{ p.title }}::{{ p.date | date: '%Y-%m-%d' }}{% endcapture -%}
+            {%- assign rel = rel | push: key -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- assign rel = rel | sort | reverse -%}
+      {%- endif -%}
+      {%- if rel.size > 0 -%}
+      <nav class="related" aria-label="相关批注">
+        <p class="related-title">相关批注 · Related</p>
+        <ul class="related-grid" role="list">
+          {%- for key in rel limit: 3 -%}
+            {%- assign parts = key | split: '::' -%}
+            <li><a href="{{ parts[1] | relative_url }}">
+              <span class="r-title">{{ parts[2] }}</span>
+              <span class="r-date">{{ parts[3] }}</span>
+            </a></li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+      {%- endif -%}
       <p>
         <a class="back" href="{{ '/' | relative_url }}">← 回到所有批注</a>
       </p>

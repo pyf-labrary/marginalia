@@ -1501,3 +1501,201 @@ body.ms-lock { overflow: hidden; }
   .archive-main { grid-column: 2; }
   .ms-overlay { padding-top: 4vh; }
 }
+
+/* ---- 首页：header 悬浮在 hero 上，滚动后才落回纸面底 ---- */
+body.has-hero .site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: transparent;
+  border-bottom-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  transition: background-color .35s ease, border-color .35s ease;
+}
+body.has-hero .site-header.scrolled {
+  background: var(--header-bg);
+  border-bottom-color: var(--rule);
+  backdrop-filter: saturate(140%) blur(8px);
+  -webkit-backdrop-filter: saturate(140%) blur(8px);
+}
+/* 未滚动时 header 字色固定为墨色（落在 hero 米纸画面上，不随主题翻转） */
+body.has-hero .site-header:not(.scrolled) .brand-text { color: #2a241d; }
+body.has-hero .site-header:not(.scrolled) .brand-tag { color: #6d6452; }
+body.has-hero .site-header:not(.scrolled) .site-nav a { color: #4a4234; }
+body.has-hero .site-header:not(.scrolled) .site-nav a:hover { color: #8b2e2a; }
+body.has-hero .site-header:not(.scrolled) .nav-btn {
+  color: #4a4234;
+  border-color: rgba(42, 36, 29, 0.28);
+}
+body.has-hero .site-header:not(.scrolled) .nav-btn:hover { color: #8b2e2a; border-color: #8b2e2a; background: rgba(251,248,241,.5); }
+body.has-hero .site-header:not(.scrolled) .nav-search kbd {
+  background: transparent;
+  border-color: rgba(42, 36, 29, 0.28);
+  color: #6d6452;
+}
+
+/* ---- AI Hot 日历 + 板块 pills ---- */
+.hot-calendar { margin: 2rem 0 2.6rem; }
+.hot-cal-scroll {
+  display: flex;
+  gap: 1.1rem;
+  overflow-x: auto;
+  padding: .9rem .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--bg-tint);
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule) transparent;
+}
+.hot-month { flex: 0 0 auto; }
+.hot-month-name {
+  font-family: var(--sans);
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  margin-bottom: .45rem;
+  letter-spacing: .04em;
+}
+.hot-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1.75em);
+  gap: 3px;
+  font-family: var(--mono);
+  font-size: .72rem;
+}
+.hot-wd {
+  font-family: var(--sans);
+  color: var(--muted);
+  text-align: center;
+  font-size: .68rem;
+  padding-bottom: .15em;
+}
+.hot-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.75em;
+  border-radius: 3px;
+  color: var(--muted);
+  background: var(--rule-soft);
+  font-variant-numeric: tabular-nums;
+}
+.hot-cell--pad { background: transparent; }
+.hot-cell--on {
+  color: #fbf8f1;
+  border-bottom: none;
+  font-weight: 700;
+  transition: transform .12s, box-shadow .12s;
+}
+.hot-cell--on.heat-1 { background: color-mix(in srgb, var(--accent) 55%, var(--bg-tint)); }
+.hot-cell--on.heat-2 { background: color-mix(in srgb, var(--accent) 78%, var(--bg-tint)); }
+.hot-cell--on.heat-3 { background: var(--accent); }
+.hot-cell--on:hover { transform: scale(1.12); box-shadow: 0 2px 8px rgba(31,29,27,.25); background: var(--accent); }
+.hot-cal-legend {
+  font-family: var(--sans);
+  font-size: .78rem;
+  color: var(--muted);
+  margin: .6rem 0 0;
+}
+.hot-cal-legend b { color: var(--accent); }
+.hot-sections { margin: .6em 0 0; display: flex; flex-wrap: wrap; gap: .4em; }
+.hot-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .3em;
+  font-family: var(--sans);
+  font-size: .76rem;
+  color: var(--ink-soft);
+  background: var(--rule-soft);
+  border: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: .14em .7em;
+  transition: all .14s;
+}
+.hot-pill b {
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: .92em;
+  color: var(--muted);
+}
+.hot-pill:hover {
+  color: var(--accent);
+  border-color: var(--accent-soft);
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
+}
+.hot-pill:hover b { color: var(--accent); }
+
+/* ---- 相关批注（post 页脚）---- */
+.related {
+  margin-top: 2.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--rule);
+}
+.related-title {
+  font-family: var(--sans);
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: .8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.related-grid a {
+  display: block;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--bg-tint);
+  padding: .8rem .95rem;
+  color: var(--ink);
+  transition: transform .15s, border-color .15s, box-shadow .15s;
+}
+.related-grid a:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-soft);
+  box-shadow: 0 8px 22px rgba(31, 29, 27, 0.12);
+  background: var(--bg-tint);
+}
+.related-grid .r-title {
+  display: block;
+  font-family: var(--serif);
+  font-size: .95rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: .3em;
+}
+.related-grid .r-date {
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--muted);
+}
+
+/* ---- 自托管标题字：思源宋体 Bold 子集（GB2312 一级 + 站内字符，~770KB）---- */
+@font-face {
+  font-family: 'Marginalia Serif';
+  src: url('../fonts/MarginaliaSerif-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --serif-display: 'Marginalia Serif', 'Iowan Old Style', 'Apple Garamond', ui-serif,
+                   Georgia, 'Songti SC', 'Source Han Serif SC', 'Noto Serif CJK SC', serif;
+}
+h1, h2, h3, h4, h5,
+.brand-text,
+.hero-title,
+.ai-hot-title,
+.archive-title,
+.ms-item-title,
+.related-grid .r-title {
+  font-family: var(--serif-display);
+}

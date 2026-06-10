@@ -13,6 +13,20 @@
     });
   });
 
+  /* ---- 首页：header 滚动后落回纸面底 ---- */
+  var header = document.querySelector('.site-header');
+  if (header && document.body.classList.contains('has-hero')) {
+    var hTick = false;
+    function paintHeader() {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+      hTick = false;
+    }
+    window.addEventListener('scroll', function () {
+      if (!hTick) { hTick = true; requestAnimationFrame(paintHeader); }
+    }, { passive: true });
+    paintHeader();
+  }
+
   /* ---- 滚动入场（reveal）---- */
   var reduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   var reveals = document.querySelectorAll('.reveal');
