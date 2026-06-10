@@ -19,7 +19,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -52,9 +52,23 @@ ALIAS = {
     "智能体": "Agent", "AGENTS": "Agent", "AI Agent": "Agent",
 }
 
-FM_DATE = re.compile(r'^date:\s*"?(\d{4}-\d{2}-\d{2})')
+FM_DATE = re.compile(
+    r'^date:\s*"?(\d{4}-\d{2}-\d{2})[ T](\d{2}:\d{2}:\d{2})\s*([+-]\d{2}):?(\d{2})"?'
+)
 H2_ID = re.compile(r'<h2\s+id="([^"]+)"')
 H3 = re.compile(r"^###\s+(.+)$")
+
+
+def utc_url_date(f: Path, text: str) -> str:
+    """Jekyll（site timezone=UTC，与 GH Pages 一致）的 date-based permalink
+    用 front matter date 折算到 UTC 的日期——晨报 06:00+0800 → 前一天。
+    解析失败就退回文件名日期。"""
+    for line in text.splitlines()[:15]:
+        m = FM_DATE.match(line.strip())
+        if m:
+            dt = datetime.fromisoformat(f"{m.group(1)}T{m.group(2)}{m.group(3)}:{m.group(4)}")
+            return dt.astimezone(timezone.utc).date().isoformat()
+    return f.name[:10]
 
 
 def canon(name: str) -> str:
@@ -106,9 +120,10 @@ def main() -> None:
             continue
         days_ago = (today - d).days
         weight = (args.days + 1 - days_ago) / (args.days + 1)
-        url = f"/posts/{f.name[:10]}-ai-morning-post/"
+        text = f.read_text(encoding="utf-8")
+        url = f"/posts/{utc_url_date(f, text)}-ai-morning-post/"
         section = ""
-        for line in f.read_text(encoding="utf-8").splitlines():
+        for line in text.splitlines():
             m = H2_ID.search(line)
             if m:
                 section = m.group(1)
