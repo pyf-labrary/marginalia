@@ -33,6 +33,12 @@ permalink: /posts/:year-:month-:day-:title/
 # 主页会"看不到刚发的文章"。开 future:true 永久修掉。
 future: true
 
+# 显式锁 UTC，让本地构建和 GH Pages（UTC 服务器）产出完全一致的
+# date-based permalink。注意：ai-hot 晨报 date 是 06:00 +0800，
+# 折成 UTC 是前一天 22:00，所以晨报 URL 的日期 = 文件名日期 - 1，
+# 这是既有线上事实（41 篇已收录），不要再动 timezone 去"修正"它。
+timezone: UTC
+
 # Custom layouts under _layouts/, styles under assets/css/.
 
 plugins:
