@@ -66,8 +66,16 @@ permalink: /games/
     z-index: 0;
     pointer-events: none;
     background:
-      linear-gradient(to bottom, rgba(12,12,16,0.38), rgba(12,12,16,0.12) 38%, rgba(12,12,16,0.62)),
+      linear-gradient(to bottom, rgba(12,12,16,0.22), rgba(12,12,16,0.04) 38%, rgba(12,12,16,0.5)),
       url('{{ "/assets/img/games-bg.jpg" | relative_url }}') center / cover no-repeat;
+  }
+  #games-fx {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
   }
   .games-shell::before {
     content: "";
@@ -86,6 +94,38 @@ permalink: /games/
     margin: 0 auto;
     padding: 0 2rem;
   }
+  /* —— nonlinear entrances —— */
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(26px); }
+    to   { opacity: 1; transform: none; }
+  }
+  @keyframes ruleGrow {
+    from { width: 0; opacity: 0; }
+    60%  { opacity: 1; }
+    to   { width: 60px; }
+  }
+  .games-eyebrow { animation: rise 0.9s cubic-bezier(.16,.84,.3,1) both; }
+  .games-title   { animation: rise 1.0s cubic-bezier(.16,.84,.3,1) 0.08s both; }
+  .games-rule    { animation: ruleGrow 1.1s cubic-bezier(.16,.84,.3,1.06) 0.22s both; }
+  .games-lede    { animation: rise 1.0s cubic-bezier(.16,.84,.3,1) 0.3s both; }
+  .game-card {
+    opacity: 0;
+    transform: translateY(34px) scale(0.975);
+  }
+  .game-card.in {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity 0.9s cubic-bezier(.22,.9,.3,1),
+      transform 0.95s cubic-bezier(.16,.84,.28,1.06);   /* slight overshoot */
+    transition-delay: calc(var(--d, 0) * 95ms);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .games-eyebrow, .games-title, .games-rule, .games-lede { animation: none; }
+    .game-card { opacity: 1; transform: none; transition: none; }
+    #games-fx { display: none; }
+  }
+
   .games-eyebrow {
     font-family: var(--sans);
     font-size: 0.78rem;
@@ -264,6 +304,7 @@ permalink: /games/
 
 <div class="games-shell">
   <div class="games-bgimg" aria-hidden="true"></div>
+  <canvas id="games-fx" aria-hidden="true"></canvas>
   <div class="games-inner">
     <p class="games-eyebrow">¶ The Arcade Wing</p>
     <h1 class="games-title">Games</h1>
@@ -301,3 +342,91 @@ permalink: /games/
     {% endif %}
   </div>
 </div>
+
+<script>
+(() => {
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* —— staggered card entrances (nonlinear, scroll-triggered) —— */
+  const cards = document.querySelectorAll(".game-card");
+  cards.forEach((c, i) => c.style.setProperty("--d", i % 4));
+  if (reduced || !("IntersectionObserver" in window)) {
+    cards.forEach((c) => c.classList.add("in"));
+  } else {
+    const io = new IntersectionObserver((es) => es.forEach((e) => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    }), { threshold: 0.12, rootMargin: "0px 0px -4% 0px" });
+    cards.forEach((c) => io.observe(c));
+  }
+
+  /* —— drifting embers: prerendered sprites + additive compositing —— */
+  if (reduced) return;
+  const cv = document.getElementById("games-fx");
+  const ctx = cv.getContext("2d");
+  const DPR = Math.min(devicePixelRatio || 1, 1.5);
+  let W = 0, H = 0;
+
+  // sprite factory: soft radial glow baked once (no per-frame shadowBlur)
+  function sprite(r, g, b) {
+    const s = document.createElement("canvas");
+    s.width = s.height = 64;
+    const c = s.getContext("2d");
+    const grad = c.createRadialGradient(32, 32, 0, 32, 32, 32);
+    grad.addColorStop(0, `rgba(${r},${g},${b},1)`);
+    grad.addColorStop(0.25, `rgba(${r},${g},${b},0.55)`);
+    grad.addColorStop(1, `rgba(${r},${g},${b},0)`);
+    c.fillStyle = grad;
+    c.fillRect(0, 0, 64, 64);
+    return s;
+  }
+  const GOLD = sprite(232, 199, 137);
+  const EMBER = sprite(217, 117, 112);
+
+  const ps = [];
+  function spawn(p, fresh) {
+    p.x = Math.random() * W;
+    p.y = fresh ? Math.random() * H : H + 20;
+    p.size = 1.6 + Math.random() * 3.4;            // px radius at DPR 1
+    p.vy = 9 + Math.random() * 22;                 // px/s upward
+    p.swayAmp = 14 + Math.random() * 30;
+    p.swayFreq = 0.25 + Math.random() * 0.5;
+    p.phase = Math.random() * Math.PI * 2;
+    p.alpha = 0.25 + Math.random() * 0.5;
+    p.twFreq = 0.6 + Math.random() * 1.8;          // twinkle
+    p.img = Math.random() < 0.22 ? EMBER : GOLD;
+    return p;
+  }
+  function resize() {
+    W = innerWidth; H = innerHeight;
+    cv.width = W * DPR; cv.height = H * DPR;
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    const want = Math.round(Math.min(90, (W * H) / 26000)); // density-scaled, capped
+    while (ps.length < want) ps.push(spawn({}, true));
+    ps.length = want;
+  }
+  resize();
+  addEventListener("resize", resize);
+
+  let last = performance.now();
+  function frame(t) {
+    requestAnimationFrame(frame);
+    const dt = Math.min((t - last) / 1000, 0.05);
+    last = t;
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = "lighter";
+    const tt = t / 1000;
+    for (const p of ps) {
+      p.y -= p.vy * dt;
+      if (p.y < -20) spawn(p, false);
+      const x = p.x + Math.sin(tt * p.swayFreq * Math.PI * 2 + p.phase) * p.swayAmp;
+      const tw = 0.65 + 0.35 * Math.sin(tt * p.twFreq * Math.PI * 2 + p.phase * 1.7);
+      ctx.globalAlpha = p.alpha * tw;
+      const d = p.size * 8;                        // sprite is mostly halo — draw big
+      ctx.drawImage(p.img, x - d / 2, p.y - d / 2, d, d);
+    }
+    ctx.globalAlpha = 1;
+    ctx.globalCompositeOperation = "source-over";
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
