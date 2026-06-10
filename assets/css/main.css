@@ -1485,7 +1485,19 @@ body.ms-lock { overflow: hidden; }
 @media (max-width: 720px) {
   .hero { height: auto; min-height: 78vh; }
   .hero-media { object-position: 74% center; }
-  .hero-inner { padding-top: 3rem; padding-bottom: 4rem; }
+  /* 移动端 header 叠为多行且 fixed 悬浮在 hero 上，留足顶部空间避免压住眉头/标题 */
+  .hero-inner { padding-top: 11rem; padding-bottom: 4rem; }
+  .hero-vignette {
+    background:
+      linear-gradient(180deg, rgba(249, 244, 232, 0.92) 0%, rgba(249, 244, 232, 0.55) 150px, transparent 250px),
+      linear-gradient(180deg, transparent 72%, var(--bg) 100%);
+  }
+  [data-theme="dark"] .hero-vignette {
+    background:
+      linear-gradient(180deg, rgba(242, 235, 219, 0.85) 0%, rgba(242, 235, 219, 0.45) 150px, transparent 250px),
+      radial-gradient(120% 90% at 50% 30%, transparent 55%, rgba(0,0,0,.38) 100%),
+      linear-gradient(180deg, transparent 68%, var(--bg) 100%);
+  }
   .hero-inner::before {
     content: "";
     position: absolute;
