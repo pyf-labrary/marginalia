@@ -6,8 +6,13 @@ permalink: /apps/
 wide: true
 ---
 
-互动应用集合。和 [Showcases](/marginalia/showcases/) 的"静态 deck"不同，这里的每一个都是带后端逻辑或重交互的 SPA。
+互动应用集合。和 [Showcases](/marginalia/showcases/) 的"静态 deck"不同，这里的每一个都是带后端逻辑或重交互的 SPA。配图均为应用实际界面截图。
 
+<ul class="cover-list" role="list">
+
+<li class="cover-row">
+<a class="cover-media" href="https://tty.panyifeng.xyz/"><img src="/marginalia/assets/img/site/covers/claude-web-terminal.jpg" alt="Claude Web Terminal 实际界面：浏览器里的 Claude Code 多窗口会话" loading="lazy"></a>
+<div class="cover-body" markdown="1">
 ## Claude Web Terminal
 
 > 在浏览器里跑 **Claude Code**（或任意 shell）。服务端把伪终端（PTY）通过 WebSocket 桥到 xterm.js，Claude 的全交互 TUI——菜单、方向键选择、流式输出——和真终端一模一样。手机、平板、任何浏览器都能远程接管同一个会话。
@@ -18,14 +23,15 @@ wide: true
 → [源代码](https://github.com/pyf-labrary/claude-web-terminal)（MIT 开源）
 
 技术栈：Node + node-pty + ws + express 后端，原生 JS + xterm.js 前端，tmux 做会话持久层；nginx 反代 + TLS + systemd 自启。开箱即用的 systemd unit 和 nginx 配置都在仓库 `deploy/`。
+</div>
+</li>
 
-*上线时间：2026-06-06。开源 MIT。*
-
+<li class="cover-row">
+<a class="cover-media" href="https://eng.panyifeng.xyz/"><img src="/marginalia/assets/img/site/covers/english-interview.jpg" alt="English Interview Drill 实际界面" loading="lazy"></a>
+<div class="cover-body" markdown="1">
 ## English Interview · Drill
 
-> 全英面试训练器：按住麦克风说英文，AI 面试官现场给评分、标准范答、地道改写、错误点评和中文教练点评。不会答？一键「看范答」。还能切「AI 对练」模式，让面试官 AI 与考生 AI 现场双语对答，你纯听 + 看中英字幕学。
-
-全方位 7 大范围（综合·从零 / AI·LLM / 后端 / 系统设计 / CS 基础 / 行为面 / 个人项目）× 5 种面试风格 × 5 种口音（UK ♂♀ / IN ♂♀ / Panel 混音），题数 4–20。每题都给标准范答 + 答题要点，每场结束给 CEFR 估计 + 优势/待补 + 该背的地道表达。**为投递汇丰 / Standard Chartered / DBS / Citi 这类外资银行 + 同档外企远程 AI 岗的全英面试做的口语训练器。**
+英语口语面试训练器：抽题 → 对着麦克风说 → 实时转写 → AI 按面试官标准逐维度评分、给出改进版范答，还能和 AI 面试官多轮对练、观摩两个 AI 互相面试。全方位主题（自我介绍 / 行为面 / 系统设计 / 谈薪…），手机即开即用，为外企英面而生。
 
 → [打开 Interview Drill](https://eng.panyifeng.xyz/)（私人 demo，需带访问 token）
 → [源代码](https://github.com/pyf-labrary/english-interview)
@@ -33,7 +39,12 @@ wide: true
 技术栈：FastAPI 后端 + React/Tailwind 前端（预编译、全资源同域自托管）。LLM 走 DeepSeek V4，STT 以浏览器 Web Speech 实时转写为主、faster-whisper base.en 服务器兜底，TTS 走 Microsoft Edge Neural（英 / 印口音，对练模式双声线）。鉴权 + nginx 限流防白嫖。
 
 *上线时间：2026-05-28；2026-06 加全方位主题 + 一键范答 + AI 对练观摩，前端改同域自托管。*
+</div>
+</li>
 
+<li class="cover-row">
+<a class="cover-media" href="https://pyf-labrary.github.io/cue/"><img src="/marginalia/assets/img/site/covers/cue.jpg" alt="Cue 影视配乐入门实际界面：情绪光谱" loading="lazy"></a>
+<div class="cover-body" markdown="1">
 ## Cue · 影视配乐入门
 
 > 给小白做导演的配乐速通课。**可听 > 可读**——每一个名词都能在一秒内播出来。
@@ -45,3 +56,7 @@ wide: true
 技术栈：Vite + React + Tailwind + Tone.js + Howler。乐器采样来自 Philharmonia Orchestra Samples（CC-BY-NC）+ FluidR3_GM；场景 MX 真录音由 MiniMax music-1.5 生成；27 张视觉资产由 Dreamina 5.0 生成。
 
 *上线时间：2026-05-12。*
+</div>
+</li>
+
+</ul>
