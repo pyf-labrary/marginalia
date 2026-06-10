@@ -54,15 +54,26 @@ permalink: /games/
     margin-top: -3.5rem;          /* cancel .site-main top padding */
     margin-bottom: -4rem;          /* cancel .site-main bottom padding */
     padding: 5rem 0 6rem;
-    background: #0c0c10;
+    background: transparent;
     color: #ece6d8;
     font-family: var(--serif);
     overflow: hidden;
+  }
+  /* —— ink-wash backdrop (fixed: no stretch on tall pages, no iOS quirk) —— */
+  .games-bgimg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(to bottom, rgba(12,12,16,0.38), rgba(12,12,16,0.12) 38%, rgba(12,12,16,0.62)),
+      url('{{ "/assets/img/games-bg.jpg" | relative_url }}') center / cover no-repeat;
   }
   .games-shell::before {
     content: "";
     position: absolute;
     inset: 0;
+    z-index: 1;
     background:
       radial-gradient(1200px 600px at 15% -10%, rgba(139, 46, 42, 0.35), transparent 60%),
       radial-gradient(800px 400px at 95% 110%, rgba(232, 199, 137, 0.18), transparent 60%);
@@ -70,6 +81,7 @@ permalink: /games/
   }
   .games-inner {
     position: relative;
+    z-index: 2;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -251,6 +263,7 @@ permalink: /games/
 </style>
 
 <div class="games-shell">
+  <div class="games-bgimg" aria-hidden="true"></div>
   <div class="games-inner">
     <p class="games-eyebrow">¶ The Arcade Wing</p>
     <h1 class="games-title">Games</h1>
