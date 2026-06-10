@@ -15,6 +15,34 @@ wide: true
 
 <div id="hot-calendar" class="hot-calendar" aria-label="晨报日历"></div>
 
+{% if site.data.hot_topics and site.data.hot_topics.topics.size > 0 %}
+{% assign topmax = site.data.hot_topics.topics[0].score %}
+<section class="hot-topics" aria-label="话题热度榜">
+  <header class="hot-topics-head">
+    <h2 class="hot-topics-title">话题热度榜 <span class="ht-sub">近 {{ site.data.hot_topics.window_days }} 天 · 点话题直达最新报道</span></h2>
+    <span class="ht-stamp">更新于 {{ site.data.hot_topics.generated }}</span>
+  </header>
+  <ol class="ht-board" role="list">
+    {% for t in site.data.hot_topics.topics %}
+    {% assign pct = t.score | times: 100.0 | divided_by: topmax | round %}
+    <li class="ht-row">
+      <span class="ht-rank{% if forloop.index <= 3 %} ht-rank--top{% endif %}">{{ forloop.index }}</span>
+      <div class="ht-main">
+        <div class="ht-line">
+          <a class="ht-name" href="{{ t.latest.url | relative_url }}" title="{{ t.latest.title | escape }}">{{ t.name }}</a>
+          <span class="ht-meta">{{ t.days }} 天在榜</span>
+        </div>
+        <div class="ht-bar"><span style="width: {{ pct }}%"></span></div>
+        <div class="ht-dates">
+          {% for l in t.links limit: 5 %}<a href="{{ l.url | relative_url }}" title="{{ l.title | escape }}">{{ l.date | slice: 5, 5 | replace: '-', '·' }}</a>{% endfor %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
 <ol class="posts hot-list" role="list">
   {% for post in ai_hot_posts %}
   <li class="post-item" id="d{{ post.date | date: '%Y-%m-%d' }}">
