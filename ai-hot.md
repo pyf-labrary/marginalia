@@ -6,19 +6,18 @@ permalink: /ai-hot/
 wide: true
 ---
 
-每天清晨 06:00 自动汇集前 24 小时的全网 AI 动态——来自官方博客、arXiv、Reddit、Hacker News、X，由大模型聚类去重、分板块成稿。
-
-涵盖：🚀 模型发布 · 🏢 公司动态 · 🔬 研究论文 · 📱 应用产品 · 💭 行业观点 · ⚙️ 开源工具
-
----
+每天清晨 06:00 自动汇集前 24 小时的全网 AI 动态——来自官方博客、arXiv、Reddit、Hacker News、X，由大模型聚类去重、分板块成稿。点日历跳到某一天，点板块 pill 直达那期的对应板块。
 
 {% assign ai_hot_posts = site.posts | where_exp: "p", "p.tags contains 'ai-hot'" %}
 {% if ai_hot_posts.size == 0 %}
 还没有发布过 AI 晨报。第一篇会在明天清晨自动出现。
 {% else %}
-<ol class="posts" role="list">
+
+<div id="hot-calendar" class="hot-calendar" aria-label="晨报日历"></div>
+
+<ol class="posts hot-list" role="list">
   {% for post in ai_hot_posts %}
-  <li class="post-item">
+  <li class="post-item" id="d{{ post.date | date: '%Y-%m-%d' }}">
     <aside class="margin-note">
       <time datetime="{{ post.date | date_to_xmlschema }}">
         <span class="m-y">{{ post.date | date: '%Y' }}</span>
@@ -28,8 +27,17 @@ wide: true
     <article class="post-summary">
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       {% if post.excerpt %}<p class="excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>{% endif %}
+      {% if post.sections %}
+      <p class="hot-sections">
+        {% for s in post.sections %}<a class="hot-pill" href="{{ post.url | relative_url }}#{{ s.id }}"><span aria-hidden="true">{{ s.emoji }}</span>{{ s.name }}<b>{{ s.count }}</b></a>{% endfor %}
+      </p>
+      {% endif %}
     </article>
   </li>
   {% endfor %}
 </ol>
+
+{% capture hotdays %}{% for post in ai_hot_posts %}{% assign total = 0 %}{% if post.sections %}{% for s in post.sections %}{% assign total = total | plus: s.count %}{% endfor %}{% endif %}{ "date": "{{ post.date | date: '%Y-%m-%d' }}", "url": {{ post.url | relative_url | jsonify }}, "n": {{ total }} },{% endfor %}{% endcapture %}
+<script type="application/json" id="hot-days">[{{ hotdays | strip }} null]</script>
+<script src="{{ '/assets/js/ai-hot-cal.js' | relative_url }}" defer></script>
 {% endif %}
