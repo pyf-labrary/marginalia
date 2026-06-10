@@ -72,7 +72,7 @@ permalink: /games/
   #games-fx {
     position: fixed;
     inset: 0;
-    z-index: 1;
+    z-index: 3;   /* embers drift over the gallery; pointer-events:none keeps it inert */
     width: 100%;
     height: 100%;
     pointer-events: none;
@@ -386,12 +386,12 @@ permalink: /games/
   function spawn(p, fresh) {
     p.x = Math.random() * W;
     p.y = fresh ? Math.random() * H : H + 20;
-    p.size = 1.6 + Math.random() * 3.4;            // px radius at DPR 1
+    p.size = 2.0 + Math.random() * 4.2;            // px radius at DPR 1
     p.vy = 9 + Math.random() * 22;                 // px/s upward
     p.swayAmp = 14 + Math.random() * 30;
     p.swayFreq = 0.25 + Math.random() * 0.5;
     p.phase = Math.random() * Math.PI * 2;
-    p.alpha = 0.25 + Math.random() * 0.5;
+    p.alpha = 0.32 + Math.random() * 0.5;
     p.twFreq = 0.6 + Math.random() * 1.8;          // twinkle
     p.img = Math.random() < 0.22 ? EMBER : GOLD;
     return p;
@@ -400,7 +400,7 @@ permalink: /games/
     W = innerWidth; H = innerHeight;
     cv.width = W * DPR; cv.height = H * DPR;
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
-    const want = Math.round(Math.min(90, (W * H) / 26000)); // density-scaled, capped
+    const want = Math.round(Math.min(120, (W * H) / 21000)); // density-scaled, capped
     while (ps.length < want) ps.push(spawn({}, true));
     ps.length = want;
   }
