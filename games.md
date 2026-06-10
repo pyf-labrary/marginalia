@@ -20,6 +20,21 @@ permalink: /games/
   .site-header .brand-tag { color: rgba(245, 239, 225, 0.55) !important; }
   .site-header .site-nav a { color: rgba(245, 239, 225, 0.78) !important; }
   .site-header .site-nav a:hover { color: #d97570 !important; }
+  .site-header .nav-btn {
+    color: rgba(245, 239, 225, 0.78) !important;
+    border-color: rgba(245, 239, 225, 0.25) !important;
+    background: transparent !important;
+  }
+  .site-header .nav-btn:hover {
+    color: #d97570 !important;
+    border-color: #d97570 !important;
+    background: rgba(245, 239, 225, 0.06) !important;
+  }
+  .site-header .nav-search kbd {
+    background: transparent !important;
+    border-color: rgba(245, 239, 225, 0.25) !important;
+    color: rgba(245, 239, 225, 0.55) !important;
+  }
   .site-footer {
     background: #0c0c10;
     color: rgba(245, 239, 225, 0.55);
