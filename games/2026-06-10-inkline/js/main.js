@@ -28,6 +28,24 @@ const PALETTES = [
     tree: 0x3d5a78, tree2: 0x52739c, mountain: 0x70839c, cloud: 0xeef2f5,
     drop: 0x3d5a78, car: 0xd9a441, sun: 0xe8c87a,
   },
+  { // 第四章 · 雪青寒林
+    name: '雪青寒林', sky: 0xdfe3ee, inkTint: 0x44506e,
+    road: 0xb8c0d4, dash: 0xf6f7f2, gate: 0x8a79c9,
+    tree: 0x9aa8c8, tree2: 0xc3cde0, mountain: 0xaab6cf, cloud: 0xffffff,
+    drop: 0x6d7fb5, car: 0x8a79c9, sun: 0xd8e0f5,   // 冷月
+  },
+  { // 第五章 · 赤霞流金
+    name: '赤霞流金', sky: 0xefb27a, inkTint: 0x6e3226,
+    road: 0xd9a06b, dash: 0xfbeed2, gate: 0xd9a441,
+    tree: 0xb4452f, tree2: 0xd97f4e, mountain: 0xc77b54, cloud: 0xfbe3c0,
+    drop: 0xc84b31, car: 0xd9a441, sun: 0xe04e2f,   // 烈日
+  },
+  { // 第六章 · 墨荷新雨
+    name: '墨荷新雨', sky: 0xcfe6e4, inkTint: 0x2e4a3c,
+    road: 0xa8c0b4, dash: 0xf4f7ee, gate: 0xd58a9f,
+    tree: 0x4a8a6a, tree2: 0x7ab08a, mountain: 0x7fa8a0, cloud: 0xf6fbf4,
+    drop: 0x4a8a78, car: 0xd58a9f, sun: 0xf0d8a8,
+  },
 ];
 const CHAPTER_NUM = ['一','二','三','四','五','六','七','八','九'];
 
@@ -733,9 +751,9 @@ function triggerFlat() {
 function triggerChapter() {
   G.pending = null; G.phaseStartS = G.s;
   G.chapter++; G.paletteIdx++;
-  // reaching a chapter unlocks starting from it (cap: the three title stamps)
+  // reaching a chapter unlocks starting from it (cap: the six title stamps)
   const prevMax = +(localStorage.getItem('inkline-max-ch') || 0);
-  if (G.chapter > prevMax) localStorage.setItem('inkline-max-ch', String(Math.min(G.chapter, 2)));
+  if (G.chapter > prevMax) localStorage.setItem('inkline-max-ch', String(Math.min(G.chapter, 5)));
   G.baseSpeed += 3.5;
   G.meter = 0;
   G.phase = 'sketch';
@@ -1089,7 +1107,7 @@ function loop(t) {
 }
 
 // ── boot ─────────────────────────────────────────────────────
-let chosenChapter = Math.min(+(sessionStorage.getItem('inkline-ch') || 0), 2);
+let chosenChapter = Math.min(+(sessionStorage.getItem('inkline-ch') || 0), 5);
 
 function start() {
   document.getElementById('title').classList.add('hidden');
@@ -1107,7 +1125,7 @@ window.__G = G; // debug handle
 
 // chapter stamps on the title screen
 {
-  const maxCh = Math.min(+(localStorage.getItem('inkline-max-ch') || 0), 2);
+  const maxCh = Math.min(+(localStorage.getItem('inkline-max-ch') || 0), 5);
   if (chosenChapter > maxCh) chosenChapter = 0;
   if (chosenChapter > 0) applyChapter(chosenChapter);
   document.querySelectorAll('.chap').forEach(b => {
