@@ -16,7 +16,7 @@
 
 ## 技术
 
-- Three.js r160(vendor/ 本地化,无外网依赖),所有物体 = EdgesGeometry 墨线层 + 透明实体层,上色 = 实体 opacity 浸染 + 全局线色 tint
+- Three.js r160(lib/ 本地化(不能叫 vendor,GH Pages Jekyll 会排除),无外网依赖),所有物体 = EdgesGeometry 墨线层 + 透明实体层,上色 = 实体 opacity 浸染 + 全局线色 tint
 - 赛道:Catmull-Rom 样条无限延伸,按弧长采样分块生成/回收
 - 3D↔2D:单相机在追逐位与正俯视位之间插值(up 向量切到行进方向,fov 64→19),景物 scaleY 压扁
 - 音频:WebAudio 主总线 + compressor;引擎声/音效全合成;三轨 BGM 按阶段 crossfade

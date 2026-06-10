@@ -2,7 +2,7 @@
 //  墨線 INKLINE — 一笔画出的竞速
 //  sketch → bloom → papercut, 三境轮转
 // ─────────────────────────────────────────────────────────────
-import * as THREE from '../vendor/three.module.js';
+import * as THREE from '../lib/three.module.js';
 
 // ── constants ────────────────────────────────────────────────
 const PAPER = 0xf2ecdf;
