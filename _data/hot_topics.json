@@ -1,17 +1,22 @@
 {
- "generated": "2026-06-10",
+ "generated": "2026-06-11",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 56.52,
+   "score": 53.84,
    "days": 26,
    "latest": {
-    "date": "2026-06-10",
-    "url": "/posts/2026-06-09-ai-morning-post/#research",
-    "title": "哈佛与 Perplexity 研究：AI Agent 自主工作时间是搜索的47倍"
+    "date": "2026-06-11",
+    "url": "/posts/2026-06-10-ai-morning-post/#product",
+    "title": "Google NotebookLM新增云端计算机与智能体研究"
    },
    "links": [
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#product",
+     "title": "Google NotebookLM新增云端计算机与智能体研究"
+    },
     {
      "date": "2026-06-10",
      "url": "/posts/2026-06-09-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-06-04",
      "url": "/posts/2026-06-03-ai-morning-post/#company",
      "title": "Coralogix融资2亿美元，打造AI Agent监控层"
-    },
-    {
-     "date": "2026-06-03",
-     "url": "/posts/2026-06-02-ai-morning-post/#model-release",
-     "title": "阿里发布Qwen3.7-Plus：多模态智能体新基座"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 33.16,
+   "score": 34.06,
    "days": 26,
    "latest": {
-    "date": "2026-06-10",
-    "url": "/posts/2026-06-09-ai-morning-post/#company",
-    "title": "OpenAI 秘密提交 IPO 申请，紧随 Anthropic 步伐"
+    "date": "2026-06-11",
+    "url": "/posts/2026-06-10-ai-morning-post/#company",
+    "title": "OpenAI IPO再推迟，Altman称年内有望"
    },
    "links": [
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#company",
+     "title": "OpenAI IPO再推迟，Altman称年内有望"
+    },
     {
      "date": "2026-06-10",
      "url": "/posts/2026-06-09-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-06-03",
      "url": "/posts/2026-06-02-ai-morning-post/#company",
      "title": "OpenAI在密歇根州动工建设1GW数据中心"
-    },
-    {
-     "date": "2026-06-02",
-     "url": "/posts/2026-06-01-ai-morning-post/#company",
-     "title": "佛罗里达州起诉 OpenAI 及 Sam Altman"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 30.9,
+   "score": 31.61,
    "days": 27,
    "latest": {
-    "date": "2026-06-10",
-    "url": "/posts/2026-06-09-ai-morning-post/#company",
-    "title": "OpenAI 秘密提交 IPO 申请，紧随 Anthropic 步伐"
+    "date": "2026-06-11",
+    "url": "/posts/2026-06-10-ai-morning-post/#model-release",
+    "title": "Anthropic发布Claude Fable 5与Mythos 5，首个公开Mythos级模型"
    },
    "links": [
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#model-release",
+     "title": "Anthropic发布Claude Fable 5与Mythos 5，首个公开Mythos级模型"
+    },
     {
      "date": "2026-06-10",
      "url": "/posts/2026-06-09-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-06-01",
      "url": "/posts/2026-05-31-ai-morning-post/#company",
      "title": "Anthropic官方披露如何安全部署Claude"
-    },
-    {
-     "date": "2026-05-31",
-     "url": "/posts/2026-05-30-ai-morning-post/#company",
-     "title": "Anthropic超越OpenAI，成为全球最具价值AI创业公司"
     }
    ]
   },
   {
    "name": "NVIDIA",
-   "score": 13.9,
-   "days": 15,
+   "score": 14.13,
+   "days": 16,
    "latest": {
-    "date": "2026-06-10",
-    "url": "/posts/2026-06-09-ai-morning-post/#company",
-    "title": "Apple 扩展私有云，采用 NVIDIA 机密计算"
+    "date": "2026-06-11",
+    "url": "/posts/2026-06-10-ai-morning-post/#company",
+    "title": "NVIDIA可信计算助力Apple扩展Private Cloud Compute"
    },
    "links": [
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#company",
+     "title": "NVIDIA可信计算助力Apple扩展Private Cloud Compute"
+    },
     {
      "date": "2026-06-10",
      "url": "/posts/2026-06-09-ai-morning-post/#company",
@@ -202,18 +207,13 @@
      "date": "2026-06-01",
      "url": "/posts/2026-05-31-ai-morning-post/#model-release",
      "title": "NVIDIA开源Eagle，视觉语言模型的数据哲学"
-    },
-    {
-     "date": "2026-05-29",
-     "url": "/posts/2026-05-28-ai-morning-post/#opensource",
-     "title": "NVIDIA 开源 Polar 框架：用强化学习训练代码 Agent"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 12.61,
-   "days": 20,
+   "score": 11.74,
+   "days": 19,
    "latest": {
     "date": "2026-06-09",
     "url": "/posts/2026-06-08-ai-morning-post/#product",
@@ -264,7 +264,7 @@
   },
   {
    "name": "芯片",
-   "score": 12.35,
+   "score": 11.74,
    "days": 13,
    "latest": {
     "date": "2026-06-10",
@@ -315,15 +315,72 @@
    ]
   },
   {
-   "name": "阿里",
-   "score": 10.45,
-   "days": 15,
+   "name": "Google",
+   "score": 11.39,
+   "days": 11,
    "latest": {
-    "date": "2026-06-09",
-    "url": "/posts/2026-06-08-ai-morning-post/#company",
-    "title": "阿里巴巴成立Token Foundry事业部，吴泳铭直管"
+    "date": "2026-06-11",
+    "url": "/posts/2026-06-10-ai-morning-post/#model-release",
+    "title": "Google开源DiffusionGemma，文本生成速度提升4倍"
    },
    "links": [
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#model-release",
+     "title": "Google开源DiffusionGemma，文本生成速度提升4倍"
+    },
+    {
+     "date": "2026-06-10",
+     "url": "/posts/2026-06-09-ai-morning-post/#model-release",
+     "title": "Gemma 4 12B：Google开源无编码器多模态模型"
+    },
+    {
+     "date": "2026-06-09",
+     "url": "/posts/2026-06-08-ai-morning-post/#company",
+     "title": "Google、NVIDIA考虑英特尔作为台积电替代方案"
+    },
+    {
+     "date": "2026-06-07",
+     "url": "/posts/2026-06-06-ai-morning-post/#model-release",
+     "title": "Google发布Gemma 4 QAT模型，优化移动端效率"
+    },
+    {
+     "date": "2026-06-05",
+     "url": "/posts/2026-06-04-ai-morning-post/#opinion",
+     "title": "英国监管强制 Google 为 AI 搜索提供出版商退出选项"
+    },
+    {
+     "date": "2026-06-02",
+     "url": "/posts/2026-06-01-ai-morning-post/#company",
+     "title": "Google 计划筹资 800 亿美元用于 AI 建设"
+    },
+    {
+     "date": "2026-05-24",
+     "url": "/posts/2026-05-23-ai-morning-post/#opinion",
+     "title": "Google CEO称链接只是搜索的一部分，AI答案已成核心"
+    },
+    {
+     "date": "2026-05-22",
+     "url": "/posts/2026-05-21-ai-morning-post/#product",
+     "title": "Google I/O 2026：Agentic AI 重塑搜索"
+    }
+   ]
+  },
+  {
+   "name": "阿里",
+   "score": 10.87,
+   "days": 16,
+   "latest": {
+    "date": "2026-06-11",
+    "url": "/posts/2026-06-10-ai-morning-post/#product",
+    "title": "阿里千问上线高考志愿填报Agent，免费服务"
+   },
+   "links": [
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#product",
+     "title": "阿里千问上线高考志愿填报Agent，免费服务"
+    },
     {
      "date": "2026-06-09",
      "url": "/posts/2026-06-08-ai-morning-post/#company",
@@ -358,24 +415,24 @@
      "date": "2026-06-02",
      "url": "/posts/2026-06-01-ai-morning-post/#model-release",
      "title": "Qwen3.7-Plus：阿里多模态升级"
-    },
-    {
-     "date": "2026-05-27",
-     "url": "/posts/2026-05-26-ai-morning-post/#model-release",
-     "title": "阿里千问3.7 Code Arena编程能力全球第二"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 9.19,
+   "score": 9.58,
    "days": 16,
    "latest": {
-    "date": "2026-06-08",
-    "url": "/posts/2026-06-07-ai-morning-post/#company",
-    "title": "Meta确认数千Instagram因AI聊天机器人漏洞被黑"
+    "date": "2026-06-11",
+    "url": "/posts/2026-06-10-ai-morning-post/#company",
+    "title": "Meta签署在印首个AI数据中心协议，与Reliance合作"
    },
    "links": [
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#company",
+     "title": "Meta签署在印首个AI数据中心协议，与Reliance合作"
+    },
     {
      "date": "2026-06-08",
      "url": "/posts/2026-06-07-ai-morning-post/#company",
@@ -410,18 +467,13 @@
      "date": "2026-05-31",
      "url": "/posts/2026-05-30-ai-morning-post/#company",
      "title": "Meta泄露路线图：AI挂件、超级感知眼镜与企业可穿戴"
-    },
-    {
-     "date": "2026-05-28",
-     "url": "/posts/2026-05-27-ai-morning-post/#company",
-     "title": "Meta推出全球付费订阅Meta One，含AI功能"
     }
    ]
   },
   {
    "name": "算力",
-   "score": 8.45,
-   "days": 10,
+   "score": 8.0,
+   "days": 9,
    "latest": {
     "date": "2026-06-10",
     "url": "/posts/2026-06-09-ai-morning-post/#company",
@@ -472,8 +524,8 @@
   },
   {
    "name": "世界模型",
-   "score": 8.42,
-   "days": 12,
+   "score": 7.9,
+   "days": 11,
    "latest": {
     "date": "2026-06-07",
     "url": "/posts/2026-06-06-ai-morning-post/#opensource",
@@ -523,60 +575,8 @@
    ]
   },
   {
-   "name": "Google",
-   "score": 7.84,
-   "days": 10,
-   "latest": {
-    "date": "2026-06-10",
-    "url": "/posts/2026-06-09-ai-morning-post/#model-release",
-    "title": "Gemma 4 12B：Google开源无编码器多模态模型"
-   },
-   "links": [
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#model-release",
-     "title": "Gemma 4 12B：Google开源无编码器多模态模型"
-    },
-    {
-     "date": "2026-06-09",
-     "url": "/posts/2026-06-08-ai-morning-post/#company",
-     "title": "Google、NVIDIA考虑英特尔作为台积电替代方案"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#model-release",
-     "title": "Google发布Gemma 4 QAT模型，优化移动端效率"
-    },
-    {
-     "date": "2026-06-05",
-     "url": "/posts/2026-06-04-ai-morning-post/#opinion",
-     "title": "英国监管强制 Google 为 AI 搜索提供出版商退出选项"
-    },
-    {
-     "date": "2026-06-02",
-     "url": "/posts/2026-06-01-ai-morning-post/#company",
-     "title": "Google 计划筹资 800 亿美元用于 AI 建设"
-    },
-    {
-     "date": "2026-05-24",
-     "url": "/posts/2026-05-23-ai-morning-post/#opinion",
-     "title": "Google CEO称链接只是搜索的一部分，AI答案已成核心"
-    },
-    {
-     "date": "2026-05-22",
-     "url": "/posts/2026-05-21-ai-morning-post/#product",
-     "title": "Google I/O 2026：Agentic AI 重塑搜索"
-    },
-    {
-     "date": "2026-05-21",
-     "url": "/posts/2026-05-20-ai-morning-post/#product",
-     "title": "Google搜索全面Agent化：AI代理永久在线执行任务"
-    }
-   ]
-  },
-  {
    "name": "ChatGPT",
-   "score": 7.13,
+   "score": 6.65,
    "days": 11,
    "latest": {
     "date": "2026-06-09",
@@ -627,8 +627,55 @@
    ]
   },
   {
+   "name": "Codex",
+   "score": 5.58,
+   "days": 7,
+   "latest": {
+    "date": "2026-06-11",
+    "url": "/posts/2026-06-10-ai-morning-post/#opensource",
+    "title": "OpenAI 官方 Codex 插件合集"
+   },
+   "links": [
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#opensource",
+     "title": "OpenAI 官方 Codex 插件合集"
+    },
+    {
+     "date": "2026-06-10",
+     "url": "/posts/2026-06-09-ai-morning-post/#opensource",
+     "title": "OpenAI 发布 Codex 插件示例库，降低自定义插件门槛"
+    },
+    {
+     "date": "2026-06-04",
+     "url": "/posts/2026-06-03-ai-morning-post/#product",
+     "title": "微软 Codex 新升级：打通 Windows 生态，手机远程开发"
+    },
+    {
+     "date": "2026-06-03",
+     "url": "/posts/2026-06-02-ai-morning-post/#product",
+     "title": "OpenAI 发布 Codex 职业插件，让非开发者也能“用代码思维工作”"
+    },
+    {
+     "date": "2026-06-02",
+     "url": "/posts/2026-06-01-ai-morning-post/#product",
+     "title": "OpenAI 模型和 Codex 正式登陆 AWS"
+    },
+    {
+     "date": "2026-05-23",
+     "url": "/posts/2026-05-22-ai-morning-post/#product",
+     "title": "OpenAI Appshots：Mac 窗口即 Codex 上下文"
+    },
+    {
+     "date": "2026-05-19",
+     "url": "/posts/2026-05-18-ai-morning-post/#company",
+     "title": "OpenAI 与 Dell 推出企业级 Codex 部署方案"
+    }
+   ]
+  },
+  {
    "name": "腾讯",
-   "score": 5.74,
+   "score": 5.45,
    "days": 8,
    "latest": {
     "date": "2026-06-10",
@@ -679,96 +726,54 @@
    ]
   },
   {
-   "name": "Codex",
-   "score": 4.81,
-   "days": 6,
-   "latest": {
-    "date": "2026-06-10",
-    "url": "/posts/2026-06-09-ai-morning-post/#opensource",
-    "title": "OpenAI 发布 Codex 插件示例库，降低自定义插件门槛"
-   },
-   "links": [
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#opensource",
-     "title": "OpenAI 发布 Codex 插件示例库，降低自定义插件门槛"
-    },
-    {
-     "date": "2026-06-04",
-     "url": "/posts/2026-06-03-ai-morning-post/#product",
-     "title": "微软 Codex 新升级：打通 Windows 生态，手机远程开发"
-    },
-    {
-     "date": "2026-06-03",
-     "url": "/posts/2026-06-02-ai-morning-post/#product",
-     "title": "OpenAI 发布 Codex 职业插件，让非开发者也能“用代码思维工作”"
-    },
-    {
-     "date": "2026-06-02",
-     "url": "/posts/2026-06-01-ai-morning-post/#product",
-     "title": "OpenAI 模型和 Codex 正式登陆 AWS"
-    },
-    {
-     "date": "2026-05-23",
-     "url": "/posts/2026-05-22-ai-morning-post/#product",
-     "title": "OpenAI Appshots：Mac 窗口即 Codex 上下文"
-    },
-    {
-     "date": "2026-05-19",
-     "url": "/posts/2026-05-18-ai-morning-post/#company",
-     "title": "OpenAI 与 Dell 推出企业级 Codex 部署方案"
-    }
-   ]
-  },
-  {
-   "name": "Hermes Agent",
-   "score": 4.74,
+   "name": "Altman",
+   "score": 4.52,
    "days": 9,
    "latest": {
-    "date": "2026-06-09",
-    "url": "/posts/2026-06-08-ai-morning-post/#opensource",
-    "title": "Hermes Agent：反馈驱动的进化式代理"
+    "date": "2026-06-11",
+    "url": "/posts/2026-06-10-ai-morning-post/#company",
+    "title": "OpenAI IPO再推迟，Altman称年内有望"
    },
    "links": [
     {
-     "date": "2026-06-09",
-     "url": "/posts/2026-06-08-ai-morning-post/#opensource",
-     "title": "Hermes Agent：反馈驱动的进化式代理"
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#company",
+     "title": "OpenAI IPO再推迟，Altman称年内有望"
     },
     {
      "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#opensource",
-     "title": "Hermes Agent 开源：随你成长的自主 AI 代理"
+     "url": "/posts/2026-06-05-ai-morning-post/#company",
+     "title": "佛罗里达起诉 OpenAI 及 Altman：指 ChatGPT 为公共妨害"
     },
     {
-     "date": "2026-06-05",
-     "url": "/posts/2026-06-04-ai-morning-post/#opensource",
-     "title": "NousResearch 开源 Hermes Agent"
+     "date": "2026-06-03",
+     "url": "/posts/2026-06-02-ai-morning-post/#company",
+     "title": "佛罗里达州起诉OpenAI及Sam Altman，指控ChatGPT关联多起命案"
     },
     {
-     "date": "2026-06-02",
-     "url": "/posts/2026-06-01-ai-morning-post/#opensource",
-     "title": "Hermes Agent 开源记忆栈 Memory OS"
+     "date": "2026-05-29",
+     "url": "/posts/2026-05-28-ai-morning-post/#opinion",
+     "title": "Altman 与 Amodei 主动降温：AI 不会立刻抢你的工作"
     },
     {
-     "date": "2026-05-25",
-     "url": "/posts/2026-05-24-ai-morning-post/#opensource",
-     "title": "NousResearch 发布 Hermes Agent：与你一起成长的智能体"
+     "date": "2026-05-28",
+     "url": "/posts/2026-05-27-ai-morning-post/#opinion",
+     "title": "Altman和Amodei改口：AI不会立即消灭大量工作"
     },
     {
-     "date": "2026-05-23",
-     "url": "/posts/2026-05-22-ai-morning-post/#opensource",
-     "title": "Hermes Agent：开源可成长代理框架"
+     "date": "2026-05-24",
+     "url": "/posts/2026-05-23-ai-morning-post/#opinion",
+     "title": "纽约客：Altman赢得对Musk官司，但我们都输了"
     },
     {
      "date": "2026-05-16",
-     "url": "/posts/2026-05-15-ai-morning-post/#opensource",
-     "title": "NousResearch 开源 Hermes Agent"
+     "url": "/posts/2026-05-15-ai-morning-post/#opinion",
+     "title": "Musk v. Altman庭审结束：陪审团将决定OpenAI未来"
     },
     {
      "date": "2026-05-15",
-     "url": "/posts/2026-05-14-ai-morning-post/#opensource",
-     "title": "Hermes Agent：14 万星的自改进 AI Agent"
+     "url": "/posts/2026-05-14-ai-morning-post/#company",
+     "title": "OpenAI 审判：Altman 被指说谎，庭审激烈"
     }
    ]
   }
