@@ -182,9 +182,24 @@
     transform: rotate(4deg); opacity: .9;
   }
   .howto {
-    display: flex; gap: 34px; margin-bottom: 36px; font-size: 13.5px; color: var(--ink-soft);
+    display: flex; gap: 34px; margin-bottom: 26px; font-size: 13.5px; color: var(--ink-soft);
     letter-spacing: .12em;
   }
+  /* chapter select: seal-like stamps */
+  .chapsel { display: flex; align-items: center; gap: 14px; margin-bottom: 30px; }
+  .chapsel-label { font-size: 12px; letter-spacing: .5em; color: var(--ink-soft); }
+  .chap {
+    font-family: inherit; font-size: 17px; font-weight: 700;
+    width: 40px; height: 40px; cursor: pointer;
+    color: var(--ink); background: rgba(255,255,255,.3);
+    border: 1.8px solid var(--ink); border-radius: 7px;
+    transform: rotate(-2deg);
+    transition: transform .15s cubic-bezier(.3,1.5,.5,1), background .15s, color .15s, border-color .15s;
+  }
+  .chap:nth-child(odd) { transform: rotate(2deg); }
+  .chap:hover { transform: rotate(0) scale(1.12); }
+  .chap.sel { background: var(--vermilion); border-color: var(--vermilion); color: var(--paper); }
+  .chap.locked { opacity: .25; cursor: default; pointer-events: none; }
   .howto b { color: var(--ink); font-weight: 700; }
   .btn {
     font-family: inherit; font-size: 21px; letter-spacing: .55em; text-indent: .55em;
@@ -197,9 +212,13 @@
   .btn:hover { transform: rotate(.4deg) scale(1.05); background: var(--vermilion); }
   .footnote { position: absolute; bottom: 34px; font-size: 11.5px; letter-spacing: .3em; color: var(--ink-soft); opacity: .75; }
 
-  /* game over */
+  /* game over / pause */
   #over { z-index: 61; }
-  #over h2 { font-size: clamp(34px,7vw,54px); letter-spacing: .3em; text-indent: .3em; margin-bottom: 26px; }
+  #pause { z-index: 62; background: rgba(242,236,223,.88); backdrop-filter: blur(3px); }
+  #over h2, #pause h2 { font-size: clamp(34px,7vw,54px); letter-spacing: .3em; text-indent: .3em; margin-bottom: 26px; }
+  .btn-row { display: flex; gap: 18px; }
+  .btn.ghost { background: transparent; color: var(--ink); border: 1.8px solid var(--ink); }
+  .btn.ghost:hover { background: var(--vermilion); border-color: var(--vermilion); color: var(--paper); }
   .score-card { display: flex; gap: clamp(26px, 6vw, 64px); margin-bottom: 38px; text-align: center; }
   .score-card .v { font-size: clamp(30px, 6vw, 46px); font-weight: 700; font-variant-numeric: tabular-nums; }
   .score-card .k { font-size: 12px; letter-spacing: .45em; padding-left: .45em; color: var(--ink-soft); margin-top: 6px; }
@@ -272,7 +291,14 @@
     <div class="howto">
       <span><b>← →</b>&ensp;或拖动 转向</span>
       <span><b>W / ↑</b>&ensp;蘸墨加速</span>
+      <span><b>Esc</b>&ensp;暂笔</span>
       <span>集墨滴 · 穿门 · 待色染山河</span>
+    </div>
+    <div class="chapsel" id="chapsel">
+      <span class="chapsel-label">起 章</span>
+      <button class="chap" data-ch="0">一</button>
+      <button class="chap" data-ch="1">二</button>
+      <button class="chap" data-ch="2">三</button>
     </div>
     <button class="btn" id="start">起 笔</button>
     <div class="footnote">素描 → 晕染 → 剪纸 · 三境轮转</div>
@@ -291,6 +317,15 @@
       <div><div class="v" id="ov-ch">一</div><div class="k">行至章节</div></div>
     </div>
     <button class="btn" id="restart">重 新 起 笔</button>
+  </div>
+
+  <div id="pause" class="overlay hidden">
+    <div class="seal">小憩</div>
+    <h2>暂 笔</h2>
+    <div class="btn-row">
+      <button class="btn" id="resume">继 续</button>
+      <button class="btn ghost" id="pause-restart">重 新 起 笔</button>
+    </div>
   </div>
 
   <button id="mute" title="静音">音 · 开</button>

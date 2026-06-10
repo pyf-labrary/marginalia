@@ -7,6 +7,8 @@ permalink: /games/
 
 <style>
   /* —— dark-mode site chrome (only on this page) —— */
+  /* full-bleed shell uses 100vw, which overflows by the scrollbar width → clamp */
+  html, body { overflow-x: hidden; }
   body { background: #0c0c10; }
   body::before {
     background: linear-gradient(90deg, #8b2e2a 0, #8b2e2a 28%, #1a1a22 28%) !important;

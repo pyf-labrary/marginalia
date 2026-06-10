@@ -278,12 +278,12 @@ const G = {
   track: null, chunks: [], paintables: [],
   gates: [], drops: [], rocks: [], gateHead: 0, dropHead: 0, rockHead: 0,
   car: null, carParts: null,
-  s: 0, x: 0, xv: 0, speed: 0, baseSpeed: 24, boost: false,
+  s: 0, x: 0, xv: 0, speed: 0, baseSpeed: 24, boost01: 0, streaks: [],
   hp: 3, invuln: 0, combo: 0, maxCombo: 0, dropsGot: 0,
   meter: 0, chapter: 0, phase: 'sketch', pending: null,
   phaseStartS: 0, flat01: 0, color01: 0,
   wave: null, drain: false,
-  shake: 0, timeScale: 1, running: false, over: false,
+  shake: 0, timeScale: 1, running: false, over: false, paused: false,
   inkMat: null, dashMat: null, sun: null,
   paletteIdx: 0,
 };
@@ -610,6 +610,42 @@ function buildCar() {
   G.carParts = { body, mats: [mBody, mCab], wheels, paint: { pos: new THREE.Vector3(), mats: [mBody, mCab], painted: false, max: 0.95 } };
 }
 
+// ── boost wind: ink streak lines whipping past the car ──────
+function buildStreaks() {
+  for (let i = 0; i < 26; i++) {
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(6), 3));
+    const m = new THREE.LineBasicMaterial({ color: INK, transparent: true, opacity: 0 });
+    const l = new THREE.Line(g, m);
+    l.frustumCulled = false;
+    G.scene.add(l);
+    G.streaks.push({ g, m,
+      ds: 8 + Math.random() * 50,
+      lat: (Math.random() < 0.5 ? -1 : 1) * (4 + Math.random() * 11),
+      h: 0.6 + Math.random() * 4 });
+  }
+}
+const _wp = new THREE.Vector3(), _wt = new THREE.Vector3(), _wr = new THREE.Vector3();
+function updateStreaks(dt) {
+  const b = G.boost01;
+  for (const s of G.streaks) {
+    if (b < 0.04) { s.m.opacity = 0; continue; }
+    s.ds -= G.speed * 1.5 * dt;               // streaks overtake the world backwards
+    if (s.ds < -8) {
+      s.ds = 16 + Math.random() * 46;
+      s.lat = (Math.random() < 0.5 ? -1 : 1) * (4 + Math.random() * 11);
+      s.h = 0.6 + Math.random() * 4;
+    }
+    G.track.pose(G.s + s.ds, _wp, _wt, _wr);
+    const len = 1.5 + 7 * b;
+    const a = s.g.attributes.position.array;
+    a[0] = _wp.x + _wr.x * s.lat; a[1] = _wp.y + s.h; a[2] = _wp.z + _wr.z * s.lat;
+    a[3] = a[0] + _wt.x * len; a[4] = a[1] + _wt.y * len; a[5] = a[2] + _wt.z * len;
+    s.g.attributes.position.needsUpdate = true;
+    s.m.opacity = b * (0.16 + 0.3 * Math.random());   // flicker = hand-drawn wind
+  }
+}
+
 // ── sun: a hand-drawn circle in the sky ──────────────────────
 function buildSun() {
   const grp = new THREE.Group();
@@ -697,6 +733,9 @@ function triggerFlat() {
 function triggerChapter() {
   G.pending = null; G.phaseStartS = G.s;
   G.chapter++; G.paletteIdx++;
+  // reaching a chapter unlocks starting from it (cap: the three title stamps)
+  const prevMax = +(localStorage.getItem('inkline-max-ch') || 0);
+  if (G.chapter > prevMax) localStorage.setItem('inkline-max-ch', String(Math.min(G.chapter, 2)));
   G.baseSpeed += 3.5;
   G.meter = 0;
   G.phase = 'sketch';
@@ -872,6 +911,7 @@ function setup() {
   G.track.ensure(0);
   buildCar();
   buildSun();
+  buildStreaks();
   bindHUD();
 
   window.addEventListener('resize', () => {
@@ -892,8 +932,9 @@ let lastHudDist = -1;
 function update(dt, rdt) {
   const pal = PAL();
 
-  // speed & motion
-  const target = (G.baseSpeed + Math.min((G.s - 0) * 0.004, 9)) * (Input.boost ? 1.32 : 1) * (G.phase === 'flat' ? 0.88 : 1);
+  // speed & motion — boost eases in/out instead of snapping
+  G.boost01 += ((Input.boost ? 1 : 0) - G.boost01) * Math.min(dt * 3.2, 1);
+  const target = (G.baseSpeed + Math.min((G.s - 0) * 0.004, 9)) * (1 + 0.34 * G.boost01) * (G.phase === 'flat' ? 0.88 : 1);
   G.speed += (target - G.speed) * Math.min(dt * 1.4, 1);
   G.s += G.speed * dt;
   G.track.ensure(G.s);
@@ -950,6 +991,8 @@ function update(dt, rdt) {
   // wheels roll
   for (const w of G.carParts.wheels) w.rotateY(G.speed * dt * 0.9);
 
+  updateStreaks(dt);
+
   // ── camera: blend 3D chase ↔ 2D top-down ──
   const f = smooth(G.flat01);
   // chase rig
@@ -961,16 +1004,18 @@ function update(dt, rdt) {
   camP.lerpVectors(eyeA, eyeB, f);
   camL.lerpVectors(lookA, lookB, f);
   camU.copy(UP).multiplyScalar(1 - f).addScaledVector(_t, f).normalize();
-  // shake
+  // shake + boost rumble
   if (G.shake > 0.001) {
     G.shake *= Math.pow(0.001, rdt);
     camP.x += (Math.random() - 0.5) * G.shake * 0.9;
     camP.y += (Math.random() - 0.5) * G.shake * 0.9;
   }
+  camP.x += (Math.random() - 0.5) * 0.085 * G.boost01;
+  camP.y += (Math.random() - 0.5) * 0.06 * G.boost01;
   G.camera.position.copy(camP);
   G.camera.up.copy(camU);
   G.camera.lookAt(camL);
-  G.camera.fov = THREE.MathUtils.lerp(64, 19, f) + (Input.boost ? 2.5 : 0);
+  G.camera.fov = THREE.MathUtils.lerp(64, 19, f) + G.boost01 * 5;
   G.camera.updateProjectionMatrix();
 
   // atmosphere follows colour
@@ -989,12 +1034,45 @@ function update(dt, rdt) {
   }
 
   // audio
-  AudioEngine.setEngine(G.speed, Input.boost);
+  AudioEngine.setEngine(G.speed, G.boost01 > 0.5);
 
   // HUD
   const dist = Math.floor(G.s);
   if (dist !== lastHudDist) { HUD.dist.textContent = dist; lastHudDist = dist; }
   HUD.meterFill.style.width = `${G.meter * 100}%`;
+}
+
+// ── chapter select: wipe and regrow the world in that palette ─
+function applyChapter(c) {
+  G.chapter = c; G.paletteIdx = c; G.baseSpeed = 24 + 3.5 * c;
+  for (const ch of G.chunks) {
+    G.scene.remove(ch.group);
+    ch.dispose.forEach(g => g.dispose());
+  }
+  G.chunks = []; G.paintables = [];
+  G.gates = []; G.drops = []; G.rocks = [];
+  G.gateHead = G.dropHead = G.rockHead = 0;
+  G.s = 0; G.x = 0; G.xv = 0; G.speed = 0; G.meter = 0;
+  G.phase = 'sketch'; G.pending = null; G.wave = null; G.drain = false;
+  G.color01 = 0; G.flat01 = 0;
+  G.track = new Track(onSlice);
+  G.track.ensure(0);
+  G.carParts.mats[0].color.set(PAL().car);
+  G.carParts.mats.forEach(m => m.opacity = 0);
+  G.carParts.paint.painted = false;
+  G.carParts.body.scale.y = 1;
+  if (G.sun) G.sun.userData.mat.color.set(PAL().sun);
+  G.inkMat.color.set(INK);
+  setPhaseLabel();
+}
+
+// ── pause ────────────────────────────────────────────────────
+function setPaused(p) {
+  if (G.over || (!G.running && p)) return;
+  if (G.paused === p) return;
+  G.paused = p;
+  document.getElementById('pause').classList.toggle('hidden', !p);
+  if (AudioEngine.ctx) p ? AudioEngine.ctx.suspend() : AudioEngine.ctx.resume();
 }
 
 // ── main loop ────────────────────────────────────────────────
@@ -1003,29 +1081,58 @@ function loop(t) {
   requestAnimationFrame(loop);
   const rdt = Math.min((t - lastT) / 1000, 0.05) || 0.016;
   lastT = t;
-  stepTweens(rdt);
-  if (G.running) update(rdt * G.timeScale, rdt);
+  if (!G.paused) {
+    stepTweens(rdt);
+    if (G.running) update(rdt * G.timeScale, rdt);
+  }
   G.renderer.render(G.scene, G.camera);
 }
 
 // ── boot ─────────────────────────────────────────────────────
+let chosenChapter = Math.min(+(sessionStorage.getItem('inkline-ch') || 0), 2);
+
 function start() {
   document.getElementById('title').classList.add('hidden');
   document.getElementById('hud').classList.add('on');
   AudioEngine.init();
+  sessionStorage.setItem('inkline-ch', String(chosenChapter));
   G.running = true;
   setPhaseLabel();
-  toast('素 描', '第一笔落纸');
+  toast('素 描', chosenChapter > 0 ? `自第${CHAPTER_NUM[chosenChapter]}章落笔` : '第一笔落纸');
 }
 
 setup();
 requestAnimationFrame(loop);
 window.__G = G; // debug handle
 
+// chapter stamps on the title screen
+{
+  const maxCh = Math.min(+(localStorage.getItem('inkline-max-ch') || 0), 2);
+  if (chosenChapter > maxCh) chosenChapter = 0;
+  if (chosenChapter > 0) applyChapter(chosenChapter);
+  document.querySelectorAll('.chap').forEach(b => {
+    const c = +b.dataset.ch;
+    if (c > maxCh) b.classList.add('locked');
+    b.classList.toggle('sel', c === chosenChapter);
+    b.addEventListener('click', () => {
+      chosenChapter = c;
+      document.querySelectorAll('.chap').forEach(x => x.classList.toggle('sel', +x.dataset.ch === c));
+      applyChapter(c);
+    });
+  });
+}
+
 document.getElementById('start').addEventListener('click', start);
-document.getElementById('restart').addEventListener('click', () => {
+const doRestart = () => {
   sessionStorage.setItem('inkline-restart', '1');
+  sessionStorage.setItem('inkline-ch', String(chosenChapter));
   location.reload();
+};
+document.getElementById('restart').addEventListener('click', doRestart);
+document.getElementById('pause-restart').addEventListener('click', doRestart);
+document.getElementById('resume').addEventListener('click', () => setPaused(false));
+window.addEventListener('keydown', e => {
+  if (e.code === 'Escape' || e.code === 'KeyP') setPaused(!G.paused);
 });
 document.getElementById('mute').addEventListener('click', e => {
   const muted = AudioEngine.toggleMute();
@@ -1036,12 +1143,14 @@ if (sessionStorage.getItem('inkline-restart')) {
   start();
 }
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden && AudioEngine.ctx) AudioEngine.ctx.suspend();
-  else if (AudioEngine.ctx) AudioEngine.ctx.resume();
+  if (document.hidden) {
+    if (G.running && !G.paused) setPaused(true);          // tab away → auto pause
+    else if (AudioEngine.ctx) AudioEngine.ctx.suspend();
+  } else if (!G.paused && AudioEngine.ctx) AudioEngine.ctx.resume();
 });
 // after a restart-reload the context starts suspended until a gesture
 for (const ev of ['pointerdown', 'keydown']) {
   window.addEventListener(ev, () => {
-    if (AudioEngine.ctx && AudioEngine.ctx.state === 'suspended') AudioEngine.ctx.resume();
+    if (!G.paused && AudioEngine.ctx && AudioEngine.ctx.state === 'suspended') AudioEngine.ctx.resume();
   });
 }
