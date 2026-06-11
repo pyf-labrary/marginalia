@@ -14,7 +14,6 @@ export class Hud {
       compass: $('compass'), hitmark: $('hitmark'), popups: $('popups'), bars: $('bars'),
       healflash: $('healflash'), cross: $('cross'), minimap: $('minimap'),
     };
-    this.cursor = { x: innerWidth / 2, y: innerHeight / 2 };
     this.mapCtx = this.el.minimap.getContext('2d');
     this.pops = [];
     this.entBars = new Map();
@@ -84,16 +83,13 @@ export class Hud {
     this.el.camMode.textContent = mode;
   }
 
-  // crosshair follows the virtual cursor; .hot when hovering a target
-  setCross(x, y, hot) {
-    this.el.cross.style.transform = `translate(${x}px,${y}px) translate(-50%,-50%)`;
+  // crosshair turns red when hovering a shootable target
+  setCross(hot) {
     this.el.cross.classList.toggle('hot', !!hot);
   }
 
   hitmarker(weak) {
     const h = this.el.hitmark;
-    h.style.left = `${this.cursor.x}px`;
-    h.style.top = `${this.cursor.y}px`;
     h.classList.toggle('weak', weak);
     h.style.transition = 'none';
     h.style.opacity = 1;
