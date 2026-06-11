@@ -23,3 +23,11 @@
   date: 2026-06-02
   tags: [影视配乐, 教学, Tone.js, 互动]
   description: 影视配乐入门互动教学站：M1–M6 六个模块，浏览器内合成器实时演示配乐如何塑造场景情绪。
+- slug: fanbox-web
+  image: /assets/img/site/covers/fanbox-web.jpg
+  title: 翻箱 Web 版 (fork 花叔作品)
+  url: https://github.com/pyf-labrary/fanbox-web
+  external: true
+  date: 2026-06-11
+  tags: [文件管理, 终端, Claude Code, WSL]
+  description: 文件管理 × AI agent 终端的浏览器版驾驶舱：WSL 里跑服务端，浏览器里浏览文件、跑 Claude Code，刷新不丢终端会话。Fork 自花叔的 FanBox。
