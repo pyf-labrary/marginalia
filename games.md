@@ -125,7 +125,6 @@ permalink: /games/
   @media (prefers-reduced-motion: reduce) {
     .games-eyebrow, .games-title, .games-rule, .games-lede { animation: none; }
     .game-card { opacity: 1; transform: none; transition: none; }
-    #games-fx { display: none; }
   }
 
   .games-eyebrow {
@@ -361,8 +360,8 @@ permalink: /games/
     cards.forEach((c) => io.observe(c));
   }
 
-  /* —— drifting embers: prerendered sprites + additive compositing —— */
-  if (reduced) return;
+  /* —— drifting embers: prerendered sprites + additive compositing ——
+     deliberately NOT gated on prefers-reduced-motion: ambient backdrop, runs always */
   const cv = document.getElementById("games-fx");
   const ctx = cv.getContext("2d");
   const DPR = Math.min(devicePixelRatio || 1, 1.5);
