@@ -7,6 +7,7 @@ description: "多台机器共享一个工作目录、手动同步老分叉冲突
 excerpt: "多台机器共享一个工作目录、手动同步老分叉冲突?用自建 Headscale(Tailscale 控制面)+ Syncthing 搭两层独立 mesh:连通层让任意机器互相可达并能 SSH,同步层存盘即双向同步、离线机器上线自动追上。"
 tags: [Tailscale, Headscale, Syncthing, 自托管, 多设备同步, mesh网络, WSL]
 keywords: "Tailscale, Headscale, Syncthing, mesh, 自托管, 多设备同步, WireGuard, WSL, DERP, 文件同步"
+cover: /assets/img/posts/2026-05-29-multi-device-mesh-headscale-syncthing/cover.jpg
 ---
 
 我有好几台机器在同时干活:公司一台台式、公司一台 Mac、家里一台、外加一台自己的云服务器。同一个工作目录在多台之间来回改,长期靠一个手写的 `sync-all` 脚本同步——但它不好用:**它是手动的、按需跑的**,只要哪次忘了"先拉再改",两边就分叉,然后就是无穷无尽的手工 merge。

@@ -6,9 +6,16 @@ author: "Marginalia"
 description: "Fable 5 发布首周刷屏 demo 全景：photoreal 3D 世界、单 prompt 可玩游戏、9.5 小时工程长跑，以及它们的技术实现拆解——真实地理数据当素材、手写 GLSL、agentic 自修复。"
 excerpt: "Fable 5 发布首周刷屏 demo 全景：photoreal 3D 世界、单 prompt 可玩游戏、9.5 小时工程长跑，以及它们的技术实现拆解——真实地理数据当素材、手写 GLSL、agentic 自修复。"
 tags: [fable-5, claude, three.js, ai-coding]
+cover: /assets/img/posts/2026-06-11-fable5/cover.jpg
 ---
 
-![Fable 5 单 prompt 生成的 photoreal three.js 森林（Matt Shumer demo 视频帧，via 量子位）](/marginalia/assets/img/posts/2026-06-11-fable5/cover.jpg)
+<figure>
+<video controls muted loop playsinline preload="metadata" style="width:100%;border-radius:3px"
+       poster="/marginalia/assets/img/posts/2026-06-11-fable5/cover.jpg">
+  <source src="https://video.twimg.com/amplify_video/2064449371173761024/vid/avc1/1766x720/F9izBrDD9YaZHcmW.mp4" type="video/mp4">
+</video>
+<figcaption>Fable 5 单 prompt 生成的 photoreal three.js 森林，浏览器实时渲染（<a href="https://x.com/mattshumer_/status/2064449498596757643">Matt Shumer 原帖</a>视频，X 托管直链；被墙环境降级显示静帧）</figcaption>
+</figure>
 
 > 调研日期：2026-06-11（发布后第 2 天）。来源为公开报道 + 社区帖；Shumer 等人的原始 prompt 未公开，技术拆解部分含基于公开细节的反推，已标注。
 

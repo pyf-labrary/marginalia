@@ -119,9 +119,16 @@ layout: default
           </ul>
           {% endif %}
         </aside>
-        <article class="post-summary">
-          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          {% if post.excerpt %}<p class="excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>{% endif %}
+        <article class="post-summary{% if post.cover %} has-cover{% endif %}">
+          <div class="post-summary-text">
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post.excerpt %}<p class="excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>{% endif %}
+          </div>
+          {% if post.cover %}
+          <a class="post-thumb" href="{{ post.url | relative_url }}" aria-hidden="true" tabindex="-1">
+            <img src="{{ post.cover | relative_url }}" alt="" loading="lazy">
+          </a>
+          {% endif %}
         </article>
       </li>
       {% endunless %}

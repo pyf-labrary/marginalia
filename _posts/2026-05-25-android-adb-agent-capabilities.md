@@ -6,6 +6,7 @@ author: "Marginalia"
 description: "用 ADB 通道 + 多模态大模型操控 Android 的能力边界研究：对照豆包 AI 手机（UI-TARS）实现原理，逐项分级 ADB 在权限管控、装卸、文件整理、应用下载、一键换机上的可行性。"
 excerpt: "用 ADB 通道 + 多模态大模型操控 Android 的能力边界研究：对照豆包 AI 手机（UI-TARS）实现原理，逐项分级 ADB 在权限管控、装卸、文件整理、应用下载、一键换机上的可行性。"
 tags: [Android, ADB, Agent, AI手机, 自动化]
+cover: /assets/img/posts/2026-05-25-android-adb-agent-capabilities/cover.jpg
 ---
 
 > 一份关于"用 ADB 通道 + 多模态大模型（Agent）操控 Android 手机"的能力边界研究。

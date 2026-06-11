@@ -7,6 +7,7 @@ description: "用 Apple 礼品卡走 iOS 内购订阅 Claude Pro 的完整流程
 excerpt: "用 Apple 礼品卡走 iOS 内购订阅 Claude Pro 的完整流程：为什么走这条路（绕开发卡归属地校验）、礼品卡获取与兑换、Apple ID 区域配置、订阅续费与坑点整理。"
 tags: [claude-pro, apple-app-store, subscription, china-payment]
 keywords: "Claude Pro, Apple 内购, 礼品卡, 订阅, App Store, IAP"
+cover: /assets/img/posts/2026-04-27-apple-giftcard-claude-pro/cover.jpg
 ---
 
 ## 一、为什么要走 Apple 内购？

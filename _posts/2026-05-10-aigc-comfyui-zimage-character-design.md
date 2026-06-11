@@ -6,6 +6,7 @@ author: "Marginalia"
 description: "这是 AIGC 短剧角色一致性工艺的第二阶段实录：为什么把写实 base 从 FLUX.2 Dev 反转到 Z-Image Turbo，ComfyUI 全栈在消费级显卡上的部署清单，以及一个\"神话角色形象怎么也调不对\"的失败案例和它暴露出的 text2image 多约束叠加的执行力短板。"
 excerpt: "这是 AIGC 短剧角色一致性工艺的第二阶段实录：为什么把写实 base 从 FLUX.2 Dev 反转到 Z-Image Turbo，ComfyUI 全栈在消费级显卡上的部署清单"
 tags: [AIGC, ComfyUI, Z-Image, 角色设计, 文生图]
+cover: /assets/img/posts/2026-05-10-aigc-comfyui-zimage-character-design/cover.jpg
 ---
 
 ## TL;DR

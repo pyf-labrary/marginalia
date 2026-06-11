@@ -6,6 +6,7 @@ author: "Marginalia"
 description: "约 300 行脚本、不靠编排框架，用 Claude Code headless 把 Issue→PR→merge 串成 agent 间零人工干预的流水线；附真实运行账本与设计取舍。"
 excerpt: "约 300 行脚本、不靠编排框架，用 Claude Code headless 把 Issue→PR→merge 串成 agent 间零人工干预的流水线；附真实运行账本与设计取舍。"
 tags: [Claude Code, AI Agent, 多智能体, 自动化开发, LLMOps]
+cover: /assets/img/posts/2026-05-25-claude-code-pm-worker-auditor-pipeline/cover.jpg
 ---
 
 几周前我写过一篇偏「方法论」的长文，讲怎么把 AI 从单兵 Copilot 升级成 PM/Worker/Auditor 三层金字塔（那篇是 6 周路线图 + canary + 度量体系的宏图）。这篇不一样：宏图我没全做，但**最小闭环已经在真实的 bug 上跑通并合并了**。所以这篇只讲一件事——那条最小闭环到底是怎么用 Claude Code 搭出来的、每一行设计为什么这么写、踩了哪些坑，以及它现在**还差什么**（我会诚实地把没做完的部分单列一节，而不是吹成全自动生产系统）。

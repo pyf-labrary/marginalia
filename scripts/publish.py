@@ -160,6 +160,9 @@ def convert_file(src: Path, args) -> Path | None:
     body = re.sub(r"\A\s*-{3,}\s*\n", "", body, count=1).lstrip("\n")
 
     slug = args.slug or slugify(src.stem)
+    # source filenames often already carry a date prefix; the target filename
+    # re-adds post_date, so strip it here to avoid YYYY-MM-DD-YYYY-MM-DD-slug
+    slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", slug)
     if args.date:
         date_str = args.date if " " in args.date else f"{args.date} 12:00:00 +0800"
         post_date = args.date.split()[0] if " " in args.date else args.date
@@ -185,6 +188,18 @@ def convert_file(src: Path, args) -> Path | None:
         meta["tags"] = [t.strip() for t in args.tags.split(",") if t.strip()]
     if args.keywords:
         meta["keywords"] = args.keywords
+
+    # cover: first site-hosted image in the body (markdown image, <video poster>
+    # or <img>); used by the home post list as a thumbnail
+    m = (re.search(r"!\[[^\]]*\]\(([^)\s]+)\)", body)
+         or re.search(r'poster="([^"]+)"', body)
+         or re.search(r'<img[^>]+src="([^"]+)"', body))
+    if m:
+        cover = m.group(1)
+        if cover.startswith("/marginalia/"):
+            cover = cover[len("/marginalia"):]
+        if cover.startswith("/assets/"):
+            meta["cover"] = cover
 
     front = build_front_matter(meta)
     target.parent.mkdir(parents=True, exist_ok=True)
