@@ -128,10 +128,11 @@ export class Truck {
     g.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.userData.truck = true; } });
     this.group.add(g);
 
-    // first-person anchor (behind the gun sights, gun body in frame)
+    // first-person anchor — gunner's standing position behind the turret.
+    // Fixed to the truck body (NOT the gun) so the gun visibly chases the cursor.
     this.fpAnchor = new THREE.Object3D();
-    this.fpAnchor.position.set(0, 0.42, -1.35);
-    pitch.add(this.fpAnchor);
+    this.fpAnchor.position.set(0, 2.75, -2.55);
+    g.add(this.fpAnchor);
   }
 
   // aim turret toward a world point

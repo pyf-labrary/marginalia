@@ -277,6 +277,7 @@ export class World {
     const sandDark = mat(0xb08f5c);
     // pyramids
     const pyrSpecs = [[640, -560, 95], [540, -660, 62], [690, -670, 44]];
+    this.pyramids = pyrSpecs.map(([x, z]) => ({ x, z }));
     for (const [x, z, h] of pyrSpecs) {
       const p = new THREE.Mesh(new THREE.ConeGeometry(h * 0.86, h, 4), sand);
       p.position.set(x, getHeight(x, z) + h / 2 - 2, z);
