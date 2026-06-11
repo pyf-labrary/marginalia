@@ -1148,6 +1148,13 @@ const doRestart = () => {
 };
 document.getElementById('restart').addEventListener('click', doRestart);
 document.getElementById('pause-restart').addEventListener('click', doRestart);
+const doMenu = () => {
+  sessionStorage.removeItem('inkline-restart');
+  sessionStorage.setItem('inkline-ch', String(chosenChapter));
+  location.reload();
+};
+document.getElementById('over-menu').addEventListener('click', doMenu);
+document.getElementById('pause-menu').addEventListener('click', doMenu);
 document.getElementById('resume').addEventListener('click', () => setPaused(false));
 window.addEventListener('keydown', e => {
   if (e.code === 'Escape' || e.code === 'KeyP') setPaused(!G.paused);
