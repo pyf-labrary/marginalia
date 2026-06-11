@@ -6,6 +6,7 @@ author: "Marginalia"
 description: "抖音上一些\"3D 同人剧\"账号，场景一致性和画面质感明显优于纯 AI 生成路径。调研发现它们根本不是 AI 生成，而是用游戏客户端实时渲染拍出来的。本文评估这套工艺能否移植到一个 AIGC 佛经题材短剧项目，并把游戏引擎路径与 AI 生成路径做成本、时间、一致性的全面对照。"
 excerpt: "抖音上一些\"3D 同人剧\"账号，场景一致性和画面质感明显优于纯 AI 生成路径。调研发现它们根本不是 AI 生成，而是用游戏客户端实时渲染拍出来的。"
 tags: [AIGC, 游戏引擎, 短剧, 工艺评估]
+cover: /assets/img/posts/2026-05-11-game-engine-vs-aigc-pipeline-feasibility/cover.jpg
 ---
 
 ## 0. 这类"3D 同人剧"的工艺本质

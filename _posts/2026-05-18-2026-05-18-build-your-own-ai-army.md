@@ -6,6 +6,7 @@ author: "Marginalia"
 description: "从单兵 Copilot 升级到 PM/Worker/Auditor 三层架构 AI 军团的 4-6 周施工路线图，含 GitLab + ZenTao + Confluence + 企微 + Sentry/Grafana 完整案例编制。"
 excerpt: "从单兵 Copilot 升级到 PM/Worker/Auditor 三层架构 AI 军团的 4-6 周施工路线图，含 GitLab + ZenTao + Confluence + 企微 + Sentry/Grafana 完整案例编制。"
 tags: [AI军团, Claude Code, 工程化, 自动化]
+cover: /assets/img/posts/2026-05-18-2026-05-18-build-your-own-ai-army/cover.jpg
 ---
 
 > 日期：2026-05-18

@@ -7,6 +7,7 @@ description: "理解 Claude Max 套餐的 token 计费本质：最大化 prompt 
 excerpt: "理解 Max 套餐的 token 计费本质，最大化 prompt cache 命中率，压低单次请求成本，把 5 小时 / 7 天双窗口的额度用满。"
 tags: [claude, llm, token-economy, prompt-cache, claude-code]
 keywords: "Claude Max, Claude Pro, prompt cache, token, LLM 计费, Claude Code, Anthropic"
+cover: /assets/img/posts/2026-04-28-claude-max-token-guide/cover.jpg
 ---
 
 
