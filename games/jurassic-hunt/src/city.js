@@ -7,12 +7,12 @@ export const CITY_HALF = 380;
 export class City {
   constructor() {
     const scene = this.scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x060a16);
-    scene.fog = new THREE.FogExp2(0x0a1224, 0.0035);
+    scene.background = new THREE.Color(0x0a1020);
+    scene.fog = new THREE.FogExp2(0x0e1730, 0.0026);
     this.t = 0;
 
-    scene.add(new THREE.AmbientLight(0x36405c, 2.0));
-    const moon = new THREE.DirectionalLight(0x8aa4d8, 0.9);
+    scene.add(new THREE.AmbientLight(0x46527a, 2.6));
+    const moon = new THREE.DirectionalLight(0x9ab0e0, 1.3);
     moon.position.set(-120, 220, 80);
     scene.add(moon);
 
@@ -42,8 +42,8 @@ export class City {
 
     // asphalt + road grid
     const roadTex = canvasTex(1024, 1024, (ctx) => {
-      ctx.fillStyle = '#14161c'; ctx.fillRect(0, 0, 1024, 1024);
-      ctx.fillStyle = '#1e2027';
+      ctx.fillStyle = '#1a1d26'; ctx.fillRect(0, 0, 1024, 1024);
+      ctx.fillStyle = '#272b36';
       for (let i = 0; i <= 8; i++) { ctx.fillRect(i * 128 - 22, 0, 44, 1024); ctx.fillRect(0, i * 128 - 22, 1024, 44); }
       ctx.strokeStyle = 'rgba(240,220,140,0.7)'; ctx.lineWidth = 3; ctx.setLineDash([18, 22]);
       for (let i = 0; i <= 8; i++) {
@@ -71,7 +71,7 @@ export class City {
     });
     const bGeo = new THREE.BoxGeometry(1, 1, 1);
     bGeo.translate(0, 0.5, 0);
-    const bMat = new THREE.MeshLambertMaterial({ color: 0x222630, emissive: 0xffffff, emissiveMap: winTex, emissiveIntensity: 0.9 });
+    const bMat = new THREE.MeshLambertMaterial({ color: 0x262b38, emissive: 0xffffff, emissiveMap: winTex, emissiveIntensity: 1.15 });
     const buildings = new THREE.InstancedMesh(bGeo, bMat, 500);
     const dummy = new THREE.Object3D();
     let bi = 0;
@@ -103,23 +103,71 @@ export class City {
       this.neons.push({ m: n, ph: rand(10), c });
     }
 
-    // street lights near the plaza
-    for (const [x, z] of [[28, 28], [-28, 28], [28, -28], [-28, -28], [0, 60], [60, 0]]) {
-      const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.12, 0.16, 7, 6), mat(0x33363e));
-      pole.position.set(x, 3.5, z);
-      const lampM = new THREE.Mesh(new THREE.SphereGeometry(0.45, 8, 6), new THREE.MeshBasicMaterial({ color: 0xffd9a0 }));
-      lampM.position.set(x, 7, z);
-      scene.add(pole, lampM);
+    // ===== street lamps — rows along the two main avenues + plaza ring =====
+    this.lampPos = [];
+    const poleGeo = new THREE.CylinderGeometry(0.13, 0.18, 8, 6);
+    const armGeo = new THREE.BoxGeometry(0.14, 0.14, 2.2);
+    const headGeo = new THREE.SphereGeometry(0.5, 8, 6);
+    const poleMat = mat(0x3a3e48);
+    const headMat = new THREE.MeshBasicMaterial({ color: 0xffd9a0 });
+    const glowTex = canvasTex(64, 64, (ctx) => {
+      const g = ctx.createRadialGradient(32, 32, 2, 32, 32, 30);
+      g.addColorStop(0, 'rgba(255,220,160,0.95)'); g.addColorStop(0.4, 'rgba(255,200,120,0.35)'); g.addColorStop(1, 'rgba(255,200,120,0)');
+      ctx.fillStyle = g; ctx.fillRect(0, 0, 64, 64);
+    });
+    const addLamp = (x, z, ry) => {
+      const grp = new THREE.Group();
+      const pole = new THREE.Mesh(poleGeo, poleMat); pole.position.y = 4;
+      const arm = new THREE.Mesh(armGeo, poleMat); arm.position.set(0, 7.9, 1.0);
+      const head = new THREE.Mesh(headGeo, headMat); head.position.set(0, 7.7, 2.0);
+      const halo = new THREE.Sprite(new THREE.SpriteMaterial({
+        map: glowTex, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false, opacity: 0.9,
+      }));
+      halo.scale.setScalar(7);
+      halo.position.copy(head.position);
+      grp.add(pole, arm, head, halo);
+      grp.position.set(x, 0, z);
+      grp.rotation.y = ry;
+      scene.add(grp);
+      const wp = new THREE.Vector3(x, 7.5, z).add(new THREE.Vector3(Math.sin(ry) * 2, 0, Math.cos(ry) * 2));
+      this.lampPos.push(wp);
+    };
+    for (let d = -185; d <= 185; d += 37) {
+      if (Math.abs(d) < 12) continue;
+      addLamp(d, 7.5, Math.PI);  // along the east-west avenue, heads over the road
+      addLamp(d, -7.5, 0);
+      addLamp(7.5, d, -Math.PI / 2);
+      addLamp(-7.5, d, Math.PI / 2);
     }
-    const plazaLight = new THREE.PointLight(0xffd9a0, 60, 140);
-    plazaLight.position.set(0, 22, 0);
+    for (const [x, z] of [[28, 28], [-28, 28], [28, -28], [-28, -28]]) addLamp(x, z, Math.atan2(-x, -z));
+
+    // pool of real lights cycled onto the lamps nearest the truck
+    this.lightPool = [];
+    for (let i = 0; i < 4; i++) {
+      const l = new THREE.PointLight(0xffd9a0, 55, 50, 1.6);
+      scene.add(l);
+      this.lightPool.push(l);
+    }
+    this._poolCd = 0;
+    const plazaLight = new THREE.PointLight(0xffd9a0, 80, 160);
+    plazaLight.position.set(0, 24, 0);
     scene.add(plazaLight);
   }
 
   getHeight() { return 0; }
 
-  update(dt) {
+  update(dt, truckPos) {
     this.t += dt;
+    // park the real-light pool on the 4 lamps nearest the truck
+    this._poolCd -= dt;
+    if (truckPos && this._poolCd <= 0) {
+      this._poolCd = 0.5;
+      const near = this.lampPos
+        .map((p) => ({ p, d: (p.x - truckPos.x) ** 2 + (p.z - truckPos.z) ** 2 }))
+        .sort((a, b) => a.d - b.d)
+        .slice(0, this.lightPool.length);
+      near.forEach((n, i) => this.lightPool[i].position.copy(n.p));
+    }
     for (const n of this.neons) {
       const flick = Math.sin(this.t * 3 + n.ph) > -0.85 ? 1 : 0.15; // occasional neon stutter
       n.m.material.opacity = (0.65 + Math.sin(this.t * 2 + n.ph) * 0.2) * flick;

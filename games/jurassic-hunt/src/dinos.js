@@ -111,21 +111,24 @@ function buildQuad(s) {
 
   // neck + head
   const neck = new THREE.Group();
-  neck.position.set(0, s.longNeck ? 2.8 : 2.2, 2.0);
+  neck.position.set(0, s.longNeck ? 2.6 : 2.2, 2.0);
   g.add(neck);
   if (s.longNeck) {
-    let par = neck;
-    for (let i = 0; i < 3; i++) {
-      const seg = new THREE.Group();
-      seg.position.set(0, i === 0 ? 0 : 1.35, i === 0 ? 0 : 0.45);
-      const m = new THREE.Mesh(new THREE.CylinderGeometry(0.5 - i * 0.1, 0.62 - i * 0.1, 1.6, 8), skin);
-      m.rotation.x = -0.3; m.position.set(0, 0.7, 0.2);
-      seg.add(m); par.add(seg); par = seg;
+    // one smooth tapered column, vertices sheared into a forward arc — no visible joints
+    const L = 6.2;
+    const nGeo = new THREE.CylinderGeometry(0.3, 0.78, L, 10, 16);
+    nGeo.translate(0, L / 2, 0);
+    const npos = nGeo.attributes.position;
+    for (let i = 0; i < npos.count; i++) {
+      const t = npos.getY(i) / L;
+      npos.setZ(i, npos.getZ(i) + t * t * 2.2);
     }
-    parts.neckTop = par;
+    nGeo.computeVertexNormals();
+    const neckMesh = new THREE.Mesh(nGeo, skin);
+    neck.add(neckMesh);
   }
   const head = new THREE.Group();
-  if (s.longNeck) { head.position.set(0, 1.5, 0.7); parts.neckTop.add(head); }
+  if (s.longNeck) { head.position.set(0, 6.35, 2.5); neck.add(head); }
   else { head.position.set(0, 0.35, 0.95); neck.add(head); }
   const skull = new THREE.Mesh(new THREE.BoxGeometry(s.longNeck ? 0.55 : 0.95, s.longNeck ? 0.55 : 0.85, 1.15), skin);
   const snout = new THREE.Mesh(new THREE.BoxGeometry(s.longNeck ? 0.4 : 0.6, 0.45, 0.8), skin2);

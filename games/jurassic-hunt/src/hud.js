@@ -12,8 +12,10 @@ export class Hud {
       accNum: $('accNum'), feed: $('feed'), toast: $('toast'), hint: $('hint'),
       speedNum: $('speedNum'), camMode: $('camMode'), compassTape: $('compassTape'),
       compass: $('compass'), hitmark: $('hitmark'), popups: $('popups'), bars: $('bars'),
-      healflash: $('healflash'),
+      healflash: $('healflash'), cross: $('cross'), minimap: $('minimap'),
     };
+    this.cursor = { x: innerWidth / 2, y: innerHeight / 2 };
+    this.mapCtx = this.el.minimap.getContext('2d');
     this.pops = [];
     this.entBars = new Map();
     this.toastT = 0;
@@ -82,8 +84,16 @@ export class Hud {
     this.el.camMode.textContent = mode;
   }
 
+  // crosshair follows the virtual cursor; .hot when hovering a target
+  setCross(x, y, hot) {
+    this.el.cross.style.transform = `translate(${x}px,${y}px) translate(-50%,-50%)`;
+    this.el.cross.classList.toggle('hot', !!hot);
+  }
+
   hitmarker(weak) {
     const h = this.el.hitmark;
+    h.style.left = `${this.cursor.x}px`;
+    h.style.top = `${this.cursor.y}px`;
     h.classList.toggle('weak', weak);
     h.style.transition = 'none';
     h.style.opacity = 1;
@@ -140,6 +150,106 @@ export class Hud {
     const rec = { el: d, fill: d.querySelector('i'), used: true };
     this.entBars.set(key, rec);
     return rec;
+  }
+
+  // ---- radar minimap ----
+  // pre-render the whole 2km world once (terrain wash blitted under live blips)
+  initMinimap(getHeight, desertness, worldHalf) {
+    const N = 256;
+    const c = document.createElement('canvas');
+    c.width = c.height = N;
+    const g = c.getContext('2d');
+    const img = g.createImageData(N, N);
+    for (let py = 0; py < N; py++) {
+      for (let px = 0; px < N; px++) {
+        const wx = (px / (N - 1)) * 2 * worldHalf - worldHalf;
+        const wz = (py / (N - 1)) * 2 * worldHalf - worldHalf;
+        const h = getHeight(wx, wz);
+        const d = desertness(wx, wz);
+        let r, gg, b;
+        if (h < -6) { r = 36; gg = 84; b = 88; }                 // lake
+        else { r = 74; gg = 96; b = 52; }                        // grass
+        if (h > 55) { const k = Math.min(1, (h - 55) / 70); r += k * 60; gg += k * 40; b += k * 50; } // rock
+        r = r * (1 - d) + 190 * d; gg = gg * (1 - d) + 160 * d; b = b * (1 - d) + 105 * d;           // desert
+        const i = (py * N + px) * 4;
+        img.data[i] = r; img.data[i + 1] = gg; img.data[i + 2] = b; img.data[i + 3] = 255;
+      }
+    }
+    g.putImageData(img, 0, 0);
+    this.worldMap = c;
+    this.worldHalf = worldHalf;
+  }
+
+  drawMinimap(s) {
+    // s: {pos, heading, camYaw, range, dinos, ufos, aliens, meteors, sphinx, pyramids, mystery, city}
+    const c = this.mapCtx, W = 200, R = 96, range = s.range || 260;
+    const k = R / range; // px per metre
+    c.clearRect(0, 0, W, W);
+    c.save();
+    c.beginPath(); c.arc(100, 100, R, 0, 7); c.clip();
+    // terrain wash
+    if (this.worldMap && !s.city) {
+      const mapScale = this.worldMap.width / (this.worldHalf * 2);
+      const srcW = range * 2 * mapScale;
+      const sx = (s.pos.x + this.worldHalf) * mapScale - srcW / 2;
+      const sy = (s.pos.z + this.worldHalf) * mapScale - srcW / 2;
+      c.globalAlpha = 0.8;
+      c.imageSmoothingEnabled = true;
+      c.drawImage(this.worldMap, sx, sy, srcW, srcW, 100 - R, 100 - R, R * 2, R * 2);
+      c.globalAlpha = 1;
+    } else if (s.city) {
+      c.fillStyle = 'rgba(18,22,34,0.9)'; c.fillRect(0, 0, W, W);
+    }
+    // rings + cross
+    c.strokeStyle = 'rgba(255,184,77,0.22)'; c.lineWidth = 1;
+    for (const rr of [R * 0.45, R * 0.9]) { c.beginPath(); c.arc(100, 100, rr, 0, 7); c.stroke(); }
+    c.beginPath(); c.moveTo(100, 100 - R); c.lineTo(100, 100 + R); c.moveTo(100 - R, 100); c.lineTo(100 + R, 100); c.stroke();
+
+    const blip = (wp, color, size = 3, clampEdge = false, shape = 'dot') => {
+      let dx = (wp.x - s.pos.x) * k, dy = (wp.z - s.pos.z) * k;
+      const r = Math.hypot(dx, dy);
+      if (r > R - 6) {
+        if (!clampEdge) return;
+        dx *= (R - 6) / r; dy *= (R - 6) / r;
+      }
+      const x = 100 + dx, y = 100 + dy;
+      c.fillStyle = color;
+      if (shape === 'dot') { c.beginPath(); c.arc(x, y, size, 0, 7); c.fill(); }
+      else if (shape === 'tri') {
+        c.beginPath(); c.moveTo(x, y - size); c.lineTo(x + size, y + size); c.lineTo(x - size, y + size); c.closePath(); c.fill();
+      } else if (shape === 'diamond') {
+        c.beginPath(); c.moveTo(x, y - size); c.lineTo(x + size, y); c.lineTo(x, y + size); c.lineTo(x - size, y); c.closePath(); c.fill();
+      }
+    };
+
+    if (!s.city) {
+      for (const p of s.pyramids) blip(p, 'rgba(232,200,140,0.9)', 4, false, 'tri');
+      blip(s.sphinx, '#ffd060', 5, true, 'tri');
+      for (const m of s.meteors) blip(m.pos, '#ff7a2a', 4, true, 'diamond');
+      for (const rec of s.mystery) blip(rec.pos, '#e0c8ff', 4, true, 'diamond');
+      for (const d of s.dinos) if (!d.dead) blip(d.pos, d.spec.boss ? '#ff3b24' : 'rgba(255,90,60,0.95)', d.spec.boss ? 4.5 : 3);
+      for (const u of s.ufos) if (u.state === 'fly') blip(u.pos, '#7affec', 4.5, true);
+      for (const a of s.aliens) if (!a.dead) blip(a.pos, '#52ff7a', 3);
+    }
+
+    // view cone (camera yaw) — north-up, screen angle of world dir (sin,cos)→(x,down z)
+    const coneA = Math.PI - s.camYaw;
+    c.save();
+    c.translate(100, 100); c.rotate(coneA);
+    const grad = c.createLinearGradient(0, 0, 0, -R);
+    grad.addColorStop(0, 'rgba(255,184,77,0.28)'); grad.addColorStop(1, 'rgba(255,184,77,0)');
+    c.fillStyle = grad;
+    c.beginPath(); c.moveTo(0, 0); c.lineTo(-R * 0.42, -R); c.lineTo(R * 0.42, -R); c.closePath(); c.fill();
+    c.restore();
+    // truck arrow (heading)
+    c.save();
+    c.translate(100, 100); c.rotate(Math.PI - s.heading);
+    c.fillStyle = '#f2e8d5';
+    c.strokeStyle = 'rgba(0,0,0,0.6)'; c.lineWidth = 1.5;
+    c.beginPath(); c.moveTo(0, -7); c.lineTo(5, 6); c.lineTo(0, 3); c.lineTo(-5, 6); c.closePath();
+    c.fill(); c.stroke();
+    c.restore();
+    c.restore();
   }
 
   healFlash() {

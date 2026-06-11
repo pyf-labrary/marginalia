@@ -28,11 +28,13 @@
     background:radial-gradient(ellipse at center,transparent 50%,rgba(57,216,200,.30) 100%)}
   #whiteout{position:fixed;inset:0;pointer-events:none;z-index:30;opacity:0;background:#fff}
 
-  /* ============ crosshair ============ */
-  #cross{position:fixed;left:50%;top:50%;width:64px;height:64px;transform:translate(-50%,-50%);z-index:12;pointer-events:none}
+  /* ============ crosshair (follows the virtual cursor) ============ */
+  #cross{position:fixed;left:0;top:0;width:64px;height:64px;transform:translate(-200px,-200px);z-index:12;pointer-events:none;will-change:transform}
   #cross svg{width:100%;height:100%;overflow:visible}
   #cross .arm{stroke:var(--amber);stroke-width:2.2;filter:drop-shadow(0 0 3px rgba(0,0,0,.9))}
   #cross .dot{fill:var(--amber)}
+  #cross.hot .arm{stroke:var(--blood)}
+  #cross.hot .dot{fill:var(--blood)}
   #hitmark{position:fixed;left:50%;top:50%;width:46px;height:46px;transform:translate(-50%,-50%) rotate(45deg);z-index:12;
     opacity:0;pointer-events:none}
   #hitmark span{position:absolute;background:var(--bone);box-shadow:0 0 6px rgba(0,0,0,.8)}
@@ -76,8 +78,15 @@
   .poi{position:absolute;top:17px;width:14px;height:14px;font-size:11px;line-height:14px;text-align:center;
     transform:translateX(-50%);filter:drop-shadow(0 0 4px #000)}
 
+  /* radar minimap */
+  #mapWrap{position:absolute;left:22px;bottom:22px;width:188px;height:188px}
+  #minimap{width:100%;height:100%;border-radius:50%;border:1px solid rgba(255,184,77,.4);
+    background:rgba(8,10,6,.6);box-shadow:0 4px 26px rgba(0,0,0,.5),inset 0 0 30px rgba(0,0,0,.5)}
+  #mapLabel{position:absolute;left:50%;top:-18px;transform:translateX(-50%);font-size:9px;letter-spacing:.34em;
+    color:var(--amber);opacity:.85;white-space:nowrap}
+
   /* kill feed */
-  #feed{position:absolute;left:22px;bottom:96px;display:flex;flex-direction:column-reverse;gap:5px}
+  #feed{position:absolute;left:22px;bottom:228px;display:flex;flex-direction:column-reverse;gap:5px}
   .feedItem{background:var(--panel);border-left:3px solid var(--amber);padding:5px 12px;color:var(--bone);
     font-size:12px;letter-spacing:.1em;opacity:0;transform:translateX(-18px);transition:all .25s;max-width:330px}
   .feedItem.in{opacity:1;transform:none}
@@ -137,6 +146,7 @@
     clip-path:polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%);font-weight:bold;pointer-events:auto;
     transition:filter .15s,transform .15s;font-family:var(--hud-font)}
   #startBtn:hover{filter:brightness(1.15);transform:scale(1.04)}
+  #startBtn:disabled{filter:grayscale(.55) brightness(.55);cursor:progress;transform:none;pointer-events:auto}
   #ctrl{position:relative;margin-top:34px;display:grid;grid-template-columns:auto auto;gap:7px 30px;
     font-size:12px;color:rgba(242,232,213,.85);letter-spacing:.12em;text-align:left;text-shadow:0 1px 4px #000}
   #ctrl b{display:inline-block;min-width:64px;color:var(--amber);font-weight:bold}
@@ -156,7 +166,8 @@
   #warpVid{width:100%;height:100%;object-fit:cover}
 
   /* end screen */
-  #end{position:fixed;inset:0;z-index:32;display:none;align-items:center;justify-content:center;background:rgba(2,4,10,.45)}
+  /* sits above the pause overlay (z-35) — the end screen owns the mouse */
+  #end{position:fixed;inset:0;z-index:36;display:none;align-items:center;justify-content:center;background:rgba(2,4,10,.45)}
   #end.on{display:flex}
   #endCard{background:rgba(6,10,20,.88);border:1px solid rgba(57,216,200,.4);padding:46px 64px;text-align:center;color:var(--bone);
     clip-path:polygon(18px 0,100% 0,100% calc(100% - 18px),calc(100% - 18px) 100%,0 100%,0 18px);
@@ -215,6 +226,8 @@
     <div id="camMode">第三人称 · V 切换</div>
   </div>
 
+  <div id="mapWrap"><div id="mapLabel">区域雷达 · RADAR</div><canvas id="minimap" width="200" height="200"></canvas></div>
+
   <div id="toast"><div class="cn"></div><div class="en"></div><div class="sub"></div></div>
   <div id="hint"></div>
 </div>
@@ -250,7 +263,7 @@
     <div id="titleSub">驾驶武装皮卡 · 猎杀巨兽 · 击落飞碟 · 寻找回家之路</div>
     <button id="startBtn">进 入 侏 罗 纪</button>
     <div id="ctrl">
-      <div><b>W A S D</b>驾驶皮卡</div><div><b>鼠标</b>转动机枪 / 瞄准</div>
+      <div><b>W A S D</b>驾驶皮卡</div><div><b>鼠标</b>移动准星 · 机枪跟随</div>
       <div><b>左键</b>开火（弹药无限）</div><div><b>V</b>第一 / 第三人称</div>
       <div><b>SHIFT</b>氮气加速</div><div><b>要害</b>头部一击必杀</div>
       <div><b>陨石</b>靠近修复车体</div><div><b>狮身人面像</b>射击它…回到现代</div>

@@ -1,7 +1,7 @@
 // main.js — conductor: input, cameras, gunnery, repair, warp transition, game loop
 import * as THREE from 'three';
 import { clamp, damp, rand } from './util.js';
-import { World, getHeight, WORLD } from './world.js';
+import { World, getHeight, desertness, WORLD } from './world.js';
 import { Effects } from './effects.js';
 import { AudioSys } from './audio.js';
 import { Hud } from './hud.js';
@@ -43,6 +43,40 @@ let city = null;
 // title backdrop = generated key art
 $('title').style.backgroundImage = "url('assets/keyart.jpg')";
 
+hud.initMinimap(getHeight, desertness, WORLD);
+
+// ---------------------------------------------------------------- preload gate
+// everything heavy is fetched BEFORE the start button unlocks, so the warp
+// video and BGM play back from memory with zero mid-game stutter
+let warpUrl = 'assets/timewarp.mp4';
+const startBtn = $('startBtn');
+const START_LABEL = startBtn.textContent;
+startBtn.disabled = true;
+let preloadDone = 0;
+const PRELOAD_TOTAL = 3;
+function preloadTick() {
+  preloadDone++;
+  if (preloadDone >= PRELOAD_TOTAL) {
+    startBtn.disabled = false;
+    startBtn.textContent = START_LABEL;
+  } else {
+    startBtn.textContent = `资 源 装 载 中 ${preloadDone}/${PRELOAD_TOTAL}`;
+  }
+}
+startBtn.textContent = `资 源 装 载 中 0/${PRELOAD_TOTAL}`;
+const track = (p) => Promise.resolve(p).then(preloadTick, preloadTick);
+track(new Promise((res, rej) => {
+  const img = new Image();
+  img.onload = res; img.onerror = rej;
+  img.src = 'assets/keyart.jpg';
+}));
+track(audio.preload());
+track(fetch('assets/timewarp.mp4')
+  .then((r) => { if (!r.ok) throw 0; return r.blob(); })
+  .then((b) => { warpUrl = URL.createObjectURL(b); }));
+// network watchdog — never hold the player hostage
+setTimeout(() => { startBtn.disabled = false; startBtn.textContent = START_LABEL; }, 25000);
+
 // compass POIs
 hud.addPoi('▲', world.sphinx.pos, '#ffd060', '狮身人面像');
 for (const m of world.meteors) hud.addPoi('◆', m.pos, '#ff7a2a', '修复陨石');
@@ -65,6 +99,7 @@ const S = {
   warpT: 0,
   hintStage: 0,
 };
+S.cursor = hud.cursor;           // virtual cursor — the gun chases this, not screen center
 const input = { fwd: false, back: false, left: false, right: false };
 
 // ---------------------------------------------------------------- input
@@ -92,10 +127,29 @@ addEventListener('keyup', (e) => {
   }
 });
 addEventListener('mousemove', (e) => {
-  if (document.pointerLockElement !== renderer.domElement) return;
-  S.camYaw -= e.movementX * 0.0023;
-  S.camPitch = clamp(S.camPitch - e.movementY * 0.0021, -0.5, 0.62);
+  if (document.pointerLockElement === renderer.domElement) {
+    S.cursor.x = clamp(S.cursor.x + e.movementX, 8, innerWidth - 8);
+    S.cursor.y = clamp(S.cursor.y + e.movementY, 8, innerHeight - 8);
+  } else if (S.mode === 'play' || S.mode === 'city') {
+    // no pointer lock (denied/unsupported) — follow the real cursor
+    S.cursor.x = e.clientX; S.cursor.y = e.clientY;
+  }
 });
+
+// pushing the cursor toward the screen edge swings the camera (dead zone in the middle)
+function cursorSteer(rawDt) {
+  const nx = (S.cursor.x / innerWidth) * 2 - 1;
+  const ny = (S.cursor.y / innerHeight) * 2 - 1;
+  const dzx = 0.26, dzy = 0.36;
+  if (Math.abs(nx) > dzx) {
+    const t = (Math.abs(nx) - dzx) / (1 - dzx);
+    S.camYaw -= Math.sign(nx) * t * t * 3.4 * rawDt;
+  }
+  if (Math.abs(ny) > dzy) {
+    const t = (Math.abs(ny) - dzy) / (1 - dzy);
+    S.camPitch = clamp(S.camPitch - Math.sign(ny) * t * t * 1.7 * rawDt, -0.5, 0.62);
+  }
+}
 addEventListener('mousedown', (e) => { if (e.button === 0) S.mouseDown = true; });
 addEventListener('mouseup', (e) => { if (e.button === 0) S.mouseDown = false; });
 
@@ -105,6 +159,8 @@ $('startBtn').addEventListener('click', () => {
   hud.show();
   S.mode = 'play';
   S.startedAt = performance.now();
+  S.cursor.x = innerWidth / 2; S.cursor.y = innerHeight * 0.42;
+  document.body.style.cursor = 'none';
   try { renderer.domElement.requestPointerLock(); } catch (e) {}
   hud.toast('侏罗纪 · 白昼', 'CRETACEOUS BADLANDS', '机枪弹药无限 · 头部要害一击必杀');
   setTimeout(() => hud.hint('罗盘上的 <b>▲</b> 是狮身人面像 —— 想回家就把它打醒'), 9000);
@@ -112,13 +168,16 @@ $('startBtn').addEventListener('click', () => {
 $('againBtn').addEventListener('click', () => location.reload());
 
 document.addEventListener('pointerlockchange', () => {
+  if (S.ended) return; // end screen owns the mouse now
   const locked = document.pointerLockElement === renderer.domElement;
   if (!locked && (S.mode === 'play' || S.mode === 'city')) {
     S.paused = true;
     $('pause').classList.add('on');
+    document.body.style.cursor = '';
   } else {
     S.paused = false;
     $('pause').classList.remove('on');
+    document.body.style.cursor = 'none';
   }
 });
 $('pause').addEventListener('click', () => { try { renderer.domElement.requestPointerLock(); } catch (e) {} });
@@ -131,10 +190,27 @@ addEventListener('resize', () => {
 
 // ---------------------------------------------------------------- gunnery
 const ray = new THREE.Raycaster();
+const _ndc = new THREE.Vector2();
 const _dir = new THREE.Vector3();
 const _muzzle = new THREE.Vector3();
 const _mdir = new THREE.Vector3();
-const _aim = new THREE.Vector3();
+
+function cursorRay() {
+  _ndc.set((S.cursor.x / innerWidth) * 2 - 1, -(S.cursor.y / innerHeight) * 2 + 1);
+  ray.setFromCamera(_ndc, camera);
+  ray.far = 500;
+  return ray;
+}
+
+// where is the cursor pointing in the world? (entity hit > ground > 250m out)
+function computeAim(targets) {
+  cursorRay();
+  const hits = targets.length ? ray.intersectObjects(targets, true) : [];
+  const ground = groundHit(ray.ray.origin, ray.ray.direction);
+  if (hits.length && (!ground || hits[0].distance < ground.dist)) return { point: hits[0].point, hot: true };
+  if (ground) return { point: ground.point, hot: false };
+  return { point: ray.ray.origin.clone().addScaledVector(ray.ray.direction, 250), hot: false };
+}
 
 function groundHit(origin, dir, maxD = 400) {
   // cheap analytic ray-march against the height field
@@ -161,14 +237,14 @@ function shoot() {
   audio.gunshot();
   truck.flashMuzzle();
   effects.addShake(0.05);
-  S.camPitch += 0.0028; // recoil creep
+  S.cursor.y = Math.max(8, S.cursor.y - 2.5); // recoil nudges the cursor up
 
-  camera.getWorldDirection(_dir);
+  cursorRay();
+  _dir.copy(ray.ray.direction);
   const sp = 0.004 + Math.abs(truck.speed) * 0.0004;
   _dir.x += rand(-sp, sp); _dir.y += rand(-sp, sp); _dir.z += rand(-sp, sp);
   _dir.normalize();
   ray.set(camera.position, _dir);
-  ray.far = 500;
 
   const targets = S.mode === 'city' ? [] :
     [...dinoMgr.hittables(), ...ufoMgr.hittables(), ...world.hittables];
@@ -279,7 +355,7 @@ function startWarp() {
   audio.whoosh(2.6);
   setTimeout(() => {
     wrap.classList.add('on');
-    vid.src = 'assets/timewarp.mp4';
+    vid.src = warpUrl;
     vid.muted = true;
     const fallback = setTimeout(enterCity, 9000);
     vid.onended = () => { clearTimeout(fallback); enterCity(); };
@@ -320,6 +396,9 @@ function enterCity() {
 }
 
 function showEnd() {
+  S.ended = true;
+  S.paused = false;
+  $('pause').classList.remove('on');
   $('stScore').textContent = S.score;
   $('stKills').textContent = S.kills;
   $('stWeak').textContent = S.weakKills;
@@ -328,6 +407,7 @@ function showEnd() {
   const m = Math.floor(S.survivedSec / 60), sec = Math.floor(S.survivedSec % 60);
   $('stTime').textContent = `${m}:${String(sec).padStart(2, '0')}`;
   $('end').classList.add('on');
+  document.body.style.cursor = '';
   document.exitPointerLock();
 }
 
@@ -445,10 +525,11 @@ function tick() {
     ufoMgr.update(dt);
     effects.update(dt);
 
-    // aim turret at crosshair point
-    camera.getWorldDirection(_dir);
-    _aim.copy(camera.position).addScaledVector(_dir, 120);
-    truck.aimAt(_aim);
+    // gun chases the cursor: aim at whatever sits under the crosshair
+    const aimTargets = [...dinoMgr.hittables(), ...ufoMgr.hittables(), ...world.hittables];
+    const aim = computeAim(aimTargets);
+    truck.aimAt(aim.point);
+    hud.setCross(S.cursor.x, S.cursor.y, aim.hot);
 
     if (S.mode === 'play') {
       // firing (pause overlay already guards the unlocked state)
@@ -498,11 +579,11 @@ function tick() {
     syncDynamicPois();
   } else if (S.mode === 'city') {
     truck.update(dt, input);
-    city.update(dt);
+    city.update(dt, truck.pos);
     effects.update(dt);
-    camera.getWorldDirection(_dir);
-    _aim.copy(camera.position).addScaledVector(_dir, 120);
-    truck.aimAt(_aim);
+    const aim = computeAim([]);
+    truck.aimAt(aim.point);
+    hud.setCross(S.cursor.x, S.cursor.y, false);
     // celebratory shots allowed, no targets
     S.fireCd -= dt;
     if (S.mouseDown && S.fireCd <= 0) {
@@ -512,6 +593,7 @@ function tick() {
     }
   }
 
+  if (S.mode === 'play' || S.mode === 'city') cursorSteer(rawDt);
   updateCamera(rawDt);
 
   // HUD
@@ -519,6 +601,14 @@ function tick() {
   hud.setScore(S.score, S.kills, S.shots ? Math.round((S.hits / Math.max(S.shots, 1)) * 100) + '%' : '--');
   hud.setSpeed(truck.speed * 3.6, (S.firstPerson ? '第一人称' : '第三人称') + ' · V 切换');
   hud.update(rawDt, camera, S.camYaw, S.mode === 'play' ? collectBars() : []);
+  if (S.mode !== 'title') {
+    hud.drawMinimap({
+      pos: truck.pos, heading: truck.heading, camYaw: S.camYaw,
+      dinos: dinoMgr.dinos, ufos: ufoMgr.ufos, aliens: ufoMgr.aliens,
+      meteors: world.meteors, sphinx: world.sphinx.pos, pyramids: world.pyramids,
+      mystery: world.mystery, city: S.mode === 'city',
+    });
+  }
 
   renderer.render(S.mode === 'city' ? city.scene : scene, camera);
 }

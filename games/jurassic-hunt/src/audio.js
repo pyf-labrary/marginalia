@@ -9,6 +9,15 @@ export class AudioSys {
     this.ufoHums = new Map();
   }
 
+  // network-fetch the BGM bytes up front (no AudioContext needed yet)
+  preload() {
+    this.raw = {};
+    const urls = { jurassic: 'assets/bgm_jurassic.mp3', city: 'assets/bgm_city.mp3' };
+    return Promise.all(Object.entries(urls).map(([k, u]) =>
+      fetch(u).then((r) => r.ok ? r.arrayBuffer() : null).then((b) => { if (b) this.raw[k] = b; }).catch(() => {})
+    ));
+  }
+
   // must be called from a user gesture
   init() {
     if (this.ctx) return;
@@ -26,9 +35,9 @@ export class AudioSys {
 
   async _loadBgm(key, url) {
     try {
-      const res = await fetch(url);
-      if (!res.ok) return;
-      this.bgm.buf[key] = await this.ctx.decodeAudioData(await res.arrayBuffer());
+      const bytes = (this.raw && this.raw[key]) || await fetch(url).then((r) => r.ok ? r.arrayBuffer() : null);
+      if (!bytes) return;
+      this.bgm.buf[key] = await this.ctx.decodeAudioData(bytes);
     } catch (e) { /* bgm optional */ }
   }
 
