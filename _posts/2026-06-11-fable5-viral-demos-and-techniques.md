@@ -12,9 +12,9 @@ cover: /assets/img/posts/2026-06-11-fable5/cover.jpg
 <figure>
 <video controls muted loop playsinline preload="metadata" style="width:100%;border-radius:3px"
        poster="/marginalia/assets/img/posts/2026-06-11-fable5/cover.jpg">
-  <source src="https://video.twimg.com/amplify_video/2064449371173761024/vid/avc1/1766x720/F9izBrDD9YaZHcmW.mp4" type="video/mp4">
+  <source src="https://game.panyifeng.xyz/media/posts/2026-06-11-fable5/forest.mp4" type="video/mp4">
 </video>
-<figcaption>Fable 5 单 prompt 生成的 photoreal three.js 森林，浏览器实时渲染（<a href="https://x.com/mattshumer_/status/2064449498596757643">Matt Shumer 原帖</a>视频，X 托管直链；被墙环境降级显示静帧）</figcaption>
+<figcaption>Fable 5 单 prompt 生成的 photoreal three.js 森林，浏览器实时渲染（<a href="https://x.com/mattshumer_/status/2064449498596757643">Matt Shumer 原帖</a>视频，已转存自托管）</figcaption>
 </figure>
 
 > 调研日期：2026-06-11（发布后第 2 天）。来源为公开报道 + 社区帖；Shumer 等人的原始 prompt 未公开，技术拆解部分含基于公开细节的反推，已标注。
@@ -33,7 +33,7 @@ Anthropic 于 2026-06-09 发布 Claude Fable 5（Mythos-class 模型加安全层
 |---|---|---|
 | photoreal 森林 | Matt Shumer | 实时浏览器渲染，"custom-built ThreeJS"；首版有性能问题，一句 "make it faster, without losing quality" 修复。原始 prompt 仅 DM 私享（社区为 gatekeeping 吵了一架） |
 | 可漫游 Yosemite 山谷 | Shlok Khemani | **技术细节最完整的案例**：拉卫星影像贴地表 + NASA 真实高程数据（DEM）做地形 → 对卫星图做像素分类识别植被 → 程序化种 ~26.6 万棵树 → 给六条真实瀑布在正确崖壁位置写自定义水体 shader |
-| NYC 天际线 / 城市风暴 / 波音 747 / 5000+ 物体太空模拟 | Shumer 等 | 同一路线的变体；太空模拟另有网友版本达 10 万+ 物体（动态 LOD） |
+| NYC 天际线 / 城市风暴 / 波音 747 / 5000+ 物体太空模拟 | Shumer 等 | 同一路线的变体，747 有网友部署的<a href="https://huggingface.co/spaces/victor/fable-5-boeing-747">在线可玩版（HF Space）</a>；太空模拟另有网友版本达 10 万+ 物体（动态 LOD） |
 | 飞机/导弹/地形/海面/港口/桥梁/舰艇建模 | 中文社区网友 | 一句话单 HTML 文件内完成（量子位首日实测汇总） |
 
 > 注：用户在 X 上看到的"上古卷轴复刻""被洪水淹没的哥特城市"属于这一类的衍生变体（城市风暴场景 + 单 prompt 游戏复刻的组合），未见独立技术报道；另有网友给的题目是"尽量完美复刻骑马与砍杀 3D 版，单 HTML 运行"（知乎）。
@@ -46,10 +46,36 @@ Anthropic 于 2026-06-09 发布 Claude Fable 5（Mythos-class 模型加安全层
 - **自指 Snake / Breathwork Garden / 《只有一道门》复刻**：均为单 prompt/单次推理产物。
 - **Slay the Spire**：不是"做游戏"而是"打游戏"——能稳定完成整局 run。
 
+<figure>
+<video controls muted loop playsinline preload="metadata" style="width:100%;border-radius:3px">
+  <source src="https://game.panyifeng.xyz/media/posts/2026-06-11-fable5/leveldevil.mp4" type="video/mp4">
+</video>
+<figcaption>《只有一道门》（Level Devil）复刻实录，medium effort 档单 prompt 产物（<a href="https://x.com/LexnLin/status/2064450732850348518">@LexnLin 原帖</a>视频，转存自托管）</figcaption>
+</figure>
+
+<figure>
+<img src="/marginalia/assets/img/posts/2026-06-11-fable5/minecraft-twitter-fable.jpg" alt="Fable 5 在 Minecraft 里搭出的推特界面" style="width:100%;border-radius:3px">
+<img src="/marginalia/assets/img/posts/2026-06-11-fable5/minecraft-twitter-gpt55.jpg" alt="GPT-5.5 同题对比" style="width:100%;border-radius:3px;margin-top:6px">
+<figcaption>同题对比「在 Minecraft 里做一个推特」：上 Fable 5（连笔记本键盘底座都搭了出来），下 GPT-5.5（<a href="https://x.com/adonis_singh/status/2064415411198730265">@adonis_singh 原帖</a>截图）</figcaption>
+</figure>
+
 ### 3. 应用 / OS 复刻类
 
 - **浏览器版 Windows OS 克隆**：登录屏、通知、Edge 风格浏览器、纸牌、Copilot 全套。
 - **一句 prompt 复刻 Photoshop**：修图/调色/特效/绘画，能处理色彩分离、颗粒质感（量子位实测）。
+
+<figure>
+<video controls muted loop playsinline preload="metadata" style="width:100%;border-radius:3px">
+  <source src="https://game.panyifeng.xyz/media/posts/2026-06-11-fable5/pskiller.mp4" type="video/mp4">
+</video>
+<figcaption>「我用一句 prompt 杀死了一家 2400 亿美元的公司」——浏览器版 Photoshop 复刻演示（<a href="https://x.com/hewarsaber/status/2064404745452744793">@hewarsaber 原帖</a>视频，转存自托管）</figcaption>
+</figure>
+
+<figure>
+<img src="/marginalia/assets/img/posts/2026-06-11-fable5/fable-autobio-site.jpg" alt="Fable 5 给自己写的自传网站" style="width:100%;border-radius:3px">
+<figcaption>Fable 5 给自己设计/撰写/动效的「自传」网站："I learned to read in your libraries… no human hand has touched this code."（via 量子位）</figcaption>
+</figure>
+
 - **网络抓包可视化**：实时 packet 渲染成高速公路车流，车型对应包类型（observability 工具创意）。
 - **等时圈地图**（Ethan Mollick）：多 agent 收集航班/铁路/公路数据做交互地图，持续迭代吃反馈，token 消耗极高。
 
