@@ -99,7 +99,6 @@ const S = {
   warpT: 0,
   hintStage: 0,
 };
-S.cursor = hud.cursor;           // virtual cursor — the gun chases this, not screen center
 const input = { fwd: false, back: false, left: false, right: false };
 
 // ---------------------------------------------------------------- input
@@ -127,29 +126,10 @@ addEventListener('keyup', (e) => {
   }
 });
 addEventListener('mousemove', (e) => {
-  if (document.pointerLockElement === renderer.domElement) {
-    S.cursor.x = clamp(S.cursor.x + e.movementX, 8, innerWidth - 8);
-    S.cursor.y = clamp(S.cursor.y + e.movementY, 8, innerHeight - 8);
-  } else if (S.mode === 'play' || S.mode === 'city') {
-    // no pointer lock (denied/unsupported) — follow the real cursor
-    S.cursor.x = e.clientX; S.cursor.y = e.clientY;
-  }
+  if (document.pointerLockElement !== renderer.domElement) return;
+  S.camYaw -= e.movementX * 0.0023;
+  S.camPitch = clamp(S.camPitch - e.movementY * 0.0021, -0.5, 0.62);
 });
-
-// pushing the cursor toward the screen edge swings the camera (dead zone in the middle)
-function cursorSteer(rawDt) {
-  const nx = (S.cursor.x / innerWidth) * 2 - 1;
-  const ny = (S.cursor.y / innerHeight) * 2 - 1;
-  const dzx = 0.26, dzy = 0.36;
-  if (Math.abs(nx) > dzx) {
-    const t = (Math.abs(nx) - dzx) / (1 - dzx);
-    S.camYaw -= Math.sign(nx) * t * t * 3.4 * rawDt;
-  }
-  if (Math.abs(ny) > dzy) {
-    const t = (Math.abs(ny) - dzy) / (1 - dzy);
-    S.camPitch = clamp(S.camPitch - Math.sign(ny) * t * t * 1.7 * rawDt, -0.5, 0.62);
-  }
-}
 addEventListener('mousedown', (e) => { if (e.button === 0) S.mouseDown = true; });
 addEventListener('mouseup', (e) => { if (e.button === 0) S.mouseDown = false; });
 
@@ -159,7 +139,6 @@ $('startBtn').addEventListener('click', () => {
   hud.show();
   S.mode = 'play';
   S.startedAt = performance.now();
-  S.cursor.x = innerWidth / 2; S.cursor.y = innerHeight * 0.42;
   document.body.style.cursor = 'none';
   try { renderer.domElement.requestPointerLock(); } catch (e) {}
   hud.toast('侏罗纪 · 白昼', 'CRETACEOUS BADLANDS', '机枪弹药无限 · 头部要害一击必杀');
@@ -195,16 +174,16 @@ const _dir = new THREE.Vector3();
 const _muzzle = new THREE.Vector3();
 const _mdir = new THREE.Vector3();
 
-function cursorRay() {
-  _ndc.set((S.cursor.x / innerWidth) * 2 - 1, -(S.cursor.y / innerHeight) * 2 + 1);
+function centerRay() {
+  _ndc.set(0, 0); // crosshair lives at screen center
   ray.setFromCamera(_ndc, camera);
   ray.far = 500;
   return ray;
 }
 
-// where is the cursor pointing in the world? (entity hit > ground > 250m out)
+// where is the crosshair pointing in the world? (entity hit > ground > 250m out)
 function computeAim(targets) {
-  cursorRay();
+  centerRay();
   const hits = targets.length ? ray.intersectObjects(targets, true) : [];
   const ground = groundHit(ray.ray.origin, ray.ray.direction);
   if (hits.length && (!ground || hits[0].distance < ground.dist)) return { point: hits[0].point, hot: true };
@@ -237,9 +216,9 @@ function shoot() {
   audio.gunshot();
   truck.flashMuzzle();
   effects.addShake(0.05);
-  S.cursor.y = Math.max(8, S.cursor.y - 2.5); // recoil nudges the cursor up
+  S.camPitch += 0.0028; // recoil creep
 
-  cursorRay();
+  centerRay();
   _dir.copy(ray.ray.direction);
   const sp = 0.004 + Math.abs(truck.speed) * 0.0004;
   _dir.x += rand(-sp, sp); _dir.y += rand(-sp, sp); _dir.z += rand(-sp, sp);
@@ -529,7 +508,7 @@ function tick() {
     const aimTargets = [...dinoMgr.hittables(), ...ufoMgr.hittables(), ...world.hittables];
     const aim = computeAim(aimTargets);
     truck.aimAt(aim.point);
-    hud.setCross(S.cursor.x, S.cursor.y, aim.hot);
+    hud.setCross(aim.hot);
 
     if (S.mode === 'play') {
       // firing (pause overlay already guards the unlocked state)
@@ -583,7 +562,7 @@ function tick() {
     effects.update(dt);
     const aim = computeAim([]);
     truck.aimAt(aim.point);
-    hud.setCross(S.cursor.x, S.cursor.y, false);
+    hud.setCross(false);
     // celebratory shots allowed, no targets
     S.fireCd -= dt;
     if (S.mouseDown && S.fireCd <= 0) {
@@ -593,7 +572,6 @@ function tick() {
     }
   }
 
-  if (S.mode === 'play' || S.mode === 'city') cursorSteer(rawDt);
   updateCamera(rawDt);
 
   // HUD
