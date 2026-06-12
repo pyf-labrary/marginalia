@@ -146,9 +146,9 @@ layout: default
 <script>
 /* —— hero 墨滴：俯视纸面，墨从镜头外滴上来 → 洇开 → 被纸面吸收 ——
    预渲染墨渍 sprite + 画布内绘制（不用 mix-blend-mode，避免整屏合成开销）；
-   reduced-motion 下整层不启动；hero 滚出视口即停 rAF。 */
+   氛围层有意豁免 prefers-reduced-motion（Windows 关"动画效果"会全局报 reduce，见 memory）；
+   hero 滚出视口即停 rAF。 */
 (function () {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   if (window.matchMedia("(max-width: 760px)").matches) return; /* 窄屏文字铺满 hero，不叠墨 */
   var canvas = document.getElementById("hero-ink");
   var hero = canvas && canvas.closest(".hero");
