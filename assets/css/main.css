@@ -991,6 +991,14 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
     radial-gradient(120% 90% at 50% 30%, transparent 55%, rgba(0,0,0,.38) 100%),
     linear-gradient(180deg, transparent 68%, var(--bg) 100%);
 }
+.hero-ink {
+  /* 墨滴粒子层：DOM 上在 vignette 之后、hero-inner(z:1) 之前 → 墨落在画面上、文字之下 */
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
 .hero-inner {
   position: relative;
   z-index: 1;
