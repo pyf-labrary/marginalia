@@ -11,6 +11,23 @@ wide: true
 <ul class="cover-list" role="list">
 
 <li class="cover-row">
+<a class="cover-media" href="https://github.com/pyf-labrary/fanbox-web"><img src="/marginalia/assets/img/site/covers/fanbox-web.jpg" alt="翻箱 Web 版实际界面：左侧文件网格 + 底部内嵌终端正在跑命令" loading="lazy"></a>
+<div class="cover-body" markdown="1">
+## 翻箱 Web 版 (fork 花叔作品)
+
+> **文件管理 × AI agent 终端**，一个浏览器标签页搞定。Fork 自花叔的 [FanBox](https://github.com/alchaincyf/fanbox)，把桌面版能力搬进浏览器：左边浏览/预览/编辑文件，右下角真终端里跑 Claude Code，agent 每改一个文件，对应卡片实时点亮。
+
+本 fork 定位「服务端跑在 WSL，Windows 浏览器访问」——agent 原生跑 Linux，打开/定位文件自动交还 Windows 资源管理器。在上游之上做了三件事：**终端会话刷新不丢**（pty 断开后脱管保活 30 分钟 + 输出缓冲回放，跑一半的 Claude Code 不被刷新腰斩）、zip 预览中文文件名乱码修复（自解析 central directory + GBK 回退，反哺上游 #9）、透明图缩略图陈旧缓存击穿（上游 #1）。
+
+→ [源代码](https://github.com/pyf-labrary/fanbox-web)（MIT 开源，fork 自 alchaincyf/fanbox）
+
+技术栈：零依赖 Node 服务端（唯一原生依赖 node-pty 按「装得上就用」处理，装不上其余功能照常）+ 原生 JS 前端 + xterm.js；WebSocket TTY 透传、SSE 文件变化推送、OSC 7 目录跟随。`npm install --omit=dev && npm start` 即用。
+
+*上线时间：2026-06-11。*
+</div>
+</li>
+
+<li class="cover-row">
 <a class="cover-media" href="https://tty.panyifeng.xyz/"><img src="/marginalia/assets/img/site/covers/claude-web-terminal.jpg" alt="Claude Web Terminal 实际界面：浏览器里的 Claude Code 多窗口会话" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## Claude Web Terminal
@@ -56,23 +73,6 @@ wide: true
 技术栈：Vite + React + Tailwind + Tone.js + Howler。乐器采样来自 Philharmonia Orchestra Samples（CC-BY-NC）+ FluidR3_GM；场景 MX 真录音由 MiniMax music-1.5 生成；27 张视觉资产由 Dreamina 5.0 生成。
 
 *上线时间：2026-05-12。*
-</div>
-</li>
-
-<li class="cover-row">
-<a class="cover-media" href="https://github.com/pyf-labrary/fanbox-web"><img src="/marginalia/assets/img/site/covers/fanbox-web.jpg" alt="翻箱 Web 版实际界面：左侧文件网格 + 底部内嵌终端正在跑命令" loading="lazy"></a>
-<div class="cover-body" markdown="1">
-## 翻箱 Web 版 (fork 花叔作品)
-
-> **文件管理 × AI agent 终端**，一个浏览器标签页搞定。Fork 自花叔的 [FanBox](https://github.com/alchaincyf/fanbox)，把桌面版能力搬进浏览器：左边浏览/预览/编辑文件，右下角真终端里跑 Claude Code，agent 每改一个文件，对应卡片实时点亮。
-
-本 fork 定位「服务端跑在 WSL，Windows 浏览器访问」——agent 原生跑 Linux，打开/定位文件自动交还 Windows 资源管理器。在上游之上做了三件事：**终端会话刷新不丢**（pty 断开后脱管保活 30 分钟 + 输出缓冲回放，跑一半的 Claude Code 不被刷新腰斩）、zip 预览中文文件名乱码修复（自解析 central directory + GBK 回退，反哺上游 #9）、透明图缩略图陈旧缓存击穿（上游 #1）。
-
-→ [源代码](https://github.com/pyf-labrary/fanbox-web)（MIT 开源，fork 自 alchaincyf/fanbox）
-
-技术栈：零依赖 Node 服务端（唯一原生依赖 node-pty 按「装得上就用」处理，装不上其余功能照常）+ 原生 JS 前端 + xterm.js；WebSocket TTY 透传、SSE 文件变化推送、OSC 7 目录跟随。`npm install --omit=dev && npm start` 即用。
-
-*上线时间：2026-06-11。*
 </div>
 </li>
 

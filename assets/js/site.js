@@ -81,10 +81,10 @@
     });
   });
 
-  /* ---- 减少动效时停掉 hero 视频 ---- */
-  if (reduced) {
-    document.querySelectorAll('.hero-media').forEach(function (v) {
-      if (v.pause) { v.pause(); v.removeAttribute('autoplay'); }
-    });
-  }
+  /* ---- hero 视频：纯氛围装饰层，有意豁免 prefers-reduced-motion ----
+     Windows 关「动画效果」会让桌面浏览器报 reduce，若门控则首页水墨 loop 永远静止。
+     位移类动画（.reveal）仍保持门控。autoplay 偶发被浏览器拦时手动补一次 play()。 */
+  document.querySelectorAll('.hero-media').forEach(function (v) {
+    if (v.paused && v.play) { v.play().catch(function () {}); }
+  });
 })();
