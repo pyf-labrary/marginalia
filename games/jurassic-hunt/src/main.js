@@ -19,10 +19,10 @@ renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.05;
+renderer.toneMappingExposure = 1.22;
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xbfd4e0);
+scene.background = new THREE.Color(0xcadeec);
 const camera = new THREE.PerspectiveCamera(70, innerWidth / innerHeight, 0.1, 5000);
 
 const audio = new AudioSys();
@@ -251,6 +251,8 @@ function shoot() {
       onSphinxHit(h.point);
     } else if (kind === 'mystery') {
       onMysteryHit(entObj, h.point);
+    } else if (kind === 'egg') {
+      onEggHit(h.object, h.point);
     }
   } else if (ground) {
     hitPoint = ground.point;
@@ -266,6 +268,7 @@ function onKill(ent, weak) {
   let name = '目标', pts = 100, boss = false;
   if (ent instanceof Dino) { name = ent.spec.cn; pts = ent.spec.score; boss = ent.spec.boss; }
   else if (ent instanceof Ptero) { name = '翼龙'; pts = 120; }
+  else if (ent.spec && ent.spec.cn) { name = ent.spec.cn; pts = ent.spec.score; boss = !!ent.spec.boss; }
   else { name = '外星人'; pts = 150; }
   if (weak) pts *= 2;
   S.score += pts; S.kills++;
@@ -323,6 +326,23 @@ function onMysteryHit(obj, point) {
   world.killMystery(rec);
 }
 
+function onEggHit(eggMesh, point) {
+  const res = world.shootEgg(eggMesh);
+  if (!res) return;
+  S.score += res.score;
+  effects.debris(point, 10, 0xe8dcc4);
+  effects.blood(point, 4, 0xc8a830);
+  audio.chime(true);
+  hud.feed(`恐龙蛋 <em>击碎</em> &nbsp;+${res.score}`);
+  hud.popup(`+${res.score}`, point, 'score');
+  if (res.ambush) {
+    dinoMgr.spawnAmbush('raptor', res.pos, 2);
+    hud.toast('巢穴被毁', 'THE PACK ANSWERS', '迅猛龙闻声而至——守住！');
+    audio.roar(1.2);
+    effects.addShake(0.25);
+  }
+}
+
 // ---------------------------------------------------------------- warp & city
 function startWarp() {
   S.mode = 'warp';
@@ -349,6 +369,7 @@ function enterCity() {
   if (cityEntered) return;
   cityEntered = true;
   city = new City();
+  if (window.__JH) window.__JH.city = city;
   // move the truck + effect pools into the night city
   city.scene.add(truck.group);
   effects.attach(city.scene);
@@ -408,11 +429,15 @@ function updateCamera(dt) {
     camera.lookAt(_camTarget);
     S.fov = damp(S.fov, truck.boost ? 82 : 75, 5, dt);
   } else {
+    // camera rides high so the truck sits in the lower third — the center
+    // crosshair must never be occluded by the truck itself
     _camTarget.copy(truck.pos).add(new THREE.Vector3(0, 3.1, 0));
-    _camPos.copy(_camTarget).addScaledVector(_lookDir, -10.5);
+    _camPos.copy(_camTarget).addScaledVector(_lookDir, -12);
+    _camPos.y += 2.6;
     _camPos.y = Math.max(_camPos.y, hf(_camPos.x, _camPos.z) + 0.7);
     camera.position.lerp(_camPos, 1 - Math.exp(-12 * dt));
-    _camTarget.addScaledVector(_lookDir, 18);
+    _camTarget.addScaledVector(_lookDir, 26);
+    _camTarget.y += 1.2;
     camera.lookAt(_camTarget);
     S.fov = damp(S.fov, truck.boost ? 77 : 70, 5, dt);
   }
@@ -453,6 +478,13 @@ function collectBars() {
     ents.push({
       key2: d, label: d.spec.cn, boss: !!d.spec.boss, hp: d.hp, maxHp: d.maxHp, dead: d.dead,
       sinceDamage: now - d.damagedAt, anchor: (v) => d.barAnchor(v),
+    });
+  }
+  const pl = dinoMgr.plesio;
+  if (pl && !pl.dead && pl.hp < pl.maxHp) {
+    ents.push({
+      key2: pl, label: pl.spec.cn, boss: true, hp: pl.hp, maxHp: pl.maxHp, dead: pl.dead,
+      sinceDamage: now - pl.damagedAt, anchor: (v) => pl.barAnchor(v),
     });
   }
   for (const u of ufoMgr.ufos) {
@@ -533,6 +565,19 @@ function tick() {
       if (repairing && !repairWasOn) hud.healFlash();
       truck.repairing = repairWasOn = repairing;
 
+      // world events: volcano eruption + lava bomb impacts
+      for (const ev of world.events) {
+        if (ev.type === 'erupt') {
+          hud.toast('火山苏醒', 'ERUPTION', '熔岩弹正在砸向荒原');
+          audio.explosion(1.6);
+          effects.addShake(0.6);
+        } else if (ev.type === 'bomb') {
+          audio.explosion(0.9);
+          if (ev.nearTruck) truck.takeDamage(12);
+        }
+      }
+      world.events.length = 0;
+
       // mystery spawn cadence
       S.mysteryCd -= dt;
       if (S.mysteryCd <= 0) {
@@ -580,9 +625,11 @@ function tick() {
   hud.setSpeed(truck.speed * 3.6, (S.firstPerson ? '第一人称' : '第三人称') + ' · V 切换');
   hud.update(rawDt, camera, S.camYaw, S.mode === 'play' ? collectBars() : []);
   if (S.mode !== 'title') {
+    const mapDinos = (dinoMgr.plesio && !dinoMgr.plesio.dead && !dinoMgr.plesio.removed)
+      ? [...dinoMgr.dinos, dinoMgr.plesio] : dinoMgr.dinos;
     hud.drawMinimap({
       pos: truck.pos, heading: truck.heading, camYaw: S.camYaw,
-      dinos: dinoMgr.dinos, ufos: ufoMgr.ufos, aliens: ufoMgr.aliens,
+      dinos: mapDinos, ufos: ufoMgr.ufos, aliens: ufoMgr.aliens,
       meteors: world.meteors, sphinx: world.sphinx.pos, pyramids: world.pyramids,
       mystery: world.mystery, city: S.mode === 'city',
     });

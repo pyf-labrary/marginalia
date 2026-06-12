@@ -1,7 +1,7 @@
 // dinos.js — procedural dinosaur rigs, per-species AI, pterosaurs, population manager
 import * as THREE from 'three';
 import { rand, pick, clamp, lerp, damp, mat } from './util.js';
-import { getHeight, desertness, WORLD } from './world.js';
+import { getHeight, desertness, WORLD, LAKE, WATER_Y } from './world.js';
 
 // ---------------------------------------------------------------- species table
 // hp scales with body size; a weak-point (head) hit is ALWAYS a one-shot kill.
@@ -13,6 +13,15 @@ export const SPECIES = {
   raptor: {
     cn: '迅猛龙', en: 'VELOCIRAPTOR', plan: 'biped', scale: 1.15, hp: 60, speed: 13,
     score: 150, behavior: 'hunter', aggroR: 70, atkR: 4.5, dmg: 7, color: 0x5e6e4a, color2: 0x39452c, roar: 0.8,
+  },
+  dilophosaurus: {
+    cn: '双冠龙', en: 'DILOPHOSAURUS', plan: 'biped', scale: 1.35, hp: 85, speed: 12.5,
+    score: 200, behavior: 'hunter', aggroR: 62, atkR: 5, dmg: 9, color: 0x7a8a4e, color2: 0x4e5c30, roar: 1.0, crest: true,
+  },
+  spinosaurus: {
+    cn: '棘龙', en: 'SPINOSAURUS', plan: 'biped', scale: 3.0, hp: 500, speed: 10.5,
+    score: 700, behavior: 'hunter', aggroR: 95, atkR: 7.5, dmg: 16, color: 0x5e6a52, color2: 0x3c4836,
+    roar: 2.6, boss: true, sail: true, longSnout: true, nearLake: true,
   },
   triceratops: {
     cn: '三角龙', en: 'TRICERATOPS', plan: 'quad', scale: 2.4, hp: 180, speed: 9.5,
@@ -53,16 +62,51 @@ function buildBiped(s) {
   const head = new THREE.Group(); head.position.set(0, 0.85, 0.65); neck.add(head);
   const skull = new THREE.Mesh(new THREE.BoxGeometry(0.62, 0.62, 1.25), skin);
   skull.position.z = 0.3;
-  const snout = new THREE.Mesh(new THREE.BoxGeometry(0.45, 0.4, 0.8), skin2);
-  snout.position.set(0, -0.08, 1.15);
-  const jaw = new THREE.Mesh(new THREE.BoxGeometry(0.4, 0.18, 0.75), skin2);
-  jaw.position.set(0, -0.34, 1.0);
+  const snout = new THREE.Mesh(new THREE.BoxGeometry(s.longSnout ? 0.38 : 0.45, s.longSnout ? 0.34 : 0.4, s.longSnout ? 1.4 : 0.8), skin2);
+  snout.position.set(0, -0.08, s.longSnout ? 1.45 : 1.15);
+  const jaw = new THREE.Mesh(new THREE.BoxGeometry(0.4, 0.18, s.longSnout ? 1.3 : 0.75), skin2);
+  jaw.position.set(0, -0.34, s.longSnout ? 1.3 : 1.0);
   const eyeL = new THREE.Mesh(new THREE.SphereGeometry(0.09, 6, 6), new THREE.MeshBasicMaterial({ color: 0xffcc20 }));
   eyeL.position.set(0.28, 0.12, 0.6);
   const eyeR = eyeL.clone(); eyeR.position.x = -0.28;
   head.add(skull, snout, jaw, eyeL, eyeR);
+  if (s.crest) {
+    // dilophosaurus: twin半月骨冠 + 受激时张开的颈伞
+    const crestM = mat(0xb04a30);
+    for (const side of [0.16, -0.16]) {
+      const cr = new THREE.Mesh(new THREE.CircleGeometry(0.5, 10, 0, Math.PI), crestM);
+      cr.material.side = THREE.DoubleSide;
+      cr.position.set(side, 0.38, 0.55);
+      cr.rotation.y = Math.PI / 2;
+      head.add(cr);
+    }
+    const frill = new THREE.Mesh(new THREE.CircleGeometry(1.0, 12, 0, Math.PI),
+      new THREE.MeshLambertMaterial({ color: 0xd87a2a, side: THREE.DoubleSide, flatShading: true }));
+    frill.position.set(0, 0.1, -0.1);
+    frill.rotation.y = Math.PI / 2;
+    frill.scale.set(0.01, 0.01, 1);
+    head.add(frill);
+    parts.frill = frill;
+  }
   tagWeak(head);
   parts.neck = neck; parts.head = head; parts.jaw = jaw;
+
+  if (s.sail) {
+    // spinosaurus: dorsal sail — half-disc membrane + spine rays
+    const sail = new THREE.Mesh(new THREE.CircleGeometry(1, 14, 0, Math.PI),
+      new THREE.MeshLambertMaterial({ color: s.color2, side: THREE.DoubleSide, flatShading: true }));
+    sail.position.set(0, 2.55, -0.1);
+    sail.rotation.y = Math.PI / 2;
+    sail.scale.set(2.1, 1.5, 1);
+    g.add(sail);
+    for (let i = 0; i < 5; i++) {
+      const t = (i / 4) * Math.PI * 0.8 + Math.PI * 0.1;
+      const sp = new THREE.Mesh(new THREE.ConeGeometry(0.07, 0.8, 5), mat(s.color));
+      sp.position.set(0, 2.55 + Math.sin(t) * 1.45, -0.1 + Math.cos(t) * 2.0);
+      sp.rotation.x = -Math.cos(t) * 0.8;
+      g.add(sp);
+    }
+  }
 
   // tail chain
   parts.tail = [];
@@ -357,6 +401,12 @@ export class Dino {
         this.parts.neck.rotation.x = damp(this.parts.neck.rotation.x, 0, 2, dt);
       }
     }
+    // dilophosaurus frill flares while hunting
+    if (this.parts.frill) {
+      const want = (this.state === 'aggro' || this.state === 'attack') ? 1 : 0.01;
+      const k = damp(this.parts.frill.scale.x, want, 7, dt);
+      this.parts.frill.scale.set(k, k, 1);
+    }
     // big footsteps shake when boss is near
     if (this.spec.boss && this.curSpeed > 2 && dist < 60) {
       const step = Math.sin(this.gait);
@@ -467,18 +517,208 @@ export class Ptero {
   }
 }
 
+// ---------------------------------------------------------------- plesiosaur (lake ambient)
+export class Plesio {
+  constructor(ctx) {
+    this.ctx = ctx;
+    this.spec = { cn: '蛇颈龙', en: 'PLESIOSAUR', score: 400, boss: true, roar: 1.4 };
+    const g = this.group = new THREE.Group();
+    const skin = mat(0x46666e), skin2 = mat(0x2e464c);
+    const body = new THREE.Mesh(new THREE.SphereGeometry(1.6, 12, 10), skin);
+    body.scale.set(1.25, 0.75, 2.1);
+    body.position.y = 0.2;
+    g.add(body);
+    // S-curved neck of chained segments, head on top (weak)
+    this.neckSegs = [];
+    let par = g;
+    const segSpecs = [
+      { len: 1.6, r: 0.46, rx: -0.85 },
+      { len: 1.5, r: 0.36, rx: 0.32 },
+      { len: 1.4, r: 0.28, rx: 0.38 },
+    ];
+    let pz = 2.6, py = 0.5;
+    for (const ss of segSpecs) {
+      const seg = new THREE.Group();
+      if (par === g) seg.position.set(0, py, pz);
+      else seg.position.set(0, segSpecs[0].len * 0.92, 0);
+      seg.rotation.x = ss.rx;
+      const m = new THREE.Mesh(new THREE.CylinderGeometry(ss.r * 0.8, ss.r, ss.len, 8), skin);
+      m.position.y = ss.len / 2;
+      seg.add(m);
+      par.add(seg);
+      par = seg;
+      this.neckSegs.push(seg);
+    }
+    const head = new THREE.Group();
+    head.position.set(0, segSpecs[2].len, 0);
+    const skull = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.45, 1.0), skin);
+    skull.position.z = 0.2;
+    const beak = new THREE.Mesh(new THREE.BoxGeometry(0.36, 0.3, 0.6), skin2);
+    beak.position.set(0, -0.05, 0.85);
+    const eyeL = new THREE.Mesh(new THREE.SphereGeometry(0.08, 6, 6), new THREE.MeshBasicMaterial({ color: 0xffcc20 }));
+    eyeL.position.set(0.22, 0.12, 0.35);
+    const eyeR = eyeL.clone(); eyeR.position.x = -0.22;
+    head.add(skull, beak, eyeL, eyeR);
+    tagWeak(head);
+    par.add(head);
+    this.head = head;
+    // four flippers
+    this.flippers = [];
+    for (const [sx, sz, ph] of [[1.5, 1.2, 0], [-1.5, 1.2, Math.PI], [1.4, -1.4, Math.PI], [-1.4, -1.4, 0]]) {
+      const f = new THREE.Mesh(new THREE.CircleGeometry(1.05, 8), new THREE.MeshLambertMaterial({
+        color: 0x3a565e, side: THREE.DoubleSide, flatShading: true,
+      }));
+      f.scale.set(1.5, 0.5, 1);
+      f.position.set(sx, 0, sz);
+      f.rotation.z = sx > 0 ? -0.3 : 0.3;
+      g.add(f);
+      this.flippers.push({ f, ph, sx });
+    }
+    // short tail
+    const tail = new THREE.Mesh(new THREE.ConeGeometry(0.7, 2.6, 8), skin);
+    tail.rotation.x = Math.PI / 2 + 0.25;
+    tail.position.set(0, 0.2, -3.6);
+    g.add(tail);
+
+    g.scale.setScalar(2.2);
+    g.traverse((o) => { if (o.isMesh) { o.userData.entity = 'dino'; o.userData.ref = this; } });
+
+    this.hp = this.maxHp = 220;
+    this.dead = false;
+    this.removed = false;
+    this.deathT = 0;
+    this.damagedAt = -10;
+    this.submerged = false;
+    this.depth = 0;             // 0 = surfaced, 1 = fully under
+    this.state = 'cruise';
+    this.stateT = rand(7, 12);
+    this.heading = rand(Math.PI * 2);
+    this.target = this._pickTarget();
+    this.gait = rand(10);
+    this.group.position.set(LAKE.x + rand(-40, 40), WATER_Y, LAKE.y + rand(-40, 40));
+    ctx.scene.add(g);
+  }
+
+  get pos() { return this.group.position; }
+
+  _pickTarget() {
+    const a = rand(Math.PI * 2), d = rand(20, 95);
+    return new THREE.Vector3(LAKE.x + Math.cos(a) * d, WATER_Y, LAKE.y + Math.sin(a) * d);
+  }
+
+  _splash(n = 14) {
+    const p = this.pos.clone().setY(WATER_Y + 0.4);
+    this.ctx.effects.dust(p, n, 0xbfe4ec, 3.5);
+    this.ctx.effects.shockwave(p, 10, 0x7fd8e8);
+  }
+
+  takeDamage(amount, weak, hitPos) {
+    if (this.dead) return;
+    this.damagedAt = this.ctx.time;
+    this.ctx.effects.blood(hitPos, weak ? 20 : 8);
+    if (weak) { this.die(true); return; }
+    this.hp -= amount;
+    if (this.hp <= 0) { this.die(false); return; }
+    // wounded — crash-dive away from shore
+    if (this.state !== 'dive' && Math.random() < 0.3) { this.state = 'dive'; this.stateT = rand(5, 8); this._splash(20); this.ctx.audio.roar(1.2); }
+  }
+
+  die(weak) {
+    if (this.dead) return;
+    this.dead = true;
+    this.hp = 0;
+    this.deathT = 0;
+    this._splash(26);
+    this.ctx.audio.roar(this.spec.roar);
+    this.ctx.onKill(this, weak);
+  }
+
+  update(dt) {
+    if (this.removed) return false;
+    if (this.dead) {
+      this.deathT += dt;
+      this.group.rotation.z = damp(this.group.rotation.z, Math.PI * 0.9, 1.2, dt);  // belly-up roll
+      this.group.position.y = damp(this.group.position.y, WATER_Y - 9, 0.35, dt);   // slow sink
+      if (Math.random() < dt * 4) this._splash(3);
+      if (this.deathT > 7) { this.removed = true; this.ctx.scene.remove(this.group); }
+      return false;
+    }
+    this.stateT -= dt;
+    if (this.stateT <= 0) {
+      if (this.state === 'cruise') { this.state = 'dive'; this.stateT = rand(6, 10); this._splash(18); }
+      else { this.state = 'cruise'; this.stateT = rand(8, 14); this.target = this._pickTarget(); this._splash(18); this.ctx.audio.roar(0.8); }
+    }
+    const wantDepth = this.state === 'dive' ? 1 : 0;
+    this.depth = damp(this.depth, wantDepth, 1.8, dt);
+    this.submerged = this.depth > 0.6;
+    if (!this._announced && !this.submerged && this.pos.distanceTo(this.ctx.truck.pos) < 240) {
+      this._announced = true;
+      this.ctx.hud.toast('蛇颈龙', 'PLESIOSAUR', '湖面之下有巨影游弋');
+    }
+
+    // swim toward target, stay inside the lake disc
+    const tgt = this.target;
+    const want = Math.atan2(tgt.x - this.pos.x, tgt.z - this.pos.z);
+    let dh = want - this.heading;
+    while (dh > Math.PI) dh -= Math.PI * 2;
+    while (dh < -Math.PI) dh += Math.PI * 2;
+    this.heading += clamp(dh, -dt, dt);
+    const speed = this.state === 'dive' ? 7 : 3.4;
+    this.pos.x += Math.sin(this.heading) * speed * dt;
+    this.pos.z += Math.cos(this.heading) * speed * dt;
+    if (this.pos.distanceTo(tgt) < 8) this.target = this._pickTarget();
+    this.group.rotation.y = this.heading;
+    this.pos.y = WATER_Y - 0.6 - this.depth * 7 + Math.sin(this.gait * 0.7) * 0.18;
+
+    // neck sways, flippers row
+    this.gait += dt * 2.2;
+    this.neckSegs[1].rotation.z = Math.sin(this.gait * 0.5) * 0.12;
+    this.neckSegs[2].rotation.x = 0.38 + Math.sin(this.gait * 0.4) * 0.14;
+    this.head.rotation.y = Math.sin(this.gait * 0.3) * 0.4;
+    for (const fl of this.flippers) {
+      fl.f.rotation.z = (fl.sx > 0 ? -0.3 : 0.3) + Math.sin(this.gait * 1.6 + fl.ph) * 0.45 * (fl.sx > 0 ? 1 : -1);
+    }
+    // bow wave while surfaced and moving
+    if (!this.submerged && Math.random() < dt * 6) {
+      this.ctx.effects.dust(this.pos.clone().setY(WATER_Y + 0.3), 1, 0xa8d4dc, 2);
+    }
+    return false;
+  }
+
+  barAnchor(v) {
+    v.copy(this.pos);
+    v.y = WATER_Y + 8;
+    return v;
+  }
+}
+
 // ---------------------------------------------------------------- manager
 export class DinoManager {
   constructor(ctx) {
     this.ctx = ctx;
     this.dinos = [];
     this.pteros = [];
-    this.targets = { gallimimus: 3, raptor: 3, triceratops: 2, stegosaurus: 1, trex: 1, brachiosaurus: 1 };
+    this.targets = { gallimimus: 3, raptor: 3, dilophosaurus: 2, triceratops: 2, stegosaurus: 1, trex: 1, spinosaurus: 1, brachiosaurus: 1 };
     this.seen = new Set();
     this.spawnCd = 0;
     for (let i = 0; i < 8; i++) this.pteros.push(new Ptero(ctx));
+    this.plesio = new Plesio(ctx);
+    this.plesioCd = 0;
     // initial herd around the spawn, slightly further out
     this.populate(true);
+  }
+
+  // raptors burst from cover when a nest is destroyed
+  spawnAmbush(key, pos, n = 2) {
+    for (let i = 0; i < n; i++) {
+      const a = rand(Math.PI * 2), d = rand(14, 26);
+      const p = new THREE.Vector3(
+        clamp(pos.x + Math.cos(a) * d, -WORLD * 0.9, WORLD * 0.9), 0,
+        clamp(pos.z + Math.sin(a) * d, -WORLD * 0.9, WORLD * 0.9));
+      const dino = new Dino(key, p, this.ctx);
+      dino.state = 'aggro';
+      this.dinos.push(dino);
+    }
   }
 
   populate(initial = false) {
@@ -490,8 +730,15 @@ export class DinoManager {
         const tp = this.ctx.truck.pos;
         const a = rand(Math.PI * 2);
         const d = initial ? rand(60, 200) : rand(130, 240);
-        const x = clamp(tp.x + Math.cos(a) * d, -WORLD * 0.9, WORLD * 0.9);
-        const z = clamp(tp.z + Math.sin(a) * d, -WORLD * 0.9, WORLD * 0.9);
+        let x, z;
+        if (SPECIES[key].nearLake) {
+          // spinosaurus territory hugs the lake shore
+          x = clamp(LAKE.x + Math.cos(a) * rand(70, 140), -WORLD * 0.9, WORLD * 0.9);
+          z = clamp(LAKE.y + Math.sin(a) * rand(70, 140), -WORLD * 0.9, WORLD * 0.9);
+        } else {
+          x = clamp(tp.x + Math.cos(a) * d, -WORLD * 0.9, WORLD * 0.9);
+          z = clamp(tp.z + Math.sin(a) * d, -WORLD * 0.9, WORLD * 0.9);
+        }
         // herbivores avoid deep desert
         if (desertness(x, z) > 0.6 && Math.random() < 0.7) continue;
         const dino = new Dino(key, new THREE.Vector3(x, 0, z), this.ctx);
@@ -508,6 +755,7 @@ export class DinoManager {
     const arr = [];
     for (const d of this.dinos) if (!d.dead) arr.push(d.group);
     for (const p of this.pteros) if (!p.dead) arr.push(p.group);
+    if (this.plesio && !this.plesio.dead && !this.plesio.submerged) arr.push(this.plesio.group);
     return arr;
   }
 
@@ -529,6 +777,13 @@ export class DinoManager {
       }
     }
     while (this.pteros.length < 8) this.pteros.push(new Ptero(this.ctx));
+    if (this.plesio) {
+      this.plesio.update(dt);
+      if (this.plesio.removed) {
+        this.plesioCd -= dt;
+        if (this.plesioCd <= 0) this.plesio = new Plesio(this.ctx);
+      } else this.plesioCd = 45;
+    }
     this.spawnCd -= dt;
     if (this.spawnCd <= 0) { this.spawnCd = 4; this.populate(); }
   }
