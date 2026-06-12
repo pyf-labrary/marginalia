@@ -495,15 +495,18 @@ export class Ptero {
   update(dt) {
     if (this.dead) {
       this.deathT += dt;
-      this.vy -= 22 * dt;
-      this.group.position.y += this.vy * dt;
-      this.group.rotation.z += dt * 5;
-      this.group.rotation.x += dt * 2;
-      const gh = getHeight(this.pos.x, this.pos.z);
-      if (this.pos.y <= gh + 0.5) {
-        this.group.position.y = gh + 0.5;
-        if (!this._landed) {
+      if (!this._landed) {
+        // tumble only while falling — freeze in a crumpled pose on impact
+        this.vy -= 22 * dt;
+        this.group.position.y += this.vy * dt;
+        this.group.rotation.z += dt * 5;
+        this.group.rotation.x += dt * 2;
+        const gh = getHeight(this.pos.x, this.pos.z);
+        if (this.pos.y <= gh + 0.5) {
+          this.group.position.y = gh + 0.5;
           this._landed = true;
+          this.group.rotation.set(Math.PI + rand(-0.4, 0.4), this.group.rotation.y, rand(-0.5, 0.5));
+          for (const w of this.wings) w.wing.rotation.z = rand(0.3, 0.8) * w.side;
           this.ctx.effects.dust(this.pos.clone(), 10, 0x8a7a5e, 2);
         }
       }

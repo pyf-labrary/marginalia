@@ -81,6 +81,7 @@ setTimeout(() => { startBtn.disabled = false; startBtn.textContent = START_LABEL
 hud.addPoi('▲', world.sphinx.pos, '#ffd060', '狮身人面像');
 for (const m of world.meteors) hud.addPoi('◆', m.pos, '#ff7a2a', '修复陨石');
 const dynPois = new Map(); // ufo/mystery → poi rec
+const meteorPois = new Map(); // temp crash-meteor → poi rec
 
 // ---------------------------------------------------------------- state
 const S = {
@@ -370,6 +371,7 @@ function enterCity() {
   cityEntered = true;
   city = new City();
   if (window.__JH) window.__JH.city = city;
+  renderer.toneMappingExposure = 1.38; // night streets need the lift
   // move the truck + effect pools into the night city
   city.scene.add(truck.group);
   effects.attach(city.scene);
@@ -565,7 +567,7 @@ function tick() {
       if (repairing && !repairWasOn) hud.healFlash();
       truck.repairing = repairWasOn = repairing;
 
-      // world events: volcano eruption + lava bomb impacts
+      // world events: volcano eruption, lava bombs, meteor shower
       for (const ev of world.events) {
         if (ev.type === 'erupt') {
           hud.toast('火山苏醒', 'ERUPTION', '熔岩弹正在砸向荒原');
@@ -574,6 +576,18 @@ function tick() {
         } else if (ev.type === 'bomb') {
           audio.explosion(0.9);
           if (ev.nearTruck) truck.takeDamage(12);
+        } else if (ev.type === 'shower') {
+          hud.toast('陨石雨', 'METEOR SHOWER', '小心弹着点 · 绿色陨石坠点可修复车体');
+          audio.whoosh(2.6);
+        } else if (ev.type === 'meteorImpact') {
+          audio.explosion(0.8);
+          if (ev.nearTruck) truck.takeDamage(15);
+        } else if (ev.type === 'meteorRepair') {
+          meteorPois.set(ev.rec, hud.addPoi('◆', ev.rec.pos, '#5affd0', '坠落陨石'));
+          hud.feed('绿色陨石坠落 —— <em>临时修复点</em>（限时）');
+        } else if (ev.type === 'meteorGone') {
+          const poi = meteorPois.get(ev.rec);
+          if (poi) { hud.removePoi(poi); meteorPois.delete(ev.rec); }
         }
       }
       world.events.length = 0;

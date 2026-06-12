@@ -10,13 +10,13 @@ const BLOCK = 41;            // road grid pitch — ground texture, buildings an
 export class City {
   constructor() {
     const scene = this.scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x070c18);
-    scene.fog = new THREE.FogExp2(0x0d1428, 0.0022);
+    scene.background = new THREE.Color(0x0c1226);
+    scene.fog = new THREE.FogExp2(0x141d3a, 0.0019);
     this.t = 0;
 
-    scene.add(new THREE.HemisphereLight(0x3a4a7e, 0x10121c, 1.9));
-    scene.add(new THREE.AmbientLight(0x46527a, 1.0));
-    const moon = new THREE.DirectionalLight(0x9ab0e0, 1.2);
+    scene.add(new THREE.HemisphereLight(0x46588e, 0x181a26, 2.4));
+    scene.add(new THREE.AmbientLight(0x4a5680, 1.2));
+    const moon = new THREE.DirectionalLight(0xa6bce8, 1.5);
     moon.position.set(-120, 220, 80);
     scene.add(moon);
 
@@ -145,12 +145,13 @@ export class City {
     const bGeo = new THREE.BoxGeometry(1, 1, 1);
     bGeo.translate(0, 0.5, 0);
     const buckets = [
-      { mat: new THREE.MeshLambertMaterial({ color: 0x2a3040, emissive: 0xffffff, emissiveMap: this._winTex(46, 9, 0.55, 0.42), emissiveIntensity: 1.0 }), list: [] },  // towers
-      { mat: new THREE.MeshLambertMaterial({ color: 0x262b38, emissive: 0xffffff, emissiveMap: this._winTex(26, 7, 0.72, 0.5), emissiveIntensity: 1.05 }), list: [] }, // mid-rise
-      { mat: new THREE.MeshLambertMaterial({ color: 0x232834, emissive: 0xffffff, emissiveMap: this._winTex(12, 5, 0.8, 0.55), emissiveIntensity: 1.1 }), list: [] },  // low blocks
+      { mat: new THREE.MeshLambertMaterial({ color: 0x39435c, emissive: 0xffffff, emissiveMap: this._winTex(46, 9, 0.55, 0.58), emissiveIntensity: 1.3 }), list: [] },  // towers
+      { mat: new THREE.MeshLambertMaterial({ color: 0x343c50, emissive: 0xffffff, emissiveMap: this._winTex(26, 7, 0.72, 0.64), emissiveIntensity: 1.35 }), list: [] }, // mid-rise
+      { mat: new THREE.MeshLambertMaterial({ color: 0x303a4a, emissive: 0xffffff, emissiveMap: this._winTex(12, 5, 0.8, 0.68), emissiveIntensity: 1.4 }), list: [] },  // low blocks
     ];
     this.signSpots = [];   // candidate wall faces for neon signs
     this.roofSpots = [];   // tall roofs for beacons/searchlights
+    const storeList = []; // street-level glowing shopfronts
     const K = Math.floor(CITY_HALF / BLOCK);
     for (let gx = -K; gx <= K; gx++) {
       for (let gz = -K; gz <= K; gz++) {
@@ -165,7 +166,8 @@ export class City {
         const bucket = h > 85 ? 0 : h > 40 ? 1 : 2;
         buckets[bucket].list.push({ x, z, w, dep, h });
         if (h > 110) this.roofSpots.push({ x, z, h });
-        if (bucket !== 0 && d < 220 && Math.random() < 0.5) {
+        if (d < 250) storeList.push({ x, z, w, dep });
+        if (bucket !== 0 && d < 260 && Math.random() < 0.7) {
           // face the sign toward the nearest road axis
           const toward = Math.abs(cx) < Math.abs(cz) ? (cz > 0 ? 'z-' : 'z+') : (cx > 0 ? 'x-' : 'x+');
           this.signSpots.push({ x, z, w, dep, h, toward });
@@ -189,6 +191,37 @@ export class City {
       if (im.instanceColor) im.instanceColor.needsUpdate = true;
       scene.add(im);
     }
+    // glowing street-level storefronts — this is what makes the streets feel alive
+    if (storeList.length) {
+      const storeTex = canvasTex(256, 64, (ctx) => {
+        ctx.fillStyle = '#06080e'; ctx.fillRect(0, 0, 256, 64);
+        const colors = ['#ff2a6a', '#29d8ff', '#ffe14d', '#7a5bff', '#39ffa0', '#ff7a2a', '#ffffff'];
+        let x = 2;
+        while (x < 246) {
+          const w = 14 + Math.random() * 30;
+          ctx.fillStyle = `rgba(255,228,180,${0.3 + Math.random() * 0.5})`;
+          ctx.fillRect(x, 26, w, 36);                       // lit shop window
+          ctx.globalAlpha = 0.9;
+          ctx.fillStyle = colors[(Math.random() * colors.length) | 0];
+          ctx.fillRect(x, 6, w, 14);                        // neon sign band
+          ctx.globalAlpha = 1;
+          ctx.fillStyle = '#0a0a12';
+          for (let m = x + 3; m < x + w - 3; m += 6) ctx.fillRect(m, 9, 3, 8);
+          x += w + 6;
+        }
+      });
+      const sMat = new THREE.MeshLambertMaterial({ color: 0x141824, emissive: 0xffffff, emissiveMap: storeTex, emissiveIntensity: 1.7 });
+      const sm = new THREE.InstancedMesh(bGeo, sMat, storeList.length);
+      storeList.forEach((s, i) => {
+        dummy.position.set(s.x, 0, s.z);
+        dummy.scale.set(s.w + 0.5, 5.2, s.dep + 0.5);
+        dummy.rotation.set(0, 0, 0);
+        dummy.updateMatrix();
+        sm.setMatrixAt(i, dummy.matrix);
+      });
+      scene.add(sm);
+    }
+
     // tiered crowns + antennas on the towers
     const crowns = buckets[0].list.filter(() => Math.random() < 0.7);
     if (crowns.length) {
@@ -233,7 +266,7 @@ export class City {
     this.neons = [];
     const words = ['拉面', '酒店', '电玩', '夜市', 'KTV', '便利店', '烧肉', '网吧', '药房', '茶餐厅', '麻辣烫', '银行'];
     const colors = [0xff2a6a, 0x29d8ff, 0xffe14d, 0x7a5bff, 0x39ffa0, 0xff7a2a];
-    const spots = this.signSpots.sort(() => Math.random() - 0.5).slice(0, 30);
+    const spots = this.signSpots.sort(() => Math.random() - 0.5).slice(0, 56);
     const groundGlowTex = canvasTex(64, 64, (ctx) => {
       const g = ctx.createRadialGradient(32, 32, 2, 32, 32, 30);
       g.addColorStop(0, 'rgba(255,255,255,0.5)'); g.addColorStop(1, 'rgba(255,255,255,0)');
@@ -260,7 +293,7 @@ export class City {
           ctx.fillText(word, tw / 2, th / 2);
         }
       });
-      const sw = vertical ? rand(3.4, 4.6) : rand(9, 13);
+      const sw = vertical ? rand(4.2, 5.6) : rand(11, 16);
       const sh = vertical ? sw * (th / tw) : sw * (th / tw);
       const sign = new THREE.Mesh(
         new THREE.PlaneGeometry(sw, sh),
@@ -326,6 +359,32 @@ export class City {
       addLamp(-7.5, d, Math.PI / 2);
     }
     for (const [x, z] of [[28, 28], [-28, 28], [28, -28], [-28, -28]]) addLamp(x, z, Math.atan2(-x, -z));
+
+    // fake volumetric cones + warm pools under every lamp — streets read lit even
+    // where the cycled real lights aren't parked
+    const dummy = new THREE.Object3D();
+    const coneGeo = new THREE.CylinderGeometry(0.35, 3.6, 7.4, 10, 1, true);
+    coneGeo.translate(0, 3.75, 0);
+    const cones = new THREE.InstancedMesh(coneGeo, new THREE.MeshBasicMaterial({
+      color: 0xffd9a0, transparent: true, opacity: 0.075, blending: THREE.AdditiveBlending,
+      depthWrite: false, side: THREE.DoubleSide,
+    }), this.lampPos.length);
+    const poolGeo = new THREE.PlaneGeometry(12, 12);
+    poolGeo.rotateX(-Math.PI / 2);
+    const pools = new THREE.InstancedMesh(poolGeo, new THREE.MeshBasicMaterial({
+      map: glowTex, transparent: true, opacity: 0.55, blending: THREE.AdditiveBlending, depthWrite: false,
+    }), this.lampPos.length);
+    this.lampPos.forEach((p, i) => {
+      dummy.position.set(p.x, 0.12, p.z);
+      dummy.rotation.set(0, 0, 0);
+      dummy.scale.setScalar(1);
+      dummy.updateMatrix();
+      cones.setMatrixAt(i, dummy.matrix);
+      dummy.position.y = 0.07;
+      dummy.updateMatrix();
+      pools.setMatrixAt(i, dummy.matrix);
+    });
+    scene.add(cones, pools);
 
     // pool of real lights cycled onto the lamps nearest the truck
     this.lightPool = [];
