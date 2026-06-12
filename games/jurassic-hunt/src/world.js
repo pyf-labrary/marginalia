@@ -888,6 +888,8 @@ export class World {
     this.group.add(beam);
     const rec = { ...def, obj, beam, life: 75, pos: obj.position.clone(), dead: false };
     obj.userData.mystery = rec;
+    // child meshes resolve as the entity on hit (they carry .entity), so they need the rec too
+    obj.traverse((o) => { if (o.isMesh) o.userData.mystery = rec; });
     this.mystery.push(rec);
     this.hittables.push(obj);
     return rec;
