@@ -863,16 +863,30 @@ export class World {
       },
     ];
     const def = pick(defs);
-    const a = rand(Math.PI * 2), d = rand(70, 140);
-    const x = clamp(nearPos.x + Math.cos(a) * d, -WORLD * 0.9, WORLD * 0.9);
-    const z = clamp(nearPos.z + Math.sin(a) * d, -WORLD * 0.9, WORLD * 0.9);
+    // keep inside the open valley (rim hills start at 760) and out of the lake
+    let x = 0, z = 0;
+    for (let i = 0; i < 12; i++) {
+      const a = rand(Math.PI * 2), d = rand(70, 140);
+      x = clamp(nearPos.x + Math.cos(a) * d, -WORLD * 0.7, WORLD * 0.7);
+      z = clamp(nearPos.z + Math.sin(a) * d, -WORLD * 0.7, WORLD * 0.7);
+      if (getHeight(x, z) > WATER_Y + 1.5) break;
+    }
     const obj = def.build();
     obj.position.set(x, getHeight(x, z) + (def.kind === 'monolith' ? 5.4 : 0), z);
     if (def.kind === 'monolith') obj.rotation.y = rand(7);
     obj.traverse((o) => { if (o.isMesh) o.userData.entity = 'mystery'; });
     obj.userData.entity = 'mystery';
     this.group.add(obj);
-    const rec = { ...def, obj, life: 75, pos: obj.position.clone(), dead: false };
+    // sky beacon so the anomaly is findable from anywhere in the valley
+    const beam = new THREE.Mesh(
+      new THREE.CylinderGeometry(2.2, 3.6, 170, 10, 1, true),
+      new THREE.MeshBasicMaterial({
+        color: 0xc9a6ff, transparent: true, opacity: 0.3, fog: false,
+        blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide,
+      }));
+    beam.position.set(x, getHeight(x, z) + 80, z);
+    this.group.add(beam);
+    const rec = { ...def, obj, beam, life: 75, pos: obj.position.clone(), dead: false };
     obj.userData.mystery = rec;
     this.mystery.push(rec);
     this.hittables.push(obj);
@@ -883,6 +897,11 @@ export class World {
     if (rec.dead) return;
     rec.dead = true;
     this.group.remove(rec.obj);
+    if (rec.beam) {
+      this.group.remove(rec.beam);
+      rec.beam.geometry.dispose();
+      rec.beam.material.dispose();
+    }
     this.hittables = this.hittables.filter((h) => h !== rec.obj);
     this.mystery = this.mystery.filter((m) => m !== rec);
   }
@@ -1026,6 +1045,12 @@ export class World {
     for (const rec of [...this.mystery]) {
       rec.life -= dt;
       if (rec.kind === 'crystal' || rec.kind === 'amber') rec.obj.rotation.y += dt * 0.5;
+      if (rec.beam) {
+        // gentle pulse; hard blink in the last 12s as an expiry warning
+        const blink = rec.life < 12 ? (Math.sin(this.t * 10) > 0 ? 1 : 0.2) : 1;
+        rec.beam.material.opacity = (0.26 + Math.sin(this.t * 2.4) * 0.07) * blink;
+        rec.beam.rotation.y += dt * 0.4;
+      }
       if (rec.life < 0) this.killMystery(rec);
     }
     // water shimmer
