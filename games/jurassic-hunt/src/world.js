@@ -1,6 +1,6 @@
 // world.js — Jurassic valley: terrain, sky, vegetation, monuments, meteors, mystery objects
 import * as THREE from 'three';
-import { fbm, rand, pick, clamp, lerp, mat, canvasTex } from './util.js';
+import { fbm, rand, randInt, pick, clamp, lerp, mat, canvasTex } from './util.js';
 
 export const WORLD = 1000;           // half-size
 export const DESERT = new THREE.Vector2(600, -600);
@@ -75,7 +75,8 @@ export class World {
     const colors = new Float32Array(pos.count * 3);
     const cGrass = new THREE.Color(0x6e9046), cGrass2 = new THREE.Color(0x587a36),
       cDirt = new THREE.Color(0x7a6648), cSand = new THREE.Color(0xd8b97e),
-      cRock = new THREE.Color(0x8a8276), cSnow = new THREE.Color(0xcfc8bd);
+      cRock = new THREE.Color(0x8a8276), cSnow = new THREE.Color(0xcfc8bd),
+      cMeadow = new THREE.Color(0x9aa850);
     const c = new THREE.Color();
     for (let i = 0; i < pos.count; i++) {
       const x = pos.getX(i), z = pos.getZ(i);
@@ -88,6 +89,9 @@ export class World {
       if (h > 60) c.lerp(cRock, smoothstep(60, 110, h));
       if (h > 130) c.lerp(cSnow, smoothstep(130, 190, h));
       c.lerp(cSand, d);
+      // sunlit meadow drifts — warm yellow-green patches break up the uniform grass
+      const meadow = fbm(x * 0.0045 + 90, z * 0.0045 + 17, 2);
+      if (meadow > 0.58 && h < 55) c.lerp(cMeadow, Math.min(1, (meadow - 0.58) * 3) * 0.55);
       if (h < -4) c.lerp(cDirt, 0.6); // lake bed
       c.offsetHSL(0, 0, (fbm(x * 0.05, z * 0.05, 2) - 0.5) * 0.06);
       colors[i * 3] = c.r; colors[i * 3 + 1] = c.g; colors[i * 3 + 2] = c.b;
@@ -160,7 +164,9 @@ export class World {
       for (let i = 0; i < p.count; i++) {
         const x = p.getX(i), y = p.getY(i), z = p.getZ(i);
         const n = fbm(x * 0.01 + 3.3, (y + z) * 0.01, 3) - 0.5;
-        if (y < 160) p.setXYZ(i, x + n * 60, y + n * 24, z + n * 60);
+        // skirt vertices sink hard into the terrain — no floating base rim
+        const yy = y < -120 ? y - 55 : y + n * 24;
+        if (y < 160) p.setXYZ(i, x + n * 60, yy, z + n * 60);
         const t = clamp((y + 165) / 330, 0, 1);
         cc.copy(cLow).lerp(cHigh, t).offsetHSL(0, 0, n * 0.1);
         cols[i * 3] = cc.r; cols[i * 3 + 1] = cc.g; cols[i * 3 + 2] = cc.b;
@@ -168,12 +174,13 @@ export class World {
       volGeo.setAttribute('color', new THREE.BufferAttribute(cols, 3));
       volGeo.computeVertexNormals();
     }
-    const vol = new THREE.Mesh(volGeo, new THREE.MeshLambertMaterial({ vertexColors: true }));
-    vol.position.set(vx, getHeight(vx, vz) + 100, vz);
+    const volMat = new THREE.MeshLambertMaterial({ vertexColors: true });
+    const vol = new THREE.Mesh(volGeo, volMat);
+    vol.position.set(vx, getHeight(vx, vz) + 72, vz);
     this.group.add(vol);
-    const shoulder = new THREE.Mesh(volGeo, new THREE.MeshLambertMaterial({ vertexColors: true }));
+    const shoulder = new THREE.Mesh(volGeo, volMat);
     shoulder.scale.setScalar(0.45);
-    shoulder.position.set(vx + 230, getHeight(vx + 230, vz + 60) + 40, vz + 60);
+    shoulder.position.set(vx + 230, getHeight(vx + 230, vz + 60) + 30, vz + 60);
     shoulder.rotation.y = 2.1;
     this.group.add(shoulder);
     this.volcanoTip = new THREE.Vector3(vx, vol.position.y + 165, vz);
@@ -316,6 +323,146 @@ export class World {
     }, desert);
     deads.count = di;
     this.group.add(deads);
+
+    // --- umbrella-canopy trees (jungle giants, stacked flattened blobs) ---
+    const N_UMB = 150;
+    const uTrunkGeo = new THREE.CylinderGeometry(0.45, 0.85, 17, 6);
+    uTrunkGeo.translate(0, 8.5, 0);
+    const uTrunks = new THREE.InstancedMesh(uTrunkGeo, mat(0x6a503a), N_UMB);
+    const blobGeo = new THREE.SphereGeometry(4.8, 7, 5);
+    blobGeo.scale(1, 0.4, 1); blobGeo.translate(0, 16.8, 0);
+    const blobs = new THREE.InstancedMesh(blobGeo, mat(0x436630), N_UMB);
+    const blob2Geo = new THREE.SphereGeometry(3.3, 7, 5);
+    blob2Geo.scale(1, 0.38, 1); blob2Geo.translate(0, 19.0, 0);
+    const blobs2 = new THREE.InstancedMesh(blob2Geo, mat(0x547c39), N_UMB);
+    let ui = 0;
+    place(N_UMB, (list) => {
+      for (const [x, y, z] of list) {
+        dummy.position.set(x, y - 0.5, z);
+        dummy.rotation.set(rand(-0.04, 0.04), rand(7), rand(-0.04, 0.04));
+        dummy.scale.setScalar(rand(0.7, 1.5));
+        dummy.updateMatrix();
+        uTrunks.setMatrixAt(ui, dummy.matrix);
+        blobs.setMatrixAt(ui, dummy.matrix);
+        blobs2.setMatrixAt(ui, dummy.matrix);
+        ui++;
+      }
+    }, jungle);
+    uTrunks.count = blobs.count = blobs2.count = ui;
+    uTrunks.castShadow = blobs.castShadow = true;
+    this.group.add(uTrunks, blobs, blobs2);
+
+    // --- palms (crowd the lake shore) ---
+    const palmCrownTex = canvasTex(256, 256, (ctx) => {
+      ctx.translate(128, 128);
+      for (let f = 0; f < 11; f++) {
+        ctx.save();
+        ctx.rotate((f / 11) * Math.PI * 2);
+        const grad = ctx.createLinearGradient(0, 0, 110, 0);
+        grad.addColorStop(0, '#3f6326'); grad.addColorStop(1, '#6f9a3c');
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = 4;
+        ctx.beginPath(); ctx.moveTo(0, 0); ctx.quadraticCurveTo(60, -22, 112, 6); ctx.stroke();
+        ctx.lineWidth = 2;
+        for (let l = 1; l < 10; l++) {
+          const t = l / 10, lx = t * 105, ly = -22 * 4 * t * (1 - t) * 0.5;
+          ctx.beginPath(); ctx.moveTo(lx, ly); ctx.lineTo(lx - 5, ly + 16 * (1 - t * 0.5)); ctx.stroke();
+        }
+        ctx.restore();
+      }
+    });
+    const N_PALM = 120;
+    const pTrunkGeo = new THREE.CylinderGeometry(0.22, 0.42, 11, 5);
+    pTrunkGeo.translate(0, 5.5, 0);
+    const pTrunks = new THREE.InstancedMesh(pTrunkGeo, mat(0x8a6e4c), N_PALM);
+    const crownGeo = new THREE.PlaneGeometry(10, 10);
+    crownGeo.rotateX(-Math.PI / 2);
+    crownGeo.translate(0, 10.6, 0);
+    const crowns = new THREE.InstancedMesh(crownGeo,
+      new THREE.MeshLambertMaterial({ map: palmCrownTex, alphaTest: 0.4, side: THREE.DoubleSide }), N_PALM);
+    let pi = 0;
+    place(N_PALM, (list) => {
+      for (const [x, y, z] of list) {
+        dummy.position.set(x, y - 0.3, z);
+        dummy.rotation.set(rand(-0.12, 0.12), rand(7), rand(-0.12, 0.12));
+        dummy.scale.setScalar(rand(0.7, 1.4));
+        dummy.updateMatrix();
+        pTrunks.setMatrixAt(pi, dummy.matrix);
+        crowns.setMatrixAt(pi, dummy.matrix);
+        pi++;
+      }
+    }, (x, z) => jungle(x, z) && Math.hypot(x - LAKE.x, z - LAKE.y) < 420);
+    pTrunks.count = crowns.count = pi;
+    pTrunks.castShadow = true;
+    this.group.add(pTrunks, crowns);
+
+    // --- cycad rosettes (low jungle filler) ---
+    const cycGeo = new THREE.ConeGeometry(1.7, 1.5, 8);
+    cycGeo.translate(0, 0.6, 0);
+    const cycads = new THREE.InstancedMesh(cycGeo, mat(0x3f5c28), 220);
+    let ci = 0;
+    place(220, (list) => {
+      for (const [x, y, z] of list) {
+        dummy.position.set(x, y, z);
+        dummy.rotation.set(rand(-0.15, 0.15), rand(7), rand(-0.15, 0.15));
+        dummy.scale.set(rand(0.6, 1.5), rand(0.4, 0.9), rand(0.6, 1.5));
+        dummy.updateMatrix();
+        cycads.setMatrixAt(ci++, dummy.matrix);
+      }
+    }, jungle);
+    cycads.count = ci;
+    this.group.add(cycads);
+
+    // --- wildflower drifts (color pops on the meadow) ---
+    const FLOWERS = 1600;
+    const fPos = new Float32Array(FLOWERS * 3);
+    const fCol = new Float32Array(FLOWERS * 3);
+    const palette = [new THREE.Color(0xffd1e8), new THREE.Color(0xfff0a0), new THREE.Color(0xf2f2f2), new THREE.Color(0xffa46a), new THREE.Color(0xc9a0ff)];
+    let flowerN = 0;
+    place(FLOWERS, (list) => {
+      for (const [x, y, z] of list) {
+        // flowers grow in drifts — keep only noise-selected patches
+        if (fbm(x * 0.02 + 55, z * 0.02 + 8, 2) < 0.56) continue;
+        const c = pick(palette);
+        fPos[flowerN * 3] = x; fPos[flowerN * 3 + 1] = y + 0.32; fPos[flowerN * 3 + 2] = z;
+        fCol[flowerN * 3] = c.r; fCol[flowerN * 3 + 1] = c.g; fCol[flowerN * 3 + 2] = c.b;
+        flowerN++;
+      }
+    }, jungle);
+    const fGeo = new THREE.BufferGeometry();
+    fGeo.setAttribute('position', new THREE.BufferAttribute(fPos.slice(0, flowerN * 3), 3));
+    fGeo.setAttribute('color', new THREE.BufferAttribute(fCol.slice(0, flowerN * 3), 3));
+    this.group.add(new THREE.Points(fGeo, new THREE.PointsMaterial({
+      size: 0.55, vertexColors: true, sizeAttenuation: true,
+    })));
+
+    // --- lakeshore reeds ---
+    const reedGeo = new THREE.CylinderGeometry(0.05, 0.09, 2.6, 4);
+    reedGeo.translate(0, 1.3, 0);
+    const reeds = new THREE.InstancedMesh(reedGeo, mat(0x5e7a3a), 420);
+    let rdi = 0;
+    for (let a = 0; a < Math.PI * 2 && rdi < 380; a += 0.11) {
+      // march outward to find the shoreline (terrain crossing just above water level)
+      for (let r = 55; r < 180; r += 3) {
+        const x = LAKE.x + Math.cos(a) * r, z = LAKE.y + Math.sin(a) * r;
+        const h = getHeight(x, z);
+        if (h > WATER_Y + 0.3 && h < WATER_Y + 2.2) {
+          if (Math.random() < 0.55) {
+            const n = randInt(3, 6);
+            for (let k = 0; k < n && rdi < 420; k++) {
+              dummy.position.set(x + rand(-2.2, 2.2), getHeight(x, z), z + rand(-2.2, 2.2));
+              dummy.rotation.set(rand(-0.16, 0.16), rand(7), rand(-0.16, 0.16));
+              dummy.scale.setScalar(rand(0.6, 1.5));
+              dummy.updateMatrix();
+              reeds.setMatrixAt(rdi++, dummy.matrix);
+            }
+          }
+          break;
+        }
+      }
+    }
+    reeds.count = rdi;
+    this.group.add(reeds);
   }
 
   _monuments() {
@@ -537,28 +684,45 @@ export class World {
     this.group.add(this.portalLight);
   }
 
-  _meteors() {
-    const spots = [[140, 200], [-260, -180], [420, 60], [-120, 480]];
+  _addMeteorAt(x, z, ttl = 0) {
+    const y = getHeight(x, z);
     const rockMat = new THREE.MeshStandardMaterial({
       color: 0x3a3430, roughness: 0.8, metalness: 0.3,
-      emissive: 0xff5a18, emissiveIntensity: 0.65,
+      emissive: ttl ? 0x18d8a8 : 0xff5a18, emissiveIntensity: 0.65,
     });
-    for (const [x, z] of spots) {
-      const y = getHeight(x, z);
-      const grp = new THREE.Group();
-      const rock = new THREE.Mesh(new THREE.IcosahedronGeometry(4.2, 1), rockMat.clone());
-      rock.position.y = 2.6;
-      rock.rotation.set(rand(7), rand(7), rand(7));
-      const rim = new THREE.Mesh(new THREE.TorusGeometry(8.5, 2.4, 8, 22), mat(0x5c4a38));
-      rim.rotation.x = -Math.PI / 2;
-      rim.position.y = 0.2;
-      rim.scale.y = 0.5;
-      const light = new THREE.PointLight(0xff7a2a, 14, 60);
-      light.position.y = 6;
-      grp.add(rock, rim, light);
-      grp.position.set(x, y, z);
-      this.group.add(grp);
-      this.meteors.push({ group: grp, rock, light, pos: new THREE.Vector3(x, y, z) });
+    const grp = new THREE.Group();
+    const rock = new THREE.Mesh(new THREE.IcosahedronGeometry(4.2, 1), rockMat);
+    rock.position.y = 2.6;
+    rock.rotation.set(rand(7), rand(7), rand(7));
+    const rim = new THREE.Mesh(new THREE.TorusGeometry(8.5, 2.4, 8, 22), mat(0x5c4a38));
+    rim.rotation.x = -Math.PI / 2;
+    rim.position.y = 0.2;
+    rim.scale.y = 0.5;
+    const light = new THREE.PointLight(ttl ? 0x4affd0 : 0xff7a2a, 14, 60);
+    light.position.y = 6;
+    grp.add(rock, rim, light);
+    grp.position.set(x, y, z);
+    this.group.add(grp);
+    const rec = { group: grp, rock, light, pos: new THREE.Vector3(x, y, z), ttl, green: !!ttl };
+    this.meteors.push(rec);
+    return rec;
+  }
+
+  _meteors() {
+    for (const [x, z] of [[140, 200], [-260, -180], [420, 60], [-120, 480]]) this._addMeteorAt(x, z);
+    // ---- meteor shower machinery (太空陨石) ----
+    this.shower = {
+      t: rand(35, 60), active: 0, spawnCd: 0, bonusDropped: false,
+      matFire: new THREE.MeshBasicMaterial({ color: 0xffb060, fog: false }),
+      matBonus: new THREE.MeshBasicMaterial({ color: 0x6affd8, fog: false }),
+      rocks: [],
+    };
+    const rockGeo = new THREE.IcosahedronGeometry(1.7, 0);
+    for (let i = 0; i < 12; i++) {
+      const m = new THREE.Mesh(rockGeo, this.shower.matFire);
+      m.visible = false;
+      this.group.add(m);
+      this.shower.rocks.push({ mesh: m, vel: new THREE.Vector3(), live: false, bonus: false });
     }
   }
 
@@ -779,13 +943,74 @@ export class World {
         this.events.push({ type: 'bomb', nearTruck: b.mesh.position.distanceTo(truckPos) < 16 });
       }
     }
-    // meteor pulse
-    for (const m of this.meteors) {
-      const p = 0.55 + Math.sin(this.t * 2.4 + m.pos.x) * 0.35;
+    // meteor pulse + temporary (green) meteor expiry
+    for (const m of [...this.meteors]) {
+      const fastBlink = m.ttl > 0 && m.ttl < 10;
+      const p = 0.55 + Math.sin(this.t * (fastBlink ? 9 : 2.4) + m.pos.x) * 0.35;
       m.rock.material.emissiveIntensity = p;
       m.light.intensity = 10 + p * 10;
       m.rock.rotation.y += dt * 0.2;
-      if (Math.random() < dt * 2) this.effects.spark(m.pos.clone().add(new THREE.Vector3(rand(-3, 3), rand(2, 6), rand(-3, 3))), 1, 0xffa040);
+      if (Math.random() < dt * 2) this.effects.spark(m.pos.clone().add(new THREE.Vector3(rand(-3, 3), rand(2, 6), rand(-3, 3))), 1, m.green ? 0x4ae8c0 : 0xffa040);
+      if (m.ttl > 0) {
+        m.ttl -= dt;
+        if (m.ttl <= 0) {
+          this.group.remove(m.group);
+          this.meteors = this.meteors.filter((x) => x !== m);
+          this.events.push({ type: 'meteorGone', rec: m });
+        }
+      }
+    }
+
+    // ---- meteor shower (太空陨石雨) ----
+    const sh = this.shower;
+    if (sh.active <= 0) {
+      sh.t -= dt;
+      if (sh.t <= 0) {
+        sh.active = 7;
+        sh.bonusDropped = false;
+        sh.t = rand(75, 115);
+        this.events.push({ type: 'shower' });
+      }
+    } else {
+      sh.active -= dt;
+      sh.spawnCd -= dt;
+      if (sh.spawnCd <= 0) {
+        sh.spawnCd = rand(0.35, 0.8);
+        const r = sh.rocks.find((x) => !x.live);
+        if (r) {
+          r.live = true;
+          r.bonus = !sh.bonusDropped && sh.active < 3;
+          if (r.bonus) sh.bonusDropped = true;
+          const a = rand(Math.PI * 2), d = rand(55, 180);
+          const tx = clamp(truckPos.x + Math.cos(a) * d, -WORLD * 0.88, WORLD * 0.88);
+          const tz = clamp(truckPos.z + Math.sin(a) * d, -WORLD * 0.88, WORLD * 0.88);
+          const ty = getHeight(tx, tz);
+          r.mesh.position.set(tx + rand(130, 230), ty + rand(330, 430), tz - rand(90, 170));
+          r.vel.set(tx, ty, tz).sub(r.mesh.position).normalize().multiplyScalar(rand(130, 175));
+          r.mesh.material = r.bonus ? sh.matBonus : sh.matFire;
+          r.mesh.scale.setScalar(r.bonus ? 1.7 : rand(0.8, 1.3));
+          r.mesh.visible = true;
+        }
+      }
+    }
+    for (const r of sh.rocks) {
+      if (!r.live) continue;
+      r.mesh.position.addScaledVector(r.vel, dt);
+      r.mesh.rotation.x += dt * 5; r.mesh.rotation.z += dt * 3;
+      this.effects.spark(r.mesh.position, 4, r.bonus ? 0x6affd8 : 0xffa050);
+      if (Math.random() < dt * 40) this.effects.smoke(r.mesh.position, 2, 0x55504a, 1);
+      const gy = getHeight(r.mesh.position.x, r.mesh.position.z);
+      if (r.mesh.position.y <= gy + 1) {
+        r.live = false;
+        r.mesh.visible = false;
+        const p = r.mesh.position.clone().setY(gy);
+        this.effects.explosion(p, r.bonus ? 1.8 : 1.25, r.bonus ? 0x4ae8c8 : 0xff9040);
+        if (r.bonus) {
+          const rec = this._addMeteorAt(p.x, p.z, 50);
+          this.events.push({ type: 'meteorRepair', rec });
+        }
+        this.events.push({ type: 'meteorImpact', nearTruck: p.distanceTo(truckPos) < 13 });
+      }
     }
     // sphinx eye charge pulse
     const s = this.sphinx;
