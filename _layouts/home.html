@@ -144,7 +144,7 @@ layout: default
 </div>
 
 <script>
-/* —— hero 墨滴：滴落 → 洇开 → 被纸面吸收 ——
+/* —— hero 墨滴：俯视纸面，墨从镜头外滴上来 → 洇开 → 被纸面吸收 ——
    预渲染墨渍 sprite + 画布内绘制（不用 mix-blend-mode，避免整屏合成开销）；
    reduced-motion 下整层不启动；hero 滚出视口即停 rAF。 */
 (function () {
@@ -196,96 +196,63 @@ layout: default
   var drops = [], nextSpawn = 0;
   function spawn(now) {
     var red = Math.random() < 0.1;
+    var size = 26 + Math.random() * 34;   /* 墨渍最终半径 */
+    /* 落点溅出 2–4 个小卫星墨点 */
+    var sats = [], n = 2 + (Math.random() * 3 | 0);
+    for (var k = 0; k < n; k++) {
+      var a = Math.random() * Math.PI * 2;
+      var dist = size * (0.9 + Math.random() * 0.9);
+      sats.push({ dx: Math.cos(a) * dist, dy: Math.sin(a) * dist * 0.6,
+                  r: size * (0.1 + Math.random() * 0.14) });
+    }
     drops.push({
       /* 落点避开左侧文字栏，落在右侧山水画面上 */
       x: (0.44 + Math.random() * 0.54) * W,
-      y: -16,
-      ty: H * (0.3 + Math.random() * 0.52),
-      vy: 130 + Math.random() * 80,
-      wob: Math.random() * Math.PI * 2,
-      phase: 0,                       /* 0 = 下坠, 1 = 洇开 */
+      y: H * (0.3 + Math.random() * 0.52),
       sprite: red ? redSprite : inkSprites[Math.random() * inkSprites.length | 0],
-      rgb: red ? RED : INK,
-      size: 26 + Math.random() * 34,  /* 墨渍最终半径 */
+      size: size,
       peak: red ? 0.38 : 0.32,        /* 透明度上限：氛围层，压低 */
-      born: 0,
+      born: now,
       life: 6000 + Math.random() * 3000,
-      sats: null
+      sats: sats
     });
-  }
-
-  function drawFall(d, dt, now) {
-    d.vy += 950 * dt;
-    d.y += d.vy * dt;
-    d.x += Math.sin(now / 260 + d.wob) * 14 * dt;
-    if (d.y >= d.ty) {
-      d.phase = 1;
-      d.born = now;
-      /* 落点溅出 2–4 个小卫星墨点 */
-      var sats = [], n = 2 + (Math.random() * 3 | 0);
-      for (var k = 0; k < n; k++) {
-        var a = Math.random() * Math.PI * 2;
-        var dist = d.size * (0.9 + Math.random() * 0.9);
-        sats.push({ dx: Math.cos(a) * dist, dy: Math.sin(a) * dist * 0.6,
-                    r: d.size * (0.1 + Math.random() * 0.14) });
-      }
-      d.sats = sats;
-      return;
-    }
-    var stretch = Math.min(1 + d.vy / 520, 2.6);
-    ctx.fillStyle = "rgba(" + d.rgb + ",0.62)";
-    ctx.beginPath();
-    ctx.ellipse(d.x, d.y, 3, 3 * stretch, 0, 0, Math.PI * 2);
-    ctx.fill();
-    /* 拖出一截细墨线 */
-    var tail = Math.min(d.vy * 0.06, 34);
-    var g = ctx.createLinearGradient(d.x, d.y - tail, d.x, d.y);
-    g.addColorStop(0, "rgba(" + d.rgb + ",0)");
-    g.addColorStop(1, "rgba(" + d.rgb + ",0.42)");
-    ctx.strokeStyle = g;
-    ctx.lineWidth = 1.4;
-    ctx.beginPath(); ctx.moveTo(d.x, d.y - tail); ctx.lineTo(d.x, d.y); ctx.stroke();
   }
 
   function drawBloom(d, now) {
     var t = (now - d.born) / d.life;
     if (t >= 1) return false;
-    var grow = 1 - Math.pow(1 - Math.min(t * 1.9, 1), 3); /* 前半秒快速铺开 */
-    var r = d.size * (0.22 + 0.78 * grow) * (1 + t * 0.25); /* 之后缓慢洇散 */
-    /* 包络：快速显影 → 保持 → 后半段被纸面吸收 */
-    var alpha = (t < 0.08 ? t / 0.08 : t < 0.5 ? 1 : 1 - (t - 0.5) / 0.5) * d.peak;
+    var grow = 1 - Math.pow(1 - Math.min(t * 2.6, 1), 3);  /* 落点快速铺开 */
+    var splash = 1 - Math.pow(1 - Math.min(t * 6, 1), 2);  /* 卫星墨点几乎即时溅出 */
+    var r = d.size * (0.3 + 0.7 * grow) * (1 + t * 0.25);  /* 之后缓慢洇散 */
+    /* 包络：瞬间显影 → 保持 → 后半段被纸面吸收 */
+    var alpha = (t < 0.05 ? t / 0.05 : t < 0.5 ? 1 : 1 - (t - 0.5) / 0.5) * d.peak;
     ctx.globalAlpha = alpha;
     ctx.drawImage(d.sprite, d.x - r, d.y - r, r * 2, r * 2);
     for (var k = 0; k < d.sats.length; k++) {
       var s = d.sats[k];
-      var sr = s.r * (0.4 + 0.6 * grow);
+      var sr = s.r * (0.4 + 0.6 * splash);
       ctx.globalAlpha = alpha * 0.85;
-      ctx.drawImage(d.sprite, d.x + s.dx * grow - sr, d.y + s.dy * grow - sr, sr * 2, sr * 2);
+      ctx.drawImage(d.sprite, d.x + s.dx * splash - sr, d.y + s.dy * splash - sr, sr * 2, sr * 2);
     }
     ctx.globalAlpha = 1;
     return true;
   }
 
-  var raf = 0, last = 0;
+  var raf = 0;
   function frame(now) {
     raf = requestAnimationFrame(frame);
-    var dt = Math.min((now - last) / 1000, 0.05);
-    last = now;
     ctx.clearRect(0, 0, W, H);
     if (now >= nextSpawn && drops.length < 6) {
       spawn(now);
       nextSpawn = now + 1700 + Math.random() * 2000;
     }
     for (var k = drops.length - 1; k >= 0; k--) {
-      var d = drops[k];
-      if (d.phase === 0) drawFall(d, dt, now);
-      else if (!drawBloom(d, now)) drops.splice(k, 1);
+      if (!drawBloom(drops[k], now)) drops.splice(k, 1);
     }
   }
   function start() {
     if (raf) return;
-    last = performance.now();
-    nextSpawn = last + 600; /* 首滴快些落，进页就能看到 */
+    nextSpawn = performance.now() + 600; /* 首滴快些落，进页就能看到 */
     raf = requestAnimationFrame(frame);
   }
   function stop() {
