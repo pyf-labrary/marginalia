@@ -49,8 +49,9 @@ const PALETTES = [
 ];
 const CHAPTER_NUM = ['一','二','三','四','五','六','七','八','九'];
 
-const ROAD_W       = 10;     // full width
-const LANE_LIMIT   = 3.7;
+const ROAD_W       = 14;     // full width
+const LANE_LIMIT   = 5.4;
+const MAX_HP       = 3;
 const SEG_LEN      = 55;     // metres per control segment
 const SAMPLES_SEG  = 22;
 const GEN_AHEAD    = 470;
@@ -164,6 +165,17 @@ const AudioEngine = {
   },
 
   pickup() { this.blip(1244, 0.14, 'sine', 0.16); this.blip(1864, 0.2, 'sine', 0.08); },
+  heal() { this.blip(659.25, 0.16, 'sine', 0.2); this.blip(987.77, 0.22, 'sine', 0.14); this.blip(1318.5, 0.34, 'sine', 0.1); },
+  power(kind) {
+    if (kind === 'speed') {                       // zippy upward sweep
+      this.blip(523, 0.1, 'sawtooth', 0.13); this.blip(1046, 0.16, 'sawtooth', 0.1);
+      this.noiseBurst(0.3, 1800, 0.18, 'bandpass');
+    } else if (kind === 'shield') {               // bright protective chord
+      this.blip(392, 0.55, 'sine', 0.15); this.blip(587.33, 0.55, 'sine', 0.1); this.blip(784, 0.55, 'sine', 0.07);
+    } else if (kind === 'magnet') {               // wobbly pull
+      this.blip(440, 0.16, 'triangle', 0.15); this.blip(660, 0.22, 'triangle', 0.1); this.blip(880, 0.3, 'triangle', 0.06);
+    } else this.pickup();
+  },
 
   noiseBurst(dur, freq, vol = 0.5, type = 'lowpass') {
     if (!this.ctx) return;
@@ -294,10 +306,11 @@ class Track {
 const G = {
   scene: null, camera: null, renderer: null,
   track: null, chunks: [], paintables: [],
-  gates: [], drops: [], rocks: [], gateHead: 0, dropHead: 0, rockHead: 0,
-  car: null, carParts: null,
+  gates: [], drops: [], rocks: [], powers: [], gateHead: 0, dropHead: 0, rockHead: 0, powerHead: 0,
+  car: null, carParts: null, aura: null,
   s: 0, x: 0, xv: 0, speed: 0, baseSpeed: 24, boost01: 0, streaks: [],
   hp: 3, invuln: 0, combo: 0, maxCombo: 0, dropsGot: 0,
+  surgeT: 0, surge01: 0, shieldT: 0, magnetT: 0, boonsGot: 0,
   meter: 0, chapter: 0, phase: 'sketch', pending: null,
   phaseStartS: 0, flat01: 0, color01: 0,
   wave: null, drain: false,
@@ -305,6 +318,17 @@ const G = {
   inkMat: null, dashMat: null, sun: null,
   paletteIdx: 0,
 };
+
+// ── power-ups (boons) — colour-coded ink tokens ──────────────
+const POWER = {
+  heal:   { color: 0xc84b31, glyph: '朱', name: '回 血', emblem: 'plus'  },
+  speed:  { color: 0x7b52c9, glyph: '疾', name: '疾 行', emblem: 'cone'  },  // 紫 — 与金身金色区分
+  shield: { color: 0xe8c87a, glyph: '金', name: '金 身', emblem: 'halo'  },
+  magnet: { color: 0x2f6f6b, glyph: '吸', name: '墨 引', emblem: 'poles' },
+};
+const SURGE_DUR  = 4.5;
+const SHIELD_DUR = 5.5;
+const MAGNET_DUR = 6.5;
 const PAL = () => PALETTES[G.paletteIdx % PALETTES.length];
 
 // shared geometries
@@ -316,11 +340,17 @@ function buildGeos() {
   GEO.blob  = new THREE.IcosahedronGeometry(1.5, 0);
   GEO.rock  = new THREE.IcosahedronGeometry(1, 0);
   GEO.post  = new THREE.CylinderGeometry(0.22, 0.28, 5.4, 6);
-  GEO.beam  = new THREE.BoxGeometry(10.4, 0.5, 0.6);
-  GEO.beam2 = new THREE.BoxGeometry(8.6, 0.34, 0.5);
+  GEO.beam  = new THREE.BoxGeometry(14.4, 0.5, 0.6);
+  GEO.beam2 = new THREE.BoxGeometry(12.4, 0.34, 0.5);
   GEO.drop  = new THREE.IcosahedronGeometry(0.45, 0);
   GEO.cloudPuff = new THREE.SphereGeometry(1, 7, 5);
   GEO.ring  = new THREE.RingGeometry(0.6, 0.72, 28);
+  // power-up token bits
+  GEO.pCore  = new THREE.IcosahedronGeometry(0.52, 0);
+  GEO.pArm   = new THREE.BoxGeometry(1.04, 0.26, 0.26);   // plus arm (heal)
+  GEO.pCone  = new THREE.ConeGeometry(0.42, 0.95, 5);     // arrowhead (speed)
+  GEO.pBar   = new THREE.BoxGeometry(0.26, 0.92, 0.26);   // magnet pole
+  GEO.pHalo  = new THREE.TorusGeometry(0.78, 0.1, 7, 26); // shield ring
   for (const k of Object.keys(GEO)) GEO[k + 'E'] = new THREE.EdgesGeometry(GEO[k], 18);
   GEO.cloudPuffE = new THREE.EdgesGeometry(GEO.cloudPuff, 38); // clouds: silhouette only
   // mountains get per-instance random size, so build a few variants
@@ -443,6 +473,46 @@ function placeAt(s, lateral, group, obj, yaw = 0) {
   group.add(obj);
 }
 
+// a floating boon token — colour-coded core + an emblem that reads its effect
+function makePower(kind) {
+  const conf = POWER[kind];
+  const grp = new THREE.Group();
+  const cream = 0xf6efdf;
+  const coreMat = new THREE.MeshBasicMaterial({ color: conf.color, transparent: true, opacity: 0.94 });
+  grp.add(new THREE.Mesh(GEO.pCore, coreMat), inkLines(GEO.pCoreE));
+  const mats = [coreMat];
+  const addPart = (geo, edgeGeo, color, set) => {
+    const mm = new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.96 });
+    const mesh = new THREE.Mesh(geo, mm); set(mesh);
+    const e = inkLines(edgeGeo); e.position.copy(mesh.position); e.rotation.copy(mesh.rotation);
+    grp.add(mesh, e); mats.push(mm);
+  };
+  if (conf.emblem === 'plus') {            // 回血 — cross
+    addPart(GEO.pArm, GEO.pArmE, cream, m => {});
+    addPart(GEO.pArm, GEO.pArmE, cream, m => { m.rotation.z = Math.PI / 2; });
+  } else if (conf.emblem === 'cone') {     // 疾行 — forward arrowhead
+    addPart(GEO.pCone, GEO.pConeE, cream, m => { m.rotation.x = Math.PI / 2; m.position.z = 0.2; });
+  } else if (conf.emblem === 'halo') {     // 金身 — protective ring
+    addPart(GEO.pHalo, GEO.pHaloE, cream, m => { m.rotation.x = Math.PI / 2.4; });
+  } else if (conf.emblem === 'poles') {    // 墨引 — two magnet poles
+    addPart(GEO.pBar, GEO.pBarE, cream, m => { m.position.x = -0.3; });
+    addPart(GEO.pBar, GEO.pBarE, cream, m => { m.position.x = 0.3; });
+  }
+  grp.userData.mats = mats;
+  return grp;
+}
+
+// glowing ring under the car while a timed boon is active
+function buildAura() {
+  const geo = new THREE.RingGeometry(2.0, 2.5, 44);
+  const mat = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0, side: THREE.DoubleSide, depthWrite: false });
+  const ring = new THREE.Mesh(geo, mat);
+  ring.rotation.x = -Math.PI / 2;
+  ring.renderOrder = 2;
+  G.scene.add(ring);
+  G.aura = { ring, mat };
+}
+
 function populate(slice, segIndex, group, chunk) {
   const s0 = slice[0].len, s1 = slice[slice.length - 1].len;
   const pal = PAL();
@@ -529,7 +599,7 @@ function populate(slice, segIndex, group, chunk) {
       mesh.position.y = edge.position.y = 0.55;
       rock.add(mesh, edge);
       const s = s0 + (0.25 + 0.5 * rng()) * (s1 - s0) + i * 14;
-      const lat = (rng() * 2 - 1) * 3.2;
+      const lat = (rng() * 2 - 1) * 4.6;
       placeAt(s, lat, group, rock, rng() * 6.28);
       G.rocks.push({ s, x: lat, obj: rock });
     }
@@ -539,8 +609,8 @@ function populate(slice, segIndex, group, chunk) {
   if (segIndex % 3 === 0) {
     const gate = new THREE.Group();
     const gm = [solidMat(pal.gate), solidMat(pal.gate), solidMat(pal.gate), solidMat(pal.gate)];
-    const pL = new THREE.Mesh(GEO.post, gm[0]); pL.position.set(-4.6, 2.7, 0);
-    const pR = new THREE.Mesh(GEO.post, gm[1]); pR.position.set(4.6, 2.7, 0);
+    const pL = new THREE.Mesh(GEO.post, gm[0]); pL.position.set(-6.4, 2.7, 0);
+    const pR = new THREE.Mesh(GEO.post, gm[1]); pR.position.set(6.4, 2.7, 0);
     const b1 = new THREE.Mesh(GEO.beam, gm[2]); b1.position.y = 5.5; b1.rotation.z = 0.012;
     const b2 = new THREE.Mesh(GEO.beam2, gm[3]); b2.position.y = 4.6;
     const eL = inkLines(GEO.postE); eL.position.copy(pL.position);
@@ -557,7 +627,7 @@ function populate(slice, segIndex, group, chunk) {
   // ink drops — gentle arcs of 3
   if (rng() < 0.75) {
     const baseS = s0 + rng() * (s1 - s0) * 0.6;
-    const baseX = (rng() * 2 - 1) * 2.6;
+    const baseX = (rng() * 2 - 1) * 3.8;
     for (let i = 0; i < 3; i++) {
       const drop = new THREE.Group();
       const mm = new THREE.MeshBasicMaterial({ color: pal.drop, transparent: true, opacity: 0.85 });
@@ -570,6 +640,24 @@ function populate(slice, segIndex, group, chunk) {
       placeAt(s, lat, group, drop);
       drop.position.y += 1.2;
       G.drops.push({ s, x: lat, obj: drop, taken: false, spin: rng() * 6.28 });
+    }
+  }
+
+  // boons — occasional power-ups, weighted toward minor ones
+  if (segIndex > 5) {
+    const roll = rng();
+    let kind = null;
+    if      (roll < 0.05) kind = 'shield';
+    else if (roll < 0.16) kind = 'speed';
+    else if (roll < 0.23) kind = 'magnet';
+    else if (roll < 0.31) kind = 'heal';
+    if (kind) {
+      const tok = makePower(kind);
+      const s = s0 + (0.3 + 0.4 * rng()) * (s1 - s0);
+      const lat = (rng() * 2 - 1) * (LANE_LIMIT * 0.62);
+      placeAt(s, lat, group, tok, rng() * 6.28);
+      tok.position.y += 1.4;
+      G.powers.push({ s, x: lat, obj: tok, taken: false, spin: rng() * 6.28, kind });
     }
   }
 }
@@ -587,9 +675,11 @@ function pruneChunks() {
   while (G.gateHead < G.gates.length && G.gates[G.gateHead].s < cut) G.gateHead++;
   while (G.dropHead < G.drops.length && G.drops[G.dropHead].s < cut) G.dropHead++;
   while (G.rockHead < G.rocks.length && G.rocks[G.rockHead].s < cut) G.rockHead++;
+  while (G.powerHead < G.powers.length && G.powers[G.powerHead].s < cut) G.powerHead++;
   if (G.gateHead > 400) { G.gates.splice(0, G.gateHead); G.gateHead = 0; }
   if (G.dropHead > 800) { G.drops.splice(0, G.dropHead); G.dropHead = 0; }
   if (G.rockHead > 800) { G.rocks.splice(0, G.rockHead); G.rockHead = 0; }
+  if (G.powerHead > 400) { G.powers.splice(0, G.powerHead); G.powerHead = 0; }
 }
 
 // ── car ──────────────────────────────────────────────────────
@@ -684,6 +774,13 @@ function toast(main, sub) {
   HUD.toastMain.textContent = main; HUD.toastSub.textContent = sub;
   HUD.toast.classList.remove('show'); void HUD.toast.offsetWidth;
   HUD.toast.classList.add('show');
+}
+function powerToast(glyph, name, color) {
+  const el = HUD.boon;
+  if (!el) return;
+  el.innerHTML = `<b>${glyph}</b><span>${name}</span>`;
+  el.style.color = `#${color.toString(16).padStart(6, '0')}`;
+  el.classList.remove('show'); void el.offsetWidth; el.classList.add('show');
 }
 function setPhaseLabel() {
   HUD.chNum.textContent = `第${CHAPTER_NUM[G.chapter % 9]}章`;
@@ -812,7 +909,7 @@ function ripple(pos, color = INK, size = 1) {
 
 // ── gameplay events ──────────────────────────────────────────
 function onGate(g) {
-  const inside = Math.abs(G.x) < 3.5;
+  const inside = Math.abs(G.x) < 5.0;
   if (inside) {
     G.combo++; G.maxCombo = Math.max(G.maxCombo, G.combo);
     if (G.phase === 'sketch') G.meter = Math.min(G.meter + 0.16, 1);
@@ -841,8 +938,45 @@ function onPickup(d) {
   ripple(d.obj.position, PAL().drop, 0.8);
 }
 
+function onPower(p) {
+  p.taken = true;
+  p.obj.visible = false;
+  G.boonsGot++;
+  const conf = POWER[p.kind];
+  if (p.kind === 'heal') {
+    if (G.hp < MAX_HP) {
+      G.hp++;
+      const hearts = document.querySelectorAll('.hp-drop');
+      hearts.forEach((el, i) => el.classList.toggle('lost', i >= G.hp));
+      const restored = hearts[G.hp - 1];
+      if (restored) { restored.classList.remove('healed'); void restored.offsetWidth; restored.classList.add('healed'); }
+      AudioEngine.heal();
+      powerToast(conf.glyph, conf.name, conf.color);
+    } else {                                   // already full → ink bonus instead
+      G.meter = Math.min(G.meter + 0.14, 1);
+      AudioEngine.pickup();
+      powerToast(conf.glyph, '墨 满', conf.color);
+    }
+  } else {
+    if (p.kind === 'speed')  G.surgeT  = SURGE_DUR;
+    if (p.kind === 'shield') G.shieldT = SHIELD_DUR;
+    if (p.kind === 'magnet') G.magnetT = MAGNET_DUR;
+    AudioEngine.power(p.kind);
+    powerToast(conf.glyph, conf.name, conf.color);
+  }
+  ripple(p.obj.position, conf.color, 1.4);
+}
+
 function onHit(rock) {
   if (G.invuln > 0) return;
+  if (G.shieldT > 0) {                          // 金身 deflects the ink-blot, no damage
+    if (!rock.deflected) {
+      rock.deflected = true;
+      AudioEngine.blip(540, 0.12, 'square', 0.13);
+      ripple(rock.obj.position, POWER.shield.color, 1.9);
+    }
+    return;
+  }
   G.invuln = 1.6;
   G.hp--;
   G.combo = 0;
@@ -899,6 +1033,7 @@ function bindHUD() {
   HUD.meterFill = document.getElementById('meter-fill');
   HUD.meterLabel = document.getElementById('meter-label');
   HUD.combo = document.getElementById('combo');
+  HUD.boon = document.getElementById('boon');
   HUD.toast = document.getElementById('phase-toast');
   HUD.toastMain = document.getElementById('toast-main');
   HUD.toastSub = document.getElementById('toast-sub');
@@ -928,6 +1063,7 @@ function setup() {
   G.track = new Track(onSlice);
   G.track.ensure(0);
   buildCar();
+  buildAura();
   buildSun();
   buildStreaks();
   bindHUD();
@@ -950,9 +1086,17 @@ let lastHudDist = -1;
 function update(dt, rdt) {
   const pal = PAL();
 
+  // boon timers
+  if (G.surgeT  > 0) G.surgeT  -= dt;
+  if (G.shieldT > 0) G.shieldT -= dt;
+  if (G.magnetT > 0) G.magnetT -= dt;
+  // 疾行浪涌平滑淡入淡出 — 拾取/结束都走 surge01 缓动，避免画面瞬变
+  G.surge01 += ((G.surgeT > 0 ? 1 : 0) - G.surge01) * Math.min(dt * 3, 1);
+
   // speed & motion — boost eases in/out instead of snapping
   G.boost01 += ((Input.boost ? 1 : 0) - G.boost01) * Math.min(dt * 3.2, 1);
-  const target = (G.baseSpeed + Math.min((G.s - 0) * 0.004, 9)) * (1 + 0.34 * G.boost01) * (G.phase === 'flat' ? 0.88 : 1);
+  G.boost01 = Math.max(G.boost01, 0.9 * G.surge01);    // 疾行 平滑融入 boost 视觉/风线
+  const target = (G.baseSpeed + Math.min(G.s * 0.004, 9)) * (1 + 0.34 * G.boost01) * (1 + 0.5 * G.surge01) * (G.phase === 'flat' ? 0.88 : 1);
   G.speed += (target - G.speed) * Math.min(dt * 1.4, 1);
   G.s += G.speed * dt;
   G.track.ensure(G.s);
@@ -981,21 +1125,61 @@ function update(dt, rdt) {
     G.car.visible = (Math.floor(performance.now() / 90) % 2) === 0;
   } else G.car.visible = true;
 
+  // boon aura ring under the car (steady halo, distinct from hit blink)
+  if (G.aura) {
+    const au = G.aura;
+    let ac = null, ao = 0;
+    if      (G.shieldT > 0)     { ac = POWER.shield.color; ao = 0.55; }
+    else if (G.surge01 > 0.02)  { ac = POWER.speed.color;  ao = 0.45 * G.surge01; }
+    else if (G.magnetT > 0)     { ac = POWER.magnet.color; ao = 0.42; }
+    if (ac !== null) {
+      const now = performance.now();
+      au.ring.visible = true;
+      au.mat.color.set(ac);
+      au.mat.opacity = ao * (0.72 + 0.28 * Math.sin(now * 0.011));
+      au.ring.position.copy(G.car.position); au.ring.position.y = _p.y + 0.06;
+      au.ring.scale.setScalar(1 + 0.07 * Math.sin(now * 0.008));
+    } else au.ring.visible = false;
+  }
+
   // collisions / pickups / gates
   for (let i = G.gateHead; i < G.gates.length; i++) {
     const g = G.gates[i];
     if (g.s > G.s + 4) break;
     if (!g.passed && G.s >= g.s) { g.passed = true; onGate(g); }
   }
+  const magnet = G.magnetT > 0;
+  const carPos = G.car.position;
   for (let i = G.dropHead; i < G.drops.length; i++) {
     const d = G.drops[i];
-    if (d.s > G.s + 40) break;
-    if (!d.taken) {
-      d.spin += dt * 2.4;
-      d.obj.rotation.y = d.spin;
+    if (d.s > G.s + 60) break;
+    if (d.taken) continue;
+    d.spin += dt * 2.4;
+    d.obj.rotation.y = d.spin;
+    // 墨引：在吸力半径内的墨滴各自朝车体真实位置加速飞来（越近越快），自然汇聚而非整列横移
+    let pulled = false;
+    if (magnet && d.s > G.s - 5 && d.s < G.s + 26) {
+      const dist = d.obj.position.distanceTo(carPos);
+      if (dist < 18) {
+        if (dist < 1.5) { onPickup(d); continue; }
+        const k = Math.min(dt * (3.5 + 55 / Math.max(dist, 1.2)), 1);
+        d.obj.position.lerp(carPos, k);
+        pulled = true;
+      }
+    }
+    if (!pulled) {
       d.obj.position.y += Math.sin(d.spin * 1.7) * 0.004;
       if (Math.abs(d.s - G.s) < 2.4 && Math.abs(d.x - G.x) < 1.9) onPickup(d);
     }
+  }
+  for (let i = G.powerHead; i < G.powers.length; i++) {
+    const p = G.powers[i];
+    if (p.s > G.s + 40) break;
+    if (p.taken) continue;
+    p.spin += dt * 1.7;
+    p.obj.rotation.y = p.spin;
+    p.obj.position.y += Math.sin(p.spin * 1.4) * 0.006;
+    if (Math.abs(p.s - G.s) < 2.6 && Math.abs(p.x - G.x) < 2.3) onPower(p);
   }
   for (let i = G.rockHead; i < G.rocks.length; i++) {
     const r = G.rocks[i];
@@ -1016,9 +1200,10 @@ function update(dt, rdt) {
   // chase rig
   eyeA.copy(_p).addScaledVector(_t, -9.2).addScaledVector(UP, 4.4).addScaledVector(_r, G.x * 0.45);
   lookA.copy(_p).addScaledVector(_t, 7).addScaledVector(UP, 1.5).addScaledVector(_r, G.x * 0.3);
-  // top-down rig (up vector = travel direction → road scrolls upward)
-  eyeB.copy(G.car.position).addScaledVector(_t, 16).setY(_p.y + 190);
-  lookB.copy(G.car.position).addScaledVector(_t, 16.01).setY(_p.y);
+  // top-down rig — pulled closer & framed tighter so lateral steering reads
+  // as quick as the 3D chase (was a far 190m zoom that made turns feel sluggish)
+  eyeB.copy(G.car.position).addScaledVector(_t, 13).setY(_p.y + 96);
+  lookB.copy(G.car.position).addScaledVector(_t, 13.01).setY(_p.y);
   camP.lerpVectors(eyeA, eyeB, f);
   camL.lerpVectors(lookA, lookB, f);
   camU.copy(UP).multiplyScalar(1 - f).addScaledVector(_t, f).normalize();
@@ -1033,7 +1218,7 @@ function update(dt, rdt) {
   G.camera.position.copy(camP);
   G.camera.up.copy(camU);
   G.camera.lookAt(camL);
-  G.camera.fov = THREE.MathUtils.lerp(64, 19, f) + G.boost01 * 5;
+  G.camera.fov = THREE.MathUtils.lerp(64, 22, f) + G.boost01 * 5 + 4 * G.surge01;
   G.camera.updateProjectionMatrix();
 
   // atmosphere follows colour
@@ -1068,8 +1253,10 @@ function applyChapter(c) {
     ch.dispose.forEach(g => g.dispose());
   }
   G.chunks = []; G.paintables = [];
-  G.gates = []; G.drops = []; G.rocks = [];
-  G.gateHead = G.dropHead = G.rockHead = 0;
+  G.gates = []; G.drops = []; G.rocks = []; G.powers = [];
+  G.gateHead = G.dropHead = G.rockHead = G.powerHead = 0;
+  G.surgeT = G.surge01 = G.shieldT = G.magnetT = 0;
+  if (G.aura) G.aura.ring.visible = false;
   G.s = 0; G.x = 0; G.xv = 0; G.speed = 0; G.meter = 0;
   G.phase = 'sketch'; G.pending = null; G.wave = null; G.drain = false;
   G.color01 = 0; G.flat01 = 0;

@@ -91,6 +91,8 @@
     transform: rotate(0deg); transition: opacity .3s, transform .3s;
   }
   .hp-drop.lost { opacity: .14; transform: scale(.7); }
+  .hp-drop.healed { animation: hpPop .55s cubic-bezier(.2,1.6,.4,1); }
+  @keyframes hpPop { 0% { transform: scale(.3); } 45% { transform: scale(1.4); } 100% { transform: scale(1); } }
 
   /* color meter: a brush stroke that fills */
   #meter-wrap {
@@ -119,6 +121,20 @@
     25% { opacity: 1; transform: translateX(-50%) scale(1.15) rotate(2deg); }
     60% { opacity: 1; transform: translateX(-50%) scale(1) rotate(0); }
     100% { opacity: 0; transform: translateX(-50%) scale(.96) translateY(-18px); }
+  }
+  #boon {
+    position: absolute; left: 50%; top: 42%; transform: translateX(-50%);
+    text-align: center; opacity: 0; pointer-events: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.55);
+  }
+  #boon b { display: block; font-size: 46px; font-weight: 700; line-height: 1; }
+  #boon span { font-size: 13px; letter-spacing: .5em; padding-left: .5em; }
+  #boon.show { animation: boonPop 1.5s cubic-bezier(.2,1.3,.4,1) forwards; }
+  @keyframes boonPop {
+    0%   { opacity: 0; transform: translateX(-50%) scale(.5) translateY(10px); }
+    20%  { opacity: 1; transform: translateX(-50%) scale(1.1); }
+    55%  { opacity: 1; transform: translateX(-50%) scale(1); }
+    100% { opacity: 0; transform: translateX(-50%) scale(.95) translateY(-26px); }
   }
   #phase-toast {
     position: absolute; left: 50%; top: 18%; transform: translateX(-50%);
@@ -254,6 +270,7 @@
       <div id="meter"><div id="meter-fill"></div></div>
     </div>
     <div id="combo"></div>
+    <div id="boon"></div>
     <div id="phase-toast"><span id="toast-sub"></span><b id="toast-main"></b></div>
   </div>
 
@@ -292,7 +309,7 @@
       <span><b>← →</b>&ensp;或拖动 转向</span>
       <span><b>W / ↑</b>&ensp;蘸墨加速</span>
       <span><b>Esc</b>&ensp;暂笔</span>
-      <span>集墨滴 · 穿门 · 待色染山河</span>
+      <span>集墨滴 · 穿门 · 拾朱印金身</span>
     </div>
     <div class="chapsel" id="chapsel">
       <span class="chapsel-label">起 章</span>
