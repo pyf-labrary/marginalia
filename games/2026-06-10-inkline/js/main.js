@@ -60,6 +60,24 @@ const PRUNE_BEHIND = 130;
 const BLOOM_DIST = 620;      // metres of bloom before papercut queues
 const FLAT_DIST  = 620;      // metres of papercut before next chapter queues
 
+// 章节速度：渐近曲线取代旧的「每章 +3.5 无上限」——天花板 = SPEED_BASE + SPEED_CEIL ≈ 40
+const SPEED_BASE = 24;
+const SPEED_CEIL = 16;
+const chapterSpeed = c => SPEED_BASE + SPEED_CEIL * (1 - Math.exp(-c / 3));
+
+// 难度三档：缩放速度曲线（speed）、墨渍密度（hazard）、最小间距（gap）
+const DIFFS = {
+  yiyi:   { key: 'yiyi',   name: '写意', speed: 0.82, hazard: 0.6,  gap: 1.35 },
+  gongbi: { key: 'gongbi', name: '工笔', speed: 1.0,  hazard: 1.0,  gap: 1.0  },
+  kuang:  { key: 'kuang',  name: '狂草', speed: 1.18, hazard: 1.3,  gap: 0.82 },
+};
+
+// 阶段2 · 错峰解锁：每章引入一个新机制（按章节索引；起章跳关也按 >= 生效，首次遭遇才提示）
+const CH_DRIFT  = 1;   // 第二章：漂移墨渍（横向游走）
+const CH_PUDDLE = 2;   // 第三章：减速墨潭（掉速不掉血）
+const CH_WIND   = 3;   // 第四章：侧风阵风（把车推向一侧）
+const CH_BRIDGE = 4;   // 第五章：独木窄桥（路面收窄穿缝）
+
 // ── tiny tween engine (runs on real time) ───────────────────
 const tweens = [];
 function tween(o) { tweens.push(Object.assign({ t: -(o.delay || 0), dur: 0.5 }, o)); }
@@ -307,6 +325,7 @@ const G = {
   scene: null, camera: null, renderer: null,
   track: null, chunks: [], paintables: [],
   gates: [], drops: [], rocks: [], powers: [], gateHead: 0, dropHead: 0, rockHead: 0, powerHead: 0,
+  lastRockS: -999, diff: DIFFS.gongbi,
   car: null, carParts: null, aura: null,
   s: 0, x: 0, xv: 0, speed: 0, baseSpeed: 24, boost01: 0, streaks: [],
   hp: 3, invuln: 0, combo: 0, maxCombo: 0, dropsGot: 0,
@@ -317,6 +336,13 @@ const G = {
   shake: 0, timeScale: 1, running: false, over: false, paused: false,
   inkMat: null, dashMat: null, sun: null,
   paletteIdx: 0,
+  // 阶段2 状态
+  puddles: [], puddleHead: 0, onPuddle01: 0,
+  bridges: [], lastBridgeS: -999,
+  wind: 0, windActive: false, windDir: 1, windMag: 0, windNextS: 320, windEndS: 0, windLines: null,
+  glide01: 0, trail: null, mechSeen: {}, nearMisses: 0,
+  // 阶段3 状态
+  zen: false, chapterClean: true, lastMilestone: 0, perfectChapters: 0,
 };
 
 // ── power-ups (boons) — colour-coded ink tokens ──────────────
@@ -353,6 +379,8 @@ function buildGeos() {
   GEO.pHalo  = new THREE.TorusGeometry(0.78, 0.1, 7, 26); // shield ring
   for (const k of Object.keys(GEO)) GEO[k + 'E'] = new THREE.EdgesGeometry(GEO[k], 18);
   GEO.cloudPuffE = new THREE.EdgesGeometry(GEO.cloudPuff, 38); // clouds: silhouette only
+  GEO.puddle  = new THREE.CircleGeometry(1, 22);               // 减速墨潭（单位圆，按实例缩放）
+  GEO.puddleE = new THREE.EdgesGeometry(GEO.puddle);           // 圆形墨边
   // mountains get per-instance random size, so build a few variants
   GEO.mountains = [];
   for (let i = 0; i < 4; i++) {
@@ -399,25 +427,47 @@ function sketchMesh(geoSolid, geoEdge, color, opts = {}) {
 }
 
 // ── world building per track slice ──────────────────────────
+// 独木窄桥：第五章起，偶尔让一段路面收窄（中段最窄），桥段不刷障碍——桥本身就是挑战
+function decideBridge(slice, segIndex) {
+  if (G.chapter < CH_BRIDGE) return null;
+  if (segIndex % 3 === 0) return null;                 // 留给鸟居门的段不收窄
+  const s0 = slice[0].len, s1 = slice[slice.length - 1].len;
+  if (s0 - G.lastBridgeS < 280) return null;           // 桥间最小间距
+  if (Math.random() > 0.2) return null;
+  G.lastBridgeS = s1;
+  const region = { s0, s1, half: 2.9 + Math.random() * 0.8 };  // 收窄到 ±~2 可走
+  G.bridges.push(region);
+  return region;
+}
+// 桥段内某弧长处的半路宽（端点全宽、中段最窄）
+function bridgeHalfAt(len, bridge) {
+  if (!bridge) return ROAD_W / 2;
+  const u = THREE.MathUtils.clamp((len - bridge.s0) / Math.max(bridge.s1 - bridge.s0, 1e-6), 0, 1);
+  const pinch = Math.sin(Math.PI * u);                 // 0 端点 → 1 中段
+  return THREE.MathUtils.lerp(ROAD_W / 2, bridge.half, smooth(pinch));
+}
+
 function onSlice(slice, segIndex) {
   const group = new THREE.Group();
   const chunk = { group, until: slice[slice.length - 1].len, paint: [], dispose: [] };
 
-  buildRoad(slice, group, chunk);
-  if (segIndex > 1) populate(slice, segIndex, group, chunk);
+  const bridge = decideBridge(slice, segIndex);
+  buildRoad(slice, group, chunk, bridge);
+  if (segIndex > 1 && !bridge) populate(slice, segIndex, group, chunk);
 
   G.scene.add(group);
   G.chunks.push(chunk);
 }
 
-function buildRoad(slice, group, chunk) {
+function buildRoad(slice, group, chunk, bridge) {
   const n = slice.length;
   const posSolid = new Float32Array(n * 2 * 3);
   const edgeL = [], edgeR = [], dashes = [], ticks = [];
   for (let i = 0; i < n; i++) {
     const { p, r } = slice[i];
-    const lx = p.x - r.x * ROAD_W / 2, lz = p.z - r.z * ROAD_W / 2;
-    const rx = p.x + r.x * ROAD_W / 2, rz = p.z + r.z * ROAD_W / 2;
+    const hw = bridgeHalfAt(slice[i].len, bridge);
+    const lx = p.x - r.x * hw, lz = p.z - r.z * hw;
+    const rx = p.x + r.x * hw, rz = p.z + r.z * hw;
     posSolid.set([lx, p.y, lz, rx, p.y, rz], i * 6);
     edgeL.push(lx, p.y + 0.02, lz); edgeR.push(rx, p.y + 0.02, rz);
     if (i % 3 === 1) { // centre dashes
@@ -513,6 +563,100 @@ function buildAura() {
   G.aura = { ring, mat };
 }
 
+// ── 减速墨潭：贴在路面的墨潭，碾过掉速不掉血 ──────────────────
+function makePuddle(radius) {
+  const grp = new THREE.Group();
+  const mat = new THREE.MeshBasicMaterial({ color: INK, transparent: true, opacity: 0.34, side: THREE.DoubleSide, depthWrite: false });
+  const disc = new THREE.Mesh(GEO.puddle, mat);
+  disc.rotation.x = -Math.PI / 2; disc.scale.set(radius, radius, 1);
+  const ring = new THREE.LineSegments(GEO.puddleE, G.inkMat);
+  ring.rotation.x = -Math.PI / 2; ring.scale.set(radius, radius, 1);
+  grp.add(disc, ring);
+  grp.userData.mat = mat;
+  return grp;
+}
+
+// ── 连击墨色拖尾：高连击时车后拖出一条渐淡的水墨笔触 ──────────
+function buildTrail() {
+  const N = 34;
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(N * 2 * 3), 3));
+  const idx = [];
+  for (let i = 0; i < N - 1; i++) { const a = i * 2, b = i * 2 + 1, c = i * 2 + 2, d = i * 2 + 3; idx.push(a, b, c, b, d, c); }
+  g.setIndex(idx);
+  const m = new THREE.MeshBasicMaterial({ color: PAL().car, transparent: true, opacity: 0, side: THREE.DoubleSide, depthWrite: false });
+  const mesh = new THREE.Mesh(g, m); mesh.frustumCulled = false; mesh.renderOrder = 1;
+  G.scene.add(mesh);
+  G.trail = { mesh, g, m, pts: [], N };
+}
+function updateTrail(dt) {
+  const tr = G.trail; if (!tr) return;
+  const target = G.combo >= 3 ? Math.min(0.1 + (G.combo - 3) * 0.045, 0.4) : 0;
+  tr.m.opacity += (target - tr.m.opacity) * Math.min(dt * 4, 1);
+  tr.m.color.set(PAL().car);
+  const head = G.car.position.clone().addScaledVector(_t, -3.4); head.y = _p.y + 0.12;
+  tr.pts.unshift({ p: head, r: _r.clone() });
+  if (tr.pts.length > tr.N) tr.pts.pop();
+  const a = tr.g.attributes.position.array;
+  for (let i = 0; i < tr.N; i++) {
+    const pt = tr.pts[Math.min(i, tr.pts.length - 1)];
+    const w = 0.95 * (1 - i / tr.N);
+    a[i * 6]     = pt.p.x - pt.r.x * w; a[i * 6 + 1] = pt.p.y; a[i * 6 + 2] = pt.p.z - pt.r.z * w;
+    a[i * 6 + 3] = pt.p.x + pt.r.x * w; a[i * 6 + 4] = pt.p.y; a[i * 6 + 5] = pt.p.z + pt.r.z * w;
+  }
+  tr.g.attributes.position.needsUpdate = true;
+}
+
+// ── 侧风视觉：阵风时一组横向飘移的墨色短线 ──────────────────
+function buildWindLines() {
+  G.windLines = [];
+  for (let i = 0; i < 16; i++) {
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(6), 3));
+    const m = new THREE.LineBasicMaterial({ color: 0x3d4a78, transparent: true, opacity: 0 });
+    const l = new THREE.Line(g, m); l.frustumCulled = false;
+    G.scene.add(l);
+    G.windLines.push({ g, m, ds: 6 + Math.random() * 40, lat: (Math.random() * 2 - 1) * 16, h: 0.5 + Math.random() * 5, off: Math.random() * 30 });
+  }
+}
+function updateWindLines(dt) {
+  if (!G.windLines) return;
+  const w = Math.abs(G.wind);
+  for (const s of G.windLines) {
+    if (w < 0.5) { s.m.opacity = 0; continue; }
+    s.off += G.windDir * (9 + w * 1.6) * dt;
+    s.ds  -= G.speed * 0.4 * dt;
+    if (s.ds < -10) { s.ds = 20 + Math.random() * 44; s.lat = (Math.random() * 2 - 1) * 16; s.h = 0.5 + Math.random() * 5; }
+    G.track.pose(G.s + s.ds, _rp, _rt, _rr);
+    const len = 2 + w * 0.4;
+    const baseLat = s.lat + (s.off % 32) - 16;
+    const a = s.g.attributes.position.array;
+    a[0] = _rp.x + _rr.x * baseLat;             a[1] = _rp.y + s.h; a[2] = _rp.z + _rr.z * baseLat;
+    a[3] = a[0] + _rr.x * len * G.windDir;      a[4] = a[1];        a[5] = a[2] + _rr.z * len * G.windDir;
+    s.g.attributes.position.needsUpdate = true;
+    s.m.opacity = Math.min(w * 0.045, 0.32) * (0.6 + 0.4 * Math.random());
+  }
+}
+
+// ── 完美擦肩：墨渍贴身掠过不撞 → 连击 + 墨色奖励 ──────────────
+function nearMiss(r) {
+  G.combo++; G.maxCombo = Math.max(G.maxCombo, G.combo); G.nearMisses++;
+  if (G.phase === 'sketch') G.meter = Math.min(G.meter + 0.05, 1);
+  AudioEngine.blip(1320, 0.12, 'sine', 0.13); AudioEngine.blip(1760, 0.1, 'sine', 0.06);
+  ripple(G.car.position, PAL().car, 1.0);
+  if (G.combo >= 2) {
+    HUD.combo.textContent = `擦 ×${G.combo}`;
+    HUD.combo.classList.remove('pop'); void HUD.combo.offsetWidth; HUD.combo.classList.add('pop');
+  }
+}
+
+// ── 错峰解锁提示：每个新机制首次遭遇时报一次 ──────────────────
+function announceMech(key, glyph, name, color = 0x2f6f6b) {
+  if (G.mechSeen[key]) return;
+  G.mechSeen[key] = 1;
+  powerToast(glyph, name, color);
+}
+
 function populate(slice, segIndex, group, chunk) {
   const s0 = slice[0].len, s1 = slice[slice.length - 1].len;
   const pal = PAL();
@@ -587,9 +731,15 @@ function populate(slice, segIndex, group, chunk) {
   }
 
   // ink-blot obstacles — stay ink forever (墨渍不染)
-  if (segIndex > 4 && rng() < 0.85) {
-    const nRocks = rng() < 0.3 ? 2 : 1;
-    for (let i = 0; i < nRocks; i++) {
+  // 难度公平化：生成概率/间距随「持续速度」自适应，反应窗口恒定 ~1.8s，绝不刷成无解墙
+  const ds = G.baseSpeed + Math.min(G.s * 0.004, 9);            // 持续速度（忽略瞬时加速）
+  const minGap = THREE.MathUtils.clamp(ds * 1.8 * G.diff.gap, 48, 185);      // 墨渍最小纵向间距
+  const rockChance = THREE.MathUtils.clamp((0.95 - ds * 0.0065) * G.diff.hazard, 0.16, 0.92);
+  if (segIndex > 4 && rng() < rockChance) {
+    const want = (rng() < 0.3 && ds < 36) ? 2 : 1;             // 双墨渍只在低速章节出现
+    for (let i = 0; i < want; i++) {
+      const s = s0 + (0.25 + 0.5 * rng()) * (s1 - s0) + i * 20;
+      if (s - G.lastRockS < minGap) continue;                  // 间距不足 → 跳过，保证反应窗口
       const rock = new THREE.Group();
       const mm = new THREE.MeshBasicMaterial({ color: INK, transparent: true, opacity: 0.88 });
       const mesh = new THREE.Mesh(GEO.rock, mm);
@@ -598,11 +748,30 @@ function populate(slice, segIndex, group, chunk) {
       edge.scale.copy(mesh.scale);
       mesh.position.y = edge.position.y = 0.55;
       rock.add(mesh, edge);
-      const s = s0 + (0.25 + 0.5 * rng()) * (s1 - s0) + i * 14;
-      const lat = (rng() * 2 - 1) * 4.6;
+      const lat = (rng() * 2 - 1) * 4.4;
       placeAt(s, lat, group, rock, rng() * 6.28);
-      G.rocks.push({ s, x: lat, obj: rock });
+      G.lastRockS = s;
+      // 漂移墨渍：第二章起部分墨渍横向游走，成为移动目标
+      const drift = G.chapter >= CH_DRIFT && rng() < 0.5;
+      const dPhase = rng() * 6.28, dAmp = 2.2 + rng() * 1.4, dFreq = 0.7 + rng() * 0.7;
+      let x0 = lat;
+      if (drift) {   // 用漂移公式定初始位（_r 仍是该处右向量），避免首帧从 baseX 跳变
+        x0 = THREE.MathUtils.clamp(lat + Math.sin(performance.now() * 0.001 * dFreq + dPhase) * dAmp, -4.8, 4.8);
+        rock.position.addScaledVector(_r, x0 - lat);
+      }
+      G.rocks.push({ s, x: x0, baseX: lat, obj: rock, drift, driftPhase: dPhase, driftAmp: dAmp, driftFreq: dFreq });
     }
+  }
+
+  // 减速墨潭 — 贴在路面，碾过掉速不掉血（第三章起）
+  if (G.chapter >= CH_PUDDLE && segIndex > 4 && rng() < 0.42 * G.diff.hazard) {
+    const radius = 2.3 + rng() * 1.7;
+    const s = s0 + (0.2 + 0.6 * rng()) * (s1 - s0);
+    const lat = (rng() * 2 - 1) * 3.6;
+    const pud = makePuddle(radius);
+    placeAt(s, lat, group, pud);
+    pud.position.y += 0.04;
+    G.puddles.push({ s, x: lat, r: radius, obj: pud, splashed: false });
   }
 
   // gates 鸟居 — every ~3 segments
@@ -676,10 +845,13 @@ function pruneChunks() {
   while (G.dropHead < G.drops.length && G.drops[G.dropHead].s < cut) G.dropHead++;
   while (G.rockHead < G.rocks.length && G.rocks[G.rockHead].s < cut) G.rockHead++;
   while (G.powerHead < G.powers.length && G.powers[G.powerHead].s < cut) G.powerHead++;
+  while (G.puddleHead < G.puddles.length && G.puddles[G.puddleHead].s < cut) G.puddleHead++;
   if (G.gateHead > 400) { G.gates.splice(0, G.gateHead); G.gateHead = 0; }
   if (G.dropHead > 800) { G.drops.splice(0, G.dropHead); G.dropHead = 0; }
   if (G.rockHead > 800) { G.rocks.splice(0, G.rockHead); G.rockHead = 0; }
   if (G.powerHead > 400) { G.powers.splice(0, G.powerHead); G.powerHead = 0; }
+  if (G.puddleHead > 600) { G.puddles.splice(0, G.puddleHead); G.puddleHead = 0; }
+  while (G.bridges.length && G.bridges[0].s1 < G.s - 60) G.bridges.shift();
 }
 
 // ── car ──────────────────────────────────────────────────────
@@ -734,6 +906,7 @@ function buildStreaks() {
   }
 }
 const _wp = new THREE.Vector3(), _wt = new THREE.Vector3(), _wr = new THREE.Vector3();
+const _rp = new THREE.Vector3(), _rt = new THREE.Vector3(), _rr = new THREE.Vector3(); // 实体重定位用
 function updateStreaks(dt) {
   const b = G.boost01;
   for (const s of G.streaks) {
@@ -830,7 +1003,7 @@ function triggerFlat() {
   AudioEngine.whoosh();
   AudioEngine.setPhaseMusic('flat');
   slowMo();
-  toast('剪 纸', '天地为平面');
+  toast('剪 纸', '天地为平面 · 按加速滑翔');
   setPhaseLabel();
   tween({ dur: 2.8, ease: easeInOut, update: k => G.flat01 = k });
   // flatten the world like paper cut-outs
@@ -847,11 +1020,25 @@ function triggerFlat() {
 
 function triggerChapter() {
   G.pending = null; G.phaseStartS = G.s;
+  // 本章零失误奖励（切章前结算上一章）：满血则攒墨，未满则回一滴
+  if (G.chapterClean) {
+    G.perfectChapters++;
+    AudioEngine.heal();
+    if (G.hp < MAX_HP) {
+      G.hp++;
+      document.querySelectorAll('.hp-drop').forEach((el, i) => el.classList.toggle('lost', i >= G.hp));
+    } else G.meter = Math.min(G.meter + 0.2, 1);
+    powerToast('净', '本 章 零 失 误', 0xd9a441);
+  }
+  G.chapterClean = true;
   G.chapter++; G.paletteIdx++;
   // reaching a chapter unlocks starting from it (cap: the six title stamps)
   const prevMax = +(localStorage.getItem('inkline-max-ch') || 0);
   if (G.chapter > prevMax) localStorage.setItem('inkline-max-ch', String(Math.min(G.chapter, 5)));
-  G.baseSpeed += 3.5;
+  G.baseSpeed = chapterSpeed(G.chapter) * G.diff.speed;
+  G.lastRockS = -999;
+  G.lastBridgeS = -999;
+  G.windActive = false; G.wind = 0; G.windNextS = G.s + 220;
   G.meter = 0;
   G.phase = 'sketch';
   startWave(true);             // colour drains away
@@ -978,15 +1165,17 @@ function onHit(rock) {
     return;
   }
   G.invuln = 1.6;
-  G.hp--;
   G.combo = 0;
   G.meter = Math.max(G.meter - 0.12, 0);
   G.shake = 1;
   G.speed *= 0.45;
+  G.chapterClean = false;                 // 本章已失误 → 取消零失误奖励
   AudioEngine.splat();
   const hf = document.getElementById('hitflash');
   hf.classList.remove('hit'); void hf.offsetWidth; hf.classList.add('hit');
   ripple(rock.obj.position, INK, 2.2);
+  if (G.zen) return;                       // 禅意模式：撞击有反馈，但不掉血、不终章
+  G.hp--;
   document.querySelectorAll('.hp-drop').forEach((el, i) => el.classList.toggle('lost', i >= G.hp));
   if (G.hp <= 0) gameOver();
 }
@@ -995,10 +1184,26 @@ function gameOver() {
   G.over = true; G.running = false;
   AudioEngine.setEngine(0, false);
   AudioEngine.setPhaseMusic('sketch');
-  document.getElementById('ov-dist').textContent = Math.floor(G.s);
+  const dist = Math.floor(G.s);
+  document.getElementById('ov-dist').textContent = dist;
   document.getElementById('ov-combo').textContent = G.maxCombo;
   document.getElementById('ov-drops').textContent = G.dropsGot;
+  const ovNear = document.getElementById('ov-near'); if (ovNear) ovNear.textContent = G.nearMisses;
   document.getElementById('ov-ch').textContent = CHAPTER_NUM[G.chapter % 9];
+  // 纪录：历来最远 / 最高连击（禅意模式不计入排行）
+  const recEl = document.getElementById('ov-record');
+  if (recEl) {
+    if (G.zen) {
+      recEl.className = ''; recEl.textContent = '禅意练习 · 不计纪录';
+    } else {
+      const prevBest = +(localStorage.getItem('inkline-best-dist') || 0);
+      const newRec = dist > prevBest;
+      if (newRec) localStorage.setItem('inkline-best-dist', String(dist));
+      if (G.maxCombo > +(localStorage.getItem('inkline-best-combo') || 0)) localStorage.setItem('inkline-best-combo', String(G.maxCombo));
+      recEl.className = newRec ? 'rec' : '';
+      recEl.textContent = newRec ? `新 纪 录 · ${dist} 米` : `历来最远 ${Math.max(dist, prevBest)} 米`;
+    }
+  }
   document.getElementById('hud').classList.remove('on');
   setTimeout(() => document.getElementById('over').classList.remove('hidden'), 600);
 }
@@ -1039,6 +1244,7 @@ function bindHUD() {
   HUD.toastSub = document.getElementById('toast-sub');
   HUD.chNum = document.getElementById('ch-num');
   HUD.chPhase = document.getElementById('ch-phase');
+  HUD.wind = document.getElementById('wind');
 }
 
 // ── setup three ──────────────────────────────────────────────
@@ -1066,6 +1272,8 @@ function setup() {
   buildAura();
   buildSun();
   buildStreaks();
+  buildTrail();
+  buildWindLines();
   bindHUD();
 
   window.addEventListener('resize', () => {
@@ -1096,17 +1304,43 @@ function update(dt, rdt) {
   // speed & motion — boost eases in/out instead of snapping
   G.boost01 += ((Input.boost ? 1 : 0) - G.boost01) * Math.min(dt * 3.2, 1);
   G.boost01 = Math.max(G.boost01, 0.9 * G.surge01);    // 疾行 平滑融入 boost 视觉/风线
-  const target = (G.baseSpeed + Math.min(G.s * 0.004, 9)) * (1 + 0.34 * G.boost01) * (1 + 0.5 * G.surge01) * (G.phase === 'flat' ? 0.88 : 1);
+  // 剪纸滑翔：flat 阶段按住加速积攒滑翔，借势加速（替代旧的一律 ×0.88 减速）
+  const glideTarget = (G.phase === 'flat' && Input.boost) ? 1 : 0;
+  G.glide01 += (glideTarget - G.glide01) * Math.min(dt * (glideTarget ? 0.8 : 2.4), 1);
+  const flatFactor = G.phase === 'flat' ? THREE.MathUtils.lerp(0.9, 1.12, G.glide01) : 1;
+  const target = (G.baseSpeed + Math.min(G.s * 0.004, 9)) * (1 + 0.34 * G.boost01) * (1 + 0.5 * G.surge01) * flatFactor;
   G.speed += (target - G.speed) * Math.min(dt * 1.4, 1);
   G.s += G.speed * dt;
   G.track.ensure(G.s);
 
+  // 侧风：第四章起沿路程周期性阵风，把车推向一侧（已 telegraph）
+  if (G.chapter >= CH_WIND) {
+    if (!G.windActive && G.s > G.windNextS) {
+      G.windActive = true; G.windDir = Math.random() < 0.5 ? -1 : 1;
+      G.windMag = 9 + Math.random() * 7; G.windEndS = G.s + 80 + Math.random() * 80;
+      announceMech('wind', '风', '侧 风 突 起', 0x3d4a78);
+      AudioEngine.noiseBurst(0.9, 520, 0.18, 'bandpass');
+    } else if (G.windActive && G.s > G.windEndS) {
+      G.windActive = false; G.windNextS = G.s + 180 + Math.random() * 160;
+    }
+  }
+  G.wind += ((G.windActive ? G.windDir * G.windMag : 0) - G.wind) * Math.min(dt * 1.6, 1);
+
+  // 窄桥：approaching 提示 + 桥段收窄有效车道
+  let laneLimit = LANE_LIMIT;
+  for (const br of G.bridges) {
+    if (br.s1 < G.s) continue;
+    if (br.s0 - G.s < 90 && br.s0 - G.s > -2) announceMech('bridge', '桥', '独 木 窄 桥', 0x6b5a44);
+    if (G.s >= br.s0 - 2 && G.s <= br.s1) laneLimit = Math.min(laneLimit, bridgeHalfAt(G.s, br) - 1.0);
+  }
+
   // steering
   const steer = (Input.right ? 1 : 0) - (Input.left ? 1 : 0);
-  G.xv += steer * 34 * dt;
+  G.xv += steer * (G.phase === 'flat' ? 39 : 34) * dt;   // 滑翔时转向更灵
+  G.xv += G.wind * dt;                                    // 侧风横推
   G.xv *= Math.pow(0.0018, dt);     // damping
   G.x += G.xv * dt * 2.6;
-  if (Math.abs(G.x) > LANE_LIMIT) { G.x = Math.sign(G.x) * LANE_LIMIT; G.xv *= -0.25; }
+  if (Math.abs(G.x) > laneLimit) { G.x = Math.sign(G.x) * laneLimit; G.xv *= -0.25; }
 
   // car pose
   G.track.pose(G.s, _p, _t, _r);
@@ -1181,10 +1415,52 @@ function update(dt, rdt) {
     p.obj.position.y += Math.sin(p.spin * 1.4) * 0.006;
     if (Math.abs(p.s - G.s) < 2.6 && Math.abs(p.x - G.x) < 2.3) onPower(p);
   }
+  const tnow = performance.now() * 0.001;
   for (let i = G.rockHead; i < G.rocks.length; i++) {
     const r = G.rocks[i];
-    if (r.s > G.s + 8) break;
-    if (Math.abs(r.s - G.s) < 2.1 && Math.abs(r.x - G.x) < 1.55) onHit(r);
+    if (r.s > G.s + 480) break;          // 覆盖整个已生成范围 → 漂移连续，杜绝入场瞬移
+    // 漂移墨渍：自生成起每帧重算横向位置（移动目标；范围够大所以进入视野时不会跳变）
+    if (r.drift) {
+      r.x = THREE.MathUtils.clamp(r.baseX + Math.sin(tnow * r.driftFreq + r.driftPhase) * r.driftAmp, -4.8, 4.8);
+      G.track.pose(r.s, _rp, _rt, _rr);
+      r.obj.position.copy(_rp).addScaledVector(_rr, r.x);
+      if (r.s < G.s + 40) announceMech('drift', '游', '游 墨 漂 移', 0x2c4a44);
+    }
+    if (r.s > G.s + 8) continue;
+    if (Math.abs(r.s - G.s) < 2.1 && Math.abs(r.x - G.x) < 1.55) { onHit(r); continue; }
+    // 完美擦肩：刚掠过车身、横向贴边却没撞 → 奖励
+    if (!r.passedBy && r.s <= G.s && r.s > G.s - 3) {
+      r.passedBy = true;
+      const dx = Math.abs(r.x - G.x);
+      if (dx >= 1.55 && dx < 2.9 && G.invuln <= 0 && G.shieldT <= 0) nearMiss(r);
+    }
+  }
+
+  // 减速墨潭：碾过掉速（金身免疫），出潭后自然恢复
+  let onPuddle = false;
+  for (let i = G.puddleHead; i < G.puddles.length; i++) {
+    const pd = G.puddles[i];
+    if (pd.s > G.s + 40) break;
+    if (Math.abs(pd.s - G.s) < pd.r + 1.3 && Math.abs(pd.x - G.x) < pd.r + 0.5) {
+      onPuddle = true;
+      if (!pd.splashed) {
+        pd.splashed = true;
+        AudioEngine.noiseBurst(0.25, 300, 0.42, 'lowpass');
+        ripple(G.car.position, INK, 1.1);
+        announceMech('puddle', '潭', '墨 潭 减 速', 0x2e4a3c);
+      }
+    }
+  }
+  if (onPuddle && G.shieldT <= 0) G.speed *= Math.pow(0.4, dt);
+  G.onPuddle01 += ((onPuddle ? 1 : 0) - G.onPuddle01) * Math.min(dt * 6, 1);
+
+  // 连击里程碑：每到 ×5 倍数奏一记、攒墨、报喜
+  if (G.combo === 0) G.lastMilestone = 0;
+  else if (G.combo >= 5 && G.combo % 5 === 0 && G.combo !== G.lastMilestone) {
+    G.lastMilestone = G.combo;
+    AudioEngine.chime(G.combo); AudioEngine.blip(1568, 0.3, 'sine', 0.12);
+    if (G.phase === 'sketch') G.meter = Math.min(G.meter + 0.08, 1);
+    powerToast('連', `連 ×${G.combo} · 妙 笔`, PAL().car);
   }
 
   updatePhase(dt);
@@ -1194,12 +1470,17 @@ function update(dt, rdt) {
   for (const w of G.carParts.wheels) w.rotateY(G.speed * dt * 0.9);
 
   updateStreaks(dt);
+  updateTrail(dt);
+  updateWindLines(dt);
 
   // ── camera: blend 3D chase ↔ 2D top-down ──
   const f = smooth(G.flat01);
+  // 高速时相机拉远 + 抬高 + 看得更前 → 看到更远的路，反应时间不被速度吃掉
+  const spd01 = THREE.MathUtils.clamp((G.speed - 28) / 44, 0, 1);
+  const pull = spd01 * 5.5, lift = spd01 * 1.9, ahead = spd01 * 4.5;
   // chase rig
-  eyeA.copy(_p).addScaledVector(_t, -9.2).addScaledVector(UP, 4.4).addScaledVector(_r, G.x * 0.45);
-  lookA.copy(_p).addScaledVector(_t, 7).addScaledVector(UP, 1.5).addScaledVector(_r, G.x * 0.3);
+  eyeA.copy(_p).addScaledVector(_t, -9.2 - pull).addScaledVector(UP, 4.4 + lift).addScaledVector(_r, G.x * 0.45);
+  lookA.copy(_p).addScaledVector(_t, 7 + ahead).addScaledVector(UP, 1.5).addScaledVector(_r, G.x * 0.3);
   // top-down rig — pulled closer & framed tighter so lateral steering reads
   // as quick as the 3D chase (was a far 190m zoom that made turns feel sluggish)
   eyeB.copy(G.car.position).addScaledVector(_t, 13).setY(_p.y + 96);
@@ -1218,14 +1499,16 @@ function update(dt, rdt) {
   G.camera.position.copy(camP);
   G.camera.up.copy(camU);
   G.camera.lookAt(camL);
-  G.camera.fov = THREE.MathUtils.lerp(64, 22, f) + G.boost01 * 5 + 4 * G.surge01;
+  G.camera.fov = THREE.MathUtils.lerp(64, 22, f) + G.boost01 * 5 + 4 * G.surge01 + spd01 * 4;
   G.camera.updateProjectionMatrix();
 
   // atmosphere follows colour
   const bg = new THREE.Color(PAPER).lerp(new THREE.Color(pal.sky), G.color01 * (1 - f * 0.55));
   G.scene.background.copy(bg);
   G.scene.fog.color.copy(bg);
-  G.scene.fog.density = THREE.MathUtils.lerp(0.0075 - G.color01 * 0.002, 0.00045, f);
+  // 雾随速度变薄 → 高速时更早看见墨渍，反应时间不被速度吃掉
+  const fogBase = (0.0075 - G.color01 * 0.002) * (1 - 0.34 * THREE.MathUtils.clamp((G.speed - 30) / 42, 0, 1));
+  G.scene.fog.density = THREE.MathUtils.lerp(fogBase, 0.00045, f);
 
   // sun hangs on the horizon ahead
   if (G.sun) {
@@ -1243,11 +1526,15 @@ function update(dt, rdt) {
   const dist = Math.floor(G.s);
   if (dist !== lastHudDist) { HUD.dist.textContent = dist; lastHudDist = dist; }
   HUD.meterFill.style.width = `${G.meter * 100}%`;
+  if (HUD.wind) {
+    HUD.wind.classList.toggle('on', G.windActive);
+    if (G.windActive) HUD.wind.textContent = G.windDir < 0 ? '← 侧 风' : '侧 风 →';
+  }
 }
 
 // ── chapter select: wipe and regrow the world in that palette ─
 function applyChapter(c) {
-  G.chapter = c; G.paletteIdx = c; G.baseSpeed = 24 + 3.5 * c;
+  G.chapter = c; G.paletteIdx = c; G.baseSpeed = chapterSpeed(c) * G.diff.speed;
   for (const ch of G.chunks) {
     G.scene.remove(ch.group);
     ch.dispose.forEach(g => g.dispose());
@@ -1255,6 +1542,13 @@ function applyChapter(c) {
   G.chunks = []; G.paintables = [];
   G.gates = []; G.drops = []; G.rocks = []; G.powers = [];
   G.gateHead = G.dropHead = G.rockHead = G.powerHead = 0;
+  G.lastRockS = -999;
+  G.puddles = []; G.puddleHead = 0; G.onPuddle01 = 0;
+  G.bridges = []; G.lastBridgeS = -999;
+  G.windActive = false; G.wind = 0; G.windNextS = 220; G.glide01 = 0;
+  G.mechSeen = {}; G.nearMisses = 0;
+  G.chapterClean = true; G.lastMilestone = 0; G.perfectChapters = 0;
+  if (G.trail) { G.trail.pts = []; G.trail.m.opacity = 0; }
   G.surgeT = G.surge01 = G.shieldT = G.magnetT = 0;
   if (G.aura) G.aura.ring.visible = false;
   G.s = 0; G.x = 0; G.xv = 0; G.speed = 0; G.meter = 0;
@@ -1301,9 +1595,11 @@ function start() {
   document.getElementById('hud').classList.add('on');
   AudioEngine.init();
   sessionStorage.setItem('inkline-ch', String(chosenChapter));
+  G.baseSpeed = chapterSpeed(G.chapter) * G.diff.speed;   // 锁定最终难度的速度曲线
   G.running = true;
   setPhaseLabel();
-  toast('素 描', chosenChapter > 0 ? `自第${CHAPTER_NUM[chosenChapter]}章落笔` : '第一笔落纸');
+  const where = chosenChapter > 0 ? `自第${CHAPTER_NUM[chosenChapter]}章落笔` : '第一笔落纸';
+  toast('素 描', `${G.diff.name}${G.zen ? ' · 禅意' : ''} · ${where}`);
 }
 
 setup();
@@ -1312,7 +1608,7 @@ window.__G = G; // debug handle
 
 // chapter stamps on the title screen
 {
-  const maxCh = Math.min(+(localStorage.getItem('inkline-max-ch') || 0), 5);
+  const maxCh = 5;   // 阶段3：六章全解锁，自由选择起章
   if (chosenChapter > maxCh) chosenChapter = 0;
   if (chosenChapter > 0) applyChapter(chosenChapter);
   document.querySelectorAll('.chap').forEach(b => {
@@ -1325,6 +1621,36 @@ window.__G = G; // debug handle
       applyChapter(c);
     });
   });
+
+  // difficulty stamps — 写意 / 工笔 / 狂草
+  G.diff = DIFFS[sessionStorage.getItem('inkline-diff')] || DIFFS.gongbi;
+  document.querySelectorAll('.diff:not(.zen-btn)').forEach(b => {
+    b.classList.toggle('sel', b.dataset.diff === G.diff.key);
+    b.addEventListener('click', () => {
+      G.diff = DIFFS[b.dataset.diff];
+      sessionStorage.setItem('inkline-diff', G.diff.key);
+      document.querySelectorAll('.diff:not(.zen-btn)').forEach(x => x.classList.toggle('sel', x.dataset.diff === G.diff.key));
+      if (chosenChapter > 0) applyChapter(chosenChapter);   // 用新难度密度重建世界
+    });
+  });
+
+  // 禅意模式开关（不死练习，不计纪录）
+  G.zen = sessionStorage.getItem('inkline-zen') === '1';
+  const zenBtn = document.getElementById('zen-btn');
+  if (zenBtn) {
+    zenBtn.classList.toggle('sel', G.zen);
+    zenBtn.addEventListener('click', () => {
+      G.zen = !G.zen;
+      sessionStorage.setItem('inkline-zen', G.zen ? '1' : '0');
+      zenBtn.classList.toggle('sel', G.zen);
+    });
+  }
+
+  // 标题页纪录展示
+  const bestDist = +(localStorage.getItem('inkline-best-dist') || 0);
+  const bestCombo = +(localStorage.getItem('inkline-best-combo') || 0);
+  const tb = document.getElementById('title-best');
+  if (tb && bestDist > 0) tb.textContent = `历来最远 ${bestDist} 米　·　最高连击 ×${bestCombo}`;
 }
 
 document.getElementById('start').addEventListener('click', start);
