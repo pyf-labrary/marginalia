@@ -1,17 +1,22 @@
 {
- "generated": "2026-06-14",
+ "generated": "2026-06-15",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 52.35,
+   "score": 56.19,
    "days": 26,
    "latest": {
-    "date": "2026-06-14",
-    "url": "/posts/2026-06-13-ai-morning-post/#product",
-    "title": "Firecrawl Prometheus：让 Web 数据 Agent 从实验走向部署"
+    "date": "2026-06-15",
+    "url": "/posts/2026-06-14-ai-morning-post/#product",
+    "title": "蚂蚁集团内测AI版支付宝：超级App的“智能体化”"
    },
    "links": [
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#product",
+     "title": "蚂蚁集团内测AI版支付宝：超级App的“智能体化”"
+    },
     {
      "date": "2026-06-14",
      "url": "/posts/2026-06-13-ai-morning-post/#product",
@@ -46,24 +51,24 @@
      "date": "2026-06-08",
      "url": "/posts/2026-06-07-ai-morning-post/#opensource",
      "title": "IBM开源MCP Context Forge：统一AI Agent网关"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#opensource",
-     "title": "CopilotKit：Agent与生成式UI的前端栈"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 34.77,
+   "score": 33.74,
    "days": 26,
    "latest": {
-    "date": "2026-06-14",
-    "url": "/posts/2026-06-13-ai-morning-post/#company",
-    "title": "OpenAI 遭多州检察长联合调查"
+    "date": "2026-06-15",
+    "url": "/posts/2026-06-14-ai-morning-post/#company",
+    "title": "OpenAI 多线承压：政府调查与自杀诉讼"
    },
    "links": [
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#company",
+     "title": "OpenAI 多线承压：政府调查与自杀诉讼"
+    },
     {
      "date": "2026-06-14",
      "url": "/posts/2026-06-13-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-06-08",
      "url": "/posts/2026-06-07-ai-morning-post/#company",
      "title": "OpenAI芯片核心叛逃Anthropic"
-    },
-    {
-     "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#company",
-     "title": "佛罗里达起诉 OpenAI 及 Altman：指 ChatGPT 为公共妨害"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 28.87,
+   "score": 28.71,
    "days": 27,
    "latest": {
-    "date": "2026-06-14",
-    "url": "/posts/2026-06-13-ai-morning-post/#opensource",
-    "title": "Agent Skills 框架兴起，Anthropic 推动标准化"
+    "date": "2026-06-15",
+    "url": "/posts/2026-06-14-ai-morning-post/#research",
+    "title": "Anthropic让Claude学化学：从推理到实验设计"
    },
    "links": [
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#research",
+     "title": "Anthropic让Claude学化学：从推理到实验设计"
+    },
     {
      "date": "2026-06-14",
      "url": "/posts/2026-06-13-ai-morning-post/#opensource",
@@ -150,24 +155,24 @@
      "date": "2026-06-05",
      "url": "/posts/2026-06-04-ai-morning-post/#company",
      "title": "Anthropic 冲刺 IPO，Amodei 回应质疑"
-    },
-    {
-     "date": "2026-06-04",
-     "url": "/posts/2026-06-03-ai-morning-post/#company",
-     "title": "Anthropic 冲刺IPO，Claude月消耗客户5亿美元"
     }
    ]
   },
   {
    "name": "NVIDIA",
-   "score": 13.74,
-   "days": 16,
+   "score": 13.97,
+   "days": 17,
    "latest": {
-    "date": "2026-06-14",
-    "url": "/posts/2026-06-13-ai-morning-post/#opensource",
-    "title": "NVIDIA 发布 SkillSpector：AI Agent 技能安全扫描器"
+    "date": "2026-06-15",
+    "url": "/posts/2026-06-14-ai-morning-post/#opensource",
+    "title": "NVIDIA 开源 SkillSpector：给 Agent 技能做安全扫描"
    },
    "links": [
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#opensource",
+     "title": "NVIDIA 开源 SkillSpector：给 Agent 技能做安全扫描"
+    },
     {
      "date": "2026-06-14",
      "url": "/posts/2026-06-13-ai-morning-post/#opensource",
@@ -202,17 +207,116 @@
      "date": "2026-06-05",
      "url": "/posts/2026-06-04-ai-morning-post/#research",
      "title": "NVIDIA 发布物理 AI 研究：抓取、自动驾驶与智能体训练"
+    }
+   ]
+  },
+  {
+   "name": "Claude",
+   "score": 10.45,
+   "days": 19,
+   "latest": {
+    "date": "2026-06-15",
+    "url": "/posts/2026-06-14-ai-morning-post/#product",
+    "title": "Memoriq：给ChatGPT、Claude一个统一“记忆”"
+   },
+   "links": [
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#product",
+     "title": "Memoriq：给ChatGPT、Claude一个统一“记忆”"
     },
     {
-     "date": "2026-06-03",
-     "url": "/posts/2026-06-02-ai-morning-post/#model-release",
-     "title": "NVIDIA发布Cosmos 3，推进物理AI世界模型"
+     "date": "2026-06-12",
+     "url": "/posts/2026-06-11-ai-morning-post/#opensource",
+     "title": "claude-howto：可视化 Claude Code 使用指南"
+    },
+    {
+     "date": "2026-06-09",
+     "url": "/posts/2026-06-08-ai-morning-post/#product",
+     "title": "Claude Code引入动态工作流，并行代理协调"
+    },
+    {
+     "date": "2026-06-07",
+     "url": "/posts/2026-06-06-ai-morning-post/#opinion",
+     "title": "程序员愿意为 Claude 写文档，却不愿为同事写"
+    },
+    {
+     "date": "2026-06-06",
+     "url": "/posts/2026-06-05-ai-morning-post/#product",
+     "title": "Anthropic：Claude写了90%内部代码，呼吁全球AI暂停按钮"
+    },
+    {
+     "date": "2026-06-05",
+     "url": "/posts/2026-06-04-ai-morning-post/#research",
+     "title": "Andon Labs 推出 VendingBench 评估 Claude 系模型"
+    },
+    {
+     "date": "2026-06-04",
+     "url": "/posts/2026-06-03-ai-morning-post/#company",
+     "title": "Anthropic 冲刺IPO，Claude月消耗客户5亿美元"
+    },
+    {
+     "date": "2026-06-02",
+     "url": "/posts/2026-06-01-ai-morning-post/#product",
+     "title": "Anthropic 推出 Code with Claude 托管式智能体"
+    }
+   ]
+  },
+  {
+   "name": "Meta",
+   "score": 10.16,
+   "days": 16,
+   "latest": {
+    "date": "2026-06-15",
+    "url": "/posts/2026-06-14-ai-morning-post/#company",
+    "title": "北京要求逆转交易，Meta 放弃 2 亿美元收购 Manus"
+   },
+   "links": [
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#company",
+     "title": "北京要求逆转交易，Meta 放弃 2 亿美元收购 Manus"
+    },
+    {
+     "date": "2026-06-14",
+     "url": "/posts/2026-06-13-ai-morning-post/#company",
+     "title": "Meta AI 部门被曝“灵魂折磨”，员工濒临反抗"
+    },
+    {
+     "date": "2026-06-13",
+     "url": "/posts/2026-06-12-ai-morning-post/#company",
+     "title": "Meta AI部门被曝混乱，工程师称“灵魂磨灭”"
+    },
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#company",
+     "title": "Meta签署在印首个AI数据中心协议，与Reliance合作"
+    },
+    {
+     "date": "2026-06-08",
+     "url": "/posts/2026-06-07-ai-morning-post/#company",
+     "title": "Meta确认数千Instagram因AI聊天机器人漏洞被黑"
+    },
+    {
+     "date": "2026-06-07",
+     "url": "/posts/2026-06-06-ai-morning-post/#company",
+     "title": "Meta确认数千Instagram账号因AI聊天机器人漏洞被黑"
+    },
+    {
+     "date": "2026-06-06",
+     "url": "/posts/2026-06-05-ai-morning-post/#company",
+     "title": "Meta AI 客服成漏洞：攻击者利用它盗取 Instagram 账号"
+    },
+    {
+     "date": "2026-06-05",
+     "url": "/posts/2026-06-04-ai-morning-post/#company",
+     "title": "Meta 采用帐篷搭建数据中心降低成本"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 10.61,
+   "score": 10.06,
    "days": 11,
    "latest": {
     "date": "2026-06-13",
@@ -263,60 +367,60 @@
    ]
   },
   {
-   "name": "Claude",
-   "score": 10.23,
-   "days": 18,
+   "name": "阿里",
+   "score": 9.42,
+   "days": 14,
    "latest": {
-    "date": "2026-06-12",
-    "url": "/posts/2026-06-11-ai-morning-post/#opensource",
-    "title": "claude-howto：可视化 Claude Code 使用指南"
+    "date": "2026-06-15",
+    "url": "/posts/2026-06-14-ai-morning-post/#company",
+    "title": "阿里官方否认周靖人离职传闻"
    },
    "links": [
     {
-     "date": "2026-06-12",
-     "url": "/posts/2026-06-11-ai-morning-post/#opensource",
-     "title": "claude-howto：可视化 Claude Code 使用指南"
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#company",
+     "title": "阿里官方否认周靖人离职传闻"
+    },
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#product",
+     "title": "阿里千问上线高考志愿填报Agent，免费服务"
     },
     {
      "date": "2026-06-09",
-     "url": "/posts/2026-06-08-ai-morning-post/#product",
-     "title": "Claude Code引入动态工作流，并行代理协调"
+     "url": "/posts/2026-06-08-ai-morning-post/#company",
+     "title": "阿里巴巴成立Token Foundry事业部，吴泳铭直管"
     },
     {
      "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#opinion",
-     "title": "程序员愿意为 Claude 写文档，却不愿为同事写"
+     "url": "/posts/2026-06-06-ai-morning-post/#model-release",
+     "title": "Qwen3.7-Plus：阿里将多模态模型升级为全自主Agent"
     },
     {
      "date": "2026-06-06",
      "url": "/posts/2026-06-05-ai-morning-post/#product",
-     "title": "Anthropic：Claude写了90%内部代码，呼吁全球AI暂停按钮"
+     "title": "阿里Meoo升级：一句话生成微信小程序"
     },
     {
      "date": "2026-06-05",
-     "url": "/posts/2026-06-04-ai-morning-post/#research",
-     "title": "Andon Labs 推出 VendingBench 评估 Claude 系模型"
+     "url": "/posts/2026-06-04-ai-morning-post/#company",
+     "title": "戴盟机器人完成亿元融资，阿里大牛加盟"
     },
     {
      "date": "2026-06-04",
      "url": "/posts/2026-06-03-ai-morning-post/#company",
-     "title": "Anthropic 冲刺IPO，Claude月消耗客户5亿美元"
+     "title": "戴盟机器人完成亿元融资，阿里通义多模态大牛加盟"
     },
     {
-     "date": "2026-06-02",
-     "url": "/posts/2026-06-01-ai-morning-post/#product",
-     "title": "Anthropic 推出 Code with Claude 托管式智能体"
-    },
-    {
-     "date": "2026-05-30",
-     "url": "/posts/2026-05-29-ai-morning-post/#company",
-     "title": "单家公司月烧 5 亿美元用 Claude，AI 支出狂潮引关注"
+     "date": "2026-06-03",
+     "url": "/posts/2026-06-02-ai-morning-post/#model-release",
+     "title": "阿里发布Qwen3.7-Plus：多模态智能体新基座"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 9.9,
+   "score": 9.29,
    "days": 13,
    "latest": {
     "date": "2026-06-10",
@@ -367,112 +471,8 @@
    ]
   },
   {
-   "name": "Meta",
-   "score": 9.74,
-   "days": 16,
-   "latest": {
-    "date": "2026-06-14",
-    "url": "/posts/2026-06-13-ai-morning-post/#company",
-    "title": "Meta AI 部门被曝“灵魂折磨”，员工濒临反抗"
-   },
-   "links": [
-    {
-     "date": "2026-06-14",
-     "url": "/posts/2026-06-13-ai-morning-post/#company",
-     "title": "Meta AI 部门被曝“灵魂折磨”，员工濒临反抗"
-    },
-    {
-     "date": "2026-06-13",
-     "url": "/posts/2026-06-12-ai-morning-post/#company",
-     "title": "Meta AI部门被曝混乱，工程师称“灵魂磨灭”"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#company",
-     "title": "Meta签署在印首个AI数据中心协议，与Reliance合作"
-    },
-    {
-     "date": "2026-06-08",
-     "url": "/posts/2026-06-07-ai-morning-post/#company",
-     "title": "Meta确认数千Instagram因AI聊天机器人漏洞被黑"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#company",
-     "title": "Meta确认数千Instagram账号因AI聊天机器人漏洞被黑"
-    },
-    {
-     "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#company",
-     "title": "Meta AI 客服成漏洞：攻击者利用它盗取 Instagram 账号"
-    },
-    {
-     "date": "2026-06-05",
-     "url": "/posts/2026-06-04-ai-morning-post/#company",
-     "title": "Meta 采用帐篷搭建数据中心降低成本"
-    },
-    {
-     "date": "2026-06-04",
-     "url": "/posts/2026-06-03-ai-morning-post/#product",
-     "title": "Meta 的 WhatsApp Business AI Agent 全球上线，按 token 收费"
-    }
-   ]
-  },
-  {
-   "name": "阿里",
-   "score": 9.0,
-   "days": 14,
-   "latest": {
-    "date": "2026-06-11",
-    "url": "/posts/2026-06-10-ai-morning-post/#product",
-    "title": "阿里千问上线高考志愿填报Agent，免费服务"
-   },
-   "links": [
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#product",
-     "title": "阿里千问上线高考志愿填报Agent，免费服务"
-    },
-    {
-     "date": "2026-06-09",
-     "url": "/posts/2026-06-08-ai-morning-post/#company",
-     "title": "阿里巴巴成立Token Foundry事业部，吴泳铭直管"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#model-release",
-     "title": "Qwen3.7-Plus：阿里将多模态模型升级为全自主Agent"
-    },
-    {
-     "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#product",
-     "title": "阿里Meoo升级：一句话生成微信小程序"
-    },
-    {
-     "date": "2026-06-05",
-     "url": "/posts/2026-06-04-ai-morning-post/#company",
-     "title": "戴盟机器人完成亿元融资，阿里大牛加盟"
-    },
-    {
-     "date": "2026-06-04",
-     "url": "/posts/2026-06-03-ai-morning-post/#company",
-     "title": "戴盟机器人完成亿元融资，阿里通义多模态大牛加盟"
-    },
-    {
-     "date": "2026-06-03",
-     "url": "/posts/2026-06-02-ai-morning-post/#model-release",
-     "title": "阿里发布Qwen3.7-Plus：多模态智能体新基座"
-    },
-    {
-     "date": "2026-06-02",
-     "url": "/posts/2026-06-01-ai-morning-post/#model-release",
-     "title": "Qwen3.7-Plus：阿里多模态升级"
-    }
-   ]
-  },
-  {
    "name": "世界模型",
-   "score": 8.45,
+   "score": 7.94,
    "days": 13,
    "latest": {
     "date": "2026-06-13",
@@ -523,8 +523,60 @@
    ]
   },
   {
+   "name": "Codex",
+   "score": 6.45,
+   "days": 9,
+   "latest": {
+    "date": "2026-06-15",
+    "url": "/posts/2026-06-14-ai-morning-post/#model-release",
+    "title": "GPT-5.5 和 Codex 上线 Bedrock，AWS 用户可直调"
+   },
+   "links": [
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#model-release",
+     "title": "GPT-5.5 和 Codex 上线 Bedrock，AWS 用户可直调"
+    },
+    {
+     "date": "2026-06-12",
+     "url": "/posts/2026-06-11-ai-morning-post/#company",
+     "title": "OpenAI 收购 Ona，为 Codex 铺企业 Agent 云底座"
+    },
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#opensource",
+     "title": "OpenAI 官方 Codex 插件合集"
+    },
+    {
+     "date": "2026-06-10",
+     "url": "/posts/2026-06-09-ai-morning-post/#opensource",
+     "title": "OpenAI 发布 Codex 插件示例库，降低自定义插件门槛"
+    },
+    {
+     "date": "2026-06-04",
+     "url": "/posts/2026-06-03-ai-morning-post/#product",
+     "title": "微软 Codex 新升级：打通 Windows 生态，手机远程开发"
+    },
+    {
+     "date": "2026-06-03",
+     "url": "/posts/2026-06-02-ai-morning-post/#product",
+     "title": "OpenAI 发布 Codex 职业插件，让非开发者也能“用代码思维工作”"
+    },
+    {
+     "date": "2026-06-02",
+     "url": "/posts/2026-06-01-ai-morning-post/#product",
+     "title": "OpenAI 模型和 Codex 正式登陆 AWS"
+    },
+    {
+     "date": "2026-05-23",
+     "url": "/posts/2026-05-22-ai-morning-post/#product",
+     "title": "OpenAI Appshots：Mac 窗口即 Codex 上下文"
+    }
+   ]
+  },
+  {
    "name": "算力",
-   "score": 6.81,
+   "score": 6.45,
    "days": 8,
    "latest": {
     "date": "2026-06-10",
@@ -575,60 +627,60 @@
    ]
   },
   {
-   "name": "Codex",
-   "score": 5.74,
+   "name": "Agent Skills",
+   "score": 6.1,
    "days": 8,
    "latest": {
-    "date": "2026-06-12",
-    "url": "/posts/2026-06-11-ai-morning-post/#company",
-    "title": "OpenAI 收购 Ona，为 Codex 铺企业 Agent 云底座"
+    "date": "2026-06-15",
+    "url": "/posts/2026-06-14-ai-morning-post/#opensource",
+    "title": "Anthropic 官方 Agent Skills 仓库：Agent 技能标准化第一步"
    },
    "links": [
     {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#opensource",
+     "title": "Anthropic 官方 Agent Skills 仓库：Agent 技能标准化第一步"
+    },
+    {
+     "date": "2026-06-14",
+     "url": "/posts/2026-06-13-ai-morning-post/#opensource",
+     "title": "Agent Skills 框架兴起，Anthropic 推动标准化"
+    },
+    {
      "date": "2026-06-12",
-     "url": "/posts/2026-06-11-ai-morning-post/#company",
-     "title": "OpenAI 收购 Ona，为 Codex 铺企业 Agent 云底座"
+     "url": "/posts/2026-06-11-ai-morning-post/#opensource",
+     "title": "Agent Skills 生态爆发：三个仓库齐上 GitHub 趋势"
     },
     {
      "date": "2026-06-11",
      "url": "/posts/2026-06-10-ai-morning-post/#opensource",
-     "title": "OpenAI 官方 Codex 插件合集"
+     "title": "Google 官方 Agent Skills 仓库"
     },
     {
      "date": "2026-06-10",
      "url": "/posts/2026-06-09-ai-morning-post/#opensource",
-     "title": "OpenAI 发布 Codex 插件示例库，降低自定义插件门槛"
+     "title": "Google 开源 Agent Skills 库，覆盖自家产品技能"
     },
     {
-     "date": "2026-06-04",
-     "url": "/posts/2026-06-03-ai-morning-post/#product",
-     "title": "微软 Codex 新升级：打通 Windows 生态，手机远程开发"
-    },
-    {
-     "date": "2026-06-03",
-     "url": "/posts/2026-06-02-ai-morning-post/#product",
-     "title": "OpenAI 发布 Codex 职业插件，让非开发者也能“用代码思维工作”"
-    },
-    {
-     "date": "2026-06-02",
-     "url": "/posts/2026-06-01-ai-morning-post/#product",
-     "title": "OpenAI 模型和 Codex 正式登陆 AWS"
-    },
-    {
-     "date": "2026-05-23",
-     "url": "/posts/2026-05-22-ai-morning-post/#product",
-     "title": "OpenAI Appshots：Mac 窗口即 Codex 上下文"
+     "date": "2026-05-29",
+     "url": "/posts/2026-05-28-ai-morning-post/#opensource",
+     "title": "Anthropic 发布 Agent Skills 开源仓库"
     },
     {
      "date": "2026-05-19",
-     "url": "/posts/2026-05-18-ai-morning-post/#company",
-     "title": "OpenAI 与 Dell 推出企业级 Codex 部署方案"
+     "url": "/posts/2026-05-18-ai-morning-post/#opensource",
+     "title": "Anthropic 开源 Agent Skills 标准仓库"
+    },
+    {
+     "date": "2026-05-17",
+     "url": "/posts/2026-05-16-ai-morning-post/#opensource",
+     "title": "Anthropic 开源 Agent Skills 官方实现"
     }
    ]
   },
   {
    "name": "腾讯",
-   "score": 5.52,
+   "score": 5.23,
    "days": 8,
    "latest": {
     "date": "2026-06-13",
@@ -679,60 +731,8 @@
    ]
   },
   {
-   "name": "Apple",
-   "score": 5.45,
-   "days": 8,
-   "latest": {
-    "date": "2026-06-14",
-    "url": "/posts/2026-06-13-ai-morning-post/#opensource",
-    "title": "Apple 开源 container：在 Mac 上运行 Linux 容器"
-   },
-   "links": [
-    {
-     "date": "2026-06-14",
-     "url": "/posts/2026-06-13-ai-morning-post/#opensource",
-     "title": "Apple 开源 container：在 Mac 上运行 Linux 容器"
-    },
-    {
-     "date": "2026-06-13",
-     "url": "/posts/2026-06-12-ai-morning-post/#opinion",
-     "title": "Stratechery周报：Apple智能、Anthropic Fable与欧洲工业"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#company",
-     "title": "Apple 扩展私有云，采用 NVIDIA 机密计算"
-    },
-    {
-     "date": "2026-06-09",
-     "url": "/posts/2026-06-08-ai-morning-post/#model-release",
-     "title": "Apple发布Core AI框架：与Gemini深度绑定的新生态"
-    },
-    {
-     "date": "2026-06-05",
-     "url": "/posts/2026-06-04-ai-morning-post/#product",
-     "title": "Apple批准Poke：首个Messages for Business AI Agent"
-    },
-    {
-     "date": "2026-05-30",
-     "url": "/posts/2026-05-29-ai-morning-post/#product",
-     "title": "Apple 秘密将 Gemini 大模型压缩到 iPhone"
-    },
-    {
-     "date": "2026-05-26",
-     "url": "/posts/2026-05-25-ai-morning-post/#research",
-     "title": "Apple 开源高效图像压缩模型 MLPICO"
-    },
-    {
-     "date": "2026-05-19",
-     "url": "/posts/2026-05-18-ai-morning-post/#product",
-     "title": "Apple 新 Siri 将支持聊天自动删除"
-    }
-   ]
-  },
-  {
    "name": "小米",
-   "score": 5.42,
+   "score": 5.23,
    "days": 6,
    "latest": {
     "date": "2026-06-14",
