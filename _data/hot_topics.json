@@ -1,17 +1,22 @@
 {
- "generated": "2026-06-15",
+ "generated": "2026-06-16",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 56.19,
-   "days": 26,
+   "score": 54.94,
+   "days": 27,
    "latest": {
-    "date": "2026-06-15",
-    "url": "/posts/2026-06-14-ai-morning-post/#product",
-    "title": "蚂蚁集团内测AI版支付宝：超级App的“智能体化”"
+    "date": "2026-06-16",
+    "url": "/posts/2026-06-15-ai-morning-post/#opensource",
+    "title": "NVIDIA开源SkillSpector，扫描AI Agent安全漏洞"
    },
    "links": [
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#opensource",
+     "title": "NVIDIA开源SkillSpector，扫描AI Agent安全漏洞"
+    },
     {
      "date": "2026-06-15",
      "url": "/posts/2026-06-14-ai-morning-post/#product",
@@ -46,24 +51,24 @@
      "date": "2026-06-09",
      "url": "/posts/2026-06-08-ai-morning-post/#company",
      "title": "蚂蚁国际推出移动智能体协议AMP，统一AI支付标准"
-    },
-    {
-     "date": "2026-06-08",
-     "url": "/posts/2026-06-07-ai-morning-post/#opensource",
-     "title": "IBM开源MCP Context Forge：统一AI Agent网关"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 33.74,
+   "score": 32.58,
    "days": 26,
    "latest": {
-    "date": "2026-06-15",
-    "url": "/posts/2026-06-14-ai-morning-post/#company",
-    "title": "OpenAI 多线承压：政府调查与自杀诉讼"
+    "date": "2026-06-16",
+    "url": "/posts/2026-06-15-ai-morning-post/#company",
+    "title": "OpenAI推合作伙伴网络，砸1.5亿美元抢生态位"
    },
    "links": [
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#company",
+     "title": "OpenAI推合作伙伴网络，砸1.5亿美元抢生态位"
+    },
     {
      "date": "2026-06-15",
      "url": "/posts/2026-06-14-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-06-09",
      "url": "/posts/2026-06-08-ai-morning-post/#company",
      "title": "OpenAI秘密提交IPO申请，估值剑指万亿"
-    },
-    {
-     "date": "2026-06-08",
-     "url": "/posts/2026-06-07-ai-morning-post/#company",
-     "title": "OpenAI芯片核心叛逃Anthropic"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 28.71,
+   "score": 27.61,
    "days": 27,
    "latest": {
-    "date": "2026-06-15",
-    "url": "/posts/2026-06-14-ai-morning-post/#research",
-    "title": "Anthropic让Claude学化学：从推理到实验设计"
+    "date": "2026-06-16",
+    "url": "/posts/2026-06-15-ai-morning-post/#opinion",
+    "title": "Stratechery：Anthropic的安全是其超级力量"
    },
    "links": [
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#opinion",
+     "title": "Stratechery：Anthropic的安全是其超级力量"
+    },
     {
      "date": "2026-06-15",
      "url": "/posts/2026-06-14-ai-morning-post/#research",
@@ -150,24 +155,24 @@
      "date": "2026-06-06",
      "url": "/posts/2026-06-05-ai-morning-post/#product",
      "title": "Anthropic：Claude写了90%内部代码，呼吁全球AI暂停按钮"
-    },
-    {
-     "date": "2026-06-05",
-     "url": "/posts/2026-06-04-ai-morning-post/#company",
-     "title": "Anthropic 冲刺 IPO，Amodei 回应质疑"
     }
    ]
   },
   {
    "name": "NVIDIA",
-   "score": 13.97,
+   "score": 14.1,
    "days": 17,
    "latest": {
-    "date": "2026-06-15",
-    "url": "/posts/2026-06-14-ai-morning-post/#opensource",
-    "title": "NVIDIA 开源 SkillSpector：给 Agent 技能做安全扫描"
+    "date": "2026-06-16",
+    "url": "/posts/2026-06-15-ai-morning-post/#opensource",
+    "title": "NVIDIA开源SkillSpector，扫描AI Agent安全漏洞"
    },
    "links": [
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#opensource",
+     "title": "NVIDIA开源SkillSpector，扫描AI Agent安全漏洞"
+    },
     {
      "date": "2026-06-15",
      "url": "/posts/2026-06-14-ai-morning-post/#opensource",
@@ -202,18 +207,117 @@
      "date": "2026-06-06",
      "url": "/posts/2026-06-05-ai-morning-post/#model-release",
      "title": "NVIDIA 开源 Nemotron 3 Ultra：550B 混合 MoE，专为长时 Agent 设计"
+    }
+   ]
+  },
+  {
+   "name": "Meta",
+   "score": 10.58,
+   "days": 16,
+   "latest": {
+    "date": "2026-06-16",
+    "url": "/posts/2026-06-15-ai-morning-post/#product",
+    "title": "Meta推出Facebook AI模式：聚合公开信息做智能交互"
+   },
+   "links": [
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#product",
+     "title": "Meta推出Facebook AI模式：聚合公开信息做智能交互"
+    },
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#company",
+     "title": "北京要求逆转交易，Meta 放弃 2 亿美元收购 Manus"
+    },
+    {
+     "date": "2026-06-14",
+     "url": "/posts/2026-06-13-ai-morning-post/#company",
+     "title": "Meta AI 部门被曝“灵魂折磨”，员工濒临反抗"
+    },
+    {
+     "date": "2026-06-13",
+     "url": "/posts/2026-06-12-ai-morning-post/#company",
+     "title": "Meta AI部门被曝混乱，工程师称“灵魂磨灭”"
+    },
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#company",
+     "title": "Meta签署在印首个AI数据中心协议，与Reliance合作"
+    },
+    {
+     "date": "2026-06-08",
+     "url": "/posts/2026-06-07-ai-morning-post/#company",
+     "title": "Meta确认数千Instagram因AI聊天机器人漏洞被黑"
+    },
+    {
+     "date": "2026-06-07",
+     "url": "/posts/2026-06-06-ai-morning-post/#company",
+     "title": "Meta确认数千Instagram账号因AI聊天机器人漏洞被黑"
+    },
+    {
+     "date": "2026-06-06",
+     "url": "/posts/2026-06-05-ai-morning-post/#company",
+     "title": "Meta AI 客服成漏洞：攻击者利用它盗取 Instagram 账号"
+    }
+   ]
+  },
+  {
+   "name": "阿里",
+   "score": 9.84,
+   "days": 14,
+   "latest": {
+    "date": "2026-06-16",
+    "url": "/posts/2026-06-15-ai-morning-post/#company",
+    "title": "巴西里约官方模型被曝套壳阿里千问，致歉撤回"
+   },
+   "links": [
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#company",
+     "title": "巴西里约官方模型被曝套壳阿里千问，致歉撤回"
+    },
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#company",
+     "title": "阿里官方否认周靖人离职传闻"
+    },
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#product",
+     "title": "阿里千问上线高考志愿填报Agent，免费服务"
+    },
+    {
+     "date": "2026-06-09",
+     "url": "/posts/2026-06-08-ai-morning-post/#company",
+     "title": "阿里巴巴成立Token Foundry事业部，吴泳铭直管"
+    },
+    {
+     "date": "2026-06-07",
+     "url": "/posts/2026-06-06-ai-morning-post/#model-release",
+     "title": "Qwen3.7-Plus：阿里将多模态模型升级为全自主Agent"
+    },
+    {
+     "date": "2026-06-06",
+     "url": "/posts/2026-06-05-ai-morning-post/#product",
+     "title": "阿里Meoo升级：一句话生成微信小程序"
     },
     {
      "date": "2026-06-05",
-     "url": "/posts/2026-06-04-ai-morning-post/#research",
-     "title": "NVIDIA 发布物理 AI 研究：抓取、自动驾驶与智能体训练"
+     "url": "/posts/2026-06-04-ai-morning-post/#company",
+     "title": "戴盟机器人完成亿元融资，阿里大牛加盟"
+    },
+    {
+     "date": "2026-06-04",
+     "url": "/posts/2026-06-03-ai-morning-post/#company",
+     "title": "戴盟机器人完成亿元融资，阿里通义多模态大牛加盟"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 10.45,
-   "days": 19,
+   "score": 9.61,
+   "days": 18,
    "latest": {
     "date": "2026-06-15",
     "url": "/posts/2026-06-14-ai-morning-post/#product",
@@ -263,61 +367,9 @@
    ]
   },
   {
-   "name": "Meta",
-   "score": 10.16,
-   "days": 16,
-   "latest": {
-    "date": "2026-06-15",
-    "url": "/posts/2026-06-14-ai-morning-post/#company",
-    "title": "北京要求逆转交易，Meta 放弃 2 亿美元收购 Manus"
-   },
-   "links": [
-    {
-     "date": "2026-06-15",
-     "url": "/posts/2026-06-14-ai-morning-post/#company",
-     "title": "北京要求逆转交易，Meta 放弃 2 亿美元收购 Manus"
-    },
-    {
-     "date": "2026-06-14",
-     "url": "/posts/2026-06-13-ai-morning-post/#company",
-     "title": "Meta AI 部门被曝“灵魂折磨”，员工濒临反抗"
-    },
-    {
-     "date": "2026-06-13",
-     "url": "/posts/2026-06-12-ai-morning-post/#company",
-     "title": "Meta AI部门被曝混乱，工程师称“灵魂磨灭”"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#company",
-     "title": "Meta签署在印首个AI数据中心协议，与Reliance合作"
-    },
-    {
-     "date": "2026-06-08",
-     "url": "/posts/2026-06-07-ai-morning-post/#company",
-     "title": "Meta确认数千Instagram因AI聊天机器人漏洞被黑"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#company",
-     "title": "Meta确认数千Instagram账号因AI聊天机器人漏洞被黑"
-    },
-    {
-     "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#company",
-     "title": "Meta AI 客服成漏洞：攻击者利用它盗取 Instagram 账号"
-    },
-    {
-     "date": "2026-06-05",
-     "url": "/posts/2026-06-04-ai-morning-post/#company",
-     "title": "Meta 采用帐篷搭建数据中心降低成本"
-    }
-   ]
-  },
-  {
    "name": "Google",
-   "score": 10.06,
-   "days": 11,
+   "score": 9.48,
+   "days": 10,
    "latest": {
     "date": "2026-06-13",
     "url": "/posts/2026-06-12-ai-morning-post/#company",
@@ -367,60 +419,8 @@
    ]
   },
   {
-   "name": "阿里",
-   "score": 9.42,
-   "days": 14,
-   "latest": {
-    "date": "2026-06-15",
-    "url": "/posts/2026-06-14-ai-morning-post/#company",
-    "title": "阿里官方否认周靖人离职传闻"
-   },
-   "links": [
-    {
-     "date": "2026-06-15",
-     "url": "/posts/2026-06-14-ai-morning-post/#company",
-     "title": "阿里官方否认周靖人离职传闻"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#product",
-     "title": "阿里千问上线高考志愿填报Agent，免费服务"
-    },
-    {
-     "date": "2026-06-09",
-     "url": "/posts/2026-06-08-ai-morning-post/#company",
-     "title": "阿里巴巴成立Token Foundry事业部，吴泳铭直管"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#model-release",
-     "title": "Qwen3.7-Plus：阿里将多模态模型升级为全自主Agent"
-    },
-    {
-     "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#product",
-     "title": "阿里Meoo升级：一句话生成微信小程序"
-    },
-    {
-     "date": "2026-06-05",
-     "url": "/posts/2026-06-04-ai-morning-post/#company",
-     "title": "戴盟机器人完成亿元融资，阿里大牛加盟"
-    },
-    {
-     "date": "2026-06-04",
-     "url": "/posts/2026-06-03-ai-morning-post/#company",
-     "title": "戴盟机器人完成亿元融资，阿里通义多模态大牛加盟"
-    },
-    {
-     "date": "2026-06-03",
-     "url": "/posts/2026-06-02-ai-morning-post/#model-release",
-     "title": "阿里发布Qwen3.7-Plus：多模态智能体新基座"
-    }
-   ]
-  },
-  {
    "name": "芯片",
-   "score": 9.29,
+   "score": 8.68,
    "days": 13,
    "latest": {
     "date": "2026-06-10",
@@ -472,14 +472,19 @@
   },
   {
    "name": "世界模型",
-   "score": 7.94,
+   "score": 8.35,
    "days": 13,
    "latest": {
-    "date": "2026-06-13",
-    "url": "/posts/2026-06-12-ai-morning-post/#model-release",
-    "title": "WeatherMesh-6 与开悟世界模型：垂直与具身智能的微进展"
+    "date": "2026-06-16",
+    "url": "/posts/2026-06-15-ai-morning-post/#model-release",
+    "title": "天工AI世界模型Matrix-Game 3.5公布技术突破"
    },
    "links": [
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#model-release",
+     "title": "天工AI世界模型Matrix-Game 3.5公布技术突破"
+    },
     {
      "date": "2026-06-13",
      "url": "/posts/2026-06-12-ai-morning-post/#model-release",
@@ -514,17 +519,64 @@
      "date": "2026-06-02",
      "url": "/posts/2026-06-01-ai-morning-post/#company",
      "title": "VAST 完成近 2 亿美元融资，并披露世界模型路线"
+    }
+   ]
+  },
+  {
+   "name": "具身智能",
+   "score": 6.71,
+   "days": 8,
+   "latest": {
+    "date": "2026-06-16",
+    "url": "/posts/2026-06-15-ai-morning-post/#company",
+    "title": "世航智能完成超10亿元A轮融资，海洋具身智能受追捧"
+   },
+   "links": [
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#company",
+     "title": "世航智能完成超10亿元A轮融资，海洋具身智能受追捧"
     },
     {
-     "date": "2026-06-01",
-     "url": "/posts/2026-05-31-ai-morning-post/#research",
-     "title": "τ0-WM：最大规模开源具身世界模型预训练"
+     "date": "2026-06-13",
+     "url": "/posts/2026-06-12-ai-morning-post/#model-release",
+     "title": "WeatherMesh-6 与开悟世界模型：垂直与具身智能的微进展"
+    },
+    {
+     "date": "2026-06-10",
+     "url": "/posts/2026-06-09-ai-morning-post/#company",
+     "title": "理想汽车智能驾驶一号位创业，成立具身智能公司"
+    },
+    {
+     "date": "2026-06-06",
+     "url": "/posts/2026-06-05-ai-morning-post/#research",
+     "title": "ICRA 2026：华人学者斩获大奖，具身智能迎来 “AlphaGo 时刻”"
+    },
+    {
+     "date": "2026-06-04",
+     "url": "/posts/2026-06-03-ai-morning-post/#research",
+     "title": "卧安机器人 OneModel 1.7：隐式通路打通具身智能断层"
+    },
+    {
+     "date": "2026-05-30",
+     "url": "/posts/2026-05-29-ai-morning-post/#company",
+     "title": "理想汽车组织调整，新增三个具身智能部门"
+    },
+    {
+     "date": "2026-05-24",
+     "url": "/posts/2026-05-23-ai-morning-post/#company",
+     "title": "越疆机器人十年出货10万台，进军具身智能"
+    },
+    {
+     "date": "2026-05-19",
+     "url": "/posts/2026-05-18-ai-morning-post/#product",
+     "title": "矩阵超智发布具身智能量产计划：2027 年十万台"
     }
    ]
   },
   {
    "name": "Codex",
-   "score": 6.45,
+   "score": 6.13,
    "days": 9,
    "latest": {
     "date": "2026-06-15",
@@ -576,7 +628,7 @@
   },
   {
    "name": "算力",
-   "score": 6.45,
+   "score": 6.1,
    "days": 8,
    "latest": {
     "date": "2026-06-10",
@@ -627,9 +679,61 @@
    ]
   },
   {
+   "name": "腾讯",
+   "score": 5.94,
+   "days": 9,
+   "latest": {
+    "date": "2026-06-16",
+    "url": "/posts/2026-06-15-ai-morning-post/#product",
+    "title": "腾讯AI加速场景落地：从元宝到WorkBuddy全面铺开"
+   },
+   "links": [
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#product",
+     "title": "腾讯AI加速场景落地：从元宝到WorkBuddy全面铺开"
+    },
+    {
+     "date": "2026-06-13",
+     "url": "/posts/2026-06-12-ai-morning-post/#product",
+     "title": "腾讯云护航世界杯直播，AI 首次大规模应用"
+    },
+    {
+     "date": "2026-06-10",
+     "url": "/posts/2026-06-09-ai-morning-post/#product",
+     "title": "腾讯云发布全栈智能体平台，一个入口串起所有 AI"
+    },
+    {
+     "date": "2026-06-09",
+     "url": "/posts/2026-06-08-ai-morning-post/#opinion",
+     "title": "腾讯汤道生对话姚顺雨：AI 下半场竞争逻辑"
+    },
+    {
+     "date": "2026-06-06",
+     "url": "/posts/2026-06-05-ai-morning-post/#product",
+     "title": "腾讯云WorkBuddy：从超级个体到超级团队"
+    },
+    {
+     "date": "2026-05-30",
+     "url": "/posts/2026-05-29-ai-morning-post/#product",
+     "title": "腾讯连发两大 AI 创作平台：游戏与创意设计"
+    },
+    {
+     "date": "2026-05-29",
+     "url": "/posts/2026-05-28-ai-morning-post/#product",
+     "title": "腾讯云 Agent 全栈升级，WorkBuddy 等产品出海"
+    },
+    {
+     "date": "2026-05-24",
+     "url": "/posts/2026-05-23-ai-morning-post/#opensource",
+     "title": "腾讯开源TencentDB Agent Memory：4层本地记忆流水线"
+    }
+   ]
+  },
+  {
    "name": "Agent Skills",
-   "score": 6.1,
-   "days": 8,
+   "score": 5.77,
+   "days": 7,
    "latest": {
     "date": "2026-06-15",
     "url": "/posts/2026-06-14-ai-morning-post/#opensource",
@@ -670,105 +774,6 @@
      "date": "2026-05-19",
      "url": "/posts/2026-05-18-ai-morning-post/#opensource",
      "title": "Anthropic 开源 Agent Skills 标准仓库"
-    },
-    {
-     "date": "2026-05-17",
-     "url": "/posts/2026-05-16-ai-morning-post/#opensource",
-     "title": "Anthropic 开源 Agent Skills 官方实现"
-    }
-   ]
-  },
-  {
-   "name": "腾讯",
-   "score": 5.23,
-   "days": 8,
-   "latest": {
-    "date": "2026-06-13",
-    "url": "/posts/2026-06-12-ai-morning-post/#product",
-    "title": "腾讯云护航世界杯直播，AI 首次大规模应用"
-   },
-   "links": [
-    {
-     "date": "2026-06-13",
-     "url": "/posts/2026-06-12-ai-morning-post/#product",
-     "title": "腾讯云护航世界杯直播，AI 首次大规模应用"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#product",
-     "title": "腾讯云发布全栈智能体平台，一个入口串起所有 AI"
-    },
-    {
-     "date": "2026-06-09",
-     "url": "/posts/2026-06-08-ai-morning-post/#opinion",
-     "title": "腾讯汤道生对话姚顺雨：AI 下半场竞争逻辑"
-    },
-    {
-     "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#product",
-     "title": "腾讯云WorkBuddy：从超级个体到超级团队"
-    },
-    {
-     "date": "2026-05-30",
-     "url": "/posts/2026-05-29-ai-morning-post/#product",
-     "title": "腾讯连发两大 AI 创作平台：游戏与创意设计"
-    },
-    {
-     "date": "2026-05-29",
-     "url": "/posts/2026-05-28-ai-morning-post/#product",
-     "title": "腾讯云 Agent 全栈升级，WorkBuddy 等产品出海"
-    },
-    {
-     "date": "2026-05-24",
-     "url": "/posts/2026-05-23-ai-morning-post/#opensource",
-     "title": "腾讯开源TencentDB Agent Memory：4层本地记忆流水线"
-    },
-    {
-     "date": "2026-05-22",
-     "url": "/posts/2026-05-21-ai-morning-post/#model-release",
-     "title": "腾讯混元Hy-MT2：指令遵循能力提升，翻译小程序同步上线"
-    }
-   ]
-  },
-  {
-   "name": "小米",
-   "score": 5.23,
-   "days": 6,
-   "latest": {
-    "date": "2026-06-14",
-    "url": "/posts/2026-06-13-ai-morning-post/#opensource",
-    "title": "小米 MiMo Code 开源引争议：5k 星但 bug 频出"
-   },
-   "links": [
-    {
-     "date": "2026-06-14",
-     "url": "/posts/2026-06-13-ai-morning-post/#opensource",
-     "title": "小米 MiMo Code 开源引争议：5k 星但 bug 频出"
-    },
-    {
-     "date": "2026-06-13",
-     "url": "/posts/2026-06-12-ai-morning-post/#opensource",
-     "title": "小米 MiMo Code 开源：5 人 2 周 5.1k 星但 bug 不断"
-    },
-    {
-     "date": "2026-06-12",
-     "url": "/posts/2026-06-11-ai-morning-post/#model-release",
-     "title": "小米开源千Token每秒大模型"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#model-release",
-     "title": "小米MiMo结合TileRT：万亿参数模型推理突破1000 tok/s"
-    },
-    {
-     "date": "2026-06-09",
-     "url": "/posts/2026-06-08-ai-morning-post/#model-release",
-     "title": "小米MiMo v2.5-Pro-UltraSpeed：千token/s的规模奇迹"
-    },
-    {
-     "date": "2026-06-08",
-     "url": "/posts/2026-06-07-ai-morning-post/#product",
-     "title": "小米机器人或随小米17T发布会首秀"
     }
    ]
   }
