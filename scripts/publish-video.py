@@ -106,27 +106,28 @@ def extract_summary_bullets(post_body: str) -> list[str]:
     return bullets
 
 
+# B 站「简介」上限约 250 字；更关键的是 biliup 在 cookies 缺 buvid3 时会回落到
+# **APP 投稿接口**，该接口会把超过 ~250 字的 desc 直接**清空发布**（前端预览仍显示，
+# 但公开页 desc / desc_v2 为空）。所以这里给一个硬上限，确保简介一定发得出去；
+# 完整速览与文字稿放 marginalia 文字稿页（desc 里留链接指过去）。
+BILI_DESC_MAX = 240
+
+
 def render_desc(script_json: dict, fm_lede: str | None, post_body: str, transcript_url: str | None = None) -> str:
-    lines: list[str] = []
-    if fm_lede:
-        lines.append(fm_lede.strip())
-        lines.append("")
-    bullets = extract_summary_bullets(post_body)
-    if bullets:
-        lines.append("本期速览：")
-        for i, b in enumerate(bullets, 1):
-            lines.append(f"{i}. {b}")
-    else:
-        # fallback — first scene's leading sentence per scene
-        lines.append("本期看点：")
-        for sc in script_json.get("scenes", []):
-            if sc["id"].startswith(("s1_", "s2_", "s10_")):
-                continue
-            lines.append(f"· {re.split(r'[。！？]', sc['text'], maxsplit=1)[0]}。")
-    lines.append("")
-    lines.append("制作：全自动 AI 视频流水线（Remotion + ffmpeg）。")
-    lines.append(f"完整文字稿与来源：{transcript_url or 'https://pyf-labrary.github.io/marginalia/videos/'}")
-    return "\n".join(lines).strip()
+    url = transcript_url or "https://pyf-labrary.github.io/marginalia/videos/"
+    # URL 去掉 https:// 前缀更省字、且 B 站对裸链接更宽容
+    url_text = re.sub(r"^https?://", "", url)
+    tail = f"\n完整文字稿与来源：{url_text}"
+    budget = BILI_DESC_MAX - len(tail)
+
+    lede = (fm_lede or "").strip()
+    if not lede:
+        # 兜底：用首条速览
+        bl = extract_summary_bullets(post_body)
+        lede = bl[0] if bl else "本期 AI 周报。"
+    if len(lede) > budget:
+        lede = lede[: max(0, budget - 1)].rstrip("，。、；：— ") + "…"
+    return (lede + tail).strip()
 
 
 def build_biliup_args(
