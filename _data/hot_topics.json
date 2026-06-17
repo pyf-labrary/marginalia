@@ -1,17 +1,22 @@
 {
- "generated": "2026-06-17",
+ "generated": "2026-06-18",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 54.61,
+   "score": 52.06,
    "days": 28,
    "latest": {
-    "date": "2026-06-17",
-    "url": "/posts/2026-06-16-ai-morning-post/#opensource",
-    "title": "NVIDIA 开源 SkillSpector：给 AI Agent 做“安全体检”"
+    "date": "2026-06-18",
+    "url": "/posts/2026-06-17-ai-morning-post/#product",
+    "title": "昆仑万维天工 3.1 上线：设计画布与多智能体工作流"
    },
    "links": [
+    {
+     "date": "2026-06-18",
+     "url": "/posts/2026-06-17-ai-morning-post/#product",
+     "title": "昆仑万维天工 3.1 上线：设计画布与多智能体工作流"
+    },
     {
      "date": "2026-06-17",
      "url": "/posts/2026-06-16-ai-morning-post/#opensource",
@@ -46,24 +51,24 @@
      "date": "2026-06-11",
      "url": "/posts/2026-06-10-ai-morning-post/#product",
      "title": "Google NotebookLM新增云端计算机与智能体研究"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#research",
-     "title": "哈佛与 Perplexity 研究：AI Agent 自主工作时间是搜索的47倍"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 33.68,
+   "score": 32.68,
    "days": 26,
    "latest": {
-    "date": "2026-06-17",
-    "url": "/posts/2026-06-16-ai-morning-post/#model-release",
-    "title": "OpenAI 推出部署仿真提前预测模型行为"
+    "date": "2026-06-18",
+    "url": "/posts/2026-06-17-ai-morning-post/#company",
+    "title": "OpenAI 发布AI化学家与LifeSciBench，加速生命科学落地"
    },
    "links": [
+    {
+     "date": "2026-06-18",
+     "url": "/posts/2026-06-17-ai-morning-post/#company",
+     "title": "OpenAI 发布AI化学家与LifeSciBench，加速生命科学落地"
+    },
     {
      "date": "2026-06-17",
      "url": "/posts/2026-06-16-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-06-11",
      "url": "/posts/2026-06-10-ai-morning-post/#company",
      "title": "OpenAI IPO再推迟，Altman称年内有望"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#company",
-     "title": "OpenAI 秘密提交 IPO 申请，紧随 Anthropic 步伐"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 26.71,
+   "score": 27.74,
    "days": 27,
    "latest": {
-    "date": "2026-06-17",
-    "url": "/posts/2026-06-16-ai-morning-post/#product",
-    "title": "Anthropic 暂停 Claude Agent SDK 的 Token 计费改革"
+    "date": "2026-06-18",
+    "url": "/posts/2026-06-17-ai-morning-post/#company",
+    "title": "Anthropic暂停Claude Agent SDK基于Token的计费"
    },
    "links": [
+    {
+     "date": "2026-06-18",
+     "url": "/posts/2026-06-17-ai-morning-post/#company",
+     "title": "Anthropic暂停Claude Agent SDK基于Token的计费"
+    },
     {
      "date": "2026-06-17",
      "url": "/posts/2026-06-16-ai-morning-post/#product",
@@ -150,18 +155,13 @@
      "date": "2026-06-11",
      "url": "/posts/2026-06-10-ai-morning-post/#model-release",
      "title": "Anthropic发布Claude Fable 5与Mythos 5，首个公开Mythos级模型"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#company",
-     "title": "OpenAI 秘密提交 IPO 申请，紧随 Anthropic 步伐"
     }
    ]
   },
   {
    "name": "NVIDIA",
-   "score": 14.29,
-   "days": 17,
+   "score": 13.48,
+   "days": 16,
    "latest": {
     "date": "2026-06-17",
     "url": "/posts/2026-06-16-ai-morning-post/#opensource",
@@ -211,8 +211,60 @@
    ]
   },
   {
+   "name": "阿里",
+   "score": 11.71,
+   "days": 16,
+   "latest": {
+    "date": "2026-06-18",
+    "url": "/posts/2026-06-17-ai-morning-post/#product",
+    "title": "阿里发布可交互世界模型 HappyOyster 1.0"
+   },
+   "links": [
+    {
+     "date": "2026-06-18",
+     "url": "/posts/2026-06-17-ai-morning-post/#product",
+     "title": "阿里发布可交互世界模型 HappyOyster 1.0"
+    },
+    {
+     "date": "2026-06-17",
+     "url": "/posts/2026-06-16-ai-morning-post/#model-release",
+     "title": "阿里发布首个具身大模型 Qwen-Robot 系列"
+    },
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#company",
+     "title": "巴西里约官方模型被曝套壳阿里千问，致歉撤回"
+    },
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#company",
+     "title": "阿里官方否认周靖人离职传闻"
+    },
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#product",
+     "title": "阿里千问上线高考志愿填报Agent，免费服务"
+    },
+    {
+     "date": "2026-06-09",
+     "url": "/posts/2026-06-08-ai-morning-post/#company",
+     "title": "阿里巴巴成立Token Foundry事业部，吴泳铭直管"
+    },
+    {
+     "date": "2026-06-07",
+     "url": "/posts/2026-06-06-ai-morning-post/#model-release",
+     "title": "Qwen3.7-Plus：阿里将多模态模型升级为全自主Agent"
+    },
+    {
+     "date": "2026-06-06",
+     "url": "/posts/2026-06-05-ai-morning-post/#product",
+     "title": "阿里Meoo升级：一句话生成微信小程序"
+    }
+   ]
+  },
+  {
    "name": "Meta",
-   "score": 11.0,
+   "score": 10.45,
    "days": 16,
    "latest": {
     "date": "2026-06-17",
@@ -263,60 +315,8 @@
    ]
   },
   {
-   "name": "阿里",
-   "score": 10.29,
-   "days": 15,
-   "latest": {
-    "date": "2026-06-17",
-    "url": "/posts/2026-06-16-ai-morning-post/#model-release",
-    "title": "阿里发布首个具身大模型 Qwen-Robot 系列"
-   },
-   "links": [
-    {
-     "date": "2026-06-17",
-     "url": "/posts/2026-06-16-ai-morning-post/#model-release",
-     "title": "阿里发布首个具身大模型 Qwen-Robot 系列"
-    },
-    {
-     "date": "2026-06-16",
-     "url": "/posts/2026-06-15-ai-morning-post/#company",
-     "title": "巴西里约官方模型被曝套壳阿里千问，致歉撤回"
-    },
-    {
-     "date": "2026-06-15",
-     "url": "/posts/2026-06-14-ai-morning-post/#company",
-     "title": "阿里官方否认周靖人离职传闻"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#product",
-     "title": "阿里千问上线高考志愿填报Agent，免费服务"
-    },
-    {
-     "date": "2026-06-09",
-     "url": "/posts/2026-06-08-ai-morning-post/#company",
-     "title": "阿里巴巴成立Token Foundry事业部，吴泳铭直管"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#model-release",
-     "title": "Qwen3.7-Plus：阿里将多模态模型升级为全自主Agent"
-    },
-    {
-     "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#product",
-     "title": "阿里Meoo升级：一句话生成微信小程序"
-    },
-    {
-     "date": "2026-06-05",
-     "url": "/posts/2026-06-04-ai-morning-post/#company",
-     "title": "戴盟机器人完成亿元融资，阿里大牛加盟"
-    }
-   ]
-  },
-  {
    "name": "Google",
-   "score": 9.97,
+   "score": 9.42,
    "days": 11,
    "latest": {
     "date": "2026-06-17",
@@ -367,9 +367,61 @@
    ]
   },
   {
+   "name": "世界模型",
+   "score": 9.39,
+   "days": 14,
+   "latest": {
+    "date": "2026-06-18",
+    "url": "/posts/2026-06-17-ai-morning-post/#company",
+    "title": "Odyssey融资14.5亿美元，世界模型赛道崛起"
+   },
+   "links": [
+    {
+     "date": "2026-06-18",
+     "url": "/posts/2026-06-17-ai-morning-post/#company",
+     "title": "Odyssey融资14.5亿美元，世界模型赛道崛起"
+    },
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#model-release",
+     "title": "天工AI世界模型Matrix-Game 3.5公布技术突破"
+    },
+    {
+     "date": "2026-06-13",
+     "url": "/posts/2026-06-12-ai-morning-post/#model-release",
+     "title": "WeatherMesh-6 与开悟世界模型：垂直与具身智能的微进展"
+    },
+    {
+     "date": "2026-06-12",
+     "url": "/posts/2026-06-11-ai-morning-post/#model-release",
+     "title": "Decart Oasis 3：世界模型生成逼真驾驶场景"
+    },
+    {
+     "date": "2026-06-07",
+     "url": "/posts/2026-06-06-ai-morning-post/#opensource",
+     "title": "NVIDIA Cosmos开源：世界模型平台助力物理AI"
+    },
+    {
+     "date": "2026-06-06",
+     "url": "/posts/2026-06-05-ai-morning-post/#opensource",
+     "title": "NVIDIA 开源 Cosmos：面向物理 AI 的世界模型平台"
+    },
+    {
+     "date": "2026-06-04",
+     "url": "/posts/2026-06-03-ai-morning-post/#research",
+     "title": "李飞飞定义世界模型：渲染、模拟、规划三合一"
+    },
+    {
+     "date": "2026-06-03",
+     "url": "/posts/2026-06-02-ai-morning-post/#model-release",
+     "title": "NVIDIA发布Cosmos 3，推进物理AI世界模型"
+    }
+   ]
+  },
+  {
    "name": "Claude",
-   "score": 8.81,
-   "days": 17,
+   "score": 8.0,
+   "days": 16,
    "latest": {
     "date": "2026-06-15",
     "url": "/posts/2026-06-14-ai-morning-post/#product",
@@ -420,7 +472,7 @@
   },
   {
    "name": "芯片",
-   "score": 8.03,
+   "score": 7.45,
    "days": 12,
    "latest": {
     "date": "2026-06-10",
@@ -471,61 +523,9 @@
    ]
   },
   {
-   "name": "世界模型",
-   "score": 7.87,
-   "days": 13,
-   "latest": {
-    "date": "2026-06-16",
-    "url": "/posts/2026-06-15-ai-morning-post/#model-release",
-    "title": "天工AI世界模型Matrix-Game 3.5公布技术突破"
-   },
-   "links": [
-    {
-     "date": "2026-06-16",
-     "url": "/posts/2026-06-15-ai-morning-post/#model-release",
-     "title": "天工AI世界模型Matrix-Game 3.5公布技术突破"
-    },
-    {
-     "date": "2026-06-13",
-     "url": "/posts/2026-06-12-ai-morning-post/#model-release",
-     "title": "WeatherMesh-6 与开悟世界模型：垂直与具身智能的微进展"
-    },
-    {
-     "date": "2026-06-12",
-     "url": "/posts/2026-06-11-ai-morning-post/#model-release",
-     "title": "Decart Oasis 3：世界模型生成逼真驾驶场景"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#opensource",
-     "title": "NVIDIA Cosmos开源：世界模型平台助力物理AI"
-    },
-    {
-     "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#opensource",
-     "title": "NVIDIA 开源 Cosmos：面向物理 AI 的世界模型平台"
-    },
-    {
-     "date": "2026-06-04",
-     "url": "/posts/2026-06-03-ai-morning-post/#research",
-     "title": "李飞飞定义世界模型：渲染、模拟、规划三合一"
-    },
-    {
-     "date": "2026-06-03",
-     "url": "/posts/2026-06-02-ai-morning-post/#model-release",
-     "title": "NVIDIA发布Cosmos 3，推进物理AI世界模型"
-    },
-    {
-     "date": "2026-06-02",
-     "url": "/posts/2026-06-01-ai-morning-post/#company",
-     "title": "VAST 完成近 2 亿美元融资，并披露世界模型路线"
-    }
-   ]
-  },
-  {
    "name": "具身智能",
-   "score": 7.39,
-   "days": 9,
+   "score": 7.0,
+   "days": 8,
    "latest": {
     "date": "2026-06-17",
     "url": "/posts/2026-06-16-ai-morning-post/#opinion",
@@ -576,7 +576,7 @@
   },
   {
    "name": "腾讯",
-   "score": 6.61,
+   "score": 6.26,
    "days": 10,
    "latest": {
     "date": "2026-06-17",
@@ -627,9 +627,61 @@
    ]
   },
   {
+   "name": "SpaceX",
+   "score": 5.87,
+   "days": 10,
+   "latest": {
+    "date": "2026-06-18",
+    "url": "/posts/2026-06-17-ai-morning-post/#company",
+    "title": "SpaceX估值飙至2.6万亿美元，短暂超越亚马逊"
+   },
+   "links": [
+    {
+     "date": "2026-06-18",
+     "url": "/posts/2026-06-17-ai-morning-post/#company",
+     "title": "SpaceX估值飙至2.6万亿美元，短暂超越亚马逊"
+    },
+    {
+     "date": "2026-06-17",
+     "url": "/posts/2026-06-16-ai-morning-post/#company",
+     "title": "SpaceX 收购 Cursor，估值超 2.6 万亿美元"
+    },
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#company",
+     "title": "SpaceX IPO后市值飙升至2.5万亿美元，承销商行使超额配售权"
+    },
+    {
+     "date": "2026-06-14",
+     "url": "/posts/2026-06-13-ai-morning-post/#company",
+     "title": "SpaceX 上市首日飙升，马斯克成万亿富豪"
+    },
+    {
+     "date": "2026-06-13",
+     "url": "/posts/2026-06-12-ai-morning-post/#company",
+     "title": "SpaceX上市首日大涨，史上最大IPO"
+    },
+    {
+     "date": "2026-06-07",
+     "url": "/posts/2026-06-06-ai-morning-post/#company",
+     "title": "SpaceX与Google签署每月9.2亿美元AI芯片协议"
+    },
+    {
+     "date": "2026-05-25",
+     "url": "/posts/2026-05-24-ai-morning-post/#company",
+     "title": "马斯克弃太阳能：xAI转天然气，SpaceX押注轨道数据中心"
+    },
+    {
+     "date": "2026-05-23",
+     "url": "/posts/2026-05-22-ai-morning-post/#company",
+     "title": "SpaceX IPO文件曝光，押注AI数据中心挑战巨头"
+    }
+   ]
+  },
+  {
    "name": "Codex",
-   "score": 5.81,
-   "days": 9,
+   "score": 5.45,
+   "days": 8,
    "latest": {
     "date": "2026-06-15",
     "url": "/posts/2026-06-14-ai-morning-post/#model-release",
@@ -680,7 +732,7 @@
   },
   {
    "name": "算力",
-   "score": 5.71,
+   "score": 5.39,
    "days": 7,
    "latest": {
     "date": "2026-06-10",
@@ -722,53 +774,6 @@
      "date": "2026-05-25",
      "url": "/posts/2026-05-24-ai-morning-post/#opinion",
      "title": "张璐：未来推理将吃掉70%算力，训练只占30%"
-    }
-   ]
-  },
-  {
-   "name": "Agent Skills",
-   "score": 5.52,
-   "days": 7,
-   "latest": {
-    "date": "2026-06-15",
-    "url": "/posts/2026-06-14-ai-morning-post/#opensource",
-    "title": "Anthropic 官方 Agent Skills 仓库：Agent 技能标准化第一步"
-   },
-   "links": [
-    {
-     "date": "2026-06-15",
-     "url": "/posts/2026-06-14-ai-morning-post/#opensource",
-     "title": "Anthropic 官方 Agent Skills 仓库：Agent 技能标准化第一步"
-    },
-    {
-     "date": "2026-06-14",
-     "url": "/posts/2026-06-13-ai-morning-post/#opensource",
-     "title": "Agent Skills 框架兴起，Anthropic 推动标准化"
-    },
-    {
-     "date": "2026-06-12",
-     "url": "/posts/2026-06-11-ai-morning-post/#opensource",
-     "title": "Agent Skills 生态爆发：三个仓库齐上 GitHub 趋势"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#opensource",
-     "title": "Google 官方 Agent Skills 仓库"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 库，覆盖自家产品技能"
-    },
-    {
-     "date": "2026-05-29",
-     "url": "/posts/2026-05-28-ai-morning-post/#opensource",
-     "title": "Anthropic 发布 Agent Skills 开源仓库"
-    },
-    {
-     "date": "2026-05-19",
-     "url": "/posts/2026-05-18-ai-morning-post/#opensource",
-     "title": "Anthropic 开源 Agent Skills 标准仓库"
     }
    ]
   }
