@@ -1,17 +1,22 @@
 {
- "generated": "2026-06-18",
+ "generated": "2026-06-19",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 52.06,
+   "score": 52.68,
    "days": 28,
    "latest": {
-    "date": "2026-06-18",
-    "url": "/posts/2026-06-17-ai-morning-post/#product",
-    "title": "昆仑万维天工 3.1 上线：设计画布与多智能体工作流"
+    "date": "2026-06-19",
+    "url": "/posts/2026-06-18-ai-morning-post/#company",
+    "title": "通用智能体初创General Intuition拟融资3亿美元，估值20亿"
    },
    "links": [
+    {
+     "date": "2026-06-19",
+     "url": "/posts/2026-06-18-ai-morning-post/#company",
+     "title": "通用智能体初创General Intuition拟融资3亿美元，估值20亿"
+    },
     {
      "date": "2026-06-18",
      "url": "/posts/2026-06-17-ai-morning-post/#product",
@@ -46,24 +51,24 @@
      "date": "2026-06-12",
      "url": "/posts/2026-06-11-ai-morning-post/#company",
      "title": "OpenAI 收购 Ona，为 Codex 铺企业 Agent 云底座"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#product",
-     "title": "Google NotebookLM新增云端计算机与智能体研究"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 32.68,
+   "score": 33.68,
    "days": 26,
    "latest": {
-    "date": "2026-06-18",
-    "url": "/posts/2026-06-17-ai-morning-post/#company",
-    "title": "OpenAI 发布AI化学家与LifeSciBench，加速生命科学落地"
+    "date": "2026-06-19",
+    "url": "/posts/2026-06-18-ai-morning-post/#model-release",
+    "title": "OpenAI 用 GPT-5.5 Instant 攻入医疗决策层"
    },
    "links": [
+    {
+     "date": "2026-06-19",
+     "url": "/posts/2026-06-18-ai-morning-post/#model-release",
+     "title": "OpenAI 用 GPT-5.5 Instant 攻入医疗决策层"
+    },
     {
      "date": "2026-06-18",
      "url": "/posts/2026-06-17-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-06-12",
      "url": "/posts/2026-06-11-ai-morning-post/#company",
      "title": "OpenAI 收购 Ona，为 Codex 铺企业 Agent 云底座"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#company",
-     "title": "OpenAI IPO再推迟，Altman称年内有望"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 27.74,
+   "score": 26.74,
    "days": 27,
    "latest": {
-    "date": "2026-06-18",
-    "url": "/posts/2026-06-17-ai-morning-post/#company",
-    "title": "Anthropic暂停Claude Agent SDK基于Token的计费"
+    "date": "2026-06-19",
+    "url": "/posts/2026-06-18-ai-morning-post/#company",
+    "title": "Anthropic新模型Fable 5遭白宫下令下架，出口管制升级"
    },
    "links": [
+    {
+     "date": "2026-06-19",
+     "url": "/posts/2026-06-18-ai-morning-post/#company",
+     "title": "Anthropic新模型Fable 5遭白宫下令下架，出口管制升级"
+    },
     {
      "date": "2026-06-18",
      "url": "/posts/2026-06-17-ai-morning-post/#company",
@@ -150,17 +155,12 @@
      "date": "2026-06-12",
      "url": "/posts/2026-06-11-ai-morning-post/#company",
      "title": "Anthropic 认错：撤回 Fable 对竞争对手的隐形限制"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#model-release",
-     "title": "Anthropic发布Claude Fable 5与Mythos 5，首个公开Mythos级模型"
     }
    ]
   },
   {
    "name": "NVIDIA",
-   "score": 13.48,
+   "score": 12.74,
    "days": 16,
    "latest": {
     "date": "2026-06-17",
@@ -212,7 +212,7 @@
   },
   {
    "name": "阿里",
-   "score": 11.71,
+   "score": 11.06,
    "days": 16,
    "latest": {
     "date": "2026-06-18",
@@ -264,7 +264,7 @@
   },
   {
    "name": "Meta",
-   "score": 10.45,
+   "score": 9.9,
    "days": 16,
    "latest": {
     "date": "2026-06-17",
@@ -316,14 +316,19 @@
   },
   {
    "name": "Google",
-   "score": 9.42,
-   "days": 11,
+   "score": 9.87,
+   "days": 12,
    "latest": {
-    "date": "2026-06-17",
-    "url": "/posts/2026-06-16-ai-morning-post/#opinion",
-    "title": "柏林法院：Google AI 摘要被视为新搜索格式而非原创内容"
+    "date": "2026-06-19",
+    "url": "/posts/2026-06-18-ai-morning-post/#product",
+    "title": "Google 新智能音箱 Home Speaker 预售，100美元Gemini驱动"
    },
    "links": [
+    {
+     "date": "2026-06-19",
+     "url": "/posts/2026-06-18-ai-morning-post/#product",
+     "title": "Google 新智能音箱 Home Speaker 预售，100美元Gemini驱动"
+    },
     {
      "date": "2026-06-17",
      "url": "/posts/2026-06-16-ai-morning-post/#opinion",
@@ -358,24 +363,24 @@
      "date": "2026-06-05",
      "url": "/posts/2026-06-04-ai-morning-post/#opinion",
      "title": "英国监管强制 Google 为 AI 搜索提供出版商退出选项"
-    },
-    {
-     "date": "2026-06-02",
-     "url": "/posts/2026-06-01-ai-morning-post/#company",
-     "title": "Google 计划筹资 800 亿美元用于 AI 建设"
     }
    ]
   },
   {
    "name": "世界模型",
-   "score": 9.39,
+   "score": 9.77,
    "days": 14,
    "latest": {
-    "date": "2026-06-18",
-    "url": "/posts/2026-06-17-ai-morning-post/#company",
-    "title": "Odyssey融资14.5亿美元，世界模型赛道崛起"
+    "date": "2026-06-19",
+    "url": "/posts/2026-06-18-ai-morning-post/#company",
+    "title": "世界模型初创Odyssey获14.5亿美元估值，亚马逊领投"
    },
    "links": [
+    {
+     "date": "2026-06-19",
+     "url": "/posts/2026-06-18-ai-morning-post/#company",
+     "title": "世界模型初创Odyssey获14.5亿美元估值，亚马逊领投"
+    },
     {
      "date": "2026-06-18",
      "url": "/posts/2026-06-17-ai-morning-post/#company",
@@ -410,24 +415,24 @@
      "date": "2026-06-04",
      "url": "/posts/2026-06-03-ai-morning-post/#research",
      "title": "李飞飞定义世界模型：渲染、模拟、规划三合一"
-    },
-    {
-     "date": "2026-06-03",
-     "url": "/posts/2026-06-02-ai-morning-post/#model-release",
-     "title": "NVIDIA发布Cosmos 3，推进物理AI世界模型"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 8.0,
+   "score": 8.26,
    "days": 16,
    "latest": {
-    "date": "2026-06-15",
-    "url": "/posts/2026-06-14-ai-morning-post/#product",
-    "title": "Memoriq：给ChatGPT、Claude一个统一“记忆”"
+    "date": "2026-06-19",
+    "url": "/posts/2026-06-18-ai-morning-post/#product",
+    "title": "Claude Code 新增 Artifacts 功能，团队可分享实时编码页面"
    },
    "links": [
+    {
+     "date": "2026-06-19",
+     "url": "/posts/2026-06-18-ai-morning-post/#product",
+     "title": "Claude Code 新增 Artifacts 功能，团队可分享实时编码页面"
+    },
     {
      "date": "2026-06-15",
      "url": "/posts/2026-06-14-ai-morning-post/#product",
@@ -462,24 +467,24 @@
      "date": "2026-06-04",
      "url": "/posts/2026-06-03-ai-morning-post/#company",
      "title": "Anthropic 冲刺IPO，Claude月消耗客户5亿美元"
-    },
-    {
-     "date": "2026-06-02",
-     "url": "/posts/2026-06-01-ai-morning-post/#product",
-     "title": "Anthropic 推出 Code with Claude 托管式智能体"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 7.45,
-   "days": 12,
+   "score": 7.87,
+   "days": 13,
    "latest": {
-    "date": "2026-06-10",
-    "url": "/posts/2026-06-09-ai-morning-post/#opinion",
-    "title": "北京 2950 亿美元 AI 基建计划要求 80% 国产芯片"
+    "date": "2026-06-19",
+    "url": "/posts/2026-06-18-ai-morning-post/#company",
+    "title": "AWS拟向外部数据中心出售自研AI芯片，直接挑战Nvidia"
    },
    "links": [
+    {
+     "date": "2026-06-19",
+     "url": "/posts/2026-06-18-ai-morning-post/#company",
+     "title": "AWS拟向外部数据中心出售自研AI芯片，直接挑战Nvidia"
+    },
     {
      "date": "2026-06-10",
      "url": "/posts/2026-06-09-ai-morning-post/#opinion",
@@ -514,17 +519,12 @@
      "date": "2026-05-29",
      "url": "/posts/2026-05-28-ai-morning-post/#company",
      "title": "Snowflake 与 AWS 签署 60 亿美元 AI 芯片大单"
-    },
-    {
-     "date": "2026-05-28",
-     "url": "/posts/2026-05-27-ai-morning-post/#company",
-     "title": "Snowflake与AWS签$60亿AI CPU芯片协议"
     }
    ]
   },
   {
    "name": "具身智能",
-   "score": 7.0,
+   "score": 6.68,
    "days": 8,
    "latest": {
     "date": "2026-06-17",
@@ -576,7 +576,7 @@
   },
   {
    "name": "腾讯",
-   "score": 6.26,
+   "score": 5.9,
    "days": 10,
    "latest": {
     "date": "2026-06-17",
@@ -628,7 +628,7 @@
   },
   {
    "name": "SpaceX",
-   "score": 5.87,
+   "score": 5.55,
    "days": 10,
    "latest": {
     "date": "2026-06-18",
@@ -680,7 +680,7 @@
   },
   {
    "name": "Codex",
-   "score": 5.45,
+   "score": 5.16,
    "days": 8,
    "latest": {
     "date": "2026-06-15",
@@ -732,7 +732,7 @@
   },
   {
    "name": "算力",
-   "score": 5.39,
+   "score": 5.06,
    "days": 7,
    "latest": {
     "date": "2026-06-10",
