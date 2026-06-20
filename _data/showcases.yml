@@ -1,5 +1,13 @@
 # Showcase 索引数据 —— 供首页卡片 / 搜索 / 归档页使用。
 # showcases.md 仍是人读的详细介绍页；这里是机器可读的目录。
+- slug: bodhi-e01-making
+  image: /assets/img/site/covers/bodhi-e01-making.jpg
+  title: 一个人，一支模型剧组 · 恒伽达 AI 制作复盘
+  url: https://ftp.ssbx.site/showcases/bodhi-e01-making/
+  external: true
+  date: 2026-06-20
+  tags: [佛经, 短剧, AIGC, deck, 工具链]
+  description: 30 页制作复盘：AI 电影导演要练的九种技能、从灵感/剧本到人物/场景/分镜/视频/声音的完整工具链，以及 E01《恒伽达》在制片人预览板里的真实数据复盘——122 镜 / 16:40 / ¥1673（视频生成占 90% 成本）/ 全 AI 零真人。外链托管，跳转打开。
 - slug: arm
   image: /assets/img/site/covers/arm.jpg
   title: 智能体分层治理模型 · ARM
