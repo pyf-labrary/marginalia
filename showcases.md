@@ -11,6 +11,19 @@ wide: true
 <ul class="cover-list" role="list">
 
 <li class="cover-row">
+<a class="cover-media" href="https://ftp.ssbx.site/showcases/bodhi-e01-making/"><img src="/marginalia/assets/img/site/covers/bodhi-e01-making.jpg" alt="恒伽达 AI 制作复盘 deck 封面截图" loading="lazy"></a>
+<div class="cover-body" markdown="1">
+## 一个人，一支「模型剧组」· 恒伽达 AI 制作复盘
+
+30 页制作分享：一个人如何借一套 AI 工具链扮演整支剧组，做出一集 16 分钟的佛经故事电视剧。三部分——**AI 电影导演要练的九种技能**（叙事改编 / 镜头反向设计 / prompt 工程与多模型调度 / 角色一致性管控 / 声音设计 / 工程化追溯 / 成本管控 / 合规 / 跨职能调度）；**从灵感到成片的完整工具链**（剧本 8 件产出 → 人物 face-lock → 道具场景 → 分镜 → Seedance 2.0 三通道视频 → 5 轨声音 → 后期合规）；**E01《恒伽达》真实数据复盘**——122 镜 / 16:40 / ¥1673（视频生成占 90% 成本）/ 838 次工具调用 / 全 AI 零真人，在自建「制片人预览板」dashboard 里逐镜核对。暖金电影调、键盘翻页、本地字体零外链。外链托管，跳转打开。
+
+→ [打开 Showcase](https://ftp.ssbx.site/showcases/bodhi-e01-making/)
+
+*整理时间：2026-06-20。*
+</div>
+</li>
+
+<li class="cover-row">
 <a class="cover-media" href="/marginalia/showcases/arm/"><img src="/marginalia/assets/img/site/covers/arm.jpg" alt="ARM deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 智能体分层治理模型 · ARM
