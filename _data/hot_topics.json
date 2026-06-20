@@ -1,11 +1,11 @@
 {
- "generated": "2026-06-20",
+ "generated": "2026-06-21",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 49.23,
-   "days": 27,
+   "score": 45.71,
+   "days": 26,
    "latest": {
     "date": "2026-06-19",
     "url": "/posts/2026-06-18-ai-morning-post/#company",
@@ -56,8 +56,8 @@
   },
   {
    "name": "OpenAI",
-   "score": 34.71,
-   "days": 26,
+   "score": 32.68,
+   "days": 25,
    "latest": {
     "date": "2026-06-20",
     "url": "/posts/2026-06-19-ai-morning-post/#company",
@@ -108,8 +108,8 @@
   },
   {
    "name": "Anthropic",
-   "score": 26.87,
-   "days": 27,
+   "score": 25.06,
+   "days": 26,
    "latest": {
     "date": "2026-06-20",
     "url": "/posts/2026-06-19-ai-morning-post/#company",
@@ -160,7 +160,7 @@
   },
   {
    "name": "NVIDIA",
-   "score": 11.94,
+   "score": 11.26,
    "days": 15,
    "latest": {
     "date": "2026-06-17",
@@ -211,9 +211,61 @@
    ]
   },
   {
+   "name": "Meta",
+   "score": 9.77,
+   "days": 16,
+   "latest": {
+    "date": "2026-06-21",
+    "url": "/posts/2026-06-20-ai-morning-post/#company",
+    "title": "Meta员工士气跌至20年最低，CTO承认AI重组失败"
+   },
+   "links": [
+    {
+     "date": "2026-06-21",
+     "url": "/posts/2026-06-20-ai-morning-post/#company",
+     "title": "Meta员工士气跌至20年最低，CTO承认AI重组失败"
+    },
+    {
+     "date": "2026-06-17",
+     "url": "/posts/2026-06-16-ai-morning-post/#product",
+     "title": "Meta 推出 Facebook AI Mode，聚合旗下平台公开数据"
+    },
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#product",
+     "title": "Meta推出Facebook AI模式：聚合公开信息做智能交互"
+    },
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#company",
+     "title": "北京要求逆转交易，Meta 放弃 2 亿美元收购 Manus"
+    },
+    {
+     "date": "2026-06-14",
+     "url": "/posts/2026-06-13-ai-morning-post/#company",
+     "title": "Meta AI 部门被曝“灵魂折磨”，员工濒临反抗"
+    },
+    {
+     "date": "2026-06-13",
+     "url": "/posts/2026-06-12-ai-morning-post/#company",
+     "title": "Meta AI部门被曝混乱，工程师称“灵魂磨灭”"
+    },
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#company",
+     "title": "Meta签署在印首个AI数据中心协议，与Reliance合作"
+    },
+    {
+     "date": "2026-06-08",
+     "url": "/posts/2026-06-07-ai-morning-post/#company",
+     "title": "Meta确认数千Instagram因AI聊天机器人漏洞被黑"
+    }
+   ]
+  },
+  {
    "name": "阿里",
-   "score": 10.39,
-   "days": 15,
+   "score": 9.74,
+   "days": 14,
    "latest": {
     "date": "2026-06-18",
     "url": "/posts/2026-06-17-ai-morning-post/#product",
@@ -263,60 +315,8 @@
    ]
   },
   {
-   "name": "Meta",
-   "score": 9.35,
-   "days": 16,
-   "latest": {
-    "date": "2026-06-17",
-    "url": "/posts/2026-06-16-ai-morning-post/#product",
-    "title": "Meta 推出 Facebook AI Mode，聚合旗下平台公开数据"
-   },
-   "links": [
-    {
-     "date": "2026-06-17",
-     "url": "/posts/2026-06-16-ai-morning-post/#product",
-     "title": "Meta 推出 Facebook AI Mode，聚合旗下平台公开数据"
-    },
-    {
-     "date": "2026-06-16",
-     "url": "/posts/2026-06-15-ai-morning-post/#product",
-     "title": "Meta推出Facebook AI模式：聚合公开信息做智能交互"
-    },
-    {
-     "date": "2026-06-15",
-     "url": "/posts/2026-06-14-ai-morning-post/#company",
-     "title": "北京要求逆转交易，Meta 放弃 2 亿美元收购 Manus"
-    },
-    {
-     "date": "2026-06-14",
-     "url": "/posts/2026-06-13-ai-morning-post/#company",
-     "title": "Meta AI 部门被曝“灵魂折磨”，员工濒临反抗"
-    },
-    {
-     "date": "2026-06-13",
-     "url": "/posts/2026-06-12-ai-morning-post/#company",
-     "title": "Meta AI部门被曝混乱，工程师称“灵魂磨灭”"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#company",
-     "title": "Meta签署在印首个AI数据中心协议，与Reliance合作"
-    },
-    {
-     "date": "2026-06-08",
-     "url": "/posts/2026-06-07-ai-morning-post/#company",
-     "title": "Meta确认数千Instagram因AI聊天机器人漏洞被黑"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#company",
-     "title": "Meta确认数千Instagram账号因AI聊天机器人漏洞被黑"
-    }
-   ]
-  },
-  {
    "name": "世界模型",
-   "score": 9.23,
+   "score": 8.74,
    "days": 13,
    "latest": {
     "date": "2026-06-19",
@@ -368,8 +368,8 @@
   },
   {
    "name": "Google",
-   "score": 9.19,
-   "days": 11,
+   "score": 8.68,
+   "days": 10,
    "latest": {
     "date": "2026-06-19",
     "url": "/posts/2026-06-18-ai-morning-post/#product",
@@ -420,7 +420,7 @@
   },
   {
    "name": "芯片",
-   "score": 8.26,
+   "score": 7.61,
    "days": 14,
    "latest": {
     "date": "2026-06-20",
@@ -472,8 +472,8 @@
   },
   {
    "name": "Claude",
-   "score": 7.58,
-   "days": 15,
+   "score": 6.9,
+   "days": 14,
    "latest": {
     "date": "2026-06-19",
     "url": "/posts/2026-06-18-ai-morning-post/#product",
@@ -524,7 +524,7 @@
   },
   {
    "name": "具身智能",
-   "score": 6.35,
+   "score": 6.03,
    "days": 8,
    "latest": {
     "date": "2026-06-17",
@@ -576,8 +576,8 @@
   },
   {
    "name": "腾讯",
-   "score": 5.55,
-   "days": 10,
+   "score": 5.16,
+   "days": 9,
    "latest": {
     "date": "2026-06-17",
     "url": "/posts/2026-06-16-ai-morning-post/#opinion",
@@ -628,8 +628,8 @@
   },
   {
    "name": "SpaceX",
-   "score": 5.19,
-   "days": 9,
+   "score": 4.87,
+   "days": 8,
    "latest": {
     "date": "2026-06-18",
     "url": "/posts/2026-06-17-ai-morning-post/#company",
@@ -679,8 +679,60 @@
    ]
   },
   {
+   "name": "ChatGPT",
+   "score": 4.84,
+   "days": 8,
+   "latest": {
+    "date": "2026-06-21",
+    "url": "/posts/2026-06-20-ai-morning-post/#product",
+    "title": "ChatGPT 定时任务：向个人助理再进一步"
+   },
+   "links": [
+    {
+     "date": "2026-06-21",
+     "url": "/posts/2026-06-20-ai-morning-post/#product",
+     "title": "ChatGPT 定时任务：向个人助理再进一步"
+    },
+    {
+     "date": "2026-06-17",
+     "url": "/posts/2026-06-16-ai-morning-post/#opinion",
+     "title": "ChatGPT 市场份额首次跌破 50%"
+    },
+    {
+     "date": "2026-06-09",
+     "url": "/posts/2026-06-08-ai-morning-post/#product",
+     "title": "OpenAI宣布“聊天已死”，ChatGPT将变为Agent应用"
+    },
+    {
+     "date": "2026-06-08",
+     "url": "/posts/2026-06-07-ai-morning-post/#product",
+     "title": "ChatGPT新增Lockdown模式防提示注入"
+    },
+    {
+     "date": "2026-06-06",
+     "url": "/posts/2026-06-05-ai-morning-post/#company",
+     "title": "佛罗里达起诉 OpenAI 及 Altman：指 ChatGPT 为公共妨害"
+    },
+    {
+     "date": "2026-06-05",
+     "url": "/posts/2026-06-04-ai-morning-post/#product",
+     "title": "ChatGPT “梦”记忆系统：AI开始“记住”你的偏好"
+    },
+    {
+     "date": "2026-05-26",
+     "url": "/posts/2026-05-25-ai-morning-post/#company",
+     "title": "OpenAI联手巴西媒体巨头，ChatGPT引入可信新闻"
+    },
+    {
+     "date": "2026-05-24",
+     "url": "/posts/2026-05-23-ai-morning-post/#product",
+     "title": "ChatGPT推出PowerPoint插件，但警告会误删内容"
+    }
+   ]
+  },
+  {
    "name": "Codex",
-   "score": 4.87,
+   "score": 4.58,
    "days": 8,
    "latest": {
     "date": "2026-06-15",
@@ -727,48 +779,6 @@
      "date": "2026-05-23",
      "url": "/posts/2026-05-22-ai-morning-post/#product",
      "title": "OpenAI Appshots：Mac 窗口即 Codex 上下文"
-    }
-   ]
-  },
-  {
-   "name": "Agent Skills",
-   "score": 4.77,
-   "days": 6,
-   "latest": {
-    "date": "2026-06-15",
-    "url": "/posts/2026-06-14-ai-morning-post/#opensource",
-    "title": "Anthropic 官方 Agent Skills 仓库：Agent 技能标准化第一步"
-   },
-   "links": [
-    {
-     "date": "2026-06-15",
-     "url": "/posts/2026-06-14-ai-morning-post/#opensource",
-     "title": "Anthropic 官方 Agent Skills 仓库：Agent 技能标准化第一步"
-    },
-    {
-     "date": "2026-06-14",
-     "url": "/posts/2026-06-13-ai-morning-post/#opensource",
-     "title": "Agent Skills 框架兴起，Anthropic 推动标准化"
-    },
-    {
-     "date": "2026-06-12",
-     "url": "/posts/2026-06-11-ai-morning-post/#opensource",
-     "title": "Agent Skills 生态爆发：三个仓库齐上 GitHub 趋势"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#opensource",
-     "title": "Google 官方 Agent Skills 仓库"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 库，覆盖自家产品技能"
-    },
-    {
-     "date": "2026-05-29",
-     "url": "/posts/2026-05-28-ai-morning-post/#opensource",
-     "title": "Anthropic 发布 Agent Skills 开源仓库"
     }
    ]
   }
