@@ -11,6 +11,24 @@ wide: true
 <ul class="cover-list" role="list">
 
 <li class="cover-row">
+<a class="cover-media" href="https://dashboard.ssbx.site/"><img src="/marginalia/assets/img/site/covers/bodhi-web.jpg" alt="BODHI 制片人预览板实际界面：左侧导航 + 镜次面板里一格格电影级镜头卡，每张标着选用 take 和单镜花费" loading="lazy"></a>
+<div class="cover-body" markdown="1">
+## BODHI 制片人预览板 (bodhi-web)
+
+> 一个人用 AI 拍佛经故事电视剧，靠这块**只读制片台**把上千次零散生成拢成一部可追溯、可续跑的成片。不是数据库，直接读项目自己的账本。
+
+13 个视图覆盖整条流水线：镜次面板（每镜的选用 take / 帧数 / 单镜成本 / 筛选）、角色库（锁定定妆 + 身份配色 + 跨集一致性）、场记一致性（逐场光线 / 在场人物 / 服化道，从账本回生）、预算（按 stage / 按集 / top 单镜）、运行日志（append-only `runs.jsonl`，每次生成的 prompt / 参考图 / 成本 / 产物 sha）、剧情分镜、活动时间线…… 这块板是 E01 恒伽达整集（17 分钟 / 122 镜 / 800+ 次生成）的真实快照。
+
+→ [打开只读 dashboard](https://dashboard.ssbx.site/)（公开演示，完整一集）
+→ [源代码 bodhi-pipeline](https://github.com/pyf-labrary/bodhi-pipeline)（MIT 开源：项目 CLI + 这块 dashboard）
+
+技术栈：后端零重依赖——Python 标准库 + Pillow（缩略图），不接数据库、直接读 `runs.jsonl` / 状态账本；前端原生 JS + Tailwind。`export_static.py` 把跑着的只读板烘成一个纯静态站（强制只读、抹掉所有编辑入口、把查询端点烤成静态 JSON、只拷被 API 引用的媒体），nginx + certbot 托管，这个公开演示就是这么来的。
+
+*上线时间：2026-06-21。*
+</div>
+</li>
+
+<li class="cover-row">
 <a class="cover-media" href="https://github.com/pyf-labrary/fanbox-web"><img src="/marginalia/assets/img/site/covers/fanbox-web.jpg" alt="翻箱 Web 版实际界面：左侧文件网格 + 底部内嵌终端正在跑命令" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 翻箱 Web 版 (fork 花叔作品)
