@@ -150,9 +150,10 @@ body::before {
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: .55rem 1.6rem;
+  align-items: center;
+  gap: .55rem 1.1rem;
   font-family: var(--sans);
-  font-size: .92rem;
+  font-size: .9rem;
 }
 .site-nav a {
   color: var(--ink-soft);
@@ -858,6 +859,11 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
   margin: 0 .8rem;
 }
 
+/* —— 桌面→平板过渡：收紧导航间距，让 8 链接 + 消息按钮在一行内放下 —— */
+@media (max-width: 1120px) {
+  .site-nav { gap: .5rem .8rem; font-size: .86rem; }
+}
+
 /* ---- Mobile ---- */
 @media (max-width: 960px) {
   .ai-hot-wrap {
@@ -869,7 +875,7 @@ li > ul, li > ol { margin-top: .35em; margin-bottom: .35em; }
   .ai-hot-post { grid-column: 1; }
   .ai-hot-toc { display: none; }
   .ai-hot-toc-mobile { display: block; }
-  .site-nav { gap: .5rem 1.2rem; font-size: .88rem; }
+  .site-nav { gap: .5rem .8rem; font-size: .86rem; }
   .brand-tag { display: none; }
 }
 @media (max-width: 720px) {
