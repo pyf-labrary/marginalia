@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Claude Code 信息架构进阶教程：从中级到大师"
+category: "Claude · LLM"
 date: "2026-05-07 12:00:00 +0800"
 author: "Marginalia"
 description: "基于第一性原理的 Claude Code 信息架构进阶教程：八层注入模型、memory 写作模板、四棵决策树、反模式速查与沉淀循环。从中级到大师水平。"

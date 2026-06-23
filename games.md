@@ -292,6 +292,35 @@ permalink: /games/
     font-style: italic;
   }
 
+  /* —— card link wrapper (card became a <div> so reactions can live outside the <a>) —— */
+  .game-link { display: block; color: inherit; text-decoration: none; position: relative; }
+
+  /* —— compact reactions over each cover (top-left, mirrors ▶ Play top-right) —— */
+  .game-react {
+    position: absolute; top: 1.1rem; left: 1.1rem; z-index: 4;
+    display: inline-flex; gap: .4rem; opacity: .85; transition: opacity .3s;
+  }
+  .game-card:hover .game-react { opacity: 1; }
+  .game-react .mg-mini {
+    background: rgba(12,12,16,0.58); backdrop-filter: blur(6px);
+    border: 1px solid rgba(245,239,225,0.18); color: #f5efe1;
+  }
+  .game-react .mg-mini:hover { border-color: #d97570; color: #d97570; }
+  .game-react .mg-heart { color: rgba(245,239,225,0.6); }
+  .game-react .mg-like.liked { color: #d97570; border-color: #d97570; }
+  .game-react .mg-like.liked .mg-heart { color: #d97570; }
+
+  /* —— filter chips tuned for the dark gallery shell —— */
+  .games-inner .mg-filter-bar { margin: 0 0 2.6rem; }
+  .games-inner .ms-chip {
+    color: rgba(245,239,225,0.78); border-color: rgba(245,239,225,0.22); background: transparent;
+  }
+  .games-inner .ms-chip span { color: rgba(245,239,225,0.5); }
+  .games-inner .ms-chip:hover { border-color: #d97570; color: #d97570; }
+  .games-inner .ms-chip.active { background: #8b2e2a; border-color: #8b2e2a; color: #f5efe1; }
+  .games-inner .ms-chip.active span { color: rgba(245,239,225,0.7); }
+  .games-inner .mg-filter-empty { color: #8a7f73; }
+
   @media (max-width: 800px) {
     .games-shell { padding: 3rem 0 4rem; }
     .games-inner { padding: 0 1.2rem; }
@@ -318,28 +347,36 @@ permalink: /games/
     {% if games.size == 0 %}
       <p class="games-empty">展厅暂时空着——下一局正在装裱。</p>
     {% else %}
-    <div class="games-grid">
-      {% for g in games %}
-        {% assign is_external = false %}
-        {% if g.play_url contains '://' %}{% assign is_external = true %}{% endif %}
-        <a class="game-card{% if forloop.first %} is-hero{% endif %}" href="{% if is_external %}{{ g.play_url }}{% else %}{{ g.play_url | relative_url }}{% endif %}"{% if is_external %} target="_blank" rel="noopener"{% endif %}>
-          <div class="game-frame">
-            {% if g.cover contains '.svg' %}
-              <img class="svg-cover" src="{{ g.cover | relative_url }}" alt="{{ g.title | escape }}" loading="lazy">
-            {% else %}
-              <img src="{{ g.cover | relative_url }}" alt="{{ g.title | escape }}" loading="lazy">
-            {% endif %}
+    <section data-filter data-filter-all="全部" data-filter-order="3D · 沉浸,AI · 多智能体,卡牌 · Roguelike,叙事 · 模拟,休闲 · 经典">
+      <div class="mg-filter-bar" data-filter-chips></div>
+      <div class="games-grid">
+        {% for g in games %}
+          {% assign is_external = false %}
+          {% if g.play_url contains '://' %}{% assign is_external = true %}{% endif %}
+          <div class="game-card{% if forloop.first %} is-hero{% endif %}" data-cats="{{ g.category | escape }}">
+            <a class="game-link" href="{% if is_external %}{{ g.play_url }}{% else %}{{ g.play_url | relative_url }}{% endif %}"{% if is_external %} target="_blank" rel="noopener"{% endif %}>
+              <div class="game-frame">
+                {% if g.cover contains '.svg' %}
+                  <img class="svg-cover" src="{{ g.cover | relative_url }}" alt="{{ g.title | escape }}" loading="lazy">
+                {% else %}
+                  <img src="{{ g.cover | relative_url }}" alt="{{ g.title | escape }}" loading="lazy">
+                {% endif %}
+              </div>
+              <span class="game-play">▶ Play</span>
+              <div class="game-meta">
+                <h2 class="game-name">{{ g.title }}</h2>
+                {% if g.description and g.description != "" %}
+                  <p class="game-desc">{{ g.description }}</p>
+                {% endif %}
+              </div>
+            </a>
+            <div class="mg-card-react game-react" data-mg-react data-mode="compact"
+                 data-slug="game:{{ g.slug }}" data-title="{{ g.title | escape }}"
+                 data-url="{% if is_external %}{{ g.play_url }}{% else %}{{ g.play_url | relative_url }}{% endif %}"></div>
           </div>
-          <span class="game-play">▶ Play</span>
-          <div class="game-meta">
-            <h2 class="game-name">{{ g.title }}</h2>
-            {% if g.description and g.description != "" %}
-              <p class="game-desc">{{ g.description }}</p>
-            {% endif %}
-          </div>
-        </a>
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
+    </section>
     {% endif %}
   </div>
 </div>
@@ -431,3 +468,5 @@ permalink: /games/
   requestAnimationFrame(frame);
 })();
 </script>
+
+<script src="{{ '/assets/js/filter.js' | relative_url }}" defer></script>

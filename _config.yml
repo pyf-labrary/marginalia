@@ -24,6 +24,10 @@ logo: /assets/img/logo.svg
 baseurl: "/marginalia"
 url: "https://pyf-labrary.github.io"
 
+# 点赞/评论后端（自托管 FastAPI+SQLite，pyf 广州）。详见 comments-server/。
+# 留空则整个互动层（点赞/评论/消息盒子）静默禁用。
+comments_api: "https://mg-api.panyifeng.xyz"
+
 markdown: kramdown
 highlighter: rouge
 permalink: /posts/:year-:month-:day-:title/
@@ -59,6 +63,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - .jekyll-cache
+  - comments-server    # 自托管点赞/评论后端，不进 Pages 构建
 
 # Default front matter — every post gets an OG type and gives the SEO tag
 # enough info to emit BlogPosting structured data.

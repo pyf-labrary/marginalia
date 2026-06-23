@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Fable 5 首周「逆天 demo」盘点与技术实现拆解"
+category: "Claude · LLM"
 date: "2026-06-11 12:00:00 +0800"
 author: "Marginalia"
 description: "Fable 5 发布首周刷屏 demo 全景：photoreal 3D 世界、单 prompt 可玩游戏、9.5 小时工程长跑，以及它们的技术实现拆解——真实地理数据当素材、手写 GLSL、agentic 自修复。"

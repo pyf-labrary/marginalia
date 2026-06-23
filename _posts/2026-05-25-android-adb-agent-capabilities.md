@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Android ADB + Agent 能做哪些事"
+category: "Agent 工程"
 date: "2026-05-25 12:00:00 +0800"
 author: "Marginalia"
 description: "用 ADB 通道 + 多模态大模型操控 Android 的能力边界研究：对照豆包 AI 手机（UI-TARS）实现原理，逐项分级 ADB 在权限管控、装卸、文件整理、应用下载、一键换机上的可行性。"

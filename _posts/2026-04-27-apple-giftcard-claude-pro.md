@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Apple 礼品卡内购 Claude Pro 完整指南"
+category: "Claude · LLM"
 date: "2026-04-27 12:00:00 +0800"
 author: "Marginalia"
 description: "用 Apple 礼品卡走 iOS 内购订阅 Claude Pro 的完整流程：为什么走这条路（绕开发卡归属地校验）、礼品卡获取与兑换、Apple ID 区域配置、订阅续费与坑点整理。"

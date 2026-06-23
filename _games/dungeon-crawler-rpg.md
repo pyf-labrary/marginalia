@@ -1,6 +1,7 @@
 ---
 slug: "dungeon-crawler-rpg"
 title: "暗影地牢 - Shadow Dungeon RPG"
+category: "卡牌 · Roguelike"
 description: ""
 cover: "/assets/img/games/dungeon-crawler-rpg.jpg"
 play_url: "/games/dungeon-crawler-rpg/"

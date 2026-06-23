@@ -255,6 +255,7 @@ def add_game(src: Path, args) -> Path | None:
         f'slug: "{yaml_escape(slug)}"',
         f'title: "{yaml_escape(title)}"',
         f'description: "{yaml_escape(description)}"',
+        f'category: "{yaml_escape(args.category)}"',
         f'cover: "{yaml_escape(cover_rel)}"',
         f'play_url: "/games/{slug}/"',
         f'date: "{date_str}"',
@@ -295,6 +296,9 @@ def main() -> None:
     ap.add_argument("--slug", help="override slug (single source only)")
     ap.add_argument("--title", help="override title (single source only)")
     ap.add_argument("--description", help="override description (single source only)")
+    ap.add_argument("--category", default="休闲 · 经典",
+                    help="游戏分类 chip（games.md 筛选用），如 '3D · 沉浸' / 'AI · 多智能体' / "
+                         "'卡牌 · Roguelike' / '叙事 · 模拟' / '休闲 · 经典'")
     ap.add_argument("--cover", help="use this image file as cover instead of capturing")
     ap.add_argument("--shot-delay", type=float, default=2.0, help="seconds to wait before screenshot")
     ap.add_argument("--shot-wait-selector", help="CSS selector to wait for before screenshot")

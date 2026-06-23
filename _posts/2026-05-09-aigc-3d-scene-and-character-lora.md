@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "AIGC 短剧的跨镜空间一致性 + 角色一致性工艺实测"
+category: "AIGC 工艺"
 date: "2026-05-09 12:00:00 +0800"
 author: "Marginalia"
 description: "AIGC 短剧有两个绕不开的痛点：同一场景切镜不能错乱（空间一致性），以及角色跨镜跨集不能漂移（身份一致性）。本文把 World Labs Marble、Apple SHARP、Zero123++、SDXL/Flux LoRA 几条路径全部跑了一遍，给出带单位成本的对比结论，以及一个反向优化的教训。"

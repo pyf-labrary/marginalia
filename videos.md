@@ -144,25 +144,33 @@ wide: true
 {% if videos.size == 0 %}
 <div class="videos-empty">暂无视频。第一条周报即将上线。</div>
 {% else %}
-<ul class="videos-list">
-  {% for v in videos %}
-  <li>
-    <a class="poster" href="{{ v.url | relative_url }}" aria-label="{{ v.title }}">
-      {% if v.poster %}<img src="{{ v.poster | relative_url }}" alt="" loading="lazy">{% endif %}
-      <span class="play"></span>
-      {% if v.duration %}<span class="duration">{{ v.duration }}</span>{% endif %}
-    </a>
-    <div class="meta">
-      {% if v.vol %}<div class="vol">{{ v.vol }}</div>{% endif %}
-      <h3 class="title"><a href="{{ v.url | relative_url }}">{{ v.title }}</a></h3>
-      <p class="desc">{{ v.description }}</p>
-      <div class="pills">
-        {% for tag in v.pills %}
-          <span class="brand-{{ tag.brand }}">{{ tag.label }}</span>
-        {% endfor %}
+<section data-filter data-filter-all="全部" data-filter-order="AI 周报,专题">
+  <div class="mg-filter-bar" data-filter-chips></div>
+  <ul class="videos-list">
+    {% for v in videos %}
+    {% if v.tags contains 'weekly' %}{% assign vcat = 'AI 周报' %}{% else %}{% assign vcat = '专题' %}{% endif %}
+    <li data-cats="{{ vcat }}">
+      <a class="poster" href="{{ v.url | relative_url }}" aria-label="{{ v.title }}">
+        {% if v.poster %}<img src="{{ v.poster | relative_url }}" alt="" loading="lazy">{% endif %}
+        <span class="play"></span>
+        {% if v.duration %}<span class="duration">{{ v.duration }}</span>{% endif %}
+      </a>
+      <div class="meta">
+        {% if v.vol %}<div class="vol">{{ v.vol }}</div>{% endif %}
+        <h3 class="title"><a href="{{ v.url | relative_url }}">{{ v.title }}</a></h3>
+        <p class="desc">{{ v.description }}</p>
+        <div class="pills">
+          {% for tag in v.pills %}
+            <span class="brand-{{ tag.brand }}">{{ tag.label }}</span>
+          {% endfor %}
+        </div>
+        <div class="mg-card-react" data-mg-react data-mode="compact"
+             data-slug="{{ v.url }}" data-title="{{ v.title | escape }}" data-url="{{ v.url | relative_url }}"></div>
       </div>
-    </div>
-  </li>
-  {% endfor %}
-</ul>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
 {% endif %}
+
+<script src="{{ '/assets/js/filter.js' | relative_url }}" defer></script>

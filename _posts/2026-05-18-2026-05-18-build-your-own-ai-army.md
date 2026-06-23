@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "搭建你自己的 AI 军团：从单兵 Copilot 到 85% 自动化的工程闭环"
+category: "Agent 工程"
 date: "2026-05-18 12:00:00 +0800"
 author: "Marginalia"
 description: "从单兵 Copilot 升级到 PM/Worker/Auditor 三层架构 AI 军团的 4-6 周施工路线图，含 GitLab + ZenTao + Confluence + 企微 + Sentry/Grafana 完整案例编制。"

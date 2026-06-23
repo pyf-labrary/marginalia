@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "不再手动同步:用自建 Headscale + Syncthing 搭一套多机分布式互联与同步 mesh"
+category: "基础设施"
 date: "2026-05-29 12:00:00 +0800"
 author: "Marginalia"
 description: "多台机器共享一个工作目录、手动同步老分叉冲突?用自建 Headscale(Tailscale 控制面)+ Syncthing 搭两层独立 mesh:连通层让任意机器互相可达并能 SSH,同步层存盘即双向同步、离线机器上线自动追上。含完整架构、选型理由(为何自建控制面)、五个踩坑(CGNAT 网段撞车 / WSL / #include 死锁等)、性能与冲突语义、安全模型与取舍。"

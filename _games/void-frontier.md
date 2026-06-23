@@ -1,6 +1,7 @@
 ---
 slug: "void-frontier"
 title: "Void Frontier - Space Exploration"
+category: "3D · 沉浸"
 description: ""
 cover: "/assets/img/games/void-frontier.jpg"
 play_url: "/games/void-frontier/"
