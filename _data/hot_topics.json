@@ -1,17 +1,22 @@
 {
- "generated": "2026-06-23",
+ "generated": "2026-06-24",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 40.32,
+   "score": 42.03,
    "days": 25,
    "latest": {
-    "date": "2026-06-23",
-    "url": "/posts/2026-06-22-ai-morning-post/#opinion",
-    "title": "吴恩达戳破 AI 幻象：未来属于 10 人小队加 Agent"
+    "date": "2026-06-24",
+    "url": "/posts/2026-06-23-ai-morning-post/#model-release",
+    "title": "豆包2.1：Agent自主完成芯片设计代码"
    },
    "links": [
+    {
+     "date": "2026-06-24",
+     "url": "/posts/2026-06-23-ai-morning-post/#model-release",
+     "title": "豆包2.1：Agent自主完成芯片设计代码"
+    },
     {
      "date": "2026-06-23",
      "url": "/posts/2026-06-22-ai-morning-post/#opinion",
@@ -46,18 +51,13 @@
      "date": "2026-06-14",
      "url": "/posts/2026-06-13-ai-morning-post/#product",
      "title": "Firecrawl Prometheus：让 Web 数据 Agent 从实验走向部署"
-    },
-    {
-     "date": "2026-06-13",
-     "url": "/posts/2026-06-12-ai-morning-post/#research",
-     "title": "SpatialClaw: 重新定义智能体空间推理接口"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 31.94,
-   "days": 24,
+   "score": 30.06,
+   "days": 23,
    "latest": {
     "date": "2026-06-23",
     "url": "/posts/2026-06-22-ai-morning-post/#model-release",
@@ -108,14 +108,19 @@
   },
   {
    "name": "Anthropic",
-   "score": 25.52,
+   "score": 25.77,
    "days": 26,
    "latest": {
-    "date": "2026-06-23",
-    "url": "/posts/2026-06-22-ai-morning-post/#opinion",
-    "title": "Anthropic 如何自我引发 AI 出口禁令"
+    "date": "2026-06-24",
+    "url": "/posts/2026-06-23-ai-morning-post/#company",
+    "title": "Anthropic与美光联合研发AI内存架构"
    },
    "links": [
+    {
+     "date": "2026-06-24",
+     "url": "/posts/2026-06-23-ai-morning-post/#company",
+     "title": "Anthropic与美光联合研发AI内存架构"
+    },
     {
      "date": "2026-06-23",
      "url": "/posts/2026-06-22-ai-morning-post/#opinion",
@@ -150,24 +155,24 @@
      "date": "2026-06-16",
      "url": "/posts/2026-06-15-ai-morning-post/#opinion",
      "title": "Stratechery：Anthropic的安全是其超级力量"
-    },
-    {
-     "date": "2026-06-15",
-     "url": "/posts/2026-06-14-ai-morning-post/#research",
-     "title": "Anthropic让Claude学化学：从推理到实验设计"
     }
    ]
   },
   {
    "name": "NVIDIA",
-   "score": 10.9,
-   "days": 16,
+   "score": 11.19,
+   "days": 17,
    "latest": {
-    "date": "2026-06-23",
-    "url": "/posts/2026-06-22-ai-morning-post/#company",
-    "title": "NVIDIA 在 ISC 2026 发布多项 AI 科学计算新品"
+    "date": "2026-06-24",
+    "url": "/posts/2026-06-23-ai-morning-post/#opensource",
+    "title": "NVIDIA发布官方AI Agent技能库，加速企业应用"
    },
    "links": [
+    {
+     "date": "2026-06-24",
+     "url": "/posts/2026-06-23-ai-morning-post/#opensource",
+     "title": "NVIDIA发布官方AI Agent技能库，加速企业应用"
+    },
     {
      "date": "2026-06-23",
      "url": "/posts/2026-06-22-ai-morning-post/#company",
@@ -202,18 +207,13 @@
      "date": "2026-06-11",
      "url": "/posts/2026-06-10-ai-morning-post/#company",
      "title": "NVIDIA可信计算助力Apple扩展Private Cloud Compute"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#company",
-     "title": "Apple 扩展私有云，采用 NVIDIA 机密计算"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 10.74,
-   "days": 15,
+   "score": 9.97,
+   "days": 14,
    "latest": {
     "date": "2026-06-23",
     "url": "/posts/2026-06-22-ai-morning-post/#opinion",
@@ -263,8 +263,164 @@
    ]
   },
   {
+   "name": "芯片",
+   "score": 9.61,
+   "days": 13,
+   "latest": {
+    "date": "2026-06-24",
+    "url": "/posts/2026-06-23-ai-morning-post/#model-release",
+    "title": "豆包2.1：Agent自主完成芯片设计代码"
+   },
+   "links": [
+    {
+     "date": "2026-06-24",
+     "url": "/posts/2026-06-23-ai-morning-post/#model-release",
+     "title": "豆包2.1：Agent自主完成芯片设计代码"
+    },
+    {
+     "date": "2026-06-23",
+     "url": "/posts/2026-06-22-ai-morning-post/#company",
+     "title": "高通接近 40 亿美元收购 AI 芯片初创公司 Modular"
+    },
+    {
+     "date": "2026-06-20",
+     "url": "/posts/2026-06-19-ai-morning-post/#company",
+     "title": "Amazon计划出售自研AI芯片，正面挑战Nvidia"
+    },
+    {
+     "date": "2026-06-19",
+     "url": "/posts/2026-06-18-ai-morning-post/#company",
+     "title": "AWS拟向外部数据中心出售自研AI芯片，直接挑战Nvidia"
+    },
+    {
+     "date": "2026-06-10",
+     "url": "/posts/2026-06-09-ai-morning-post/#opinion",
+     "title": "北京 2950 亿美元 AI 基建计划要求 80% 国产芯片"
+    },
+    {
+     "date": "2026-06-08",
+     "url": "/posts/2026-06-07-ai-morning-post/#company",
+     "title": "OpenAI芯片核心叛逃Anthropic"
+    },
+    {
+     "date": "2026-06-07",
+     "url": "/posts/2026-06-06-ai-morning-post/#company",
+     "title": "SpaceX与Google签署每月9.2亿美元AI芯片协议"
+    },
+    {
+     "date": "2026-06-06",
+     "url": "/posts/2026-06-05-ai-morning-post/#product",
+     "title": "比亚迪4nm智驾芯片：智能化下半场拼算力"
+    }
+   ]
+  },
+  {
+   "name": "Google",
+   "score": 9.26,
+   "days": 11,
+   "latest": {
+    "date": "2026-06-24",
+    "url": "/posts/2026-06-23-ai-morning-post/#product",
+    "title": "Google默认Interactions API，统一Gemini Agent调用"
+   },
+   "links": [
+    {
+     "date": "2026-06-24",
+     "url": "/posts/2026-06-23-ai-morning-post/#product",
+     "title": "Google默认Interactions API，统一Gemini Agent调用"
+    },
+    {
+     "date": "2026-06-22",
+     "url": "/posts/2026-06-21-ai-morning-post/#model-release",
+     "title": "Google开源TimesFM：时序预测基础模型"
+    },
+    {
+     "date": "2026-06-19",
+     "url": "/posts/2026-06-18-ai-morning-post/#product",
+     "title": "Google 新智能音箱 Home Speaker 预售，100美元Gemini驱动"
+    },
+    {
+     "date": "2026-06-17",
+     "url": "/posts/2026-06-16-ai-morning-post/#opinion",
+     "title": "柏林法院：Google AI 摘要被视为新搜索格式而非原创内容"
+    },
+    {
+     "date": "2026-06-13",
+     "url": "/posts/2026-06-12-ai-morning-post/#company",
+     "title": "Google联合FBI起诉中国AI诈骗组织"
+    },
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#model-release",
+     "title": "Google开源DiffusionGemma，文本生成速度提升4倍"
+    },
+    {
+     "date": "2026-06-10",
+     "url": "/posts/2026-06-09-ai-morning-post/#model-release",
+     "title": "Gemma 4 12B：Google开源无编码器多模态模型"
+    },
+    {
+     "date": "2026-06-09",
+     "url": "/posts/2026-06-08-ai-morning-post/#company",
+     "title": "Google、NVIDIA考虑英特尔作为台积电替代方案"
+    }
+   ]
+  },
+  {
+   "name": "Meta",
+   "score": 9.13,
+   "days": 16,
+   "latest": {
+    "date": "2026-06-24",
+    "url": "/posts/2026-06-23-ai-morning-post/#company",
+    "title": "Meta员工数据泄露，叫停AI跟踪计划"
+   },
+   "links": [
+    {
+     "date": "2026-06-24",
+     "url": "/posts/2026-06-23-ai-morning-post/#company",
+     "title": "Meta员工数据泄露，叫停AI跟踪计划"
+    },
+    {
+     "date": "2026-06-21",
+     "url": "/posts/2026-06-20-ai-morning-post/#company",
+     "title": "Meta员工士气跌至20年最低，CTO承认AI重组失败"
+    },
+    {
+     "date": "2026-06-17",
+     "url": "/posts/2026-06-16-ai-morning-post/#product",
+     "title": "Meta 推出 Facebook AI Mode，聚合旗下平台公开数据"
+    },
+    {
+     "date": "2026-06-16",
+     "url": "/posts/2026-06-15-ai-morning-post/#product",
+     "title": "Meta推出Facebook AI模式：聚合公开信息做智能交互"
+    },
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#company",
+     "title": "北京要求逆转交易，Meta 放弃 2 亿美元收购 Manus"
+    },
+    {
+     "date": "2026-06-14",
+     "url": "/posts/2026-06-13-ai-morning-post/#company",
+     "title": "Meta AI 部门被曝“灵魂折磨”，员工濒临反抗"
+    },
+    {
+     "date": "2026-06-13",
+     "url": "/posts/2026-06-12-ai-morning-post/#company",
+     "title": "Meta AI部门被曝混乱，工程师称“灵魂磨灭”"
+    },
+    {
+     "date": "2026-06-11",
+     "url": "/posts/2026-06-10-ai-morning-post/#company",
+     "title": "Meta签署在印首个AI数据中心协议，与Reliance合作"
+    }
+   ]
+  },
+  {
    "name": "阿里",
-   "score": 9.55,
+   "score": 8.97,
    "days": 14,
    "latest": {
     "date": "2026-06-23",
@@ -315,164 +471,8 @@
    ]
   },
   {
-   "name": "Google",
-   "score": 8.71,
-   "days": 10,
-   "latest": {
-    "date": "2026-06-22",
-    "url": "/posts/2026-06-21-ai-morning-post/#model-release",
-    "title": "Google开源TimesFM：时序预测基础模型"
-   },
-   "links": [
-    {
-     "date": "2026-06-22",
-     "url": "/posts/2026-06-21-ai-morning-post/#model-release",
-     "title": "Google开源TimesFM：时序预测基础模型"
-    },
-    {
-     "date": "2026-06-19",
-     "url": "/posts/2026-06-18-ai-morning-post/#product",
-     "title": "Google 新智能音箱 Home Speaker 预售，100美元Gemini驱动"
-    },
-    {
-     "date": "2026-06-17",
-     "url": "/posts/2026-06-16-ai-morning-post/#opinion",
-     "title": "柏林法院：Google AI 摘要被视为新搜索格式而非原创内容"
-    },
-    {
-     "date": "2026-06-13",
-     "url": "/posts/2026-06-12-ai-morning-post/#company",
-     "title": "Google联合FBI起诉中国AI诈骗组织"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#model-release",
-     "title": "Google开源DiffusionGemma，文本生成速度提升4倍"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#model-release",
-     "title": "Gemma 4 12B：Google开源无编码器多模态模型"
-    },
-    {
-     "date": "2026-06-09",
-     "url": "/posts/2026-06-08-ai-morning-post/#company",
-     "title": "Google、NVIDIA考虑英特尔作为台积电替代方案"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#model-release",
-     "title": "Google发布Gemma 4 QAT模型，优化移动端效率"
-    }
-   ]
-  },
-  {
-   "name": "Meta",
-   "score": 8.65,
-   "days": 15,
-   "latest": {
-    "date": "2026-06-21",
-    "url": "/posts/2026-06-20-ai-morning-post/#company",
-    "title": "Meta员工士气跌至20年最低，CTO承认AI重组失败"
-   },
-   "links": [
-    {
-     "date": "2026-06-21",
-     "url": "/posts/2026-06-20-ai-morning-post/#company",
-     "title": "Meta员工士气跌至20年最低，CTO承认AI重组失败"
-    },
-    {
-     "date": "2026-06-17",
-     "url": "/posts/2026-06-16-ai-morning-post/#product",
-     "title": "Meta 推出 Facebook AI Mode，聚合旗下平台公开数据"
-    },
-    {
-     "date": "2026-06-16",
-     "url": "/posts/2026-06-15-ai-morning-post/#product",
-     "title": "Meta推出Facebook AI模式：聚合公开信息做智能交互"
-    },
-    {
-     "date": "2026-06-15",
-     "url": "/posts/2026-06-14-ai-morning-post/#company",
-     "title": "北京要求逆转交易，Meta 放弃 2 亿美元收购 Manus"
-    },
-    {
-     "date": "2026-06-14",
-     "url": "/posts/2026-06-13-ai-morning-post/#company",
-     "title": "Meta AI 部门被曝“灵魂折磨”，员工濒临反抗"
-    },
-    {
-     "date": "2026-06-13",
-     "url": "/posts/2026-06-12-ai-morning-post/#company",
-     "title": "Meta AI部门被曝混乱，工程师称“灵魂磨灭”"
-    },
-    {
-     "date": "2026-06-11",
-     "url": "/posts/2026-06-10-ai-morning-post/#company",
-     "title": "Meta签署在印首个AI数据中心协议，与Reliance合作"
-    },
-    {
-     "date": "2026-06-08",
-     "url": "/posts/2026-06-07-ai-morning-post/#company",
-     "title": "Meta确认数千Instagram因AI聊天机器人漏洞被黑"
-    }
-   ]
-  },
-  {
-   "name": "芯片",
-   "score": 8.29,
-   "days": 13,
-   "latest": {
-    "date": "2026-06-23",
-    "url": "/posts/2026-06-22-ai-morning-post/#company",
-    "title": "高通接近 40 亿美元收购 AI 芯片初创公司 Modular"
-   },
-   "links": [
-    {
-     "date": "2026-06-23",
-     "url": "/posts/2026-06-22-ai-morning-post/#company",
-     "title": "高通接近 40 亿美元收购 AI 芯片初创公司 Modular"
-    },
-    {
-     "date": "2026-06-20",
-     "url": "/posts/2026-06-19-ai-morning-post/#company",
-     "title": "Amazon计划出售自研AI芯片，正面挑战Nvidia"
-    },
-    {
-     "date": "2026-06-19",
-     "url": "/posts/2026-06-18-ai-morning-post/#company",
-     "title": "AWS拟向外部数据中心出售自研AI芯片，直接挑战Nvidia"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#opinion",
-     "title": "北京 2950 亿美元 AI 基建计划要求 80% 国产芯片"
-    },
-    {
-     "date": "2026-06-08",
-     "url": "/posts/2026-06-07-ai-morning-post/#company",
-     "title": "OpenAI芯片核心叛逃Anthropic"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#company",
-     "title": "SpaceX与Google签署每月9.2亿美元AI芯片协议"
-    },
-    {
-     "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#product",
-     "title": "比亚迪4nm智驾芯片：智能化下半场拼算力"
-    },
-    {
-     "date": "2026-05-31",
-     "url": "/posts/2026-05-30-ai-morning-post/#company",
-     "title": "AI芯片创企Groq融资6.5亿美元，转向推理服务"
-    }
-   ]
-  },
-  {
    "name": "世界模型",
-   "score": 7.77,
+   "score": 7.29,
    "days": 13,
    "latest": {
     "date": "2026-06-19",
@@ -524,7 +524,7 @@
   },
   {
    "name": "Codex",
-   "score": 7.0,
+   "score": 6.65,
    "days": 8,
    "latest": {
     "date": "2026-06-23",
@@ -576,7 +576,7 @@
   },
   {
    "name": "具身智能",
-   "score": 6.32,
+   "score": 6.0,
    "days": 8,
    "latest": {
     "date": "2026-06-22",
@@ -627,8 +627,60 @@
    ]
   },
   {
+   "name": "算力",
+   "score": 5.35,
+   "days": 8,
+   "latest": {
+    "date": "2026-06-24",
+    "url": "/posts/2026-06-23-ai-morning-post/#company",
+    "title": "SpaceX签下Reflection AI，每月1.5亿算力供货"
+   },
+   "links": [
+    {
+     "date": "2026-06-24",
+     "url": "/posts/2026-06-23-ai-morning-post/#company",
+     "title": "SpaceX签下Reflection AI，每月1.5亿算力供货"
+    },
+    {
+     "date": "2026-06-22",
+     "url": "/posts/2026-06-21-ai-morning-post/#company",
+     "title": "英伟达让机器人自主研究，推动算力消耗"
+    },
+    {
+     "date": "2026-06-10",
+     "url": "/posts/2026-06-09-ai-morning-post/#company",
+     "title": "博通联合阿波罗和黑石设 350 亿美元 AI 算力平台"
+    },
+    {
+     "date": "2026-06-08",
+     "url": "/posts/2026-06-07-ai-morning-post/#company",
+     "title": "谷歌每月向SpaceX支付9.2亿美元算力"
+    },
+    {
+     "date": "2026-06-07",
+     "url": "/posts/2026-06-06-ai-morning-post/#opinion",
+     "title": "Sakana AI 赌注：让 AI 自我改进打破算力军备竞赛"
+    },
+    {
+     "date": "2026-06-06",
+     "url": "/posts/2026-06-05-ai-morning-post/#company",
+     "title": "谷歌每月付 SpaceX 9.2 亿美元租算力"
+    },
+    {
+     "date": "2026-05-31",
+     "url": "/posts/2026-05-30-ai-morning-post/#company",
+     "title": "软银拟投750亿欧元，法国或成欧洲AI算力中心"
+    },
+    {
+     "date": "2026-05-30",
+     "url": "/posts/2026-05-29-ai-morning-post/#company",
+     "title": "比亚迪自研 4nm AI 芯片，算力对标英伟达"
+    }
+   ]
+  },
+  {
    "name": "Siri",
-   "score": 5.52,
+   "score": 5.26,
    "days": 8,
    "latest": {
     "date": "2026-06-23",
@@ -679,96 +731,54 @@
    ]
   },
   {
-   "name": "开源模型",
-   "score": 5.16,
-   "days": 6,
+   "name": "腾讯",
+   "score": 5.19,
+   "days": 9,
    "latest": {
-    "date": "2026-06-23",
-    "url": "/posts/2026-06-22-ai-morning-post/#opinion",
-    "title": "转向开源模型几乎无损失"
+    "date": "2026-06-24",
+    "url": "/posts/2026-06-23-ai-morning-post/#product",
+    "title": "腾讯QQ邮箱内测Agently Mail，专为AI Agent设计"
    },
    "links": [
     {
-     "date": "2026-06-23",
-     "url": "/posts/2026-06-22-ai-morning-post/#opinion",
-     "title": "转向开源模型几乎无损失"
+     "date": "2026-06-24",
+     "url": "/posts/2026-06-23-ai-morning-post/#product",
+     "title": "腾讯QQ邮箱内测Agently Mail，专为AI Agent设计"
     },
     {
-     "date": "2026-06-22",
-     "url": "/posts/2026-06-21-ai-morning-post/#model-release",
-     "title": "Apertus开源模型：主权AI的底座"
-    },
-    {
-     "date": "2026-06-21",
-     "url": "/posts/2026-06-20-ai-morning-post/#model-release",
-     "title": "GLM-5.2：开源模型首次在幻觉率上碾压闭源"
-    },
-    {
-     "date": "2026-06-18",
-     "url": "/posts/2026-06-17-ai-morning-post/#model-release",
-     "title": "GLM-5.2：开源模型的前端编码新高度"
+     "date": "2026-06-17",
+     "url": "/posts/2026-06-16-ai-morning-post/#opinion",
+     "title": "腾讯 AI 下半场聚焦 agent 场景落地"
     },
     {
      "date": "2026-06-16",
-     "url": "/posts/2026-06-15-ai-morning-post/#opensource",
-     "title": "Open Interpreter轻量版：面向开源模型"
+     "url": "/posts/2026-06-15-ai-morning-post/#product",
+     "title": "腾讯AI加速场景落地：从元宝到WorkBuddy全面铺开"
     },
     {
-     "date": "2026-06-02",
-     "url": "/posts/2026-06-01-ai-morning-post/#model-release",
-     "title": "MiniMax M3：百万token的MoE开源模型"
-    }
-   ]
-  },
-  {
-   "name": "算力",
-   "score": 4.74,
-   "days": 8,
-   "latest": {
-    "date": "2026-06-22",
-    "url": "/posts/2026-06-21-ai-morning-post/#company",
-    "title": "英伟达让机器人自主研究，推动算力消耗"
-   },
-   "links": [
-    {
-     "date": "2026-06-22",
-     "url": "/posts/2026-06-21-ai-morning-post/#company",
-     "title": "英伟达让机器人自主研究，推动算力消耗"
+     "date": "2026-06-13",
+     "url": "/posts/2026-06-12-ai-morning-post/#product",
+     "title": "腾讯云护航世界杯直播，AI 首次大规模应用"
     },
     {
      "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#company",
-     "title": "博通联合阿波罗和黑石设 350 亿美元 AI 算力平台"
+     "url": "/posts/2026-06-09-ai-morning-post/#product",
+     "title": "腾讯云发布全栈智能体平台，一个入口串起所有 AI"
     },
     {
-     "date": "2026-06-08",
-     "url": "/posts/2026-06-07-ai-morning-post/#company",
-     "title": "谷歌每月向SpaceX支付9.2亿美元算力"
-    },
-    {
-     "date": "2026-06-07",
-     "url": "/posts/2026-06-06-ai-morning-post/#opinion",
-     "title": "Sakana AI 赌注：让 AI 自我改进打破算力军备竞赛"
+     "date": "2026-06-09",
+     "url": "/posts/2026-06-08-ai-morning-post/#opinion",
+     "title": "腾讯汤道生对话姚顺雨：AI 下半场竞争逻辑"
     },
     {
      "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#company",
-     "title": "谷歌每月付 SpaceX 9.2 亿美元租算力"
-    },
-    {
-     "date": "2026-05-31",
-     "url": "/posts/2026-05-30-ai-morning-post/#company",
-     "title": "软银拟投750亿欧元，法国或成欧洲AI算力中心"
+     "url": "/posts/2026-06-05-ai-morning-post/#product",
+     "title": "腾讯云WorkBuddy：从超级个体到超级团队"
     },
     {
      "date": "2026-05-30",
-     "url": "/posts/2026-05-29-ai-morning-post/#company",
-     "title": "比亚迪自研 4nm AI 芯片，算力对标英伟达"
-    },
-    {
-     "date": "2026-05-25",
-     "url": "/posts/2026-05-24-ai-morning-post/#opinion",
-     "title": "张璐：未来推理将吃掉70%算力，训练只占30%"
+     "url": "/posts/2026-05-29-ai-morning-post/#product",
+     "title": "腾讯连发两大 AI 创作平台：游戏与创意设计"
     }
    ]
   }
