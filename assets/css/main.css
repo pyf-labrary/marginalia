@@ -1920,3 +1920,131 @@ body.has-hero .site-header:not(.scrolled) .nav-music.playing { color: #8b2e2a; b
   .cover-row { grid-template-columns: 1fr; gap: 1rem; padding: 1.6rem 0; }
   .cover-media { max-width: 540px; }
 }
+
+/* ==========================================================================
+   互动层：点赞 / 评论 / 抽屉 / 消息盒子 / 分类筛选（reactions.js + filter.js）
+   ========================================================================== */
+
+/* —— header 消息按钮 + 未读红点 —— */
+.nav-msg { position: relative; }
+.msg-glyph { font-size: 1rem; line-height: 1; }
+.mg-msg-badge {
+  position: absolute; top: -5px; right: -5px;
+  min-width: 16px; height: 16px; padding: 0 4px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--sans); font-size: 10px; font-weight: 700; line-height: 1;
+  color: #fff; background: var(--accent);
+  border-radius: 999px; box-shadow: 0 0 0 2px var(--header-bg);
+}
+
+/* —— full reaction widget (post / video) —— */
+.mg-reactions { margin: 2.4rem 0 0; padding-top: 1.6rem; border-top: 1px solid var(--rule); }
+.mg-noscript { color: var(--muted); font-size: .9rem; font-family: var(--sans); }
+.mg-bar { display: flex; align-items: center; gap: .9rem; flex-wrap: wrap; margin-bottom: 1.6rem; }
+.mg-bar-label { font-family: var(--sans); font-size: .88rem; color: var(--muted); }
+
+.mg-like, .mg-cbtn {
+  display: inline-flex; align-items: center; gap: .45rem;
+  font-family: var(--sans); font-size: .95rem; font-variant-numeric: tabular-nums;
+  color: var(--ink-soft); background: var(--bg-tint);
+  border: 1px solid var(--rule); border-radius: 999px;
+  padding: .4em .95em; cursor: pointer; transition: all .16s ease;
+}
+.mg-like:hover, .mg-cbtn:hover { border-color: var(--accent-soft); color: var(--accent); }
+.mg-like:disabled, .mg-cbtn:disabled { opacity: .55; cursor: default; }
+.mg-like .mg-heart { color: var(--muted); transition: transform .2s ease, color .2s ease; }
+.mg-like.liked { color: var(--accent); border-color: var(--accent-soft); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.mg-like.liked .mg-heart { color: var(--accent); }
+.mg-like.pulse .mg-heart { animation: mg-pop .42s cubic-bezier(.2,.9,.3,1.4); }
+@keyframes mg-pop { 0%{transform:scale(1)} 35%{transform:scale(1.5)} 100%{transform:scale(1)} }
+
+.mg-mini { padding: .28em .7em; font-size: .82rem; background: transparent; }
+
+/* —— comment thread —— */
+.mg-thread-head { margin: 0 0 .9rem; }
+.mg-thread-count { font-family: var(--sans); font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.mg-thread-empty { font-family: var(--sans); font-size: .92rem; color: var(--muted); font-style: italic; margin: .6rem 0 1rem; }
+.mg-comment-list { list-style: none; margin: 1.2rem 0 0; padding: 0; }
+.mg-comment { padding: .9rem 0; border-top: 1px dashed var(--rule-soft); }
+.mg-comment:first-child { border-top: none; }
+.mg-c-head { display: flex; align-items: baseline; gap: .6rem; margin-bottom: .25rem; }
+.mg-c-name { font-family: var(--sans); font-weight: 600; font-size: .9rem; color: var(--ink); }
+.mg-c-time { font-family: var(--sans); font-size: .76rem; color: var(--muted); }
+.mg-c-body { font-size: .98rem; line-height: 1.65; color: var(--ink-soft); white-space: normal; word-break: break-word; }
+
+/* —— comment form —— */
+.mg-form { display: flex; flex-direction: column; gap: .6rem; margin: 0 0 .4rem; }
+.mg-f-name, .mg-f-body {
+  font-family: var(--sans); font-size: .94rem; color: var(--ink);
+  background: var(--bg); border: 1px solid var(--rule); border-radius: 4px; padding: .55em .75em;
+  width: 100%; resize: vertical;
+}
+.mg-f-name { max-width: 260px; }
+.mg-f-name:focus, .mg-f-body:focus { outline: none; border-color: var(--accent-soft); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 14%, transparent); }
+.mg-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.mg-f-row { display: flex; align-items: center; justify-content: space-between; gap: .8rem; }
+.mg-f-msg { font-family: var(--sans); font-size: .82rem; color: var(--muted); }
+.mg-f-msg.ok { color: var(--c-game); }
+.mg-f-msg.err { color: var(--accent); }
+.mg-f-submit {
+  font-family: var(--sans); font-size: .88rem; color: var(--bg); background: var(--accent);
+  border: 1px solid var(--accent); border-radius: 999px; padding: .42em 1.2em; cursor: pointer; transition: opacity .16s;
+}
+.mg-f-submit:hover { opacity: .9; }
+.mg-f-submit:disabled { opacity: .5; cursor: default; }
+
+/* —— compact card reaction bar —— */
+.mg-card-react { display: inline-flex; gap: .5rem; align-items: center; }
+.cover-body .mg-card-react { margin-top: .8rem; }
+.post-summary-text .mg-card-react { margin-top: .7rem; }
+.videos-list .mg-card-react { margin-top: .7rem; }
+
+/* —— shared slide-over overlay (drawer + msgbox) —— */
+.mg-backdrop { position: fixed; inset: 0; z-index: 80; background: rgba(20, 16, 10, 0); transition: background .28s ease; }
+.mg-backdrop.on { background: rgba(20, 16, 10, .42); }
+.mg-drawer, .mg-msgbox {
+  position: fixed; top: 0; right: 0; z-index: 90;
+  width: min(420px, 92vw); height: 100%;
+  background: var(--bg); border-left: 1px solid var(--rule);
+  box-shadow: var(--shadow-pop);
+  display: flex; flex-direction: column;
+  transform: translateX(102%); transition: transform .3s cubic-bezier(.3,.8,.3,1);
+}
+.mg-drawer.open, .mg-msgbox.open { transform: translateX(0); }
+.mg-drawer-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 1.1rem 1.3rem; border-bottom: 1px solid var(--rule); flex: 0 0 auto;
+}
+.mg-drawer-title { font-family: var(--serif); font-size: 1.15rem; margin: 0; color: var(--ink); line-height: 1.3; }
+.mg-x { font-size: 1rem; color: var(--muted); background: transparent; border: 0; cursor: pointer; padding: .3em; line-height: 1; }
+.mg-x:hover { color: var(--accent); }
+.mg-drawer-body, .mg-msg-body { padding: 1.2rem 1.3rem 2rem; overflow-y: auto; overscroll-behavior: contain; flex: 1 1 auto; }
+
+/* —— message box list —— */
+.mg-msg-list { list-style: none; margin: 0; padding: 0; }
+.mg-msg-item { border-bottom: 1px dashed var(--rule-soft); }
+.mg-msg-item:last-child { border-bottom: none; }
+.mg-msg-item a { display: block; padding: .85rem .5rem; text-decoration: none; color: inherit; border-radius: 4px; transition: background .15s; }
+.mg-msg-item a:hover { background: var(--bg-tint); }
+.mg-msg-item.unread a { box-shadow: inset 3px 0 0 var(--accent); }
+.mg-msg-top { display: flex; align-items: baseline; justify-content: space-between; gap: .6rem; margin-bottom: .2rem; }
+.mg-msg-text { font-size: .94rem; line-height: 1.55; color: var(--ink-soft); }
+.mg-msg-src { font-family: var(--sans); font-size: .76rem; color: var(--muted); margin-top: .25rem; }
+
+/* —— 分类筛选条（复用 .ms-chip，作用于 DOM 列表，见 filter.js）—— */
+.mg-filter-bar {
+  display: flex; flex-wrap: wrap; gap: .45rem;
+  margin: 1.6rem 0 0; padding-bottom: .2rem;
+}
+.mg-filter-empty { margin: 2rem 0; color: var(--muted); font-style: italic; font-family: var(--sans); }
+[data-filter-hidden] { display: none !important; }
+.note-cat {
+  font-family: var(--sans); font-size: .68rem; letter-spacing: .08em;
+  color: var(--accent); margin: .3rem 0 .1rem; font-weight: 600;
+}
+
+/* dark-mode games page has its own light filter chips already inheriting vars; keep contrast */
+@media (max-width: 720px) {
+  .mg-bar { gap: .6rem; }
+  .mg-drawer, .mg-msgbox { width: 100vw; }
+}

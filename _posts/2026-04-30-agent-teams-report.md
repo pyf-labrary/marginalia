@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Claude Code Agent Teams 功能学习报告"
+category: "Agent 工程"
 date: "2026-04-30 12:00:00 +0800"
 author: "Marginalia"
 description: "Claude Code 2.1.32 起的实验功能 Agent Teams：sub-agent 之间如何协作、怎么写 agent.md 编排团队、怎么启用、相比单 agent 模式的取舍与坑点整理。"

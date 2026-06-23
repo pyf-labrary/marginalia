@@ -184,6 +184,8 @@ def convert_file(src: Path, args) -> Path | None:
         "description": description,
         "excerpt": excerpt,
     }
+    if args.category:
+        meta["category"] = args.category
     if args.tags:
         meta["tags"] = [t.strip() for t in args.tags.split(",") if t.strip()]
     if args.keywords:
@@ -245,6 +247,9 @@ def main():
     ap = argparse.ArgumentParser(description="Convert plain markdown into a Marginalia Jekyll post.")
     ap.add_argument("sources", nargs="+", type=Path, help="input .md file(s)")
     ap.add_argument("--tags", help='comma-separated tags, e.g. "claude,agents"')
+    ap.add_argument("--category", default="",
+                    help="研究报告分类 chip（/notes/ 筛选用）：'Claude · LLM' / 'Agent 工程' / "
+                         "'AIGC 工艺' / '基础设施'")
     ap.add_argument("--keywords", help="free-form keywords meta for SEO")
     ap.add_argument("--description", help="override the auto-extracted description")
     ap.add_argument("--excerpt", help="override the auto-derived excerpt")

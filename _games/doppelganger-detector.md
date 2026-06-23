@@ -1,6 +1,7 @@
 ---
 slug: "doppelganger-detector"
 title: "分身检测员 - Doppelgänger Detector"
+category: "叙事 · 模拟"
 description: "1955年，作为公寓门卫，辨别分身怪物保护住户安全"
 cover: "/assets/img/games/doppelganger-detector.jpg"
 play_url: "/games/doppelganger-detector/"

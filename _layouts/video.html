@@ -69,6 +69,7 @@ layout: default
     {% endif %}
 
     <footer class="post-footer">
+      {% include reactions.html slug=page.url title=page.title url=page.url %}
       <p><a class="back" href="{{ '/videos/' | relative_url }}">← 所有视频</a></p>
     </footer>
   </article>

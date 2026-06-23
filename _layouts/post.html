@@ -60,6 +60,7 @@ layout: default
         </ul>
       </nav>
       {%- endif -%}
+      {% include reactions.html slug=page.url title=page.title url=page.url %}
       <p>
         <a class="back" href="{{ '/' | relative_url }}">← 回到所有批注</a>
       </p>

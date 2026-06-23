@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "用 Claude Code 搭 PM/Worker/Auditor 三 agent 自动开发流水线：Issue → PR → merge 全闭环"
+category: "Agent 工程"
 date: "2026-05-25 12:00:00 +0800"
 author: "Marginalia"
 description: "约 300 行脚本、不靠编排框架，用 Claude Code headless 把 Issue→PR→merge 串成 agent 间零人工干预的流水线；附真实运行账本与设计取舍。"

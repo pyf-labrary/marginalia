@@ -20,6 +20,7 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }} · 批注（不含晨报）" href="{{ '/feed-notes.xml' | absolute_url }}">
 
   {% include custom-head.html %}
+  {% if site.comments_api %}<meta name="mg-api" content="{{ site.comments_api }}">{% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2226%22 font-size=%2228%22 font-family=%22Georgia,serif%22 fill=%22%238b2e2a%22>¶</text></svg>">
 </head>
@@ -35,6 +36,7 @@
         <span class="brand-tag">{{ site.tagline }}</span>
       </a>
       <nav class="site-nav">
+        <a href="{{ '/notes/' | relative_url }}">研究报告</a>
         <a href="{{ '/ai-hot/' | relative_url }}">AI Hot</a>
         <a href="{{ '/videos/' | relative_url }}">Videos</a>
         <a href="{{ '/apps/' | relative_url }}">Apps</a>
@@ -55,6 +57,12 @@
                 aria-label="夜读伴奏" title="夜读伴奏">
           <span class="ambient-glyph" aria-hidden="true">♪</span>
         </button>
+        {% if site.comments_api %}
+        <button class="nav-btn nav-msg" type="button" data-msgbox-open aria-label="消息 · 最近评论" title="消息盒子">
+          <span class="msg-glyph" aria-hidden="true">✉</span>
+          <span class="mg-msg-badge" hidden></span>
+        </button>
+        {% endif %}
       </nav>
     </div>
   </header>
@@ -82,5 +90,6 @@
 
   <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
+  {% if site.comments_api %}<script src="{{ '/assets/js/reactions.js' | relative_url }}" defer></script>{% endif %}
 </body>
 </html>

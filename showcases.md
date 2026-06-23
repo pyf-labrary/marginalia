@@ -8,9 +8,12 @@ wide: true
 
 带版式的多页作品集。每一份都是独立的 HTML deck，不走博客模板。配图均为 deck 实际页面截图。
 
+<section data-filter data-filter-all="全部" data-filter-order="影视 · 导演,Agent · 治理,Claude · LLM,佛经 · 短剧,游戏设计">
+<div class="mg-filter-bar" data-filter-chips></div>
+
 <ul class="cover-list" role="list">
 
-<li class="cover-row">
+<li class="cover-row" data-cats="佛经 · 短剧">
 <a class="cover-media" href="https://ftp.ssbx.site/showcases/bodhi-e01-making/"><img src="/marginalia/assets/img/site/covers/bodhi-e01-making.jpg" alt="恒伽达 AI 制作复盘 deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 一个人，一支「模型剧组」· 恒伽达 AI 制作复盘
@@ -20,10 +23,12 @@ wide: true
 → [打开 Showcase](https://ftp.ssbx.site/showcases/bodhi-e01-making/)
 
 *整理时间：2026-06-20。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:bodhi-e01-making" data-title="一个人，一支模型剧组 · 恒伽达 AI 制作复盘" data-url="https://ftp.ssbx.site/showcases/bodhi-e01-making/"></div>
 </div>
 </li>
 
-<li class="cover-row">
+<li class="cover-row" data-cats="Agent · 治理">
 <a class="cover-media" href="/marginalia/showcases/arm/"><img src="/marginalia/assets/img/site/covers/arm.jpg" alt="ARM deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 智能体分层治理模型 · ARM
@@ -33,10 +38,12 @@ wide: true
 → [打开 Showcase](/marginalia/showcases/arm/)
 
 *整理时间：2026-06-01。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:arm" data-title="智能体分层治理模型 · ARM" data-url="/marginalia/showcases/arm/"></div>
 </div>
 </li>
 
-<li class="cover-row">
+<li class="cover-row" data-cats="Agent · 治理">
 <a class="cover-media" href="/marginalia/showcases/army-ops/"><img src="/marginalia/assets/img/site/covers/army-ops.jpg" alt="AI 军团作战看板截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## AI 军团 · 作战日志看板（LIVE）
@@ -46,10 +53,12 @@ wide: true
 → [打开看板](/marginalia/showcases/army-ops/)
 
 *整理时间：2026-05-26。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:army-ops" data-title="AI 军团 · 作战日志看板（LIVE）" data-url="/marginalia/showcases/army-ops/"></div>
 </div>
 </li>
 
-<li class="cover-row">
+<li class="cover-row" data-cats="影视 · 导演">
 <a class="cover-media" href="https://ftp.ssbx.site/showcases/ai-director/"><img src="/marginalia/assets/img/site/covers/ai-director.jpg" alt="AI 时代如何成为导演 deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## AI 时代如何成为导演 · Directing in the Age of AI
@@ -59,10 +68,12 @@ wide: true
 → [打开 Showcase](https://ftp.ssbx.site/showcases/ai-director/)
 
 *整理时间：2026-06-07。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:ai-director" data-title="AI 时代如何成为导演" data-url="https://ftp.ssbx.site/showcases/ai-director/"></div>
 </div>
 </li>
 
-<li class="cover-row">
+<li class="cover-row" data-cats="影视 · 导演">
 <a class="cover-media" href="https://ftp.ssbx.site/showcases/director-masterclass/"><img src="/marginalia/assets/img/site/covers/director-masterclass.jpg" alt="导演艺术大师课 deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 导演艺术大师课 · The Director's Craft
@@ -72,10 +83,12 @@ wide: true
 → [打开 Showcase](https://ftp.ssbx.site/showcases/director-masterclass/)
 
 *整理时间：2026-05-18。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:director-masterclass" data-title="导演艺术大师课 · The Director's Craft" data-url="https://ftp.ssbx.site/showcases/director-masterclass/"></div>
 </div>
 </li>
 
-<li class="cover-row">
+<li class="cover-row" data-cats="佛经 · 短剧">
 <a class="cover-media" href="https://ftp.ssbx.site/bodhi/docs/pitch-v2/"><img src="/marginalia/assets/img/site/covers/bodhi-pitch.jpg" alt="恒伽达 Pitch Deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 恒伽达 · BODHI 项目 Pitch Deck
@@ -85,10 +98,12 @@ S01·E01《恒伽达》立项手册：从《贤愚经》原典出发，七页 de
 → [打开 Pitch Deck](https://ftp.ssbx.site/bodhi/docs/pitch-v2/)
 
 *整理时间：2026-05-09。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:bodhi-pitch" data-title="恒伽达 · BODHI 项目 Pitch Deck" data-url="https://ftp.ssbx.site/bodhi/docs/pitch-v2/"></div>
 </div>
 </li>
 
-<li class="cover-row">
+<li class="cover-row" data-cats="Claude · LLM">
 <a class="cover-media" href="/marginalia/showcases/claude-april-2026/"><img src="/marginalia/assets/img/site/covers/claude-april-2026.jpg" alt="Claude April 2026 deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## Claude · April 2026
@@ -98,10 +113,12 @@ S01·E01《恒伽达》立项手册：从《贤愚经》原典出发，七页 de
 → [打开 Showcase](/marginalia/showcases/claude-april-2026/)
 
 *整理时间：2026-04-30。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:claude-april-2026" data-title="Claude · April 2026" data-url="/marginalia/showcases/claude-april-2026/"></div>
 </div>
 </li>
 
-<li class="cover-row">
+<li class="cover-row" data-cats="Claude · LLM">
 <a class="cover-media" href="/marginalia/showcases/claude-vs-codex-2026/"><img src="/marginalia/assets/img/site/covers/claude-vs-codex-2026.jpg" alt="Claude vs Codex 对比 deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## Claude vs Codex · 2026 订阅计划深度对比
@@ -111,10 +128,12 @@ S01·E01《恒伽达》立项手册：从《贤愚经》原典出发，七页 de
 → [打开 Showcase](/marginalia/showcases/claude-vs-codex-2026/)
 
 *整理时间：2026-04-30。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:claude-vs-codex-2026" data-title="Claude vs Codex · 2026 订阅计划深度对比" data-url="/marginalia/showcases/claude-vs-codex-2026/"></div>
 </div>
 </li>
 
-<li class="cover-row">
+<li class="cover-row" data-cats="Agent · 治理">
 <a class="cover-media" href="/marginalia/showcases/agent-landscape-2026/"><img src="/marginalia/assets/img/site/covers/agent-landscape-2026.jpg" alt="AI Agent 产品全景 deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## AI Agent 产品全景 · 2026 春
@@ -124,10 +143,12 @@ S01·E01《恒伽达》立项手册：从《贤愚经》原典出发，七页 de
 → [打开 Showcase](/marginalia/showcases/agent-landscape-2026/)
 
 *整理时间：2026-04-30。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:agent-landscape-2026" data-title="AI Agent 产品全景 · 2026 春" data-url="/marginalia/showcases/agent-landscape-2026/"></div>
 </div>
 </li>
 
-<li class="cover-row">
+<li class="cover-row" data-cats="Agent · 治理">
 <a class="cover-media" href="/marginalia/showcases/kiro-2026/"><img src="/marginalia/assets/img/site/covers/kiro-2026.jpg" alt="Kiro 全景 deck 截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## Kiro · AWS Agentic IDE 全景
@@ -137,10 +158,12 @@ S01·E01《恒伽达》立项手册：从《贤愚经》原典出发，七页 de
 → [打开·全面能力介绍](/marginalia/showcases/kiro-2026/)　|　→ [打开·SE 深度解析](/marginalia/showcases/kiro-2026/se/)
 
 *整理时间：2026-04-28。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:kiro-2026" data-title="Kiro · AWS Agentic IDE 全景" data-url="/marginalia/showcases/kiro-2026/"></div>
 </div>
 </li>
 
-<li class="cover-row">
+<li class="cover-row" data-cats="游戏设计">
 <a class="cover-media" href="/marginalia/showcases/game-ideas-2026/"><img src="/marginalia/assets/img/site/covers/game-ideas-2026.jpg" alt="20 个单机游戏设计灵感 deck 截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 20 个单机游戏设计灵感
@@ -150,7 +173,12 @@ S01·E01《恒伽达》立项手册：从《贤愚经》原典出发，七页 de
 → [打开 Showcase](/marginalia/showcases/game-ideas-2026/)
 
 *整理时间：2026-04-28。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:game-ideas-2026" data-title="20 个单机游戏设计灵感" data-url="/marginalia/showcases/game-ideas-2026/"></div>
 </div>
 </li>
 
 </ul>
+</section>
+
+<script src="{{ '/assets/js/filter.js' | relative_url }}" defer></script>

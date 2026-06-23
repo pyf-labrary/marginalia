@@ -1,6 +1,7 @@
 ---
 slug: "doudizhu"
 title: "斗地主"
+category: "休闲 · 经典"
 description: ""
 cover: "/assets/img/games/doudizhu.jpg"
 play_url: "/games/doudizhu/"

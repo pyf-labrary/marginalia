@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Claude Max $100 套餐榨干指南（小白友好版）"
+category: "Claude · LLM"
 date: 2026-04-28 12:00:00 +0800
 author: Marginalia
 description: "理解 Claude Max 套餐的 token 计费本质：最大化 prompt cache 命中率、压低单次请求成本、把 5 小时与 7 天双时间窗口的额度榨干。Claude Code 实战经验整理。"
