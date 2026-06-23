@@ -10,8 +10,11 @@
 _posts/                         单篇文章（.md 或 .html，文件名 YYYY-MM-DD-slug.ext）
 showcases/<slug>/               多页作品集，整目录原样发布，不被 Jekyll 模板包裹
 _includes/custom-head.html      站点级 <head> 注入（含 noindex 元标记）
-_config.yml                     站点配置
-index.md / about.md / showcases.md  导航页
+_includes/reactions.html        点赞/评论挂件（post/video 详情页 include）
+comments-server/                自托管点赞/评论后端（FastAPI+SQLite，跑在 pyf，exclude 出构建；详见其 README）
+assets/js/{reactions,filter}.js 互动层 + 分类筛选（无依赖）
+_config.yml                     站点配置（含 comments_api: 后端地址，留空则互动层禁用）
+index.md / about.md / showcases.md / notes.md   导航页（notes.md = /notes/ 研究报告，带分类筛选）
 ```
 
 ## 加文章
@@ -33,7 +36,7 @@ scripts/publish.py path/to/some-note.md \
 - 写到 `_posts/YYYY-MM-DD-slug.md`
 - `git add` + `git commit` + `git push`（用 `~/.config/gh/org_pyf-labrary.token` 自动认证）
 
-常用开关：`--no-push`（只 commit）、`--no-commit`（只写文件）、`--force`（覆盖已存在 post）。
+常用开关：`--no-push`（只 commit）、`--no-commit`（只写文件）、`--force`（覆盖已存在 post）、`--category`（研究报告分类：`Claude · LLM` / `Agent 工程` / `AIGC 工艺` / `基础设施`，供 `/notes/` 筛选）。
 
 ### 手工方式
 
@@ -65,6 +68,11 @@ tags: [tag1, tag2]
 写新文章时，front matter 里加 `description:`（首选）或 `excerpt:` 给 SEO tag 用。`tags:` 和 `keywords:` 可选。
 
 `showcases/<slug>/` 下的原始 HTML 文件 Jekyll 不处理，需在 `<head>` 里手动加 canonical / OG / description。模板见 `/tmp/inject-seo.py`（一次性脚本，按需重跑）。
+
+## 读者互动 + 分类筛选
+
+- **点赞 / 评论 / 消息盒子**：由自托管后端 `comments-server/`（`mg-api.panyifeng.xyz`，FastAPI+SQLite on pyf）驱动。`_config.yml` 的 `comments_api` 指向它；前端 `assets/js/reactions.js` 在 post/video 详情页挂完整态、在 showcase/game/note/video 卡片挂紧凑态 drawer，header「消息」slide-over 聚合全站最近评论。后端不可达时整层静默降级。部署/运维（含删垃圾评论命令）见 `comments-server/README.md`。
+- **分类筛选**：`assets/js/filter.js`（复用 `.ms-chip`，`?cat=` 同步 URL）作用于 `/notes/`、`/showcases/`、`/videos/`、`/games/`。posts 用 `category` front matter、games 用 `category`（`add-game.py --category`）、videos 按 `weekly` tag 派生周报/专题、showcases 在 `showcases.md` 的 `data-cats` 上标注。
 
 ## 本地预览（可选）
 
