@@ -1,17 +1,22 @@
 {
- "generated": "2026-06-28",
+ "generated": "2026-06-29",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 39.23,
+   "score": 38.26,
    "days": 26,
    "latest": {
-    "date": "2026-06-28",
-    "url": "/posts/2026-06-27-ai-morning-post/#product",
-    "title": "微软发布常驻企业智能体Scout"
+    "date": "2026-06-29",
+    "url": "/posts/2026-06-28-ai-morning-post/#opensource",
+    "title": "Anthropic 开源 Skills 仓库，推动 Agent 技能标准化"
    },
    "links": [
+    {
+     "date": "2026-06-29",
+     "url": "/posts/2026-06-28-ai-morning-post/#opensource",
+     "title": "Anthropic 开源 Skills 仓库，推动 Agent 技能标准化"
+    },
     {
      "date": "2026-06-28",
      "url": "/posts/2026-06-27-ai-morning-post/#product",
@@ -46,18 +51,13 @@
      "date": "2026-06-18",
      "url": "/posts/2026-06-17-ai-morning-post/#product",
      "title": "昆仑万维天工 3.1 上线：设计画布与多智能体工作流"
-    },
-    {
-     "date": "2026-06-17",
-     "url": "/posts/2026-06-16-ai-morning-post/#opensource",
-     "title": "NVIDIA 开源 SkillSpector：给 AI Agent 做“安全体检”"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 29.71,
-   "days": 24,
+   "score": 27.71,
+   "days": 23,
    "latest": {
     "date": "2026-06-28",
     "url": "/posts/2026-06-27-ai-morning-post/#model-release",
@@ -108,14 +108,19 @@
   },
   {
    "name": "Anthropic",
-   "score": 21.9,
+   "score": 21.26,
    "days": 24,
    "latest": {
-    "date": "2026-06-27",
-    "url": "/posts/2026-06-26-ai-morning-post/#company",
-    "title": "Anthropic 指控阿里大规模克隆 Claude，要求惩罚"
+    "date": "2026-06-29",
+    "url": "/posts/2026-06-28-ai-morning-post/#opensource",
+    "title": "Anthropic 开源 Skills 仓库，推动 Agent 技能标准化"
    },
    "links": [
+    {
+     "date": "2026-06-29",
+     "url": "/posts/2026-06-28-ai-morning-post/#opensource",
+     "title": "Anthropic 开源 Skills 仓库，推动 Agent 技能标准化"
+    },
     {
      "date": "2026-06-27",
      "url": "/posts/2026-06-26-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-06-19",
      "url": "/posts/2026-06-18-ai-morning-post/#company",
      "title": "Anthropic新模型Fable 5遭白宫下令下架，出口管制升级"
-    },
-    {
-     "date": "2026-06-18",
-     "url": "/posts/2026-06-17-ai-morning-post/#company",
-     "title": "Anthropic暂停Claude Agent SDK基于Token的计费"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 11.77,
+   "score": 12.03,
    "days": 13,
    "latest": {
-    "date": "2026-06-28",
-    "url": "/posts/2026-06-27-ai-morning-post/#company",
-    "title": "OpenAI自研推理芯片Jalapeño，加速摆脱英伟达"
+    "date": "2026-06-29",
+    "url": "/posts/2026-06-28-ai-morning-post/#product",
+    "title": "苹果推出Core AI框架，专为自研芯片优化"
    },
    "links": [
+    {
+     "date": "2026-06-29",
+     "url": "/posts/2026-06-28-ai-morning-post/#product",
+     "title": "苹果推出Core AI框架，专为自研芯片优化"
+    },
     {
      "date": "2026-06-28",
      "url": "/posts/2026-06-27-ai-morning-post/#company",
@@ -202,17 +207,12 @@
      "date": "2026-06-19",
      "url": "/posts/2026-06-18-ai-morning-post/#company",
      "title": "AWS拟向外部数据中心出售自研AI芯片，直接挑战Nvidia"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#opinion",
-     "title": "北京 2950 亿美元 AI 基建计划要求 80% 国产芯片"
     }
    ]
   },
   {
    "name": "NVIDIA",
-   "score": 10.13,
+   "score": 9.42,
    "days": 16,
    "latest": {
     "date": "2026-06-27",
@@ -264,7 +264,7 @@
   },
   {
    "name": "Meta",
-   "score": 9.81,
+   "score": 9.19,
    "days": 18,
    "latest": {
     "date": "2026-06-28",
@@ -316,7 +316,7 @@
   },
   {
    "name": "阿里",
-   "score": 9.55,
+   "score": 8.94,
    "days": 15,
    "latest": {
     "date": "2026-06-27",
@@ -368,8 +368,8 @@
   },
   {
    "name": "Claude",
-   "score": 8.65,
-   "days": 13,
+   "score": 8.03,
+   "days": 12,
    "latest": {
     "date": "2026-06-27",
     "url": "/posts/2026-06-26-ai-morning-post/#company",
@@ -420,7 +420,7 @@
   },
   {
    "name": "Google",
-   "score": 8.32,
+   "score": 7.81,
    "days": 12,
    "latest": {
     "date": "2026-06-28",
@@ -472,7 +472,7 @@
   },
   {
    "name": "字节",
-   "score": 6.84,
+   "score": 6.55,
    "days": 7,
    "latest": {
     "date": "2026-06-27",
@@ -519,7 +519,7 @@
   },
   {
    "name": "世界模型",
-   "score": 6.23,
+   "score": 5.74,
    "days": 13,
    "latest": {
     "date": "2026-06-25",
@@ -570,8 +570,55 @@
    ]
   },
   {
+   "name": "AWS",
+   "score": 5.03,
+   "days": 7,
+   "latest": {
+    "date": "2026-06-29",
+    "url": "/posts/2026-06-28-ai-morning-post/#opensource",
+    "title": "AWS 推出 Agent Toolkit for AWS，集成 MCP 和 Skills"
+   },
+   "links": [
+    {
+     "date": "2026-06-29",
+     "url": "/posts/2026-06-28-ai-morning-post/#opensource",
+     "title": "AWS 推出 Agent Toolkit for AWS，集成 MCP 和 Skills"
+    },
+    {
+     "date": "2026-06-28",
+     "url": "/posts/2026-06-27-ai-morning-post/#opensource",
+     "title": "AWS发布Agent Toolkit，支持MCP服务"
+    },
+    {
+     "date": "2026-06-27",
+     "url": "/posts/2026-06-26-ai-morning-post/#product",
+     "title": "AWS推出Agent Toolkit，助力AI构建AWS应用"
+    },
+    {
+     "date": "2026-06-22",
+     "url": "/posts/2026-06-21-ai-morning-post/#product",
+     "title": "AWS 推出两项新服务，为 AI 代理补齐业务上下文与安全"
+    },
+    {
+     "date": "2026-06-19",
+     "url": "/posts/2026-06-18-ai-morning-post/#company",
+     "title": "AWS拟向外部数据中心出售自研AI芯片，直接挑战Nvidia"
+    },
+    {
+     "date": "2026-06-15",
+     "url": "/posts/2026-06-14-ai-morning-post/#model-release",
+     "title": "GPT-5.5 和 Codex 上线 Bedrock，AWS 用户可直调"
+    },
+    {
+     "date": "2026-06-02",
+     "url": "/posts/2026-06-01-ai-morning-post/#product",
+     "title": "OpenAI 模型和 Codex 正式登陆 AWS"
+    }
+   ]
+  },
+  {
    "name": "Codex",
-   "score": 5.23,
+   "score": 4.87,
    "days": 8,
    "latest": {
     "date": "2026-06-23",
@@ -623,7 +670,7 @@
   },
   {
    "name": "OpenMontage",
-   "score": 5.06,
+   "score": 4.87,
    "days": 6,
    "latest": {
     "date": "2026-06-28",
@@ -665,8 +712,8 @@
   },
   {
    "name": "腾讯",
-   "score": 4.77,
-   "days": 9,
+   "score": 4.39,
+   "days": 8,
    "latest": {
     "date": "2026-06-25",
     "url": "/posts/2026-06-24-ai-morning-post/#product",
@@ -712,58 +759,6 @@
      "date": "2026-06-06",
      "url": "/posts/2026-06-05-ai-morning-post/#product",
      "title": "腾讯云WorkBuddy：从超级个体到超级团队"
-    }
-   ]
-  },
-  {
-   "name": "具身智能",
-   "score": 4.71,
-   "days": 8,
-   "latest": {
-    "date": "2026-06-22",
-    "url": "/posts/2026-06-21-ai-morning-post/#company",
-    "title": "具身智能融资超预期，大脑技术成焦点"
-   },
-   "links": [
-    {
-     "date": "2026-06-22",
-     "url": "/posts/2026-06-21-ai-morning-post/#company",
-     "title": "具身智能融资超预期，大脑技术成焦点"
-    },
-    {
-     "date": "2026-06-17",
-     "url": "/posts/2026-06-16-ai-morning-post/#opinion",
-     "title": "具身智能需要超越数据 Scaling Law"
-    },
-    {
-     "date": "2026-06-16",
-     "url": "/posts/2026-06-15-ai-morning-post/#company",
-     "title": "世航智能完成超10亿元A轮融资，海洋具身智能受追捧"
-    },
-    {
-     "date": "2026-06-13",
-     "url": "/posts/2026-06-12-ai-morning-post/#model-release",
-     "title": "WeatherMesh-6 与开悟世界模型：垂直与具身智能的微进展"
-    },
-    {
-     "date": "2026-06-10",
-     "url": "/posts/2026-06-09-ai-morning-post/#company",
-     "title": "理想汽车智能驾驶一号位创业，成立具身智能公司"
-    },
-    {
-     "date": "2026-06-06",
-     "url": "/posts/2026-06-05-ai-morning-post/#research",
-     "title": "ICRA 2026：华人学者斩获大奖，具身智能迎来 “AlphaGo 时刻”"
-    },
-    {
-     "date": "2026-06-04",
-     "url": "/posts/2026-06-03-ai-morning-post/#research",
-     "title": "卧安机器人 OneModel 1.7：隐式通路打通具身智能断层"
-    },
-    {
-     "date": "2026-05-30",
-     "url": "/posts/2026-05-29-ai-morning-post/#company",
-     "title": "理想汽车组织调整，新增三个具身智能部门"
     }
    ]
   }
