@@ -41,15 +41,17 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
       # Pages 部署端偶发 "Deployment failed, try again later."（迁 Actions 构建后 ~22:50 UTC
       # 的 ai-hot 每日 push 高发）。首次失败后等 90s 重试一次，避免当日文章卡到次日才随
       # 下一次 push 顺带上线。artifact 已上传，重试只是让 Pages 后端再同步一遍。
+      # continue-on-error 让首次失败不直接判 job 失败——由重试步骤决定最终成败，避免 run 误标红。
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
       - name: Wait before retry
-        if: failure()
+        if: steps.deployment.outcome == 'failure'
         run: sleep 90
       - name: Deploy to GitHub Pages (retry)
-        if: failure()
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
