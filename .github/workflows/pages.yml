@@ -44,3 +44,12 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      # Pages 部署端偶发 "Deployment failed, try again later."（迁 Actions 构建后 ~22:50 UTC
+      # 的 ai-hot 每日 push 高发）。首次失败后等 90s 重试一次，避免当日文章卡到次日才随
+      # 下一次 push 顺带上线。artifact 已上传，重试只是让 Pages 后端再同步一遍。
+      - name: Wait before retry
+        if: failure()
+        run: sleep 90
+      - name: Deploy to GitHub Pages (retry)
+        if: failure()
+        uses: actions/deploy-pages@v4
