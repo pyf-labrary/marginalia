@@ -1,17 +1,22 @@
 {
- "generated": "2026-07-13",
+ "generated": "2026-07-14",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 59.19,
+   "score": 63.9,
    "days": 25,
    "latest": {
-    "date": "2026-07-13",
-    "url": "/posts/2026-07-12-ai-morning-post/#research",
-    "title": "Agent换用结构化记忆后完胜《杀戮尖塔2》"
+    "date": "2026-07-14",
+    "url": "/posts/2026-07-13-ai-morning-post/#company",
+    "title": "图灵奖得主 Rich Sutton 创立 Oak Lab，打造自学 AI Agent"
    },
    "links": [
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#company",
+     "title": "图灵奖得主 Rich Sutton 创立 Oak Lab，打造自学 AI Agent"
+    },
     {
      "date": "2026-07-13",
      "url": "/posts/2026-07-12-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-07-06",
      "url": "/posts/2026-07-05-ai-morning-post/#research",
      "title": "论文提出“日志即代理”范式，统一 AI 智能体架构"
-    },
-    {
-     "date": "2026-07-05",
-     "url": "/posts/2026-07-04-ai-morning-post/#research",
-     "title": "UK AI 安全研究所：标准基准严重低估 Agent 能力"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 35.84,
+   "score": 37.97,
    "days": 24,
    "latest": {
-    "date": "2026-07-13",
-    "url": "/posts/2026-07-12-ai-morning-post/#company",
-    "title": "苹果41页诉状：OpenAI“偷师”核心机密"
+    "date": "2026-07-14",
+    "url": "/posts/2026-07-13-ai-morning-post/#model-release",
+    "title": "OpenAI发布GPT-5.6 Sol，性能与定价双重施压"
    },
    "links": [
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#model-release",
+     "title": "OpenAI发布GPT-5.6 Sol，性能与定价双重施压"
+    },
     {
      "date": "2026-07-13",
      "url": "/posts/2026-07-12-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-07-06",
      "url": "/posts/2026-07-05-ai-morning-post/#company",
      "title": "OpenAI发布Codex插件，实现Claude Code与Codex协同"
-    },
-    {
-     "date": "2026-07-05",
-     "url": "/posts/2026-07-04-ai-morning-post/#opinion",
-     "title": "OpenAI 联合创始人：未来无人学软件，界面消失"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 26.16,
+   "score": 27.65,
    "days": 26,
    "latest": {
-    "date": "2026-07-13",
-    "url": "/posts/2026-07-12-ai-morning-post/#company",
-    "title": "Anthropic推迟Fable模型下架日期"
+    "date": "2026-07-14",
+    "url": "/posts/2026-07-13-ai-morning-post/#company",
+    "title": "Anthropic 为印度用户推出卢比定价，本土化策略落地"
    },
    "links": [
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#company",
+     "title": "Anthropic 为印度用户推出卢比定价，本土化策略落地"
+    },
     {
      "date": "2026-07-13",
      "url": "/posts/2026-07-12-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-07-06",
      "url": "/posts/2026-07-05-ai-morning-post/#product",
      "title": "Anthropic发布Claude Science Beta多智能体科学工作台"
-    },
-    {
-     "date": "2026-07-05",
-     "url": "/posts/2026-07-04-ai-morning-post/#company",
-     "title": "Anthropic 启动药物发现项目，瞄准罕见病"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 17.71,
-   "days": 14,
+   "score": 20.84,
+   "days": 15,
    "latest": {
-    "date": "2026-07-13",
-    "url": "/posts/2026-07-12-ai-morning-post/#product",
-    "title": "Claude Code vs OpenCode：33K vs 7K token开销差距惊人"
+    "date": "2026-07-14",
+    "url": "/posts/2026-07-13-ai-morning-post/#product",
+    "title": "Claude Code 内置浏览器，AI 可自主操作外部网页"
    },
    "links": [
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#product",
+     "title": "Claude Code 内置浏览器，AI 可自主操作外部网页"
+    },
     {
      "date": "2026-07-13",
      "url": "/posts/2026-07-12-ai-morning-post/#product",
@@ -202,18 +207,13 @@
      "date": "2026-07-04",
      "url": "/posts/2026-07-03-ai-morning-post/#opensource",
      "title": "OpenAI 开源 Codex Plugin for Claude Code"
-    },
-    {
-     "date": "2026-07-02",
-     "url": "/posts/2026-07-01-ai-morning-post/#opinion",
-     "title": "Claude Code暗中标记中国用户请求"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 15.52,
-   "days": 20,
+   "score": 14.68,
+   "days": 19,
    "latest": {
     "date": "2026-07-13",
     "url": "/posts/2026-07-12-ai-morning-post/#company",
@@ -264,14 +264,19 @@
   },
   {
    "name": "芯片",
-   "score": 13.26,
-   "days": 18,
+   "score": 14.52,
+   "days": 19,
    "latest": {
-    "date": "2026-07-11",
-    "url": "/posts/2026-07-10-ai-morning-post/#company",
-    "title": "Meta AI芯片将于9月量产"
+    "date": "2026-07-14",
+    "url": "/posts/2026-07-13-ai-morning-post/#company",
+    "title": "苹果调整 Mac 芯片路线图，跳过 M6 Pro 直攻 M7 系列"
    },
    "links": [
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#company",
+     "title": "苹果调整 Mac 芯片路线图，跳过 M6 Pro 直攻 M7 系列"
+    },
     {
      "date": "2026-07-11",
      "url": "/posts/2026-07-10-ai-morning-post/#company",
@@ -306,17 +311,12 @@
      "date": "2026-07-03",
      "url": "/posts/2026-07-02-ai-morning-post/#company",
      "title": "Anthropic与三星洽谈定制AI芯片"
-    },
-    {
-     "date": "2026-07-02",
-     "url": "/posts/2026-07-01-ai-morning-post/#company",
-     "title": "Etched估值50亿美元，AI芯片合同达10亿"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 11.94,
+   "score": 11.35,
    "days": 15,
    "latest": {
     "date": "2026-07-11",
@@ -367,8 +367,60 @@
    ]
   },
   {
+   "name": "世界模型",
+   "score": 9.58,
+   "days": 14,
+   "latest": {
+    "date": "2026-07-14",
+    "url": "/posts/2026-07-13-ai-morning-post/#research",
+    "title": "世界模型综述：通往 AGI 的关键，但远未成熟"
+   },
+   "links": [
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#research",
+     "title": "世界模型综述：通往 AGI 的关键，但远未成熟"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#model-release",
+     "title": "中国Orca世界模型无需动作标签匹配专业机器人"
+    },
+    {
+     "date": "2026-07-10",
+     "url": "/posts/2026-07-09-ai-morning-post/#opensource",
+     "title": "蚂蚁灵波发布世界模型 2.0：支持小时级生成与Agent交互"
+    },
+    {
+     "date": "2026-07-09",
+     "url": "/posts/2026-07-08-ai-morning-post/#research",
+     "title": "智源发布悟界·Orca：世界模型的Next State Prediction路径"
+    },
+    {
+     "date": "2026-07-07",
+     "url": "/posts/2026-07-06-ai-morning-post/#product",
+     "title": "蔚来世界模型 OTA 升级，70 万用户全量同步"
+    },
+    {
+     "date": "2026-07-06",
+     "url": "/posts/2026-07-05-ai-morning-post/#research",
+     "title": "LeCun 团队：世界模型学会持续学习，不遗忘旧知识"
+    },
+    {
+     "date": "2026-07-04",
+     "url": "/posts/2026-07-03-ai-morning-post/#research",
+     "title": "JEPA 跨界细胞建模：世界模型进入生命科学"
+    },
+    {
+     "date": "2026-07-02",
+     "url": "/posts/2026-07-01-ai-morning-post/#research",
+     "title": "Loop世界模型论文登顶Hugging Face"
+    }
+   ]
+  },
+  {
    "name": "腾讯",
-   "score": 9.68,
+   "score": 9.23,
    "days": 12,
    "latest": {
     "date": "2026-07-12",
@@ -420,8 +472,8 @@
   },
   {
    "name": "NVIDIA",
-   "score": 8.87,
-   "days": 15,
+   "score": 8.32,
+   "days": 14,
    "latest": {
     "date": "2026-07-13",
     "url": "/posts/2026-07-12-ai-morning-post/#company",
@@ -471,60 +523,8 @@
    ]
   },
   {
-   "name": "世界模型",
-   "score": 8.03,
-   "days": 13,
-   "latest": {
-    "date": "2026-07-12",
-    "url": "/posts/2026-07-11-ai-morning-post/#model-release",
-    "title": "中国Orca世界模型无需动作标签匹配专业机器人"
-   },
-   "links": [
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#model-release",
-     "title": "中国Orca世界模型无需动作标签匹配专业机器人"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#opensource",
-     "title": "蚂蚁灵波发布世界模型 2.0：支持小时级生成与Agent交互"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#research",
-     "title": "智源发布悟界·Orca：世界模型的Next State Prediction路径"
-    },
-    {
-     "date": "2026-07-07",
-     "url": "/posts/2026-07-06-ai-morning-post/#product",
-     "title": "蔚来世界模型 OTA 升级，70 万用户全量同步"
-    },
-    {
-     "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#research",
-     "title": "LeCun 团队：世界模型学会持续学习，不遗忘旧知识"
-    },
-    {
-     "date": "2026-07-04",
-     "url": "/posts/2026-07-03-ai-morning-post/#research",
-     "title": "JEPA 跨界细胞建模：世界模型进入生命科学"
-    },
-    {
-     "date": "2026-07-02",
-     "url": "/posts/2026-07-01-ai-morning-post/#research",
-     "title": "Loop世界模型论文登顶Hugging Face"
-    },
-    {
-     "date": "2026-07-01",
-     "url": "/posts/2026-06-30-ai-morning-post/#research",
-     "title": "自我进化世界模型赋能LLM Agent规划"
-    }
-   ]
-  },
-  {
    "name": "阿里",
-   "score": 7.52,
+   "score": 7.03,
    "days": 13,
    "latest": {
     "date": "2026-07-12",
@@ -576,7 +576,7 @@
   },
   {
    "name": "算力",
-   "score": 7.1,
+   "score": 6.77,
    "days": 9,
    "latest": {
     "date": "2026-07-12",
@@ -628,7 +628,7 @@
   },
   {
    "name": "Hugging Face",
-   "score": 6.45,
+   "score": 6.19,
    "days": 7,
    "latest": {
     "date": "2026-07-13",
@@ -675,7 +675,7 @@
   },
   {
    "name": "Cloudflare",
-   "score": 5.48,
+   "score": 5.19,
    "days": 8,
    "latest": {
     "date": "2026-07-09",
@@ -727,7 +727,7 @@
   },
   {
    "name": "百度",
-   "score": 4.68,
+   "score": 4.45,
    "days": 7,
    "latest": {
     "date": "2026-07-11",
