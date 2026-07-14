@@ -13,6 +13,23 @@ wide: true
 
 <ul class="cover-list" role="list">
 
+<li class="cover-row" data-cats="影视 · 导演">
+<a class="cover-media" href="https://ftp.ssbx.site/showcases/bodhi-seedance-principles/"><img src="/marginalia/assets/img/site/covers/bodhi-seedance-principles.jpg" alt="Seedance 2.0 原理拆解 deck 封面截图" loading="lazy"></a>
+<div class="cover-body" markdown="1">
+## 声音是怎么长在画面上的 · Seedance 2.0 原理拆解
+
+28 页技术分享：从第一性原理讲清一台原生音视频生成模型的四件事。**视频生成**——为什么没人直接画像素、VAE 为何决定清晰度天花板、文本只在空间层握手所以运镜比构图难指挥、以及**你写的 prompt 模型根本没看见**（中间隔着一个 Qwen 改写器）。**声音合成**——声音被当成一张窄长的图；它配得上环境不是因为懂声学，而是在拟合 p(声音│画面, 文字)，而现实里画面与声学环境本就物理耦合。**音画同步**——三根钉子：把差 5 倍的两种 token 密度重标定到同一条时间轴、共享同一个去噪 timestep、每一层双向互看；**没有任何损失函数在教它对齐，同步是涌现的**，所以画外音是架构盲区，不是没调好。**导演分镜**——帧内硬切写在架构里，参考图是焊死进张量的硬约束。
+
+先划知识边界再讲原理：**Seedance 2.0 的技术报告 26 页没有方法章节**，架构口径只有一句话，所以每条机制都标明属于「官方事实 / 血缘推定 / 同构类比」哪一档。嵌了 5 张论文官方原图（点击放大），包括 Ovi 那张 RoPE 缩放前后的注意力亲和矩阵——不缩放时亮带斜率全错，缩放后收成一条锐利的对角线，一图说尽「同步的本质是一次单位换算」。键盘翻页，本地字体零外链。外链托管，跳转打开。
+
+→ [打开 Showcase](https://ftp.ssbx.site/showcases/bodhi-seedance-principles/)
+
+*整理时间：2026-07-14。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:bodhi-seedance-principles" data-title="声音是怎么长在画面上的 · Seedance 2.0 原理拆解" data-url="https://ftp.ssbx.site/showcases/bodhi-seedance-principles/"></div>
+</div>
+</li>
+
 <li class="cover-row" data-cats="佛经 · 短剧">
 <a class="cover-media" href="https://ftp.ssbx.site/showcases/bodhi-e01-making/"><img src="/marginalia/assets/img/site/covers/bodhi-e01-making.jpg" alt="恒伽达 AI 制作复盘 deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
