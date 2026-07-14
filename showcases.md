@@ -14,7 +14,7 @@ wide: true
 <ul class="cover-list" role="list">
 
 <li class="cover-row" data-cats="影视 · 导演">
-<a class="cover-media" href="https://ftp.ssbx.site/showcases/bodhi-seedance-principles/"><img src="/marginalia/assets/img/site/covers/bodhi-seedance-principles.jpg" alt="Seedance 2.0 原理拆解 deck 封面截图" loading="lazy"></a>
+<a class="cover-media" href="https://ftp.ssbx.site/showcases/bodhi-seedance-principles/"><img src="/marginalia/assets/img/site/covers/bodhi-seedance-principles.jpg" alt="Seedance 2.0 原理拆解 deck 内页截图：音画同步的时间轴重标定" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 声音是怎么长在画面上的 · Seedance 2.0 原理拆解
 
