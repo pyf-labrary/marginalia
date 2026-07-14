@@ -1,17 +1,22 @@
 {
- "generated": "2026-07-14",
+ "generated": "2026-07-15",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 63.9,
+   "score": 64.26,
    "days": 25,
    "latest": {
-    "date": "2026-07-14",
-    "url": "/posts/2026-07-13-ai-morning-post/#company",
-    "title": "图灵奖得主 Rich Sutton 创立 Oak Lab，打造自学 AI Agent"
+    "date": "2026-07-15",
+    "url": "/posts/2026-07-14-ai-morning-post/#research",
+    "title": "MM-ToolSandBox：统一视觉工具调用智能体评估框架"
    },
    "links": [
+    {
+     "date": "2026-07-15",
+     "url": "/posts/2026-07-14-ai-morning-post/#research",
+     "title": "MM-ToolSandBox：统一视觉工具调用智能体评估框架"
+    },
     {
      "date": "2026-07-14",
      "url": "/posts/2026-07-13-ai-morning-post/#company",
@@ -46,24 +51,24 @@
      "date": "2026-07-07",
      "url": "/posts/2026-07-06-ai-morning-post/#opinion",
      "title": "扎克伯格内部批评AI Agent进展低于预期"
-    },
-    {
-     "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#research",
-     "title": "论文提出“日志即代理”范式，统一 AI 智能体架构"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 37.97,
+   "score": 38.0,
    "days": 24,
    "latest": {
-    "date": "2026-07-14",
-    "url": "/posts/2026-07-13-ai-morning-post/#model-release",
-    "title": "OpenAI发布GPT-5.6 Sol，性能与定价双重施压"
+    "date": "2026-07-15",
+    "url": "/posts/2026-07-14-ai-morning-post/#product",
+    "title": "OpenAI首款硬件曝光：无屏可移动AI音箱"
    },
    "links": [
+    {
+     "date": "2026-07-15",
+     "url": "/posts/2026-07-14-ai-morning-post/#product",
+     "title": "OpenAI首款硬件曝光：无屏可移动AI音箱"
+    },
     {
      "date": "2026-07-14",
      "url": "/posts/2026-07-13-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-07-08",
      "url": "/posts/2026-07-07-ai-morning-post/#model-release",
      "title": "OpenAI发布GPT-Realtime-2.1语音推理模型"
-    },
-    {
-     "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#company",
-     "title": "OpenAI发布Codex插件，实现Claude Code与Codex协同"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 27.65,
+   "score": 28.03,
    "days": 26,
    "latest": {
-    "date": "2026-07-14",
-    "url": "/posts/2026-07-13-ai-morning-post/#company",
-    "title": "Anthropic 为印度用户推出卢比定价，本土化策略落地"
+    "date": "2026-07-15",
+    "url": "/posts/2026-07-14-ai-morning-post/#product",
+    "title": "Anthropic推出Claude for Teachers，不训练学生数据"
    },
    "links": [
+    {
+     "date": "2026-07-15",
+     "url": "/posts/2026-07-14-ai-morning-post/#product",
+     "title": "Anthropic推出Claude for Teachers，不训练学生数据"
+    },
     {
      "date": "2026-07-14",
      "url": "/posts/2026-07-13-ai-morning-post/#company",
@@ -150,18 +155,13 @@
      "date": "2026-07-07",
      "url": "/posts/2026-07-06-ai-morning-post/#company",
      "title": "Anthropic被曝秘密监控中国用户Claude使用"
-    },
-    {
-     "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#product",
-     "title": "Anthropic发布Claude Science Beta多智能体科学工作台"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 20.84,
-   "days": 15,
+   "score": 19.81,
+   "days": 14,
    "latest": {
     "date": "2026-07-14",
     "url": "/posts/2026-07-13-ai-morning-post/#product",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Meta",
-   "score": 14.68,
+   "score": 15.87,
    "days": 19,
    "latest": {
-    "date": "2026-07-13",
-    "url": "/posts/2026-07-12-ai-morning-post/#company",
-    "title": "Meta关闭Muse功能：用户未经同意被生成AI图"
+    "date": "2026-07-15",
+    "url": "/posts/2026-07-14-ai-morning-post/#model-release",
+    "title": "Meta发布最强Agent模型，进军编程领域"
    },
    "links": [
+    {
+     "date": "2026-07-15",
+     "url": "/posts/2026-07-14-ai-morning-post/#model-release",
+     "title": "Meta发布最强Agent模型，进军编程领域"
+    },
     {
      "date": "2026-07-13",
      "url": "/posts/2026-07-12-ai-morning-post/#company",
@@ -254,17 +259,12 @@
      "date": "2026-07-06",
      "url": "/posts/2026-07-05-ai-morning-post/#company",
      "title": "Meta考虑推出AI算力租赁服务Meta Compute"
-    },
-    {
-     "date": "2026-07-04",
-     "url": "/posts/2026-07-03-ai-morning-post/#product",
-     "title": "Meta 低调推出“Vibe Coding”游戏应用 Pocket"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 14.52,
+   "score": 13.71,
    "days": 19,
    "latest": {
     "date": "2026-07-14",
@@ -316,7 +316,7 @@
   },
   {
    "name": "Google",
-   "score": 11.35,
+   "score": 10.77,
    "days": 15,
    "latest": {
     "date": "2026-07-11",
@@ -368,14 +368,19 @@
   },
   {
    "name": "世界模型",
-   "score": 9.58,
-   "days": 14,
+   "score": 10.06,
+   "days": 15,
    "latest": {
-    "date": "2026-07-14",
-    "url": "/posts/2026-07-13-ai-morning-post/#research",
-    "title": "世界模型综述：通往 AGI 的关键，但远未成熟"
+    "date": "2026-07-15",
+    "url": "/posts/2026-07-14-ai-morning-post/#research",
+    "title": "世界模型的承诺与局限：专家解读"
    },
    "links": [
+    {
+     "date": "2026-07-15",
+     "url": "/posts/2026-07-14-ai-morning-post/#research",
+     "title": "世界模型的承诺与局限：专家解读"
+    },
     {
      "date": "2026-07-14",
      "url": "/posts/2026-07-13-ai-morning-post/#research",
@@ -410,17 +415,12 @@
      "date": "2026-07-04",
      "url": "/posts/2026-07-03-ai-morning-post/#research",
      "title": "JEPA 跨界细胞建模：世界模型进入生命科学"
-    },
-    {
-     "date": "2026-07-02",
-     "url": "/posts/2026-07-01-ai-morning-post/#research",
-     "title": "Loop世界模型论文登顶Hugging Face"
     }
    ]
   },
   {
    "name": "腾讯",
-   "score": 9.23,
+   "score": 8.77,
    "days": 12,
    "latest": {
     "date": "2026-07-12",
@@ -472,8 +472,8 @@
   },
   {
    "name": "NVIDIA",
-   "score": 8.32,
-   "days": 14,
+   "score": 7.81,
+   "days": 13,
    "latest": {
     "date": "2026-07-13",
     "url": "/posts/2026-07-12-ai-morning-post/#company",
@@ -524,8 +524,8 @@
   },
   {
    "name": "阿里",
-   "score": 7.03,
-   "days": 13,
+   "score": 6.52,
+   "days": 12,
    "latest": {
     "date": "2026-07-12",
     "url": "/posts/2026-07-11-ai-morning-post/#product",
@@ -576,7 +576,7 @@
   },
   {
    "name": "算力",
-   "score": 6.77,
+   "score": 6.45,
    "days": 9,
    "latest": {
     "date": "2026-07-12",
@@ -628,7 +628,7 @@
   },
   {
    "name": "Hugging Face",
-   "score": 6.19,
+   "score": 5.94,
    "days": 7,
    "latest": {
     "date": "2026-07-13",
@@ -675,7 +675,7 @@
   },
   {
    "name": "Cloudflare",
-   "score": 5.19,
+   "score": 4.9,
    "days": 8,
    "latest": {
     "date": "2026-07-09",
@@ -726,49 +726,54 @@
    ]
   },
   {
-   "name": "百度",
-   "score": 4.45,
-   "days": 7,
+   "name": "DeepSeek",
+   "score": 4.39,
+   "days": 8,
    "latest": {
-    "date": "2026-07-11",
-    "url": "/posts/2026-07-10-ai-morning-post/#product",
-    "title": "百度搭子升级企业版，日均提问增 20 倍"
+    "date": "2026-07-15",
+    "url": "/posts/2026-07-14-ai-morning-post/#company",
+    "title": "DeepSeek新一轮融资需求紧迫"
    },
    "links": [
     {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#product",
-     "title": "百度搭子升级企业版，日均提问增 20 倍"
+     "date": "2026-07-15",
+     "url": "/posts/2026-07-14-ai-morning-post/#company",
+     "title": "DeepSeek新一轮融资需求紧迫"
+    },
+    {
+     "date": "2026-07-09",
+     "url": "/posts/2026-07-08-ai-morning-post/#company",
+     "title": "DeepSeek秘密自研AI推理芯片，已启动一年"
     },
     {
      "date": "2026-07-08",
      "url": "/posts/2026-07-07-ai-morning-post/#company",
-     "title": "百度基础模型研发部换帅，孙天祥接任"
+     "title": "DeepSeek计划自研AI芯片摆脱依赖"
     },
     {
-     "date": "2026-07-07",
-     "url": "/posts/2026-07-06-ai-morning-post/#product",
-     "title": "百度推出 Unlimited OCR：模拟人类遗忘机制突破长度限制"
-    },
-    {
-     "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#product",
-     "title": "百度推出‘无限OCR’：一次处理数十页文档"
-    },
-    {
-     "date": "2026-07-02",
-     "url": "/posts/2026-07-01-ai-morning-post/#company",
-     "title": "百度引入大模型专家孙天祥，任基础模型研发负责人"
+     "date": "2026-07-01",
+     "url": "/posts/2026-06-30-ai-morning-post/#company",
+     "title": "DeepSeek发布DSpark，AI推理速度提升85%"
     },
     {
      "date": "2026-06-29",
      "url": "/posts/2026-06-28-ai-morning-post/#opensource",
-     "title": "百度开源整书级 OCR 模型"
+     "title": "DeepSeek 开源 DSpark，加速 V4 生成至 85%"
     },
     {
-     "date": "2026-06-16",
-     "url": "/posts/2026-06-15-ai-morning-post/#model-release",
-     "title": "百度PP-OCRv6：97毫秒OCR，1.5MB模型登台"
+     "date": "2026-06-28",
+     "url": "/posts/2026-06-27-ai-morning-post/#opensource",
+     "title": "DeepSeek开源DSpark推测解码框架，加速推理60-85%"
+    },
+    {
+     "date": "2026-06-18",
+     "url": "/posts/2026-06-17-ai-morning-post/#company",
+     "title": "DeepSeek完成74亿美元融资，估值再创新高"
+    },
+    {
+     "date": "2026-06-17",
+     "url": "/posts/2026-06-16-ai-morning-post/#company",
+     "title": "DeepSeek 首次引入外部投资，估值达 500 亿美元"
     }
    ]
   }
