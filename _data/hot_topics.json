@@ -1,17 +1,22 @@
 {
- "generated": "2026-07-15",
+ "generated": "2026-07-16",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 64.26,
+   "score": 62.87,
    "days": 25,
    "latest": {
-    "date": "2026-07-15",
-    "url": "/posts/2026-07-14-ai-morning-post/#research",
-    "title": "MM-ToolSandBox：统一视觉工具调用智能体评估框架"
+    "date": "2026-07-16",
+    "url": "/posts/2026-07-15-ai-morning-post/#research",
+    "title": "HuggingFace 分享构建 Agent “Shippy” 的经验"
    },
    "links": [
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#research",
+     "title": "HuggingFace 分享构建 Agent “Shippy” 的经验"
+    },
     {
      "date": "2026-07-15",
      "url": "/posts/2026-07-14-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-07-08",
      "url": "/posts/2026-07-07-ai-morning-post/#opensource",
      "title": "TradingAgents：多智能体金融交易框架开源"
-    },
-    {
-     "date": "2026-07-07",
-     "url": "/posts/2026-07-06-ai-morning-post/#opinion",
-     "title": "扎克伯格内部批评AI Agent进展低于预期"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 38.0,
+   "score": 40.0,
    "days": 24,
    "latest": {
-    "date": "2026-07-15",
-    "url": "/posts/2026-07-14-ai-morning-post/#product",
-    "title": "OpenAI首款硬件曝光：无屏可移动AI音箱"
+    "date": "2026-07-16",
+    "url": "/posts/2026-07-15-ai-morning-post/#company",
+    "title": "OpenAI反击苹果商业秘密诉讼"
    },
    "links": [
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#company",
+     "title": "OpenAI反击苹果商业秘密诉讼"
+    },
     {
      "date": "2026-07-15",
      "url": "/posts/2026-07-14-ai-morning-post/#product",
@@ -98,24 +103,24 @@
      "date": "2026-07-09",
      "url": "/posts/2026-07-08-ai-morning-post/#model-release",
      "title": "OpenAI 正式发布 GPT-Live：全双工语音对话模型"
-    },
-    {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#model-release",
-     "title": "OpenAI发布GPT-Realtime-2.1语音推理模型"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 28.03,
+   "score": 29.45,
    "days": 26,
    "latest": {
-    "date": "2026-07-15",
-    "url": "/posts/2026-07-14-ai-morning-post/#product",
-    "title": "Anthropic推出Claude for Teachers，不训练学生数据"
+    "date": "2026-07-16",
+    "url": "/posts/2026-07-15-ai-morning-post/#company",
+    "title": "Anthropic和Blackstone联手推出企业AI服务Ode"
    },
    "links": [
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#company",
+     "title": "Anthropic和Blackstone联手推出企业AI服务Ode"
+    },
     {
      "date": "2026-07-15",
      "url": "/posts/2026-07-14-ai-morning-post/#product",
@@ -150,24 +155,24 @@
      "date": "2026-07-08",
      "url": "/posts/2026-07-07-ai-morning-post/#company",
      "title": "Anthropic被曝秘密追踪器监控中国用户"
-    },
-    {
-     "date": "2026-07-07",
-     "url": "/posts/2026-07-06-ai-morning-post/#company",
-     "title": "Anthropic被曝秘密监控中国用户Claude使用"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 19.81,
-   "days": 14,
+   "score": 19.84,
+   "days": 15,
    "latest": {
-    "date": "2026-07-14",
-    "url": "/posts/2026-07-13-ai-morning-post/#product",
-    "title": "Claude Code 内置浏览器，AI 可自主操作外部网页"
+    "date": "2026-07-16",
+    "url": "/posts/2026-07-15-ai-morning-post/#product",
+    "title": "Anthropic 推出 Claude for Teachers，承诺不训练学生数据"
    },
    "links": [
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#product",
+     "title": "Anthropic 推出 Claude for Teachers，承诺不训练学生数据"
+    },
     {
      "date": "2026-07-14",
      "url": "/posts/2026-07-13-ai-morning-post/#product",
@@ -202,24 +207,24 @@
      "date": "2026-07-05",
      "url": "/posts/2026-07-04-ai-morning-post/#company",
      "title": "阿里巴巴内部禁用 Claude Code"
-    },
-    {
-     "date": "2026-07-04",
-     "url": "/posts/2026-07-03-ai-morning-post/#opensource",
-     "title": "OpenAI 开源 Codex Plugin for Claude Code"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 15.87,
+   "score": 16.03,
    "days": 19,
    "latest": {
-    "date": "2026-07-15",
-    "url": "/posts/2026-07-14-ai-morning-post/#model-release",
-    "title": "Meta发布最强Agent模型，进军编程领域"
+    "date": "2026-07-16",
+    "url": "/posts/2026-07-15-ai-morning-post/#company",
+    "title": "Meta 被诉使用 AI 筛选裁员，涉及歧视"
    },
    "links": [
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#company",
+     "title": "Meta 被诉使用 AI 筛选裁员，涉及歧视"
+    },
     {
      "date": "2026-07-15",
      "url": "/posts/2026-07-14-ai-morning-post/#model-release",
@@ -254,17 +259,64 @@
      "date": "2026-07-08",
      "url": "/posts/2026-07-07-ai-morning-post/#model-release",
      "title": "Meta推出Muse AI图像生成器，可基于用户照片生成"
+    }
+   ]
+  },
+  {
+   "name": "Google",
+   "score": 13.19,
+   "days": 16,
+   "latest": {
+    "date": "2026-07-16",
+    "url": "/posts/2026-07-15-ai-morning-post/#product",
+    "title": "Google 图像搜索 25 周年升级：AI 个性化画廊"
+   },
+   "links": [
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#product",
+     "title": "Google 图像搜索 25 周年升级：AI 个性化画廊"
+    },
+    {
+     "date": "2026-07-11",
+     "url": "/posts/2026-07-10-ai-morning-post/#product",
+     "title": "Google 要求所有 AI 生成广告必须标注"
+    },
+    {
+     "date": "2026-07-10",
+     "url": "/posts/2026-07-09-ai-morning-post/#research",
+     "title": "Google更新Android Bench，新增Fable 5等代理但Gemini仍落后"
+    },
+    {
+     "date": "2026-07-09",
+     "url": "/posts/2026-07-08-ai-morning-post/#model-release",
+     "title": "Google 更新 Android AI 开发基准 Android Bench，新增 Fable 5 等模型"
+    },
+    {
+     "date": "2026-07-08",
+     "url": "/posts/2026-07-07-ai-morning-post/#opensource",
+     "title": "Google 开源 Antigravity Python SDK"
+    },
+    {
+     "date": "2026-07-07",
+     "url": "/posts/2026-07-06-ai-morning-post/#opinion",
+     "title": "Google默认隐私设置变更，用户数据用于训练AI"
     },
     {
      "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#company",
-     "title": "Meta考虑推出AI算力租赁服务Meta Compute"
+     "url": "/posts/2026-07-05-ai-morning-post/#product",
+     "title": "Google推出AI独立宣言广告庆美国建国250周年"
+    },
+    {
+     "date": "2026-07-05",
+     "url": "/posts/2026-07-04-ai-morning-post/#product",
+     "title": "Google独立250周年AI广告：创意还是争议？"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 13.71,
+   "score": 12.9,
    "days": 19,
    "latest": {
     "date": "2026-07-14",
@@ -315,61 +367,9 @@
    ]
   },
   {
-   "name": "Google",
-   "score": 10.77,
-   "days": 15,
-   "latest": {
-    "date": "2026-07-11",
-    "url": "/posts/2026-07-10-ai-morning-post/#product",
-    "title": "Google 要求所有 AI 生成广告必须标注"
-   },
-   "links": [
-    {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#product",
-     "title": "Google 要求所有 AI 生成广告必须标注"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#research",
-     "title": "Google更新Android Bench，新增Fable 5等代理但Gemini仍落后"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#model-release",
-     "title": "Google 更新 Android AI 开发基准 Android Bench，新增 Fable 5 等模型"
-    },
-    {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#opensource",
-     "title": "Google 开源 Antigravity Python SDK"
-    },
-    {
-     "date": "2026-07-07",
-     "url": "/posts/2026-07-06-ai-morning-post/#opinion",
-     "title": "Google默认隐私设置变更，用户数据用于训练AI"
-    },
-    {
-     "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#product",
-     "title": "Google推出AI独立宣言广告庆美国建国250周年"
-    },
-    {
-     "date": "2026-07-05",
-     "url": "/posts/2026-07-04-ai-morning-post/#product",
-     "title": "Google独立250周年AI广告：创意还是争议？"
-    },
-    {
-     "date": "2026-07-04",
-     "url": "/posts/2026-07-03-ai-morning-post/#opensource",
-     "title": "Google 开源 agents-cli：一键部署 Agent 到云"
-    }
-   ]
-  },
-  {
    "name": "世界模型",
-   "score": 10.06,
-   "days": 15,
+   "score": 9.48,
+   "days": 14,
    "latest": {
     "date": "2026-07-15",
     "url": "/posts/2026-07-14-ai-morning-post/#research",
@@ -419,9 +419,61 @@
    ]
   },
   {
+   "name": "NVIDIA",
+   "score": 8.32,
+   "days": 13,
+   "latest": {
+    "date": "2026-07-16",
+    "url": "/posts/2026-07-15-ai-morning-post/#research",
+    "title": "NVIDIA 提出 AI 基础设施效率核心指标：每瓦性能"
+   },
+   "links": [
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#research",
+     "title": "NVIDIA 提出 AI 基础设施效率核心指标：每瓦性能"
+    },
+    {
+     "date": "2026-07-13",
+     "url": "/posts/2026-07-12-ai-morning-post/#company",
+     "title": "NVIDIA、CoreWeave与Nebius：GPU泡沫的循环融资内幕"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#opensource",
+     "title": "NVIDIA 发布官方 AI Agent 技能库"
+    },
+    {
+     "date": "2026-07-10",
+     "url": "/posts/2026-07-09-ai-morning-post/#model-release",
+     "title": "NVIDIA 发布压缩版 Nemotron Puzzle 75B，吞吐量提升 2 倍"
+    },
+    {
+     "date": "2026-07-09",
+     "url": "/posts/2026-07-08-ai-morning-post/#research",
+     "title": "NVIDIA发布Audex：统一音频与文本的30B模型"
+    },
+    {
+     "date": "2026-07-08",
+     "url": "/posts/2026-07-07-ai-morning-post/#opensource",
+     "title": "Hugging Face 与 NVIDIA 联合发布 LeRobot v0.6.0"
+    },
+    {
+     "date": "2026-07-06",
+     "url": "/posts/2026-07-05-ai-morning-post/#product",
+     "title": "NVIDIA发布HORIZON：全自动RTL设计Agent"
+    },
+    {
+     "date": "2026-07-04",
+     "url": "/posts/2026-07-03-ai-morning-post/#opensource",
+     "title": "NVIDIA 官方发布 AI Agent 技能库 skills"
+    }
+   ]
+  },
+  {
    "name": "腾讯",
-   "score": 8.77,
-   "days": 12,
+   "score": 8.29,
+   "days": 11,
    "latest": {
     "date": "2026-07-12",
     "url": "/posts/2026-07-11-ai-morning-post/#company",
@@ -471,67 +523,20 @@
    ]
   },
   {
-   "name": "NVIDIA",
-   "score": 7.81,
-   "days": 13,
-   "latest": {
-    "date": "2026-07-13",
-    "url": "/posts/2026-07-12-ai-morning-post/#company",
-    "title": "NVIDIA、CoreWeave与Nebius：GPU泡沫的循环融资内幕"
-   },
-   "links": [
-    {
-     "date": "2026-07-13",
-     "url": "/posts/2026-07-12-ai-morning-post/#company",
-     "title": "NVIDIA、CoreWeave与Nebius：GPU泡沫的循环融资内幕"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#opensource",
-     "title": "NVIDIA 发布官方 AI Agent 技能库"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#model-release",
-     "title": "NVIDIA 发布压缩版 Nemotron Puzzle 75B，吞吐量提升 2 倍"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#research",
-     "title": "NVIDIA发布Audex：统一音频与文本的30B模型"
-    },
-    {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#opensource",
-     "title": "Hugging Face 与 NVIDIA 联合发布 LeRobot v0.6.0"
-    },
-    {
-     "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#product",
-     "title": "NVIDIA发布HORIZON：全自动RTL设计Agent"
-    },
-    {
-     "date": "2026-07-04",
-     "url": "/posts/2026-07-03-ai-morning-post/#opensource",
-     "title": "NVIDIA 官方发布 AI Agent 技能库 skills"
-    },
-    {
-     "date": "2026-07-02",
-     "url": "/posts/2026-07-01-ai-morning-post/#model-release",
-     "title": "NVIDIA开源Nemotron-Labs-TwoTower：扩散语言模型新尝试"
-    }
-   ]
-  },
-  {
    "name": "阿里",
-   "score": 6.52,
+   "score": 8.03,
    "days": 12,
    "latest": {
-    "date": "2026-07-12",
-    "url": "/posts/2026-07-11-ai-morning-post/#product",
-    "title": "阿里与大麦推出AI潮玩设计平台“妙呀”公测"
+    "date": "2026-07-16",
+    "url": "/posts/2026-07-15-ai-morning-post/#model-release",
+    "title": "阿里发布实时语音大模型 Qwen-Audio-3.0-Realtime"
    },
    "links": [
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#model-release",
+     "title": "阿里发布实时语音大模型 Qwen-Audio-3.0-Realtime"
+    },
     {
      "date": "2026-07-12",
      "url": "/posts/2026-07-11-ai-morning-post/#product",
@@ -566,17 +571,12 @@
      "date": "2026-06-27",
      "url": "/posts/2026-06-26-ai-morning-post/#company",
      "title": "Anthropic 指控阿里大规模克隆 Claude，要求惩罚"
-    },
-    {
-     "date": "2026-06-25",
-     "url": "/posts/2026-06-24-ai-morning-post/#product",
-     "title": "阿里QoderWork推“峰谷Token”，夜间低至2折"
     }
    ]
   },
   {
    "name": "算力",
-   "score": 6.45,
+   "score": 6.13,
    "days": 9,
    "latest": {
     "date": "2026-07-12",
@@ -628,7 +628,7 @@
   },
   {
    "name": "Hugging Face",
-   "score": 5.94,
+   "score": 5.68,
    "days": 7,
    "latest": {
     "date": "2026-07-13",
@@ -674,67 +674,20 @@
    ]
   },
   {
-   "name": "Cloudflare",
-   "score": 4.9,
-   "days": 8,
-   "latest": {
-    "date": "2026-07-09",
-    "url": "/posts/2026-07-08-ai-morning-post/#opinion",
-    "title": "Cloudflare经理禁用AI编写变更描述"
-   },
-   "links": [
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#opinion",
-     "title": "Cloudflare经理禁用AI编写变更描述"
-    },
-    {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#product",
-     "title": "Cloudflare精细控制AI爬虫，告别一刀切"
-    },
-    {
-     "date": "2026-07-07",
-     "url": "/posts/2026-07-06-ai-morning-post/#product",
-     "title": "Cloudflare 推出精细化 AI 爬虫控制面板"
-    },
-    {
-     "date": "2026-07-03",
-     "url": "/posts/2026-07-02-ai-morning-post/#product",
-     "title": "Cloudflare 新规：AI 爬虫不付费就屏蔽"
-    },
-    {
-     "date": "2026-07-02",
-     "url": "/posts/2026-07-01-ai-morning-post/#company",
-     "title": "Cloudflare新政：AI公司须为发布者内容付费"
-    },
-    {
-     "date": "2026-06-23",
-     "url": "/posts/2026-06-22-ai-morning-post/#product",
-     "title": "Cloudflare 临时账户：AI 代理“免注册”部署资源"
-    },
-    {
-     "date": "2026-06-22",
-     "url": "/posts/2026-06-21-ai-morning-post/#product",
-     "title": "Cloudflare 推出 AI 代理临时账户，解决安全访问痛点"
-    },
-    {
-     "date": "2026-06-21",
-     "url": "/posts/2026-06-20-ai-morning-post/#product",
-     "title": "Cloudflare 临时账号：为 AI agent 提供安全访问方案"
-    }
-   ]
-  },
-  {
    "name": "DeepSeek",
-   "score": 4.39,
-   "days": 8,
+   "score": 5.1,
+   "days": 9,
    "latest": {
-    "date": "2026-07-15",
-    "url": "/posts/2026-07-14-ai-morning-post/#company",
-    "title": "DeepSeek新一轮融资需求紧迫"
+    "date": "2026-07-16",
+    "url": "/posts/2026-07-15-ai-morning-post/#company",
+    "title": "DeepSeek 新一轮融资启动，估值4800亿"
    },
    "links": [
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#company",
+     "title": "DeepSeek 新一轮融资启动，估值4800亿"
+    },
     {
      "date": "2026-07-15",
      "url": "/posts/2026-07-14-ai-morning-post/#company",
@@ -769,11 +722,53 @@
      "date": "2026-06-18",
      "url": "/posts/2026-06-17-ai-morning-post/#company",
      "title": "DeepSeek完成74亿美元融资，估值再创新高"
+    }
+   ]
+  },
+  {
+   "name": "百度",
+   "score": 4.97,
+   "days": 7,
+   "latest": {
+    "date": "2026-07-16",
+    "url": "/posts/2026-07-15-ai-morning-post/#product",
+    "title": "百度搭子入选 WAIC 2026 镇馆之宝"
+   },
+   "links": [
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#product",
+     "title": "百度搭子入选 WAIC 2026 镇馆之宝"
     },
     {
-     "date": "2026-06-17",
-     "url": "/posts/2026-06-16-ai-morning-post/#company",
-     "title": "DeepSeek 首次引入外部投资，估值达 500 亿美元"
+     "date": "2026-07-11",
+     "url": "/posts/2026-07-10-ai-morning-post/#product",
+     "title": "百度搭子升级企业版，日均提问增 20 倍"
+    },
+    {
+     "date": "2026-07-08",
+     "url": "/posts/2026-07-07-ai-morning-post/#company",
+     "title": "百度基础模型研发部换帅，孙天祥接任"
+    },
+    {
+     "date": "2026-07-07",
+     "url": "/posts/2026-07-06-ai-morning-post/#product",
+     "title": "百度推出 Unlimited OCR：模拟人类遗忘机制突破长度限制"
+    },
+    {
+     "date": "2026-07-06",
+     "url": "/posts/2026-07-05-ai-morning-post/#product",
+     "title": "百度推出‘无限OCR’：一次处理数十页文档"
+    },
+    {
+     "date": "2026-07-02",
+     "url": "/posts/2026-07-01-ai-morning-post/#company",
+     "title": "百度引入大模型专家孙天祥，任基础模型研发负责人"
+    },
+    {
+     "date": "2026-06-29",
+     "url": "/posts/2026-06-28-ai-morning-post/#opensource",
+     "title": "百度开源整书级 OCR 模型"
     }
    ]
   }
