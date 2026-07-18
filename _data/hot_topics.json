@@ -1,17 +1,22 @@
 {
- "generated": "2026-07-18",
+ "generated": "2026-07-19",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 66.06,
+   "score": 63.42,
    "days": 25,
    "latest": {
-    "date": "2026-07-18",
-    "url": "/posts/2026-07-17-ai-morning-post/#research",
-    "title": "AutoSynthesis：智能体自动化系统综述与元分析"
+    "date": "2026-07-19",
+    "url": "/posts/2026-07-18-ai-morning-post/#product",
+    "title": "Vertu推出6880美元AI Agent手机，实测表现"
    },
    "links": [
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#product",
+     "title": "Vertu推出6880美元AI Agent手机，实测表现"
+    },
     {
      "date": "2026-07-18",
      "url": "/posts/2026-07-17-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-07-12",
      "url": "/posts/2026-07-11-ai-morning-post/#opensource",
      "title": "OfficeCLI：AI Agent 专用 Office 文件读写工具"
-    },
-    {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#product",
-     "title": "ChatGPT Work上线：Agent 从“对话”走向“执行”"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 41.74,
+   "score": 40.52,
    "days": 24,
    "latest": {
-    "date": "2026-07-18",
-    "url": "/posts/2026-07-17-ai-morning-post/#product",
-    "title": "OpenAI推摇杆硬件WorkLouder Codex Micro控制Agent"
+    "date": "2026-07-19",
+    "url": "/posts/2026-07-18-ai-morning-post/#model-release",
+    "title": "GPT-5.6 在获得文件访问权限后删除用户文件，OpenAI 承认异常"
    },
    "links": [
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#model-release",
+     "title": "GPT-5.6 在获得文件访问权限后删除用户文件，OpenAI 承认异常"
+    },
     {
      "date": "2026-07-18",
      "url": "/posts/2026-07-17-ai-morning-post/#product",
@@ -98,24 +103,24 @@
      "date": "2026-07-12",
      "url": "/posts/2026-07-11-ai-morning-post/#company",
      "title": "OpenAI安全负责人Johannes Heidecke离职"
-    },
-    {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#model-release",
-     "title": "OpenAI发布GPT-5.6三型号：性能逼近Claude，成本仅三分之一"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 29.06,
+   "score": 29.45,
    "days": 26,
    "latest": {
-    "date": "2026-07-18",
-    "url": "/posts/2026-07-17-ai-morning-post/#opensource",
-    "title": "Anthropic开源知识工作插件库：让Claude变身领域专家"
+    "date": "2026-07-19",
+    "url": "/posts/2026-07-18-ai-morning-post/#model-release",
+    "title": "Anthropic 宣布 Claude Fable 5 永久开放，同时限制 Max/Team 用量"
    },
    "links": [
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#model-release",
+     "title": "Anthropic 宣布 Claude Fable 5 永久开放，同时限制 Max/Team 用量"
+    },
     {
      "date": "2026-07-18",
      "url": "/posts/2026-07-17-ai-morning-post/#opensource",
@@ -150,18 +155,13 @@
      "date": "2026-07-11",
      "url": "/posts/2026-07-10-ai-morning-post/#research",
      "title": "Anthropic 发现 Claude 内部隐藏推理空间"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#company",
-     "title": "Anthropic、OpenAI、SpaceX的IPO将超过去25年科技退出总和"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 17.84,
-   "days": 15,
+   "score": 16.81,
+   "days": 14,
    "latest": {
     "date": "2026-07-16",
     "url": "/posts/2026-07-15-ai-morning-post/#product",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Meta",
-   "score": 15.42,
-   "days": 19,
+   "score": 15.61,
+   "days": 20,
    "latest": {
-    "date": "2026-07-18",
-    "url": "/posts/2026-07-17-ai-morning-post/#company",
-    "title": "Meta拟将过剩AI算力卖给Anthropic"
+    "date": "2026-07-19",
+    "url": "/posts/2026-07-18-ai-morning-post/#company",
+    "title": "Meta拟卖算力，Anthropic或成首批客户"
    },
    "links": [
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#company",
+     "title": "Meta拟卖算力，Anthropic或成首批客户"
+    },
     {
      "date": "2026-07-18",
      "url": "/posts/2026-07-17-ai-morning-post/#company",
@@ -254,24 +259,24 @@
      "date": "2026-07-10",
      "url": "/posts/2026-07-09-ai-morning-post/#model-release",
      "title": "Meta 发布 Muse Spark 1.1，以低价冲击 AI 编码市场"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#model-release",
-     "title": "Meta 推出图像生成器 Muse：用 Instagram 公共数据训练引隐私争议"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 13.81,
+   "score": 14.06,
    "days": 17,
    "latest": {
-    "date": "2026-07-18",
-    "url": "/posts/2026-07-17-ai-morning-post/#product",
-    "title": "Google AI模式扩展：可链接并操作第三方应用"
+    "date": "2026-07-19",
+    "url": "/posts/2026-07-18-ai-morning-post/#opensource",
+    "title": "Google发布Android Skills库，助力AI理解Android开发"
    },
    "links": [
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#opensource",
+     "title": "Google发布Android Skills库，助力AI理解Android开发"
+    },
     {
      "date": "2026-07-18",
      "url": "/posts/2026-07-17-ai-morning-post/#product",
@@ -306,18 +311,13 @@
      "date": "2026-07-08",
      "url": "/posts/2026-07-07-ai-morning-post/#opensource",
      "title": "Google 开源 Antigravity Python SDK"
-    },
-    {
-     "date": "2026-07-07",
-     "url": "/posts/2026-07-06-ai-morning-post/#opinion",
-     "title": "Google默认隐私设置变更，用户数据用于训练AI"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 12.26,
-   "days": 20,
+   "score": 11.39,
+   "days": 19,
    "latest": {
     "date": "2026-07-17",
     "url": "/posts/2026-07-16-ai-morning-post/#company",
@@ -368,14 +368,19 @@
   },
   {
    "name": "腾讯",
-   "score": 8.45,
-   "days": 11,
+   "score": 9.03,
+   "days": 12,
    "latest": {
-    "date": "2026-07-18",
-    "url": "/posts/2026-07-17-ai-morning-post/#model-release",
-    "title": "WAIC 2026：腾讯混元Hy3大模型首秀"
+    "date": "2026-07-19",
+    "url": "/posts/2026-07-18-ai-morning-post/#product",
+    "title": "腾讯发布具身智能全栈方案，ADP 4.0出海"
    },
    "links": [
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#product",
+     "title": "腾讯发布具身智能全栈方案，ADP 4.0出海"
+    },
     {
      "date": "2026-07-18",
      "url": "/posts/2026-07-17-ai-morning-post/#model-release",
@@ -410,17 +415,12 @@
      "date": "2026-07-07",
      "url": "/posts/2026-07-06-ai-morning-post/#model-release",
      "title": "腾讯开源Hy3：小参数大能力"
-    },
-    {
-     "date": "2026-07-05",
-     "url": "/posts/2026-07-04-ai-morning-post/#opensource",
-     "title": "腾讯云开源 CubeSandbox：AI Agent 即时沙箱"
     }
    ]
   },
   {
    "name": "NVIDIA",
-   "score": 8.39,
+   "score": 7.94,
    "days": 13,
    "latest": {
     "date": "2026-07-17",
@@ -472,8 +472,8 @@
   },
   {
    "name": "世界模型",
-   "score": 8.39,
-   "days": 13,
+   "score": 7.9,
+   "days": 12,
    "latest": {
     "date": "2026-07-15",
     "url": "/posts/2026-07-14-ai-morning-post/#research",
@@ -524,7 +524,7 @@
   },
   {
    "name": "阿里",
-   "score": 7.97,
+   "score": 7.55,
    "days": 11,
    "latest": {
     "date": "2026-07-17",
@@ -576,14 +576,19 @@
   },
   {
    "name": "算力",
-   "score": 6.48,
-   "days": 10,
+   "score": 7.13,
+   "days": 11,
    "latest": {
-    "date": "2026-07-18",
-    "url": "/posts/2026-07-17-ai-morning-post/#company",
-    "title": "Meta拟将过剩AI算力卖给Anthropic"
+    "date": "2026-07-19",
+    "url": "/posts/2026-07-18-ai-morning-post/#company",
+    "title": "Meta拟卖算力，Anthropic或成首批客户"
    },
    "links": [
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#company",
+     "title": "Meta拟卖算力，Anthropic或成首批客户"
+    },
     {
      "date": "2026-07-18",
      "url": "/posts/2026-07-17-ai-morning-post/#company",
@@ -618,24 +623,24 @@
      "date": "2026-07-02",
      "url": "/posts/2026-07-01-ai-morning-post/#company",
      "title": "Meta计划出售多余AI算力，进军云业务"
-    },
-    {
-     "date": "2026-06-30",
-     "url": "/posts/2026-06-29-ai-morning-post/#research",
-     "title": "清华UDS方法：大模型微调算力减半"
     }
    ]
   },
   {
    "name": "百度",
-   "score": 5.48,
-   "days": 8,
+   "score": 6.23,
+   "days": 9,
    "latest": {
-    "date": "2026-07-17",
-    "url": "/posts/2026-07-16-ai-morning-post/#company",
-    "title": "Apple Intelligence 获准在华上线，接入阿里和百度 AI"
+    "date": "2026-07-19",
+    "url": "/posts/2026-07-18-ai-morning-post/#product",
+    "title": "百度秒哒3.5发布，中国市场第一"
    },
    "links": [
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#product",
+     "title": "百度秒哒3.5发布，中国市场第一"
+    },
     {
      "date": "2026-07-17",
      "url": "/posts/2026-07-16-ai-morning-post/#company",
@@ -670,71 +675,56 @@
      "date": "2026-07-02",
      "url": "/posts/2026-07-01-ai-morning-post/#company",
      "title": "百度引入大模型专家孙天祥，任基础模型研发负责人"
-    },
-    {
-     "date": "2026-06-29",
-     "url": "/posts/2026-06-28-ai-morning-post/#opensource",
-     "title": "百度开源整书级 OCR 模型"
     }
    ]
   },
   {
-   "name": "Hugging Face",
-   "score": 5.16,
-   "days": 7,
+   "name": "GPT-5.6",
+   "score": 5.42,
+   "days": 4,
    "latest": {
-    "date": "2026-07-13",
-    "url": "/posts/2026-07-12-ai-morning-post/#opensource",
-    "title": "Hugging Face开源语音到语音Agent框架"
+    "date": "2026-07-19",
+    "url": "/posts/2026-07-18-ai-morning-post/#model-release",
+    "title": "Kimi K3 开源发布，性能超 Claude Fable 5 和 GPT-5.6"
    },
    "links": [
     {
-     "date": "2026-07-13",
-     "url": "/posts/2026-07-12-ai-morning-post/#opensource",
-     "title": "Hugging Face开源语音到语音Agent框架"
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#model-release",
+     "title": "Kimi K3 开源发布，性能超 Claude Fable 5 和 GPT-5.6"
     },
     {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#opinion",
-     "title": "Hugging Face CEO：开源AI比以往更重要"
+     "date": "2026-07-10",
+     "url": "/posts/2026-07-09-ai-morning-post/#model-release",
+     "title": "OpenAI 发布 GPT-5.6 系列，同步推出 ChatGPT Work"
     },
     {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#opinion",
-     "title": "Hugging Face CEO：开源AI从未如此关键"
+     "date": "2026-06-30",
+     "url": "/posts/2026-06-29-ai-morning-post/#model-release",
+     "title": "GPT-5.6 预览版被指作弊"
     },
     {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#opensource",
-     "title": "Hugging Face 与 NVIDIA 联合发布 LeRobot v0.6.0"
-    },
-    {
-     "date": "2026-07-05",
-     "url": "/posts/2026-07-04-ai-morning-post/#opensource",
-     "title": "Hugging Face 开源本地语音 Agent 框架"
-    },
-    {
-     "date": "2026-07-02",
-     "url": "/posts/2026-07-01-ai-morning-post/#product",
-     "title": "Hugging Face + Cerebras：Gemma 4实时语音AI落地"
-    },
-    {
-     "date": "2026-06-23",
-     "url": "/posts/2026-06-22-ai-morning-post/#model-release",
-     "title": "PP-OCRv6 登陆 Hugging Face，支持 50 种语言"
+     "date": "2026-06-28",
+     "url": "/posts/2026-06-27-ai-morning-post/#model-release",
+     "title": "OpenAI 发布 GPT-5.6 三子，政府要求限制部署"
     }
    ]
   },
   {
    "name": "DeepSeek",
-   "score": 4.42,
-   "days": 7,
+   "score": 5.19,
+   "days": 8,
    "latest": {
-    "date": "2026-07-16",
-    "url": "/posts/2026-07-15-ai-morning-post/#company",
-    "title": "DeepSeek 新一轮融资启动，估值4800亿"
+    "date": "2026-07-19",
+    "url": "/posts/2026-07-18-ai-morning-post/#company",
+    "title": "DeepSeek估值3500亿，竟被安徽箱包公司泄密"
    },
    "links": [
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#company",
+     "title": "DeepSeek估值3500亿，竟被安徽箱包公司泄密"
+    },
     {
      "date": "2026-07-16",
      "url": "/posts/2026-07-15-ai-morning-post/#company",
