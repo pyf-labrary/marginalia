@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="月白林隙 Lunar Glade — 月光庭院探索 · 提灯点祠">
+<title>月白林隙 · Lunar Glade</title>
+<style>
+  :root{
+    --bg:#05070f;
+    --ink:#0a1220;
+    --moon:#e8f0ff;
+    --gold:#ffd27a;
+    --pink:#f0a0c8;
+    --violet:#a78bfa;
+    --muted:#8aa0b8;
+    --line:rgba(180,210,230,.22);
+    --panel:rgba(6,12,22,.72);
+    --font:"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    --mono:"SF Mono","Cascadia Mono","Consolas",monospace;
+    --keyart:none;
+  }
+  *{box-sizing:border-box}
+  html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--bg);color:var(--moon);font-family:var(--font)}
+  button{font:inherit;cursor:pointer}
+  #game{position:fixed;inset:0;width:100%;height:100%;display:block;background:#05070f;cursor:crosshair}
+  #grain{position:fixed;inset:0;pointer-events:none;opacity:.045;z-index:6;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.75'/%3E%3C/svg%3E")}
+  #vignette{position:fixed;inset:0;pointer-events:none;z-index:5;
+    background:radial-gradient(ellipse at 50% 45%,transparent 35%,rgba(2,4,12,.45) 100%)}
+  #hud{position:fixed;inset:0;pointer-events:none;z-index:10}
+  .topbar{position:absolute;top:16px;left:16px;right:16px;display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:start}
+  .brand{display:flex;gap:12px;align-items:center;min-width:0}
+  .mark{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;
+    background:rgba(12,20,36,.6);box-shadow:0 0 24px rgba(255,210,122,.18);
+    display:grid;place-items:center;overflow:hidden}
+  .mark img{width:28px;height:28px;object-fit:contain;filter:drop-shadow(0 0 6px rgba(255,210,122,.5))}
+  .title .name{font-size:15px;letter-spacing:.2em;color:#f4f7ff}
+  .title .sub{font-size:11px;color:var(--muted);margin-top:3px;letter-spacing:.08em}
+  .objective{justify-self:center;text-align:center;max-width:min(560px,48vw);padding:10px 18px;
+    border:1px solid var(--line);background:var(--panel);border-radius:12px;
+    box-shadow:0 12px 40px rgba(0,0,0,.35);backdrop-filter:blur(8px)}
+  .objective .main{font-size:13px;color:#f4f7ff;letter-spacing:.06em}
+  .objective .hint{font-size:11px;color:var(--muted);margin-top:4px}
+  .readout{justify-self:end;display:grid;grid-template-columns:repeat(4,minmax(70px,1fr));gap:7px;width:min(420px,44vw)}
+  .meter{border:1px solid var(--line);background:var(--panel);padding:8px 10px;border-radius:10px;min-width:0;backdrop-filter:blur(8px)}
+  .meter .label{font-size:10px;color:var(--muted);font-family:var(--mono);letter-spacing:.12em}
+  .meter .value{font-size:18px;line-height:1.05;margin-top:4px;font-family:var(--mono);color:#f4f7ff}
+  .meter .bar{height:3px;background:rgba(180,210,230,.12);margin-top:7px;overflow:hidden;border-radius:2px}
+  .meter .bar i{display:block;height:100%;width:50%;background:var(--gold);box-shadow:0 0 12px currentColor;transition:width .2s}
+  .leftdeck{position:absolute;left:16px;bottom:16px;width:300px;display:grid;gap:8px}
+  .panel{border:1px solid var(--line);background:var(--panel);border-radius:12px;
+    box-shadow:0 12px 36px rgba(0,0,0,.34);backdrop-filter:blur(10px)}
+  #log{height:118px;padding:11px;overflow:hidden;font-family:var(--mono);font-size:11px;line-height:1.45;color:#b8c8dc}
+  #log div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:.85}
+  .controls{padding:11px;color:var(--muted);font-size:11px;line-height:1.55}
+  .controls b{font-family:var(--mono);color:#eef3ff;font-weight:500}
+  .rightdeck{position:absolute;right:16px;bottom:174px}
+  #lanternState{padding:8px 12px;border:1px solid var(--line);background:var(--panel);border-radius:999px;
+    font-size:12px;letter-spacing:.08em;color:var(--muted);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+  #lanternState.on{color:var(--gold);border-color:rgba(255,210,122,.45);box-shadow:0 0 18px rgba(255,210,122,.2)}
+  #toast{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);max-width:min(640px,86vw);
+    padding:10px 18px;border:1px solid var(--line);background:rgba(4,8,16,.72);color:#f4f7ff;
+    font-size:13px;text-align:center;opacity:0;transition:opacity .25s;border-radius:10px;
+    box-shadow:0 10px 40px rgba(0,0,0,.4);pointer-events:none}
+  #toast.show{opacity:1}
+  #overlay,#ending,#pauseMenu{position:fixed;inset:0;display:grid;place-items:center;z-index:30;
+    background:radial-gradient(circle at 50% 40%,rgba(40,50,90,.45),rgba(3,5,12,.94) 66%);padding:22px}
+  #overlay.hide,#ending.hide,#pauseMenu.hide{display:none}
+  .start-card{width:min(960px,94vw);min-height:min(560px,86vh);display:grid;grid-template-columns:1.1fr .9fr;
+    border:1px solid rgba(180,210,230,.22);background:rgba(6,12,22,.78);border-radius:18px;
+    box-shadow:0 30px 90px rgba(0,0,0,.55);overflow:hidden;position:relative}
+  .hero{position:relative;min-height:480px;background:
+    radial-gradient(circle at 48% 40%,rgba(255,210,122,.18),transparent 40%),
+    linear-gradient(180deg,#121a30,#05070f)}
+  .hero:before{content:"";position:absolute;inset:0;background-image:var(--keyart);background-size:cover;
+    background-position:center;opacity:.78;filter:saturate(1.05) contrast(1.04)}
+  .hero:after{content:"";position:absolute;inset:0;background:
+    linear-gradient(90deg,transparent 40%,rgba(6,12,22,.55) 78%,rgba(6,12,22,.92) 100%),
+    radial-gradient(circle at 50% 50%,transparent 20%,rgba(3,5,12,.55) 100%)}
+  .hero-copy{position:absolute;left:22px;bottom:22px;z-index:2;max-width:70%}
+  .hero-copy .tag{font-size:11px;letter-spacing:.22em;color:var(--gold);margin-bottom:8px}
+  .hero-copy h1{margin:0;font-size:clamp(28px,3.2vw,40px);font-weight:600;letter-spacing:.12em;color:#f8f4ff}
+  .hero-copy p{margin:10px 0 0;font-size:13px;line-height:1.55;color:#c8d4e8;max-width:34ch}
+  .side{padding:28px 26px;display:flex;flex-direction:column;gap:16px;justify-content:center}
+  .side h2{margin:0;font-size:18px;font-weight:600;letter-spacing:.08em}
+  .side .blurb{color:var(--muted);font-size:13px;line-height:1.65;margin:0}
+  .bullets{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:12px;color:#c4d0e4}
+  .bullets li{padding-left:14px;position:relative}
+  .bullets li:before{content:"";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;
+    background:var(--gold);box-shadow:0 0 8px rgba(255,210,122,.5)}
+  .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+  .btn{appearance:none;border:1px solid rgba(180,210,230,.28);background:rgba(255,210,122,.12);
+    color:#f8f4ff;padding:11px 18px;border-radius:10px;letter-spacing:.08em;font-size:13px;
+    transition:background .15s,border-color .15s,transform .1s;pointer-events:auto}
+  .btn:hover{background:rgba(255,210,122,.22);border-color:rgba(255,210,122,.45)}
+  .btn:active{transform:translateY(1px)}
+  .btn:disabled{opacity:.45;cursor:wait}
+  .btn.ghost{background:transparent}
+  .btn.primary{background:linear-gradient(135deg,rgba(255,210,122,.35),rgba(240,160,200,.2));
+    border-color:rgba(255,210,122,.5);box-shadow:0 0 24px rgba(255,210,122,.15)}
+  .settings{display:grid;gap:8px;font-size:12px;color:var(--muted)}
+  .settings label{display:grid;grid-template-columns:64px 1fr 40px;gap:8px;align-items:center}
+  .settings input[type=range]{width:100%;accent-color:var(--gold)}
+  #progress{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.08em}
+  .end-card,.pause-card{width:min(480px,92vw);padding:28px;border:1px solid rgba(180,210,230,.22);
+    background:rgba(6,12,22,.88);border-radius:16px;box-shadow:0 24px 80px rgba(0,0,0,.5);text-align:center}
+  .end-card h2,.pause-card h2{margin:0 0 10px;font-size:24px;letter-spacing:.12em}
+  .end-card p,.pause-card p{margin:0 0 18px;color:var(--muted);font-size:13px;line-height:1.6}
+  .end-card .actions,.pause-card .actions{justify-content:center}
+  @media (max-width:820px){
+    .start-card{grid-template-columns:1fr}
+    .hero{min-height:220px}
+    .readout{grid-template-columns:repeat(2,minmax(70px,1fr));width:auto}
+    .leftdeck{width:min(280px,70vw)}
+    .objective{max-width:42vw}
+  }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="vignette"></div>
+<div id="grain"></div>
+
+<div id="hud">
+  <div class="topbar">
+    <div class="brand">
+      <div class="mark"><img src="assets/ui/icon_moon.png" alt="" onerror="this.style.display='none'"></div>
+      <div class="title">
+        <div class="name">月白林隙</div>
+        <div class="sub">LUNAR GLADE</div>
+      </div>
+    </div>
+    <div class="objective">
+      <div class="main" id="objectiveMain">点亮月祠 0/5</div>
+      <div class="hint" id="objectiveHint">提灯靠近月祠，消耗月华点燃</div>
+    </div>
+    <div class="readout">
+      <div class="meter" id="mHp">
+        <div class="label">灯芯</div>
+        <div class="value">5/5</div>
+        <div class="bar"><i style="width:100%"></i></div>
+      </div>
+      <div class="meter" id="mBlossom">
+        <div class="label">月华</div>
+        <div class="value">0</div>
+      </div>
+      <div class="meter" id="mShrine">
+        <div class="label">月祠</div>
+        <div class="value">0/5</div>
+      </div>
+      <div class="meter" id="mTime">
+        <div class="label">时辰</div>
+        <div class="value">0:00</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="leftdeck">
+    <div class="panel" id="log"></div>
+    <div class="panel controls">
+      <div><b>WASD</b> 移动 · <b>Space</b> 提灯 · <b>Esc</b> 暂停 · <b>M</b> 静音</div>
+      <div style="margin-top:4px">提灯开启时影蛾会追来，但才能点燃月祠</div>
+    </div>
+  </div>
+
+  <div class="rightdeck">
+    <div id="lanternState" class="on">提灯 · 开</div>
+  </div>
+
+  <div id="toast"></div>
+</div>
+
+<div id="overlay">
+  <div class="start-card">
+    <div class="hero">
+      <div class="hero-copy">
+        <div class="tag">IMAGINE ASSET SUITE</div>
+        <h1>月白林隙</h1>
+        <p>月光沉入苔径。狐灯使拾取月华，重燃五座冷祠，再从中央月门归航。</p>
+      </div>
+    </div>
+    <div class="side">
+      <h2>归航之约</h2>
+      <p class="blurb">林隙被影蛾侵占，月祠的火熄了。你是提灯的狐灵——收集月华，点亮五祠，返回月门。</p>
+      <ul class="bullets">
+        <li>拾取粉银月华作为点灯燃料</li>
+        <li>提灯靠近月祠，消耗 3 月华点燃</li>
+        <li>提灯会吸引影蛾；熄灯更安全</li>
+        <li>五祠皆燃后，踏入中央月门通关</li>
+      </ul>
+      <div class="settings">
+        <label><span>音乐</span><input id="musicRange" type="range" min="0" max="100" value="55"><span id="musicValue">55%</span></label>
+        <label><span>音效</span><input id="sfxRange" type="range" min="0" max="100" value="85"><span id="sfxValue">85%</span></label>
+      </div>
+      <div id="progress">装载资源…</div>
+      <div class="actions">
+        <button class="btn primary" id="startBtn" disabled>装载中…</button>
+        <button class="btn ghost" id="muteBtn">静音</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ending" class="hide">
+  <div class="end-card">
+    <h2 id="endTitle">月门已开</h2>
+    <p id="endText"></p>
+    <div class="actions">
+      <button class="btn primary" id="restartBtn">再走一遭</button>
+      <button class="btn ghost" id="closeEndBtn">返回标题</button>
+    </div>
+  </div>
+</div>
+
+<div id="pauseMenu" class="hide">
+  <div class="pause-card">
+    <h2>暂停</h2>
+    <p>林隙静听。提灯的火还在，影蛾也还在。</p>
+    <div class="actions">
+      <button class="btn primary" id="resumeBtn">继续</button>
+      <button class="btn ghost" id="pauseRestartBtn">重新开始</button>
+      <button class="btn ghost" id="titleBtn">标题</button>
+      <button class="btn ghost" id="pauseMuteBtn">静音</button>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
