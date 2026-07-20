@@ -11,6 +11,23 @@ wide: true
 <ul class="cover-list" role="list">
 
 <li class="cover-row">
+<a class="cover-media" href="https://github.com/pyf-labrary/smart-toolbox"><img src="/marginalia/assets/img/site/covers/smart-toolbox.jpg" alt="智能工具箱界面拼贴：首页计时组、运行中圆形进度盘、编辑串联步骤" loading="lazy"></a>
+<div class="cover-body" markdown="1">
+## 智能工具箱 · Smart Toolbox
+
+> 本地优先的原生 Android 工具箱。第一个工具是**智能计时器**：把热身 → 专注 → 收尾这类重复步骤串成一组，点一次开始，响铃后自动衔接下一段。不需要账号，不需要网络。
+
+普通倒计时（1 / 3 / 5 / 10 / 25 分钟快捷键 + 自定义）和串联计时组并存。运行中可暂停、跳过、加 1 分钟；锁屏时前台通知显示剩余时间，系统精确闹钟负责阶段切换——Doze 下也能准点响铃。所有配置只写 `SharedPreferences`，进程被系统回收后也能从本地状态恢复。
+
+→ [源代码](https://github.com/pyf-labrary/smart-toolbox)（MIT 开源，`./gradlew assembleDebug` 即出 APK）
+
+技术栈：Java 17 + Android SDK 36，纯原生 View，**零第三方运行时依赖**。`TimerService` 前台服务 + `AlarmManager.setExactAndAllowWhileIdle`；`USE_EXACT_ALARM` 专用于计时器核心闹钟。无 `INTERNET` 权限。
+
+*上线时间：2026-07-20。*
+</div>
+</li>
+
+<li class="cover-row">
 <a class="cover-media" href="https://dashboard.ssbx.site/"><img src="/marginalia/assets/img/site/covers/bodhi-web.jpg" alt="BODHI 制片人预览板实际界面：左侧导航 + 镜次面板里一格格电影级镜头卡，每张标着选用 take 和单镜花费" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## BODHI 制片人预览板 (bodhi-web)
