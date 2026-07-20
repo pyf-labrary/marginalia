@@ -1,10 +1,10 @@
 {
- "generated": "2026-07-20",
+ "generated": "2026-07-21",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 63.0,
+   "score": 59.48,
    "days": 26,
    "latest": {
     "date": "2026-07-20",
@@ -56,14 +56,19 @@
   },
   {
    "name": "OpenAI",
-   "score": 38.35,
-   "days": 23,
+   "score": 38.39,
+   "days": 24,
    "latest": {
-    "date": "2026-07-19",
-    "url": "/posts/2026-07-18-ai-morning-post/#model-release",
-    "title": "GPT-5.6 在获得文件访问权限后删除用户文件，OpenAI 承认异常"
+    "date": "2026-07-21",
+    "url": "/posts/2026-07-20-ai-morning-post/#company",
+    "title": "OpenAI 发布长期模型安全对齐经验"
    },
    "links": [
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#company",
+     "title": "OpenAI 发布长期模型安全对齐经验"
+    },
     {
      "date": "2026-07-19",
      "url": "/posts/2026-07-18-ai-morning-post/#model-release",
@@ -98,17 +103,12 @@
      "date": "2026-07-13",
      "url": "/posts/2026-07-12-ai-morning-post/#company",
      "title": "苹果41页诉状：OpenAI“偷师”核心机密"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#company",
-     "title": "OpenAI安全负责人Johannes Heidecke离职"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 28.77,
+   "score": 27.19,
    "days": 26,
    "latest": {
     "date": "2026-07-20",
@@ -160,7 +160,7 @@
   },
   {
    "name": "Claude",
-   "score": 16.84,
+   "score": 15.84,
    "days": 15,
    "latest": {
     "date": "2026-07-20",
@@ -212,8 +212,8 @@
   },
   {
    "name": "Meta",
-   "score": 14.77,
-   "days": 20,
+   "score": 13.9,
+   "days": 19,
    "latest": {
     "date": "2026-07-19",
     "url": "/posts/2026-07-18-ai-morning-post/#company",
@@ -263,8 +263,60 @@
    ]
   },
   {
+   "name": "芯片",
+   "score": 12.71,
+   "days": 20,
+   "latest": {
+    "date": "2026-07-21",
+    "url": "/posts/2026-07-20-ai-morning-post/#company",
+    "title": "谷歌被曝开发 Gemini 专用芯片 Frozen v2"
+   },
+   "links": [
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#company",
+     "title": "谷歌被曝开发 Gemini 专用芯片 Frozen v2"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#product",
+     "title": "云天励飞发布三款 AI 推理芯片与超节点集群"
+    },
+    {
+     "date": "2026-07-17",
+     "url": "/posts/2026-07-16-ai-morning-post/#company",
+     "title": "蔚来芯片公司神玑发布具身智能开发平台"
+    },
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#company",
+     "title": "苹果调整 Mac 芯片路线图，跳过 M6 Pro 直攻 M7 系列"
+    },
+    {
+     "date": "2026-07-11",
+     "url": "/posts/2026-07-10-ai-morning-post/#company",
+     "title": "Meta AI芯片将于9月量产"
+    },
+    {
+     "date": "2026-07-10",
+     "url": "/posts/2026-07-09-ai-morning-post/#company",
+     "title": "Meta计划9月生产自主AI芯片，计算能力目标翻番"
+    },
+    {
+     "date": "2026-07-09",
+     "url": "/posts/2026-07-08-ai-morning-post/#company",
+     "title": "DeepSeek秘密自研AI推理芯片，已启动一年"
+    },
+    {
+     "date": "2026-07-08",
+     "url": "/posts/2026-07-07-ai-morning-post/#company",
+     "title": "DeepSeek计划自研AI芯片摆脱依赖"
+    }
+   ]
+  },
+  {
    "name": "Google",
-   "score": 13.35,
+   "score": 12.65,
    "days": 17,
    "latest": {
     "date": "2026-07-19",
@@ -315,67 +367,20 @@
    ]
   },
   {
-   "name": "芯片",
-   "score": 12.55,
-   "days": 19,
-   "latest": {
-    "date": "2026-07-20",
-    "url": "/posts/2026-07-19-ai-morning-post/#product",
-    "title": "云天励飞发布三款 AI 推理芯片与超节点集群"
-   },
-   "links": [
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#product",
-     "title": "云天励飞发布三款 AI 推理芯片与超节点集群"
-    },
-    {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#company",
-     "title": "蔚来芯片公司神玑发布具身智能开发平台"
-    },
-    {
-     "date": "2026-07-14",
-     "url": "/posts/2026-07-13-ai-morning-post/#company",
-     "title": "苹果调整 Mac 芯片路线图，跳过 M6 Pro 直攻 M7 系列"
-    },
-    {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#company",
-     "title": "Meta AI芯片将于9月量产"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#company",
-     "title": "Meta计划9月生产自主AI芯片，计算能力目标翻番"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#company",
-     "title": "DeepSeek秘密自研AI推理芯片，已启动一年"
-    },
-    {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#company",
-     "title": "DeepSeek计划自研AI芯片摆脱依赖"
-    },
-    {
-     "date": "2026-07-05",
-     "url": "/posts/2026-07-04-ai-morning-post/#research",
-     "title": "全球首款神经动力学芯片问世，比 GPU 快 478 倍"
-    }
-   ]
-  },
-  {
    "name": "腾讯",
-   "score": 10.58,
-   "days": 13,
+   "score": 11.06,
+   "days": 14,
    "latest": {
-    "date": "2026-07-20",
-    "url": "/posts/2026-07-19-ai-morning-post/#product",
-    "title": "腾讯发布三大具身基座模型，工业实测成功率超 95%"
+    "date": "2026-07-21",
+    "url": "/posts/2026-07-20-ai-morning-post/#product",
+    "title": "腾讯地图联合义乌推出 AI 导航找店"
    },
    "links": [
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#product",
+     "title": "腾讯地图联合义乌推出 AI 导航找店"
+    },
     {
      "date": "2026-07-20",
      "url": "/posts/2026-07-19-ai-morning-post/#product",
@@ -410,17 +415,64 @@
      "date": "2026-07-09",
      "url": "/posts/2026-07-08-ai-morning-post/#company",
      "title": "前OpenAI研究员田永龙加入腾讯参与VLM研发"
+    }
+   ]
+  },
+  {
+   "name": "阿里",
+   "score": 9.68,
+   "days": 13,
+   "latest": {
+    "date": "2026-07-21",
+    "url": "/posts/2026-07-20-ai-morning-post/#model-release",
+    "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
+   },
+   "links": [
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
+     "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#model-release",
+     "title": "阿里千问3.8预览版上线，开源承诺保持压力"
+    },
+    {
+     "date": "2026-07-17",
+     "url": "/posts/2026-07-16-ai-morning-post/#company",
+     "title": "Apple Intelligence 获准在华上线，接入阿里和百度 AI"
+    },
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#model-release",
+     "title": "阿里发布实时语音大模型 Qwen-Audio-3.0-Realtime"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#product",
+     "title": "阿里与大麦推出AI潮玩设计平台“妙呀”公测"
+    },
+    {
+     "date": "2026-07-09",
+     "url": "/posts/2026-07-08-ai-morning-post/#research",
+     "title": "阿里ACL最佳论文：Agent评测为何失效？"
     },
     {
      "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#model-release",
-     "title": "腾讯开源295B MoE模型Hy3，激活仅21B"
+     "url": "/posts/2026-07-07-ai-morning-post/#opensource",
+     "title": "阿里开源轻量级向量数据库 zvec"
+    },
+    {
+     "date": "2026-07-07",
+     "url": "/posts/2026-07-06-ai-morning-post/#research",
+     "title": "阿里清华论文获ICML杰出论文：扩散模型的“灵活性陷阱”"
     }
    ]
   },
   {
    "name": "世界模型",
-   "score": 9.48,
+   "score": 9.0,
    "days": 13,
    "latest": {
     "date": "2026-07-20",
@@ -472,7 +524,7 @@
   },
   {
    "name": "算力",
-   "score": 8.74,
+   "score": 8.29,
    "days": 12,
    "latest": {
     "date": "2026-07-20",
@@ -523,67 +575,20 @@
    ]
   },
   {
-   "name": "阿里",
-   "score": 8.13,
-   "days": 12,
-   "latest": {
-    "date": "2026-07-20",
-    "url": "/posts/2026-07-19-ai-morning-post/#model-release",
-    "title": "阿里千问3.8预览版上线，开源承诺保持压力"
-   },
-   "links": [
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#model-release",
-     "title": "阿里千问3.8预览版上线，开源承诺保持压力"
-    },
-    {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#company",
-     "title": "Apple Intelligence 获准在华上线，接入阿里和百度 AI"
-    },
-    {
-     "date": "2026-07-16",
-     "url": "/posts/2026-07-15-ai-morning-post/#model-release",
-     "title": "阿里发布实时语音大模型 Qwen-Audio-3.0-Realtime"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#product",
-     "title": "阿里与大麦推出AI潮玩设计平台“妙呀”公测"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#research",
-     "title": "阿里ACL最佳论文：Agent评测为何失效？"
-    },
-    {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#opensource",
-     "title": "阿里开源轻量级向量数据库 zvec"
-    },
-    {
-     "date": "2026-07-07",
-     "url": "/posts/2026-07-06-ai-morning-post/#research",
-     "title": "阿里清华论文获ICML杰出论文：扩散模型的“灵活性陷阱”"
-    },
-    {
-     "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#company",
-     "title": "阿里巴巴禁止员工使用Claude Code"
-    }
-   ]
-  },
-  {
    "name": "NVIDIA",
-   "score": 7.48,
-   "days": 13,
+   "score": 8.03,
+   "days": 14,
    "latest": {
-    "date": "2026-07-17",
-    "url": "/posts/2026-07-16-ai-morning-post/#model-release",
-    "title": "Nemotron 3 Embed：NVIDIA登顶检索排行榜"
+    "date": "2026-07-21",
+    "url": "/posts/2026-07-20-ai-morning-post/#model-release",
+    "title": "NVIDIA 推出 Cosmos 3 Edge，专为边缘设备和实时推理优化"
    },
    "links": [
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
+     "title": "NVIDIA 推出 Cosmos 3 Edge，专为边缘设备和实时推理优化"
+    },
     {
      "date": "2026-07-17",
      "url": "/posts/2026-07-16-ai-morning-post/#model-release",
@@ -618,17 +623,12 @@
      "date": "2026-07-08",
      "url": "/posts/2026-07-07-ai-morning-post/#opensource",
      "title": "Hugging Face 与 NVIDIA 联合发布 LeRobot v0.6.0"
-    },
-    {
-     "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#product",
-     "title": "NVIDIA发布HORIZON：全自动RTL设计Agent"
     }
    ]
   },
   {
    "name": "百度",
-   "score": 6.94,
+   "score": 6.61,
    "days": 10,
    "latest": {
     "date": "2026-07-20",
@@ -680,7 +680,7 @@
   },
   {
    "name": "GPT-5.6",
-   "score": 6.19,
+   "score": 5.94,
    "days": 5,
    "latest": {
     "date": "2026-07-20",
@@ -716,54 +716,34 @@
    ]
   },
   {
-   "name": "DeepSeek",
-   "score": 4.94,
-   "days": 8,
+   "name": "Kimi K3",
+   "score": 5.65,
+   "days": 4,
    "latest": {
-    "date": "2026-07-19",
-    "url": "/posts/2026-07-18-ai-morning-post/#company",
-    "title": "DeepSeek估值3500亿，竟被安徽箱包公司泄密"
+    "date": "2026-07-21",
+    "url": "/posts/2026-07-20-ai-morning-post/#model-release",
+    "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
    },
    "links": [
     {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
+     "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#model-release",
+     "title": "Kimi K3空降Arena榜首，但订阅暂停暴露交付难题"
+    },
+    {
      "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#company",
-     "title": "DeepSeek估值3500亿，竟被安徽箱包公司泄密"
+     "url": "/posts/2026-07-18-ai-morning-post/#model-release",
+     "title": "Kimi K3 开源发布，性能超 Claude Fable 5 和 GPT-5.6"
     },
     {
-     "date": "2026-07-16",
-     "url": "/posts/2026-07-15-ai-morning-post/#company",
-     "title": "DeepSeek 新一轮融资启动，估值4800亿"
-    },
-    {
-     "date": "2026-07-15",
-     "url": "/posts/2026-07-14-ai-morning-post/#company",
-     "title": "DeepSeek新一轮融资需求紧迫"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#company",
-     "title": "DeepSeek秘密自研AI推理芯片，已启动一年"
-    },
-    {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#company",
-     "title": "DeepSeek计划自研AI芯片摆脱依赖"
-    },
-    {
-     "date": "2026-07-01",
-     "url": "/posts/2026-06-30-ai-morning-post/#company",
-     "title": "DeepSeek发布DSpark，AI推理速度提升85%"
-    },
-    {
-     "date": "2026-06-29",
-     "url": "/posts/2026-06-28-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 DSpark，加速 V4 生成至 85%"
-    },
-    {
-     "date": "2026-06-28",
-     "url": "/posts/2026-06-27-ai-morning-post/#opensource",
-     "title": "DeepSeek开源DSpark推测解码框架，加速推理60-85%"
+     "date": "2026-07-17",
+     "url": "/posts/2026-07-16-ai-morning-post/#model-release",
+     "title": "Kimi K3：2.8T参数开源MoE，性能比肩顶尖闭源"
     }
    ]
   }
