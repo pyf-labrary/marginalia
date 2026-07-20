@@ -1,4 +1,12 @@
 # Apps 索引数据 —— 供首页卡片 / 搜索 / 归档页使用。
+- slug: smart-toolbox
+  image: /assets/img/site/covers/smart-toolbox.jpg
+  title: 智能工具箱 · Smart Toolbox
+  url: https://github.com/pyf-labrary/smart-toolbox
+  external: true
+  date: 2026-07-20
+  tags: [Android, 计时器, 本地优先, 开源]
+  description: 本地优先的原生 Android 串联计时器：普通倒计时 + 多步骤自动衔接下一段，锁屏后台精确闹钟，无账号无网络。MIT 开源。
 - slug: claude-web-terminal
   image: /assets/img/site/covers/claude-web-terminal.jpg
   title: Claude Web Terminal
