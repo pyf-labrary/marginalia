@@ -1,17 +1,22 @@
 {
- "generated": "2026-07-21",
+ "generated": "2026-07-22",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 59.48,
-   "days": 26,
+   "score": 58.97,
+   "days": 27,
    "latest": {
-    "date": "2026-07-20",
-    "url": "/posts/2026-07-19-ai-morning-post/#model-release",
-    "title": "商汤发布原生多模态智能体基座U1 Pro"
+    "date": "2026-07-22",
+    "url": "/posts/2026-07-21-ai-morning-post/#research",
+    "title": "ClawBench：AI Agent 的日常任务能力标尺"
    },
    "links": [
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#research",
+     "title": "ClawBench：AI Agent 的日常任务能力标尺"
+    },
     {
      "date": "2026-07-20",
      "url": "/posts/2026-07-19-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-07-14",
      "url": "/posts/2026-07-13-ai-morning-post/#company",
      "title": "图灵奖得主 Rich Sutton 创立 Oak Lab，打造自学 AI Agent"
-    },
-    {
-     "date": "2026-07-13",
-     "url": "/posts/2026-07-12-ai-morning-post/#research",
-     "title": "Agent换用结构化记忆后完胜《杀戮尖塔2》"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 38.39,
-   "days": 24,
+   "score": 40.35,
+   "days": 25,
    "latest": {
-    "date": "2026-07-21",
-    "url": "/posts/2026-07-20-ai-morning-post/#company",
-    "title": "OpenAI 发布长期模型安全对齐经验"
+    "date": "2026-07-22",
+    "url": "/posts/2026-07-21-ai-morning-post/#company",
+    "title": "OpenAI 自曝预发布模型导致 Hugging Face 安全事件"
    },
    "links": [
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#company",
+     "title": "OpenAI 自曝预发布模型导致 Hugging Face 安全事件"
+    },
     {
      "date": "2026-07-21",
      "url": "/posts/2026-07-20-ai-morning-post/#company",
@@ -98,18 +103,13 @@
      "date": "2026-07-14",
      "url": "/posts/2026-07-13-ai-morning-post/#model-release",
      "title": "OpenAI发布GPT-5.6 Sol，性能与定价双重施压"
-    },
-    {
-     "date": "2026-07-13",
-     "url": "/posts/2026-07-12-ai-morning-post/#company",
-     "title": "苹果41页诉状：OpenAI“偷师”核心机密"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 27.19,
-   "days": 26,
+   "score": 25.52,
+   "days": 25,
    "latest": {
     "date": "2026-07-20",
     "url": "/posts/2026-07-19-ai-morning-post/#opensource",
@@ -160,8 +160,8 @@
   },
   {
    "name": "Claude",
-   "score": 15.84,
-   "days": 15,
+   "score": 14.77,
+   "days": 14,
    "latest": {
     "date": "2026-07-20",
     "url": "/posts/2026-07-19-ai-morning-post/#product",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Meta",
-   "score": 13.9,
-   "days": 19,
+   "score": 14.1,
+   "days": 20,
    "latest": {
-    "date": "2026-07-19",
-    "url": "/posts/2026-07-18-ai-morning-post/#company",
-    "title": "Meta拟卖算力，Anthropic或成首批客户"
+    "date": "2026-07-22",
+    "url": "/posts/2026-07-21-ai-morning-post/#opensource",
+    "title": "Meta 开源 Astryx：150+ 组件的 Agent 就绪设计系统"
    },
    "links": [
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#opensource",
+     "title": "Meta 开源 Astryx：150+ 组件的 Agent 就绪设计系统"
+    },
     {
      "date": "2026-07-19",
      "url": "/posts/2026-07-18-ai-morning-post/#company",
@@ -254,76 +259,24 @@
      "date": "2026-07-11",
      "url": "/posts/2026-07-10-ai-morning-post/#model-release",
      "title": "Meta推出Muse Spark 1.1：以低价策略切入AI编码市场"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#model-release",
-     "title": "Meta 发布 Muse Spark 1.1，以低价冲击 AI 编码市场"
-    }
-   ]
-  },
-  {
-   "name": "芯片",
-   "score": 12.71,
-   "days": 20,
-   "latest": {
-    "date": "2026-07-21",
-    "url": "/posts/2026-07-20-ai-morning-post/#company",
-    "title": "谷歌被曝开发 Gemini 专用芯片 Frozen v2"
-   },
-   "links": [
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#company",
-     "title": "谷歌被曝开发 Gemini 专用芯片 Frozen v2"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#product",
-     "title": "云天励飞发布三款 AI 推理芯片与超节点集群"
-    },
-    {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#company",
-     "title": "蔚来芯片公司神玑发布具身智能开发平台"
-    },
-    {
-     "date": "2026-07-14",
-     "url": "/posts/2026-07-13-ai-morning-post/#company",
-     "title": "苹果调整 Mac 芯片路线图，跳过 M6 Pro 直攻 M7 系列"
-    },
-    {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#company",
-     "title": "Meta AI芯片将于9月量产"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#company",
-     "title": "Meta计划9月生产自主AI芯片，计算能力目标翻番"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#company",
-     "title": "DeepSeek秘密自研AI推理芯片，已启动一年"
-    },
-    {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#company",
-     "title": "DeepSeek计划自研AI芯片摆脱依赖"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 12.65,
+   "score": 13.9,
    "days": 17,
    "latest": {
-    "date": "2026-07-19",
-    "url": "/posts/2026-07-18-ai-morning-post/#opensource",
-    "title": "Google发布Android Skills库，助力AI理解Android开发"
+    "date": "2026-07-22",
+    "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+    "title": "Google发布三款Gemini Flash模型：3.5 Pro继续缺席"
    },
    "links": [
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+     "title": "Google发布三款Gemini Flash模型：3.5 Pro继续缺席"
+    },
     {
      "date": "2026-07-19",
      "url": "/posts/2026-07-18-ai-morning-post/#opensource",
@@ -358,17 +311,116 @@
      "date": "2026-07-09",
      "url": "/posts/2026-07-08-ai-morning-post/#model-release",
      "title": "Google 更新 Android AI 开发基准 Android Bench，新增 Fable 5 等模型"
+    }
+   ]
+  },
+  {
+   "name": "芯片",
+   "score": 12.84,
+   "days": 21,
+   "latest": {
+    "date": "2026-07-22",
+    "url": "/posts/2026-07-21-ai-morning-post/#company",
+    "title": "Google 开发 Frozen v2 芯片，将 Gemini 架构直接集成于硅片"
+   },
+   "links": [
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#company",
+     "title": "Google 开发 Frozen v2 芯片，将 Gemini 架构直接集成于硅片"
+    },
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#company",
+     "title": "谷歌被曝开发 Gemini 专用芯片 Frozen v2"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#product",
+     "title": "云天励飞发布三款 AI 推理芯片与超节点集群"
+    },
+    {
+     "date": "2026-07-17",
+     "url": "/posts/2026-07-16-ai-morning-post/#company",
+     "title": "蔚来芯片公司神玑发布具身智能开发平台"
+    },
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#company",
+     "title": "苹果调整 Mac 芯片路线图，跳过 M6 Pro 直攻 M7 系列"
+    },
+    {
+     "date": "2026-07-11",
+     "url": "/posts/2026-07-10-ai-morning-post/#company",
+     "title": "Meta AI芯片将于9月量产"
+    },
+    {
+     "date": "2026-07-10",
+     "url": "/posts/2026-07-09-ai-morning-post/#company",
+     "title": "Meta计划9月生产自主AI芯片，计算能力目标翻番"
+    },
+    {
+     "date": "2026-07-09",
+     "url": "/posts/2026-07-08-ai-morning-post/#company",
+     "title": "DeepSeek秘密自研AI推理芯片，已启动一年"
+    }
+   ]
+  },
+  {
+   "name": "阿里",
+   "score": 11.16,
+   "days": 14,
+   "latest": {
+    "date": "2026-07-22",
+    "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+    "title": "阿里发布Qwen图像与语音模型：一段话生成信息图，支持多语言TTS"
+   },
+   "links": [
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+     "title": "阿里发布Qwen图像与语音模型：一段话生成信息图，支持多语言TTS"
+    },
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
+     "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#model-release",
+     "title": "阿里千问3.8预览版上线，开源承诺保持压力"
+    },
+    {
+     "date": "2026-07-17",
+     "url": "/posts/2026-07-16-ai-morning-post/#company",
+     "title": "Apple Intelligence 获准在华上线，接入阿里和百度 AI"
+    },
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#model-release",
+     "title": "阿里发布实时语音大模型 Qwen-Audio-3.0-Realtime"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#product",
+     "title": "阿里与大麦推出AI潮玩设计平台“妙呀”公测"
+    },
+    {
+     "date": "2026-07-09",
+     "url": "/posts/2026-07-08-ai-morning-post/#research",
+     "title": "阿里ACL最佳论文：Agent评测为何失效？"
     },
     {
      "date": "2026-07-08",
      "url": "/posts/2026-07-07-ai-morning-post/#opensource",
-     "title": "Google 开源 Antigravity Python SDK"
+     "title": "阿里开源轻量级向量数据库 zvec"
     }
    ]
   },
   {
    "name": "腾讯",
-   "score": 11.06,
+   "score": 10.52,
    "days": 14,
    "latest": {
     "date": "2026-07-21",
@@ -419,67 +471,72 @@
    ]
   },
   {
-   "name": "阿里",
-   "score": 9.68,
-   "days": 13,
+   "name": "NVIDIA",
+   "score": 9.55,
+   "days": 15,
    "latest": {
-    "date": "2026-07-21",
-    "url": "/posts/2026-07-20-ai-morning-post/#model-release",
-    "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
+    "date": "2026-07-22",
+    "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+    "title": "NVIDIA发布Cosmos 3 Edge开放世界模型：40亿参数，支持设备端运行"
    },
    "links": [
     {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
-     "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+     "title": "NVIDIA发布Cosmos 3 Edge开放世界模型：40亿参数，支持设备端运行"
     },
     {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#model-release",
-     "title": "阿里千问3.8预览版上线，开源承诺保持压力"
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
+     "title": "NVIDIA 推出 Cosmos 3 Edge，专为边缘设备和实时推理优化"
     },
     {
      "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#company",
-     "title": "Apple Intelligence 获准在华上线，接入阿里和百度 AI"
+     "url": "/posts/2026-07-16-ai-morning-post/#model-release",
+     "title": "Nemotron 3 Embed：NVIDIA登顶检索排行榜"
     },
     {
      "date": "2026-07-16",
-     "url": "/posts/2026-07-15-ai-morning-post/#model-release",
-     "title": "阿里发布实时语音大模型 Qwen-Audio-3.0-Realtime"
+     "url": "/posts/2026-07-15-ai-morning-post/#research",
+     "title": "NVIDIA 提出 AI 基础设施效率核心指标：每瓦性能"
+    },
+    {
+     "date": "2026-07-13",
+     "url": "/posts/2026-07-12-ai-morning-post/#company",
+     "title": "NVIDIA、CoreWeave与Nebius：GPU泡沫的循环融资内幕"
     },
     {
      "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#product",
-     "title": "阿里与大麦推出AI潮玩设计平台“妙呀”公测"
+     "url": "/posts/2026-07-11-ai-morning-post/#opensource",
+     "title": "NVIDIA 发布官方 AI Agent 技能库"
+    },
+    {
+     "date": "2026-07-10",
+     "url": "/posts/2026-07-09-ai-morning-post/#model-release",
+     "title": "NVIDIA 发布压缩版 Nemotron Puzzle 75B，吞吐量提升 2 倍"
     },
     {
      "date": "2026-07-09",
      "url": "/posts/2026-07-08-ai-morning-post/#research",
-     "title": "阿里ACL最佳论文：Agent评测为何失效？"
-    },
-    {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#opensource",
-     "title": "阿里开源轻量级向量数据库 zvec"
-    },
-    {
-     "date": "2026-07-07",
-     "url": "/posts/2026-07-06-ai-morning-post/#research",
-     "title": "阿里清华论文获ICML杰出论文：扩散模型的“灵活性陷阱”"
+     "title": "NVIDIA发布Audex：统一音频与文本的30B模型"
     }
    ]
   },
   {
    "name": "世界模型",
-   "score": 9.0,
-   "days": 13,
+   "score": 9.52,
+   "days": 14,
    "latest": {
-    "date": "2026-07-20",
-    "url": "/posts/2026-07-19-ai-morning-post/#research",
-    "title": "Deepmind：视频生成器已隐含世界模型，计算机视觉所需"
+    "date": "2026-07-22",
+    "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+    "title": "NVIDIA发布Cosmos 3 Edge开放世界模型：40亿参数，支持设备端运行"
    },
    "links": [
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+     "title": "NVIDIA发布Cosmos 3 Edge开放世界模型：40亿参数，支持设备端运行"
+    },
     {
      "date": "2026-07-20",
      "url": "/posts/2026-07-19-ai-morning-post/#research",
@@ -514,18 +571,13 @@
      "date": "2026-07-07",
      "url": "/posts/2026-07-06-ai-morning-post/#product",
      "title": "蔚来世界模型 OTA 升级，70 万用户全量同步"
-    },
-    {
-     "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#research",
-     "title": "LeCun 团队：世界模型学会持续学习，不遗忘旧知识"
     }
    ]
   },
   {
    "name": "算力",
-   "score": 8.29,
-   "days": 12,
+   "score": 7.81,
+   "days": 11,
    "latest": {
     "date": "2026-07-20",
     "url": "/posts/2026-07-19-ai-morning-post/#company",
@@ -575,60 +627,8 @@
    ]
   },
   {
-   "name": "NVIDIA",
-   "score": 8.03,
-   "days": 14,
-   "latest": {
-    "date": "2026-07-21",
-    "url": "/posts/2026-07-20-ai-morning-post/#model-release",
-    "title": "NVIDIA 推出 Cosmos 3 Edge，专为边缘设备和实时推理优化"
-   },
-   "links": [
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
-     "title": "NVIDIA 推出 Cosmos 3 Edge，专为边缘设备和实时推理优化"
-    },
-    {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#model-release",
-     "title": "Nemotron 3 Embed：NVIDIA登顶检索排行榜"
-    },
-    {
-     "date": "2026-07-16",
-     "url": "/posts/2026-07-15-ai-morning-post/#research",
-     "title": "NVIDIA 提出 AI 基础设施效率核心指标：每瓦性能"
-    },
-    {
-     "date": "2026-07-13",
-     "url": "/posts/2026-07-12-ai-morning-post/#company",
-     "title": "NVIDIA、CoreWeave与Nebius：GPU泡沫的循环融资内幕"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#opensource",
-     "title": "NVIDIA 发布官方 AI Agent 技能库"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#model-release",
-     "title": "NVIDIA 发布压缩版 Nemotron Puzzle 75B，吞吐量提升 2 倍"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#research",
-     "title": "NVIDIA发布Audex：统一音频与文本的30B模型"
-    },
-    {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#opensource",
-     "title": "Hugging Face 与 NVIDIA 联合发布 LeRobot v0.6.0"
-    }
-   ]
-  },
-  {
    "name": "百度",
-   "score": 6.61,
+   "score": 6.29,
    "days": 10,
    "latest": {
     "date": "2026-07-20",
@@ -679,8 +679,60 @@
    ]
   },
   {
+   "name": "Hugging Face",
+   "score": 6.1,
+   "days": 9,
+   "latest": {
+    "date": "2026-07-22",
+    "url": "/posts/2026-07-21-ai-morning-post/#company",
+    "title": "OpenAI 自曝预发布模型导致 Hugging Face 安全事件"
+   },
+   "links": [
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#company",
+     "title": "OpenAI 自曝预发布模型导致 Hugging Face 安全事件"
+    },
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#company",
+     "title": "Hugging Face 遭 AI 代理攻击，用 AI 自卫反击"
+    },
+    {
+     "date": "2026-07-13",
+     "url": "/posts/2026-07-12-ai-morning-post/#opensource",
+     "title": "Hugging Face开源语音到语音Agent框架"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#opinion",
+     "title": "Hugging Face CEO：开源AI比以往更重要"
+    },
+    {
+     "date": "2026-07-11",
+     "url": "/posts/2026-07-10-ai-morning-post/#opinion",
+     "title": "Hugging Face CEO：开源AI从未如此关键"
+    },
+    {
+     "date": "2026-07-08",
+     "url": "/posts/2026-07-07-ai-morning-post/#opensource",
+     "title": "Hugging Face 与 NVIDIA 联合发布 LeRobot v0.6.0"
+    },
+    {
+     "date": "2026-07-05",
+     "url": "/posts/2026-07-04-ai-morning-post/#opensource",
+     "title": "Hugging Face 开源本地语音 Agent 框架"
+    },
+    {
+     "date": "2026-07-02",
+     "url": "/posts/2026-07-01-ai-morning-post/#product",
+     "title": "Hugging Face + Cerebras：Gemma 4实时语音AI落地"
+    }
+   ]
+  },
+  {
    "name": "GPT-5.6",
-   "score": 5.94,
+   "score": 5.68,
    "days": 5,
    "latest": {
     "date": "2026-07-20",
@@ -712,38 +764,6 @@
      "date": "2026-06-28",
      "url": "/posts/2026-06-27-ai-morning-post/#model-release",
      "title": "OpenAI 发布 GPT-5.6 三子，政府要求限制部署"
-    }
-   ]
-  },
-  {
-   "name": "Kimi K3",
-   "score": 5.65,
-   "days": 4,
-   "latest": {
-    "date": "2026-07-21",
-    "url": "/posts/2026-07-20-ai-morning-post/#model-release",
-    "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
-   },
-   "links": [
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
-     "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#model-release",
-     "title": "Kimi K3空降Arena榜首，但订阅暂停暴露交付难题"
-    },
-    {
-     "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#model-release",
-     "title": "Kimi K3 开源发布，性能超 Claude Fable 5 和 GPT-5.6"
-    },
-    {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#model-release",
-     "title": "Kimi K3：2.8T参数开源MoE，性能比肩顶尖闭源"
     }
    ]
   }
