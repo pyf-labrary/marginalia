@@ -1,11 +1,11 @@
 {
- "generated": "2026-07-23",
+ "generated": "2026-07-24",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 57.32,
-   "days": 27,
+   "score": 53.52,
+   "days": 26,
    "latest": {
     "date": "2026-07-23",
     "url": "/posts/2026-07-22-ai-morning-post/#model-release",
@@ -56,14 +56,19 @@
   },
   {
    "name": "OpenAI",
-   "score": 41.1,
-   "days": 25,
+   "score": 40.94,
+   "days": 26,
    "latest": {
-    "date": "2026-07-23",
-    "url": "/posts/2026-07-22-ai-morning-post/#company",
-    "title": "OpenAI 模型逃逸沙箱，黑进 Hugging Face 真实系统"
+    "date": "2026-07-24",
+    "url": "/posts/2026-07-23-ai-morning-post/#company",
+    "title": "OpenAI 测试模型突破沙盒，真实攻击 Hugging Face"
    },
    "links": [
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#company",
+     "title": "OpenAI 测试模型突破沙盒，真实攻击 Hugging Face"
+    },
     {
      "date": "2026-07-23",
      "url": "/posts/2026-07-22-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-07-16",
      "url": "/posts/2026-07-15-ai-morning-post/#company",
      "title": "OpenAI反击苹果商业秘密诉讼"
-    },
-    {
-     "date": "2026-07-15",
-     "url": "/posts/2026-07-14-ai-morning-post/#product",
-     "title": "OpenAI首款硬件曝光：无屏可移动AI音箱"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 26.0,
+   "score": 27.42,
    "days": 25,
    "latest": {
-    "date": "2026-07-23",
-    "url": "/posts/2026-07-22-ai-morning-post/#company",
-    "title": "Anthropic 版权和解获批，仅 350 名作者选择退出"
+    "date": "2026-07-24",
+    "url": "/posts/2026-07-23-ai-morning-post/#model-release",
+    "title": "Anthropic 升级 Claude 语音模式：更强模型 + 任务执行"
    },
    "links": [
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#model-release",
+     "title": "Anthropic 升级 Claude 语音模式：更强模型 + 任务执行"
+    },
     {
      "date": "2026-07-23",
      "url": "/posts/2026-07-22-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-07-15",
      "url": "/posts/2026-07-14-ai-morning-post/#product",
      "title": "Anthropic推出Claude for Teachers，不训练学生数据"
-    },
-    {
-     "date": "2026-07-14",
-     "url": "/posts/2026-07-13-ai-morning-post/#company",
-     "title": "Anthropic 为印度用户推出卢比定价，本土化策略落地"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 14.26,
+   "score": 14.35,
    "days": 21,
    "latest": {
-    "date": "2026-07-23",
-    "url": "/posts/2026-07-22-ai-morning-post/#product",
-    "title": "Meta测试AI睡前故事：想象力的民主化还是贬值？"
+    "date": "2026-07-24",
+    "url": "/posts/2026-07-23-ai-morning-post/#opinion",
+    "title": "Meta新AI广告的背景歌曲是关于人类灭绝"
    },
    "links": [
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#opinion",
+     "title": "Meta新AI广告的背景歌曲是关于人类灭绝"
+    },
     {
      "date": "2026-07-23",
      "url": "/posts/2026-07-22-ai-morning-post/#product",
@@ -202,24 +207,76 @@
      "date": "2026-07-13",
      "url": "/posts/2026-07-12-ai-morning-post/#company",
      "title": "Meta关闭Muse功能：用户未经同意被生成AI图"
+    }
+   ]
+  },
+  {
+   "name": "阿里",
+   "score": 13.97,
+   "days": 15,
+   "latest": {
+    "date": "2026-07-24",
+    "url": "/posts/2026-07-23-ai-morning-post/#model-release",
+    "title": "阿里千问 Qwen-Image-3.0：文本输入长度提升 4.5 倍"
+   },
+   "links": [
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#model-release",
+     "title": "阿里千问 Qwen-Image-3.0：文本输入长度提升 4.5 倍"
+    },
+    {
+     "date": "2026-07-23",
+     "url": "/posts/2026-07-22-ai-morning-post/#model-release",
+     "title": "阿里千问发布 Qwen-Image-3.0，输入长度提升 4.5 倍"
+    },
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+     "title": "阿里发布Qwen图像与语音模型：一段话生成信息图，支持多语言TTS"
+    },
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
+     "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#model-release",
+     "title": "阿里千问3.8预览版上线，开源承诺保持压力"
+    },
+    {
+     "date": "2026-07-17",
+     "url": "/posts/2026-07-16-ai-morning-post/#company",
+     "title": "Apple Intelligence 获准在华上线，接入阿里和百度 AI"
+    },
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#model-release",
+     "title": "阿里发布实时语音大模型 Qwen-Audio-3.0-Realtime"
     },
     {
      "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#company",
-     "title": "Meta因用户反弹移除Instagram争议AI功能"
+     "url": "/posts/2026-07-11-ai-morning-post/#product",
+     "title": "阿里与大麦推出AI潮玩设计平台“妙呀”公测"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 13.74,
-   "days": 13,
+   "score": 13.9,
+   "days": 14,
    "latest": {
-    "date": "2026-07-20",
-    "url": "/posts/2026-07-19-ai-morning-post/#product",
-    "title": "Claude Code 改用 Rust 版 Bun，启动再提速 10%"
+    "date": "2026-07-24",
+    "url": "/posts/2026-07-23-ai-morning-post/#model-release",
+    "title": "Anthropic 升级 Claude 语音模式：更强模型 + 任务执行"
    },
    "links": [
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#model-release",
+     "title": "Anthropic 升级 Claude 语音模式：更强模型 + 任务执行"
+    },
     {
      "date": "2026-07-20",
      "url": "/posts/2026-07-19-ai-morning-post/#product",
@@ -254,18 +311,65 @@
      "date": "2026-07-07",
      "url": "/posts/2026-07-06-ai-morning-post/#product",
      "title": "Claude Code + Fable5 数小时移植经典游戏到 iOS"
+    }
+   ]
+  },
+  {
+   "name": "芯片",
+   "score": 12.94,
+   "days": 21,
+   "latest": {
+    "date": "2026-07-24",
+    "url": "/posts/2026-07-23-ai-morning-post/#company",
+    "title": "AI 芯片初创 Etched 估值达 103 亿美元"
+   },
+   "links": [
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#company",
+     "title": "AI 芯片初创 Etched 估值达 103 亿美元"
     },
     {
-     "date": "2026-07-06",
-     "url": "/posts/2026-07-05-ai-morning-post/#opensource",
-     "title": "Caveman：Claude Code 技能削减 65% Token 用量"
+     "date": "2026-07-23",
+     "url": "/posts/2026-07-22-ai-morning-post/#company",
+     "title": "Anthropic 与 AMD 签 50 亿美元芯片协议，部署 2 吉瓦算力"
+    },
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#company",
+     "title": "Google 开发 Frozen v2 芯片，将 Gemini 架构直接集成于硅片"
+    },
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#company",
+     "title": "谷歌被曝开发 Gemini 专用芯片 Frozen v2"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#product",
+     "title": "云天励飞发布三款 AI 推理芯片与超节点集群"
+    },
+    {
+     "date": "2026-07-17",
+     "url": "/posts/2026-07-16-ai-morning-post/#company",
+     "title": "蔚来芯片公司神玑发布具身智能开发平台"
+    },
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#company",
+     "title": "苹果调整 Mac 芯片路线图，跳过 M6 Pro 直攻 M7 系列"
+    },
+    {
+     "date": "2026-07-11",
+     "url": "/posts/2026-07-10-ai-morning-post/#company",
+     "title": "Meta AI芯片将于9月量产"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 13.16,
-   "days": 17,
+   "score": 12.39,
+   "days": 16,
    "latest": {
     "date": "2026-07-22",
     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
@@ -315,119 +419,20 @@
    ]
   },
   {
-   "name": "芯片",
-   "score": 12.87,
-   "days": 21,
-   "latest": {
-    "date": "2026-07-23",
-    "url": "/posts/2026-07-22-ai-morning-post/#company",
-    "title": "Anthropic 与 AMD 签 50 亿美元芯片协议，部署 2 吉瓦算力"
-   },
-   "links": [
-    {
-     "date": "2026-07-23",
-     "url": "/posts/2026-07-22-ai-morning-post/#company",
-     "title": "Anthropic 与 AMD 签 50 亿美元芯片协议，部署 2 吉瓦算力"
-    },
-    {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#company",
-     "title": "Google 开发 Frozen v2 芯片，将 Gemini 架构直接集成于硅片"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#company",
-     "title": "谷歌被曝开发 Gemini 专用芯片 Frozen v2"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#product",
-     "title": "云天励飞发布三款 AI 推理芯片与超节点集群"
-    },
-    {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#company",
-     "title": "蔚来芯片公司神玑发布具身智能开发平台"
-    },
-    {
-     "date": "2026-07-14",
-     "url": "/posts/2026-07-13-ai-morning-post/#company",
-     "title": "苹果调整 Mac 芯片路线图，跳过 M6 Pro 直攻 M7 系列"
-    },
-    {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#company",
-     "title": "Meta AI芯片将于9月量产"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#company",
-     "title": "Meta计划9月生产自主AI芯片，计算能力目标翻番"
-    }
-   ]
-  },
-  {
-   "name": "阿里",
-   "score": 11.55,
-   "days": 14,
-   "latest": {
-    "date": "2026-07-23",
-    "url": "/posts/2026-07-22-ai-morning-post/#model-release",
-    "title": "阿里千问发布 Qwen-Image-3.0，输入长度提升 4.5 倍"
-   },
-   "links": [
-    {
-     "date": "2026-07-23",
-     "url": "/posts/2026-07-22-ai-morning-post/#model-release",
-     "title": "阿里千问发布 Qwen-Image-3.0，输入长度提升 4.5 倍"
-    },
-    {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
-     "title": "阿里发布Qwen图像与语音模型：一段话生成信息图，支持多语言TTS"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
-     "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#model-release",
-     "title": "阿里千问3.8预览版上线，开源承诺保持压力"
-    },
-    {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#company",
-     "title": "Apple Intelligence 获准在华上线，接入阿里和百度 AI"
-    },
-    {
-     "date": "2026-07-16",
-     "url": "/posts/2026-07-15-ai-morning-post/#model-release",
-     "title": "阿里发布实时语音大模型 Qwen-Audio-3.0-Realtime"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#product",
-     "title": "阿里与大麦推出AI潮玩设计平台“妙呀”公测"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#research",
-     "title": "阿里ACL最佳论文：Agent评测为何失效？"
-    }
-   ]
-  },
-  {
    "name": "NVIDIA",
-   "score": 10.97,
+   "score": 11.35,
    "days": 15,
    "latest": {
-    "date": "2026-07-23",
-    "url": "/posts/2026-07-22-ai-morning-post/#company",
-    "title": "NVIDIA 宣布美国制造计划，Wistron 德州工厂开产"
+    "date": "2026-07-24",
+    "url": "/posts/2026-07-23-ai-morning-post/#opensource",
+    "title": "NVIDIA 开源首个 GPU 加速医学物理模拟框架"
    },
    "links": [
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#opensource",
+     "title": "NVIDIA 开源首个 GPU 加速医学物理模拟框架"
+    },
     {
      "date": "2026-07-23",
      "url": "/posts/2026-07-22-ai-morning-post/#company",
@@ -462,18 +467,13 @@
      "date": "2026-07-12",
      "url": "/posts/2026-07-11-ai-morning-post/#opensource",
      "title": "NVIDIA 发布官方 AI Agent 技能库"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#model-release",
-     "title": "NVIDIA 发布压缩版 Nemotron Puzzle 75B，吞吐量提升 2 倍"
     }
    ]
   },
   {
    "name": "腾讯",
-   "score": 9.97,
-   "days": 14,
+   "score": 9.39,
+   "days": 13,
    "latest": {
     "date": "2026-07-21",
     "url": "/posts/2026-07-20-ai-morning-post/#product",
@@ -524,8 +524,8 @@
   },
   {
    "name": "算力",
-   "score": 9.39,
-   "days": 12,
+   "score": 8.87,
+   "days": 11,
    "latest": {
     "date": "2026-07-23",
     "url": "/posts/2026-07-22-ai-morning-post/#company",
@@ -576,7 +576,7 @@
   },
   {
    "name": "世界模型",
-   "score": 9.0,
+   "score": 8.48,
    "days": 14,
    "latest": {
     "date": "2026-07-22",
@@ -628,14 +628,19 @@
   },
   {
    "name": "Hugging Face",
-   "score": 7.74,
-   "days": 9,
+   "score": 8.39,
+   "days": 10,
    "latest": {
-    "date": "2026-07-23",
-    "url": "/posts/2026-07-22-ai-morning-post/#company",
-    "title": "OpenAI 模型逃逸沙箱，黑进 Hugging Face 真实系统"
+    "date": "2026-07-24",
+    "url": "/posts/2026-07-23-ai-morning-post/#company",
+    "title": "OpenAI 测试模型突破沙盒，真实攻击 Hugging Face"
    },
    "links": [
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#company",
+     "title": "OpenAI 测试模型突破沙盒，真实攻击 Hugging Face"
+    },
     {
      "date": "2026-07-23",
      "url": "/posts/2026-07-22-ai-morning-post/#company",
@@ -670,17 +675,12 @@
      "date": "2026-07-08",
      "url": "/posts/2026-07-07-ai-morning-post/#opensource",
      "title": "Hugging Face 与 NVIDIA 联合发布 LeRobot v0.6.0"
-    },
-    {
-     "date": "2026-07-05",
-     "url": "/posts/2026-07-04-ai-morning-post/#opensource",
-     "title": "Hugging Face 开源本地语音 Agent 框架"
     }
    ]
   },
   {
    "name": "百度",
-   "score": 6.97,
+   "score": 6.61,
    "days": 11,
    "latest": {
     "date": "2026-07-23",
@@ -732,7 +732,7 @@
   },
   {
    "name": "GPT-5.6",
-   "score": 5.42,
+   "score": 5.16,
    "days": 5,
    "latest": {
     "date": "2026-07-20",
