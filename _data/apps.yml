@@ -6,7 +6,7 @@
   external: true
   date: 2026-07-25
   tags: [agent, 评测, LLM, 开源]
-  description: 给经第三方网关跑的 agent 做工具调用能力横评：受限工具集 + 18 题四档题库（答案由生成器实算并回磁盘对账）+ 自动判分 + Web UI。含 17 模型实测原始数据。MIT 开源。
+  description: 给经第三方网关跑的 agent 做工具调用能力横评：受限工具集 + 18 题四档题库（答案由生成器实算并回磁盘对账）+ 工作区沙箱闸 + 自动判分 + Web UI。含 17 模型实测原始数据（修沙箱前后各轮均保留可对比）。MIT 开源。
 - slug: smart-toolbox
   image: /assets/img/site/covers/smart-toolbox.jpg
   title: 智能工具箱 · Smart Toolbox
