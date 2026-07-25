@@ -11,6 +11,25 @@ wide: true
 <ul class="cover-list" role="list">
 
 <li class="cover-row">
+<a class="cover-media" href="https://github.com/pyf-labrary/model-arena"><img src="/marginalia/assets/img/site/covers/model-arena.jpg" alt="Model Arena 排名页：17 个模型的通过/无瑕通过/答对三列并排，附耗时与 token 条形图" loading="lazy"></a>
+<div class="cover-body" markdown="1">
+## Model Arena · 工具调用测评场
+
+> 给「经第三方网关跑的 agent」做**工具调用能力**横评。受限工具集（只放行 Read / Grep / Glob + 一个白名单 MCP）+ 18 题四档题库 + 自动判分 + 实时进度的 Web UI。
+
+题库跑在一个自包含的样例工作区上，**标准答案由生成器从数据结构实算、再回磁盘对账**（不一致直接报错退出），所以判分可以全自动。工作区里处处埋雷——大小写变体文件名、更长的近似标记、`.bak` 备份、归档区的假模块、一个故意返回过期缓存值的工具——每个雷对应一类真实的 agent 失败模式。
+
+仓库带了 2026-07-25 那次 **17 模型实测的全部原始数据**，每道题保留模型原始回答与完整工具调用序列，可以用别的判据 `--rescore` 复判而不必重跑。相关的两个发现写在[这篇文章](/marginalia/posts/2026-07-25-model-arena/)里：同一个模型换条通道走分数能差一倍；「畸形工具调用」看着像模型不行、其实不是。
+
+→ [源代码](https://github.com/pyf-labrary/model-arena)（MIT 开源）
+
+技术栈：Python 纯 stdlib（唯一第三方依赖是 `claude-agent-sdk`）+ 原生 HTML/CSS/JS，零构建、零 CDN、主题自适应。不限某一种网关——任何暴露 Anthropic Messages 协议 `/v1/messages` 的网关都能接。
+
+*上线时间：2026-07-25。*
+</div>
+</li>
+
+<li class="cover-row">
 <a class="cover-media" href="https://github.com/pyf-labrary/smart-toolbox"><img src="/marginalia/assets/img/site/covers/smart-toolbox.jpg" alt="智能工具箱界面拼贴：首页计时组、运行中圆形进度盘、编辑串联步骤" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 智能工具箱 · Smart Toolbox
