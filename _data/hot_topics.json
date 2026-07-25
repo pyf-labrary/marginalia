@@ -1,17 +1,22 @@
 {
- "generated": "2026-07-25",
+ "generated": "2026-07-26",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 49.97,
-   "days": 25,
+   "score": 51.55,
+   "days": 26,
    "latest": {
-    "date": "2026-07-23",
-    "url": "/posts/2026-07-22-ai-morning-post/#model-release",
-    "title": "谷歌发布 Gemini 3.6 Flash 系列，降价 17% 押注 Agent"
+    "date": "2026-07-26",
+    "url": "/posts/2026-07-25-ai-morning-post/#company",
+    "title": "Cognition收购Poke，强化AI Agent人格化"
    },
    "links": [
+    {
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#company",
+     "title": "Cognition收购Poke，强化AI Agent人格化"
+    },
     {
      "date": "2026-07-23",
      "url": "/posts/2026-07-22-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-07-16",
      "url": "/posts/2026-07-15-ai-morning-post/#research",
      "title": "HuggingFace 分享构建 Agent “Shippy” 的经验"
-    },
-    {
-     "date": "2026-07-15",
-     "url": "/posts/2026-07-14-ai-morning-post/#research",
-     "title": "MM-ToolSandBox：统一视觉工具调用智能体评估框架"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 40.68,
-   "days": 26,
+   "score": 41.42,
+   "days": 27,
    "latest": {
-    "date": "2026-07-25",
-    "url": "/posts/2026-07-24-ai-morning-post/#company",
-    "title": "菲尔兹奖得主雅各布·齐默曼宣布加入 OpenAI"
+    "date": "2026-07-26",
+    "url": "/posts/2026-07-25-ai-morning-post/#company",
+    "title": "OpenAI模型在Hugging Face黑客事件中失控"
    },
    "links": [
+    {
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#company",
+     "title": "OpenAI模型在Hugging Face黑客事件中失控"
+    },
     {
      "date": "2026-07-25",
      "url": "/posts/2026-07-24-ai-morning-post/#company",
@@ -98,17 +103,12 @@
      "date": "2026-07-18",
      "url": "/posts/2026-07-17-ai-morning-post/#product",
      "title": "OpenAI推摇杆硬件WorkLouder Codex Micro控制Agent"
-    },
-    {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#product",
-     "title": "OpenAI 发布 Codex Micro：一个用于控制 AI 代理的物理游戏杆"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 25.84,
+   "score": 24.32,
    "days": 24,
    "latest": {
     "date": "2026-07-24",
@@ -159,15 +159,72 @@
    ]
   },
   {
-   "name": "Meta",
-   "score": 14.45,
-   "days": 21,
+   "name": "Claude",
+   "score": 15.13,
+   "days": 16,
    "latest": {
-    "date": "2026-07-25",
-    "url": "/posts/2026-07-24-ai-morning-post/#opinion",
-    "title": "Meta AI广告配歌“人类五年后灭亡”，被批不明智"
+    "date": "2026-07-26",
+    "url": "/posts/2026-07-25-ai-morning-post/#product",
+    "title": "Claude语音模式全平台升级至最强模型"
    },
    "links": [
+    {
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#product",
+     "title": "Claude语音模式全平台升级至最强模型"
+    },
+    {
+     "date": "2026-07-25",
+     "url": "/posts/2026-07-24-ai-morning-post/#product",
+     "title": "Claude 语音模式升级：跨平台强模型加持"
+    },
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#model-release",
+     "title": "Anthropic 升级 Claude 语音模式：更强模型 + 任务执行"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#product",
+     "title": "Claude Code 改用 Rust 版 Bun，启动再提速 10%"
+    },
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#product",
+     "title": "Anthropic 推出 Claude for Teachers，承诺不训练学生数据"
+    },
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#product",
+     "title": "Claude Code 内置浏览器，AI 可自主操作外部网页"
+    },
+    {
+     "date": "2026-07-13",
+     "url": "/posts/2026-07-12-ai-morning-post/#product",
+     "title": "Claude Code vs OpenCode：33K vs 7K token开销差距惊人"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#opinion",
+     "title": "Claude花11天重写Bun，创始人一个月后才公开"
+    }
+   ]
+  },
+  {
+   "name": "Meta",
+   "score": 14.58,
+   "days": 22,
+   "latest": {
+    "date": "2026-07-26",
+    "url": "/posts/2026-07-25-ai-morning-post/#company",
+    "title": "英伟达/微软/Meta联合呼吁勿过度限制开放权重"
+   },
+   "links": [
+    {
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#company",
+     "title": "英伟达/微软/Meta联合呼吁勿过度限制开放权重"
+    },
     {
      "date": "2026-07-25",
      "url": "/posts/2026-07-24-ai-morning-post/#opinion",
@@ -202,17 +259,12 @@
      "date": "2026-07-16",
      "url": "/posts/2026-07-15-ai-morning-post/#company",
      "title": "Meta 被诉使用 AI 筛选裁员，涉及歧视"
-    },
-    {
-     "date": "2026-07-15",
-     "url": "/posts/2026-07-14-ai-morning-post/#model-release",
-     "title": "Meta发布最强Agent模型，进军编程领域"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 14.26,
+   "score": 13.58,
    "days": 15,
    "latest": {
     "date": "2026-07-25",
@@ -263,60 +315,8 @@
    ]
   },
   {
-   "name": "Claude",
-   "score": 14.03,
-   "days": 15,
-   "latest": {
-    "date": "2026-07-25",
-    "url": "/posts/2026-07-24-ai-morning-post/#product",
-    "title": "Claude 语音模式升级：跨平台强模型加持"
-   },
-   "links": [
-    {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#product",
-     "title": "Claude 语音模式升级：跨平台强模型加持"
-    },
-    {
-     "date": "2026-07-24",
-     "url": "/posts/2026-07-23-ai-morning-post/#model-release",
-     "title": "Anthropic 升级 Claude 语音模式：更强模型 + 任务执行"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#product",
-     "title": "Claude Code 改用 Rust 版 Bun，启动再提速 10%"
-    },
-    {
-     "date": "2026-07-16",
-     "url": "/posts/2026-07-15-ai-morning-post/#product",
-     "title": "Anthropic 推出 Claude for Teachers，承诺不训练学生数据"
-    },
-    {
-     "date": "2026-07-14",
-     "url": "/posts/2026-07-13-ai-morning-post/#product",
-     "title": "Claude Code 内置浏览器，AI 可自主操作外部网页"
-    },
-    {
-     "date": "2026-07-13",
-     "url": "/posts/2026-07-12-ai-morning-post/#product",
-     "title": "Claude Code vs OpenCode：33K vs 7K token开销差距惊人"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#opinion",
-     "title": "Claude花11天重写Bun，创始人一个月后才公开"
-    },
-    {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#research",
-     "title": "Anthropic 发现 Claude 内部隐藏推理空间"
-    }
-   ]
-  },
-  {
    "name": "Google",
-   "score": 13.68,
+   "score": 12.9,
    "days": 17,
    "latest": {
     "date": "2026-07-25",
@@ -368,7 +368,7 @@
   },
   {
    "name": "芯片",
-   "score": 13.03,
+   "score": 12.23,
    "days": 21,
    "latest": {
     "date": "2026-07-25",
@@ -420,7 +420,7 @@
   },
   {
    "name": "NVIDIA",
-   "score": 10.77,
+   "score": 10.19,
    "days": 15,
    "latest": {
     "date": "2026-07-24",
@@ -472,7 +472,7 @@
   },
   {
    "name": "腾讯",
-   "score": 9.84,
+   "score": 9.32,
    "days": 13,
    "latest": {
     "date": "2026-07-25",
@@ -523,8 +523,60 @@
    ]
   },
   {
+   "name": "世界模型",
+   "score": 8.45,
+   "days": 14,
+   "latest": {
+    "date": "2026-07-26",
+    "url": "/posts/2026-07-25-ai-morning-post/#model-release",
+    "title": "国产世界模型登顶李飞飞团队 VEA 榜单"
+   },
+   "links": [
+    {
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#model-release",
+     "title": "国产世界模型登顶李飞飞团队 VEA 榜单"
+    },
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+     "title": "NVIDIA发布Cosmos 3 Edge开放世界模型：40亿参数，支持设备端运行"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#research",
+     "title": "Deepmind：视频生成器已隐含世界模型，计算机视觉所需"
+    },
+    {
+     "date": "2026-07-15",
+     "url": "/posts/2026-07-14-ai-morning-post/#research",
+     "title": "世界模型的承诺与局限：专家解读"
+    },
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#research",
+     "title": "世界模型综述：通往 AGI 的关键，但远未成熟"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#model-release",
+     "title": "中国Orca世界模型无需动作标签匹配专业机器人"
+    },
+    {
+     "date": "2026-07-10",
+     "url": "/posts/2026-07-09-ai-morning-post/#opensource",
+     "title": "蚂蚁灵波发布世界模型 2.0：支持小时级生成与Agent交互"
+    },
+    {
+     "date": "2026-07-09",
+     "url": "/posts/2026-07-08-ai-morning-post/#research",
+     "title": "智源发布悟界·Orca：世界模型的Next State Prediction路径"
+    }
+   ]
+  },
+  {
    "name": "算力",
-   "score": 8.42,
+   "score": 7.97,
    "days": 11,
    "latest": {
     "date": "2026-07-23",
@@ -576,7 +628,7 @@
   },
   {
    "name": "Hugging Face",
-   "score": 8.0,
+   "score": 7.61,
    "days": 10,
    "latest": {
     "date": "2026-07-24",
@@ -627,60 +679,50 @@
    ]
   },
   {
-   "name": "世界模型",
-   "score": 7.94,
-   "days": 13,
+   "name": "ChatGPT",
+   "score": 6.35,
+   "days": 6,
    "latest": {
-    "date": "2026-07-22",
-    "url": "/posts/2026-07-21-ai-morning-post/#model-release",
-    "title": "NVIDIA发布Cosmos 3 Edge开放世界模型：40亿参数，支持设备端运行"
+    "date": "2026-07-26",
+    "url": "/posts/2026-07-25-ai-morning-post/#product",
+    "title": "ChatGPT新增个人健康助手功能"
    },
    "links": [
     {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
-     "title": "NVIDIA发布Cosmos 3 Edge开放世界模型：40亿参数，支持设备端运行"
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#product",
+     "title": "ChatGPT新增个人健康助手功能"
     },
     {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#research",
-     "title": "Deepmind：视频生成器已隐含世界模型，计算机视觉所需"
+     "date": "2026-07-25",
+     "url": "/posts/2026-07-24-ai-morning-post/#research",
+     "title": "ChatGPT 健康建议：付费墙背后的医疗不平等"
+    },
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#company",
+     "title": "OpenAI 推出 ChatGPT 小企业计划"
+    },
+    {
+     "date": "2026-07-17",
+     "url": "/posts/2026-07-16-ai-morning-post/#product",
+     "title": "OpenAI 推出 ChatGPT 品牌篮球（没错，是篮球）"
     },
     {
      "date": "2026-07-15",
-     "url": "/posts/2026-07-14-ai-morning-post/#research",
-     "title": "世界模型的承诺与局限：专家解读"
-    },
-    {
-     "date": "2026-07-14",
-     "url": "/posts/2026-07-13-ai-morning-post/#research",
-     "title": "世界模型综述：通往 AGI 的关键，但远未成熟"
+     "url": "/posts/2026-07-14-ai-morning-post/#product",
+     "title": "ChatGPT重返WhatsApp欧盟区"
     },
     {
      "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#model-release",
-     "title": "中国Orca世界模型无需动作标签匹配专业机器人"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#opensource",
-     "title": "蚂蚁灵波发布世界模型 2.0：支持小时级生成与Agent交互"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#research",
-     "title": "智源发布悟界·Orca：世界模型的Next State Prediction路径"
-    },
-    {
-     "date": "2026-07-07",
-     "url": "/posts/2026-07-06-ai-morning-post/#product",
-     "title": "蔚来世界模型 OTA 升级，70 万用户全量同步"
+     "url": "/posts/2026-07-11-ai-morning-post/#product",
+     "title": "OpenAI招聘家庭产品经理，ChatGPT深入家庭"
     }
    ]
   },
   {
    "name": "百度",
-   "score": 6.26,
+   "score": 5.9,
    "days": 11,
    "latest": {
     "date": "2026-07-23",
@@ -727,43 +769,6 @@
      "date": "2026-07-07",
      "url": "/posts/2026-07-06-ai-morning-post/#product",
      "title": "百度推出 Unlimited OCR：模拟人类遗忘机制突破长度限制"
-    }
-   ]
-  },
-  {
-   "name": "Kimi K3",
-   "score": 5.87,
-   "days": 5,
-   "latest": {
-    "date": "2026-07-25",
-    "url": "/posts/2026-07-24-ai-morning-post/#research",
-    "title": "Kimi K3 vs Claude Fable 5：蒸馏才是赢家？"
-   },
-   "links": [
-    {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#research",
-     "title": "Kimi K3 vs Claude Fable 5：蒸馏才是赢家？"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
-     "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#model-release",
-     "title": "Kimi K3空降Arena榜首，但订阅暂停暴露交付难题"
-    },
-    {
-     "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#model-release",
-     "title": "Kimi K3 开源发布，性能超 Claude Fable 5 和 GPT-5.6"
-    },
-    {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#model-release",
-     "title": "Kimi K3：2.8T参数开源MoE，性能比肩顶尖闭源"
     }
    ]
   }
