@@ -1,5 +1,13 @@
 # Showcase 索引数据 —— 供首页卡片 / 搜索 / 归档页使用。
 # showcases.md 仍是人读的详细介绍页；这里是机器可读的目录。
+- slug: studiobinder-zh
+  image: /assets/img/site/covers/studiobinder-zh.jpg
+  title: 电影导演技巧公开课 · StudioBinder 中文版
+  url: https://ftp.ssbx.site/showcases/studiobinder-zh/
+  external: true
+  date: 2026-07-26
+  tags: [影视, 导演, 镜头语言, 本地化, 播放器]
+  description: StudioBinder 导演公开课中文配音+中文字幕版的在线剧场：154 集 / 28 小时，分镜头语言、光色声、剪辑节奏、叙事结构、导演个案研究五类，按循序渐进的学习序排好。自建播放器（非浏览器原生）：类别切换、剧集清单、进度记忆、倍速、字幕开关、键盘快捷键；视频从家庭 NAS 经内网直连透传。
 - slug: bodhi-e01-making
   image: /assets/img/site/covers/bodhi-e01-making.jpg
   title: 一个人，一支模型剧组 · 恒伽达 AI 制作复盘
