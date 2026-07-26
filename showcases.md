@@ -14,6 +14,25 @@ wide: true
 <ul class="cover-list" role="list">
 
 <li class="cover-row" data-cats="影视 · 导演">
+<a class="cover-media" href="https://ftp.ssbx.site/showcases/studiobinder-zh/"><img src="/marginalia/assets/img/site/covers/studiobinder-zh.jpg" alt="导演技巧公开课在线剧场首屏截图：暗调片场主视觉与五个类别卡" loading="lazy"></a>
+<div class="cover-body" markdown="1">
+## 电影导演技巧公开课 · StudioBinder 中文版
+
+一个在线剧场：把 StudioBinder 频道的导演公开课做成**中文配音 + 中文字幕**版，**154 集 / 28 小时**，按循序渐进的学习序排成五类——**镜头语言**（91 集，从景别角度构图打底，到器材光学、运镜、场面调度、摄影指导个案）、**光色声**（31 集）、**剪辑节奏**（14 集）、**叙事结构**（16 集）、**导演个案研究**。每一类里再按「基础 / 镜头类型 / 专项」等阶段分组，列表直接给缩略图与时长。
+
+播放器是**重写的，不用浏览器原生控件**：进度条带缓冲区与悬停时间预览、±10 秒、上一集/下一集与播完自动续播、倍速、字幕开关、画中画、全屏，键盘 `空格 / ←→ / N·P / F / C` 全覆盖；每集**记住上次看到哪儿**，列表上用一条金色进度线标出看过多少，下次进来直接「继续观看」。视觉走暗调片场：胶片颗粒、暖金与冷青双色光、本地子集化中文衬线标题，零外链。
+
+视频不进任何图床——**从家里 NAS 经内网加密链路直连透传**，页面只做壳。外链托管，跳转打开。
+
+→ [打开 Showcase](https://ftp.ssbx.site/showcases/studiobinder-zh/)
+
+*整理时间：2026-07-26。片源版权归 StudioBinder，本地化仅供学习交流。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:studiobinder-zh" data-title="电影导演技巧公开课 · StudioBinder 中文版" data-url="https://ftp.ssbx.site/showcases/studiobinder-zh/"></div>
+</div>
+</li>
+
+<li class="cover-row" data-cats="影视 · 导演">
 <a class="cover-media" href="https://ftp.ssbx.site/showcases/bodhi-seedance-principles/"><img src="/marginalia/assets/img/site/covers/bodhi-seedance-principles.jpg" alt="Seedance 2.0 原理拆解 deck 内页截图：音画同步的时间轴重标定" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 声音是怎么长在画面上的 · Seedance 2.0 原理拆解
