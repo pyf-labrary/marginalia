@@ -2,7 +2,7 @@
 
 研究笔记 + 多页作品集站点。基于 Jekyll + GitHub Pages。
 
-**站点**：https://pyf-labrary.github.io/marginalia/
+**站点**：https://jinzi.cyou/
 
 ## 目录结构
 

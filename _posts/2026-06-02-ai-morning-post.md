@@ -33,7 +33,7 @@ sections:
 
 ### NVIDIA Cosmos 3：物理AI的开放时刻
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-06-02/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-06-02/model_release-00.jpg)
 
 
 **是什么**：NVIDIA在GTC Taipei上发布Cosmos 3，一个开放的世界基础模型，专为物理AI设计，支持从感知到行动的全链路推理。
@@ -46,7 +46,7 @@ sections:
 
 ### MiniMax M3：百万token的MoE开源模型
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-02/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-02/model_release-01.jpg)
 
 
 **是什么**：MiniMax发布M3模型，采用MSA架构，支持原生多模态、代理编程以及百万token的上下文窗口，并以开放权重形式发布。
@@ -59,7 +59,7 @@ sections:
 
 ### Nemotron 3 Ultra：美国最强，仍不及中国
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-02/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-02/model_release-02.jpg)
 
 
 **是什么**：NVIDIA发布的Nemotron 3 Ultra在多项基准测试中成为美国开源模型第一，但整体分数仍落后于中国开源模型（如Qwen、DeepSeek变体）。
@@ -72,7 +72,7 @@ sections:
 
 ### JetBrains Mellum2 12B MoE：编码场景的轻量专家
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-02/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-02/model_release-03.jpg)
 
 
 **是什么**：JetBrains在HuggingFace发布Mellum2，一个12B参数的混合专家（MoE）模型，专为代码理解与生成设计。
@@ -85,7 +85,7 @@ sections:
 
 ### Qwen3.7-Plus：阿里多模态升级
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-06-02/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-06-02/model_release-04.jpg)
 
 
 **是什么**：阿里发布Qwen3.7-Plus，在文本能力基础上全面升级视觉-语言能力，同时保持完整Agent能力（函数调用、工具使用）。
@@ -116,7 +116,7 @@ sections:
 
 ### Anthropic 秘密提交 IPO 申请
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-02/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-02/company-00.jpg)
 
 
 Anthropic 已向 SEC 递交秘密的 S-1 文件，启动上市流程。关键点：秘密递交（Confidential Draft S-1）允许公司在公开前调整估值和策略，市场预计其估值将跻身史上最大的科技 IPO 之一。为什么重要：这是继 OpenAI 估值飙升后，另一家基础模型公司试水公开市场，或将加速整个 AI 板块的资本化进程，并为投资者提供更直接的模型公司表现标尺。
@@ -125,7 +125,7 @@ Anthropic 已向 SEC 递交秘密的 S-1 文件，启动上市流程。关键点
 
 ### 佛罗里达州起诉 OpenAI 及 Sam Altman
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-02/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-02/company-01.jpg)
 
 
 佛罗里达州总检察长就多起与 ChatGPT 相关的暴力事件提起诉讼，指控 OpenAI 和 Sam Altman 在产品部署时忽视公共安全，未能有效防止模型被用于煽动或协助犯罪。关键点：诉讼直接指向公司最高管理层的责任，而非仅产品本身。为什么重要：这可能是美国首个州级政府针对 AI 模型导致的人身伤害提起的诉讼，一旦成立，将极大改变 AI 产品的责任框架和部署前的安全审查标准。
@@ -140,7 +140,7 @@ OpenAI 正式破土动工位于密歇根州萨林市的 Stargate 数据中心园
 
 ### VAST 完成近 2 亿美元融资，并披露世界模型路线
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-02/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-02/company-03.jpg)
 
 
 VAST 宣布完成 A+ 和 A++ 两轮融资，合计近 2 亿美元，同时公开世界模型研发计划。关键点：融资轮次密集，投资方持续押注；世界模型路线意味着公司从单一视觉或多模态向通用空间智能迈进。为什么重要：VAST 是国内 AI 视觉领域的代表之一，其世界模型路线的披露表明中国团队正加速追赶 GPT-4o 之外的新范式——具身智能与空间理解，可能成为下一个资本热点。
@@ -149,7 +149,7 @@ VAST 宣布完成 A+ 和 A++ 两轮融资，合计近 2 亿美元，同时公开
 
 ### Google 计划筹资 800 亿美元用于 AI 建设
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-02/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-02/company-04.jpg)
 
 
 Alphabet 计划通过发行股票筹集 800 亿美元，以加速 AI 基础设施投资。关键点：这是科技公司史上最大的单次股权融资之一，明确指向应对 AI 算力供不应求。为什么重要：Google 在 AI 竞争中被外界认为在速度上落后于 OpenAI 和微软，这次大规模融资可能意在构建与云业务深度绑定的专用 AI 工厂，缩小与对手的算力差距。
@@ -158,7 +158,7 @@ Alphabet 计划通过发行股票筹集 800 亿美元，以加速 AI 基础设�
 
 ### 智谱建议发行 A 股并在科创板上市
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-02/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-02/company-05.jpg)
 
 
 智谱发布公告，建议向中国监管机构申请 A 股发行并在上交所科创板上市，发行规模占总股本 2%-8%。关键点：这是国内头部大模型公司首次明确提出 A 股上市计划。为什么重要：在海外 AI 公司纷纷通过 IPO 或非公开市场融资的同时，智谱选择科创板，一方面可能享受国内政策红利，另一方面也需面对监管对生成式 AI 的合规要求，其定价和审核结果将成为国内 AI 公司上市的风向标。
@@ -167,7 +167,7 @@ Alphabet 计划通过发行股票筹集 800 亿美元，以加速 AI 基础设�
 
 ### NVIDIA AI Cloud 生态全球扩展
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-06-02/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-06-02/company-06.jpg)
 
 
 NVIDIA 宣布其 AI Cloud 生态系统正在加速全球 AI 工厂基础设施建设，各合作厂商扩大容量以应对需求。关键点：NVIDIA 从芯片供应商向平台生态的角色深化，合作伙伴包括各大云厂商和独立数据中心运营商。为什么重要：全球 AI 算力已出现区域不均衡，NVIDIA 通过标准化的 AI Cloud 生态降低建设门槛，加速算力供给——同时也进一步巩固其生态壁垒。
@@ -176,7 +176,7 @@ NVIDIA 宣布其 AI Cloud 生态系统正在加速全球 AI 工厂基础设施�
 
 ### Salesforce 对 Anthropic 投资估值约 50 亿美元
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-02/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-02/company-07.jpg)
 
 
 据报道，Salesforce 在 2023 年首次投资 Anthropic，该笔投资估值约为 50 亿美元。关键点：这属于一条“旧闻新料”，但公开报道中未详细披露的估值得以浮现。为什么重要：Anthropic 此前估值已超百亿美元，50 亿美元的投资估值反映了早期阶段的谈判位置；对于投资者，该数据可帮助回溯模型公司估值增长曲线，判断当前二级市场的合理溢价。
@@ -193,7 +193,7 @@ OpenAI 模型击败了一个困住人类数学家 80 年的“六边形拼贴”
 
 ### OpenAI 模型解决困扰人类 80 年的数学难题
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-02/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-02/research-00.jpg)
 
 
 **是什么**：OpenAI 的一个模型成功求解了经典的“六边形拼贴”（hexagonal tiling）数学难题，该问题自 1940 年代提出后一直未被完全解决。模型并非暴力搜索，而是通过符号推理与模式发现组合出证明。
@@ -206,7 +206,7 @@ OpenAI 模型击败了一个困住人类数学家 80 年的“六边形拼贴”
 
 ### 材料版 AlphaFold 问世，40 个工业任务 SOTA
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-06-02/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-06-02/research-01.jpg)
 
 
 **是什么**：研究团队（非单一机构，但已公开论文与模型）借鉴 LLM 的训练技术，推出了一个材料科学基础模型（Material Foundation Model），在涵盖催化、电池、半导体等领域的 40 项工业任务上取得全面最优结果，性能超越此前所有专有模型和物理模拟方法。
@@ -219,7 +219,7 @@ OpenAI 模型击败了一个困住人类数学家 80 年的“六边形拼贴”
 
 ### 复旦×通义提出全新 CUA 训练范式
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-06-02/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-06-02/research-02.jpg)
 
 
 **是什么**：复旦大学与通义千问联合提出了下一代 CUA（Comprehensive Utility Agent）训练范式，核心目标是大模型智能体在执行复杂任务时，如何从大量候选工具中正确选择并组合使用。
@@ -252,7 +252,7 @@ OpenAI 模型击败了一个困住人类数学家 80 年的“六边形拼贴”
 
 ### NVIDIA 推出 RTX Spark，让本地 AI Agent 实用化
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-02/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-02/product-00.jpg)
 
 
 NVIDIA 在 Computex 2026 上发布 RTX Spark 芯片，专为本地 AI Agent 设计，并联合微软、戴尔、惠普推出“AI Agent PC”整机方案。RTX Spark 集成高带宽内存与专用 AI 加速单元，可在本地运行中小型模型并完成实时推理。关键点在于：方案包含预置的 agentic 框架，开发者可直接调用语音、视觉、工具调用等能力，无需自行搭建推理栈。为什么重要？这是芯片级对 Agent 场景的专门优化，补齐了从云到端的关键一环——用户数据无需上传，延迟从秒级降至毫秒级，隐私和成本问题同时得到缓解。
@@ -261,7 +261,7 @@ NVIDIA 在 Computex 2026 上发布 RTX Spark 芯片，专为本地 AI Agent 设�
 
 ### GitHub Copilot 新按用量定价引发用户争议
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-02/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-02/product-01.jpg)
 
 
 GitHub Copilot 推出基于 AI 信用额度的用量计费模式，取代原有的固定订阅制。有用户反映，在使用高级功能（如多文件上下文生成、代码审查）时，一天之内耗尽月度配额，导致无法继续使用。社区在 Hacker News 和 Reddit 上激烈讨论，批评定价不透明且对高频开发者不友好。为什么重要？这暴露了 AI 工具商业化中的核心矛盾：按 token 或信用额度定价对用户感知不直观，且高级场景消耗远超预期。如果这一模式被广泛效仿，开发者需要重新评估 AI 辅助编程的真实成本。
@@ -276,7 +276,7 @@ OpenAI 的前沿模型（如 GPT-5 系列）以及代码生成模型 Codex 现�
 
 ### NVIDIA 发布工厂运营蓝图 AI 大脑
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-02/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-02/product-03.jpg)
 
 
 NVIDIA 推出 Factory Operations Blueprint (FOX)，将机器传感器信号、质量检测系统、维护日志等多种数据源汇集到一个统一决策层，形成“工厂 AI 大脑”。FOX 支持实时优化生产排程与异常预警。为什么重要？智能制造的核心痛点在于数据孤岛，FOX 提供了一种标准化的接入方案，让工厂无需自建复杂的数据中台即可实现 AI 辅助决策。对于投资人和技术从业者，这是工业 AI 可复制性的关键信号。
@@ -285,7 +285,7 @@ NVIDIA 推出 Factory Operations Blueprint (FOX)，将机器传感器信号、�
 
 ### DuckDuckGo 推出「无 AI」搜索扩展，流量暴增
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-02/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-02/product-04.jpg)
 
 
 DuckDuckGo 发布针对 Chrome 和 Firefox 的浏览器扩展，将默认搜索结果切换为不掺杂 AI 生成内容的“传统”搜索，用户安装后搜索流量随之大幅增长。这一举措与当前各大搜索引擎竞相嵌入 AI 摘要的趋势形成鲜明对比。为什么重要？它证明至少有一部分用户对 AI 搜索结果持怀疑或疲惫态度，反 AI 搜索市场真实存在。这也提醒产品经理：AI 功能并非万能药，用户对信息源的信任和简洁性依然有强烈需求。
@@ -294,7 +294,7 @@ DuckDuckGo 发布针对 Chrome 和 Firefox 的浏览器扩展，将默认搜索�
 
 ### Anthropic 推出 Code with Claude 托管式智能体
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-02/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-02/product-05.jpg)
 
 
 Anthropic 发布 Code with Claude 平台，提供托管式的 AI 编程智能体，支持主动式工作流：开发者只需描述目标，Claude 可自主规划步骤、编写代码、运行测试并迭代修复。平台还提供“能力曲线”可视化，展示模型在不同任务上的自信程度。为什么重要？这是继 Copilot 后，AI 编程从“补全”走向“自主执行”的又一次升级，且托管式意味着用户无需管理底层基础设施。对于技术团队，这意味着可以将重复性编码任务真正委托给 AI agent。
@@ -323,14 +323,14 @@ Anthropic 发布 Code with Claude 平台，提供托管式的 AI 编程智能体
 
 ### 导语
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-02/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-02/opinion-00.jpg)
 
 
 今天板块最重要的观点来自图灵奖得主 Richard Sutton：纯生成式 AI 本质上无法提出新理论或推动科学发现。他并不否定生成式AI的价值，但认为科学需要另一种范式。与此同时，行业正在热议“AI 精神病”现象、数据中心水资源透明度，以及一名开发者反思取消AI订阅——四件事背后指向同一个信号：AI 行业需要更清醒地看待自己的边界。
 
 ### 图灵奖得主 Sutton：生成式AI做不到真科学
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-02/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-02/opinion-01.jpg)
 
 
 **是什么**：Richard Sutton（强化学习领域奠基人之一，2025年图灵奖得主）在最新访谈中直言，当前的生成式 AI （如大型语言模型）只能在已有数据中做模式匹配与组合，无法产生真正新的科学理论或因果假设。
@@ -343,7 +343,7 @@ Anthropic 发布 Code with Claude 平台，提供托管式的 AI 编程智能体
 
 ### 科技 CEO 是否更易患“AI 精神病”
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-02/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-02/opinion-02.jpg)
 
 
 **是什么**：最新一期 TechCrunch 播客 Equity 辩论了一个敏感话题——科技 CEO 是否“特别容易患上 AI 精神病”（即对 AI 产生不切实际的神化或恐惧）。
@@ -384,14 +384,14 @@ Anthropic 发布 Code with Claude 平台，提供托管式的 AI 编程智能体
 
 ### 导语
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-02/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-02/opensource-00.jpg)
 
 
 微软开源了文件转 Markdown 工具 MarkItDown，意味着文档处理进入通用管道时代；同期还有 Hermes Agent 的多层记忆栈 Memory OS、一键生成短视频的 MoneyPrinterTurbo，以及无分词器的多语言 TTS 模型 VoxCPM 2。四个项目覆盖知识管理、内容生产、语音交互三大热门方向，值得快速关注。
 
 ### Hermes Agent 开源记忆栈 Memory OS
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-02/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-02/opensource-01.jpg)
 
 
 **是什么**  
@@ -409,7 +409,7 @@ Memory OS 是基于 Hermes Agent 的 6 层开源记忆堆栈，实现了持久�
 
 ### MoneyPrinterTurbo：一键生成短视频的开源工具
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-02/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-02/opensource-02.jpg)
 
 
 **是什么**  
@@ -427,7 +427,7 @@ Memory OS 是基于 Hermes Agent 的 6 层开源记忆堆栈，实现了持久�
 
 ### 微软 MarkItDown：文件转 Markdown 开源工具
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-02/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-02/opensource-03.jpg)
 
 
 **是什么**  

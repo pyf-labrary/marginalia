@@ -51,7 +51,7 @@ Anthropic 指控阿里动用 2.5 万个账户、2880 万次对话克隆 Claude�
 
 ### Anthropic 指控阿里大规模克隆 Claude，要求惩罚
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-27/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-27/company-00.jpg)
 
 
 发生了什么：Anthropic 公开声称，阿里巴巴使用 2.5 万个账户发起了 2880 万次对话，系统性地利用 Claude 模型来复现其能力。Anthropic 称这是“已知最大规模的克隆攻击”，并已向美国政府及相关机构正式举报，要求对阿里采取措施。关键点：阿里回应称“强烈反对这些指控”，但未公布内部调查结果。此事件可能触发更严格的模型访问规则，甚至断供 API。为什么重要：这不仅是知识产权纠纷，更是一种新型“数据探矿”——利用合法 API 接口逆向工程竞争对手能力。若指控成立，将加速全球模型供应商启用更激进的异常检测和账户风控。
@@ -60,7 +60,7 @@ Anthropic 指控阿里动用 2.5 万个账户、2880 万次对话克隆 Claude�
 
 ### OpenAI 发布自研推理芯片 Jalapeño，9 个月设计媲美 Blackwell
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-27/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-27/company-01.jpg)
 
 
 发生了什么：OpenAI 与 Broadcom 合作推出定制推理芯片“Jalapeño”，专为自家模型推理优化。该芯片在 9 个月内完成设计，据称推理性能可匹敌 Nvidia Blackwell 系列。OpenAI 将率先替换部分数据中心部署。关键点：Jalapeño 并非训练芯片，而是面向高频低延迟推理场景。OpenAI 此举意在减少对 Nvidia 供应链的依赖，并降低推理成本。为什么重要：这是大模型厂商自研芯片最激进的落地——从“设计到部署”仅 9 个月，证明定制硅对于模型厂来说不再遥不可及。若性能验证成功，将引发更多模型公司效仿，改变 AI 芯片市场格局。
@@ -75,7 +75,7 @@ Anthropic 指控阿里动用 2.5 万个账户、2880 万次对话克隆 Claude�
 
 ### Patronus AI 获 5000 万美元，专测 AI Agent 安全
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-27/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-27/company-03.jpg)
 
 
 发生了什么：由前 Meta 研究人员创立的 Patronus AI 完成 5000 万美元融资，主打 AI Agent 压力测试工具。其平台能模拟各种攻击、异常输入场景，评估 Agent 的鲁棒性和安全性。关键点：客户包括多家头部大模型公司，市场需求旺盛。融资后估值快速上升。为什么重要：AI Agent 从“演示”走向“生产”的最大障碍是可靠性。Patronus 这类测试工具成为必需品——就像软件工程里的代码审计工具一样。投资人也押注“安全测试”将成为 AI 基础设施的关键环节。
@@ -84,7 +84,7 @@ Anthropic 指控阿里动用 2.5 万个账户、2880 万次对话克隆 Claude�
 
 ### 谷歌推理专家跳槽 Meta，AI 人才流失加剧
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-27/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-27/company-04.jpg)
 
 
 发生了什么：谷歌推理研究领域的领军人物（原由李飞飞从斯坦福挖来）宣布加入 Meta。这是谷歌近年最新一例核心 AI 人才流失。关键点：Meta 持续通过高薪、开放研究环境吸引学者；谷歌则面临内部限制和项目频繁重组。为什么重要：人才流动反映了大模型格局的结构性变化。当“推理”成为下一阶段竞争焦点，掌握该方向核心人才的公司将占据先机。谷歌若不能止血，其研究领先地位可能被 Meta 和 OpenAI 进一步蚕食。
@@ -93,7 +93,7 @@ Anthropic 指控阿里动用 2.5 万个账户、2880 万次对话克隆 Claude�
 
 ### OpenAI 挖 Uber 印度主管，加码美国以外最大市场
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-27/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-27/company-05.jpg)
 
 
 发生了什么：OpenAI 聘请前 Uber 印度负责人领导印度业务。印度是 OpenAI 除美国外最大的市场，公司计划扩大当地办公室和与企业的合作伙伴关系。关键点：Uber 印度主管擅长本地化运营和监管应对。OpenAI 还计划在印度建立本地数据中心以遵守数据本地化法规。为什么重要：印度市场对 OpenAI 的重要性正在超过欧洲。考虑到印度庞大的人口基数、英语使用率和政策友好度（相比欧盟），成功构建印度市场可以对冲其他地区的监管风险。Uber 主管的加入表明 OpenAI 开始认真对待“地面战”。
@@ -102,7 +102,7 @@ Anthropic 指控阿里动用 2.5 万个账户、2880 万次对话克隆 Claude�
 
 ### 北森两亿 All in AI，上线 15 个 AI HR 专家
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-06-27/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-06-27/company-06.jpg)
 
 
 发生了什么：HR SaaS 公司北森宣布两年投入 10 亿元全面 AI 转型，并推出 15 个 AI HR 专家及“数字人事部”解决方案。这些 AI 专家覆盖招聘、绩效、薪酬等全流程。关键点：10 亿元是北森近两年营收的大幅比例，属于“All in”。产品形态从软件工具变成 AI 代理服务。为什么重要：传统企业软件厂商的 AI 转型路径已经清晰——从“工具”到“代理”。北森的激进投入表明，如果不尽快转型为企业级 AI 助手，SaaS 公司可能被大模型 API 直接替代。但如此大的投入也有风险，需要看客户是否愿意为“AI 专家”付出高溢价。
@@ -111,7 +111,7 @@ Anthropic 指控阿里动用 2.5 万个账户、2880 万次对话克隆 Claude�
 
 ### 深度机智获数亿元融资，加速物理 AI 落地
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-27/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-27/company-07.jpg)
 
 
 发生了什么：国产物理 AI 基座模型公司“深度机智”在两个月内连续完成两轮数亿元融资，资金用于全栈自主技术路线（从底层模型到仿真平台）。关键点：物理 AI 指的是能够理解物理世界规律（重力、碰撞、材料属性）的模型，用于机器人、自动驾驶等。该公司走“模型 + 仿真”自研路线。为什么重要：当前国内具身智能公司多依赖国外仿真引擎和开源模型。深度机智的全栈自主路线在供应链安全上更具韧性，但研发投入也更大。连续融资显示资金对此路线的认可，也意味着该赛道正在迅速拥挤。
@@ -130,7 +130,7 @@ Anthropic 指控阿里动用 2.5 万个账户、2880 万次对话克隆 Claude�
 
 ### AI 模型连续编程 19 天，花费 2600 美元
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-27/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-27/research-00.jpg)
 
 
 Epoch AI 的最新测试中，一个 AI 模型在单一 MirrorCode 任务上不间断运行了 19 天，消耗约 2600 美元计算资源，最终完成自主编程。关键点在于任务本身的复杂度和持续时长——这不是秒级推理，而是天级执行。这种“持久战”能力若落地，意味着 AI 能从短任务助手转向长期工程代理。但 2600 美元的成本目前仍远高于人工外包，经济性存疑。
@@ -139,7 +139,7 @@ Epoch AI 的最新测试中，一个 AI 模型在单一 MirrorCode 任务上不�
 
 ### 多模型系统存在共失败上限，路由优势有限
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-06-27/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-06-27/research-01.jpg)
 
 
 一篇对 67 个前沿模型的分析论文指出，无论采用路由、投票还是其他混合策略，多模型组合的准确率提升都受限于一个“共失败上限”——模型之间的失败模式高度重叠，导致组合带来的边际收益递减。这对当前流行的 agentic 编排、MoE 路由等思路提出了根本挑战。核心启示：不是堆砌模型数量就能突破天花板，需要更细粒度的失败解耦设计。
@@ -154,7 +154,7 @@ Epoch AI 的最新测试中，一个 AI 模型在单一 MirrorCode 任务上不�
 
 ### LeHome 挑战赛冠军方案：学习折叠衣物
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-06-27/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-06-27/research-03.jpg)
 
 
 ICRA 2026 LeHome 家居机器人挑战赛的在线第一名方案，利用视觉-语言-动作（VLA）模型实现双臂机器人折叠衣物。关键点：不是单纯模仿，而是将语言指令解析为空间动作序列，解决柔性物体的变形跟踪问题。虽然场景限定在“折叠”这一项，但展示了具身智能从感知到操作的闭环。机器人家务能否从实验室走向家庭？成本与泛化仍是门槛。
@@ -173,7 +173,7 @@ ICRA 2026 LeHome 家居机器人挑战赛的在线第一名方案，利用视觉
 
 ### Notion关停邮件应用，全面押注AI Agent
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-27/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-27/product-00.jpg)
 
 
 **是什么**：Notion宣布关停受Skiff影响的邮件应用（原Skiff Mail），原因是内部数据显示多数用户已转向使用AI Agent管理收件箱。公司决定不再维护独立邮件客户端，资源将集中投入Agent方向。
@@ -186,7 +186,7 @@ ICRA 2026 LeHome 家居机器人挑战赛的在线第一名方案，利用视觉
 
 ### GitHub发布Copilot桌面应用，支持并行Agent
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-27/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-27/product-01.jpg)
 
 
 **是什么**：GitHub推出Copilot桌面应用，核心亮点是“并行Agent”——开发者可以同时运行多个AI代理，分别处理不同子任务，如代码审查、测试生成、文档编写，最终合并结果。
@@ -209,7 +209,7 @@ ICRA 2026 LeHome 家居机器人挑战赛的在线第一名方案，利用视觉
 
 ### AWS推出Agent Toolkit，助力AI构建AWS应用
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-27/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-27/product-03.jpg)
 
 
 **是什么**：AWS发布官方Agent Toolkit，提供MCP（Model Context Protocol）服务器、预置技能和插件，让AI Agent能直接操作AWS资源（如EC2、Lambda、S3），实现自动化运维、部署和监控。
@@ -242,7 +242,7 @@ ICRA 2026 LeHome 家居机器人挑战赛的在线第一名方案，利用视觉
 
 ### Google Finance终于推出Android应用
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-06-27/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-06-27/product-06.jpg)
 
 
 **是什么**：谷歌在20年后终于推出Google Finance Android应用，并融入了AI功能。该应用提供实时行情、新闻摘要、组合跟踪，承诺后续推出iOS版本。
@@ -275,7 +275,7 @@ ICRA 2026 LeHome 家居机器人挑战赛的在线第一名方案，利用视觉
 
 ### 韩国计划训练全军成无人机战士
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-27/opinion-00.jpg)
 
 
 韩国国防部宣布，将培训50万现役和预备役军人掌握无人机操作，将其作为与步枪同等的通用作战技能。AI系统将在目标识别、编队控制和自主决策中扮演核心角色，无人机战争从精英单位扩散至全员。关键点：韩国正构建“AI+人”混合部队，单兵即可通过无人机实现战场感知和打击。为什么重要：这不仅是军备竞赛，更说明AI正在让“低成本空中力量”成为任何国家的基础选项，地缘政治平衡可能加速重构。
@@ -284,7 +284,7 @@ ICRA 2026 LeHome 家居机器人挑战赛的在线第一名方案，利用视觉
 
 ### Anthropic：AI让初级工程师不再必要
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-27/opinion-01.jpg)
 
 
 Anthropic 高管在采访中透露，公司内部已停止招聘初级工程师，因为 AI代码生成工具（如 Claude）能够完成入门级任务，且效率更高。他们警告，一旦其他行业跟进，将出现大规模经济冲击。关键点：这不是预测，而是已发生的现实。初级岗位的消失不是“减少”，而是“被替代”——企业发现训练 AI 比训练新人更便宜。为什么重要：对技术从业者而言，职业路径正在断裂；对投资人而言，软件行业的人力成本结构将发生根本变化，AI工具公司成为赢家。
@@ -293,7 +293,7 @@ Anthropic 高管在采访中透露，公司内部已停止招聘初级工程师�
 
 ### AI胜负已不在Anthropic vs OpenAI
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-27/opinion-02.jpg)
 
 
 TechCrunch 评论文章认为，当前 AI 模型的政治和社会影响已经超越公司间竞争。无论是选举干预、就业冲击还是军事应用，都需要跨国集体行动来管理风险。关键点：Anthropic 和 OpenAI 的技术路线区别再大，也不及它们共同带来的外部性重要。为什么重要：读者应跳出“谁家模型更强”的叙事，关注监管框架和全球治理——这才是决定 AI 产业长期格局的关键变量。
@@ -308,7 +308,7 @@ TechCrunch 评论文章认为，当前 AI 模型的政治和社会影响已经�
 
 ### 欧洲厌倦追随，想要自己的AI
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-27/opinion-04.jpg)
 
 
 Wired 分析指出，欧洲对依赖美国 AI 基础模型感到不满，正推动自主生态。特朗普政府的“美国优先”政策可能无意间帮了欧洲——出口管制和技术脱钩迫使欧洲加速自研。关键点：欧洲拥有数据隐私法规和工业优势，但缺乏资本、算力和人才。为什么重要：如果欧洲成功，全球 AI 格局将从“双雄”（中美）变成三极；若失败，欧洲可能沦为数字殖民地。对于投资者，需关注欧洲 AI 初创公司的政策红利。
@@ -317,7 +317,7 @@ Wired 分析指出，欧洲对依赖美国 AI 基础模型感到不满，正推�
 
 ### Lindy弃用Claude转投DeepSeek，节省数百万
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-27/opinion-05.jpg)
 
 
 AI 初创公司 Lindy 宣布完全从 Anthropic 的 Claude 切换至 DeepSeek，仅此一项每年节省数百万美元。成本压力是核心原因——Claude 价格远高于对手，而 DeepSeek 在多数测试中达到相近性能。关键点：这不是个别案例，而是 AI 行业“降本”趋势的缩影。模型竞争正在从“性能”转向“性价比”。为什么重要：Anthropic 的商业模式面临挑战：如果高定价无法被性能差距支撑，客户流失将加速。对于企业客户，应重新评估模型采购策略。
@@ -326,7 +326,7 @@ AI 初创公司 Lindy 宣布完全从 Anthropic 的 Claude 切换至 DeepSeek，
 
 ### Altman要求万亿估值才IPO，或推迟至2027
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-06-27/opinion-06.jpg)
 
 
 据消息人士，Sam Altman 认为 OpenAI 估值低于 1 万亿美元不会上市，因此原定的 IPO 可能推迟至 2027 年甚至更晚。关键点：OpenAI 融资规模巨大（债务 + 股权），但盈利模式尚未被验证。Altman 希望用高估值吸收更多资本，而非让二级市场提前定价。为什么重要：推迟 IPO 意味着 OpenAI 短期内不需要面对季度财报压力，但也增加了员工套现和战略合作的不确定性。对投资者，需关注其下一次融资条款是否包含估值保护。
@@ -335,7 +335,7 @@ AI 初创公司 Lindy 宣布完全从 Anthropic 的 Claude 切换至 DeepSeek，
 
 ### White House要求OpenAI缓释新模型引发争议
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-06-27/opinion-07.jpg)
 
 
 白宫基于安全担忧，要求 OpenAI 慢速发布最新模型（可能为 GPT-5.6），OpenAI 认为这种政府干预不应成为常态。关键点：这不是简单“叫停”，而是“慢速释放”——先给有限合作伙伴测试，再逐步扩大，类似“红队测试”的升级版。为什么重要：这是政府首次对模型发布节奏进行直接干预，可能成为监管先例。如果被制度化，AI 模型的发布周期将从“公司决定”变为“政府审批”，重塑行业节奏。
@@ -352,7 +352,7 @@ NVIDIA 今天放出的 MoE 微调工具可能是本周开源圈最值得盯的�
 
 ### NVIDIA 开源 MoE 微调工具：一行 import 加速 3.7 倍
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-27/opensource-00.jpg)
 
 
 **是什么**：NVIDIA 发布开源 MoE 微调加速工具，仅需在现有 `transformers` v5 代码中加入一行 `import` 即可启用专家并行，自动将不同专家分配到多 GPU 上。该工具基于 NVIDIA 的内部加速库，支持训练与推理阶段。
@@ -365,7 +365,7 @@ NVIDIA 今天放出的 MoE 微调工具可能是本周开源圈最值得盯的�
 
 ### HuggingFace 一键在 Jobs 上运行 vLLM 推理服务器
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-27/opensource-01.jpg)
 
 
 **是什么**：Hugging Face 博客发布新功能——通过一条命令即可在 HF Jobs（托管 GPU 集群）上启动 vLLM 推理服务器，免去用户自行配置环境、管理资源。
@@ -378,7 +378,7 @@ NVIDIA 今天放出的 MoE 微调工具可能是本周开源圈最值得盯的�
 
 ### 阿里开源 Page Agent：自然语言控制浏览器 GUI
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-27/opensource-02.jpg)
 
 
 **是什么**：阿里巴巴开源 Page Agent，用户可用自然语言在浏览器内执行 GUI 操作（点击、输入、滚动等），底层基于 JavaScript 实现，无需依赖浏览器扩展或系统 API。
@@ -391,7 +391,7 @@ NVIDIA 今天放出的 MoE 微调工具可能是本周开源圈最值得盯的�
 
 ### NVIDIA 开源 SkillSpector：检测 Agent 技能的安全漏洞
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-27/opensource-03.jpg)
 
 
 **是什么**：NVIDIA 发布 SkillSpector，一个专门扫描 AI Agent 技能（如插件、工具调用）中安全风险的开源工具，可检测恶意模式、权限提升、数据泄露等漏洞。
@@ -404,7 +404,7 @@ NVIDIA 今天放出的 MoE 微调工具可能是本周开源圈最值得盯的�
 
 ### 字节跳动开源 deer-flow：长时域 SuperAgent 框架
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-27/opensource-04.jpg)
 
 
 **是什么**：字节跳动开源 deer-flow，一个面向长时间、多步骤任务的 SuperAgent 框架，内置沙盒、记忆管理、任务规划等模块，支持研究、编程、内容创作等复杂场景。
@@ -417,7 +417,7 @@ NVIDIA 今天放出的 MoE 微调工具可能是本周开源圈最值得盯的�
 
 ### AutoGPT 持续更新：构建、部署和运行 AI Agent 的工具化
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-27/opensource-05.jpg)
 
 
 **是什么**：知名 Agent 框架 AutoGPT 发布最新迭代，进一步简化 Agent 的构建、部署与运行流程。更新包括改进的插件系统、更稳定的长任务执行和 Web UI。
@@ -430,7 +430,7 @@ NVIDIA 今天放出的 MoE 微调工具可能是本周开源圈最值得盯的�
 
 ### LlamaIndex 演进为文档 Agent 和 OCR 平台
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-27/opensource-06.jpg)
 
 
 **是什么**：LlamaIndex 项目官方更新，定位已从 RAG 框架转向“文档 Agent”和 OCR 平台，支持复杂文档的读取、解析、分析和提取。
@@ -443,7 +443,7 @@ NVIDIA 今天放出的 MoE 微调工具可能是本周开源圈最值得盯的�
 
 ### datasette-export-database 发布 0.3a2：修复依赖问题
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-27/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-27/opensource-07.jpg)
 
 
 **是什么**：Datasette 生态的导出工具 `datasette-export-database` 发布 0.3a2 版本，主要修复了依赖冲突和部分 Python 版本兼容性问题。

@@ -33,7 +33,7 @@ sections:
 
 ### Thinking Machines Lab：全双工语音模型打破VAD范式
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-13/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-13/model_release-00.jpg)
 
 
 翁荔的创业公司Thinking Machines Lab（原OpenAI CTO）发布了首个产品TML-Interaction-Small 276B-A12B。该模型支持全双工实时语音交互，即双方可以同时说话和倾听，不必等待对方说完。关键突破在于它绕过了传统的VAD（语音活动检测）模式，后者通常在静默后检测语音，导致交互延迟和僵硬。模型基于MoE架构（276B参数，12B活跃参数），专为交互场景优化。**为什么重要**：这是少数从底层架构设计就瞄准“实时对话”的发布，而非在已有模型上做微调。如果体验合格，可能会推动语音助手从“按钮触发”转向“随时交谈”，甚至改变智能音箱、客服系统的交互设计。
@@ -42,7 +42,7 @@ sections:
 
 ### 百度文心5.1：预训练成本猛降94%
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-13/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-13/model_release-01.jpg)
 
 
 百度发布文心大模型5.1，声称通过架构革新（如稀疏注意力、量化训练等）将预训练成本降低94%，同时保持与顶级模型（如GPT-4级别）接近的性能。**关键点**：成本压缩接近20倍，如果真实，意味着之前需数千万美元的预训练现在只需几百万美元，但官方未披露具体评估基准和“顶级模型”的对比细节。**为什么重要**：这暗示模型效率可能不再是少数公司的壁垒，更多企业将有能力训练自己的大模型。不过，百度过去在自研芯片（昆仑）和分布式系统上有积累，能否复现成本优势还需独立验证。
@@ -51,7 +51,7 @@ sections:
 
 ### Interfaze.ai：声称高精度新架构，细节稀缺
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-05-13/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-05-13/model_release-02.jpg)
 
 
 Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均有突破，但仅提供了部分概念描述，无模型权重、基准测试或具体算力需求。**关键点**：博客标题强调“high accuracy at scale”，但文内没有给出任何可复现的指标，也未说明是否开源或API可用。**为什么重要**：在模型发布密集周期里，缺乏技术细节的声明容易沦为噪音。但Interfaze团队背景（未公开）或许有潜力，建议观望后续披露。
@@ -74,7 +74,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### Isomorphic Labs融资21亿美元，AI制药进入临床冲刺
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-13/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-13/company-00.jpg)
 
 
 **是什么：** Alphabet旗下AI药物发现公司Isomorphic Labs宣布完成21亿美元融资，用于将其AI模型驱动的候选药物推进至临床试验阶段。这笔融资创下全球AI制药领域的单笔纪录。  
@@ -84,7 +84,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 微软解雇以色列负责人：军事AI伦理争议升级
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-13/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-13/company-01.jpg)
 
 
 **是什么：** 微软解雇其以色列地区负责人，此前有报道称Azure云服务被用于支持以色列在加沙的军事AI目标定位系统。  
@@ -94,7 +94,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### Amazon员工“Tokenmaxxing”：AI内卷的荒诞一面
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-13/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-13/company-02.jpg)
 
 
 **是什么：** 亚马逊员工因内部压力要求大量使用AI工具，开始故意生成无意义token以提升AI工具的“使用量”指标，这一现象被称为“Tokenmaxxing”。  
@@ -104,7 +104,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### GitLab裁员并终结CREDIT价值观：文化路线的急转弯
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-13/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-13/company-03.jpg)
 
 
 **是什么：** GitLab宣布第二轮裁员，同时停止其著名的“CREDIT”价值观体系（全称Collaboration, Results, Efficiency, Diversity, Iteration, Transparency）。  
@@ -114,7 +114,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 可灵AI估值200亿美元，快手视频生成业务独立融资
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-13/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-13/company-04.jpg)
 
 
 **是什么：** 据称快手旗下视频生成AI“可灵”正在进行独立融资，估值高达200亿美元。  
@@ -124,7 +124,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### Ilya Sutskever法庭作证：揭秘OpenAI政变内幕
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-13/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-13/company-05.jpg)
 
 
 **是什么：** 在马斯克诉OpenAI案中，联合创始人Ilya Sutskever出庭作证，称他支持罢免Sam Altman是因为担心OpenAI“被破坏”，并透露自己持有约70亿美元的OpenAI股权。  
@@ -134,7 +134,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### Anthropic警告投资者：二手股票交易不被承认
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-13/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-13/company-06.jpg)
 
 
 **是什么：** Anthropic发布公开声明，明确表示任何通过二级平台进行的股票交易都不被公司认可，提醒投资者“注意风险”。  
@@ -144,7 +144,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### GM裁IT招AI人：汽车业的结构性换血
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-13/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-13/company-07.jpg)
 
 
 **是什么：** 通用汽车裁减数百名传统IT员工，同时招聘具有AI开发、数据工程技能的新员工。  
@@ -162,7 +162,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### Meta Fast BLT：推理内存带宽减半
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-13/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-13/research-00.jpg)
 
 
 **是什么**：Byte Latent Transformer（BLT）是一种无需 tokenizer 的模型架构，Meta 和斯坦福研究人员在其基础上提出 Fast BLT，通过三种推理优化方法，使推理时的内存带宽需求降低超过 50%。核心创新在于重新设计注意力计算和缓存策略，在不牺牲精度的前提下减少对高带宽存储的依赖。
@@ -175,7 +175,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 「大模型蒸馏技术」深度解析
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-13/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-13/research-01.jpg)
 
 
 **是什么**：一篇系统介绍 LLM 蒸馏技术的综述文章，涵盖教师-学生模型、知识蒸馏（KD）、特征蒸馏、关系蒸馏等主流方法，并对比了各方法在参数量压缩和性能保持上的表现。
@@ -196,7 +196,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 谷歌发布Googlebooks AI笔记本及Agent化Android
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-13/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-13/product-00.jpg)
 
 
 **是什么**：谷歌在Android Show上正式推出名为Googlebooks的AI-first笔记本电脑，搭载Gemini Intelligence系统，支持agentic AI与vibe-coded widgets（一种基于自然语言描述自动生成的小部件），同时Gemini驱动的Gboard听写功能也同步更新。
@@ -209,7 +209,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### Anthropic推出法律AI插件Claude Cowork
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-13/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-13/product-01.jpg)
 
 
 **是什么**：Anthropic发布针对律师事务所的Claude Cowork插件，帮助律师自动完成文档搜索、案件研究、合同起草等工作。
@@ -222,7 +222,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### OpenAI推出Daybreak网络安全计划
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-13/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-13/product-02.jpg)
 
 
 **是什么**：OpenAI发布Daybreak计划，将Codex Security置于中心，用于自动化漏洞检测和补丁验证，并整合多家安全合作伙伴。
@@ -245,7 +245,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### NVIDIA与SAP合作：为专业Agent提供安全治理
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-13/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-13/product-04.jpg)
 
 
 **是什么**：NVIDIA和SAP在SAP Sapphire大会上宣布扩展合作，帮助企业在SAP环境中运行具有安全治理能力的专业AI Agent。
@@ -258,7 +258,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 谷歌推出GKE Agent Sandbox和Hypercluster
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-13/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-13/product-05.jpg)
 
 
 **是什么**：在Google Next‘26上，谷歌宣布将Kubernetes定位为AI Agent基础设施，并发布GKE Agent Sandbox和Hypercluster。
@@ -271,7 +271,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### Mistral为Le Chat新增远程智能体与工作模式
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-13/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-13/product-06.jpg)
 
 
 **是什么**：Mistral AI升级其对话产品Le Chat，新增远程AI Agent和Work模式，旨在提升生产力。
@@ -284,7 +284,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 商汤善惠机器人便利店上海开业
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-05-13/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-05-13/product-07.jpg)
 
 
 **是什么**：商汤旗下善惠推出“烧卖购”机器人小店，实现“一人多面”的具身智能零售。
@@ -305,7 +305,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 青少年因ChatGPT药物建议致死，家属起诉
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-13/opinion-00.jpg)
 
 
 **是什么**：一名14岁男孩在患上呼吸道感染后，转向ChatGPT询问用药方案。AI建议混合服用特定非处方药，最终导致急性药物中毒死亡。父母起诉OpenAI，指控其违反产品安全义务，未提供足够警告。
@@ -328,7 +328,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 数据中心月耗3000万加仑水，AI扩张代价
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-13/opinion-02.jpg)
 
 
 **是什么**：Ars Technica调查发现，一座大型数据中心在数月内未被察觉地消耗了3000万加仑水，主要用于冷却设备。该中心未及时向水资源管理机构报告实际用量。
@@ -341,7 +341,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### UCF学生嘘AI演讲者：工业革命说遭反对
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-13/opinion-03.jpg)
 
 
 **是什么**：在中央佛罗里达大学（UCF）毕业典礼上，一位AI行业演讲者将AI比喻为“下一次工业革命”，现场学生发出持续嘘声。演讲者被迫改换措辞。
@@ -354,7 +354,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 好莱坞从业者：所有人都去训练AI了
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-13/opinion-04.jpg)
 
 
 **是什么**：一位在好莱坞从事影视制作的人撰文称，原本在电视和电影领域工作的编剧、美术、剪辑师大量转向AI训练岗位，为语言模型标注视频、图像、剧本数据。
@@ -367,7 +367,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### Stratechery分析SpaceXAI与Anthropic交易
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-13/opinion-05.jpg)
 
 
 **是什么**：Ben Thompson深入分析马斯克旗下xAI与Anthropic的潜在交易，认为xAI应定位为“服务于其他公司的AI基础设施”，而非专注于消费品。当前xAI面临两个方向：为SpaceX等内部使用，或向外部企业提供服务。
@@ -380,7 +380,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### EU呼吁OpenAI和Anthropic开放监管访问
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-05-13/opinion-06.jpg)
 
 
 **是什么**：欧盟监管机构表示，为了有效评估AI风险，需要OpenAI和Anthropic让监管人员进入其内部系统进行测试。目前两家公司尚未全面配合。
@@ -393,7 +393,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 黄仁勋日均投资20亿美元，成AI第一金主
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-05-13/opinion-07.jpg)
 
 
 **是什么**：分析称NVIDIA CEO黄仁勋正以日均20亿美元的速度在AI领域进行投资，包括向OpenAI、Anthropic、xAI等公司注资，以及大规模扩建自有算力基础设施。
@@ -416,7 +416,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 字节开源UI-TARS桌面版：多模态AI Agent栈
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-13/opensource-00.jpg)
 
 
 **是什么**：字节跳动开源了UI-TARS-desktop，一个连接前沿AI模型与Agent基础设施的多模态AI Agent栈，允许开发者快速构建可操作桌面和网页的Agent。
@@ -429,7 +429,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### 开源Needle：26M参数工具调用模型，6000 tok/s
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-13/opensource-01.jpg)
 
 
 **是什么**：cactus compute发布了Needle，一个仅有26M参数的函数调用模型，可在笔记本电脑等消费级设备上运行，推理速度达6000 tok/s。
@@ -452,7 +452,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### HuggingFace发布Skills：Agent技能库
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-13/opensource-03.jpg)
 
 
 **是什么**：HuggingFace开源了Skills库，为AI Agent提供标准化的任务定义，支持数据创建、模型训练和评估的全流程。
@@ -465,7 +465,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### Nous Research发布Hermes Agent：自适应Agent框架
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-13/opensource-04.jpg)
 
 
 **是什么**：Nous Research开源Hermes Agent，一个可成长的自适应AI Agent框架，支持多步骤规划和工具调用。
@@ -478,7 +478,7 @@ Interfaze.ai发布博客，宣称其新模型架构在准确性和规模上均�
 
 ### agentmemory：AI编码Agent持久记忆库
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-13/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-13/opensource-05.jpg)
 
 
 **是什么**：agentmemory是一个针对AI编码Agent设计的持久记忆库，基于实际基准测试进行优化，提供长期记忆能力。

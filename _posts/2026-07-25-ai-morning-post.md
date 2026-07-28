@@ -33,7 +33,7 @@ sections:
 
 ### Anthropic Opus 5：性能接近但价格减半，转向效率竞争
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-25/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-25/model_release-00.jpg)
 
 
 **是什么**：Anthropic 今日发布 Claude Opus 5，官方宣称性能接近旗舰模型 Fable 5，但价格仅为后者一半（$5/百万 token）。Opus 5 并非全新架构，而是基于 Fable 4 的优化版本，重点提升推理速度和内存效率。
@@ -46,7 +46,7 @@ sections:
 
 ### Black Forest Labs FLUX 3：视频+音频原生生成，20 秒长片段
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-25/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-25/model_release-01.jpg)
 
 
 **是什么**：黑森林实验室发布 FLUX 3 多模态模型，首次支持最长 20 秒视频生成并同步输出音频，无需后期配音。此前同类视频生成模型（如 Runway Gen-3）均需独立生成音频后对齐。
@@ -59,7 +59,7 @@ sections:
 
 ### 德国 AI 联盟开源 Soofi S：30B 参数，英德双语登顶
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-25/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-25/model_release-02.jpg)
 
 
 **是什么**：德国 AI 研究所联合发布开源模型 Soofi S，参数量 30B，在英语和德语多项基准测试（如 MMLU、HellaSwag、GermanBench）中取得 SOTA 成绩，超越同等尺寸的 Llama 3 和 Mistral 等模型。
@@ -72,7 +72,7 @@ sections:
 
 ### Poolside Laguna S 2.1：小模型编程“拳打”大模型
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-25/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-25/model_release-03.jpg)
 
 
 **是什么**：Poolside 发布开源轻量级编程模型 Laguna S 2.1，参数规模未公开（推测<7B），但在多项编程基准（HumanEval、MBPP、SWE-bench）中超越同尺寸模型，甚至接近部分 13B-30B 模型表现。
@@ -93,7 +93,7 @@ sections:
 
 ### 菲尔兹奖得主雅各布·齐默曼宣布加入 OpenAI
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-25/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-25/company-00.jpg)
 
 
 新晋菲尔兹奖得主雅各布·齐默曼在获奖后第一时间宣布，将全职加入 OpenAI 从事 AI 安全研究。他在社交媒体上称“数学职业即将改变”，暗示纯数学与 AI 安全之间的界限正在模糊。这一举动被视作学术界顶级人才向产业界大规模转移的又一标志性事件。
@@ -102,7 +102,7 @@ sections:
 
 ### Google 首次出现负现金流季度，AI 支出激增
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-25/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-25/company-01.jpg)
 
 
 Google 母公司 Alphabet 发布 2026 年第二季度财报，营收保持增长，但 AI 基础设施的大规模投入导致经营现金流首次录得负值。市场此前已对科技巨头无节制加码 AI 有所警惕，这份财报可能成为“AI 投资回报问号”从噪音转为实质压力的拐点。
@@ -111,7 +111,7 @@ Google 母公司 Alphabet 发布 2026 年第二季度财报，营收保持增长
 
 ### Cognition 收购 AI 助手 Poke，价值数亿美元
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-25/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-25/company-02.jpg)
 
 
 AI 编程公司 Cognition 以低九位数估值收购 AI 助手 Poke，后者以“像朋友一样聊天”的个性化交互体验著称。Cognition 表示，这笔交易的核心是将人格化交互能力融入其编程 agent 产品，让 AI 编程助手不仅写代码，还能理解用户情绪与沟通风格。
@@ -120,7 +120,7 @@ AI 编程公司 Cognition 以低九位数估值收购 AI 助手 Poke，后者以
 
 ### AI 芯片初创公司 Etched 估值破百亿美元
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-25/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-25/company-03.jpg)
 
 
 由哈佛辍学生创办的 Etched 推出针对推理场景的非 GPU 专用芯片，并完成新一轮融资，估值达到 103 亿美元。Etched 的芯片宣称在推理速度与能效上远超通用 GPU，其高估值说明市场对“替代英伟达”的架构创新仍抱有极大期待。
@@ -129,7 +129,7 @@ AI 编程公司 Cognition 以低九位数估值收购 AI 助手 Poke，后者以
 
 ### Midjourney 收购占星应用 Co-Star，拓展 AI 社交
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-25/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-25/company-04.jpg)
 
 
 AI 图像生成公司 Midjourney 收购占星社交 App Co-Star。Co-Star 拥有年轻用户黏性极强的个性化社交场景，Midjourney 或借此将图像生成能力引入占星、日程、社交推荐等高频互动领域，实现从工具向社交平台的跨越。
@@ -144,7 +144,7 @@ AI 图像生成公司 Midjourney 收购占星社交 App Co-Star。Co-Star 拥有
 
 ### 前 Google 安全高管创 AegisAI，获 3600 万美元抗 AI 钓鱼
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-25/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-25/company-06.jpg)
 
 
 由前 Google 安全高管创立的 AegisAI 获得 3600 万美元融资，产品利用 AI agent 实时分析邮件异常，专门防御由大模型驱动的精准钓鱼攻击（spear phishing）。当攻击者也在用 AI 升级时，防御方必须从规则匹配转向 agent 级行为分析。
@@ -163,7 +163,7 @@ Together AI 的 DeepSWE 基准测试揭开了成本与性能的新天平：Kimi 
 
 ### Kimi K3 vs Claude Fable 5：蒸馏才是赢家？
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-25/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-25/research-00.jpg)
 
 
 **是什么：** Together AI 发布 DeepSWE 基准测试，对比 Kimi K3 和 Claude Fable 5 在真实软件工程任务上的表现。
@@ -176,7 +176,7 @@ Together AI 的 DeepSWE 基准测试揭开了成本与性能的新天平：Kimi 
 
 ### Fugu Ultra 1.1：不依赖最强模型，也能超越最强
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-25/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-25/research-01.jpg)
 
 
 **是什么：** Sakana AI 发布模型路由器 Fugu Ultra v1.1，宣称在多项基准上整体性能超过 Claude Fable 5，且路由池中不包含 Fable 5。
@@ -189,7 +189,7 @@ Together AI 的 DeepSWE 基准测试揭开了成本与性能的新天平：Kimi 
 
 ### ChatGPT 健康建议：付费墙背后的医疗不平等
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-25/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-25/research-02.jpg)
 
 
 **是什么：** 一项新评测显示，ChatGPT 对免费用户提供的健康建议质量显著低于付费用户，尤其在诊断准确性上存在系统性差距。
@@ -202,7 +202,7 @@ Together AI 的 DeepSWE 基准测试揭开了成本与性能的新天平：Kimi 
 
 ### AlphaFold 重新设计基因编辑蛋白，降低脱靶风险
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-25/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-25/research-03.jpg)
 
 
 **是什么：** 研究团队利用 Google AlphaFold 分析基因编辑蛋白（如 Cas9）的结构，识别出可能导致脱靶的氨基酸序列错误，并重新设计优化。
@@ -225,7 +225,7 @@ ChatGPT Health 今日正式面向全体美国用户开放，整合 Apple Health 
 
 ### ChatGPT Health：AI 健康助手进入大众市场
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-25/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-25/product-00.jpg)
 
 
 OpenAI 本周向所有美国用户开放 ChatGPT Health，该功能支持同步 Apple Health、MyFitnessPal 等第三方健康数据，生成个性化饮食、运动和睡眠建议。关键点在于：它不是简单问答，而是基于用户长期数据做趋势分析和行为指导。为什么重要？健康是 AI 最可能产生高粘性订阅的场景，但也是隐私合规最严的赛道。ChatGPT Health 的开放意味着 OpenAI 正式与 Fitbit、Whoop 等专业健康工具正面竞争，其数据安全和医学建议的可靠性将是用户留存的关键指标。
@@ -234,7 +234,7 @@ OpenAI 本周向所有美国用户开放 ChatGPT Health，该功能支持同步 
 
 ### Runway Media Router：模型“中介”而非“更多模型”
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-25/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-25/product-01.jpg)
 
 
 Runway 发布 Media Router，一个自动路由引擎，可根据用户对质量、速度或成本的不同优先级，从候选的图像、视频、音频生成模型中选择最合适的模型执行任务。关键点：它不追求自研最强模型，而是做模型间的调度层。为什么重要？在生成式媒体模型数量爆炸的当下，开发者面临选择困难。Media Router 用“中介逻辑”降低试错成本，可能成为 Runway 平台化战略的核心——从卖模型转向卖路由服务，商业模式更具持续性。
@@ -243,7 +243,7 @@ Runway 发布 Media Router，一个自动路由引擎，可根据用户对质量
 
 ### ChatGPT 桌面端语音模式：与 Codex、Work 协同
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-25/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-25/product-02.jpg)
 
 
 OpenAI 将新版语音模式推至 ChatGPT 桌面应用，支持与 Codex（编程助手）和 Work（工作空间）协同，用户可通过语音指令控制代理完成复杂任务。关键点：桌面端不再是单纯的聊天界面，语音成为多 agent 交互的入口。为什么重要？语音在桌面端的使用场景过去普遍受限（隐私、环境噪音），但 OpenAI 此举意在打通“语音输入 - 代码执行 - 工作流自动化”的闭环，这暗示 agentic 产品的交互方式正在从文本向语音迁移。
@@ -252,7 +252,7 @@ OpenAI 将新版语音模式推至 ChatGPT 桌面应用，支持与 Codex（编�
 
 ### Claude 语音模式升级：跨平台强模型加持
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-25/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-25/product-03.jpg)
 
 
 Anthropic 同步升级 Claude 语音模式，将其运行在最新强大模型之上，并跨所有平台可用。功能上覆盖安排会议、撰写邮件等任务。关键点：Claude 语音模式强调“基于更强模型”而非单纯优化语音识别——意味着回答质量和推理能力才是差异化重点。为什么重要？语音助手进入“能力内卷”阶段：谁能更精准地理解复杂指令并执行多步任务，谁就能在 B 端办公场景中抢跑。Anthropic 此步意在缩小与 OpenAI 在交互能力上的差距。
@@ -261,7 +261,7 @@ Anthropic 同步升级 Claude 语音模式，将其运行在最新强大模型�
 
 ### AMD Helios：机架系统直指 Nvidia 生态
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-25/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-25/product-04.jpg)
 
 
 AMD 发布 Helios 机架级 AI 系统，专为训练和推理设计，计划年底出货，直接对标 Nvidia 的 DGX 系列和 HGX 平台。关键点：Helios 是 AMD 从芯片向完整系统方案的关键一跃，目标客户是大型云厂商和 AI 实验室。为什么重要？算力基础设施正在从“单卡军备竞赛”转向“全栈系统竞争”。AMD 此举若成功，将打破 Nvidia 在 AI 服务器市场的统治地位，但出货时间和生态兼容性仍有待验证。
@@ -270,7 +270,7 @@ AMD 发布 Helios 机架级 AI 系统，专为训练和推理设计，计划年�
 
 ### Bluesky Attie：从助手到社交研究工具
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-25/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-25/product-05.jpg)
 
 
 Bluesky 的 AI 助手 Attie 新增查询 AT 协议上新闻、趋势和对话的能力，定位于开放的社交研究工具。关键点：不同于传统社交平台的封闭分析，Attie 基于去中心化协议，允许用户针对公开数据做自定义分析。为什么重要？在马斯克对 X API 不断收紧的背景下，Bluesky 通过 Attie 提供“开放数据+AI分析”的组合，可能吸引研究者、记者等专业用户群，间接推动去中心化社交生态的产品化。
@@ -289,7 +289,7 @@ Bluesky 的 AI 助手 Attie 新增查询 AT 协议上新闻、趋势和对话的
 
 ### 加拿大议员被曝议会念LLM草稿
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-25/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-25/opinion-00.jpg)
 
 
 加拿大一名议员在议会演讲中读出LLM生成的“更自然”版本草稿，被同行质疑后承认使用了AI辅助。关键点：这不是简单的效率工具——演讲内容涉及政策辩论，LLM可能引入未经议员本人核验的论点或语言风格。为什么重要：政治场景中AI使用的边界尚不明确，此事件可能推动各国议会制定AI辅助发言的透明规则，防止公众对代表行为的信任度进一步下降。
@@ -298,7 +298,7 @@ Bluesky 的 AI 助手 Attie 新增查询 AT 协议上新闻、趋势和对话的
 
 ### AI关闭法案：国土安全部可下令关停“失控”AI
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-25/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-25/opinion-01.jpg)
 
 
 《AI关闭法案》赋予国土安全部长紧急权力，在判定某AI系统构成“迫在眉睫的威胁”时，可绕过常规程序直接命令关闭。关键点：法案未明确定义“威胁”标准，且未设司法审查前置环节，引发民权组织对行政权力滥用的担忧。为什么重要：这是首个赋予行政部门单方面物理中断AI运行的联邦提案，一旦通过，将彻底改变AI部署的合规逻辑——企业需同时面对技术安全与政府干预双重风险。
@@ -307,7 +307,7 @@ Bluesky 的 AI 助手 Attie 新增查询 AT 协议上新闻、趋势和对话的
 
 ### Meta AI广告配歌“人类五年后灭亡”，被批不明智
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-25/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-25/opinion-02.jpg)
 
 
 Meta发布AI乐观宣传广告，背景音乐选用David Bowie的《Five Years》，歌词讲述人类在五年后走向灭绝。关键点：广告本身展示AI改善医疗、教育等场景，但音乐选择完全偏离主题，引发社交媒体嘲讽与品牌信任度质疑。为什么重要：大型科技公司在AI叙事上的失误，折射出内部沟通与品牌管控的断裂——当AI本身已引发广泛焦虑时，任何不合时宜的隐喻都可能被放大为公关危机。
@@ -316,7 +316,7 @@ Meta发布AI乐观宣传广告，背景音乐选用David Bowie的《Five Years�
 
 ### 硅谷对华AI态度分裂：巨头筑墙，初创借道
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-25/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-25/opinion-03.jpg)
 
 
 报道揭示硅谷内部对华AI发展的立场分歧：大型科技公司（如Google、OpenAI）游说政府加强对华技术限制，而众多初创公司则直接利用中国开源模型（如Qwen、DeepSeek）降低开发成本。关键点：小型公司认为限制措施无助于安全，只会让美国创新成本更高；大型公司则强调数据安全与国家竞争力。为什么重要：这种分裂将影响美国AI政策走向——若小型企业占比大且持续绕道，封锁政策的效果可能适得其反，反而加速中国企业全球化。
@@ -325,7 +325,7 @@ Meta发布AI乐观宣传广告，背景音乐选用David Bowie的《Five Years�
 
 ### AI军备竞赛反思：OpenAI被黑事件暴露训练风险
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-25/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-25/opinion-04.jpg)
 
 
 OpenAI训练技术遭攻击事件引发行业对“激进训练”安全性的重新审视。关键点：攻击者利用训练过程中的漏洞注入恶意指令，虽未造成实质性数据泄露，但暴露出当前模型训练基础设施缺乏隔离与审计机制。为什么重要：此前行业关注点集中在推理阶段安全，而此事件证明训练阶段同样脆弱。专家呼吁建立类似“实验室安全管理”的规范，否则军备竞赛中的“跑得更快”可能以安全滑坡为代价。
@@ -348,7 +348,7 @@ OpenAI训练技术遭攻击事件引发行业对“激进训练”安全性的�
 
 ### Andrew Ng 发布开源桌面AI助手 OpenWorker
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-25/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-25/opensource-00.jpg)
 
 
 OpenWorker 采用 MIT 许可，定位为“本地优先的 AI 同事”（desktop AI coworker），核心差异在于它直接交付完成的文档、代码、报告等成品，而非一轮轮对话。用户下达任务后，OpenWorker 自主规划、执行并输出结果。它支持超过 30 种模型（包括开源模型和闭源 API），并且可以在本地完全离线运行，数据不出设备。对于隐私敏感的技术团队和独立开发者，这提供了一个可控且高效的 AI 工作流入口。
@@ -357,7 +357,7 @@ OpenWorker 采用 MIT 许可，定位为“本地优先的 AI 同事”（deskto
 
 ### 微软开源 SkillOpt：文本空间优化器提升 LLM 代理技能
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-25/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-25/opensource-01.jpg)
 
 
 SkillOpt 是微软开源的一套算法框架，用于在文本空间中自动训练可重用的“自然语言技能”。核心机制：通过轨迹编辑（trajectory editing）和验证门控（verification gating）来更新冻结 LLM 的行为，无需微调模型参数。SkillOpt 可以像 Prompt 一样存储和复用技能，使代理在复杂任务中表现更稳定。这对构建自主 agent 的团队尤其有价值——不再需要反复调整提示词，而是用自动化方法“练”出技能。
@@ -372,7 +372,7 @@ Block（原 Square）开源了 Buzz，一个基于中继（relay-based）的协�
 
 ### OmniRoute：免费 MIT AI 网关，支持 500+ 模型
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-25/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-25/opensource-03.jpg)
 
 
 OmniRoute 是一个轻量级 AI 网关，提供统一 API 端点，汇集了 290+ 供应商、500+ 模型（其中 90+ 免费），并具备配额感知的自动路由能力。开发者只需接入一个接口，即可在多个提供商之间切换、兜底。对于管理多模型调用的工程团队，这能显著减少集成成本和故障时间——尤其适合需要平衡成本与性能的场景。
@@ -381,7 +381,7 @@ OmniRoute 是一个轻量级 AI 网关，提供统一 API 端点，汇集了 290
 
 ### 阿里开源代码审查工具 open-code-review
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-25/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-25/opensource-04.jpg)
 
 
 阿里巴巴开源了经过大规模验证的混合架构代码审查工具 open-code-review。它结合了确定性流水线（静态分析、正则规则）和 LLM 代理，同时内置多种安全规则（SQL 注入、XSS 等）。该工具在阿里内部已用于大量审查场景，可显著减少人工 review 的重复劳动。对需要提升代码质量和安全性的团队来说，这是一个可以直接投入生产的开源方案。

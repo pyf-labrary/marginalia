@@ -44,7 +44,7 @@ OpenAI与巴西媒体集团Grupo Folha和Grupo UOL达成战略合作，ChatGPT�
 
 ### ClickUp裁员数百人，用数千AI代理替代员工
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-26/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-26/company-02.jpg)
 
 
 成立九年的项目管理创业公司ClickUp解雇数百名员工，转而使用数千个AI代理完成客服、测试、内容管理等岗位工作。公司CEO表示这并非降低成本，而是“效率革命”。这一决策在硅谷引发激烈讨论：AI替代人类工作不再只是假设，而成为一家成熟SaaS公司的主动选择。问题在于，当AI代理全面接管后，组织创新、客户关系维护等依赖人类判断的环节能否被替代，尚无答案。
@@ -53,7 +53,7 @@ OpenAI与巴西媒体集团Grupo Folha和Grupo UOL达成战略合作，ChatGPT�
 
 ### Waymo召回所有无人车，因暴雨导致系统失灵
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-26/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-26/company-03.jpg)
 
 
 Waymo因无人车在暴雨天气中出现系统故障，宣布大规模召回所有现役车辆，并暂停多个城市的Robotaxi服务。这是Waymo自2025年扩张以来最激进的一次安全行动——以往仅针对特定软件批次更新，此次是物理召回，说明问题涉及硬件或底层感知架构。自动驾驶在高鲁棒性场景中仍存在肉眼可见的短板，行业需要重新评估“去安全员”的节奏。
@@ -62,7 +62,7 @@ Waymo因无人车在暴雨天气中出现系统故障，宣布大规模召回所
 
 ### 天机智能获10亿元融资，估值逼近百亿
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-26/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-26/company-04.jpg)
 
 
 45家机器人厂商背后的核心供应商——天机智能——完成新一轮10亿元融资，估值向百亿元进发。天机智能提供机器人的电机、减速器、控制器等关键模块，是典型的“卖铲人”角色。在人形机器人尚未大规模出货的今天，核心零部件企业先一步吃到资本红利，说明产业界对具身智能的长期预期远未降温。
@@ -71,7 +71,7 @@ Waymo因无人车在暴雨天气中出现系统故障，宣布大规模召回所
 
 ### 华为具身大脑一号位创业，获亿元级融资
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-26/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-26/company-05.jpg)
 
 
 原华为具身智能负责人离职创业，公司方向是用认知科学构建世界模型，已获得亿元级投资。具身智能领域的人才密度正在从大厂外溢，新的创业公司不再单纯堆硬件，而是尝试从人类认知机制中寻找通用感知与决策方案。这轮融资说明资本对“差异化技术路线”的认可，但能否落地仍取决于模型在真实物理世界中的表现。
@@ -80,7 +80,7 @@ Waymo因无人车在暴雨天气中出现系统故障，宣布大规模召回所
 
 ### DeepSeek招兵买马，从零打造中国版Claude Code
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-26/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-26/company-06.jpg)
 
 
 DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编码Agent工具。这与同日推出的reasonix形成呼应——reasonix是成熟产品的降价与推出，而新团队则自研底层能力，意味着DeepSeek打算补齐“推理+编码+工程”的全栈Agent能力。对于开发者工具市场，这将是一场由模型厂商发起的垂直竞争。
@@ -89,7 +89,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### 米奥会展1.5亿元认购阶跃星辰股份
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-26/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-26/company-07.jpg)
 
 
 会展公司米奥会展以1.5亿元认购AI公司阶跃星辰少数股权。跨行业投资AI通常意味着上市公司试图将AI能力注入传统业务，但阶跃星辰的估值与技术路线尚未公开，这笔投资存在一定不确定性。对关注AI财务风险的人而言，这是一个典型的“产业资本触AI”案例，值得关注后续业务协同情况。
@@ -108,7 +108,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### DeepMind AlphaProof Nexus：数百美元破解数十年难题
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-26/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-26/research-00.jpg)
 
 
 **是什么**：Google DeepMind 发布 AlphaProof Nexus，一个极低成本的数学证明系统，仅用数百美元的计算资源就解决了数学界长期未解的难题。  
@@ -125,7 +125,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### SaaS-Bench 揭穿 AI 全自动办公神话，Claude 通过率仅 3.8%
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-26/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-26/research-02.jpg)
 
 
 **是什么**：UniPat AI 发布 SaaS-Bench 评测，模拟真实企业办公流程（如填写表单、多步骤协作、审批等），测试主流大模型的完全自动化能力。结果：最高分（Claude）仅 3.8%，GPT-4o 和 Gemini 表现更差。  
@@ -135,7 +135,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### ByteDance 研究发现：训练长文档模型时，“提问”优于“转录”
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-26/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-26/research-03.jpg)
 
 
 **是什么**：ByteDance 研究表明，在处理长文档训练时，通过向大模型提问（例如针对文档内容提问）而非直接要求模型转录文本，能显著提升对长上下文的利用效率。  
@@ -152,7 +152,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### 蚂蚁灵波 LingBot-VA 论文入选 RSS 2026
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-05-26/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-05-26/research-05.jpg)
 
 
 **是什么**：蚂蚁集团旗下的灵波机器人团队（LingBot）论文被机器人顶会 RSS 2026 接收，提出“边推演边行动”的 VLA 架构。  
@@ -162,7 +162,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### AI 芯片成本结构剧变：内存占近三分之二
 
-![research-06.jpg](/marginalia/assets/img/ai-hot/2026-05-26/research-06.jpg)
+![research-06.jpg](/assets/img/ai-hot/2026-05-26/research-06.jpg)
 
 
 **是什么**：Epoch AI 发布数据分析，显示 AI 芯片组件成本中内存占比已接近三分之二，而计算单元（如 GPU core）占比大幅下降。  
@@ -172,7 +172,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### 研究揭示 AI 模型引用错误率高：答案对但来源错
 
-![research-07.jpg](/marginalia/assets/img/ai-hot/2026-05-26/research-07.jpg)
+![research-07.jpg](/assets/img/ai-hot/2026-05-26/research-07.jpg)
 
 
 **是什么**：CiteVQA 研究发现，AI 模型在回答问题时经常给出正确答案，但却指向错误的文本来源（例如引用不存在的段落或张冠李戴）。  
@@ -192,7 +192,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### 我试了亚马逊Bee：神奇与毛骨悚然之间
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-26/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-26/product-00.jpg)
 
 
 是什么：TechCrunch记者体验了Amazon Bee AI可穿戴设备——一个吸附在衣物或手腕上的小装置，能通过语音和轻触交互，调用亚马逊的AI助手完成查天气、设提醒、控制家居等任务。关键点：设备的便利性确实令人印象深刻——无需掏出手机，随时提问；但其持续监听环境的能力也引发强烈隐私焦虑，尤其是它可能记录敏感对话。为什么重要：Bee代表了亚马逊将AI服务从屏幕延展到身体的尝试，其市场反应将验证消费者对「始终在线」可穿戴AI的接受度。如果隐私担忧未能妥善解决，它可能步玻璃眼镜后尘。
@@ -213,7 +213,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### DeepSeek V4优化工具：成本降至2折
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-26/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-26/product-03.jpg)
 
 
 是什么：一款面向DeepSeek V4的优化工具通过缓存命中率99.82%的机制，大幅降低API调用成本。关键点：实测中，一份4亿+token的账单从61美元降至12美元，降幅约80%。工具原理是智能复用此前计算的结果。为什么重要：对于依赖大模型API的创业团队，这将显著压缩推理成本门槛，使得长上下文或高频调用场景（如客服、文档分析）更经济可行。
@@ -222,7 +222,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### 谷歌改进Android CLI：AI代理操控安卓设备
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-26/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-26/product-04.jpg)
 
 
 是什么：Google为Android CLI新增接口，允许AI代理直接调用Android工具链，实现对设备的自动化操作。关键点：过去AI代理操控手机多依赖无障碍服务或RPA模拟点击，现在CLI层面提供原生通道，执行效率更高且更稳定。为什么重要：这是谷歌将Android打造成agentic操作系统的关键一步，未来AI代理可以一键设置手机、批量管理应用、自动化测试等，极大扩展移动端AI应用场景。
@@ -279,7 +279,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### Hassabis称人类处于奇点山脚，LeCun批当前AI并不智能
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-26/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-26/opinion-02.jpg)
 
 
 **是什么：** DeepMind创始人Demis Hassabis认为人类正站在奇点（singularity）的“山脚下”，而Meta首席AI科学家Yann LeCun则在同一活动中直怼：当前最先进的AI甚至还不算“智能”。
@@ -292,7 +292,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### “AI洗白”泛滥：企业抢戴AI帽子，监管日趋严格
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-26/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-26/opinion-03.jpg)
 
 
 **是什么：** 越来越多传统企业通过更名、公关稿或简单的API调用，就声称自己“成为AI公司”。《卫报》调查发现，过去一年有超过200家上市公司在财报中首次出现“AI”关键词，但其中约60%没有实际AI研发投入。监管机构开始严厉打击“AI洗白”（AI-washing）。
@@ -315,7 +315,7 @@ DeepSeek宣布招募团队，从底层开始构建类似Claude Code的原生编�
 
 ### Anthropic发布官方Claude Code插件目录，开启生态
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-26/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-26/opensource-00.jpg)
 
 
 Anthropic官方管理的Claude Code插件目录正式上线，首批收录社区贡献的编码代理插件。该目录由Anthropic直接维护，类似VS Code插件市场，但专为Claude Code的agentic工作流设计。关键点是：插件通过官方审核，能降低安全风险；开发者可扩展Claude Code的行为，如自定义代码审查、自动化测试等。重要性在于，这是Anthropic首次将Claude Code从单一产品升级为平台，意味着AI编码代理开始具备类似IDE的生态基础，吸引更多第三方参与。
@@ -324,7 +324,7 @@ Anthropic官方管理的Claude Code插件目录正式上线，首批收录社区
 
 ### Multica开源：打造AI编码代理团队协作平台
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-26/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-26/opensource-01.jpg)
 
 
 Multica是一个开源平台，允许人类将AI编码代理作为团队成员分配任务并跟踪进度。它解决了当前AI编码工具多为单兵作战的问题。关键点：支持多代理并行工作，可设定独立任务、依赖关系和进度看板；每个代理有独立对话上下文。重要性在于，它提供了“AI作为同事”而非“AI作为工具”的协作范式，适用于复杂项目中的任务拆解和并行开发，尤其对需要管理多个AI实例的团队有实际价值。
@@ -351,7 +351,7 @@ Pi是一套AI代理工具包，包含编码代理CLI、统一LLM API（支持多
 
 ### Aider持续更新：终端AI编程搭档
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-26/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-26/opensource-05.jpg)
 
 
 Aider是终端中运行的AI结对编程工具，支持GPT-4、Claude 3.5/Opus等多模型，自动处理git提交。关键点：区别于Copilot的内嵌体验，Aider坚持终端原生交互；支持一次修改多个文件，并自动生成清晰的commit消息。重要性在于，它在开发者社区中已积累成熟口碑，是追求轻量、透明、可不依赖IDE场景的首选方案，适合偏好命令行的资深工程师。
@@ -360,7 +360,7 @@ Aider是终端中运行的AI结对编程工具，支持GPT-4、Claude 3.5/Opus�
 
 ### Honcho开源：为AI代理提供长期记忆库
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-05-26/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-05-26/opensource-06.jpg)
 
 
 Honcho是一个开源的内存库，帮助AI代理保持多轮对话上下文和用户记忆，类似应用端的人设信息。关键点：支持结构化记忆（用户偏好、历史行为）和向量化记忆（语义检索）；可作为独立服务与任何代理集成。重要性在于，AI代理当前最大的短板之一是“每轮对话都像第一次见面”，Honcho填补了这种有状态记忆的空白，适合构建个性化AI助手或长期陪伴型应用。
@@ -369,7 +369,7 @@ Honcho是一个开源的内存库，帮助AI代理保持多轮对话上下文和
 
 ### Onyx开源AI平台发布：一站式连接所有大模型
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-26/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-26/opensource-07.jpg)
 
 
 Onyx提供开源AI聊天平台，支持与任何LLM（包括本地部署的开源模型）集成，具备文档索引、RAG等功能。关键点：目标对标Dify或Flowise的体验，但强调开箱即用的文档索引和多种部署方式（Docker、K8s）。重要性在于，它降低了普通团队搭建企业内部AI问答系统的复杂度，尤其适合希望私有化部署、同时对接多个供应商的场景。

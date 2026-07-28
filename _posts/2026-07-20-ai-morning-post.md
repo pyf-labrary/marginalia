@@ -33,7 +33,7 @@ sections:
 
 ### Kimi K3空降Arena榜首，但订阅暂停暴露交付难题
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-20/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-20/model_release-00.jpg)
 
 
 **是什么**：Moonshot AI于7月19日发布Kimi K3，并宣布其在Chatbot Arena排行榜上超过Fable 5，位居第一。在MMLU、MATH、HumanEval等基准测试中均实现超越，仅在复杂数学推理上仍落后于Fable 5。然而，因订阅请求远超预期，团队暂停了新用户注册。
@@ -46,7 +46,7 @@ sections:
 
 ### 阿里千问3.8预览版上线，开源承诺保持压力
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-20/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-20/model_release-01.jpg)
 
 
 **是什么**：阿里云发布Qwen 3.8-Max预览版，官方宣称性能“第二仅次于Fable 5”。考虑到Kimi K3已超越Fable 5，Qwen 3.8-Max的实际排名可能滑至第三。阿里同时承诺正式版将开源，延续Qwen系列的开源策略。
@@ -69,7 +69,7 @@ sections:
 
 ### 商汤发布原生多模态智能体基座U1 Pro
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-20/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-20/model_release-03.jpg)
 
 
 **是什么**：商汤科技发布SenseNova U1 Pro，定位为“交付级原生多模态智能体基座”，面向长程任务（如复杂图片创作、交互式内容生成）。官方称其具备高可控性和低延迟。
@@ -90,7 +90,7 @@ sections:
 
 ### 中国牵头成立世界AI合作组织，29国签署协议
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-20/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-20/company-00.jpg)
 
 
 **是什么：** 在上海世界人工智能大会（WAIC）上，由中国推动的“世界人工智能合作组织”正式成立，29个国家签署协议，旨在加强AI能力建设国际合作。
@@ -103,7 +103,7 @@ sections:
 
 ### 一目科技E轮融资超10亿元，估值破百亿
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-20/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-20/company-01.jpg)
 
 
 **是什么：** 具身智能触觉感知公司一目科技完成E轮融资，金额超过10亿元人民币，估值突破100亿元，资金用于研发和量产。
@@ -116,7 +116,7 @@ sections:
 
 ### 苹果起诉OpenAI，或颠覆其硬件计划
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-20/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-20/company-02.jpg)
 
 
 **是什么：** 苹果对OpenAI提起法律诉讼，TechCrunch分析这可能影响OpenAI的硬件研发和IPO计划。
@@ -129,7 +129,7 @@ sections:
 
 ### 多家AI相关公司发布亮眼半年报，算力需求拉动增长
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-20/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-20/company-03.jpg)
 
 
 **是什么：** 新易盛、星宸科技、中科创达等公司预告2026年上半年净利润大幅增长，主要受益于AI算力投资拉动。
@@ -142,7 +142,7 @@ sections:
 
 ### 黄仁勋日本行签署多家合作，日企拥抱英伟达生态
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-20/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-20/company-04.jpg)
 
 
 **是什么：** 英伟达CEO黄仁勋结束日本访问，与日本科技企业及政府达成一系列合作，推动英伟达生态在日本的落地。
@@ -155,7 +155,7 @@ sections:
 
 ### 长鑫科技IPO中签号出炉，共计770万个
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-20/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-20/company-05.jpg)
 
 
 **是什么：** 存储芯片企业长鑫科技披露IPO中签结果，共产生770万个中签号码，投资者可查询。
@@ -168,7 +168,7 @@ sections:
 
 ### 长三角共建AI协同投资平台，多国资联手
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-20/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-20/company-06.jpg)
 
 
 **是什么：** 在WAIC上，长三角投资公司等多家国资企业签约共建长三角AI协同投资平台，旨在整合区域资源支持AI创新。
@@ -189,7 +189,7 @@ Google Deepmind 抛出一个激进的论点：现有视频生成模型已自发�
 
 ### Deepmind：视频生成器已隐含世界模型，计算机视觉所需
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-20/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-20/research-00.jpg)
 
 
 **是什么**：Google Deepmind 发表观点文章，认为当前的视频生成模型（如 Sora 类）内部已经包含了计算机视觉领域长期寻求的“世界模型”——即对场景中物体运动、物理交互、因果关系的隐式表征。
@@ -202,7 +202,7 @@ Google Deepmind 抛出一个激进的论点：现有视频生成模型已自发�
 
 ### 上海 AI Lab 提出自进化评估框架，效果提升 104%
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-20/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-20/research-01.jpg)
 
 
 **是什么**：上海人工智能实验室提出一种自进化 Harness 方法，让模型评估工具能够自我搜索和迭代，在基准测试上性能提升 104%。
@@ -215,7 +215,7 @@ Google Deepmind 抛出一个激进的论点：现有视频生成模型已自发�
 
 ### AI 文本检测器面临新挑战：模型模仿作者风格时难以识别
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-20/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-20/research-02.jpg)
 
 
 **是什么**：Epoch AI 的测试显示，当语言模型模仿特定作者的写作风格时，现有 AI 文本探测器（如 GPTZero）的准确率显著下降。
@@ -228,7 +228,7 @@ Google Deepmind 抛出一个激进的论点：现有视频生成模型已自发�
 
 ### AI 读片过度自信，研究警告医疗风险
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-20/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-20/research-03.jpg)
 
 
 **是什么**：最新研究指出，AI 聊天机器人在阅读 X 光片时，即使诊断错误，也会表现出很高的置信度，可能误导临床医生。
@@ -241,7 +241,7 @@ Google Deepmind 抛出一个激进的论点：现有视频生成模型已自发�
 
 ### 新方法“弹射”让神经网络更接近人脑学习
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-07-20/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-07-20/research-04.jpg)
 
 
 **是什么**：Gwern.net 发表的方法 “Catapulting”（弹射）能改变神经网络的学习轨迹，使其展示出类似人类认知的灵活性与泛化能力。
@@ -266,7 +266,7 @@ Google Deepmind 抛出一个激进的论点：现有视频生成模型已自发�
 
 ### Claude Code 改用 Rust 版 Bun，启动再提速 10%
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-20/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-20/product-01.jpg)
 
 
 **是什么**：Anthropic 将 Claude Code v2.1.181 的底层运行时从原生 Bun 切换为用 Rust 重写的 Bun 版本（bun-in-rust），启动时间再缩短约 10%。
@@ -289,7 +289,7 @@ Google Deepmind 抛出一个激进的论点：现有视频生成模型已自发�
 
 ### 百度秒哒 3.5 版本升级，占据 AI 无代码平台 33% 份额
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-20/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-20/product-03.jpg)
 
 
 **是什么**：百度在 WAIC 发布秒哒 3.5，完成六大升级，涉及组件库、工作流编辑器、AI 生成能力等。沙利文报告显示其市场份额达 33%，排名第一。
@@ -312,7 +312,7 @@ Google Deepmind 抛出一个激进的论点：现有视频生成模型已自发�
 
 ### 云天励飞发布三款 AI 推理芯片与超节点集群
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-20/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-20/product-05.jpg)
 
 
 **是什么**：云天励飞公布 DeepVerse 系列芯片路线图，一次性发布三款 AI 推理芯片（面向边缘、边缘+、云端），并搭配超节点训练集群。
@@ -335,7 +335,7 @@ Google Deepmind 抛出一个激进的论点：现有视频生成模型已自发�
 
 ### 爱芯元智在 WAIC 首秀“元曦”大算力 AI 推理芯片
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-07-20/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-07-20/product-07.jpg)
 
 
 **是什么**：爱芯元智展示全线 AI 算力产品，并首次披露“元曦”系列大算力推理芯片，主打高能效比与边缘场景适配。
@@ -374,7 +374,7 @@ Nik Suresh 发表长文，直言 AI 狂热已经演变成一场「集体非理�
 
 ### 纽约拟立法：房源广告须标明 AI 图片
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-20/opinion-01.jpg)
 
 
 纽约市议员提出法案，要求房东和房产中介在广告中明确披露是否使用了 AI 生成的室内渲染图、家具布置或外观美化图。该法案旨在解决「看房时发现与广告完全不符」的纠纷，若通过，将成为全美首个针对房源 AI 图片的法案。类似 TikTok「合成内容标注」的思路，但场景更垂直——买房租房是高频、高信任成本的行为，AI 美化带来的误导可能直接推高交易摩擦。
@@ -389,7 +389,7 @@ Nik Suresh 发表长文，直言 AI 狂热已经演变成一场「集体非理�
 
 ### AI 参与医保预授权：效率诱惑 vs 公平黑洞
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-20/opinion-03.jpg)
 
 
 美国政府试点用 AI 处理保险公司「预先授权」流程——医生开具处方或治疗方案前需要保险批准。理论上 AI 能秒级审核、降低人工成本，但 Ars Technica 报道指出两大风险：一是算法可能系统性拒绝非典型病例（如罕见病），二是患者和医生无从申诉「模型黑箱」。该试点被部分批评者称为「把芯片当成裁判」，一旦部署，修改模型的难度远高于修改人工审核规则。
@@ -398,7 +398,7 @@ Nik Suresh 发表长文，直言 AI 狂热已经演变成一场「集体非理�
 
 ### 冷门哲学成 AI 治理工具箱：从倒水到对齐
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-20/opinion-04.jpg)
 
 
 一篇中文报道指出，越来越多的 AI 治理研究开始从分析哲学（尤其是维特根斯坦、福柯）中寻找理论支点。例如「语言游戏」概念被用于解释模型输出为什么会产生「看似合理实则胡扯」的幻觉；「话语权力」则被用来解析训练数据中的隐性偏见。这类讨论虽然偏学术，但正在填补当前 AI 治理缺乏「元思考」的空白——当技术专家无法定义「什么是对齐」时，哲学家可以提供基础框架。
@@ -407,7 +407,7 @@ Nik Suresh 发表长文，直言 AI 狂热已经演变成一场「集体非理�
 
 ### Nolan 警告：AI 是「显而易见的特洛伊木马」
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-20/opinion-05.jpg)
 
 
 导演 Christopher Nolan 在宣传新片《奥德赛》时，称 AI 是「一个显而易见的特洛伊木马」。他认为 AI 技术的包装（「效率」「创新」「个性化」）掩盖了其本质——一种未经社会契约检验的权力工具，最终会被少数人用来操控多数人的注意力与判断。Nolan 并非技术悲观论者，但强调我们正活在「木马已经进城、但还没跳出兵」的阶段。
@@ -422,7 +422,7 @@ Nik Suresh 发表长文，直言 AI 狂热已经演变成一场「集体非理�
 
 ### WAIC 现场：AI「读心术」背后的世界模型猜想
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-07-20/opinion-07.jpg)
 
 
 同一场 WAIC 上，某团队展示了「主观世界模型」demo——试图通过分析脑电信号和眼动轨迹，实时生成测试者主观感知到的「画面」。尽管演示效果有限（生成的图像模糊且需多次校准），但技术方向引起争议：如果模型能学会「读取」意识，那么隐私边界将不存在；如果只是「猜测」人的预期输出，那它更像高阶的 prompt 工程。目前学界普遍认为离「读心」还有本质差距，但不妨碍它成为展会焦点。
@@ -441,7 +441,7 @@ Nik Suresh 发表长文，直言 AI 狂热已经演变成一场「集体非理�
 
 ### Anthropic 开源 Agent Skills 库，推动标准化
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-20/opensource-00.jpg)
 
 
 Anthropic 在 GitHub 上开源了 `skills` 仓库，提供一套 AI agent 可执行技能的标准化实现，包括代码执行、文件操作、网络请求等常见原子能力。关键点：每个 skill 以独立包形式发布，遵循统一输入输出协议，便于 agent 动态加载和组合。这与当前各 agent 框架（如 LangChain、AutoGPT）的插件体系形成对比——后者缺乏跨框架兼容性。为什么重要：如果社区围绕这套规范收敛，开发者无需为不同 agent 平台重写技能，类似早期 Web 服务通过 REST API 实现互操作。Anthropic 此举本质是在抢占 agent 时代的基础设施标准。
@@ -450,7 +450,7 @@ Anthropic 在 GitHub 上开源了 `skills` 仓库，提供一套 AI agent 可执
 
 ### AWS 发布官方 Agent Toolkit for AWS，支持 MCP
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-20/opensource-01.jpg)
 
 
 AWS 推出了 `agent-toolkit-for-aws`，这是一套官方支持的 MCP（Model Context Protocol）服务器、预构建技能和插件工具包，旨在让 AI agent 无缝调用 AWS 服务（S3、Lambda、Bedrock 等）。关键点：工具包直接兼容 Anthropic 的 MCP 协议，意味着 agent 可以跨云厂商运行；同时提供身份验证和权限控制包装层。为什么重要：AWS 的官方背书 MCP 协议，标志着云巨头开始押注开放 agent 标准。这对 OpenAI 等封闭生态形成压力——若 MCP 成为事实标准，云厂商将获得 agent 工作负载的入口控制权。
@@ -459,7 +459,7 @@ AWS 推出了 `agent-toolkit-for-aws`，这是一套官方支持的 MCP（Model 
 
 ### Moonshot AI 开源 Kimi CLI，命令行 agent 工具
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-20/opensource-02.jpg)
 
 
 Moonshot AI 将旗下 Kimi 的命令行版本 `kimi-cli` 开源，这是一个面向终端的 AI 代理工具，支持自然语言指令执行 shell 命令、文件操作和代码生成。关键点：纯 Go 编写，轻量级，可直接通过 Homebrew 安装；底层调用 Moonshot 自家模型，但开源代码允许替换后端。为什么重要：命令行 agent 是开发者高频场景，但此前 OpenAI 的 Code Interpreter 为闭源。Kimi CLI 开源后，开发者可以审计安全边界、定制行为，降低对专有服务的依赖。对个人开发者和 DevOps 团队尤其有价值。
@@ -468,7 +468,7 @@ Moonshot AI 将旗下 Kimi 的命令行版本 `kimi-cli` 开源，这是一个�
 
 ### AirLLM 开源：单张 4GB GPU 跑 70B 大模型
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-20/opensource-03.jpg)
 
 
 AirLLM 在 GitHub 开源，声称能够在单张 4GB 显存的 GPU（如 RTX 3050）上运行 70B 参数的 LLM 推理。关键点：原理是利用 4-bit 量化 + 层级离线加载，将模型分片存储在 CPU 内存，每层计算时临时换入 GPU。实际推理速度约 1-2 token/s，适合非实时场景。为什么重要：这解决了本地部署大模型的最大瓶颈——显存门槛。70B 模型过去需要至少 24GB 显存（FP16），AirLLM 将门槛降至消费级显卡，可能催生个人私有的 AI 助手和离线分析工具。但注意，速度限制使其不适用于交互式对话。
@@ -477,7 +477,7 @@ AirLLM 在 GitHub 开源，声称能够在单张 4GB 显存的 GPU（如 RTX 305
 
 ### Apache 孵化 Ossie 项目，推动 AI 语义元数据标准化
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-20/opensource-04.jpg)
 
 
 Apache 软件基金会宣布接受 Ossie 进入孵化器，该项目旨在标准化分析、AI 和 BI 平台间的语义元数据交换。关键点：定义了一套通用元数据模型（包括特征、模型、数据集等实体）及其 RESTful API 接口；与 OpenMetadata、DataHub 等工具兼容但更侧重 AI 场景。为什么重要：AI pipeline 中的数据血缘、特征存储、模型版本管理目前各自为政，Ossie 提供一套跨框架的“语义层”，让数据科学家和 MLOps 工程师无需关心底层存储差异。若孵化成功，将减少企业 AI 平台的集成成本。
@@ -486,7 +486,7 @@ Apache 软件基金会宣布接受 Ossie 进入孵化器，该项目旨在标准
 
 ### Datawhale 开源中文智能体教程 'Hello Agents'
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-20/opensource-05.jpg)
 
 
 Datawhale 发布了 `hello-agents`，一套面向中文开发者的智能体原理与实践教程，从零讲解 agent 的概念、ReAct 范式、工具调用和记忆管理。关键点：每个章节配有可运行的 Jupyter Notebook 示例，基于 LangChain 和 OpenAI 但提供中文注释；重点在“手写一个简易 agent”而非仅调用框架。为什么重要：中文 agent 学习资源匮乏，多数教程依赖英文文档且抽象。该教程降低了入门门槛，帮助更多开发者理解 agent 的内部机制，对社区人才培养有长期价值。
@@ -495,7 +495,7 @@ Datawhale 发布了 `hello-agents`，一套面向中文开发者的智能体原�
 
 ### PostHog 开源 AI 可观测性平台，面向自驱型产品
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-20/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-20/opensource-06.jpg)
 
 
 PostHog 开源了其 AI 可观测性工具集，包括 LLM 调用追踪、会话回放、用户行为分析等功能，专为自驱型（self-serve）产品设计。关键点：支持捕获 prompt、token 用量、延迟和错误，并与产品分析数据关联；提供预构建的仪表板模板；与 PostHog 现有的事件分析平台集成。为什么重要：相比 Datadog、New Relic 等专业 APM，PostHog 定位为“开源的产品分析 + 可观测性”，对预算有限的早期创业团队更具吸引力。AI 可观测性是保障 agent 质量和成本控制的关键，但市场缺乏一站式的开源方案，PostHog 正在填补这个空白。

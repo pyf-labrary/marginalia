@@ -33,7 +33,7 @@ sections:
 
 ### Meta发布最强Agent模型，进军编程领域
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-15/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-15/model_release-00.jpg)
 
 
 **是什么**：Meta推出其最强Agent模型，专注编程任务，同时提供免费开源模型版本和低价的API服务。扎克伯格自2023年后首次为模型发布发文。
@@ -46,7 +46,7 @@ sections:
 
 ### Mistral发布8B机器人导航模型Robostral Navigate
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-15/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-15/model_release-01.jpg)
 
 
 **是什么**：Mistral AI发布Robostral Navigate，一个8B参数的机器人导航模型，仅需单RGB相机即可在复杂环境中实现自主导航，成功率达76.6%。
@@ -67,7 +67,7 @@ sections:
 
 ### 苹果起诉OpenAI，前工程师涉嫌窃取商业机密
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-15/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-15/company-00.jpg)
 
 
 Apple指控一名前工程师利用系统漏洞盗取Trade Secrets，并与OpenAI共享。OpenAI回应称诉讼缺乏依据。关键点：苹果称该工程师曾参与关键芯片和AI项目，窃取内容涉及未公开硬件设计；OpenAI则否认收到任何敏感信息。此事之所以重要，在于它可能重塑AI公司之间的招聘和协作边界：若苹果胜诉，将强化“跳槽即泄密”的法律风险，OpenAI也可能面临更严格的合规审查。
@@ -76,7 +76,7 @@ Apple指控一名前工程师利用系统漏洞盗取Trade Secrets，并与OpenA
 
 ### 纽约州暂停数据中心建设，AI行业受震动
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-15/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-15/company-01.jpg)
 
 
 纽约州成为全美首个暂停新建数据中心的州，立即引发AI产业关于电力成本和地方管控的讨论。关键点：禁令针对大型数据中心（>100 MW），为期两年，理由是电网容量和碳排放压力；已有规划的项目不受影响。为什么重要——AI算力需求正推动数据中心选址竞赛，纽约的禁令可能成为其他州的政策模板，迫使AI公司重新评估基础设施布局，也预示着“算力即权力”的时代将面临更复杂的政治博弈。
@@ -85,7 +85,7 @@ Apple指控一名前工程师利用系统漏洞盗取Trade Secrets，并与OpenA
 
 ### PixVerse融资4.39亿美元，估值超20亿
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-15/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-15/company-02.jpg)
 
 
 AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突破20亿美元。关键点：该轮由现有投资者领投，资金主要用于提升视频生成质量和扩展商业场景；PixVerse在2025年已推出多模态产品。为什么重要——在Sora效应下，视频AI成为资本最拥挤的赛道之一，但高估值也意味着对落地的预期压力加大，PixVerse能否从创作者工具走向企业级应用尚需观察。
@@ -94,7 +94,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### Reflection AI签署10亿美元计算合约
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-15/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-15/company-03.jpg)
 
 
 开源AI初创公司Reflection AI与云服务商Nebius签署10亿美元计算合同，用于训练和部署开放权重模型。关键点：合同为期三年，覆盖GPU集群和网络基础设施；Reflection AI主打“可复现的开放研究”。为什么重要——这笔交易表明，开源AI公司正在用真金白银押注算力，而Nebius则借此巩固其作为“AI基础设施服务商”的地位；10亿美元的规模甚至超过许多闭源模型的支出，暗示开放权重路线同样需要巨额资本支撑。
@@ -109,7 +109,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### Nous Research洽谈1.5亿美元估值融资
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-15/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-15/company-05.jpg)
 
 
 智能体框架Hermes的创造者Nous Research正在洽谈新一轮融资，目标估值15亿美元，由Robot Ventures等领投。关键点：Hermes是一个开源的LLM agent框架，以低资源高能力著称；Nous Research此前通过社区捐赠和代币模式运营。为什么重要——智能体框架是2026年最热主题之一，Nous的估值提升反映了市场对“工具调用+自主决策”能力的渴求；但开源社区盈利模式仍存疑，投资者押注的是框架成为标准层的可能。
@@ -118,7 +118,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### DeepSeek新一轮融资需求紧迫
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-15/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-15/company-06.jpg)
 
 
 距其70亿美元融资仅数周，DeepSeek再次寻求额外现金。关键点：公司称需要更多资金用于购买H100级别GPU和研发下一代模型；此前融资尚未完全到账。为什么重要——DeepSeek的烧钱速度令人侧目：70亿融资仅撑数周即宣告不足，要么暗示其训练成本远超预期，要么是战略上选择激进囤积算力。这给市场传递一个信号：即便是顶级AI公司，也很难靠单轮融资实现“持久战”。
@@ -127,7 +127,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### 爱诗科技完成29.8亿元C轮融资
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-15/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-15/company-07.jpg)
 
 
 中国AI视频公司爱诗科技完成约4.2亿美元（29.8亿元）C轮融资，产业资本与全球投资者共同加注。关键点：爱诗科技主打“影视级AI视频生成”，已与多家影视公司合作；本轮融资将用于迭代模型和出海。为什么重要——在中国市场，爱诗科技与PixVerse形成直接竞争；4.2亿美元的C轮规模说明国内资本对视频AI的热情不输海外，但也意味着该赛道将进入残酷的排位赛。
@@ -146,7 +146,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### 世界模型的承诺与局限：专家解读
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-15/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-15/research-00.jpg)
 
 
 是什么 / Ars Technica 发表长文，系统梳理世界模型（world model）在物理推理、因果模拟、长期规划等维度的进展，同时毫不回避其根本短板：当前模型仍无法可靠处理“长尾事件”和开放世界中的非线性因果链。
@@ -159,7 +159,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### MM-ToolSandBox：统一视觉工具调用智能体评估框架
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-15/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-15/research-01.jpg)
 
 
 是什么 / 新基准数据集 MM-ToolSandBox 发布，包含 500+ 工具、覆盖 16 个应用领域（图像生成、OCR、视频分析等），专门用于评估多模态工具调用智能体（agent）。它提供标准化任务描述与 ground-truth 执行路径，支持自动评测。
@@ -180,7 +180,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### Apple开放全新Siri AI公测，成为iPhone体验核心
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-15/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-15/product-00.jpg)
 
 
 **是什么**：iOS 27公测版包含AI驱动的Siri，支持更复杂的多步骤任务（如“从相册找到上周拍的美食照片，发给张三并提醒他周末聚餐”），并深度调用系统权限（日历、邮件、文件等）。Wired评价其为Apple的“万能工具”，意图让Siri从语音助手升级为操作系统的核心控制器。  
@@ -197,7 +197,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### Google Images迎来Pinterest式AI重新设计
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-15/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-15/product-02.jpg)
 
 
 **是什么**：Google为庆祝图片搜索上线25周年，推出基于AI的重新设计，搜索结果变为“兴趣驱动的内容画廊”，类似Pinterest的瀑布流布局，并加入AI生成摘要和推荐标签。  
@@ -207,7 +207,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### OpenAI首款硬件曝光：无屏可移动AI音箱
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-15/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-15/product-03.jpg)
 
 
 **是什么**：据TechCrunch报道，OpenAI正在开发其首款硬件产品——一个无屏幕、可移动的AI音箱，类似桌面机器人+音箱的形态。设备可通过语音唤醒，执行日程管理、信息查询、智能家居控制等任务，并能自主移动到用户身边（内置轮子）。  
@@ -217,7 +217,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### Spotify推出ChatGPT式AI音乐助手
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-15/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-15/product-04.jpg)
 
 
 **是什么**：Spotify为Premium用户推出对话式AI助手，支持自然语言指令（如“找一首适合跑步的2010年代摇滚，鼓点要重”），可发现音乐、播客、有声书，并能根据用户情绪实时调整推荐。  
@@ -227,7 +227,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### Anthropic推出Claude for Teachers，不训练学生数据
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-15/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-15/product-05.jpg)
 
 
 **是什么**：Anthropic发布Claude教育版，专为教师设计，支持生成教案、批改作业、设计考试题等。最大卖点：承诺绝不使用学生数据训练模型，所有对话数据在90天内删除。  
@@ -237,7 +237,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### ChatGPT重返WhatsApp欧盟区
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-07-15/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-07-15/product-06.jpg)
 
 
 **是什么**：欧盟依据《数字市场法案》强制Meta开放WhatsApp平台后，ChatGPT（通过OpenAI官方Bot）重新在欧盟地区通过WhatsApp提供AI聊天服务。用户可直接在WhatsApp内与ChatGPT对话，无需跳转。  
@@ -247,7 +247,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### 小米机器人“上岗”汽车生产线
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-07-15/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-07-15/product-07.jpg)
 
 
 **是什么**：小米人形机器人CyberOne（代号“铁大”）正式进入小米汽车工厂产线工作，负责零部件搬运、螺丝拧紧等重复性任务。值得注意的是，马斯克此前刚在社交媒体断言“人形机器人短期内无法在工厂落地”。  
@@ -267,7 +267,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### DeepMind CEO：独立标准机构是唯一出路
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-15/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-15/opinion-00.jpg)
 
 
 **是什么**：Demis Hassabis在公开场合呼吁成立一个类似美国金融业监管局（FINRA）的独立实体，专门制定并执行前沿AI模型的测试与发布标准。该机构将对最先进模型进行强制性评估，并有权阻止不符合标准的产品上线。
@@ -280,7 +280,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### 纳德拉：AI正像“特洛伊木马”渗透企业
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-15/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-15/opinion-01.jpg)
 
 
 **是什么**：微软CEO Satya Nadella在一次非公开活动中警告企业级AI采用者，称AI模型可能以“特洛伊木马”的形式进入企业，表面提升效率，实则损害长期竞争力与数据主权。
@@ -293,7 +293,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### 诺贝尔奖得主与AI领袖：经济影响窗口快速关闭
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-15/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-15/opinion-02.jpg)
 
 
 **是什么**：多位诺贝尔奖获得者、AI科学家和经济学家联合发表声明，称社会尚未做好应对AI引发的大规模就业颠覆和经济结构性变化的准备，而“行动窗口”正在快速关闭。
@@ -306,7 +306,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### Meta高管：AI token预算将成为新运营指标
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-15/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-15/opinion-03.jpg)
 
 
 **是什么**：Instagram负责人Adam Mosseri预测，未来公司会像管理薪酬预算一样，为工程师设置每人每月的AI token使用上限。这一观点在内部讨论中已引发争议。
@@ -319,7 +319,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### 前沿模型 vs 开放模型：真正的竞赛不在前沿
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-15/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-15/opinion-04.jpg)
 
 
 **是什么**：Hugging Face CEO Clem Delangue提出，企业级市场正在加速转向开放模型，前沿模型（如GPT-5、Gemini Ultra）可能并非最终赢家。真正的AI竞赛可能发生在“足够好”的开放生态中。
@@ -332,7 +332,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### Anthropic新广告引争议：伦理形象反让观众不适
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-15/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-15/opinion-05.jpg)
 
 
 **是什么**：Anthropic发布了一则新广告，刻意借用AI批评者的语言来塑造自身的伦理形象，但观众普遍反馈“感到毛骨悚然”。
@@ -345,7 +345,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### OpenAI超级应用策略：ChatGPT等于Codex？
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-07-15/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-07-15/opinion-06.jpg)
 
 
 **是什么**：Stratechery发表分析认为，OpenAI将Codex（代码生成工具）重新定位为非独立产品而并入ChatGPT，实质上是在放弃“聊天”这一品类，试图打造一个涵盖代码、文档、推理的超级应用。
@@ -358,7 +358,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### 防御者开始拥抱prompt injection：用“上下文轰炸”反制黑客
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-07-15/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-07-15/opinion-07.jpg)
 
 
 **是什么**：安全研究人员开发了一种名为“上下文轰炸”的新防御技术，主动利用prompt injection（提示注入）的漏洞，在黑客智能体实施破坏前误导其自行关闭或触发安全流程。
@@ -401,7 +401,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### Hallmark：对抗“电子包浆”的设计技能
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-15/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-15/opensource-02.jpg)
 
 
 **是什么**：一组针对 AI 生成内容后处理的设计技能，旨在消除由 Claude Code、Cursor 等 AI 编码工具产生的明显“机器味”痕迹。
@@ -414,7 +414,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### Graphify：AI 辅助知识图谱构建工具
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-15/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-15/opensource-03.jpg)
 
 
 **是什么**：一个能将代码、文档、数据库等多模态内容自动转化为可查询知识图谱的开源工具。
@@ -427,7 +427,7 @@ AI视频生成赛道再现大额融资：PixVerse完成4.39亿美元，估值突
 
 ### TradingAgents：多智能体金融交易框架
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-15/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-15/opensource-04.jpg)
 
 
 **是什么**：一个基于 LLM 的多智能体交易系统，支持多个分析角色（如基本面分析师、技术分析师、风控官）辩论决策。

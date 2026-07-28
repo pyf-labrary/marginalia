@@ -30,14 +30,14 @@ sections:
 
 ### 导语
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-08/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-08/company-00.jpg)
 
 
 今天最值得关注的不是新模型发布，而是人事硬仗：OpenAI首颗自研芯片的关键工程师在量产前夕跳槽Anthropic，直接撕开两家公司IPO冲刺期的软肋。与此同时，谷歌每月向SpaceX支付9.2亿美元算力、特朗普政府可能获取OpenAI股权，暗示硬件资源和地缘资本正在重塑AI公司的估值逻辑。
 
 ### OpenAI芯片核心叛逃Anthropic
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-08/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-08/company-01.jpg)
 
 
 OpenAI自研芯片项目（代号可能为“Atlas”）的首批工程师之一，在芯片即将进入量产阶段时被Anthropic挖走。该工程师是OpenAI芯片团队的第2号成员，参与架构设计、流片验证等关键环节。目前两家公司均在冲刺IPO，硬件自主能力是估值的重要支撑。
@@ -49,7 +49,7 @@ OpenAI自研芯片项目（代号可能为“Atlas”）的首批工程师之一
 
 ### 谷歌每月向SpaceX支付9.2亿美元算力
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-08/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-08/company-02.jpg)
 
 
 TechCrunch独家报道，谷歌与SpaceX签订了一份每月9.2亿美元的算力协议，SpaceX将为谷歌提供大规模计算资源，主要用于AI训练。这笔金额相当于谷歌当前季度资本支出的约15%，是公开已知的最大单笔算力采购合同之一。
@@ -61,7 +61,7 @@ TechCrunch独家报道，谷歌与SpaceX签订了一份每月9.2亿美元的算�
 
 ### 特朗普政府或获取OpenAI股权
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-08/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-08/company-03.jpg)
 
 
 特朗普总统在近期采访中表示，正在“商讨一项协议”，让美国人民从AI成功中受益，暗示政府可能获取OpenAI股权。OpenAI正从非营利转型为营利实体，政府股权可能通过特殊条款或投资实现。
@@ -73,7 +73,7 @@ TechCrunch独家报道，谷歌与SpaceX签订了一份每月9.2亿美元的算�
 
 ### 黄仁勋在韩国会游戏巨头谈AI合作
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-08/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-08/company-04.jpg)
 
 
 英伟达CEO黄仁勋在韩国与KRAFTON（《绝地求生》开发商）和NCSOFT（《天堂》系列）高层会面，讨论人形机器人AI与RTX Spark游戏AI整合方案。RTX Spark是英伟达针对游戏场景推出的轻量级AI推理平台，可运行本地化聊天机器人或NPC AI。
@@ -85,7 +85,7 @@ TechCrunch独家报道，谷歌与SpaceX签订了一份每月9.2亿美元的算�
 
 ### Meta确认数千Instagram因AI聊天机器人漏洞被黑
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-08/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-08/company-05.jpg)
 
 
 Meta官方确认，黑客利用Instagram AI聊天机器人（Meta AI chatbot）的一个安全漏洞，攻陷了数千个账户。攻击者能够绕过会话权限校验，直接以用户身份发送消息、查看私密内容。Meta已紧急修复漏洞，但表示部分用户数据可能已泄露。
@@ -97,7 +97,7 @@ Meta官方确认，黑客利用Instagram AI聊天机器人（Meta AI chatbot）�
 
 ### xAI被曝数月来用Claude输出训练编码AI
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-06-08/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-06-08/company-06.jpg)
 
 
 据The Decoder报道，马斯克的xAI在数月内持续使用Anthropic的Claude模型输出，来训练其编码AI模型（可能是Grok的编码模块）。直到Anthropic发现并执行了技术阻断后，xAI才停止。xAI未公开回应。
@@ -109,7 +109,7 @@ Meta官方确认，黑客利用Instagram AI聊天机器人（Meta AI chatbot）�
 
 ### 多家AI厂商下调算力价格，最高降幅99%
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-08/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-08/company-07.jpg)
 
 
 DeepSeek与小米MiMo宣布永久降价，其中DeepSeek的某些推理实例价格下调高达99%，小米MiMo的轻量级模型调用成本也大幅降低。其他厂商如零一万物、百川智能等跟进。算力正式进入“普惠阶段”。
@@ -140,7 +140,7 @@ DeepSeek与小米MiMo宣布永久降价，其中DeepSeek的某些推理实例价
 
 ### 大模型涌现根因：表征宽度与注意力协同变化
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-08/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-08/research-00.jpg)
 
 
 **是什么**：来自多所机构的研究团队通过对比不同规模模型在相同任务上的表征与注意力模式，发现了技能涌现的底层机制。关键点在于：随着模型规模扩大，表征的宽度（即隐层表示的有效维度）显著增加，同时注意力头开始形成更细粒度、更远距离的依赖捕获能力。小模型往往受限于表征宽度不足，无法组织长程关联；大模型则能通过更宽的表示空间容纳更复杂的推理路径。这一观察与“缩放定律”中涌现出现于特定参数量阈值后的现象一致。为什么重要：它不仅让“涌现”从黑箱变为可解释的设计原则，还可能指导未来模型在无需盲目增大参数量、仅优化表征与注意力结构的情况下，更高效地解锁新技能。
@@ -149,7 +149,7 @@ DeepSeek与小米MiMo宣布永久降价，其中DeepSeek的某些推理实例价
 
 ### Tokenomics 框架：量化 Agentic 软件工程的 token 效率
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-06-08/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-06-08/research-01.jpg)
 
 
 **是什么**：一篇新论文提出了 Tokenomics 框架，专门用于衡量 AI Agent 在软件工程任务（如代码生成、调试、测试）中的 token 消耗模式。关键点：框架将 token 划分为“有效 token”（直接产出代码/逻辑）、“探索 token”（搜索、回溯）和“冗余 token”（重试、重复输出），并给出了每类任务的最优消耗比例。实验发现，不同 agent 配置（如工具调用频率、记忆机制）在 token 效率上差异可达 5 倍以上。为什么重要：对采用 agent 进行代码生产的团队，Tokenomics 提供了一个定价与优化的基准——在成本敏感的场景中，识别并削减“冗余 token”可能比提升模型精度更具经济价值。
@@ -174,7 +174,7 @@ DeepSeek与小米MiMo宣布永久降价，其中DeepSeek的某些推理实例价
 
 ### OpenAI称“聊天已死”，将ChatGPT改造成Agent
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-08/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-08/product-00.jpg)
 
 
 OpenAI计划对ChatGPT进行根本性重构，从传统聊天机器人升级为能够自主规划和执行复杂任务的AI Agent平台。这不仅仅是功能叠加，而是底层架构的重新设计——让模型能够调用工具、管理多步骤流程、甚至自主决策。
@@ -187,7 +187,7 @@ OpenAI计划对ChatGPT进行根本性重构，从传统聊天机器人升级为�
 
 ### ChatGPT新增Lockdown模式防提示注入
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-08/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-08/product-01.jpg)
 
 
 OpenAI为ChatGPT推出Lockdown Mode（锁定模式），允许用户禁用网页访问、文件上传等功能，以保护敏感数据免受提示注入攻击。该模式特别适用于企业内部使用场景，防止恶意用户通过Prompt哄骗AI泄露机密信息。
@@ -200,7 +200,7 @@ OpenAI为ChatGPT推出Lockdown Mode（锁定模式），允许用户禁用网页
 
 ### Perplexity推出Search as Code，AI自写搜索管道
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-08/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-08/product-02.jpg)
 
 
 Perplexity发布“Search as Code”功能，使AI模型能够编写自己的搜索管道，而不是调用固定的API接口。模型可动态决定搜索策略——从哪个数据源查询、如何组合结果、何时进行二次检索。
@@ -213,7 +213,7 @@ Perplexity发布“Search as Code”功能，使AI模型能够编写自己的搜
 
 ### Meta Hatch AI Agent月费最高200美元
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-08/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-08/product-03.jpg)
 
 
 Meta即将推出代号为Hatch的AI Agent产品，定位为付费订阅服务，月费可能高达200美元。这是Meta首个直接向用户收费的AI产品，标志着其从免费分发模型转向商业模式探索。
@@ -226,7 +226,7 @@ Meta即将推出代号为Hatch的AI Agent产品，定位为付费订阅服务，
 
 ### Notion恢复对Anthropic集成访问
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-08/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-08/product-04.jpg)
 
 
 Notion产品负责人就此前中断Anthropic集成访问的事件公开回应，称对大量转发感到惊讶，目前服务已恢复正常。此前用户发现Notion中Anthropic相关功能无法使用，引发社区猜测。
@@ -239,7 +239,7 @@ Notion产品负责人就此前中断Anthropic集成访问的事件公开回应�
 
 ### 小米机器人或随小米17T发布会首秀
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-08/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-08/product-05.jpg)
 
 
 卢伟冰在探班视频中不经意间展示了小米机器人手臂的画面，外界猜测该机器人可能将在小米17T发布会（预计6月）上正式亮相。小米此前已在AI和机器人领域有布局，但消费级产品尚未面世。
@@ -252,7 +252,7 @@ Notion产品负责人就此前中断Anthropic集成访问的事件公开回应�
 
 ### 得物AI Harness实现AI标准化生产
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-06-08/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-06-08/product-06.jpg)
 
 
 得物技术团队公开分享了其内部AI Harness平台，该平台将AI开发从随意的编码过程转变为目标驱动的标准化流程。通过定义“行为规范”和“质量门禁”，让AI应用像传统软件一样可测试、可度量、可复制。
@@ -291,7 +291,7 @@ Notion产品负责人就此前中断Anthropic集成访问的事件公开回应�
 
 ### 美国众院草案禁止各州自行制定AI法规
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-08/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-08/opinion-03.jpg)
 
 
 美国众议院发布跨党派草案，意图阻止各州单独设立AI监管规则，要求统一由联邦政府主导。**关键点**：草案借鉴了GDPR的经验，认为州级碎片化监管会扼杀创新；支持者则认为联邦层级管制可能过于宽松。**为什么重要**：这标志着美国AI监管从“各州实验”转向“联邦统一”，直接影响到所有在美运营的AI公司合规成本与产品策略。若通过，加州、纽约等先行州的严格条款将被覆盖。
@@ -300,7 +300,7 @@ Notion产品负责人就此前中断Anthropic集成访问的事件公开回应�
 
 ### 枪击幸存者起诉AI枪支检测公司漏报
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-08/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-08/opinion-04.jpg)
 
 
 一名校园枪击案幸存者起诉AI枪支检测公司，称其部署的系统在事发前未能识别出枪手携带的武器。**关键点**：原告指出，该公司的AI视觉模型在测试环境中表现优异，但实际部署后因光线、遮挡等条件导致误报/漏报。**为什么重要**：此案将AI产品的“能力边界”问题推上法庭——当AI被当作安全防线时，其失败的法律责任如何划分？这不是技术问题，而是责任归属的博弈。
@@ -315,7 +315,7 @@ Notion产品负责人就此前中断Anthropic集成访问的事件公开回应�
 
 ### TechCrunch：AI公司面临Token涨价潮
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-06-08/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-06-08/opinion-06.jpg)
 
 
 TechCrunch分析指出，随着多家AI公司进入IPO准备期，用户即将面临一轮Token价格上调——作者称之为“Tokenpocalypse”。**关键点**：涨价原因包括GPU成本上涨、公司需要展示正向营收、以及早期“贴钱抢用户”策略不可持续。**为什么重要**：如果Token成为AI时代的“石油”，那么涨价就意味着所有AI应用的边际成本上升。对于依赖API调用的创业公司，这可能直接压缩利润空间，甚至催生新一轮自托管模型趋势。
@@ -334,7 +334,7 @@ TechCrunch分析指出，随着多家AI公司进入IPO准备期，用户即将�
 
 ### 国产AI长视频开源框架：5分钟生成，实时超分
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-08/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-08/opensource-00.jpg)
 
 
 是什么：一款国产开源AI长视频生成框架实现高一致性、低延迟，可在5分钟内生成AI长视频，并支持实时超分辨率。关键点：该框架解决了长视频生成中常见的时序不一致问题，同时保持低计算成本，从关键帧扩散到连续帧的管线设计显著提升效率。为什么重要：在Sora等闭源模型引领的视频生成浪潮中，国产开源方案走出差异化路径，为开发者提供了可自部署、可定制的选择，有望推动视频生成应用普及。
@@ -343,7 +343,7 @@ TechCrunch分析指出，随着多家AI公司进入IPO准备期，用户即将�
 
 ### CopilotKit：构建Agent与生成式UI的前端栈
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-08/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-08/opensource-01.jpg)
 
 
 是什么：CopilotKit为React、Angular等前端框架提供Agent与生成式UI组件，简化AI应用开发。关键点：开发者可通过拖拽式组件快速集成AI对话、工具调用等能力，无需从零搭建前端-后端Agent通信，内置流式响应与状态管理。为什么重要：降低AI应用的前端开发门槛，使产品经理和全栈工程师能快速原型化Agent界面，加速AI产品迭代。
@@ -352,7 +352,7 @@ TechCrunch分析指出，随着多家AI公司进入IPO准备期，用户即将�
 
 ### 微软开源VibeVoice：下一代语音AI
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-08/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-08/opensource-02.jpg)
 
 
 是什么：微软开源VibeVoice，提供高性能语音合成与识别能力。关键点：VibeVoice在自然度、多语种支持上达到业界领先，且开源许可友好，支持实时流式处理。为什么重要：语音AI长期以来由大厂闭源模型主导，微软开源该技术将推动更多开发者构建语音交互应用，尤其是在教育、无障碍等领域。
@@ -361,7 +361,7 @@ TechCrunch分析指出，随着多家AI公司进入IPO准备期，用户即将�
 
 ### 微软开源BitNet：1位LLM推理框架
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-08/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-08/opensource-03.jpg)
 
 
 是什么：BitNet.cpp是专为1比特大语言模型设计的高效推理框架。关键点：1比特模型将权重极度量化（-1,0,1），大幅降低内存和计算需求，使LLM可在树莓派等边缘设备运行，而精度损失可控。为什么重要：为LLM在端侧部署提供了实用工具，结合开源许可，可加速低资源场景下的AI应用，如离线助手、嵌入式设备对话。
@@ -370,7 +370,7 @@ TechCrunch分析指出，随着多家AI公司进入IPO准备期，用户即将�
 
 ### IBM开源MCP Context Forge：统一AI Agent网关
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-08/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-08/opensource-04.jpg)
 
 
 是什么：IBM开源上下文锻造工具（MCP Context Forge），作为AI Gateway统一管理MCP、A2A等协议，支持插件和治理。关键点：它解决了多个Agent协议不兼容的问题，提供统一接口、访问控制和审计功能，便于企业级部署。为什么重要：在企业级AI Agent部署中，协议碎片化是一大痛点，IBM的解决方案有望成为行业标准，促进Agent生态的互操作性。
@@ -379,7 +379,7 @@ TechCrunch分析指出，随着多家AI公司进入IPO准备期，用户即将�
 
 ### Open Notebook：开源NotebookLM替代品
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-08/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-08/opensource-05.jpg)
 
 
 是什么：一个开源实现的NotebookLM，提供更多灵活性，构建个性化AI笔记助手。关键点：用户可自托管、自定义知识库和模型，支持PDF、网页等多格式输入，基于检索增强生成（RAG）实现问答。为什么重要：Google的NotebookLM虽好用但受限于闭源和潜在数据隐私风险，开源替代品让用户掌握数据主权，适合隐私敏感场景。
@@ -388,7 +388,7 @@ TechCrunch分析指出，随着多家AI公司进入IPO准备期，用户即将�
 
 ### Awesome-LLM-Apps：100+开箱即用AI Agent应用
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-08/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-08/opensource-06.jpg)
 
 
 是什么：聚合100多个AI Agent与RAG应用教程，可一键部署。关键点：每个应用都附带完整代码和部署说明，覆盖客服、搜索、写作等常见场景，基于LangChain等主流框架。为什么重要：对于刚入门Agent开发的团队，该项目是极佳的学习和快速启动资源，避免重复造轮子，缩短从概念到原型的时间。
@@ -397,7 +397,7 @@ TechCrunch分析指出，随着多家AI公司进入IPO准备期，用户即将�
 
 ### Agent-Reach：AI Agent的互联网之眼
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-08/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-08/opensource-07.jpg)
 
 
 是什么：一个CLI工具让AI Agent在无需API费用前提下搜索阅读Twitter、Reddit、YouTube等平台。关键点：通过模拟浏览器或解析公共内容绕过付费API限制，但需注意平台服务条款与合规风险。为什么重要：为Agent提供实时互联网信息检索能力，降低数据获取成本，特别适合需要持续监控社交动态的Agent，但需谨慎使用。

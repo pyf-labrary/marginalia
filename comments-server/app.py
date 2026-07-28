@@ -14,7 +14,7 @@ No secrets live in the repo — everything sensitive is read from the environmen
   MG_DB_PATH        sqlite file path           (default ./mg-comments.db)
   MG_IP_SALT        salt for hashing IPs       (default "marginalia" — SET THIS)
   MG_ADMIN_TOKEN    bearer token for DELETE    (unset → delete disabled)
-  MG_ALLOW_ORIGIN   comma-sep CORS origins     (default https://pyf-labrary.github.io)
+  MG_ALLOW_ORIGIN   comma-sep CORS origins     (default jinzi.cyou + legacy Pages origin)
   MG_RATE_MAX       max comments / window      (default 3)
   MG_RATE_WINDOW    rate window seconds        (default 60)
 
@@ -39,7 +39,9 @@ DB_PATH = os.environ.get("MG_DB_PATH", os.path.join(os.path.dirname(__file__), "
 IP_SALT = os.environ.get("MG_IP_SALT", "marginalia").encode("utf-8")
 ADMIN_TOKEN = os.environ.get("MG_ADMIN_TOKEN", "")
 ALLOW_ORIGINS = [o.strip() for o in os.environ.get(
-    "MG_ALLOW_ORIGIN", "https://pyf-labrary.github.io").split(",") if o.strip()]
+    "MG_ALLOW_ORIGIN",
+    "https://jinzi.cyou,https://pyf-labrary.github.io",
+).split(",") if o.strip()]
 RATE_MAX = int(os.environ.get("MG_RATE_MAX", "3"))
 RATE_WINDOW = int(os.environ.get("MG_RATE_WINDOW", "60"))
 

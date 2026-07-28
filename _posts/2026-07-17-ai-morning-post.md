@@ -39,7 +39,7 @@ Moonshot AI 发布 Kimi K3，一个 2.8 万亿参数的 MoE 开源模型。在�
 
 ### Inkling 发布：前OpenAI CTO首款模型，落后于中国团队
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-17/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-17/model_release-01.jpg)
 
 
 Thinking Machines Lab 由前 OpenAI CTO Mira Murati 创办，今日发布首款开源模型 Inkling（975B 参数、MoE 架构）。模型在多项国际基准上领先美国其他实验室（如 Mistral、Meta 的 Llama 系列），但在与国内模型（如 Kimi K3 等）对比时处于劣势。Inkling 的最大意义在于验证了“明星研究团队独立创业”的模式仍能快速产出高水平成果，但“追赶中国”已经成为海外新品发布时的常态。
@@ -48,7 +48,7 @@ Thinking Machines Lab 由前 OpenAI CTO Mira Murati 创办，今日发布首款�
 
 ### Nemotron 3 Embed：NVIDIA登顶检索排行榜
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-17/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-17/model_release-02.jpg)
 
 
 NVIDIA 发布 Nemotron 3 Embed 模型，在检索基准 RTEB（Retrieval Task Evaluation Benchmark）上排名第一。该模型专注于提升智能体（agentic）应用中的检索能力，例如 RAG 场景下的段落召回和工具选择。NVIDIA 延续了“基础模型+垂直优化”的策略，在嵌入模型这一细分赛道上卡住了又一个关键入口。
@@ -57,7 +57,7 @@ NVIDIA 发布 Nemotron 3 Embed 模型，在检索基准 RTEB（Retrieval Task Ev
 
 ### Mobius：上海AI Lab推出非Transformer科学基座模型
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-17/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-17/model_release-03.jpg)
 
 
 上海人工智能实验室在 WAIC 2026 上发布 Mobius，一个 397B 参数的科学智能体基座模型，采用非 Transformer 架构，专注于化学、物理、生物等科学领域的任务求解。其核心设计围绕“符号推理+数值模拟”展开，与传统的大语言模型在结构上根本不同。如果 Mobius 能在特定基准上超越 Transformer 变体，可能开启一条通往科学专用模型的新路线。
@@ -66,7 +66,7 @@ NVIDIA 发布 Nemotron 3 Embed 模型，在检索基准 RTEB（Retrieval Task Ev
 
 ### WITT：文远知行发布物理AI大模型，专注自动驾驶数据闭环
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-07-17/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-07-17/model_release-04.jpg)
 
 
 文远知行在 WAIC 发布物理 AI 大模型 WITT，宣称单卡每天可处理 1 万分钟视频，将行驶数据高效转化为模型能力。WITT 本质上是一个针对自动驾驶的感知-预测-规划联合训练框架，而非通用对话模型。对于 L4 量产玩家来说，数据闭环的效率直接决定迭代速度，WITT 试图用大模型压缩传统多模型 pipeline。
@@ -75,7 +75,7 @@ NVIDIA 发布 Nemotron 3 Embed 模型，在检索基准 RTEB（Retrieval Task Ev
 
 ### Gemma 4静默更新：Google在不换版本号下修复工程问题
 
-![model_release-05.jpg](/marginalia/assets/img/ai-hot/2026-07-17/model_release-05.jpg)
+![model_release-05.jpg](/assets/img/ai-hot/2026-07-17/model_release-05.jpg)
 
 
 Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工具调用（tool calling）中的 bug 以及部分场景下的响应截断问题。这类“静默更新”在开源模型领域并不罕见，但 Google 未做任何公告，只在模型卡中注明变更。对开发者而言，模型版本号无法唯一标识行为，意味着生产依赖需要更严谨的校验机制。
@@ -92,7 +92,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### xAI 起诉 Grok 用户制造 CSAM
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-17/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-17/company-00.jpg)
 
 
 **是什么**：xAI 对一名用户提起首起诉讼，指控其利用 Grok 生成儿童性虐待内容（CSAM）。此前 xAI 一直回避该问题，本次起诉标志着策略转向。
@@ -105,7 +105,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### 现代工人罢工抗议人形机器人上岗
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-17/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-17/company-01.jpg)
 
 
 **是什么**：现代汽车工人发起罢工，抗议公司计划在 2028 年前于美国工厂部署 2.5 万台 Atlas 人形机器人。这是首次因 AI 机器人引发的规模化罢工。
@@ -118,7 +118,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### Apple Intelligence 获准在华上线，接入阿里和百度 AI
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-17/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-17/company-02.jpg)
 
 
 **是什么**：苹果 AI 功能 Apple Intelligence 已获中国监管机构批准，将使用阿里巴巴的 Qwen 系列模型和百度的 AI 模型提供本地化服务。这是苹果在 AI 战略上的重要里程碑。
@@ -131,7 +131,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### AI 热潮推动能源 IPO 创本世纪最快募资速度
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-17/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-17/company-03.jpg)
 
 
 **是什么**：得益于 AI 算力需求暴涨，能源公司（如数据中心供能、核电、天然气发电）上市募资速度创本世纪最快纪录。投资者急切寻找能分享 AI 红利的非科技标的。
@@ -144,7 +144,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### 前 DeepMind 研究员未发布产品即获 3 亿美元估值
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-17/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-17/company-04.jpg)
 
 
 **是什么**：前 DeepMind 研究员 Andrew Dai 创办的视觉 AI 公司，尚未推出任何产品，即以 3 亿美元估值完成种子轮融资。该轮由顶级风投领投，团队背景为主要卖点。
@@ -157,7 +157,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### 石油化工 AI 公司 Applied Computing 获 2000 万美元 A 轮
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-17/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-17/company-05.jpg)
 
 
 **是什么**：Applied Computing 完成 2000 万美元 A 轮融资，旨在为石油天然气行业打造「全厂级 AI 基础模型」，即用一个模型理解整个工厂的运营数据。
@@ -170,7 +170,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### 蔚来芯片公司神玑发布具身智能开发平台
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-17/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-17/company-06.jpg)
 
 
 **是什么**：蔚来旗下芯片公司神玑在 WAIC 2026 首次独立参展，发布睿动具身智能开发平台及分布式智能体平台，面向机器人开发者。
@@ -203,7 +203,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### DeepMind与Isomorphic Labs提出生物弹性AI方法
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-17/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-17/research-00.jpg)
 
 
 **是什么**：Google DeepMind与Isomorphic Labs联合发布了一份白皮书，阐述其“生物弹性”方法——在AI系统的设计、训练和部署阶段嵌入防护措施，以降低模型被用于设计或增强生物威胁的风险。该方法涵盖数据过滤、输出监控、红队测试及与生物安全专家的协作。
@@ -216,7 +216,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### RoboTTT：机器人策略在测试时训练，上下文扩展至8K步
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-17/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-17/research-01.jpg)
 
 
 **是什么**：论文《RoboTTT》提出了“测试时训练”（Test-Time Training）方法，让机器人在推理阶段继续学习，从而将视觉运动上下文窗口从通常的百步级别扩展到8000个时间步。
@@ -229,7 +229,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### SciDiagramEdit：从论文修订中学习自动编辑科学图表
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-17/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-17/research-02.jpg)
 
 
 **是什么**：这篇论文提出了SciDiagramEdit系统，能够从论文的修订历史中自动学习如何编辑科学图表（如调整坐标轴、标注、配色等），无需人工标注修改指令。
@@ -242,7 +242,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### 研究警告：计算宣传可污染LLM预训练数据，且难以检测
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-17/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-17/research-03.jpg)
 
 
 **是什么**：新论文通过实验证明，攻击者可以利用计算宣传手段——例如大规模生成看似无害但包含隐藏有害模式的文本——污染LLM的预训练数据，使模型在特定条件下输出危险内容。
@@ -255,7 +255,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### Beyond Success Rate：引入推理预算的安全Agent评估
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-07-17/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-07-17/research-04.jpg)
 
 
 **是什么**：论文《Beyond Success Rate》提出了一种成本感知的安全Agent评估框架，在评估Agent（如自主编码助手、网页导航工具）时，不再只看最终任务成功率，而是同时考虑其推理预算（如API调用次数、计算时间）与安全违规率。
@@ -268,7 +268,7 @@ Google 在不更改版本号的情况下更新了 Gemma 4 模型，修复了工�
 
 ### SearchOS-V1：工具集成LLM实现鲁棒开放域信息搜索Agent协作
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-07-17/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-07-17/research-05.jpg)
 
 
 **是什么**：SearchOS-V1是一个新系统，通过集成多种工具（搜索引擎、代码执行器、文档解析器等）的LLM Agent，完成复杂的开放域网页搜索任务，并设计了一套记忆机制来缓解长历史跟踪问题。
@@ -291,7 +291,7 @@ OpenAI 今天推出了 Codex Micro——一款可编程游戏杆控制器，让�
 
 ### OpenAI 发布 Codex Micro：一个用于控制 AI 代理的物理游戏杆
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-17/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-17/product-00.jpg)
 
 
 **是什么**  
@@ -309,7 +309,7 @@ OpenAI 推出 Codex Micro，一个可编程游戏杆控制器，专为控制 AI 
 
 ### Google Vids 加入 AI 化身功能，用户可“参演”视频
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-17/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-17/product-01.jpg)
 
 
 **是什么**  
@@ -327,7 +327,7 @@ Google Vids 推出个性化 AI 头像功能，用户可以创建自己的数字�
 
 ### Roblox 移动端上线 AI 一键生成游戏
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-17/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-17/product-02.jpg)
 
 
 **是什么**  
@@ -345,7 +345,7 @@ Roblox 的生态核心是 UGC 游戏，AI 生成功能可能大幅扩大创作�
 
 ### Google AI Mode 升级：从回答问题到跨应用执行任务
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-17/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-17/product-03.jpg)
 
 
 **是什么**  
@@ -363,7 +363,7 @@ Google 扩展了 AI Mode 的能力，用户现在可以将其与第三方应用�
 
 ### DoorDash 推出命令行工具 dd-cli，专为 AI Agent 设计
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-17/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-17/product-04.jpg)
 
 
 **是什么**  
@@ -381,7 +381,7 @@ DoorDash 开放 dd-cli 公测，允许开发者通过终端搜索餐厅、构建
 
 ### Google NotebookLM 正式更名 Gemini Notebook，开放搜索应用集成
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-17/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-17/product-05.jpg)
 
 
 **是什么**  
@@ -414,7 +414,7 @@ Google 将 NotebookLM 重新品牌为 Gemini Notebook，并将底层的搜索应
 
 ### OpenAI 推出 ChatGPT 品牌篮球（没错，是篮球）
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-07-17/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-07-17/product-07.jpg)
 
 
 **是什么**  
@@ -442,7 +442,7 @@ Linux创始人Linus Torvalds用“fork or shut up”的姿态捍卫AI编码工�
 
 ### Linus：不爽AI就fork
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-17/opinion-00.jpg)
 
 
 Linus Torvalds在 Linux 内核邮件列表中公开支持AI辅助编码，对批评者直言“要么 fork，要么走人”。关键点：他认为AI工具能提升内核开发效率，反对者若不喜欢可以自建分支。为什么重要：在开源世界，Linus的态度往往定调实际接纳度，这标志着AI已不只是“玩具”，而是核心开发流程的标配。  
@@ -450,7 +450,7 @@ Linus Torvalds在 Linux 内核邮件列表中公开支持AI辅助编码，对批
 
 ### 欧盟强制谷歌共享搜索数据，开放Android AI
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-17/opinion-01.jpg)
 
 
 欧盟委员会正式裁定，谷歌必须向竞争对手授权搜索数据，并允许第三方AI在Android上原生运行。谷歌警告此举可能削弱安全和隐私保护。为什么重要：这起案件为全球AI反垄断树立标杆，一旦落地，将打破搜索数据与移动端的AI垄断，让更多小而美的AI产品有机会直接触达十亿级用户。  
@@ -458,7 +458,7 @@ Linus Torvalds在 Linux 内核邮件列表中公开支持AI辅助编码，对批
 
 ### 德国全球首例：AI搜索纳入媒体法
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-17/opinion-02.jpg)
 
 
 德国媒体监管机构裁定，谷歌AI Overviews和Perplexity等AI搜索产品必须遵守媒体法，包括内容来源标识、更正权等义务。为什么重要：这是全球首个将AI摘要视为“媒体内容”而非“工具”的判例，意味着AI搜索在法律上要承担与新闻机构类似的责任，影响后续欧盟立法走向。  
@@ -466,7 +466,7 @@ Linus Torvalds在 Linux 内核邮件列表中公开支持AI辅助编码，对批
 
 ### Anthropic加速推动各州AI监管立法
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-17/opinion-03.jpg)
 
 
 Anthropic政策负责人表示，去年支持的加州和纽约AI透明法律可能已过时，正推动各州制定更严格的监管规则。为什么重要：与OpenAI积极游说联邦法案不同，Anthropic选择“从州突围”，这反映了大模型公司对碎片化监管与先发优势的不同判断——谁能主导地方规则，谁就能在合规成本上卡住对手。  
@@ -474,7 +474,7 @@ Anthropic政策负责人表示，去年支持的加州和纽约AI透明法律可
 
 ### 未来实验室应像数据中心
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-17/opinion-04.jpg)
 
 
 Lila Sciences联合创始人Andy Beam与Rafa Gómez-Bombarelli阐述他们如何将实验流程与AI基础设施深度耦合，让科学实验像数据中心一样可编排、可重复。为什么重要：这代表了AI for Science从“辅助工具”到“实验操作系统”的范式转变——未来的实验室不是更多试管，而是更多GPU。  
@@ -487,7 +487,7 @@ OpenAI发布原则文章，主张青少年有权在安全前提下使用AI，包
 
 ### Netflix已有300部AI参与制作的内容
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-07-17/opinion-06.jpg)
 
 
 Netflix确认其内容库中已有300部作品使用了AI技术，涵盖剧本辅助、生成式视觉、后期自动化等。为什么重要：这项数据直观展示了AI在娱乐行业的渗透速度——内容制作效率正在被重新定义，投资人与从业者需重新评估“AI是否会替代创意岗位”这个问题。  
@@ -495,7 +495,7 @@ Netflix确认其内容库中已有300部作品使用了AI技术，涵盖剧本�
 
 ### 评论：AI功能应默认为opt-in
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-07-17/opinion-07.jpg)
 
 
 作者呼吁禁止默认启用生成式AI功能后让用户手动opt-out的做法，改为默认关闭、用户自愿开启。为什么重要：这与欧盟监管的“知情同意”逻辑一致，但当前大多数产品选择直接默认开启以获取数据。这一争论将在用户体验、隐私合规与AI采纳率之间反复拉扯。  
@@ -511,7 +511,7 @@ Netflix确认其内容库中已有300部作品使用了AI技术，涵盖剧本�
 
 ### xAI 开源 Grok-Build：数据泄露后的透明化行动
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-17/opensource-00.jpg)
 
 
 xAI 在遭遇大规模数据泄露后，选择将其命令行工具 Grok-Build 在 GitHub 上开源。该项目是 xAI 内部用于构建和部署 Grok 模型的基础工具，公开后允许开发者审查代码并自行搭建类似流程。关键点在于此次开源动机特殊——在安全事件后开放核心工具，以提升社区信任。但需注意，开源版本可能剥离了敏感生产配置，实际应用需谨慎调试。为什么重要：xAI 首次将核心基础设施开源，或为后续模型权重部分开放铺路，也反映出 AI 公司面临安全压力时转而拥抱透明度。
@@ -520,7 +520,7 @@ xAI 在遭遇大规模数据泄露后，选择将其命令行工具 Grok-Build �
 
 ### OpenCut：CapCut 的开源替代品
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-17/opensource-01.jpg)
 
 
 OpenCut 正式发布，定位为字节跳动 CapCut 的自由开源替代。它支持多轨道剪辑、滤镜、文字特效等基础功能，采用 GPL v3 许可。关键点：OpenCut 目前仍处于早期阶段，功能不如 CapCut 完整，但无云服务依赖且可本地化部署。为什么重要：视频编辑领域长期缺乏成熟的 FOSS 选项，OpenCut 的出现填补了这一空白，适合隐私敏感型团队或需要自定义工作流的内容创作者。
@@ -529,7 +529,7 @@ OpenCut 正式发布，定位为字节跳动 CapCut 的自由开源替代。它�
 
 ### PostHog 推出 AI 可观测性工具：代理诊断利器
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-17/opensource-02.jpg)
 
 
 PostHog，这个自驱动的产品分析平台，新增了 AI 可观测性功能。开发者可通过它监控 LLM 调用链、Agent 行为轨迹以及 Token 消耗，及时发现幻觉或循环错误。关键点：PostHog 本身是开源产品分析工具，与 LangSmith 等 SaaS 方案不同，它允许自托管数据，现在又集成了 AI 调试能力，且覆盖 agentic 场景。为什么重要：随着 AI Agent 增多，开源自托管可观测性方案变得稀缺，PostHog 可能成为 AI 应用团队的标配基础设施。
@@ -544,7 +544,7 @@ Thinking Machines Lab 发布 Tinker Cookbook，这是一套用于模型后训练
 
 ### Open Interpreter 接入 Kimi K3
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-17/opensource-04.jpg)
 
 
 Open Interpreter 更新支持 Kimi K3 模型，成为该低成本模型的编码 Agent 前端。关键点：Kimi K3 主打低价长上下文，结合 Open Interpreter 可在本地替代部分云 API 调用。为什么重要：这进一步验证了开源 Agent 框架对新兴低成本模型的快速适配能力，也降低了构建代码助手的经济门槛。
@@ -553,7 +553,7 @@ Open Interpreter 更新支持 Kimi K3 模型，成为该低成本模型的编码
 
 ### GitHub 发布 Copilot SDK：将 Agent 嵌入任意应用
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-17/opensource-05.jpg)
 
 
 GitHub 推出多平台 Copilot CLI SDK，允许开发者将 Copilot Agent 集成到自己的应用和服务中，支持 Node.js、Python、Go 等环境。关键点：SDK 封装了认证、对话流和上下文管理，开发者可快速构建 AI 助手。为什么重要：这是 Copilot 从编辑器插件走向平台化服务的关键一步，但厂商锁定风险需评估。
@@ -562,7 +562,7 @@ GitHub 推出多平台 Copilot CLI SDK，允许开发者将 Copilot Agent 集成
 
 ### Hermes Agent：可成长的个性化 AI 代理
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-17/opensource-06.jpg)
 
 
 Nous Research 开源 Hermes Agent，强调该代理能根据用户交互历史调整行为，实现个性化。关键点：基于 Hermes 系列模型构建，支持记忆模块和技能学习。为什么重要：个性化 Agent 是当前热点，但多数方案依赖商业 API，Hermes Agent 的完全开源设计为隐私偏好用户提供了新选择。
@@ -571,7 +571,7 @@ Nous Research 开源 Hermes Agent，强调该代理能根据用户交互历史�
 
 ### Anthropic 开源知识工作插件库
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-17/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-17/opensource-07.jpg)
 
 
 Anthropic 发布一系列开源插件，将 Claude Cowork 转换为特定角色（如数据分析师、法律助理）的专业工具。关键点：插件采用模块化设计，可组合使用，社区可贡献新插件。为什么重要：Anthropic 采取“开源插件”策略，一方面扩大 Claude 生态，另一方面避免开放核心模型权重，是一种折中的生态构建方式。

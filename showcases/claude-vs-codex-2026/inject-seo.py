@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 DECK_DIR = Path(__file__).parent
-BASE_URL = "https://pyf-labrary.github.io/marginalia/showcases/claude-vs-codex-2026"
+BASE_URL = "https://jinzi.cyou/showcases/claude-vs-codex-2026"
 DECK_BLURB = (
     "Claude 与 OpenAI Codex 2026 年订阅计划深度对比——价格、用量限制、Token/配额机制、"
     "功能特性、性能基准与选择建议，单页幻灯版。"

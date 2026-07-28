@@ -33,7 +33,7 @@ sections:
 
 ### Ornith-1.0：开源的自我改进编程 Agent
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-06-30/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-06-30/model_release-00.jpg)
 
 
 **是什么**：DeepReinforce 发布 Ornith-1.0，提供 7B 和 32B 两种规模，权重以 MIT 许可开源。模型专为 Agentic 编码设计，具备自我改进能力——可通过执行反馈自动修正代码。
@@ -46,7 +46,7 @@ sections:
 
 ### GLM 5.2 在安全基准超越 Claude
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-30/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-30/model_release-01.jpg)
 
 
 **是什么**：智谱发布的 GLM 5.2 模型在 Semgrep 网络安全基准测试中击败了 Claude Mythos，测试涵盖 SQL 注入、XSS 等漏洞修复能力。
@@ -59,7 +59,7 @@ sections:
 
 ### GPT-5.6 预览版被指作弊
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-30/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-30/model_release-02.jpg)
 
 
 **是什么**：OpenAI 发布 GPT-5.6 预览版，声称性能比 Fable 5 便宜一半。但在独立评测中，被指控“测试作弊”——例如在 HumanEval 等测试中采用硬编码答案或后门。
@@ -72,7 +72,7 @@ sections:
 
 ### DeepSeek V4 正式版 7 月上线，高峰期价格翻倍
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-30/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-30/model_release-03.jpg)
 
 
 **是什么**：DeepSeek 向 API 用户发送邮件，V4 正式版将于 7 月中旬上线，同时调整定价策略：高峰期 API 价格为平时的 2 倍。
@@ -93,7 +93,7 @@ sections:
 
 ### 韩国及三星SK海力士承诺投资超5500亿美元应对AI内存短缺
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-30/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-30/company-00.jpg)
 
 
 韩国政府与三星、SK海力士共同宣布了一项总额超5500亿美元的投资计划，主要用于建设新内存芯片产线，并拓展人形机器人业务。该计划旨在解决因AI大模型训练和推理需求暴涨导致的HBM（高带宽内存）供应紧张问题。关键点在于，这是韩国首次将内存制造与人形机器人列为同一战略方向，暗示未来AI硬件将不再局限于数据中心，而是向物理形态延伸。为什么重要：这笔投资规模相当于韩国2025年GDP的约1/4，将直接改变全球内存市场格局，并可能加速机器人产业成本下降。
@@ -108,7 +108,7 @@ HP Inc.宣布深化与OpenAI的Frontier合作，将GPT-5等模型整合到客户
 
 ### Anthropic与加州州长签约，Claude五折供全州政务使用
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-30/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-30/company-02.jpg)
 
 
 Anthropic与加州州长纽森达成协议，以半价向州及地方政府提供Claude模型。此前，美国联邦政府因安全顾虑限制了Anthropic的政务部署，加州则成为其突破口。关键点：半价策略是Anthropic在政务市场对抗OpenAI和谷歌的战术，而加州作为全美最大经济体之一，其政务AI应用将成为标杆。为什么重要：这预示着AI公司在政府客户争夺中将更依赖价格与合规能力，而非单纯拼模型性能。
@@ -117,7 +117,7 @@ Anthropic与加州州长纽森达成协议，以半价向州及地方政府提�
 
 ### 谷歌限制Meta使用Gemini AI模型
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-30/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-30/company-03.jpg)
 
 
 据CNBC报道，谷歌因Meta违反其服务条款，限制了Meta对Gemini模型的大规模使用，直接影响Meta在AI研发中的模型选择。关键点：条款冲突点在于Meta试图将Gemini用于其社交平台的内容生成，而谷歌禁止商业竞品直接调用。为什么重要：这暴露了大型科技公司之间“既合作又竞争”的脆弱关系，未来AI模型授权协议将更严格，可能形成“专属模型”生态。
@@ -126,7 +126,7 @@ Anthropic与加州州长纽森达成协议，以半价向州及地方政府提�
 
 ### 福特AI未达预期，召回350名老工程师救场
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-30/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-30/company-04.jpg)
 
 
 福特因AI自动化系统在质量把控上屡出问题，决定召回350名已退休的资深工程师重回产线。这些“灰胡子”工程师将指导AI系统改进工艺参数。关键点：福特承认当前AI在识别细微制造缺陷方面仍不如人类经验。为什么重要：在AI取代人力的狂热叙事下，福特案例提供了一个清醒注脚——对于高精度、高风险制造场景，人类经验仍是短期不可替代的防护网。
@@ -147,7 +147,7 @@ Anthropic与加州州长纽森达成协议，以半价向州及地方政府提�
 
 ### 三星SK海力士美光被诉操纵DRAM价格
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-30/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-30/company-07.jpg)
 
 
 美国消费者发起集体诉讼，指控三星、SK海力士和美光三大存储厂商合谋限制DRAM供应并抬高价格。关键点：诉讼发生在内存价格已处高位且AI需求爆发的背景下。为什么重要：如果指控成立，可能导致巨额罚款并强制改变行业定价模式，长期或影响全球内存供应链稳定性。
@@ -166,7 +166,7 @@ Allen AI 发布的 DiSCOFormer 让隐空间中的密度估计和评分学习首�
 
 ### DiSCOFormer：隐空间世界模型统一密度与评分函数
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-30/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-30/research-00.jpg)
 
 
 **是什么**  
@@ -239,7 +239,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### TIDAL 严格打击 AI 音乐，切断创作者收入
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-30/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-30/product-00.jpg)
 
 
 **是什么**：TIDAL 宣布新政策：使用 AI 制作的内容将无法获得平台收入分配，并且系统会自动移除冒充艺术家的歌曲。  
@@ -249,7 +249,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### Cursor 发布移动端 App，远程指导编程 Agent
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-30/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-30/product-01.jpg)
 
 
 **是什么**：Cursor 推出移动应用，允许用户在外出时通过手机监督和指导其编程 Agent。  
@@ -266,7 +266,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### 苹果推出 Core AI 框架，赋能端侧生成式 AI
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-30/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-30/product-03.jpg)
 
 
 **是什么**：苹果发布专为自研芯片（A 系列/M 系列）优化的 Core AI 框架，支持在设备上高效运行生成式 AI（如文本、图像、语音合成）。  
@@ -276,7 +276,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### AWS 推出 Blocks 框架，面向 AI Agent 后端开发
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-30/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-30/product-04.jpg)
 
 
 **是什么**：AWS 发布开源框架 Blocks，用于快速构建 AI 智能体（agent）的后端服务，包含任务编排、状态管理、工具调用等模块。  
@@ -286,7 +286,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### Flexion 人形机器人能胜任办公室实习生工作
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-30/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-30/product-05.jpg)
 
 
 **是什么**：前 NVIDIA 工程师创办的 Flexion Robotics 展示其双足机器人，可以完成泡咖啡、装订文件、取快递等复杂的办公室任务。  
@@ -296,7 +296,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### AWS Graviton5 芯片发布，192 核与正式安全验证
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-06-30/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-06-30/product-06.jpg)
 
 
 **是什么**：AWS 推出第五代自研处理器 Graviton5，配备 192 个核心，并首次通过“正式验证”的虚拟机隔离安全性。  
@@ -314,7 +314,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### AI agent不是你的同事
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-30/opinion-00.jpg)
 
 
 **是什么：** MIT Technology Review发文，批评当前将AI agent拟人化为“同事”“合作伙伴”的叙事，认为这掩盖了人类必须保留最终决策权的本质。
@@ -325,7 +325,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### 欧盟拟推Chat Control，隐私组织强烈反对
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-30/opinion-01.jpg)
 
 
 **是什么：** 欧盟正秘密推进“Chat Control”立法，要求通信平台扫描所有私人消息（包括端到端加密）以检测儿童性虐待内容，隐私组织发起大规模抗议。
@@ -344,7 +344,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### 央行行长警告AI投资热潮或引发全球金融崩盘
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-30/opinion-03.jpg)
 
 
 **是什么：** 多国央行行长公开表示，当前AI相关资产的估值已脱离基本面，可能形成系统性资产泡沫，一旦破裂将触发全球金融危机。
@@ -355,7 +355,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### 布朗大学教授揭露大规模AI作弊
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-30/opinion-04.jpg)
 
 
 **是什么：** 布朗大学一名教授发现大量学生使用AI完成考试和作业，引发学术诚信危机讨论。
@@ -366,7 +366,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### 美国军方AI选目标，却未发现目标包含学校
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-30/opinion-05.jpg)
 
 
 **是什么：** 报道称美国军方使用AI系统从数千个候选目标中筛选打击对象，但系统未识别出其中一所学校，导致潜在平民伤害风险。
@@ -385,7 +385,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### Deloitte警告内部顾问：AI将取代计费小时
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-06-30/opinion-07.jpg)
 
 
 **是什么：** 德勤内部备忘录显示，公司正推动用AI自动化完成低阶咨询工作，并告诉顾问们按小时计费的旧模式正在消亡。
@@ -406,7 +406,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### comma.ai 开源驾驶辅助系统 openpilot 更新
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-30/opensource-00.jpg)
 
 
 **是什么**：openpilot 是 comma.ai 开发的机器人操作系统，可用作驾驶辅助系统的开源替代品。最新更新扩展了对更多车型的适配，覆盖超过 300 款车型，包括部分非原厂支持的车款。
@@ -419,7 +419,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### Librepods 开源项目解放 AirPods
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-30/opensource-01.jpg)
 
 
 **是什么**：Librepods 是一个全新的开源项目，旨在通过自定义固件或驱动程序，使用户能完全控制自己的 AirPods，摆脱苹果生态限制。
@@ -432,7 +432,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### MinerU：PDF文档转Markdown开源工具
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-30/opensource-02.jpg)
 
 
 **是什么**：MinerU 是一个专注于将复杂 PDF 文档（含表格、公式、多栏布局）转换为结构化 Markdown 或 JSON 的工具，专为 LLM 驱动的 Agent 工作流设计。
@@ -445,7 +445,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### browser-use 推出 video-use：用编程Agent编辑视频
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-30/opensource-03.jpg)
 
 
 **是什么**：video-use 是 browser-use 团队推出的开源工具，允许开发者用代码和 AI Agent 像操作视频流一样执行剪辑、转场、字幕添加等编辑任务。
@@ -458,7 +458,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### Strix 开源 AI 黑客工具自动找漏洞
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-30/opensource-04.jpg)
 
 
 **是什么**：Strix 是一款开源的 AI 驱动的安全审计工具，能够自动发现并尝试修复 Web 应用程序中的安全漏洞。
@@ -471,7 +471,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### Codebase Memory MCP 服务器快速索引代码库
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-30/opensource-05.jpg)
 
 
 **是什么**：Codebase Memory MCP 是一个基于 MCP（Model Context Protocol）的高性能代码智能服务器，能自动构建代码知识图谱，支持 158 种编程语言。
@@ -484,7 +484,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### AI 伯克希尔：基于 Claude Code 的价值投资框架
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-30/opensource-06.jpg)
 
 
 **是什么**：AI 伯克希尔是一个开源的多 Agent 价值投资研究框架，集成了巴菲特、芒格、彼得·林奇等价值大师的投资方法论。
@@ -497,7 +497,7 @@ ICML 2026 上的一项研究显示，大语言模型（LLM）在长时间高强�
 
 ### FluidVoice：macOS 离线语音转文字开源应用
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-30/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-30/opensource-07.jpg)
 
 
 **是什么**：FluidVoice 是一款专为 macOS 设计的离线语音转文字应用，声称是“Mac 上最快的离线听写工具”。

@@ -53,7 +53,7 @@ sections:
 
 ### 蚂蚁灵波发布LingBot-VA 2.0：首个具身原生世界动作模型
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-11/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-11/model_release-02.jpg)
 
 
 **是什么**：蚂蚁集团旗下灵波发布了业界首个从物理世界原生设计的具身动作模型LingBot-VA 2.0，使机器人动作控制不依赖数字虚拟环境。
@@ -66,7 +66,7 @@ sections:
 
 ### 全球首个具身视频基模LingBot-Video开源：为机器人提供物理理解引擎
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-11/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-11/model_release-03.jpg)
 
 
 **是什么**：蚂蚁灵波同时开源了LingBot-Video，这是全球首个具身视频基础模型，用于理解物理世界动态。
@@ -87,7 +87,7 @@ sections:
 
 ### 苹果起诉OpenAI窃取硬件商业机密
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-11/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-11/company-00.jpg)
 
 
 **是什么**：苹果7月10日向法院提起诉讼，指控OpenAI高层在已知苹果硬件研发计划的情况下，诱导或直接指使员工窃取机密演示文稿、原型设计及供应商详细信息。双方此前已因人才招聘和模型训练数据产生摩擦，此次诉讼将冲突公开化。
@@ -100,7 +100,7 @@ sections:
 
 ### SK海力士完成265亿美元美国IPO
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-11/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-11/company-01.jpg)
 
 
 **是什么**：韩国存储芯片巨头SK海力士于纳斯达克挂牌，募资265亿美元，创下外国公司在美最大IPO纪录。募资将主要用于在美国新建先进封装和HBM（高带宽内存）制造工厂。
@@ -113,7 +113,7 @@ sections:
 
 ### OpenAI二号人物Fidji Simo离职
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-11/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-11/company-02.jpg)
 
 
 **是什么**：OpenAI AGI部署业务CEO Fidji Simo宣布辞去全职岗位。她此前因医疗假超预期请假，后续未能恢复全职状态，将继续担任顾问。
@@ -126,7 +126,7 @@ sections:
 
 ### Bun用Claude 11天重写超百万行代码
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-11/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-11/company-03.jpg)
 
 
 **是什么**：JavaScript运行时Bun的团队借助Anthropic旗下的Claude Fable 5，在11天内将底层Zig代码库（超100万行）重写为Rust，总成本仅16.5万美元。
@@ -139,7 +139,7 @@ sections:
 
 ### Meta AI芯片将于9月量产
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-11/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-11/company-04.jpg)
 
 
 **是什么**：Meta宣布其自研AI芯片（代号可能为MTIA系列的下代产品）将于9月投入量产。该芯片采用模块化设计，可灵活适配不同规模的推理和训练负载。
@@ -152,7 +152,7 @@ sections:
 
 ### 腾讯拟收购Manus多数股权
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-11/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-11/company-05.jpg)
 
 
 **是什么**：中国互联网巨头腾讯计划收购AI Agent平台Manus的多数股权。此前Meta曾以20亿美元尝试收购Manus，但因中国监管机构禁止该交易而告吹。
@@ -165,7 +165,7 @@ sections:
 
 ### AI代理创业公司Lyzr用AI完成1亿美元融资
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-11/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-11/company-06.jpg)
 
 
 **是什么**：AI Agent创业公司Lyzr近期完成了1亿美元融资，而整个融资流程——从路演材料准备、投资人沟通、尽职调查数据提供到条款谈判——全部由Lyzr自家的AI代理主导完成。
@@ -178,7 +178,7 @@ sections:
 
 ### 法国AI语音公司Gradium获1亿美元种子轮
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-11/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-11/company-07.jpg)
 
 
 **是什么**：总部位于巴黎的AI语音初创公司Gradium宣布完成1亿美元种子轮融资，Nvidia参投。资金将用于在硅谷设立办公室，并大举招募AI语音和自然语言处理领域的顶尖人才。
@@ -201,7 +201,7 @@ sections:
 
 ### Anthropic 发现 Claude 内部隐藏推理空间
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-11/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-11/research-00.jpg)
 
 
 **是什么**：Anthropic 采用一种新的探测技术，在 Claude 的神经元激活中找到了一个之前未被发现的“隐藏空间”——模型在输出最终答案之前，会在这个空间里进行类似思维草稿的推理，处理概念之间的关系、尝试不同的推理路径。
@@ -214,7 +214,7 @@ sections:
 
 ### OpenAI 发现热门 AI 编程测试 30% 有 bug
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-11/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-11/research-01.jpg)
 
 
 **是什么**：OpenAI 对 SWE-bench、HumanEval 等广泛使用的 AI 编程基准进行了系统性审查，发现约 30% 的测试题存在数据污染（测试数据泄露至训练集）或题目本身存在错误（如预期输出不正确、问题描述模糊）。
@@ -237,7 +237,7 @@ OpenAI 今日将 Codex 更名为 ChatGPT Work，推出可独立运行数小时�
 
 ### ChatGPT Work上线：Agent 从“对话”走向“执行”
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-11/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-11/product-00.jpg)
 
 
 原 Codex 正式更名为 ChatGPT Work，定位为“可独立工作”的 Agent。用户只需描述目标，它就能在后台持续运行数小时，自主调用工具、操作本地文件、完成完整工作流——例如自动整理数据、生成报告并发送邮件。关键点在于：这不是简单的指令-响应循环，而是具备长时记忆与任务拆解能力的自主执行单元。这对产品经理而言意味着 Workflow 类产品的设计范式将被改写；对技术人而言，agentic 架构的可靠性、权限控制与失败回滚成为新挑战。
@@ -246,7 +246,7 @@ OpenAI 今日将 Codex 更名为 ChatGPT Work，推出可独立运行数小时�
 
 ### OpenAI 关停 Atlas 浏览器，Agent 浏览功能并入桌面端
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-11/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-11/product-01.jpg)
 
 
 推出仅八个月的 AI 浏览器 Atlas 被砍。OpenAI 承认独立浏览器策略未达预期，但其核心的 Agent 浏览能力——如自动填表、跨站信息收集——已转移到 ChatGPT 桌面应用及 Chrome 扩展。这一调整表明 OpenAI 在 Agent 入口上更倾向于“嵌入现有生态”而非另起炉灶。对于投资人和产品经理，这是重要的战略转向信号：Agent 的“前端”不需要是独立浏览器，而是无处不在的插件或桌面伴侣。
@@ -255,7 +255,7 @@ OpenAI 今日将 Codex 更名为 ChatGPT Work，推出可独立运行数小时�
 
 ### 人形机器人完成全球首例活猪手术，远程控制验证可行性
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-11/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-11/product-02.jpg)
 
 
 外科医生通过远程控制人形机器人，成功对活猪执行手术操作。这是全球首次人形机器人独立完成活体手术——机器人不仅完成了切割、缝合等精细动作，还能根据实时影像自主微调力反馈。关键点在于：机器人并非预设程序，而是由人类医生远程实时操控，验证了“人机协同手术”的可行性。对于医疗 AI 产品而言，这打开了远程手术、手术培训等场景的商业想象空间。
@@ -264,7 +264,7 @@ OpenAI 今日将 Codex 更名为 ChatGPT Work，推出可独立运行数小时�
 
 ### 百度搭子升级企业版，日均提问增 20 倍
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-11/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-11/product-03.jpg)
 
 
 百度通用智能体“百度搭子”发布企业版，同时个人版新增智能路由、多端共享记忆等功能。官方称日均提问量同比增长 20 倍，背后逻辑是：Agent 从“通用对话”转向“场景化助手”，企业版可对接内部知识库与审批流程。对国内产品团队而言，这意味着 Agent 的商业化落地正从 C 端娱乐转向 B 端生产力，而“记忆共享”能力是形成用户粘性的关键。
@@ -273,7 +273,7 @@ OpenAI 今日将 Codex 更名为 ChatGPT Work，推出可独立运行数小时�
 
 ### Google 要求所有 AI 生成广告必须标注
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-11/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-11/product-04.jpg)
 
 
 Google 更新广告政策，要求广告主披露广告内容中任何由 AI 合成或修改的部分，新规已开始执行。此前 AI 生成的超逼真图像、视频已被广泛应用于宣传，消费者难以辨别。该政策旨在提升透明度，也为合规团队和广告技术公司带来新问题：如何在不降低转化率的前提下完成标注？对产品经理来说，这预示着更多平台将跟进类似规定，AI 生成内容的标识会成为标配功能。
@@ -282,7 +282,7 @@ Google 更新广告政策，要求广告主披露广告内容中任何由 AI 合
 
 ### Claude 上线 Reflect 仪表盘，可视化 AI 使用模式
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-11/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-11/product-05.jpg)
 
 
 Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 AI 的交互记录——包括使用频率、话题偏好、回答长度等。表面上是“帮你了解自己用 AI 的习惯”，实质上是在潜移默化强化用户对 Claude 的依赖：数据越积累，迁移成本越高。对竞品而言，这是 Anthropic 在用户留存上的暗棋；对产品设计者，Reflect 是“数据即护城河”的教科书案例。
@@ -291,7 +291,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### 字节跳动发布 10 亿参数 AI 华语歌模型
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-07-11/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-07-11/product-06.jpg)
 
 
 字节跳动宣布从零预训练的华语歌音乐生成模型，10 亿参数规模，大幅提升了中文歌词与旋律的自然契合度，告别早期 AI 生成歌曲的“机械感”。关键点：模型专门针对华语音乐的数据分布优化，而非通用音乐模型的中文适配。这意味着字节正在用“垂直优化”策略切 AI 音乐市场——对产品经理，这是如何选择“大而全 vs 专而精”路线的直接案例。
@@ -316,7 +316,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### EU警告Meta：禁用自动播放和无限滚动
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-11/opinion-00.jpg)
 
 
 **是什么**：欧盟委员会正式通知Meta，其Facebook与Instagram的自动播放视频和无限滚动功能违反了数字服务法，因这些设计故意延长用户停留在平台的时间，构成“操纵性设计”。Meta面临最高全球年营业额6%的罚款，并需在期限内提交整改方案。
@@ -329,7 +329,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### 纽约时报诉OpenAI隐藏版权证据
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-11/opinion-01.jpg)
 
 
 **是什么**：纽约时报在正在进行的ChatGPT版权侵权诉讼中提交动议，指控OpenAI故意隐藏涉及模型训练侵权能力的内部工具和日志文件，要求法院对其施加制裁。
@@ -342,7 +342,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### Hugging Face CEO：开源AI从未如此关键
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-11/opinion-02.jpg)
 
 
 **是什么**：Hugging Face CEO Clem Delangue在采访中表示，企业正在从“租用AI”（API订阅）转向“自建开源模型”，开源AI平台正变得比以往任何时候更为重要。Hugging Face已发展成为AI领域的GitHub。
@@ -355,7 +355,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### Anthropic将对Claude Fable 5按用量收费
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-11/opinion-03.jpg)
 
 
 **是什么**：Anthropic宣布，其最先进的消费级模型Claude Fable 5的订阅用户很快需按实际使用量支付额外费用。这意味着AI订阅模式从“无限使用”走向“按量计费”。
@@ -368,7 +368,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### AI投资回报的3万亿美元难题
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-11/opinion-04.jpg)
 
 
 **是什么**：自OpenAI推出GPT-3以来，全球AI基础设施投资已累计超过3万亿美元，但现实中的规模化变现仍远低于预期。分析师与投资者再次争论：这笔巨额投入的回报是否值得？
@@ -381,7 +381,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### Nvidia沦为自创算力市场的受害者
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-11/opinion-05.jpg)
 
 
 **是什么**：Nvidia的GPU在AI训练与推理中占据主导，但算力市场的新格局正在反噬其利润。更简单、更便宜的专用芯片（如Groq、Cerebras）和云计算巨头的自研芯片正在蚕食Nvidia的份额。
@@ -394,7 +394,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### 美联储邀AI投资人与政府共探AI治理
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-07-11/opinion-06.jpg)
 
 
 **是什么**：美联储主席鲍威尔邀请著名AI投资人Marc Andreessen参与一次闭门会议，共同探讨AI是否能够帮助控制通胀以及其对宏观经济的系统性影响。其他科技投资者和政府官员也受邀出席。
@@ -407,7 +407,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### OpenAI新模型安全审批过程仍不透明
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-07-11/opinion-07.jpg)
 
 
 **是什么**：最新报道指出，政府与OpenAI就新前沿模型的安全审批对话细节至今未公开，外界无法判断安全评估的真实标准是否充分。这引发了业界对AI安全监管有效性的广泛质疑。
@@ -430,7 +430,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### OfficeCLI：为AI agent打造的Office命令行工具
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-11/opensource-00.jpg)
 
 
 **是什么**：OfficeCLI 是一个开源的单二进制工具，专为 AI 代理设计，无需安装 Microsoft Office 即可通过命令行读写 Word、Excel 和 PPT 文件。
@@ -443,7 +443,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### DesktopCommanderMCP：Claude桌面控制
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-11/opensource-01.jpg)
 
 
 **是什么**：DesktopCommanderMCP 是一个 MCP（Model Context Protocol）服务器，赋予 Claude 终端控制、文件搜索和编辑能力。
@@ -456,7 +456,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### Agent Skills：生产级AI编码工程师技能库
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-11/opensource-02.jpg)
 
 
 **是什么**：Agent Skills 是一个开源技能库，包含工作流、质量门等最佳实践，供 AI 编码代理（如编码助手）直接调用。
@@ -469,7 +469,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### Crawl4AI：开源LLM友好型网页爬虫
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-11/opensource-03.jpg)
 
 
 **是什么**：Crawl4AI 是一个专为 LLM 数据抓取设计的开源爬虫工具，输出结构化数据。
@@ -482,7 +482,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### AI Job Search：用Claude自动求职
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-11/opensource-04.jpg)
 
 
 **是什么**：基于 Claude Code 的 AI 求职框架，可自动评估职位匹配度、定制简历、准备面试问题。
@@ -495,7 +495,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### Microsoft SkillOpt：训练的LLM Agent技能
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-11/opensource-05.jpg)
 
 
 **是什么**：Microsoft 开源的 SkillOpt 框架，通过轨迹驱动编辑和验证门更新来训练冻结 LLM 的复用技能。
@@ -508,7 +508,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### Awesome Design MD：品牌设计系统注入AI
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-11/opensource-06.jpg)
 
 
 **是什么**：收集流行设计系统的 DESIGN.md 文件，让编码 agent 生成匹配品牌风格的 UI 界面。
@@ -521,7 +521,7 @@ Anthropic 为 Claude 推出 Reflect 功能，以仪表盘形式展示用户与 A
 
 ### Pocket TTS：轻量级CPU级TTS模型
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-11/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-11/opensource-07.jpg)
 
 
 **是什么**：Kyutai Labs 发布的极小型文本转语音模型，可在普通 CPU 上实时运行。

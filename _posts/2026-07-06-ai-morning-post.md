@@ -33,7 +33,7 @@ sections:
 
 ### LongCat-2.0：1.6 万亿参数 MoE 模型，原生百万上下文
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-06/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-06/model_release-00.jpg)
 
 
 美团近期开源了 LongCat-2.0，这是一个 1.6 万亿参数的混合专家（MoE）语言模型。其关键特性包括：原生支持 100 万 token 的上下文窗口，并采用了名为 LongCat Sparse Attention 的稀疏注意力机制以降低长文本推理时的计算开销。该模型在多个长文档理解与推理基准上表现突出，尤其是在需要超长上下文的场景中。
@@ -52,7 +52,7 @@ sections:
 
 ### OpenAI Codex推理令牌聚类引发性能退化争议
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-06/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-06/company-00.jpg)
 
 
 GitHub Issue #30364 曝光：GPT-5.5 Codex 在推理时采用令牌聚类（token clustering）策略，将相关推理步骤压缩为集群以减少开销，但实测显示该机制在长上下文或复杂任务中会导致响应质量下降，甚至产生逻辑断裂。社区用户提交了多个基准测试复现案例，认为这是2026年以来Codex最严重的回归。OpenAI尚未正式回应。
@@ -63,7 +63,7 @@ GitHub Issue #30364 曝光：GPT-5.5 Codex 在推理时采用令牌聚类（toke
 
 ### Anthropic Claude Code发现会话/缓存泄漏漏洞
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-06/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-06/company-01.jpg)
 
 
 安全研究人员在 Claude Code 工作区中发现：当多个实例在同一宿主机运行时，会话令牌和模型缓存数据可能被其他进程读取，导致跨用户信息泄漏。漏洞编号 #74066，已提交至 Anthropic 官方仓库。目前尚无补丁，风险等级被标记为“高”。
@@ -74,7 +74,7 @@ GitHub Issue #30364 曝光：GPT-5.5 Codex 在推理时采用令牌聚类（toke
 
 ### AI模型系统提示大规模泄露，涉及多家厂商
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-06/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-06/company-02.jpg)
 
 
 GitHub 仓库 `asgeirtj/system_prompts_leaks` 公开了包括 Anthropic、OpenAI、Google、xAI 等主流模型的最新系统提示原文，部分内容揭示了模型的安全过滤策略和底层工具调用逻辑。泄露源于部分开发者将生产环境下的系统提示附加至公开 Issue 或 PR 中。
@@ -85,7 +85,7 @@ GitHub 仓库 `asgeirtj/system_prompts_leaks` 公开了包括 Anthropic、OpenAI
 
 ### 亚马逊停止接受Mechanical Turk新客户
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-06/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-06/company-03.jpg)
 
 
 亚马逊宣布自2026年7月5日起不再接受 Mechanical Turk（MTurk）新客户注册，现有客户可继续使用至2027年，届时服务将完全关闭。MTurk曾是AI训练数据标注的主力平台，近年因众包质量下降和替代方案（如自动化标注、合成数据）兴起而逐渐式微。
@@ -96,7 +96,7 @@ GitHub 仓库 `asgeirtj/system_prompts_leaks` 公开了包括 Anthropic、OpenAI
 
 ### 阿里巴巴禁止员工使用Claude Code
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-06/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-06/company-04.jpg)
 
 
 阿里将 Claude Code 列为“高风险软件”，内部禁止用于任何工作场景。理由是该工具会访问本地文件系统、命令行和网络，存在数据外泄隐患。此举引发国内开发者对国产替代方案的讨论，如 CodeGeeX、通义灵码等。
@@ -107,7 +107,7 @@ GitHub 仓库 `asgeirtj/system_prompts_leaks` 公开了包括 Anthropic、OpenAI
 
 ### Meta考虑推出AI算力租赁服务Meta Compute
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-06/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-06/company-05.jpg)
 
 
 扎克伯格在内部会议上称“模型可以慢，但GPU必须盈利”，Meta计划将闲置的AI算力以租赁形式对外提供，服务名称暂定 Meta Compute。此举旨在提升H100等GPU集群的利用率，同时与AWS、Google Cloud竞争算力市场。
@@ -118,7 +118,7 @@ GitHub 仓库 `asgeirtj/system_prompts_leaks` 公开了包括 Anthropic、OpenAI
 
 ### OpenAI发布Codex插件，实现Claude Code与Codex协同
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-06/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-06/company-06.jpg)
 
 
 OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Claude Code 中直接调用 Codex 进行代码审查、自动修复和任务委托。该插件基于 WebSocket 协议实现跨工具通信，目前支持 VS Code 和 JetBrains IDE。
@@ -129,7 +129,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### Midjourney要求好莱坞片方披露AI使用详情
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-06/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-06/company-07.jpg)
 
 
 在针对涉及生成式AI的版权诉讼中，Midjourney 要求迪士尼、华纳兄弟、Netflix 等三大制片厂公开其在影视制作中“明确使用了哪类AI工具、生成内容占比多少以及训练数据来源”。片方以商业秘密为由拒绝。
@@ -150,7 +150,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### 李飞飞团队：Real2Sim 用视频生成替代昂贵仿真
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-06/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-06/research-00.jpg)
 
 
 **是什么**：传统机器人训练依赖 Sim2Real——先在物理引擎中构建精确仿真环境，再将策略迁移到真实机器人。Real2Sim 反其道而行，通过视频生成模型直接从真实场景视频中合成逼真仿真场景，省去了手工建模和调参步骤。
@@ -163,7 +163,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### LeCun 团队：世界模型学会持续学习，不遗忘旧知识
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-06/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-06/research-01.jpg)
 
 
 **是什么**：Yann LeCun 团队在 arXiv 上发表论文，提出一种能使世界模型在接触新环境时保持旧经验的持续学习方法。传统神经网络在学新任务时容易覆盖旧知识（灾难性遗忘），该工作用参数隔离和重放机制解决了这一问题。
@@ -186,7 +186,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### 论文提出“日志即代理”范式，统一 AI 智能体架构
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-06/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-06/research-03.jpg)
 
 
 **是什么**：一篇 arXiv 论文提出以日志（log）为中心的智能体架构，将智能体决策、记忆、推理过程全部记录为结构化日志流，用统一的日志查询语言操作所有智能体能力。
@@ -199,7 +199,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### 华为更新“韬定律”论文，澄清放弃的技术路线
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-07-06/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-07-06/research-04.jpg)
 
 
 **是什么**：华为在最新论文中更新了“韬定律”（Tao's Law）相关理论，并明确解释了此前团队放弃的某个技术方向的原因。该论文延续了华为在 AI 芯片和算子优化方面的深度研究。
@@ -212,7 +212,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### AI 搜索代理失败症结：不会提出正确问题
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-07-06/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-07-06/research-05.jpg)
 
 
 **是什么**：一项研究发现，当前的 AI 搜索代理（如基于 LLM 的搜索引擎）在用户查询模糊时，失败的根本原因不是搜索能力不足，而是缺乏主动提问以澄清意图的能力。
@@ -235,7 +235,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### Claude Fable数小时将《命令与征服》移植到iOS
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-06/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-06/product-00.jpg)
 
 
 **是什么**：开发者使用Claude Code搭配Fable，将2003年的PC游戏《命令与征服》原生移植到iPhone/iPad，全程耗时仅数小时。这不是模拟器或流式传输，而是真正的原生iOS移植。
@@ -248,7 +248,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### Anthropic发布Claude Science Beta多智能体科学工作台
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-06/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-06/product-01.jpg)
 
 
 **是什么**：Anthropic推出的Claude Science Beta是一个多智能体系统，专为基因组学、蛋白质组学等科学流水线设计，内置自动评审和图表生成。
@@ -271,7 +271,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### NVIDIA发布HORIZON：全自动RTL设计Agent
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-06/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-06/product-03.jpg)
 
 
 **是什么**：NVIDIA推出的HORIZON是一个无需人工干预的Agent，专门用于RTL（寄存器传输级）设计。它通过Git Worktree技术管理每一个RTL问题，据称在基准测试中达到100%完成率。
@@ -284,7 +284,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### KiCad PCB设计工具上线浏览器版
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-06/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-06/product-04.jpg)
 
 
 **是什么**：开源PCB EDA套件KiCad如今支持直接在浏览器中运行，兼容Firefox和Chrome，零安装即可使用全套功能。
@@ -297,7 +297,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### 百度推出‘无限OCR’：一次处理数十页文档
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-06/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-06/product-05.jpg)
 
 
 **是什么**：百度发布的“无限OCR”通过模拟人类遗忘机制的内存管理，实现对文档的批量识别：一次扫描即可处理数十页，而非逐页。
@@ -310,7 +310,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### Google推出AI独立宣言广告庆美国建国250周年
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-07-06/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-07-06/product-06.jpg)
 
 
 **是什么**：Google为纪念美国建国250周年推出广告，主题为“国父们用Google Workspace写独立宣言”，展示AI辅助写作的历史想象。
@@ -331,7 +331,7 @@ OpenAI 开源了一款名为 `codex-plugin-cc` 的插件，允许开发者从 Cl
 
 ### 模型越强，工具越差
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-06/opinion-00.jpg)
 
 
 Armin Ronacher 在调试中明确观察到，升级到新版 AI 模型（如 GPT-5）后，原有的调试工具（断点、日志分析）反而频繁失效。**是什么**：更强模型改变了输入输出的统计分布，而旧工具的训练数据基于上一代模型特性，导致预测偏差扩大。**关键点**：模型能力与工具适应性之间存在结构性错配，追求参数规模的同时忽略了工具链的配套演进。**为什么重要**：这一现象警示业界，模型迭代不能只关注 benchmark，而应同步改造开发工作流，否则模型进步可能成为生产力陷阱——升级反而不如不升。
@@ -340,7 +340,7 @@ Armin Ronacher 在调试中明确观察到，升级到新版 AI 模型（如 GPT
 
 ### 闭源AI模型让实验室窥视你的业务
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-06/opinion-01.jpg)
 
 
 Mistral CEO Arthur Mensch 指出，使用闭源专有模型等于给 AI 公司“前排座位”观察企业业务流程，数据隐私面临实质性风险。**是什么**：每次 API 调用都向模型提供商暴露查询内容、使用模式，甚至能逐步重构出企业的知识图谱。**关键点**：开源模型虽能避免这种监视，但性能和便利性仍有差距；企业需要权衡安全与效率，尤其是当 AI 嵌入核心业务后。**为什么重要**：数据主权正成为战略选择，闭源风险可能超过收益，这解释了为何开源模型在合规要求高的行业快速渗透。
@@ -355,7 +355,7 @@ Seldo 的文章用数据和案例论证，AI 代编码能力已使企业大量�
 
 ### Qwen前负责人：杂交思维错误，押注Agent路线
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-06/opinion-03.jpg)
 
 
 Junyang Lin 反思 Qwen3 的混合推理模式，认为将大小模型混合并非正确方向，未来应全力发展 Agent。**是什么**：Qwen3 尝试融合不同规模模型的推理能力，但实际效果不如预期，反而增加系统复杂度。**关键点**：Agent 路线强调自主规划、工具调用和记忆，更符合通用智能需求。**为什么重要**：这一路线转变可能影响中国大模型行业的技术选择，也反映业界从“参数竞赛”真正转向“应用落地”。
@@ -364,7 +364,7 @@ Junyang Lin 反思 Qwen3 的混合推理模式，认为将大小模型混合并�
 
 ### 扎克伯格对内称AI代理进展不够快
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-06/opinion-04.jpg)
 
 
 Meta 内部会议中，扎克伯格坦率表示 AI 代理（如智能助手）未达到预期速度，团队需要加快突破。**是什么**：尽管 Meta 投入大量资源，AI 代理在自主性、可靠性上仍薄弱，用户采纳率不高。**关键点**：扎克伯格的焦虑反映头部公司对 agentic 进展的普遍不满，技术瓶颈未解。**为什么重要**：Meta 的方向选择会影响整个硅谷投资重点，若代理路线受挫，可能迫使行业转向更务实的工具型 AI。
@@ -373,7 +373,7 @@ Meta 内部会议中，扎克伯格坦率表示 AI 代理（如智能助手）�
 
 ### 好莱坞一边抵制Seedance一边偷偷使用
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-06/opinion-05.jpg)
 
 
 字节跳动视频生成模型 Seedance 引发版权争议，好莱坞公开要求禁用，但内部仍私下使用以降低成本。**是什么**：Seedance 可快速生成视频片段，好莱坞担心侵权诉讼，但制作团队发现效率优势不可忽视。**关键点**：行业自相矛盾暴露 AI 视频工具的现实价值与法律滞后之间的矛盾。**为什么重要**：这预示 AI 在创意产业的渗透注定不可逆，但监管框架亟待建立，否则将陷入“口头抵制、实际复用”的尴尬。
@@ -382,7 +382,7 @@ Meta 内部会议中，扎克伯格坦率表示 AI 代理（如智能助手）�
 
 ### AI私立学校让富裕家庭放弃传统教育
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-07-06/opinion-06.jpg)
 
 
 美国出现 AI 驱动的私立学校，每个学生配备私人 AI 导师，个性化学习路径，吸引高收入家庭脱离传统体系。**是什么**：学校利用 LLM 生成定制课程和实时反馈，教师角色转向辅导而非授课。**关键点**：AI 教育可能加剧社会不平等，但也可能倒逼公立系统反思效率。**为什么重要**：若证明有效，AI 将重塑教育范式，传统学校需重新定位价值——从知识传授转向社交与品格培养。
@@ -391,7 +391,7 @@ Meta 内部会议中，扎克伯格坦率表示 AI 代理（如智能助手）�
 
 ### 70年前香农就在用‘端侧私人LLM’
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-07-06/opinion-07.jpg)
 
 
 历史回顾：数学家克劳德·香农在 1950 年代用纸条和电路构建对话系统，模拟日常用语，完全本地运行，堪称最早的私人语言模型。**是什么**：香农与妻子的对话实验体现了端侧、隐私、个性化的设计思想。**关键点**：当时没有算力瓶颈，香农反而选择了最轻量的实现。**为什么重要**：在当下追求大模型的狂热中，香农的实验提醒我们：回归基础设计原则——隐私、可控、本地化——或许比盲目堆参数更可持续。
@@ -408,7 +408,7 @@ Meta 内部会议中，扎克伯格坦率表示 AI 代理（如智能助手）�
 
 ### HuggingFace 发布 speech-to-speech 开源语音 Agent 框架
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-06/opensource-00.jpg)
 
 
 **是什么**：HuggingFace 推出可本地部署的 speech-to-speech AI 工具，支持多模型嵌入式语音代理。**关键点**：传统语音 Agent 依赖云端 API，该框架实现本地运行，延迟更低且隐私更好，开发者可自由组合语音识别、理解、合成的不同模型。**为什么重要**：语音交互是 Agent 的下一个前沿，该开源方案降低了门槛——你可以在自己的硬件上运行实时对话、语音助手等应用，不再被供应商锁定。
@@ -417,7 +417,7 @@ Meta 内部会议中，扎克伯格坦率表示 AI 代理（如智能助手）�
 
 ### pxpipe：将文本嵌入 PNG 减少 70% Token 消耗
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-06/opensource-01.jpg)
 
 
 **是什么**：开源工具通过将文本压缩到图片中，大幅降低 Claude Code/Fable 的 API 成本。**关键点**：利用 PNG 像素编码文本，比纯文本传输更高效，实测减少约 70% token 消耗。**为什么重要**：API token 成本是当前 AI 应用的主要支出，这种“曲线救国”方式为开发者提供了低成本替代方案——只需转换输入格式，不做架构改动即可省钱。
@@ -426,7 +426,7 @@ Meta 内部会议中，扎克伯格坦率表示 AI 代理（如智能助手）�
 
 ### sqlite-utils 4.0rc2 发布，大部分由 Claude Fable 编写
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-06/opensource-02.jpg)
 
 
 **是什么**：Simon Willison 用 Claude Fable 以约 150 美元成本完成了 sqlite-utils 4.0 的大部分开发工作。**关键点**：验证了 AI 既能生成代码又能维护演进，开发成本极低——Willison 反复利用同一对话上下文，将 AI 视为协作伙伴而非一次性生成器。**为什么重要**：这意味着经验丰富的开发者可以借助 AI 大幅提升产出，同时保持代码质量；也预示着开源项目的维护模式可能改变——用 AI 替代部分人工维护，让单人项目也能快速迭代。
@@ -435,7 +435,7 @@ Meta 内部会议中，扎克伯格坦率表示 AI 代理（如智能助手）�
 
 ### Strix：开源 AI 渗透测试工具自动发现应用漏洞
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-06/opensource-03.jpg)
 
 
 **是什么**：利用 AI 自动化识别 Web 应用安全漏洞的渗透测试工具。**关键点**：AI 驱动漏洞扫描，能够模拟攻击路径、生成报告，支持常见 Web 漏洞类型（XSS、SQL 注入等）。**为什么重要**：安全测试长期依赖人工，Strix 降低了入门门槛；但需注意，这类工具也可能被用于恶意用途，开源社区需要配套的使用规范。
@@ -444,7 +444,7 @@ Meta 内部会议中，扎克伯格坦率表示 AI 代理（如智能助手）�
 
 ### Chrome DevTools MCP 发布：AI 编程代理可直接调试浏览器
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-06/opensource-04.jpg)
 
 
 **是什么**：Google 开源 Chrome DevTools 的 MCP 服务器，让 AI 代理获得开发者工具能力。**关键点**：通过模型上下文协议（MCP）暴露 DevTools 功能，AI 可控制调试、DOM 操作、网络监视等。**为什么重要**：目前 AI 编程主要基于静态代码分析，此工具赋予 AI 动态调试能力，可能引发前端开发工作流变革——Agent 可以直接在浏览器中验证代码效果、修复样式 bug。
@@ -453,7 +453,7 @@ Meta 内部会议中，扎克伯格坦率表示 AI 代理（如智能助手）�
 
 ### Alibaba 开源 Page-Agent：自然语言操控网页 GUI
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-06/opensource-05.jpg)
 
 
 **是什么**：用自然语言控制网页界面，支持复杂交互任务（如填写表单、跨页面操作）。**关键点**：基于视觉理解+代理决策，可点击、填写、导航，无需依赖 DOM 结构。**为什么重要**：网页自动化是 RPA 和 Agent 的重要场景，开源方案让中小企业也能定制自动化流程——用自然语言描述操作步骤，低成本实现浏览器自动化。
@@ -462,7 +462,7 @@ Meta 内部会议中，扎克伯格坦率表示 AI 代理（如智能助手）�
 
 ### Caveman：Claude Code 技能削减 65% Token 用量
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-06/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-06/opensource-06.jpg)
 
 
 **是什么**：通过让 AI 使用原始语言沟通，大幅减少输出 token 数。**关键点**：Caveman 指令要求 AI 用极简语言回复，类似“洞穴人”风格（省略连接词、精简措辞），实测 token 量降低 65%。**为什么重要**：token 成本与输出长度成正比，在不牺牲能力的情况下压缩输出，比 pxpipe 更直接——但效果依赖于任务类型，对需要自然语言解释的场景可能不适用。

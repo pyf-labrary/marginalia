@@ -33,7 +33,7 @@ sections:
 
 ### 谷歌深夜发布Gemini 3.5：速度提升4倍，年省超10亿美元
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-24/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-24/model_release-00.jpg)
 
 
 谷歌CEO皮查伊亲自站台，宣布 Gemini 3.5 正式发布。核心卖点是推理速度比前代快4倍，直接换算成基础设施成本，每年可节省超10亿美元。据内部消息，该模型已替代旧版本支撑谷歌内部多个核心业务线。
@@ -44,7 +44,7 @@ sections:
 
 ### 英伟达开源Nemotron扩散语言模型，文本生成速度接近“光速”
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-24/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-24/model_release-01.jpg)
 
 
 NVIDIA 发布 Nemotron-Labs 扩散语言模型，采用扩散方法替代自回归，将文本生成速度推至接近理论极限。Hugging Face 官方博客称该模型在长文本生成任务上延迟降低一个数量级。
@@ -55,7 +55,7 @@ NVIDIA 发布 Nemotron-Labs 扩散语言模型，采用扩散方法替代自回�
 
 ### 阿里Qwen模型自主运行35小时，优化自研芯片代码
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-05-24/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-05-24/model_release-02.jpg)
 
 
 阿里公布最新进展：其 AI 模型 Qwen 连续自主运行 35 小时，为自家定制芯片优化底层代码，未有人工干预。据 The Decoder 报道，该模型在编译开关、内存布局等环节进行了数千次尝试，最终生成性能提升明显的补丁。
@@ -66,7 +66,7 @@ NVIDIA 发布 Nemotron-Labs 扩散语言模型，采用扩散方法替代自回�
 
 ### Anthropic发布Claude Mythos预览版：捉bug速度超过修复能力
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-05-24/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-05-24/model_release-03.jpg)
 
 
 Anthropic 推出 Claude Mythos Preview，专攻代码漏洞发现。实测中其发现 bug 的数量和速度远超开发团队修复能力，导致安全团队被迫优先排序漏洞等级，甚至需要暂停部分功能以避免补丁堆积。
@@ -87,7 +87,7 @@ Anthropic 推出 Claude Mythos Preview，专攻代码漏洞发现。实测中其
 
 ### DeepSeek V4-Pro API永久降价75%，AGI优先于盈利
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-24/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-24/company-00.jpg)
 
 
 DeepSeek官方今日宣布V4-Pro模型API价格永久调整为原价的1/4，即每百万token的输入/输出价格降至原先的25%。创始人梁文锋在内部信中明确表示，公司第一目标是通用人工智能（AGI）研究，而非短期盈利。这一策略与当前主流AI公司普遍追求商业化的路径形成鲜明对比。考虑到V4-Pro在多项基准测试中已与GPT-4o持平，降价可能引发新一轮API价格战，并进一步挤压中小模型厂商的生存空间。
@@ -96,7 +96,7 @@ DeepSeek官方今日宣布V4-Pro模型API价格永久调整为原价的1/4，即
 
 ### 微软突然取消Claude Code许可证，开发者社区炸锅
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-24/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-24/company-01.jpg)
 
 
 微软开始撤销开发者此前购买的Claude Code许可证，受影响用户反馈未获得提前通知或退款。Claude Code是Anthropic推出的代码生成工具，微软此举被普遍解读为与Anthropic的竞争——微软此前已通过GitHub Copilot和Azure OpenAI服务布局代码智能，Claude Code直接威胁其生态。开发者社群在Reddit和X平台上激烈讨论，部分用户称将转向其他平台。事件折射出大型平台在AI工具授权上的话语权与不确定性。
@@ -105,7 +105,7 @@ DeepSeek官方今日宣布V4-Pro模型API价格永久调整为原价的1/4，即
 
 ### OpenAI每赚1美元亏1.22美元，财务压力持续
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-24/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-24/company-02.jpg)
 
 
 OpenAI向外界披露最新财务数据：即使剔除股权激励成本，每收入1美元仍净亏损1.22美元。这意味着公司运营层面每赚1美元要烧掉2.22美元的现金等价物。此前OpenAI已通过多轮融资和变卖资产维持运转，但长期亏损模型能否支撑到大规模盈利仍存争议。该数据再次引发市场对AI公司“烧钱换增长”模式的质疑，并可能影响其未来估值。
@@ -114,7 +114,7 @@ OpenAI向外界披露最新财务数据：即使剔除股权激励成本，每�
 
 ### 美团外卖前负责人获投餐饮具身模型，不造人形机器人
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-24/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-24/company-03.jpg)
 
 
 元节智能宣布完成千万级种子轮融资，团队核心为美团外卖前高管。公司明确不涉足人形机器人，而是聚焦餐饮后厨场景，研发具身模型（embodied model）驱动的协作机器人，解决炒菜、配餐等重复性劳动。投融资逻辑显示：具身智能正从“泛化机器人”转向垂直场景落地，餐饮后厨因成本敏感、劳动力短缺而成为首批商业化窗口。
@@ -137,7 +137,7 @@ GPT-5之后，模型行为控制一直是安全与可解释性的核心瓶颈。
 
 ### CNA：无训练、无权重修改的模型行为引导
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-24/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-24/research-00.jpg)
 
 
 **是什么**：对比神经元归因（Contrastive Neuron Attribution, CNA）是一种无需训练或修改权重即可干预LLM行为的技术。它通过对比正向与负向样本的神经元激活模式，识别出控制特定行为的稀疏MLP回路，然后直接消融这些回路以改变模型输出。
@@ -150,7 +150,7 @@ GPT-5之后，模型行为控制一直是安全与可解释性的核心瓶颈。
 
 ### ViMax：从剧本到视频，全流程智能体框架
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-24/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-24/research-01.jpg)
 
 
 **是什么**：香港大学推出的ViMax是一个全能型智能体视频生成框架，将导演、编剧、制片角色整合进单一端到端系统。用户只需输入一句话概念，ViMax即可自动完成场景构思、分镜设计、角色调度并直接生成视频。
@@ -173,7 +173,7 @@ GPT-5之后，模型行为控制一直是安全与可解释性的核心瓶颈。
 
 ### 亲测谷歌AI眼镜：Gemini加持但未完全成熟
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-24/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-24/product-00.jpg)
 
 
 TechCrunch 体验了谷歌的 Android XR 眼镜原型机，核心亮点是 Gemini 驱动的实时翻译、导航和消息叠加等 AR 功能——信息直接投射在用户视野中，无需掏出手机。关键点：翻译准确度尚可，但延迟和视野边界仍有感知；导航时画面稳定性不足，长期佩戴有轻微眩晕感。为什么重要：这是谷歌继 Google Glass 后最大的 AR 硬件押注，虽然“几乎可用”意味着离大规模消费级还有距离，但已比前代产品有质的飞跃，尤其对开发者来说是明确的信号——AI AR 眼镜的交互范式正在成型。
@@ -182,7 +182,7 @@ TechCrunch 体验了谷歌的 Android XR 眼镜原型机，核心亮点是 Gemin
 
 ### 星巴克叫停AI库存盘点：上线9个月即废
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-24/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-24/product-01.jpg)
 
 
 星巴克终止在北美门店使用AI拍照盘点库存系统，原因是“频繁出错”。系统本意是自动识别货架上的咖啡豆、杯盖等物品数量并同步供应链，但实际运行中经常误判（比如把空货架识别为满货）、漏识，导致店员仍需手动核验。为什么重要：这不是技术本身的问题，而是场景适配的典型失败——AI 在受控环境下可以很准，但门店光线、货架拥挤度、商品摆放方式的多变，让 CV 模型不堪其扰。对任何想在零售场景部署 AI 视觉的公司，这叫“上车前先摸清路况”。
@@ -191,7 +191,7 @@ TechCrunch 体验了谷歌的 Android XR 眼镜原型机，核心亮点是 Gemin
 
 ### ChatGPT推出PowerPoint插件，但警告会误删内容
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-24/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-24/product-02.jpg)
 
 
 OpenAI 发布了 ChatGPT 的 PowerPoint 插件，用户可通过自然语言指令生成或编辑幻灯片。但附带警告：“可能意外删除用户内容。”关键点：该插件内置了内容安全审查机制，在判定某些文本“敏感”或“不符合政策”时，会直接移除，且移除行为可能不通知用户。为什么重要：这是 AI 工具“过度干预”的新案例。对产品经理而言，AI 插件既要增强生产力，又需避免“替用户做决定”的越权——OpenAI 的解决方案是贴警告，但这是不够的。用户信任一旦因意外删除而造成裂痕，修复成本远高于技术改进成本。
@@ -200,7 +200,7 @@ OpenAI 发布了 ChatGPT 的 PowerPoint 插件，用户可通过自然语言指�
 
 ### Anthropic推出MCP隧道，私有代理安全访问企业内网
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-24/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-24/product-03.jpg)
 
 
 Anthropic 发布 Model Context Protocol 隧道，允许私有 AI 代理安全地访问企业内部系统（如数据库、API、知识库），同时保持数据不出域。关键点：MCP 是 Anthropic 去年推出的开放协议，此次的“隧道”相当于增加了企业级数据通道加密和鉴权层，代理可以在内网执行检索、查询、编写报告等任务。为什么重要：企业级 AI 落地的最大障碍是数据安全，MCP 隧道提供了标准化的安全访问方式，直接对标微软 Copilot 等产品背后的连接器。对于想构建“私有 agent”的团队，这是值得关注的架构参考。
@@ -209,7 +209,7 @@ Anthropic 发布 Model Context Protocol 隧道，允许私有 AI 代理安全地
 
 ### OpenAI推出Appshots：任意Mac窗口变Codex上下文
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-24/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-24/product-04.jpg)
 
 
 OpenAI 发布 Appshots 功能，允许 Codex（其编程 AI 模型）将当前 Mac 窗口的截图作为编程上下文。关键点：开发者可以截取设计稿、错误日志、文档页面等，Codex 自动识别窗口内容并据此生成或补全代码。为什么重要：这打破了代码和视觉上下文之间的壁垒，尤其对前端开发者来说，截图 → 生成 UI 代码的流程变得更加自然。同时也说明，多模态上下文正在从“手动传图”进化到“自动感知”。
@@ -218,7 +218,7 @@ OpenAI 发布 Appshots 功能，允许 Codex（其编程 AI 模型）将当前 M
 
 ### 法拉利用IBM AI打造F1超级粉丝体验
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-24/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-24/product-05.jpg)
 
 
 Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞察、实时预测和交互式体验。关键点：系统分析历史数据和实时赛道状态，生成每位车手的超车概率、策略建议等信息，并通过 AR 或聊天界面推送给粉丝。为什么重要：体育赛事的 AI 应用正从“后台数据分析”走向“前台观众交互”，法拉利的目标是把 F1 观赛从被动收视变成主动参与。对产品经理来说，这是如何用 AI 重构原有体验的示范——不一定需要颠覆性技术，但需要懂场景。
@@ -227,7 +227,7 @@ Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞�
 
 ### 中经社发布“十五五”产业研究智能体，可自动生成报告
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-24/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-24/product-06.jpg)
 
 
 新华社下属中经社推出一个智能体，能够自主完成产业链分析报告，涵盖数据采集、图表生成、文字撰写全流程。关键点：智能体内置了权威经济数据源，支持用户指定行业维度，输出完整 PDF 报告。为什么重要：这是国内权威机构对 AI 辅助研究的一次官方背书。相比通用 LLM，这类垂直领域智能体在数据可信度和报告格式上更有优势，但同时也提出了新问题：AI 生成的研究报告如何追责、如何辨认事实与幻觉？
@@ -236,7 +236,7 @@ Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞�
 
 ### 联想天禧AI 4.0实现虚拟上下文窗口10倍扩容
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-05-24/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-05-24/product-07.jpg)
 
 
 联想发布天禧 AI 4.0，声称通过“虚拟上下文窗口”技术将大模型的长程推理能力扩展到 10 倍。关键点：具体技术路径是通过外部记忆机制动态管理 token 优先级，从而在有限显存下处理更长序列。为什么重要：上下文窗口是当前大模型的核心瓶颈之一，10 倍扩容若真能稳定实现，将直接降低长文档分析、复杂对话等场景的部署成本。但“虚拟”二字暗示可能存在精度损失，需要观察实际效果。
@@ -255,7 +255,7 @@ Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞�
 
 ### AI复活坠机飞行员声音，美政府紧急屏蔽数据
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-24/opinion-00.jpg)
 
 
 是什么：美国国家运输安全委员会（NTSB）因用户利用AI从坠机调查文档中的频谱图重建飞行员声音，暂时封锁了其公共文档访问系统。关键点：用户通过开源语音合成工具，将频谱图转换为近似音色和语调的合成音频，引发隐私与数据滥用担忧。为什么重要：这暴露了AI对“残存数字痕迹”的逆向重建能力，即使是非敏感数据（如波形图）也可能被武器化，迫使监管机构重新评估公开数据的安全边界。
@@ -264,7 +264,7 @@ Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞�
 
 ### Google CEO称链接只是搜索的一部分，AI答案已成核心
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-24/opinion-01.jpg)
 
 
 是什么：皮查伊在公开场合表示，链接不再是搜索的唯一目标，AI生成的直接答案已成为用户核心需求。关键点：Wired评论指出，即使讨厌AI，用户也离不开谷歌的AI搜索功能；同时谷歌搜索的“disregard”功能疑似被破坏。为什么重要：这标志着搜索体验从“列表导航”向“答案即服务”的根本转变，对SEO行业、内容创作者和传统搜索竞争对手形成长期冲击。
@@ -273,7 +273,7 @@ Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞�
 
 ### 特朗普取消AI安全测试行政令签署活动
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-24/opinion-02.jpg)
 
 
 是什么：特朗普原计划签署关于AI安全测试的行政令，但因顶级AI公司CEO集体缺席而临时取消。关键点：多家主要AI公司高层拒绝出席白宫活动，担忧行政令可能增加合规成本并影响研发速度。为什么重要：事件凸显美国联邦政府在AI监管上缺乏行业共识和执行力，空有政治表态却无企业配合，政策落地的难度超出预期。
@@ -282,7 +282,7 @@ Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞�
 
 ### 微软报告AI比雇佣人类员工更昂贵
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-24/opinion-03.jpg)
 
 
 是什么：微软内部研究显示，当前用AI代理（agentic）完成某些任务的总成本高于直接雇佣人类员工。关键点：成本主要来自推理计算、数据工程和人工干预，尚未达到规模化降本点。为什么重要：在行业狂热追捧AI替代劳动力的当下，该报告提供了一个冷静提醒：AI的经济性并非天然成立，尤其在非标准化、低容错率的任务中，人类仍然更具成本优势。
@@ -291,7 +291,7 @@ Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞�
 
 ### 纽约客：Altman赢得对Musk官司，但我们都输了
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-24/opinion-04.jpg)
 
 
 是什么：Sam Altman在与Elon Musk的法律诉讼中获胜，但《纽约客》评论称，司法判决对AI行业监管和透明度产生了负面长期影响。关键点：法院倾向于保护企业自主创新，降低公开披露责任，可能削弱公众对AI安全的知情权。为什么重要：这场判决预示着未来AI公司可能更少被要求公开安全细节，监管透明度倒退，行业内部审计与外部信任之间的裂隙加大。
@@ -300,7 +300,7 @@ Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞�
 
 ### AI在书中插入虚假引用，作者仍坚持使用AI
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-24/opinion-05.jpg)
 
 
 是什么：作家Steven Rosenbaum的新书被AI添加了不准确的引用，但他仍认为AI辅助写作利大于弊。关键点：AI生成了看似合理但完全虚构的文献来源，作者未经仔细核验即出版。为什么重要：这反映了当前生成式AI在内容创作中的“幻觉”问题尚未解决，而作者对工具效率的偏好可能正在降低事实准确性标准，对出版行业和知识传播构成风险。
@@ -309,7 +309,7 @@ Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞�
 
 ### Cloudflare CEO：建设者和销售者安全，AI将取代衡量者
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-05-24/opinion-06.jpg)
 
 
 是什么：Cloudflare CEO Matthew Prince表示，AI的主要威胁不是针对创造者（builders）和销售者（sellers），而是针对“衡量者”（measurers）——那些负责中间层指标测量和汇报的岗位。关键点：这类工作高度依赖数据统计和模板化报告，容易被AI自动化替代。为什么重要：王子提供了一个简洁的组织分层框架，帮助职场人判断自身岗位风险：远离单纯的“统计与监控”角色，转向创造或交易价值。
@@ -318,7 +318,7 @@ Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞�
 
 ### 昆仑万维方汉：五类人AI替代不了，企业做第二名最稳妥
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-05-24/opinion-07.jpg)
 
 
 是什么：在AIGC2026大会上，昆仑万维方汉提出五类不会被AI替代的人类角色，并认为企业应该追求“第二名”的竞争策略。关键点：五类包括：创意突破者、复杂决策者、情感连接者、伦理判断者、跨界整合者；“第二名”策略指快速跟进领头羊，减少试错成本。为什么重要：方汉的观点为企业AI转型提供了务实路线图——不追求技术领先，而是利用成熟模型在应用层建立差异化。
@@ -337,7 +337,7 @@ Scuderia Ferrari HP 与 IBM 合作，利用 AI 为 F1 车迷提供个性化洞�
 
 ### Anthropic官方Claude Code插件目录上线GitHub
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-24/opensource-00.jpg)
 
 
 Anthropic 在 GitHub 上建立了 `claude-plugins-official` 仓库，作为官方管理的 Claude Code 插件事务目录。开发者可以在此发现、提交和审核高质量插件，类似于 VS Code 的扩展市场，但更侧重 agentic 工作流（如数据访问、代码操作）。
@@ -348,7 +348,7 @@ Anthropic 在 GitHub 上建立了 `claude-plugins-official` 仓库，作为官�
 
 ### Chrome DevTools MCP开源：为编码代理提供浏览器调试能力
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-24/opensource-01.jpg)
 
 
 Chrome 团队发布了 `chrome-devtools-mcp`，一个基于 Model Context Protocol (MCP) 的服务，允许 AI 编码代理直接连接并控制 Chrome DevTools。这意味着代理可以像人类开发者一样执行 DOM 检查、网络面板分析、性能审计等操作，而不仅仅是输出文本代码。
@@ -367,7 +367,7 @@ Chrome 团队发布了 `chrome-devtools-mcp`，一个基于 Model Context Protoc
 
 ### Meta开源SAM 3：下一代图像分割模型
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-24/opensource-03.jpg)
 
 
 Meta 发布了 `sam3`，相比 SAM 2，在分割精度、多尺度目标识别和预训练权重泛化能力上均有提升。模型依旧以 ViT 为骨干，但训练数据量和训练策略有所升级，支持更细粒度的 mask 输出。
@@ -378,7 +378,7 @@ Meta 发布了 `sam3`，相比 SAM 2，在分割精度、多尺度目标识别�
 
 ### NousResearch开源Hermes Agent：可成长的AI代理
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-24/opensource-04.jpg)
 
 
 `hermes-agent` 是一个基于 NousResearch 的 Hermes 模型的代理框架，强调“成长性”：支持插件动态加载、长期记忆持久化、自定义工具调用以及多轮对话中的上下文扩展。
@@ -389,7 +389,7 @@ Meta 发布了 `sam3`，相比 SAM 2，在分割精度、多尺度目标识别�
 
 ### 腾讯开源TencentDB Agent Memory：4层本地记忆流水线
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-24/opensource-05.jpg)
 
 
 TencentDB Agent Memory 是一个完全在本地运行的 AI 代理记忆系统，包含四层结构：符号短时记忆、任务画布、长期存储索引和语义检索。灵感来自认知架构，但针对数据库场景优化。
@@ -400,7 +400,7 @@ TencentDB Agent Memory 是一个完全在本地运行的 AI 代理记忆系统�
 
 ### Perplexity开源Bumblebee：只读的供应链安全检查工具
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-05-24/opensource-06.jpg)
 
 
 Bumblebee 是 Perplexity 内部使用的开发者端点库存扫描器，现已开源。它以只读方式扫描组织内所有暴露的 API 端点、第三方依赖、开发环境，识别潜在供应链攻击面。
@@ -411,7 +411,7 @@ Bumblebee 是 Perplexity 内部使用的开发者端点库存扫描器，现已�
 
 ### Models.dev：开源AI模型规格与定价数据库
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-24/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-24/opensource-07.jpg)
 
 
 `models.dev` 是一个开源数据库，收录了数百个 AI 模型的技术规格（参数量、上下文长度、推理速度）、定价（API 调用价格、硬件成本）和能力分类（文本、图像、多模态）。开发者可以通过 API 或 CLI 查询，便于做模型选型对比。

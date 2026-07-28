@@ -33,7 +33,7 @@ sections:
 
 ### GPT-5.5-Cyber：AI安全攻防战升级
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-06-24/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-06-24/model_release-00.jpg)
 
 
 **是什么**：OpenAI发布GPT-5.5-Cyber，一个专为网络安全优化的模型变体，在针对漏洞分析、恶意代码检测和渗透测试的基准中超越Anthropic Mythos。同时启动“Patch the Planet”计划，目标是用AI自动识别并修复开源软件中的安全漏洞。
@@ -46,7 +46,7 @@ sections:
 
 ### Cursor自研模型+Git平台+移动端，编程工具全面平台化
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-24/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-24/model_release-01.jpg)
 
 
 **是什么**：AI编程工具Cursor发布自研AI模型（未公布具体参数），同时推出全新Git平台和移动端应用，从单一插件向集成开发环境（IDE）平台转型。
@@ -59,7 +59,7 @@ sections:
 
 ### 字节Seedance 2.5：AI视频生成突破30秒
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-24/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-24/model_release-02.jpg)
 
 
 **是什么**：字节跳动发布Seedance 2.5视频生成模型，支持生成最长30秒的连续视频，且画面一致性和动作流畅度达到新高度。
@@ -72,7 +72,7 @@ sections:
 
 ### 豆包2.1：Agent自主完成芯片设计代码
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-24/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-24/model_release-03.jpg)
 
 
 **是什么**：字节跳动旗下豆包模型升级至2.1版本，其Agent模式可自主执行长达18小时的芯片设计任务，完成从架构到RTL代码的编写，编程能力接近Opus 4.7。
@@ -95,7 +95,7 @@ sections:
 
 ### Meta员工数据泄露，叫停AI跟踪计划
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-24/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-24/company-00.jpg)
 
 
 **是什么**：Meta内部监控计划“Knowledge Graph”收集员工键盘输入、会议录音等数据用于训练AI模型，但因安全漏洞导致部分数据泄露，公司被迫暂停该项目。
@@ -108,7 +108,7 @@ sections:
 
 ### Google DeepMind联手A24，7500万试水AI电影
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-24/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-24/company-01.jpg)
 
 
 **是什么**：Google DeepMind与独立电影公司A24（《瞬息全宇宙》制片方）达成合作，共同投入7500万美元，研发AI电影制作工具，涵盖剧本生成、虚拟场景搭建和后期特效。
@@ -121,7 +121,7 @@ sections:
 
 ### SpaceX签下Reflection AI，每月1.5亿算力供货
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-24/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-24/company-02.jpg)
 
 
 **是什么**：SpaceX与开源AI实验室Reflection AI签订长期算力合同，从7月起每月提供价值约1.5亿美元的Nvidia GB300芯片算力，合同持续至2029年。
@@ -134,7 +134,7 @@ sections:
 
 ### Groq完成6.5亿融资，高管重组后押注云业务
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-24/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-24/company-03.jpg)
 
 
 **是什么**：AI芯片公司Groq确认完成6.5亿美元融资，在Nvidia上月以200亿美元“非收购”交易（实质为人才与资产交易）后，Groq重新调整管理层并扩大云计算业务。
@@ -147,7 +147,7 @@ sections:
 
 ### Oracle裁员21000人，债务驱动的AI基建
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-24/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-24/company-04.jpg)
 
 
 **是什么**：Oracle宣布裁员约21000人（占员工总数约7%），节省资金用于扩建AI数据中心基础设施，公司债务规模随之攀升。
@@ -160,7 +160,7 @@ sections:
 
 ### Microsoft在德州建2GW数据中心，自带天然气发电
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-24/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-24/company-05.jpg)
 
 
 **是什么**：Microsoft在德克萨斯州开工建设一座2GW规模的数据中心，并自建配套天然气发电站，以规避当地电网不稳定对AI训练的影响。
@@ -173,7 +173,7 @@ sections:
 
 ### Anthropic与美光联合研发AI内存架构
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-06-24/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-06-24/company-06.jpg)
 
 
 **是什么**：Anthropic与美光科技宣布合作，共同设计面向AI工作负载的新一代存储/内存架构，旨在优化模型训练中的数据搬运效率。
@@ -186,7 +186,7 @@ sections:
 
 ### 正行创新获近亿美元天使轮，瞄准物理智能
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-24/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-24/company-07.jpg)
 
 
 **是什么**：中国AI创业公司“正行创新”完成近亿美元天使轮融资，采用“数据-模型-基础设施”协同路径，目标实现“物理智能”——即AI在真实物理世界中自主操作的能力。
@@ -209,7 +209,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### ParallelKernelBench：LLM 在高性能并行编程上的真实水平
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-24/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-24/research-00.jpg)
 
 
 **是什么**：Together AI 推出 ParallelKernelBench，包含 87 个真实多 GPU CUDA 内核编写任务，测试模型能否自动生成高效的并行代码。每个任务要求模型理解分布式内存、同步和通信模式。
@@ -222,7 +222,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### Fugu：用多个小模型逼近头部闭源模型
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-06-24/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-06-24/research-01.jpg)
 
 
 **是什么**：日本 AI 创企 Sakana AI 推出 Fugu 系统，通过编排多个较小语言模型协同工作，在多个基准上匹配或接近 Anthropic 的 Fable 和 Mythos 模型。
@@ -235,7 +235,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### 提示注入本质是“角色混淆”
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-06-24/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-06-24/research-02.jpg)
 
 
 **是什么**：一篇新学术论文将提示注入攻击重新定义为“角色混淆”（role confusion），并提出了统一分析框架。
@@ -248,7 +248,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### 随机化位置编码提升长序列泛化
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-06-24/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-06-24/research-03.jpg)
 
 
 **是什么**：arXiv 上最新论文提出 Randomized YaRN，一种在微调时随机化位置编码插值参数的方法，旨在提升 LLM 对超长上下文的推理泛化能力。
@@ -271,7 +271,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### Anthropic Claude Tag上线Slack，持续学习企业语境
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-24/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-24/product-00.jpg)
 
 
 **是什么**：Anthropic推出Claude Tag，一个嵌入Slack的AI队友，能持续学习企业组织知识、工作流和上下文，提高团队生产力。
@@ -294,7 +294,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### Google默认Interactions API，统一Gemini Agent调用
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-24/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-24/product-02.jpg)
 
 
 **是什么**：Google宣布Interactions API成为Gemini模型和智能体的默认接口，简化开发者在多轮对话和工具调用上的使用。
@@ -307,7 +307,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### xAI推出Grok Skills新功能，升级工具调用API
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-24/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-24/product-03.jpg)
 
 
 **是什么**：xAI发布Grok Skills功能，允许开发者构建技能，同时更新了用于工具调用的Responses API，增强Agent能力。
@@ -320,7 +320,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### 腾讯QQ邮箱内测Agently Mail，专为AI Agent设计
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-24/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-24/product-04.jpg)
 
 
 **是什么**：腾讯宣布QQ邮箱开始内测Agently Mail，这是一款独立于个人邮箱、可由AI Agent自主收发邮件的功能，确保安全可控。
@@ -343,7 +343,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### Google LiteRT-LM让Gemma 4在端侧推理速度翻倍
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-06-24/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-06-24/product-06.jpg)
 
 
 **是什么**：谷歌发布LiteRT-LM，通过多token预测将Gemma 4的本地推理速度提升最高2.2倍，适用于移动设备。
@@ -366,7 +366,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### 安全警告反噬：Anthropic或成AI出口管制首案
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-24/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-24/opinion-00.jpg)
 
 
 **是什么**：外媒分析指出，Anthropic对高级AI风险的公开警告远超OpenAI，可能使其自身成为美国AI模型出口管制政策的首位受害者——其激进的“风险优先”立场反而为监管机构提供了限制其模型出口的依据。
@@ -379,7 +379,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### 五眼联盟警告：前沿AI将重新定义进攻性网络作战
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-24/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-24/opinion-01.jpg)
 
 
 **是什么**：五眼情报联盟（美国、英国、加拿大、澳大利亚、新西兰）发布报告称，前沿AI模型可能在几个月内根本性改变进攻性网络攻击的能力——从漏洞发现到自动化渗透，时间窗口被大幅压缩。
@@ -392,7 +392,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### 吴恩达批评AI炒作，预言10人公司+Agent模式
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-24/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-24/opinion-02.jpg)
 
 
 **是什么**：吴恩达在最新访谈中直言AI被过度炒作，真正的变革不在于大规模替代人力，而在于10人小队使用Agent重新构建数据架构——他称之为“AI原生组织的起点”。
@@ -405,7 +405,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### 存储芯片与中国影响：微软或转向中国AI模型
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-24/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-24/opinion-03.jpg)
 
 
 **是什么**：Stratechery的深度分析指出，三大存储芯片制造商（三星、SK海力士、美光）可能因过度依赖对华出口而面临反噬风险；同时，微软有强烈动机使用中国AI模型以降低对中国芯片的依赖。
@@ -418,7 +418,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### 科幻作家支招戳破AI泡沫：从根基入手
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-24/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-24/opinion-04.jpg)
 
 
 **是什么**：科技作家Cory Doctorow在新书《The Reverse Centaur's Guide to Life After AI》中提出，要戳破AI泡沫需要从其经济根基入手，而非仅仅质疑技术能力。
@@ -441,7 +441,7 @@ Together AI 发布 ParallelKernelBench 基准测试，揭露当前最强 LLM 在
 
 ### OpenMontage：全球首个开源Agent视频制作系统
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-24/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-24/opensource-00.jpg)
 
 
 OpenMontage是一个将AI编程助手（如Cursor、Windsurf）扩展为完整视频工作室的开源系统，包含12条生产管线、52个工具和500多项Agent技能。它让开发者可以通过自然语言指令完成从脚本生成、素材采集、剪辑合成到字幕配音的全流程。关键点在于其“Agent编排”而非单一模型：系统将视频制作拆解为可复用的Agent步骤，每个步骤可调用不同模型或工具。为什么重要？这标志着AI视频制作从“黑盒生成”进入“透明可编程”阶段，开发者可自定义工作流，有望大幅降低高质量视频制作门槛。
@@ -450,7 +450,7 @@ OpenMontage是一个将AI编程助手（如Cursor、Windsurf）扩展为完整�
 
 ### NVIDIA发布官方AI Agent技能库，加速企业应用
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-24/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-24/opensource-01.jpg)
 
 
 NVIDIA在GitHub上开源Agent Skills仓库，提供一批经过企业级验证的AI Agent技能，覆盖代码分析、文档处理、数据可视化等常见场景。每个技能以模块化方式封装，包含提示模板、参数校验和错误处理逻辑，可直接集成到LangChain、CrewAI等框架。为什么重要？企业落地Agent最头疼的是“可信度和可维护性”，NVIDIA官方维护的技能库相当于提供了一套经过测试的“积木”，降低从Demo到生产的迁移成本。适合想快速构建内部Agent工具的企业团队。
@@ -465,7 +465,7 @@ NVIDIA在GitHub上开源Agent Skills仓库，提供一批经过企业级验证�
 
 ### 字节跳动开源Deer Flow，支持小时级自主任务
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-24/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-24/opensource-03.jpg)
 
 
 字节跳动开源超级智能体框架Deer Flow，具备沙箱执行、长期记忆、工具调用、子智能体委托等能力，可处理耗时数分钟的复杂任务（如自动撰写报告、数据爬取与整理）。关键设计：沙箱环境隔离了Agent对主机的影响，子智能体委托实现了任务分解和并行执行。为什么重要？此前开源Agent框架多聚焦于“单步问答”或“简单工具链”，Deer Flow展示了对持续数小时的自主任务的支持，更接近“数字员工”原形。适合需要自动化长流程的企业开发者和AI研究员。
@@ -474,7 +474,7 @@ NVIDIA在GitHub上开源Agent Skills仓库，提供一批经过企业级验证�
 
 ### Palmier Pro开源：macOS上首个原生AI视频编辑器
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-24/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-24/opensource-04.jpg)
 
 
 Palmier Pro是专门为macOS设计的原生AI视频编辑器，完全开源。它利用系统级硬件加速，支持AI辅助的剪辑建议、智能场景检测和自动字幕生成。关键点：原生应用而非Web包装，性能优于Electron类客户端，适合已在使用Mac进行视频工作的开发者或创作者。虽然功能尚不如专业的付费编辑器，但开源生态的迭代速度值得关注。
@@ -489,7 +489,7 @@ Voicebox是一个开源的AI语音工作室，集成了语音克隆、听写和�
 
 ### Penpot开源设计工具获社区热捧
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-24/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-24/opensource-06.jpg)
 
 
 Penpot是开源的在线设计和代码协作平台，本周登上GitHub Trending。它提供矢量绘制、原型制作和组件属性导出，并支持Figma文件导入。最大卖点：设计师与开发者可在同一工具中协作，设计稿直接生成可用的React/CSS代码。为什么重要？Figma收费政策调整后，Penpot作为替代品获得大量关注，其开源社区版已支持私有化部署，适合对数据安全敏感的企业。对工具链开发者而言，Penpot的扩展API值得研究。
@@ -498,7 +498,7 @@ Penpot是开源的在线设计和代码协作平台，本周登上GitHub Trendin
 
 ### gstack开源：Garry Tan的Claude Code工作流
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-24/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-24/opensource-07.jpg)
 
 
 YC总裁Garry Tan将其日常使用的Claude Code配置开源为gstack项目，包含23个定制工具，覆盖CEO、设计师、工程经理等角色。每个工具封装了提示模板和上下文，可让Claude在特定角色下完成任务。例如，“CEO模式”可自动生成战略备忘录，“设计师模式”可生成UI代码片段。为什么重要？这是顶级创业者实际使用的Agent工作流，其角色划分和工具设计思路可被直接复用或二次开发。对想提升个人Agent效率的开发者来说，这是难得的“高手配置”。

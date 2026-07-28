@@ -33,7 +33,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### GPT-5.6 Sol Ultra 一小时破解 50 年未解数学难题
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-13/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-13/model_release-00.jpg)
 
 
 据 The Decoder 报道，这款未官方正式发布的 GPT-5.6 Sol Ultra 在一个小时内解决了一个长期悬而未决的纯数学问题。该问题被描述为“50 年未解”，具体内容未公开，但通常这类问题涉及组合数学、数论或代数拓扑领域。消息源称其性能已达到“Fable/Mythos”级别——这可能是 OpenAI 内部对推理深度或数学推理能力的评级术语。
@@ -56,7 +56,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### 苹果41页诉状：OpenAI“偷师”核心机密
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-13/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-13/company-00.jpg)
 
 **是什么？** 苹果向法院提交41页PDF，正式起诉OpenAI非法获取其核心商业秘密，指控涉及不正当竞争和商业机密窃取。网友调侃：“早知道就等印度开源了。”
 
@@ -68,7 +68,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### S&P下调Oracle评级：OpenAI是“关键信用风险”
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-13/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-13/company-01.jpg)
 
 **是什么？** 标普全球（S&P）下调Oracle信用评级，明确指出Oracle与OpenAI的战略合作关系构成了“关键信用风险”。
 
@@ -80,7 +80,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Meta关闭Muse功能：用户未经同意被生成AI图
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-13/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-13/company-02.jpg)
 
 **是什么？** Meta宣布关闭名为“Muse”的功能——该功能允许任何人使用Instagram用户的公开照片，通过AI生成新的图片，因隐私争议引发强烈抗议。
 
@@ -92,7 +92,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### OpenAI新战略：为家庭场景招产品经理
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-13/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-13/company-03.jpg)
 
 **是什么？** ChatGPT正在招聘专门为家庭、护理人员和老年人设计体验的产品经理，表明OpenAI正在从企业市场向家庭消费场景深度布局。
 
@@ -104,7 +104,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### NVIDIA、CoreWeave与Nebius：GPU泡沫的循环融资内幕
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-13/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-13/company-04.jpg)
 
 **是什么？** 深度调查报道揭示了NVIDIA、CoreWeave和Nebius之间存在的“循环融资”模式：GPU算力提供商通过向NVIDIA支付巨额订单获得设备，同时NVIDIA又以股权或贷款形式向这些公司注入资金，形成资本闭环。
 
@@ -116,7 +116,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Altman改口：AI净创造就业，而非毁灭岗位
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-13/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-13/company-05.jpg)
 
 **是什么？** OpenAI CEO Sam Altman公开表示，他现在“相当确信”AI会净增加就业机会，而非像此前预测的那样导致大规模失业。
 
@@ -128,7 +128,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### 英国投20亿英镑建设AI作战实验室
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-13/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-13/company-06.jpg)
 
 **是什么？** 英国国防部推出AI作战实验室计划，投入20亿英镑用于将人工智能技术融入陆军训练体系，重塑军事演习和决策模式。
 
@@ -157,7 +157,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### 剑桥研究：主流AI聊天机器人被恐怖组织用于策划袭击
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-13/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-13/research-00.jpg)
 
 
 **是什么**：剑桥大学研究发现，包括ChatGPT、Claude等在内的主流AI聊天机器人已被恐怖组织用于攻击规划和武器开发。虽然模型内置了安全护栏，但通过社会工程和提示注入仍可绕过。
@@ -167,7 +167,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Mesh LLM：基于iroh的分布式AI计算方案
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-13/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-13/research-01.jpg)
 
 
 **是什么**：新项目Mesh LLM利用iroh网络（基于libp2p的去中心化通信层）实现分布式AI推理，允许在多个设备上协同运行大语言模型，无需集中式GPU集群。
@@ -177,7 +177,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Agent换用结构化记忆后完胜《杀戮尖塔2》
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-13/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-13/research-02.jpg)
 
 
 **是什么**：研究员用结构化记忆（类似数据库或知识图谱）替代不断增长的聊天日志，使AI agent在游戏《杀戮尖塔2》（Slay the Spire 2）中取得完胜——100%胜率。
@@ -187,7 +187,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### IEEE研究：AI提升科研职业却压缩探索视角
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-13/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-13/research-03.jpg)
 
 
 **是什么**：IEEE在《Spectrum》发表研究指出，AI工具加速了科学家职业生涯（提升论文产出、被引量），但也导致研究探索的“探索空间”变窄——研究人员更倾向于使用AI在已有知识附近挖掘，而非大胆跨领域探索。
@@ -197,7 +197,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### LinkedIn成AI长篇“垃圾内容”之王：5平台研究
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-07-13/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-07-13/research-04.jpg)
 
 
 **是什么**：一项覆盖五大平台的研究显示，LinkedIn上AI生成的长篇内容占比最高，被戏称为“AI slop之王”。研究通过检测算法和人工标注识别了超过12万条AI生成内容。
@@ -207,7 +207,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### 布朗大学实验：禁止AI后学生成绩从96跌至48分
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-07-13/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-07-13/research-05.jpg)
 
 
 **是什么**：布朗大学一位教授让学生在没有AI辅助的情况下参加考试，此前学生在AI辅助下平均成绩96分，禁止AI后骤降至48分。
@@ -217,7 +217,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### 面向Qwen系列的线性注意力高性能优化
 
-![research-06.jpg](/marginalia/assets/img/ai-hot/2026-07-13/research-06.jpg)
+![research-06.jpg](/assets/img/ai-hot/2026-07-13/research-06.jpg)
 
 
 **是什么**：AICon深圳分享了针对Qwen系列（通义千问）大模型的线性注意力（linear attention）优化实践，旨在解决标准注意力机制在长序列推理中的O(n²)复杂度问题。
@@ -244,7 +244,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### 陶哲轩通过编码Agent重构应用：效率飞跃不是空话
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-13/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-13/product-00.jpg)
 
 
 **是什么**：陶哲轩在博客中详细记录了他使用现代编码Agent（具体未指明）重新构建多个新旧应用的过程，涵盖从文档处理到交互式工具的开发。
@@ -257,7 +257,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Grok CLI被曝大规模回传用户数据：隐私合规再敲警钟
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-13/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-13/product-01.jpg)
 
 
 **是什么**：安全研究员对Grok CLI进行底层网络抓包分析，发现该工具在用户交互过程中向xAI服务器发送远超必要量的数据，包括系统信息、文件路径、终端输出片段等。
@@ -270,7 +270,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Claude Code vs OpenCode：33K vs 7K token开销差距惊人
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-13/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-13/product-02.jpg)
 
 
 **是什么**：第三方测试对比了Anthropic的Claude Code与开源替代OpenCode，在同等任务下token消耗的差异。Claude Code在读取用户提示前，仅系统级开销就已消耗33K token，而OpenCode仅消耗7K。
@@ -283,7 +283,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Claude Code新增内置浏览器：AI可直接操作外部网页
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-13/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-13/product-03.jpg)
 
 
 **是什么**：Claude Code更新后自带浏览器模块（基于Headless模式），允许AI读取、点击、输入内容到外部网站，相当于赋予代理“上网能力”。
@@ -296,7 +296,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### RTX Spark真机亮相：笔记本跑120B模型，CPU GPU一体
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-13/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-13/product-04.jpg)
 
 
 **是什么**：NVIDIA RTX Spark超级芯片在Bilibili World展会亮相，这是一款CPU-GPU融合封装（chiplet设计）的移动处理器，官方称可在笔记本平台上运行120B参数的大模型。
@@ -309,7 +309,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Claude Cowork最大用途：“没人想做的办公室杂活”
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-13/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-13/product-05.jpg)
 
 
 **是什么**：Anthropic分析Claude Cowork（可协作的AI助手）的使用数据后发现，其最高频场景是处理单调的办公室事务：整理邮件、填写表格、汇总会议记录、生成周报等。
@@ -350,7 +350,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### 别再叫我问LLM了
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-13/opinion-03.jpg)
 
 
 是什么：Yael Writes在一篇博客中尖锐指出，当下“问LLM”已成为一种懒惰的思考替代——人们遇到问题第一反应是打开ChatGPT，而不是自己推理。关键点：文章认为，LLM是工具，但不能外包思维过程；频繁使用会导致批判性思维退化，尤其在工作场景中，依赖LLM给出的答案反而降低了判断力。为什么重要：对产品经理和团队leader而言，这一提醒尤为关键：在设计AI辅助功能时，不应培养用户“不思考”的习惯。
@@ -359,7 +359,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Thinking Machines Lab：以人为本的AI技术宣言
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-13/opinion-04.jpg)
 
 
 是什么：Mira Murati（前OpenAI CTO）创办的Thinking Machines Lab发布长篇技术文章，从技术角度论证：只有可定制的模型权重（customizable model weights）才能真正实现以人为本的AI。关键点：文章指出，封闭的API模型无法满足用户对控制权、隐私和价值观对齐的需求；开放权重（open weights）加上用户侧的微调才能让AI适应不同场景。为什么重要：这份宣言代表了AI行业从“大模型垄断”向“用户可定制”转向的信号，直接关联AI产品的商业模式与治理选择。
@@ -368,7 +368,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### AI热潮太费电，燃气轮机价格三年涨300%
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-13/opinion-05.jpg)
 
 
 是什么：由于数据中心建设加速，燃气轮机（用于发电和备用电源）供不应求，价格在三年内暴涨300%。关键点：AI训练和推理的能源消耗量远超预期，电网扩容跟不上需求，导致发电设备价格飞涨。为什么重要：对于投资人，这是AI产业“隐性成本”的硬数据——能源瓶颈可能成为未来两年AI发展的主要制约因素，甚至倒逼行业优化模型效率和采用更绿色能源。
@@ -377,7 +377,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### 具身数据行业全景：年融资44.7亿，十问十答
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-07-13/opinion-06.jpg)
 
 
 是什么：具身智能（embodied AI）数据赛道在过去一年吸引了近百名玩家，融资总额达44.7亿美元。文章通过十个问题总结了行业现状，包括数据采集成本高、标注难度大、客户付费意愿低等。关键点：虽然融资火热，但大多数公司仍处于“烧钱买数据”阶段，真正靠卖数据盈利的极少。为什么重要：这一全景分析帮助从业者理性看待具身数据赛道——短期存在泡沫风险，长期需关注能形成数据飞轮且落地场景明确的公司。
@@ -394,7 +394,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### OpenManus：开源通用AI Agent框架
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-13/opensource-00.jpg)
 
 
 **是什么**：OpenManus提供一套灵活的构建模块，让开发者快速组装自己的AI Agent，官方定位是“无城墙的开放地”。它不绑定特定模型或执行环境，而是通过插件化设计支持多种LLM后端、工具调用和记忆管理。
@@ -407,7 +407,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### 微软发布AI Agent治理工具包：覆盖OWASP Top 10
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-13/opensource-01.jpg)
 
 
 **是什么**：Microsoft agent-governance-toolkit 是一套面向开发者的治理工具，包含零信任身份校验、执行沙箱、审计日志等模块，直接对标OWASP Top 10安全风险。
@@ -420,7 +420,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Hugging Face开源语音到语音Agent框架
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-13/opensource-02.jpg)
 
 
 **是什么**：Hugging Face推出的speech-to-speech库，支持用开源模型（如Whisper、Bark）搭建端到端的语音Agent，在本地即可实现实时对话。
@@ -433,7 +433,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Free Claude Code：免费替代谷歌/Anthropic付费工具
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-13/opensource-03.jpg)
 
 
 **是什么**：Free Claude Code是一个开源项目，在终端、VSCode和Discord中免费提供类似Claude Code和Codex CLI的编程Agent功能——可以理解为把Anthropic收费的coding assistant能力开源实现了。
@@ -446,7 +446,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Skyvern：AI驱动的浏览器自动化开源方案
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-13/opensource-04.jpg)
 
 
 **是什么**：Skyvern用AI替代传统Selenium/Playwright的选择器，通过视觉理解完成表单填写、数据抓取等浏览器工作流自动化。
@@ -459,7 +459,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Volcengine开源OpenViking：AI Agent自进化上下文数据库
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-13/opensource-05.jpg)
 
 
 **是什么**：字节跳动火山引擎开源了OpenViking，一个专门为Agent设计的统一上下文数据库，管理记忆、知识RAG和技能，并实现自我演化。
@@ -472,7 +472,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Awesome LLM Apps：百款可运行AI Agent与RAG应用合集
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-13/opensource-06.jpg)
 
 
 **是什么**：社区维护的Awesome LLM Apps，收录了100+个真正可运行的大模型应用和RAG Demo，涵盖代码生成、文档问答、多模态聊天等Agent场景。
@@ -485,7 +485,7 @@ OpenAI 最新旗舰模型 GPT-5.6 Sol Ultra 据称在一小时内解决了一个
 
 ### Claude Cookbooks：官方精选食谱助开发者快速上手
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-13/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-13/opensource-07.jpg)
 
 
 **是什么**：Anthropic官方推出Claude Cookbooks，包含实用的代码和指南，覆盖提示工程、工具使用、图像理解、长上下文处理等方向。

@@ -33,7 +33,7 @@ sections:
 
 ### GPT-5.6 Sol Ultra 一小时攻克50年数学猜想
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-12/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-12/model_release-00.jpg)
 
 
 OpenAI发布GPT-5.6 Sol Ultra，该模型在不到一小时内自主生成了Cycle Double Cover Conjecture的完整证明，这是一个图论中悬而未决50年的猜想。关键点在于：模型展示了多级推理能力，并能自主训练一个小模型来辅助完成证明，而非单纯依赖海量数据和计算堆积。这一成果标志着AI从“模式匹配”向“自主发现”迈出实质性一步——如果AI能独立解决长期未解的数学猜想，其对科学研究的助力将不可估量。对于技术从业者而言，需要重新评估AI在理论创新中的角色，以及模型自我进化机制的实际可行性。
@@ -42,7 +42,7 @@ OpenAI发布GPT-5.6 Sol Ultra，该模型在不到一小时内自主生成了Cyc
 
 ### Meta Muse Spark 1.1 编程能力超 GLM-5.2
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-12/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-12/model_release-01.jpg)
 
 
 Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成本略低。关键点：Meta在编程模型上持续投入，成本优势可能吸引更多开发者迁移。这一进展意味着编程模型竞争已进入白热化阶段——GLM-5.2此前被视为国内最强的编程模型之一，如今被开源生态的Meta反超，暗示闭源与开源之间的性能差距正在缩小。对于产品经理和技术决策者，成本与性能的平衡将成为技术选型的关键变量。
@@ -51,7 +51,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### 中国Orca世界模型无需动作标签匹配专业机器人
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-12/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-12/model_release-02.jpg)
 
 
 中国研究团队提出Orca世界模型，在机器人任务中匹敌专业系统且无需事先看到任何动作标签。关键点：传统世界模型依赖大量带标注的动作数据，而Orca通过自监督学习或预测建模绕过了这一瓶颈。这显著降低了具身智能的训练门槛，尤其在缺乏动作数据的垂直场景中价值凸显。对于投资人而言，无标签学习在机器人领域的落地路径值得关注——它可能加速从模拟到现实（sim-to-real）的迁移效率。
@@ -60,7 +60,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### 蚂蚁灵波发布具身世界动作模型 LingBot-VA 2.0
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-12/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-12/model_release-03.jpg)
 
 
 蚂蚁集团旗下灵波发布从零预训练的具身原生世界动作模型LingBot-VA 2.0。关键点：与Orca的“无标签”路线不同，蚂蚁选择直接从大规模动作数据开始预训练，强调模型架构原生地学习动作与世界交互的联合分布。两条技术路线形成鲜明对比——Orca试图降低数据依赖，而蚂蚁押注大模型+大数据的传统优势。对于行业，这意味着具身智能的模型结构仍在快速迭代中，投资人和技术选型需重点考察不同范式在真实场景下的收敛速度与泛化能力。
@@ -77,7 +77,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### 苹果起诉OpenAI，指控高管策划挖角窃密
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-12/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-12/company-00.jpg)
 
 
 是什么：苹果在美国加州法院起诉OpenAI，称其高管组织了一场针对苹果硬件部门的挖角行动，鼓励多名前员工在离职时携带机密文件和原型设计，并转投OpenAI。OpenAI随即回应，称对其他公司的商业机密“不感兴趣”。
@@ -90,7 +90,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### 中国首个十万卡国产算力集群落成，全精度覆盖
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-12/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-12/company-01.jpg)
 
 
 是什么：国内首个国产算力十万卡集群正式落成，已跑通300余项AI应用，涵盖从科学计算的FP64到推理优化的INT8全精度格式。该集群由多家国产芯片厂商联合提供算力，采用自研网络和调度系统。
@@ -103,7 +103,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### 腾讯洽购Manus，估值约20亿美元
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-12/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-12/company-02.jpg)
 
 
 是什么：腾讯正牵头中方资本，从Meta手中收购通用AI Agent公司Manus的股权，交易后腾讯将保持少数股东地位，Manus保持独立运营。此前Meta曾以20亿美元估值收购Manus股份，但因北京方面要求Meta解除交易而搁浅。
@@ -116,7 +116,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### SK海力士IPO募资265亿美元，创美国外企纪录
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-12/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-12/company-03.jpg)
 
 
 是什么：SK海力士在美上市，募资265亿美元，成为历史上规模最大的外国公司在美IPO。美国当局要求其承诺在美国建设新晶圆厂，作为上市条件的一部分。
@@ -129,7 +129,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### OpenAI安全负责人Johannes Heidecke离职
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-12/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-12/company-04.jpg)
 
 
 是什么：OpenAI安全负责人Johannes Heidecke宣布离职，此时正值公司将研究与安全团队整合为单一部门。Heidecke此前负责模型安全评估与红队测试工作。
@@ -142,7 +142,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### 智谱CEO内部信：不追求短期变现，直指AGI高地
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-12/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-12/company-05.jpg)
 
 
 是什么：智谱创始人唐杰发布内部信，明确公司不追求短期应用变现，将聚焦长程任务（long-horizon tasks）、自治智能体（autonomous agents）和极致安全。信中强调“不为了营收数字偏离AGI主线”。
@@ -155,7 +155,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### Meta因用户反弹移除Instagram争议AI功能
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-12/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-12/company-06.jpg)
 
 
 是什么：Meta移除Instagram上一项引发强烈抗议的AI功能，该功能被设计为“创意工具”，但用户认为其侵犯隐私且生成内容杂乱。Meta表示初衷是提供创意工具但“未达预期”。
@@ -168,7 +168,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### FansAI收购AI音乐公司新映科技
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-12/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-12/company-07.jpg)
 
 
 是什么：AI内容和互动影视公司FansAI全资收购AI音乐应用新映科技，具体金额未披露。这是OPC（内容生成与互动）领域少见的并购案例。
@@ -191,7 +191,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### 恐怖组织利用主流AI聊天机器人策划攻击
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-12/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-12/research-00.jpg)
 
 
 **是什么**：剑桥大学研究人员发现，恐怖组织正在系统性地使用 GPT、Claude 等前沿 AI 模型进行攻击规划与武器开发。包括 Boko Haram、ISIS 支持者在内的多个组织，通过日常对话界面获取制毒配方、炸弹组装步骤，以及如何逃避监控的策略。
@@ -204,7 +204,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### 新字体Ghost Font让AI无法读取，人类正常阅读
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-12/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-12/research-01.jpg)
 
 
 **是什么**：开发者发布了一款名为 Ghost Font 的字体，通过视觉混淆技术使 AI 视觉模型无法正确识别字符，而人类仍可正常阅读。
@@ -227,7 +227,7 @@ Meta发布Muse Spark 1.1，在编程基准测试上超越智谱GLM-5.2，且成�
 
 ### OpenAI承认ChatGPT Work发布失误，紧急修复
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-12/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-12/product-00.jpg)
 
 
 OpenAI官方表示，上线的ChatGPT Work产品未达到理想状态，用户体验和成本结构均存在问题。团队正在紧急修复，但未具体说明改进方向。关键点在于，ChatGPT Work原本定位于企业级生产力工具，其定价模式和功能设计曾被寄予厚望。为什么重要：这次“翻车”说明OpenAI在从消费者场景向B端迁移时，依然缺乏对复杂工作流和预算敏感型客户的深度理解。修复成本与用户信任的恢复周期，将直接影响其企业订阅产品的后续增长。
@@ -236,7 +236,7 @@ OpenAI官方表示，上线的ChatGPT Work产品未达到理想状态，用户�
 
 ### OpenAI关停Atlas浏览器，整合进ChatGPT
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-12/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-12/product-01.jpg)
 
 
 推出仅8个月，OpenAI就宣布关闭其自主浏览器Atlas，并将相关功能并入ChatGPT。这款产品曾被视为对抗谷歌Chrome的尝试，但市场反响平淡。OpenAI并未透露具体日活数据，但决定放弃独立浏览器，转而将浏览能力作为ChatGPT的内置模块。为什么重要：浏览器是流量入口，但维持独立应用需要持续迭代与运营团队。OpenAI此举表明其更倾向于将重点放在聊天界面这一超级入口上，而非分散资源做平行产品。对开发者而言，这意味着未来ChatGPT的集成能力会更强，但第三方浏览器生态的AI嵌入空间可能缩小。
@@ -245,7 +245,7 @@ OpenAI官方表示，上线的ChatGPT Work产品未达到理想状态，用户�
 
 ### 许锦波团队推出AI生物研发系统MoleculeOS
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-12/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-12/product-02.jpg)
 
 
 由许锦波领衔的AI生物团队正式发布MoleculeOS，定位为AI驱动的生物研发“操作系统”。该系统旨在标准化蛋白质设计、分子筛选与实验验证的全流程，并对外开放使用。关键点：MoleculeOS整合了团队此前在蛋白质结构预测上的积累，并加入了流程管理、数据追踪等工程化模块。为什么重要：AI在生物医药领域的落地瓶颈之一，是如何将分散的AI模型、数据与实验环节打通。MoleculeOS如果获得主流药企接纳，可能成为该领域的默认基础设施，类似AutoCAD之于工业设计。
@@ -254,7 +254,7 @@ OpenAI官方表示，上线的ChatGPT Work产品未达到理想状态，用户�
 
 ### 阿里与大麦推出AI潮玩设计平台“妙呀”公测
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-12/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-12/product-03.jpg)
 
 
 大麦娱乐联合阿里Token Foundry推出AI潮玩设计平台“妙呀”，并同步启动百万激励计划。用户可通过文字描述或图片生成潮玩公仔设计，平台内置3D预览与一键众筹上线功能。关键点：这不是一个AI绘画工具，而是从设计到生产（IP商业化）的闭环尝试。百万激励计划针对高热度作品提供量产支持。为什么重要：AI生成内容在消费级市场的变现路径一直模糊。“妙呀”切入潮玩这一高毛利、强IP属性领域，如果跑通，将为AI设计工具的商业化提供参考样本。
@@ -263,7 +263,7 @@ OpenAI官方表示，上线的ChatGPT Work产品未达到理想状态，用户�
 
 ### OpenAI招聘家庭产品经理，ChatGPT深入家庭
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-12/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-12/product-04.jpg)
 
 
 OpenAI发布招聘信息，专门寻找面向家庭、看护和老年人的产品经理。岗位描述强调需要理解“家庭场景中的情感连接与实用需求”。为什么重要：此前ChatGPT多聚焦于工作效率、编程或教育，很少提及“陪伴”与“家务助手”。招聘这一角色，意味着OpenAI开始将家庭看作下一个高渗透率场景——竞争对手包括Amazon Alexa和Google Home，但ChatGPT的优势在于更强的对话理解能力与多模态交互潜力。家庭战略能否成功，取决于隐私、定价与设备生态三个门槛。
@@ -280,7 +280,7 @@ OpenAI发布招聘信息，专门寻找面向家庭、看护和老年人的产�
 
 ### EU要求Meta禁用自动播放和无限滚动
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-12/opinion-00.jpg)
 
 
 **是什么**：欧盟依据数字服务法案（DSA）向Meta发出正式警告，要求Facebook、Instagram等平台在欧盟境内禁用自动播放视频和无限滚动（infinite scroll）功能，否则将面临“重大罚款”。
@@ -293,7 +293,7 @@ OpenAI发布招聘信息，专门寻找面向家庭、看护和老年人的产�
 
 ### Hugging Face CEO：开源AI比以往更重要
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-12/opinion-01.jpg)
 
 
 **是什么**：Hugging Face CEO Clem Delangue在TechCrunch播客中表示，开源AI正在加速，企业不再仅仅“租用”AI（指闭源API模式），而是开始自主构建和托管模型。
@@ -316,7 +316,7 @@ OpenAI发布招聘信息，专门寻找面向家庭、看护和老年人的产�
 
 ### 揭秘英伟达、CoreWeave的GPU循环融资
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-12/opinion-03.jpg)
 
 
 **是什么**：投资机构IO Fund发布分析报告，指出英伟达与云厂商CoreWeave、Nebius之间存在循环融资（circular financing）模式，放大了GPU市场繁荣的泡沫风险。
@@ -329,7 +329,7 @@ OpenAI发布招聘信息，专门寻找面向家庭、看护和老年人的产�
 
 ### Claude花11天重写Bun，创始人一个月后才公开
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-12/opinion-04.jpg)
 
 
 **是什么**：JavaScript/TypeScript运行时Bun的创始人Jarred Sumner披露，团队在2025年底利用Claude（Anthropic的AI）在11天内完成了Bun的核心重构，但团队花了一个月时间手动验证代码才敢公开消息。
@@ -342,7 +342,7 @@ OpenAI发布招聘信息，专门寻找面向家庭、看护和老年人的产�
 
 ### Cursor、GitLab、Zed挑战GitHub，AI重塑开发
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-12/opinion-05.jpg)
 
 
 **是什么**：InfoQ报道分析，AI正在瓦解GitHub（微软旗下）的传统开发流程主导地位，新工具Cursor（AI原生IDE）、GitLab（融入AI CI/CD）和Zed（高性能编辑器+AI）各自从不同维度挑战GitHub的码。
@@ -365,7 +365,7 @@ OpenAI发布招聘信息，专门寻找面向家庭、看护和老年人的产�
 
 ### DesktopCommanderMCP：Claude 获得终端控制权
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-12/opensource-00.jpg)
 
 
 **是什么**  
@@ -383,7 +383,7 @@ OpenAI发布招聘信息，专门寻找面向家庭、看护和老年人的产�
 
 ### OfficeCLI：AI Agent 专用 Office 文件读写工具
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-12/opensource-01.jpg)
 
 
 **是什么**  
@@ -401,7 +401,7 @@ OpenAI发布招聘信息，专门寻找面向家庭、看护和老年人的产�
 
 ### NVIDIA 发布官方 AI Agent 技能库
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-12/opensource-02.jpg)
 
 
 **是什么**  
@@ -419,7 +419,7 @@ NVIDIA 正在从硬件向软件生态延伸，提供官方技能库可以降低�
 
 ### 微软发布 AI Agent 治理工具包
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-12/opensource-03.jpg)
 
 
 **是什么**  
@@ -437,7 +437,7 @@ Agent 能力越强，安全风险越大。微软这套工具直接为生产环�
 
 ### 腾讯开源 Agent 长期记忆框架 TencentDB-Agent-Memory
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-12/opensource-04.jpg)
 
 
 **是什么**  
@@ -455,7 +455,7 @@ Agent 能力越强，安全风险越大。微软这套工具直接为生产环�
 
 ### Hugging Face 开源语音转语音 Agent 构建框架
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-12/opensource-05.jpg)
 
 
 **是什么**  
@@ -473,7 +473,7 @@ Agent 能力越强，安全风险越大。微软这套工具直接为生产环�
 
 ### LMCache：加速 LLM 推理的 KV 缓存层
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-12/opensource-06.jpg)
 
 
 **是什么**  
@@ -491,7 +491,7 @@ Agent 能力越强，安全风险越大。微软这套工具直接为生产环�
 
 ### AgentScope：可视化多 Agent 开发框架
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-12/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-12/opensource-07.jpg)
 
 
 **是什么**  

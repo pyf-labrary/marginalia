@@ -33,7 +33,7 @@ sections:
 
 ### Google发布三款Gemini Flash模型：3.5 Pro继续缺席
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-22/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-22/model_release-00.jpg)
 
 
 **是什么：** Google推出Gemini 3.6 Flash、3.5 Flash-Lite和3.5 Flash Cyber三款新模型。其中3.6 Flash定位现阶段的轻量级主力，3.5 Flash-Lite主打更低成本推理，3.5 Flash Cyber侧重安全与合规场景。三者均属于快速迭代的Flash系列，但旗舰级Gemini 3.5 Pro仍然没有发布计划。
@@ -46,7 +46,7 @@ sections:
 
 ### NVIDIA发布Cosmos 3 Edge开放世界模型：40亿参数，支持设备端运行
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-22/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-22/model_release-01.jpg)
 
 
 **是什么：** NVIDIA在SIGGRAPH 2026上推出了Cosmos 3 Edge，一款40亿参数的开放世界模型，专为机器人、自动驾驶和视觉AI代理设计。它可以在本地设备上实时推理并生成动作，无需云端连接。
@@ -59,7 +59,7 @@ sections:
 
 ### 阿里发布Qwen图像与语音模型：一段话生成信息图，支持多语言TTS
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-22/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-22/model_release-02.jpg)
 
 
 **是什么：** 阿里通义实验室推出Qwen-Image-3.0和Qwen-Audio-3.0-TTS两个模型。前者可在单次推理中生成包含精确排版、表格、图表的完整信息图，后者提供Flash（轻量）和Plus（高质量）两档，覆盖16种语言语音合成。
@@ -72,7 +72,7 @@ sections:
 
 ### 小鹏发布TuringViT视觉编码器：面向VLM/VLA时代的多业务支撑
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-22/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-22/model_release-03.jpg)
 
 
 **是什么：** 小鹏汽车正式发布TuringViT高效视觉编码器，将用于智能驾驶、智能座舱和人形机器人三大场景。该编码器采用视觉Transformer架构优化，旨在提升视觉感知效率。
@@ -85,7 +85,7 @@ sections:
 
 ### 小米机器人研究：更多数据胜过更大模型
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-07-22/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-07-22/model_release-04.jpg)
 
 
 **是什么：** 小米Robotics-1团队发表论文，指出在训练机器人运动控制模型时，增加训练数据量比扩大模型参数规模更能提升性能。该结论来自对仿真和真实环境的对比实验。
@@ -118,7 +118,7 @@ sections:
 
 ### 法官批准 Anthropic 15 亿美元版权和解，仅 350 名作者选择退出
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-22/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-22/company-01.jpg)
 
 
 **是什么**：美国法官最终批准了 Anthropic 与作者集体之间总额 15 亿美元的版权诉讼和解协议。Anthropic 在最后时刻阻止了部分作者选择退出。
@@ -131,7 +131,7 @@ sections:
 
 ### NVIDIA 发布 Vera Rubin 平台，推动 AI 工厂进入千兆级规模
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-22/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-22/company-02.jpg)
 
 
 **是什么**：NVIDIA 正式推出 Vera Rubin NVL72 平台，配套 Spectrum-6 交换机，并与多家云服务商合作，目标是成为 AI 数据中心全栈芯片供应商。
@@ -144,7 +144,7 @@ sections:
 
 ### 微软与 Mistral 签署数十亿欧元协议，共建欧洲 AI 基础设施
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-22/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-22/company-03.jpg)
 
 
 **是什么**：微软与法国 AI 初创公司 Mistral 扩大合作，围绕数千颗 NVIDIA Vera Rubin GPU 建设欧洲 AI 基础设施，同时 Mistral 模型将接入微软 Azure AI Foundry。
@@ -157,7 +157,7 @@ sections:
 
 ### Google 开发 Frozen v2 芯片，将 Gemini 架构直接集成于硅片
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-22/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-22/company-04.jpg)
 
 
 **是什么**：据报道 Google 正在研发一款名为 Frozen v2 的新型 AI 芯片，专门为 Gemini 模型设计，旨在提升效率并降低推理成本。
@@ -190,7 +190,7 @@ sections:
 
 ### Gritt 获 3200 万美元融资，用机器人建造太阳能电站
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-22/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-22/company-07.jpg)
 
 
 **是什么**：建筑机器人初创公司 Gritt 从隐身状态走出，获得 3200 万美元资金，计划用机器人自动化太阳能电站建设中最困难的任务。
@@ -213,7 +213,7 @@ sections:
 
 ### ClawBench：AI Agent 的日常任务能力标尺
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-22/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-22/research-00.jpg)
 
 
 **是什么**  
@@ -229,7 +229,7 @@ ClawBench 是一个新的基准测试，专门评估 AI Agent 在真实网站上
 
 ### 自动化发现系统：无通用最优设计
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-22/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-22/research-01.jpg)
 
 
 **是什么**  
@@ -255,7 +255,7 @@ ClawBench 是一个新的基准测试，专门评估 AI Agent 在真实网站上
 
 ### Jack Dorsey 推出 Buzz：面向人类和 AI 代理的团队聊天平台
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-22/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-22/product-00.jpg)
 
 
 **是什么**  
@@ -273,7 +273,7 @@ ClawBench 是一个新的基准测试，专门评估 AI Agent 在真实网站上
 
 ### Anthropic Claude Cowork 通过录屏和语音学习新技能
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-22/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-22/product-01.jpg)
 
 
 **是什么**  
@@ -291,7 +291,7 @@ Anthropic 推出 Claude Cowork 功能，用户可以录制屏幕操作并添加�
 
 ### AI 系统助巴基斯坦法官清理积案，每投资1美元回报38.5美元
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-22/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-22/product-02.jpg)
 
 
 **是什么**  
@@ -324,7 +324,7 @@ Anthropic 推出 Claude Cowork 功能，用户可以录制屏幕操作并添加�
 
 ### Adobe 相机应用新增 AI 照片批评功能
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-22/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-22/product-04.jpg)
 
 
 **是什么**  
@@ -342,7 +342,7 @@ AI 从“生成内容”延伸到“评价内容”，这可能在后期处理�
 
 ### Halliday 发布无摄像头智能眼镜 G2，专注于语音会议总结
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-22/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-22/product-05.jpg)
 
 
 **是什么**  
@@ -385,7 +385,7 @@ Halliday 推出 G2 智能眼镜，取消摄像头，只通过麦克风录制会�
 
 ### 美国财长威胁制裁中国开源AI模型
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-22/opinion-00.jpg)
 
 
 是什么：美国财政部长Scott Bessent称可制裁中国开源AI模型，特朗普政府进一步扩大遏制中国AI发展的行动。
@@ -398,7 +398,7 @@ Halliday 推出 G2 智能眼镜，取消摄像头，只通过麦克风录制会�
 
 ### Ben Thompson：美国不需要恐慌，但需要开源替代
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-22/opinion-01.jpg)
 
 
 是什么：知名科技分析师Ben Thompson撰文分析中国开源模型崛起，认为前沿实验室无需恐慌，但必须支持美国开源替代方案。
@@ -411,7 +411,7 @@ Halliday 推出 G2 智能眼镜，取消摄像头，只通过麦克风录制会�
 
 ### 数据中心用电量到2035年将增长4倍
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-22/opinion-02.jpg)
 
 
 是什么：新报告预测，数据中心用电量到2035年将增长4倍，到2033年可能达到印度目前的电力消耗水平。
@@ -424,7 +424,7 @@ Halliday 推出 G2 智能眼镜，取消摄像头，只通过麦克风录制会�
 
 ### Deezer：每日超9万首AI生成曲目上传，占比超50%
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-22/opinion-03.jpg)
 
 
 是什么：音乐流媒体平台Deezer数据显示，每日上传曲目中AI生成的占比已超过50%，达到每天9万首以上。
@@ -437,7 +437,7 @@ Halliday 推出 G2 智能眼镜，取消摄像头，只通过麦克风录制会�
 
 ### YouTube明确AI低质内容禁令，细化变现规则
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-22/opinion-04.jpg)
 
 
 是什么：YouTube更新变现政策，明确AI生成的“垃圾内容”（slop）和低质量视频无法获得广告收入。
@@ -486,7 +486,7 @@ Meta 将内部使用了 8 年的 React 设计系统 Astryx 开源，包含 150 �
 
 ### MoonshotAI 开源 Kimi CLI：面向命令行的 AI 代理
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-22/opensource-01.jpg)
 
 
 月之暗面开源了 Kimi CLI，一个专为命令行场景设计的高级 AI 代理工具。它能够理解复杂指令、执行多步操作，并直接与系统交互，例如文件操作、代码修改和环境管理。相比传统的 Shell 辅助插件，Kimi CLI 是一个独立代理，具备上下文管理和错误恢复能力。为什么重要：这是国内大模型团队首次将 Agent 产品以 CLI 形式开源，意味着 Agent 不再局限于聊天界面，而是进入开发者日常工作流。对技术从业者而言，它提供了一个可以直接集成到 CI/CD 或本地开发环境的轻量级 Agent 方案。
@@ -495,7 +495,7 @@ Meta 将内部使用了 8 年的 React 设计系统 Astryx 开源，包含 150 �
 
 ### LangChain 开源 SWE Agent：异步编码代理
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-22/opensource-02.jpg)
 
 
 LangChain 发布 open-swe，一个专注于软件工程任务的异步编码代理框架。它支持多步骤任务分解、代码仓库级上下文理解，以及通过 Agent 间的协作完成复杂工程任务（如 bug 修复、功能开发）。关键点在于其异步架构大幅降低了 Agent 间的阻塞等待，适合需要并行处理多个子任务的场景。对于投资人：LangChain 正从“大模型编排层”走向“工程 Agent 平台”，open-swe 是这一战略的重要拼图；对于开发者：如果你已经在用 LangChain 做 Agent，可以零成本接入 SWE Agent，复用已有工具链。
@@ -504,7 +504,7 @@ LangChain 发布 open-swe，一个专注于软件工程任务的异步编码代�
 
 ### Prefect 发布 FastMCP：Pythonic 的 MCP 服务器构建框架
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-22/opensource-03.jpg)
 
 
 Prefect 开源 FastMCP，为构建 MCP（Model Context Protocol）服务器和客户端提供 Pythonic 的快速开发方式。它基于 FastAPI 的直观风格，支持自动注册工具和资源，开箱即可生成 OpenAPI 文档。为什么重要：MCP 是连接大模型与外部工具的最新标准协议，FastMCP 降低了实现门槛，让更多开发者可以快速为自己的服务添加 Agent 可调用接口。对于产品经理，这意味着 Agent 生态的互联互通正在标准化，未来产品里嵌入 Agent 功能的成本会进一步下降。
@@ -513,7 +513,7 @@ Prefect 开源 FastMCP，为构建 MCP（Model Context Protocol）服务器和�
 
 ### KTransformers：异构环境下的 LLM 推理与微调优化
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-22/opensource-04.jpg)
 
 
 KTransformers 是一个开源框架，专攻异构计算环境（CPU+GPU，甚至跨节点）下的 LLM 推理和微调优化。它通过动态算子调度和内存管理，在消费级硬件上实现接近数据中心级别的吞吐。关键点：它支持主流模型（LLaMA、Mistral、Qwen 等）且无需额外硬件改造，适合预算有限的团队进行本地化部署或微调。为什么重要：企业私有化 LLM 部署的成本瓶颈往往在 GPU 昂贵，KTransformers 的异构优化方案提供了一种务实的替代路径。
@@ -522,7 +522,7 @@ KTransformers 是一个开源框架，专攻异构计算环境（CPU+GPU，甚�
 
 ### Voicebox：开源 AI 语音克隆与生成工作室
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-22/opensource-05.jpg)
 
 
 Voicebox 是一个开源的 AI 语音工具，支持声音克隆、听写、内容生成。用户只需几秒样本即可克隆任意声音，并用于 TTS、有声书或语音助手。关键点：完全本地运行，隐私优先；支持多种语言和情感控制。为什么重要：语音生成领域此前以闭源产品为主（如 ElevenLabs），Voicebox 的开源为中小团队提供了可控的替代方案，尤其适合需要定制语音但预算有限的场景。
@@ -531,7 +531,7 @@ Voicebox 是一个开源的 AI 语音工具，支持声音克隆、听写、内�
 
 ### Cognee：为 AI Agent 提供的开源记忆平台
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-22/opensource-06.jpg)
 
 
 Cognee 是一个开源 AI 记忆平台，为 Agent 提供持久长期记忆，基于自托管的知识图引擎。Agent 可以读写结构化的记忆，实现跨会话的背景保持。关键点：它使用图结构而非向量数据库，支持关联推理和知识更新；核心模块可独立部署。为什么重要：当前主流 Agent 缺乏持久记忆，每次对话都是“白板”，Cognee 填补了这一空白。对于开发者，它提供了一种轻量级的方式让 Agent 记住用户偏好或业务规则，无需依赖外部 SaaS。
@@ -540,7 +540,7 @@ Cognee 是一个开源 AI 记忆平台，为 Agent 提供持久长期记忆，�
 
 ### 微软开源 Ontology Playground：本体学习可视化工具
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-22/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-22/opensource-07.jpg)
 
 
 微软开源 Ontology Playground，一个免费的 Web 应用，用于学习和设计本体（Ontology），支持导出 RDF/XML。它提供可视化编辑、推理验证和示例库，零门槛上手。为什么重要：虽然重要性排在今日较低，但它映射了知识图谱在企业 Agent 中的基础角色。对于产品经理，理解本体设计是构建 Agent 语义层的必修课，这个工具降低了学习曲线。

@@ -33,7 +33,7 @@ sections:
 
 ### Claude Fable 5：涨价翻倍，性能增幅不足预期
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-06-13/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-06-13/model_release-00.jpg)
 
 
 **是什么 |** Anthropic 最新发布的模型 Claude Fable 5 在第三方测评中被指出，相比前代 Claude Fable 4，性能提升仅 5.7%，但推理成本上涨近 100%（即翻倍）。行业早期对标 GPT-5 的期待落空，部分测试者观察到在复杂推理任务上提升更小。
@@ -46,7 +46,7 @@ sections:
 
 ### NVIDIA Blackwell 登顶首个 Agentic AI 基准 AgentPerf
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-13/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-13/model_release-01.jpg)
 
 
 **是什么 |** NVIDIA Blackwell 在 Artificial Analysis 发布的 AgentPerf 基准测试中取得第一名。AgentPerf 是业界首个专门针对 Agentic AI 系统（如自主编程、多步骤推理）的基础设施性能评测，Blackwell 在等待时间、吞吐量和成本效率三个维度上均领先。
@@ -59,7 +59,7 @@ sections:
 
 ### WeatherMesh-6 与开悟世界模型：垂直与具身智能的微进展
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-13/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-13/model_release-02.jpg)
 
 
 **是什么 |** Windborne Systems 发布 WeatherMesh-6 数值天气预报模型，据称在降水与温度预测上精度提升；大晓机器人发布开悟世界模型，在 RoboTwin 2.0、LIBERO-Plus 等四个具身智能榜单登顶。两者在各自领域取得客观成绩，但暂未引发广泛行业讨论。
@@ -83,7 +83,7 @@ sections:
 
 ### SpaceX上市首日大涨，史上最大IPO
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-13/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-13/company-00.jpg)
 
 
 是什么：SpaceX于2026年6月以每股135美元发行，首日开盘报150-174美元，散户申购额超700亿美元，成为史上最大IPO。关键点：首日涨幅区间约11%-29%，反映市场对商业航天和马斯克效应的极度追捧。散户涌入规模惊人，供需失衡明显。为什么重要：SpaceX的上市不仅标志私人航天龙头正式进入公众视野，更可能带动商业航天板块重新定价。但高估值下，后续盈利持续性需关注。
@@ -92,7 +92,7 @@ sections:
 
 ### Prometheus融资120亿美元，估值410亿
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-13/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-13/company-01.jpg)
 
 
 是什么：Jeff Bezos的物理AI初创公司Prometheus完成120亿美元融资，估值达410亿美元，目标是打造“人工通用工程师”（Artificial General Engineer）。关键点：本轮融资额在AI初创中罕见，直接与“通用人工智能”挂钩，但物理世界难度极高。为什么重要：Prometheus试图将AI能力扩展到机器人、制造等实体领域，若成功将颠覆传统工业自动化。巨额资本也验证了投资者对“AI+物理”赛道的信心。
@@ -101,7 +101,7 @@ sections:
 
 ### Mistral AI传闻融资30亿欧元，估值200亿
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-13/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-13/company-02.jpg)
 
 
 是什么：法国AI创企Mistral AI据传正以200亿欧元估值融资30亿欧元，较上一轮估值翻倍。关键点：Mistral以大模型开源路线著称，此轮估值膨胀迅速，反映欧洲AI领域吸引力增强。为什么重要：如果融资完成，Mistral将跻身全球AI第一梯队，与OpenAI、Anthropic等正面竞争。开源与闭源之争再添变数；同时估值翻倍可能触发其他欧洲AI公司估值重估。
@@ -110,7 +110,7 @@ sections:
 
 ### Google联合FBI起诉中国AI诈骗组织
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-13/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-13/company-03.jpg)
 
 
 是什么：Google与FBI联合起诉名为“Outsider Enterprise”的中国组织，指控其利用AI生成250万条诈骗短信，受害数十万人。关键点：这是科技巨头首次公开联合FBI起诉跨境AI诈骗团伙，且明确指向中国。Google称该组织使用AI工具伪造内容并绕过安全机制。为什么重要：AI成为新型犯罪武器，执法与科技巨头协作案例增多，未来监管和AI滥用治理将加速。也警示，技术红利与安全风险必须同步应对。
@@ -119,7 +119,7 @@ sections:
 
 ### Meta AI部门被曝混乱，工程师称“灵魂磨灭”
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-13/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-13/company-04.jpg)
 
 
 是什么：报告揭露Meta成立仅数月的AI Unit内部矛盾严重，6500名员工濒临反抗，工程师抱怨“灵魂磨灭”。关键点：组织架构混乱、资源争夺激烈、领导层方向频繁变更，导致核心员工士气低落。为什么重要：Meta正全力押注AI，但内部文化冲突可能拖累其与OpenAI、Google的竞争。员工反弹若持续，人才流失隐忧将加剧，对Meta长期AI战略构成实质威胁。
@@ -128,7 +128,7 @@ sections:
 
 ### OpenAI收购Ona，强化Codex长期自治编码
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-13/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-13/company-05.jpg)
 
 
 是什么：OpenAI收购了工具公司Ona，旨在推动Codex代理能够处理长时间运行的自主编码任务。关键点：Ona的技术帮助Codex从短代码生成转向持续数小时甚至数天的编程工作流。为什么重要：这是OpenAI在agentic方向的关键落子——从“辅助工具”升级为“自主工程伙伴”。若落地成功，将大幅提升软件开发效率，也加剧开发工具赛道竞争。
@@ -137,7 +137,7 @@ sections:
 
 ### OpenAI秘密递交IPO文件，三巨头齐筹钱
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-06-13/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-06-13/company-06.jpg)
 
 
 是什么：消息称OpenAI已秘密向美国证券交易委员会（SEC）提交IPO申请，可能成为AI史上最大规模融资事件。关键点：三巨头（Sam Altman、微软等）或同时参与筹资，暗示OpenAI急需巨额资金支撑模型训练和商业化扩张。为什么重要：OpenAI若上市，将给整个AI行业带来定价锚，同时引发人才和资本的虹吸效应。但秘密递交意味着具体估值和财务细节尚未公开，市场需要警惕高估值后的预期落差。
@@ -190,7 +190,7 @@ sections:
 
 ### 通过类比推理：检索增强强化学习微调新方法
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-06-13/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-06-13/research-03.jpg)
 
 
 **是什么**：arXiv论文提出检索增强的强化学习微调方法，旨在提升大模型的类比推理能力。
@@ -203,7 +203,7 @@ sections:
 
 ### Mana: 灵巧机器人操作铰接工具
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-06-13/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-06-13/research-04.jpg)
 
 
 **是什么**：新研究提出Mana框架，使机器人能够灵活操控铰接工具（如剪刀、钳子等）。
@@ -216,7 +216,7 @@ sections:
 
 ### SpatialClaw: 重新定义智能体空间推理接口
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-06-13/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-06-13/research-05.jpg)
 
 
 **是什么**：研究提出SpatialClaw，一种新型动作接口，旨在解决视觉语言模型（VLM）在3D空间推理中的根本挑战。
@@ -229,7 +229,7 @@ sections:
 
 ### EurekAgent: 自主科学发现的环境工程方法
 
-![research-06.jpg](/marginalia/assets/img/ai-hot/2026-06-13/research-06.jpg)
+![research-06.jpg](/assets/img/ai-hot/2026-06-13/research-06.jpg)
 
 
 **是什么**：论文提出EurekAgent，一种环境工程方法，使AI代理能够自动提出、验证并迭代科学假设和解决方案。
@@ -250,7 +250,7 @@ Deezer 新工具可跨平台扫描歌单识别 AI 生成音乐，可能在音乐
 
 ### Deezer 推出免费 AI 音乐识别工具
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-13/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-13/product-00.jpg)
 
 
 Deezer 的新工具能够扫描 Spotify、Apple Music 等平台上的歌单，标注其中由 AI 生成的曲目。关键点：该工具免费使用，不限于 Deezer 自家平台；识别基于音乐声学特征和元数据模式，而非仅靠标题或艺人标签。为什么重要？音乐流媒体平台正面临 AI 生成内容泛滥的挑战，Deezer 此举可能推动行业建立可互操作的识别标准，也会影响版权分成与内容审核规则。
@@ -259,7 +259,7 @@ Deezer 的新工具能够扫描 Spotify、Apple Music 等平台上的歌单，�
 
 ### DoorDash 推出 AI 聊天助手 Ask DoorDash
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-13/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-13/product-01.jpg)
 
 
 用户可通过文字或图片描述（如“拍一张菜单照片”）直接下单，无需手动筛选菜品与规格。关键点：助手能理解复杂需求，例如“儿童餐但不要番茄酱”；目前支持 iOS 和网页端。为什么重要？这标志着外卖平台的交互从“导航式 UI”转向“意图式对话”，可能降低点餐门槛，尤其对老年用户或语言障碍群体。对竞品而言，语音与多模态交互将成为新的差异化战场。
@@ -280,7 +280,7 @@ Deezer 的新工具能够扫描 Spotify、Apple Music 等平台上的歌单，�
 
 ### Pool 新 App 将截图自动整理为可搜索记忆库
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-13/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-13/product-04.jpg)
 
 
 App 自动分类截图并追踪原始链接，帮助用户快速找回之前收藏的商品、食谱等。关键点：支持按类型（购物链接、菜谱、二维码）自动归类；截图后无需手动标记即可搜索。为什么重要？移动端截图已成为日常“剪藏”手段，但杂乱无序。Pool 试图解决这个无处不在的痛点，其核心壁垒在于多模态分类与原始链接追溯的准确度。
@@ -295,7 +295,7 @@ App 自动分类截图并追踪原始链接，帮助用户快速找回之前收�
 
 ### Snowflake 发布 Agentic AI 工具 CoCo 与 CoWork
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-06-13/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-06-13/product-06.jpg)
 
 
 Snowflake Summit 26 上发布 CoCo（自然语言查询与数据治理助手）与 CoWork（跨团队协作 Agent）。关键点：CoCo 允许用户用自然语言编写 SQL 并自动优化；CoWork 则能串联多个数据工作流。为什么重要？Snowflake 将 Agentic AI 定位为数据平台的“新交互层”，直接对标 Databricks 的类似能力。对数据工程师而言，这意味着未来调试与治理工作可能越来越依赖 Agent 而非手动脚本。
@@ -304,7 +304,7 @@ Snowflake Summit 26 上发布 CoCo（自然语言查询与数据治理助手）�
 
 ### Azure API Management 推出统一模型 API
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-06-13/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-06-13/product-07.jpg)
 
 
 Build 2026 上，Azure API Management 新增统一模型 API 和 MCP 内容安全能力。关键点：统一模型 API 可一键接入 GPT-4、Claude 等不同模型，MCP 则提供输入输出的安全过滤策略。为什么重要？企业调用多模型 API 时面临的管理复杂度与安全风险是真实痛点，Azure 此举试图成为“API 枢纽”，降低企业采纳多模型架构的成本。对于 DevOps 团队，这是基础设施层的变化。
@@ -321,7 +321,7 @@ AI 产品的竞争正在从“谁有更好的模型”转向“谁有更自然�
 
 ### 德国法院裁定Google AI Overviews需为错误担责
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-13/opinion-00.jpg)
 
 
 德国法院作出里程碑判决：Google的AI概览（AI Overviews）不再被视作第三方搜索结果，而是平台自身的言论表达。这意味着Google需对AI生成的错误信息直接承担责任，无法再用“自动化工具”辩护。关键点在于，法院将AI输出与人类编辑的内容等同对待，打破了“AI非人为”的责任豁免。为什么重要？这是全球首个将AI系统输出定性为平台“言论”的司法实践，可能重塑AI产品的法律风险框架，尤其影响内容审核和合规成本。
@@ -336,7 +336,7 @@ AI 产品的竞争正在从“谁有更好的模型”转向“谁有更自然�
 
 ### 硅谷大厂员工人均月花5万养AI
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-13/opinion-02.jpg)
 
 
 一项调查显示，科技公司员工平均每月在AI工具上花费约5万人民币，AI成为个人最大成本项。这笔钱覆盖了GPT-5订阅、专业绘图AI、代码助手等多个服务。关键点：这并非公司采购，而是员工自费购买——说明AI工具对工作生产力的提升已被个体认可，同时也反映了工具碎片化和订阅疲劳。为什么重要？5万/月的人均支出若在全公司推广，将催生巨大的企业级AI市场，也可能加速企业对统一AI支出管理的需求。
@@ -345,7 +345,7 @@ AI 产品的竞争正在从“谁有更好的模型”转向“谁有更自然�
 
 ### 智源大会圆桌：具身智能或为中国AlphaGo时刻
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-13/opinion-03.jpg)
 
 
 在智源大会上，多位专家认为大模型并非终局，具身智能（Embodied AI）可能成为中国在AI领域的下一个突破口。关键点：中国在硬件制造和场景落地方面有优势，具身智能需要软硬结合，这正是中国擅长的领域。为什么重要？若具身智能能像AlphaGo之于深度学习那样引爆一轮产业投资，那么机器人、自动驾驶、工业自动化等赛道将获得新的估值逻辑。
@@ -354,7 +354,7 @@ AI 产品的竞争正在从“谁有更好的模型”转向“谁有更自然�
 
 ### AI行业的平台陷阱越来越像微软
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-13/opinion-04.jpg)
 
 
 分析指出，当前AI平台（如OpenAI、Google、Anthropic）正逐步形成类似微软在PC时代的垄断格局。用户被闭源模型、API依赖和数据锁定所困，开发者迁移成本极高。关键点：平台通过快速迭代和生态绑定（如插件、模型微调）增加切换难度，类似当年Windows的“开发者优先”策略。为什么重要？如果AI平台垄断成真，不仅会扼杀初创公司的创新空间，还可能引发反垄断监管，尤其在欧洲和美国。
@@ -369,7 +369,7 @@ AI 产品的竞争正在从“谁有更好的模型”转向“谁有更自然�
 
 ### Anthropic调查：过半美国人恐惧AI导致失业与丧失思考
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-06-13/opinion-06.jpg)
 
 
 Anthropic发布的调查显示，超过一半的美国受访者担心AI会取代他们的工作，并削弱他们独立思考的能力。关键点：这种恐惧并非仅来自蓝领岗位，白领和专业工作者同样担忧AI的“思考替代”效应，比如依赖AI写代码、做决策可能导致认知能力下降。为什么重要：公众情绪可能转化为政策压力——如要求AI可解释性、强制人类审核等，甚至影响AI产品的采用率。
@@ -378,7 +378,7 @@ Anthropic发布的调查显示，超过一半的美国受访者担心AI会取代
 
 ### Token大爆炸前夜，数据基础设施成新变量
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-06-13/opinion-07.jpg)
 
 
 随着AI生成Token（文本、图像、代码）数量指数级增长，传统数据基础设施从“存储为先”转向“实时处理与可观测性”。关键点：大模型推理产生的Token量远超训练数据，推动了对数据湖、流处理、可观测性工具的迫切需求。为什么重要？这意味着数据基础设施市场将迎来新一波增量，类似云计算早期崛起，专注实时AI数据管道的初创公司可能成为下一个投资热点。
@@ -397,7 +397,7 @@ Anthropic发布的调查显示，超过一半的美国受访者担心AI会取代
 
 ### addyosmani/agent-skills：生产级 AI 代理技能库
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-13/opensource-00.jpg)
 
 
 **是什么**：Google 工程师 Addy Osmani 开源的编码代理技能集合，包含工作流模板、质量门禁、测试与部署最佳实践。
@@ -410,7 +410,7 @@ Anthropic发布的调查显示，超过一半的美国受访者担心AI会取代
 
 ### NVIDIA 发布 SkillSpector 安全扫描器
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-13/opensource-01.jpg)
 
 
 **是什么**：NVIDIA 开源的工具，用于扫描 AI 代理的技能定义（function calling、plugin 描述等），检测潜在漏洞和恶意模式。
@@ -423,7 +423,7 @@ Anthropic发布的调查显示，超过一半的美国受访者担心AI会取代
 
 ### Karpathy 的 autoresearch：在单 GPU 上自动训练 LLM
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-13/opensource-02.jpg)
 
 
 **是什么**：Andrej Karpathy 开源的项目，让 AI 代理能够自动设计实验、执行训练、评估结果，并迭代改进。当前演示基于 nanochat 模型（小参数量对话模型），可在单张 RTX 3090 上完成完整微调。
@@ -436,7 +436,7 @@ Anthropic发布的调查显示，超过一半的美国受访者担心AI会取代
 
 ### Anthropic 发布官方 Claude Agent Python SDK
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-13/opensource-03.jpg)
 
 
 **是什么**：Anthropic 推出的 Python 库，简化开发者基于 Claude 构建智能代理应用的流程。
@@ -449,7 +449,7 @@ Anthropic发布的调查显示，超过一半的美国受访者担心AI会取代
 
 ### Onyx 开源 AI 平台支持多 LLM 与高级功能
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-13/opensource-04.jpg)
 
 
 **是什么**：Onyx 是一个全栈开源 AI 平台，提供聊天、Agent、RAG、文档管理等功能，并兼容 OpenAI、Anthropic、Google 等多种模型。
@@ -462,7 +462,7 @@ Anthropic发布的调查显示，超过一半的美国受访者担心AI会取代
 
 ### LiteLLM：统一调用 100+ LLM 的开源 SDK 与网关
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-13/opensource-05.jpg)
 
 
 **是什么**：LiteLLM 提供 Python SDK 和代理服务器，以 OpenAI API 格式统一调用上百种 LLM（包括开源模型和商业 API），支持成本追踪、负载均衡、故障转移。
@@ -475,7 +475,7 @@ Anthropic发布的调查显示，超过一半的美国受访者担心AI会取代
 
 ### MLflow：开源 AI 工程平台支持 Agent 与 LLM
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-13/opensource-06.jpg)
 
 
 **是什么**：MLflow 是流行的开源 ML 生命周期平台，最新版本新增了对 Agent 和 LLM 的全面支持，包括调试、评估、监控与成本控制。
@@ -488,7 +488,7 @@ Anthropic发布的调查显示，超过一半的美国受访者担心AI会取代
 
 ### 小米 MiMo Code 开源：5 人 2 周 5.1k 星但 bug 不断
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-13/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-13/opensource-07.jpg)
 
 
 **是什么**：小米开源了 AI 编程模型 MiMo Code，项目在 GitHub 上迅速获得 5.1k 星，但社区反馈存在不少 bug，包括代码生成不稳定、上下文处理错误等。开发团队正在积极修复。

@@ -56,7 +56,7 @@ NVIDIA 实验室发布的 SANA-WM 是一个基于 flow-based diffusion transform
 
 ### Brockman统管产品，ChatGPT与Codex合并打造“代理未来”
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-18/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-18/company-00.jpg)
 
 
 **是什么**：OpenAI联合创始人Greg Brockman已全面负责产品战略，计划合并ChatGPT和Codex两大产品线，统一构建“代理未来”（agentic future）平台。Codex原本专注于代码生成与执行，ChatGPT则聚焦自然语言对话与生成。
@@ -69,7 +69,7 @@ NVIDIA 实验室发布的 SANA-WM 是一个基于 flow-based diffusion transform
 
 ### 马斯克-OpenAI庭审最后阶段：信任成核心焦点
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-18/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-18/company-01.jpg)
 
 
 **是什么**：埃隆·马斯克诉OpenAI案进入庭审最后阶段，双方围绕OpenAI CEO Sam Altman是否值得信任展开激烈辩论。马斯克方指控Altman背弃OpenAI非营利初衷，过度追求营利。
@@ -82,7 +82,7 @@ NVIDIA 实验室发布的 SANA-WM 是一个基于 flow-based diffusion transform
 
 ### Meta员工自揭“恐怖内幕”：大厂文化再遭拷问
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-18/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-18/company-02.jpg)
 
 
 **是什么**：一名自称Meta（原Facebook）员工的匿名用户公开发文，详细描述在Meta的工作体验，称“像是生活在恐怖片中”，引发科技圈热议。文章迅速在内部论坛和社交媒体传播。
@@ -115,7 +115,7 @@ Brockman的产品合并与马斯克的信任诉讼，共同指向一个核心问
 
 ### AI模型自主开发浏览器漏洞，安全防线告急
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-18/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-18/research-00.jpg)
 
 
 研究团队发布新基准，证明 Claude Mythos 和 GPT-5.5 能独立开发真实浏览器漏洞。关键点：模型不仅识别漏洞，还能编写并验证 exploit 代码，无需人类干预。为什么重要：这直接挑战了现有安全监管框架——如果模型具备自主开发 0-day 的能力，其部署风险将指数级上升，可能需要新的治理方案。
@@ -124,7 +124,7 @@ Brockman的产品合并与马斯克的信任诉讼，共同指向一个核心问
 
 ### 数学基准：模型对无解问题自信给出错误答案
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-18/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-18/research-01.jpg)
 
 
 研究人员创建新数学基准，发现主流模型常常自信地给出错误答案，甚至对本身无解的问题也“硬解”。关键点：模型在逻辑缺失时依然输出流畅的错误解法，缺乏基本的怀疑能力。为什么重要：这揭示了当前 AI 在事实判断上的根本缺陷——它们更擅长模仿而非真理性理解，对于高可靠性场景（如代码审核、金融决策）构成风险。
@@ -133,7 +133,7 @@ Brockman的产品合并与马斯克的信任诉讼，共同指向一个核心问
 
 ### 视频生成基准：画面惊艳，推理为零
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-18/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-18/research-02.jpg)
 
 
 新测试表明，当前 AI 视频生成器虽然能产出高分辨率流畅视频，但无法理解基本物理规律（如物体下落、碰撞反应）。关键点：模型在生成“视觉”而非“世界”的模拟，对因果关系毫无感知。为什么重要：这意味着 AI 视频生成在创意和娱乐之外，无法用于需要真实物理模拟的领域（如机器人训练、科学可视化），应用天花板已现。
@@ -142,7 +142,7 @@ Brockman的产品合并与马斯克的信任诉讼，共同指向一个核心问
 
 ### World Action Models：让机器人先模拟再行动
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-18/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-18/research-03.jpg)
 
 
 研究人员提出 World Action Models，使机器人在实际移动前能模拟动作后果，提升安全性。关键点：模型学习环境的动力学，预测不同动作带来的状态变化，然后在模拟中选择最优动作。为什么重要：这解决了机器人部署中的安全难题——降低失误导致的物理损坏，可能加速家庭和服务机器人的落地。
@@ -151,7 +151,7 @@ Brockman的产品合并与马斯克的信任诉讼，共同指向一个核心问
 
 ### DeepSeek-V4-Flash 让向量操控重获关注
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-05-18/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-05-18/research-04.jpg)
 
 
 基于 DeepSeek-V4-Flash 的研究显示，通过向量操控（steering vectors）可以有效调整模型行为（如抑制有害输出）。关键点：方法简单且可解释，只需对中间表示做线性变换。为什么重要：这是 LLM 可解释性的实际应用突破，可能为安全微调提供一种不需大规模重新训练的新范式。
@@ -160,7 +160,7 @@ Brockman的产品合并与马斯克的信任诉讼，共同指向一个核心问
 
 ### 研究指出：SFT 前应先修复多模态预训练缺陷
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-05-18/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-05-18/research-05.jpg)
 
 
 论文揭示多模态大模型在 SFT 之前存在预训练阶段的系统性偏差，如视觉特征与文本不对齐。关键点：直接进入强化学习或 SFT 会放大偏差，建议先做预训练修复。为什么重要：这暗示了当前大规模多模态训练流程的结构性问题，可能改变行业标准训练管线。
@@ -175,7 +175,7 @@ Brockman的产品合并与马斯克的信任诉讼，共同指向一个核心问
 
 ### Lighthouse注意力：训练时加速1.4-1.7倍长上下文
 
-![research-07.jpg](/marginalia/assets/img/ai-hot/2026-05-18/research-07.jpg)
+![research-07.jpg](/assets/img/ai-hot/2026-05-18/research-07.jpg)
 
 
 Nous Research 开源 Lighthouse Attention，一种层次化注意力机制，在预训练阶段可显著加速长序列训练。关键点：通过选择压缩关键 token 降低计算量，不损失下游性能。为什么重要：长上下文是当前模型竞争的核心，该机制可能降低训练成本，推动长上下文模型普及。
@@ -194,7 +194,7 @@ Nous Research 开源 Lighthouse Attention，一种层次化注意力机制，在
 
 ### 苹果Siri将自动删除聊天记录，隐私成新卖点
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-18/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-18/product-00.jpg)
 
 
 苹果计划在Siri大改版中引入自动删除聊天功能，用户无需手动清理历史对话。关键点：隐私成为核心卖点，系统默认会定期清除语音交互记录，仅在必要时临时存储。为什么重要：在众多AI助手因数据收集被诟病的背景下，苹果此举可能推动行业重新定义“用户数据主权”，但也可能牺牲个性化体验的深度。
@@ -203,7 +203,7 @@ Nous Research 开源 Lighthouse Attention，一种层次化注意力机制，在
 
 ### YouTube全面开放深度伪造面部检测工具
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-18/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-18/product-01.jpg)
 
 
 YouTube将其深度伪造人脸识别工具开放给所有成人创作者，可自动检测并标记合成视频中的换脸内容。关键点：工具能识别AI生成的虚假面部，并给出置信度评分，创作者可主动标注或下架。为什么重要：生成式AI内容的真实性危机正在倒逼平台从“事后删除”转向“事前可见”，但仅限成人创作者使用可能让青少年内容审核留下空白。
@@ -212,7 +212,7 @@ YouTube将其深度伪造人脸识别工具开放给所有成人创作者，可�
 
 ### 机器狗芯片挑战英伟达算力王座
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-18/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-18/product-02.jpg)
 
 
 一款专为机器狗设计的新型低功耗处理器，在特定AI推理任务（如实时物体识别、路径规划）上超越了英伟达GPU。关键点：该芯片主打能耗比，单次推理功耗仅为GPU的1/10，且针对机器人动作控制做了硬件级优化。为什么重要：如果边缘算力真的出现“弯道超车”案例，英伟达在AI硬件的统治地位将首次面临非对称竞争，机器人、无人机等场景可能率先受益。
@@ -221,7 +221,7 @@ YouTube将其深度伪造人脸识别工具开放给所有成人创作者，可�
 
 ### 四款AI模型轮流运营电台6个月：从专业到疯狂
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-18/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-18/product-03.jpg)
 
 
 Andon Labs让四个AI模型（包括OpenAI、Anthropic、Meta和一家初创公司）轮流独立管理广播电台长达6个月。关键点：多数模型能维持专业播音，但部分模型出现自创节目、播放循环错乱甚至“失控”的对话。为什么重要：这是对AI代理长期自主运营的极端测试——能力足够，但“稳定性”和“可控性”仍是关键短板，这对商业落地有直接参考价值。
@@ -230,7 +230,7 @@ Andon Labs让四个AI模型（包括OpenAI、Anthropic、Meta和一家初创公�
 
 ### Vercel推出Zero：AI代理可直接读写原生程序
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-18/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-18/product-04.jpg)
 
 
 Vercel Labs发布一门新的系统编程语言Zero，专为AI代理设计，支持AI自动读取、诊断并修复原生代码，无需人类逐行解读。关键点：Zero的语法设计让LLM更容易理解上下文，并内置了修复合约机制。为什么重要：当前AI编程助手多限缩在高级语言或脚本层面，Zero试图让AI直接触摸底层，可能加速AI从“补完代码”到“自主部署系统”的跨越。
@@ -239,7 +239,7 @@ Vercel Labs发布一门新的系统编程语言Zero，专为AI代理设计，支
 
 ### ChatGPT获理财能力，用户担忧隐私
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-18/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-18/product-05.jpg)
 
 
 ChatGPT新增金融账户查询和理财建议功能，但要求读取用户全部账户余额。关键点：这一功能需用户授权银行数据连接，AI可分析收支结构并生成投资建议。为什么重要：隐私担忧扑面而来——用户是否愿意把最敏感的财务数据交给云服务？这对AI与金融的合规边界提出了立刻需要回答的问题。
@@ -254,7 +254,7 @@ ChatGPT新增金融账户查询和理财建议功能，但要求读取用户全�
 
 ### 汽车业面临AI技能军备竞赛
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-05-18/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-05-18/product-07.jpg)
 
 
 TechCrunch Mobility专栏指出，汽车行业正就AI技能展开激烈争夺：从自动驾驶算法工程师到智能座舱NLP专家，需求暴增。关键点：车企不惜重金从硅谷挖人，甚至内部成立AI学院。为什么重要：传统汽车制造正全面转向“智能终端”，AI人才密度将直接决定其产品竞争力；未来三年，行业的人才布局或影响全球出行格局。
@@ -273,7 +273,7 @@ TechCrunch Mobility专栏指出，汽车行业正就AI技能展开激烈争夺�
 
 ### Mistral CEO：欧洲还有两年时间避免沦为AI殖民地
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-18/opinion-00.jpg)
 
 
 **是什么**：Mistral CEO Arthur Mensch 在公开场合反对法国政府允许Anthropic（旗下的神话系统Mythos）扫描军用代码库，认为此举将让欧洲核心技术主权拱手让与美国。他估算欧洲尚有两年窗口期建立自主AI能力，否则将永远处于依赖地位。
@@ -286,7 +286,7 @@ TechCrunch Mobility专栏指出，汽车行业正就AI技能展开激烈争夺�
 
 ### ArXiv新规：AI代写论文将被封号一年
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-18/opinion-01.jpg)
 
 
 **是什么**：预印本平台ArXiv发布新政策，如发现作者使用AI完成主要写作工作（而非仅辅助润色），将禁止该账号提交新论文一年。该政策适用于所有学科。
@@ -299,7 +299,7 @@ TechCrunch Mobility专栏指出，汽车行业正就AI技能展开激烈争夺�
 
 ### 美监管机构押注AI监控预测市场内幕交易
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-18/opinion-02.jpg)
 
 
 **是什么**：美国商品期货交易委员会（CFTC）计划部署AI系统，实时追踪预测市场（如Polymarket、Kalshi）中的异常交易行为，以打击内幕交易。
@@ -312,7 +312,7 @@ TechCrunch Mobility专栏指出，汽车行业正就AI技能展开激烈争夺�
 
 ### 企业AI订阅是定时炸弹
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-18/opinion-03.jpg)
 
 
 **是什么**：专栏作者分析当前企业AI订阅模式，认为按座位/按token计费叠加长期合约，可能导致成本失控、供应商锁定和难以迁移。
@@ -335,7 +335,7 @@ TechCrunch Mobility专栏指出，汽车行业正就AI技能展开激烈争夺�
 
 ### AI是技术不是产品，Daring Fireball发问
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-18/opinion-05.jpg)
 
 
 **是什么**：知名博主John Gruber发文指出，当前多数AI公司错误地将模型能力当作产品卖点，却忽略了产品定义（用户场景、体验闭环、定价模式）。
@@ -348,7 +348,7 @@ TechCrunch Mobility专栏指出，汽车行业正就AI技能展开激烈争夺�
 
 ### 不要期待AI能加速一切流程
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-05-18/opinion-06.jpg)
 
 
 **是什么**：技术博主Frederick Van Brabant 撰文，指出盲目引入AI可能导致流程更复杂、延迟更长，实际效率可能不升反降。
@@ -385,7 +385,7 @@ Zerostack是一个全新用Rust编写的AI代理框架，核心设计遵循Unix�
 
 ### Anthropic发布官方Agent Skills标准仓库
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-18/opensource-01.jpg)
 
 
 Anthropic在GitHub上开源了Agent Skills公共仓库，旨在推动AI agent技能定义和交互的标准化。关键点：仓库包含可复用的skill定义、测试框架和互操作协议，使不同agent系统能共享能力模块。为什么重要：当前agent生态碎片化严重，每个框架各有自己的工具调用和技能定义方式。Anthropic以产业领导者身份推动标准化，有望降低agent开发门槛，但也可能形成事实上的标准绑定——对于平台方和开发者，是否跟进这套规范将成为战略选择。
@@ -394,7 +394,7 @@ Anthropic在GitHub上开源了Agent Skills公共仓库，旨在推动AI agent技
 
 ### CodeGraph：让Claude Code理解代码语义，减少94%令牌
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-18/opensource-02.jpg)
 
 
 CodeGraph是一个开源工具，通过预构建代码知识图谱，帮助AI编码agent（如Claude Code）理解代码语义结构，从而大幅减少不必要的token消耗。关键点：在大型代码库中，传统agent需要反复读取大量上下文，CodeGraph离线构建类图、调用图和依赖树后，agent只需查询图谱即可定位相关代码段，实测token减少94%。为什么重要：token成本是生产级AI编码agent的核心瓶颈，94%的削减意味着企业用户能将成本降低近一个数量级，同时保持甚至提升代码理解准确率，可能加速AI编码工具从辅助走向自动。
@@ -403,7 +403,7 @@ CodeGraph是一个开源工具，通过预构建代码知识图谱，帮助AI编
 
 ### Open-Generative-AI：200+模型自托管视频生成平台
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-18/opensource-03.jpg)
 
 
 MIT许可的开源AI视频生成平台，支持Flux、Midjourney等200+模型，可完全自托管。关键点：提供统一API和Web UI，支持模型热切换、GPU资源配置和队列管理，无需依赖第三方云服务。为什么重要：视频生成服务通常依赖封闭API，成本高且存在数据隐私风险。自托管平台让企业和创作者拥有模型选择权和数据控制权，但部署和维护200+模型需要强GPU集群——更适合有基础设施团队的组织，而非个人用户。
@@ -412,7 +412,7 @@ MIT许可的开源AI视频生成平台，支持Flux、Midjourney等200+模型，
 
 ### NVIDIA开源视频搜索与摘要AI蓝图
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-18/opensource-04.jpg)
 
 
 NVIDIA发布了基于GPU加速的视频搜索与摘要参考架构，便于构建视觉agent。关键点：使用NVIDIA NeMo和vLLM作为底层，提供端到端流水线：视频解码、帧提取、多模态嵌入、语义搜索和摘要生成，支持自定义索引规模。为什么重要：视频内容是企业非结构化数据的重头，但传统搜索只能靠元数据。NVIDIA的蓝图将视频理解门槛降低到代码级，配合其GPU生态，可能成为视频分析领域的参考实现。注意依赖NVIDIA硬件，非CUDA环境无法直接使用。
@@ -421,7 +421,7 @@ NVIDIA发布了基于GPU加速的视频搜索与摘要参考架构，便于构�
 
 ### Oppo开源全手机端AI代理X-OmniClaw
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-18/opensource-05.jpg)
 
 
 X-OmniClaw是Oppo开源的Android AI agent框架，利用摄像头、屏幕和语音，在手机端无需联网完成复杂任务。关键点：离线运行在手机上，通过视觉理解和语音交互直接操控APP，无需root或修改系统。为什么重要：移动端agent的痛点在于隐私和延迟，X-OmniClaw的全端方案解决了联网依赖问题，但受限于手机算力，复杂任务的推理延时和准确性仍是挑战。对于Android生态，这可能催生新一代无APP的交互范式——设备本身成为智能体。
@@ -430,7 +430,7 @@ X-OmniClaw是Oppo开源的Android AI agent框架，利用摄像头、屏幕和�
 
 ### 6.4k Stars：Claude Code论文写作全流程开源
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-05-18/opensource-06.jpg)
 
 
 开发者将基于Claude Code的学术论文写作流水线打包开源，包含完整的写作、润色、参考文献管理等步骤，并附费用参考。关键点：在GitHub获6.4k星标，说明学术界对AI辅助写作工具有强烈需求；流水线使用了Claude Code的协作模式和自定义API调用，每个阶段Token消耗和费用透明。为什么重要：AI论文写作工具面临学术诚信争议，但该开源项目的热度说明研究者正在寻找可控、可审计的辅助方式。透明公开的费用参考让用户评估成本效益，可能推动更多学术团队将AI集成到工作流中，而非仅仅用于初稿生成。
@@ -439,7 +439,7 @@ X-OmniClaw是Oppo开源的Android AI agent框架，利用摄像头、屏幕和�
 
 ### LiteLLM Agent Platform：K8s原生自主agent后台
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-18/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-18/opensource-07.jpg)
 
 
 BerriAI推出的LiteLLM Agent Platform是一个基于Kubernetes的自托管agent沙箱和持久会话管理方案。关键点：提供隔离的agent容器运行环境、会话持久化、日志审计和自动扩缩容，与LiteLLM代理无缝集成。为什么重要：生产环境中agent部署面临沙箱隔离、状态管理和资源调度三大难题，该平台将agent视为Kubernetes原生工作负载，借用已有生态解决这些问题。对于已经使用K8s的团队，这是最自然的agent基础设施选择，但绑定BerriAI生态可能带来迁移成本。

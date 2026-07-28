@@ -33,7 +33,7 @@ used for like-dedupe and rate-limiting.
 MG_DB_PATH=/opt/mg-comments/mg-comments.db
 MG_IP_SALT=<random-long-string>
 MG_ADMIN_TOKEN=<random-long-string>     # for DELETE; unset → delete disabled
-MG_ALLOW_ORIGIN=https://pyf-labrary.github.io
+MG_ALLOW_ORIGIN=https://jinzi.cyou,https://pyf-labrary.github.io
 MG_RATE_MAX=3
 MG_RATE_WINDOW=60
 ```

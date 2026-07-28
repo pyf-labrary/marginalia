@@ -33,7 +33,7 @@ sections:
 
 ### OpenAI连发三款实时语音模型：推理、翻译、转录一体
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-09/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-09/model_release-00.jpg)
 
 
 **是什么**：OpenAI 通过 Realtime API 推出 GPT-Realtime-2、GPT-Realtime-Translate 和 GPT-Realtime-Whisper。前者侧重实时语音推理，支持类似 GPT-5 级别的对话理解与生成；中间模型专攻同传翻译，实现低延迟多语言语音转语音；后者提供流式转录，精度和速度较前代 Whisper 有明显提升。
@@ -64,7 +64,7 @@ sections:
 
 ### DeepSeek拟募资最高500亿元，创中国AI融资纪录
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-09/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-09/company-00.jpg)
 
 
 DeepSeek 计划启动高达 500 亿元人民币的单轮融资，若完成将是中国 AI 领域有史以来最大规模。这笔资金预计用于扩展算力基础设施和模型训练。关键点：当前全球 AI 赛道的资本正在向少数头部玩家聚集，中国也不例外。为什么重要：这既是对 DeepSeek 技术路线（开源+低成本推理）的市场背书，也意味着中小型 AI 公司想要追赶的难度进一步加大。国产大模型格局可能因此加速洗牌。
@@ -73,7 +73,7 @@ DeepSeek 计划启动高达 500 亿元人民币的单轮融资，若完成将是
 
 ### Anthropic估值逼近万亿美元，收入增长五倍
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-09/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-09/company-01.jpg)
 
 
 Anthropic 估值已接近 1 万亿美元，年收入同比增长 5 倍。这一增长主要来自 Claude 的企业客户和API调用激增。关键点：Anthropic 成为继 OpenAI 之后估值最高的 AI 初创公司，万亿美元大关意味着其已被市场视为与 Meta、Tesla 等巨头同一量级的资产。为什么重要：估值飙升的背后是投资者对安全优先路线的认可，但如此高的定价也让后续融资面临更严苛的增长证明压力。
@@ -82,7 +82,7 @@ Anthropic 估值已接近 1 万亿美元，年收入同比增长 5 倍。这一�
 
 ### Anthropic与马斯克xAI达成数据中心合作
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-09/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-09/company-02.jpg)
 
 
 Anthropic 与马斯克旗下的 xAI/SpaceX 签署协议，使用其 Colossus 数据中心全部容量来缓解算力短缺。此前因用户激增，Claude 响应速度一度下降，合作后体验已有恢复。关键点：这一合作打破了行业常见的“竞争对手不相往来”的潜规则，xAI 本身也是头部模型厂商。为什么重要：算力资源正成为 AI 公司的核心瓶颈，云厂商之外的选项（如专用数据中心）可能催生新的合作与共赢模式。
@@ -91,7 +91,7 @@ Anthropic 与马斯克旗下的 xAI/SpaceX 签署协议，使用其 Colossus 数
 
 ### 马斯克诉OpenAI案揭安全记录，欲拆分营利子公司
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-09/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-09/company-03.jpg)
 
 
 Elon Musk 的诉讼持续深入，试图揭示 OpenAI 在安全实践上的不足，并推动法院要求 OpenAI 提供更多内部安全文档。诉讼目标之一是拆分 OpenAI 的营利子公司，以恢复其非营利初衷。关键点：案件正在将 OpenAI 内部的“安全 vs 速度”矛盾暴露在公众和监管面前。为什么重要：如果法院支持披露更多安全记录，可能动摇 OpenAI 的企业客户与合作伙伴对其治理结构的信任，影响其商业模式。
@@ -100,7 +100,7 @@ Elon Musk 的诉讼持续深入，试图揭示 OpenAI 在安全实践上的不�
 
 ### 软银将OpenAI担保贷款从100亿降至60亿美元
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-09/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-09/company-04.jpg)
 
 
 SoftBank 主导的、以 OpenAI 股权为担保的贷款规模原先计划 100 亿美元，但因贷款机构对私营 AI 公司的估值模型存在分歧，最终缩减至 60 亿美元。关键点：即使是对 OpenAI 这样的头部玩家，银行和机构投资者也开始对高估值产生怀疑。为什么重要：这可能是整个 AI 融资市场从“迷信明星公司”转向“要求财务基本面”的信号。如果连 OpenAI 都面临贷款折价，二三线公司的融资环境会更紧张。
@@ -109,7 +109,7 @@ SoftBank 主导的、以 OpenAI 股权为担保的贷款规模原先计划 100 �
 
 ### Moonshot AI融资20亿美元，估值200亿
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-09/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-09/company-05.jpg)
 
 
 中国 AI 初创 Moonshot AI（月之暗面）完成 20 亿美元融资，估值达 200 亿美元。其年度经常性收入（ARR）已超过 2 亿美元，主要来自开源模型商用部署。关键点：公司主打开源长文本模型，在开发者社区和企业定制化方向取得了显著市场验证。为什么重要：在 DeepSeek 崛起的背景下，Moonshot 凭差异化定位（开源+服务）仍能吸引大额资本，说明中国 AI 赛道并非赢家通吃，垂直深耕依然有机会。
@@ -118,7 +118,7 @@ SoftBank 主导的、以 OpenAI 股权为担保的贷款规模原先计划 100 �
 
 ### Cloudflare称AI让1100个岗位过时，收入创新高
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-09/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-09/company-06.jpg)
 
 
 Cloudflare 宣布因 AI 效率提升，裁撤约 1100 个支持岗位（占员工总数约 10%）。CEO 称这些岗位“已被 AI 工具替代”，同时公司季度收入创下历史新高。关键点：这是科技巨头首次公开将大规模裁员直接归因于 AI 自动化，而非财务困难。为什么重要：Cloudflare 的案例为“AI 会消灭岗位而非补充人力”提供了具体数据，可能引发更多公司效仿，也加剧了关于 AI 就业影响的争论。
@@ -127,7 +127,7 @@ Cloudflare 宣布因 AI 效率提升，裁撤约 1100 个支持岗位（占员�
 
 ### DeepL裁员250人，转型AI原生组织
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-09/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-09/company-07.jpg)
 
 
 AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目标是重组为“AI native”组织，即用 AI 替代传统人工流程，使公司运营更灵活。关键点：DeepL 本身是 AI 翻译公司，如今却需要“拆掉自己”来适应新一代 AI 效率。为什么重要：这说明即使是 AI 公司本身，也不得不主动变革组织结构以保持竞争力。“AI native”将成为继“云原生”之后的下一个管理热词。
@@ -146,7 +146,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### Anthropic 用自然语言自编码器打开 Claude 黑箱
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-09/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-09/research-00.jpg)
 
 
 **是什么**：Anthropic 开发了一种新的自编码器架构，将 Claude 内部激活的高维表示直接映射为自然语言句子，而非传统的神经元热力图。与传统稀疏自编码器不同，该方法输出的解释本身就是可读的文本。
@@ -159,7 +159,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### DeepMind 发布 AlphaEvolve：Gemini 驱动的编码 Agent
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-09/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-09/research-01.jpg)
 
 
 **是什么**：DeepMind 推出 AlphaEvolve，一个基于 Gemini 模型的编码 Agent，能够在数学、物理、生物等多个学科领域自主编写代码并扩展影响力。
@@ -172,7 +172,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### EMO 预训练：混合专家模型实现模块性涌现
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-09/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-09/research-02.jpg)
 
 
 **是什么**：Allen AI 提出的 EMO（Expert Modularization Optimization）方法，在混合专家模型预训练阶段引入模块性损失，使不同专家自动形成功能分化的模块。
@@ -195,7 +195,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### DFlash：块扩散实现闪速推测解码
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-05-09/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-05-09/research-04.jpg)
 
 
 **是什么**：新论文提出 DFlash，利用块扩散模型一次性生成多个连续 token 的概率分布，替代了传统单 token 的逐步生成。
@@ -208,7 +208,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### TabPFN：表格数据基础模型开源发布
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-05-09/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-05-09/research-05.jpg)
 
 
 **是什么**：PriorLabs 开源 TabPFN，这是一个基于 Transformer 的表格数据基础模型，专为少样本分类和回归任务设计。
@@ -231,7 +231,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### Mozilla 用 Claude Mythos 挖出 271 个零误报漏洞
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-09/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-09/product-00.jpg)
 
 
 **是什么：** Mozilla 安全团队基于 Anthropic Claude Mythos Preview 构建了一条全自动漏洞挖掘流水线，在 Firefox 浏览器中发现了 271 个从未被记录的安全漏洞，且报告中几乎无任何误报。
@@ -254,7 +254,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### Google AI Overviews 增加更多来源链接
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-09/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-09/product-02.jpg)
 
 
 **是什么：** Google 宣布将在 AI Overviews 中更突出地显示来源链接，包括站内引用卡片和侧边栏源列表，以提升答案的透明度与可追溯性。
@@ -267,7 +267,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### Perplexity Personal Computer 全面开放 Mac 版
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-09/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-09/product-03.jpg)
 
 
 **是什么：** Perplexity 的 AI 助手 Perplexity Personal Computer 现已在 Mac 上对所有用户开放，能够控制桌面应用、执行多步任务，类似一个系统级的 agent 助手。
@@ -280,7 +280,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### Google 发布无屏 Fitbit Air 与 Google Health 应用
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-09/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-09/product-04.jpg)
 
 
 **是什么：** Google 推出无屏幕的健身追踪器 Fitbit Air（售价 100 美元），并同步发布全新的 Google Health 应用，旨在彻底取代旧的 Fitbit 平台，整合 AI 健康洞察。
@@ -293,7 +293,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### Spotify AI DJ 新增法语、德语等四种语言
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-09/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-09/product-05.jpg)
 
 
 **是什么：** Spotify AI DJ 功能扩展至法语、德语、意大利语和巴西葡萄牙语，同时允许用户将以 Codex 或 Claude Code 生成的播客直接导入平台。
@@ -336,7 +336,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### AI垃圾内容正在杀死在线社区
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-09/opinion-00.jpg)
 
 
 **是什么**：一篇分析文章指出，AI生成的低质量内容（"slop"）正泛滥成灾，严重侵蚀网络社区质量。文章在Hacker News上获得795分的高共鸣，反映从业者对此的普遍担忧。
@@ -349,7 +349,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### 欧盟AI监管大幅推迟，多数条款延后实施
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-09/opinion-01.jpg)
 
 
 **是什么**：欧盟因AI法案复杂度高，决定推迟大部分条款的执行时间，给企业和监管机构更多准备时间。
@@ -362,7 +362,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### 索尼：AI工具将导致更多游戏涌入市场
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-09/opinion-02.jpg)
 
 
 **是什么**：索尼表示高效的AI工具会加速游戏开发，但强调人类艺术家仍需处于核心地位，引发对内容过剩的讨论。
@@ -375,7 +375,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### Nick Bostrom谈人类“大退休”与AI未来
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-09/opinion-03.jpg)
 
 
 **是什么**：哲学家Nick Bostrom在Wired访谈中提出人类应追求高级AI并实现“被解决的世界”，畅想人类从劳动中解放后的生活。
@@ -388,7 +388,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### 高盛：美国数据中心用电需求两年内翻倍
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-09/opinion-04.jpg)
 
 
 **是什么**：高盛预测美国数据中心电力需求将从2025年的31GW增至2027年的66GW，得州和佐治亚州成为AI中心新热土。
@@ -401,7 +401,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### 马斯克曾试图招聘OpenAI创始人入职特斯拉AI
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-09/opinion-05.jpg)
 
 
 **是什么**：法庭文件显示，马斯克在OpenAI成立早期曾想雇佣其创始人，在特斯拉内部建立AI团队，但要求获得控制权。
@@ -414,7 +414,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### Chrome内嵌4GB AI模型引争议，可手动卸载
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-05-09/opinion-06.jpg)
 
 
 **是什么**：Chrome内置本地AI模型占用4GB存储空间，引发用户隐私担忧。Google澄清功能未改变，但用户可轻松卸载。
@@ -427,7 +427,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### 数千个Vibe Coding应用将企业数据暴露在网上
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-05-09/opinion-07.jpg)
 
 
 **是什么**：Wired调查发现，使用Lovable、Replit等AI平台构建的数千个应用因配置不当，将敏感数据泄露至公网。
@@ -450,7 +450,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### Redis 之父发布 ds4：Mac 本就能跑 DeepSeek V4
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-09/opensource-00.jpg)
 
 
 **是什么**：知名开发者 antirez（Redis 创始人）开源了 ds4，一个专为 DeepSeek V4 设计的本地推理引擎。它利用 Apple 的 Metal 框架在 Mac 上运行，无需云端或 NVIDIA GPU。
@@ -473,7 +473,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### Vercel 开源 Open Agents：构建云端 Agent 的模板
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-09/opensource-02.jpg)
 
 
 **是什么**：Vercel 实验室开源了 Open Agents，一个用于快速部署云端 AI Agent 的参考模板，支持多种 LLM 后端（包括 OpenAI、Anthropic、Mistral 等）。
@@ -486,7 +486,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### Goose：开源可扩展 AI Agent 框架迁移新仓库
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-09/opensource-03.jpg)
 
 
 **是什么**：AAIF（AI Agent Infrastructure Foundation）维护的 Goose 项目完成了仓库迁移，功能包括代码编辑、终端执行、测试等，支持接入任意 LLM。
@@ -499,7 +499,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### OpenAI 开源 Codex 插件示例仓库
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-09/opensource-04.jpg)
 
 
 **是什么**：OpenAI 在 GitHub 上发布了 Codex 插件示例集合，展示如何为编码 Agent 构建扩展能力。插件可以增强 Codex 在代码分析、重构和文档生成等方面的功能。
@@ -512,7 +512,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### DocuSeal：开源 DocuSign 替代方案
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-09/opensource-05.jpg)
 
 
 **是什么**：DocuSeal 是一个开源的电子签名应用，支持创建、填写和签署文档，功能对标 DocuSign。提供自托管版本，可集成到现有工作流。
@@ -525,7 +525,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### free-llm-api-resources：免费 LLM API 资源汇总
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-05-09/opensource-06.jpg)
 
 
 **是什么**：GitHub 项目整理了大量提供免费 LLM 推理 API 的服务列表，方便开发者快速获取无需付费的模型调用入口。
@@ -538,7 +538,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人（约占员工总数 20%），目�
 
 ### addyosmani/agent-skills：生产级工程技能集
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-09/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-09/opensource-07.jpg)
 
 
 **是什么**：Google Chrome 团队的 Addy Osmani 开源了 agent-skills，为 AI 编码 Agent 提供生产级最佳实践和流程编码。包含代码审查、测试生成、重构等技能的模板和提示词。

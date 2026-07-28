@@ -33,7 +33,7 @@ sections:
 
 ### Granite Embedding R2：小参数、长上下文、多语言检索新标杆
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-16/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-16/model_release-00.jpg)
 
 
 IBM发布Granite Embedding Multilingual R2，是面向多语言的文本嵌入模型，参数规模小于100M，支持32K上下文窗口，采用Apache 2.0许可开源。模型在多项检索基准上达到同规模最佳质量（state-of-the-art for sub-100M），多语言覆盖主流语言，适合企业级RAG系统，尤其对长文档检索有利。在嵌入模型领域，参数量并非越大越好——IBM证明小模型通过数据质量和训练策略仍能领先，这对预算有限或需本地部署的团队是务实选择。Apache 2.0许可进一步降低商用门槛。
@@ -42,7 +42,7 @@ IBM发布Granite Embedding Multilingual R2，是面向多语言的文本嵌入�
 
 ### ZAYA1-8B：首个MoE扩散模型，推理加速可达7.7倍
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-16/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-16/model_release-01.jpg)
 
 
 Zyphra发布ZAYA1-8B-Diffusion-Preview，将预训练的自回归MoE（Mixture of Experts）语言模型（8B总参数，激活参数约2.5B）转换为离散扩散模型。推理时不再逐个token自回归生成，而是通过多步噪声去除并行生成，实现最高7.7倍速度提升。模型权重已在HuggingFace开放，转换方法保留了原MoE架构的知识但改变解码范式。扩散模型在图像生成中主导，而ZAYA1-8B是首个将其引入MoE语言模型的尝试，可能开辟非自回归文本生成新路径，尤其适合低延迟场景。但预览版生成质量与一致性尚需社区验证。
@@ -61,7 +61,7 @@ Zyphra发布ZAYA1-8B-Diffusion-Preview，将预训练的自回归MoE（Mixture o
 
 ### Cerebras上市募资55亿美元，首日暴涨108%
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-16/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-16/company-00.jpg)
 
 
 Cerebras于5月14日完成2026年首个大型科技IPO，融资55亿美元，股价飙升108%。该公司以晶圆级芯片（WSE）和AI训练硬件闻名，客户包括美国政府研究机构和制药公司。此次IPO不仅为后续AI芯片公司（如SambaNova）树立估值标杆，更表明投资者愿意为稀缺的英伟达替代者支付高溢价。
@@ -70,7 +70,7 @@ Cerebras于5月14日完成2026年首个大型科技IPO，融资55亿美元，股
 
 ### Anthropic估值或将达9000亿美元，首次超越OpenAI
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-16/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-16/company-01.jpg)
 
 
 据The Decoder报道，Anthropic新一轮融资可能使其估值达到9000亿美元，超过OpenAI当前约8000亿美元的估值。关键驱动因素：Claude模型在长上下文、编程和合规场景中的差异化表现，以及企业客户签约速度领先。若成真，Anthropic将成为全球第三大未上市公司，仅次于字节跳动和SpaceX。但市场需警惕——Anthropic仍依赖微软和Google的云资源，且现金流尚未转正。
@@ -79,7 +79,7 @@ Cerebras于5月14日完成2026年首个大型科技IPO，融资55亿美元，股
 
 ### Anthropic与盖茨基金会达成2亿美元合作
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-16/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-16/company-02.jpg)
 
 
 Anthropic宣布与比尔及梅琳达·盖茨基金会建立2亿美元合作伙伴关系，将Claude模型应用于全球健康领域，包括疾病诊断辅助、医疗资源调度和公共卫生数据分析。这是Anthropic首次与大型慈善机构深度绑定，既强化其“负责任的AI”品牌，也可能打开政府与公益采购通道。对盖茨基金会而言，这是其AI战略的重要落地——此前基金会已投过多家AI制药公司。
@@ -88,7 +88,7 @@ Anthropic宣布与比尔及梅琳达·盖茨基金会建立2亿美元合作伙�
 
 ### Anthropic版权和解案遭法官推迟，律师被指急于收3.2亿美元费用
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-16/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-16/company-03.jpg)
 
 
 Anthropic的15亿美元版权和解协议因部分作者（包括知名小说家）要求更高赔偿而受阻。法官推迟批准，并批评双方律师“急于关上抽屉”以收取高达3.2亿美元的法律费用。该案涉及Claude训练中使用的受版权保护书籍，结果将影响所有大模型公司的数据合规成本。若最终赔偿上调，Anthropic的盈利预期和估值将承压。
@@ -97,7 +97,7 @@ Anthropic的15亿美元版权和解协议因部分作者（包括知名小说家
 
 ### 英伟达为黄仁勋子女涨薪至百万美元年薪
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-16/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-16/company-04.jpg)
 
 
 英伟达披露，为创始人兼CEO黄仁勋的儿子和女儿分别涨薪至年薪百万美元。公司声明称薪资评定由薪酬委员会独立完成，与黄仁勋本人无关。该事件虽属家族企业常见议题，但在AI芯片利润激增背景下，引发了投资者对CEO继任计划与公司治理的讨论。黄仁勋已明确不会在两三年内退休，子女的涨薪被视为可能的“接班预热”。
@@ -106,7 +106,7 @@ Anthropic的15亿美元版权和解协议因部分作者（包括知名小说家
 
 ### Meta员工抗议公司追踪鼠标行为用于AI训练
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-16/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-16/company-05.jpg)
 
 
 Meta内部爆发抗议活动：员工在厕所和会议室贴满传单，指责公司利用内部软件追踪员工的键盘输入和鼠标移动数据，用于训练AI模型。员工担心数据用于“替代人类工作”的自动化决策，而Meta声称“仅用于提升内部工具效率”。该事件是科技公司员工对“AI监控”最直接的一次反击，可能推动加州等地出台新法限制职场数据采集。
@@ -115,7 +115,7 @@ Meta内部爆发抗议活动：员工在厕所和会议室贴满传单，指责�
 
 ### 前Meta高管田渊栋官宣创业，获AMD和黄仁勋投资
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-16/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-16/company-06.jpg)
 
 
 前Meta研究科学家田渊栋（曾主导LLaMA系列）宣布成立新公司，产品方向未明说，但已获得AMD CEO苏姿丰和英伟达CEO黄仁勋的个人投资。他拒绝了字节跳动和谷歌的邀请。田渊栋在Transformer架构和分布式训练领域有深厚积累，新公司大概率切入AI基础设施层，而非应用层。“两位芯片大佬同时注资”意味着该公司可能解决内存墙或算力效率问题。
@@ -124,7 +124,7 @@ Meta内部爆发抗议活动：员工在厕所和会议室贴满传单，指责�
 
 ### Cisco裁员近4000人，转向AI投资
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-16/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-16/company-07.jpg)
 
 
 思科宣布裁员约4000人（约占员工总数5%），将节省的资金投入AI网络设备研发。公司同时报告了创纪录的季度营收（增长中来自AI客户订单的贡献持续上升）。传统网络巨头裁员+转向AI投资已是2025-2026年主流叙事，但Cisco的裁员幅度和速度证明“AI优先”战略正在挤压非AI业务的雇佣。
@@ -141,7 +141,7 @@ AI公司的估值逻辑正从技术突破转向商业化落地与合规博弈—
 
 ### 导语
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-16/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-16/research-00.jpg)
 
 
 今天的重磅新研究来自一篇 arXiv 论文：OpenDeepThink 提出用 Bradley-Terry 模型聚合多条平行推理路径，在测试时计算扩展上给出比多数投票或 CoT 更优的结果。这对训练/推理分离的生产环境有意义——不用动模型结构，只在推理端做一次 ensemble 式的聚合，即可提升质量。
@@ -150,7 +150,7 @@ AI公司的估值逻辑正从技术突破转向商业化落地与合规博弈—
 
 ### 平行推理框架 OpenDeepThink：用 Bradley-Terry 聚合替代多数投票
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-16/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-16/research-01.jpg)
 
 
 **是什么**  
@@ -170,7 +170,7 @@ OpenDeepThink 在 LLM 推理时并行采样多条推理路径，然后使用 Bra
 
 ### 神经形态保障无法验证治理所需的安全声明——一篇立场论文
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-16/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-16/research-02.jpg)
 
 
 **是什么**  
@@ -190,7 +190,7 @@ OpenDeepThink 在 LLM 推理时并行采样多条推理路径，然后使用 Bra
 
 ### EntityBench：迈向长程多镜头视频生成的实体一致性基准
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-16/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-16/research-03.jpg)
 
 
 **是什么**  
@@ -210,7 +210,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### Pelican-Unified 1.0：首个统一具身智能模型，单一 VLM 搞定理解、推理、想象和动作
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-05-16/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-05-16/research-04.jpg)
 
 
 **是什么**  
@@ -230,7 +230,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### 结语
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-05-16/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-05-16/research-05.jpg)
 
 
 今天的关键信号：推理侧聚合方法正在从多数投票走向更精细的统计建模；安全验证的“可复核性”难题仍未解法。留给你的问题——你目前的 LLM 生产系统，测试时计算扩展用的是哪种聚合策略？
@@ -273,7 +273,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### 阿里发布 Qoder 1.0
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-16/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-16/product-03.jpg)
 
 
 **是什么**：阿里推出Qoder 1.0，一款可全面接管代码生成、验证和交付流程的AI工具，支持三大桌面操作系统。
@@ -286,7 +286,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### 容联云发布数字员工级AI Agent平台
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-16/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-16/product-04.jpg)
 
 
 **是什么**：容联云推出以AI Agent为核心的大模型联络中心平台，重塑企业客服与营销流程。
@@ -299,7 +299,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### 华为云创想者大会聚焦Agentic AI新布局
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-16/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-16/product-05.jpg)
 
 
 **是什么**：华为云举办创想者大会，公布Agentic AI领域的最新布局与主题论坛议程。
@@ -312,7 +312,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### Clawdmeter：将Claude Code使用统计变为桌面仪表盘
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-16/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-16/product-06.jpg)
 
 
 **是什么**：开源硬件项目Clawdmeter利用Claude Code的API数据，在桌面上用小型LCD屏实时显示编码代理使用统计。
@@ -345,7 +345,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### OpenAI与苹果翻脸：集成糟糕，或诉诸法律
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-16/opinion-00.jpg)
 
 
 **是什么**：据知情人士透露，OpenAI对苹果在iOS中的ChatGPT集成深感失望，认为该合作未带来预期的订阅增长和品牌曝光，反而因体验差损害了自身形象。OpenAI法律团队正积极准备，可能以违反协议或损害商誉为由提起诉讼。
@@ -358,7 +358,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### Musk v. Altman庭审结束：陪审团将决定OpenAI未来
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-16/opinion-01.jpg)
 
 
 **是什么**：经过两周庭审，Elon Musk诉Sam Altman案正式结案，陪审团将裁定OpenAI是否违背其作为非营利组织的初衷，以及Altman等人是否违反信托责任。案件核心在于OpenAI从非营利转型为盈利实体的合法性。
@@ -371,7 +371,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### Anthropic呼吁华盛顿紧急应对中国AI竞争
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-16/opinion-02.jpg)
 
 
 **是什么**：Anthropic发布政策报告，将中美AI竞争称为华盛顿的“现在或永不”时刻，警告若不立即加大投入，美国将在3-5年内失去领先地位。报告建议将AI基础设施列为国家战略资源，并成立专门监管机构。
@@ -384,7 +384,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### 美国民众更愿邻接核电站而非AI数据中心——盖洛普民调
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-16/opinion-03.jpg)
 
 
 **是什么**：盖洛普最新民调显示，美国人对AI数据中心的排斥程度超过核电站。约58%受访者反对在自家社区建设大型AI数据中心，而反对核电站的比例为42%。多个州已出现居民集会抗议数据中心扩张。
@@ -397,7 +397,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### Arxiv重拳整治AI生成论文，违规者将被禁投一年
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-16/opinion-04.jpg)
 
 
 **是什么**：预印本平台arXiv宣布新政策，对提交AI生成的虚假论文（含幻觉内容）的作者实施最长12个月的禁投处罚。此举旨在大幅减少该平台上泛滥的“垃圾论文”，保护学术诚信。
@@ -410,7 +410,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### 安大略审计发现：医生使用的AI笔记工具频繁出错
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-16/opinion-05.jpg)
 
 
 **是什么**：加拿大安大略省审计办公室对全省医院使用的AI笔记助手进行抽查，发现这些工具经常编造治疗转诊、错误处方等关键医疗信息。审计报告警告存在严重患者安全隐患。
@@ -423,7 +423,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### AI让我变笨——一名程序员的反思
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-05-16/opinion-06.jpg)
 
 
 **是什么**：一篇在Hacker News上获528分的博客长文，作者是一位资深程序员，他坦诚描述了自己在使用AI代码助手（如Copilot、Claude）后，编码能力和问题解决能力出现显著退化。
@@ -436,7 +436,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### 特朗普携库克、黄仁勋、马斯克出席Xi峰会
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-05-16/opinion-07.jpg)
 
 
 **是什么**：据报道，为改善对华关系，美国前总统特朗普（已获共和党提名）邀请苹果CEO Tim Cook、英伟达CEO Jensen Huang和特斯拉CEO Elon Musk一同参加由中国主席Xi Jinping主持的全球科技峰会。这一组合被外界称为“科技外交天团”。
@@ -459,7 +459,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### 蚂蚁百灵 Ring-2.6-1T 旗舰推理模型开源
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-16/opensource-00.jpg)
 
 
 蚂蚁集团开源百灵 Ring-2.6-1T 推理模型，该模型在 AIME 26 上取得 95.83 的高分，接近 OpenAI o3 水平。关键点是模型专为推理和 Agent 执行设计，通过 1T 参数和 Ring 架构强化长链推理与工具调用能力。为什么重要：这是国内首个在 AIME 上突破 95 分的大模型，且完全开源，为开发者提供了一个可直接部署的高性能推理基座，有望降低 Agent 上层应用的门槛。
@@ -468,7 +468,7 @@ EntityBench 是一个新基准，专门针对多镜头视频生成中角色、�
 
 ### Cline 发布开源 Agent 运行时 SDK
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-16/opensource-01.jpg)
 
 
 Cline 将内部代理框架提取为开源 TypeScript SDK @cline/sdk，目前已驱动其 CLI 和看板产品。关键点：SDK 提供了 agentic 运行时所需的编排、上下文管理与工具注册能力，支持 IDE 扩展迁移。为什么重要：Cline 是流行的 AI 编码助手，开源 SDK 意味着开发者可以基于相同基础设施构建自定义 Agent，而不必从零搭建运行时，有助于统一 Agent 开发的底层协议。
@@ -477,7 +477,7 @@ Cline 将内部代理框架提取为开源 TypeScript SDK @cline/sdk，目前已
 
 ### 蚂蚁灵波开源 LingBot-VLA 真机后训练全流程
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-16/opensource-02.jpg)
 
 
 蚂蚁灵波开源 LingBot-VLA 项目，提供完整的机器人真机后训练代码，仅需 150 条示教数据即可适配新机器人。关键点：项目包含从数据采集、模型微调到部署的 pipeline，基于视觉-语言-动作（VLA）架构，显著降低机器人技能学习的门槛。为什么重要：在具身智能领域，数据匮乏是最大瓶颈。开源一套仅需少量样本就能适配新机器人的全流程，等于把机器人定制化开发的能力交给社区，可能加速服务型机器人落地。
@@ -486,7 +486,7 @@ Cline 将内部代理框架提取为开源 TypeScript SDK @cline/sdk，目前已
 
 ### GitHub 推出 MCP 服务器集成，扩展机密扫描功能
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-16/opensource-03.jpg)
 
 
 GitHub 发布 MCP 服务器集成，允许开发者通过标准接口扩展机密扫描能力。关键点：MCP（模型上下文协议）是 Anthropic 提出的标准化协议，GitHub 的集成让开发者可自定义扫描规则、接入第三方检测引擎，而无需修改 CI 流程。为什么重要：机密扫描是 DevSecOps 的关键环节，通过 MCP 协议扩展，降低了安全工具链的耦合度，便于团队按需集成、快速响应新类型泄密风险。
@@ -495,7 +495,7 @@ GitHub 发布 MCP 服务器集成，允许开发者通过标准接口扩展机�
 
 ### openhuman：个人 AI 超级智能，私密且强大
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-16/opensource-04.jpg)
 
 
 GitHub 趋势项目 openhuman 提供个人 AI 助手，注重隐私和本地运行，旨在成为通用超级智能。关键点：基于开源模型，所有推理在本地完成，不依赖云端，支持文档检索、对话、任务规划等能力。为什么重要：在云端 AI 依赖度越来越高的背景下，openhuman 强调隐私优先，适合对数据合规敏感的个人或企业用户，是本地 AI 助手的一个重要探索方向。
@@ -504,7 +504,7 @@ GitHub 趋势项目 openhuman 提供个人 AI 助手，注重隐私和本地运�
 
 ### agentmemory：为 AI 编码代理提供持久化记忆
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-16/opensource-05.jpg)
 
 
 开源项目 agentmemory 提供基准测试验证的持久记忆方案，帮助 AI 编码代理跨会话保持上下文。关键点：通过向量存储与摘要机制，让 Agent 能够记住之前对话中的关键决策和代码结构，在基准测试中提升了任务完成的一致性。为什么重要：当前编码代理最大的痛点之一是会话隔离导致重复工作，agentmemory 提供了一种轻量级记忆层，可集成到现有 Agent 框架，提升长任务执行效率。
@@ -513,7 +513,7 @@ GitHub 趋势项目 openhuman 提供个人 AI 助手，注重隐私和本地运�
 
 ### superpowers：代理式技能框架与软件开发方法论
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-05-16/opensource-06.jpg)
 
 
 开源项目 superpowers 提供一套完整的代理式技能和软件开发方法论，旨在提升编码代理的协作效率。关键点：定义了 agentic 技能（如自动测试、重构、代码审查）的接口与编排方式，配套文档详细描述了如何用多代理协作完成软件开发全流程。为什么重要：项目不只是工具，更是一套方法论，试图解决作者认为当前编码代理只做“补全”而非“协作”的问题，可能启发下一代 AI 原生开发流程。
@@ -522,7 +522,7 @@ GitHub 趋势项目 openhuman 提供个人 AI 助手，注重隐私和本地运�
 
 ### NousResearch 开源 Hermes Agent
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-16/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-16/opensource-07.jpg)
 
 
 NousResearch 发布 Hermes Agent，一个灵活可扩展的代理框架，支持动态工具调用和上下文注入。关键点：Hermes Agent 采用模块化设计，允许开发者通过 JSON 配置文件定义工具集与调用策略，并支持运行时动态加载新工具。为什么重要：NousResearch 此前以开源语言模型闻名，这次进军 Agent 框架层面，意图构建从模型到 Agent 的完整开源生态，对现有框架（如 LangChain、AutoGen）构成有力的竞争。

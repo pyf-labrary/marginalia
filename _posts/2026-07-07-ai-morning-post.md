@@ -33,7 +33,7 @@ sections:
 
 ### 腾讯开源Hy3：小参数大能力
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-07/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-07/model_release-00.jpg)
 
 
 腾讯正式开源Hy3模型，宣称其激活参数约等于五分之一大小时，性能可媲美五倍参数量的模型。该模型现已通过元宝平台提供Agent能力。关键点在于，这种效率提升直接意味着推理成本大幅下降，对小规模部署和端侧应用是重大利好。为什么重要：这不仅是技术突破，更是一次开源生态的「降维打击」——过去企业需要在模型性能和成本间权衡，Hy3的出现可能重构这一决策模型。
@@ -42,7 +42,7 @@ sections:
 
 ### OpenAI GPT-5.6 Sol Ultra曝光，Codex集成在即
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-07/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-07/model_release-01.jpg)
 
 
 据X平台爆料，OpenAI即将推出GPT-5.6 Sol Ultra模型，并计划将其集成到Codex中提供使用。该消息已在社区引发极高热度。关键点：如果属实，这将是GPT系列在代码生成和agentic能力上的又一次重大迭代，且直接嵌入开发工具链。为什么重要：OpenAI正在将最强模型与产品深度绑定，可能进一步拉开与竞争对手在编程助手领域的差距，让Claude Code和ZCode等后来的追赶难度激增。
@@ -51,7 +51,7 @@ sections:
 
 ### 智谱AI推出ZCode，低价挑战编程助手市场
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-07/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-07/model_release-02.jpg)
 
 
 智谱AI发布编程助手ZCode，定价远低于Claude Code和OpenAI Codex，明确对标这两款产品。关键点：中国厂商在编程助手赛道快速跟进，但低价是否意味着性能妥协仍需验证。为什么重要：在开发工具这个市场，价格战往往是双刃剑——能快速获取用户，但长期需要靠效果和生态留住人。ZCode的出现意味着全球编程助手竞争已进入「性价比」新阶段。
@@ -68,7 +68,7 @@ sections:
 
 ### Anthropic被曝秘密监控中国用户Claude使用
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-07/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-07/company-00.jpg)
 
 
 Ars Technica报道，Anthropic在Claude中内置了隐藏追踪器，专门监控中国用户的行为数据。这一做法与其公开宣扬的“反监控”“用户隐私优先”立场直接矛盾。事件曝光后，技术社区和市场均强烈批评，认为这是对用户信任的背弃。
@@ -79,7 +79,7 @@ Ars Technica报道，Anthropic在Claude中内置了隐藏追踪器，专门监�
 
 ### 微软裁员4800人，Xbox和销售部门受重创
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-07/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-07/company-01.jpg)
 
 
 微软本周解雇约4800名员工，占总员工数的2.1%，主要波及Xbox游戏部门与商业销售团队。官方说法是结构优化，但外界普遍解读为AI替代人工的加速信号——销售数据分析、用户管理等岗位正被Copilot等AI工具渗透。
@@ -90,7 +90,7 @@ Ars Technica报道，Anthropic在Claude中内置了隐藏追踪器，专门监�
 
 ### 中国强制AI平台关闭拟人化聊天机器人
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-07/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-07/company-02.jpg)
 
 
 字节豆包、阿里千问等主流AI平台被要求立即停用拟人化人格功能，包括角色扮演、情感对话等。监管层要求提升AI透明度，明确标注“非人类”，并加强内容安全过滤。平台需在30天内整改到位。
@@ -101,7 +101,7 @@ Ars Technica报道，Anthropic在Claude中内置了隐藏追踪器，专门监�
 
 ### 亚马逊关闭Mechanical Turk，停止接受新客户
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-07/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-07/company-03.jpg)
 
 
 亚马逊宣布停止接受Mechanical Turk（MTurk）新客户，现有客户只能用到2027年底。MTurk曾是“人工人工智能”的标志性平台，依赖众包工人完成数据标注、内容审核等任务，如今被自动化AI逐步替代。
@@ -120,7 +120,7 @@ Ars Technica报道，Anthropic在Claude中内置了隐藏追踪器，专门监�
 
 ### 光象科技获数亿元融资，自研物理原生基座模型
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-07/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-07/company-05.jpg)
 
 
 光象科技完成数亿元融资，技术路线跳出了VLA（视觉-语言-动作）与世界模型的常规框架，转而研发物理原生基座模型——直接从物理规律出发生成动作序列，不依赖视觉或语言先验。团队背景硬核，多名核心成员来自中科院自动化所。
@@ -131,7 +131,7 @@ Ars Technica报道，Anthropic在Claude中内置了隐藏追踪器，专门监�
 
 ### 英伟达Kyber NVL144被曝延期超一年
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-07/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-07/company-06.jpg)
 
 
 据The Decoder报道，英伟达下一代AI服务器Kyber NVL144因散热与电源设计技术问题，量产时间推迟超一年，已导致多家亚洲供应商（台系PCB、散热模组厂商）订单流失。英伟达官方未证实，但供应商财报中已出现相关缺口。
@@ -180,7 +180,7 @@ ACM戈登贝尔奖得主杨超携北大系团队创业，专注物理AI底层基
 
 ### Anthropic提出“全局工作空间”机制改善语言模型推理
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-07/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-07/research-02.jpg)
 
 
 **是什么** Anthropic发布了一项新研究，提出在语言模型内部构建“全局工作空间”（Global Workspace），旨在解决目前大模型在多步推理和信息整合上的短板。该机制借鉴了认知科学中的全局工作空间理论，允许不同层级的神经元之间进行信息广播与收敛。
@@ -193,7 +193,7 @@ ACM戈登贝尔奖得主杨超携北大系团队创业，专注物理AI底层基
 
 ### 代码整洁度影响编码agent效果：一场受控实验
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-07/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-07/research-03.jpg)
 
 
 **是什么** 一篇arXiv上的预印本通过受控实验发现：AI编码agent在接收代码风格整洁、注释清晰的任务代码时，其补全和修改的准确率比接收混乱代码的任务高出约15%。研究者控制了任务复杂度、大小和领域，仅改变代码的命名规范性、换行和注释覆盖率。
@@ -216,7 +216,7 @@ ACM戈登贝尔奖得主杨超携北大系团队创业，专注物理AI底层基
 
 ### Seedance 视频模型获好莱坞认可，字节跳动出海再下一城
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-07/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-07/product-00.jpg)
 
 
 美国电影从业者开始在短片制作中使用字节跳动旗下视频生成模型 Seedance，并给予积极反馈。TLDR 跟进报道其 2.5 版本更新，指向该模型在画质、连贯性和可编辑性上的持续提升。
@@ -229,7 +229,7 @@ ACM戈登贝尔奖得主杨超携北大系团队创业，专注物理AI底层基
 
 ### Cloudflare 推出精细化 AI 爬虫控制面板
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-07/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-07/product-01.jpg)
 
 
 Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 爬虫，而是允许网站按用途（搜索索引、模型训练、agent 行为）分别设定访问权限。
@@ -242,7 +242,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### Claude Code + Fable5 数小时移植经典游戏到 iOS
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-07/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-07/product-02.jpg)
 
 
 开发者使用 Anthropic 的 Claude Code 和 Fable5 模型，仅用几小时就将 2003 年 PC 游戏《命令与征服》移植为原生 iOS 应用。该案例展示了代码生成模型处理复杂代码库迁移的能力。
@@ -255,7 +255,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### 百度推出 Unlimited OCR：模拟人类遗忘机制突破长度限制
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-07/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-07/product-03.jpg)
 
 
 百度发布 Unlimited OCR 技术，通过设计类似人类记忆的“遗忘机制”一次性处理数十页文档，突破了传统 OCR 的单页输入限制。
@@ -268,7 +268,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### 火山引擎用 Agentic 范式优化视频画质
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-07/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-07/product-04.jpg)
 
 
 火山引擎发布基于 Agent 的视频画质优化方案，将超分、去噪、去模糊等算法组合为可自主决策的智能体流程。
@@ -281,7 +281,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### iOS 27 beta 允许自定义 Siri 语速与表现力
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-07/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-07/product-05.jpg)
 
 
 苹果在最新 iOS 27 测试版中开放 Siri 语速和情感表达调节功能，用户可以设置快、中、慢三档语速，并选择“温暖”“专业”“活泼”等表现力风格。
@@ -294,7 +294,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### Azure Functions 推出 Serverless Agent 运行时
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-07-07/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-07-07/product-06.jpg)
 
 
 微软在 Build 2026 上发布 Azure Functions 的 Serverless Agent 运行时，允许开发者将 AI 代理部署为无服务器函数，自动处理编排、记忆、工具调用。
@@ -307,7 +307,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### 蔚来世界模型 OTA 升级，70 万用户全量同步
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-07-07/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-07-07/product-07.jpg)
 
 
 蔚来向全部在途车辆推送世界模型 OTA 更新，70 万车主均升级到同一版本，没有分批次或灰度限制。
@@ -330,7 +330,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### 英国FCA警告AI在金融领域引发“军备竞赛”
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-07/opinion-00.jpg)
 
 
 **是什么**：英国金融行为监管局（FCA）官员公开表示，AI在金融服务中的使用正形成“军备竞赛”，监管机构需要有更强有力的权力来应对风险。
@@ -343,7 +343,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### Vercel CEO：必须将模型与Agent解耦
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-07/opinion-01.jpg)
 
 
 **是什么**：Vercel CEO Guillermo Rauch在采访中强调，生产环境中应严格分离模型（model）和智能体（agent），以优化性价比。
@@ -356,7 +356,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### 扎克伯格内部批评AI Agent进展低于预期
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-07/opinion-02.jpg)
 
 
 **是什么**：TechCrunch报道，Mark Zuckerberg在Meta内部会议上表示，AI agent的进展未达到他的预期，公司需要调整策略。
@@ -369,7 +369,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### Linus Torvalds再谈AI：能写Demo，但需敬畏复杂系统
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-07/opinion-03.jpg)
 
 
 **是什么**：Linux创始人Linus Torvalds在采访中表示，LLM能快速生成demo代码，但对于复杂系统工程，开发者必须保持审慎。
@@ -382,7 +382,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### Google默认隐私设置变更，用户数据用于训练AI
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-07/opinion-04.jpg)
 
 
 **是什么**：TechCrunch详解Google近期调整隐私政策，默认收集更多用户数据以改进AI模型，并提供退出指南。
@@ -395,7 +395,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### GPT-4统治期仅一年，如今模型霸主仅维持七周
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-07/opinion-05.jpg)
 
 
 **是什么**：分析发现，AI模型领先地位快速更迭：GPT-4曾统治约一年，但当前顶级模型平均只保持七周霸主位置。
@@ -408,7 +408,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### 模型不是企业护城河，数据与场景才是
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-07-07/opinion-06.jpg)
 
 
 **是什么**：观点文章指出，大模型能力趋同，企业真正的差异化在于数据积累、场景理解和工程能力。
@@ -421,7 +421,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### Anthropic：Claude已承担95%内部数据分析查询
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-07-07/opinion-07.jpg)
 
 
 **是什么**：Anthropic披露，Claude模型已处理公司内部95%的数据分析查询，大幅提升运营效率。
@@ -448,7 +448,7 @@ Cloudflare 升级 AI bot 管理功能，不再简单地全量封禁或放行 AI 
 
 ### AI 编码 Agent 技能生态爆发，数十个新技能仓库涌现
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-07/opensource-01.jpg)
 
 
 GitHub 上近期出现大量针对 Claude Code、Codex 等 AI Agent 的技能与插件仓库，涵盖代码审查、营销文案、产品原型等垂直领域。关键点：这些技能以标准化接口封装，可被 Agent 直接调用，形成类似“App Store”的生态系统。为什么重要？技能生态的成熟将让 AI Agent 从通用问答转向专业化任务执行，降低开发者定制成本，并催生新的技能市场。
@@ -457,7 +457,7 @@ GitHub 上近期出现大量针对 Claude Code、Codex 等 AI Agent 的技能与
 
 ### HuggingFace 发布 LeRobot v0.6.0，强化机器人训练
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-07/opensource-02.jpg)
 
 
 HuggingFace 推出 LeRobot v0.6.0，新增 Imagine、Evaluate、Improve 三个模块，简化机器人学习从仿真到部署的流程。关键点：Imagine 模块支持自动生成训练数据，Evaluate 提供标准化评测，Improve 支持强化学习迭代。为什么重要？LeRobot 降低了机器人学习工程的复杂度，与 ACE-Brain 形成互补——一个提供模型，一个提供工具链，共同推动具身智能开源生态。
@@ -466,7 +466,7 @@ HuggingFace 推出 LeRobot v0.6.0，新增 Imagine、Evaluate、Improve 三个�
 
 ### HuggingFace Kernels 重大更新
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-07/opensource-03.jpg)
 
 
 HuggingFace 对 Kernels 进行重大更新，提升模型推理与训练性能。关键点：优化了 Flash Attention 实现、内核编译策略，支持更多硬件后端。为什么重要？Kernels 是 Transformer 模型计算效率的底层基石，这次更新直接惠及所有使用 HuggingFace 生态的开发者，尤其对长序列推理场景（如 Agent 长上下文）有显著加速。
@@ -475,7 +475,7 @@ HuggingFace 对 Kernels 进行重大更新，提升模型推理与训练性能�
 
 ### OfficeCLI：让 AI Agent 直接处理 Office 文件
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-07/opensource-04.jpg)
 
 
 开源项目 OfficeCLI 提供命令行工具，允许 AI 智能体读取和编辑 Microsoft Office 文档（Word、Excel、PowerPoint）。关键点：基于 Python 编写，支持纯文本接口调用，与 LangChain、AutoGPT 等框架兼容。为什么重要？Office 文档是企业管理中最常见的非结构化数据，OfficeCLI 填补了 Agent 处理这些文件的空白，有望在办公自动化场景中被广泛集成。
@@ -490,7 +490,7 @@ Simon Willison 发布 sqlite-utils 4.0 第三个候选版本，改进大量细�
 
 ### HuggingFace 推出语音转语音开源工具
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-07/opensource-06.jpg)
 
 
 HuggingFace 发布 speech-to-speech 开源库，支持用开源模型构建本地语音智能体。关键点：提供从语音输入到语音输出的完整管线，集成 Whisper、CosyVoice 等模型，支持实时流式处理。为什么重要？语音是 Agent 交互的自然入口，该库使开发者能快速搭建本地、低延迟的语音对话系统，避免依赖云端 API，对隐私敏感场景意义重大。
@@ -499,7 +499,7 @@ HuggingFace 发布 speech-to-speech 开源库，支持用开源模型构建本�
 
 ### OpenSquilla 0.5.0 Preview 发布，登顶 DRACO 双榜
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-07/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-07/opensource-07.jpg)
 
 
 OpenSquilla 发布预览版 0.5.0，集成多模型并在 DRACO 基准测试中取得双榜第一。关键点：该版本支持视觉、语言、动作多模态融合，并在机器人操作和导航两个榜单上夺冠。为什么重要？OpenSquilla 与 ACE-Brain 同为具身智能基模型，但后者来自国内团队，前者来自海外，两者开源竞争将加速行业迭代。DRACO 双榜冠军表明 OpenSquilla 在特定任务上具有竞争力。

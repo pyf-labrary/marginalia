@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 DECK_DIR = Path(__file__).parent
-BASE_URL = "https://pyf-labrary.github.io/marginalia/showcases/agent-landscape-2026"
+BASE_URL = "https://jinzi.cyou/showcases/agent-landscape-2026"
 DECK_BLURB = (
     "中外 28 款主流 AI agent 软件按 5 条产品线深度对比："
     "终端 CLI（Claude Code / Codex CLI / Qwen Code / Aider / OpenCode）、"

@@ -9,7 +9,7 @@ lang: zh-CN
 author:
   name: Marginalia
   email: 259323426+gittee-coder@users.noreply.github.com
-  url: https://pyf-labrary.github.io/marginalia/
+  url: https://jinzi.cyou/
 
 # Used by jekyll-seo-tag to emit Schema.org Person/Organization metadata.
 social:
@@ -21,8 +21,8 @@ social:
 # Used by jekyll-seo-tag for organization schema.
 logo: /assets/img/logo.svg
 
-baseurl: "/marginalia"
-url: "https://pyf-labrary.github.io"
+baseurl: ""
+url: "https://jinzi.cyou"
 
 # 点赞/评论后端（自托管 FastAPI+SQLite，pyf 广州）。详见 comments-server/。
 # 留空则整个互动层（点赞/评论/消息盒子）静默禁用。

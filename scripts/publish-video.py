@@ -114,7 +114,7 @@ BILI_DESC_MAX = 240
 
 
 def render_desc(script_json: dict, fm_lede: str | None, post_body: str, transcript_url: str | None = None) -> str:
-    url = transcript_url or "https://pyf-labrary.github.io/marginalia/videos/"
+    url = transcript_url or "https://jinzi.cyou/videos/"
     # URL 去掉 https:// 前缀更省字、且 B 站对裸链接更宽容
     url_text = re.sub(r"^https?://", "", url)
     tail = f"\n完整文字稿与来源：{url_text}"
@@ -220,7 +220,7 @@ def main() -> int:
     title_core = title_m.group(1).strip() if title_m else slug
     vol = vol_m.group(1).strip() if vol_m else ""
     bili_title = f"【AI 周报 W{slug.split('-w')[-1]}】{title_core}"[:80]
-    transcript_url = f"https://pyf-labrary.github.io/marginalia/videos/{slug}/"
+    transcript_url = f"https://jinzi.cyou/videos/{slug}/"
     desc = render_desc(script_json, lede_m.group(1).strip() if lede_m else None, post_body, transcript_url)
 
     cmd = build_biliup_args(

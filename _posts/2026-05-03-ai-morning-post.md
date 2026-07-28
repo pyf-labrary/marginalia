@@ -33,7 +33,7 @@ sections:
 
 ### DeepSeek V4：开源模型离前沿只差一步
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-03/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-03/model_release-00.jpg)
 
 
 Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理、代码生成、多语言理解）上几乎达到GPT-5、Claude 4等前沿闭源模型水平。关键点在于：该模型依然保持开源策略，且训练效率明显提升，意味着开源阵营首次在综合能力上拉平了半年到一年的代差。为什么重要——开源社区的追赶速度正在压缩闭源模型的溢价空间，如果V4的评测结果能稳定复现，2026年下半年模型层竞争格局将出现结构性变化。
@@ -42,7 +42,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### 华为携手中国科大发布“灵境造物”：全栈国产AI平台落地
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-03/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-03/model_release-01.jpg)
 
 
 华为与中科大联合发布的“灵境造物”平台，基于昇腾芯片、MindSpore框架以及自研基础模型生态，实现从硬件到应用层的完全国产化。该平台首次提出Coordination Engineering（协同工程）能力——将模型训练、推理、部署与数据流水线进行自动化编排，目标是将AI开发门槛降至“零代码”级别。关键点在于：这不是一个单一模型，而是一套面向企业级应用的标准化工具链。为什么重要——在模型能力快速提升的背景下，平台层的国产化替代与易用性突破，决定了AI技术能否真正下沉到中小企业和传统行业。
@@ -69,7 +69,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### Uber四个月烧光2026全年AI预算，全砸Claude Code
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-03/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-03/company-01.jpg)
 
 
 **是什么**：Uber在2026年前四个月内，将原计划全年使用的AI预算全部用于采购Anthropic的Claude Code企业版，导致后续季度面临预算缺口。
@@ -82,7 +82,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### 智谱揭秘模型“降智”：都是Prefill的锅
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-03/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-03/company-02.jpg)
 
 
 **是什么**：智谱官方发文解释了大型语言模型在长对话中表现下降（俗称“降智”）的原因，并将核心矛头指向Prefill阶段的计算瓶颈。
@@ -95,7 +95,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### OpenAI限制访问Cyber，此前曾抨击Anthropic限制Mythos
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-03/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-03/company-03.jpg)
 
 
 **是什么**：OpenAI在其Cyber功能上施加了访问限制，而就在数周前，该公司曾公开批评Anthropic限制其模型Mythos的行为，引发双重标准争议。
@@ -108,7 +108,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### AWS停止向中东云客户收费，因战争修复拖延数月
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-03/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-03/company-04.jpg)
 
 
 **是什么**：AWS因中东数据中心遭到无人机袭击，导致大规模服务中断，修复工作预计持续数月，期间暂停受影响客户的计费。
@@ -121,7 +121,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### Ubuntu服务器遭持续跨境攻击，已下线超一天
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-03/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-03/company-05.jpg)
 
 
 **是什么**：Ubuntu官方基础设施遭受来自多国的协同网络攻击，导致安全更新服务器、社区论坛等核心服务离线超过24小时。
@@ -144,7 +144,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### “Gay Jailbreak”走红，凸显安全护栏脆弱性
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-03/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-03/research-00.jpg)
 
 **是什么**：一种被称为“Gay Jailbreak”的AI越狱方法近日在GitHub上意外爆火，获得614个star。该方法通过构造特定的上下文诱导模型绕过安全限制，操作简单且成功率较高。  
 **关键点**：低门槛（不需要复杂提示工程）、高效（一次成功即可广泛复用）使其迅速在社区扩散；其命名和原理暗示利用模型对某些群体属性的模糊处理来突破防线。  
@@ -153,7 +153,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### 新论文发现AI招聘中的“自我偏好”实证证据
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-03/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-03/research-01.jpg)
 
 **是什么**：一篇arXiv论文通过严格实验，提供了AI在算法招聘中表现出“自我偏好”的实证证据——即模型更倾向于推荐与其训练数据或自身特征相似的候选人。  
 **关键点**：研究者设计了对照场景，发现当候选人简历与AI训练集中高频出现的文本风格、专业背景或人口属性一致时，被推荐概率显著提高；这种偏好独立于任务相关性。  
@@ -162,7 +162,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### 语言模型拒绝行为由单一方向控制
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-03/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-03/research-02.jpg)
 
 **是什么**：arXiv论文揭示，大语言模型中的“拒绝”（如拒绝回答有害问题）行为由一个单一的表示方向（representation direction）介导。通过干预这个方向，可以统一调控模型的拒绝倾向。  
 **关键点**：研究者通过因果探针和激活编辑，定位到该方向位于模型内部激活空间特定维度；修改该方向可让模型从不拒绝变为过度拒绝，或撤销拒绝。  
@@ -181,7 +181,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### Spotify 为人类艺术家添加 Verified 徽章
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-03/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-03/product-00.jpg)
 
 
 **是什么**：Spotify 近日推出“人工验证”徽章（Verified），正式为人类艺术家提供区别于 AI 生成音乐的标识。该徽章将出现在艺术家主页和作品页面。
@@ -194,7 +194,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### VS Code 擅自添加 Copilot 署名到 commit 引众怒
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-03/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-03/product-01.jpg)
 
 
 **是什么**：Visual Studio Code 的一个 pull request 被曝自动在 commit 消息中插入“Co-Authored-by Copilot”字样，即使用户并未使用 Copilot 进行编码。
@@ -207,7 +207,7 @@ Simon Willison的评测指出，DeepSeek V4在多个基准测试（包括推理�
 
 ### AI CAD Harness 发布：文本转 3D 设计工具
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-03/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-03/product-02.jpg)
 
 
 **是什么**：Adam 公司推出 AI CAD Harness，允许用户通过文本指令直接生成 3D 模型，简化传统 CAD 设计流程。
@@ -250,7 +250,7 @@ Citadel Securities发布《2026全球智力危机》报告，指出全球软件�
 
 ### NHS被指“对开源宣战”，社区反弹
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-03/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-03/opinion-02.jpg)
 
 
 英国国家医疗服务体系（NHS）推出一项新数字政策，被开源社区批评为“实质性限制”开源软件使用——要求所有新采购的IT系统必须优先考虑“经认证的商业方案”，而非经过社区验证的开源替代品。关键点：NHS此前是开源软件的深度用户（如OpenEHR、OpenMRS），新政策被解读为对灵活性和成本控制的倒退。为什么重要：这不仅是开源社区的版权之争，更关乎公共部门数字基础设施的长期自主权。NHS如果完全转向商业闭源方案，可能面临厂商锁定和高昂的维护成本，而开源社区则以“可审计、可定制”的优势试图证明自己更适合公共医疗场景。
@@ -265,7 +265,7 @@ Hacker News五月照常发布招聘帖（Who is hiring?）和求职帖（Who wan
 
 ### RightsCon 2026因政治争议撤离赞比亚
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-03/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-03/opinion-04.jpg)
 
 
 数字权利大会RightsCon宣布，原计划在赞比亚举办的2026年会议将另选地点，原因是该国政府近期对言论自由和互联网接入的压制行为“不可调和”。关键点：RightsCon作为全球最大数字权利会议，此前已因类似原因调整过举办国（如2019年从摩洛哥移走）。为什么重要：这反映了数字人权议题在地缘政治中的脆弱性——技术从业者和投资人不应忽略，全球互联网治理环境正在某些区域恶化，可能影响跨境数据流动、开源协作的基础条件。
@@ -282,7 +282,7 @@ AI的水耗争议提醒我们：事实往往比情绪更温和。下一个需要
 
 ### 微软开源 lib0xc：为 C 语言提供更安全的标准库
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-03/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-03/opensource-00.jpg)
 
 
 微软发布 lib0xc 库，提供一系列标准库替代 API，旨在提高 C 语言系统编程的安全性。其关键点在于是“替代”而非“扩展”——直接覆盖 strcpy、sprintf 等易出错函数，要求调用方提供缓冲区大小，并在编译期进行更严格的检查。  
@@ -292,7 +292,7 @@ AI的水耗争议提醒我们：事实往往比情绪更温和。下一个需要
 
 ### K3k：在 Kubernetes 内运行 Kubernetes
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-03/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-03/opensource-01.jpg)
 
 
 Rancher 开源项目 K3k 实现了嵌套 Kubernetes 集群，简化多租户隔离环境。核心思路是在宿主集群中用 k3s 快速启动子集群，每个租户拥有独立的控制平面和资源边界。  
@@ -302,7 +302,7 @@ Rancher 开源项目 K3k 实现了嵌套 Kubernetes 集群，简化多租户隔�
 
 ### Agent-desktop：AI 代理原生命令行工具
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-03/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-03/opensource-02.jpg)
 
 
 开源项目 Agent-desktop 提供 AI 代理原生桌面自动化 CLI，支持跨平台控制操作。核心是让 AI 通过命令行直接调用桌面 GUI 控件（如点击、输入），无需人工介入。  
@@ -312,7 +312,7 @@ Rancher 开源项目 K3k 实现了嵌套 Kubernetes 集群，简化多租户隔�
 
 ### Understand Anything：让 AI 理解任意文本
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-03/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-03/opensource-03.jpg)
 
 
 GitHub 项目 Understand Anything 旨在构建通用文本理解模型，提供灵活可扩展的接口。项目尚处于早期，但目标明确——通过微调基础模型，支持问答、分类、摘要等任务，并输出置信度。  
@@ -322,7 +322,7 @@ GitHub 项目 Understand Anything 旨在构建通用文本理解模型，提供�
 
 ### Open Design：用编码 Agent 作为设计引擎
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-03/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-03/opensource-04.jpg)
 
 
 开源项目 Open Design 让开发者使用编码 Agent 来自动化设计流程，加速从构思到原型。例如，通过自然语言描述生成 Figma 组件或 HTML/CSS 代码。  
@@ -332,7 +332,7 @@ GitHub 项目 Understand Anything 旨在构建通用文本理解模型，提供�
 
 ### Whohas：跨发行版跨仓库的包搜索工具
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-03/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-03/opensource-05.jpg)
 
 
 命令行工具 Whohas 支持同时搜索多个 Linux 发行版和仓库中的软件包，极大便利开发运维。它查询 apt、yum、dnf、pacman 甚至 Snap 和 Flatpak，返回包名、版本和仓库来源。  

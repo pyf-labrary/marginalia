@@ -36,7 +36,7 @@ sections:
 
 ### OpenAI 披露低延迟语音 AI 规模化工程细节
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-05/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-05/model_release-01.jpg)
 
 
 **是什么**：OpenAI 发布技术博客，详细描述了通过系统级优化（包括模型级联、音频管道、推理调度等）实现低延迟语音 AI 的大规模部署，支撑实时语音交互。
@@ -72,7 +72,7 @@ sections:
 
 ### OpenAI 融资超 40 亿美元，成立企业部署合资公司
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-05/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-05/company-00.jpg)
 
 
 OpenAI 宣布筹集超过 40 亿美元专项基金，并与资产管理公司合作成立合资企业，旨在加速企业级 AI 服务的落地。这笔资金将主要用于搭建定制化部署基础设施、安全合规体系及行业解决方案。此举与 OpenAI 此前对企业市场的观望态度形成对比——现在它正通过合资模式直接参与客户系统集成，而非仅输出 API。资产方提供资本与渠道，OpenAI 提供模型与产品，双方按比例分成。这种结构降低了企业客户的采购风险，也意味着 OpenAI 愿意为其模型产出承担更多成本与责任。
@@ -81,7 +81,7 @@ OpenAI 宣布筹集超过 40 亿美元专项基金，并与资产管理公司合
 
 ### Sierra 获 9.5 亿美元融资，估值达 150 亿美元
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-05/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-05/company-01.jpg)
 
 
 企业 AI 客户体验平台 Sierra 完成 9.5 亿美元融资，估值跃升至 150 亿美元。Sierra 定位为“AI 客户体验操作系统”，为大型企业提供可配置的对话式 AI 代理，已服务于百威、索尼等品牌。本轮融资由现有投资者领投，资金将用于全球扩张和行业垂直模型优化。Sierra 的快速增长表明：企业愿意为“端到端”的客户体验 AI 方案支付高溢价，而非停留在单点聊天机器人。其 150 亿估值反映了市场对“AI 原生 B2B SaaS”商业模式的高度认可。
@@ -90,7 +90,7 @@ OpenAI 宣布筹集超过 40 亿美元专项基金，并与资产管理公司合
 
 ### Cerebras 二次冲刺 IPO，目标估值 400 亿美元
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-05/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-05/company-02.jpg)
 
 
 AI 芯片制造商 Cerebras 再次提交 IPO 申请，目标估值 400 亿美元。Cerebras 与 OpenAI 深度绑定，其晶圆级芯片（WSE）被用于训练大型模型，且 OpenAI 持有其部分股权。此次 IPO 正值全球 AI 芯片需求激增，但同时也面临来自 NVIDIA 的竞争和自身盈利能力的质疑。Cerebras 的招股书强调其独有的算力密度优势和与 OpenAI 的长期协议。若成功上市，将成为继 NVIDIA 之后最受关注的 AI 芯片公司。
@@ -99,7 +99,7 @@ AI 芯片制造商 Cerebras 再次提交 IPO 申请，目标估值 400 亿美元
 
 ### OpenAI 诉马斯克案：威胁短信与股权争议成焦点
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-05/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-05/company-03.jpg)
 
 
 埃隆·马斯克此前在诉讼中向 Sam Altman 和 Greg Brockman 发送威胁短信，称二人将“成为全美最恨之人”。而 Brockman 在法庭上捍卫其 300 亿美元股权——他声称在 OpenAI 转型为营利性实体过程中，自己的持股被不公正稀释。案件的核心在于：OpenAI 早期作为非营利组织，后来逐步商业化，创始团队与马斯克之间关于“开放 vs 营利”的承诺纠纷未了。此案的最终判决可能影响 AI 公司治理结构及创始人股权分配的行业标准。
@@ -114,7 +114,7 @@ OpenAI 和普华永道联合宣布，利用 AI 代理自动化企业财务工作
 
 ### Anthropic 与 OpenAI 纷纷成立企业 AI 合资公司
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-05/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-05/company-05.jpg)
 
 
 Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立合资企业来向企业推销 AI 服务。Anthropic 的合资公司（代号“Atlantic”）将与私募股权合作，专注于合规要求较高的金融、医疗行业。这种“AI 企业 + 资本方”的合资结构，可以绕过大型企业复杂的采购流程，同时将模型风险（如幻觉、合规）与投资方共担。从竞争角度看，双方都在复制彼此的战略，证明企业 AI 市场已进入“资本密集型”阶段，单靠 API 销售难以打开高客单价市场。
@@ -123,7 +123,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### OpenAI、谷歌与微软支持学校 AI 素养法案
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-05/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-05/company-06.jpg)
 
 
 三巨头共同资助一项名为“未来技术素养法案”的联邦法案，推动 K-12 学校教授 AI 基础知识、伦理和安全使用。法案由众议员 Adam Schiff 和 Mike Rounds 联合提出。科技公司承诺提供课程设计和教师培训经费。此举既是社会责任投资，也是培养未来 AI 人才和用户的长期策略。对于投资人而言，这暗示美国 K-12 教育科技领域可能迎来政策驱动的采购增量。
@@ -132,7 +132,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### “This is fine”作者起诉 AI 创业公司盗用其作品
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-05/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-05/company-07.jpg)
 
 
 热门网络漫画“This is fine”的创作者 KC Green 起诉 AI 创业公司 Artisan，指控其在广告中未经授权使用该漫画形象。Artisan 是一家提供 AI 销售代理的公司，其广告将漫画中“一切安好”的狗头形象修改后植入其 AI 产品宣传。Green 指出，这属于明显的作品侵权，且 Artisan 曾声称自己“尊重艺术家”。此类诉讼在生成式 AI 时代越来越频繁，核心争议在于：AI 公司未经许可使用受版权保护作品进行商业营销，其边界在哪里？即便最终和解，此案也再次敲响版权合规的警钟。
@@ -151,7 +151,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### 有影响力的ChatGPT教育研究因红旗警告被撤稿
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-05/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-05/research-00.jpg)
 
 
 **是什么**：一篇曾被大量引用、声称ChatGPT能显著提升学生成绩的研究，因存在严重方法论缺陷被正式撤回。该研究一度被媒体和教育机构视为AI落地教育的标杆案例。
@@ -164,7 +164,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### 哈佛研究：AI急诊诊断准确率超过人类医生
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-05/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-05/research-01.jpg)
 
 
 **是什么**：哈佛医学院团队在真实急诊病例中比较了大型语言模型与两位人类医生的诊断表现，结果显示AI的准确率至少与医生持平，在部分科室（如内科、急诊疑难症）显著更优。
@@ -177,7 +177,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### Appfigures报告：图像AI模型驱动App增长远超聊天机器人
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-05/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-05/research-02.jpg)
 
 
 **是什么**：Appfigures数据显示，视觉AI模型（如图生图、视频生成）发布后，相关App下载量是聊天机器人升级版本的6.5倍。但绝大多数应用未能有效转化为内购或订阅收入。
@@ -190,7 +190,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### Together AI发布高效推理基础研究
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-05/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-05/research-03.jpg)
 
 
 **是什么**：Together AI公开了面向大规模模型推理效率的基础研究成果，涵盖算子优化、内存管理、动态批处理等从模型到生产的关键环节。
@@ -211,7 +211,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### OpenAI 推出自我管理 Agent 系统，应对人类注意力瓶颈
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-05/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-05/product-00.jpg)
 
 
 **是什么** OpenAI 构建了一套新系统，允许 AI 代理自主协调工作流，减少对人类持续监督的依赖。该系统通过代理间的通信与任务委派，将人类从细粒度监控中解放出来。
@@ -227,7 +227,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### Cloudflare 发布 Agent Memory 持久记忆托管服务
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-05/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-05/product-01.jpg)
 
 
 **是什么** Cloudflare 推出面向 AI 代理的托管记忆服务 Agent Memory，支持持久化存储与上下文管理，让代理能在多次对话或任务间保持状态。
@@ -243,7 +243,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### Cloudflare 上线 Code Mode MCP 服务器优化 Token 使用
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-05/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-05/product-02.jpg)
 
 
 **是什么** Cloudflare 推出新的 MCP（Model Context Protocol）服务器，帮助 AI 代理更高效利用 token 上下文窗口，减少不必要的消耗。
@@ -272,7 +272,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### DoorDash 引入 AI 工具加速商家入驻与菜品图编辑
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-05/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-05/product-04.jpg)
 
 
 **是什么** DoorDash 新增AI功能，帮助商家快速完成入驻流程、优化菜品图片并自动生成网站。
@@ -288,7 +288,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### GitLab 推出固定费率 AI 代码审查与免费层 AI 访问
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-05/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-05/product-05.jpg)
 
 
 **是什么** GitLab 新服务提供固定费率的 AI 代码审查，同时向免费用户开放一定量的 AI 能力（如代码建议、漏洞检测）。
@@ -304,7 +304,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### AWS 推出 S3 Files，为 S3 存储桶提供文件系统访问
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-05/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-05/product-06.jpg)
 
 
 **是什么** 亚马逊云科技发布 S3 Files 功能，允许用户像操作本地文件系统一样（mount、ls、cp等）访问S3存储桶。
@@ -334,7 +334,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### 观点：Agentic Coding 是一个陷阱
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-05/opinion-01.jpg)
 
 
 开发者发文警告，完全依赖 AI 代理（agent）进行编码会导致代码失控、安全漏洞和不可维护性。作者认为，当前 agentic coding 工具在生成式补全和自主决策上仍远未可靠，盲目跟风会埋下技术债和合规风险。为什么重要：它提醒技术决策者不要被“自动编程”的叙事冲昏头脑，在关键系统上仍需保留人工审查和传统工程实践。
@@ -343,7 +343,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### Anthropic 与 OpenAI 共识：销售 AI 需要远不止模型本身
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-05/opinion-02.jpg)
 
 
 两大竞争对手罕见达成一致：企业级 AI 销售不能只卖 API 或模型权重，必须提供完整的服务生态，包括安全合规、部署托管、持续支持和行业定制。关键点：这解释了为何两家公司都在加强企业销售团队和合作伙伴网络，也暗示 AI 创业公司的差异化将从模型性能转向交付能力。
@@ -358,7 +358,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### CNCF 警告：仅靠 Kubernetes 不足以保证 LLM 工作负载安全
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-05/opinion-04.jpg)
 
 
 云原生计算基金会（CNCF）发布报告指出，Kubernetes 原生安全机制（如 RBAC、网络策略）无法覆盖 LLM 工作负载的特殊风险，例如模型投毒、提示注入和数据泄露。建议组合使用专用工具（如 OPA、Kyverno）以及沙箱运行时。关键点：随着企业大规模部署 LLM，安全团队需要重新评估容器编排的防护能力边界。
@@ -367,7 +367,7 @@ Anthropic 和 OpenAI 都选择了同一类模式：与资产管理公司成立�
 
 ### 黄仁勋：AI 正在创造大量新就业岗位
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-05/opinion-05.jpg)
 
 
 Nvidia CEO 黄仁勋在采访中反驳 AI 取代工作论，称 AI 将催生“提示工程师”“AI 训练师”“数据中心规划师”等全新职业，并指出历史上每次技术革命都最终创造了更多岗位。为什么重要：尽管观点有争议，但它代表了基础设施侧巨头的官方立场，也影响了投资人和政策制定者的叙事。
@@ -376,7 +376,7 @@ Nvidia CEO 黄仁勋在采访中反驳 AI 取代工作论，称 AI 将催生“�
 
 ### AI 数据中心建设正成为银行压力测试
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-05-05/opinion-06.jpg)
 
 
 大规模 AI 数据中心投资（单项目可达数十亿美元）使银行面临集中度风险和长期资产流动性问题。监管机构已开始要求银行将此类贷款纳入压力测试模型。关键点：AI 基础设施的金融风险不再只是“会不会过热”的问题，而是可能影响整个银行系统的稳健性。
@@ -385,7 +385,7 @@ Nvidia CEO 黄仁勋在采访中反驳 AI 取代工作论，称 AI 将催生“�
 
 ### 来谈谈 LLM 的真正限制
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-05-05/opinion-07.jpg)
 
 
 博客长文系统梳理 LLM 的认知局限：缺乏常识推理、无法处理矛盾信息、易受格式偏差影响、在长文本中丢失上下文。作者通过多个实例展示这些限制如何在现实应用中导致失败。为什么重要：适合作为团队内部技术讨论的入门读物，帮助成员建立对 LLM 能力的合理期望，避免过度承诺。
@@ -404,7 +404,7 @@ Nvidia CEO 黄仁勋在采访中反驳 AI 取代工作论，称 AI 将催生“�
 
 ### DeepClaude：DeepSeek V4 + Claude Code 代理循环
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-05/opensource-00.jpg)
 
 
 是什么：一个将 DeepSeek V4 的高效推理注入 Claude Code 代理循环的开源工具，让 Claude 在编码任务中能调用 DeepSeek 进行快速推理，尤其在长上下文或复杂分解场景中提升效率。
@@ -417,7 +417,7 @@ Nvidia CEO 黄仁勋在采访中反驳 AI 取代工作论，称 AI 将催生“�
 
 ### DeepSeek-TUI：终端原生编码代理
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-05/opensource-01.jpg)
 
 
 是什么：基于 DeepSeek V4（1M token 上下文 + 前缀缓存）的终端 AI 编程助手，单个二进制文件即可运行，无需 Web 界面。
@@ -430,7 +430,7 @@ Nvidia CEO 黄仁勋在采访中反驳 AI 取代工作论，称 AI 将催生“�
 
 ### ruflo：Claude 多智能体编排平台
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-05/opensource-02.jpg)
 
 
 是什么：基于 Claude 的企业级代理编排框架，支持定义多智能体角色、对话系统部署，并内置“自学习群体智能”机制。
@@ -443,7 +443,7 @@ Nvidia CEO 黄仁勋在采访中反驳 AI 取代工作论，称 AI 将催生“�
 
 ### TradingAgents：多智能体金融交易框架
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-05/opensource-03.jpg)
 
 
 是什么：开源金融交易代理框架，利用多个 LLM agent 分别负责市场分析、风险评估、执行决策等，实现协作交易。
@@ -456,7 +456,7 @@ Nvidia CEO 黄仁勋在采访中反驳 AI 取代工作论，称 AI 将催生“�
 
 ### browserbase/skills：Claude Code 的网页浏览工具集
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-05/opensource-04.jpg)
 
 
 是什么：为 Claude Code 提供浏览器基础技能，包括网页导航、表单填写、内容抓取等，使其能像人类一样进行网页交互。
@@ -469,7 +469,7 @@ Nvidia CEO 黄仁勋在采访中反驳 AI 取代工作论，称 AI 将催生“�
 
 ### n8n-MCP：MCP 协议连接 Claude 与 n8n 工作流
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-05/opensource-05.jpg)
 
 
 是什么：一个 MCP 服务器，允许 Claude Desktop/Code 直接创建、读取、更新 n8n 工作流引擎中的流程。
@@ -482,7 +482,7 @@ Nvidia CEO 黄仁勋在采访中反驳 AI 取代工作论，称 AI 将催生“�
 
 ### Local Deep Research：本地化深度研究代理
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-05-05/opensource-06.jpg)
 
 
 是什么：一个完全本地运行的深度研究代理框架，支持多种 LLM（Ollama、vLLM）和多种搜索源（Bing、SearXNG、本地文档），所有数据处理不出本地。
@@ -495,7 +495,7 @@ Nvidia CEO 黄仁勋在采访中反驳 AI 取代工作论，称 AI 将催生“�
 
 ### LTX-2：开源音频-视频生成模型
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-05/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-05/opensource-07.jpg)
 
 
 是什么：Lightricks 开源的 LTX-2 模型，支持从音频输入生成同步视频，同时提供语音克隆功能。提供完整的训练与推理脚本。

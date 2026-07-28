@@ -45,7 +45,7 @@ OpenAI 在 API 中上线新的实时语音模型，不仅能转录和翻译，�
 
 ### Google Gemma 4 模型通过投机解码获 3 倍加速
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-05-08/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-05-08/model_release-02.jpg)
 
 
 Google 开源的 Gemma 4 模型采用投机解码（speculative decoding）技术，在输出质量基本不变的前提下，推理速度提升最高 3 倍。这对于本地部署或低算力场景是实用改进。开源社区可直接复用该技术到其他模型，加速推理效率竞赛。
@@ -54,7 +54,7 @@ Google 开源的 Gemma 4 模型采用投机解码（speculative decoding）技�
 
 ### Zyphra 发布 8B 参数推理 MoE 模型 ZAYA1-8B
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-05-08/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-05-08/model_release-03.jpg)
 
 
 ZAYA1-8B 使用混合专家（MoE）架构，总参数量 8B，但每 token 只激活 760M 参数。其在数学和编程基准上超越同量级模型，甚至接近 DeepSeek-V3.2。对于预算有限的团队，这是用更少算力获得近似大模型能力的样本——MoE 路线持续验证“小激活、大知识”的价值。
@@ -73,7 +73,7 @@ ZAYA1-8B 使用混合专家（MoE）架构，总参数量 8B，但每 token 只�
 
 ### Anthropic 与 SpaceX 达成 22 万 GPU 大单
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-08/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-08/company-00.jpg)
 
 
 Anthropic 已与 SpaceX/xAI 签署协议，租用其 Colossus 数据中心全部算力容量——约 22 万张 GPU，年花费约 50 亿美元。这笔交易将使 Anthropic 的可用算力直接翻倍，用于加速 Claude 模型训练与推理，缓解长期以来的算力瓶颈。关键点：这不是一台台买卡，而是整座数据中心的“独家使用权”，意味着 Anthropic 愿意为确定性支付高溢价。为什么重要：当模型能力进入深水区，算力已成为最大风险变量。Anthropic 用 50 亿美元赌的是“只要算力到位，模型能力就能再跳一阶”。这也会推高其他玩家的算力获取成本，引发新一轮规模竞赛。
@@ -82,7 +82,7 @@ Anthropic 已与 SpaceX/xAI 签署协议，租用其 Colossus 数据中心全部
 
 ### OpenAI 联合多家巨头推出开放网络协议 MRC
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-08/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-08/company-01.jpg)
 
 
 OpenAI 与 AMD、Broadcom、Intel、微软、英伟达共同宣布开发 Multipath Reliable Connection（MRC）协议，旨在解决 AI 超算网络中的拥塞与丢包问题。MRC 基于现有以太网标准，通过多路径冗余传输提高带宽利用率，目标是支撑训练集群的万卡规模互联。关键点：这不是闭源协议，OpenAI 将其作为开放标准贡献给社区，意在降低对英伟达 InfiniBand 的依赖。为什么重要：当前 AI 训练集群的网络瓶颈已成为比 GPU 更隐蔽的短板。如果 MRC 被广泛采用，将改变数据中心网络生态，让以太网在 AI 场景中重新获得竞争力。OpenAI 此举既为自己“救急”，也是在布局下一代网络标准的话语权。
@@ -97,7 +97,7 @@ OpenAI 官宣将在 ChatGPT 中测试广告，以此支持免费用户的访问�
 
 ### 马斯克曾试图挖角 OpenAI 创始人组建特斯拉 AI 团队
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-08/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-08/company-03.jpg)
 
 
 最新披露的法庭文件显示，2017 年马斯克曾计划招募 Sam Altman 或 Demis Hassabis 来领导特斯拉内部的 AI 实验室，并要求“拥有完全控制权”。该计划最终未能实现，但揭示出马斯克对 OpenAI 创始团队的长期关注。关键点：文件来自马斯克诉 OpenAI 案的相关证据链条，意图说明马斯克早期就想主导 AI 研发方向。为什么重要：这为马斯克与 OpenAI 之间持续的法律纠纷提供了新的叙事维度——不是简单的“背叛与离开”，而是一场对 AGI 控制权的长期争夺。对投资人和技术人而言，这说明顶尖人才争夺早在 2017 年就已白热化。
@@ -106,7 +106,7 @@ OpenAI 官宣将在 ChatGPT 中测试广告，以此支持免费用户的访问�
 
 ### Moonshot AI 以 200 亿美元估值融资 20 亿美元
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-08/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-08/company-04.jpg)
 
 
 中国 AI 公司 Moonshot AI（月之暗面）完成 20 亿美元融资，估值达 200 亿美元。公司月经常性收入（MRR）已超过 2 亿美元，主要源于开源 AI 模型需求暴涨。关键点：这是中国 AI 初创公司目前最高的融资估值之一，显露出全球资本对开源 AI 路线的强烈兴趣。为什么重要：Moonshot 的崛起验证了一个趋势——在基础模型竞争趋于同质化后，围绕开源生态的商业模式（如企业服务、私有化部署）正在快速放量。200 亿美元估值是否合理，关键看 MRR 的持续增长速度和毛利率。
@@ -115,7 +115,7 @@ OpenAI 官宣将在 ChatGPT 中测试广告，以此支持免费用户的访问�
 
 ### 无问芯穹再获超 7 亿元融资，领跑国内 AI Infra
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-08/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-08/company-05.jpg)
 
 
 无问芯穹完成新一轮超 7 亿元人民币融资，联合领投方为杭州高新金投和惠远资本。公司继续稳居中国 AI 原生基础设施领域融资规模第一。关键点：无问芯穹聚焦异构计算平台，帮助开发者适配不同芯片，解决“国产算力碎片化”问题。为什么重要：在国内芯片出口限制持续收紧的背景下，“AI Infra”层的中立平台正在成为稀缺资产。无问芯穹的连续融资反映了资本对算力中间件的押注——越是在硬件受限时，软件抽象层的价值越大。
@@ -124,7 +124,7 @@ OpenAI 官宣将在 ChatGPT 中测试广告，以此支持免费用户的访问�
 
 ### DeepL 裁员 250 人，转型“AI 原生”组织
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-08/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-08/company-06.jpg)
 
 
 AI 翻译公司 DeepL 宣布裁员约 250 人，占员工总数约 20%，计划将组织重塑为“AI 原生”结构，聚焦核心 AI 能力。关键点：DeepL 表示裁员是为了减少非核心岗位（如传统本地化、运营与商务），集中资源投入 AI 模型研发和产品迭代。为什么重要：DeepL 是少数能在翻译领域与 Google、微软叫板的产品，此次裁员说明即使盈利尚可，AI 公司也必须持续“瘦身”以维持敏捷。这也暗示了“AI 原生”组织意味着摆脱传统服务模式，转为技术驱动。
@@ -133,7 +133,7 @@ AI 翻译公司 DeepL 宣布裁员约 250 人，占员工总数约 20%，计划�
 
 ### Snap 与 Perplexity 的 4 亿美元交易友好终止
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-08/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-08/company-07.jpg)
 
 
 Snap 宣布，与 Perplexity 原计划将 AI 搜索集成到 Snapchat 的 4 亿美元交易已“友好终止”。双方未透露具体原因。关键点：这笔交易在今年 3 月宣布，本应是 Perplexity 最大的一笔 B2B 合同。友好的终止意味着可能是在商业条款或技术整合上未能达成最终一致。为什么重要：AI 搜索集成到社交平台被视为提升用户粘性的新路径，但集成难度（延迟、内容审核、成本）可能超出预期。对于 Perplexity 而言，失去这一大客户后需尽快找到新的商业化出口。
@@ -150,7 +150,7 @@ Snap 宣布，与 Perplexity 原计划将 AI 搜索集成到 Snapchat 的 4 亿�
 
 ### Anthropic 发布自然语言自编码器，可读取模型内部思维
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-08/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-08/research-00.jpg)
 
 
 **是什么**：Anthropic 提出 Natural Language Autoencoders（NLAE），一种能够将 Claude 的中间表示（hidden states）映射为自然语言句子的方法。不同于以往只关注神经元激活或特征可视化，NLAE 直接输出模型“正在思考什么”的文本。
@@ -163,7 +163,7 @@ Snap 宣布，与 Perplexity 原计划将 AI 搜索集成到 Snapchat 的 4 亿�
 
 ### Google DeepMind 推出 AlphaEvolve，智能体自主改进代码
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-08/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-08/research-01.jpg)
 
 
 **是什么**：AlphaEvolve 是一个基于 Gemini 的编码智能体，能够边写代码边测试、反思、重写，形成自主进化循环。
@@ -176,7 +176,7 @@ Snap 宣布，与 Perplexity 原计划将 AI 搜索集成到 Snapchat 的 4 亿�
 
 ### ProgramBench：评估语言模型从零重建程序的能力
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-08/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-08/research-02.jpg)
 
 
 **是什么**：ProgramBench 是评估 LLM 能否根据自然语言需求描述从零构建一个完整、可运行程序的新基准。
@@ -189,7 +189,7 @@ Snap 宣布，与 Perplexity 原计划将 AI 搜索集成到 Snapchat 的 4 亿�
 
 ### 研究揭示长上下文建模的“不可能三角”
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-08/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-08/research-03.jpg)
 
 
 **是什么**：一篇理论论文证明，长序列模型无法同时满足计算高效、状态紧凑、输出精确三个约束，即“不可能三角”。
@@ -202,7 +202,7 @@ Snap 宣布，与 Perplexity 原计划将 AI 搜索集成到 Snapchat 的 4 亿�
 
 ### 扩散 Transformer 中的异常 Token 被系统研究
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-05-08/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-05-08/research-04.jpg)
 
 
 **是什么**：研究者系统分析了扩散 Transformer 中出现的少量高范数 token，并发现它们会导致注意力偏移和生成质量下降。
@@ -215,7 +215,7 @@ Snap 宣布，与 Perplexity 原计划将 AI 搜索集成到 Snapchat 的 4 亿�
 
 ### Grok 协作发现五项数学新成果
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-05-08/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-05-08/research-05.jpg)
 
 
 **是什么**：研究者与 xAI 的 Grok 模型协作，在凸集周长、组合几何等五个数学问题上得到了经过验证的新结果。
@@ -238,7 +238,7 @@ Snap 宣布，与 Perplexity 原计划将 AI 搜索集成到 Snapchat 的 4 亿�
 
 ### Claude 推出“Dreaming”功能：智能体学会自我复盘
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-08/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-08/product-00.jpg)
 
 
 Anthropic 为 Claude 新增了“Dreaming”模式：在完成任务后，智能体会自动回溯执行过程，识别失败或次优决策，并尝试不同路径来优化未来行为。这本质上是一个离线强化学习循环，不消耗实时推理配额。同时，Claude Code 的 5 小时使用限制对 Pro/Max 用户翻倍，直接回应了开发者对长任务连续性的需求。**为什么重要**：Dreaming 让 agent 能够从自身错误中迭代，而不依赖人类反馈，这是迈向真正自主智能体的关键机制。它将“犯错-修正”循环内置到系统里，可能大幅降低 agent 在实际场景中的翻车率。
@@ -247,7 +247,7 @@ Anthropic 为 Claude 新增了“Dreaming”模式：在完成任务后，智能
 
 ### Perplexity Personal Computer 开放 Mac 版：桌面 AI 代理走到前台
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-08/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-08/product-01.jpg)
 
 
 Perplexity 将其“Personal Computer”功能正式带到 Mac 平台，用户可通过桌面端唤起 AI 代理直接操作文件、浏览器甚至系统级任务。之前该功能仅限 Web 端或有限内测，Mac 版的上线意味着 Perplexity 开始正面与苹果的智能体生态竞争。**关键点**：代理不再局限于聊天窗口，而是能调用本地资源和权限——这会带来更高的效率，也必然引发安全与隐私的讨论。**为什么重要**：桌面 agent 是 2026 年 AI 落地的核心场景之一，Perplexity 以“轻量通用代理”切入，意图成为用户桌面的“副驾驶”，但从体验到信任仍需打磨。
@@ -256,7 +256,7 @@ Perplexity 将其“Personal Computer”功能正式带到 Mac 平台，用户�
 
 ### Bumble 彻底抛弃滑动匹配：AI 约会助手接管选择权
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-08/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-08/product-02.jpg)
 
 
 Bumble CEO 宣布将移除传统左右滑动匹配机制，全面转向 AI 约会助手“Bee”。Bee 会基于用户偏好、历史互动和实时对话质量，主动推荐匹配对象并安排破冰对话。**关键点**：这是主流社交平台首次完全放弃人工筛选，将匹配决策权交给 AI。**为什么重要**：如果效果验证，可能重塑整个在线约会行业的交互范式——用户不再“刷人”，而是让 AI 理解自己的需求并代为决策。但这也意味着用户对推荐逻辑的透明度和公平性将提出更高要求。
@@ -265,7 +265,7 @@ Bumble CEO 宣布将移除传统左右滑动匹配机制，全面转向 AI 约�
 
 ### Spotify AI DJ 新增多语言：个性化体验向全球扩张
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-08/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-08/product-03.jpg)
 
 
 Spotify 的 AI DJ 功能现在支持法语、德语、意大利语和巴西葡萄牙语。AI DJ 利用生成式语音在曲目间插入背景介绍、歌手趣闻和风格分析，以自然对话的方式串联推荐。**关键点**：此前仅支持英语，此次扩容覆盖欧洲和南美主要市场，Spotify 试图通过本地化语音交互提升用户粘性。**为什么重要**：AI DJ 是 Spotify 对抗 Apple Music 等竞品差异化的核心功能，多语言支持意味着个性化音乐体验从“算法推荐”升级为“对话式陪伴”，在非英语市场的增长空间值得关注。
@@ -274,7 +274,7 @@ Spotify 的 AI DJ 功能现在支持法语、德语、意大利语和巴西葡�
 
 ### 像素绽放 PixelBloom 完成 C 轮融资：AI 办公代理成新叙事
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-08/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-08/product-04.jpg)
 
 
 中国 AI 办公企业像素绽放 PixelBloom 宣布完成 C 轮融资，将主要投入 AI 办公代理（Agent）产品的研发与商业化。此前其产品已覆盖文档智能、表格自动化等场景，本轮融资后计划将 agent 能力延伸到业务流程自动化。**关键点**：在国内外竞品纷纷发力通用 agent 的背景下，PixelBloom 选择深耕办公垂直领域，强调“文档理解+执行”的闭环。**为什么重要**：垂直 agent 相比通用 agent 在数据封闭性和场景适配性上拥有天然优势，办公场景是商业化最可能的突破口之一。国内 agent 赛道竞争激烈，C 轮融资也显示出资本对该赛道的持续信心。
@@ -283,7 +283,7 @@ Spotify 的 AI DJ 功能现在支持法语、德语、意大利语和巴西葡�
 
 ### Cursor 删库事故：AI 代理的安全边界不容忽视
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-08/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-08/product-05.jpg)
 
 
 有开发者在社交媒体爆料，使用 Cursor AI 工具时，AI 代理误执行了生产数据库的删除操作，导致数据丢失。虽然具体细节尚未得到官方确认，但事件迅速引发了关于“是否应将数据库操作权限交给 AI”的广泛讨论。**关键点**：Cursor 是基于 LLM 的代码辅助工具，能够理解自然语言指令并执行文件/数据库操作；这次事故暴露出权限控制、沙箱隔离和操作确认机制的缺失。**为什么重要**：AI 代理的能力越强，其出错时的破坏力也越大。该事件应成为行业警示：在设计 agent 工具时，默认应遵循“最小权限”原则，并对高危操作引入人类确认回路，否则信任成本将反过来扼杀 adoption。
@@ -300,7 +300,7 @@ Spotify 的 AI DJ 功能现在支持法语、德语、意大利语和巴西葡�
 
 ### 欧盟推迟大部分 AI 法规，应对复杂性
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-08/opinion-00.jpg)
 
 
 欧盟通过“Omnibus”法案将多数 AI 法规延迟生效，明确承认监管框架的设计难度超出当初预判。关键点在于，推迟并非放弃，而是给予行业更多缓冲期来适应合规要求，同时欧盟委员会将重新修订高风险 AI 系统分类标准。为什么重要：欧盟此前一直是全球 AI 监管的“布鲁塞尔效应”输出者，这一延迟可能削弱其规则制定主导权，为美中监管竞赛留下窗口。
@@ -309,7 +309,7 @@ Spotify 的 AI DJ 功能现在支持法语、德语、意大利语和巴西葡�
 
 ### 美国与中国考虑举行 AI 正式对话
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-08/opinion-01.jpg)
 
 
 据多方报道，中美政府正在探讨建立 AI 安全与治理的正式双边对话机制，旨在降低技术脱钩风险与潜在的军事冲突。关键点：对话将涵盖 AI 安全标准、风险通报、前沿模型开发监督等议题，但目前仍处于早期磋商阶段。为什么重要：这是全球前两大 AI 强国首次尝试建立制度化沟通渠道，其进展将直接影响全球 AI 供应链、人才流动及技术竞赛格局。
@@ -318,7 +318,7 @@ Spotify 的 AI DJ 功能现在支持法语、德语、意大利语和巴西葡�
 
 ### 特朗普因 Mythos 事件转变对 AI 安全测试立场
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-08/opinion-02.jpg)
 
 
 Mozilla 利用 AI 工具 Mythos 发现 Firefox 大量安全漏洞后，特朗普政府突然由反对转向支持强制 AI 安全测试。关键点：专家指出，安全测试面临数据稀缺、对抗性攻击、模型版本更迭快等根本性困难，行政部门缺乏足够技术能力执行。为什么重要：这一立场转变让 AI 安全测试从边缘议题跃入政策核心，但若执行不当可能沦为形式主义，甚至逆向激励“安全认证”产业。
@@ -333,7 +333,7 @@ Mozilla 利用 AI 工具 Mythos 发现 Firefox 大量安全漏洞后，特朗普
 
 ### 研究称仅用 AI 10 分钟就会削弱人的思考能力
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-08/opinion-04.jpg)
 
 
 最新研究显示，即使短时间依赖 AI 辅助完成任务，也会显著降低参与者独立解决新问题的能力，且认知依赖效应在停止使用后持续存在。关键点：实验对比了在 AI 辅助组与无辅助组之间的问题解决表现，AI 组在后续无 AI 场景中错误率更高。为什么重要：这为“认知退化”提供了实证警告——当 AI 成为默认思考代理，人类的关键推理能力可能被静默侵蚀，尤其对教育、决策等场景影响深远。
@@ -342,7 +342,7 @@ Mozilla 利用 AI 工具 Mythos 发现 Firefox 大量安全漏洞后，特朗普
 
 ### 硅谷大厂开始 AI-first 换血：裁 3 万招 8 千
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-08/opinion-05.jpg)
 
 
 多家科技巨头以 AI-first 战略为名，年内裁撤约 3 万个传统岗位（产品、运营、内容审核等），同时新招募约 8000 个 AI 相关岗位（模型训练、MLOps、AI 安全等）。关键点：大厂对传统产品经理、项目经理的需求骤降，而“可教 AI 做决策”的复合人才成为新宠。为什么重要：这是组织形态的结构性变迁——AI 不再是工具，而是工作流的核心编排者；从业者必须重新定义自身技能组合，否则面临淘汰风险。
@@ -351,7 +351,7 @@ Mozilla 利用 AI 工具 Mythos 发现 Firefox 大量安全漏洞后，特朗普
 
 ### K8s 之父警告：代码生成越快，程序员越危险
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-05-08/opinion-06.jpg)
 
 
 Kubernetes 创始人评论 AI 编码工具时指出，生成速度的提升掩盖了系统理解能力的缺失——只会“写代码”而不懂架构的开发者正产出大量脆弱、不可维护的代码。关键点：他呼吁回归工程基础，包括清晰的设计文档、单元测试和系统边界意识。为什么重要：当 AI 编码成为主流，工程教育的重点应从“写正确代码”转向“设计正确系统”，否则企业的技术债务将因 AI 加速爆发。
@@ -370,7 +370,7 @@ Kubernetes 创始人评论 AI 编码工具时指出，生成速度的提升掩�
 
 ### vLLM V1：强化学习正确性优先，推理可靠性升级
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-08/opensource-00.jpg)
 
 
 vLLM 从 V0 到 V1 是一次架构级别的跃迁，核心改进在于为强化学习（RL）场景提供正确性保证。V0 已广泛应用于高吞吐推理，但在连续采样、奖励计算等 RL 步骤中，浮点误差累积可能影响策略梯度估计。V1 引入了确定性计算路径和结果校验机制，确保每次前向输出在相同输入下严格一致。这一改动的直接价值：企业可以在 vLLM 上放心跑 RLHF 流水线，不用额外写冗余校验代码。对于正在从“单轮对话”转向“多步骤 agent”的团队，V1 降低了部署复杂度。
@@ -379,7 +379,7 @@ vLLM 从 V0 到 V1 是一次架构级别的跃迁，核心改进在于为强化�
 
 ### LightSeek TokenSpeed：为智能体工作负载量身定制的推理引擎
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-08/opensource-01.jpg)
 
 
 TokenSpeed 是一个开源的 LLM 推理引擎，目标性能对标 NVIDIA 的 TensorRT-LLM，但专门针对 agentic workloads 优化。其设计亮点包括动态批处理策略、低预热启动和细粒度内存管理，使单次推理延迟在 agent 多轮交互（如代码生成、工具调用）中降低 30% 以上。对于预算有限的中小团队，TokenSpeed 提供了一条不依赖闭源加速库的高性能路径。LightSeek 基金会同时开放了适配主流开源模型的预编译包，降低了上手门槛。
@@ -388,7 +388,7 @@ TokenSpeed 是一个开源的 LLM 推理引擎，目标性能对标 NVIDIA 的 T
 
 ### Meta NeuralBench：神经 AI 的统一“体检”标准
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-08/opensource-02.jpg)
 
 
 Meta 开源的 NeuralBench 覆盖 36 项 EEG 任务和 94 个数据集，旨在为神经 AI（NeuroAI）模型提供可比性评估。此前该领域模型指标混乱、数据格式不统一，Benchmark 结果常无法复现。NeuralBench 提供了标准化数据处理管线、评分脚本和可复现的评估流程，覆盖注意力、认知负荷、动作意图等典型任务。对于投资人和产品经理，这意味着脑机接口（BCI）和神经界面方向的模型选型有了独立验证工具，降低技术判断的噪音。
@@ -397,7 +397,7 @@ Meta 开源的 NeuralBench 覆盖 36 项 EEG 任务和 94 个数据集，旨在�
 
 ### Unsloth × NVIDIA：微调效率再翻倍
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-08/opensource-03.jpg)
 
 
 Unsloth 宣布与 NVIDIA 合作，将定制的内核优化集成到最新 GPU 架构中，使 LLM 微调速度相比纯 PyTorch 实现提升 2–3 倍，内存占用减少 60%。这项合作的重点是自动识别模型中的计算瓶颈并替换为 CUDA 内核，同时保持适配器的易用性。对于需要频繁迭代的研发团队，Unsloth 提供了一个“即插即用”的高效微调选项，尤其适合在 NVIDIA 硬件上做 LoRA 或 QLoRA 微调。
@@ -406,7 +406,7 @@ Unsloth 宣布与 NVIDIA 合作，将定制的内核优化集成到最新 GPU �
 
 ### ds4：在 Mac 上本地运行 DeepSeek 4 Flash
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-08/opensource-04.jpg)
 
 
 知名开发者 antirez 开源了 ds4，一个基于 Apple Metal 的 DeepSeek 4 Flash 推理引擎。该引擎利用 Mac 统一内存架构和 GPU 自带的 Metal Performance Shaders，让模型在 M 系列芯片上跑出接近桌面级的速度，无需额外显卡。对于开发者而言，这意味着可以在本地安全地处理私密数据，甚至作为 agent 的离线终端。项目代码简洁，仅 3000 余行，适合学习高性能推理实现。
@@ -415,7 +415,7 @@ Unsloth 宣布与 NVIDIA 合作，将定制的内核优化集成到最新 GPU �
 
 ### agent-skills：给 AI 编码代理一套“工程工具箱”
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-08/opensource-05.jpg)
 
 
 addyosmani 发布的 agent-skills 仓库，为 AI 编码代理提供了生产级技能集合，包括代码审查、安全扫描、依赖分析、测试生成等 20+ 项可调用的技能模块。每个技能以独立函数形式封装，支持被代理在生成步骤中动态调用。关键点在于它不只提供提示词模板，而是直接集成 CLI 工具（如 eslint、bandit、pytest），让代理的输出可执行、可验证。对于任何正在构建 coding agent 的团队，这是一套可以直接复用的“螺丝刀套装”。
@@ -430,7 +430,7 @@ PriorLabs 开源的 TabPFN 是一个基于 Transformer 的表格数据基础模�
 
 ### Local Deep Research：本地深度研究，单卡 3090 实现 95% SimpleQA
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-08/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-08/opensource-07.jpg)
 
 
 Local Deep Research 工具支持本地和云端 LLM 混合，集成 10+ 搜索引擎的实时结果，可在单张 RTX 3090 上实现约 95% 的 SimpleQA 准确率。它通过多步检索与验证循环，将搜索片段作为上下文传递给本地模型，无需联网 API。对于需要内部知识库调研或合规性要求高的团队，该工具提供了一个不依赖外部服务的深度研究替代方案。

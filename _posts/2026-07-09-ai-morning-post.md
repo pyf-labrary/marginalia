@@ -43,7 +43,7 @@ sections:
 
 ### xAI 发布 Grok 4.5：号称 Opus 级性能但定价更低
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-09/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-09/model_release-01.jpg)
 
 
 **是什么**：SpaceXAI（xAI）推出 Grok 4.5，Elon Musk 称其为“Opus-class”模型，对标 Anthropic 的 Claude Fable 5 和 OpenAI 的 GPT-5.5，但 API 价格显著更低。Musk 暗示在一些基准上的差距可能不再重要。
@@ -56,7 +56,7 @@ sections:
 
 ### Meta 推出图像生成器 Muse：用 Instagram 公共数据训练引隐私争议
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-09/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-09/model_release-02.jpg)
 
 
 **是什么**：Meta 发布 AI 图像生成与编辑模型 Muse，可基于文本生成图片或修改已有图像。但模型训练数据来自 Instagram 上的公开照片，用户需手动选择退出，否则默认参与。
@@ -69,7 +69,7 @@ sections:
 
 ### Mistral 发布 Robostral Navigate：8B 参数的机器人视觉导航模型
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-09/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-09/model_release-03.jpg)
 
 
 **是什么**：Mistral 推出仅 80 亿参数的视觉导航模型 Robostral Navigate，单摄像头即可引导机器人自主移动，无需激光雷达或深度传感器。
@@ -82,7 +82,7 @@ sections:
 
 ### Anthropic Claude Fable 5 主导新行业基准，但 API 定价高昂
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-07-09/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-07-09/model_release-04.jpg)
 
 
 **是什么**：Anthropic 的 Claude Fable 5 在多个行业专用基准测试中取得领先，覆盖金融、医疗、法律等领域。但 API 调用价格远高于同级模型，如 GPT-5.5 和 Grok 4.5。
@@ -95,7 +95,7 @@ sections:
 
 ### NVIDIA Nemotron 3 Ultra 在 LangChain 代理基准中领先，成本优势明显
 
-![model_release-05.jpg](/marginalia/assets/img/ai-hot/2026-07-09/model_release-05.jpg)
+![model_release-05.jpg](/assets/img/ai-hot/2026-07-09/model_release-05.jpg)
 
 
 **是什么**：NVIDIA 的 Nemotron 3 Ultra 配合 LangChain Deep Agents harness，在代理（agent）任务基准上取得最高分，且推理成本低于顶级闭源模型。
@@ -108,7 +108,7 @@ sections:
 
 ### Google 更新 Android AI 开发基准 Android Bench，新增 Fable 5 等模型
 
-![model_release-06.jpg](/marginalia/assets/img/ai-hot/2026-07-09/model_release-06.jpg)
+![model_release-06.jpg](/assets/img/ai-hot/2026-07-09/model_release-06.jpg)
 
 
 **是什么**：Google 对 Android AI 开发基准 Android Bench 进行重大更新，加入对 Claude Fable 5、GPT-5.5、Grok 4.5 等模型的评估，并增加 agent 类型的测试集。结果上，Gemini 在多项测试中仍落后于竞争对手。
@@ -131,7 +131,7 @@ sections:
 
 ### DeepSeek秘密自研AI推理芯片，已启动一年
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-09/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-09/company-00.jpg)
 
 
 是什么：DeepSeek正秘密推进自研AI推理芯片项目，据报已与代工厂和存储器供应商接洽，项目启动已满一年。关键点：此举直接应对美国出口管制对先进芯片的限制，旨在降低对外部供应链的依赖，实现从模型到硬件的垂直整合。为什么重要：若成功，DeepSeek将成为少数同时掌握大模型与专用芯片的中国公司，可能改变AI算力生态的竞争格局——成本与效率优势将不只是算法层面。
@@ -140,7 +140,7 @@ sections:
 
 ### SambaNova融资10亿美元，估值110亿
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-09/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-09/company-01.jpg)
 
 
 是什么：AI芯片初创SambaNova完成Series F首轮关闭，融资10亿美元，估值达110亿美元，距上一轮大额融资仅隔5个月。关键点：这是今年AI芯片领域最大单笔融资之一，显示投资者对定制化AI硬件（尤其是推理与训练一体）的强烈需求。为什么重要：在英伟达主导的GPU市场外，SambaNova等替代方案正在快速获取资本弹药，可能推动企业客户在芯片选型上拥有更多选择。
@@ -149,7 +149,7 @@ sections:
 
 ### Prime Intellect获1.3亿美元A轮，帮企业构建AI代理
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-09/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-09/company-02.jpg)
 
 
 是什么：Prime Intellect完成1.3亿美元A轮融资，核心业务是帮助企业不依赖前沿实验室即可训练自有AI代理系统。关键点：其平台让企业利用开源模型和数据自主开发agentic应用，降低对闭源API（如OpenAI、Anthropic）的依赖。为什么重要：企业级AI代理是今年最大风口之一，这笔融资表明市场相信“去中心化”的代理构建路径能够满足隐私、定制化和成本控制需求。
@@ -158,7 +158,7 @@ sections:
 
 ### OpenAI首席未来学家Joshua Achiam离职
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-09/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-09/company-03.jpg)
 
 
 是什么：OpenAI首席未来学家Joshua Achiam在任职近9年后离开，他此前负责AI安全研究。关键点：Achiam是OpenAI早期核心成员，长期推动AI安全与对齐工作，离职时机正值公司向营利性转型加速。为什么重要：安全研究高层的持续流失，可能加剧外界对OpenAI“先快后稳”路线的担忧，尤其是在其连续发布GPT-5、Fable等新模型后。
@@ -167,7 +167,7 @@ sections:
 
 ### 前OpenAI研究员田永龙加入腾讯参与VLM研发
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-09/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-09/company-04.jpg)
 
 
 是什么：前OpenAI研究员Yonglong Tian（田永龙）已加入腾讯大语言模型部门，参与视觉语言模型（VLM）研发。关键点：Tian此前在OpenAI从事多模态模型研究，加入腾讯意味着国内大厂在VLM人才争夺上的力度升级。为什么重要：视觉语言模型是下一代AI应用（如机器人、自动驾驶）的关键技术，腾讯加码这一方向，表明其不甘只做聊天机器人。
@@ -176,7 +176,7 @@ sections:
 
 ### Lovable估值或翻倍至132亿美元，正谈判融资
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-09/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-09/company-05.jpg)
 
 
 是什么：据报AI创业公司Lovable正以132亿美元估值谈判融资3亿美元，Menlo Ventures领投，估值较上一轮翻倍。关键点：Lovable专注AI驱动的软件构建平台，让非技术人员也能开发应用。为什么重要：高估值背后是市场对“无代码AI应用生成”这一垂直领域的狂热，但翻倍速度也让人警惕泡沫风险——能否兑现用户增长与留存才是关键。
@@ -185,7 +185,7 @@ sections:
 
 ### Anthropic用Fable 5管理Sonnet 5降低推理成本
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-09/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-09/company-06.jpg)
 
 
 是什么：Anthropic采用一种“模型管理模型”的方式：将旗舰模型Fable 5作为高层决策者，委派更具性价比的Sonnet 5执行具体任务，以控制推理成本。关键点：这类似于“经理-员工”架构，Fable 5负责规划与分解，Sonnet 5负责执行，从而降低单次任务的整体消耗。为什么重要：模型推理成本仍是商业化瓶颈，Anthropic的实践提供了一条不牺牲性能即可优化成本的工程路径，可能成为行业标杆做法。
@@ -210,7 +210,7 @@ sections:
 
 ### 阿里ACL最佳论文：Agent评测为何失效？
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-09/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-09/research-00.jpg)
 
 
 阿里研究团队提出的专家Agent评测基准（EvalAgent？原文未给出具体名称），在ACL 2026上获得最佳资源论文奖。其核心发现是：当前多数Agent Benchmark更关注“完成任务”，而非“理解规则”——当任务涉及现实世界的多步规则推理（如合同条款、医疗流程），Agent的表现会急剧下降。该基准通过专家设计的复杂场景，揭露了现有模型对隐含前提和因果链条的忽视。
@@ -219,7 +219,7 @@ sections:
 
 ### 智源发布悟界·Orca：世界模型的Next State Prediction路径
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-09/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-09/research-01.jpg)
 
 
 悟界·Orca并非一个对话助手，而是一个旨在理解“世界如何变化”的基础模型。它采用双路径学习架构：一条路径负责感知当前状态，另一条路径预测下一个状态（next state prediction）。这种设计试图让模型超越语言表面的相关性，获得类似人类对物理和抽象世界动态的直觉。智源声称它是“通用世界基础模型”，但尚未公布与现有世界模型（如Sora、UniSim）的横向对比数据。
@@ -228,7 +228,7 @@ sections:
 
 ### RoboDojo：最强机器人操作策略仅12.8分，人类100分
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-09/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-09/research-02.jpg)
 
 
 RoboDojo是一个统一仿真-现实的具身智能测评基准，覆盖抓取、组装、精细操作等任务。论文公布的结果里，当前顶尖机器人策略（可能指基于视觉+强化学习的方法）平均得分仅为12.8，而人类达到100。这意味着即使在仿真环境中，机器人操作能力距离实用仍有数量级差距。该基准的优势在于提供标准化硬件与模拟器接口，便于社区横向复现。
@@ -249,7 +249,7 @@ OpenAI发表了一篇题为《Separating Signal from Noise in Coding Evaluations
 
 ### NVIDIA发布Audex：统一音频与文本的30B模型
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-07-09/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-07-09/research-05.jpg)
 
 
 NVIDIA推出的Audex（Nemotron-Labs-Audex-30B-A3B）是一种混合架构模型，能在音频理解（语音识别、声纹识别）、音频翻译（语音到文本跨语言）、音频生成（文本到语音、情绪语调合成）之间切换，同时保留其主干模型（可能是Llama或Nemotron家族）的文本智能。关键创新在于“保持文本智能”——即音频任务不降低下游语言能力。30B激活参数但总参数可能更大，适合边缘部署。
@@ -258,7 +258,7 @@ NVIDIA推出的Audex（Nemotron-Labs-Audex-30B-A3B）是一种混合架构模型
 
 ### Anthropic研究：语言模型中的全局工作空间机制
 
-![research-06.jpg](/marginalia/assets/img/ai-hot/2026-07-09/research-06.jpg)
+![research-06.jpg](/assets/img/ai-hot/2026-07-09/research-06.jpg)
 
 
 Anthropic在一篇新论文中提出，语言模型内部可能存在类似于认知科学中“全局工作空间”的机制——一个可被所有模块访问的共享信息缓冲区，用于协调长程推理和跨任务迁移。他们通过干预实验发现，注意力层中的某些特定节点承担了类似“黑板”的角色，丢弃这些节点会导致模型在需要跨步推理的任务上显著恶化。这项工作为理解Transformer的“思考过程”提供了新的可解释性视角。
@@ -267,7 +267,7 @@ Anthropic在一篇新论文中提出，语言模型内部可能存在类似于�
 
 ### 翁荔总结35篇论文：自我进化AI的Harness工程
 
-![research-07.jpg](/marginalia/assets/img/ai-hot/2026-07-09/research-07.jpg)
+![research-07.jpg](/assets/img/ai-hot/2026-07-09/research-07.jpg)
 
 
 前OpenAI研究科学家Lilian Weng（翁荔）发布了一篇长文，系统总结了35篇关于“自我进化AI”的论文，并将主题提炼为“Harness Engineering”——即如何设计评估、约束和安全机制让AI在自我迭代中不偏离目标。她提出了一个分类框架：从内部监督信号到外部交互反馈，再到分布外泛化控制。这篇文章是近期该方向最全面的文献综述，适合希望快速入门的从业者。
@@ -286,7 +286,7 @@ Anthropic在一篇新论文中提出，语言模型内部可能存在类似于�
 
 ### Claude Cowork 扩展至移动端和网页，支持后台持续运行
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-09/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-09/product-00.jpg)
 
 
 Anthropic 的 Claude Cowork 现在可在手机和网页上使用，用户关闭电脑后任务仍继续。这意味着 AI agent 不再局限于 IDE 内，而是跨设备、后台持久运行，进一步模糊了“编码工具”与“办公助手”的界限。此举直接回应了 GitHub Copilot、Cursor 等竞品向全场景 agent 的迁移趋势。
@@ -295,7 +295,7 @@ Anthropic 的 Claude Cowork 现在可在手机和网页上使用，用户关闭�
 
 ### Google Photos 新增 AI 视频重混工具
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-09/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-09/product-01.jpg)
 
 
 Google Photos 推出 Video Remix，可对视频进行电影级重新照明、换背景和添加艺术风格。这是继 AI 照片编辑后，Google 将生成式 AI 能力延伸至视频编辑领域。用户无需专业软件即可实现类似 Adobe After Effects 的效果，但精度和实时性尚未披露。
@@ -304,7 +304,7 @@ Google Photos 推出 Video Remix，可对视频进行电影级重新照明、换
 
 ### Google 深度伪造检测系统揭穿 McConnell 伪造照片
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-09/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-09/product-02.jpg)
 
 
 Google 的深度伪造检测系统被用来验证一张声称显示 Mitch McConnell 的病床照片是 AI 生成的。这一案例验证了深度伪造检测技术在现实场景中的可用性。对于依赖视觉证据的媒体和司法系统，此类工具可能成为标准配置。
@@ -313,7 +313,7 @@ Google 的深度伪造检测系统被用来验证一张声称显示 Mitch McConn
 
 ### Meta 为 AI 眼镜添加防秘密录制功能，但隐私策略引发担忧
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-09/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-09/product-03.jpg)
 
 
 Meta 更新 Ray-Ban AI 眼镜，增加防偷拍措施——比如在录制时亮灯提示，但同时扩大个人数据收集范围。这种“一边防窃、一边扩权”的做法可能被监管机构视为换汤不换药。对于消费者而言，硬件层级的隐私保护远比软件开关更重要。
@@ -322,7 +322,7 @@ Meta 更新 Ray-Ban AI 眼镜，增加防偷拍措施——比如在录制时亮
 
 ### Discord AI 审核错误误封 200 余用户
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-09/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-09/product-04.jpg)
 
 
 Discord 确认 AI 审核系统因 bug 误封 200 多用户，误将无害图片识别为违规。这是 AI 内容审核“过杀”的典型案例，暴露了当前分类模型在面对跨文化、模糊内容时的脆弱性。平台方需在误报率与漏报率之间寻找更优平衡。
@@ -331,7 +331,7 @@ Discord 确认 AI 审核系统因 bug 误封 200 多用户，误将无害图片�
 
 ### AI 反诈骗 App Savi 上线，识别 AI 克隆语音和勒索
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-09/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-09/product-05.jpg)
 
 
 Savi 推出手机 App，帮助用户识别 AI 伪造的绑架勒索等诈骗电话，获 700 万美元种子轮。其核心能力是实时分析通话中音频特征，检测是否由 AI 合成。随着 deepfake 语音诈骗案件激增，此类消费者级防护工具需求巨大。
@@ -340,7 +340,7 @@ Savi 推出手机 App，帮助用户识别 AI 伪造的绑架勒索等诈骗电�
 
 ### 出门问问 TicNote 企业微信合作款发布
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-07-09/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-07-09/product-06.jpg)
 
 
 企业微信首款 AI 硬件 TicNote 合作款正式发布。出门问问凭借语音交互技术切入办公场景，TicNote 定位会议录音转写与智能摘要。与生态平台合作是 AI 硬件走向规模化的一条务实路径。
@@ -363,7 +363,7 @@ Savi 推出手机 App，帮助用户识别 AI 伪造的绑架勒索等诈骗电�
 
 ### AI作弊致布朗大学期末成绩腰斩
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-09/opinion-00.jpg)
 
 
 一位教授因怀疑学生使用AI作弊，将期末考试改为口试，导致全班平均分数从正常水平骤降至50%。该教授在课程大纲中明确禁用AI，但学生仍依赖AI完成书面答案；口试环境下学生无法调用AI，真实能力暴露无遗。这一事件直接挑战了AI时代学术评估的有效性，社会与机构必须重新定义评估体系，或寻找与AI共存的新规则。
@@ -372,7 +372,7 @@ Savi 推出手机 App，帮助用户识别 AI 伪造的绑架勒索等诈骗电�
 
 ### 黑客利用9款主流AI工具组建大型僵尸网络
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-09/opinion-01.jpg)
 
 
 安全研究人员发现“HalluSquatting”攻击方式，利用LLM无法承认“不知道”的缺陷，诱导模型推荐恶意API或虚假软件包，开发者安装后门，进而组建botnet。9款主流AI工具均受影响。这一发现表明AI的“幻觉”特性不再只是准确性缺陷，而是可被武器化的安全漏洞，企业和开发者需重新审视对AI输出的信任边界。
@@ -381,7 +381,7 @@ Savi 推出手机 App，帮助用户识别 AI 伪造的绑架勒索等诈骗电�
 
 ### 数据中心能源需求威胁特朗普“美国制造”计划
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-09/opinion-02.jpg)
 
 
 AI数据中心电力消耗激增，导致美国制造业电价上涨20%以上，冲击特朗普政府推动的制造业回流计划。能源部长警告若不控制，制造业投资可能外流。AI基础设施的扩张产生了意料之外的宏观经济后果，政策制定者需在技术发展、能源分配与产业政策之间做出艰难取舍。
@@ -390,7 +390,7 @@ AI数据中心电力消耗激增，导致美国制造业电价上涨20%以上，
 
 ### 开源AI崛起为何尚未伤害Anthropic
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-09/opinion-03.jpg)
 
 
 尽管开源模型持续进步，Anthropic等前沿实验室的收入并未受到侵蚀。分析认为两者处于不同生命周期：开源模型在推理、微调等场景更具性价比，但前沿实验室的核心收入来自云端API、企业定制和安全性需求。Claude在长语境和安全性上有护城河。这打破了“开源将碾压闭源”的简单叙事，提示投资者关注AI应用层和中间件的差异化机会。
@@ -399,7 +399,7 @@ AI数据中心电力消耗激增，导致美国制造业电价上涨20%以上，
 
 ### 前DeepMind高管警告AI军备竞赛可能导致灾难
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-09/opinion-04.jpg)
 
 
 前DeepMind政策负责人Verity Harding在自传中警告，美国政府将AI视为民族主义竞争而非全球合作的姿态，是“最坏情景”的证据。她认为当前缺乏信任和监管协议，可能加速危险竞赛导致失控。来自行业内部的声音提示：技术竞赛的叙事可能掩盖长期风险，需要国际协调而非单边主义。
@@ -408,7 +408,7 @@ AI数据中心电力消耗激增，导致美国制造业电价上涨20%以上，
 
 ### 自我改进AI实验不仅限于前沿实验室
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-09/opinion-05.jpg)
 
 
 Wired报道显示，个人研究人员和小团队已能利用现有API和自动化框架构建自我改进AI系统。实验使用LLM自动生成代码、评估结果并迭代优化，证明自我改进的门槛低于预期。这意味着“递归自我改进”不再是少数实验室的专利，安全和治理问题可能更早暴露，开源社区应提前建立安全规范。
@@ -423,7 +423,7 @@ Cloudflare工程经理Kenton Varda宣布禁止团队使用AI生成PR描述和com
 
 ### 周鸿祎：中国AI应做“中国版Mythos”，不照搬美国路线
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-07-09/opinion-07.jpg)
 
 
 360创始人周鸿祎认为中国AI企业不能简单复制美国路径，基模能力差距可通过“Harness”（驾驭）策略补足。他提出利用应用场景和工程优化弥补底层模型差距，打造差异化产品。这一观点代表了中国AI界对中美差异的务实认知，提示投资者关注垂直领域和工程组合而非单纯追逐大模型。
@@ -448,7 +448,7 @@ AI正从工具演进为需要重新设计系统的基础设施。当每个环节
 
 ### ZML开源LLMD软件，加速多芯片推理
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-09/opensource-01.jpg)
 
 
 是什么：法国AI初创公司ZML发布免费软件ZML/LLMD，可在多块AI芯片之间并行加速推理，无需修改现有模型。关键点：LLMD软硬件协同优化，支持跨卡、跨节点通信，专门针对大模型推理场景。ZML此前因自研芯片架构备受关注，这次转而提供纯软件方案。为什么重要：大模型推理成本一直是企业采用AI的核心障碍。LLMD若能做到即插即用、显著提升吞吐量，将在降低单位请求成本的同时，缓解对单一高端芯片的依赖。
@@ -463,7 +463,7 @@ AI正从工具演进为需要重新设计系统的基础设施。当每个环节
 
 ### sqlite-utils 4.0发布，新增数据库模式迁移
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-09/opensource-03.jpg)
 
 
 是什么：Simon Willison发布sqlite-utils 4.0，这是该工具首次重大版本升级。关键点：新版本支持数据库模式迁移（schema migration），包括自动检测表结构变化并生成迁移脚本。为什么重要：sqlite-utils是数据工作者处理SQLite的常用CLI工具，模式迁移是呼声最高的功能。这一更新使开发者无需手动编写ALTER TABLE语句，对数据管道迭代效率有明显提升。
@@ -472,7 +472,7 @@ AI正从工具演进为需要重新设计系统的基础设施。当每个环节
 
 ### OfficeCLI开源：AI代理办公套件命令行工具
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-09/opensource-04.jpg)
 
 
 是什么：OfficeCLI是首个专为AI代理设计的Office文件（Word/Excel/PPT）读写编辑开源工具，单二进制文件，无需安装Office套件。关键点：它提供强大的命令行界面，支持格式转换、内容提取和文档生成。为什么重要：AI代理在执行任务时常需要操作Office文件，过去依赖第三方库或云API，OfficeCLI将这一能力本地化、轻量化，是Agent工具链的重要补充。
@@ -487,7 +487,7 @@ AI正从工具演进为需要重新设计系统的基础设施。当每个环节
 
 ### Anthropic发布官方Claude Skills目录
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-09/opensource-06.jpg)
 
 
 是什么：Anthropic在GitHub上发布官方Claude Code Plugins目录及skills仓库。关键点：该仓库收集了社区与官方贡献的、可复用的Claude能力模块，涵盖编程、数据分析等场景。为什么重要：这是Claude生态向Agent复用迈出的关键一步。类比GPTs Store，Skills目录降低了开发者构建自定义Claude Agent的门槛，但也需要关注其质量管控和扩展性。
@@ -496,7 +496,7 @@ AI正从工具演进为需要重新设计系统的基础设施。当每个环节
 
 ### NousResearch开源Hermes Agent
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-09/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-09/opensource-07.jpg)
 
 
 是什么：NousResearch发布Hermes Agent，一个可成长的AI代理框架。关键点：它支持记忆扩展、工具调用顺序学习和持续自我优化，强调“agent成长”而非静态配置。为什么重要：当前Agent框架多采用静态prompt，Hermes Agent尝试引入动态学习机制，如果效果稳定，可能成为下一代Agent系统的基础组件。

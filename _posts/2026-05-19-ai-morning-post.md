@@ -33,7 +33,7 @@ sections:
 
 ### PaddleOCR 3.5：Transformers 后端带来的 OCR 效率跃升
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-19/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-19/model_release-00.jpg)
 
 
 PaddleOCR 3.5 版本的核心变化是将推理后端切换至 Transformers 架构。这一改动使得模型在文本检测、识别以及版面分析上的性能得到系统性提升，尤其是在多语言文档和复杂排版场景下，错误率明显下降。同时，易用性得到加强——新版本提供了更简洁的 API 调用方式，并原生支持 Hugging Face 生态，开发者可直接加载预训练权重进行微调。对于需要批量处理合同、发票或古籍的企业来说，这一升级意味着更高的吞吐与更低的维护成本。
@@ -56,7 +56,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### 马斯克诉 OpenAI 败诉：1340 亿诉讼两小时驳回
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-19/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-19/company-00.jpg)
 
 
 **是什么：** 陪审团一致裁定马斯克对 OpenAI 的诉讼败诉，认为其未在合理期限内起诉，法官随即确认判决。该诉讼最初指控 OpenAI 及其 CEO Sam Altman 背离了创办时的非营利使命，索赔金额高达 1340 亿美元。
@@ -79,7 +79,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### 英伟达 Vera CPU 交付给顶级 AI 实验室
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-19/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-19/company-02.jpg)
 
 
 **是什么：** NVIDIA 宣布其首款自研 CPU——Vera——已开始向 Anthropic、OpenAI、SpaceXAI 和 Oracle Cloud 等客户交付。Vera 基于 ARM 架构，专为 AI 训练和推理工作负载优化。
@@ -92,7 +92,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### Anthropic 收购开发者工具公司 Stainless
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-19/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-19/company-03.jpg)
 
 
 **是什么：** Anthropic 收购了纽约初创公司 Stainless，该公司专门为 API 提供 SDK 自动生成和维护服务，客户包括 OpenAI、Google、Cloudflare 等。
@@ -105,7 +105,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### Anthropic 将向全球金融监管机构简报 Claude 发现的漏洞
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-19/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-19/company-04.jpg)
 
 
 **是什么：** 通过名为 Project Glasswing 的内部安全项目，Claude 模型在分析金融系统（如交易平台、清算网）时发现了多项漏洞。Anthropic 计划近期向全球金融监管机构进行简报。
@@ -118,7 +118,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### AI 初创公司年收入 800 亿美元，但集中度惊人
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-19/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-19/company-05.jpg)
 
 
 **是什么：** 一份行业报告显示，2026 年全球 AI 创业公司总收入将达到 800 亿美元，但其中约 95% 由 Anthropic 和 OpenAI 两家贡献。
@@ -131,7 +131,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### SandboxAQ 将药物发现模型引入 Claude 平台
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-19/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-19/company-06.jpg)
 
 
 **是什么：** SandboxAQ（从 Alphabet 分拆的 AI 公司）将其药物发现 AI 模型集成到 Anthropic 的 Claude 平台中，科学家可以通过自然语言对话方式来运行复杂的生物计算任务，无需底层编码技能。
@@ -144,7 +144,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### 新纪元能源 670 亿美元收购道明尼，瞄准 AI 电网需求
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-19/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-19/company-07.jpg)
 
 
 **是什么：** 美国最大公用事业公司新纪元能源（NextEra Energy）以 670 亿美元收购道明尼能源（Dominion Energy），整合后将成为全美最大的电网运营商。交易明确是为了应对 AI 算力设施激增的电力需求。
@@ -167,7 +167,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### NVIDIA 提出 4-bit 预训练方法 NVFP4
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-19/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-19/research-00.jpg)
 
 
 **是什么：** NVIDIA 发布了一种名为 NVFP4 的 4-bit 预训练方法，并在一个 12B 参数的混合 Mamba-Transformer 模型上，以 10T token 规模进行验证。
@@ -180,7 +180,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### World Action Models 让机器人预判动作后果
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-19/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-19/research-01.jpg)
 
 
 **是什么：** 研究人员提出 World Action Models，一种让机器人在执行物理动作前先进行内部模拟，预测动作可能带来的后果的架构。
@@ -193,7 +193,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### 8B 模型完成复杂生物实验，超越 GPT-4o
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-19/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-19/research-02.jpg)
 
 
 **是什么：** ICLR 2026 论文显示，一个仅 8B 参数的模型在遵循复杂生物实验流程（包括步骤记忆、工具调用、结果判断）上做到了零错误，性能超过了 GPT-4o。
@@ -206,7 +206,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### CX-Mind：胸片诊断进入可验证推理时代
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-19/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-19/research-03.jpg)
 
 
 **是什么：** 上海交大、创智与瑞金医院联合发布 CX-Mind，一种用于胸部 X 光片诊断的 AI 系统，在可解释性上取得突破。
@@ -219,7 +219,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### FedRE 用“纠缠”解决联邦学习三难困境
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-05-19/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-05-19/research-04.jpg)
 
 
 **是什么：** 信通院与清华大学提出 FedRE 方法，入选 CVPR 2026。它利用量子纠缠启发的机制，在隐私保护、模型性能和通信效率三者间取得平衡。
@@ -232,7 +232,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### LEANN：RAG 存储节省 97% 且完全私有
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-05-19/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-05-19/research-05.jpg)
 
 
 **是什么：** MLsys2026 论文提出 LEANN 框架，一种设备端检索增强生成（RAG）方案，将存储占用削减 97%，同时保持高检索准确率且数据完全本地化。
@@ -245,7 +245,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### MemPrivacy：边缘-云端记忆隐私保护框架
 
-![research-06.jpg](/marginalia/assets/img/ai-hot/2026-05-19/research-06.jpg)
+![research-06.jpg](/assets/img/ai-hot/2026-05-19/research-06.jpg)
 
 
 **是什么：** 研究者提出 MemPrivacy，一种边缘-云端框架，使用本地可逆假名化（Reversible Pseudonymization）技术，保护用户数据隐私，同时不破坏 LLM 的记忆能力。
@@ -258,7 +258,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### 开放 Agent 排行榜发布，评估多模型能力
 
-![research-07.jpg](/marginalia/assets/img/ai-hot/2026-05-19/research-07.jpg)
+![research-07.jpg](/assets/img/ai-hot/2026-05-19/research-07.jpg)
 
 
 **是什么：** IBM Research 等机构联合推出 Open Agent Leaderboard（开放 Agent 排行榜），用于系统评估不同模型在 agent 任务上的表现。
@@ -281,7 +281,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### Cursor Composer 2.5：性能对标最强模型，成本降至零头
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-19/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-19/product-00.jpg)
 
 
 **是什么**：Cursor 发布 Composer 2.5 更新，在 SWE-bench、HumanEval 等多个编程基准测试上得分与 Opus 4.7 和 GPT-5.5 持平甚至超过，但每次调用的成本仅为后者的几分之一。
@@ -294,7 +294,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### Amazon Alexa+ 新增 AI 播客生成功能
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-19/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-19/product-01.jpg)
 
 
 **是什么**：亚马逊在 Alexa+ 中推出基于 AI 的播客生成功能，用户只需提供兴趣主题或关键词，Alexa+ 就能即时生成一段个性化播客节目，内容包括新闻摘要、讲解和评论。
@@ -307,7 +307,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### 豆包上线博物馆讲解模式，覆盖 20+ 展馆
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-19/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-19/product-02.jpg)
 
 
 **是什么**：字节跳动旗下 AI 产品豆包推出“博物馆 AI 讲解”功能，用户对着展品拍照或直接用手机摄像头对准，豆包即可自动识别并播报该文物的背景、历史与艺术价值。
@@ -330,7 +330,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### Apple 新 Siri 将支持聊天自动删除
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-19/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-19/product-04.jpg)
 
 
 **是什么**：据称 Apple 正在为下一代 Siri（预计随 iOS 20 推出）加入自动删除聊天记录功能，用户可设置保留时长（如 30 天、90 天），到期后自动清除对话历史。
@@ -353,7 +353,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### 网易有道全线产品接入 DeepSeek-V4
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-19/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-19/product-06.jpg)
 
 
 **是什么**：网易有道宣布其核心产品（包括有道词典、翻译、AI 答疑笔、有道智慧学习等）已全面接入 DeepSeek-V4 大模型，实现 AI 能力升级。
@@ -366,7 +366,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### 第三代英特尔酷睿开启全民 AI 轻薄本时代
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-05-19/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-05-19/product-07.jpg)
 
 
 **是什么**：英特尔发布第三代酷睿处理器（代号 Lunar Lake 后续），集成新一代 NPU（算力翻倍至 80 TOPS），并配合 Windows 12 的 AI 功能使能，号称“全民 AI 轻薄本”。
@@ -387,7 +387,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### Eric Schmidt 毕业演讲因鼓吹AI被嘘
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-19/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-19/opinion-00.jpg)
 
 
 前谷歌CEO在多个大学毕业典礼上发表AI乐观主义演讲时，被学生和观众嘘声打断。现场视频显示，当Schmidt提到“AI将创造前所未有繁荣”时，大量学生倒喝彩并离场。这不是偶发情绪——美国多地校园已出现“反AI毕业演讲”运动，学生们对科技巨头领导人借毕业典礼宣传AI感到被冒犯。关键点：公众对AI的接受度出现显著裂痕，尤其年轻一代对技术乌托邦叙事持强烈怀疑态度。为什么重要：长期来看，人才和用户基盘的抵触会倒逼公司调整产品价值观和沟通策略。
@@ -396,7 +396,7 @@ Krea 2 是一个主打“风格控制”的图像生成模型，其最大亮点�
 
 ### Mistral CEO 警告：欧洲两年内将成美国AI附庸
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-19/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-19/opinion-01.jpg)
 
 
 Mistral AI首席执行官在《商业内幕》专访中发出严厉警告：如果欧洲不在未来24个月内加速自主AI基础设施和算力投资，将彻底依赖美国技术体系。他指出现有政策“太慢、太碎片化”，欧洲大模型厂商在算力成本和监管合规上面临双重不公。为什么重要：这不仅是地缘政治议题，对投资人意味着——欧洲AI初创公司的估值溢价可能被高估，而美国云服务和GPU厂商的议价权将持续扩大。
@@ -405,7 +405,7 @@ Mistral AI首席执行官在《商业内幕》专访中发出严厉警告：如�
 
 ### LeCun 炮轰 Hinton：认可LLM是想退休摆烂
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-19/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-19/opinion-02.jpg)
 
 
 Yann LeCun在社交媒体上公开指责Geoffrey Hinton对大型语言模型(LLM)的正面表态，称其“为了轻松退休而放弃学术严谨”。LeCun认为Hinton近年频繁在公众场合过度简化AI风险，并反对将未来押注于自回归语言模型。为什么重要：这代表了深度学习内部两个里程碑人物的根本分歧——是相信通用架构涌现，还是坚持世界模型和推理途径。对从业者而言，这意味着学术共识尚未形成，投资押注需要更多警惕。
@@ -420,7 +420,7 @@ Axios综合多项民调发现，超过六成美国受访者表示“不相信AI�
 
 ### arXiv 最严新规：AI水论文封号连坐
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-19/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-19/opinion-04.jpg)
 
 
 预印本平台arXiv发布最新规则：使用AI生成工具大量产水论文的作者，单篇即封号一年；多人合作论文中出现AI造假，所有署名作者连带承担责任，除非主动举报。陶哲轩公开表示支持，称“这对维持学术诚信必要且及时”。为什么重要：AI辅助写作已成学术圈灰色地带，arXiv的强硬态度可能会推动其他期刊和会议跟进，改变整个AI论文社区的审稿和问责文化。
@@ -439,7 +439,7 @@ Axios综合多项民调发现，超过六成美国受访者表示“不相信AI�
 
 ### Files.md 开源笔记工具登顶 HN，受称 Obsidian 替代品
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-19/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-19/opensource-00.jpg)
 
 
 **是什么**：Files.md 是一个纯文本笔记管理工具，基于文件系统运作，支持 Markdown 语法，开源在 GitHub。项目在 HackerNews 上获得约 500 个点赞，社区反响热烈。
@@ -452,7 +452,7 @@ Axios综合多项民调发现，超过六成美国受访者表示“不相信AI�
 
 ### Semble：让 AI 代理代码搜索节省 98% Token
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-19/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-19/opensource-01.jpg)
 
 
 **是什么**：Semble 是一个专门为 AI 代理设计的代码搜索工具，能够显著降低搜索时的 Token 消耗，对比传统 grep 方法减少约 98% 的 API 使用成本。
@@ -475,7 +475,7 @@ Axios综合多项民调发现，超过六成美国受访者表示“不相信AI�
 
 ### CLI-Anything：为所有软件添加 Agent 原生接口
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-19/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-19/opensource-03.jpg)
 
 
 **是什么**：香港大学团队开源的 CLI-Anything，通过命令行接口让任意软件可被 AI 代理直接操控，无需修改目标软件代码。
@@ -488,7 +488,7 @@ Axios综合多项民调发现，超过六成美国受访者表示“不相信AI�
 
 ### Anthropic 开源 Agent Skills 标准仓库
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-19/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-19/opensource-04.jpg)
 
 
 **是什么**：Anthropic 发布了一个名为 Agent Skills 的公共 GitHub 仓库，提供可验证的技能注册系统，允许开发者为 Claude Code 等代理注册标准化的技能模块。
@@ -501,7 +501,7 @@ Axios综合多项民调发现，超过六成美国受访者表示“不相信AI�
 
 ### Agent-S 开源框架让 AI 像人类一样操作电脑
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-19/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-19/opensource-05.jpg)
 
 
 **是什么**：开源的 Agent-S 框架模拟人类操作电脑，支持点击、拖拽、键盘输入等自动化任务，基于视觉观察和动作规划。
@@ -524,7 +524,7 @@ Axios综合多项民调发现，超过六成美国受访者表示“不相信AI�
 
 ### Langflow 低代码 AI Agent 构建平台更新
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-19/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-19/opensource-07.jpg)
 
 
 **是什么**：Langflow 是一个低代码平台，用于快速构建和部署 AI 代理及工作流。近日有版本更新，增强了节点库和部署能力。

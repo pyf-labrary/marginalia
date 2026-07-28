@@ -33,7 +33,7 @@ sections:
 
 ### 腾讯开源295B MoE模型Hy3，激活仅21B
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-08/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-08/model_release-00.jpg)
 
 
 腾讯Hy团队发布Hy3，采用混合专家架构，总参数量295B，每个token仅激活21B参数，支持256K上下文。模型以Apache 2.0协议开源，允许商用和二次开发。关键点是极低的激活/总参数比（约7%），在保持能力的同时大幅降低推理资源需求。对于需要长上下文、低成本部署的团队，Hy3提供了可直接使用的基座。
@@ -42,7 +42,7 @@ sections:
 
 ### Meta推出Muse AI图像生成器，可基于用户照片生成
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-08/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-08/model_release-01.jpg)
 
 
 Meta发布Muse图像模型，支持广告素材、装饰设计等场景。用户需主动选择退出，否则其公开照片可能被用于训练或生成。关键点在于Meta将用户数据作为生成素材的默认来源，隐私控制权回归用户操作。对于内容创作者而言，Muse可能降低广告素材制作门槛，但隐私合规风险值得关注。
@@ -51,7 +51,7 @@ Meta发布Muse图像模型，支持广告素材、装饰设计等场景。用户
 
 ### OpenAI发布GPT-Realtime-2.1语音推理模型
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-08/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-08/model_release-02.jpg)
 
 
 OpenAI在API中新增GPT-Realtime-2.1及mini版本，p95延迟降低25%以上，专为低延迟语音代理场景优化。关键点是推理能力集成到实时语音管线，适合语音客服、虚拟助手等需要快速响应的应用。对于构建语音交互产品的团队，这是目前延迟表现最好的官方方案之一。
@@ -60,7 +60,7 @@ OpenAI在API中新增GPT-Realtime-2.1及mini版本，p95延迟降低25%以上，
 
 ### 蚂蚁灵波发布空间感知模型LingBot-Depth 2.0
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-08/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-08/model_release-03.jpg)
 
 
 蚂蚁灵波基于1.5亿数据训练的空间深度估计模型，提升边缘清晰度、细小物体识别和远距离深度估计，已开源。关键点是数据集规模（1.5亿）和针对边缘及远距离的专项优化，对机器人避障、3D重建等应用有直接价值。开源许可证下，开发者可基于其微调领域模型。
@@ -69,7 +69,7 @@ OpenAI在API中新增GPT-Realtime-2.1及mini版本，p95延迟降低25%以上，
 
 ### 智谱开源编程模型GLM-5.2上线模力工场
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-07-08/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-07-08/model_release-04.jpg)
 
 
 智谱发布GLM-5.2，自称开源AI编程工具第一，提供专属折扣。关键点是竞争定位：在代码生成赛道上对标Code Llama等模型，通过模力工场提供算力优惠。对于中小团队，这是低成本尝试开源编程模型的一个新选项，但实际能力还需要社区验证。
@@ -86,7 +86,7 @@ OpenAI在API中新增GPT-Realtime-2.1及mini版本，p95延迟降低25%以上，
 
 ### 微软裁员4800人，AI替代担忧加剧
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-08/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-08/company-00.jpg)
 
 
 微软于7月6日宣布裁员约4800人，主要涉及Xbox和商业销售部门。这是微软今年系列裁员的最新一次，引发外界对AI替代工作的高度关注。关键点：裁员规模约占微软员工总数的1.5%，并非全面性缩减，但集中于游戏和销售这类与AI自动化直接相关的领域。为什么重要：微软一边大规模投资AI基础设施，一边削减被视为“可被AI替代”的岗位，释放出明确的信号——企业正在用AI优化内部人力成本结构，这种“替代”不是未来时，而是现在进行时。
@@ -95,7 +95,7 @@ OpenAI在API中新增GPT-Realtime-2.1及mini版本，p95延迟降低25%以上，
 
 ### 微软为削减成本逐步淘汰第三方模型
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-08/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-08/company-01.jpg)
 
 
 微软Copilot正在减少对OpenAI和Anthropic模型的依赖，转向自家模型。原因很直接：调用外部API成本过高，使用自研模型可将推理成本大幅降低。关键点：这一策略与行业趋势一致，Google、Meta早已走自研路线，微软的转向意味着AI应用层开始追求利润率。为什么重要：OpenAI和Anthropic将失去最大客户之一，对它们的商业模式构成冲击；同时，这表明AI应用的“模型供应商”格局正在松动，巨头倾向于“装机自用”。
@@ -104,7 +104,7 @@ OpenAI在API中新增GPT-Realtime-2.1及mini版本，p95延迟降低25%以上，
 
 ### DeepSeek计划自研AI芯片摆脱依赖
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-08/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-08/company-02.jpg)
 
 
 受美国出口管制持续收紧，中国AI公司DeepSeek开始自研AI芯片，目标降低对Nvidia和华为的依赖。关键点：DeepSeek此前主要依赖Nvidia GPU和华为昇腾芯片，自主设计芯片将是一个漫长且高投入的过程。为什么重要：这是中国AI公司在硬件脱钩压力下的最激进应对——不再等待进口许可，而是尝试“全栈自研”。如果成功，将改变全球AI芯片竞争格局；如果失败，可能拖累公司整体研发进度。
@@ -113,7 +113,7 @@ OpenAI在API中新增GPT-Realtime-2.1及mini版本，p95延迟降低25%以上，
 
 ### OpenAI首席未来学家Joshua Achiam离职
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-08/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-08/company-03.jpg)
 
 
 在OpenAI工作近九年的安全研究负责人、首席未来学家Joshua Achiam确认离开公司。关键点：Achiam是OpenAI安全文化的核心人物之一，他的离职紧随去年一系列安全团队动荡之后。为什么重要：OpenAI正在从“研究优先”向“产品优先”加速转型，安全派系话语权持续下降。此次离职进一步削弱了公司在AI安全方面的内部制衡力量，可能影响外部信任度。
@@ -134,7 +134,7 @@ OpenAI在API中新增GPT-Realtime-2.1及mini版本，p95延迟降低25%以上，
 
 ### Anthropic被曝秘密追踪器监控中国用户
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-08/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-08/company-06.jpg)
 
 
 Anthropic被指在Claude中嵌入追踪代码，收集中国用户活动数据。官方回应称是实验性质且已终止。关键点：该追踪器可记录用户输入内容、频率和使用模式，被安全研究人员发现。为什么重要：数据隐私是AI信任的核心，此事若属实将严重损害Anthropic在中文用户中的声誉，并可能引发监管关注。这也提醒所有AI公司：透明度一旦受损，修复成本极高。
@@ -143,7 +143,7 @@ Anthropic被指在Claude中嵌入追踪代码，收集中国用户活动数据�
 
 ### SK Hynix将赴美IPO，募资数十亿美元
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-08/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-08/company-07.jpg)
 
 
 AI热潮持续拉动HBM（高带宽内存）需求，SK Hynix计划本周五在美上市，预计募资数十亿美元。关键点：SK Hynix是Nvidia关键供应商，HBM3E产品供不应求。美股IPO将直接对接全球AI投资者。为什么重要：这是又一家受益于AI硬件的公司登陆美股，标志着AI投资从“应用层”向“基础设施层”进一步扩展。若IPO成功，将提振整个AI半导体板块信心。
@@ -170,7 +170,7 @@ AI热潮持续拉动HBM（高带宽内存）需求，SK Hynix计划本周五在�
 
 ### Liquid AI开源Antidoom，消除推理模型死循环
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-08/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-08/research-01.jpg)
 
 
 **是什么**：Liquid AI开源了名为Antidoom的工具，采用最终token偏好优化（FTPO）方法，专门修复推理模型（如链式思维推理）陷入无限循环（doom loops）的问题。
@@ -191,7 +191,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### Claude Cowork全面跨设备，AI代理从编码走向办公
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-08/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-08/product-00.jpg)
 
 
 **是什么：** Anthropic发布了Claude Cowork的移动和Web版本，用户可以在手机、平板或浏览器上启动代理任务，切换设备后任务自动同步，即使关闭笔记本也能在云端继续执行。
@@ -204,7 +204,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### Cloudflare精细控制AI爬虫，告别一刀切
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-08/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-08/product-01.jpg)
 
 
 **是什么：** Cloudflare推出了针对AI爬虫的精细控制功能，网站可以分别对待用于搜索、训练和代理的爬虫，而非之前的全部屏蔽或全部放行。
@@ -217,7 +217,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### Reddit用LLM反制LLM，垃圾内容攻防升级
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-08/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-08/product-02.jpg)
 
 
 **是什么：** Reddit部署大型语言模型来检测并删除AI生成的垃圾帖子，这些帖子大量涌现，破坏社区质量。
@@ -230,7 +230,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### iOS 27 Beta让Siri语速可调，个性化AI助手渐进
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-08/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-08/product-03.jpg)
 
 
 **是什么：** 苹果在iOS 27测试版中加入Siri语速和情绪表现力调节，用户可以让Siri说得更快或更慢，声音更有情感色彩（如兴奋、冷静）。
@@ -243,7 +243,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### AWS FinOps Agent预览，AI成本管理自动化
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-08/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-08/product-04.jpg)
 
 
 **是什么：** 亚马逊云科技发布FinOps Agent预览版，帮助客户分析和优化云端AI推理和训练成本，自动推荐并执行节省方案。
@@ -274,7 +274,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### 数据中心能源需求冲击美国制造业计划
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-08/opinion-00.jpg)
 
 
 **是什么**：AI数据中心的高电力需求正导致美国中西部工业电价飙升，直接威胁特朗普政府“美国制造”的能源成本优势。制造业企业面临电费翻倍的压力，部分工厂已暂停扩产计划。  
@@ -285,7 +285,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### 英国金融监管警告AI“军备竞赛”风险
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-08/opinion-01.jpg)
 
 
 **是什么**：英国金融行为监管局（FCA）高级官员公开呼吁扩大监管权力，应对金融服务中AI应用的快速普及，警告金融机构之间的“军备竞赛”可能导致系统性风险。  
@@ -296,7 +296,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### 中国AI模型在OpenRouter上占比超30%，成本优势明显
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-08/opinion-02.jpg)
 
 
 **是什么**：中国开发的AI模型在OpenRouter平台上的调用比例已稳定超过30%，其API调用成本仅为美国同类模型的十分之一，且性能差距在快速缩小。  
@@ -307,7 +307,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### Apollo经济学家：AI利润兑现时间或远超华尔街预期
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-08/opinion-03.jpg)
 
 
 **是什么**：Apollo全球首席经济学家预测，AI带来的利润增长在科技行业之外可能需要远超华尔街预期的长久时间，市场当前的乐观定价可能过度。  
@@ -318,7 +318,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### MIT：每个美国家庭在OpenAI中已有300美元隐性股份
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-08/opinion-04.jpg)
 
 
 **是什么**：MIT研究人员分析指出，虽然AI的财富承诺尚未兑现，但通过资本市场间接持有关系，每个美国家庭实际上已拥有约300美元的OpenAI价值——通过养老金基金、指数基金等持有OpenAI主要投资者（如微软）的股份。  
@@ -329,7 +329,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### 开源AI为何尚未对Anthropic构成威胁
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-08/opinion-05.jpg)
 
 
 **是什么**：分析文章认为，开源AI模型的崛起目前并未对Anthropic等前沿实验室造成实质性竞争压力，因为两者分别占据不同生命周期阶段。  
@@ -340,7 +340,7 @@ AI代理正在从编码工具演变为全天候的数字化劳动力。今天最
 
 ### Vercel CEO谈模型与代理分离趋势
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-07-08/opinion-06.jpg)
 
 
 **是什么**：Vercel CEO Guillermo Rauch在访谈中表示，在生产环境中将底层模型与上层智能体（agent）分离是必然趋势，价格和性能是驱动这一分离的核心因素。  
@@ -367,7 +367,7 @@ Simon Willison 发布 sqlite-utils 4.0 稳定版，首次原生支持数据库 s
 
 ### Hugging Face 与 NVIDIA 联合发布 LeRobot v0.6.0
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-08/opensource-01.jpg)
 
 
 机器人学习框架 LeRobot 迎来大版本更新，新增 Imagine（仿真想象）、Evaluate（评估）、Improve（改进）三大模块，形成“想象–评估–改进”闭环。同时获得 NVIDIA 的新模型与框架集成，支持更高效的机器人操作策略训练。对于从事具身智能或机器人仿真的团队，LeRobot 正逐渐成为 ROS 之外的一个轻量级替代方案。
@@ -376,7 +376,7 @@ Simon Willison 发布 sqlite-utils 4.0 稳定版，首次原生支持数据库 s
 
 ### AI Agent Skills 仓库集中涌现，生态爆发
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-08/opensource-02.jpg)
 
 
 多个高质量的 Agent Skills 仓库在 GitHub 流行，覆盖 Claude Code、Codex 等主流代理工具。这些仓库提供生产级的工程技能——包括代码审查、自动调试、任务规划等——使开发者能快速为 agent 注入专业能力。例如 addyosmani/agent-skills 提供了数百个可复用的技能函数。虽然单个仓库可能只是阶段性整理，但集中涌现的趋势表明：Agent 的能力边界正从“通用对话”转向“专业工具链”。
@@ -385,7 +385,7 @@ Simon Willison 发布 sqlite-utils 4.0 稳定版，首次原生支持数据库 s
 
 ### 阿里开源轻量级向量数据库 zvec
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-08/opensource-03.jpg)
 
 
 zvec 是阿里开源的内存向量数据库，核心卖点：极快、进程内运行，无需独立部署。它专为 AI 嵌入检索场景设计，支持近似最近邻搜索，内存 footprint 极低。对于需要将向量检索嵌入现有 Python 应用（如 RAG、推荐系统）的团队，zvec 提供了一个零依赖的轻量选项，适合原型和小规模生产。
@@ -394,7 +394,7 @@ zvec 是阿里开源的内存向量数据库，核心卖点：极快、进程内
 
 ### Google 开源 Antigravity Python SDK
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-08/opensource-04.jpg)
 
 
 Google 发布 Antigravity SDK 的 Python 版本，用于构建基于 Antigravity 和 Gemini 的 AI 代理。Antigravity 是 Google 的分布式代理运行时，允许 agent 在异构环境（边缘、云端）中调度。Python SDK 让开发者能用熟悉的语法定义 agent 行为、集成 Gemini 模型能力。虽然目前仍属早期，但作为 Google 在 agent 基础设施方向的一次开源，值得关注。
@@ -403,7 +403,7 @@ Google 发布 Antigravity SDK 的 Python 版本，用于构建基于 Antigravity
 
 ### 开源爬虫框架 Firecrawl 持续更新
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-08/opensource-05.jpg)
 
 
 Firecrawl 提供稳定 API，支持大规模搜索、爬取和与网页交互，专为 AI 数据采集设计。最近更新包括更智能的 JS 渲染处理、结构化输出格式优化等。对于需要从网页抽取新鲜数据以喂给 LLM 的团队，Firecrawl 比传统的 Scrapy 更“开箱即用”，无需处理复杂反爬与动态内容。
@@ -412,7 +412,7 @@ Firecrawl 提供稳定 API，支持大规模搜索、爬取和与网页交互，
 
 ### 自托管书签管理工具 Karakeep 支持 AI 标签
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-08/opensource-06.jpg)
 
 
 Karakeep 是一款可自托管的书签管理工具，支持链接、笔记和图片收藏。新版本引入 AI 自动标签和全文搜索，能基于内容语义为书签打上分类标签，无需手动整理。对于自建知识库或隐私敏感的用户，这是一个不错的 Pinboard 替代品。
@@ -421,7 +421,7 @@ Karakeep 是一款可自托管的书签管理工具，支持链接、笔记和�
 
 ### TradingAgents：多智能体金融交易框架开源
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-08/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-08/opensource-07.jpg)
 
 
 Tauric Research 开源 TradingAgents，基于 LLM 的多智能体框架，用于金融交易策略研究。它支持多个 agent 协作：一个负责市场分析，一个负责风险控制，一个负责执行决策等。虽然金融量化领域已有许多自动化框架，但基于 LLM agent 的协作模式为策略开发提供了新的交互范式。

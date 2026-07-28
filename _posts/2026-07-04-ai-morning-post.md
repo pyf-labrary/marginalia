@@ -39,7 +39,7 @@ Anthropic 于 7 月 3 日发布 Claude Sonnet 5（代号 Fable 5），意在接�
 
 ### Vidu S1 实时交互视频模型：让视频“活”起来
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-04/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-04/model_release-01.jpg)
 
 
 生数科技发布 Vidu S1，主打实时视频通话与语音控制视频走向。用户可以通过自然语言指令实时调整视频内容（如改变场景、角色动作），支持高清分辨率与高帧率输出。模型还能创建专属交互角色，适用于虚拟陪伴、直播、教育等场景。这是继文本、图像之后，多模态交互向实时视频生成的重要一步，但商业化落地仍需解决延迟与成本问题。
@@ -48,7 +48,7 @@ Anthropic 于 7 月 3 日发布 Claude Sonnet 5（代号 Fable 5），意在接�
 
 ### Leanstral 1.5 开源：数学证明 Agent 逼近人类水平
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-04/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-04/model_release-02.jpg)
 
 
 Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型。它采用 119B MoE 架构，在 PutnamBench（一套高难度数学竞赛题）上解决 587/672 个问题，覆盖率达 87.4%。模型通过结合形式化验证与强化学习，实现了数学定理证明的自动化突破。Apache 2.0 许可证意味着开发者可自由部署和修改。这一进展对 AI for Math、程序验证领域有直接价值，也展示了小参数量 MoE 模型在窄领域超车的可能。
@@ -67,7 +67,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### OpenAI 提议美国政府持股5%，意在缓和监管压力
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-04/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-04/company-00.jpg)
 
 
 **是什么**：Sam Altman与特朗普政府谈判，提议将OpenAI 5%的股权捐赠给美国主权财富基金。这一金额远低于参议员Sanders此前要求的目标，但已足以引发市场震动。
@@ -80,7 +80,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### 微软斥资25亿美元成立AI部署公司Frontier
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-04/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-04/company-01.jpg)
 
 
 **是什么**：Microsoft宣布推出Frontier Company，投入25亿美元专项预算，计划在企业客户中嵌入6000名AI工程师，直接对标Amazon、OpenAI等对手的部署能力。
@@ -93,7 +93,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### Anthropic与三星洽谈定制AI芯片，加速硬件自主权
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-04/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-04/company-02.jpg)
 
 
 **是什么**：Anthropic正在与三星讨论开发定制AI芯片，距离OpenAI宣布与博通合作自研芯片仅过去一周。
@@ -106,7 +106,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### 扎克伯格内部承认AI代理进展慢于预期
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-04/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-04/company-03.jpg)
 
 
 **是什么**：Meta CEO Mark Zuckerberg在内部会议上承认，AI代理（AI agents）的研发进展未达到他此前的期望。同日，Meta低调推出AI游戏应用Pocket。
@@ -119,7 +119,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### Google DeepMind与A24开展影视AI研究合作
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-04/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-04/company-04.jpg)
 
 
 **是什么**：Google DeepMind宣布与独立电影公司A24达成首次研究合作，探索AI在影视创作中的应用，具体研究方向未公开。
@@ -132,7 +132,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### 谷歌2025年因AI建设电力消耗飙升37%
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-04/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-04/company-05.jpg)
 
 
 **是什么**：Google发布的2025年度环境报告显示，其AI建设导致电力消耗同比增长37%，清洁能源目标的实现面临严峻挑战。
@@ -145,7 +145,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### 中国AI视频公司Kling融资20亿美元筹备港股IPO
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-04/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-04/company-06.jpg)
 
 
 **是什么**：中国AI视频生成公司Kling完成20亿美元新一轮融资，计划在香港上市，市场预计估值将超过百亿美元。
@@ -164,14 +164,14 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### 导语
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-04/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-04/research-00.jpg)
 
 
 英国 AI 安全研究所（UK AISI）的实验给出一个值得警觉的判断：当前主流基准测试严重低估了 AI Agent 的真实能力，这意味着我们可能正基于错误的安全指标制定监管与部署决策。与此同时，中国团队将 LeCun 的 JEPA 架构引入细胞建模，为世界模型打开生物应用窗口；另一篇 arXiv 论文则提醒，持久化状态的 Agent 正暴露新的分布式攻击面。
 
 ### 基准测试失灵：AI Agent 能力被刻意隐藏
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-04/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-04/research-01.jpg)
 
 
 **是什么**：UK AISI 的对比实验发现，标准基准测试（如 GSM8K、HumanEval）在衡量 AI Agent 时存在系统性低估——Agent 在开放环境中能完成的任务复杂度远超基准评分所反映的水平。
@@ -184,7 +184,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### JEPA 跨界细胞建模：世界模型进入生命科学
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-04/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-04/research-02.jpg)
 
 
 **是什么**：受 Yann LeCun 提出的联合嵌入预测架构（JEPA）启发，中国研究团队将其应用于细胞内部状态建模，使模型能预测细胞在扰动下的动态变化——这是世界模型概念首次在生物微观领域落地。
@@ -217,7 +217,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### Vercel 推出开源 Agent 框架 Eve，重新定义软件形态
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-04/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-04/product-00.jpg)
 
 
 **是什么**：Vercel 发布了名为 Eve 的开源 Agent 框架，首席软件官（CSO）在博客中将 Agent 定义为“新型软件”，强调 Eve 关注三大核心——技能（Skills）、沙箱（Sandbox）和 Agent 可读网站（Agent-readable websites）。
@@ -230,7 +230,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### 微软大改 Copilot 并推出 AutoPilot Agents 超级应用
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-04/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-04/product-01.jpg)
 
 
 **是什么**：Microsoft 对已有的 Copilot 进行彻底改造，加入名为 AutoPilot 的代理功能，使其具备自主执行复杂任务的能力，意图加入 Anthropic 和 OpenAI 已开启的 AI 超级应用竞赛。
@@ -243,7 +243,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### Adobe 实验“Agentic 网站”：页面按用户意图自组装
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-04/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-04/product-02.jpg)
 
 
 **是什么**：Adobe 正在测试一种基于 Agent 的网站生成方式，网页会根据访问者的个人意图实时动态组装内容，而非预先设计好的静态页面。
@@ -256,7 +256,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### Meta 低调推出“Vibe Coding”游戏应用 Pocket
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-04/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-04/product-03.jpg)
 
 
 **是什么**：Meta 发布了一款名为 Pocket 的实验性产品，允许用户通过文本提示（即“Vibe Coding”风格）生成并分享互动小游戏。
@@ -269,7 +269,7 @@ Mistral AI 开源 Leanstral 1.5，一个专注于 Lean 4 的代码 Agent 模型�
 
 ### 生数科技发布 Vidu S1 实时交互视频模型
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-04/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-04/product-04.jpg)
 
 
 **是什么**：生数科技推出 Vidu S1 实时交互视频模型，支持视频通话级别的实时生成和语音控制。本条归类为产品发布。
@@ -296,7 +296,7 @@ AI 领域知名博主 Simon Willison 在参加 AI Engineer World's Fair 后，�
 
 ### Agent 狂欢下的冷思考：规模化落地为何僵局
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-04/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-04/opinion-01.jpg)
 
 
 多篇中文技术媒体近日集中反思 Agent 落地的实际困境。InfoQ 编译的文章指出，GitLab 内部调研显示，AI 辅助工具并未显著提升整体交付效率，甚至在部分场景下因上下文切换成本导致反效果。观点认为，当前 Agent 落地面临三重障碍：工程层面，任务编排与状态管理仍缺乏成熟框架；治理层面，无法保证长期稳定执行；效率层面，“增人不增力”的边际收益递减已出现。这些冷思考提醒我们，从 Demo 到生产环境的鸿沟并没有被填补，投资与设计应当回到基础设施与可观测性上来。
@@ -305,7 +305,7 @@ AI 领域知名博主 Simon Willison 在参加 AI Engineer World's Fair 后，�
 
 ### Jersey Mike's IPO 文件暴露 AI 炒作泛滥
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-04/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-04/opinion-02.jpg)
 
 
 TechCrunch 在一篇略带调侃的文章中指出，即使是 Jersey Mike's 这样的传统三明治连锁店，在其 IPO 文件中也不忘提及 AI 战略，包括使用 AI 优化库存、预测客流等。这一现象折射出 AI 炒作已经渗透到非科技行业的公开文件中，成为“镀金”符号。虽然“AI+餐饮”本身并非不可行，但当每家公司的招股书都要塞进 AI 关键词时，投资者需要警惕其中的泡沫信号——真正的价值应体现在具体业务指标的改善，而非概念堆砌。
@@ -322,7 +322,7 @@ TechCrunch 在一篇略带调侃的文章中指出，即使是 Jersey Mike's 这
 
 ### OpenAI 开源 Codex Plugin for Claude Code
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-04/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-04/opensource-00.jpg)
 
 
 **是什么**：OpenAI 在 GitHub 上开源了 Codex Plugin for Claude Code，允许用户在 Claude Code（Anthropic 的编码 Agent 工具）中直接调用 Codex 进行代码审查、任务委派等操作。插件由 OpenAI 官方维护，类似一个双向桥接器。
@@ -335,7 +335,7 @@ TechCrunch 在一篇略带调侃的文章中指出，即使是 Jersey Mike's 这
 
 ### 开源 AI 渗透测试工具 Strix 火爆
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-04/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-04/opensource-01.jpg)
 
 
 **是什么**：Strix 是一个基于 AI 的渗透测试工具，能够自动扫描应用漏洞并提出修复建议。它在 GitHub 上迅速积累关注，成为本周热门项目。
@@ -348,7 +348,7 @@ TechCrunch 在一篇略带调侃的文章中指出，即使是 Jersey Mike's 这
 
 ### Superpowers：可组合的编码 Agent 技能框架
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-04/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-04/opensource-02.jpg)
 
 
 **是什么**：Superpowers 是一套面向编码 Agent 的开发方法论和可复用技能集合。它提供类似“微服务”的模块化设计，让 Agent 开发人员可以像搭积木一样组合技能。
@@ -361,7 +361,7 @@ TechCrunch 在一篇略带调侃的文章中指出，即使是 Jersey Mike's 这
 
 ### Chrome DevTools 发布 MCP 协议，Agent 可调试网页
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-04/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-04/opensource-03.jpg)
 
 
 **是什么**：Chrome DevTools 团队开源了 MCP（Model Context Protocol）实现，使得 AI 编码 Agent 可以直接控制 Chrome 的调试工具，实现自动化页面调试、DOM 检查和网络分析。
@@ -374,7 +374,7 @@ TechCrunch 在一篇略带调侃的文章中指出，即使是 Jersey Mike's 这
 
 ### Google 开源 agents-cli：一键部署 Agent 到云
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-04/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-04/opensource-04.jpg)
 
 
 **是什么**：Google 发布 agents-cli 命令行工具，允许开发者用任何编码助手（如 Cursor、Copilot）创建 AI Agent，并一键部署到 Google Cloud 上。
@@ -387,7 +387,7 @@ TechCrunch 在一篇略带调侃的文章中指出，即使是 Jersey Mike's 这
 
 ### Nous Research 开源 Hermes Agent：强化学习驱动
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-04/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-04/opensource-05.jpg)
 
 
 **是什么**：Hermes Agent 是一个基于强化学习的自改进 Agent 框架。它能通过环境反馈自动优化自身行为，目标是“越用越强”。
@@ -400,7 +400,7 @@ TechCrunch 在一篇略带调侃的文章中指出，即使是 Jersey Mike's 这
 
 ### NVIDIA 官方发布 AI Agent 技能库 skills
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-04/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-04/opensource-06.jpg)
 
 
 **是什么**：NVIDIA 在 GitHub 上开源了一组官方验证过的 AI Agent 技能（skills），涵盖图像处理、视频分析、科学计算等 NVIDIA 擅长的领域。

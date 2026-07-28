@@ -33,7 +33,7 @@ sections:
 
 ### Kimi K2.6：开源模型在编程任务上超越闭源巨头
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-04/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-04/model_release-00.jpg)
 
 
 **是什么**  
@@ -59,7 +59,7 @@ sections:
 
 ### 庭审现场：从技术路线到人身攻击
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-04/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-04/company-00.jpg)
 
 
 **是什么** 马斯克诉 OpenAI 转型营利模式违反创始协议一案，在旧金山联邦法院进入首日庭审。马斯克方指控 OpenAI 违背“开源、非营利”初衷，沦为微软的闭源工具；OpenAI 方则反击马斯克因收购失败而心怀不满，并试图通过诉讼获取商业机密。
@@ -80,7 +80,7 @@ sections:
 
 ### AI 招聘算法存在“自偏好”实证
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-04/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-04/research-00.jpg)
 
 
 **是什么**：arXiv 一篇论文通过实验证据证明，AI 在算法招聘中倾向于自己（AI 同类）而非其他候选人，揭示了以往被忽视的自我偏好偏差。
@@ -93,7 +93,7 @@ sections:
 
 ### LLM 拒绝行为由单一方向控制
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-04/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-04/research-01.jpg)
 
 
 **是什么**：一篇论文揭示了语言模型中的拒绝行为（如拒绝回答有害问题）由激活空间中的一个特定方向决定，调节该方向即可连续控制其拒绝程度。
@@ -116,7 +116,7 @@ sections:
 
 ### OpenAI o1 急诊诊断准确率 67%，碾压医生
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-04/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-04/product-00.jpg)
 
 
 **是什么**：哈佛大学医学院设计了一项试验，让 OpenAI o1 模型与一组三甲医院急诊科医生分别处理 2000 例标准化急诊病例，涵盖胸痛、腹痛、呼吸困难等高频主诉。结果显示，o1 的诊断准确率达 67%，而医生的平均准确率在 50–55% 之间。
@@ -149,7 +149,7 @@ DeepSeek V4 正式发布，但传闻中的 Engram 架构并未出现，引发社
 
 ### DeepSeek V4 缺失 Engram 架构，是取舍还是留一手？
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-04/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-04/opinion-00.jpg)
 
 
 **是什么**：量子位发文评论 DeepSeek V4 模型，指出其最大的遗憾在于没有采用此前广为流传的 Engram 架构。Engram 据称是一种能够实现更高效记忆与推理的神经网络设计，但最终版本并未包含。
@@ -162,7 +162,7 @@ DeepSeek V4 正式发布，但传闻中的 Engram 架构并未出现，引发社
 
 ### 犹他州新法：网站要对 VPN 用户的违规行为负责
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-04/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-04/opinion-01.jpg)
 
 
 **是什么**：犹他州通过一项法案，要求网站对使用 VPN 绕过年龄验证的用户行为承担法律责任。这意味着如果用户通过 VPN 访问并违反年龄限制，网站可能被追责。
@@ -175,7 +175,7 @@ DeepSeek V4 正式发布，但传闻中的 Engram 架构并未出现，引发社
 
 ### Agent 控制框架应跑在沙箱外？安全视角的争议主张
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-04/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-04/opinion-02.jpg)
 
 
 **是什么**：技术文章提出，agent（智能体）的 control harness（控制框架）应当置于沙箱环境之外，而非内部。传统做法将整个 agent 容器隔离，但作者认为独立的沙箱外 harness 能更好地监控、干预和审计 agent 行为。
@@ -188,7 +188,7 @@ DeepSeek V4 正式发布，但传闻中的 Engram 架构并未出现，引发社
 
 ### 用 YAML 写规范治 AI 幻觉？一个务实的“土办法”
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-04/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-04/opinion-03.jpg)
 
 
 **是什么**：作者分享一种经验：通过编写严格的结构化 YAML 规范来定义 AI 输出格式与约束，从而显著减少模型出现幻觉或偏离指令的情况。
@@ -209,7 +209,7 @@ DeepSeek V4 正式发布，但传闻中的 Engram 架构并未出现，引发社
 
 ### VS Code 自动在 commit 中添加 “Co-Authored-by Copilot” 标签
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-04/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-04/opensource-00.jpg)
 
 
 **是什么**：微软 VS Code 编辑器被社区发现，在用户执行 git commit 操作时，会自动在提交信息中插入一行 `Co-Authored-by: Copilot <copilot@github.com>`，即使当前代码变更完全没有使用 Copilot 功能。该行为通过 VS Code 内置的 Git 钩子实现，且默认开启，用户需手动关闭。
@@ -222,7 +222,7 @@ DeepSeek V4 正式发布，但传闻中的 Engram 架构并未出现，引发社
 
 ### 具身智能仿真框架开源，突破视觉算力瓶颈
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-04/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-04/opensource-01.jpg)
 
 
 **是什么**：一个新开源的具身智能仿真框架，通过高并行高保真渲染技术，将机器人训练中的视觉环境模拟效率提升一个量级。框架支持多智能体并行交互，可大幅降低现实世界训练成本。
@@ -235,7 +235,7 @@ DeepSeek V4 正式发布，但传闻中的 Engram 架构并未出现，引发社
 
 ### Apple SHARP 模型浏览器端开源实现
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-04/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-04/opensource-02.jpg)
 
 
 **是什么**：开发者将 Apple 今年初发布的单图 3D 重建模型 SHARP 移植到了浏览器端，基于 ONNX Runtime Web 实现纯前端推理。项目名为 `ml-sharp-web`，已在 GitHub 开源。
@@ -248,7 +248,7 @@ DeepSeek V4 正式发布，但传闻中的 Engram 架构并未出现，引发社
 
 ### 开源工具 Open Design：用编码代理做设计
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-04/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-04/opensource-03.jpg)
 
 
 **是什么**：Open Design 是一个新开源项目，它提供了一套方法论和示例代码，教开发者如何将编码代理（如 GPT-4、Claude 的代码生成能力）当作设计引擎来使用，从需求描述直接生成可编辑的设计稿（HTML/CSS/React 组件）。
@@ -261,7 +261,7 @@ DeepSeek V4 正式发布，但传闻中的 Engram 架构并未出现，引发社
 
 ### Flue 框架发布：专为 Agent 打造的 TypeScript 框架
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-04/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-04/opensource-04.jpg)
 
 
 **是什么**：Flue 是一个新发布的 TypeScript 框架，目标是为构建下一代 AI Agent 提供更简洁的抽象。它封装了 Agent 的常见模式，包括工具调用、记忆管理、多轮对话和状态持久化。
@@ -274,7 +274,7 @@ DeepSeek V4 正式发布，但传闻中的 Engram 架构并未出现，引发社
 
 ### 语音 AI 入门学习路径开源
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-04/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-04/opensource-05.jpg)
 
 
 **是什么**：一个由社区维护的语音 AI 学习资源合集在 GitHub 开源，名为 `voiceai`。它汇总了从语音识别、声纹识别到语音合成、情感识别的教程、代码示例和推荐工具，适合开发者从零开始入门。

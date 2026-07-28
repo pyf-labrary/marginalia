@@ -43,7 +43,7 @@ OpenAI 今天发布的 Daybreak 系列安全工具是板块内最值得关注的
 
 ### Sakana AI 推出 Fugu 多模型协作系统
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-23/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-23/model_release-01.jpg)
 
 
 **是什么：** 日本 AI 初创公司 Sakana AI 发布 Fugu，一个能够编排多个大语言模型协同工作的系统，并在 Anthropic 的 Fable 和 Mythos 基准上进行评估。
@@ -56,7 +56,7 @@ OpenAI 今天发布的 Daybreak 系列安全工具是板块内最值得关注的
 
 ### 阿里发布视频生成模型 HappyHorse 1.1
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-23/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-23/model_release-02.jpg)
 
 
 **是什么：** 阿里巴巴发布 HappyHorse 1.1，在动态表现、主体一致性、指令遵循等五大维度全面升级。
@@ -69,7 +69,7 @@ OpenAI 今天发布的 Daybreak 系列安全工具是板块内最值得关注的
 
 ### xAI 发布 Grok Skills 并更新 Responses API
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-23/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-23/model_release-03.jpg)
 
 
 **是什么：** xAI 推出 Grok Skills 功能，允许 Grok 获取并使用外部工具能力，同时更新了用于工具调用的 Responses API。
@@ -82,7 +82,7 @@ OpenAI 今天发布的 Daybreak 系列安全工具是板块内最值得关注的
 
 ### PP-OCRv6 登陆 Hugging Face，支持 50 种语言
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-06-23/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-06-23/model_release-04.jpg)
 
 
 **是什么：** PaddlePaddle 的 PP-OCRv6 模型在 Hugging Face 发布，提供从 1.5M 到 34.5M 的多尺寸参数版本，覆盖 50 种语言的文字识别。
@@ -127,7 +127,7 @@ OpenAI 宣布一项名为 Patch the Planet 的新计划，旨在帮助开源维�
 
 ### NVIDIA 在 ISC 2026 发布多项 AI 科学计算新品
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-23/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-23/company-02.jpg)
 
 
 在 ISC 2026 大会上，NVIDIA 宣布多个重磅消息：JUPITER 超算（搭载 Grace Hopper 架构）即将上线；新一代 Vera CPU 专为 AI 科学工作负载设计；AI 科学软件库加入分子模拟与天气预报模块；同时还展示了波能 AI 数字化双胞胎技术。关键点：Vera CPU 不是通用处理器，而是围绕大内存访问和 GPU 协同优化的“AI 附属核”。JUPITER 将用于洛斯阿拉莫斯国家实验室的核武器模拟。为什么重要：NVIDIA 正在把“算力供应商”定位升级为“科学计算全栈平台”，从芯片、系统到软件闭环，挤压传统 HPC 厂商的生存空间。
@@ -136,7 +136,7 @@ OpenAI 宣布一项名为 Patch the Planet 的新计划，旨在帮助开源维�
 
 ### Google DeepMind 向 A24 投资 7500 万美元合作 AI 电影
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-23/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-23/company-03.jpg)
 
 
 Google 旗下 DeepMind 与独立电影公司 A24 达成 AI 研究合作，DeepMind 投入 7500 万美元，双方将共同探索 AI 在剧本生成、镜头预可视化、后期特效等方面的应用。关键点：这不是“AI 拍电影”的噱头，而是 DeepMind 供给底层视觉-语言模型，A24 提供艺术创作权与版权分账模式。为什么重要：7500 万美元在 AI 投资中不算大，但选择与 A24（以《瞬息全宇宙》《月光男孩》著称）合作，说明 DeepMind 想要触及“非主流创意”而非好莱坞特效流水线。这可能是 AI 叙事能力从“生成内容”到“辅助艺术表达”的分水岭。
@@ -145,7 +145,7 @@ Google 旗下 DeepMind 与独立电影公司 A24 达成 AI 研究合作，DeepMi
 
 ### 高通接近 40 亿美元收购 AI 芯片初创公司 Modular
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-23/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-23/company-04.jpg)
 
 
 据消息，高通正深入谈判收购 AI 芯片初创公司 Modular Inc.，交易估值约 40 亿美元，最快数周内宣布。Modular 此前以 AI 芯片架构和编译器技术著称，其芯片设计强调低功耗与高利用率，与高通的手机/物联网芯片路线契合。关键点：如果交易达成，高通将获得完整的推理芯片 IP 和软件栈，直接挑战 NVIDIA 在边缘 AI 的地位。为什么重要：在手机 SoC AI 算力军备竞赛中，高通此前依赖 CPU/GPU 集成，收购 Modular 则意味着“原生 AI 芯片”策略。同时，40 亿美元估值表明资本市场对独立 AI 芯片初创的并购溢价仍在上升，只是退出路径倾向于被大厂吸收而非 IPO。
@@ -154,7 +154,7 @@ Google 旗下 DeepMind 与独立电影公司 A24 达成 AI 研究合作，DeepMi
 
 ### AI 芯片公司 Groq 确认 6.5 亿美元融资并重新招聘
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-23/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-23/company-05.jpg)
 
 
 Groq 在经历了 NVIDIA 20 亿美元的“非收购-雇佣”交易后，确认完成新一轮 6.5 亿美元融资，并开始重新招聘。Groq 以超低延迟推理芯片闻名，此前部分人才被 NVIDIA 挖走。关键点：新融资将用于加强云业务（GroqCloud）和扩充硬件团队，目标是把推理云服务做大规模。为什么重要：Groq 的反弹说明 AI 芯片赛道“人才是核心资产”，但融资环境还允许重伤后的初创回血。但 NVIDIA 用 20 亿“买团队”而不买公司，也暴露了 Groq 商业模式的脆弱性——技术领先但客户迁移成本高。生存取决于能否在特定场景（如实时语音、自动驾驶）建立不可替代性。
@@ -169,7 +169,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### 微软在德州建 2GW 数据中心，自建天然气厂
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-23/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-23/company-07.jpg)
 
 
 微软计划在德克萨斯州建设一座 2 吉瓦的数据中心园区，并配套自有的天然气发电厂，以绕过电网瓶颈。同时与雪佛龙签署 20 年电力购买协议，确保稳定供应。关键点：2GW 是典型超大云数据中心级别（相当于两个核电机组），自建电厂表明美国电网已无法支撑 AI 算力激增。为什么重要：这标志着大模型训练和推理的电力消耗正式成为基建瓶颈，未来大型科技公司可能越来越多“自建电网”。对于能源行业的 AI 需求是长期利好，同时也引发环保争议——天然气发电将对冲数据中心“碳中和”承诺。
@@ -186,7 +186,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### 清华开源空间模型：让长视频真正“学”空间
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-23/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-23/research-00.jpg)
 
 **是什么**：清华大学团队开源了名为Spatial Continuity Transformer的空间模型，核心能力是在长达120分钟的视频中持续追踪和学习空间结构变化，而非帧级独立预测。该工作已被ECCV 2026接收。
 **关键点**：模型采用时序池化与记忆回放机制，在合成数据和真实场景（如室内动态、户外构造变化）上测试，对长期遮挡、光照变化等干扰保持鲁棒。开源仓库包含完整训练代码与基准。
@@ -195,7 +195,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### AI作业代写导致成绩虚高，UC Berkeley研究敲响警钟
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-06-23/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-06-23/research-01.jpg)
 
 **是什么**：UC Berkeley发布一项研究，指出广泛使用AI工具后学生成绩出现通胀；进一步分析表明，成绩提升主要源于学生将作业外包给AI（代写），而非自身学习能力增长。
 **关键点**：研究对比了引入AI辅助前后的同课程成绩分布与作业内容分析，发现高分比例明显上升，但在控制代写检测因素后，成绩通胀效应几乎消失。结论是“AI帮忙而不是教”，对评估体系提出挑战。
@@ -204,7 +204,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### 提示注入攻击新视角：本质是“角色混淆”
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-06-23/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-06-23/research-02.jpg)
 
 **是什么**：一篇新论文（arXiv）将提示注入攻击形式化定义为“角色混淆问题（role confusion）”，并提出系统性分析框架，区分系统角色、用户角色和攻击者角色的混淆边界。
 **关键点**：框架统一了现有各类注入变种（直接、间接、多轮），并给出基于角色图的检测思路。论文开源了测试基准与对抗示例集。
@@ -233,7 +233,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### Cloudflare 临时账户：AI 代理“免注册”部署资源
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-23/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-23/product-00.jpg)
 
 
 **是什么**：Cloudflare 推出临时账户功能，允许 AI 代理在未完成正式注册的情况下，先行调用 Cloudflare 资源（如 Workers、KV 存储等）。开发者无需绑定支付方式即可启动原型，系统会在后台生成临时凭证，直至账户激活。
@@ -256,7 +256,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### 亚马逊印度测试 Alexa+ 印地语版本
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-23/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-23/product-02.jpg)
 
 
 **是什么**：亚马逊在印度开始测试 Alexa+ 的印地语版本，允许用户用印地语进行自然对话、控制智能家居、查询信息。测试覆盖部分 Echo 设备用户，计划逐步扩大。
@@ -269,7 +269,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### iOS 27 实用 AI 功能盘点：不止 Siri
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-23/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-23/product-03.jpg)
 
 
 **是什么**：WWDC 发布的 iOS 27 带来一系列实用 AI 功能：照片应用支持自然语言搜索（如“去年生日蛋糕照片”）、消息应用用 LLM 总结长群聊、健康 App 利用传感器数据预测疲劳趋势。
@@ -292,7 +292,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### Palmier Pro：专为 AI 打造的 macOS 视频编辑器
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-23/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-23/product-05.jpg)
 
 
 **是什么**：开源 macOS 视频编辑器 Palmier Pro 正式上线，内置 AI 工作流支持，可调用本地或云端模型（如转录、字幕生成、智能剪辑、场景检测等）。界面类似 Final Cut Pro，但核心逻辑围绕 AI pipeline 设计。
@@ -305,7 +305,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### 钉钉 AI 录音设备 A1 获三大平台销量冠军
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-06-23/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-06-23/product-06.jpg)
 
 
 **是什么**：钉钉的 AI 录音硬件 A1 在天猫、抖音、京东三个平台的 AI 录音设备品类中夺得销量第一。该设备支持实时转写、AI 摘要、会议纪要自动生成，定价 499 元。
@@ -328,7 +328,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### Anthropic 如何自我引发 AI 出口禁令
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-23/opinion-00.jpg)
 
 
 **是什么**：分析人士认为，Anthropic 对 AI 灾难性风险的公开强调远超 OpenAI，这种持续渲染可能最终导致特朗普政府对其施加出口限制。
@@ -341,7 +341,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### 五眼联盟：前沿 AI 数月内重塑进攻性网络能力
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-23/opinion-01.jpg)
 
 
 **是什么**：五眼情报联盟发布警告，称前沿 AI 模型可能在短期内极大改变进攻性网络作战形态，时间窗口为数月而非数年。
@@ -354,7 +354,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### 吴恩达戳破 AI 幻象：未来属于 10 人小队加 Agent
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-23/opinion-02.jpg)
 
 
 **是什么**：吴恩达指出当前AI行业炒作过度，未来公司形态将转向10人核心团队配合Agent，重做数据架构而非堆砌模型。
@@ -367,7 +367,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### Vibecoding 成为软件收购的试金石
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-23/opinion-03.jpg)
 
 
 **是什么**：文章分析Vibecoding（直觉式编程）正成为软件公司收购尽职调查中的关键评估项，甚至可能直接决定交易成败。
@@ -390,7 +390,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### Red-Teaming 后 Mythos 时代：Gray Swan 对话
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-23/opinion-05.jpg)
 
 
 **是什么**：Latent Space 对话OpenAI董事会成员Zico Kolter与AI安全公司Gray Swan CEO，探讨AI红队（red-teaming）实践从“神话”走向工程化的转变。
@@ -441,7 +441,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### Oak：专为 AI 代理重写的版本控制
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-23/opensource-01.jpg)
 
 
 **是什么**：Oak（oak.space）是一个针对 AI 代理使用场景优化的开源版本控制系统，定位 Git 替代品。  
@@ -452,7 +452,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### codebase-memory-mcp：毫秒级代码知识图 MCP 服务器
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-23/opensource-02.jpg)
 
 
 **是什么**：一个开源 MCP（Model Context Protocol）服务器，将代码库索引为知识图谱，支持 158 种语言，查询延迟毫秒级。  
@@ -463,7 +463,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### 字节跳动开源 deer-flow：长期任务 SuperAgent 框架
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-23/opensource-03.jpg)
 
 
 **是什么**：字节跳动开源 deer-flow，一个支持研究、编码、创作等长期任务（数分钟至数小时）的 SuperAgent 框架。  
@@ -474,7 +474,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### Recall：让 Claude Code 记住项目上下文
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-23/opensource-04.jpg)
 
 
 **是什么**：开源工具 Recall，为 Claude Code 提供本地持久化的项目记忆功能。  
@@ -485,7 +485,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### free-claude-code：零成本体验 Claude Code 和 Codex
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-23/opensource-05.jpg)
 
 
 **是什么**：开源项目让开发者能在终端、VS Code 扩展和 Discord 中免费使用 Claude Code 和 Codex。  
@@ -496,7 +496,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### headroom：将 LLM token 用量压缩 60–95%
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-23/opensource-06.jpg)
 
 
 **是什么**：开源库 headroom，压缩工具输出、日志等非核心文本，减少 LLM token 消耗，同时声称保持答案不变。  
@@ -507,7 +507,7 @@ AI 应用公司 LiblibAI 母公司完成近 3 亿美元融资，估值未披露�
 
 ### system_prompts_leaks：收集各大模型系统提示语
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-23/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-23/opensource-07.jpg)
 
 
 **是什么**：GitHub 仓库收录了 Claude、ChatGPT、Gemini、Grok 等多个模型的系统提示泄漏版本。  

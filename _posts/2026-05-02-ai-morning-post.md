@@ -32,7 +32,7 @@ sections:
 
 ### Grok 4.3面世：xAI再掀性能竞赛
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-02/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-02/model_release-00.jpg)
 
 
 **是什么**：xAI官方发布Grok 4.3模型，并在多项基准测试中取得显著提升，迅速引发技术社区广泛讨论。该模型延续了Grok系列一贯的高参数规模与多模态能力，但具体架构细节尚未公开。
@@ -45,7 +45,7 @@ sections:
 
 ### 华为携中科大推出灵境造物：国产全栈AI平台
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-02/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-02/model_release-01.jpg)
 
 
 **是什么**：华为与中国科学技术大学联合发布“灵境造物”平台，并首次对外展示了其全栈支撑体系Coordination Engineering。该平台基于华为昇腾芯片、MindSpore框架及自研大模型训练工具链，旨在打造从底层硬件到上层应用的国产化AI开发环境。
@@ -68,7 +68,7 @@ sections:
 
 ### 马斯克与OpenAI开庭，互揭老底
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-02/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-02/company-00.jpg)
 
 
 **是什么**：马斯克诉OpenAI案在加州联邦法院正式开庭，双方律师及马斯克本人、Sam Altman等核心人物出庭。庭审中曝出大量此前未公开的内部通信和决策细节，涉及OpenAI从非营利转向营利、马斯克离开后的恩怨，以及双方在AGI路线上的根本分歧。
@@ -81,7 +81,7 @@ sections:
 
 ### Uber四个月烧完全年AI预算于Claude Code
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-02/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-02/company-01.jpg)
 
 
 **是什么**：Uber在2026年前四个月就将全年AI预算全部用于Anthropic的Claude Code订阅服务，迫使公司紧急追加预算。Claude Code是Anthropic推出的AI编程助手，Uber将其大规模部署于软件工程团队。
@@ -94,7 +94,7 @@ sections:
 
 ### 苹果App误含Claude.md，Vibe Coding翻车
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-02/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-02/company-02.jpg)
 
 
 **是什么**：苹果官方支持App的某个版本在打包时错误包含了Anthropic的Claude.md配置文件，该文件是Anthropic为开发者提供的AI辅助编程说明文档，常见于使用Claude的项目中。用户下载App后可在资源包中直接看到该文件，引发开发者对苹果内部开发流程的调侃。
@@ -107,7 +107,7 @@ sections:
 
 ### OpenAI限制Cyber，步Anthropic后尘
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-02/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-02/company-03.jpg)
 
 
 **是什么**：OpenAI宣布限制对第三方安全平台Cyber的API访问权限，理由是为防止模型被用于恶意用途。然而就在数周前，OpenAI高层曾公开批评Anthropic限制Mythos的行为是“开倒车”，如今自己的做法被指双重标准。
@@ -120,7 +120,7 @@ sections:
 
 ### 智谱揭秘LLM“降智”，Prefill是罪魁
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-02/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-02/company-04.jpg)
 
 
 **是什么**：智谱AI官方发文解析大模型在长对话或多轮交互中表现下降（即“降智”）的根本原因。文章指出，问题的核心在于Prefill（预填充）阶段的计算存在固有限制，而非简单的上下文窗口溢出或显存不足。
@@ -143,7 +143,7 @@ AI公司之间的恩怨官司愈演愈烈，但真正改变行业的是Uber用�
 
 ### Spotify推Verified徽章，为人类音乐家背书
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-02/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-02/product-00.jpg)
 
 
 **是什么**  
@@ -161,7 +161,7 @@ Spotify宣布为人工艺术家添加Verified认证徽章，在艺术家主页�
 
 ### AI CAD Harness：用自然语言“画”三维模型
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-02/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-02/product-01.jpg)
 
 
 **是什么**  
@@ -179,7 +179,7 @@ Zach团队发布名为Adam.new的AI CAD Harness工具，用户只需输入一段
 
 ### 他用AI办了个音乐节，主题“别读博”
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-02/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-02/product-02.jpg)
 
 
 **是什么**  
@@ -225,7 +225,7 @@ Zach团队发布名为Adam.new的AI CAD Harness工具，用户只需输入一段
 
 ### 具身智能仿真框架：高吞吐并行渲染，真机零微调
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-02/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-02/opensource-00.jpg)
 
 
 **是什么**：一个面向具身智能（Embodied AI）的新一代仿真框架开源，支持高吞吐量的并行保真渲染，可在仿真环境中训练策略后直接部署到真实机器人，无需额外微调。
@@ -238,7 +238,7 @@ Zach团队发布名为Adam.new的AI CAD Harness工具，用户只需输入一段
 
 ### Pu.sh：400行Shell实现Coding Agent
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-02/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-02/opensource-01.jpg)
 
 
 **是什么**：开源项目 Pu.sh 用400行Shell脚本构建了一套完整的编码Agent工具链，支持代码生成、执行、调试等基础能力。
@@ -251,7 +251,7 @@ Zach团队发布名为Adam.new的AI CAD Harness工具，用户只需输入一段
 
 ### Intel开源Auto-Round量化算法：提升LLM推理效率
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-02/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-02/opensource-02.jpg)
 
 
 **是什么**：Intel开源了Auto-Round，一种先进的LLM量化算法实现，旨在通过自动化的权重取舍（rounding）降低大模型推理时的显存和计算开销。

@@ -33,7 +33,7 @@ sections:
 
 ### Gemini 3.5 Flash：专为 agent 场景设计的“自主编程”模型
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-20/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-20/model_release-00.jpg)
 
 
 今天谷歌正式推出 Gemini 3.5 Flash，核心变化在于架构面向 agentic（自主智能体）场景做了针对性优化。它支持自主编程和复杂任务执行，意味着模型不再只是回答问题，而是能拆解任务、调用工具、写代码并完成多步骤工作流。关键点：这是一款明确为「用 model 写 code 并执行」设计的模型，而非传统问答模型。为什么重要——agent 是当前 AI 落地的最大堵点，大多数模型在长链条推理和工具调用上不够稳定，Gemini 3.5 Flash 的目标是让开发者可以“把模型当执行器”来用。如果它与 Google 生态的 API 打通，可能加速自主智能体从 demo 走向生产。
@@ -42,7 +42,7 @@ sections:
 
 ### Gemini Omni：原生多模态直接生成视频
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-20/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-20/model_release-01.jpg)
 
 
 Gemini Omni 是谷歌发布的全新原生多模态模型，能同时接受文本、图像、音频作为输入，并直接输出视频。首发版本为 Omni Flash，定位为轻量级多模态生成模型。关键点：它不是将已有的文本或图像模型拼到一起，而是从头训练的单一模型，能“看见”并“生成”时空连续的视觉内容。为什么重要——此前视频生成主要依赖扩散模型（如 Sora），对文本语义理解不足。Omni 采用原生多模态架构，理论上可以做到“描述一个场景，模型直接理解并生成对应动态画面”，这对内容创作、广告、游戏等领域是直接的生产力工具。
@@ -51,7 +51,7 @@ Gemini Omni 是谷歌发布的全新原生多模态模型，能同时接受文�
 
 ### Qwen 3.7 Max 预览版空降，文本与视觉双领域国产第一
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-05-20/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-05-20/model_release-02.jpg)
 
 
 阿里通义千问发布的 Qwen 3.7 Max 预览版，在多个文本和视觉评测中均取得当前国产模型最佳成绩。关键点：这是阿里继 Qwen 2.5 系列后的又一次大幅升级，尤其视觉能力追上并超过了一批国内玩家。为什么重要——在国内大模型竞争进入“下半场”时，国产模型在中文理解、视觉任务上已不输海外闭源模型，Qwen 3.7 Max 的「双料第一」意味着阿里在模型基座能力上仍然保持第一梯队，对国内开发者和企业客户是明确的技术选型信号。
@@ -60,7 +60,7 @@ Gemini Omni 是谷歌发布的全新原生多模态模型，能同时接受文�
 
 ### Genie 世界模型接入 Street View：可模拟真实世界街道
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-05-20/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-05-20/model_release-03.jpg)
 
 
 DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实现了对真实街道的沉浸式交互模拟。用户可以在模拟环境中行走、观察，系统会实时生成对应的视觉与物理反馈。关键点：这不是单纯的视频生成，而是可交互的 3D 世界，支持在机器人训练、游戏设计、虚拟旅行中复用真实地理数据。为什么重要——世界模型一直是 AI 通往“通用物理理解”的关键路径，Street View 提供了海量、高保真的真实场景数据，Genie 相当于给机器人、自动驾驶、游戏引擎装了一个“真实世界的模拟器”。
@@ -69,7 +69,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### Agora-1：首个可多人联机的多智能体世界模型
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-05-20/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-05-20/model_release-04.jpg)
 
 
 初创公司 Odyssey 发布 Agora-1，这是首个可玩的多智能体世界模型。它能把 N64 经典游戏《黄金眼》转化为 AI 模拟环境，支持四个智能体（AI 或人类控制）在同一世界内实时互动、开枪、移动、躲避。关键点：它不仅是游戏模拟，更是一个测试多智能体协作/竞争、物理交互和策略决策的实验场。为什么重要——大多数世界模型只能模拟单一主体，Agora-1 证明模型可以同时控制多个独立智能体并维持一致的世界状态。这对机器人协调、多角色游戏 AI、以及社会学模拟都有直接参考价值。
@@ -87,7 +87,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### 陪审团一致裁决：马斯克起诉 OpenAI 太迟，败诉
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-20/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-20/company-00.jpg)
 
 
 **是什么：** 2024 年 Musk 起诉 OpenAI 及 CEO Sam Altman 违反非营利初衷、转向闭源获利，索赔 1340 亿美元。陪审团在审理后一致驳回，法官随即确认判决。
@@ -100,7 +100,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### OpenAI 联创 Andrej Karpathy 加入 Anthropic 预训练团队
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-20/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-20/company-01.jpg)
 
 
 **是什么：** 前 OpenAI 联合创始人、前特斯拉 AI 总监 Andrej Karpathy 在离开 OpenAI 近两年后，选择加入 Anthropic，负责大规模预训练（pre-training）工作。
@@ -113,7 +113,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### Mistral AI 收购维也纳物理 AI 创企 Emmi AI
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-20/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-20/company-02.jpg)
 
 
 **是什么：** 法国 AI 公司 Mistral AI 收购了总部位于维也纳的物理 AI 初创公司 Emmi AI，具体金额未披露。
@@ -136,7 +136,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### 百度无人车周订单破 35 万，李彦宏称开始单城盈利
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-20/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-20/company-04.jpg)
 
 
 **是什么：** 百度 Apollo 自动驾驶出租车（Robotaxi）周订单量达到 35 万单，累计落地全球 27 个城市。李彦宏表示部分城市已实现单个城市盈利。
@@ -149,7 +149,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### Anthropic 发事故报告：三项产品调整导致 Claude Code 质量下降
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-20/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-20/company-05.jpg)
 
 
 **是什么：** Anthropic 发布事故调查报告，承认其代码生成工具 Claude Code 在过去六周内质量明显下降，经过排查定位到三项产品变更。
@@ -162,7 +162,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### Anthropic 首次揭秘下一代 Claude 训练方式：用户反馈直接用于模型训练
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-20/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-20/company-06.jpg)
 
 
 **是什么：** Anthropic 公开了下一代 Claude 模型的训练流程，核心是直接利用用户反馈和模型“做梦”（dreaming）产生的合成数据进行强化学习。
@@ -181,14 +181,14 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### 导语
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-20/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-20/research-00.jpg)
 
 
 今天研究板块最值得关注的是Google DeepMind将Co-Scientist系统应用于抗衰老领域，直接发现并验证了可恢复人类细胞活力的新基因因子——这标志着AI从辅助分析跃升至主动发现，在医学研究中加速假设生成与验证的范式已成现实。其余论文则集中在agentic系统架构、RAG效率及智能体记忆等方向，整体指向AI系统在自主决策和长期演化上的能力提升。
 
 ### Google DeepMind 用 AI 加速逆转细胞衰老研究
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-20/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-20/research-01.jpg)
 
 
 **是什么：** 生物学家借助DeepMind的Co-Scientist系统，通过AI驱动的高通量筛选和因果推理，发现了一组此前未被充分研究的基因因子，并在人类细胞实验中证实其能恢复衰老细胞的活力。
@@ -201,7 +201,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### DashAttention：可微分自适应稀疏层次注意力机制
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-20/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-20/research-02.jpg)
 
 
 **是什么：** 论文在NSA/InfLLMv2等稀疏注意力方法基础上，提出DashAttention，通过可微分top-k块选择实现更高效的层次化注意力，减少计算开销。
@@ -214,7 +214,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### Code as Agent Harness：用代码作为智能体控制框架
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-20/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-20/research-03.jpg)
 
 
 **是什么：** 论文提出将代码本身视为智能体执行环境的核心范式，智能体通过编写、执行和调试代码来解决复杂自主编程任务。
@@ -227,7 +227,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### EndoCogniAgent：内镜诊断的闭环自主推理框架
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-05-20/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-05-20/research-04.jpg)
 
 
 **是什么：** 提出了基于自一致性验证的agent系统，模拟临床医生逐步获取局部证据（如内镜图像、病理报告）进行诊断推理。
@@ -240,7 +240,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### TeleRAG：带预检索的高效 RAG 推理系统
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-05-20/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-05-20/research-05.jpg)
 
 
 **是什么：** 提出lookahead检索机制，在RAG流水线中提前预检索未来可能需要的片段，从而减少整体推理延迟。
@@ -253,7 +253,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### EnvFactory：通过可执行环境合成扩展工具使用 agent
 
-![research-06.jpg](/marginalia/assets/img/ai-hot/2026-05-20/research-06.jpg)
+![research-06.jpg](/assets/img/ai-hot/2026-05-20/research-06.jpg)
 
 
 **是什么：** 提出可扩展的agentic RL训练环境生成方法，通过合成可执行的环境（如虚拟命令行、API沙箱）来让agent学习工具使用技能。
@@ -286,7 +286,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### Cursor 发布 Composer 2.5，性能追平 Opus 4.7 和 GPT-5.5
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-20/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-20/product-00.jpg)
 
 
 **是什么**：Cursor推出Composer 2.5模型，在编程agent评测中达到甚至超越Opus 4.7和GPT-5.5的水平，但推理成本仅为后者的十分之一。
@@ -299,7 +299,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### 谷歌推出 Antigravity 2.0：独立 agent 平台
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-20/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-20/product-01.jpg)
 
 
 **是什么**：Google I/O 2026上发布了Antigravity 2.0，包括桌面应用和CLI工具，支持agent编排和企业级部署。
@@ -312,7 +312,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### 谷歌推出 Gemini Spark：全天候 agent 个人助手
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-20/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-20/product-02.jpg)
 
 
 **是什么**：基于Gemini模型和Antigravity框架的24/7 agentic个人助手，集成Gmail、购物、日历等。
@@ -325,7 +325,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### 谷歌全面改造搜索：AI 结果取代链接列表
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-20/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-20/product-03.jpg)
 
 
 **是什么**：Google Search升级为AI驱动的对话式、agentic体验，引入信息agent、统一购物车等功能。
@@ -338,7 +338,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### 谷歌推出 AI 订阅三档计划，起价 $10/月
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-20/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-20/product-04.jpg)
 
 
 **是什么**：Google重构AI订阅体系，新增AI Ultra档（$100/月），提供5倍用量和Antigravity 2.0。
@@ -351,7 +351,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### 谷歌发布 Android CLI，助力 agent 编程
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-20/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-20/product-05.jpg)
 
 
 **是什么**：Google推出Android命令行工具，支持Claude Code、OpenAI Codex等agent直接构建应用并部署到Android。
@@ -364,7 +364,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### Cloudflare：Anthropic Mythos 发现此前未发现的漏洞链
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-20/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-20/product-06.jpg)
 
 
 **是什么**：Cloudflare报告Anthropic的Mythos预览版能自动发现复杂漏洞链，超越此前所有frontier模型。
@@ -377,7 +377,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### Anthropic 为 Claude Managed Agents 增加自托管沙箱和 MCP 隧道
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-05-20/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-05-20/product-07.jpg)
 
 
 **是什么**：Anthropic为Claude Managed Agents推出自托管沙箱和MCP安全隧道功能。
@@ -400,7 +400,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### Simón Willison 五分钟回顾 LLM 六个月进展
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-20/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-20/opinion-00.jpg)
 
 
 是什么：技术博主 Simón Willison 在 PyCon US 2026 做闪电演讲，用五分钟总结了过去半年 LLM 领域最值得关注的五个变化，包括 Claude 4 的上下文长度突破、GPT-5 多模态能力、开源模型训练成本的骤降、agentic 框架（如 LangGraph、CrewAI）的成熟，以及 AI 安全工具的普及（如 Guardrails、Pillar）。
@@ -413,7 +413,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### AI 成本过高，引发行业反思
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-20/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-20/opinion-01.jpg)
 
 
 是什么：专栏作者 Edward Zitron 在《AI is too expensive》一文中详列了当前 AI 部署的成本结构：一次大规模推理可能消耗数千美元电费，训练单代模型动辄上亿美元。文章指出，即便 OpenAI、Google 持续降价，企业级应用（如客服、文档摘要、代码生成）在月活百万级别时，推理成本仍远高于传统方案。
@@ -436,7 +436,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### arXiv 新规：AI 水论文将封号一年，署名连坐
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-20/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-20/opinion-03.jpg)
 
 
 是什么：预印本平台 arXiv 发布有史以来最严格的 AI 滥用政策：凡被认定使用 AI 工具批量生成低质量论文的作者，将面临账号封禁一年；同时实施“署名连坐”——同一论文的所有署名作者都将受到同等处罚。菲尔兹奖得主陶哲轩公开表示支持，称“这能从根源遏制垃圾科学。”
@@ -449,7 +449,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### DeepMind CEO Demis Hassabis 认为 AI 裁员是愚蠢的
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-20/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-20/opinion-04.jpg)
 
 
 是什么：《Wired》采访中，Demis Hassabis 明确反对将 AI 用于大规模裁员，认为企业应把 AI 视为“生产力放大器”而非“劳动力替代者”。他举例 DeepMind 内部用 AI 辅助药物设计后，研发团队反而扩招了 40%——因为新工具催生了更多需要验证的假设，从而创造了新的职位。
@@ -470,7 +470,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### OpenHuman：开源个人 AI 超级智能
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-20/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-20/opensource-00.jpg)
 
 
 **是什么：** 一个 GitHub 新星项目，旨在提供私有、简单、强大的个人 AI 助手，强调数据不出本地。  
@@ -497,7 +497,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### Files.md：开源 Obsidian 替代品
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-20/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-20/opensource-03.jpg)
 
 
 **是什么：** 轻量级 Markdown 笔记工具，支持双向链接，在 Hacker News 上引发热议。  
@@ -532,7 +532,7 @@ DeepMind 将 Project Genie 世界模型与 Google Street View 数据结合，实
 
 ### moon v2.0：引入 WASM 插件和重构 CLI
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-20/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-20/opensource-07.jpg)
 
 
 **是什么：** Moonrepo 发布 moon 工具链 v2.0，支持 WASM 插件并重构了 CLI 架构。  

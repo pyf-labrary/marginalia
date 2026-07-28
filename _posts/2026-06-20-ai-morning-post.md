@@ -39,7 +39,7 @@ sections:
 
 ### 智谱 GLM-5.2 开源发布：社区称“首次进入前沿行列”
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-20/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-20/model_release-01.jpg)
 
 
 **是什么**：智谱 AI 开源 GLM-5.2 模型，社区通过“vibe check”测试后给出极高评价。**关键点**：测试者认为该模型是开源模型首次真正达到闭源前沿水平，在多项任务上表现惊艳。**为什么重要**：此前开源模型在综合能力上长期落后闭源模型一代以上，GLM-5.2 的发布可能打破这一格局，降低国内开发者和企业的使用门槛，推动开源生态的竞争力重构。
@@ -56,7 +56,7 @@ sections:
 
 ### OpenAI、Anthropic互挖DeepMind墙角
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-20/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-20/company-00.jpg)
 
 
 **是什么**：OpenAI为IPO加速人才储备，本周宣布Transformer共同发明人Noam Shazeer从Google DeepMind加盟，前特朗普AI政策官员Dean Ball同时加入。几乎同期，Anthropic成功从DeepMind挖走2024年诺贝尔化学奖得主John Jumper。
@@ -69,7 +69,7 @@ sections:
 
 ### 推理公司Baseten以130亿美元估值融资15亿
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-20/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-20/company-01.jpg)
 
 
 **是什么**：AI推理初创公司Baseten据报正以130亿美元估值完成15亿美元新一轮融资，距离上一轮超大规模融资仅过去数月。
@@ -82,7 +82,7 @@ sections:
 
 ### Amazon计划出售自研AI芯片，正面挑战Nvidia
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-20/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-20/company-02.jpg)
 
 
 **是什么**：AWS正在谈判向其数据中心之外的客户出售自研AI芯片（如Trainium、Inferentia系列）。CEO安迪·贾西称这代表一个500亿美元的机会。
@@ -95,7 +95,7 @@ sections:
 
 ### Elastic以8500万美元收购AI调试初创DeductiveAI
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-20/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-20/company-03.jpg)
 
 
 **是什么**：Elastic已同意收购CRV支持的初创公司DeductiveAI，收购金额最高达8500万美元。DeductiveAI利用AI自动发现并修复软件Bug。
@@ -116,7 +116,7 @@ sections:
 
 ### Subquadratic：1200万token上下文窗口，十年瓶颈终破？
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-20/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-20/research-00.jpg)
 
 
 **是什么**：AI初创公司Subquadratic在MIT Technology Review等媒体报道中宣称，其团队突破了长期以来限制LLM上下文长度的数学瓶颈，实现了1200万token的上下文窗口。该技术基于subquadratic attention机制，将计算复杂度从O(n²)降低到O(n log n)以下，使超长文本处理成为可能。
@@ -129,7 +129,7 @@ sections:
 
 ### OpenAI：小剂量“有益特性”训练让模型更安全
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-06-20/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-06-20/research-01.jpg)
 
 
 **是什么**：OpenAI研究人员发表最新成果，发现对AI模型进行少量“有益特性”（beneficial trait）训练——如诚实、乐于助人、无害性——可以显著提升模型对对抗性攻击的鲁棒性，且更难被用户通过prompt engineering操纵。
@@ -142,7 +142,7 @@ sections:
 
 ### 全球首个人形机器人通用“小脑”发布：零样本泛化迈入新阶段
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-06-20/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-06-20/research-02.jpg)
 
 
 **是什么**：一支研究团队基于2万小时人类动作数据训练出人形机器人的通用“小脑”——一个用于控制运动与平衡的神经网络。该模型实现了零样本泛化，即无需针对具体场景微调，机器人即可在碎石、斜坡、楼梯等复杂地形中稳定行走。
@@ -155,7 +155,7 @@ sections:
 
 ### Multi-LCB：多语言编程基准扩展，更全面评估LLM代码能力
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-06-20/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-06-20/research-03.jpg)
 
 
 **是什么**：新工作将流行的代码生成基准LiveCodeBench扩展至多种编程语言，形成Multi-LCB。原版仅支持Python，新版本增加了Java、C++、JavaScript、Go、Rust等8种常见语言，每个语言提供同等难度的问题集。
@@ -183,7 +183,7 @@ sections:
 
 ### Anthropic将Artifacts引入Claude Code，支持团队共享
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-20/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-20/product-01.jpg)
 
 
 **是什么**：Anthropic 为 Claude Code 新增 Artifacts 功能，开发团队可在编码会话中创建并共享实时交互页面。**关键点**：Artifacts 原本是 Claude 对话中的内容生成工具，现在集成到代码 IDE 插件中，支持团队内预览、迭代 HTML/JS 组件。**为什么重要**：这使 Claude Code 从单机辅助升级为协作开发平台，直接对标 GitHub Copilot 的 Workspace 模式。
@@ -191,7 +191,7 @@ sections:
 
 ### Cursor 1.5T新模型弃用Kimi基座，马斯克收购传闻
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-20/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-20/product-02.jpg)
 
 
 **是什么**：Cursor 推出 1.5 万亿参数新模型，同时放弃此前使用的 Kimi 基座；市场传闻马斯克拟以 600 亿美元股票收购 Cursor，目标直指微软 GitHub。**关键点**：模型参数规模激增，基座切换暗示 Cursor 自研或选用其他底层模型；收购传闻若属实，将重塑 AI 编码工具格局。**为什么重要**：Cursor 正在成为 GitHub 最具威胁的竞争对手，马斯克的介入可能加速 IDE 领域军备竞赛。
@@ -199,7 +199,7 @@ sections:
 
 ### Pixi iOS应用：文字消息秒变AR互动体验
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-20/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-20/product-03.jpg)
 
 
 **是什么**：Pixi 推出 iOS 应用，能将普通文本消息实时转化为增强现实互动场景。**关键点**：用户输入文字后，AI 生成 3D 动画、空间音效等，对方可通过手机摄像头看到叠加在现实环境中的内容。**为什么重要**：这是社交消息从平面到空间的一次尝试，但技术门槛与用户习惯仍是挑战。
@@ -207,7 +207,7 @@ sections:
 
 ### Karamo Brown推出AI数字克隆健康应用Kē
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-20/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-20/product-04.jpg)
 
 
 **是什么**：《粉雄救兵》生活教练 Karamo Brown 发布健康应用 Kē，内含其 AI 数字克隆，提供个性化指导。**关键点**：用户可与“数字 Karamo”对话，获取情绪管理、健康建议等，应用采用语音交互与情感识别。**为什么重要**：名人 AI 克隆进入健康领域，但伦理风险（数据隐私、AI 替代真人咨询）值得关注。
@@ -225,7 +225,7 @@ sections:
 
 ### 美国政府禁令Anthropic Fable 5，出口管制进入模型层
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-20/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-20/opinion-00.jpg)
 
 
 **是什么**：美国商务部以国家安全风险为由，依据《国际紧急经济权力法》（IEEPA）强制Anthropic撤回已发布的Fable 5与Mythos 5模型，并禁止向特定国家提供API访问。Anthropic发表声明称将“加强政府沟通”，但未透露具体妥协方案。
@@ -238,7 +238,7 @@ sections:
 
 ### FERC下令：AI数据中心获电网加速接入权，但电力缺口未解
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-20/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-20/opinion-01.jpg)
 
 
 **是什么**：美国联邦能源监管委员会（FERC）发布新规，要求电网运营商为AI数据中心提供“互联快速通道”，简化并网审批流程，优先处理大型负载接入申请。
@@ -251,7 +251,7 @@ sections:
 
 ### 挪威禁止小学使用生成式AI，保护基础学习能力
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-20/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-20/opinion-02.jpg)
 
 
 **是什么**：挪威教育部宣布，全国小学（1-7年级）全面禁止课堂上使用生成式AI工具，包括ChatGPT、Copilot等，理由是“防止对儿童基本读写能力、批判性思维和社交技能产生不可逆影响”。
@@ -264,7 +264,7 @@ sections:
 
 ### 美国近半数单身人士对AI交友持负面态度
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-20/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-20/opinion-03.jpg)
 
 
 **是什么**：Match集团发布的年度调查《单身人士在美国》显示，47%的受访单身人士对AI参与约会持负面看法，仅12%表示正面，其余中立。不过，有41%的人愿意接受AI帮助优化个人资料照片和开场白。
@@ -277,7 +277,7 @@ sections:
 
 ### 慢科技运动：用设计夺回被智能手机劫持的注意力
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-20/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-20/opinion-04.jpg)
 
 
 **是什么**：面对智能手机带来的注意力危机，“慢科技”（SlowTech）设计理念正在复兴——推出功能极简、无通知推送、甚至单用途的电子设备，如只能发短信的“点阵手机”、仅显示单行文本的“最小化手表”。
@@ -300,7 +300,7 @@ AI监管正从“算力管芯”走向“模型管权重”，从“成人工具
 
 ### Netflix 开源 AI Token 优化工具：砍掉 90% 冗余 token，年省 70 万美元
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-20/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-20/opensource-00.jpg)
 
 
 **是什么**：Netflix 开源了一款 AI Token 优化工具，通过识别并移除模型输出中的无用 token，将推理 token 量减少 90%，每年节省约 70 万美元推理成本。
@@ -323,7 +323,7 @@ AI监管正从“算力管芯”走向“模型管权重”，从“成人工具
 
 ### Vercel 开源 Zero-Native：基于 Zig 的跨平台原生框架
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-20/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-20/opensource-02.jpg)
 
 
 **是什么**：Vercel Labs 开源了 Zero-Native，一个使用 Zig 语言编写的跨平台原生应用框架，致力于在桌面和移动端实现高性能开发。

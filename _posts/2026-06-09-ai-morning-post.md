@@ -43,7 +43,7 @@ sections:
 
 ### DeepSeek V4 Pro精度超越GPT-5.5 Pro：开源的反击
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-09/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-09/model_release-01.jpg)
 
 
 **是什么**：据第三方评测机构RuntimeWire发布的最新报告，DeepSeek V4 Pro在多项精度测试（涵盖数学推理、代码生成、长文本理解）中平均得分超过OpenAI的GPT-5.5 Pro，领先幅度约2.3%。
@@ -56,7 +56,7 @@ sections:
 
 ### Apple发布Core AI框架：与Gemini深度绑定的新生态
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-09/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-09/model_release-02.jpg)
 
 
 **是什么**：在WWDC 2026上，Apple正式推出Core AI框架，并透露其AI架构基于Google Gemini模型，允许开发者在iOS/macOS上直接调用本地+云端混合推理能力。
@@ -91,7 +91,7 @@ OpenAI向SEC秘密提交了S-1文件，计划最早今年9月上市，估值目�
 
 ### NVIDIA与LG、斗山共建AI工厂
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-09/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-09/company-02.jpg)
 
 
 NVIDIA分别与LG集团和斗山集团合作，建设AI工厂以推动物理AI、机器人和AI基础设施建设。关键点：1）AI工厂并非计算中心，而是集成了机器人、传感器和边缘计算的智能制造生产线，目标是实现物理世界自动决策；2）LG侧重消费电子和家电的AI化，斗山则偏向重工业和能源领域的机器人部署；3）NVIDIA通过提供DGX、Jetson平台以及模拟软件（如Isaac Sim）来兜售硬件和生态。为什么重要：这是从“对话式AI”向“物理AI”落地的关键一步，直接关联制造业升级和机器人规模化部署，投资者可关注NVIDIA的B端基建卡位能力。
@@ -100,7 +100,7 @@ NVIDIA分别与LG集团和斗山集团合作，建设AI工厂以推动物理AI�
 
 ### 蚂蚁国际推出移动智能体协议AMP，统一AI支付标准
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-09/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-09/company-03.jpg)
 
 
 蚂蚁集团发布自适应移动协议（AMP），旨在建立海外AI支付统一标准，并推出AI支付解决方案协助商家判断智能体可信度。关键点：1）AMP是一个开放协议，允许不同AI代理之间进行安全支付交互，类似于移动支付的“HTTP”；2）该方案可识别恶意代理、验证交易来源，降低AI调用中的金融欺诈风险；3）蚂蚁借道海外市场，试图延续其在移动支付领域的标准制定权。为什么重要：AI代理如何安全地替用户付款是制约agentic商业化的瓶颈之一，AMP若被大规模采用，可能成为AI时代的“支付宝”基础设施。
@@ -109,7 +109,7 @@ NVIDIA分别与LG集团和斗山集团合作，建设AI工厂以推动物理AI�
 
 ### Google、NVIDIA考虑英特尔作为台积电替代方案
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-09/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-09/company-04.jpg)
 
 
 英特尔迎来转机，Google和NVIDIA开始探索将英特尔作为AI芯片的备份代工厂，以降低对台积电的依赖。关键点：1）英特尔在Intel 18A制程上取得进展，被认为可满足部分AI芯片要求；2）此举是地缘政治驱动的供应链分散战略，并非完全替代台积电，而是作为“Plan B”；3）若英特尔拿下订单，将直接缓解其代工业务亏损压力，并提振市场份额预期。为什么重要：AI芯片的制造格局正在从“单极”走向“双轨”，长期将影响芯片定价、产能分配以及技术路线选择。
@@ -118,7 +118,7 @@ NVIDIA分别与LG集团和斗山集团合作，建设AI工厂以推动物理AI�
 
 ### Notion误封Anthropic后紧急恢复道歉
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-09/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-09/company-05.jpg)
 
 
 Notion因系统笔误封禁Anthropic并降智Opus 4.8模型，引发社区强烈反应，12小时后澄清并恢复。关键点：1）异常原因不详，可能是内部自动化策略误判，将Anthropic列为“高风险用户”；2）Opus 4.8模型在封禁期间性能下降，影响依赖该模型的用户工作流；3）Notion后续道歉并承诺改进审核机制。为什么重要：这个事件暴露了平台级AI服务对模型供应商的“误伤”风险，当AI工具依赖第三方模型时，平台稳定性直接决定用户信任度，未来需要更透明的互操作标准。
@@ -127,7 +127,7 @@ Notion因系统笔误封禁Anthropic并降智Opus 4.8模型，引发社区强烈
 
 ### 微软包被植入凭据窃取器，AI代理触发自动传播
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-06-09/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-06-09/company-06.jpg)
 
 
 微软官方包再次被植入自复制型凭据窃取器，AI代理打开后即触发感染，影响广泛。关键点：1）此次感染不是传统手动下载，而是AI代理自动安装的依赖注入，攻击面扩大；2）自复制型恶意软件能横向扩散至代码仓库和CI/CD流水线；3）微软已移除恶意包，但供应链安全讨论再度升温。为什么重要：AI代理正在自动化开发流程，同时也成为恶意软件传播的载体，开发者需要重新评估依赖策略和代理权限。
@@ -136,7 +136,7 @@ Notion因系统笔误封禁Anthropic并降智Opus 4.8模型，引发社区强烈
 
 ### 学校枪击幸存者起诉AI武器检测公司
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-09/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-09/company-07.jpg)
 
 
 校园枪击案幸存者起诉AI枪支检测公司，指控其系统未能识别武器，要求明确AI准确性标准。关键点：1）原告认为该公司系统在案发时未触发警报，直接导致伤亡扩大；2）诉讼关键诉求是要求立法或法庭明确AI检测系统的必需准确率阈值；3）此案可能成为AI产品责任判决的标杆。为什么重要：AI安全产品的“虚假阴性”后果严重，企业将面临更高的法律责任和披露义务，技术落地必须匹配可量化的保证机制。
@@ -165,7 +165,7 @@ CVPR 2026最佳论文授予牛津VGG团队的D4RT，实现两连冠；同一天�
 
 ### 微软Lens研究：详细标注比原始规模更关键
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-06-09/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-06-09/research-01.jpg)
 
 
 **是什么**：微软研究院发表Lens框架，系统比较了不同规模数据集与不同详细程度标注对图像生成模型训练的影响。结论是：对于训练高效图像生成器，详细描述性标注比单纯扩大数据规模更能提升效果。
@@ -198,7 +198,7 @@ CVPR 2026最佳论文授予牛津VGG团队的D4RT，实现两连冠；同一天�
 
 ### 我国研制新型高频晶体管刷新全球纪录
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-06-09/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-06-09/research-04.jpg)
 
 
 **是什么**：中科院金属所联合团队成功研制出硅-石墨烯-锗势垒晶体管，在截止频率和电流增益两项指标上刷新世界纪录，相关成果发表于《Nature Communications》。
@@ -221,7 +221,7 @@ CVPR 2026最佳论文授予牛津VGG团队的D4RT，实现两连冠；同一天�
 
 ### Apple WWDC推出Siri AI：语音助手独立，中国大陆暂缺席
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-09/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-09/product-00.jpg)
 
 
 Apple在WWDC 2026正式发布了Siri AI，不再是iOS底层功能，而是拥有独立App的语音助手。关键点包括：集成了Google Gemini多模态能力，支持图像编辑、Shortcuts AI工作流，并可通过语音调用第三方服务。不过，中国大陆用户暂无法使用该功能。为什么重要？Siri AI代表了苹果对AI态度的根本转变——从“工具”到“平台”，其封闭生态一旦打开Gemini等外部接口，将引发App交互范式的重构。
@@ -230,7 +230,7 @@ Apple在WWDC 2026正式发布了Siri AI，不再是iOS底层功能，而是拥�
 
 ### OpenAI宣布“聊天已死”，ChatGPT将变为Agent应用
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-09/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-09/product-01.jpg)
 
 
 OpenAI计划对ChatGPT进行彻底重构，从对话工具转向全能Agent应用，目标是切入更高利润的企业与任务执行市场。关键点是这句“chat is dead”——暗示纯对话产品已触及天花板，未来ChatGPT需要自主规划、执行和纠错。为什么重要？这一转变将直接影响所有依赖ChatGPT API的开发者，也意味着对话界面不再是UI主流，Agentic workflow才是下一代人机交互的核心。
@@ -245,7 +245,7 @@ OpenAI计划对ChatGPT进行彻底重构，从对话工具转向全能Agent应�
 
 ### Claude Code引入动态工作流，并行代理协调
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-09/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-09/product-03.jpg)
 
 
 Anthropic为Claude Code上线了动态工作流功能，允许多个AI代理并行协调完成复杂开发任务。关键点在于“动态协调”——代理可根据上下文临时调整角色和分工，而非静态预设流水线。为什么重要？这标志着Agent在开发者工具中从单线程执行进化到多智能体协作，直接提升大型代码库的自动化程度，对SaaS和DevOps工具链的渗透将加速。
@@ -254,7 +254,7 @@ Anthropic为Claude Code上线了动态工作流功能，允许多个AI代理并�
 
 ### Amazon Shopping应用用AI设计定制商品
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-09/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-09/product-04.jpg)
 
 
 亚马逊在Shopping应用中推出AI定制功能，用户通过Alexa语音描述需求，AI即可生成T恤、杯子等商品的个性化图案并直接下单。为什么重要？这是AI生成（AIGC）在电商场景中最直接的落地——将“想法到产品”的链路缩短至几步交互，虽然目前仅限轻定制，但为亚马逊打开了C2M（消费者到制造商）的新模式，可能冲击传统设计平台。
@@ -263,7 +263,7 @@ Anthropic为Claude Code上线了动态工作流功能，允许多个AI代理并�
 
 ### 高德发布ABot-Earth0.5：3D原生场景生成引擎
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-09/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-09/product-05.jpg)
 
 
 高德推出ABot-Earth0.5，这是一个基于3D原生的、高一致性的场景生成方案，现已开放内测。关键点是“3D原生驱动”——从三维数据直接生成场景，而非从2D重建，从而保证几何与光照一致性。为什么重要？这项技术为地图、自动驾驶仿真、数字孪生城市提供了底层能力，高德在AI与地理空间的融合上正在构建差异化壁垒。
@@ -272,7 +272,7 @@ Anthropic为Claude Code上线了动态工作流功能，允许多个AI代理并�
 
 ### 文远知行WRD 3.0端到端方案亮相高通峰会
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-06-09/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-06-09/product-06.jpg)
 
 
 文远知行在高通骁龙峰会上展示了L2++级别的端到端自动驾驶方案WRD 3.0，该方案采用“一段式”端到端模型，并获高通官方点赞。为什么重要？这是国产智驾方案从传统“感知-规划-控制”模块化架构向端到端路线迈进的重要案例，同时绑定高通芯片生态，有望加速车规级部署。
@@ -281,7 +281,7 @@ Anthropic为Claude Code上线了动态工作流功能，允许多个AI代理并�
 
 ### Instagram AI聊天机器人泄露超2万账户数据
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-06-09/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-06-09/product-07.jpg)
 
 
 Meta披露，Instagram内置的AI聊天机器人存在安全漏洞，可能影响超过20,000个账户的用户数据。关键点在于漏洞发生在AI bot与底层数据交互的环节，而非传统Web漏洞。为什么重要？AI应用大规模接入后的隐私安全问题正在从理论走入现实，此次事件为所有集成第三方AI能力的平台敲响警钟——模型安全不等于系统安全。
@@ -306,7 +306,7 @@ Meta披露，Instagram内置的AI聊天机器人存在安全漏洞，可能影�
 
 ### AI 正在放缓，但进步依旧
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-09/opinion-01.jpg)
 
 
 《AI is slowing down》一文指出，过去两年模型能力的提升曲线正在变平，尤其是在长尾常识推理和最新 benchmark 上。文章不是否定 AGI 趋势，而是提醒我们：边际收益递减正在发生，接下来需要的是系统化工程和数据效率突破，而非堆参数。为什么重要——投资人和创业者需要调整预期：AGI 不会今年到来，但 AI 红利会以更隐蔽、更分化的方式转移。
@@ -315,7 +315,7 @@ Meta披露，Instagram内置的AI聊天机器人存在安全漏洞，可能影�
 
 ### 多数企业在 AI 支出上盲目飞行
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-09/opinion-02.jpg)
 
 
 Ramp 的分析显示，企业 AI 采购额同比暴涨 300% 以上，但超过 70% 的公司无法量化其 ROI。大量资金被用于 Chatbot 部署、API 调用和实验性项目，而管理层对“AI 到底省了多少成本”没有概念。为什么重要——这种“盲目飞行”状态意味着泡沫风险：一旦经济下行或投资者要求收支逻辑，大量 AI 支出会突然冻结。对产品经理来说，这是机会：谁先建立可衡量的回报指标，谁就能拿到预算。
@@ -324,7 +324,7 @@ Ramp 的分析显示，企业 AI 采购额同比暴涨 300% 以上，但超过 7
 
 ### Tokenpocalypse？AI 公司 IPO 后或将涨价
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-09/opinion-03.jpg)
 
 
 TechCrunch 专栏警告：随着 OpenAI、Anthropic 等公司陆续推进 IPO，资本市场将要求盈利，目前远低于成本的 API 定价难以持续。预计 token 价格将在 2027 年前上涨 2-5 倍。关键点在于：用户当前享受的“廉价智能”是补贴的产物。为什么重要——依赖低价 token 构建产品的创业公司将面临成本骤升的风险，需要提前设计定价弹性或多元模型选型策略。
@@ -333,7 +333,7 @@ TechCrunch 专栏警告：随着 OpenAI、Anthropic 等公司陆续推进 IPO，
 
 ### Agentic AI 将 token 变成商业指标
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-09/opinion-04.jpg)
 
 
 《Frontier Radar 3》提出，agentic AI 让 token 从技术计量单位升级为业务指标——因为每个 agent 行为都会消耗 token，而 token 直接对应成本。企业开始用“每个用户会话 token 数”来衡量功能的价值产出。为什么重要——这为产品经理提供了一种新的度量框架：把 AI 能力像云服务一样精细到单次调用，从而建立 ROI 核算体系。这是从“盲目飞行”到“仪表盘驾驶”的过渡工具。
@@ -348,7 +348,7 @@ OpenAI 发文重申 AGI 应造福全人类，并宣布启动经济研究交流�
 
 ### 腾讯汤道生对话姚顺雨：AI 下半场竞争逻辑
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-06-09/opinion-06.jpg)
 
 
 在腾讯云 AI 产业大会上，汤道生与首席科学家姚顺雨对谈，核心观点：AI 是长期游戏，不要急于短期变现。姚顺雨强调模型能力提升仍依赖基础研究，企业需要耐心投入。为什么重要——这代表中国科技巨头对当前“AI 赚钱焦虑”的官方回应：宁愿慢一点，也要扎稳底座。对投资者而言，这意味着大厂不会卷入无意义的补贴战，而是聚焦 MaaS（模型即服务）和企业级落地。
@@ -357,7 +357,7 @@ OpenAI 发文重申 AGI 应造福全人类，并宣布启动经济研究交流�
 
 ### DeepSeek 成为美国企业最热 AI 供应商，价格优势驱动
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-06-09/opinion-07.jpg)
 
 
 Ramp 六月初数据显示，DeepSeek 在美国企业软件供应商中增长最快。原因很简单：性能接近 GPT-4o 但价格低 30%-50%，企业大量用其处理非关键任务。为什么重要——这证明当前 AI 市场并未被“最好”垄断，而是“足够好+便宜”正在夺取份额。对创业公司而言，低成本模型组合策略可能比押注单一旗舰模型更有效。
@@ -376,7 +376,7 @@ Ramp 六月初数据显示，DeepSeek 在美国企业软件供应商中增长最
 
 ### Hermes Agent：反馈驱动的进化式代理
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-09/opensource-00.jpg)
 
 
 - **是什么**：NousResearch 开源的代理框架，核心是让代理从用户交互反馈中不断调整行为策略。
@@ -387,7 +387,7 @@ Ramp 六月初数据显示，DeepSeek 在美国企业软件供应商中增长最
 
 ### open-notebook：开源 NotebookLM 的灵活替代
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-09/opensource-01.jpg)
 
 
 - **是什么**：一个开源的笔记与文档问答工具，模仿 Google NotebookLM 的核心功能。
@@ -398,7 +398,7 @@ Ramp 六月初数据显示，DeepSeek 在美国企业软件供应商中增长最
 
 ### Goose：超越代码建议的开源 AI 代理
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-09/opensource-02.jpg)
 
 
 - **是什么**：一个可执行系统级操作的 AI 代理：安装、编辑、运行测试，并支持接入任意 LLM。
@@ -409,7 +409,7 @@ Ramp 六月初数据显示，DeepSeek 在美国企业软件供应商中增长最
 
 ### 微软开源 VibeVoice：前沿语音 AI 模型
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-09/opensource-03.jpg)
 
 
 - **是什么**：微软发布的多任务语音模型，能处理识别、合成、情感感知等。
@@ -420,7 +420,7 @@ Ramp 六月初数据显示，DeepSeek 在美国企业软件供应商中增长最
 
 ### lathe：用 LLM 教你精通，而非跳过学习
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-09/opensource-04.jpg)
 
 
 - **是什么**：一个利用 LLM 生成实践教程的工具，侧重于“做中学”。
@@ -431,7 +431,7 @@ Ramp 六月初数据显示，DeepSeek 在美国企业软件供应商中增长最
 
 ### Hugging Face 社区支持 OpenEnv：Agentic RL 标准化环境
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-09/opensource-05.jpg)
 
 
 - **是什么**：OpenEnv 提供一套用于 agentic 强化学习的开放环境，Hugging Face 社区开始贡献基准。
@@ -442,7 +442,7 @@ Ramp 六月初数据显示，DeepSeek 在美国企业软件供应商中增长最
 
 ### MemPalace：开源 AI 记忆系统，基准测试领先
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-09/opensource-06.jpg)
 
 
 - **是什么**：一个针对 LLM 的状态记忆系统，号称在多项基准中超越闭源方案。
@@ -453,7 +453,7 @@ Ramp 六月初数据显示，DeepSeek 在美国企业软件供应商中增长最
 
 ### llama.cpp：C/C++ 本地推理持续迭代
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-09/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-09/opensource-07.jpg)
 
 
 - **是什么**：老牌项目 llama.cpp 持续更新，最近优化了 ARM 架构和量化支持。

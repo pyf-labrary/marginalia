@@ -41,7 +41,7 @@ sections:
 
 ### Zyphra推出首个MoE扩散模型，推理加速7.7倍
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-17/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-17/model_release-01.jpg)
 
 
 - **是什么**：Zyphra将自回归MoE模型ZAYA1-8B转换为离散扩散模型，发布ZAYA1-8B Diffusion Preview，推理速度提升7.7倍，性能与原始自回归版本持平。
@@ -52,7 +52,7 @@ sections:
 
 ### 百灵开源1T参数推理旗舰模型Ring-2.6-1T
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-05-17/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-05-17/model_release-02.jpg)
 
 
 - **是什么**：百灵发布开源旗舰推理模型Ring-2.6-1T，参数规模达1T，专注于推理能力与效率平衡。模型权重和部署工具已公开。
@@ -63,7 +63,7 @@ sections:
 
 ### Orthrus-Qwen3：Qwen3推理加速7.8倍
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-05-17/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-05-17/model_release-03.jpg)
 
 
 - **是什么**：开源项目Orthrus在Qwen3-8B/14B/72B上实现最高7.8倍的token/forward加速，输出分布与原始模型完全一致，无需重新训练。
@@ -84,7 +84,7 @@ sections:
 
 ### OpenAI 产品线整合，布罗克曼接管战略
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-17/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-17/company-00.jpg)
 
 
 OpenAI 宣布将 ChatGPT 和 Codex 整合为一个统一产品线，联合创始人 Greg Brockman 正式负责产品战略。过去 Brockman 主要负责研究与底层架构，此次调动表明 OpenAI 决心加速产品化落地。Codex 此前是面向开发者的代码生成 API，ChatGPT 是面向消费者的对话产品；合并后，预计会推出更统一的开发者平台，并加深与企业客户的协作。
@@ -95,7 +95,7 @@ OpenAI 宣布将 ChatGPT 和 Codex 整合为一个统一产品线，联合创始
 
 ### Cerebras IPO 估值 600 亿，成年度最大科技 IPO
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-17/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-17/company-01.jpg)
 
 
 AI 芯片公司 Cerebras 提交 IPO 文件，估值约 600 亿美元。文件披露 Sam Altman 持股，引发对其投资布局的猜测。Cerebras 主打超大芯片（Wafer-Scale Engine），主要客户为超算和 AI 训练中心，相较英伟达的 GPU 方案有不同技术路线。
@@ -106,7 +106,7 @@ AI 芯片公司 Cerebras 提交 IPO 文件，估值约 600 亿美元。文件披
 
 ### OpenAI 收购语音克隆初创，专注名人模仿
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-17/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-17/company-02.jpg)
 
 
 OpenAI 收购了一家以名人语音模仿闻名的语音克隆公司，具体金额未公开。该公司此前因生成逼真的名人语音（如演员、政客）而走红，也曾引发深度伪造争议。收购后，OpenAI 计划将其技术整合至 ChatGPT 的语音模式和 TTS 产品中。
@@ -117,7 +117,7 @@ OpenAI 收购了一家以名人语音模仿闻名的语音克隆公司，具体�
 
 ### Anthropic 估值或达 9000 亿美元，首超 OpenAI
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-17/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-17/company-03.jpg)
 
 
 传闻 Anthropic 正在进行新一轮融资，估值约 9000 亿美元，若成真将超越 OpenAI 成为全球估值最高的 AI 公司。此轮主要投资者可能包括现有股东（如 Google、Spark Capital）以及中东主权基金。Anthropic 目前收入主要来自 Claude API 与企业订阅，增速虽快但亏损仍严重。
@@ -128,7 +128,7 @@ OpenAI 收购了一家以名人语音模仿闻名的语音克隆公司，具体�
 
 ### Anthropic 版权和解遭法官推迟，律师费惹争议
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-17/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-17/company-04.jpg)
 
 
 法官推迟批准 Anthropic 与作者团体达成的 15 亿美元版权和解协议，因部分原告认为律师费占比过高（约 30%），损害了作者实际获赔金额。该和解涉及 Anthropic 使用受版权保护的书籍训练模型，是 AI 版权领域的标志性案件。
@@ -147,7 +147,7 @@ OpenAI 与马耳他政府签署独家协议，向该国所有公民免费提供 
 
 ### OpenAI 内部不满苹果 ChatGPT 集成质量
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-17/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-17/company-06.jpg)
 
 
 媒体报道 OpenAI 对苹果目前的 ChatGPT 集成效果不满，认为是“简陋的集成”（crappy integration），导致用户体验不佳。法官在反垄断听证中要求苹果交出内部通信，以查明是否存在刻意劣化非苹果 AI 服务的动机。
@@ -158,7 +158,7 @@ OpenAI 与马耳他政府签署独家协议，向该国所有公民免费提供 
 
 ### Anthropic 发布 Claude Platform on AWS
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-17/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-17/company-07.jpg)
 
 
 Anthropic 正式在 AWS 上推出 Claude Platform，提供托管式 API、企业级安全合规、以及模型微调服务。这是 Anthropic 继与 Google Cloud 合作后，第二个主要云平台伙伴。首期支持 Claude 4（Anthropic 最新旗舰模型），定价按 tokens 计费，略高于自建方案。
@@ -179,7 +179,7 @@ Anthropic 正式在 AWS 上推出 Claude Platform，提供托管式 API、企业
 
 ### 新基准显示AI可自主开发浏览器漏洞利用
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-17/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-17/research-00.jpg)
 
 
 最新基准测试表明，Claude Mythos和GPT-5.5能从零开始编写真实的浏览器漏洞利用代码，而不仅限于识别或修补。测试环境模拟了真实浏览器漏洞链，模型需要搜索文档、编写脚本、调试并成功触发漏洞。结果显示，两个模型在部分用例中达到与初级安全研究员相当的水平。这一能力对网络安全既是利刃也是风险——自动化的漏洞挖掘将加速攻防博弈，但也可能被滥用。
@@ -188,7 +188,7 @@ Anthropic 正式在 AWS 上推出 Claude Platform，提供托管式 API、企业
 
 ### 基准确认AI视频模型视觉惊艳但缺乏世界推理
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-17/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-17/research-01.jpg)
 
 
 新推出的视频物理基准评估了Sora、VideoPoet等模型对物体碰撞、重力、流体行为等基础物理的生成一致性。结果一致：视觉效果逼近真实，但推理得分低于随机基线。模型能生成流畅的落体动画，却无法保证物体在接触地面后停止、弹起方向正确。这意味着当前视频生成仍停留在像素级模仿，缺乏对因果关系的符号理解。对于需要物理可信度的自动驾驶仿真、影视预演等场景，这一缺陷是根本性的。
@@ -197,7 +197,7 @@ Anthropic 正式在 AWS 上推出 Claude Platform，提供托管式 API、企业
 
 ### 研究：仅用12.5%专家激活即可达到近完整性能
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-17/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-17/research-02.jpg)
 
 
 研究人员训练了一个Mixture-of-Experts模型，在推理时仅激活12.5%的专家参数，却能达到接近全量激活的性能。关键设计在于一种「专家路由器」剪枝训练策略——先在训练中动态选择子集，再通过蒸馏补偿未激活专家贡献的信息。这使得模型在保持推理速度（与dense模型相当）的同时，训练成本显著降低。对于MoE的实际部署，这意味着可以更激进地增加专家总数而不必担心推理延迟，为千亿参数级经济性推理铺路。
@@ -206,7 +206,7 @@ Anthropic 正式在 AWS 上推出 Claude Platform，提供托管式 API、企业
 
 ### Nous Research提出灯塔注意力，预训练提速1.7倍
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-17/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-17/research-03.jpg)
 
 
 Nous Research发布了Lighthouse Attention，一种仅用于训练的筛选式层次注意力机制。它通过动态选择对当前batch最相关的token子集（而非全注意力），在128K长上下文预训练中实现1.4–1.7倍加速，且推理时无需做任何改动——模型权重与标准Transformer兼容。这意味着团队可以将长上下文训练时间压缩近一半，尤其利好需要处理长文档的LLM。不过这种选择式注意力可能漏掉长程弱关联信息，需在特定任务上验证。
@@ -215,7 +215,7 @@ Nous Research发布了Lighthouse Attention，一种仅用于训练的筛选式�
 
 ### Δ-Mem论文提出大模型高效在线记忆
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-05-17/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-05-17/research-04.jpg)
 
 
 arXiv预印本中，作者提出Δ-Mem方法，允许LLM在不增加模型参数量的情况下，通过外部记忆差异向量实现高效在线记忆更新。与传统的Fine-Tuning或检索增强不同，Δ-Mem将新知识编码为与旧知识之间的「差值」，并压缩存储于轻量记忆层中。实验显示，在持续学习场景下，Δ-Mem以微乎其微的推理开销，将长尾事实召回率提升近20%。对于需要频繁更新知识的对话助手或知识库系统，这是一种低成本的记忆方案。
@@ -240,7 +240,7 @@ arXiv预印本中，作者提出Δ-Mem方法，允许LLM在不增加模型参数
 
 ### ChatGPT接入银行账户，AI理财时代开启
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-17/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-17/product-00.jpg)
 
 
 OpenAI在ChatGPT中推出个人理财功能，用户授权后可连接银行账户，由AI自动分析消费模式、生成预算建议，甚至推荐储蓄或投资方案。关键点在于：这是AI首次直接触及用户的金融核心数据，而非仅停留在通用问答。OpenAI强调数据加密与用户控制权，但监管机构已开始关注此类服务的合规性。为什么重要？当AI能实时追踪你的每一笔支出，它就不再是“聊天机器人”，而是一个主动的财务顾问，这将重塑个人理财市场的格局。
@@ -249,7 +249,7 @@ OpenAI在ChatGPT中推出个人理财功能，用户授权后可连接银行账�
 
 ### 阿里健康发布医学AI助手，独家绑定BMJ期刊资源
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-17/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-17/product-01.jpg)
 
 
 阿里健康推出“氢离子”医学AI助手，核心卖点是基于循证医学，并独家合作BMJ（英国医学杂志）接入70本顶级期刊，确保回答有据可查。关键点：医生问诊时可通过该助手快速检索最新临床证据，降低误诊率；对患者端则提供症状自查与用药提醒。为什么重要？医学AI的关键瓶颈在于信源权威性，阿里健康通过独家合作锁定了高质量医学内容壁垒——这比单纯拼模型参数更有护城河，但需验证实际临床采纳率。
@@ -258,7 +258,7 @@ OpenAI在ChatGPT中推出个人理财功能，用户授权后可连接银行账�
 
 ### YouTube向全体成年创作者开放AI深度换脸检测工具
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-17/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-17/product-02.jpg)
 
 
 YouTube将此前仅限头部创作者的deepfake检测工具，全面开放给所有成年创作者。该工具能自动识别视频中利用AI换脸生成的虚假内容，并在上传时标记。关键点：工具基于视频元数据和面部生物特征比对，准确率宣称超过95%；青少年账户暂不开放，可能是出于隐私保护考量。为什么重要？在AI伪造内容泛滥的当下，平台主动提供检测能力，既是内容治理手段，也是创作者保护自身肖像权的武器——但工具本身也可能被反向破解。
@@ -267,7 +267,7 @@ YouTube将此前仅限头部创作者的deepfake检测工具，全面开放给�
 
 ### 每月烧130万美元，OpenClaw用100个AI代理写代码
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-17/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-17/product-03.jpg)
 
 
 OpenClaw创始人Peter Steinberger公开运营数据：100个AI代理每月花费130万美元，用于自动编写代码、审查PR和查找bug。关键点：每个代理对应一个专属任务，如代码生成、单元测试、安全扫描，形成流水线；成本大头是GPU算力和API调用，而非人力。为什么重要？这展示了AI代理规模化落地的真实成本——效率极高但成本也极高，证明“AI替代程序员”目前仍是资本密集型游戏，只有大公司或高融资创业公司能玩得起。
@@ -276,7 +276,7 @@ OpenClaw创始人Peter Steinberger公开运营数据：100个AI代理每月花�
 
 ### Runway放言要击败谷歌：视频生成即世界模型
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-17/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-17/product-04.jpg)
 
 
 Runway CEO公开表示，视频生成是通往世界模型的关键路径，公司有信心超越谷歌。关键点：Runway从帮电影人剪辑起家，如今专注于多模态视频生成，认为“理解世界”需要从像素级视频流中学习物理规律，而非仅依赖文本。为什么重要？这本质上是两家公司对AGI路线之争——谷歌押注Transformer+文本推理，Runway坚信视频的时空连续性才是真正理解因果的基石。虽然口气不小，但背后是技术范式的分歧，值得跟踪其模型在长期预测任务上的表现。
@@ -285,7 +285,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### Osaurus：在Mac上同时跑本地和云端AI模型
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-17/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-17/product-05.jpg)
 
 
 新应用Osaurus让Mac用户在同一界面下混合使用本地模型（如llama）和云端API（如GPT-4），且数据默认留在本地硬件中。关键点：用户可设置规则，比如敏感数据只用本地模型，普通任务走云端以节省算力；支持一键切换模型而无缝衔接对话历史。为什么重要？在隐私与性能不可兼得的矛盾中，Osaurus试图提供一个折中方案——尤其适合医疗、法律等对数据合规要求高的行业，但本地模型的性能瓶颈目前仍是硬伤。
@@ -302,7 +302,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### Meta员工反对“每一动都在训练AI”，厕所贴满传单
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-17/opinion-00.jpg)
 
 
 **是什么**：本周Meta内部出现组织化抗议，员工在办公室厕所张贴传单，指责公司利用鼠标移动轨迹数据训练AI模型，认为此举侵犯基本隐私。据InfoQ报道，传单内容直指“每一次鼠标点击、每一次滑动都在为AI燃料”。
@@ -325,7 +325,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### arXiv重拳出击：AI生成论文作者将被禁一年
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-17/opinion-02.jpg)
 
 
 **是什么**：预印本库arXiv宣布新规：若发现提交的论文主要由AI生成且包含幻觉内容，作者将被禁止投稿一年。TechCrunch报道称，规则适用于所有首次违规者。
@@ -338,7 +338,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### 美国用AI监测预测市场防范内幕交易
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-17/opinion-03.jpg)
 
 
 **是什么**：美国商品期货交易委员会（CFTC）宣布，将部署AI系统实时监控预测市场的交易模式，以识别内幕交易。Ars Technica报道，系统可分析异常订单流、关联账户与社交媒体情绪。
@@ -351,7 +351,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### AI淘金热：仅少数硅谷人暴富，多数迷茫
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-17/opinion-04.jpg)
 
 
 **是什么**：The Decoder引用报告指出，AI热潮让硅谷极少数人（早期创业者、顶级研究员）财富暴增，但绝大多数AI从业者对行业方向与自身价值感到困惑。
@@ -364,7 +364,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### Google官方：GEO和AEO是伪概念，SEO就足够
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-17/opinion-05.jpg)
 
 
 **是什么**：Google公开表示，所谓生成引擎优化（GEO）和答案引擎优化（AEO）是虚假概念，传统SEO（搜索引擎优化）已经能覆盖AI搜索需求。The Decoder报道。
@@ -377,7 +377,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### 宾州居民集会抗议数据中心扩张
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-05-17/opinion-06.jpg)
 
 
 **是什么**：宾夕法尼亚州居民召开市民会议，抗议AI数据中心大规模建设带来的电力消耗、噪音与水体污染，并批评开发商缺乏环境透明度。Ars Technica报道。
@@ -398,7 +398,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### OpenHuman：20 分钟对话，生成你的专属知识库
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-17/opensource-00.jpg)
 
 
 **是什么**：OpenHuman 是一个开源的个人 AI 工具，通过与用户进行约 20 分钟的对话，自动构建出一份结构化的知识库，包含用户的思考方式、专业领域、价值观等，形式类似 Karpathy 此前展示的“个人知识库”概念。
@@ -411,7 +411,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### Anthropic 开源 Agent Skills 官方实现
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-17/opensource-01.jpg)
 
 
 **是什么**：Anthropic 在 GitHub 上发布 `skills` 仓库，包含 Claude 的 Agent Skills 标准实现。这些技能是预定义的、可组合的行为模块，开发者可以直接引用或修改。
@@ -434,7 +434,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### 科学代理技能集：面向研究、工程与金融
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-17/opensource-03.jpg)
 
 
 **是什么**：一个名为 `scientific-agent-skills` 的开源项目，提供了一组现成的 Agent 技能，覆盖科学研究、工程模拟和金融分析等领域。
@@ -447,7 +447,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### Supertonic：手机端闪电级多语言 TTS 率先开源
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-17/opensource-04.jpg)
 
 
 **是什么**：Supertonic 是一个基于 ONNX 的本地多语言文本转语音引擎，声称在手机上也能达到“闪电级”速度。
@@ -460,7 +460,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### n8n-MCP：用 Claude 自动构建 n8n 工作流
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-17/opensource-05.jpg)
 
 
 **是什么**：一个开源工具，使 Claude 能通过 MCP（Model Context Protocol）协议自动构建和编辑 n8n 自动化工作流。
@@ -473,7 +473,7 @@ Runway CEO公开表示，视频生成是通往世界模型的关键路径，公�
 
 ### NVIDIA 开源视频搜索与摘要 AI 蓝图
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-05-17/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-05-17/opensource-06.jpg)
 
 
 **是什么**：NVIDIA 发布了一个视频搜索和摘要的参考架构，支持 GPU 加速的视觉 Agent 应用。该蓝图包含视频索引、语义搜索和自动摘要的完整代码及文档。
