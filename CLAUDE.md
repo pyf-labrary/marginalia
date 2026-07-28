@@ -13,8 +13,12 @@
 # 周报视频上 B 站并改写 _videos/<slug>.md（drop video:, 写 bvid:）
 ~/claw/marginalia/scripts/publish-video.py ~/claw/video/<build-dir> --upload
 
-# 本地预览（可选；不预览也行，push 后 Pages 自动构建）
+# 本地预览（可选；push main 后 Actions 构建并以受限 rsync 发布到 pyf）
 cd ~/claw/marginalia && bundle exec jekyll serve
 ```
 
 发布脚本依赖 `~/.config/gh/org_pyf-labrary.token`（org-scoped PAT，见 MEMORY）。
+
+生产站点：`https://jinzi.cyou/`。`panyifeng.xyz`、`www.panyifeng.xyz`、
+`www.jinzi.cyou` 均由 pyf nginx 301 到主域并保留路径与 query。部署 workflow：
+`.github/workflows/pages.yml`；GitHub Pages custom domain 已停用。
