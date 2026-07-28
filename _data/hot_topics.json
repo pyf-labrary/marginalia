@@ -1,17 +1,22 @@
 {
- "generated": "2026-07-28",
+ "generated": "2026-07-29",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 51.29,
+   "score": 49.65,
    "days": 26,
    "latest": {
-    "date": "2026-07-28",
-    "url": "/posts/2026-07-27-ai-morning-post/#model-release",
-    "title": "Grok 4.5 发布，强化编码与 Agent 任务"
+    "date": "2026-07-29",
+    "url": "/posts/2026-07-28-ai-morning-post/#product",
+    "title": "阿里 Qoder 推出国内首个实时语音交互智能体"
    },
    "links": [
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#product",
+     "title": "阿里 Qoder 推出国内首个实时语音交互智能体"
+    },
     {
      "date": "2026-07-28",
      "url": "/posts/2026-07-27-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-07-19",
      "url": "/posts/2026-07-18-ai-morning-post/#product",
      "title": "Vertu推出6880美元AI Agent手机，实测表现"
-    },
-    {
-     "date": "2026-07-18",
-     "url": "/posts/2026-07-17-ai-morning-post/#research",
-     "title": "AutoSynthesis：智能体自动化系统综述与元分析"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 39.58,
-   "days": 27,
+   "score": 39.32,
+   "days": 28,
    "latest": {
-    "date": "2026-07-28",
-    "url": "/posts/2026-07-27-ai-morning-post/#company",
-    "title": "德里高等法院驳回印度新闻机构对 OpenAI 的版权禁令"
+    "date": "2026-07-29",
+    "url": "/posts/2026-07-28-ai-morning-post/#company",
+    "title": "OpenAI代理越狱HuggingFace：技术细节全公开"
    },
    "links": [
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#company",
+     "title": "OpenAI代理越狱HuggingFace：技术细节全公开"
+    },
     {
      "date": "2026-07-28",
      "url": "/posts/2026-07-27-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-07-22",
      "url": "/posts/2026-07-21-ai-morning-post/#company",
      "title": "OpenAI 自曝预发布模型导致 Hugging Face 安全事件"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#company",
-     "title": "OpenAI 发布长期模型安全对齐经验"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 22.29,
+   "score": 21.77,
    "days": 24,
    "latest": {
-    "date": "2026-07-28",
-    "url": "/posts/2026-07-27-ai-morning-post/#opinion",
-    "title": "Anthropic 坚定闭源：安全责任压倒开放承诺"
+    "date": "2026-07-29",
+    "url": "/posts/2026-07-28-ai-morning-post/#research",
+    "title": "Anthropic 发现互联网密码算法新漏洞"
    },
    "links": [
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#research",
+     "title": "Anthropic 发现互联网密码算法新漏洞"
+    },
     {
      "date": "2026-07-28",
      "url": "/posts/2026-07-27-ai-morning-post/#opinion",
@@ -150,76 +155,24 @@
      "date": "2026-07-17",
      "url": "/posts/2026-07-16-ai-morning-post/#opinion",
      "title": "Anthropic加速推动各州AI监管立法"
-    },
-    {
-     "date": "2026-07-16",
-     "url": "/posts/2026-07-15-ai-morning-post/#company",
-     "title": "Anthropic和Blackstone联手推出企业AI服务Ode"
-    }
-   ]
-  },
-  {
-   "name": "Claude",
-   "score": 15.16,
-   "days": 17,
-   "latest": {
-    "date": "2026-07-28",
-    "url": "/posts/2026-07-27-ai-morning-post/#product",
-    "title": "Claude 共享聊天链接被搜索引擎索引，隐私风险暴露"
-   },
-   "links": [
-    {
-     "date": "2026-07-28",
-     "url": "/posts/2026-07-27-ai-morning-post/#product",
-     "title": "Claude 共享聊天链接被搜索引擎索引，隐私风险暴露"
-    },
-    {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#opensource",
-     "title": "Awesome Claude Skills：Claude工作流自定义资源合集"
-    },
-    {
-     "date": "2026-07-26",
-     "url": "/posts/2026-07-25-ai-morning-post/#product",
-     "title": "Claude语音模式全平台升级至最强模型"
-    },
-    {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#product",
-     "title": "Claude 语音模式升级：跨平台强模型加持"
-    },
-    {
-     "date": "2026-07-24",
-     "url": "/posts/2026-07-23-ai-morning-post/#model-release",
-     "title": "Anthropic 升级 Claude 语音模式：更强模型 + 任务执行"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#product",
-     "title": "Claude Code 改用 Rust 版 Bun，启动再提速 10%"
-    },
-    {
-     "date": "2026-07-16",
-     "url": "/posts/2026-07-15-ai-morning-post/#product",
-     "title": "Anthropic 推出 Claude for Teachers，承诺不训练学生数据"
-    },
-    {
-     "date": "2026-07-14",
-     "url": "/posts/2026-07-13-ai-morning-post/#product",
-     "title": "Claude Code 内置浏览器，AI 可自主操作外部网页"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 14.19,
-   "days": 16,
+   "score": 15.52,
+   "days": 17,
    "latest": {
-    "date": "2026-07-28",
-    "url": "/posts/2026-07-27-ai-morning-post/#opensource",
-    "title": "阿里巴巴开源代码审查工具open-code-review"
+    "date": "2026-07-29",
+    "url": "/posts/2026-07-28-ai-morning-post/#product",
+    "title": "阿里 Qoder 推出国内首个实时语音交互智能体"
    },
    "links": [
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#product",
+     "title": "阿里 Qoder 推出国内首个实时语音交互智能体"
+    },
     {
      "date": "2026-07-28",
      "url": "/posts/2026-07-27-ai-morning-post/#opensource",
@@ -254,17 +207,116 @@
      "date": "2026-07-21",
      "url": "/posts/2026-07-20-ai-morning-post/#model-release",
      "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
+    }
+   ]
+  },
+  {
+   "name": "Claude",
+   "score": 15.16,
+   "days": 18,
+   "latest": {
+    "date": "2026-07-29",
+    "url": "/posts/2026-07-28-ai-morning-post/#product",
+    "title": "Claude 共享聊天链接被谷歌索引导致私密对话泄露"
+   },
+   "links": [
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#product",
+     "title": "Claude 共享聊天链接被谷歌索引导致私密对话泄露"
+    },
+    {
+     "date": "2026-07-28",
+     "url": "/posts/2026-07-27-ai-morning-post/#product",
+     "title": "Claude 共享聊天链接被搜索引擎索引，隐私风险暴露"
+    },
+    {
+     "date": "2026-07-27",
+     "url": "/posts/2026-07-26-ai-morning-post/#opensource",
+     "title": "Awesome Claude Skills：Claude工作流自定义资源合集"
+    },
+    {
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#product",
+     "title": "Claude语音模式全平台升级至最强模型"
+    },
+    {
+     "date": "2026-07-25",
+     "url": "/posts/2026-07-24-ai-morning-post/#product",
+     "title": "Claude 语音模式升级：跨平台强模型加持"
+    },
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#model-release",
+     "title": "Anthropic 升级 Claude 语音模式：更强模型 + 任务执行"
     },
     {
      "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#model-release",
-     "title": "阿里千问3.8预览版上线，开源承诺保持压力"
+     "url": "/posts/2026-07-19-ai-morning-post/#product",
+     "title": "Claude Code 改用 Rust 版 Bun，启动再提速 10%"
+    },
+    {
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#product",
+     "title": "Anthropic 推出 Claude for Teachers，承诺不训练学生数据"
+    }
+   ]
+  },
+  {
+   "name": "Meta",
+   "score": 13.87,
+   "days": 22,
+   "latest": {
+    "date": "2026-07-29",
+    "url": "/posts/2026-07-28-ai-morning-post/#product",
+    "title": "Meta AI 聊天机器人入驻 Threads 私信"
+   },
+   "links": [
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#product",
+     "title": "Meta AI 聊天机器人入驻 Threads 私信"
+    },
+    {
+     "date": "2026-07-28",
+     "url": "/posts/2026-07-27-ai-morning-post/#product",
+     "title": "Threads 私信接入 Meta AI 聊天机器人"
+    },
+    {
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#company",
+     "title": "英伟达/微软/Meta联合呼吁勿过度限制开放权重"
+    },
+    {
+     "date": "2026-07-25",
+     "url": "/posts/2026-07-24-ai-morning-post/#opinion",
+     "title": "Meta AI广告配歌“人类五年后灭亡”，被批不明智"
+    },
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#opinion",
+     "title": "Meta新AI广告的背景歌曲是关于人类灭绝"
+    },
+    {
+     "date": "2026-07-23",
+     "url": "/posts/2026-07-22-ai-morning-post/#product",
+     "title": "Meta测试AI睡前故事：想象力的民主化还是贬值？"
+    },
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#opensource",
+     "title": "Meta 开源 Astryx：150+ 组件的 Agent 就绪设计系统"
+    },
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#company",
+     "title": "Meta拟卖算力，Anthropic或成首批客户"
     }
    ]
   },
   {
    "name": "NVIDIA",
-   "score": 14.0,
+   "score": 13.32,
    "days": 16,
    "latest": {
     "date": "2026-07-28",
@@ -315,60 +367,8 @@
    ]
   },
   {
-   "name": "Meta",
-   "score": 13.74,
-   "days": 21,
-   "latest": {
-    "date": "2026-07-28",
-    "url": "/posts/2026-07-27-ai-morning-post/#product",
-    "title": "Threads 私信接入 Meta AI 聊天机器人"
-   },
-   "links": [
-    {
-     "date": "2026-07-28",
-     "url": "/posts/2026-07-27-ai-morning-post/#product",
-     "title": "Threads 私信接入 Meta AI 聊天机器人"
-    },
-    {
-     "date": "2026-07-26",
-     "url": "/posts/2026-07-25-ai-morning-post/#company",
-     "title": "英伟达/微软/Meta联合呼吁勿过度限制开放权重"
-    },
-    {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#opinion",
-     "title": "Meta AI广告配歌“人类五年后灭亡”，被批不明智"
-    },
-    {
-     "date": "2026-07-24",
-     "url": "/posts/2026-07-23-ai-morning-post/#opinion",
-     "title": "Meta新AI广告的背景歌曲是关于人类灭绝"
-    },
-    {
-     "date": "2026-07-23",
-     "url": "/posts/2026-07-22-ai-morning-post/#product",
-     "title": "Meta测试AI睡前故事：想象力的民主化还是贬值？"
-    },
-    {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#opensource",
-     "title": "Meta 开源 Astryx：150+ 组件的 Agent 就绪设计系统"
-    },
-    {
-     "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#company",
-     "title": "Meta拟卖算力，Anthropic或成首批客户"
-    },
-    {
-     "date": "2026-07-18",
-     "url": "/posts/2026-07-17-ai-morning-post/#company",
-     "title": "Meta拟将过剩AI算力卖给Anthropic"
-    }
-   ]
-  },
-  {
    "name": "Google",
-   "score": 13.32,
+   "score": 12.52,
    "days": 17,
    "latest": {
     "date": "2026-07-28",
@@ -420,14 +420,19 @@
   },
   {
    "name": "芯片",
-   "score": 11.55,
+   "score": 11.77,
    "days": 20,
    "latest": {
-    "date": "2026-07-28",
-    "url": "/posts/2026-07-27-ai-morning-post/#company",
-    "title": "NVIDIA 利用 Vera CPU 加速下一代芯片设计"
+    "date": "2026-07-29",
+    "url": "/posts/2026-07-28-ai-morning-post/#company",
+    "title": "Ilya Sutskever的SSI与英伟达达成投资与芯片迁移合作"
    },
    "links": [
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#company",
+     "title": "Ilya Sutskever的SSI与英伟达达成投资与芯片迁移合作"
+    },
     {
      "date": "2026-07-28",
      "url": "/posts/2026-07-27-ai-morning-post/#company",
@@ -462,17 +467,64 @@
      "date": "2026-07-20",
      "url": "/posts/2026-07-19-ai-morning-post/#product",
      "title": "云天励飞发布三款 AI 推理芯片与超节点集群"
+    }
+   ]
+  },
+  {
+   "name": "世界模型",
+   "score": 7.9,
+   "days": 15,
+   "latest": {
+    "date": "2026-07-29",
+    "url": "/posts/2026-07-28-ai-morning-post/#research",
+    "title": "世界模型学会触觉：50 万小时视频训练"
+   },
+   "links": [
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#research",
+     "title": "世界模型学会触觉：50 万小时视频训练"
     },
     {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#company",
-     "title": "蔚来芯片公司神玑发布具身智能开发平台"
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#model-release",
+     "title": "国产世界模型登顶李飞飞团队 VEA 榜单"
+    },
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+     "title": "NVIDIA发布Cosmos 3 Edge开放世界模型：40亿参数，支持设备端运行"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#research",
+     "title": "Deepmind：视频生成器已隐含世界模型，计算机视觉所需"
+    },
+    {
+     "date": "2026-07-15",
+     "url": "/posts/2026-07-14-ai-morning-post/#research",
+     "title": "世界模型的承诺与局限：专家解读"
+    },
+    {
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#research",
+     "title": "世界模型综述：通往 AGI 的关键，但远未成熟"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#model-release",
+     "title": "中国Orca世界模型无需动作标签匹配专业机器人"
+    },
+    {
+     "date": "2026-07-10",
+     "url": "/posts/2026-07-09-ai-morning-post/#opensource",
+     "title": "蚂蚁灵波发布世界模型 2.0：支持小时级生成与Agent交互"
     }
    ]
   },
   {
    "name": "腾讯",
-   "score": 8.29,
+   "score": 7.77,
    "days": 13,
    "latest": {
     "date": "2026-07-25",
@@ -524,7 +576,7 @@
   },
   {
    "name": "算力",
-   "score": 8.03,
+   "score": 7.55,
    "days": 12,
    "latest": {
     "date": "2026-07-27",
@@ -575,8 +627,60 @@
    ]
   },
   {
+   "name": "ChatGPT",
+   "score": 7.55,
+   "days": 8,
+   "latest": {
+    "date": "2026-07-29",
+    "url": "/posts/2026-07-28-ai-morning-post/#product",
+    "title": "ChatGPT 更新：禁止直接克隆作家风格"
+   },
+   "links": [
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#product",
+     "title": "ChatGPT 更新：禁止直接克隆作家风格"
+    },
+    {
+     "date": "2026-07-28",
+     "url": "/posts/2026-07-27-ai-morning-post/#product",
+     "title": "ChatGPT 开始阻止直接模仿作家风格的请求"
+    },
+    {
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#product",
+     "title": "ChatGPT新增个人健康助手功能"
+    },
+    {
+     "date": "2026-07-25",
+     "url": "/posts/2026-07-24-ai-morning-post/#research",
+     "title": "ChatGPT 健康建议：付费墙背后的医疗不平等"
+    },
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#company",
+     "title": "OpenAI 推出 ChatGPT 小企业计划"
+    },
+    {
+     "date": "2026-07-17",
+     "url": "/posts/2026-07-16-ai-morning-post/#product",
+     "title": "OpenAI 推出 ChatGPT 品牌篮球（没错，是篮球）"
+    },
+    {
+     "date": "2026-07-15",
+     "url": "/posts/2026-07-14-ai-morning-post/#product",
+     "title": "ChatGPT重返WhatsApp欧盟区"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#product",
+     "title": "OpenAI招聘家庭产品经理，ChatGPT深入家庭"
+    }
+   ]
+  },
+  {
    "name": "Hugging Face",
-   "score": 7.81,
+   "score": 7.39,
    "days": 11,
    "latest": {
     "date": "2026-07-27",
@@ -627,153 +731,49 @@
    ]
   },
   {
-   "name": "世界模型",
-   "score": 7.42,
-   "days": 14,
-   "latest": {
-    "date": "2026-07-26",
-    "url": "/posts/2026-07-25-ai-morning-post/#model-release",
-    "title": "国产世界模型登顶李飞飞团队 VEA 榜单"
-   },
-   "links": [
-    {
-     "date": "2026-07-26",
-     "url": "/posts/2026-07-25-ai-morning-post/#model-release",
-     "title": "国产世界模型登顶李飞飞团队 VEA 榜单"
-    },
-    {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
-     "title": "NVIDIA发布Cosmos 3 Edge开放世界模型：40亿参数，支持设备端运行"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#research",
-     "title": "Deepmind：视频生成器已隐含世界模型，计算机视觉所需"
-    },
-    {
-     "date": "2026-07-15",
-     "url": "/posts/2026-07-14-ai-morning-post/#research",
-     "title": "世界模型的承诺与局限：专家解读"
-    },
-    {
-     "date": "2026-07-14",
-     "url": "/posts/2026-07-13-ai-morning-post/#research",
-     "title": "世界模型综述：通往 AGI 的关键，但远未成熟"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#model-release",
-     "title": "中国Orca世界模型无需动作标签匹配专业机器人"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#opensource",
-     "title": "蚂蚁灵波发布世界模型 2.0：支持小时级生成与Agent交互"
-    },
-    {
-     "date": "2026-07-09",
-     "url": "/posts/2026-07-08-ai-morning-post/#research",
-     "title": "智源发布悟界·Orca：世界模型的Next State Prediction路径"
-    }
-   ]
-  },
-  {
-   "name": "ChatGPT",
-   "score": 6.84,
+   "name": "开源模型",
+   "score": 5.55,
    "days": 7,
    "latest": {
-    "date": "2026-07-28",
-    "url": "/posts/2026-07-27-ai-morning-post/#product",
-    "title": "ChatGPT 开始阻止直接模仿作家风格的请求"
+    "date": "2026-07-29",
+    "url": "/posts/2026-07-28-ai-morning-post/#model-release",
+    "title": "月之暗面开源Kimi K3：全球最大开源模型易主"
    },
    "links": [
     {
-     "date": "2026-07-28",
-     "url": "/posts/2026-07-27-ai-morning-post/#product",
-     "title": "ChatGPT 开始阻止直接模仿作家风格的请求"
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#model-release",
+     "title": "月之暗面开源Kimi K3：全球最大开源模型易主"
     },
     {
-     "date": "2026-07-26",
-     "url": "/posts/2026-07-25-ai-morning-post/#product",
-     "title": "ChatGPT新增个人健康助手功能"
+     "date": "2026-07-27",
+     "url": "/posts/2026-07-26-ai-morning-post/#opinion",
+     "title": "美国对中国开源模型：拆解而非围堵"
     },
     {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#research",
-     "title": "ChatGPT 健康建议：付费墙背后的医疗不平等"
-    },
-    {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#company",
-     "title": "OpenAI 推出 ChatGPT 小企业计划"
-    },
-    {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#product",
-     "title": "OpenAI 推出 ChatGPT 品牌篮球（没错，是篮球）"
-    },
-    {
-     "date": "2026-07-15",
-     "url": "/posts/2026-07-14-ai-morning-post/#product",
-     "title": "ChatGPT重返WhatsApp欧盟区"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#product",
-     "title": "OpenAI招聘家庭产品经理，ChatGPT深入家庭"
-    }
-   ]
-  },
-  {
-   "name": "百度",
-   "score": 5.19,
-   "days": 11,
-   "latest": {
-    "date": "2026-07-23",
-    "url": "/posts/2026-07-22-ai-morning-post/#model-release",
-    "title": "百度文心助手任务 Agent 首登国际榜首"
-   },
-   "links": [
-    {
-     "date": "2026-07-23",
-     "url": "/posts/2026-07-22-ai-morning-post/#model-release",
-     "title": "百度文心助手任务 Agent 首登国际榜首"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#product",
-     "title": "百度秒哒 3.5 版本升级，占据 AI 无代码平台 33% 份额"
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#opinion",
+     "title": "MIT 技术评论：中国开源模型让特朗普AI团队内部分裂"
     },
     {
      "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#product",
-     "title": "百度秒哒3.5发布，中国市场第一"
+     "url": "/posts/2026-07-18-ai-morning-post/#model-release",
+     "title": "英国 AISI：开源模型网络安全性能已达四个月前前沿水平"
     },
     {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#company",
-     "title": "Apple Intelligence 获准在华上线，接入阿里和百度 AI"
+     "date": "2026-07-18",
+     "url": "/posts/2026-07-17-ai-morning-post/#model-release",
+     "title": "Mira Murati团队发布首个开源模型Inkling"
     },
     {
-     "date": "2026-07-16",
-     "url": "/posts/2026-07-15-ai-morning-post/#product",
-     "title": "百度搭子入选 WAIC 2026 镇馆之宝"
+     "date": "2026-07-14",
+     "url": "/posts/2026-07-13-ai-morning-post/#model-release",
+     "title": "德国联合体发布Soofi S：30B开源模型双语封顶"
     },
     {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#product",
-     "title": "百度搭子升级企业版，日均提问增 20 倍"
-    },
-    {
-     "date": "2026-07-08",
-     "url": "/posts/2026-07-07-ai-morning-post/#company",
-     "title": "百度基础模型研发部换帅，孙天祥接任"
-    },
-    {
-     "date": "2026-07-07",
-     "url": "/posts/2026-07-06-ai-morning-post/#product",
-     "title": "百度推出 Unlimited OCR：模拟人类遗忘机制突破长度限制"
+     "date": "2026-07-10",
+     "url": "/posts/2026-07-09-ai-morning-post/#opinion",
+     "title": "开源模型赢Token流量，Anthropic却赚走大部分利润"
     }
    ]
   }
