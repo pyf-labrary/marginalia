@@ -1,6 +1,6 @@
 # Marginalia
 
-研究笔记 + 多页作品集站点。基于 Jekyll + GitHub Pages。
+研究笔记 + 多页作品集站点。基于 Jekyll；GitHub Actions 构建后发布到 pyf nginx。
 
 **站点**：https://jinzi.cyou/
 
@@ -81,4 +81,4 @@ bundle install
 bundle exec jekyll serve
 ```
 
-不安装也行——push 后让 GitHub Pages 在线构建即可。
+不安装也行——push `main` 后由 GitHub Actions 在线构建并以受限 rsync 发布。
