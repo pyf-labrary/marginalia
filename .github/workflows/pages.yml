@@ -1,57 +1,65 @@
-name: Deploy Jekyll site to Pages
+name: Deploy Jekyll site to pyf
 
-# Legacy Pages 构建器 2026-07-02 起对本仓失效（dur=0 "Page build failed"），
-# 改用官方 GitHub Actions 构建（actions/jekyll-build-pages 内部同样跑 github-pages gem）。
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
 
-# 允许 GITHUB_TOKEN 部署到 Pages
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
-# 同一时刻只跑一个部署；不取消进行中的，让已入队的产出完成
 concurrency:
-  group: "pages"
+  group: "deploy-pyf"
   cancel-in-progress: false
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll (github-pages gem)
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      # Pages 部署端偶发 "Deployment failed, try again later."（迁 Actions 构建后 ~22:50 UTC
-      # 的 ai-hot 每日 push 高发）。首次失败后等 90s 重试一次，避免当日文章卡到次日才随
-      # 下一次 push 顺带上线。artifact 已上传，重试只是让 Pages 后端再同步一遍。
-      # continue-on-error 让首次失败不直接判 job 失败——由重试步骤决定最终成败，避免 run 误标红。
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-        continue-on-error: true
-      - name: Wait before retry
-        if: steps.deployment.outcome == 'failure'
-        run: sleep 90
-      - name: Deploy to GitHub Pages (retry)
-        if: steps.deployment.outcome == 'failure'
-        uses: actions/deploy-pages@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --destination _site
+
+      - name: Reject legacy project paths
+        run: |
+          if grep -R -E '(href|src|poster|content|data-url)="/marginalia/' _site; then
+            echo "::error::Generated site still contains legacy /marginalia paths"
+            exit 1
+          fi
+
+      - name: Configure restricted deploy key
+        env:
+          PYF_SSH_KEY: ${{ secrets.PYF_SSH_KEY }}
+          PYF_SSH_KNOWN_HOSTS: ${{ secrets.PYF_SSH_KNOWN_HOSTS }}
+        run: |
+          install -d -m 700 "$HOME/.ssh"
+          printf '%s\n' "$PYF_SSH_KEY" > "$HOME/.ssh/marginalia_deploy"
+          printf '%s\n' "$PYF_SSH_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/marginalia_deploy"
+          chmod 644 "$HOME/.ssh/known_hosts"
+
+      - name: Deploy static site to pyf
+        run: |
+          for attempt in 1 2 3; do
+            if rsync -az --delete-delay --delay-updates \
+              --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
+              -e "ssh -i $HOME/.ssh/marginalia_deploy -o IdentitiesOnly=yes" \
+              _site/ marginalia-deploy@8.134.13.244:/; then
+              exit 0
+            fi
+            sleep $((attempt * 15))
+          done
+          exit 1
+
+      - name: Remove deploy key
+        if: always()
+        run: rm -f "$HOME/.ssh/marginalia_deploy"
