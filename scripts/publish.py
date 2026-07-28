@@ -198,6 +198,7 @@ def convert_file(src: Path, args) -> Path | None:
          or re.search(r'<img[^>]+src="([^"]+)"', body))
     if m:
         cover = m.group(1)
+        # Keep accepting legacy drafts generated before the custom-domain move.
         if cover.startswith("/marginalia/"):
             cover = cover[len("/marginalia"):]
         if cover.startswith("/assets/"):

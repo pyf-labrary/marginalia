@@ -39,7 +39,7 @@ GPT-5.5 Instant 是 OpenAI 对旗舰模型的一次“精度优先”升级。�
 
 ### Google 发布 Gemma 4 多 token 预测，加速 3 倍
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-07/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-07/model_release-01.jpg)
 
 
 Google 开源了用于 Gemma 4 的多 token 预测（MTP）Drafters 技术。传统的自回归逐 token 生成被替换为一次预测多个 token，推理速度最高提升 3 倍，且质量没有损失。对于需要低延迟推理的实时场景（如对话、编程助手），这一提升意义重大。MTP 是 Google 在模型推理效率上的一次前沿开源贡献，可能引领后续开源模型的设计方向。
@@ -48,7 +48,7 @@ Google 开源了用于 Gemma 4 的多 token 预测（MTP）Drafters 技术。传
 
 ### GLM-5V-Turbo 发布：多模态 Agent 基础模型
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-05-07/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-05-07/model_release-02.jpg)
 
 
 智谱开源了 GLM-5V-Turbo，定位为原生多模态 Agent 基础模型。它支持视觉与语言的联合推理，不仅能“看懂”图像，还能结合语言理解进行任务规划与执行。这一模型为建造真正的视觉 Agent 提供了底层能力，比如帮助机器人理解环境、辅助文档中的图表分析。虽然当前重要性相对较低，但开源的 Agent 基础模型正在缩小与闭源方案在复杂推理上的差距。
@@ -67,7 +67,7 @@ Google 开源了用于 Gemma 4 的多 token 预测（MTP）Drafters 技术。传
 
 ### 马斯克诉 OpenAI 庭审：Brockman 日记被当庭宣读
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-07/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-07/company-00.jpg)
 
 
 马斯克律师在庭审中要求 OpenAI 主席 Greg Brockman 逐字朗读其个人日记，以证明 OpenAI 早期承诺的非营利使命已转向利润最大化。Brockman 在法庭上解释，日记中“贪婪”等措辞应结合上下文理解，但陪审团已接触到核心证据。此案的关键在于：OpenAI 是否因与微软的协议丧失了独立性。若马斯克胜诉，可能迫使 OpenAI 重构治理结构或赔偿。
@@ -76,7 +76,7 @@ Google 开源了用于 Gemma 4 的多 token 预测（MTP）Drafters 技术。传
 
 ### Anthropic 与 SpaceX 签署计算合同，获取 22 万 GPU
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-07/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-07/company-01.jpg)
 
 
 Anthropic 宣布租用 SpaceX 旗下 Colossus-1 数据中心，获得 22 万张 GPU 用于 Claude 的训练与推理，同时提升了代码使用上限。这笔交易标志着 AI 公司开始向太空基础设施延伸算力供应链——SpaceX 凭借低延迟卫星网络和模块化数据中心，正在成为 GPU-as-a-Service 的新玩家。对于 Anthropic，此举可缓解对 AWS/Google Cloud 的过度依赖。
@@ -85,7 +85,7 @@ Anthropic 宣布租用 SpaceX 旗下 Colossus-1 数据中心，获得 22 万张 
 
 ### DeepSeek 估值逼近 450 亿美元，中国芯片基金领投
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-07/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-07/company-02.jpg)
 
 
 DeepSeek 即将完成首轮外部融资，估值约 450 亿美元，由国家芯片大基金领投。这不仅是 DeepSeek 首次接受外部资本，也反映出中国在自主 AI 算力生态上的战略押注。相较于 OpenAI 和 Anthropic，DeepSeek 采取更激进的模型开源策略，但估值已接近头部梯队。投资者需警惕：高估值背后是地缘政治风险与商业化路径的不确定性。
@@ -94,7 +94,7 @@ DeepSeek 即将完成首轮外部融资，估值约 450 亿美元，由国家芯
 
 ### 美国政府获五大 AI 实验室模型预发布权限
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-07/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-07/company-03.jpg)
 
 
 美国国防部与五大 AI 实验室（含 OpenAI、Anthropic、Google DeepMind 等）达成协议，在模型公开发布前获准进行国家安全测试。专家警告，该协议可能造成两大隐患：一是政府否决权可能延缓技术迭代，二是测试标准不透明易被利用为行政干预工具。对从业者而言，这意味着今后新模型的发布窗口期可能从“立即”变为“等待联邦放行”。
@@ -103,7 +103,7 @@ DeepSeek 即将完成首轮外部融资，估值约 450 亿美元，由国家芯
 
 ### 苹果支付 2.5 亿美元和解 Siri AI 功能诉讼
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-07/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-07/company-04.jpg)
 
 
 苹果同意支付 2.5 亿美元，就 Siri 的 AI 功能宣传与实际延迟不符的集体诉讼达成和解。原告指控苹果在 2023–2025 年间广告中称 Siri 已具备“高级 AI 能力”，但实际功能大幅缩水。这笔赔偿覆盖美国用户，平均每位获赔约 20 美元。关键不在金额，而在于科技巨头必须为“AI 能力超前宣传”付出代价——这将成为产品营销合规的标杆判例。
@@ -112,7 +112,7 @@ DeepSeek 即将完成首轮外部融资，估值约 450 亿美元，由国家芯
 
 ### 出版商指控 Zuckerberg 亲自授权 Meta 版权侵权
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-07/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-07/company-05.jpg)
 
 
 在出版商的集体诉讼文件中，原告出示邮件等证据表明 Meta CEO 马克·扎克伯格“亲自授权并鼓励”其 AI 团队使用受版权保护的书籍训练 LLaMA 模型。若指控成立，扎克伯格可能被列为共同被告，面临个人赔偿责任。此案与 OpenAI 庭审形成呼应：管理层对训练数据的知情程度，正成为版权诉讼的攻防焦点。
@@ -121,7 +121,7 @@ DeepSeek 即将完成首轮外部融资，估值约 450 亿美元，由国家芯
 
 ### Anthropic 承诺五年内向 Google Cloud 投入 2000 亿美元
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-07/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-07/company-06.jpg)
 
 
 Anthropic 与 Google Cloud 签署五年期合同，承诺云服务支出总额达 2000 亿美元（年均 400 亿），进一步加深双方在模型训练和推理上的绑定。有趣的是，Anthropic 同日宣布与 SpaceX 达成算力合作——多供应商策略意在掌控议价权，但 2000 亿美元的承诺规模意味着 Google Cloud 仍是其核心基础设施伙伴。对于 AWS 和 Azure，这是一个明确的抢单信号。
@@ -130,7 +130,7 @@ Anthropic 与 Google Cloud 签署五年期合同，承诺云服务支出总额�
 
 ### SAP 以 11.6 亿美元收购德国 AI 实验室 Prior Labs
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-07/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-07/company-07.jpg)
 
 
 SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣布其企业客户 Agent 只能使用 Nvidia NemoClaw 及少量模型。Prior Labs 主攻工业场景的因果推理模型，SAP 此举意图锁定 ERP 领域 AI 话语权。限制模型选择可能引发企业 CIO 反弹，但也反映出 SAP 想构建类似“Apple 围墙花园”的 AI 生态。
@@ -149,7 +149,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### 临床 LLM 安全性缩放定律不同于准确率
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-07/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-07/research-00.jpg)
 
 
 **是什么**：一篇发表于 Arxiv 上的论文系统研究了大型临床语言模型（LLM）的安全性与准确率随模型规模变化的趋势。与常见的"越大越好"直觉不同，安全性的缩放规律与准确率并不一致。  
@@ -168,7 +168,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### Claude Managed Agents 新增“梦境”模式，限额翻倍
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-07/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-07/product-00.jpg)
 
 
 **是什么**：Anthropic 为 Claude Code 新推“梦境”模式，允许 Agent 在运行过程中进行内部模拟推理（类似“睡眠中回顾经验”），以提升复杂任务的正确性。同时 Pro 和 Max 用户的使用配额直接翻倍。菲尔兹奖得主陶哲轩在社交媒体上公开推荐，称“感觉像多了一个研究员助理”。
@@ -181,7 +181,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### ChatGPT 广告平台向中小企业开放
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-07/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-07/product-01.jpg)
 
 
 **是什么**：OpenAI 推出全自助广告平台，允许中小企业通过简单界面创建和管理 ChatGPT 中的原生广告。广告将出现在对话上下文中（如推荐相关服务），而非传统横幅。
@@ -194,7 +194,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### OpenAI 硬件首作可能是手机，以 Agent 取代 App 网格
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-07/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-07/product-02.jpg)
 
 
 **是什么**：消息人士称 OpenAI 正在开发一款手机，核心交互不是传统应用网格，而是一个 Agent 驱动的任务流界面。用户说出需求，Agent 自动编排工具和 API 完成。
@@ -207,7 +207,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### Cloudflare Agent 可自主创建账户、购买域名并部署
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-07/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-07/product-03.jpg)
 
 
 **是什么**：Cloudflare 推出新 Agent 功能，用户只需给出一个项目描述，Agent 就能自动创建 Cloudflare 账户、购买域名、配置 DNS 并部署应用。
@@ -220,7 +220,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### Google Home 升级 Gemini 语音助手与摄像头控制
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-07/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-07/product-04.jpg)
 
 
 **是什么**：Google 智能家居生态大更新，Home Hub 及 Nest 设备获得 Gemini 驱动的新语音助手，支持更自然的连续对话，并新增摄像头智能控制（如识别快递员、宠物触发录像）。
@@ -233,7 +233,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### iOS 27 将允许用户自选第三方 AI 模型
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-07/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-07/product-05.jpg)
 
 
 **是什么**：Apple 计划在 iOS 27 中引入“AI 模型选择器”，允许用户针对不同任务（如写作、翻译、修图）选择使用不同的第三方 AI 模型（如 GPT-5、Claude、Gemini 等），而非强制使用 Apple 自有模型。
@@ -246,7 +246,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### Google AI 搜索加入 Reddit 等论坛引用
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-07/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-07/product-06.jpg)
 
 
 **是什么**：Google 更新 AI Overviews，在 AI 生成的回答中引用 Reddit、Quora 及其他网络论坛的“专家意见”，并注明用户昵称和来源。
@@ -259,7 +259,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### NVIDIA 与 ServiceNow 联合发布企业自主 AI Agent
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-05-07/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-05-07/product-07.jpg)
 
 
 **是什么**：NVIDIA 与 ServiceNow 合作推出用于企业自动化的自主 AI Agent，能够处理 IT 服务台、HR 流程、代码部署等端到端工作流。
@@ -282,7 +282,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### DeepMind 员工投票成立工会，反对军事 AI
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-07/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-07/opinion-00.jpg)
 
 
 英国 DeepMind 员工正式投票组建工会，隶属英国联合工会（Unite）。关键点：工会目标是让员工在 AI 部署于军事场景时拥有发言权，而非直接阻止所有军用项目。DeepMind 此前已与 Google 整合，并承接过国防相关合同。投票后，工会将获得正式谈判地位，可代表员工就伦理政策与公司协商。为什么重要：这是大型 AI 实验室首次以集体劳动组织的形式介入技术伦理决策，可能成为行业先例——如果成功，其他 AI 公司的员工也可能效仿，倒逼企业在商业化与价值观之间更透明地博弈。
@@ -303,7 +303,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### 研究：使用 AI 仅 10 分钟即可削弱思考能力
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-07/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-07/opinion-03.jpg)
 
 
 《Wired》报道了一项新研究：参与者在用 AI 助手完成简单任务仅 10 分钟后，后续在无 AI 辅助的推理测试中表现明显下降，尤其是在需要批判性判断和问题拆解的环节。研究人员将原因归结为「认知卸载」——大脑快速形成依赖，主动思考动机降低。为什么重要：这不是“AI 让人变笨”的恐慌论，而是提醒产品设计者注意：当 AI 被无缝嵌入日常工具时，用户的认知肌肉可能悄悄萎缩。对教育、培训和生产力工具而言，这提示需要刻意设计“断 AI”时刻或深度推理环节。
@@ -312,7 +312,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### 结语
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-07/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-07/opinion-04.jpg)
 
 
 当 AI 的“可用性”越来越高，人类需要警惕的或许不是机器变强，而是自己变懒。你能确定今天自己做的决定，有多少来自独立思考？
@@ -327,7 +327,7 @@ SAP 以 11.6 亿美元收购成立仅 18 个月的 AI 初创 Prior Labs，并宣
 
 ### vLLM V1：RL 推理引擎重写，正确性优先
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-07/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-07/opensource-00.jpg)
 
 
 vLLM 从 V0 到 V1 的核心变化是重构了强化学习（RL）推理引擎，将正确性置于性能之上。新版本通过重新设计内存管理与调度逻辑，解决了旧版在高并发 RL 场景下的状态一致性问题，避免因性能优化导致的推理错误。这意味着在训练与推理一体化的 Agent 系统中，vLLM V1 能更可靠地适配在线策略更新，尤其适用于需要反复评估奖励模型的场景。对开发者而言，迁移成本有限但收益明确——更稳定的推理结果意味着更少的调试时间。
@@ -336,7 +336,7 @@ vLLM 从 V0 到 V1 的核心变化是重构了强化学习（RL）推理引擎�
 
 ### Vercel 开源 Open Agents：后台编码工作流框架
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-07/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-07/opensource-01.jpg)
 
 
 Vercel 开源的 Open Agents 框架允许开发者将 AI 编码工作流部署到后台执行，用户不必等待实时响应。该框架基于 Node.js 环境，支持任务队列、状态持久化和断点恢复，特别适合长时间运行的代码生成、审查与重构任务。与多数 Agent 框架依赖前端实时交互不同，Open Agents 将编码行为抽象为可调度作业，降低了前端性能压力。对于构建 CI/CD 集成或自动化开发管道的团队，这是一个直接可用的基础设施层。
@@ -345,7 +345,7 @@ Vercel 开源的 Open Agents 框架允许开发者将 AI 编码工作流部署�
 
 ### TabPFN 开源：表格数据的基础模型
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-07/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-07/opensource-02.jpg)
 
 
 PriorLabs 开源了 TabPFN，一个专为表格数据设计的 Transformer 基础模型。它不需要特征工程或超参数调优，直接对原始表格进行前向传播即可完成分类与回归任务，在多个标准基准上达到或超越传统树模型（如 XGBoost）。核心创新在于利用预训练时的“先验拟合”（Prior Fitting）方法，使模型在小样本场景下仍能泛化。这对数据科学团队意味着：在处理结构化数据时，可以跳过繁重的 pipeline 搭建，直接调用一个干净的基础模型。
@@ -360,7 +360,7 @@ Airbyte 发布 Agents，让 AI Agent 能够跨多个数据源（数据库、API�
 
 ### Cocoindex：面向长周期 Agent 的增量更新引擎
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-07/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-07/opensource-04.jpg)
 
 
 Cocoindex 是一个开源增量引擎，专为长时间运行的 AI Agent 设计，支持仅对变化的数据（增量）重新索引与更新状态，而不必全量重建。其核心是事件驱动的索引层，在 Agent 持续运行过程中，只处理新增或修改的文档，降低重复计算开销。对于构建知识库型 Agent、持续学习系统或自动化工作流的团队，这能显著减少算力浪费，并提升响应速度。
@@ -369,7 +369,7 @@ Cocoindex 是一个开源增量引擎，专为长时间运行的 AI Agent 设计
 
 ### Browserbase Skills：Claude Code 的网页浏览工具集
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-07/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-07/opensource-05.jpg)
 
 
 Browserbase 开源了 Skills 工具集，让 Claude Code 首次具备完整的网页浏览与交互能力。它封装了浏览器自动化（模拟点击、滚动、表单填写等）并暴露为函数调用接口，Claude Code 可以通过自然语言指令操作任意网页。这对于需要爬取动态内容、执行 Web 端测试或自动化数据采集的开发者来说，将 AI 编程代理的能力从本地文件系统延伸到了互联网。
@@ -378,7 +378,7 @@ Browserbase 开源了 Skills 工具集，让 Claude Code 首次具备完整的�
 
 ### DeepSeek-TUI：终端原生百万 token 编码代理
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-05-07/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-05-07/opensource-06.jpg)
 
 
 DeepSeek-TUI 是一个终端下运行的 DeepSeek 编程代理，支持高达 100 万 token 的上下文窗口以及前缀缓存功能。它直接运行在终端中，无需图形界面，适合服务器端或远程 SSH 环境下的编码任务。百万级上下文意味着它可以一次性加载整个代码库进行重构，而前缀缓存能加速重复查询。对于需要在低配机器或无桌面环境的开发者，这是一个轻量级但功能不妥协的选择。
@@ -387,7 +387,7 @@ DeepSeek-TUI 是一个终端下运行的 DeepSeek 编程代理，支持高达 10
 
 ### Rapid-MLX：Apple Silicon 本地 AI 引擎，声称比 Ollama 快 4.2 倍
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-07/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-07/opensource-07.jpg)
 
 
 Rapid-MLX 是一个针对 Apple Silicon（M 系列芯片）优化的本地 AI 推理引擎，官方称其运行速度比 Ollama 快 4.2 倍，且支持完整的工具调用（function calling），兼容 OpenAI 客户端协议。它利用 Apple 的 Metal 框架和统一内存架构实现低延迟，理论上可在 MacBook 上流畅运行 7B 参数模型。对于 Mac 生态的开发者，这提供了一种比 Ollama 更高效的本地推理替代方案，尤其适合需要低延迟工具调用的 Agent 场景。

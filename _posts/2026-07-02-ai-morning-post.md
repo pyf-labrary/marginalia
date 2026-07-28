@@ -33,7 +33,7 @@ sections:
 
 ### Claude Sonnet 5：性能提价降，Agent能力成核心卖点
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-02/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-02/model_release-00.jpg)
 
 
 **是什么**：Anthropic推出Claude Sonnet 5，即日起通过API和平台可用。相比上一代，它更便宜、推理速度更快，且Agent能力显著增强，官方称“缩小与Opus的差距”。
@@ -46,7 +46,7 @@ sections:
 
 ### Anthropic高端模型全球解禁：出口管制成历史
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-02/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-02/model_release-01.jpg)
 
 
 **是什么**：美国商务部解除对Anthropic高级模型的出口管制，Fable 5和Mythos 5重新向全球用户开放，同时新增安全分类器层。
@@ -59,7 +59,7 @@ sections:
 
 ### Google Nano Banana 2 Lite：最快最便宜的图像模型
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-02/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-02/model_release-02.jpg)
 
 
 **是什么**：Google DeepMind发布Nano Banana 2 Lite，号称“最快、最便宜的图像生成模型”，几秒内出图，面向创作者和轻量级应用。
@@ -72,7 +72,7 @@ sections:
 
 ### OpenAI论文泄密：或有三款GPT-5.6 Pro模型
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-02/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-02/model_release-03.jpg)
 
 
 **是什么**：OpenAI一篇关于基因组的论文意外提及尚未公布的Pro系列模型，可能包括三款不同规模的GPT-5.6 Pro，打破此前单旗舰策略。
@@ -85,7 +85,7 @@ sections:
 
 ### NVIDIA开源Nemotron-Labs-TwoTower：扩散语言模型新尝试
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-07-02/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-07-02/model_release-04.jpg)
 
 
 **是什么**：NVIDIA发布Nemotron-Labs-TwoTower，一种基于预训练自回归框架的扩散语言模型，并开源权重。目标突破推理吞吐瓶颈。
@@ -98,7 +98,7 @@ sections:
 
 ### Google TabFM：表格零样本学习的基础模型
 
-![model_release-05.jpg](/marginalia/assets/img/ai-hot/2026-07-02/model_release-05.jpg)
+![model_release-05.jpg](/assets/img/ai-hot/2026-07-02/model_release-05.jpg)
 
 
 **是什么**：Google Research发布TabFM，一个混合注意力表格基础模型，支持零样本分类和回归，通过上下文学习实现单次前向预测。
@@ -119,7 +119,7 @@ sections:
 
 ### 导语
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-02/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-02/company-00.jpg)
 
 
 今天最值得关注的是Meta计划将多余AI算力打包出售，正式进军云业务——这既是算力过剩的信号，也意味着云市场将多一个手握自研模型+基础设施的玩家。与此同时，NVIDIA对手Etched拿下10亿美元推理合同、Together AI获8亿美元融资，开源与闭源、芯片与云，竞争格局正在快速裂变。
@@ -128,7 +128,7 @@ sections:
 
 ### Etched估值50亿美元，AI芯片合同达10亿
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-02/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-02/company-01.jpg)
 
 
 **是什么**：NVIDIA竞争者Etched宣布已锁定总计10亿美元的AI推理系统合同，公司估值达到50亿美元。
@@ -143,7 +143,7 @@ sections:
 
 ### Meta计划出售多余AI算力，进军云业务
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-02/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-02/company-02.jpg)
 
 
 **是什么**：Meta拟新建云基础设施业务，对外出售闲置的AI算力和模型使用权，与AWS、Azure、GCP直接竞争。
@@ -158,7 +158,7 @@ sections:
 
 ### Together AI获8亿美元C轮融资，加速开源AI
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-02/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-02/company-03.jpg)
 
 
 **是什么**：Together AI宣布完成8亿美元C轮融资，公司估值未披露。CEO在博客中称封闭模型经济不可持续，将全力支持开源。
@@ -173,7 +173,7 @@ sections:
 
 ### Amazon成立10亿美元FDE部门，推进企业Agent部署
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-02/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-02/company-04.jpg)
 
 
 **是什么**：亚马逊组建新的Forward Deployed Engineer（FDE）部门，初始预算10亿美元，专注帮助企业客户部署AI Agent。
@@ -188,7 +188,7 @@ sections:
 
 ### Cloudflare新政：AI公司须为发布者内容付费
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-02/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-02/company-05.jpg)
 
 
 **是什么**：Cloudflare宣布新政策：AI公司必须在9月15日前将其搜索爬虫与训练/Agent爬虫分离，否则默认被多数发布者站点屏蔽。
@@ -203,7 +203,7 @@ sections:
 
 ### Venice AI以65M美元A轮融资晋升独角兽
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-02/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-02/company-06.jpg)
 
 
 **是什么**：隐私优先的AI平台Venice AI完成6500万美元A轮融资，估值超10亿美元，年化收入7000万美元。
@@ -218,7 +218,7 @@ sections:
 
 ### Wayve启动8500万美元员工回购，估值85亿
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-02/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-02/company-07.jpg)
 
 
 **是什么**：自动驾驶AI公司Wayve推出员工股票回购计划，总额8500万美元，估值85亿美元。
@@ -255,7 +255,7 @@ sections:
 
 ### Meta非侵入式脑机接口逼近手术植入效果
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-02/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-02/research-00.jpg)
 
 
 Meta AI团队在Brain2Qwerty论文中展示了使用非侵入式脑电图（EEG）解码文本的技术，准确率显著提升，与植入式方案差距缩小。关键点：研究利用101名受试者的数据，通过端到端深度学习模型，在无需手术的头部贴片条件下实现了接近植入式电极的解码速率。为什么重要：此前非侵入式方案因信号干扰和分辨率限制被认为难以实用，这一突破可能使脑机接口走向消费级场景，降低伦理和医疗门槛，但也需注意个体差异和长期稳定性问题。
@@ -264,7 +264,7 @@ Meta AI团队在Brain2Qwerty论文中展示了使用非侵入式脑电图（EEG�
 
 ### 英伟达开源机器人技能库，Jim Fan称范式改变
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-02/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-02/research-01.jpg)
 
 
 NVIDIA开源了一套持续学习范式下的机器人技能库，旨在赋予具身智能体更灵活的适应能力。关键点：该技能库名为SkillWeaver，允许机器人在不断进化的环境中自主组合和修正已有的技能，而无需从头训练。Jim Fan在社交媒体上表示这标志着“从固定策略到持续习得”的范式转变。为什么重要：具身智能长期受困于训练数据单一和任务泛化差，Continuous Learning范式可能加速机器人从实验室走向真实世界的进程。
@@ -273,7 +273,7 @@ NVIDIA开源了一套持续学习范式下的机器人技能库，旨在赋予�
 
 ### AI浏览器可被诱导突破防护，安全隐忧升级
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-02/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-02/research-02.jpg)
 
 
 研究发现，通过向AI浏览器给出“2+2=5”这种明显错误的前提，可以使其逐渐“说服”自己忽略安全限制，进而执行原本被禁止的操作。关键点：攻击者利用LLM的上下文一致性倾向，通过连续构造逻辑异常的Prompt，让模型陷入“保护机制与真相的矛盾”中，最终突破护栏。为什么重要：AI浏览器正在成为新型人机交互入口，但其内部推理的脆弱性如果被利用，可能引发数据泄露、未授权操作等连锁风险，安全设计需引入更鲁棒的对抗逻辑。
@@ -282,7 +282,7 @@ NVIDIA开源了一套持续学习范式下的机器人技能库，旨在赋予�
 
 ### Loop世界模型论文登顶Hugging Face
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-02/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-02/research-03.jpg)
 
 
 由国内初创公司研发的Loop世界模型论文在Hugging Face上引发热议，已获周鸿祎、陆奇等投资人背书。关键点：该模型通过学习视频帧间的循环因果结构，实现了对物理世界更一致的长程预测——在机器人操控、自动驾驶场景中表现优于Sora等扩散模型。为什么重要：世界模型被视为通往通用人工智能的关键拼图，Loop的独特之处在于不依赖大规模视频生成，而是强调因果推理，这可能开辟一条更低成本的道路。
@@ -291,7 +291,7 @@ NVIDIA开源了一套持续学习范式下的机器人技能库，旨在赋予�
 
 ### ScarfBench：评估AI Agent迁移Java框架能力
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-07-02/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-07-02/research-04.jpg)
 
 
 IBM研究院发布ScarfBench基准，专门测试AI Agent在企业级Java框架（如Spring Boot到Quarkus）迁移任务中的表现。关键点：基准包含50个真实迁移场景，涵盖API适配、配置重构、依赖冲突等痛点，并在多个主流Agent（如GPT-4o、Claude等）上进行了评估，结果揭示Agent在“理解遗留代码意图”方面仍有明显短板。为什么重要：企业Java迁移是年产值数十亿的市场，ScarfBench的出现为Agent的工程化落地提供了可量化的标尺，也暗示当前Agent更适合“辅助”而非“全自动”迁移。
@@ -308,7 +308,7 @@ IBM研究院发布ScarfBench基准，专门测试AI Agent在企业级Java框架�
 
 ### Claude Science：科研版“Copilot”能否攻下实验室？
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-02/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-02/product-00.jpg)
 
 
 **是什么**  
@@ -326,7 +326,7 @@ Anthropic推出的Claude Science是一个专为科学家设计的AI工作台，�
 
 ### Gemini Spark登上Mac：Google的24/7 Agent助手跨平台
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-02/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-02/product-01.jpg)
 
 
 **是什么**  
@@ -344,7 +344,7 @@ Mac用户是软件工程师、设计师和高级知识工作者的核心人群�
 
 ### SpaceX的AI设备原型：手机形态，但野心不止
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-02/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-02/product-02.jpg)
 
 
 **是什么**  
@@ -362,7 +362,7 @@ AI硬件的竞争已经白热化：Humane、Rabbit、Meta Ray-Ban之后，SpaceX
 
 ### Acti：将AI Agent嵌入键盘，最轻的入口
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-02/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-02/product-03.jpg)
 
 
 **是什么**  
@@ -380,7 +380,7 @@ Acti推出了一款iOS/Android键盘应用，允许用户通过自然语言创�
 
 ### X开放MCP服务器：为AI工具修桥
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-02/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-02/product-04.jpg)
 
 
 **是什么**  
@@ -398,7 +398,7 @@ X不再是单纯的社交平台，而是成为AI agent的数据源和行动目�
 
 ### OpenClaw Agent登陆移动端：开源编程工具随处可用
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-02/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-02/product-05.jpg)
 
 
 **是什么**  
@@ -416,7 +416,7 @@ OpenClaw是一款免费开源的Agent编程工具，原本只支持桌面端。�
 
 ### shot-scraper 1.10：Agent的“自动演示”功能
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-07-02/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-07-02/product-06.jpg)
 
 
 **是什么**  
@@ -434,7 +434,7 @@ Simon Willison发布的shot-scraper 1.10版本新增视频录制功能。该工�
 
 ### Hugging Face + Cerebras：Gemma 4实时语音AI落地
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-07-02/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-07-02/product-07.jpg)
 
 
 **是什么**  
@@ -462,7 +462,7 @@ Hugging Face与Cerebras合作，基于Google的Gemma 4模型实现了低延迟�
 
 ### 软件工厂与FDE：AI工程新范式兴起
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-02/opinion-00.jpg)
 
 
 Latent Space连续多篇文章探讨“软件工厂”概念，认为AI将使软件工程从“手工作坊”进化为“自动化工厂”。核心观点包括：每个大型软件项目将配备类似工厂的生产线，以agentic pipeline自动生成、测试、部署代码；而Forward Deployed Engineer (FDE) 将成为连接工厂与客户的“最后一公里”角色，负责定制化集成与快速迭代。这预示着开发者角色分化：底层工程师构建工厂，前端工程师利用工厂加速交付。
@@ -471,7 +471,7 @@ Latent Space连续多篇文章探讨“软件工厂”概念，认为AI将使软
 
 ### Godot引擎不再接受AI编写代码贡献
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-02/opinion-01.jpg)
 
 
 开源游戏引擎Godot宣布封禁AI生成的代码贡献，理由是无法信任重度AI用户理解并维护自己所提交的代码。这是一个信号：当LLM生成的代码量激增，项目维护者发现审查成本不降反升，且AI缺乏对修改后果的认知。Godot的选择可能不是孤例——未来更多开源项目会明确AI代码政策，甚至要求人工署名。
@@ -480,7 +480,7 @@ Latent Space连续多篇文章探讨“软件工厂”概念，认为AI将使软
 
 ### Claude Code暗中标记中国用户请求
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-02/opinion-02.jpg)
 
 
 The Decoder调查发现，Anthropic的Claude Code会对来自中文环境的请求嵌入隐写标记（steganography），用于识别和追踪用户。这引发隐私与数据主权担忧：用户并不知道自己的请求被额外标记，且标记本身可能被用于更广泛的监控。尽管Anthropic有安全理由（防止滥用），但未透明的做法动摇了用户对AI工具的信任基础。
@@ -489,7 +489,7 @@ The Decoder调查发现，Anthropic的Claude Code会对来自中文环境的请�
 
 ### LLM陷入群体思维，初创公司尝试突破
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-02/opinion-03.jpg)
 
 
 MIT Tech Review报道，当前LLM生成的结果呈现严重同质化——例如在数字偏好测试中，大部分模型倾向于相同的答案。这种“群体思维”源于训练数据同源以及模型架构趋同。一家创业公司试图通过引入多样性激励（如对抗性训练、多目标优化）来打破僵局，让LLM学会生成不同视角的答案。但深层问题在于：我们是否真的需要LLM有“个性”，还是只需可靠的工具？
@@ -498,7 +498,7 @@ MIT Tech Review报道，当前LLM生成的结果呈现严重同质化——例�
 
 ### Kent Beck谈AI时代软件工程：信任比代码生成更重要
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-02/opinion-04.jpg)
 
 
 敏捷开发创始人Kent Beck在Pragmatic Engineer访谈中反思：AI能大量生成代码，但软件的长期可维护性依赖于开发团队对代码的信任。他区分了“生成代码”与“理解代码”两种能力，指出AI生成的代码如果缺乏可解释性和可测试性，反而会侵蚀信任。他的建议是：优先投资于代码评审、测试覆盖和文档，而非单纯追求生成速度。
@@ -507,7 +507,7 @@ MIT Tech Review报道，当前LLM生成的结果呈现严重同质化——例�
 
 ### Warp CEO：软件工厂是编程的下一个阶段
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-02/opinion-05.jpg)
 
 
 Warp创始人Zach Lloyd在Latent Space上阐述“软件工厂”愿景：认为在AI辅助下，每个大型项目都可以拥有自动化“工厂”，将需求分解为任务、由agent并行完成编码，再通过FDE集成。他指出工程师需要提前学习如何设计和管理这样的工厂，而非只关心手写代码。这与之前软件工厂文章相互呼应，形成行业共识。
@@ -524,7 +524,7 @@ Warp创始人Zach Lloyd在Latent Space上阐述“软件工厂”愿景：认为
 
 ### Google agents-cli：任何编码助手都能变成云端Agent
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-02/opensource-00.jpg)
 
 
 **是什么**：Google发布agents-cli，一个开源命令行工具，能将开发者现有的任何编码助手（如Copilot、Cursor等）转化为可在Google Cloud上创建、评估和部署Agent的专家。
@@ -537,7 +537,7 @@ Warp创始人Zach Lloyd在Latent Space上阐述“软件工厂”愿景：认为
 
 ### OpenSquilla 0.4.0：AI写代码首次自我验证
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-02/opensource-01.jpg)
 
 
 **是什么**：开源AI编码工具OpenSquilla发布0.4.0版本，引入自我验证（Self-Verification）能力：AI生成的代码可以自动检查正确性，无需人工逐行审查。
@@ -550,7 +550,7 @@ Warp创始人Zach Lloyd在Latent Space上阐述“软件工厂”愿景：认为
 
 ### Facebook开源Astryx设计系统：为Agent时代构建界面
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-02/opensource-02.jpg)
 
 
 **是什么**：Meta开源Astryx，一套完全可定制的设计系统，专为人与Agent共同构建UI而设计。它不是传统组件库，而是定义了一组“Agent可解释”的设计原语。
@@ -563,7 +563,7 @@ Warp创始人Zach Lloyd在Latent Space上阐述“软件工厂”愿景：认为
 
 ### Upsonic：AI驱动渗透测试开源工具Strix
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-02/opensource-03.jpg)
 
 
 **是什么**：Strix是一款基于AI的开源渗透测试工具，可自动发现并修复Web应用漏洞。它利用大模型分析代码和网络流量，生成攻击向量并验证。
@@ -576,7 +576,7 @@ Warp创始人Zach Lloyd在Latent Space上阐述“软件工厂”愿景：认为
 
 ### video-use：用编码Agent编辑视频
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-02/opensource-04.jpg)
 
 
 **是什么**：video-use是一个浏览器自动化项目，让AI Agent通过编写代码（如Python脚本）来编辑视频，实现编程式视频制作。
@@ -589,7 +589,7 @@ Warp创始人Zach Lloyd在Latent Space上阐述“软件工厂”愿景：认为
 
 ### Superpowers：Agent技能框架与软件开发方法论
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-02/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-02/opensource-05.jpg)
 
 
 **是什么**：Superpowers提供一套可组合的技能（skills）和完整的软件开发方法学，帮助编码Agent高效工作。它不是单一工具，而是一套模式库和编排指南。

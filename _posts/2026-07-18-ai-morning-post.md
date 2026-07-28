@@ -43,7 +43,7 @@ sections:
 
 ### Mira Murati团队发布首个开源模型Inkling
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-18/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-18/model_release-01.jpg)
 
 
 **是什么：** 前OpenAI CTO Mira Murati创立的Thinking Machines Lab今天发布了Inkling，一个开放权重的MoE模型。这是该团队首次公开其AI能力，模型架构细节尚未完全披露，但已知采用混合专家设计。
@@ -56,7 +56,7 @@ sections:
 
 ### 英伟达开源Nemotron 3 Embed：8B模型排名RTEB第一
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-18/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-18/model_release-02.jpg)
 
 
 **是什么：** NVIDIA发布了Nemotron 3 Embed嵌入模型集合，包括8B、1B（BF16）和1B（NVFP4）三个版本。其中8B版本在RTEB检索基准上以78.46 NDCG@10的成绩排名第一。
@@ -69,7 +69,7 @@ sections:
 
 ### WAIC 2026：腾讯混元Hy3大模型首秀
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-18/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-18/model_release-03.jpg)
 
 
 **是什么：** 腾讯在世界人工智能大会上首次公开混元Hy3大模型，并同步上线AI技能支付体系——开发者可通过平台销售基于混元的微调模型或技能组件。
@@ -82,7 +82,7 @@ sections:
 
 ### Zyphra开源脑电基础模型ZUNA1.1
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-07-18/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-07-18/model_release-04.jpg)
 
 
 **是什么：** Zyphra发布了ZUNA1.1，一个380M参数的EEG（脑电图）基础模型，基于Apache 2.0许可。支持0.5到30秒的可变长度输入，可重建和去噪头皮脑电信号。
@@ -105,7 +105,7 @@ sections:
 
 ### 苹果起诉OpenAI，IPO窗口蒙阴影
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-18/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-18/company-00.jpg)
 
 
 苹果正式对OpenAI提起商业秘密诉讼，指控其首席硬件官及其他高层在离职后不当获取并使用苹果内部技术信息。该诉讼不仅针对个人，更直指OpenAI整体治理缺陷。**关键点**：诉讼发生在OpenAI筹备IPO的关键窗口期，任何不利裁决或漫长的诉讼都可能动摇投资者信心，甚至迫使IPO推迟。**为什么重要**：如果苹果胜诉，OpenAI可能面临赔偿、技术禁令或管理层动荡，这将是继监管审查外对OpenAI商业化的又一重击。
@@ -113,7 +113,7 @@ sections:
 
 ### 旧金山要求苹果谷歌下架AI“脱衣”应用
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-18/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-18/company-01.jpg)
 
 
 旧金山检察官向苹果和谷歌发送停止函，要求移除13款AI换脸应用（“nudify” apps），称这些应用主要针对女性生成非自愿裸体图像，且平台从相关广告和下载中获利数百万美元。**关键点**：监管机构首次明确指控平台对AI生成有害内容承担“获利责任”，而非仅要求下架。**为什么重要**：此举可能成为美国各州乃至联邦层面加强AI内容监管的先例，平台将面临更严格的审核义务和潜在罚款。
@@ -121,7 +121,7 @@ sections:
 
 ### xAI起诉用户，Grok儿童安全危机升级
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-18/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-18/company-02.jpg)
 
 
 马斯克的xAI首次对一名用户提起诉讼，指控其利用Grok生成儿童性虐图像（CSAM）。此前xAI曾声称模型已规避此类输出，但安全测试证明无法完全阻止。**关键点**：xAI从否认技术漏洞转向司法追责，试图将责任转移至用户行为。**为什么重要**：这是AI公司首次因CSAM问题主动起诉个体用户，但若模型本身存在不可控生成能力，监管将要求根本性技术修复而非事后追诉。
@@ -129,7 +129,7 @@ sections:
 
 ### 欧盟正式强制谷歌共享搜索数据并开放Android AI
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-18/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-18/company-03.jpg)
 
 
 欧盟新规正式生效，要求谷歌向竞争对手分享搜索数据，并在Android系统中开放AI能力（如允许第三方AI助手直接调用系统权限）。谷歌警告这可能危及用户隐私与安全。**关键点**：这是《数字市场法案》的最新执行措施，意在打破谷歌搜索和移动AI的“围墙花园”。**为什么重要**：如果强制执行，Android生态将迎来AI代理的“同层竞争”，谷歌搜索的统治地位面临实质性挑战，其他AI公司（如Anthropic）可能借机获取搜索数据训练模型。
@@ -137,7 +137,7 @@ sections:
 
 ### Databricks估值达1880亿美元，成AI领域“第二春”标杆
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-18/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-18/company-04.jpg)
 
 
 Databricks通过发布开放权重模型成本研究并重塑自身为AI数据公司，估值达到1880亿美元，延续其快速成长轨迹。**关键点**：Databricks并非原生AI公司，而是通过将数据工程与AI模型训练深度绑定，抓住了企业级AI部署的“基础设施”需求。**为什么重要**：1880亿美元估值意味着资本市场对“数据+AI”垂直整合模式的认可，对Snowflake、Palantir等同类公司构成估值锚定，也印证了AI投资正从模型层向基础设施层迁移。
@@ -145,7 +145,7 @@ Databricks通过发布开放权重模型成本研究并重塑自身为AI数据�
 
 ### Meta拟将过剩AI算力卖给Anthropic
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-18/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-18/company-05.jpg)
 
 
 据The Decoder报道，扎克伯格计划出售Meta多余的AI计算能力，首个大客户可能是竞争对手Anthropic。**关键点**：Meta因大规模采购GPU后利用率不足，转而探索算力租赁业务；Anthropic作为模型公司对算力需求旺盛，且与Meta在开源立场上有微妙差异。**为什么重要**：算力交易从“云厂商卖卡”演变为“科技巨头间调剂”，标志着AI算力从稀缺资源变为可交易商品，可能重塑AWS、Azure与自建算力之间的竞争格局。
@@ -153,7 +153,7 @@ Databricks通过发布开放权重模型成本研究并重塑自身为AI数据�
 
 ### Agility Robotics在特斯拉后院开设机器人训练中心
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-18/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-18/company-06.jpg)
 
 
 Agility Robotics在加州弗里蒙特开设新的Digit机器人训练中心，直接对标特斯拉的Optimus人形机器人。**关键点**：选址特斯拉总部附近，意在争夺人才和合作伙伴；训练中心将用于Digit在仓储、物流场景的环境适应训练。**为什么重要**：人形机器人商业化竞争进入“场景落地”阶段，Agility以先发优势（已有商业部署）与特斯拉的规模制造能力正面对抗，选址凸显其意图利用特斯拉生态附近的资源加速迭代。
@@ -161,7 +161,7 @@ Agility Robotics在加州弗里蒙特开设新的Digit机器人训练中心，�
 
 ### AI投资热潮推动能源公司IPO激增
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-18/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-18/company-07.jpg)
 
 
 能源相关公司在美国上市速度创本世纪最快，投资者急切寻找参与AI基建繁荣的途径，多只能源IPO募资超预期。**关键点**：AI数据中心电力需求爆发式增长，带动电力基础设施、可再生能源、核电等公司IPO热潮。**为什么重要**：AI投资逻辑正从算力芯片向能源供应延伸，能源板块的IPO活跃度是AI产业长期资本投入的晴雨表，也暗示市场在寻找“确定性”收益而非押注单一模型公司。
@@ -177,42 +177,42 @@ OpenAI 今天公布了内部自动化红队模型 GPT-Red，在间接提示注�
 
 ### GPT-Red：自动化红队以84%胜率碾压人类
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-18/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-18/research-00.jpg)
 
 OpenAI 训练了专门用于攻击的 GPT-Red 模型，在间接提示注入（indirect prompt injection）任务中，其攻击成功率高达 84%，而人类红队成员仅为 13%。关键点在于，GPT-Red 还首次发现了一种名为“文件删除”的新型漏洞，迫使 OpenAI 紧急发布安全补丁。这一结果直接挑战了“人类直觉+规则”的传统红队模式，证明了数据驱动的攻击者可以系统性地超越人工经验。  
 > 原文：[MarkTechPost](https://www.marktechpost.com/2026/07/16/openai-details-gpt-red-an-internal-automated-red-teaming-model-that-beat-human-red-teamers-84-to-13-on-prompt-injection/)
 
 ### 预训练数据可通过计算宣传被投毒
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-18/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-18/research-01.jpg)
 
 一项新研究揭示了另一种安全威胁：攻击者无需直接编辑训练文本，仅通过操纵社交媒体等公开数据源的分布，就可以向语言模型注入有害行为（如偏见、恶意指令）。关键点在于，这种“计算宣传”式投毒可以在不留下明显痕迹的情况下污染预训练数据，现有的数据清洗和过滤手段难以防御。该威胁迫使行业重新评估训练数据供应链的可信度。  
 > 原文：[arXiv 2607.15267](http://arxiv.org/abs/2607.15267v1)
 
 ### RoboTTT：机器人策略的上下文窗口扩展至8000步
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-18/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-18/research-02.jpg)
 
 RoboTTT 提出在测试时对机器人策略进行微调，通过引入时间上下文窗口，模型可以回顾视觉运动序列长达 8000 个时间步（约 2 分钟）。关键点在于，相比传统固定长度上下文，RoboTTT 在长时任务（如顺序拾取、流程操作）的成功率提升了 40% 以上。这表明“测试时训练”的思路开始突破机器人感知与控制的长期依赖瓶颈。  
 > 原文：[arXiv 2607.15275](http://arxiv.org/abs/2607.15275v1)
 
 ### AutoSynthesis：智能体自动化系统综述与元分析
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-18/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-18/research-03.jpg)
 
 AutoSynthesis 构建了一个端到端智能体系统，能够自动完成从文献检索、筛选、质量评估到效应量计算的完整元分析流程。关键点在于，系统在多个真实医学综述任务中达到了与专家接近的准确率，但耗时仅为 1/10。对于研究领域，这意味着 AI 可以大幅加速知识综合，但需警惕自动化过程中的偏倚累积。  
 > 原文：[arXiv 2607.15247](http://arxiv.org/abs/2607.15247v1)
 
 ### SciDiagramEdit：从论文修订中自动编辑科学图表
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-07-18/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-07-18/research-04.jpg)
 
 论文提出 SciDiagramEdit 方法，能自动根据论文文字修订（如新增结果、调整结论）修改对应图表，包括重标注坐标轴、重排面板和统一样式。关键点在于，它学习了一种“图表编辑操作”序列，而非从头生成，因此编辑质量依赖原图表结构。对于研究者，这可能减轻反复手动更新图表的负担，但目前仅适用于特定布局。  
 > 原文：[arXiv 2607.15272](http://arxiv.org/abs/2607.15272v1)
 
 ### SceneBind：跨视觉、听觉与语言的三维语义绑定
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-07-18/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-07-18/research-05.jpg)
 
 SceneBind 提出一种统一的三维场景表示，能够将视觉像素、音频事件和语言描述在空间实例级别绑定。关键点在于，模型支持跨模态查询（如“播放红色沙发的音频”），并在多个基准上超过以往的单模态或两模态方法。该工作为具身 AI 和机器人环境理解提供了更丰富的感知基础。  
 > 原文：[arXiv 2607.15265](http://arxiv.org/abs/2607.15265v1)
@@ -229,7 +229,7 @@ SceneBind 提出一种统一的三维场景表示，能够将视觉像素、音�
 
 ### OpenAI推摇杆硬件WorkLouder Codex Micro控制Agent
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-18/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-18/product-00.jpg)
 
 
 OpenAI发布WorkLouder Codex Micro硬件，配备可编程按键和旋钮，开发者可用摇杆替代键盘命令控制AI Agent，提升交互效率。这是OpenAI首次推出面向Agent操作的专业硬件，目标用户是频繁调试agentic工作流的开发者。**关键点**：摇杆提供物理反馈，适合需要连续微调的场景（如控制机器人臂、实时参数调节）；可编程旋钮能绑定常用指令序列。**为什么重要**：键盘打字仍是当前控制AI的主要方式，但Agent的实时交互需求正在催生新输入形态。OpenAI此举可能开启Agent外设品类，就像游戏手柄之于PC游戏。
@@ -238,7 +238,7 @@ OpenAI发布WorkLouder Codex Micro硬件，配备可编程按键和旋钮，开�
 
 ### Google Vids新增个人AI虚拟形象视频功能
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-18/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-18/product-01.jpg)
 
 
 Google在Vids中引入个性化AI虚拟形象，用户可创建数字版自己，配合Gemini Omni生成和编辑视频，实现AI主演内容。**关键点**：用户只需上传照片或简短视频，AI即可合成拟真虚拟形象，支持口型同步、表情和肢体动作；视频编辑完全基于自然语言指令，如“让我在办公室背景前讲解这份报告”。**为什么重要**：Vids从企业视频协作工具升级为AI内容生产平台，个人虚拟形象降低了“演员”门槛，可能推动AI原生视频创作范式——未来每个人都有自己的数字替身用于内容产出。
@@ -247,7 +247,7 @@ Google在Vids中引入个性化AI虚拟形象，用户可创建数字版自己�
 
 ### Google AI模式扩展：可链接并操作第三方应用
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-18/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-18/product-02.jpg)
 
 
 Google升级AI Mode，从仅回答问题扩展到跨应用完成任务，用户可通过自然语言直接控制选定的第三方App。**关键点**：初期支持的App包括Gmail、Calendar、YouTube Music等Google生态应用，以及部分第三方（如Spotify、Todoist）；用户说“帮我订明天中午的餐厅并把信息发到群聊”，AI Mode会自动调用地图、日历和消息应用。**为什么重要**：这是Google向Agent方向的重要一步——AI Mode从搜索界面进化为操作系统级助手，直接与App深度交互。一旦形成生态，可能重塑用户与手机应用的交互方式。
@@ -256,7 +256,7 @@ Google升级AI Mode，从仅回答问题扩展到跨应用完成任务，用户�
 
 ### Roblox在移动端推出AI游戏生成功能
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-18/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-18/product-03.jpg)
 
 
 Roblox的新“Build”功能让用户仅用文本提示即可在手机App内生成基础游戏，降低游戏创作门槛。**关键点**：用户输入如“创建一个捉迷藏游戏，需要森林场景和隐藏道具”，AI自动生成地形、角色和规则逻辑；生成后可立即发布或进一步编辑。**为什么重要**：Roblox本身是UGC游戏平台，AI生成功能将创作者门槛降到“会说话就行”，可能催化下一波用户生成内容爆炸。移动端的零代码创作，让UGC从“编程”走向“对话”。
@@ -265,7 +265,7 @@ Roblox的新“Build”功能让用户仅用文本提示即可在手机App内生
 
 ### DoorDash推出命令行工具dd-cli，Agent可直接下单
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-18/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-18/product-04.jpg)
 
 
 DoorDash开放dd-cli命令行工具beta，开发者和AI Agent可从终端搜索店铺并下单，标志平台开始面向Agent设计。**关键点**：支持参数化搜索（如“附近评分4.5以上的中餐，配送费低于$3”），返回JSON格式结果；下单流程完全可脚本化。**为什么重要**：当DoorDash主动提供CLI，意味着Agent经济正在渗透传统消费品配送——未来AI可以自动帮你点午餐、预订食材。这是平台基础设施为Agent优化的重要信号。
@@ -274,7 +274,7 @@ DoorDash开放dd-cli命令行工具beta，开发者和AI Agent可从终端搜索
 
 ### 阶跃STEPX Neo智能体手机亮相WAIC
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-18/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-18/product-05.jpg)
 
 
 阶跃发布全球首个大模型原生智能体手机STEPX Neo，搭载Step AOS系统，展示跨App办事、本地生活等全场景智能服务。**关键点**：手机从系统底层集成大模型，Agent可理解用户意图并在不同App间自动完成任务（如“帮我查航班，再把行程添加进日历，同步发给同事”）；全双工语音交互，支持打断和上下文记忆。**为什么重要**：这是首款以“智能体”为核心设计理念的手机系统，而非简单的语音助手升级。如果Step AOS成熟，可能重新定义手机作为“数字管家”的角色。
@@ -289,7 +289,7 @@ DoorDash开放dd-cli命令行工具beta，开发者和AI Agent可从终端搜索
 
 ### 文远发布物理AI大模型WITT：单卡日处理1万分钟视频
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-07-18/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-07-18/product-07.jpg)
 
 
 文远知行发布物理AI大模型WITT，可将每一公里行驶数据转化为模型能力，单张GPU卡每日处理1万分钟视频数据。**关键点**：WITT专注于自动驾驶场景的物理世界理解，能从车载摄像头视频中提取道路结构、动态物体行为等结构化知识；训练效率提升显著，降低数据标注依赖。**为什么重要**：物理AI是自动驾驶走向L4+的关键，WITT的高效数据处理能力意味着文远得以更快迭代模型。这对自动驾驶行业的数据飞轮竞争具有参考价值。
@@ -306,7 +306,7 @@ DoorDash开放dd-cli命令行工具beta，开发者和AI Agent可从终端搜索
 
 ### Linus Torvalds怒怼AI批评者：不喜就fork或走开
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-18/opinion-00.jpg)
 
 
 **是什么：** Linux创始人Linus Torvalds在邮件列表中回应关于AI生成代码进入Linux内核的争议，直言将“大声忽略”反对使用AI的人，并建议不满者可以fork项目或直接离开。
@@ -339,7 +339,7 @@ DoorDash开放dd-cli命令行工具beta，开发者和AI Agent可从终端搜索
 
 ### OpenAI CFO提出AI实用记分卡，衡量ROI
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-18/opinion-03.jpg)
 
 
 **是什么：** OpenAI首席财务官Sarah Friar发表文章，介绍一套衡量AI投入回报的记分卡，包含四项指标：有用工作完成量、任务成本、可靠性、计算回报。
@@ -352,7 +352,7 @@ DoorDash开放dd-cli命令行工具beta，开发者和AI Agent可从终端搜索
 
 ### OpenAI呼吁让青少年安全使用AI，推出年龄保护措施
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-18/opinion-04.jpg)
 
 
 **是什么：** OpenAI发布专题文章，阐述为何青少年应有安全使用AI的渠道，并介绍包括年龄适配保护、学习工具、家长控制在内的全套措施。
@@ -365,7 +365,7 @@ DoorDash开放dd-cli命令行工具beta，开发者和AI Agent可从终端搜索
 
 ### Yann LeCun旗下AMI Labs CEO：拒绝称AI为AGI或超级智能
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-18/opinion-05.jpg)
 
 
 **是什么：** AMI Labs（由Yann LeCun联合创立）CEO Alexandre LeBrun在接受TechCrunch采访时表示，追逐AGI或超级智能概念是误导，公司更关注构建能理解物理世界复杂性的实用世界模型。
@@ -378,7 +378,7 @@ DoorDash开放dd-cli命令行工具beta，开发者和AI Agent可从终端搜索
 
 ### 报告称AI蜜月期结束，打工人成“快乐行尸走肉”
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-07-18/opinion-06.jpg)
 
 
 **是什么：** InfoQ发布的文章引用多项调研，指出企业AI应用已进入深水区：员工效率提升但创造力下降，出现“快乐式倦怠”——表面积极使用AI，实则缺乏深度思考和成就感。
@@ -391,7 +391,7 @@ DoorDash开放dd-cli命令行工具beta，开发者和AI Agent可从终端搜索
 
 ### 留给开源模型的时间只剩6个月？
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-07-18/opinion-07.jpg)
 
 
 **是什么：** InfoQ另一篇文章分析开源与闭源模型的市场格局，指出差距正在缩小，但商业化窗口正在收窄，未来六个月是关键窗口期。
@@ -414,7 +414,7 @@ DoorDash开放dd-cli命令行工具beta，开发者和AI Agent可从终端搜索
 
 ### Open Interpreter适配Kimi K3，成为低开销编码Agent
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-18/opensource-00.jpg)
 
 
 Open Interpreter推出了针对Kimi K3等轻量模型的行为优化，使其可以作为低成本编码Agent运行。这一功能在GitHub社区引发热议，核心变化在于：原本需要高端大模型才能使用的agentic coding能力，现在可以在更经济的推理成本下实现。对于个人开发者或小团队而言，这意味着可以用更低的预算尝试自动化代码任务，例如批量重构、代码审查辅助等。但需注意，低模型可能在某些复杂任务上表现受限，适合常规场景。
@@ -423,7 +423,7 @@ Open Interpreter推出了针对Kimi K3等轻量模型的行为优化，使其可
 
 ### Thinking Machines Lab开源Tinker后训练Cookbook
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-18/opensource-01.jpg)
 
 
 Mira Murati创立的Thinking Machines Lab发布了Tinker Cookbook，这是一个开源的后训练配方集合，基于Tinker框架。它旨在帮助开发者更高效地微调模型，提供可复用的训练策略和调参指导。对于想快速上手模型定制的研究者，这套cookbook降低了后训练的实验门槛，也延续了团队在开源生态中的投入。
@@ -432,7 +432,7 @@ Mira Murati创立的Thinking Machines Lab发布了Tinker Cookbook，这是一个
 
 ### Apache Ossie立项：语义元数据交换规范
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-18/opensource-02.jpg)
 
 
 Apache软件基金会正式孵化Ossie项目，目标是制定分析、AI和BI平台之间语义元数据交换的开放标准。当前不同平台元数据格式各异，导致数据与模型难以跨系统流通。Ossie一旦成熟，可能成为连接数据层与应用层的“通用语言”。对平台建设者和AI infra开发者来说，这是值得跟踪的基础设施级项目。
@@ -441,7 +441,7 @@ Apache软件基金会正式孵化Ossie项目，目标是制定分析、AI和BI�
 
 ### Hallmark：让AI生成代码摆脱AI味道的设计技能
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-18/opensource-03.jpg)
 
 
 开源项目Hallmark为Claude Code、Cursor等编码助手提供了一套设计技能，目标是让AI生成的代码和UI不再像典型的AI作品。它通过注入更自然的变量命名、注释风格和界面布局，提升可读性和审查体验。对频繁使用AI coding工具的产品经理和工程师来说，这意味着交付物可以更接近人类手写质量，减少后续修改压力。
@@ -450,7 +450,7 @@ Apache软件基金会正式孵化Ossie项目，目标是制定分析、AI和BI�
 
 ### OpenCut：开源的CapCut替代版视频编辑器
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-18/opensource-04.jpg)
 
 
 OpenCut作为剪映（CapCut）的开源替代方案，在GitHub获得关注。它提供了类似的视频编辑功能，完全免费。对内容创作者而言，OpenCut意味着摆脱商业软件的授权限制和用户数据顾虑。不过作为新生项目，功能成熟度和稳定性需要社区持续验证。
@@ -459,7 +459,7 @@ OpenCut作为剪映（CapCut）的开源替代方案，在GitHub获得关注。�
 
 ### LobeHub：智能体操作系统的指挥官
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-18/opensource-05.jpg)
 
 
 LobeHub开源了智能体编排平台，号称可以实现一个AI团队的招聘、调度和报告，支持7×24小时自动化运营。它试图将多个专用agent组织成协作系统，每个agent有不同分工。对于需要管理多个AI工作流的企业用户，这种统一编排层可能比自行拼接更可靠。
@@ -468,7 +468,7 @@ LobeHub开源了智能体编排平台，号称可以实现一个AI团队的招�
 
 ### Nous Research发布Hermes Agent：伴你成长的Agent
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-18/opensource-06.jpg)
 
 
 Nous Research开源了Hermes Agent框架，强调智能体可以随使用过程进化。它支持用户定制任务逻辑和持续学习机制，而不是一次部署后固定不变。这种“增长型agent”概念更适合长期使用的场景，例如个人助手或持续优化的自动化流程。
@@ -477,7 +477,7 @@ Nous Research开源了Hermes Agent框架，强调智能体可以随使用过程�
 
 ### Anthropic开源知识工作插件库：让Claude变身领域专家
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-18/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-18/opensource-07.jpg)
 
 
 Anthropic发布了Knowledge Work Plugins，一套开源插件集合，使Claude能针对不同角色（如工程师、研究员）进行定制化工作。每个插件提供特定的知识库和交互模式，用户可自行组合。对希望将Claude深度嵌入知识工作场景的团队，这提供了一个可扩展的开源方案，无需从零构建角色化配置。

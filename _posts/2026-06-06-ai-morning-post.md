@@ -33,7 +33,7 @@ sections:
 
 ### NVIDIA 开源 Nemotron 3 Ultra：550B 混合 MoE，专为长时 Agent 设计
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-06-06/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-06-06/model_release-00.jpg)
 
 
 **是什么**：NVIDIA 发布 Nemotron 3 Ultra，一个 550B 总参数、55B 活跃参数的 MoE 模型，融合 Mamba 状态空间模型与 Transformer，支持 100 万 token 上下文窗口。官方宣称其推理吞吐量比同类开源 LLM 高约 6 倍。
@@ -46,7 +46,7 @@ sections:
 
 ### DeepMind 发布 Gemma 4 QAT 检查点：显存占用再降，加速边缘部署
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-06/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-06/model_release-01.jpg)
 
 
 **是什么**：Google DeepMind 为 Gemma 4 推出量化感知训练（QAT）检查点，包括 Q4_0 版本和面向移动端的新格式，旨在降低设备端显存占用。
@@ -77,7 +77,7 @@ sections:
 
 ### 谷歌每月付 SpaceX 9.2 亿美元租算力
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-06/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-06/company-00.jpg)
 
 
 **是什么**：据 TechCrunch 报道，谷歌与 SpaceX 达成协议，每月支付 9.2 亿美元获取其计算能力，以应对 AI 产品意外增长的需求。
@@ -89,7 +89,7 @@ sections:
 
 ### 佛罗里达起诉 OpenAI 及 Altman：指 ChatGPT 为公共妨害
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-06/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-06/company-01.jpg)
 
 
 **是什么**：佛罗里达州政府对 OpenAI 及其 CEO Sam Altman 提起诉讼，指控 ChatGPT 是缺陷产品，并构成公共妨害（public nuisance）。
@@ -101,7 +101,7 @@ sections:
 
 ### Anthropic Mythos 被曝用于 NSA 进攻性网络行动
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-06/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-06/company-02.jpg)
 
 
 **是什么**：The Decoder 报道称，Anthropic 的先进模型 Mythos 正在被美国国家安全局（NSA）用于针对中国和伊朗的网络攻击行动。
@@ -113,7 +113,7 @@ sections:
 
 ### 微软 MAI 模型训练数据涉嫌侵权：使用未授权网络数据
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-06/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-06/company-03.jpg)
 
 
 **是什么**：The Decoder 揭露微软在训练其 MAI 模型时使用了未经许可的网页数据，尽管此前承诺使用“企业级、干净且商业授权”的数据。
@@ -125,7 +125,7 @@ sections:
 
 ### 微软 CEO Nadella 否决 VP 的“成瘾性 AI”计划
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-06/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-06/company-04.jpg)
 
 
 **是什么**：微软 CEO Satya Nadella 在公开场合严厉批评一位 VP 提出的让 AI 代理刻意让用户成瘾的计划，并直接予以否决。
@@ -137,7 +137,7 @@ sections:
 
 ### Meta AI 客服成漏洞：攻击者利用它盗取 Instagram 账号
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-06/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-06/company-05.jpg)
 
 
 **是什么**：404 Media 报道，攻击者利用 Meta 的 AI 客户支持代理，通过简单请求将其与攻击者邮箱关联，从而窃取 Instagram 账户。
@@ -175,7 +175,7 @@ sections:
 
 ### 导语
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-06/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-06/research-00.jpg)
 
 今日 research 板块最值得关注的是智源与清华合作的脑科学多模态基础模型 Brainμ 登上 Science，不仅揭示了记忆重激活如何调控睡眠动态，更验证了 AI 方法在神经科学中的临床解释力。这一突破意味着从脑机制到算法设计的闭环正在加速形成，值得技术人和投资人深入理解其方法论意义。
 
@@ -193,7 +193,7 @@ CVPR 2026 现场信号明确：计算机视觉与机器人的物理边界正在�
 
 ### ICRA 2026：华人学者斩获大奖，具身智能迎来 “AlphaGo 时刻”
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-06-06/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-06-06/research-03.jpg)
 
 
 ICRA 2026 上，胡瑞珍、石冠亚、王晓龙等华人学者获得最佳论文等核心奖项。银河通用创始人王鹤在现场表示，具身智能正走向专属的「AlphaGo 时刻」——即某个任务在仿真或真实环境中达到超越人类专家的水平，从而催化整个领域。关键点在于：获奖论文多集中在灵巧操作、多机器人协同与鲁棒性控制，这些正是具身智能从演示原型走向工程实用的瓶颈。为什么重要？这一判断呼应了近期多篇 VLA 论文：当任务复杂度足够，模型可以通过大规模合成数据 + 闭循环训练收敛到超人类策略，这是商业化的前夜信号。
@@ -202,7 +202,7 @@ ICRA 2026 上，胡瑞珍、石冠亚、王晓龙等华人学者获得最佳论�
 
 ### Bain 研究：人类干扰导致企业 AI 节省目标落空
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-06-06/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-06-06/research-04.jpg)
 
 
 贝恩公司最新研究发现，企业在实施 AI 方案时未能实现预期的成本节省，核心原因不是技术本身，而是人类员工不断干预流程，未给予 AI 足够的自主决策权。关键点在于：调查覆盖零售、制造、金融等多个行业，平均成本节省只达到目标的 60%，且干预频率最高的环节合规审查与异常处理。为什么重要？这提示技术决策者：AI 价值实现的最大障碍往往是组织行为而非算法能力，未来需要更强调「人机协同」的流程重组，而非单纯替换人工。
@@ -211,7 +211,7 @@ ICRA 2026 上，胡瑞珍、石冠亚、王晓龙等华人学者获得最佳论�
 
 ### 新论文聚焦 Agent Memory：长时任务内存系统设计
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-06-06/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-06-06/research-05.jpg)
 
 
 arXiv 论文系统描述了 LLM 代理在长时任务中持久化存储、检索和更新记忆的工作负载特征，为设计高效的内存系统提供理论指导。关键点在于：该论文从系统角度分析了 agent 记忆的 I/O 模式（如频繁写入、稀疏检索、长尾更新），当前多数推理框架并未针对这些特征优化。为什么重要？随着 agentic 应用逐渐走向多天甚至数周连续运行，记忆子系统可能成为新的瓶颈，这为系统设计者提供了明确优化方向。
@@ -220,7 +220,7 @@ arXiv 论文系统描述了 LLM 代理在长时任务中持久化存储、检索
 
 ### TempoVLA：速度可控的机器人操作策略
 
-![research-06.jpg](/marginalia/assets/img/ai-hot/2026-06-06/research-06.jpg)
+![research-06.jpg](/assets/img/ai-hot/2026-06-06/research-06.jpg)
 
 
 arXiv 论文提出 TempoVLA，让机器人操作策略能够自适应调整执行速度——在低风险阶段快速移动，在高风险阶段（如接近目标物体时）慢速精准运动。关键点在于：这是一种典型的安全-效率权衡方案，通过隐式任务风险建模实现速度调节，无需人工指定阈值。为什么重要？工业场景中，机器人既要快又要安全，现有端到端策略往往偏向保守；TempoVLA 的差异化控制策略可能成为高级 play-and-plug 模块。
@@ -229,7 +229,7 @@ arXiv 论文提出 TempoVLA，让机器人操作策略能够自适应调整执�
 
 ### HANDOFF：人形机器人任务-空间全身控制
 
-![research-07.jpg](/marginalia/assets/img/ai-hot/2026-06-06/research-07.jpg)
+![research-07.jpg](/assets/img/ai-hot/2026-06-06/research-07.jpg)
 
 
 HANDOFF 框架通过蒸馏互补教师策略，实现人形机器人在任务空间中的全身控制，避免传统全身控制中任务冲突导致的抖动。关键点：使用两个教师策略（一个专注操纵，一个专注平衡），通过师生蒸馏将其合并为单一网络，部署时无需切换模式。为什么重要？人形机器人走向真实场景必须先解决「行走+操作」的耦合问题，HANDOFF 给出了一个轻量化、可训练的解决方案。
@@ -253,7 +253,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### ChatGPT的“叙事档案”：AI开始记住你的一切
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-06/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-06/product-00.jpg)
 
 
 是什么：OpenAI推出新功能，ChatGPT会自动生成并保存关于用户的叙事摘要（narrative dossiers），分类为工作、爱好和旅行偏好，用于个性化服务。
@@ -266,7 +266,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### 苹果首款AI代理Poke：商业消息的新入口
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-06/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-06/product-01.jpg)
 
 
 是什么：苹果批准Poke作为Messages for Business平台首个AI代理（agent），用户可通过iMessage短信直接与AI交互完成预订、查询等商业服务。
@@ -279,7 +279,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### 可灵AI两周年：从1亿用户到5亿美元年收入
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-06/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-06/product-02.jpg)
 
 
 是什么：快手旗下可灵AI迎来两周年，全球用户突破1亿，企业客户近5万家，最新单季营收超6.5亿元，年化收入接近5亿美元。
@@ -302,7 +302,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### Anthropic：Claude写了90%内部代码，呼吁全球AI暂停按钮
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-06/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-06/product-04.jpg)
 
 
 是什么：Anthropic宣布其模型Claude已经参与编写公司超过90%的内部代码，同时呼吁全球建立AI暂停按钮机制。
@@ -315,7 +315,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### 金山WPS笔记：AI原生笔记，不只是记录
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-06/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-06/product-05.jpg)
 
 
 是什么：金山办公推出WPS笔记，宣称是AI原生的多模态笔记产品，涵盖记录、整理与复用全过程，支持文字、图片、语音、文件等输入。
@@ -328,7 +328,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### 腾讯云WorkBuddy：从超级个体到超级团队
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-06-06/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-06-06/product-06.jpg)
 
 
 是什么：腾讯云在大会上推出WorkBuddy企业版，定位为企业AI效率工具，覆盖从超级个体到超级团队的协作场景。
@@ -361,7 +361,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### Sam Altman：AI下一站是“主动性AI”
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-06/opinion-00.jpg)
 
 
 **是什么**：OpenAI CEO Sam Altman指出，在聊天机器人和智能代理（agent）之后，AI将进入“主动性AI”阶段——系统能自动推测用户意图并采取行动，无需等待指令。
@@ -374,7 +374,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### Cloudflare CEO：未来网络是“付费爬取”
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-06/opinion-01.jpg)
 
 
 **是什么**：Cloudflare CEO Matthew Prince警告，随着机器人流量超过人类流量，网站将要求AI公司为爬取训练数据付费，形成“Pay-to-Crawl”模式。
@@ -397,7 +397,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### AI工程师 vs 怀疑者：时间与熵的竞赛
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-06/opinion-03.jpg)
 
 
 **是什么**：运维专家Charity Majors提出，AI狂热者与时间赛跑——急于交付革命性产品；怀疑者与熵赛跑——致力于维护系统稳定性、解释不确定性。两者态度的冲突正在开发者社区激化。
@@ -410,7 +410,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### AI三巨头联名呼吁：建立DNA安全法
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-06/opinion-04.jpg)
 
 
 **是什么**：Sam Altman、Dario Amodei（Anthropic）和Demis Hassabis（DeepMind）联合呼吁立法监管DNA合成技术与AI结合的风险。
@@ -423,7 +423,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### “Together Tech”创业浪潮：让AI帮人远离手机
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-06/opinion-05.jpg)
 
 
 **是什么**：TechCrunch播客报道了一波反直觉的AI创业方向——“Together Tech”，推出旨在减少屏幕时间、促进真实社交的AI产品。
@@ -436,7 +436,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### Latent Space：别再发布低质量RL环境了
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-06-06/opinion-06.jpg)
 
 
 **是什么**：Latent Space博客深入批评了当前强化学习（RL）研究中的低质量训练环境，指出许多公开环境存在隐藏错误，导致模型学到错误策略。
@@ -449,7 +449,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### 观点：人形机器人投资被高估，机器狗进家庭更实际
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-06-06/opinion-07.jpg)
 
 
 **是什么**：国内自媒体文章质疑通用人形机器人的投资回报，建议先让十万台机器狗进入家庭，以消费市场验证价值。
@@ -482,7 +482,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### NVIDIA Dynamo Snapshot 开源：K8s 上 AI 推理快速启动
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-06/opensource-01.jpg)
 
 
 **是什么**：NVIDIA 开源 Dynamo Snapshot，利用 CRIU 和 cuda-checkpoint，实现 vLLM 推理工作负载在 Kubernetes 上的快速检查点恢复。
@@ -495,7 +495,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### GitHub 开源 Copilot SDK：集成 AI Agent 到任何应用
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-06/opensource-02.jpg)
 
 
 **是什么**：GitHub 发布 Copilot CLI SDK（github.com/github/copilot-sdk），允许开发者将 Copilot Agent 集成到自己的应用和服务中，支持多平台。
@@ -508,7 +508,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### Arm 开源 AI 安全框架 Metis：比 SAST 更高效
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-06/opensource-03.jpg)
 
 
 **是什么**：Arm 开源 AI 安全框架 Metis，在安全漏洞检测方面性能优于传统静态应用安全测试（SAST）工具。
@@ -521,7 +521,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### Hermes Agent 开源：随你成长的自主 AI 代理
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-06/opensource-04.jpg)
 
 
 **是什么**：Nous Research 开源 Hermes Agent，一个可以在本地运行、持续学习和增长的自主代理框架（github.com/NousResearch/hermes-agent）。
@@ -534,7 +534,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### Open Notebook 开源：NotebookLM 的灵活替代方案
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-06/opensource-05.jpg)
 
 
 **是什么**：开源项目 Open Notebook（github.com/lfnovo/open-notebook）实现类似谷歌 NotebookLM 的能力，但更灵活可定制。
@@ -547,7 +547,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### GitHub 开源 Spec Kit：引导规范驱动开发
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-06/opensource-06.jpg)
 
 
 **是什么**：GitHub 发布 Spec Kit（github.com/github/spec-kit），提供入门模板和工具，帮助团队采用规范驱动开发（Spec-Driven Development）。
@@ -560,7 +560,7 @@ RiskFlow 利用扩散模型快速生成可靠且安全关键的交通场景，�
 
 ### DuckDB 开源 Quack 协议：面向多用户分析的 HTTP 接口
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-06/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-06/opensource-07.jpg)
 
 
 **是什么**：DuckDB 推出 Quack，一种基于 HTTP 的客户端/服务器协议，旨在支持多用户分析场景。

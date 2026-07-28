@@ -43,7 +43,7 @@ sections:
 
 ### Argus Red渗透测试模型：拒绝安全对齐
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-22/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-22/model_release-01.jpg)
 
 
 是什么：初创公司Argus Red发布了一款后训练模型，专门用于渗透测试，并明确拒绝其他模型常见的安全限制（如拒绝输出攻击代码）。
@@ -66,7 +66,7 @@ sections:
 
 ### Google开源TimesFM：时序预测基础模型
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-22/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-22/model_release-03.jpg)
 
 
 是什么：Google Research开源了TimesFM，一个预训练的时序基础模型（Time Series Foundation Model），用于时间序列预测。
@@ -79,7 +79,7 @@ sections:
 
 ### LTX-2：开源音频-视频生成模型
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-06-22/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-06-22/model_release-04.jpg)
 
 
 是什么：Lightricks发布LTX-2，一款开源模型，支持音频到视频的生成，并配套推理代码和LoRA训练工具。
@@ -100,7 +100,7 @@ John Jumper 从 DeepMind 跳槽 Anthropic，与此同时特朗普政府也对 An
 
 ### 诺奖得主 John Jumper 从 DeepMind 跳槽 Anthropic
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-22/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-22/company-00.jpg)
 
 
 AlphaFold 核心人物、2024 年诺贝尔化学奖得主 John Jumper 宣布离开 Google DeepMind，加入竞争对手 Anthropic。Jumper 在蛋白质结构预测领域的影响力无人能及，他的加盟意味着 Anthropic 在基础科研深度上获得了关键补强。**关键点**：这是继去年多位 DeepMind 研究员出走 Anthropic 后的最高层级人才流失，双方在 AI for Science 赛道上将直接对抗。**为什么重要**：人才争夺战已从普通研究员升级到诺奖级别，Anthropic 借此冲击“前沿研究 + 安全对齐”的双重叙事，而 DeepMind 在失去灵魂人物后，其科研护城河可能出现裂缝。
@@ -109,7 +109,7 @@ AlphaFold 核心人物、2024 年诺贝尔化学奖得主 John Jumper 宣布离�
 
 ### 特朗普政府打压 Anthropic，生态影响引关注
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-22/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-22/company-01.jpg)
 
 
 TechCrunch 分析指出，特朗普政府正对 Anthropic 采取最新行政限制措施，理由涉及国家安全与出口管制。**关键点**：这并非首次，但当前正值 Jumper 加入、Anthropic 融资关键期，政策打击可能影响其模型训练规模与海外市场。**为什么重要**：政府干预正在成为 Anthropic 的长期风险变量——受益方可能是 OpenAI 或 Meta 等本土巨头，但更深层的担忧是：当白宫可以随意“挑选”打压对象时，整个 AI 生态会陷入不确定性，投资者定价模型里需要增加政策贴现因子。
@@ -118,7 +118,7 @@ TechCrunch 分析指出，特朗普政府正对 Anthropic 采取最新行政限�
 
 ### Anthropic 要求 Claude 用户身份验证
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-22/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-22/company-02.jpg)
 
 
 Anthropic 正式启动 Claude 用户身份验证流程，用户需提交政府签发的身份证明等材料。**关键点**：此举适用于免费和付费用户，初始阶段可能仅覆盖部分地域。**为什么重要**：一方面，验证有助于防止滥用与合规风险；另一方面，隐私担忧和注册门槛可能导致用户向竞争对手迁移。Anthropic 正处在“信任 vs 便利”的天平上，这种取舍将定义其长期用户池的规模与构成。
@@ -147,7 +147,7 @@ UC Berkeley 最新研究指出，学生使用 AI 完成作业导致成绩虚高�
 
 ### AI 外包作业推高成绩，学习效果存疑
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-22/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-22/research-00.jpg)
 
 
 **是什么**：加州大学伯克利分校一项研究发现，AI 工具的使用与学生的平均成绩上升存在强相关性，但进一步分析表明，成绩提升主要源于学生将作业任务“外包”给 AI，而非通过 AI 辅助实现更有效的学习。
@@ -168,7 +168,7 @@ OpenAI Codex 今天升级了“观看-重复”功能，这意味着 AI 不再�
 
 ### OpenAI Codex 学会“看一次，重复一辈子”
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-22/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-22/product-00.jpg)
 
 
 OpenAI 发布了 Codex 的重大更新：新增“观看-重复”功能。它不再依赖用户用自然语言描述操作流程，而是直接记录用户在一次操作中的鼠标点击、按键和界面交互，然后自主复现该流程。关键点在于：Codex 能理解操作背后的意图，而非简单记录宏。例如一个复杂的报表生成流程，用户只需演示一遍，Codex 就可以每天自动执行。为什么重要？这大幅降低了自动化门槛——企业里大量“知道怎么做但说不清楚”的任务，现在可以直接交给 AI 学习并反复执行，可能催生新一代流程自动化工具。
@@ -177,7 +177,7 @@ OpenAI 发布了 Codex 的重大更新：新增“观看-重复”功能。它�
 
 ### Cloudflare 推出 AI 代理临时账户，解决安全访问痛点
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-22/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-22/product-01.jpg)
 
 
 Cloudflare 发布了临时账户服务，专为 AI 代理设计。传统上，AI 代理访问系统需要长期有效的凭证，带来严重安全风险。临时账户允许代理在运行期间生成一次性凭证，任务结束后自动撤销，且仅开放最小必要权限。为什么重要？这是在基础设施层解决 AI 代理安全问题的关键拼图——企业不敢让 AI 代理触碰核心系统，核心原因就是“怕它乱动”。临时账户让“放开手”变得可控。
@@ -186,7 +186,7 @@ Cloudflare 发布了临时账户服务，专为 AI 代理设计。传统上，AI
 
 ### AWS 推出两项新服务，为 AI 代理补齐业务上下文与安全
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-22/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-22/product-02.jpg)
 
 
 AWS 今天发布两项服务，直指 AI 代理在企业落地时的两大障碍：缺乏业务上下文和安全保障。第一项服务能让代理理解企业内部的业务规则、数据模型和流程逻辑；第二项则提供细粒度的权限管理和审计能力。为什么重要？AWS 正试图证明 AI 代理不仅是玩票工具，而是能真正融入企业生产环境的“员工”。这两项服务如果落地成功，将显著提升企业对 AI 代理的信任度，加速从 POC 到生产的转换。
@@ -195,7 +195,7 @@ AWS 今天发布两项服务，直指 AI 代理在企业落地时的两大障碍
 
 ### iOS 27 带来一系列实用 AI 功能，不止 Siri 升级
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-22/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-22/product-03.jpg)
 
 
 苹果在 iOS 27 中放入了大量“看不见但用得到”的 AI 能力。例如：相册内自动识别并整理重复文件，邮件中智能提取日程并生成日历邀请，输入法新增语境感知的自动纠错等。关键点：这些功能不标榜“AI”，也不叫 Siri，而是内嵌在系统级交互中让用户无感知地受益。为什么重要？苹果一贯的策略是“AI 即体验”，而非“AI 即聊天”。这可能会带动普通用户对 AI 的接受度，并为苹果后续的 Agent 生态打下基础。
@@ -204,7 +204,7 @@ AWS 今天发布两项服务，直指 AI 代理在企业落地时的两大障碍
 
 ### 微信 AI 助手“小微”小范围灰度上线
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-22/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-22/product-04.jpg)
 
 
 微信内原生的 AI 助手“小微”开始灰度测试。用户可以通过文字或语音直接调用微信功能（如发消息、建群、搜朋友圈）以及拉起第三方小程序。关键点：这是微信首次将 AI 助手内置到聊天界面中，而不是作为一个独立入口。为什么重要？微信拥有 10 亿级用户和丰富的小程序生态，一旦“小微”全面放开，可能成为国内最大的 AI Agent 入口。不过目前仅灰度，具体能力和流畅度尚需观察。
@@ -213,7 +213,7 @@ AWS 今天发布两项服务，直指 AI 代理在企业落地时的两大障碍
 
 ### In the Weights 推出 AI 虚荣搜索：查你的 AI 影响力分数
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-22/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-22/product-05.jpg)
 
 
 一个新工具 In the Weights 允许用户查询自己的“AI 影响力”分数——类似谷歌的 PageRank 但专门针对 AI 模型训练数据中的被引用情况。它统计你的名字、作品或公司在主流 AI 数据集（如 C4、LAION）中出现频率。为什么重要？对技术从业者和开发者来说，这是社交资本的新度量，类似“你会被 AI 记住吗？”的虚荣搜索。但该工具的数据源和算法不透明，娱乐性大于实用性。
@@ -244,7 +244,7 @@ Agent 37 Cloud 发布新服务，允许企业为每个客户创建独立的 AI �
 
 ### Sam Altman：低估Scaling是研究者的“原罪”
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-22/opinion-00.jpg)
 
 
 OpenAI CEO Sam Altman在斯坦福演讲中表示，许多研究者因低估Scaling（规模扩展）对AI进步的作用，反而拖慢了行业发展。他认为，如果早期能更坚定地投入算力和数据，今天的模型能力会更强。关键点：Altman将AI进步归因于工程的规模化，而非算法创新，这与部分学术界对“Scaling Laws可能触顶”的担忧形成对比。为什么重要：这场演讲将Scaling路线推至聚光灯下，提醒从业者——信仰Scaling的阵营内部认为，质疑本身就是阻力。  
@@ -252,7 +252,7 @@ OpenAI CEO Sam Altman在斯坦福演讲中表示，许多研究者因低估Scali
 
 ### Signal总裁：AI聊天机器人不是你的朋友
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-22/opinion-01.jpg)
 
 
 Signal总裁Meredith Whittaker公开警告用户：AI聊天机器人只是工具，不是有意识的伙伴。关键点：她指出，当前聊天机器人设计常试图模拟人类情感，容易让用户产生虚假亲密感，进而降低对隐私和安全的警惕。为什么重要：在情感陪伴类AI产品井喷的当下，Whittaker的提醒直指用户体验与伦理边界——不要用“朋友”逻辑来设计或使用AI。  
@@ -260,7 +260,7 @@ Signal总裁Meredith Whittaker公开警告用户：AI聊天机器人只是工具
 
 ### NYU教授：AI泡沫破灭将比互联网崩盘更惨
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-22/opinion-02.jpg)
 
 
 NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互联网崩盘。关键点：他指出当前AI估值基于“巨大但不确定的未来现金流”，而市场情绪已过热；一旦预期落空，资金撤出速度会更快。为什么重要：对于投资人和创业者，这不是危言耸听——泡沫是否已到顶峰？FOMO（错失恐惧）与理性估值之间的平衡点在哪里？  
@@ -268,7 +268,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### 欧盟深度伪造定义模糊，零售业合规承压
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-22/opinion-03.jpg)
 
 
 欧洲电商协会指出，欧盟对深度伪造（deepfake）缺乏清晰的法律定义，导致零售业在广告标注、内容审核等环节面临合规风险。关键点：AI生成的模特、宣传图是否算深度伪造？定义模糊使零售商要么过度合规增加成本，要么冒险潜藏诉讼风险。为什么重要：AI在零售业的落地速度极快，监管滞后正成为实际瓶颈——从业者需提前建立内部标准，而非等待欧盟明确。  
@@ -276,7 +276,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### 陶哲轩12年前预言成真，AI成最强推手
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-22/opinion-04.jpg)
 
 
 数学家陶哲轩在12年前曾对AI的发展路径做出预测，如今随着大模型能力爆发，他的观点被证实。陶哲轩本人也成为AI最热忱的布道者之一，频繁参与讨论如何用AI辅助数学研究。关键点：陶哲轩的核心预测是，AI不会直接解决所有难题，但会成为“思维加速器”，极大提升人类推理效率。为什么重要：数学家从怀疑到拥抱的转变，展示了AI在科研领域的真实渗透——不仅是工具，更是方法论革新。  
@@ -284,7 +284,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### AI破坏招聘漏斗，HBR提出修复方案
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-22/opinion-05.jpg)
 
 
 《哈佛商业评论》刊文指出，AI工具已破坏传统招聘流程：AI筛选简历时常因训练数据偏见淘汰合格候选人，而求职者也在用AI生成虚假材料，导致人岗匹配失效。关键点：HBR建议企业回归“结构化面试+人类判断”模式，同时利用AI做辅助而非主导。为什么重要：招聘是AI落地最频繁的场景之一，但技术滥用正在制造新痛点——HR与技术团队需要重新设计流程。  
@@ -297,7 +297,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### 工程师的坚持：拒绝AI生成代码即使它正确
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-06-22/opinion-07.jpg)
 
 
 一位工程师在博客中反思，为何经常拒绝AI生成的代码，即便它在功能上完全正确。关键点：理由包括：代码难以维护、缺乏设计语境、团队知识传承断链。为什么重要：这揭示了工具效率与工程可持续性之间的张力——未来，审查AI代码可能成为新的核心技能。  
@@ -313,7 +313,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### OpenMontage：全球首个开源代理视频制作系统
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-22/opensource-00.jpg)
 
 
 **是什么：** OpenMontage是首个开源的多智能体视频制作系统，由12条流水线、52个工具和500多个代理技能构成，覆盖从脚本、拍摄到后期完整工作流。  
@@ -323,7 +323,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### Codebase Memory MCP：高性能代码智能MCP服务器
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-22/opensource-01.jpg)
 
 
 **是什么：** DeusData开源了Codebase Memory MCP服务器，它将整个代码库索引为知识图谱，并暴露给AI助手使用。  
@@ -333,7 +333,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### Headroom：LLM压缩工具，减少60-95% tokens
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-22/opensource-02.jpg)
 
 
 **是什么：** Headroom是一个轻量级开源工具，专门压缩LLM输入中的工具输出、日志、文件和长文本，平均节省80% tokens。  
@@ -343,7 +343,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### Voicebox：开源AI语音工作室，支持克隆和创作
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-22/opensource-03.jpg)
 
 
 **是什么：** Voicebox是一个开源的AI语音工作室，提供语音克隆、听写和语音创作三大核心功能。  
@@ -353,7 +353,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### Kilo：开源全功能代理工程平台
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-22/opensource-04.jpg)
 
 
 **是什么：** Kilo是一个集成的代理工程平台，提供最流行的开源编码代理（如SWE-agent、OpenHands等），并内置工作流管理、沙盒执行和环境配置。  
@@ -363,7 +363,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### Unsloth Studio：开源AI模型训练Web UI
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-22/opensource-05.jpg)
 
 
 **是什么：** Unsloth Studio提供了一个Web图形界面，用于训练和运行Gemma 4、Qwen3.6、DeepSeek等主流开源大模型。  
@@ -373,7 +373,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### Slime：LLM后训练强化学习框架
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-22/opensource-06.jpg)
 
 
 **是什么：** Slime是清华THUDM开源的一个面向RL Scaling的LLM后训练框架，专为强化学习阶段设计。  
@@ -383,7 +383,7 @@ NYU金融教授Damodaran预测，AI泡沫破裂时的冲击将超过2000年互�
 
 ### STORM：LLM驱动的知识策展系统
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-22/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-22/opensource-07.jpg)
 
 
 **是什么：** 斯坦福大学开源的STORM系统，利用LLM自动研究某一主题，并生成带引用和结构的完整报告。  

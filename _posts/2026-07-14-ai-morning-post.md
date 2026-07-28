@@ -33,7 +33,7 @@ sections:
 
 ### OpenAI发布GPT-5.6 Sol，性能与定价双重施压
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-14/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-14/model_release-00.jpg)
 
 
 **是什么**：OpenAI于7月13日推出GPT-5.6 Sol，这是GPT-5系列的最新版本，在推理与多步任务上实现显著提升。Anthropic随即宣布将Claude Fable的免费使用期限延长至7月19日，此前已因用户增长压力多次调整免费策略。
@@ -46,7 +46,7 @@ sections:
 
 ### 德国联合体发布Soofi S：30B开源模型双语封顶
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-14/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-14/model_release-01.jpg)
 
 
 **是什么**：由德国多个研究机构组成的联合体发布Soofi S，参数量300亿，在英语和德语的多项基准测试中达到SOTA水平。
@@ -67,7 +67,7 @@ sections:
 
 ### 苹果起诉 OpenAI 窃取商业机密
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-14/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-14/company-00.jpg)
 
 
 **是什么**：苹果在联邦法院起诉 OpenAI，称一名前苹果工程师利用系统漏洞窃取数千条商业机密，并与 OpenAI 合谋。多个媒体曝光了细节，包括该员工被指在离职前大量下载源代码。
@@ -80,7 +80,7 @@ sections:
 
 ### OpenAI 安全主管离职，两年内第六位高管出走
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-14/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-14/company-01.jpg)
 
 
 **是什么**：OpenAI 安全主管近日离职，成为两年内第六位离开的高管。此前包括首席科学家 Ilya Sutskever、CTO Mira Murati 等人的出走，已让外界质疑其治理稳定性。
@@ -93,7 +93,7 @@ sections:
 
 ### 苹果调整 Mac 芯片路线图，跳过 M6 Pro 直攻 M7 系列
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-14/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-14/company-02.jpg)
 
 
 **是什么**：苹果计划今年秋季推出 M6 基础版后，跳过 M6 Pro/Max/Ultra，直接推进 M7 系列。M7 Ultra 的目标是逼近英伟达 Blackwell 加速器的性能水平。
@@ -106,7 +106,7 @@ sections:
 
 ### 图灵奖得主 Rich Sutton 创立 Oak Lab，打造自学 AI Agent
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-14/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-14/company-03.jpg)
 
 
 **是什么**：强化学习之父、图灵奖得主 Richard Sutton 宣布成立 Oak Lab，致力于开发能够自主学习的 AI 智能体（agent），强调终身学习（lifelong learning）范式，而非依赖大规模预训练。
@@ -119,7 +119,7 @@ sections:
 
 ### Anthropic 为印度用户推出卢比定价，本土化策略落地
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-14/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-14/company-04.jpg)
 
 
 **是什么**：Anthropic 开始为印度市场提供以印度卢比（INR）计价的 Claude 订阅计划。印度是其美国以外最大的市场，此举旨在降低汇率摩擦并提升支付便利性。
@@ -132,7 +132,7 @@ sections:
 
 ### 英特尔追加 50 亿欧元投资爱尔兰工厂，扩大 AI 芯片产能
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-14/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-14/company-05.jpg)
 
 
 **是什么**：英特尔宣布向爱尔兰莱克斯利普（Leixlip）园区追加 50 亿欧元投资，用于升级 Intel 3 制程下 Xeon 6 和下一代 Xeon 处理器的产能，以满足 AI 服务器需求。
@@ -155,7 +155,7 @@ sections:
 
 ### 世界模型综述：通往 AGI 的关键，但远未成熟
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-14/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-14/research-00.jpg)
 
 
 多位专家详细梳理了世界模型的工作原理、能力边界与未解决难题。这类模型试图通过内部模拟物理世界或环境动态来辅助推理，被视为实现通用人工智能的核心拼图之一。但目前，它们仍面临维度灾难、因果混淆、长期预测不稳定的挑战。值得注意：即使在下棋等受限领域，世界模型也比端到端方法更脆弱。
@@ -164,7 +164,7 @@ sections:
 
 ### LinkedIn 长文 AI 垃圾：四分之一出自机器
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-14/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-14/research-01.jpg)
 
 
 一项覆盖五个社交平台的研究发现，LinkedIn 上大约 24% 的超长帖文（>500 词）由 AI 生成，比例远高于 Twitter/X、Reddit、Medium 和 Facebook。这意味着职业社交网络已成为“AI slop”重灾区——不是因为 LinkedIn 更适合生成，而是其用户追求“专业形象”的功利性驱动了机器代笔。这不仅是内容质量问题，还可能稀释平台上的知识信号，让真正的人力见解更难被发现。
@@ -173,7 +173,7 @@ sections:
 
 ### AI 助长科研产出，但窄化探索范围
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-14/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-14/research-02.jpg)
 
 
 一篇发表在 IEEE Spectrum 的新研究指出，AI 工具（如代码生成、文献摘要、实验设计辅助）能显著提升科学家个人产出，但副作用是研究选题和创新方向趋于同质化。当所有人都依赖同一套推荐算法和生成工具时，意外发现和跨领域探索的概率下降。这是一个经典的“局部优化 vs 全局探索”困境：AI 提高了效率，却可能让科学创新的“搜索空间”变窄。
@@ -194,7 +194,7 @@ sections:
 
 ### Google SensorFM：可穿戴传感器数据泛化为健康智能层
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-07-14/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-07-14/research-05.jpg)
 
 
 Google 提出 SensorFM，旨在将来自不同可穿戴设备（手表、戒指、贴片等）的异构传感器数据转化为统一的健康表示层。通过预训练，该模型能够被微调用于心率异常检测、睡眠阶段分类、压力预测等下游任务。关键在于：它无需针对每类设备单独训练，降低了部署成本，并可能推动个人健康 AI 从“设备绑定”走向“数据标准化”。但隐私和通用性之间的平衡仍是挑战。
@@ -213,7 +213,7 @@ AI 应用产品今日迎来「工具化」关键拐点：Claude Code 新增内�
 
 ### Claude Code 内置浏览器，AI 可自主操作外部网页
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-14/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-14/product-00.jpg)
 
 
 Anthropic 旗下开发工具 Claude Code 新增内置浏览器功能。现在，AI 可以读取任意公开网页、定位页面元素、模拟点击并输入文本——就像一个人在使用浏览器。这意味着开发者可让 Claude 自动完成表单填写、数据抓取、SaaS 操作等复杂流程。此前 Claude Code 主要处理代码文件，现在能力外延至网页交互，大幅扩展了自动化边界。
@@ -222,7 +222,7 @@ Anthropic 旗下开发工具 Claude Code 新增内置浏览器功能。现在，
 
 ### 阶跃星辰发布智能体手机 STEPX Neo，OS 原生支持 Agent
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-14/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-14/product-01.jpg)
 
 
 阶跃星辰推出全球首个大模型原生智能体终端 STEPX Neo，搭载自研 Step AOS（Agentic-native OS）和智能体「阶跃 Amoo」。与传统手机不同，这台设备的系统层直接整合了语言模型与上下文感知能力，第三方应用可通过统一 Agent 接口调用。本质上是将一个端侧大模型作为操作系统的「核心调度器」，而非单纯的语音助手插件。这指向一条不同于苹果和安卓的硬件路线：先定义 Agent 交互范式，再适配应用生态。
@@ -231,7 +231,7 @@ Anthropic 旗下开发工具 Claude Code 新增内置浏览器功能。现在，
 
 ### Waze 集成 Gemini AI，增强导航个性化
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-14/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-14/product-02.jpg)
 
 
 Google 旗下导航应用 Waze 正在利用 Gemini 模型推出 AI 驱动的个性化导航功能，包括根据驾驶习惯推荐路线、实时路况预测、以及更自然的语音交互。这是 Waze 在 Google Maps 和 Apple Maps 之间维持差异化的重要动作。对于应用产品团队而言，这说明 AI 正在从「聊天界面」渗透到传统工具型 App 的核心体验层。
@@ -240,7 +240,7 @@ Google 旗下导航应用 Waze 正在利用 Gemini 模型推出 AI 驱动的个�
 
 ### Siri AI 升级为苹果「万能工具」，iOS 27 公测开放
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-14/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-14/product-03.jpg)
 
 
 重新设计后的 Siri 在 iOS 27 公测版中不再只是语音助手：它成为 iPhone 的系统级 AI 骨干，可以跨应用执行复杂任务（如从邮件中提取事件创建日历项，再通过短信发送通知）。苹果采用了端侧推理优先、云端为辅的架构。关键变化在于，Siri 现在可以「看到」屏幕内容，并基于上下文操作非 Apple 原生应用。这对第三方开发者的接入策略和用户隐私预期都会产生深远影响。
@@ -249,7 +249,7 @@ Google 旗下导航应用 Waze 正在利用 Gemini 模型推出 AI 驱动的个�
 
 ### Claude Code 与 OpenCode token 开销对比：差距超 4 倍
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-14/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-14/product-04.jpg)
 
 
 开发者社区实测发现，在相同 Prompt 下，Claude Code 在读取提示前会发送约 33k 个 token（含系统提示、上下文等），而开源方案 OpenCode 仅发送约 7k 个 token。虽然 Claude Code 提供了更强大的内置能力（如浏览器、沙箱），但对于高频调用的开发者，token 开销直接对应成本。这一对比提示：选择 AI 生产力工具时，不应只看输出质量，隐形的 token 预填充成本也需评估。
@@ -258,7 +258,7 @@ Google 旗下导航应用 Waze 正在利用 Gemini 模型推出 AI 驱动的个�
 
 ### OpenAI 更新提示指南：别再过度思考，直接从结果出发
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-14/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-14/product-05.jpg)
 
 
 OpenAI 发布新版官方提示工程指南，核心建议是「从期望结果开始写提示」，而非让 AI 逐步推理（chain-of-thought）。新方法认为，直接描述输出格式、内容结构和风格，比让模型「思考每一步」更高效。这反映出模型本身推理能力增强后，用户「过度引导」反而画蛇添足。对产品经理和开发者而言，这意味着需要重新训练团队怎么写 Prompt，而不是盲目堆砌「请一步步思考」。
@@ -267,7 +267,7 @@ OpenAI 发布新版官方提示工程指南，核心建议是「从期望结果�
 
 ### Agent 专用搜索登顶 Product Hunt，由中国团队打造
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-07-14/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-07-14/product-06.jpg)
 
 
 一款名为「Agent Search」的搜索引擎产品登上 Product Hunt 日榜第一，由国内团队开发，专为 AI Agent 设计。核心卖点包括更低的 token 消耗和更高的结果相关性——在调用大模型前，该搜索先对网页进行结构化处理，压缩无效内容。对于正在构建 Agent 的团队，这可能是一个降低 API 成本的有效基础设施。
@@ -286,7 +286,7 @@ AI 的能力天花板正在被「与真实网页交互」的实际操作所打�
 
 ### Nadella 炮轰 AI 实验室的蒸馏双标
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-14/opinion-00.jpg)
 
 
 7月13日，微软CEO萨提亚·纳德拉在接受采访时点名批评OpenAI和Anthropic，称其禁止用户对自己的模型进行知识蒸馏（distillation），却同时允许自身模型使用公开数据进行训练，包括可能包含竞争对手产出的内容。他认为这种“只许州官放火”的做法将阻碍AI生态的创新与公平竞争。
@@ -309,7 +309,7 @@ Zig编程语言创始人Andrew Kelley（Ray Myers）在个人博客及Hacker New
 
 ### Altman 反击 Musk：太空数据中心是短视骗局
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-14/opinion-02.jpg)
 
 
 Sam Altman在Twitter及TechCrunch采访中强烈回应Elon Musk关于“太空数据中心”的提议，称其为“向散户兜售短期概念的骗局”，并强调地面数据中心无论在成本、延迟还是维护上都是当前唯一现实的选择。
@@ -322,7 +322,7 @@ Sam Altman在Twitter及TechCrunch采访中强烈回应Elon Musk关于“太空�
 
 ### 诺奖得主联名警告：AI经济冲击窗口正在关闭
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-14/opinion-03.jpg)
 
 
 包括多位诺贝尔经济学奖得主和AI顶级研究者在内的联合声明警告：留给社会应对AI大规模就业替代的时间已经不多了。他们呼吁各国政府在2027年之前建立再培训体系和收入补偿机制，否则将面临严重的社会失衡。
@@ -335,7 +335,7 @@ Sam Altman在Twitter及TechCrunch采访中强烈回应Elon Musk关于“太空�
 
 ### AI 应该帮你逃脱杀妻罪吗？——极致用户对齐的伦理深渊
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-14/opinion-04.jpg)
 
 
 TechCrunch专栏以“AI应否协助用户销毁证据、摆脱杀人指控”为思想实验，探讨了“极致用户对齐”（radical user alignment）的伦理悖论。如果AI被设计为无条件服从用户，那么它可能成为犯罪的共犯，而开发者无法在技术上划定“正当指令”的边界。
@@ -348,7 +348,7 @@ TechCrunch专栏以“AI应否协助用户销毁证据、摆脱杀人指控”�
 
 ### MIT Tech Review：Anthropic 最新可解释性研究被过度解读
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-14/opinion-05.jpg)
 
 
 Anthropic近期披露了一项关于LLM内部机制的可解释性研究（“dictionary learning”相关），声称发现了模型内部“概念神经元”。但MIT Technology Review的分析文章指出，这些发现的实际意义被媒体严重放大：目前只能观测到极少数概念的对应关系，且无法证明其因果性，距离真正的可审计解释还差得很远。
@@ -369,7 +369,7 @@ Anthropic近期披露了一项关于LLM内部机制的可解释性研究（“di
 
 ### OpenManus：开源通用 Agent 框架，致敬 Manus
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-14/opensource-00.jpg)
 
 
 FoundationAgents 团队开源了 OpenManus——一个无堡垒、纯开放的多智能体协作框架，旨在降低复杂 Agent 应用的构建门槛。它在设计上受 Manus 启发，但完全用可审计的开源代码实现。关键点在于支持动态角色分配和任务分解，开发者可以通过配置文件快速编排多个 Agent 协同完成工作流。为什么重要：这是当前少数几个同时具备“通用性”和“完全透明”的 Agent 框架之一，适合需要自定义协作逻辑的团队，也是研究多 Agent 系统的宝贵参考实现。
@@ -378,7 +378,7 @@ FoundationAgents 团队开源了 OpenManus——一个无堡垒、纯开放的�
 
 ### Claude Cookbooks：官方配方合集，快速上手 Claude
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-14/opensource-01.jpg)
 
 
 Anthropic 发布了 Claude Cookbooks 开源仓库，包含大量 Jupyter Notebook 和代码示例，覆盖函数调用、工具使用、提示链等场景。关键点：每个 Notebook 都针对一个具体任务（如“用 Claude 分析 PDF 并生成摘要”），附有可直接运行的代码和解释。为什么重要：这是 Anthropic 官方直出的最佳实践库，对于希望迁移到 Claude 的开发者来説，比社区教程更权威、更完整，尤其适合快速验证产品原型。
@@ -387,7 +387,7 @@ Anthropic 发布了 Claude Cookbooks 开源仓库，包含大量 Jupyter Noteboo
 
 ### Hallmark：给编码 Agent 的“反 AI 味”设计风格
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-14/opensource-02.jpg)
 
 
 Nutlope 开源的 Hallmark 是一个专为编码 Agent（如 Claude Code、Cursor）定制的设计 skill，核心主张是生成“不像 AI 写出来的”界面。关键点：它内置了完整的 CSS 排版、配色和交互模式，强调人类设计师的审美直觉，而非大模型默认的模板化输出。为什么重要：随着 AI 生成代码进入产品交付环节，“AI 味”正在成为用户体验的槽点。Hallmark 提供了一条低成本解决路径——让 Agent 在输出时自动套用一套质量更高的视觉规范。
@@ -396,7 +396,7 @@ Nutlope 开源的 Hallmark 是一个专为编码 Agent（如 Claude Code、Curso
 
 ### awesome-llm-apps：100+ 可运行 AI Agent 和 RAG 应用合集
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-14/opensource-03.jpg)
 
 
 Shubhamsaboo 维护的 awesome-llm-apps 仓库聚合了超过 100 个可直接克隆运行的 AI Agent 和 RAG 应用，覆盖问答、文档检索、自动化工作流等场景。关键点：每个应用都附带完整的代码和配置，通常只需设置 API Key 即可启动。为什么重要：这是目前覆盖面最广的“即用型”Agent 应用池，适合产品经理快速验证 idea 或开发者做竞品参考，省去从零搭建的重复劳动。
@@ -405,7 +405,7 @@ Shubhamsaboo 维护的 awesome-llm-apps 仓库聚合了超过 100 个可直接�
 
 ### Destructive Command Guard：阻断 Agent 危险 shell 命令的开源防护
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-14/opensource-04.jpg)
 
 
 Dicklesworthstone 开发的 Destructive Command Guard 是一个轻量级防护工具，可以拦截 AI 编码 Agent 对危险 git 和 shell 命令的执行。关键点：它通过监听终端输出来检测“git push –force”“rm -rf /”等高风险操作，并在执行前弹出确认提示。为什么重要：GitHub 上已有多个因 Agent 误操作导致仓库损坏的案例，这类防护工具填补了 Agent 权限管理的外部监控空白，适合在开发环境中作为“最后一道防线”。
@@ -414,7 +414,7 @@ Dicklesworthstone 开发的 Destructive Command Guard 是一个轻量级防护�
 
 ### 蚂蚁安全开源两大框架，填补 Claude Code 攻击面
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-14/opensource-05.jpg)
 
 
 蚂蚁安全团队开源了两个安全框架，专门针对 Claude Code 等编码 Agent 的潜在漏洞提供防护。关键点：两个框架分别聚焦“输入注入防御”和“输出安全过滤”，覆盖 Agent 在读取代码、执行命令过程中的常见攻击面。为什么重要：编码 Agent 的安全问题远不止命令执行——它在处理用户代码时可能引入恶意注入，而现有安全工具多关注运行时而非输入阶段。蚂蚁的框架是对这一空白的系统性补全。
@@ -423,7 +423,7 @@ Dicklesworthstone 开发的 Destructive Command Guard 是一个轻量级防护�
 
 ### Microsoft TRELLIS.2：原生紧凑结构隐空间 3D 生成
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-14/opensource-06.jpg)
 
 
 微软开源 TRELLIS.2，一种基于结构化隐空间的 3D 生成框架。关键点：它直接用紧凑的三角网格作为隐空间输出，无需 post-processing 即可得到高质量 3D 模型，且显存占用比前代降低 40%。为什么重要：3D 生成一直是 AI 落地的难点，TRELLIS.2 在效率和品质上的提升，可能让实时 3D 内容生成从实验室走向游戏、XR 等实际应用。
@@ -432,7 +432,7 @@ Dicklesworthstone 开发的 Destructive Command Guard 是一个轻量级防护�
 
 ### Clawk：给编码 Agent 提供一次性 Linux 虚拟机，安全隔离
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-14/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-14/opensource-07.jpg)
 
 
 Clawk 是一个轻量工具，可以让 AI 编码 Agent 在 disposable Linux VM 中运行，执行完后自动销毁环境。关键点：它基于 KVM 实现，Agent 的每次操作都在一个干净环境中执行，不会污染宿主机文件系统或网络。为什么重要：相比沙盒或权限过滤，一次性虚拟机提供了最高级别的隔离，适合在不可信 Agent（如开源社区贡献的 Agent 插件）上使用，也能防止 Agent 残留敏感数据。

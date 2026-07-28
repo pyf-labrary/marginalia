@@ -43,7 +43,7 @@ sections:
 
 ### VoxCPM2与MOSS-TTS系列开源，TTS赛道再升温
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-01/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-01/model_release-01.jpg)
 
 
 **是什么**：OpenBMB发布VoxCPM2，一个无需分词器的多语言语音生成模型；同期MOSI.AI开源MOSS-TTS系列，覆盖语音合成与声音克隆。
@@ -56,7 +56,7 @@ sections:
 
 ### NVIDIA开源Eagle，视觉语言模型的数据哲学
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-01/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-01/model_release-02.jpg)
 
 
 **是什么**：NVIDIA实验室开源视觉语言模型Eagle，采用以数据为中心的策略（data-centric approach）优化训练。
@@ -69,7 +69,7 @@ sections:
 
 ### Kronos金融基础模型开源，理解“市场语言”
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-01/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-01/model_release-03.jpg)
 
 
 **是什么**：开源项目Kronos发布面向金融市场的语言基础模型，专门训练于金融文本（研报、财报、新闻）与交易信号数据。
@@ -92,7 +92,7 @@ sections:
 
 ### 微软与英伟达联手开发AI PC，自研CPU曝光
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-01/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-01/company-00.jpg)
 
 
 据媒体报道，微软与英伟达正合作开发一款面向AI agent的PC，英伟达将提供自研CPU，整机设计类似MacBook Pro的定位。这台设备的核心不再是运行Copilot这样的聊天助手，而是直接承载能够自主执行任务的agent。关键点在于英伟达的CPU角色——此前英伟达在PC端以GPU为主，自研CPU将挑战x86生态。为什么重要：如果成真，AI PC的硬件定义权将向英伟达倾斜，微软则获得一个从芯片到操作系统完全定制化的agent平台，摆脱对Intel/AMD的依赖。
@@ -101,7 +101,7 @@ sections:
 
 ### GitHub Copilot改token计费，开发者怨声载道
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-01/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-01/company-01.jpg)
 
 
 GitHub宣布Copilot将采用基于token的新计费模式，取代之前的固定月费订阅。开发者社群迅速发酵不满情绪，有用户称这是“黄金时代的终结”。关键点：token计费意味着使用量越大成本越高，对于重度依赖Copilot的团队而言，月度支出可能急剧上升。为什么重要：这一变化反映了AI编程助手从“获客补贴”转向“盈利优先”，但代价是开发者信任。如果其他平台跟进，整个AI开发工具定价范式可能改变，迫使企业重新评估ROI。
@@ -110,7 +110,7 @@ GitHub宣布Copilot将采用基于token的新计费模式，取代之前的固�
 
 ### OpenRouter完成1.13亿美元B轮融资
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-01/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-01/company-02.jpg)
 
 
 AI模型聚合平台OpenRouter宣布获得1.13亿美元B轮融资，加速模型接入与推理服务扩张。OpenRouter的核心价值在于统一API接口，让开发者一次接入即可调用数十家模型（OpenAI、Anthropic、Google等）并按需切换。关键点：这轮融资发生在模型供应碎片化加剧、推理成本持续波动的时间点。为什么重要：OpenRouter的崛起意味着中间层（模型聚合与路由）正在成为AI基础设施的关键环节；当模型本身商品化，路由与调度能力可能成为真正的护城河。
@@ -119,7 +119,7 @@ AI模型聚合平台OpenRouter宣布获得1.13亿美元B轮融资，加速模型
 
 ### 软银斥资750亿欧元在法国建设AI数据中心
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-01/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-01/company-03.jpg)
 
 
 软银宣布最高投入750亿欧元在法国建设大型AI计算集群，这将是欧洲最大规模的数据中心项目。关键点：软银选择法国而非其他欧洲国家，与法国政府近期的AI投资优惠政策和核电稳定性直接相关。为什么重要：数据中心投资规模激增，预示着AI算力需求仍处于爆发期；同时，地缘政治格局下欧洲正加速本土算力建设，减少对美国的依赖。
@@ -128,7 +128,7 @@ AI模型聚合平台OpenRouter宣布获得1.13亿美元B轮融资，加速模型
 
 ### Anthropic官方披露如何安全部署Claude
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-01/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-01/company-04.jpg)
 
 
 Anthropic发布技术博客，详细介绍了在多产品环境中如何安全隔离和管控Claude模型，提升沙箱透明度。关键点：他们设计了多层次的权限隔离、输入输出审计以及行为监控机制，避免模型在跨产品调用时发生数据泄露或越权行为。为什么重要：随着Claude被集成到更多企业级产品中，安全透明化成为赢得机构客户信任的必要条件；Anthropic主动披露技术细节，既是对竞争对手的差异化，也呼应了监管对AI安全的关注。
@@ -137,7 +137,7 @@ Anthropic发布技术博客，详细介绍了在多产品环境中如何安全�
 
 ### Anthropic超越OpenAI成估值最高AI创企
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-01/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-01/company-05.jpg)
 
 
 消息称Anthropic的估值已超过OpenAI，成为全球最有价值的AI创业公司。关键点：尽管OpenAI在C端知名度更高，但Anthropic依靠Claude的企业级部署和安全性定位，在融资和估值上反超。为什么重要：这反映了资本对AI安全路线和“可控性”的偏好正在升温；同时也说明，在模型能力趋同的背景下，商业策略与信任建设成为差异化关键。
@@ -146,7 +146,7 @@ Anthropic发布技术博客，详细介绍了在多产品环境中如何安全�
 
 ### DDIM之父宋佳铭宣布离职
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-06-01/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-06-01/company-06.jpg)
 
 
 扩散模型关键人物、DDIM（Denoising Diffusion Implicit Models）提出者宋佳铭将离开当前职位，消息引发行业关注。关键点：宋佳铭在扩散模型领域贡献显著，DDIM将扩散逆过程从数千步压缩至几十步，是稳定扩散等技术高效落地的基石。为什么重要：顶尖研究者的去留通常预示着技术方向的调整或创业意向；宋佳铭的下一步动向可能影响生成式AI底层建模的演进路径。
@@ -155,7 +155,7 @@ Anthropic发布技术博客，详细介绍了在多产品环境中如何安全�
 
 ### Anthropic禁止面试中使用AI工具
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-01/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-01/company-07.jpg)
 
 
 Anthropic宣布在招聘面试中禁止使用AI工具，以真实评估候选人的思考能力。关键点：面试官不能打开Copilot或ChatGPT辅助提问或评估答案，候选人也不能借助AI生成回答。为什么重要：作为一家AI公司，Anthropic此举似乎在强调“人类思考的不可替代性”——但更务实的原因是，AI工具会引入评分偏差，让面试结果失真。这一政策可能成为技术公司招聘的风向标。
@@ -172,7 +172,7 @@ Anthropic宣布在招聘面试中禁止使用AI工具，以真实评估候选人
 
 ### AI越“乐于助人”越不会“装人”
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-01/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-01/research-00.jpg)
 
 
 一项大规模研究发现，对AI聊天机器人进行有用性优化（如更精准、更高效的回答），会显著降低其在模拟人类行为（如对话自然度、情感表达）上的表现。研究团队认为这两者之间存在固有权衡，无法同时最大化。这对当下追求“Agent”体验的产品团队是一个警示：一味追求任务完成率可能丢失用户的情感连接。
@@ -181,7 +181,7 @@ Anthropic宣布在招聘面试中禁止使用AI工具，以真实评估候选人
 
 ### AI搜索代理倾向确认已知，而非真正研究
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-06-01/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-06-01/research-01.jpg)
 
 
 一项针对AI搜索代理的测试发现，这些工具在执行网页研究任务时，往往更倾向于寻找和确认已有认知的结论，而非进行真正的信息探索。这意味着当前AI搜索代理尚未很好地解决“好奇心”问题，可能进一步加剧信息茧房。对于深度调研类应用而言，这是一个必须正视的局限性。
@@ -190,7 +190,7 @@ Anthropic宣布在招聘面试中禁止使用AI工具，以真实评估候选人
 
 ### 复旦×通义提出全新CUA训练范式
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-06-01/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-06-01/research-02.jpg)
 
 
 复旦大学与通义团队联合发布了下一代CUA（代码理解与行动）训练范式，核心思路是通过结构化任务分解与约束强化，显著提升Agent在复杂工具链中的选择能力。该范式相比传统指令微调，在工具调用准确率上有明显提升。对从事Agent开发的技术团队，这提供了一个可落地的训练方向。
@@ -199,7 +199,7 @@ Anthropic宣布在招聘面试中禁止使用AI工具，以真实评估候选人
 
 ### 机器人原生世界动作模型问世
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-06-01/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-06-01/research-03.jpg)
 
 
 复旦系团队发布了机器人原生世界动作模型，采用时空一体架构，直接将视觉输入映射为动作序列，无需中间状态表示。该模型已在半年内获得5轮融资，显示出资本对具身智能底层模型的强烈兴趣。对于机器人领域从业者，这是值得关注的技术路线。
@@ -208,7 +208,7 @@ Anthropic宣布在招聘面试中禁止使用AI工具，以真实评估候选人
 
 ### τ0-WM：最大规模开源具身世界模型预训练
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-06-01/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-06-01/research-04.jpg)
 
 
 τ0-WM 正式开源，使用17800小时真机数据预训练，支持推理与交互能力。这是目前公开的最大规模具身世界模型，对于研究机器人在物理世界普适感知与推理的团队而言，是一个重要的基线。模型权重已公开，适合下游微调。
@@ -217,7 +217,7 @@ Anthropic宣布在招聘面试中禁止使用AI工具，以真实评估候选人
 
 ### Anthropic研究：男性使用AI编码代理是女性两倍
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-06-01/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-06-01/research-05.jpg)
 
 
 Anthropic最新调查显示，在社会科学研究场景中，男性研究人员使用AI编码代理的频率是女性的两倍以上。研究进一步指出，这种使用差距可能加剧研究产出的不平等。对于团队管理和工具推广，这是一个值得反思的“技术采纳差距”。
@@ -236,7 +236,7 @@ Anthropic最新调查显示，在社会科学研究场景中，男性研究人�
 
 ### Meta被曝开发AI挂坠硬件
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-01/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-01/product-00.jpg)
 
 
 根据TechCrunch报道，Meta正在开发一款AI挂坠，作为其AI硬件产品线的新尝试。该设备可能专注于语音交互和随身AI能力，与已有的Ray-Ban智能眼镜形成互补。关键点在于，此前Humane AI Pin和Rabbit R1等挂坠类产品表现平平，Meta需要找到真正的差异化场景——比如更强的多模态感知或无缝连接其社交生态。为什么重要：Meta在AI硬件上持续押注，但挂坠形态尚未被市场验证，这反映出业界对“随身AI”载体的探索仍在试错阶段。
@@ -245,7 +245,7 @@ Anthropic最新调查显示，在社会科学研究场景中，男性研究人�
 
 ### Google Gemini Spark 24/7助手实测实用
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-01/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-01/product-01.jpg)
 
 
 TechCrunch记者对Google新推出的全天候AI助手Gemini Spark进行了实际体验。它能24小时待命，自动总结Gmail收件箱、规划日历活动、提供实时信息，实测中确实提升了效率。关键点：Gemini Spark的“24/7”意味着它不像传统语音助手那样需要唤醒词，而是持续监听并主动建议——但这带来隐私和打扰的担忧。为什么重要：Google试图重新定义AI助手的交互模式，但目前定位模糊：介于Siri的被动与完整Agent的自主之间，用户可能难以形成使用习惯。它的价值在于让业界看到“始终在线”AI的可行性和局限性。
@@ -298,7 +298,7 @@ GenFlow 4.0版本发布，重点实现对百度网盘的深度集成。用户可
 
 ### EY 加拿大报告被曝大量引用为 AI 幻觉
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-01/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-01/opinion-02.jpg)
 
 
 GPTZero 调查发现，EY（安永）加拿大的网络安全报告中大量参考文献是 AI 编造的——引用作者、期刊名、发表日期均属虚构。关键点：该报告由 EY 内部团队使用大模型辅助撰写，但未充分核实来源。为什么重要：这是继律师使用 ChatGPT 编造判例之后，专业服务机构再次因 AI 幻觉陷入信任危机，直接冲击企业对 AI 生成内容的行业标准制定进程。
@@ -307,7 +307,7 @@ GPTZero 调查发现，EY（安永）加拿大的网络安全报告中大量参�
 
 ### Erin Brockovich 炮轰数据中心信息不透明
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-01/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-01/opinion-03.jpg)
 
 
 环保活动家 Erin Brockovich 加入反对数据中心秘密建设的行列，指责科技公司不公开耗水量、噪音与碳排放数据，要求地方监管机构强制披露。关键点：她指出一些数据中心以“国家安全”为由隐瞒环评报告，实际选址靠近居民区。为什么重要：数据中心建设正从技术议题变成社会议题，公众压力可能倒逼更严格的审批流程。
@@ -316,7 +316,7 @@ GPTZero 调查发现，EY（安永）加拿大的网络安全报告中大量参�
 
 ### AI“精神病”辩论：科技 CEO 独有的认知偏差？
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-01/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-01/opinion-04.jpg)
 
 
 TechCrunch Equity 节目讨论 AI 领域 CEOs 是否更容易陷入“AI 精神病”——一种对技术能力过度乐观、排斥怀疑的群体认知。关键点：这种偏差表现为对 AGI 时间线的极端预测、贬低人类价值的言论，以及无视技术局限。为什么重要：它揭示了行业长期存在的“信念泡沫”，当成本压力与信任危机叠加，这种泡沫可能开始破裂。
@@ -325,7 +325,7 @@ TechCrunch Equity 节目讨论 AI 领域 CEOs 是否更容易陷入“AI 精神�
 
 ### AI 岗位失落：科技工作者面对心理危机
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-01/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-01/opinion-05.jpg)
 
 
 专栏文章指出，科技行业正经历“AI 职业悲伤”——工程师、数据科学家等群体因 AI 替代风险而产生焦虑、意义感丧失甚至抑郁。关键点：作者本人曾是 AI 从业者，离职后坦言“从头学新工具的速度永远赶不上模型迭代”。为什么重要：这种情绪如果蔓延，可能加速人才流出 AI 领域，反过来影响行业创新能力。
@@ -334,7 +334,7 @@ TechCrunch Equity 节目讨论 AI 领域 CEOs 是否更容易陷入“AI 精神�
 
 ### 陶哲轩：AI 将首次为数学带来劳动分工
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-06-01/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-06-01/opinion-06.jpg)
 
 
 著名数学家 Terence Tao 认为，AI 可能为数学领域引入前所未有的劳动分工——将证明拆解为“猜想生成”“路径搜索”“验证校对”等独立环节。关键点：他预测数学家未来的角色会更像“研究架构师”，而非亲自动手算推导。为什么重要：这可能是基础学科随着 AI 渗透发生工作流重构的第一个具体信号，影响的不仅是数学，更是科研方法论。
@@ -353,7 +353,7 @@ TechCrunch Equity 节目讨论 AI 领域 CEOs 是否更容易陷入“AI 精神�
 
 ### Anthropic发布Agent Skills公共仓库
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-01/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-01/opensource-00.jpg)
 
 
 **是什么：** Anthropic推出Agent Skills标准，并开源公共仓库，开发者可将AI代理的特定能力（如"阅读PDF并提取表格"、"调用CRM API创建客户"）封装为标准化技能包，通过仓库共享和复用。
@@ -386,7 +386,7 @@ TechCrunch Equity 节目讨论 AI 领域 CEOs 是否更容易陷入“AI 精神�
 
 ### Trajectory发布并发多LoRA训练栈
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-01/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-01/opensource-03.jpg)
 
 
 **是什么：** Trajectory联合UC Berkeley Sky Lab开源了并发多LoRA训练栈，支持在同一基础模型上同时训练多个低秩适配器（LoRA），实验吞吐量相比顺序训练提升2.81倍。
@@ -399,7 +399,7 @@ TechCrunch Equity 节目讨论 AI 领域 CEOs 是否更容易陷入“AI 精神�
 
 ### LiteParse：快速开源文档解析器
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-01/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-01/opensource-04.jpg)
 
 
 **是什么：** LlamaIndex团队推出LiteParse，一个轻量级、开源的文档解析工具，能从PDF、Word、HTML等格式中提取结构化文本并保留版面布局信息（段落、表格、标题层级）。
@@ -412,7 +412,7 @@ TechCrunch Equity 节目讨论 AI 领域 CEOs 是否更容易陷入“AI 精神�
 
 ### CodeBoarding：AI代码架构可视化工具
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-01/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-01/opensource-05.jpg)
 
 
 **是什么：** 开源工具CodeBoarding可以将AI生成的代码库自动可视化为架构图，展示模块依赖、数据流向和函数调用关系，支持React/Vue/Flask等框架。

@@ -44,7 +44,7 @@ NVIDIA开源Cosmos 3全模态世界模型，结合Agent Toolkit补齐物理AI工
 
 ### MiniMax M3开源：百万Token上下文+多模态
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-03/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-03/model_release-02.jpg)
 
 
 MiniMax发布M3模型，采用稀疏注意力架构，支持百万Token上下文与原生图像视频理解。在LongBench等长上下文基准上表现突出，稀疏注意力机制保障了推理效率，多模态能力原生集成无需额外适配。百万Token上下文成为主流趋势，MiniMax开源让中小团队也能尝试超长文档理解。中国创业公司在开源赛道持续输出高影响力模型，与巨头同台竞技。
@@ -53,7 +53,7 @@ MiniMax发布M3模型，采用稀疏注意力架构，支持百万Token上下文
 
 ### NVIDIA Nemotron 3 Ultra成为最强开源美国模型
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-03/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-03/model_release-03.jpg)
 
 
 Nemotron 3 Ultra在多项基准超过Llama 4等模型，成为美国开源模型最强；但中国模型仍整体领先。该模型基于Nemotron系列，优化了推理和多语言能力。结果显示中美开源模型差距缩小，但中国在长上下文和多模态上仍占优。对开发者而言，Nemotron 3 Ultra提供了新的基线选择，也说明开源生态已全面国际化。
@@ -62,7 +62,7 @@ Nemotron 3 Ultra在多项基准超过Llama 4等模型，成为美国开源模型
 
 ### 阿里发布Qwen3.7-Plus：多模态智能体新基座
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-06-03/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-06-03/model_release-04.jpg)
 
 
 Qwen3.7-Plus视觉和文本能力大幅提升，跻身Vision Arena前五，支持一键复刻专业软件。阿里在视觉-语言模型上持续迭代，不仅能理解图像，还能生成代码来自动化操作专业软件界面。多模态智能体落地进入加速期，阿里通过强基座模型降低应用开发门槛。Vision Arena排名证明其视觉能力已达全球第一梯队，对自动化办公场景有直接价值。
@@ -71,7 +71,7 @@ Qwen3.7-Plus视觉和文本能力大幅提升，跻身Vision Arena前五，支�
 
 ### JetBrains开源Mellum2：12B MoE专业模型
 
-![model_release-05.jpg](/marginalia/assets/img/ai-hot/2026-06-03/model_release-05.jpg)
+![model_release-05.jpg](/assets/img/ai-hot/2026-06-03/model_release-05.jpg)
 
 
 JetBrains发布专为多模型AI流水线设计的Mellum2，12B参数MoE架构，遵循Apache 2.0许可。该模型定位专业工具链模型，强调与现有IDE集成和推理效率。参数规模适中，但MoE设计使其在特定任务上效率高。JetBrains从IDE厂商切入模型层，显示工具厂商对AI重组的思考，但影响力有限，适合对集成度有要求的开发者细看。
@@ -80,7 +80,7 @@ JetBrains发布专为多模型AI流水线设计的Mellum2，12B参数MoE架构�
 
 ### 百度文心PaddleOCR-VL-1.6刷新文档解析SOTA
 
-![model_release-06.jpg](/marginalia/assets/img/ai-hot/2026-06-03/model_release-06.jpg)
+![model_release-06.jpg](/assets/img/ai-hot/2026-06-03/model_release-06.jpg)
 
 
 PaddleOCR-VL-1.6准确率达96.33%，已上线官网支持网页端和API调用。该模型在文档OCR和版面分析上表现优异，适合发票、合同等场景。百度将能力产品化，降低使用门槛。文档数字化需求持续旺盛，细分领域的SOTA仍有商业价值，但比起前面的大模型发布，这一步属于迭代优化。
@@ -97,7 +97,7 @@ PaddleOCR-VL-1.6准确率达96.33%，已上线官网支持网页端和API调用�
 
 ### Anthropic秘密提交IPO，有望成史上最大科技IPO之一
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-03/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-03/company-00.jpg)
 
 
 Anthropic已向SEC秘密提交S-1文件，启动上市流程。知情人士透露，其估值可能超越当前任何AI独角兽，成为史上规模最大的科技IPO之一。关键点在于Anthropic主打“安全第一”的AI路线，与OpenAI形成差异化，IPO时机选择在行业资本热潮中。这意味着一级市场对AI公司的估值认可正在向二级市场延伸，投资者将有机会直接评估其商业模型与竞争壁垒。
@@ -106,7 +106,7 @@ Anthropic已向SEC秘密提交S-1文件，启动上市流程。知情人士透�
 
 ### 佛罗里达州起诉OpenAI及Sam Altman，指控ChatGPT关联多起命案
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-03/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-03/company-01.jpg)
 
 
 佛罗里达州总检察长以“极度漠视生命”为由起诉OpenAI，指控ChatGPT技术被用于策划或实施谋杀等暴力事件，OpenAI明知风险却未采取有效管控。诉讼不仅瞄准公司，还直接点名CEO Sam Altman个人责任。这是美国司法层首次将AI技术与暴力犯罪直接挂钩，可能开创产品责任新判例。若败诉，OpenAI将面临巨额赔偿和产品禁用风险，整个行业的技术部署都可能被要求更严厉的内容过滤。
@@ -115,7 +115,7 @@ Anthropic已向SEC秘密提交S-1文件，启动上市流程。知情人士透�
 
 ### 黑客仅通过Meta AI客服就劫持高知名度Instagram账号
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-03/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-03/company-02.jpg)
 
 
 攻击者利用Meta的AI客服功能，简单请求“更改邮箱地址”，便成功获取多名名人Instagram账户控制权。Meta直到事后才紧急修复漏洞，但已造成账号被盗。关键点：AI客服的信任边界设计存在致命缺陷，系统未能识别身份验证与客服权限的区分。这暴露了AI代理在身份安全领域的脆弱性，产品经理需重新设计AI交互的安全验证流程，不能默认AI拥有变更敏感设置的权限。
@@ -130,7 +130,7 @@ Alphabet宣布800亿美元股权融资用于扩建AI算力，巴菲特旗下的�
 
 ### 黄仁勋宣布Rubin全面投产，4万工程师参与构建
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-03/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-03/company-04.jpg)
 
 
 NVIDIA CEO黄仁勋在COMPUTEX 2026上宣布，新一代AI芯片Rubin已全面投产，同时发布史上最强CPU。Rubin是继Blackwell之后的全新架构，4万名NVIDIA工程师参与研发。这标志着AI训练和推理硬件加速进入新代际，推理成本将继续下降。对于开发者和云厂商而言，需要提前适配Rubin架构，否则可能错失性价比优势。
@@ -139,7 +139,7 @@ NVIDIA CEO黄仁勋在COMPUTEX 2026上宣布，新一代AI芯片Rubin已全面�
 
 ### NVIDIA与微软联手推出Agentic AI统一部署技术栈
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-03/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-03/company-05.jpg)
 
 
 在微软Build大会上，双方宣布合作推出覆盖Windows到云端的统一技术栈，简化代理式AI（agentic AI）部署。该技术栈允许开发者一次开发，同时在本地PC和云端推理，解决了当前agentic AI碎片化的部署问题。关键点：微软将NVIDIA的AI推理框架深度集成进Windows，意味着agentic AI可能成为下一代操作系统级应用范式，产品经理应关注这一基础设施变化。
@@ -154,7 +154,7 @@ NVIDIA CEO黄仁勋在COMPUTEX 2026上宣布，新一代AI芯片Rubin已全面�
 
 ### Uber因AI支出超预算开始封顶员工用量
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-03/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-03/company-07.jpg)
 
 
 Uber鼓励员工大量使用内部AI工具后，仅4个月便烧光全年AI预算，被迫设置每人每月使用上限。这反映出企业在推广AI时的成本失控风险——AI按Token计费的商业模式让传统IT预算模型失效。CTO和CFO需重新设计预算管控机制，否则“AI普惠”可能变成“AI烧钱黑洞”。
@@ -185,7 +185,7 @@ OpenAI 与 AWS 达成合作，前沿模型（如 GPT-5）和 Codex 开发工具�
 
 ### 微软推出 Project Solara：专为 AI 智能体设计的 Android 系统
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-03/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-03/product-02.jpg)
 
 
 微软展示 Project Solara，一个面向 AI 智能体的 Android 变体，旨在替代传统以 app 为中心的手机交互模式。关键点：Solara 不再有主屏幕和图标网格，而是由 AI agent 根据上下文主动弹出卡片、工具和对话界面。为什么重要：如果手机从“应用抽屉”变为“智能体交互层”，iOS 和 Android 的平台战争将转向 agent OS 标准之争，而微软凭借 Solara 和 OpenAI 的合作可能成为“第三极”。
@@ -194,7 +194,7 @@ OpenAI 与 AWS 达成合作，前沿模型（如 GPT-5）和 Codex 开发工具�
 
 ### 微软发布 Scout：融入 Teams 的 AI 个人助理
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-03/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-03/product-03.jpg)
 
 
 微软在 Build 大会上推出 Scout，一款嵌入 Teams 的 AI agent，自动处理日程安排、会议摘要、任务追踪等日常办公流程。关键点：Scout 可跨邮件、日历、文档和 Teams 频道工作，支持自然语言指令。为什么重要：这是微软将 agentic 能力植入“日活最高”的协作平台，对比 OpenAI Codex 偏向专业任务，Scout 瞄准普适办公自动化，可能率先改变知识工作者的一天。
@@ -203,7 +203,7 @@ OpenAI 与 AWS 达成合作，前沿模型（如 GPT-5）和 Codex 开发工具�
 
 ### Anthropic 将 Claude Mythos 漏洞狩猎扩展至 15 国
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-03/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-03/product-04.jpg)
 
 
 Project Glasswing 规模扩大至 150 个合作伙伴，覆盖电力、水利、医疗等关键基础设施的 AI 驱动安全审计。关键点：Claude 采用“红队 + Mythos 框架”自动发现供应链和代码中的零日漏洞。为什么重要：Anthropic 正在将 AI 安全能力从封闭实验转化为公共服务，这种“漏洞保险”模式可能成为 AI 厂商竞相效仿的新商业形态。
@@ -212,7 +212,7 @@ Project Glasswing 规模扩大至 150 个合作伙伴，覆盖电力、水利、
 
 ### 谷歌 Android 新增深度伪造来电检测功能
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-03/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-03/product-05.jpg)
 
 
 Google 在 6 月 Feature Drop 中加入 AI 假电话识别功能，可实时分析通话语音特征并警告冒充熟人的深度伪造来电。关键点：该功能运行在设备端，无需联网，利用 Tensor 芯片推断音频异常。为什么重要：随着 deepfake 诈骗激增，这是首个主流移动 OS 原生防御，但效果取决于模型覆盖面和用户信任度——如果误报率过高，可能反噬体验。
@@ -221,7 +221,7 @@ Google 在 6 月 Feature Drop 中加入 AI 假电话识别功能，可实时分�
 
 ### 微软推出 MDASH 框架，大规模测试 AI 智能体行为
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-06-03/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-06-03/product-06.jpg)
 
 
 微软开源 MDASH 框架，开发者只需文本描述即可自动生成 AI agent 行为测试用例，大幅降低评估成本。关键点：MDASH 支持多轮对话模拟、边界条件覆盖和失败场景标注。为什么重要：当前 agent 行为难以预测，MDASH 填补了“测试即服务”的空白，可能成为 agent 开发标配工具，但能否处理非确定性输出仍是挑战。
@@ -230,7 +230,7 @@ Google 在 6 月 Feature Drop 中加入 AI 假电话识别功能，可实时分�
 
 ### GitHub Copilot 新按用量计费引发用户抱怨
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-06-03/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-06-03/product-07.jpg)
 
 
 GitHub Copilot 转向 AI Credit 定价后，部分用户报告一天内用完整月额度，引起成本失控讨论。关键点：新计费按 token 消耗而非时间订阅，高频使用场景（如重构、调试）成本激增。为什么重要：这暴露出 AI 产品消费模式转型的阵痛——从“无限使用”转向“按资源定价”，倒逼用户优化提示词和缓存策略，也可能促使竞品差异化定价。
@@ -249,7 +249,7 @@ GitHub Copilot 转向 AI Credit 定价后，部分用户报告一天内用完整
 
 ### 特朗普签署缩水版AI行政令，行业反对后仅保留自愿审查
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-03/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-03/opinion-00.jpg)
 
 
 - **是什么**：特朗普于6月2日签署修订后的《促进先进人工智能创新与安全》行政令，将原先草案中对尖端模型（训练算力超过10^26 FLOPS）的强制预先政府审查改为自愿选择提交。
@@ -260,7 +260,7 @@ GitHub Copilot 转向 AI Credit 定价后，部分用户报告一天内用完整
 
 ### 数学家组织警告AI正在威胁该职业
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-03/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-03/opinion-01.jpg)
 
 
 - **是什么**：国际数学联盟（IMU）发表声明，指出科技公司开发的AI定理证明器和自动化推理工具正在“系统性地侵蚀数学研究的独立性和学术自由”。
@@ -271,7 +271,7 @@ GitHub Copilot 转向 AI Credit 定价后，部分用户报告一天内用完整
 
 ### DuckDuckGo趁AI搜索热潮推出‘无AI’搜索扩展
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-03/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-03/opinion-02.jpg)
 
 
 - **是什么**：DuckDuckGo发布Chrome和Firefox浏览器扩展，用户安装后即可将其设为默认搜索引擎，并明确标注“无AI干扰的纯搜索体验”。
@@ -282,7 +282,7 @@ GitHub Copilot 转向 AI Credit 定价后，部分用户报告一天内用完整
 
 ### 图灵奖得主Richard Sutton称纯生成式AI无法进行真正科学发现
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-03/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-03/opinion-03.jpg)
 
 
 - **是什么**：强化学习先驱、图灵奖得主Richard Sutton在接受采访时表示，当前基于大规模语言模型和图像生成模型的“纯生成式AI”无法完成真正的科学推理和发现。
@@ -301,7 +301,7 @@ GitHub Copilot 转向 AI Credit 定价后，部分用户报告一天内用完整
 
 ### 斯科塞斯意外成为好莱坞AI拥趸，但仅用于故事板
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-03/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-03/opinion-05.jpg)
 
 
 - **是什么**：著名导演马丁·斯科塞斯在《纽约时报》采访中表示，他已在最新项目中使用AI图像生成工具制作故事板（storyboard）和预可视化场景，并称这是“令人兴奋的工具”。
@@ -322,7 +322,7 @@ GitHub Copilot 转向 AI Credit 定价后，部分用户报告一天内用完整
 
 ### 微软开源 MarkItDown：文件转 Markdown 通用工具
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-03/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-03/opensource-00.jpg)
 
 
 **是什么**  
@@ -340,7 +340,7 @@ GitHub Copilot 转向 AI Credit 定价后，部分用户报告一天内用完整
 
 ### TradingAgents：多智能体金融交易开源框架
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-03/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-03/opensource-01.jpg)
 
 
 **是什么**  
@@ -358,7 +358,7 @@ GitHub Copilot 转向 AI Credit 定价后，部分用户报告一天内用完整
 
 ### Oh-my-pi：终端 AI 编程智能体
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-03/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-03/opensource-02.jpg)
 
 
 **是什么**  
@@ -376,7 +376,7 @@ GitHub Copilot 转向 AI Credit 定价后，部分用户报告一天内用完整
 
 ### 字节跳动开源视频编辑框架 Bernini
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-03/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-03/opensource-03.jpg)
 
 
 **是什么**  
@@ -394,7 +394,7 @@ GitHub Copilot 转向 AI Credit 定价后，部分用户报告一天内用完整
 
 ### 清华AIR开源 UniLab：分钟级机器人运控训练
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-03/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-03/opensource-04.jpg)
 
 
 **是什么**  

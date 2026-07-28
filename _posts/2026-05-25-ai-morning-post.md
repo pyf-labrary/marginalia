@@ -33,7 +33,7 @@ DeepSeek 今天打出两张牌：将 V4 Pro 的 75% 折扣永久化，输出 tok
 
 ### DeepSeek V4 Pro 永久降价，Reasonix 编码 Agent 发布
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-25/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-25/model_release-00.jpg)
 
 
 **是什么**：DeepSeek 宣布其旗舰模型 V4 Pro 的 75% 折扣永久生效，输出 token 价格比 GPT-5.5 低至少 34 倍。同时推出面向编码场景的 Agentic 产品——DeepSeek Reasonix，强调低延迟和高缓存命中率。
@@ -54,7 +54,7 @@ DeepSeek 今天打出两张牌：将 V4 Pro 的 75% 折扣永久化，输出 tok
 
 ### 五角大楼拉黑，NSA照用：Anthropic的双重身份
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-25/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-25/company-00.jpg)
 
 
 美国国防部将Anthropic标记为供应链风险，但NSA作为独立情报机构，仍倾向继续使用Claude模型。关键点在于两家机构的采购权限与安全评估标准不同：国防部更看重系统性依赖风险，而NSA更关注模型的实际推理能力。这一事件标志着美国在AI军事化应用中，各部门尚未形成统一准入框架。
@@ -63,7 +63,7 @@ DeepSeek 今天打出两张牌：将 V4 Pro 的 75% 折扣永久化，输出 tok
 
 ### 谷歌CEO认输：AI编程落后了
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-25/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-25/company-01.jpg)
 
 
 在搜索业务迎来25年最大改版的背景下，Sundar Pichai公开承认谷歌在代码生成能力上已落后于竞争对手。关键点在于谷歌并非没有技术储备（有Gemini和AlphaCode），而是产品化与开发者生态建设滞后。对投资人而言，这暗示谷歌可能在AI基础设施层（如云服务CI/CD集成）面临份额流失风险。
@@ -72,7 +72,7 @@ DeepSeek 今天打出两张牌：将 V4 Pro 的 75% 折扣永久化，输出 tok
 
 ### AI融资狂潮：一季度超1100亿元，国产大模型扛大梁
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-25/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-25/company-02.jpg)
 
 
 今年Q1 AI领域发生近600起融资，总额超1100亿元，同比增长185.4%。月之暗面、阶跃星辰等国产大模型公司拿下超300亿元。关键点在于资金集中度极高——头部企业单轮融资额逼近整体市场的三成。对于从业者，这意味着底层大模型竞争已进入“资本消耗战”，而应用层创业窗口依然窄小。
@@ -81,7 +81,7 @@ DeepSeek 今天打出两张牌：将 V4 Pro 的 75% 折扣永久化，输出 tok
 
 ### 特斯拉FSD中文名改“辅助驾驶”，售价纹丝不动
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-25/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-25/company-03.jpg)
 
 
 特斯拉中国官网将FSD功能名称调整为“特斯拉辅助驾驶”，但6.4万元售价未变。关键点不是命名本身，而是这意味着特斯拉在中国市场未获得监管对“全自动驾驶”的认可。改名符合近年来监管部门对“自动驾驶”一词的使用限制，但价格不变说明特斯拉仍试图维持品牌溢价。
@@ -90,7 +90,7 @@ DeepSeek 今天打出两张牌：将 V4 Pro 的 75% 折扣永久化，输出 tok
 
 ### 马斯克弃太阳能：xAI转天然气，SpaceX押注轨道数据中心
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-25/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-25/company-04.jpg)
 
 
 Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中心转向天然气供电，SpaceX则将算力送入轨道。关键点是能源逻辑的实用主义转折：AI训练的高功耗迫使任何技术派都要面对现实基础设施约束。轨道数据中心虽然冷门，但高能耗与冷却优势可能成为未来另一条赛道。
@@ -99,7 +99,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### 美国科技公司与荷兰监管“开战”：共享官员个人信息
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-25/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-25/company-05.jpg)
 
 
 多家美国科技公司将荷兰数据监管机构（AP）官员的姓名提交给美国参议院，作为对荷兰隐私执法的反击。关键点在于跨境数据主权冲突从法律战升级到身份干扰。对产品经理意味着：若你的用户遍布欧美，本地合规团队不仅要懂法律，还得提防地缘政治摩擦波及个人数据。
@@ -108,7 +108,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### “AI洗白”潮：企业改名换姓，包装成AI公司
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-25/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-25/company-06.jpg)
 
 
 越来越多公司通过改名、更换品牌标识声称自己“AI Native”，引发监管关切。关键点在于此类“AI washing”与当年“云洗白”如出一辙，但AI因涉及就业替代和伦理问题，可能招致更严厉的消费者保护诉讼。投资人可留意：当一家传统企业突然改名为“某某AI”，其财务数据真实性需要加倍审查。
@@ -125,7 +125,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### Claude Code 自主发现 AI 缩放算法，设计思路人类未想过
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-25/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-25/research-00.jpg)
 
 
 **是什么**：研究人员没有手工设计缩放算法，而是让 Claude Code 自主搜索可行方案，最终找到多个新算法，其中某些设计模式此前从未被人类考虑过。
@@ -138,7 +138,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### 字节跳动：提问 LMM 比转录文本更适合长文档训练
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-25/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-25/research-01.jpg)
 
 
 **是什么**：字节跳动研究发现，在长文档训练中，对大型多模态模型（LMM）进行提问式训练（如“文档第3页的数据是多少？”）比直接让模型转录全文效果更好，且计算成本更低。
@@ -151,7 +151,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### LLM Agent 后端代码生成中的“约束衰减”问题
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-25/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-25/research-02.jpg)
 
 
 **是什么**：一项新预印本研究揭示，LLM Agent 在自动生成后端代码时，会随迭代次数增加逐渐偏离原始约束，导致生成代码脆弱且不可靠。
@@ -164,7 +164,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### 内存成本已占 AI 芯片总成本近三分之二
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-25/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-25/research-03.jpg)
 
 
 **是什么**：Epoch AI 最新分析显示，随着模型规模持续增长，HBM（高带宽内存）等存储成本在 AI 芯片总组件成本中的占比已接近三分之二。
@@ -187,7 +187,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### 亚马逊 Bee 可穿戴 AI：便利与隐私的边界测试
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-25/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-25/product-00.jpg)
 
 
 **是什么**：亚马逊推出的 AI 可穿戴设备 Bee，TechCrunch 记者亲身体验后给出了矛盾评价。
@@ -200,7 +200,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### OpenAI 详解语音 AI 的 WebRTC 架构
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-25/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-25/product-01.jpg)
 
 
 **是什么**：OpenAI 发布技术博客，公开其用 WebRTC 构建低延迟、可扩展语音 AI 服务的技术细节。
@@ -213,7 +213,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### 法拉利 + IBM AI：制造 F1 超级粉丝
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-25/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-25/product-02.jpg)
 
 
 **是什么**：法拉利与 IBM 合作，用 AI 为 F1 观众生成个性化内容，打造“超级粉丝”体验。
@@ -226,7 +226,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### 旧金山非营利组织用机器人烹饪填补人力缺口
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-25/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-25/product-03.jpg)
 
 
 **是什么**：旧金山 Tenderloin 地区的非营利组织引入机器人厨师，解决志愿者短缺导致的餐食供应不足。
@@ -249,7 +249,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### Grab 多智能体系统设计实践
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-25/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-25/product-05.jpg)
 
 
 **是什么**：Grab 分享其在工程支撑场景（如客服工单、资源调度）中使用多智能体系统的架构经验。
@@ -262,7 +262,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### 芬兰大学用 AI 聊天机器人抵御健康虚假信息
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-25/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-25/product-06.jpg)
 
 
 **是什么**：奥卢大学研究人员开发了一款基于“认知接种”方法的 AI 聊天机器人，帮助用户识别健康领域虚假信息。
@@ -275,7 +275,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### AI 工具模型选择：别停在默认值
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-05-25/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-05-25/product-07.jpg)
 
 
 **是什么**：评测指出，Copilot、Gemini 等 AI 工具默认使用的模型并非总是最优，用户应手动切换以获得更好输出。
@@ -298,7 +298,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### Hassabis vs LeCun：奇点“山脚”还是“山头”？
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-25/opinion-00.jpg)
 
 
 **是什么**：Demis Hassabis在近期演讲中表示，人类正处于奇点“山脚”（foothills），暗示技术加速将很快带来质变；Yann LeCun则公开回应，称当前AI系统远未达到真正智能，缺乏对世界的基本理解。
@@ -311,7 +311,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### 别让Claude假装做架构师
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-25/opinion-01.jpg)
 
 
 **是什么**：博客文章批评开发者过度依赖Claude进行系统架构设计，指出AI往往生成看似合理但缺乏深度权衡的方案，开发者不应将决策权交给模型。
@@ -324,7 +324,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### AI安全：连谷歌都在“摸着石头过河”
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-25/opinion-02.jpg)
 
 
 **是什么**：TechCrunch报道指出，AI安全仍处于“实时摸索”阶段，即使是谷歌这样的巨头也没有成熟方案，每个组织都在边做边学。
@@ -337,7 +337,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### 张璐：未来推理将吃掉70%算力，训练只占30%
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-25/opinion-03.jpg)
 
 
 **是什么**：硅谷投资人张璐在AIGC2026圆桌上预测，随着AI应用大规模落地，推理侧算力需求占比将持续攀升，最终训练与推理的比例可能从当前的约4:6演变为3:7。
@@ -350,7 +350,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### Agent创业窗口：大厂集体下场，垂直场景是机会
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-25/opinion-04.jpg)
 
 
 **是什么**：AIGC2026另一圆桌论坛讨论了Agent领域的创业前景。嘉宾们认为，当大厂将通用Agent能力作为平台功能免费开放后，创业公司的机会在于垂直场景深耕和差异化体验。
@@ -363,7 +363,7 @@ Elon Musk全面放弃他曾鼓吹的“地球太阳能经济”。xAI数据中�
 
 ### 周鸿祎评马斯克：十年后人类都不开车了？
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-25/opinion-05.jpg)
 
 
 **是什么**：周鸿祎评论马斯克关于自动驾驶的预言（十年内人类将不再需要自己开车），认为AI下一步将深刻改变物理世界中的物流、人流和车流。
@@ -386,7 +386,7 @@ AI的智能边界在哪里？或许答案不在Hassabis和LeCun的辩论中，�
 
 ### Anthropic 推出官方 Claude Code 插件目录
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-25/opensource-00.jpg)
 
 
 **是什么：** Anthropic 官方维护的 Claude Code 插件集合仓库，开发者可以在此发现并安装经过审核的扩展插件，涵盖代码审查、文档生成、项目管理等场景。
@@ -399,7 +399,7 @@ AI的智能边界在哪里？或许答案不在Hassabis和LeCun的辩论中，�
 
 ### NousResearch 发布 Hermes Agent：与你一起成长的智能体
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-25/opensource-01.jpg)
 
 
 **是什么：** 开源 AI Agent 框架，核心卖点是“个性化成长”——Agent 能根据用户的使用习惯和反馈持续调整行为，并非一次性部署。
@@ -412,7 +412,7 @@ AI的智能边界在哪里？或许答案不在Hassabis和LeCun的辩论中，�
 
 ### CrewAI：编排角色扮演自主 AI Agent 的框架
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-25/opensource-02.jpg)
 
 
 **是什么：** 一个多 Agent 协作框架，允许开发者定义不同角色（如分析师、开发者、测试员），让它们通过对话与任务流转完成复杂项目。
@@ -425,7 +425,7 @@ AI的智能边界在哪里？或许答案不在Hassabis和LeCun的辩论中，�
 
 ### Pydantic AI：Pydantic 风格的 AI Agent 框架
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-25/opensource-03.jpg)
 
 
 **是什么：** Pydantic 团队（Python 类型验证库的维护者）推出的官方 AI Agent 框架，核心利用类型安全构建可靠 AI 应用。
@@ -438,7 +438,7 @@ AI的智能边界在哪里？或许答案不在Hassabis和LeCun的辩论中，�
 
 ### OpenPipe ART：基于 GRPO 的 Agent 强化训练工具
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-25/opensource-04.jpg)
 
 
 **是什么：** 一个允许开发者使用 Group Relative Policy Optimization（GRPO）对多步 Agent 进行强化训练的开源工具，支持 Qwen3.6、GPT-OSS 等模型。
@@ -451,7 +451,7 @@ AI的智能边界在哪里？或许答案不在Hassabis和LeCun的辩论中，�
 
 ### CodeGraph：本地代码知识图谱，为 Claude Code/Cursor 等节省 Token
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-25/opensource-05.jpg)
 
 
 **是什么：** 一个本地运行的代码知识图谱工具，预索引项目中的函数、类、文件关系，使 AI 编码助手在调用时只发送最小上下文，减少 token 消耗和工具调用次数。
@@ -464,7 +464,7 @@ AI的智能边界在哪里？或许答案不在Hassabis和LeCun的辩论中，�
 
 ### Chrome DevTools MCP：为编码 Agent 提供浏览器调试能力
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-05-25/opensource-06.jpg)
 
 
 **是什么：** Google Chrome DevTools 团队官方推出的 MCP（Model Context Protocol）工具，允许 AI 编码 Agent 直接调用 Chrome 开发者工具的接口，进行网页调试、性能分析、DOM 操作等。
@@ -477,7 +477,7 @@ AI的智能边界在哪里？或许答案不在Hassabis和LeCun的辩论中，�
 
 ### Multica：开源托管 Agent 平台，让编码 Agent 成为真正的队友
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-25/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-25/opensource-07.jpg)
 
 
 **是什么：** 一个开源的多 Agent 管理平台，提供任务分配、进度追踪、技能组合等功能，类似于“Agent 版的 Jira + 微服务编排”。

@@ -33,7 +33,7 @@ sections:
 
 ### Google Gemma 4 12B：无编码器架构，16GB 笔记本可运行
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-06-05/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-06-05/model_release-00.jpg)
 
 
 Google DeepMind 发布的 Gemma 4 12B 多模态模型，抛弃传统视觉编码器，采用纯解码器架构处理图像与文本。关键点在于：模型权重约 12B 参数，但凭借量化与架构优化，可在 16GB 内存的消费级笔记本上本地推理，同时支持文本和图像输入。这意味着开发者无需昂贵 GPU 即可搭建多模态应用。为什么重要：这是目前开源级别中，能在低端硬件上实现多模态推理的最轻量方案之一，可能加速边缘端 AI 应用的普及。
@@ -48,7 +48,7 @@ GPT-Rosalind 获得生物学推理、药物化学和基因组分析三项新能�
 
 ### 微软 MAI-Thinking-1：从零自研，追平 Claude Opus
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-05/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-05/model_release-02.jpg)
 
 
 微软发布推理模型 MAI-Thinking-1，宣称从零训练（拒绝蒸馏第三方模型），性能追平 Anthropic Claude Opus 4.6。关键点：这标志着微软在自研大模型上的重大决心——不再依赖 OpenAI 的闭源能力，而是构建独立技术栈。为什么重要：如果性能确实持平顶尖闭源模型，MAI-Thinking-1 将打破“微软只会整合，不会自研”的刻板印象，并可能推动企业级推理模型的定价与生态竞争。
@@ -57,7 +57,7 @@ GPT-Rosalind 获得生物学推理、药物化学和基因组分析三项新能�
 
 ### xAI Grok Imagine 1.5：图像到视频生成，720p 输出
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-05/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-05/model_release-03.jpg)
 
 
 xAI 更新 Grok Imagine 1.5，新增图像到视频生成功能，输出分辨率达 720p。关键点：此前多数视频生成模型（如 Sora、Runway）支持文本转视频或图像转视频，但 Grok 的选择将多帧一致性与角色保持作为优化方向。为什么重要：720p 分辨率虽不算最高，但对于社交媒体、短视频场景已够用。xAI 在图像生成后迅速补全视频能力，意图打造多模态内容创作闭环。
@@ -66,7 +66,7 @@ xAI 更新 Grok Imagine 1.5，新增图像到视频生成功能，输出分辨�
 
 ### Ideogram 4.0 开源：原生 2K 分辨率，文本渲染改进
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-06-05/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-06-05/model_release-04.jpg)
 
 
 Ideogram 发布第四代模型并开源权重，原生支持 2K 分辨率输出，文本渲染质量显著提升。关键点：开源模型的 2K 原生分辨率在行业里少见，直接对标 Midjourney 的付费产出。为什么重要：开源社区获得了一个高质量、高分辨率的文生图基线，对于需要精确文字嵌入（如海报、Logo）的应用场景尤其有价值。Ideogram 选择开源，可能改变图像生成市场的格局。
@@ -75,7 +75,7 @@ Ideogram 发布第四代模型并开源权重，原生支持 2K 分辨率输出�
 
 ### NVIDIA Nemotron 3.5：多模态内容安全审核模型
 
-![model_release-05.jpg](/marginalia/assets/img/ai-hot/2026-06-05/model_release-05.jpg)
+![model_release-05.jpg](/assets/img/ai-hot/2026-06-05/model_release-05.jpg)
 
 
 NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全审核。关键点：模型可检查图像、文本、代码等内容是否违反安全策略，支持自定义规则。为什么重要：多模态模型落地最大的障碍之一是安全合规，NVIDIA 直接提供审核模型，让企业不必从零构建过滤系统，可能成为 AI 部署的基础设施组件。
@@ -92,7 +92,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### Anthropic 冲刺 IPO，Amodei 回应质疑
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-05/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-05/company-00.jpg)
 
 
 **是什么**：Anthropic 联合创始人 Daniela Amodei 在 IPO 前接受采访，反驳市场对AI回报不确定性的担忧。她透露，Claude 目前最大客户每月消耗5亿美元额度，这一事实本身就是最强力的产品广告。
@@ -105,7 +105,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### Alphabet 创纪录融资 850 亿美元投入 AI
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-05/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-05/company-01.jpg)
 
 
 **是什么**：Alphabet 通过股票发售一次性筹集850亿美元，专门用于 Google AI 业务的基础设施建设和研发投入，创下企业公开融资单项纪录。
@@ -128,7 +128,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### Coralogix 获 2 亿美元融资，监控 AI Agent 运维
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-05/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-05/company-03.jpg)
 
 
 **是什么**：可观测性平台 Coralogix 完成2亿美元融资，专注构建AI Agent在生产环境中的监控层，包括延迟、错误率、Token消耗、Agent决策轨迹等。
@@ -141,7 +141,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### Meta 采用帐篷搭建数据中心降低成本
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-05/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-05/company-04.jpg)
 
 
 **是什么**：Meta 借鉴特斯拉在工厂建设中使用的“帐篷式结构”（tent structure），快速搭建低成本数据中心，以应对AI算力紧急需求，同时削减资本支出。
@@ -154,7 +154,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### 戴盟机器人完成亿元融资，阿里大牛加盟
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-05/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-05/company-05.jpg)
 
 
 **是什么**：通用机器人公司戴盟机器人完成亿元级融资，前阿里通义千问多模态负责人加盟，担任首席科学家，带领团队攻关物理世界模型。
@@ -177,7 +177,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### Meta 允许员工工作时追踪权限，每日可关闭 30 分钟
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-05/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-05/company-07.jpg)
 
 
 **是什么**：Meta 调整内部员工监控系统，允许员工每天在指定时段退出工作追踪（如键盘记录、屏幕截图），可关闭最多30分钟，用于处理私人事务或“不被打扰”的集中思考。
@@ -200,7 +200,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### NVIDIA 发布物理 AI 研究：抓取、自动驾驶与智能体训练
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-05/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-05/research-00.jpg)
 
 
 **是什么**：NVIDIA 在 CVPR 2026 上展示了一套物理 AI 研究组合，涵盖高级物体抓取、自动驾驶决策和 Agent（智能体）规模化训练三个方向。这些工作共用一套基于物理仿真的训练框架，强调“在仿真中学习、在现实中泛化”。
@@ -213,7 +213,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### EVA-Bench 2.0 数据集发布：121 工具、213 场景
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-06-05/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-06-05/research-01.jpg)
 
 
 **是什么**：ServiceNow AI 发布 EVA-Bench Data 2.0，一个用于评估 LLM Agent 在真实工具调用场景中表现的数据集，覆盖企业软件、代码库、云服务 3 大领域，包含 121 种工具和 213 个交互场景。
@@ -226,7 +226,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### Andon Labs 推出 VendingBench 评估 Claude 系模型
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-06-05/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-06-05/research-02.jpg)
 
 
 **是什么**：Andon Labs 发布 VendingBench，一个针对 Claude 系列模型从 Haiku 到 Mythos 各版本的细粒度能力评测基准。评测维度包括代码推理、长上下文检索、指令遵循和安全护栏。
@@ -239,7 +239,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### Axiom Math 研究：超越非正式 AI 的验证与复合智能
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-06-05/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-06-05/research-03.jpg)
 
 
 **是什么**：Axiom Math 探讨如何通过“验证生成 + 复合智能”（Verification Generation + Composite Intelligence）突破当前非正式 AI（informal AI）——即仅靠语言建模、缺乏形式化验证的模式。
@@ -252,7 +252,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### LLM 对抗俄宣传能力排行揭晓
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-06-05/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-06-05/research-04.jpg)
 
 
 **是什么**：爱沙尼亚政府委托的基准测试评估了多个主流 LLM 在反驳俄罗斯战略叙事方面的表现，包括事实一致性、逻辑严密性和立场平衡性。
@@ -265,7 +265,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### DPO 技术突破聊天机器人：应用于更广泛场景
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-06-05/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-06-05/research-05.jpg)
 
 
 **是什么**：Dharma AI 团队撰文讨论直接偏好优化（Direct Preference Optimization, DPO）正在被扩展到聊天机器人之外的领域，包括推荐系统、机器人策略学习和科学发现中的排序任务。
@@ -278,7 +278,7 @@ NVIDIA 推出 Nemotron 3.5 Content Safety，面向企业级多模态 AI 安全�
 
 ### Bain 研究：企业 AI 节省目标因人为干预落空
 
-![research-06.jpg](/marginalia/assets/img/ai-hot/2026-06-05/research-06.jpg)
+![research-06.jpg](/assets/img/ai-hot/2026-06-05/research-06.jpg)
 
 
 **是什么**：Bain & Company 发布研究报告，调查全球 500 家大中型企业的 AI 投入与降本效果。结果发现尽管 80% 的公司过去一年增加了 AI 预算，但仅有 23% 实现了预先设定的成本削减目标。
@@ -317,7 +317,7 @@ OpenAI推出ChatGPT记忆管理功能，自动为用户创建按工作、爱好�
 
 ### Apple批准Poke：首个Messages for Business AI Agent
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-05/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-05/product-01.jpg)
 
 
 Poke成为Apple Messages for Business平台第一个获批的AI智能体，用户可通过iMessage短信直接与Poke交互，完成预订、查询、购物等任务。关键点：Apple对平台AI Agent审批极为审慎，Poke的获批意味着Apple初步开放了其商业消息生态的AI入口。为什么重要？iMessage在美国拥有极高渗透率，Poke作为“先行者”有望抢占用户心智，同时倒逼其他平台（如Google Messages、Meta Messenger）加快Agent入驻速度。商业消息+AI Agent的组合，可能成为下一代客服与交易入口。
@@ -326,7 +326,7 @@ Poke成为Apple Messages for Business平台第一个获批的AI智能体，用�
 
 ### Meta WhatsApp Business AI Agent全球上线
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-05/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-05/product-02.jpg)
 
 
 Meta宣布向全球企业推出WhatsApp Business AI Agent，按token计费。企业可自定义Agent回复风格、对接CRM，实现自动客服、营销推送等功能。关键点：定价透明（按token），且继承WhatsApp的端到端加密特性。为什么重要？WhatsApp全球月活超20亿，企业版Agent将大幅降低中小企业的AI客服部署成本。Meta试图复用“微信小程序”式的生态逻辑，但以AI Agent为核心交互形态，这可能是Meta在AI商业化上最实际的落子。
@@ -335,7 +335,7 @@ Meta宣布向全球企业推出WhatsApp Business AI Agent，按token计费。企
 
 ### Meta Facebook AI创作者助手：数据分析与发布优化
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-05/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-05/product-03.jpg)
 
 
 Meta推出Facebook AI Creator Assistant，帮助创作者分析粉丝数据、预测最佳发布时间、生成内容建议。关键点：该工具集成在Facebook Creator Studio内，提供自然语言查询接口（如“我上周哪条内容互动最高”）。为什么重要？创作者经济中数据洞察是刚需，而AI助手将原本需要专业工具分析的操作平民化。Meta此举意在巩固Facebook在创作者生态中的地位，同时为后续AI生成内容工具（如自动剪辑、文案润色）铺路。
@@ -344,7 +344,7 @@ Meta推出Facebook AI Creator Assistant，帮助创作者分析粉丝数据、�
 
 ### Google Dreambeans：把个人数据变成卡通故事
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-05/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-05/product-04.jpg)
 
 
 Google推出Dreambeans，利用AI将用户Google账户中的搜索记录、位置、日历等数据转化为卡通角色和叙事场景。关键点：名称古怪，但本质是数据可视化+AI叙事，用户可生成“数字人生剪影”并分享。为什么重要？这是一个极轻量化的“数据有趣化”产品，用户首次直观看到自己的数字足迹。虽非核心功能，但它测试了用户对AI处理个人数据的接受度——未来Google可能将其整合到Google Photos或搜索中，增加用户数据归属感。
@@ -353,7 +353,7 @@ Google推出Dreambeans，利用AI将用户Google账户中的搜索记录、位�
 
 ### 亚马逊搜索展示AI生成商品图
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-05/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-05/product-05.jpg)
 
 
 Amazon在搜索结果中为部分商品展示AI生成的替代图像，帮助用户更直观地匹配需求。例如搜索“厨房收纳架”时，AI可能合成一张与用户家居风格更接近的图。关键点：图像并非来自卖家，而是Amazon根据商品属性与用户偏好即时生成。为什么重要？这是Amazon将生成式AI植入电商搜索的一次试探，可能改变商品呈现方式——从“卖家上传图”到“AI按需合成图”。但风险在于：AI图是否误导用户？Amazon需平衡转化率与信任度。
@@ -362,7 +362,7 @@ Amazon在搜索结果中为部分商品展示AI生成的替代图像，帮助用
 
 ### NVIDIA RTX Spark笔记本：AI PC性能新标杆
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-06-05/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-06-05/product-06.jpg)
 
 
 NVIDIA发布RTX Spark笔记本芯片，专为AI PC设计，集成更高算力的NPU（神经网络处理单元）和更高效的Tensor Core。关键点：RTX Spark支持本地运行70亿参数模型（如Llama 3-8B）流畅推理，功耗较上一代降低40%。为什么重要？AI PC正在从概念走向定义之争，NVIDIA以专用芯片切入，可能迫使Intel、AMD加速NPU升级。对于软件开发者，本地AI推理门槛更低，将催生更多离线agentic应用。
@@ -371,7 +371,7 @@ NVIDIA发布RTX Spark笔记本芯片，专为AI PC设计，集成更高算力的
 
 ### Hello Robot Stretch 4：家用机器人走向硅谷之外
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-06-05/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-06-05/product-07.jpg)
 
 
 Hello Robot推出第四代家用机器人Stretch 4，主打轻量、安全、可编程，瞄准普通家庭而非实验室。关键点：Stretch 4售价低于3000美元，可完成捡拾物品、开关门等任务，支持开源ROS 2。为什么重要？家用机器人过去因成本高、场景窄而难以普及，Stretch 4尝试在功能与价格间找到平衡。如果它能获得足够开发者支持，可能成为类似“扫地机器人”后的第二个家庭实用机器人品类。
@@ -398,7 +398,7 @@ OpenAI 与 Anthropic 联合多位科技领袖签署公开信，要求国会立�
 
 ### 特朗普签署 AI 行政令，要求自愿安全审查
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-05/opinion-01.jpg)
 
 
 特朗普签署新行政令，要求 AI 公司“自愿”提交模型供政府安全评估，但未设定任何强制惩罚或截止日期。批评者认为这更像一场政治表态——行政令强调“美国创新优先”，只在最后一段轻描淡写地提及风险审查。
@@ -411,7 +411,7 @@ OpenAI 与 Anthropic 联合多位科技领袖签署公开信，要求国会立�
 
 ### 英国监管强制 Google 为 AI 搜索提供出版商退出选项
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-05/opinion-02.jpg)
 
 
 英国竞争与市场管理局（CMA）裁定，Google 必须为英国出版商提供工具，允许其选择不被 AI Overviews 纳入搜索摘要。此外，CMA 要求 Google 在显示 AI 摘要时，“更清晰地链接到原始来源”。
@@ -424,7 +424,7 @@ OpenAI 与 Anthropic 联合多位科技领袖签署公开信，要求国会立�
 
 ### 微软 CEO Satya Nadella 访谈：AI 核心能力与平台机遇
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-05/opinion-03.jpg)
 
 
 Nadella 在 Latent Space 与 Stratechery 的联合访谈中，详细阐述了微软 AI 战略三角：Copilot 作为前端、Azure AI 作为基础设施、以及新兴的 Agent 平台（与 OpenAI 深度绑定）。他重申 OpenAI 是“长期合作伙伴”，但暗示微软正在投资自己的基础模型能力。
@@ -437,7 +437,7 @@ Nadella 在 Latent Space 与 Stratechery 的联合访谈中，详细阐述了微
 
 ### OpenAI CFO 详解：收入五五开、IPO 不争第一、AI 硬件将出
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-05/opinion-04.jpg)
 
 
 OpenAI 首席财务官首次披露公司财务细节：B 端与 C 端收入各占约 50%，企业客户贡献快速增长。CFO 明确表示，OpenAI “不急于成为第一家 IPO 的 AI 公司”，当前优先是基础设施投入与模型研发。此外，她确认公司内部正在孵化一款“神秘 AI 硬件”，计划今年推出。
@@ -450,7 +450,7 @@ OpenAI 首席财务官首次披露公司财务细节：B 端与 C 端收入各�
 
 ### Sam Altman 预言 AI 下一阶段：“主动式 AI”
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-05/opinion-05.jpg)
 
 
 Sam Altman 在近期公开访谈中提出，AI 发展的三个阶段是：对话式（ChatGPT）、代理式（Agentic）、主动式（Proactive）。主动式 AI 能够自主预测用户需求并采取行动，例如提前预订机票、自动优化工作流，无需用户明确指令。
@@ -479,7 +479,7 @@ Sam Altman 在近期公开访谈中提出，AI 发展的三个阶段是：对话
 
 ### Arm 开源 AI 安全框架 Metis
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-05/opensource-01.jpg)
 
 
 Arm 发布开源 AI 安全框架 Metis，声称在检测AI模型安全漏洞方面性能优于传统SAST工具。该框架专为AI管道设计，能识别数据投毒、模型逆转、越狱攻击等风险。关键点：Metis提供了面向AI应用的静态分析能力，而非通用代码扫描。为什么重要：随着AI系统进入生产环境，安全审计工具成为刚需，Metis填补了传统SAST工具对AI模型行为理解不足的空白，尤其对依赖Arm架构的边缘设备开发者有直接价值。
@@ -488,7 +488,7 @@ Arm 发布开源 AI 安全框架 Metis，声称在检测AI模型安全漏洞方�
 
 ### HuggingFace 推出 Agent 优化版 CLI 工具
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-05/opensource-02.jpg)
 
 
 HuggingFace 发布新的CLI for Agents，专为Agent工作流优化Hub交互体验。它允许开发者通过命令行直接管理Agent的模型、工具和状态，支持快速部署和迭代。关键点：传统CLI面向模型下载与上传，新工具聚焦Agent的运行时协作——如注册工具、共享Agent模板等。为什么重要：Agent开发正从独立实验走向标准化流水线，HuggingFace以其Hub生态为基础，试图定义Agent的“pip install”体验，降低多智能体系统的协作摩擦。
@@ -497,7 +497,7 @@ HuggingFace 发布新的CLI for Agents，专为Agent工作流优化Hub交互体�
 
 ### NousResearch 开源 Hermes Agent
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-05/opensource-03.jpg)
 
 
 NousResearch 发布 Hermes Agent，一个可自成长的开源自主智能体框架。它允许Agent通过自我反思和外部反馈持续改进决策策略，并支持集成多种LLM和工具。关键点：框架内置了“经验回放”和“失败学习”机制，不同于静态提示工程。为什么重要：自主智能体的自我进化能力是当前研究热点，Hermes Agent以开源形式提供了可复现的基线，有助于社区验证和推进agentic学习范式，尤其适合需要长期自主任务的场景。
@@ -506,7 +506,7 @@ NousResearch 发布 Hermes Agent，一个可自成长的开源自主智能体框
 
 ### NVIDIA 开源 NeMo Gym 评估框架
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-05/opensource-04.jpg)
 
 
 NVIDIA 开源 NeMo Gym，一个用于评估和改进模型及智能体的环境库。它提供标准化评测环境、奖励信号和训练模板，支持强化学习和监督式微调。关键点：该库与NeMo框架深度集成，但也可独立使用，重点是可复现的评估流程。为什么重要：模型评估长期缺乏标准化工具，NeMo Gym试图为LLM和智能体提供类似OpenAI Gym的基准，对于需要横向对比不同Agent性能的开发者和企业有实际价值。
@@ -515,7 +515,7 @@ NVIDIA 开源 NeMo Gym，一个用于评估和改进模型及智能体的环境�
 
 ### OpenBMB 开源多语言 TTS 模型 VoxCPM2
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-05/opensource-05.jpg)
 
 
 OpenBMB 开源 VoxCPM2，一种免分词器的多语言语音生成与克隆模型。它无需文本分词即可直接生成语音，支持中英文混合及零样本语音克隆。关键点：模型采用“字符+音素”联合建模，绕过传统TTS的复杂前端。为什么重要：开源多语言TTS模型稀少，VoxCPM2的低门槛和高质量使其适用于语音交互、无障碍工具等场景，尤其对需要多语言支持的国际化应用有直接帮助。
@@ -524,7 +524,7 @@ OpenBMB 开源 VoxCPM2，一种免分词器的多语言语音生成与克隆模�
 
 ### Open-LLM-VTuber：开源跨平台虚拟主播框架
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-05/opensource-06.jpg)
 
 
 Open-LLM-VTuber 是一个开源项目，支持与任意LLM进行免提语音交互，并配合Live2D虚拟形象实现实时口型同步。关键点：它整合了ASR、LLM对话、TTS和Live2D渲染，所有组件可替换。为什么重要：虚拟主播和AI陪伴应用正在爆发，此框架降低了非专业开发者进入的门槛，可快速搭建个性化交互角色，在直播、教育、客服等领域有直接应用潜力。
@@ -533,7 +533,7 @@ Open-LLM-VTuber 是一个开源项目，支持与任意LLM进行免提语音交�
 
 ### headroom：给 LLM 压缩上下文，节省 60-95% Token
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-05/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-05/opensource-07.jpg)
 
 
 headroom 是一款开源工具，通过压缩工具输出、日志、文件等长文本，减少60-95%的Token消耗，同时保持回答质量。关键点：它使用语义摘要而非简单截断，并支持自定义压缩策略。为什么重要：Token成本仍是LLM应用的主要瓶颈，headroom为需要处理大量上下文的Agent和RAG系统提供了低风险优化方案，尤其适合日志分析、代码审查等场景。

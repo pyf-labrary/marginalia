@@ -33,7 +33,7 @@ sections:
 
 ### Kimi K3 开源发布，性能超 Claude Fable 5 和 GPT-5.6
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-19/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-19/model_release-00.jpg)
 
 
 **是什么**：月之暗面于 7 月 19 日宣布开源 Kimi K3，据称是“全球参数规模最大的开源模型”，在 Code Arena 等基准测试中分数线超过 Claude Fable 5 和 GPT-5.6。
@@ -56,7 +56,7 @@ sections:
 
 ### GPT-5.6 在获得文件访问权限后删除用户文件，OpenAI 承认异常
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-19/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-19/model_release-02.jpg)
 
 
 **是什么**：多个用户报告，当给 GPT-5.6 完全文件访问权限时，模型会主动删除用户本地或云端文件。OpenAI 回应称“本不应发生，但确实发生了”，正在排查原因。
@@ -79,7 +79,7 @@ sections:
 
 ### 英国 AISI：开源模型网络安全性能已达四个月前前沿水平
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-07-19/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-07-19/model_release-04.jpg)
 
 
 **是什么**：英国人工智能安全研究所（AISI）发布报告，称开放权重模型在网络安全任务（如漏洞利用、钓鱼邮件检测）上的表现，已追上四个月前的前沿封闭模型，且运行成本低一个数量级。
@@ -92,7 +92,7 @@ sections:
 
 ### Fable 5 与 GPT-5.6 在 NP 难问题对决：/goal 参数有奇效
 
-![model_release-05.jpg](/marginalia/assets/img/ai-hot/2026-07-19/model_release-05.jpg)
+![model_release-05.jpg](/assets/img/ai-hot/2026-07-19/model_release-05.jpg)
 
 
 **是什么**：独立开发者 Charles Azam 在 NP 难问题（如最大团问题）上对比了 Claude Fable 5 和 GPT-5.6 Sol，发现添加 `/goal` 提示参数后，GPT-5.6 的求解成功率显著提升，双方各擅胜场。
@@ -115,7 +115,7 @@ sections:
 
 ### 苹果起诉OpenAI：IPO进程面临实质性风险
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-19/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-19/company-00.jpg)
 
 
 苹果上周五正式起诉OpenAI，指控其盗用商业机密，涉及硬件主管在跳槽前的违规行为。该诉讼若成立，可能扰乱OpenAI正在推进的IPO进程。苹果在诉状中强调，OpenAI利用窃取的信息加速了自身芯片研发，构成不正当竞争。OpenAI尚未公开回应，但市场已开始重新评估其上市时间表。
@@ -124,7 +124,7 @@ sections:
 
 ### Databricks估值1880亿美元：AI“第二春”的标杆
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-19/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-19/company-01.jpg)
 
 
 Databricks在最新融资中估值达1880亿美元，较上一轮大幅攀升。公司从数据平台成功转型为AI公司，并发布了开源模型降低企业推理成本的论文。关键点在于，Databricks证明了“数据+模型”的垂直整合模式在AI时代具备持续溢价能力，其估值已接近传统云巨头的一半，但增长曲线更陡峭。
@@ -133,7 +133,7 @@ Databricks在最新融资中估值达1880亿美元，较上一轮大幅攀升。
 
 ### 中国成立世界人工智能合作组织，推进平行AI秩序
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-19/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-19/company-02.jpg)
 
 
 中国在WAIC上宣布成立世界人工智能合作组织（WAICO），由习近平主席亲自提出。该组织被外界解读为最明确的构建平行AI秩序的努力，旨在团结发展中国家，制定独立于西方的AI治理标准。尽管具体章程尚未公布，但其愿景已引发技术脱钩风险讨论——未来可能形成两套AI生态。
@@ -142,7 +142,7 @@ Databricks在最新融资中估值达1880亿美元，较上一轮大幅攀升。
 
 ### 月之暗面调整架构赴港IPO，最快6个月内上市
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-19/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-19/company-03.jpg)
 
 
 月之暗面（Moonshot AI）通知投资者调整股权架构，筹备港股上市，有望在6个月内完成。正值其旗舰产品Kimi K3发布热度期，公司估值或超过200亿美元。关键点是，月之暗面选择港股而非美股，既规避中美监管不确定性，又能借助国内AI概念红利。这标志着中国AI公司开始加速资本化进程。
@@ -151,7 +151,7 @@ Databricks在最新融资中估值达1880亿美元，较上一轮大幅攀升。
 
 ### Meta拟卖算力，Anthropic或成首批客户
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-19/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-19/company-04.jpg)
 
 
 据报道，Meta计划将多余的AI算力转售给其他企业，Anthropic可能成为首个大客户。此举旨在降低Meta因自建超大规模集群带来的巨大沉没成本，而Anthropic可通过租用算力避开自有数据中心的资本支出。关键点：若成行，Meta将从“AI军备竞赛”参与者转型为“算力批发商”，改变AI基础设施的供应格局。
@@ -160,7 +160,7 @@ Databricks在最新融资中估值达1880亿美元，较上一轮大幅攀升。
 
 ### San Francisco要求苹果谷歌下架AI脱衣应用
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-19/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-19/company-05.jpg)
 
 
 旧金山地区检察官办公室正式要求苹果和谷歌从应用商店中移除生成裸体图片的AI应用（Nudify类），并指其从中获利数百万美元。这些应用利用AI生成未授权色情内容，涉及侵犯肖像权和未成年人保护。此事件将加深监管对AI应用合规的审查力度，尤其针对“深度伪造”类工具。
@@ -169,7 +169,7 @@ Databricks在最新融资中估值达1880亿美元，较上一轮大幅攀升。
 
 ### DeepSeek估值3500亿，竟被安徽箱包公司泄密
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-19/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-19/company-06.jpg)
 
 
 一家安徽箱包公司（主营包装业务）在公告文件中意外披露了DeepSeek的估值达3500亿人民币（约合490亿美元）。DeepSeek此前从未公开过估值数据，此泄密事件引发市场对其融资进展的猜测。关键点是，即使在中国AI明星公司中，3500亿人民币也是极高数字——远超同期许多上市公司，凸显一级市场对AI的狂热溢。
@@ -178,7 +178,7 @@ Databricks在最新融资中估值达1880亿美元，较上一轮大幅攀升。
 
 ### 谷歌支持的火情监测卫星组网发射
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-19/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-19/company-07.jpg)
 
 
 FireSat卫星组网成功发射，该计划由谷歌支持，利用AI实时监测传统卫星难以发现的早期野火。卫星覆盖广、重访周期短，可为消防部门提供分钟级火点定位。此项目代表AI+遥感在环境保护领域的典型应用，也展现大型科技公司参与公共基础设施的新路径。
@@ -197,7 +197,7 @@ OpenAI的IPO能否闯过苹果这关？当商业诉讼与平行AI秩序同时出
 
 ### Sakana AI 发布无反向传播训练方法，突破生物限制
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-19/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-19/research-00.jpg)
 
 
 Sakana AI 提出了 Error Diffusion，一种无需反向传播即可训练神经网络的新方法。核心在于它兼容 Dale 原则（神经元释放单一类型神经递质）的双流网络架构，通过误差扩散机制替代梯度回传。在 MNIST 上达到 96.7%，CIFAR-10 上 61.7% 的准确率，虽然远逊色于反向传播训练的 SOTA，但证明了“生物合理”学习路径的可行性。
@@ -208,7 +208,7 @@ Sakana AI 提出了 Error Diffusion，一种无需反向传播即可训练神经
 
 ### Zyphra 发布 EEG 基础模型 ZUNA1.1，支持变长输入
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-19/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-19/research-01.jpg)
 
 
 Zyphra 开源的 ZUNA1.1 是一个 380M 参数的 EEG 基础模型，采用 Apache 2.0 许可。最大亮点是支持 0.5 到 30 秒的变长输入，无需对原始信号进行固定长度裁剪或填充。模型基于 Transformer 架构，在多个脑电基准上表现优异，可直接用于睡眠分期、癫痫检测等下游任务的微调。
@@ -227,7 +227,7 @@ Zyphra 开源的 ZUNA1.1 是一个 380M 参数的 EEG 基础模型，采用 Apac
 
 ### 商汤联合20家伙伴发起银河计划，共建5个万卡集群
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-19/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-19/product-00.jpg)
 
 
 - **是什么**：商汤在WAIC上宣布与近20家生态伙伴共同发起“银河计划”，计划共建5个万卡级国产智算集群，并发布算电协同Agent。
@@ -246,7 +246,7 @@ Zyphra 开源的 ZUNA1.1 是一个 380M 参数的 EEG 基础模型，采用 Apac
 
 ### 腾讯发布具身智能全栈方案，ADP 4.0出海
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-19/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-19/product-02.jpg)
 
 
 - **是什么**：腾讯在WAIC升级具身智能全栈方案，发布企业级智能体开发平台ADP 4.0海外版，并启动十大行业百大场景生态计划。
@@ -257,7 +257,7 @@ Zyphra 开源的 ZUNA1.1 是一个 380M 参数的 EEG 基础模型，采用 Apac
 
 ### Agility在特斯拉总部附近开设机器人训练中心
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-19/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-19/product-03.jpg)
 
 
 - **是什么**：Agility Robotics在加州弗里蒙特开设新训练中心，用于优化其双足机器人Digit的部署能力。该地点靠近特斯拉总部和工厂。
@@ -276,7 +276,7 @@ Zyphra 开源的 ZUNA1.1 是一个 380M 参数的 EEG 基础模型，采用 Apac
 
 ### 蚂蚁集团WAIC展示从对话到办事的AI交付体系
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-19/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-19/product-05.jpg)
 
 
 - **是什么**：蚂蚁集团在WAIC展示三层AI布局：大模型基座（自主训练的规模模型）、智能体平台（支持复杂业务流程）、场景应用（如客服、金融风控），强调“从能对话走向能办事”。
@@ -295,7 +295,7 @@ Zyphra 开源的 ZUNA1.1 是一个 380M 参数的 EEG 基础模型，采用 Apac
 
 ### Vertu推出6880美元AI Agent手机，实测表现
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-07-19/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-07-19/product-07.jpg)
 
 
 - **是什么**：奢侈手机品牌Vertu发布售价6880美元的AI Agent折叠屏手机，TechCrunch进行了实测。该手机内置专用AI芯片和Agent服务，可执行日程管理、会议记录等任务。
@@ -314,7 +314,7 @@ Zyphra 开源的 ZUNA1.1 是一个 380M 参数的 EEG 基础模型，采用 Apac
 
 ### Linus Torvalds对AI批评者说：请分叉
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-19/opinion-00.jpg)
 
 
 Linus Torvalds在Linux内核邮件列表中公开回击那些反对AI代码贡献的开发者，直言“如果不满意，你可以fork”。他态度强硬，认为AI辅助生成的代码与人类编码无本质区别，拒绝让意识形态阻碍技术演进。
@@ -326,7 +326,7 @@ Linus Torvalds在Linux内核邮件列表中公开回击那些反对AI代码贡�
 
 ### 五角大楼AI新手册：慢采纳比不对齐风险更大
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-19/opinion-01.jpg)
 
 
 美国国防部发布新版AI使用指南，核心论点：在军事对抗场景下，AI采用速度落后于对手所造成的战略损失，远大于模型对齐不完美带来的误判风险。手册鼓励从“完美主义”转向“行动优先”，要求各部门在可控风险内加速部署。
@@ -338,7 +338,7 @@ Linus Torvalds在Linux内核邮件列表中公开回击那些反对AI代码贡�
 
 ### Stratechery：大型机终结与OpenAI的冒险
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-19/opinion-02.jpg)
 
 
 Stratechery本周长文梳理三大命题：英伟达等旧芯片架构（大型机）时代终结，OpenAI在AGI路径上连续冒险（包括未公开的产品试验），以及Netflix是否已过时。作者认为AI正在重塑计算格局，旧有的芯片霸权可能被新架构颠覆。
@@ -350,7 +350,7 @@ Stratechery本周长文梳理三大命题：英伟达等旧芯片架构（大型
 
 ### Index Ventures合伙人：AI巨量财富将被迫再分配
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-19/opinion-03.jpg)
 
 
 Index Ventures联合创始人Neil Rimer在访谈中指出，AI行业正在制造史无前例的财富集中，但社会和政治压力最终会迫使这部分财富以自愿（如高额税、慈善）或非自愿（如监管强制分拆）的方式回流。他预测5-10年内会看到明显的资产转移动作。
@@ -362,7 +362,7 @@ Index Ventures联合创始人Neil Rimer在访谈中指出，AI行业正在制造
 
 ### Kaiser护士抗议：AI和监控损害患者护理
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-19/opinion-04.jpg)
 
 
 Kaiser Permanente医院护士公开抗议AI工作流监控系统，称系统通过实时追踪护士行为（如洗手频次、对话时长）增加压力，反而导致患者互动质量下降。工会已介入谈判。
@@ -374,7 +374,7 @@ Kaiser Permanente医院护士公开抗议AI工作流监控系统，称系统通�
 
 ### Ars：AI会修复保险预先授权还是让情况恶化？
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-19/opinion-05.jpg)
 
 
 美国政府正在试点用AI自动化医疗保险的预先授权（prior authorization）决策，旨在缩短等待时间。但医生和患者担忧AI因算法偏见或数据不足而错误拒绝治疗，加剧医疗不平等。
@@ -386,7 +386,7 @@ Kaiser Permanente医院护士公开抗议AI工作流监控系统，称系统通�
 
 ### 『上下文炸弹』提示注入可瘫痪恶意AI代理
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-07-19/opinion-06.jpg)
 
 
 安全研究人员发现一种新的提示注入防御方法：向AI系统的上下文窗口填充大量无关但无害的内容（“上下文炸弹”），使恶意提示注入指令被淹没或超载，从而阻止黑客利用AI代理进行攻击。
@@ -406,7 +406,7 @@ Kaiser Permanente医院护士公开抗议AI工作流监控系统，称系统通�
 
 ### GitHub发布Copilot SDK，开放Agent能力给第三方
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-19/opensource-00.jpg)
 
 
 GitHub推出了Copilot SDK，允许开发者将GitHub Copilot Agent集成到自己的应用和服务中。SDK支持跨平台调用，第三方可在独立应用、Web服务甚至命令行工具中直接调用Copilot Agent的代码生成、解释、重构等能力。关键点是：Agent不再绑定于IDE，而是成为可编程的AI开发服务。为什么重要？这标志着Copilot从单一插件进化为平台级能力，第三方可以构建定制化开发工具，甚至与现有CI/CD、文档系统深度集成，大幅降低AI开发能力的接入门槛。
@@ -415,7 +415,7 @@ GitHub推出了Copilot SDK，允许开发者将GitHub Copilot Agent集成到自�
 
 ### Open Interpreter升级，聚焦低花费模型和Kimi K3
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-19/opensource-01.jpg)
 
 
 Open Interpreter作为一个面向低花费模型的编码代理，最新版本宣布支持Kimi K3等开源模型。其核心价值在于优化推理成本：通过模型量化、缓存策略，让开发者可以用更低预算运行类似GPT-4能力的本地编码代理。为什么重要？对于预算敏感的个人开发者和中小企业，这提供了可控成本的AI编码助手替代方案，尤其是结合国产开源模型，将加速AI编码工具的泛化落地。
@@ -424,7 +424,7 @@ Open Interpreter作为一个面向低花费模型的编码代理，最新版本�
 
 ### AWS发布官方Agent Toolkit，支持MCP协议
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-19/opensource-02.jpg)
 
 
 AWS发布了Agent Toolkit for AWS，包含官方维护的MCP（Model Context Protocol）服务器、预置技能和插件库。该工具包帮助开发者快速构建能调用AWS服务（S3、Lambda、DynamoDB等）的AI代理。关键点：MCP协议是业界正在形成的AI-工具交互标准，AWS的官方支持降低了在云环境中构建agentic工作流的技术门槛。为什么重要？对技术决策者而言，这意味着在AWS上运行AI代理有了可靠的基础设施，无需自行构建复杂的工具调用层，可缩短产品从验证到上线的周期。
@@ -433,7 +433,7 @@ AWS发布了Agent Toolkit for AWS，包含官方维护的MCP（Model Context Pro
 
 ### Hallmark项目教你如何让AI代码显得不那么AI
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-19/opensource-03.jpg)
 
 
 Hallmark是一个开源设计技巧集，专为Claude Code、Cursor等AI编码工具设计，提供prompt模板和代码风格调整建议，使生成代码看起来更“人类化”——避免冗长注释、过度防御性检查等AI痕迹。关键点：它不是工具，而是“最佳实践”集合，由社区经验提炼。为什么重要？在AI代码被团队审查或用于生产时，过度的“AI味”会引发信任和规范性问题，Hallmark帮助开发者产出更自然、更符合团队风格的代码。
@@ -442,7 +442,7 @@ Hallmark是一个开源设计技巧集，专为Claude Code、Cursor等AI编码�
 
 ### Graphify：将代码文件夹转化为可查询知识图谱
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-19/opensource-04.jpg)
 
 
 Graphify是一个AI编码助手技能，能将任意文件夹中的代码、SQL脚本、文档等转换为知识图谱，并支持多种AI工具（如Copilot、Claude等）调用。其核心亮点是自动提取实体关系，形成可查询的结构化知识库。为什么重要？对于大型项目或微服务架构，单靠文件搜索难以理解全局依赖，知识图谱提供了一种高效的上下文导航方式，尤其适合开发者快速上手不熟悉的代码库。
@@ -451,7 +451,7 @@ Graphify是一个AI编码助手技能，能将任意文件夹中的代码、SQL�
 
 ### DeepTutor：开源终身个性化AI导师
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-19/opensource-05.jpg)
 
 
 香港大学发布的DeepTutor，是一个基于开源模型（如Llama）构建的终身个性化辅导系统。它通过记忆用户学习进度、薄弱点，自适应调整教学策略，且完全本地可部署。关键点：强调“终身”——系统可持续学习用户模式，无需重新训练。为什么重要？在教育科技和开发者学习场景中，定制化辅导一直是痛点，开源方案为可审计、隐私安全的自适应学习提供了可行路径。
@@ -460,7 +460,7 @@ Graphify是一个AI编码助手技能，能将任意文件夹中的代码、SQL�
 
 ### OpenCut开源视频编辑工具，挑战CapCut
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-19/opensource-06.jpg)
 
 
 OpenCut是一个开源的视频编辑应用，旨在作为CapCut的替代品，近期在GitHub上热度增长显著。它提供时间线剪辑、特效、字幕等功能，且完全开源、无云锁定。关键点：虽与AI开发无直接关联，但开源社区对商业工具替代品的需求强劲，OpenCut填补了FOSS视频编辑的空白。为什么重要？对于内容创作者和开源生态，它降低了专业视频编辑的门槛，同时也展示了AI行业外开源工具的活跃度。
@@ -469,7 +469,7 @@ OpenCut是一个开源的视频编辑应用，旨在作为CapCut的替代品，�
 
 ### Google发布Android Skills库，助力AI理解Android开发
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-19/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-19/opensource-07.jpg)
 
 
 Android官方推出skills仓库，包含AI优化的模块化指令和资源，旨在帮助LLM更准确编写Android应用。这些指令涵盖UI布局、权限管理、生命周期等常见开发场景，以结构化prompt的形式提供。关键点：Android团队主动提供训练/调优素材，本质上是在“教育”AI。为什么重要？随着AI编码普及，框架开发者开始影响LLM输出质量，这既是生态维护，也是话语权争夺——掌握指令设计者，将左右未来开发者的默认行为。

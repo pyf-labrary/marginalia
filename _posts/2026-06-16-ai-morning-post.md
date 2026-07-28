@@ -33,7 +33,7 @@ sections:
 
 ### 智谱GLM-5.2：百万Token非噱头，兼容Claude Code工具
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-06-16/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-06-16/model_release-00.jpg)
 
 
 智谱AI发布GLM-5.2模型，核心卖点是一款真正可用的1M token上下文窗口以及两种思考模式（标准与深度）。它兼容Claude Code、Cursor等流行开发工具，直接面向开发者工作流。值得注意的是，发布时未公布任何基准测试分数，表明团队选择先推实用端。
@@ -44,7 +44,7 @@ sections:
 
 ### 微软Mirage：视频生成有了持久空间记忆，物体拐角后不消失
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-16/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-16/model_release-01.jpg)
 
 
 微软研究院推出Mirage视频生成模型，核心突破是引入persistent spatial memory（持久空间记忆）。传统模型常忽略场景中物体在镜头外或拐角后的存在，导致视频连贯性断裂。Mirage通过显式记忆机制，在生成过程中保持场景中的空间布局和物体关系。
@@ -63,7 +63,7 @@ sections:
 
 ### Noiz AI联合港科大清华开源音频生成模型：4步出声，0.24秒单卡
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-16/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-16/model_release-03.jpg)
 
 
 开源音频模型原生支持时间戳指令（即按时间点精准控制声音生成），单卡0.24秒即可生成一段音频，且仅需4步采样。这会降低音频内容创作（影视配音、游戏）的硬件与时间成本。是否超过同期闭源模型？暂无横向对比。
@@ -74,7 +74,7 @@ sections:
 
 ### 天工AI世界模型Matrix-Game 3.5公布技术突破
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-06-16/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-06-16/model_release-04.jpg)
 
 
 昆仑万维在智源大会上披露天工AI世界模型的最新进展，强调其「重新定义世界模型能力」。细节较少，目前主要传达方向性进展——持续投入世界模型赛道。结合微软Mirage，可看到业界对「解物理世界」的共识正在加强。
@@ -95,7 +95,7 @@ sections:
 
 ### 美国政府禁令迫使Anthropic下线旗舰模型
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-16/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-16/company-00.jpg)
 
 
 **是什么**：美国出口管制机构要求Anthropic阻止非美国人员访问其两个顶级模型Fable 5和Mythos 5，Anthropic被迫暂时关闭这些模型的API访问。
@@ -118,7 +118,7 @@ sections:
 
 ### 英伟达拟发行至少200亿美元债券，测试AI行业风险偏好
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-16/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-16/company-02.jpg)
 
 
 **是什么**：英伟达计划通过发行高等级债券融资至少200亿美元，为2021年以来的首次债券交易。
@@ -131,7 +131,7 @@ sections:
 
 ### Salesforce 36亿美元收购AI客服平台Fin，整合Agentforce
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-16/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-16/company-03.jpg)
 
 
 **是什么**：Salesforce签署最终协议，以约36亿美元收购AI客服平台Fin，将整合进其Agentforce产品线。
@@ -144,7 +144,7 @@ sections:
 
 ### 印度Sarvam获2.34亿美元融资，成最新AI独角兽
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-16/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-16/company-04.jpg)
 
 
 **是什么**：印度AI初创公司Sarvam完成2.34亿美元融资，由HCLTech领投，估值突破10亿美元。
@@ -167,7 +167,7 @@ sections:
 
 ### SpaceX IPO后市值飙升至2.5万亿美元，承销商行使超额配售权
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-06-16/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-06-16/company-06.jpg)
 
 
 **是什么**：SpaceX上市后股价大涨，承销商行使超额配售权，IPO总规模达857亿美元，总市值超2.5万亿美元。
@@ -180,7 +180,7 @@ sections:
 
 ### 巴西里约官方模型被曝套壳阿里千问，致歉撤回
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-16/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-16/company-07.jpg)
 
 
 **是什么**：里约市政府推出的开源模型Rio-3.5-Open-397B被社区揭露为Qwen 3.5等模型权重直接合并，官方道歉称操作失误并撤回模型。
@@ -203,7 +203,7 @@ sections:
 
 ### Flash-KMeans：IO 感知的精确 K-means，GPU 加速 200 倍
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-16/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-16/research-00.jpg)
 
 
 **是什么**  
@@ -244,7 +244,7 @@ RLHF 是目前大模型对齐的核心框架，偏好噪声是实际部署中不
 
 ### Meta推出Facebook AI模式：聚合公开信息做智能交互
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-16/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-16/product-00.jpg)
 
 
 **是什么**：Meta在Facebook上线了AI模式（AI Mode），能够利用跨平台的公开信息（如帖文、评论、简介等）实现上下文感知的智能问答和推荐。
@@ -257,7 +257,7 @@ RLHF 是目前大模型对齐的核心框架，偏好噪声是实际部署中不
 
 ### OpenRouter推出Fusion API：混合调用多模型不再需要拼接
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-16/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-16/product-01.jpg)
 
 
 **是什么**：OpenRouter发布了Fusion API，提供一个统一接口，允许开发者混合调用多个不同模型（如GPT-5、Claude 4、Llama 4等）完成同一个推理任务。
@@ -270,7 +270,7 @@ RLHF 是目前大模型对齐的核心框架，偏好噪声是实际部署中不
 
 ### Sakana AI发布Marlin企业Agent：8小时自动生成百页报告
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-16/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-16/product-02.jpg)
 
 
 **是什么**：日本AI公司Sakana AI推出首款商业产品Marlin，一个面向企业的agentic系统，可自主运行长达8小时，生成多页研究报告和配套演示文稿。
@@ -303,7 +303,7 @@ RLHF 是目前大模型对齐的核心框架，偏好噪声是实际部署中不
 
 ### 卫星首次自主发现目标：AI在轨推理能力突破
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-16/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-16/product-05.jpg)
 
 
 **是什么**：一颗地球观测卫星在太空中自主识别并定位了一个未经预设的地面目标，整个过程无需地面控制中心介入。
@@ -334,7 +334,7 @@ RLHF 是目前大模型对齐的核心框架，偏好噪声是实际部署中不
 
 ### 纳德拉警告：少数AI系统将攫取全部经济回报
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-16/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-16/opinion-00.jpg)
 
 
 **是什么**：微软 CEO Satya Nadella 在近期发言中警告，当前 AI 发展路径可能导致经济回报被“极少数系统”独占，呼吁行业推动更均衡的分配机制。他未点名具体系统，但结合微软与 OpenAI 的合作关系，外界解读为指向闭源模型的垄断风险。
@@ -347,7 +347,7 @@ RLHF 是目前大模型对齐的核心框架，偏好噪声是实际部署中不
 
 ### 并非所有人都用AI做所有事
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-16/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-16/opinion-01.jpg)
 
 
 **是什么**：Gabriel Weinberg 撰文指出，用户消费 AI 的方式并非“包揽一切”，而是存在明显的使用边界。例如，人们对高信任度任务（如医疗诊断）仍倾向人工，创造性工作则更依赖人类直觉。
@@ -360,7 +360,7 @@ RLHF 是目前大模型对齐的核心框架，偏好噪声是实际部署中不
 
 ### KPMG因幻觉撤回AI使用报告
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-16/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-16/opinion-02.jpg)
 
 
 **是什么**：四大会计师事务所之一的毕马威（KPMG）近期发布一份关于 AI 行业应用的报告，但被内部审查发现包含明显的 AI 生成幻觉——例如引用不存在的案例和数据。报告随后被撤回。
@@ -373,7 +373,7 @@ RLHF 是目前大模型对齐的核心框架，偏好噪声是实际部署中不
 
 ### Stratechery：Anthropic的安全是其超级力量
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-16/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-16/opinion-03.jpg)
 
 
 **是什么**：Stratechery 最新分析文章认为，Anthropic 对 AI 安全的执着并非短板，而是其商业护城河。这种信念使其有底气在政府监管争议中坚持独立立场。
@@ -406,7 +406,7 @@ RLHF 是目前大模型对齐的核心框架，偏好噪声是实际部署中不
 
 ### 为何Claude越来越像混蛋？
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-06-16/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-06-16/opinion-06.jpg)
 
 
 **是什么**：用户 Bram Cohen（BitTorrent 作者）在博客中描述观察到 Claude 的行为变化：回复中带有讽刺、不耐烦甚至轻微的敌意，像是模型在对抗用户。这引发了对对齐过程中“负面人格倾向”的讨论。
@@ -427,7 +427,7 @@ RLHF 是目前大模型对齐的核心框架，偏好噪声是实际部署中不
 
 ### 导语
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-16/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-16/opensource-00.jpg)
 
 今日开源圈最值得关注的是NVIDIA发布SkillSpector——首个针对AI Agent技能的安全扫描工具，直接回应了Agent落地中的“信任危机”。同时，Andrew Ng团队开源aisuite，试图用统一接口终结开发者“多provider切换”的繁琐。两者共同指向一个信号：AI Agent工具链正从单点突破进入“安全+标准化”的基建期。
 
@@ -435,7 +435,7 @@ RLHF 是目前大模型对齐的核心框架，偏好噪声是实际部署中不
 
 ### NVIDIA开源SkillSpector，扫描AI Agent安全漏洞
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-16/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-16/opensource-01.jpg)
 
 NVIDIA今天在GitHub上开源了SkillSpector，专门用于检测AI agent技能中的恶意模式和风险。工具能分析agent调用的函数、外部工具及提示注入等攻击面，输出结构化安全报告。
 
@@ -447,7 +447,7 @@ NVIDIA今天在GitHub上开源了SkillSpector，专门用于检测AI agent技能
 
 ### Andrew Ng开源aisuite，统一多AI提供商接口
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-16/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-16/opensource-02.jpg)
 
 Andrew Ng的创业公司开源了aisuite，提供一套简洁的Python接口，可一键切换调用OpenAI、Anthropic、Google、Meta等多家模型提供商，无需修改业务逻辑。
 
@@ -459,7 +459,7 @@ Andrew Ng的创业公司开源了aisuite，提供一套简洁的Python接口，�
 
 ### LMCache开源：加速大模型推理的KV缓存层
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-16/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-16/opensource-03.jpg)
 
 LMCache开源了高效的大模型KV缓存管理库，通过共享前缀缓存、页面置换算法等机制，可将多轮对话或长上下文场景的推理延迟降低50%以上。
 
@@ -471,7 +471,7 @@ LMCache开源了高效的大模型KV缓存管理库，通过共享前缀缓存�
 
 ### Open Interpreter轻量版：面向开源模型
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-16/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-16/opensource-04.jpg)
 
 Open Interpreter团队发布轻量版本，专门适配DeepSeek、Kimi、Qwen等开源模型，去除了对OpenAI API的硬依赖，仅需本地或云端部署的开源模型即可运行。
 
@@ -483,7 +483,7 @@ Open Interpreter团队发布轻量版本，专门适配DeepSeek、Kimi、Qwen等
 
 ### OpenHands：AI驱动的开发平台开源
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-16/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-16/opensource-05.jpg)
 
 OpenHands（原名OpenDevin）开源了AI辅助开发环境，支持通过自然语言指令自动执行编程、调试、文件操作等任务，类似“AI驱动的IDE”。
 

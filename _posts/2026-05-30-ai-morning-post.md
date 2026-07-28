@@ -33,7 +33,7 @@ sections:
 
 ### Claude Opus 4.8：适度改进，多项领先
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-30/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-30/model_release-00.jpg)
 
 
 Anthropic 发布 Claude Opus 4.8，官方措辞为“适度但切实的改进”。在关键基准测试中，该模型超越了 GPT-5.5（当前公认最强模型之一）。更值得关注的是配套工具 Dynamic Workflows，它允许开发者编排数百个子智能体并行协作，相当于将 agentic 能力规模化。
@@ -46,7 +46,7 @@ Anthropic 发布 Claude Opus 4.8，官方措辞为“适度但切实的改进”
 
 ### GPT-5.5 Instant 可读性升级，旧模型退出
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-30/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-30/model_release-01.jpg)
 
 
 OpenAI 为 GPT-5.5 Instant 做了可读性升级，同时宣布逐步淘汰两个较旧模型版本。这是一个典型的“平稳迭代”动作：不追求榜单排名，而是在开发者调用中降低延迟、提升输出质量。
@@ -59,7 +59,7 @@ OpenAI 为 GPT-5.5 Instant 做了可读性升级，同时宣布逐步淘汰两�
 
 ### Liquid AI 开源 8B 激活 MoE，训练达 38T tokens
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-05-30/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-05-30/model_release-02.jpg)
 
 
 Liquid AI 发布 LFM 2.5 8B-A1B，一种混合专家模型，激活参数仅 8B，但训练数据达 38T tokens。虽然绝对规模不及头部大厂，但高 token 量/参数比意味着在特定任务上可能具备竞争力。
@@ -82,7 +82,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### Anthropic 获 650 亿美元融资，估值逼近万亿
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-30/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-30/company-00.jpg)
 
 
 **是什么**：Anthropic 宣布完成 Series H 轮融资，总额 650 亿美元，投后估值 9650 亿美元，接近万亿。这被外界视为 IPO 前最后一轮。  
@@ -93,7 +93,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### 单家公司月烧 5 亿美元用 Claude，AI 支出狂潮引关注
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-30/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-30/company-01.jpg)
 
 
 **是什么**：财务平台 Ramp 数据显示，一家未具名公司一个月内在 Claude 上花费 5 亿美元，原因是未能有效限制内部 AI 使用。这反映企业 AI 支出正呈现失控趋势。  
@@ -104,7 +104,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### AI 芯片公司 Groq 拟融资 6.5 亿美元，重心转向推理
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-30/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-30/company-02.jpg)
 
 
 **是什么**：在英伟达以 200 亿美元“非收购”方式挖走其核心技术团队后，Groq 计划内部融资 6.5 亿美元，并将业务重心从硬件制造转向 AI 推理服务。  
@@ -115,7 +115,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### 比亚迪自研 4nm AI 芯片，算力对标英伟达
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-30/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-30/company-03.jpg)
 
 
 **是什么**：比亚迪宣布成功自研 4nm 工艺的 AI 芯片，制程对齐英伟达高端产品，算力参数超越特斯拉目前使用的 FSD 芯片，将主要应用于智能驾驶系统。  
@@ -126,7 +126,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### 理想汽车组织调整，新增三个具身智能部门
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-30/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-30/company-04.jpg)
 
 
 **是什么**：理想汽车对其基座模型部门进行组织调整，新设具身工程、具身交互、具身行为三个二级部门，加速向具身智能领域扩张。  
@@ -137,7 +137,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### Amazon 取消内部 AI 排行榜，因员工用无意义任务刷榜
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-30/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-30/company-05.jpg)
 
 
 **是什么**：Amazon 取消了内部 AI 使用排行榜，原因是发现员工通过执行无实质性意义的任务（如重复请求无关回答）来人为提升排名，暴露了激励设计的漏洞。  
@@ -148,7 +148,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### Asana 收购无代码 Agent 平台 StackAI
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-30/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-30/company-06.jpg)
 
 
 **是什么**：项目管理公司 Asana 宣布收购无代码 AI Agent 构建平台 StackAI，并将其整合到现有 AI 工作流工具套件中。  
@@ -159,7 +159,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### “易启未来”完成数千万元 A 轮融资，聚焦按摩机器人
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-30/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-30/company-07.jpg)
 
 
 **是什么**：由网易伏羲孵化的按摩机器人公司“易启未来”宣布完成数千万元 A 轮融资，资金将用于技术迭代与规模化量产。  
@@ -188,7 +188,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### 清华团队发布“智能算力电网”，Token 成本降低 40%
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-30/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-30/research-01.jpg)
 
 
 - **是什么**：清华系团队为大模型训练与部署设计了一套名为“智能算力电网”的系统，声称单位 Token 成本降低 40%。
@@ -199,7 +199,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### 星源智与北大合作：RoboAgent 让 3B VLM 在未知场景成功率 94%
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-30/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-30/research-02.jpg)
 
 
 - **是什么**：星源智能与北京大学联合推出 RoboAgent，基于 3B 参数视觉语言模型（VLM），在完全未知环境中任务成功率达 94%，超越 GPT-4o。
@@ -210,7 +210,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### 英伟达 ICRA 展示机器人研究：从仿真到现实
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-30/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-30/research-03.jpg)
 
 
 - **是什么**：英伟达在 ICRA 2026 上展示多项机器人研究进展，聚焦从仿真到现实（Sim-to-Real）的通用具身智能。
@@ -221,7 +221,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### 研究：LLM 即使被明确警告仍相信错误陈述
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-05-30/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-05-30/research-04.jpg)
 
 
 - **是什么**：最新研究发现，大型语言模型在微调后对虚假事实的信念非常顽固，即使训练数据中明确警告该陈述为假，模型依然会输出相信。
@@ -232,7 +232,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### 综述：代码是 AI Agent 思考与行动的核心
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-05-30/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-05-30/research-05.jpg)
 
 
 - **是什么**：一篇新综述论文提出核心观点：对 AI Agent 而言，代码不仅仅是输出，更是它们的思维与行动方式。
@@ -253,7 +253,7 @@ Anthropic 完成 650 亿美元融资，估值逼近万亿，成为当日最重�
 
 ### Apple 秘密将 Gemini 大模型压缩到 iPhone
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-30/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-30/product-00.jpg)
 
 
 Apple 正努力将 Google 的多万亿参数 Gemini 模型蒸馏至可在 iPhone 上运行，同时保留云组件以处理复杂查询。目前 Siri 的本地能力有限，一旦 Gemini 压缩版就位，响应速度、上下文理解将大幅提升。**关键点**：蒸馏后的模型仍依赖云端做最终推理，但本地推理可处理大部分简单任务，减少延迟与隐私风险。**为什么重要**：这是 Apple 在端侧 AI 对抗 Google 和 OpenAI 的关键一步，可能重新定义“智能手机助手”的能力边界。
@@ -266,7 +266,7 @@ OpenAI 推出 Rosalind Biodefense，向经过审查的开发者及美国政府�
 
 ### Together AI 打造最快语音转写系统
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-30/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-30/product-02.jpg)
 
 
 Together AI 通过全路径系统优化（模型、推理、网络、硬件），构建了 Artificial Analysis 评测中延迟最低的语音转文本堆栈。**关键点**：优化覆盖了从音频编码到文本解码的每个环节，而非仅靠更大模型。**为什么重要**：实时语音转写是 AI 客服、会议、可穿戴设备的核心能力，Together AI 证明“系统级工程”比堆参数更有效。
@@ -274,7 +274,7 @@ Together AI 通过全路径系统优化（模型、推理、网络、硬件）�
 
 ### Robinhood 开放 AI Agent 股票交易接口
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-30/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-30/product-03.jpg)
 
 
 Robinhood 推出新功能，用户可让 AI agent 代表其执行股票交易，包括买卖指令和投资组合调整。**关键点**：用户需设置明确的权限边界，agent 仅能在授权范围内行动；平台称已内嵌风控模型。**为什么重要**：代理交易（agentic trading）从概念走向产品，但安全与合规风险巨大——若 agent 误判或遭恶意指令，责任归属模糊，监管机构可能跟进。
@@ -282,7 +282,7 @@ Robinhood 推出新功能，用户可让 AI agent 代表其执行股票交易，
 
 ### Waymo 新 Robotaxi Ojai 中国制造，即将在美运营
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-30/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-30/product-04.jpg)
 
 
 Waymo 的浅蓝色 Robotaxi “Ojai” 由中国制造，将在加州和亚利桑那州开始载客运营。**关键点**：Ojai 基于吉利的纯电平台，搭载 Waymo 最新第六代传感器套件，制造成本较前代降低约 30%。**为什么重要**：中美贸易摩擦背景下，中国制造的自动驾驶车辆进入美国公共道路，既是供应链的胜利，也使 Waymo 面对地缘政治和关税风险。
@@ -290,7 +290,7 @@ Waymo 的浅蓝色 Robotaxi “Ojai” 由中国制造，将在加州和亚利�
 
 ### Oculus 创始人创企 Sesame 发布 iOS 对话 AI
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-30/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-30/product-05.jpg)
 
 
 Sesame 的 iOS 应用将更自然的对话式 AI agent 带到公众面前，交互延迟低至 200 毫秒，支持打断、拟声词和情绪识别。**关键点**：创始人 Brendan Iribe（Oculus 前 CEO）押注“像真人一样聊天”的 AI，而非任务型助手。**为什么重要**：当语音 AI 从“你说一句我答一句”进化到“你咳嗽我都接话”，用户体验质变，社交与陪伴类应用可能爆发。
@@ -298,7 +298,7 @@ Sesame 的 iOS 应用将更自然的对话式 AI agent 带到公众面前，交�
 
 ### 腾讯连发两大 AI 创作平台：游戏与创意设计
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-30/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-30/product-06.jpg)
 
 
 腾讯发布 AI 游戏创作平台（零基础可上手）和智能体创意工作室 Miora。前者通过自然语言生成游戏逻辑与资产，后者允许多智能体协作完成海报、视频等设计任务。**关键点**：两个平台均基于腾讯混元大模型，目标用户是“非技术创作者”。**为什么重要**：腾讯正用 AI 降低创作门槛，抢占 UGC 内容生态；若规模化，可能改变游戏和设计行业的劳动供给格局。
@@ -319,7 +319,7 @@ Sam Altman 和 Dario Amodei 近期收回“AI 大规模取代工作”的预言�
 
 ### Sam Altman 和 Dario Amodei 收回 AI 取代工作预言
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-30/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-30/opinion-00.jpg)
 
 
 - **是什么**：Fortune 报道，OpenAI 和 Anthropic 的两位 CEO 近期开始淡化 AI 导致大规模失业的预言，与之前的激进表态形成对比。
@@ -330,7 +330,7 @@ Sam Altman 和 Dario Amodei 近期收回“AI 大规模取代工作”的预言�
 
 ### 教皇 Leo XIV 发布 AI 通谕 Magnifica Humanitas
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-30/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-30/opinion-01.jpg)
 
 
 - **是什么**：教皇 Leo XIV 发布关于人工智能的通谕 Magnifica Humanitas，强调“技术永远不是中立的”。
@@ -365,7 +365,7 @@ Sam Altman 和 Dario Amodei 近期收回“AI 大规模取代工作”的预言�
 
 ### AI 是否正在重演前端的“失落十年”？
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-30/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-30/opinion-05.jpg)
 
 
 - **是什么**：一篇分析文章质疑 AI 代码生成可能导致工程师技能退化，重蹈前端工具链臃肿的覆辙。
@@ -376,7 +376,7 @@ Sam Altman 和 Dario Amodei 近期收回“AI 大规模取代工作”的预言�
 
 ### Redis 之父质疑 Claude Opus 4.8 跑分，DHH 力挺 GPT-5.5
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-05-30/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-05-30/opinion-06.jpg)
 
 
 - **是什么**：Claude Opus 4.8 发布后，Redis 之父 Antirez 公开质疑其基准测试的合理性；而 Ruby on Rails 创始人 DHH 则盛赞 GPT-5.5 的编码能力。
@@ -387,7 +387,7 @@ Sam Altman 和 Dario Amodei 近期收回“AI 大规模取代工作”的预言�
 
 ### 编程 Agent 可能是软件开发史上最昂贵的错误
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-05-30/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-05-30/opinion-07.jpg)
 
 
 - **是什么**：一篇专栏文章警告，过度依赖 AI 编程 agent 可能导致技术债激增与创新能力下降。
@@ -408,7 +408,7 @@ Sam Altman 和 Dario Amodei 近期收回“AI 大规模取代工作”的预言�
 
 ### 面壁智能开源周：首个AI自写训练框架面世
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-30/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-30/opensource-00.jpg)
 
 面壁智能发布多款开源模型和工具，最大亮点是**全球首个完全由 AI 编写的训练框架**，其训练速度超过英伟达官方基线。这意味着AI不仅用于辅助开发，开始直接从零生成生产级框架。团队在开源周内还将陆续放出更多组件，值得关注的是该框架的架构设计是否具备通用性。
 
@@ -416,7 +416,7 @@ Sam Altman 和 Dario Amodei 近期收回“AI 大规模取代工作”的预言�
 
 ### Anthropic 定义 Agent技能标准
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-30/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-30/opensource-01.jpg)
 
 Anthropic 开源 Skills 仓库，定义了一套 agent 技能（skill）的标准规范。该仓库支持 Claude Code、Codex、Cursor 等主流 agent 平台，旨在让开发者编写一次技能即可跨平台复用。这相当于为 Agent 生态确立一个“插件格式”，有助于降低碎片化风险。
 
@@ -424,7 +424,7 @@ Anthropic 开源 Skills 仓库，定义了一套 agent 技能（skill）的标�
 
 ### 微软开源RAMPART：Agent安全测试框架
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-30/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-30/opensource-02.jpg)
 
 微软发布 RAMPART，一个基于 pytest 的**原生安全测试框架**，专为 Agentic AI 应用设计。它允许开发者编写自动化测试用例来检测 agent 的权限滥用、提示注入、工具误调用等安全隐患。在 agent 部署前引入安全测试，能减少“AI越狱”类事件在生产环境中的影响。
 
@@ -432,7 +432,7 @@ Anthropic 开源 Skills 仓库，定义了一套 agent 技能（skill）的标�
 
 ### MOSS-TTS 开源：高保真语音生成全家桶
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-30/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-30/opensource-03.jpg)
 
 MOSI.AI 与 OpenMOSS 团队联合开源 MOSS-TTS 家族，覆盖长语音、多语言及高表现力场景。模型支持零样本声音克隆，在情感合成和语音自然度上表现突出。对于需要定制语音助手的开发者，这是一个无需闭源API即可本地部署的选项。
 
@@ -440,7 +440,7 @@ MOSI.AI 与 OpenMOSS 团队联合开源 MOSS-TTS 家族，覆盖长语音、多�
 
 ### Claude Code 动态工作流深度解析
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-30/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-30/opensource-04.jpg)
 
 有开发者深入分析 Claude Code 的源代码，披露了文档未写明的**大量可配置项**，包括动态工作流调度、上下文窗口管理以及自定义工具链的底层接口。这些发现让高阶用户能够绕过 API 限制，直接调整 agent 的行为细节——但也提醒用户注意版本兼容风险。
 
@@ -448,7 +448,7 @@ MOSI.AI 与 OpenMOSS 团队联合开源 MOSS-TTS 家族，覆盖长语音、多�
 
 ### Datasette 1.0a31 小版本更新
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-30/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-30/opensource-05.jpg)
 
 Datasette 发布 1.0alpha31，带来两个新功能：插件可定义导出格式的方式被简化，以及新的数据预览可视化组件。对于 SQLite 数据探索爱好者，这是一个持续改进的“小而美”工具，但本次更新没有破坏性变更。
 

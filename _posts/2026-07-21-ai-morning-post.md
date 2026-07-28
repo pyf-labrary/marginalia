@@ -33,7 +33,7 @@ sections:
 
 ### 阿里巴巴开源 Qwen 3.8，对标 Kimi K3
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-21/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-21/model_release-00.jpg)
 
 
 阿里巴巴正式发布开源模型 Qwen 3.8，采用开放权重（open-weight）许可。官方宣称其性能仅次于目前最强的 Fable 5，直接挑战月之暗面（Moonshot AI）的闭源模型 Kimi K3。关键点在于：Qwen 3.8 依然选择开源路线，而 Kimi K3 保持闭源，阿里试图用“性能接近第一+开源”的策略吸引开发者迁移。对于技术团队而言，这意味着在闭源标杆之外多了一个可自部署、可微调的高性能选项，尤其适合对数据隐私或成本敏感的场景。
@@ -42,7 +42,7 @@ sections:
 
 ### NVIDIA 推出 Cosmos 3 Edge，专为边缘设备和实时推理优化
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-21/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-21/model_release-01.jpg)
 
 
 NVIDIA 在 Hugging Face 上发布 Cosmos 3 Edge 模型，定位边缘 AI 和实时推理场景。该模型针对低功耗设备、延迟敏感应用（如机器人、IoT、自动驾驶中的端侧感知）进行了专项优化。关键点：模型体积更小、推理速度更快，同时保持了 Cosmos 系列在物理世界理解上的能力。对于产品经理和投资人，这意味着边缘侧部署大模型的成本门槛正在降低，实时交互类产品（如可穿戴设备、工业 AR）的落地可行性提升。
@@ -51,7 +51,7 @@ NVIDIA 在 Hugging Face 上发布 Cosmos 3 Edge 模型，定位边缘 AI 和实�
 
 ### 阿里语音合成模型 Qwen-Audio-3.0-TTS 登顶全球语音榜单
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-21/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-21/model_release-02.jpg)
 
 
 阿里通义千问团队的语音合成模型 Qwen-Audio-3.0-TTS 在国际权威语音榜单（据称覆盖自然度、清晰度等多项指标）上获得第一名。该模型支持 20 种方言，并能通过细粒度标签控制语气、语速、停顿等合成细节，实用性很强。关键点：方言支持成为差异化壁垒，细粒度标签让开发者能以类似“文本 prompt”的方式定制合成效果。对于语音助手、有声内容生成等产品，该模型可能进一步降低方言适配和情感表达的成本。
@@ -77,7 +77,7 @@ OpenAI 分享了在部署长周期（数周至数月）AI 模型过程中积累�
 
 ### 谷歌被曝开发 Gemini 专用芯片 Frozen v2
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-21/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-21/company-01.jpg)
 
 
 The Decoder 援引消息称，谷歌正在设计将 Gemini 架构直接集成到硅片上的 AI 专用芯片 Frozen v2，旨在大幅提升推理效率并降低能耗。与通用 GPU 不同，Frozen v2 针对 Gemini 模型的 Transformer 结构做了深度定制，可能带来 3–5 倍的能效比提升。  
@@ -87,7 +87,7 @@ The Decoder 援引消息称，谷歌正在设计将 Gemini 架构直接集成到
 
 ### Moonshot 暂停 Kimi K3 订阅，GPU 需求48小时爆满
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-21/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-21/company-02.jpg)
 
 
 月之暗面 Kimi K3 发布后用户涌入量远超预期，导致 GPU 集群在 48 小时内达到满载，公司不得不临时暂停新用户订阅以扩容。Kimi K3 主打超长上下文与复杂推理，需求爆发侧面验证了国内 C 端用户对高质量 AI 助手的渴求。  
@@ -97,7 +97,7 @@ The Decoder 援引消息称，谷歌正在设计将 Gemini 架构直接集成到
 
 ### Together AI 与 YC 合作推出 YC 专属 GPU 集群
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-21/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-21/company-03.jpg)
 
 
 Together AI 宣布与 Y Combinator 合作，为 YC 初创公司提供无长期合约的快速 GPU 集群访问，覆盖训练与推理场景。该集群基于英伟达 H100/B200 硬件，按需付费，重点解决早期创业公司资本开销大、供应不稳定的痛点。  
@@ -107,7 +107,7 @@ Together AI 宣布与 Y Combinator 合作，为 YC 初创公司提供无长期�
 
 ### 百时美施贵宝将建生命科学最大 AI 工厂
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-21/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-21/company-04.jpg)
 
 
 Bristol Myers Squibb 宣布基于 NVIDIA Vera Rubin 平台，计划将现有 AI 集群规模翻倍，打造生命科学领域最先进的 AI 工厂。该设施将用于药物发现、基因组分析及临床前模拟，目标是缩短新药研发周期 30%–50%。  
@@ -117,7 +117,7 @@ Bristol Myers Squibb 宣布基于 NVIDIA Vera Rubin 平台，计划将现有 AI 
 
 ### Hugging Face 遭 AI 代理攻击，用 AI 自卫反击
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-21/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-21/company-05.jpg)
 
 
 Hugging Face 披露其基础设施被恶意 AI 代理入侵，攻击者利用自动化工具扫描漏洞并窃取模型元数据。团队立即部署 AI 驱动的自动防御系统，通过行为分析实时识别异常流量，并反向追踪攻击者 IP 与工具链，最终成功阻断入侵。  
@@ -127,7 +127,7 @@ Hugging Face 披露其基础设施被恶意 AI 代理入侵，攻击者利用自
 
 ### NVIDIA SIGGRAPH 展示 Agentic AI 与物理模拟突破
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-21/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-21/company-06.jpg)
 
 
 NVIDIA 在 SIGGRAPH 2026 上发布多项成果：开放 Agentic AI 框架 Cosmos、实时物理仿真引擎 Isaac Sim 重大升级，以及对媒体创作和机器人领域的应用支持。新工具允许开发者构建能自主执行复杂任务的 AI 系统，并在虚拟环境中完成高保真测试。  
@@ -137,7 +137,7 @@ NVIDIA 在 SIGGRAPH 2026 上发布多项成果：开放 Agentic AI 框架 Cosmos
 
 ### 零一万物启动新一轮融资，拟2027年IPO
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-21/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-21/company-07.jpg)
 
 
 李开复创立的零一万物正在进行新一轮融资磋商，并计划于 2027 年实现 IPO。公司同时逐步解除离岸架构，为国内上市铺路。零一万物此前发布 Yi 系列模型，聚焦大模型在金融、医疗等垂直领域的落地。  
@@ -167,7 +167,7 @@ NVIDIA 在 SIGGRAPH 2026 上发布多项成果：开放 Agentic AI 框架 Cosmos
 
 ### AI 在招聘中比人类更易形成偏见
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-21/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-21/research-01.jpg)
 
 
 **是什么**：MIT 一项研究对比了 LLM 和人类招聘者在简历筛选时的偏见程度，发现 AI 系统在种族、性别、年龄等维度上的歧视性决策比例显著高于人类。
@@ -180,7 +180,7 @@ NVIDIA 在 SIGGRAPH 2026 上发布多项成果：开放 Agentic AI 框架 Cosmos
 
 ### AI 建议让人更不准确但更自信
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-21/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-21/research-02.jpg)
 
 
 **是什么**：一项研究指出，当人类接受 AI 辅助做判断时，其最终答案的错误率反而上升，但对自己的判断信心显著提高——产生“越错越自信”的悖论。
@@ -203,7 +203,7 @@ NVIDIA 在 SIGGRAPH 2026 上发布多项成果：开放 Agentic AI 框架 Cosmos
 
 ### LoRA Speedrun：微调速度公开排行榜
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-07-21/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-07-21/research-04.jpg)
 
 
 **是什么**：开源项目 “LoRA Speedrun” 以挂钟时间（wall-clock time）为标准，对多种 LoRA 微调技术进行公平排名，覆盖常见模型和硬件配置。
@@ -216,7 +216,7 @@ NVIDIA 在 SIGGRAPH 2026 上发布多项成果：开放 Agentic AI 框架 Cosmos
 
 ### DeepTutor：终身个性化辅导 AI 系统
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-07-21/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-07-21/research-05.jpg)
 
 
 **是什么**：香港大学开源了 DeepTutor，一个基于 LLM 的终身个性化辅导系统，能够持续跟踪学习者的知识状态并自适应调整教学内容。
@@ -239,7 +239,7 @@ Claude Fable 反例的真伪可能要数周甚至数月才能定论，但不妨�
 
 ### 名导首部全AI生成短片：《NIGHTBORNE》上线
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-21/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-21/product-00.jpg)
 
 
 - 是什么：曾执导《第九区》的 Neill Blomkamp 推出短片《NIGHTBORNE》，完全使用 AI 视频生成技术制作。
@@ -249,7 +249,7 @@ Claude Fable 反例的真伪可能要数周甚至数月才能定论，但不妨�
 
 ### MCP 协议升级：无状态会话 ID 降低使用门槛
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-21/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-21/product-01.jpg)
 
 
 - 是什么：Model Context Protocol（MCP）采用无状态会话 ID 模式，简化了 AI 代理间的互操作性配置。
@@ -259,7 +259,7 @@ Claude Fable 反例的真伪可能要数周甚至数月才能定论，但不妨�
 
 ### 淘天集团发布 AIGX 四项技术成果
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-21/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-21/product-02.jpg)
 
 
 - 是什么：淘天公布全模态实时 Agent、AI 创作台 if Studio、Coupella 引擎及 Agentic 推荐系统 Dream。
@@ -269,7 +269,7 @@ Claude Fable 反例的真伪可能要数周甚至数月才能定论，但不妨�
 
 ### Adobe 相机 App 新增 AI 照片批评功能
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-21/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-21/product-03.jpg)
 
 
 - 是什么：Adobe Project Indigo 可自动分析照片构图、曝光、色彩等，并提供批评建议，同时支持背景移除。
@@ -279,7 +279,7 @@ Claude Fable 反例的真伪可能要数周甚至数月才能定论，但不妨�
 
 ### YouTube 收紧 AI 低质内容变现政策
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-21/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-21/product-04.jpg)
 
 
 - 是什么：YouTube 明确禁止 AI 生成和低质量视频（俗称“AI slop”）获取广告收入。
@@ -289,7 +289,7 @@ Claude Fable 反例的真伪可能要数周甚至数月才能定论，但不妨�
 
 ### X 发布重建版 Android 应用
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-21/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-21/product-05.jpg)
 
 
 - 是什么：X（原 Twitter）历经一年重构，向全球推出全新 Android 应用。
@@ -323,7 +323,7 @@ Claude Fable 反例的真伪可能要数周甚至数月才能定论，但不妨�
 
 ### 特朗普的“慢动作封禁”引发开源战略辩论
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-21/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-21/opinion-00.jpg)
 
 
 美国政府计划通过制裁和“软压力”渐进限制中国AI模型，但策略细节至今模糊。关键分歧在于：支持封禁的一方认为可遏制中国追赶，而反对者（包括部分硅谷人士）指出封锁只会倒逼中国加速自研，且损害美国开源社区的全球领导力。这场辩论的实质是——面对成本更低、更开放的中国模型，美国究竟该“筑墙”还是“搭桥”？
@@ -332,7 +332,7 @@ Claude Fable 反例的真伪可能要数周甚至数月才能定论，但不妨�
 
 ### Stratechery：美国应靠开源而非恐惧应对中国模型
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-21/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-21/opinion-01.jpg)
 
 
 Ben Thompson 在最新文章中旗帜鲜明地指出：前沿实验室无需害怕中国模型，美国应该主动支持开源替代方案。关键逻辑是——中国模型的优势不在技术前沿，而在成本与开放生态；如果美国用封闭政策回应，反而会削弱自身创新能力。他认为开源才是对抗中国AI规模化影响力的正确姿态，而非恐惧性的禁令。
@@ -341,7 +341,7 @@ Ben Thompson 在最新文章中旗帜鲜明地指出：前沿实验室无需害�
 
 ### OpenAI 对开源权重模型的恐惧暴露商业焦虑
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-21/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-21/opinion-02.jpg)
 
 
 TechCrunch 分析认为，OpenAI 公开表达对开源权重模型的担忧，本质是对自身商业模式的深层不安。关键点：开源模型（如Meta的Llama系列、中国DeepSeek等）降低了AI使用门槛，使得闭源API的定价权受到挑战。OpenAI 害怕的并非开源本身，而是“模型即产品”的商业模式被解构。这对整个AI商业化路径提出了叩问：封闭垄断还是开放竞争？
@@ -350,7 +350,7 @@ TechCrunch 分析认为，OpenAI 公开表达对开源权重模型的担忧，�
 
 ### MIT 技术评论：中国开源模型让特朗普AI团队内部分裂
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-21/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-21/opinion-03.jpg)
 
 
 中国开源模型在性能与成本上的快速迭代，已导致特朗普政府内部对AI战略产生严重分歧。一派主张全面封禁（类似半导体管制），另一派则主张合作与开放以维持影响力。关键点：分歧的核心是对“开源AI是否会让中国弯道超车”的认知差异。这种内部矛盾正拖延政策落地，也可能让美国在AI治理上陷入两难。
@@ -375,7 +375,7 @@ TechCrunch 分析认为，OpenAI 公开表达对开源权重模型的担忧，�
 
 ### 月之暗面开源Kimi Code CLI编程Agent
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-21/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-21/opensource-00.jpg)
 
 
 **是什么**：月之暗面（Moonshot AI）开源的Kimi Code CLI，是一个纯终端交互的AI编程代理，支持代码生成、调试、文件操作等任务。用户可通过命令行直接与LLM对话式编程。
@@ -388,7 +388,7 @@ TechCrunch 分析认为，OpenAI 公开表达对开源权重模型的担忧，�
 
 ### KTransformers：异构LLM推理与微调框架
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-21/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-21/opensource-01.jpg)
 
 
 **是什么**：KTransformers是一个高效异构大模型推理/微调框架，支持在CPU、GPU及不同算力设备间调度模型计算，大幅降低推理和微调的硬件门槛。
@@ -421,7 +421,7 @@ TechCrunch 分析认为，OpenAI 公开表达对开源权重模型的担忧，�
 
 ### GitHub Copilot SDK正式发布
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-21/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-21/opensource-04.jpg)
 
 
 **是什么**：GitHub正式发布了Copilot SDK，允许开发者将GitHub Copilot Agent（基于GPT-4o等模型）集成到自己的应用、IDE或工作流中。
@@ -434,7 +434,7 @@ TechCrunch 分析认为，OpenAI 公开表达对开源权重模型的担忧，�
 
 ### Ouroboros：Agent OS，用规范代替提示
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-21/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-21/opensource-05.jpg)
 
 
 **是什么**：Ouroboros是一个开源Agent操作系统，核心思想是用声明式规范（manifest）替代传统自然语言提示词来驱动AI Agent行为，实现更可控、可复用的代理系统。
@@ -447,7 +447,7 @@ TechCrunch 分析认为，OpenAI 公开表达对开源权重模型的担忧，�
 
 ### ComfyUI：最强扩散模型GUI后端
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-21/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-21/opensource-06.jpg)
 
 
 **是什么**：ComfyUI是目前最流行的开源图节点工作流引擎，专为扩散模型（Stable Diffusion、FLUX等）提供可视化图形界面和后端服务。

@@ -33,7 +33,7 @@ sections:
 
 ### GLM-5.2：开源模型首次在幻觉率上碾压闭源
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-06-21/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-06-21/model_release-00.jpg)
 
 
 **是什么**：智谱AI发布开源模型GLM-5.2，并在GitHub公开权重。独立评测机构（非官方）的对比测试显示，其幻觉率（hallucination rate）远低于GPT-5.5，仅为后者的三分之一左右。  
@@ -44,7 +44,7 @@ sections:
 
 ### LTX-2：轻量音视频生成模型的“LoRA时代”
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-21/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-21/model_release-01.jpg)
 
 
 **是什么**：Lightricks开源LTX-2，一个支持文本/图像生成音视频的轻量模型。官方同步发布LoRA训练包，允许用户低成本微调风格。  
@@ -55,7 +55,7 @@ sections:
 
 ### 00后团队打造超高速音视频社交模型
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-21/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-21/model_release-02.jpg)
 
 
 **是什么**：三个00后开发者用了两个月，造出支持流式实时交互的音视频生成模型，速度是Google Veo 3的7倍，模型训练成本仅为后者的1/2000（约2万美元）。  
@@ -66,7 +66,7 @@ sections:
 
 ### Google Research开源TimesFM：时序预测走向通用
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-21/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-21/model_release-03.jpg)
 
 
 **是什么**：Google Research发布TimesFM，一个预训练的时间序列基础模型，可在多种预测任务（金融、气象、IoT等）上零样本或小样本应用。  
@@ -87,7 +87,7 @@ sections:
 
 ### 美国政府禁Anthropic模型又解禁，特朗普称不再视为威胁
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-21/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-21/company-00.jpg)
 
 
 美国此前以国家安全为由禁止Anthropic发布Fable 5和Mythos 5，但总统特朗普随后表态不再将其视为威胁，禁令解除。市场对此反应平淡，股价未受影响。关键点在于：特朗普政府的快速反转暗示对AI监管态度趋于务实，Anthropic在华盛顿的公关能力不容忽视。重要性在于，此举消除了Anthropic近期最大的合规不确定性，使其与OpenAI的竞争重回同一起跑线。
@@ -96,7 +96,7 @@ sections:
 
 ### AlphaFold之父John Jumper离开DeepMind加盟Anthropic
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-21/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-21/company-01.jpg)
 
 
 2024年诺贝尔化学奖得主John Jumper宣布从Google DeepMind离职，加入Anthropic。这是DeepMind在48小时内第二位离职的高层（前一位是另一位高管），引发行业震动。Jumper是蛋白质结构预测模型AlphaFold的核心人物。他的加入将为Anthropic带来计算生物学与AI交叉领域的顶尖能力，可能加速Anthropic在科学AI方向的布局。对DeepMind而言，人才流失进一步凸显Google AI体系的不稳定性。
@@ -105,7 +105,7 @@ sections:
 
 ### OpenAI Q1营收翻三倍至57亿美元，但烧钱37亿
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-21/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-21/company-02.jpg)
 
 
 OpenAI第一季度营收达57亿美元，同比增长300%，但运营成本高达37亿美元，净盈利空间仅约20亿美元。烧钱速度依然惊人，主要来自算力支出和人才成本。关键点：营收增长已超出市场预期，但盈利能力始终是隐忧——如果增长放缓，目前的现金流无法支撑长期竞争。同一季度，Anthropic虽未公布营收，但人才和牌照上的攻势说明OpenAI维持领先的成本正在不断升高。
@@ -114,7 +114,7 @@ OpenAI第一季度营收达57亿美元，同比增长300%，但运营成本高�
 
 ### Meta员工士气跌至20年最低，CTO承认AI重组失败
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-21/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-21/company-03.jpg)
 
 
 Meta内部直播中，员工直接指责管理层决策不当，CTO公开承认AI重组“执行糟糕”。这场文化危机被披露后，市场对Meta在AI竞赛中的执行力产生怀疑。关键点：Meta此前All-in元宇宙和AI的战略转换频繁，组织结构一直没有理顺。相比之下，Anthropic、OpenAI更能保持专注。对于投资人，Meta的AI投入能否转化为实际产品竞争力，现在要多打一个问号。
@@ -123,7 +123,7 @@ Meta内部直播中，员工直接指责管理层决策不当，CTO公开承认A
 
 ### Amazon取消OpenAI剧情电影，签下500亿美元合作
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-21/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-21/company-04.jpg)
 
 
 Amazon与OpenAI签署500亿美元合作协议后，亚马逊影业立刻取消了此前计划制作的关于OpenAI内部故事的剧情电影。这显然是商业利益驱动下的公关操作。关键点：500亿的合作规模体现了云服务与AI绑定加深的趋势，也说明科技巨头的商业决策往往会迅速覆盖文化创作。对于AI叙事而言，真正有争议的故事往往被“金主”主动屏蔽。
@@ -142,7 +142,7 @@ Anthropic在一天内同时拿到了政策绿灯和顶级人才，OpenAI则用�
 
 ### Nature研究：AI正在侵蚀人类基本技能
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-21/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-21/research-00.jpg)
 
 
 **是什么：** 《自然》杂志发表的一项研究，基于多项实验与行为数据分析，初步揭示频繁使用AI助手（如代码补全、文档生成）后，用户在逻辑推理、创造性问题解决和事实核查等任务中的表现下降。研究称“认知卸载”效应显著——人们更倾向于依赖模型输出而非主动思考。
@@ -165,7 +165,7 @@ Anthropic在一天内同时拿到了政策绿灯和顶级人才，OpenAI则用�
 
 ### 逆向工程高通NPU编译器细节公开
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-06-21/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-06-21/research-02.jpg)
 
 
 **是什么：** 一位开发者通过逆向工程，详细解析了高通AI加速器（NPU）的编译器——Qualcomm AI Runtime（QAIRT）的内部工作原理，包括指令集架构、算子调度策略与内存优化技巧。
@@ -188,7 +188,7 @@ Anthropic在一天内同时拿到了政策绿灯和顶级人才，OpenAI则用�
 
 ### OpenAI Codex：“观摩学习”让自动化进入演示即得时代
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-21/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-21/product-00.jpg)
 
 
 **是什么**：OpenAI 的 Codex 新增“观摩学习”功能，可以观察用户操作并自动复现，实现一次性演示即可永久执行自动化。
@@ -201,7 +201,7 @@ Anthropic在一天内同时拿到了政策绿灯和顶级人才，OpenAI则用�
 
 ### Siri AI 上手体验：终于成为“真”个人助理
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-21/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-21/product-01.jpg)
 
 
 **是什么**：Wired 记者亲测苹果新版 Siri AI，称其已成为真正智能的个人助理，贯穿系统、对话自然。
@@ -214,7 +214,7 @@ Anthropic在一天内同时拿到了政策绿灯和顶级人才，OpenAI则用�
 
 ### ChatGPT 定时任务：向个人助理再进一步
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-21/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-21/product-02.jpg)
 
 
 **是什么**：OpenAI 为 ChatGPT 推出调度任务功能，用户可以设置周期性提醒和自动化操作。
@@ -227,7 +227,7 @@ Anthropic在一天内同时拿到了政策绿灯和顶级人才，OpenAI则用�
 
 ### Data2Story：7 个 AI agent 将 CSV 变成交互式新闻
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-21/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-21/product-03.jpg)
 
 
 **是什么**：Data2Story 项目利用 7 个 AI agent 自动将表格数据转换为带验证的交互式新闻文章。
@@ -240,7 +240,7 @@ Anthropic在一天内同时拿到了政策绿灯和顶级人才，OpenAI则用�
 
 ### Cloudflare 临时账号：为 AI agent 提供安全访问方案
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-21/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-21/product-04.jpg)
 
 
 **是什么**：Cloudflare 推出临时账号功能，供 AI agent 安全地访问网站资源而无需暴露真实凭证。
@@ -253,7 +253,7 @@ Anthropic在一天内同时拿到了政策绿灯和顶级人才，OpenAI则用�
 
 ### In the Weights：查查你的数据在 AI 模型里“出现多少次”
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-21/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-21/product-05.jpg)
 
 
 **是什么**：新工具 In the Weights 允许用户搜索自己在主流 LLM 训练数据中出现的频率。
@@ -280,7 +280,7 @@ Anthropic在一天内同时拿到了政策绿灯和顶级人才，OpenAI则用�
 
 ### Signal总裁警告：AI聊天机器人不是你的朋友
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-21/opinion-01.jpg)
 
 
 Meredith Whittaker在TechCrunch专访中指出，AI聊天机器人缺乏意识与情感，其“友善”回应是统计模式的结果，而非真实意图。用户过度拟人化信任可能导致隐私风险、决策依赖与情感错位。关键点：她并非反对AI技术，而是呼吁行业停止使用“朋友”“助手”等拟人化营销话术。为什么重要？当企业将聊天机器人客服、心理辅导功能推向主流，用户信任与产品责任之间的灰色地带正变得危险。产品经理需要重新设计交互界面中的“人格暗示”。
@@ -295,7 +295,7 @@ Meredith Whittaker在TechCrunch专访中指出，AI聊天机器人缺乏意识�
 
 ### 欧盟对深度伪造定义模糊，零售业面临合规难题
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-21/opinion-03.jpg)
 
 
 欧洲零售行业协会（EuroCommerce）指出，欧盟《人工智能法案》中对深度伪造（deepfake）的法律定义不够清晰，导致零售商无法准确判断哪些AI生成内容需要标注。例如，品牌使用AI生成的虚拟模特是否算深度伪造？关键点：合规模糊性带来双重风险——要么过度标注影响营销效果，要么漏标面临罚款。为什么重要？欧盟法律先行的代价正在显现：缺乏实践检验的定义可能抑制创新，尤其对广告、电商等高频使用生成内容的行业。
@@ -304,7 +304,7 @@ Meredith Whittaker在TechCrunch专访中指出，AI聊天机器人缺乏意识�
 
 ### NYU教授警告AI泡沫破裂可能比互联网泡沫更猛烈
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-21/opinion-04.jpg)
 
 
 NYU金融学教授Aswath Damodaran（估值权威）在The Decoder采访中表示，当前AI公司估值隐含的增长率假设不可持续，泡沫破裂时冲击将超过2000年互联网泡沫。关键点：他指出，互联网泡沫时期至少有真实收入支撑，而当前许多AI公司收入低、烧钱快、护城河不明。为什么重要？Damodaran的警告并非空穴来风——二级市场已出现分化，一级市场融资节奏放缓。投资者需警惕“故事比数字大”的早期项目。
@@ -313,7 +313,7 @@ NYU金融学教授Aswath Damodaran（估值权威）在The Decoder采访中表�
 
 ### AI新闻消费增长但信任度低
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-21/opinion-05.jpg)
 
 
 路透社新闻研究所（Reuters Institute）调研显示，通过AI聊天机器人获取新闻的比例同比上升至18%，但只有23%的用户信任AI生成的新闻内容。关键点：增长集中在年轻用户（18-24岁占32%），信任度则与用户对平台品牌的认知强相关。为什么重要？信任鸿沟意味着AI新闻产品需要更透明的来源标注和事实核查机制，否则将出现“用完即走”的用户粘性陷阱。对于投资人和产品经理，这是UX设计和商业模式的关键瓶颈。
@@ -322,7 +322,7 @@ NYU金融学教授Aswath Damodaran（估值权威）在The Decoder采访中表�
 
 ### 陶哲轩：12年前的预言被AI兑现
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-06-21/opinion-06.jpg)
 
 
 著名数学家陶哲轩（Terence Tao）在2014年曾预测AI将在10年内具备“中等智能水平”，如今大语言模型的数学推理能力已验证其判断。他本人已成为AI在数学研究中的积极推广者。关键点：陶哲轩强调“AI不是替代人类思维，而是扩展探索边界”，并展示了使用GPT-5辅助证明新定理的案例。为什么重要？来自顶级科学家的背书，将推动更多研究机构接受AI作为协作工具，但同时也让“AI是否真的理解”的哲学讨论更尖锐。
@@ -331,7 +331,7 @@ NYU金融学教授Aswath Damodaran（估值权威）在The Decoder采访中表�
 
 ### 出口管制史证明：限制AI模型发布徒劳无功
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-06-21/opinion-07.jpg)
 
 
 TechCrunch分析三十年网络安全出口管制（从加密软件到间谍软件），指出对Anthropic模型“Mythos”的发布禁令效果存疑。历史上，加密软件出口限制被开发者绕开，AI模型的开源特性使类似的封锁更难奏效。关键点：当前争议焦点在于“能力阈值”标准是否可执行——模型权重一旦泄露，任何出口管制都形同虚设。为什么重要？该观点挑战了美国政府约束Anthropic在境外部署模型的合法性基础，提示投资者关注政策执行不确定性与地缘风险。
@@ -350,7 +350,7 @@ TechCrunch分析三十年网络安全出口管制（从加密软件到间谍软�
 
 ### Agent-Native：构建代理原生应用的开源框架
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-21/opensource-00.jpg)
 
 
 **是什么**  
@@ -366,7 +366,7 @@ BuilderIO推出Agent-Native框架，允许开发者构建具有自主代理能�
 
 ### Headroom：压缩大模型上下文，节省60-95% token
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-21/opensource-01.jpg)
 
 
 **是什么**  
@@ -395,7 +395,7 @@ BuilderIO推出Agent-Native框架，允许开发者构建具有自主代理能�
 
 ### Codebase Memory MCP：高性能代码库语义索引
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-21/opensource-03.jpg)
 
 
 **是什么**  
@@ -411,7 +411,7 @@ Codebase Memory MCP是一个MCP服务器，实现了毫秒级代码库查询，�
 
 ### Superpowers：为编码代理构建的技能框架
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-21/opensource-04.jpg)
 
 
 **是什么**  
@@ -427,7 +427,7 @@ Superpowers提供可组合的技能和软件开发方法论，旨在让AI编码�
 
 ### OpenMontage：开源智能视频制作系统
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-21/opensource-05.jpg)
 
 
 **是什么**  
@@ -443,7 +443,7 @@ Superpowers提供可组合的技能和软件开发方法论，旨在让AI编码�
 
 ### STORM：LLM驱动的知识整理系统生成完整报告
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-21/opensource-06.jpg)
 
 
 **是什么**  
@@ -459,7 +459,7 @@ STORM模拟研究过程：先通过检索搜集来源，再梳理多视角，最
 
 ### HippoRAG：结合知识图谱与PageRank的RAG框架
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-21/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-21/opensource-07.jpg)
 
 
 **是什么**  

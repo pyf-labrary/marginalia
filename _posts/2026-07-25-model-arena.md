@@ -37,7 +37,7 @@ cover: /assets/img/posts/2026-07-25-model-arena/cover.jpg
 
 难度分层符合预期：T1 基线四题人人满分，区分度落在 T2 工具保真和 T4 杀手级。
 
-![配置页：18 道题以卡片列出，每张标注难度档、期望工具族、埋雷说明与标准答案](/marginalia/assets/img/posts/2026-07-25-model-arena/questions.jpg)
+![配置页：18 道题以卡片列出，每张标注难度档、期望工具族、埋雷说明与标准答案](/assets/img/posts/2026-07-25-model-arena/questions.jpg)
 
 ## 结果：满分梯队
 
@@ -59,7 +59,7 @@ cover: /assets/img/posts/2026-07-25-model-arena/cover.jpg
 
 比通过数更能拉开差距的是**畸形调用**那一列：Gemini 三个变体分别 20/106、7/98、28/130，其余 14 个模型**全为 0**。`gemini-3.1-pro-low` 答对 15 题，但只有 12 题算「干净通过」。
 
-![排名页：通过 / 无瑕通过 / 答对三列并排，附畸形率、越权次数、平均耗时与 out token](/marginalia/assets/img/posts/2026-07-25-model-arena/rank.jpg)
+![排名页：通过 / 无瑕通过 / 答对三列并排，附畸形率、越权次数、平均耗时与 out token](/assets/img/posts/2026-07-25-model-arena/rank.jpg)
 
 另外 `minimax-m3-pay` 有个别人没有的毛病：**越权调用被拉黑的 `Bash` 共 13 次**（SDK 会拒绝执行，但这是个明确的失败信号，我后来给它加了单独的计数指标）。
 
@@ -104,7 +104,7 @@ cover: /assets/img/posts/2026-07-25-model-arena/cover.jpg
 
 点通过矩阵里任意一格，能看到那一题的完整工具调用序列。下面这张里，红框标出的两次就是缺 `pattern` 的畸形调用——而它们旁边还有十几次形状完全正常的 `Grep`。这也是为什么我后来把「畸形」单独成列，而不是折叠进通过率：
 
-![单题详情弹窗：完整工具调用序列，两次缺 pattern 的 Grep 被红框标注「缺参数」，同时显示撞满 20 轮的报错](/marginalia/assets/img/posts/2026-07-25-model-arena/detail.jpg)
+![单题详情弹窗：完整工具调用序列，两次缺 pattern 的 Grep 被红框标注「缺参数」，同时显示撞满 20 轮的报错](/assets/img/posts/2026-07-25-model-arena/detail.jpg)
 
 （另外还有个反直觉的细节：那道让 Gemini 反复出错的题，**换了干净通道之后照样撞满轮次交白卷**。所以这道题的失分不能全算到通道头上——它对这个模型本来就是难题。归因的时候很容易一激动把所有失分都归给刚发现的那个原因。）
 

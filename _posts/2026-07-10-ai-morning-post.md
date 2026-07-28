@@ -41,7 +41,7 @@ sections:
 
 ### SpaceXAI 推出 Grok 4.5，价格仅为竞品几分之一
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-10/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-10/model_release-01.jpg)
 
 
 **是什么：** xAI 发布 Grok 4.5，基于 Cursor 训练数据，在编码和知识任务上表现突出，定价仅 $2/百万 token。  
@@ -68,7 +68,7 @@ sections:
 
 ### Mistral 发布 Robostral Navigate，8B 模型引导机器人
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-07-10/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-07-10/model_release-04.jpg)
 
 
 **是什么：** Mistral AI 进入机器人领域，推出 Robostral Navigate，一个仅需单摄像头即可驱动机器人导航的 80 亿参数模型。  
@@ -79,7 +79,7 @@ sections:
 
 ### NVIDIA Nemotron 3 Ultra 与 LangChain 深度集成，性能领先
 
-![model_release-05.jpg](/marginalia/assets/img/ai-hot/2026-07-10/model_release-05.jpg)
+![model_release-05.jpg](/assets/img/ai-hot/2026-07-10/model_release-05.jpg)
 
 
 **是什么：** NVIDIA 发布 Nemotron 3 Ultra，在 LangChain Deep Agents 基准上实现领先性能，且成本低于 GPT-5.5 等顶级闭源模型。  
@@ -90,7 +90,7 @@ sections:
 
 ### NVIDIA 发布压缩版 Nemotron Puzzle 75B，吞吐量提升 2 倍
 
-![model_release-06.jpg](/marginalia/assets/img/ai-hot/2026-07-10/model_release-06.jpg)
+![model_release-06.jpg](/assets/img/ai-hot/2026-07-10/model_release-06.jpg)
 
 
 **是什么：** NVIDIA 推出 Nemotron-Labs-3-Puzzle-75B-A9B，通过结构压缩和知识蒸馏，服务器吞吐量提升 2.03 倍。  
@@ -101,7 +101,7 @@ sections:
 
 ### 原力灵机 DM0.5 登场，15 万小时数据驱动 Zero-Shot 提升 31%
 
-![model_release-07.jpg](/marginalia/assets/img/ai-hot/2026-07-10/model_release-07.jpg)
+![model_release-07.jpg](/assets/img/ai-hot/2026-07-10/model_release-07.jpg)
 
 
 **是什么：** 中国团队发布原力灵机 DM0.5，在 Zero-Shot 任务上提升 31%，展现泛化涌现能力。  
@@ -122,7 +122,7 @@ sections:
 
 ### OpenAI被指伪造训练数据搜索能力，隐藏数十亿条日志
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-10/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-10/company-00.jpg)
 
 
 《纽约时报》等新闻出版商在最新动议中指控OpenAI向法院“伪造”了无法搜索训练数据的能力。原告称，OpenAI实际上隐藏了数十亿条日志记录，并请求法院对该公司实施制裁。此案的核心在于OpenAI是否故意阻碍证据发现程序。如果指控成立，可能迫使OpenAI公开更多训练数据细节，对依赖爬取数据的AI公司产生连锁影响。
@@ -131,7 +131,7 @@ sections:
 
 ### 男子用Grok生成7000张CSAM后自杀，xAI诉讼升级
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-10/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-10/company-01.jpg)
 
 
 一起针对xAI的诉讼披露了更触目惊心的细节：一名用户使用Grok生成了约7000张儿童性虐待图像，xAI仅主动上报了一次涉及“轮奸”的提示词。更多年轻女孩加入诉讼，指控平台纵容非法内容生成。这是AI内容安全监管的又一次警钟——当前多数模型的内容过滤机制仍存在显著盲区。
@@ -140,7 +140,7 @@ sections:
 
 ### AI代理公司Lyzr用自身产品完成1亿美元融资
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-10/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-10/company-02.jpg)
 
 
 Lyzr让自家AI代理全程自主运作融资流程——从撰写投资者材料到安排会议、回答尽调问题，最终完成1亿美元商业融资。创始人表示，此举证明了产品的真实有效性。对投资人而言，这是一个令人兴奋但又引发怀疑的案例：AI代理能否在复杂融资场景中完全替代人力？至少Lyzr拿到了真金白银。
@@ -149,7 +149,7 @@ Lyzr让自家AI代理全程自主运作融资流程——从撰写投资者材�
 
 ### 开源AI工具Ollama获6500万美元A轮融资，用户近900万
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-10/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-10/company-03.jpg)
 
 
 Ollama在GitHub上已累计17.6万星标，拥有近900万用户。本轮融资由Benchmark领投，总金额6500万美元。它让开发者能在本地运行大模型，降低了对云API的依赖。随着LLM小型化和边缘部署需求增长，Ollama正成为开发者工具链中的关键一环。
@@ -158,7 +158,7 @@ Ollama在GitHub上已累计17.6万星标，拥有近900万用户。本轮融资�
 
 ### Meta计划9月生产自主AI芯片，计算能力目标翻番
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-10/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-10/company-04.jpg)
 
 
 据Meta内部备忘录，其自研Iris AI芯片将于9月投入生产。Meta计划下一年将总计算能力提升至14吉瓦，并已签订多项长期供应协议。从依赖英伟达到自研芯片，Meta的算力自主化战略正在加速。这将对GPU供应链格局产生深远影响。
@@ -167,7 +167,7 @@ Ollama在GitHub上已累计17.6万星标，拥有近900万用户。本轮融资�
 
 ### Anthropic、OpenAI、SpaceX的IPO将超过去25年科技退出总和
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-10/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-10/company-05.jpg)
 
 
 TechCrunch分析指出，Anthropic、OpenAI和SpaceX三家公司的IPO将创造比2000年以来所有美国风投退出更巨大的市值。这反映了当前AI领域资本密集型的特征：少数头部公司垄断大部分估值，而上市可能是它们兑现投资回报的唯一窗口。
@@ -176,7 +176,7 @@ TechCrunch分析指出，Anthropic、OpenAI和SpaceX三家公司的IPO将创造�
 
 ### 法国对英伟达反垄断调查接近尾声，最高面临全球营收10%罚款
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-10/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-10/company-06.jpg)
 
 
 法国竞争管理局指控英伟达限制市场竞争，调查自2023年开始，目前已接近尾声。如果被认定违规，英伟达最高可能面临全球营收10%的罚款。这一调查折射出各国对AI算力市场垄断的警惕——英伟达的GPU份额正成为监管靶心。
@@ -185,7 +185,7 @@ TechCrunch分析指出，Anthropic、OpenAI和SpaceX三家公司的IPO将创造�
 
 ### OpenAI关闭浏览器Atlas，转向桌面应用和Chrome插件
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-10/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-10/company-07.jpg)
 
 
 OpenAI终止了代号Atlas的AI浏览器项目，但将代理浏览能力整合至桌面应用和Chrome扩展中。此举表明OpenAI并未放弃浏览器赛道，而是在调整产品形态。对用户而言，AI插件也许比独立浏览器更有渗透力。
@@ -214,7 +214,7 @@ OpenAI最新分析直指热门编码基准SWE-Bench Pro存在可靠性问题，�
 
 ### Anthropic揭示Claude内部隐藏的“思考空间”
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-10/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-10/research-01.jpg)
 
 
 **是什么**：Anthropic通过新技术首次曝光大型语言模型内部如何组织概念，发现Claude在回答每个问题前会进入一片隐形的“思考空间”，概念处理路径被可视化呈现。
@@ -237,7 +237,7 @@ OpenAI最新分析直指热门编码基准SWE-Bench Pro存在可靠性问题，�
 
 ### Google更新Android Bench，新增Fable 5等代理但Gemini仍落后
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-10/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-10/research-03.jpg)
 
 
 **是什么**：Google对其Android AI开发基准Android Bench进行重大更新，加入新的LLM和智能体（如Fable 5），但自家Gemini模型在基准测试中性能仍不及竞品。
@@ -258,7 +258,7 @@ OpenAI最新分析直指热门编码基准SWE-Bench Pro存在可靠性问题，�
 
 ### 人类操作人形机器人首次完成活猪手术
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-10/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-10/product-00.jpg)
 
 
 **是什么**：外科医生通过远程操作台控制一款人形机器人，对活猪进行了一项手术操作，这是该技术在临床前试验中的首次验证。
@@ -271,7 +271,7 @@ OpenAI最新分析直指热门编码基准SWE-Bench Pro存在可靠性问题，�
 
 ### 1X Neo机器人获得超快手指，软体机器人更灵巧
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-10/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-10/product-01.jpg)
 
 
 **是什么**：家庭机器人公司1X对其Neo机器人进行了触觉手指升级，新手指动作异常迅速，能完成精细家庭任务。
@@ -284,7 +284,7 @@ OpenAI最新分析直指热门编码基准SWE-Bench Pro存在可靠性问题，�
 
 ### Anthropic推出Claude Reflect，可视化AI使用模式
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-10/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-10/product-02.jpg)
 
 
 **是什么**：Anthropic为Claude增加新功能Reflect，提供一个仪表盘，让用户直观看到自己如何使用AI——包括对话时长、话题分布、引用频率等。
@@ -297,7 +297,7 @@ OpenAI最新分析直指热门编码基准SWE-Bench Pro存在可靠性问题，�
 
 ### Google将披露AI生成广告标签，提升透明度
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-10/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-10/product-03.jpg)
 
 
 **是什么**：Google更新广告政策，要求所有广告标注AI合成或实质性修改的内容，此前只有选举类广告需要披露。
@@ -330,7 +330,7 @@ OpenAI最新分析直指热门编码基准SWE-Bench Pro存在可靠性问题，�
 
 ### 布朗大学教授抓AI作弊：期末线下考成绩暴跌50%
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-10/opinion-00.jpg)
 
 
 **是什么**  
@@ -348,7 +348,7 @@ OpenAI最新分析直指热门编码基准SWE-Bench Pro存在可靠性问题，�
 
 ### 政府如何判定OpenAI前沿模型安全？对话细节仍不透明
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-10/opinion-01.jpg)
 
 
 **是什么**  
@@ -366,7 +366,7 @@ TechCrunch调查发现，美国政府与Anthropic、OpenAI之间关于前沿模�
 
 ### 开源模型赢Token流量，Anthropic却赚走大部分利润
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-10/opinion-02.jpg)
 
 
 **是什么**  
@@ -384,7 +384,7 @@ TechCrunch调查发现，美国政府与Anthropic、OpenAI之间关于前沿模�
 
 ### AI能否回答3万亿美元的投资回报问题？
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-10/opinion-03.jpg)
 
 
 **是什么**  
@@ -402,7 +402,7 @@ TechCrunch调查发现，美国政府与Anthropic、OpenAI之间关于前沿模�
 
 ### Nvidia成为自己创造的算力市场的受害者
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-10/opinion-04.jpg)
 
 
 **是什么**  
@@ -435,7 +435,7 @@ Cloudflare联合创始人兼技术负责人Kenton Varda公开表示，禁止团�
 
 ### 周鸿祎：做中国版Mythos不能照搬美国路线
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-07-10/opinion-06.jpg)
 
 
 **是什么**  
@@ -453,7 +453,7 @@ Cloudflare联合创始人兼技术负责人Kenton Varda公开表示，禁止团�
 
 ### Stratechery：AI数据战争从Meta到Grok再到前沿实验室
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-07-10/opinion-07.jpg)
 
 
 **是什么**  
@@ -501,7 +501,7 @@ AI的收益与风险正在同时显性化，从课堂到监管到商业模式，
 
 ### GitHub 项目 system_prompts_leaks：多家AI系统提示全面泄露
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-10/opensource-02.jpg)
 
 
 **是什么**：一个公开仓库收集了Anthropic的Claude Code、OpenAI的Codex、Google、xAI等多款AI产品的系统级提示词（system prompts），并附带反编译方法。
@@ -514,7 +514,7 @@ AI的收益与风险正在同时显性化，从课堂到监管到商业模式，
 
 ### Superpowers：为编码代理提供完整的技能框架
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-10/opensource-03.jpg)
 
 
 **是什么**：开源方法论和库Superpowers，提供一组可组合的“技能”（如代码审查、测试生成、重构），以及软件工程的最佳实践，让AI代理按人类工程师的流程工作。
@@ -527,7 +527,7 @@ AI的收益与风险正在同时显性化，从课堂到监管到商业模式，
 
 ### OfficeCLI：AI代理专用的Office文件处理工具
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-10/opensource-04.jpg)
 
 
 **是什么**：一个单二进制开源工具，让AI代理无需安装Office即可读写编辑Word、Excel、PowerPoint文件。
@@ -540,7 +540,7 @@ AI的收益与风险正在同时显性化，从课堂到监管到商业模式，
 
 ### 腾讯云 Cube Sandbox 支持 Arm 架构：解锁Agent多架构算力
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-10/opensource-05.jpg)
 
 
 **是什么**：腾讯云开源的智能体沙箱Cube Sandbox正式支持Arm架构，提供即时、轻量的AI Agent执行环境。
@@ -553,7 +553,7 @@ AI的收益与风险正在同时显性化，从课堂到监管到商业模式，
 
 ### LMCache：加速LLM推理的最快KV缓存层
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-10/opensource-06.jpg)
 
 
 **是什么**：开源库LMCache，通过高效缓存Key-Value（KV）向量，显著降低大语言模型推理时延和计算成本。
@@ -566,7 +566,7 @@ AI的收益与风险正在同时显性化，从课堂到监管到商业模式，
 
 ### Agent Skills：生产级工程技能库供AI编码代理使用
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-10/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-10/opensource-07.jpg)
 
 
 **是什么**：GitHub项目agent-skills，收集工程工作流、质量门禁和最佳实践，供AI编码代理直接调用。

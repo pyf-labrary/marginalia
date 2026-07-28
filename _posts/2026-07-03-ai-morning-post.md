@@ -33,7 +33,7 @@ sections:
 
 ### Anthropic Fable/Mythos 5全球解禁，安全评估终过关
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-03/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-03/model_release-00.jpg)
 
 
 **是什么**：美国特朗普政府正式解除了对Anthropic最先进模型Fable 5和Mythos 5的出口限制，允许其在全球范围发布。这些模型此前被美国以国家安全为由要求进行安全测试，如今评估通过后获准出口。
@@ -56,7 +56,7 @@ sections:
 
 ### 天工3.2升级：Agent以“数字工牌”入群协作
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-03/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-03/model_release-02.jpg)
 
 
 **是什么**：昆仑万维旗下天工AI推出新的Skywork Tags功能，允许Agent以数字工牌身份加入群聊，与人协作完成任务。
@@ -69,7 +69,7 @@ sections:
 
 ### 可灵AI完成近30亿美元融资，视频模型估值创新高
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-03/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-03/model_release-03.jpg)
 
 
 **是什么**：快手旗下可灵AI完成独立融资，融资金额近30亿美元，投后估值约180亿美元。本轮由CPE源峰、腾讯等领投。
@@ -92,7 +92,7 @@ sections:
 
 ### OpenAI提议将5%股权捐给美国主权财富基金
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-03/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-03/company-00.jpg)
 
 
 Sam Altman向特朗普政府提出，将OpenAI 5%的股份注入美国主权财富基金，以换取政策支持。此举远超此前参议员Sanders推动的目标，是AI企业对政府示好力度最大的动作之一。关键点在于：这不是传统游说捐款，而是直接让政府作为股东，分享企业增长红利。为什么重要——这意味着OpenAI试图通过利益捆绑来规避监管风险，同时为潜在上市或国际化铺路，但主权基金持有股份也将带来国有化争议。
@@ -101,7 +101,7 @@ Sam Altman向特朗普政府提出，将OpenAI 5%的股份注入美国主权财�
 
 ### 微软豪掷25亿美元成立AI部署公司，嵌入6000工程师
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-03/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-03/company-01.jpg)
 
 
 微软推出名为“Frontier Company”的新实体，投入25亿美元，计划派遣6000名AI工程师常驻企业客户，帮助实施AI解决方案。这类似于亚马逊的ProServe和OpenAI的定制部署模式。关键点：微软过去侧重平台和工具，现在直接下场做“集成商”，把AI能力嵌入客户业务流程。为什么重要——这标志着AI收入重心从“卖算力”转向“卖服务”，也意味着微软正与咨询公司、系统集成商争夺中间层利润。
@@ -110,7 +110,7 @@ Sam Altman向特朗普政府提出，将OpenAI 5%的股份注入美国主权财�
 
 ### Meta计划推出云业务，出售闲置AI算力
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-03/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-03/company-02.jpg)
 
 
 Meta追随SpaceX脚步，计划将其过剩的AI计算资源对外销售，与AWS、Azure等云巨头正面竞争。市场一度误读为算力过剩信号，导致科技股波动。关键点：Meta过去为大模型训练储备了大量GPU资源，部分时段利用率不高，对外销售可回笼现金。为什么重要——若Meta成功切入云市场，将加剧价格竞争，同时改变“云厂商=专用基础设施”的格局，但也会让算力供给更分散、波动更大。
@@ -119,7 +119,7 @@ Meta追随SpaceX脚步，计划将其过剩的AI计算资源对外销售，与AW
 
 ### Anthropic与三星洽谈定制AI芯片
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-03/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-03/company-03.jpg)
 
 
 Anthropic正在与三星讨论制造定制AI芯片，以减少对英伟达GPU的依赖。Anthropic表示，与英伟达的合作关系仍将维持，但自主芯片是长期战略。关键点：定制芯片可针对特定模型优化，降低推理成本，这延续了谷歌TPU、亚马逊Trainium的模式。为什么重要——若三星成功切入AI芯片代工，可能打破台积电在先进制程上的垄断地位，英伟达的议价能力也会面临挑战。
@@ -128,7 +128,7 @@ Anthropic正在与三星讨论制造定制AI芯片，以减少对英伟达GPU的
 
 ### Nvidia联合合作伙伴投资美国AI制造及基础设施
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-03/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-03/company-04.jpg)
 
 
 Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源基础设施，推动“美国制造”。同时推出大规模计算解锁计划，邀请资本方共建AI基础设施。关键点：Nvidia试图从芯片供应商升级为生态系统构建者，通过联合投资锁定下游需求。为什么重要——这既是对美国政府芯片补贴的回应，也缓解了市场对“算力过剩”的担忧——投资重点在供应侧，而非需求侧。
@@ -137,7 +137,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### Venice AI获6500万美元A轮融资，估值超10亿美元
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-03/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-03/company-05.jpg)
 
 
 隐私优先AI平台Venice AI完成6500万美元A轮融资，估值超过10亿美元，成为新晋独角兽。公司年化收入已超7000万美元。关键点：Venice AI主打数据不离开设备、本地推理，满足企业对数据隐私的严苛要求。为什么重要——在巨头争夺大规模模型时，隐私垂直场景正快速涌现出独立独角兽，说明市场还远未饱和。
@@ -152,7 +152,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### 印度科技大亨自掏3000万美元开发AI版Office替代品
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-03/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-03/company-07.jpg)
 
 
 印度科技富豪Bhavin Turakhia个人出资3000万美元，推出AI办公套件Neo，目标挑战微软Office和Google Apps生态。关键点：Neo内置AI助手，可自动生成文档、幻灯片和表格，并深度整合企业数据。为什么重要——这是继Notion、Coda之后又一位“Office颠覆者”，但3000万美元对办公软件赛道而言仍属小规模尝试，能否撼动巨头取决于用户迁移成本。
@@ -169,7 +169,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### 状态-预测分离：Transformer效率的新钥匙
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-03/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-03/research-00.jpg)
 
 
 这篇论文提出「状态-预测分离」假设：Transformer中Token预测和状态存储是两个可解耦的角色。通过区分哪些参数负责预测下一个token、哪些参数负责维护上下文状态，研究者设计了新的架构变体，在保持同等困惑度的条件下减少了约30%的激活参数。这意味着未来大模型可以在更小计算预算下运行，或直接用当前硬件容纳更大上下文窗口。
@@ -178,7 +178,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### 单层微调即可复制全参数RL后训练效果
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-03/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-03/research-01.jpg)
 
 
 另一项研究发现，LLM通过强化学习进行后训练时，大部分适应集中在少数几层。实验表明，仅对单层Transformer的MLP部分做微调，就能在数学推理、代码生成等benchmark上达到全参数RL训练的收益。这一结果直接挑战了「全量微调才有效」的固有认知，对部署场景中的低资源适配具有重要意义。
@@ -187,7 +187,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### AI代理已能完成16%自由职业任务，8个月增速惊人
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-03/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-03/research-02.jpg)
 
 
 新发布的Remote Labor Index显示，AI代理在编程、平面设计、文案等自由职业任务中，已达到专业质量水平的16%——而八个月前这一数字仅为2.5%。研究采用真实外包平台任务（如Fiverr/Upwork），由人类专家评判输出质量。增速之快暗示，传统外包市场可能在两年内面临结构性挤压，尤其对标准化编程和设计任务。
@@ -196,7 +196,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### 跨模态动作分词器提升VLA长程任务性能
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-03/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-03/research-03.jpg)
 
 
 自变量机器人提出X-Tokenizer，将视觉-语言-动作模型中的动作离散化重新定义为多模态语义接口学习。通过将连续动作空间映射到与语言、视觉对齐的离散token，长程任务成功率达64.2%，比基线提升8.25%。该工作在机器人自主装配、家居操作场景下验证了有效性，为VLA模型的实际部署提供了可落地的接口设计思路。
@@ -215,7 +215,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### Gemini Spark 登陆 Mac：系统级 AI 助手再下一城
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-03/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-03/product-00.jpg)
 
 
 **是什么**：Google 的代理型（agentic）助手 Gemini Spark 正式支持 Mac 操作系统，用户可随时唤醒并执行实时追踪、跨应用协作等任务。
@@ -228,7 +228,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### Meta 推出 Pocket：用自然语言“即兴编程”迷你游戏
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-03/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-03/product-01.jpg)
 
 
 **是什么**：Meta 秘密发布了一款名为 Pocket 的 AI 游戏应用，用户只需输入提示词（prompt），即可生成并分享可玩的迷你互动游戏。
@@ -241,7 +241,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### NotebookLM 上线短视频摘要：文档变成 TikTok 风格短片
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-03/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-03/product-02.jpg)
 
 
 **是什么**：Google 的 AI 笔记产品 NotebookLM 新增功能，可自动将文档、电子书等内容生成短视频摘要，形式类似 TikTok 的竖版滑动。
@@ -254,7 +254,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### SpaceX 展示 AI 手机原型：xAI 终端野心初露
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-03/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-03/product-03.jpg)
 
 
 **是什么**：SpaceX 向投资者展示了一款搭载 xAI 技术的轻薄 AI 手机原型，意图进军无线终端市场。
@@ -267,7 +267,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### Cloudflare 新规：AI 爬虫不付费就屏蔽
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-03/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-03/product-04.jpg)
 
 
 **是什么**：Cloudflare 发布新政策，要求 AI 公司明确区分搜索爬虫（用于索引）和训练爬虫（用于模型训练），并暗示未与内容出版商达成付费协议的训练爬虫，将在 9 月 15 日后被出版商防火墙默认拦截。
@@ -280,7 +280,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### 钉钉 A1 录音卡入选 Gartner 可穿戴设备报告
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-03/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-03/product-05.jpg)
 
 
 **是什么**：钉钉推出的 AI 录音硬件 A1 录音卡被 Gartner 纳入可穿戴设备品类报告，成为企业级 AI 协作平台在硬件领域的标杆案例。
@@ -303,7 +303,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### Adobe 探索“代理网站”：为每位访客实时组装个性化页面
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-07-03/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-07-03/product-07.jpg)
 
 
 **是什么**：据 Latent Space 报道，Adobe 正在实验一种名为“Agentic Sites”的技术，根据用户的即时意图（如搜索、浏览行为、上下文）自动组装网页内容，而非预先设计固定页面。
@@ -326,7 +326,7 @@ Nvidia宣布与合作伙伴共同投资美国本土AI工厂、供应链及能源
 
 ### Cloudflare CEO 警告：AI Agent 将让互联网每周出现严重漏洞
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-03/opinion-00.jpg)
 
 
 Cloudflare 首席执行官马修·普林斯在近期采访中直言，AI Agent 的快速部署正在制造一场安全危机。他预计，类似 Log4j 那样影响全球的重大安全事件将每周发生。关键点在于：AI Agent 依赖动态决策和自主调用外部 API，传统安全扫描器难以覆盖其运行时行为；而企业急于上线 agentic 系统，往往跳过充分的安全测试。为什么重要：Log4j 的教训是单一漏洞可瘫痪全球，AI Agent 的复杂性可能使攻击面指数级扩大，安全团队必须重新评估基础架构的信任模型。
@@ -335,7 +335,7 @@ Cloudflare 首席执行官马修·普林斯在近期采访中直言，AI Agent �
 
 ### GitLab 调研：AI 加速编码但未提升整体交付效率
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-03/opinion-01.jpg)
 
 
 GitLab 发布的最新开发者调研显示，AI 辅助编程工具确实显著加快了代码编写速度，但软件交付全流程——包括代码审查、测试、部署和运维——的效率并未同步提升。研究指出，瓶颈转移到了协作与测试环节：AI 生成的代码需要更多人工校验，而团队沟通成本反而增加。为什么重要：这打破了“AI 即提效”的简单叙事，提醒技术管理者不要被局部指标迷惑，需系统性优化流程而非仅引入工具。
@@ -344,7 +344,7 @@ GitLab 发布的最新开发者调研显示，AI 辅助编程工具确实显著�
 
 ### Jersey Mike's IPO 文件凸显 AI 炒作泛滥
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-03/opinion-02.jpg)
 
 
 TechCrunch 评论文章指出，三明治连锁店 Jersey Mike's 的 IPO 招股说明书中刻意提及“利用 AI 优化供应链”，而该公司实际业务与 AI 几乎无关。这并非个例：从餐饮到传统制造，大量公司在资本市场故事里强贴 AI 标签。关键点在于：这种炒作不仅误导投资者，更会挤出真正值得投入的 AI 应用场景。为什么重要：当连三明治连锁店都要蹭 AI 热度时，行业需要警惕“AI washing”对技术公信力的侵蚀。
@@ -353,7 +353,7 @@ TechCrunch 评论文章指出，三明治连锁店 Jersey Mike's 的 IPO 招股�
 
 ### Agent 规模化落地为何陷入僵局？业内冷思考
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-03/opinion-03.jpg)
 
 
 InfoQ 文章梳理了 AI Agent 在企业中规模化应用的核心障碍：可靠性不足（Agent 的黄金输出率远低于预期）、成本失控（推理和调用次数呈指数增长）、以及组织变革阻力（现有流程难以适配自主决策系统）。关键点：多数试点项目停留在演示阶段，未能产生可持续的 ROI。为什么重要：这呼应了 GitLab 的发现——单一环节提效不等于全链增益，Agent 的落地需要更谨慎的渐进式部署。
@@ -362,7 +362,7 @@ InfoQ 文章梳理了 AI Agent 在企业中规模化应用的核心障碍：可�
 
 ### 用户嘲讽“不配用 Fable”，Anthropic 回应引发争议
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-03/opinion-04.jpg)
 
 
 多位用户在使用 Anthropic 最新模型 Fable 后反馈体验不佳，官方在社交媒体回应“最贵的模型给最憋屈的体验”，引发技术社区热议。关键点：争论焦点在于模型定价与性能的错配，以及大模型厂商如何应对负面反馈。为什么重要：这不仅是公关事件，更折射出大模型军备竞赛中，用户体验与商业变现之间的张力加剧。
@@ -371,7 +371,7 @@ InfoQ 文章梳理了 AI Agent 在企业中规模化应用的核心障碍：可�
 
 ### AI Coding 正在改变工程师分工，前后端界限消失
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-03/opinion-05.jpg)
 
 
 InfoQ 分析指出，AI 编程工具（如 Cursor、GitHub Copilot）促使大厂重构技术栈：前端工程师开始写后端代码，后端工程师参与 UI 逻辑，传统角色划分加速模糊。关键点：AI 降低了跨领域编码的认知门槛，但同时也提高了对工程师系统思维和测试能力的要求。为什么重要：这对技术团队的管理和文化冲击深远——未来招聘可能不再拘泥于“前端/后端”标签，而是关注“AI 协作能力”。
@@ -390,7 +390,7 @@ InfoQ 分析指出，AI 编程工具（如 Cursor、GitHub Copilot）促使大�
 
 ### AReaL 2.0开源：面向自演进AI Agent的RL基础设施
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-03/opensource-00.jpg)
 
 
 小米与社区合作开源AReaL 2.0，提供一套强化学习框架，核心目标是让AI Agent能够通过自我迭代实现能力进化。框架内置了分布式训练、环境交互、奖励建模等模块，开发者无需从头搭建RL pipeline。**关键点**：相比上一版，2.0重点降低了接入成本，支持主流Agent框架（如LangChain、AutoGPT）的即插即用。**为什么重要**：当前Agent能力提升主要依赖人类反馈或静态数据，自演进能力是更长期的竞争力来源。AReaL 2.0试图将这一能力工具化，但RL本身的高样本复杂度仍是实际部署的瓶颈。
@@ -399,7 +399,7 @@ InfoQ 分析指出，AI 编程工具（如 Cursor、GitHub Copilot）促使大�
 
 ### Vercel发布开源AI Agent框架Eve
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-03/opensource-01.jpg)
 
 
 Vercel推出Eve，一个以“开发者体验优先”为设计原则的开源Agent框架。它提供声明式API来定义Agent行为，并原生集成Vercel的边缘部署能力。**关键点**：Eve支持链式调用（chain-of-thought）、工具调用（function calling）以及记忆管理，内置模板库让开发者5分钟启动一个Agent。**为什么重要**：Vercel在前端部署领域拥有大量开发者心智，Eve试图将Agent的部署和运维体验拉到和静态网站一样简单。如果生态复制Vercel的成功，Eve可能成为Agent应用部署的默认选项之一。
@@ -408,7 +408,7 @@ Vercel推出Eve，一个以“开发者体验优先”为设计原则的开源Ag
 
 ### Google开源agents-cli：命令行创建、评估和部署Agent
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-03/opensource-02.jpg)
 
 
 Google发布agents-cli，这是一个命令行工具，可将任意编码助手（如Cursor、Codeium）转化为能操作Google Cloud服务的Agent。**关键点**：工具本身不定义Agent逻辑，而是提供统一的CLI接口来注册工具、定义评估指标（如成功率、延迟），并能直接部署到Cloud Run上。**为什么重要**：Google的策略是“标准先行”——通过开源CLI规范Agent与云服务的交互方式，与云上资源（BigQuery、GKE等）深度绑定。对于已使用GCP的团队，agents-cli是低成本的Agent化路径。
@@ -417,7 +417,7 @@ Google发布agents-cli，这是一个命令行工具，可将任意编码助手�
 
 ### 腾讯云开源CubeSandbox：为AI Agent提供轻量沙箱
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-03/opensource-03.jpg)
 
 
 腾讯云发布CubeSandbox，一个面向Agent安全运行环境的轻量沙箱。它支持即时启动、并发执行以及资源隔离，适用于Agent测试、数据隔离和多租户场景。**关键点**：沙箱内置了文件系统、网络、环境变量的细粒度控制，支持Python脚本和容器两种模式，启动时间控制在百毫秒级。**为什么重要**：Agent失控风险是行业共识，CubeSandbox相当于为Agent加了一道安全围墙。腾讯云将其开源，意在让社区共建安全标准，同时间接推广自家云原生基础设施。
@@ -426,7 +426,7 @@ Google发布agents-cli，这是一个命令行工具，可将任意编码助手�
 
 ### browser-use推出video-use：用编码Agent编辑视频
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-03/opensource-04.jpg)
 
 
 开源项目video-use让编码Agent像操作浏览器一样控制视频编辑软件（如Premiere Pro、DaVinci Resolve）。**关键点**：项目基于browser-use的“视觉-动作”映射思路，将视频时间轴、滤镜、关键帧等抽象为DOM元素，Agent通过截图+指令实现剪辑、特效添加等操作。**为什么重要**：视频编辑是高频但重复的工作流，Agent自动化能极大降低人工成本。但准确率仍依赖底层视觉模型对界面的理解，对复杂特效的支持有待完善。
@@ -435,7 +435,7 @@ Google发布agents-cli，这是一个命令行工具，可将任意编码助手�
 
 ### Strix：开源的AI渗透测试工具，自动发现应用漏洞
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-03/opensource-05.jpg)
 
 
 Strix使用AI驱动安全测试，可自动扫描Web应用、API和数据库，结合LLM分析攻击模式并生成修复建议。**关键点**：支持自定义规则和AI增强的漏洞推理，报告输出包含PoC（概念验证）代码。**为什么重要**：传统安全测试依赖专家经验，Strix试图用AI降低门槛，使开发者在CI阶段快速自查。但AI生成漏洞报告存在假阳性偏高的问题，需要人工复核。
@@ -444,7 +444,7 @@ Strix使用AI驱动安全测试，可自动扫描Web应用、API和数据库，�
 
 ### agency-agents：全功能AI代理机构，集成多种专家Agent
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-03/opensource-06.jpg)
 
 
 开源项目agency-agents打包了一套现成的Agent集合，包括前端构建Agent、Reddit运营Agent、甚至“幽默注入Agent”。**关键点**：每个Agent有独立角色和工具集，通过统一API调用，支持编排和级联。**为什么重要**：类似“Agent商店”的概念，适合快速原型验证。但Agent质量参差不齐，实际生产力可能存疑。
@@ -453,7 +453,7 @@ Strix使用AI驱动安全测试，可自动扫描Web应用、API和数据库，�
 
 ### Facebook开源Astryx：为Agent时代设计的可定制设计系统
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-03/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-03/opensource-07.jpg)
 
 
 Meta开源Astryx，一套面向人类与代码Agent协作的UI组件库。**关键点**：包含可复用的对话面板、工作流可视化组件、Agent状态指示器等，支持React和Vue，高度可定制主题。**为什么重要**：当Agent开始承担前端交互时，UI需要同时适配人和机器。Astryx试图定义这类界面组件规范，但Agent的UI范式仍在早期，实际采纳率待观察。

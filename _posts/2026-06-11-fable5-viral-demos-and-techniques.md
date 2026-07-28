@@ -12,7 +12,7 @@ cover: /assets/img/posts/2026-06-11-fable5/cover.jpg
 
 <figure>
 <video controls muted loop playsinline preload="metadata" style="width:100%;border-radius:3px"
-       poster="/marginalia/assets/img/posts/2026-06-11-fable5/cover.jpg">
+       poster="/assets/img/posts/2026-06-11-fable5/cover.jpg">
   <source src="https://game.panyifeng.xyz/media/posts/2026-06-11-fable5/forest.mp4" type="video/mp4">
 </video>
 <figcaption>Fable 5 单 prompt 生成的 photoreal three.js 森林，浏览器实时渲染（<a href="https://x.com/mattshumer_/status/2064449498596757643">Matt Shumer 原帖</a>视频，已转存自托管）</figcaption>
@@ -55,8 +55,8 @@ Anthropic 于 2026-06-09 发布 Claude Fable 5（Mythos-class 模型加安全层
 </figure>
 
 <figure>
-<img src="/marginalia/assets/img/posts/2026-06-11-fable5/minecraft-twitter-fable.jpg" alt="Fable 5 在 Minecraft 里搭出的推特界面" style="width:100%;border-radius:3px">
-<img src="/marginalia/assets/img/posts/2026-06-11-fable5/minecraft-twitter-gpt55.jpg" alt="GPT-5.5 同题对比" style="width:100%;border-radius:3px;margin-top:6px">
+<img src="/assets/img/posts/2026-06-11-fable5/minecraft-twitter-fable.jpg" alt="Fable 5 在 Minecraft 里搭出的推特界面" style="width:100%;border-radius:3px">
+<img src="/assets/img/posts/2026-06-11-fable5/minecraft-twitter-gpt55.jpg" alt="GPT-5.5 同题对比" style="width:100%;border-radius:3px;margin-top:6px">
 <figcaption>同题对比「在 Minecraft 里做一个推特」：上 Fable 5（连笔记本键盘底座都搭了出来），下 GPT-5.5（<a href="https://x.com/adonis_singh/status/2064415411198730265">@adonis_singh 原帖</a>截图）</figcaption>
 </figure>
 
@@ -73,7 +73,7 @@ Anthropic 于 2026-06-09 发布 Claude Fable 5（Mythos-class 模型加安全层
 </figure>
 
 <figure>
-<img src="/marginalia/assets/img/posts/2026-06-11-fable5/fable-autobio-site.jpg" alt="Fable 5 给自己写的自传网站" style="width:100%;border-radius:3px">
+<img src="/assets/img/posts/2026-06-11-fable5/fable-autobio-site.jpg" alt="Fable 5 给自己写的自传网站" style="width:100%;border-radius:3px">
 <figcaption>Fable 5 给自己设计/撰写/动效的「自传」网站："I learned to read in your libraries… no human hand has touched this code."（via 量子位）</figcaption>
 </figure>
 

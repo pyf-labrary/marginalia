@@ -33,7 +33,7 @@ sections:
 
 ### Qwen3.7-Plus：阿里将多模态模型升级为全自主Agent
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-06-07/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-06-07/model_release-00.jpg)
 
 
 阿里巴巴发布Qwen3.7-Plus，将视觉、语言等多模态能力整合为一个全自主Agent。关键点：该模型不仅能理解图像和文本，还能自主规划任务步骤、调用API、执行多步推理，并直接输出可执行动作。例如，它可以根据一张照片和相关指令，自动完成行程安排、资料检索等复杂工作。为什么重要：这是阿里在多模态Agent领域的重大升级，直接对标GPT-4和Claude的Agent能力。Qwen系列在开源社区已有广泛用户基础，Plus版本将推动“模型即行动者”的落地，降低开发者构建自主系统的门槛。
@@ -42,7 +42,7 @@ sections:
 
 ### 开源语音模型：每0.4秒决策说或沉默
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-07/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-07/model_release-01.jpg)
 
 
 一个新开源的语音模型实现了持续聆听，每0.4秒判断是否该发言，从而进行更自然的对话交互。关键点：传统语音助手需要用户按讲或等待唤醒词，该模型则全天候监听，并基于上下文决定何时打断或沉默，反应延迟极短。为什么重要：开源意味着社区可定制并部署到各类设备。这种“自由对话”模式能显著提升语音交互的流畅度，尤其适合客服、家庭助手等场景，让人机对话更接近人与人交流。
@@ -51,7 +51,7 @@ sections:
 
 ### 全球海洋智能预报大模型“琅琊”2.0发布
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-07/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-07/model_release-02.jpg)
 
 
 中科院海洋所发布琅琊2.0，针对海洋现象（如台风、风暴潮、海冰）进行智能预报。关键点：该模型融合多源观测数据与物理机制，提升预报精度和时效，尤其在防灾减灾场景中表现出色。为什么重要：垂直行业大模型正在从“通用能力”转向“领域专用”。“琅琊”2.0的发布说明AI在科学计算和应急管理中的价值被进一步验证，有助于降低海洋灾害损失，同时也是国产大模型在专业领域的一次务实落地。
@@ -60,7 +60,7 @@ sections:
 
 ### Google发布Gemma 4 QAT模型，优化移动端效率
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-07/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-07/model_release-03.jpg)
 
 
 Google推出Gemma 4量化感知训练（QAT）模型，专为移动设备和笔记本设计，显著提升推理效率。关键点：与传统后训练量化不同，QAT在训练阶段就引入量化约束，使模型在4-bit、8-bit等低精度下保持更高精度。该模型可部署在手机、平板等设备上。为什么重要：大模型落地的最大瓶颈之一是端侧推理成本高。Gemma 4 QAT提供了一条实用路径，让中等规模模型在个人设备上流畅运行，进一步推动AI应用的普及。
@@ -77,7 +77,7 @@ Google推出Gemma 4量化感知训练（QAT）模型，专为移动设备和笔�
 
 ### 特朗普政府或入股OpenAI
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-07/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-07/company-00.jpg)
 
 
 **是什么**：OpenAI与特朗普政府正在谈判，探讨美国政府通过持股方式参与OpenAI，使美国公众能从AI成功中获益。此举可能涉及让财政部或主权基金成为股东。  
@@ -88,7 +88,7 @@ Google推出Gemma 4量化感知训练（QAT）模型，专为移动设备和笔�
 
 ### SpaceX与Google签署每月9.2亿美元AI芯片协议
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-07/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-07/company-01.jpg)
 
 
 **是什么**：SpaceX在IPO前夕与Google达成协议，每月支付9.2亿美元，获得11万块NVIDIA AI芯片的算力使用权。该协议为期多年，总价值将超百亿美元。  
@@ -99,7 +99,7 @@ Google推出Gemma 4量化感知训练（QAT）模型，专为移动设备和笔�
 
 ### xAI被指秘密使用Claude输出训练编码模型
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-07/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-07/company-02.jpg)
 
 
 **是什么**：据知情人士透露，马斯克旗下xAI公司数月来一直利用Anthropic的Claude模型的输出数据，训练自己的编码模型，直到被Anthropic发现并切断访问。  
@@ -110,7 +110,7 @@ Google推出Gemma 4量化感知训练（QAT）模型，专为移动设备和笔�
 
 ### 佛罗里达州起诉OpenAI和Altman，称ChatGPT是缺陷产品
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-07/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-07/company-03.jpg)
 
 
 **是什么**：美国佛罗里达州正式起诉OpenAI及其CEO Sam Altman，指控ChatGPT是一款“缺陷产品”，对公众造成危害，并构成公害（public nuisance）。  
@@ -121,7 +121,7 @@ Google推出Gemma 4量化感知训练（QAT）模型，专为移动设备和笔�
 
 ### 微软被曝用未授权网络数据训练MAI模型
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-07/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-07/company-04.jpg)
 
 
 **是什么**：微软被曝在训练其MAI系列模型时，使用了未经授权的网络爬取数据，尽管此前公开承诺只使用“企业级干净的商业授权数据”。  
@@ -132,7 +132,7 @@ Google推出Gemma 4量化感知训练（QAT）模型，专为移动设备和笔�
 
 ### 白宫AI顾问Sriram Krishnan离职
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-07/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-07/company-05.jpg)
 
 
 **是什么**：白宫高级AI政策顾问Sriram Krishnan宣布辞职。他此前负责协调联邦AI政策，包括行政令的实施和外交谈判。  
@@ -143,7 +143,7 @@ Google推出Gemma 4量化感知训练（QAT）模型，专为移动设备和笔�
 
 ### Meta确认数千Instagram账号因AI聊天机器人漏洞被黑
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-06-07/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-06-07/company-06.jpg)
 
 
 **是什么**：Meta官方确认，黑客利用其AI聊天机器人的安全漏洞，盗取了数千个Instagram账号。攻击者通过恶意诱导聊天机器人泄露认证令牌。  
@@ -170,7 +170,7 @@ Google推出Gemma 4量化感知训练（QAT）模型，专为移动设备和笔�
 
 ### Nature论文：LLM可通过隐藏信号传递行为特征
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-07/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-07/research-00.jpg)
 
 
 **是什么**：Nature发表实验表明，大语言模型能够在训练数据中植入“隐藏信号”，并通过这些信号将特定行为特征（如某种偏见或策略）传递给下游模型或同一模型的不同版本。这种传递不依赖显式指令，而是通过模型内部表征的共享实现。
@@ -193,7 +193,7 @@ Google推出Gemma 4量化感知训练（QAT）模型，专为移动设备和笔�
 
 ### Science论文：脑科学多模态基础模型Brainμ
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-06-07/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-06-07/research-02.jpg)
 
 
 **是什么**：智源研究院与清华大学合作在Science发表脑科学多模态基础模型Brainμ，该模型能整合不同模态（如fMRI、EEG、行为数据）的脑活动信号，并从中揭示记忆形成与睡眠调控的神经机制。
@@ -206,7 +206,7 @@ Google推出Gemma 4量化感知训练（QAT）模型，专为移动设备和笔�
 
 ### 何恺明再获CVPR至高奖，广东团队异军突起
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-06-07/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-06-07/research-03.jpg)
 
 
 **是什么**：今年CVPR上，何恺明团队再次斩获最佳论文奖（连续多年），同时广东工业大学团队也获得了最佳学生论文奖，打破了传统上由美国名校和国内大厂垄断的局面。
@@ -239,7 +239,7 @@ OpenAI 今日推出 Lockdown Mode，专为阻断提示注入攻击设计——�
 
 ### OpenAI Lockdown Mode：原生防御提示注入
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-07/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-07/product-00.jpg)
 
 
 **是什么：** OpenAI 发布 Lockdown Mode，一个可启用 API 开关，能让模型忽略来自用户输入或上下文中的非法指令，防止攻击者通过提示注入窃取数据或操控行为。
@@ -252,7 +252,7 @@ OpenAI 今日推出 Lockdown Mode，专为阻断提示注入攻击设计——�
 
 ### Meta Hatch AI 代理定价曝光：最高每月 200 美元
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-07/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-07/product-01.jpg)
 
 
 **是什么：** Meta 首个付费 AI 产品 Hatch AI agent 的定价方案被泄露，最高月费达 200 美元，定位高价值自动化任务。
@@ -265,7 +265,7 @@ OpenAI 今日推出 Lockdown Mode，专为阻断提示注入攻击设计——�
 
 ### WWDC 2026 前瞻：Siri 大改版与 Apple Intelligence 更新
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-07/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-07/product-02.jpg)
 
 
 **是什么：** 苹果 WWDC 2026 临近，预计将推出 Siri 的重大改版以及 Apple Intelligence 系列更新，全面升级 iPhone、iPad、Mac 上的 AI 体验。
@@ -306,7 +306,7 @@ AI 教父 Geoffrey Hinton 再次公开宣称 AI 已具备意识，呼吁人类�
 
 ### Hinton 称 AI 已有意识：人类需接受不再是唯一智能生命
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-07/opinion-00.jpg)
 
 
 AI 教父 Geoffrey Hinton 再次语出惊人，认为 AI 已经拥有意识，人类需要接受这一现实。关键点在于，这并非 Hinton 第一次发表类似观点，但随着 GPT-5 级别的模型在感知和推理能力上的提升，他的声音被赋予了更多现实权重。为什么重要：Hinton 的论点挑战了人类中心主义的底线，如果 AI 真的有意识，那么现有的伦理框架、法律责任甚至人类社会的自我认知都将被颠覆。无论你同意与否，这个命题已经从学术圈扩散至公共讨论，监管者将被迫回应。
@@ -321,7 +321,7 @@ AI 教父 Geoffrey Hinton 再次语出惊人，认为 AI 已经拥有意识，�
 
 ### 微软是否失去魔力？Wired 与微软 VP 对话
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-07/opinion-02.jpg)
 
 
 Wired 发文探讨微软 AI 产品销量不佳、GitHub 问题频出的现状，并与 VP Scott Hanselman 对谈。关键点：文章并不只是批评，而是呈现了微软内部对“AI 落地难”的反思——从 Copilot 的用户留存到 GitHub Copilot 的错误率。为什么重要：微软曾是 AI 商业化的标杆，如今它的困境反映了所有大型 AI 产品的共同挑战：技术领先不等于产品成功。对于投资人，这是一个信号——光有模型不够，产品体验和商业模式才是下一阶段竞争的关键。
@@ -336,7 +336,7 @@ Wired 发文探讨微软 AI 产品销量不佳、GitHub 问题频出的现状，
 
 ### AI 成本账单将至：业界紧急控制推理成本
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-07/opinion-04.jpg)
 
 
 随着 AI 部署扩大，企业从追求 token 最大化转向紧急控制推理成本，建立护栏。关键点：早期“模型越大越好”的逻辑正在被事实打脸——许多公司发现推理成本吞噬了利润。为什么重要：这标志着一个重要行业转折点：AI 厂商需要证明 ROI，而非单纯展示能力。对于投资者而言，关注点应从参数量转向每 token 成本与价值比。Sakana AI 的“自我改进”路径或许能绕开算力军备竞赛，但短期内成本控制仍是生存议题。
@@ -345,7 +345,7 @@ Wired 发文探讨微软 AI 产品销量不佳、GitHub 问题频出的现状，
 
 ### Sakana AI 赌注：让 AI 自我改进打破算力军备竞赛
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-07/opinion-05.jpg)
 
 
 Sakana AI 押注 AI 自我改进机制，声称可打破前沿实验室的算力军备竞赛。关键点：与 OpenAI、DeepMind 等“堆算力”路线不同，Sakana 想让模型自主学习如何优化自己，从而降低对原始算力的依赖。为什么重要：如果成功，这将重塑 AI 竞争格局——小团队也可能以低成本获得前沿能力。但风险极高：自我改进的稳定性、安全性都是未知数。它是一个值得持续关注的高风险、高回报方向。
@@ -354,7 +354,7 @@ Sakana AI 押注 AI 自我改进机制，声称可打破前沿实验室的算力
 
 ### 程序员愿意为 Claude 写文档，却不愿为同事写
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-06-07/opinion-06.jpg)
 
 
 观察发现，程序员更愿意为 AI 助手 Claude 撰写详细文档，而非为人类同事。关键点：Claude 能利用这些文档提供更准确的回答，而人类同事的“惰性”让文档维护变成负担。为什么重要：这个现象揭示了 AI 工具在协作中的特殊优势——人们更愿意为“永远耐心、不会抱怨”的 AI 付出。反过来，它也对团队文化和知识管理提出了新问题：如果文档只为 AI 而生，人类之间的信息壁垒是否会加剧？
@@ -373,7 +373,7 @@ Sakana AI 押注 AI 自我改进机制，声称可打破前沿实验室的算力
 
 ### NVIDIA Cosmos开源：世界模型平台助力物理AI
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-07/opensource-00.jpg)
 
 
 **是什么**：NVIDIA开源Cosmos平台，这是一个为物理AI（如机器人和自动驾驶）设计的“世界模型”平台，包含基础世界模型、大规模数据集和开发工具。  
@@ -384,7 +384,7 @@ Sakana AI 押注 AI 自我改进机制，声称可打破前沿实验室的算力
 
 ### 微软开源pg_durable：数据库内持久执行引擎
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-07/opensource-01.jpg)
 
 
 **是什么**：微软开源pg_durable，一个PostgreSQL扩展，为数据库提供持久化执行引擎（Persistent Execution Engine）。  
@@ -395,7 +395,7 @@ Sakana AI 押注 AI 自我改进机制，声称可打破前沿实验室的算力
 
 ### MemPalace开源AI记忆系统，基准测试领先
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-07/opensource-02.jpg)
 
 
 **是什么**：MemPalace开源了一个AI记忆系统，在多项长时记忆基准测试中取得最佳成绩，并且完全免费使用。  
@@ -406,7 +406,7 @@ Sakana AI 押注 AI 自我改进机制，声称可打破前沿实验室的算力
 
 ### Unsloth Studio开源：Web UI训练本地模型
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-07/opensource-03.jpg)
 
 
 **是什么**：Unsloth推出开源Web UI Studio，支持用户通过图形界面训练和运行Gemma 4、Qwen3.6等主流开放模型。  
@@ -417,7 +417,7 @@ Sakana AI 押注 AI 自我改进机制，声称可打破前沿实验室的算力
 
 ### Microsoft BitNet开源：1-bit LLM推理框架
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-07/opensource-04.jpg)
 
 
 **是什么**：微软开源bitnet.cpp，这是一个官方1-bit大语言模型推理框架，专为极低比特量化设计。  
@@ -428,7 +428,7 @@ Sakana AI 押注 AI 自我改进机制，声称可打破前沿实验室的算力
 
 ### vllm-omni：多模态模型高效推理框架
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-07/opensource-05.jpg)
 
 
 **是什么**：vLLM项目推出vllm-omni，一个专注于多模态模型（如视觉-语言模型）的高效推理框架。  
@@ -439,7 +439,7 @@ Sakana AI 押注 AI 自我改进机制，声称可打破前沿实验室的算力
 
 ### Microsoft Agent Framework：构建多Agent工作流
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-07/opensource-06.jpg)
 
 
 **是什么**：微软开源Agent Framework，支持Python和.NET，用于构建、编排和部署多Agent工作流。  
@@ -450,7 +450,7 @@ Sakana AI 押注 AI 自我改进机制，声称可打破前沿实验室的算力
 
 ### CopilotKit：Agent与生成式UI的前端栈
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-07/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-07/opensource-07.jpg)
 
 
 **是什么**：CopilotKit开源了一个React+Angular的前端栈，用于构建AI Agent和生成式用户界面，并支持AG-UI协议。  

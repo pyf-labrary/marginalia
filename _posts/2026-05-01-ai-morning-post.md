@@ -33,7 +33,7 @@ sections:
 
 ### GPT-5.5 与 Mythos：攻击能力接近，成本悬殊
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-01/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-01/model_release-00.jpg)
 
 
 AISI 的报告测试了 GPT-5.5 在自动化渗透测试、漏洞利用、社会工程等任务上的表现。结果显示，GPT-5.5 在多个指标上与 Mythos 不相上下，但在生成可执行代码的成功率上略高。一个原本需要 12 小时的人类专家任务，GPT-5.5 平均用 11 分钟完成，总 API 成本仅 1.73 美元。AISI 强调，这并不意味着模型是“危险”的——但能力门槛下降意味着需建立新的护栏。
@@ -42,7 +42,7 @@ AISI 的报告测试了 GPT-5.5 在自动化渗透测试、漏洞利用、社会
 
 ### DeepMind 发布 AI co-clinician：与医生联合问诊
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-01/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-01/model_release-01.jpg)
 
 
 Google DeepMind 推出 AI co-clinician，目标是作为医生辅助工具，而非替代品。该模型能够实时分析患者对话、提取关键症状、提供鉴别诊断建议，并自动生成结构化病历。关键点在于它被设计为“聆听后提出建议”，医生保留最终决策权。重要性在于：AI 在临床流程中的角色从“辅助读取影像”进化为“参与诊疗对话”，对医疗信息化产品形态有直接影响。
@@ -51,7 +51,7 @@ Google DeepMind 推出 AI co-clinician，目标是作为医生辅助工具，而
 
 ### xAI 正式发布 Grok 4.3，性能提升但细节保留
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-05-01/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-05-01/model_release-02.jpg)
 
 
 xAI 发布 Grok 4.3，宣称在推理、编码和多轮对话上进一步优化，但未公开参数量、训练数据规模或评估基准的具体结果。对比前序版本，此次更新重点放在减少幻觉和长上下文处理上。对于技术从业者，缺乏透明度的发布意味着无法直接横向对比；但对 xAI 生态而言，Grok 4.3 仍可能是 X 平台嵌入 agentic 功能的核心动力。
@@ -60,7 +60,7 @@ xAI 发布 Grok 4.3，宣称在推理、编码和多轮对话上进一步优化�
 
 ### IBM 开源 Granite 4.1：8B 参数对标 32B MoE 性能
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-05-01/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-05-01/model_release-03.jpg)
 
 
 IBM 发布 Granite 4.1 系列开源模型，其中 8B 版本在多个基准上接近或匹敌 32B MoE 级别的模型。核心技术包括改进后的混合注意力机制和更高效的 tokenizer。根据 IBM 公开数据，8B 模型在 MMLU、GSM8K 上分别达到 78.2% 和 84.5%，推理速度是同级模型的 2-3 倍。重要性在于：它证明参数精简路线依然有效，中小型团队可用更低成本部署高性能模型。
@@ -69,7 +69,7 @@ IBM 发布 Granite 4.1 系列开源模型，其中 8B 版本在多个基准上�
 
 ### NVIDIA 发布 Gemma-4 量化版：RTX 5090 本地跑 50K 上下文
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-05-01/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-05-01/model_release-04.jpg)
 
 
 NVIDIA 推出 Gemma-4-26B-A4B-NVFP4，基于 Google 的 Gemma-4 进行 4-bit 量化，混合 NVFP4 格式精度。在 RTX 5090 上可运行约 50K token 上下文，而精度损失在 1-2% 以内。该模型适合本地部署场景（敏感数据处理、离线推理），对个人开发者和企业边缘计算有实际意义。
@@ -92,7 +92,7 @@ Reddit 用户对比测试两个本地模型制作贪吃蛇游戏的编程能力�
 
 ### 马斯克与OpenAI对簿公堂：硅谷巨富互揭老底
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-01/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-01/company-00.jpg)
 
 
 - **是什么**：马斯克诉OpenAI案在加州联邦法院开庭，双方律师激烈交锋，公开了多封此前未披露的电子邮件，涉及OpenAI早期资金承诺、转型为营利性公司的决策细节，以及马斯克与Sam Altman之间的私人往来。
@@ -111,7 +111,7 @@ Reddit 用户对比测试两个本地模型制作贪吃蛇游戏的编程能力�
 
 ### PyTorch Lightning 被植入恶意依赖
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-01/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-01/company-02.jpg)
 
 
 - **是什么**：安全研究人员在PyTorch Lightning训练库中发现一个名为“Shai-Hulud”的恶意依赖包，可窃取训练数据、修改模型权重或破坏训练过程。该依赖通过npm和PyPI的混淆命名方式分发，已存在至少两个月。
@@ -155,7 +155,7 @@ DeepSeek发布Thinking-with-Visual-Primitives框架，将多模态推理过程�
 
 ### 微调可能“唤醒”LLM对版权书籍的记忆
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-01/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-01/research-01.jpg)
 
 
 **是什么**  
@@ -181,7 +181,7 @@ Stripe一口气抛出288项新功能，其中最吸睛的是AI智能体钱包“
 
 ### Stripe发布288项新功能，含AI智能体钱包
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-01/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-01/product-00.jpg)
 
 
 **是什么：** Stripe在年度更新中推出智能体钱包Link，并围绕AI支付场景集成大量API，旨在为AI驱动的经济体系搭建基础设施。Link支持AI代理自主完成身份认证、支付授权和资金结算。
@@ -194,7 +194,7 @@ Stripe一口气抛出288项新功能，其中最吸睛的是AI智能体钱包“
 
 ### 蚂蚁数科登顶以太坊全球基准评测
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-01/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-01/product-01.jpg)
 
 
 **是什么：** 蚂蚁数字科技在以太坊全球基准测试中排名第一，其自研的智能体可信协作方案成为亮点，主要考核交易处理速度、安全性和去中心化水平。
@@ -217,7 +217,7 @@ Stripe一口气抛出288项新功能，其中最吸睛的是AI智能体钱包“
 
 ### OpenAI推出高级安全模式保护高风险账户
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-01/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-01/product-03.jpg)
 
 
 **是什么：** OpenAI为ChatGPT和Codex账户提供更严格的安全验证选项，包括硬件密钥、生物识别和多因素认证强制开启，防止AI账户被劫持。
@@ -272,7 +272,7 @@ Zig语言官方明确禁止AI生成的代码贡献，理由是AI产出会降低�
 
 ### Mozilla正式反对Chrome Prompt API
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-01/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-01/opinion-02.jpg)
 
 
 Mozilla在GitHub上正式表态反对Chrome提出的浏览器Prompt API，认为它会侵蚀用户隐私并破坏开放的Web标准。该API允许网站在用户授权前就访问系统能力。**关键点**：Mozilla的反对信措辞严厉，指出这会让“浏览器变成一个以广告为中心的封闭平台”。**为什么重要**：这场浏览器战争从技术选择升级为价值观对决——Chrome想用更“便捷”的API获取更多控制权，而Mozilla在捍卫“用户代理”的原始角色。对开发者而言，这意味着未来Web应用的跨浏览器兼容性可能进一步恶化。
@@ -281,7 +281,7 @@ Mozilla在GitHub上正式表态反对Chrome提出的浏览器Prompt API，认为
 
 ### 智谱揭秘大模型“降智”根源：Prefill损耗
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-01/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-01/opinion-03.jpg)
 
 
 智谱AI通过技术文章指出，用户感知的大模型“降智”现象主要来自Prefill阶段的性能瓶颈。Prefill负责对输入进行预计算，当上下文变长或batch变大时，这一阶段成为推理吞吐的瓶颈，导致响应变慢、逻辑能力下降。**关键点**：这不是“模型变笨”，而是工程实现上的效率和显存限制。**为什么重要**：它提醒业界：模型能力的天花板不在理论参数，而在工程优化。解决Prefill瓶颈（如通过cache和投机解码）将是下一阶段提升用户体验的关键。
@@ -290,7 +290,7 @@ Mozilla在GitHub上正式表态反对Chrome提出的浏览器Prompt API，认为
 
 ### 商汤杨帆：AI拐点从人用到人机协作
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-01/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-01/opinion-04.jpg)
 
 
 商汤联合创始人杨帆提出，AI正从“工具”转变为“协作伙伴”，生产关系和信任机制需要重构。他主张，未来人类不仅要信任机器，还要学会“管理”机器，就像现在管理下属一样。**关键点**：这个观点并不新鲜，但放在大模型Agent化的背景下，它指向一个具体挑战：组织流程如何适应“人+AI”的混合团队。**为什么重要**：它把AI落地问题从技术路线拉回到管理哲学——如果AI真的要成为“伙伴”，那么谁对AI的决策负责？如何校准人机之间的目标对齐？
@@ -309,7 +309,7 @@ Mozilla在GitHub上正式表态反对Chrome提出的浏览器Prompt API，认为
 
 ### 新一代具身智能仿真框架开源：高吞吐并行渲染
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-01/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-01/opensource-00.jpg)
 
 
 **是什么**：一个高吞吐量的开源仿真框架，专门用于具身智能（Embodied AI）训练，核心亮点是实现了高保真并行渲染，且支持从仿真环境零微调直接部署到真机。

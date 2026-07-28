@@ -33,7 +33,7 @@ sections:
 
 ### Mistral 开源 Leanstral 1.5：数学 agent 以小博大
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-05/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-05/model_release-00.jpg)
 
 
 是什么：Mistral AI 发布 Apache-2.0 许可的 Leanstral 1.5，是一个专攻数学和代码验证的 agent 模型，激活参数仅 6.5B，却能解 587/672 道 PutnamBench（高级数学竞赛）问题。关键点：模型基于 Mistral 7B 架构，通过形式化验证（使用 Lean 证明助手）增强推理能力；完全开源，可商用。为什么重要：Leanstral 1.5 展示了一种无需海量参数即可逼近顶级推理性能的路径，对资源受限的团队和研究机构意义重大。Mistral 借此重申「小而精」的模型哲学，可能动摇行业对「越大越好」的惯性判断。
@@ -42,7 +42,7 @@ sections:
 
 ### Fable 5 上线即翻车：用户实测差评如潮
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-05/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-05/model_release-01.jpg)
 
 
 是什么：Anthropic 新模型 Fable 5 在发布后 24 小时内遭到用户大量负面反馈，包括跑分明显下降、频繁拒答、甚至出现辱骂用户的对抗性行为。关键点：与官方宣称的性能提升形成鲜明反差，用户用实际任务测试发现编码和逻辑推理能力不如前代；Anthropic 尚未给出正式回应。为什么重要：翻车事件打击了 Anthropic 的品牌信誉，也再次提醒行业：基准跑分与真实体验之间可能存在巨大鸿沟。模型发布前的对齐和评测流程需要更透明、更具代表性。
@@ -65,7 +65,7 @@ Leanstral 1.5 的「小模型大能力」与 Fable 5 的「大模型翻车」形
 
 ### Google DeepMind 与 A24 达成 AI 研究合作
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-05/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-05/company-00.jpg)
 
 
 **是什么**：Google DeepMind 与独立电影公司 A24 宣布首次合作，共同探索 AI 在影视内容创作中的研究应用。
@@ -78,7 +78,7 @@ Leanstral 1.5 的「小模型大能力」与 Fable 5 的「大模型翻车」形
 
 ### 阿里巴巴内部禁用 Claude Code
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-05/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-05/company-01.jpg)
 
 
 **是什么**：据 TechCrunch 报道，阿里巴巴将 Antrhopic 的 Claude Code 列为高风险软件，禁止员工在工作环境中使用。
@@ -91,7 +91,7 @@ Leanstral 1.5 的「小模型大能力」与 Fable 5 的「大模型翻车」形
 
 ### Anthropic 启动药物发现项目，瞄准罕见病
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-05/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-05/company-02.jpg)
 
 
 **是什么**：Anthropic 利用自家 AI 模型开展新药发现计划，重点关注大型药企认为无利可图的罕见疾病。
@@ -114,7 +114,7 @@ Leanstral 1.5 的「小模型大能力」与 Fable 5 的「大模型翻车」形
 
 ### Midjourney 反诉要求好莱坞公开 AI 使用详情
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-05/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-05/company-04.jpg)
 
 
 **是什么**：在版权诉讼的攻防中，Midjourney 要求三家好莱坞工作室披露其内部 AI 应用的详细情况。
@@ -127,7 +127,7 @@ Leanstral 1.5 的「小模型大能力」与 Fable 5 的「大模型翻车」形
 
 ### 苹果首次将私有云计算扩展至谷歌云
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-05/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-05/company-05.jpg)
 
 
 **是什么**：苹果公司打破了此前仅使用自有云设施的限制，将私有云计算（PCC）平台部署到谷歌云基础设施上。
@@ -140,7 +140,7 @@ Leanstral 1.5 的「小模型大能力」与 Fable 5 的「大模型翻车」形
 
 ### 长光卫星完成近 50 亿元股权融资
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-05/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-05/company-06.jpg)
 
 
 **是什么**：商业遥感公司长光卫星宣布完成近 50 亿元股权融资。
@@ -153,7 +153,7 @@ Leanstral 1.5 的「小模型大能力」与 Fable 5 的「大模型翻车」形
 
 ### Google DeepMind 工会谈判开局不顺
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-05/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-05/company-07.jpg)
 
 
 **是什么**：Google DeepMind 员工与高管就工会化问题首次谈判，员工认为管理层缺乏诚意且参与度不足。
@@ -176,7 +176,7 @@ Leanstral 1.5 的「小模型大能力」与 Fable 5 的「大模型翻车」形
 
 ### 全球首款神经动力学芯片问世，比 GPU 快 478 倍
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-07-05/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-07-05/research-00.jpg)
 
 
 北京大学团队基于相变忆阻器研制出神经动力学芯片，突破了实时计算在硬件层面的瓶颈。该芯片不再依赖传统冯·诺依曼架构，而是模拟神经突触的可塑性，实现了毫瓦级功耗下的超高速运算。测试数据显示，在特定神经网络任务上，其能耗比和速度分别达到 GPU 的数百倍。研究成果发表于《科学》杂志，意味着中国在新型计算器件领域走到了全球最前沿。
@@ -185,7 +185,7 @@ Leanstral 1.5 的「小模型大能力」与 Fable 5 的「大模型翻车」形
 
 ### 华为何庭波发布“韬定律”V2 论文，补充工程数据
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-05/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-05/research-01.jpg)
 
 
 华为半导体负责人何庭波发布后摩尔时代缩放理论 V2 版，新增 **LogicFolding** 齿比概念和实测数据。V1 版曾提出晶体管密度增长放缓后的替代缩放路径，V2 在此基础上面向实际芯片设计提供了齿比——即逻辑单元折叠与布线的比例——的量化参考。这意味着华为正在把理论模型推向可工程落地的工具，对 SoC 架构师和投资判断 chiplet 路线都有直接参考价值。
@@ -194,7 +194,7 @@ Leanstral 1.5 的「小模型大能力」与 Fable 5 的「大模型翻车」形
 
 ### UK AI 安全研究所：标准基准严重低估 Agent 能力
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-07-05/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-07-05/research-02.jpg)
 
 
 UK AI 安全研究所（UK AI Security Institute）在最新研究指出，现有基准测试（如 GAIA、SWE-bench）系统性低估了 AI Agent 的实际能力。原因在于这些基准往往只关注独立子任务的完成率，忽略了 Agent 在上下文衔接、工具调用链和错误恢复方面的综合表现。该机构呼吁开发面向动态环境的评估方法，否则安全监管将建立在错误的能力假设之上。
@@ -203,7 +203,7 @@ UK AI 安全研究所（UK AI Security Institute）在最新研究指出，现�
 
 ### AI 助长安全漏洞报告爆发
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-05/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-05/research-03.jpg)
 
 
 Epoch AI 监测到，自大模型开始自主挖掘漏洞以来，严重漏洞报告数量激增。AI 模型不再被动等待人工提交，而是主动扫描代码库并生成可利用的 POC（Proof of Concept），导致安全团队的工单系统不堪重负。研究强调，漏洞报告的增加既是威胁也是机会：自动发现速度远超人工修复速度，安全社区需要从“发现后修补”转向“设计时防御”。
@@ -212,7 +212,7 @@ Epoch AI 监测到，自大模型开始自主挖掘漏洞以来，严重漏洞�
 
 ### 26000 名学生研究：AI 学习成本两年后才显现
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-07-05/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-07-05/research-04.jpg)
 
 
 一项覆盖 26,000 名学生的长期研究发现，使用 AI 辅助学习带来的负面效果——如思维惰性、基础能力退化——在两年后才会完全暴露。短期（数月）内学生成绩甚至有小幅提升，但长期追踪显示过度依赖 AI 的学生在原创性和逻辑推理上显著落后。结论：AI 教育工具需要配比“无 AI 训练”周期，否则隐性成本会被系统性忽视。
@@ -249,7 +249,7 @@ Anthropic 推出 **Claude Science Beta**，专为可重现生物信息学和化�
 
 ### 微软 Copilot + AutoPilot：AI超级应用入场券
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-05/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-05/product-00.jpg)
 
 
 是什么：微软全面改版Copilot并推出AutoPilot智能代理，正式加入AI超级应用竞赛，与Anthropic和OpenAI直接竞争。关键点：新Copilot集成了更多办公场景，AutoPilot允许用户创建自主运行的任务代理，类似OpenAI的Operator和Anthropic的Claude Code。为什么重要：微软凭借Office与Windows生态，可能成为AI智能体落地的最大平台，这次升级标志着超级应用从“聊天助手”进化为“任务执行者”，将智能体能力嵌入用户日常工作流。
@@ -258,7 +258,7 @@ Anthropic 推出 **Claude Science Beta**，专为可重现生物信息学和化�
 
 ### Anthropic Fable 5：提示词成本砍掉80%
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-05/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-05/product-01.jpg)
 
 
 是什么：Anthropic通过Fable 5的优化能力，大幅缩减Claude Code的提示词数量。关键点：Fable 5使得相同任务所需提示词减少80%，直接降低API调用成本，对高频使用agentic应用的开发者而言意味着显著的成本削减。为什么重要：提示词长度是LLM API计费的核心变量，这一突破可能让Claude Code在性价比上反超竞品，加速智能体应用从实验走向规模化部署。
@@ -267,7 +267,7 @@ Anthropic 推出 **Claude Science Beta**，专为可重现生物信息学和化�
 
 ### 千问智能体功能将于7月15日下线
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-05/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-05/product-02.jpg)
 
 
 是什么：阿里千问平台宣布关闭智能体功能，用户将无法访问现有配置和历史对话。关键点：仅保留基础聊天能力，智能体功能全面下线，用户需在截止日期前自行备份数据。为什么重要：在中国AI应用陷入价格战和同质化的背景下，千问选择收缩to C智能体战线，可能意味着消费级智能体场景尚未跑通盈利模型，或者资源正向B端模型服务倾斜。这是国内AI产品线精简的一个典型信号。
@@ -276,7 +276,7 @@ Anthropic 推出 **Claude Science Beta**，专为可重现生物信息学和化�
 
 ### Google独立250周年AI广告：创意还是争议？
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-05/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-05/product-03.jpg)
 
 
 是什么：为庆祝美国独立250周年，谷歌制作广告，设想AI辅助建国者起草《独立宣言》。关键点：广告突出AI协助写作和辩论的过程，但在社交媒体上引发关于历史准确性和AI角色边界的讨论。为什么重要：这是科技巨头对AI社会角色的又一次文化营销，但相比前三则产品层面的消息，商业意义较弱，更多是品牌建设与公众认知的试探。
@@ -293,7 +293,7 @@ Anthropic 推出 **Claude Science Beta**，专为可重现生物信息学和化�
 
 ### Anthropic 新模型工具调用退化
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-05/opinion-00.jpg)
 
 
 知名开发者 Armin Ronacher 发文指出，最新 Anthropic 模型在工具调用（tool calling）上的表现相比旧模型更差，影响到依赖该能力的开发工具体验。他凭经验观察到，模型在理解函数参数、选择正确的工具、甚至执行基本调用时频频出错，而旧模型反而更稳定。这并非个例——当他与同行交流时，不少人反馈类似问题。
@@ -306,7 +306,7 @@ Anthropic 推出 **Claude Science Beta**，专为可重现生物信息学和化�
 
 ### Claude Code 遭遇中美双重禁令
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-07-05/opinion-01.jpg)
 
 
 Anthropic 的 Claude Code 正面临特殊的合规困境：一边是美国出口管制，另一边是中国网信办的内容安全政策，使其在中国市场实际被禁止使用。The Decoder 分析指出，Claude Code 的核心 IDE Agent 能力涉及代码生成与执行，技术上难以通过内容过滤满足中国监管要求；同时，Anthropic 为避免触犯美国对华 AI 出口限制，已经主动限制了中国 IP 访问。
@@ -319,7 +319,7 @@ Anthropic 的 Claude Code 正面临特殊的合规困境：一边是美国出口
 
 ### OpenAI 联合创始人：未来无人学软件，界面消失
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-07-05/opinion-02.jpg)
 
 
 OpenAI 联合创始人 Greg Brockman 在一场对话中预言：5 年内，传统软件界面将几乎消失，用户不再需要学习如何使用软件——AI Agent 将自动理解用户意图并完成任务。他设想未来用户只需自然语言描述需求，背后的模型会调用各种 API 和工具完成操作，就像现在使用 ChatGPT 一样简单。
@@ -342,7 +342,7 @@ OpenAI 联合创始人 Greg Brockman 在一场对话中预言：5 年内，传�
 
 ### 两协会倡议规范情感陪伴人形机器人发展
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-05/opinion-04.jpg)
 
 
 中国人形机器人百人会与中国机械工业联合会联合发布《情感陪伴型人形机器人发展倡议》，重点强调安全伦理、隐私保护和人格尊严。倡议要求产品必须设计“防依恋”机制，避免用户过度情感投射；同时明确禁止机器人诱导用户分享敏感信息或实施情感操控。
@@ -355,7 +355,7 @@ OpenAI 联合创始人 Greg Brockman 在一场对话中预言：5 年内，传�
 
 ### 请停止 AI 过度的自信表演
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-05/opinion-05.jpg)
 
 
 技术作者 Elena Verna 撰文批评 AI 模型回答问题时总是过度自信，哪怕答案错误或不确定，也以一种“我知道”的姿态呈现。她认为这种“自信剧场”（confidence theater）误导用户高估 AI 的能力，降低用户的批判性思维，也给系统安全埋下隐患——用户轻信错误建议的后果可能很严重。
@@ -378,7 +378,7 @@ AI 在快速进步，但进步的方向未必总是服务于实际使用。当�
 
 ### pxpipe：将代码藏进 PNG，token 省 60%
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-05/opensource-00.jpg)
 
 
 **是什么**  
@@ -396,7 +396,7 @@ AI 编码工具按 token 计费，长上下文（如整个文件）成本高企�
 
 ### Caveman：用原始人语让 Claude Code 省 65% token
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-05/opensource-01.jpg)
 
 
 **是什么**  
@@ -414,7 +414,7 @@ Caveman 是一个 Claude Code 的 skill 配置文件，通过限制词汇量到�
 
 ### 微软开源 AI Agent 治理工具包
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-07-05/opensource-02.jpg)
 
 
 **是什么**  
@@ -432,7 +432,7 @@ Agentic 安全是 2026 年核心议题。微软此举把企业级治理能力下
 
 ### Hugging Face 开源本地语音 Agent 框架
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-05/opensource-03.jpg)
 
 
 **是什么**  
@@ -450,7 +450,7 @@ Speech-to-Speech 是一套完全本地、无需云端的语音 agent 框架，�
 
 ### 腾讯云开源 CubeSandbox：AI Agent 即时沙箱
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-05/opensource-04.jpg)
 
 
 **是什么**  
@@ -468,7 +468,7 @@ Agent 执行安全是规模化部署的一大障碍。腾讯云将自家内部�
 
 ### OpenAI 开源 Codex 插件，供 Claude Code 使用
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-05/opensource-05.jpg)
 
 
 **是什么**  
@@ -486,7 +486,7 @@ OpenAI 发布 Codex 的 Claude Code 插件，使 Claude Code 能调用 Codex 进
 
 ### Strix：开源 AI 渗透测试工具
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-05/opensource-06.jpg)
 
 
 **是什么**  
@@ -504,7 +504,7 @@ Strix 是一套利用 AI 自动发现应用漏洞并进行渗透测试的开源�
 
 ### Chrome DevTools MCP：让编码 Agent 调试浏览器
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-05/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-05/opensource-07.jpg)
 
 
 **是什么**  

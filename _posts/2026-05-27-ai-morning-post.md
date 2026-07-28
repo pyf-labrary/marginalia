@@ -33,7 +33,7 @@ sections:
 
 ### 阿里千问3.7 Code Arena编程能力全球第二
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-27/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-27/model_release-00.jpg)
 
 
 阿里旗舰模型Qwen3.7-Max在Code Arena榜单得分1541，超越GPT-5.5、Gemini等，仅低于Claude系列，跻身全球第一梯队。这是国产模型在编程基准上的最好名次。关键点在于Code Arena侧重实际编码任务的全面性（包括修复、生成、调试），而非单纯竞赛题目。这表明千问在真实开发场景中的可用性已接近西方顶级模型，对于依赖代码GenAI的开发者来说，选型窗口正在收窄。
@@ -42,7 +42,7 @@ sections:
 
 ### 国产Agent模型首进全球第一梯队，限时免费
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-27/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-27/model_release-01.jpg)
 
 
 一款国产Agent模型深度适配OpenClaw、Claude Code等工具链，在多项基准测试中进入全球前列，并限时开放免费使用。关键点在于：Agent模型对工具调用、多步推理的要求更高，能进入第一梯队意味着工程化能力而非单纯参数提升。对于产品经理和投资人，这意味着国产模型在Agent生态中有了可行的成本替代选项，免费期是测试的好时机。
@@ -51,7 +51,7 @@ sections:
 
 ### Claude Mythos疑似解决OpenAI埃尔德什问题
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-05-27/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-05-27/model_release-02.jpg)
 
 
 Anthropic的Claude Mythos据报道以“简洁优雅的证明”解决了悬而未决的埃尔德什问题，该问题曾由OpenAI列为标志性挑战。关键点：这不是简单的计算题，而是涉及数论中经典猜想，证明过程被评价为“简洁”。如果属实，表明大模型在纯数学推理上可能已突破“模式匹配”阶段，进入真正推理。学界对此反应谨慎兴奋，但需要复现验证。对技术从业者而言，这是LLM能力边界的标志性事件。
@@ -60,7 +60,7 @@ Anthropic的Claude Mythos据报道以“简洁优雅的证明”解决了悬而�
 
 ### Gemma 4多词元预测技术：生成速度提升三倍
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-05-27/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-05-27/model_release-03.jpg)
 
 
 谷歌发布Gemma 4多词元预测方案，通过一次前向传播预测多个未来token，显著提高解码吞吐量，最高加速约3倍。关键点：该方法不需要额外训练成本，可即插即用于已有模型。对于部署者，这意味着实时交互场景下延迟可大幅降低，尤其对端侧和对话系统有实际价值。产品经理可关注该技术能否被其他模型复用。
@@ -69,7 +69,7 @@ Anthropic的Claude Mythos据报道以“简洁优雅的证明”解决了悬而�
 
 ### 国产AI训练框架全球首例，速度超英伟达Megatron 10%
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-05-27/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-05-27/model_release-04.jpg)
 
 
 国内团队自研AI训练系统，宣称训练速度比英伟达Megatron快10%，实现全栈自主突破。关键点：不依赖CUDA优化，而是从分布式通信和算子层面重构，支持更大规模的模型训练。这一差距若被验证，意味着国产算力工具链的竞争力开始从“可用”转向“更优”。对投资人而言，这是国产替代叙事的重要支撑；但需警惕benchmark测试的场景局限性。
@@ -78,7 +78,7 @@ Anthropic的Claude Mythos据报道以“简洁优雅的证明”解决了悬而�
 
 ### Stability AI发布Stable Audio 3音频生成模型
 
-![model_release-05.jpg](/marginalia/assets/img/ai-hot/2026-05-27/model_release-05.jpg)
+![model_release-05.jpg](/assets/img/ai-hot/2026-05-27/model_release-05.jpg)
 
 
 Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上本地运行，用于音乐和音效生成。关键点：这是首个支持本地运行的开放权重音频模型，采用潜在扩散架构。对音频产品创业者而言，这意味着可低成本自建生成音频流水线，而不必依赖云端API。模型权重开源，社区可二次开发。
@@ -97,7 +97,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### 英伟达Vera CPU基准曝光，AI工厂性能强劲
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-27/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-27/company-00.jpg)
 
 
 是什么：英伟达Vera CPU在Phoronix基准测试中表现出色，针对AI工厂需求设计，拥有快速核心和大内存带宽。
@@ -110,7 +110,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### OpenRouter估值翻倍至13亿美元，完成1.13亿B轮
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-27/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-27/company-01.jpg)
 
 
 是什么：AI模型路由平台OpenRouter获CapitalG领投1.13亿美元B轮融资，估值一年内从约6.5亿美元翻番至13亿美元。
@@ -133,7 +133,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### ClickUp大规模裁员，用AI代理替代数百员工
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-27/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-27/company-03.jpg)
 
 
 是什么：项目管理公司ClickUp宣布裁员数百人，同时引入数千个AI代理（agentic AI）执行任务。
@@ -146,7 +146,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### Dropbox CEO Drew Houston宣布卸任
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-27/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-27/company-04.jpg)
 
 
 是什么：Dropbox联合创始人Drew Houston宣布卸任CEO，由Ashraf Alkarmi接替。
@@ -159,7 +159,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### 蚂蚁集团领投光轮智能，物理AI价值中心转移
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-27/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-27/company-05.jpg)
 
 
 是什么：物理AI数据公司光轮智能完成新一轮融资，蚂蚁集团为主要领投方。
@@ -172,7 +172,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### 微软或将弃用Claude，转向自研模型
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-27/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-27/company-06.jpg)
 
 
 是什么：据消息称，微软因成本过高考虑逐步停用Anthropic的Claude模型，加速推进自研AI方案（如Phi系列、与OpenAI合作的模型）。
@@ -185,7 +185,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### Human Archive用印度零工数据训练物理AI
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-27/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-27/company-07.jpg)
 
 
 是什么：初创公司Human Archive雇佣印度零工佩戴传感器收集日常活动数据，为机器人训练提供真实物理数据。
@@ -208,7 +208,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### 谷歌DeepMind一口气解决9道埃尔德什数学难题
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-27/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-27/research-00.jpg)
 
 
 **是什么**：DeepMind团队利用AI成功证明9道埃尔德什提出的未解数学问题，其中包括一道自1970年以来悬而未决的难题，困扰数学家56年。该成果未公开具体方法细节，但被定性为AI在严格数学推理领域的重大突破。
@@ -221,7 +221,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### AI幻觉引用正渗入临床指南，研究者警告
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-27/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-27/research-01.jpg)
 
 
 **是什么**：一项对2000多篇论文的审计发现，AI生成的虚假引用开始出现在那些影响临床指南的医学综述和系统评价中。这些不存在的参考文献可能被医生或政策制定者误认为真实证据，进而影响诊疗决策。
@@ -234,7 +234,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### Together AI开源OSCAR：2比特KV缓存量化系统
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-27/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-27/research-02.jpg)
 
 
 **是什么**：Together AI发布了OSCAR（离线谱协方差感知旋转），一种INT2（2比特）KV缓存量化方法，专为长上下文LLM推理设计。通过离线谱协方差分析对KV缓存进行旋转和量化，将显存占用降低数倍，同时保持推理质量。
@@ -247,7 +247,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### LLM睡眠似固化机制论文引发热议
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-27/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-27/research-03.jpg)
 
 
 **是什么**：arXiv上出现一篇论文，提出一种模仿动物睡眠过程的机制——让LLM在“休息”阶段对已学知识进行重放和巩固，以提升长期推理能力。该方法将训练后的模型进入一个离线“睡眠”循环，重复激活关键记忆模式，类似生物记忆固化。
@@ -260,7 +260,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### 卡帕西加入Anthropic任技术员工
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-05-27/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-05-27/research-04.jpg)
 
 
 **是什么**：AI领域知名学者、前特斯拉AI总监、OpenAI创始研究员Andrej Karpathy正式加入Anthropic，担任Member of Technical Staff。消息由Anthropic官方确认，引发广泛关注。
@@ -283,7 +283,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### Microsoft Copilot Cowork存在文件外泄风险
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-27/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-27/product-00.jpg)
 
 
 安全公司PromptArmor披露，微软Copilot Cowork存在设计缺陷：恶意用户可通过特制提示词诱导代理系统，将目标用户的文件内容发送至外部服务器，实现无授权外泄。该漏洞根源在于代理执行逻辑未严格隔离用户上下文与系统权限，且缺乏针对代理行为的实时审计机制。对于已部署Copilot Cowork的企业，这意味着文件安全边界被意外突破。这一事件为所有集成AI代理的产品提了个醒——安全设计不能只关注模型输出，必须覆盖代理交互的每一个环节。
@@ -292,7 +292,7 @@ Stable Audio 3家族包含小和中等规模的开源权重，可在MacBook上�
 
 ### DuckDuckGo安装量飙升30%，用户逃离Google AI搜索
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-27/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-27/product-01.jpg)
 
 
 Google I/O后全面推行AI搜索，搜索结果摘要、对话式界面等特性引发部分用户反感。DuckDuckGo应用安装量环比激增30%，后者主打隐私保护和无AI干扰的搜索体验。这证明在AI普惠进程中，“不做AI”反而成为差异化卖点。对产品经理而言，这是一个信号：用户对AI的接受度并非普适，保留传统模式或提供“降级”选项可能成为获客策略。
@@ -301,7 +301,7 @@ Google I/O后全面推行AI搜索，搜索结果摘要、对话式界面等特�
 
 ### AWS MCP服务器正式可用，支持IAM权限
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-27/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-27/product-02.jpg)
 
 
 AWS宣布MCP（模型上下文协议）服务器全面可用，允许AI代理通过标准API调用云资源，并内置IAM权限控制。这意味着开发者无需自建复杂的安全中间件，即可让AI agent安全操作S3、Lambda等服务。MCP作为Anthropic提出的开放协议，正被云厂商广泛采纳。对于使用AWS构建agentic产品的团队，这是降低集成成本和权限管理风险的关键一步。
@@ -310,7 +310,7 @@ AWS宣布MCP（模型上下文协议）服务器全面可用，允许AI代理通
 
 ### AI短剧出海订单预计暴增50倍
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-27/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-27/product-03.jpg)
 
 
 受AI生成剧本、换脸、配音等技术驱动，面向海外市场的短剧定制需求爆发。目前成片产出同比增5倍，全年订单预计暴增50倍，单集收益比国内高出40%。AI降低了制作成本与语言转换门槛，让中小内容团队也能参与全球化分发。不过需注意版权风险与内容合规问题——海外平台的监管力度不亚于国内。
@@ -325,7 +325,7 @@ AWS宣布MCP（模型上下文协议）服务器全面可用，允许AI代理通
 
 ### Hugging Face发布3D打印人形腿项目
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-27/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-27/product-05.jpg)
 
 
 Hugging Face开源了一套3D打印人形机器人腿部设计，总成本约2500美元，包含电机、传动和控制器。项目旨在降低机器人实验的门槛，让更多开发者可以复现和改造行走算法。虽然这更偏向硬件，但结合Hugging Face的AI模型生态，可成为“具身智能”实验的入门平台。对于关注AI与机器人结合的产品团队，这是低成本获取实验硬件的机会。
@@ -354,7 +354,7 @@ Hugging Face开源了一套3D打印人形机器人腿部设计，总成本约250
 
 ### 中国收紧AI研究人员出境管控：人才不再自由流动
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-27/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-27/opinion-01.jpg)
 
 
 是什么：据the-decoder报道，中国已要求顶尖AI研究人员在离开中国前必须获得政府许可，旨在防止关键技术和知识外流。
@@ -367,7 +367,7 @@ Hugging Face开源了一套3D打印人形机器人腿部设计，总成本约250
 
 ### Paul Graham：AI生成的创始人邮件“像在撒谎”
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-27/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-27/opinion-02.jpg)
 
 
 是什么：Y Combinator联合创始人Paul Graham公开批评越来越多创始人使用AI撰写邮件，惯用“硬核新闻风格”给自己贴金，读起来让他感觉被欺骗。
@@ -380,7 +380,7 @@ Hugging Face开源了一套3D打印人形机器人腿部设计，总成本约250
 
 ### 加州拟豁免Linux年龄验证法案：开源社区的又一次胜利
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-27/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-27/opinion-03.jpg)
 
 
 是什么：加州一项要求操作系统收集用户年龄的法案曾引发强烈反对，尤其Linux社区认为这会破坏开源生态。最新修正案提出豁免Linux等开源OS。
@@ -393,7 +393,7 @@ Hugging Face开源了一套3D打印人形机器人腿部设计，总成本约250
 
 ### Uber高管：AI token支出越来越难证明回报
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-27/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-27/opinion-04.jpg)
 
 
 是什么：Uber COO Andrew Macdonald承认，公司对AI（尤其是token消耗）的投入需要更清晰的商业回报，投资者耐心正在耗尽。
@@ -416,7 +416,7 @@ Hugging Face开源了一套3D打印人形机器人腿部设计，总成本约250
 
 ### Starlette高危漏洞：百万AI代理暴露远程控制风险
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-27/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-27/opensource-00.jpg)
 
 
 **是什么**：安全研究人员在Python异步web框架Starlette中发现一个严重漏洞（CVE编号尚未公开），攻击者可通过精心构造的Host头绕过验证，实现对运行中的AI代理进行远程控制。该库被大量LLM服务、AI代理框架（如LangChain、AutoGPT相关项目）作为底层依赖使用。
@@ -429,7 +429,7 @@ Hugging Face开源了一套3D打印人形机器人腿部设计，总成本约250
 
 ### 微软开源Agent治理工具包：应对OWASP Agentic Top 10
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-27/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-27/opensource-01.jpg)
 
 
 **是什么**：微软发布Agent-Governance-Toolkit，一套面向agentic AI系统的安全与治理工具集合，涵盖策略引擎、零信任身份绑定、执行沙箱、审计日志等模块。
@@ -442,7 +442,7 @@ Hugging Face开源了一套3D打印人形机器人腿部设计，总成本约250
 
 ### Anthropic开源知识工作插件：Claude Cowork的专属扩展
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-27/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-27/opensource-02.jpg)
 
 
 **是什么**：Anthropic开源knowledge-work-plugins仓库，为Claude Cowork（其企业协作AI）提供面向知识工作者的插件，包括文档协作、任务管理、数据库查询等。
@@ -455,7 +455,7 @@ Hugging Face开源了一套3D打印人形机器人腿部设计，总成本约250
 
 ### OmniVoice Studio开源：本地化语音克隆替代ElevenLabs
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-27/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-27/opensource-03.jpg)
 
 
 **是什么**：OmniVoice Studio是一款完全离线的语音合成与处理工具，支持语音克隆、视频配音、实时听写，覆盖646种语言，采用开源协议发布。
@@ -468,7 +468,7 @@ Hugging Face开源了一套3D打印人形机器人腿部设计，总成本约250
 
 ### Garry Tan公开Claude Code配置Gstack：CEO角色的AI工作流
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-27/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-27/opensource-04.jpg)
 
 
 **是什么**：YC总裁Garry Tan开源其个人Claude Code配置项目Gstack，包含23个工具定义，集成了CEO、设计师、工程经理等不同角色的Agent行为模式。
@@ -481,7 +481,7 @@ Hugging Face开源了一套3D打印人形机器人腿部设计，总成本约250
 
 ### Hugging Face开源3D打印人形腿：机器人研究民主化
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-27/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-27/opensource-05.jpg)
 
 
 **是什么**：Hugging Face发布了一款开源的双足机器人腿设计，所有文件（CAD、BOM、控制代码）均免费提供，总材料成本约2500美元（不含电机），支持FDM 3D打印。

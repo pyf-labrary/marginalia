@@ -33,7 +33,7 @@ sections:
 
 ### Thinking Machines 发布 975B 开源多模态模型 Inkling
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-07-16/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-07-16/model_release-00.jpg)
 
 
 **是什么**：Thinking Machines Lab 发布开源多模态模型 Inkling，参数量达 975B，支持视频与音频理解，是其迄今最大开源模型，目标对标 Anthropic 的 Claude 和 OpenAI 的 GPT 系列。  
@@ -44,7 +44,7 @@ sections:
 
 ### Bonsai 27B：可在手机上运行的开源推理模型
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-07-16/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-07-16/model_release-01.jpg)
 
 
 **是什么**：PrismML 发布 Bonsai 27B，一个基于 Qwen3.6-27B 的低比特量化开源推理模型，采用 Apache 2.0 许可，可在 iPhone 等移动设备上本地运行。  
@@ -55,7 +55,7 @@ sections:
 
 ### 阿里发布实时语音大模型 Qwen-Audio-3.0-Realtime
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-07-16/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-07-16/model_release-02.jpg)
 
 
 **是什么**：阿里巴巴发布 Qwen-Audio-3.0-Realtime 实时语音交互模型，在智商、工具调用、共情能力和双工流畅度上全面升级。  
@@ -66,7 +66,7 @@ sections:
 
 ### Soofi 发布开源混合 Mamba-Transformer MoE 模型
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-07-16/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-07-16/model_release-03.jpg)
 
 
 **是什么**：Soofi 联合体发布 Soofi S 30B-A3B，一个面向德语和英语的开源基础模型，采用 Mamba-Transformer 混合架构和 MoE（混合专家），激活参数仅 3.2B。  
@@ -85,7 +85,7 @@ sections:
 
 ### Meta 被诉使用 AI 筛选裁员，涉及歧视
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-07-16/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-07-16/company-00.jpg)
 
 
 26名前员工起诉Meta，指控公司在2022-2023年裁员期间使用AI系统自动筛选出有医疗问题和残疾的员工，而非由人类管理者决策。原告称算法将健康记录与绩效数据混合分析，导致特定群体被裁比例异常。Meta否认指控，表示裁员决策由人类复核。此案可能成为判定AI在人力资源中责任边界的判例。
@@ -94,7 +94,7 @@ sections:
 
 ### DeepSeek 新一轮融资启动，估值4800亿
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-07-16/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-07-16/company-01.jpg)
 
 
 距首轮7亿美元融资仅数周，DeepSeek再次开启融资，估值暴涨37%至4800亿人民币（约合665亿美元）。资金用途未披露，但消息称最快明年启动IPO。这一速度刷新了中国AI公司的估值增长纪录，反映出投资人对大模型赛道头部玩家的争夺正在白热化。
@@ -103,7 +103,7 @@ sections:
 
 ### Anthropic和Blackstone联手推出企业AI服务Ode
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-07-16/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-07-16/company-02.jpg)
 
 
 Ode是一家由Anthropic和私募巨头Blackstone共同支持的企业AI实施公司，核心策略是为客户“嵌入”AI工程师团队，而非单纯售卖模型API。Anthropic提供技术底座，Blackstone提供客户关系和资本。其逻辑是：企业AI采用的最大瓶颈在于落地，而非模型能力。
@@ -112,7 +112,7 @@ Ode是一家由Anthropic和私募巨头Blackstone共同支持的企业AI实施�
 
 ### Apple Intelligence获准在华推出，合作阿里巴巴Qwen
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-07-16/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-07-16/company-03.jpg)
 
 
 苹果与阿里巴巴达成协议，Apple Intelligence将使用Qwen模型在中国市场运行，已获得监管批准。这标志着Apple Intelligence首次进入全球最大的智能手机市场，也是苹果在中文AI能力上首次选择外部模型供应商。对阿里巴巴来说，这意味着其AI技术被苹果生态系统背书，商业价值巨大。
@@ -121,7 +121,7 @@ Ode是一家由Anthropic和私募巨头Blackstone共同支持的企业AI实施�
 
 ### 印度AI编码公司Emergent获1.3亿美元成独角兽
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-07-16/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-07-16/company-04.jpg)
 
 
 成立仅一年多的印度AI编码初创公司Emergent宣布完成1.3亿美元融资，估值超20亿美元。公司声称已有20万付费客户、年化收入达1.2亿美元，专注于让开发者用自然语言生成代码。它在印度本土市场快速增长，并开始拓展北美客户，显示出AI编码工具赛道在垂直应用层仍有爆发力。
@@ -130,7 +130,7 @@ Ode是一家由Anthropic和私募巨头Blackstone共同支持的企业AI实施�
 
 ### OpenAI反击苹果商业秘密诉讼
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-07-16/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-07-16/company-05.jpg)
 
 
 苹果此前指控OpenAI窃取其在硬件设计上的商业秘密，OpenAI最新发表声明称“苹果的诉讼缺乏依据”。两家公司的专利和商业机密纠纷已持续数月，此次反击是OpenAI首次正式回应。尽管双方都是AI领域的重要参与者，诉讼可能影响未来的人才流动和生态合作。
@@ -139,7 +139,7 @@ Ode是一家由Anthropic和私募巨头Blackstone共同支持的企业AI实施�
 
 ### 微软借助AI修补创纪录570个安全漏洞
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-07-16/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-07-16/company-06.jpg)
 
 
 微软本月Patch Tuesday修复了创纪录的570个安全漏洞，其中部分是通过AI工具发现或自动修补的。尽管未披露具体数量，微软表示AI已在漏洞扫描、漏洞分类和修复建议中发挥作用。这一数字反映出软件供应链的复杂性仍在上升，而AI正从“产生漏洞”转向“修补漏洞”。
@@ -148,7 +148,7 @@ Ode是一家由Anthropic和私募巨头Blackstone共同支持的企业AI实施�
 
 ### Rime获2400万美元A轮融资，助力企业客服电话自动化
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-07-16/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-07-16/company-07.jpg)
 
 
 Rime是一家专注于企业客服电话自动化的AI初创公司，每月处理超过1亿通呼叫。其A轮融资2400万美元，用于扩大基于语音的AI客服能力。它瞄准的痛点是：企业大量重复性客服电话仍然需要人工，而Rime用端到端语音模型实现替代。融资热度显示，AI在垂直客服场景的商业变现已经跑通。
@@ -175,7 +175,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### GPT-5.6 Sol：90 分钟推翻 30 年统计学猜想
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-07-16/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-07-16/research-01.jpg)
 
 
 **是什么**：据报道，GPT-5.6 Sol（OpenAI 的数学推理增强版本）成功反驳了一个困扰统计学家 30 年的猜想，用时仅 90 分钟。
@@ -198,7 +198,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### IBM 发布模型路由研究：简单问题不简单
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-07-16/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-07-16/research-03.jpg)
 
 
 **是什么**：IBM Research 在 HuggingFace 上发表博客，探讨模型路由（Model Routing）——即在不同 LLM 之间动态切换以优化成本与质量的实际挑战。
@@ -211,7 +211,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### HuggingFace 分享构建 Agent “Shippy” 的经验
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-07-16/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-07-16/research-04.jpg)
 
 
 **是什么**：Allen AI 团队在 HuggingFace 博客上复盘了构建智能体 “Shippy” 的全过程，从架构设计到部署运维。
@@ -224,7 +224,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### NVIDIA 提出 AI 基础设施效率核心指标：每瓦性能
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-07-16/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-07-16/research-05.jpg)
 
 
 **是什么**：NVIDIA 官方博客强调，对于 AI 工厂（AI Factory）而言，性能每瓦（Performance per Watt）才是衡量盈利能力的终极指标，而非单纯的峰值算力。
@@ -247,7 +247,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### 可验证 AI 推理：确保模型输出可信的方案
 
-![research-07.jpg](/marginalia/assets/img/ai-hot/2026-07-16/research-07.jpg)
+![research-07.jpg](/assets/img/ai-hot/2026-07-16/research-07.jpg)
 
 
 **是什么**：一篇博客提出“可验证 AI 推理”的概念，利用密码学方法（如零知识证明、可验证计算）保证 LLM 的输出结果真实无误、且未被篡改。
@@ -270,7 +270,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### OpenAI 推出首款硬件：Codex Micro 键盘
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-07-16/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-07-16/product-00.jpg)
 
 
 **是什么**：OpenAI 发布其首款贴牌硬件产品 Codex Micro，一款专门为编程代理（agentic coding）设计的发光键盘。键盘可实时显示并切换多个 AI 智能体线程状态。
@@ -283,7 +283,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Apple 开放 iOS 27 公测，全新 Siri AI 全面推送
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-07-16/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-07-16/product-01.jpg)
 
 
 **是什么**：Apple 向所有用户开放 iOS 27 公测版，集成 AI 增强版 Siri，并搭载多项智能功能。
@@ -296,7 +296,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Google 图像搜索 25 周年升级：AI 个性化画廊
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-07-16/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-07-16/product-02.jpg)
 
 
 **是什么**：Google 为庆祝图像搜索上线 25 周年，推出基于用户兴趣的 AI 动态画廊功能。
@@ -309,7 +309,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### OpenAI Codex 开始加密代理间指令，开发者无法监控
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-07-16/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-07-16/product-03.jpg)
 
 
 **是什么**：OpenAI 在 Codex 系统中引入端到端加密，保护 AI 智能体之间的内部通信，开发者将无法查看代理间委托与指令内容。
@@ -322,7 +322,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Anthropic 推出 Claude for Teachers，承诺不训练学生数据
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-07-16/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-07-16/product-04.jpg)
 
 
 **是什么**：Anthropic 发布面向教师的 Claude 教育定制版本，明确宣布不会使用学生数据进行模型训练。
@@ -335,7 +335,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Spotify 测试 Premium 用户与音乐播放器聊天
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-07-16/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-07-16/product-05.jpg)
 
 
 **是什么**：Spotify 在最新 beta 版本中允许 Premium 用户通过自然语言对话控制音乐播放，探索 AI 音乐交互新形态。
@@ -348,7 +348,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Reelful 利用 AI 将相册视频自动剪辑为短视频
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-07-16/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-07-16/product-06.jpg)
 
 
 **是什么**：新应用 Reelful 使用 AI 从用户相机胶卷中自动提取素材，生成适配 Instagram、TikTok 等平台的短视频。
@@ -379,7 +379,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### 纽约州暂停数据中心建设：政策风向标
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-07-16/opinion-00.jpg)
 
 
 **是什么**：纽约州签署行政令，暂停审批新建数据中心，为期一年，以评估其对能源、环境和社区的影响。  
@@ -403,7 +403,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Vint Cerf 要为 AI 代理定义“互联网协议”
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-07-16/opinion-03.jpg)
 
 
 **是什么**：TCP/IP 联合发明者 Vint Cerf 正在推动为 AI 代理制定开放互联网标准，旨在让 agentic 系统像人类浏览器一样在开放网络上自主行动。  
@@ -413,7 +413,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### AI 工程趋势：从构建智能体到构建智能体系统
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-07-16/opinion-04.jpg)
 
 
 **是什么**：2026 AIE World's Fair 总结五大趋势，核心洞察是：行业正在从开发“单个 agent”转向构建“agent 系统”——包括编排、监控、记忆共享和故障恢复。  
@@ -423,7 +423,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Lorde 说 AI 眼镜“不性感”：文化层面的逆风
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-07-16/opinion-05.jpg)
 
 
 **是什么**：歌手 Lorde 在公开活动中直言 AI 眼镜“not sexy”，质疑其让人际互动失真。  
@@ -433,7 +433,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### AI 还不如婴儿聪明？从认知科学看瓶颈
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-07-16/opinion-06.jpg)
 
 
 **是什么**：Wired 文章对比了当前多模态大模型与婴儿的认知能力，指出婴儿在学习效率、因果推理、物理直觉上远超 AI。  
@@ -443,7 +443,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Anthropic 广告引发不适：恐惧营销的反噬
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-07-16/opinion-07.jpg)
 
 
 **是什么**：Anthropic 投放的新广告刻意渲染 AI 危险场景（如失控机器人），以突出自身“负责任”定位，却在社交媒体上引发“利用恐惧”的批评。  
@@ -463,7 +463,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Google 发布 LiteRT.js：浏览器中运行 .tflite 模型
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-07-16/opensource-00.jpg)
 
 
 **是什么**：LiteRT.js 是 Google 为 LiteRT（前身 TensorFlow Lite）新推出的 JavaScript 库，利用 WebGPU API 在浏览器中直接加载并推理 .tflite 模型。它不依赖服务器，所有计算在客户端完成。
@@ -476,7 +476,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Linux 基金会启动 Akrites 项目，保护开源软件免于 AI 威胁
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-07-16/opensource-01.jpg)
 
 
 **是什么**：Linux 基金会旗下 TAC（技术顾问委员会）宣布启动 Akrites 项目，旨在利用 AI 技术检测并防御针对关键开源软件的网络攻击。项目名称源于拜占庭的边境守卫部队。
@@ -499,7 +499,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Hallmark：反 AI 设计风格技能，让代码不像 AI 生成的
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-07-16/opensource-03.jpg)
 
 
 **是什么**：Hallmark 是一个针对 Claude Code、Cursor、Codex 的设计技能（Design Skill），它指导 AI 生成代码时避开典型的“AI 味”——比如过度注释、变量命名中式英语、文件结构扁平化。
@@ -512,7 +512,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### destructive_command_guard：防止 AI 代理执行破坏性命令
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-07-16/opensource-04.jpg)
 
 
 **是什么**：destructive_command_guard（简称 dcg）是一个轻量级工具，可在 AI 代理执行 shell 或 git 命令前进行拦截，检测并阻止高风险操作（如 `git push --force`、`rm -rf /*`）。
@@ -525,7 +525,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### OpenCut：开源 CapCut 替代，支持视频编辑
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-07-16/opensource-05.jpg)
 
 
 **是什么**：OpenCut 是一个基于 Tauri + React 的开源视频编辑器，旨在提供与字节跳动 CapCut 类似的免费功能，包括时间线剪辑、滤镜、字幕和导出。
@@ -538,7 +538,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Domain SDK 0.2.0：统一管理多个平台的域名
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-07-16/opensource-06.jpg)
 
 
 **是什么**：OpenCoreDev 发布 Domain SDK 0.2.0，一个 TypeScript SDK，支持在一个 API 中同时管理 Vercel、Cloudflare、AWS Route53、Netlify 和 Namecheap 上的域名，包括添加、验证、删除操作。
@@ -551,7 +551,7 @@ DeepSeek的融资速度比它的模型迭代还快，而Meta的AI裁员官司则
 
 ### Google 发布官方 Agent Skills 集合
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-07-16/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-07-16/opensource-07.jpg)
 
 
 **是什么**：Google 在 GitHub 上推出 `skills` 仓库，提供一系列适用于 Google 产品和技术的可复用智能体技能，涵盖 Google Workspace（Gmail、Calendar）、Cloud（BigQuery、Vertex AI）以及 Maps 等。

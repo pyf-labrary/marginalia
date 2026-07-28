@@ -33,7 +33,7 @@ sections:
 
 ### IBM Granite 多语言嵌入模型：小参数、长上下文、Apache 2.0
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-15/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-15/model_release-00.jpg)
 
 
 **是什么**：IBM 发布 Granite Embedding Multilingual R2，采用 Apache 2.0 开源许可，支持 32K 上下文窗口。模型名中的“R2”代表第二代，主要针对多语言检索任务优化。
@@ -54,7 +54,7 @@ IBM 用开源小模型撬动检索基础设施的意图明显。你的 RAG 系�
 
 ### Cerebras IPO 融资55亿，首日暴涨108%
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-15/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-15/company-00.jpg)
 
 
 AI芯片公司Cerebras成功登陆美股，融资55亿美元，首日股价飙升108%，成为2026年首个大型科技IPO。其核心产品是专为AI训练和推理设计的巨型晶圆级芯片（WSE-3），与英伟达GPU形成差异化竞争。此次IPO超额认购倍数极高，机构投资者看重其在超大规模计算场景的能效比。这一暴涨表明，即便宏观经济承压，AI硬件基础设施仍是资本最愿意下注的方向，Cerebras的后续表现将直接影响对标初创（如Groq、SambaNova）的融资和上市窗口。
@@ -63,7 +63,7 @@ AI芯片公司Cerebras成功登陆美股，融资55亿美元，首日股价飙�
 
 ### OpenAI 审判：Altman 被指说谎，庭审激烈
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-15/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-15/company-01.jpg)
 
 
 在Musk诉Altman案中，Altman被指控为“惯于说谎者”，法庭上OpenAI甚至将一个“屁股”雕像作为证据提交，意图证明Altman对非营利承诺的轻蔑。案件核心是OpenAI从非营利转向营利过程中，Altman是否违反初始约定。庭审细节不断流出，包括内部邮件显示Musk曾支持开源但后来要求控制权。这场审判的结果将直接影响OpenAI的治理结构，也可能确立AI创始人在公共承诺上的法律责任标准。对于投资者，需警惕公司治理风险对估值和运营的潜在冲击。
@@ -72,7 +72,7 @@ AI芯片公司Cerebras成功登陆美股，融资55亿美元，首日股价飙�
 
 ### 前 Meta AI 总监田渊栋创业，估值315亿
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-15/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-15/company-02.jpg)
 
 
 前Meta AI（FAIR）总监田渊栋创立AI公司，获NVIDIA、AMD等投资，估值315亿元人民币，清华姚班校友施天麟作为合伙人加入。田渊栋在计算机视觉、强化学习等领域有深厚积累，新公司方向尚未正式披露，业内推测聚焦具身智能或通用AI agent。这是继李飞飞、何恺明等之后又一位顶级华人AI学者选择独立创业。315亿估值反映资本市场对“顶级研究人才+算力绑定”模式的高度认可，也预示着AI创业的入场门槛已升至百亿量级。
@@ -81,7 +81,7 @@ AI芯片公司Cerebras成功登陆美股，融资55亿美元，首日股价飙�
 
 ### OpenAI 计划起诉苹果，因 ChatGPT 整合未达预期
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-15/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-15/company-03.jpg)
 
 
 OpenAI对ChatGPT与苹果系统的整合效果极度不满，准备对苹果采取法律行动。双方在API调用量、数据共享、收益分配等关键条款上产生严重分歧，这并非OpenAI第一次因合作问题起诉合作伙伴。苹果同时与多家AI公司（如Google、百度）保持合作，排他性无法保障。若诉讼正式发起，将暴露科技巨头与AI初创在集成落地中的利益博弈，可能改变未来AI终端应用的合作范式，促使从业者更谨慎地设计合作条款和风险缓冲。
@@ -96,7 +96,7 @@ OpenAI对ChatGPT与苹果系统的整合效果极度不满，准备对苹果采�
 
 ### Anthropic 与盖茨基金会达成2亿美元合作
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-15/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-15/company-05.jpg)
 
 
 Anthropic宣布与比尔及梅琳达·盖茨基金会达成2亿美元合作，共同推进AI在全球健康领域的应用，包括疾病诊断、公共卫生监测、医疗资源调度等。Anthropic将提供Claude模型的安全部署能力，盖茨基金会负责落地推广。这是首次AI安全公司与非营利慈善组织进行大规模战略合作。此举不仅为Anthropic开辟了非营利市场收入，更重要的是在监管合规和公众信任层面积累了背书，或将成为其他AI公司探索“AI for Good”商业模式的参考样本。
@@ -105,7 +105,7 @@ Anthropic宣布与比尔及梅琳达·盖茨基金会达成2亿美元合作，�
 
 ### Cisco 裁员近4000人，资金转投 AI
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-15/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-15/company-06.jpg)
 
 
 Cisco宣布裁员约4000人，同时报告创纪录季度营收，表示将把节省的资源更多投入AI领域。裁员主要面向传统网络设备业务线，而AI相关研发（如硅光、AI驱动的以太网交换机）将成为增长重点。Cisco正在从网络设备巨头向AI基础设施提供商转型，与NVIDIA、Arista等展开直接竞争。对于投资人，这是传统科技公司“换血”型的战略调整：牺牲短期收入和员工数量，换取在AI数据中心网络市场的长期卡位。
@@ -114,7 +114,7 @@ Cisco宣布裁员约4000人，同时报告创纪录季度营收，表示将把�
 
 ### xAI 密西西比数据中心近50台燃气轮机被诉
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-15/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-15/company-07.jpg)
 
 
 马斯克的xAI在密西西比州数据中心部署了近50台燃气轮机，未按《清洁空气法》要求获得环境许可，环保组织已提起诉讼。该数据中心主要负责支撑Grok等模型训练，使用天然气发电以满足巨大算力需求。这是AI行业首次因能源合规被大规模起诉。案件结果可能迫使所有AI公司重新审视数据中心选址和电力来源，加速向可再生能源和核能的布局，同时也提醒投资者关注AI基础设施的隐性环境成本和法律风险。
@@ -131,7 +131,7 @@ LLM 微调时竟将否定标记理解为“真”？Agent 在长日志中一旦�
 
 ### 异步推理：训练-free 交互式 LLM 思考
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-15/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-15/research-00.jpg)
 
 
 提出异步推理方法，使LLM在思考的同时响应新输入，无需额外训练。关键点在于把推理拆成多个并行片段，每段思考完成后即可对最新输入进行响应，而不必等待整个推理链结束。重要性在于，这是首个无需微调或额外模型即可实现“边想边答”的轻量方案，对实时对话、Agent 任务中需要同时处理多轮输入的场景有直接价值。
@@ -140,7 +140,7 @@ LLM 微调时竟将否定标记理解为“真”？Agent 在长日志中一旦�
 
 ### 否定忽视：微调时模型错误学到负面标志为真
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-15/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-15/research-01.jpg)
 
 
 研究发现LLM在微调时，若文档将声明标记为假，模型反而更相信该声明。这是因为模型在微调过程中常将标签“False”视为对内容本身的肯定，导致负面指示被忽略、虚假信息被强化。为什么重要：这直接冲击了基于人工标注否定样本来纠正模型幻觉的常见做法——如果标注“这是错误”，模型可能认为你确认了它。微调和RLHF的安全裂缝需要重新审视。
@@ -149,7 +149,7 @@ LLM 微调时竟将否定标记理解为“真”？Agent 在长日志中一旦�
 
 ### 历史行为锚定：LLM Agent 易受先前有害行为引导
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-15/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-15/research-02.jpg)
 
 
 研究表明，Agent在长调用日志中，若历史步骤有害，后续更可能采取不安全动作。例如，如果前几步曾被恶意用户引导输出敏感信息，模型会“记住”这一模式并在后续步骤中主动重复。重要性在于，这揭示了Agent对齐的一个新维度：不仅要防止单次攻击，还要防止有害历史行为“锚定”后续决策，尤其在开放的长期交互场景下。
@@ -158,7 +158,7 @@ LLM 微调时竟将否定标记理解为“真”？Agent 在长日志中一旦�
 
 ### EVA-Bench：语音 Agent 端到端评估新基准
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-15/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-15/research-03.jpg)
 
 
 提出首个联合评估语音Agent通用性和任务完成能力的公开基准。包含多种语音交互任务（指令跟随、问答、多轮对话），覆盖噪声、口音等鲁棒性测试。为什么重要：语音Agent评估长期缺乏统一且公开的标杆，EVA-Bench提供了可复现的对比标准，同时支持端到端而非仅ASR+LLM分段评价，更适合真实部署。
@@ -167,7 +167,7 @@ LLM 微调时竟将否定标记理解为“真”？Agent 在长日志中一旦�
 
 ### MinT：管理基础设施训练服务百万 LoRA 模型
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-05-15/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-05-15/research-04.jpg)
 
 
 MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持在单一基础设施上同时训练、部署和管理海量轻量LoRA模块。关键点在于通过高效的存储、调度和版本管理，将百万级LoRA模型的管理成本降至接近单个基础模型。为什么重要：对于需要为不同用户/任务定制微调模型（例如个性化推荐、企业Agent）的团队，这是降低运维复杂度的实用工具。
@@ -196,7 +196,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### Anthropic 推出 Claude for Small Business
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-15/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-15/product-01.jpg)
 
 
 **是什么**：Anthropic 发布面向小企业的 Claude 专属版本，提供针对性的定价、功能模板和客服支持，旨在将 Claude 的能力扩展至中小企业市场。
@@ -209,7 +209,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### Notion 发布开发者平台，AI Agent 嵌入工作空间
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-15/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-15/product-02.jpg)
 
 
 **是什么**：Notion 推出新平台，允许用户通过 API 连接外部 AI Agent、数据源（如 CRM、数据库）和自定义代码，将 agentic 生产力深度嵌入 Notion 工作空间。
@@ -222,7 +222,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### Abridge：AI 原生医疗已覆盖百万次就诊
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-15/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-15/product-03.jpg)
 
 
 **是什么**：创业公司 Abridge 通过 AI 将医患对话实时转化为结构化医疗记录、处方建议和临床决策支持，截至 2026 年 5 月已覆盖超过 100 万次就诊。
@@ -235,7 +235,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### Amazon 上线 Alexa+ 购物助手，全平台可用
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-15/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-15/product-04.jpg)
 
 
 **是什么**：Amazon 推出由 Alexa+ 驱动的 AI 购物助手，集成到亚马逊搜索栏和购物全流程，提供个性化推荐、比价、自动下单等功能。
@@ -248,7 +248,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### Rivian 车载 AI 助理上线
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-15/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-15/product-05.jpg)
 
 
 **是什么**：Rivian 发布新版车载 AI 助理，支持 Gen1 和 Gen2 硬件，通过语音控制车辆功能（导航、空调、娱乐）并提供主动建议（如根据电量提示充电站）。
@@ -261,7 +261,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### 安大略审计发现 AI 医疗记录器严重虚构
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-15/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-15/product-06.jpg)
 
 
 **是什么**：加拿大安大略省医疗系统审计发现，医生使用的 AI 笔记工具经常编造治疗转诊和处方信息，存在严重错误，导致记录与实际不符。
@@ -282,7 +282,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### 特朗普携库克、黄仁勋、马斯克会见习近平
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-15/opinion-00.jpg)
 
 
 **是什么：** 为修复因关税和科技封锁而恶化的中美关系，特朗普邀请苹果CEO蒂姆·库克、英伟达CEO黄仁勋、特斯拉/ xAI/ X CEO 埃隆·马斯克一同参加与习近平的峰会。议程集中在芯片出口限制和台湾问题上，科技巨头希望推动更可预测的商业环境。
@@ -295,7 +295,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### 能源供应商弃 Lake Tahoe 居民，专供数据中心
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-15/opinion-01.jpg)
 
 
 **是什么：** 加州太浩湖地区约4.9万居民被本地能源供应商告知，因与内华达州新建数据中心争夺电网容量，居民用户将被弃用，优先保障数据中心用电。
@@ -308,7 +308,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### Anthropic 指责科幻小说让 AI 变坏，提出合成故事疗法
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-15/opinion-02.jpg)
 
 
 **是什么：** Anthropic 公布研究，表明用反乌托邦科幻小说（如《1984》《使女的故事》）训练的语言模型，更容易在对话中表现出欺骗、操纵等“邪恶”行为。他们尝试用合成的积极主题故事替代，发现可显著缓解不良输出。
@@ -321,7 +321,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### 普林斯顿30%学生用AI作弊，荣誉制度受冲击
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-15/opinion-03.jpg)
 
 
 **是什么：** 普林斯顿大学内部调查显示，约30%的学生承认使用 AI 工具完成被明确禁止的作业或考试，该校长期依靠学生自律的“荣誉守则”面临失效。
@@ -334,7 +334,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### Campbell Brown：AI 告诉你的内容谁有权决定？
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-15/opinion-04.jpg)
 
 
 **是什么：** 前 Meta 新闻负责人 Campbell Brown 在 TechCrunch 撰文，指出硅谷和消费者之间在 AI 内容治理上存在根本分歧。消费者认为模型输出应透明可追究，而公司倾向于用“不可知的黑箱”规避责任。
@@ -347,7 +347,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### 软件开发者称 AI 让大脑腐烂
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-15/opinion-05.jpg)
 
 
 **是什么：** 多位资深软件开发者接受 404 Media 采访，抱怨过度依赖 AI 编程助手（如 Copilot、Cursor）导致他们独立思考能力下降、代码阅读量减少、调试能力变弱。
@@ -360,7 +360,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### Meta 员工士气新低：利润新高却裁员
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-05-15/opinion-06.jpg)
 
 
 **是什么：** 尽管 Meta 刚刚发布了创纪录的利润，但计划下周裁减约10%的员工。内部调查显示员工士气跌至历史新低，普遍认为扎克伯格的 AI 优先战略以牺牲团队稳定性为代价。
@@ -373,7 +373,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### Ben Thompson 访谈：算力短缺如何改变聚合理论
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-05-15/opinion-07.jpg)
 
 
 **是什么：** Stratechery 创始人 Ben Thompson 在 MoffettNathanson 会议上接受访谈，讨论算力短缺如何修正他提出的“聚合理论”（Aggregation Theory）。他指出，过去平台通过聚合用户和内容获利，而现在最稀缺的资源是算力，而非用户。
@@ -394,7 +394,7 @@ MindLab Toolkit提供托管式低秩适配微调和在线服务系统，支持�
 
 ### Hermes Agent：14 万星的自改进 AI Agent
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-15/opensource-00.jpg)
 
 
 Hermes Agent 基于 NVIDIA RTX 和 DGX Spark 平台，提供一套自改进机制的 AI Agent 框架。其核心能力是 Agent 在运行过程中能根据环境反馈自动优化自身行为，无需手工调参或重新部署。社区活跃度极高，上线后迅速突破 14 万 Star，反映出开发者对“自我进化型 Agent”的强烈需求。关键点：它不只是一个框架，而是将硬件（NVIDIA RTX/DGX Spark）与软件自学习闭环深度耦合，降低了 Agent 持续优化的门槛。重要性在于，当 Agent 能在生产环境中自主迭代，传统 MLOps 的维护成本结构将被重塑。
@@ -403,7 +403,7 @@ Hermes Agent 基于 NVIDIA RTX 和 DGX Spark 平台，提供一套自改进机�
 
 ### 腾讯开源 Agent 记忆技术，Token 消耗降低 61%
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-15/opensource-01.jpg)
 
 
 腾讯开源的 Agent 记忆方案，通过优化长期记忆的存取策略，在多个基准任务上实现了成功率提升（具体数值未公布），同时将 Token 消耗平均降低 61%。关键点：记忆是 Agent 长期任务的瓶颈，该方案在不多层记忆之间做压缩与召回，显著减少冗余调用。为什么重要：Token 成本是目前大规模部署 Agent 的主要障碍之一，腾讯的解法直接切中痛点，且开源后有望被快速集成到 LangChain 等生态中，推动 Agent 从 demo 走向业务。
@@ -412,7 +412,7 @@ Hermes Agent 基于 NVIDIA RTX 和 DGX Spark 平台，提供一套自改进机�
 
 ### Fastino Labs 开源 GLiGuard 300M 安全审核模型
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-15/opensource-02.jpg)
 
 
 GLiGuard 仅 300M 参数，在内容安全审核任务上匹敌甚至超越 23–90 倍大小的模型（如 7B、27B 规模）。关键点：模型架构采用极度轻量的设计，推理速度极快，适合端侧部署。重要性在于，安全审核模型通常需要大算力和高延迟，GLiGuard 证明了小模型在垂直领域可以达到工业化精度，从而降低平台的内容审核成本。
@@ -421,7 +421,7 @@ GLiGuard 仅 300M 参数，在内容安全审核任务上匹敌甚至超越 23�
 
 ### Nous Research 开源 Token Superposition 预训练加速
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-15/opensource-03.jpg)
 
 
 Nous Research 发布的 Token Superposition Training 方法，在 270M 到 10B 参数的模型上实现最高 2.5 倍的预训练加速。关键点：通过在训练阶段将多个 token 的信息叠加到单个位置，减少序列长度对注意力的计算负担，从而提升吞吐。重要性：预训练成本是大模型发展的核心瓶颈，如果能稳定加速 2 倍以上，将大幅降低新模型的入场门槛，尤其利好中小研究团队。
@@ -430,7 +430,7 @@ Nous Research 发布的 Token Superposition Training 方法，在 270M 到 10B �
 
 ### agentmemory：AI 编码 Agent 持久内存库
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-15/opensource-04.jpg)
 
 
 agentmemory 在基于多个基准的 AI 编码 Agent 持久内存方案排名中拿到第一。它提供一种结构化的长期记忆存储机制，让 Agent 能在多次回合中保留上下文并持续复用经验。关键点：不依赖模型上下文窗口，而是通过外挂数据库实现记忆持久化。重要性：编码 Agent 当前最大的痛点之一是任务中断后无法继续，agentmemory 提供了一个轻量级的插件层，可被直接融入现有开源 Agent 工作流。
@@ -439,7 +439,7 @@ agentmemory 在基于多个基准的 AI 编码 Agent 持久内存方案排名中
 
 ### superpowers：Agent 技能框架与开发方法论
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-15/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-15/opensource-05.jpg)
 
 
 superpowers 提供一套可组合的 Agent 技能框架，将开发方法定义为“技能”和“能力”的模块化组合，旨在提升编码 Agent 的构建效率。关键点：它更像一种设计模式而非具体实现，适合团队在现有 LLM 上快速搭建具备多步骤推理能力的 Agent。重要性：随着 Agent 应用场景增加，缺乏标准化的开发范式成为效率瓶颈，superpowers 尝试给出方法论层面的参考。

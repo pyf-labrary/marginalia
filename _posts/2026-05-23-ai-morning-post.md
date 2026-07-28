@@ -33,7 +33,7 @@ sections:
 
 ### Gemini 3.5 深夜发布，4 倍速度节省 10 亿美元
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-23/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-23/model_release-00.jpg)
 
 
 **是什么**：谷歌在 I/O 后悄然推出 Gemini 3.5 模型，CEO 宣布性能大幅提升，推理速度比前代快 4 倍，同时预计可为谷歌节省超 10 亿美元运营成本。  
@@ -43,7 +43,7 @@ sections:
 
 ### Qwen3.7-Max 发布：百万 Token 上下文窗口
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-23/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-23/model_release-01.jpg)
 
 
 **是什么**：阿里云推出 Qwen3.7-Max，具备 1M Token 上下文窗口和扩展思考模式，定位最强 Agent 模型。  
@@ -53,7 +53,7 @@ sections:
 
 ### Cohere 发布 Command A+：218B 稀疏 MoE 模型可跑在 2 张 H100 上
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-05-23/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-05-23/model_release-02.jpg)
 
 
 **是什么**：Cohere 开源 Command A+，218B 参数的稀疏 MoE（Mixture of Experts）模型，支持 48 种语言，首次适配 Agentic workflow。  
@@ -63,7 +63,7 @@ sections:
 
 ### 微软 Fara1.5 浏览器 Agent 开源，性能超 Operator 和 Gemini
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-05-23/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-05-23/model_release-03.jpg)
 
 
 **是什么**：微软开源 Fara1.5 系列（4B/9B/27B），专注于浏览器和计算机控制 Agent。在 Online-Mind2Web 基准上超越 OpenAI Operator 和 Gemini 2.5 Computer Use。  
@@ -73,7 +73,7 @@ sections:
 
 ### 智谱代码生成速度达 400 tokens/s
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-05-23/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-05-23/model_release-04.jpg)
 
 
 **是什么**：智谱宣布在代码生成任务中达到每秒 400 tokens 的推理速度，自称“顶流最快”。  
@@ -93,7 +93,7 @@ sections:
 
 ### DeepSeek获700亿融资，Code团队由ACM金牌大神带队
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-23/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-23/company-00.jpg)
 
 
 **是什么：** DeepSeek宣布完成约700亿元人民币融资，资金将用于推进AGI优先策略，同时组建一支由ACM国际大学生程序设计竞赛金牌获得者领衔的代码团队。此外，公司宣布V4 Pro API价格永久下调。
@@ -106,7 +106,7 @@ sections:
 
 ### SpaceX IPO文件曝光，押注AI数据中心挑战巨头
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-23/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-23/company-01.jpg)
 
 
 **是什么：** SpaceX提交的S-1文件中透露，计划建设AI轨道数据中心，将计算单元部署在低地球轨道，以实现低延迟、高安全的AI推理服务。该计划被视为在Grok表现不佳后，公司决心在AI领域“翻身”的核心押注。
@@ -139,7 +139,7 @@ sections:
 
 ### Hark获7亿美元A轮融资，打造“通用”AI界面
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-23/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-23/company-04.jpg)
 
 
 **是什么：** 神秘AI初创公司Hark宣布完成7亿美元A轮融资，计划今年夏天推出多模态模型及配套硬件，旨在打造“通用”AI交互界面。
@@ -162,7 +162,7 @@ sections:
 
 ### 微软开始取消Claude Code许可证
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-23/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-23/company-06.jpg)
 
 
 **是什么：** 微软已开始通知部分客户，将停止提供Claude Code订阅服务。已购买用户将受到影响，具体补偿方案尚未公布。Claude Code是Anthropic的AI编程助手产品。
@@ -175,7 +175,7 @@ sections:
 
 ### Spotify与环球音乐达成AI翻唱/混音合作协议
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-23/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-23/company-07.jpg)
 
 
 **是什么：** Spotify与环球音乐集团（UMG）达成协议，允许Spotify Premium用户使用AI工具对UMG旗下歌曲进行翻唱和混音。生成的改编作品可在平台内播放，艺术家将参与收入分成。
@@ -196,7 +196,7 @@ sections:
 
 ### 李飞飞团队发布空间智能ImageNet基准
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-23/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-23/research-00.jpg)
 
 
 **是什么：** 斯坦福李飞飞实验室联合多家机构发布全新基准 **3D-IntStructBench**（暂定名），专门评测具身智能体的空间理解能力，覆盖物体识别、姿态估计、空间关系推理等任务。目标是成为空间智能领域统一的“ImageNet”。
@@ -209,7 +209,7 @@ sections:
 
 ### AI首次证明数学难题被顶级期刊接收
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-23/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-23/research-01.jpg)
 
 
 **是什么：** OpenAI 发布论文称，其推理模型成功证明了组合数学领域知名的 **Erdős 问题**（涉及有限集合的极值性质），该证明已通过同行评审并被顶级数学期刊 *Combinatorica* 接收。这是 AI 首次独立完成、且被学术共同体认可的困难定理证明。
@@ -222,7 +222,7 @@ sections:
 
 ### 多流LLM架构：并行分离提示、思考与I/O
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-23/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-23/research-02.jpg)
 
 
 **是什么：** 伦敦大学学院团队提出 **Multi-Stream LLM**，将 Transformer 推理阶段拆分为三条并行流：Prompt Stream（处理用户输入）、Thought Stream（内部推理）、I/O Stream（与外部工具交互）。每条流由独立的注意力头和前馈网络负责，共享底层嵌入。
@@ -235,7 +235,7 @@ sections:
 
 ### 自演化Agent系统MOSS：通过源码级重写持续学习
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-23/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-23/research-03.jpg)
 
 
 **是什么：** 中科大与微软研究院联合发布 **MOSS** 框架，赋予 agent 在部署后自动修改自身代码的能力。与之前“基于环境反馈调整 prompt”不同，MOSS 直接重写函数体、新增方法或删改逻辑，属于真正的系统级自演化。
@@ -248,7 +248,7 @@ sections:
 
 ### Gated DeltaNet-2：线性注意力中解耦擦除与写入
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-05-23/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-05-23/research-04.jpg)
 
 
 **是什么：** 天津大学等团队改进线性注意力模型 **DeltaNet**，提出 **Gated DeltaNet-2**。关键创新在于引入两个独立的门控：一个控制从记忆中“擦除”旧信息的比例，另一个控制“写入”新信息的比例，类似 RNN 中 Forget Gate 与 Input Gate 的解耦。
@@ -261,7 +261,7 @@ sections:
 
 ### SONIC：超大规模人形机器人全身运动控制
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-05-23/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-05-23/research-05.jpg)
 
 
 **是什么：** 清华与星动纪元联合提出 **SONIC** 框架，实现人形机器人从“只动腿”到“全身协调运动”。该模型基于 diffusion policy，在仿真中同时控制全身 40+ 自由度（包括躯干、手臂、手指），并在真机（HIKERobot 双足人形）上成功迁移。
@@ -284,7 +284,7 @@ Spotify 今日连推两项 AI 功能，分别面向播客消费与有声书生�
 
 ### Spotify AI 播客摘要与问答：从被动听到主动问
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-23/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-23/product-00.jpg)
 
 
 Premium 用户可生成每日或每周播客简报，还能对任意播客就内容进行 AI 问答。关键点在于：它不是简单的文字转录摘要，而是结合音频语义理解的问答式交互。为什么重要？播客信息密度高但回溯困难，这个功能把“听”变成“问”，可能改变用户消费播客的习惯——从整集听完到按需获取。对于内容创作者，这也意味着需要重新设计播客结构（比如明确分段）以适配 AI 索引。
@@ -293,7 +293,7 @@ Premium 用户可生成每日或每周播客简报，还能对任意播客就内
 
 ### Spotify + ElevenLabs 有声书工具：AI 配音，不锁版权
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-23/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-23/product-01.jpg)
 
 
 作者可以用 AI 生成有声书，无需与平台签订独家授权协议。这在有声书市场是个微妙的变化——以往有声书制作往往涉及高成本的录音和版权独享，现在 ElevenLabs 的声音克隆质量足以让独立作者快速将文字作品转为音频。为什么重要？可能冲击传统有声书制作方的定价权，也让更多长尾内容（如博客合集、非虚构短篇）获得音频版本。Spotify 借此补充叙事类音频库，与播客形成互补。
@@ -302,7 +302,7 @@ Premium 用户可生成每日或每周播客简报，还能对任意播客就内
 
 ### OpenAI Appshots：Mac 窗口即 Codex 上下文
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-23/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-23/product-02.jpg)
 
 
 Codex 可以读取任何 Mac 应用窗口的内容（如浏览器、终端、设计工具），直接将所见转化为编码提示。本质上是把屏幕变成了大模型的“眼睛”。为什么重要？开发者不必再手动复制粘贴错误信息或 UI 截图，Codex 能实时理解当前工作场景。这对调试、原型生成、跨应用协作效率提升明显。但也带来隐私和权限边界的问题——用户需要主动授权窗口共享。
@@ -311,7 +311,7 @@ Codex 可以读取任何 Mac 应用窗口的内容（如浏览器、终端、设
 
 ### Anthropic MCP 隧道：内部代理的安全通道
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-23/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-23/product-03.jpg)
 
 
 MCP 隧道允许企业内部的私有代理通过加密通道安全访问内部系统，而不暴露公网端点。这是 Anthropic 在 agentic AI 基础架构上的落地：让 AI 代理像 VPN 服务一样安全连接数据库、API 和遗留系统。为什么重要？企业部署 AI 代理的核心障碍之一是安全合规，MCP 隧道提供了标准化的访问控制层。关注它如何与现有身份认证（如 OAuth、IAM）集成。
@@ -320,7 +320,7 @@ MCP 隧道允许企业内部的私有代理通过加密通道安全访问内部�
 
 ### ChatGPT PowerPoint 插件：效率工具，但可能误删内容
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-23/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-23/product-04.jpg)
 
 
 OpenAI 在 ChatGPT 中推出了原生 PowerPoint 插件，可以基于对话生成幻灯片或修改已有 PPT。但官方明确警告“可能意外删除内容”。关键点：这种“非确定性操作”在大模型接入文件编辑类 API 时很常见——模型对自己的修改范围没有精确认知。为什么重要？它展示了 AI 办公插件从生成式到编辑式的演进，但可靠性仍是硬伤。对于严肃办公场景，用户需要更明确的撤销机制和操作日志。
@@ -335,7 +335,7 @@ OpenAI 在 ChatGPT 中推出了原生 PowerPoint 插件，可以基于对话生�
 
 ### CopilotKit 重新定义 Agentic AI 堆栈
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-23/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-23/product-06.jpg)
 
 
 CopilotKit 推出了 AG-UI 协议和一套生产级架构，旨在标准化 AI agent 与 UI 组件的交互方式。关键点：它试图解决当前 agent 开发中“如何让 AI 操作前端界面”的碎片化问题，提供可复用的交互模式。为什么重要？当 AI 代理需要执行网页操作（如填写表单、点击按钮）时，缺少统一协议会导致大量定制开发。AG-UI 如果被广泛采用，可能成为 agent 时代的“React”——降低开发门槛。
@@ -344,7 +344,7 @@ CopilotKit 推出了 AG-UI 协议和一套生产级架构，旨在标准化 AI a
 
 ### 京东 618 AI 数字人直播晚会：消费场景的又一次试水
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-05-23/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-05-23/product-07.jpg)
 
 
 京东将举办全网首档 AI 数字人购物直播晚会，数字人演绎 IP 并与用户互动。虽然重要性评分最低，但它是国内电商在 AI 内容营销上的典型动作。关键点：数字人主播的制造成本已大幅降低，但用户接受度和转化效果仍需验证。为什么重要？这标志着 AI 数字人从“概念展示”走向“大型商业活动”，后续可能被天猫、拼多多等平台复制。对于产品经理，需要关注数字人带货的真实 ROI 与用户疲劳度。
@@ -363,7 +363,7 @@ AI 正在从文本渗透到音视频的生产与消费，播客、有声书、�
 
 ### 特朗普取消AI安全行政令：科技CEO冷落成导火索
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-23/opinion-00.jpg)
 
 
 特朗普原计划签署一项强制AI模型安全测试的行政令，但在多家头部AI公司CEO集体拒绝出席签署仪式后，他直接取消该命令，并公开称该行政令是“创新的阻碍”。这是白宫在AI监管立场上的重大退缩，也暴露了联邦层面缺乏统一协调的监管能力。对于行业而言，短期监管不确定性增加，但长期可能激发州级立法加速。
@@ -372,7 +372,7 @@ AI 正在从文本渗透到音视频的生产与消费，播客、有声书、�
 
 ### 加州签署全美首例AI工人保护行政令
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-23/opinion-01.jpg)
 
 
 加州州长纽森签署行政令，要求州政府机构评估AI对就业岗位的影响，并在裁员或自动化决策中优先保障工人权益。这是美国第一个针对AI导致失业的正式州级行动。关键点：要求企业披露使用AI替代岗位的计划；设立工人过渡基金；明确禁止“算法歧视”式裁员。为什么重要：加州作为科技产业腹地，其政策可能被其他州效仿，形成“监管底线竞赛”。
@@ -381,7 +381,7 @@ AI 正在从文本渗透到音视频的生产与消费，播客、有声书、�
 
 ### AI是未经授权的抄袭规模化？一篇博文引发的争论
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-23/opinion-02.jpg)
 
 
 开发者兼博主Axel Kee发布博文，直言AI生成内容本质是将他人作品“未经授权地规模化抄袭”。该文迅速获得高赞，并引发关于AI训练数据合理使用边界的讨论。关键点：认为AI模型只是大规模“重新混合”训练数据，而非真正理解；指出当前法律框架无法有效追责；主张AI公司应支付版权费。为什么重要：这篇观点在技术圈和创作者中引发共鸣，可能推动版权诉讼和舆论压力。
@@ -390,7 +390,7 @@ AI 正在从文本渗透到音视频的生产与消费，播客、有声书、�
 
 ### 内存短缺推高消费电子价格，廉价智能手机时代结束
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-23/opinion-03.jpg)
 
 
 AI大模型的训练和推理需求持续推高DRAM和NAND闪存价格，导致智能手机、PC等消费电子成本上升。关键点：主流智能手机厂商已上调中低端机型价格；8GB RAM成为入门配置已成历史，12GB起步；分析预计此轮涨价至少持续一年。为什么重要：对于产品经理和投资人而言，这意味着消费电子利润空间被压缩，终端市场可能迎来结构性分化——高端机更贵，低端机消失。
@@ -399,7 +399,7 @@ AI大模型的训练和推理需求持续推高DRAM和NAND闪存价格，导致�
 
 ### 美国NTSB阻止AI用户重建遇难飞行员声音
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-23/opinion-04.jpg)
 
 
 有用户利用NTSB公开的坠机调查文档，通过AI语音合成重建了遇难飞行员的语音，并发布在线。NTSB随即发函要求删除，称此举违反联邦规定，并可能干扰调查完整性。关键点：争议点在于公开文件是否允许被用于重建个人声音；AI语音技术的滥用风险显现。为什么重要：这起事件可能是“AI复活逝者”从娱乐走向法律纠纷的标志性案例，将推动对AI语音合成使用的立法。
@@ -408,7 +408,7 @@ AI大模型的训练和推理需求持续推高DRAM和NAND闪存价格，导致�
 
 ### 作者使用AI生成虚假引用仍坚持使用AI
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-05-23/opinion-05.jpg)
 
 
 作家Steven Rosenbaum的新书被指出包含AI编造的参考文献和引文，但他公开表示仍会继续使用AI辅助写作。关键点：他表示自己会“更小心地核查”，但坚持AI能提升效率；出版界对其缺乏诚信表示谴责。为什么重要：这暴露了AI在知识生产中的可信度危机，尤其对于依赖事实的行业（学术、新闻、出版），如何防止“幻觉污染”成为紧迫问题。
@@ -417,7 +417,7 @@ AI大模型的训练和推理需求持续推高DRAM和NAND闪存价格，导致�
 
 ### Steve Wozniak告诉毕业生：你们拥有人类智能，不是AI
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-05-23/opinion-06.jpg)
 
 
 苹果联合创始人Wozniak在大学毕业演讲中强调，真实的人类智能与当前AI有本质区别，鼓励学生珍视自己的创造力和批判性思维。关键点：他指出AI擅长模仿但缺乏理解；提醒毕业生不要被AI的“表面智能”迷惑。为什么重要：作为硅谷标志性人物，Wozniak的发言代表了一种技术人文主义的警惕立场，会影响公众和行业对AI能力的正确认知。
@@ -426,7 +426,7 @@ AI大模型的训练和推理需求持续推高DRAM和NAND闪存价格，导致�
 
 ### GitHub面临生存之战：员工爆料内部乱象
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-05-23/opinion-07.jpg)
 
 
 多位现任及前员工向媒体透露，GitHub在微软收购后逐渐失去独立文化，内部决策功能瘫痪。更细节指出，GitHub封杀Claude Code等外部AI工具，以保护自家Copilot。关键点：员工形容“GitHub在AI浪潮中迷失了方向”；平台开发者社区信任度下降。为什么重要：GitHub是开发者生态核心，其内部动荡可能影响整个开源协作流程，尤其对于依赖GitHub的AI开发者社群。
@@ -451,7 +451,7 @@ Simon Willison 正式发布 Datasette Agent，这是一个基于 Datasette 生�
 
 ### Claude Code 官方插件目录发布
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-23/opensource-01.jpg)
 
 
 Anthropic 推出了 Claude Code 的官方插件仓库，提供验证过的第三方扩展。关键点：插件涵盖代码审查、CI/CD 集成、文档生成等场景，统一发布在 GitHub 上。为什么重要：这是大型模型厂商首次为代码代理建立标准化插件市场，意味着开发者可以像装 VS Code 扩展一样增强 Claude Code 的能力，生态对复用的需求开始被平台方正式回应。
@@ -460,7 +460,7 @@ Anthropic 推出了 Claude Code 的官方插件仓库，提供验证过的第三
 
 ### CodeGraph：预索引代码知识图谱减少 Token 消耗
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-23/opensource-02.jpg)
 
 
 CodeGraph 为 Claude Code 等代理提供本地的代码索引服务，将整个代码库结构化表示为知识图谱。关键点：预索引后，代理调用工具时只需查询图谱而非全文检索，显著降低 token 开销。为什么重要：Token 成本是代理普及的隐性障碍，CodeGraph 证明“本地先验知识”可以成为降低调用成本的标准范式。
@@ -469,7 +469,7 @@ CodeGraph 为 Claude Code 等代理提供本地的代码索引服务，将整个
 
 ### Superpowers：编码代理的可组合技能框架
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-23/opensource-03.jpg)
 
 
 Superpowers 是一套完整的软件方法论，用于构建基于可组合技能的编码代理。关键点：它将复杂开发任务拆解为独立技能单元，代理按需组装执行。为什么重要：与之前“端到端 prompt”不同，这套框架强调技能的可复用性和调试性，符合工程化 AI 代理的趋势。
@@ -478,7 +478,7 @@ Superpowers 是一套完整的软件方法论，用于构建基于可组合技�
 
 ### Google ADK 示例：Agent 开发工具包
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-05-23/opensource-04.jpg)
 
 
 Google 发布 ADK Samples，提供一系列构建代理应用的参考实现。关键点：包含多轮对话、工具调用、记忆管理等典型场景的代码模板。为什么重要：ADK 是 Google 在 agentic 方向上的核心工具栈，这些示例降低了学习门槛，有利于吸引更多开发者进入其生态。
@@ -487,7 +487,7 @@ Google 发布 ADK Samples，提供一系列构建代理应用的参考实现。�
 
 ### Hermes Agent：开源可成长代理框架
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-23/opensource-05.jpg)
 
 
 Nous Research 开源 Hermes Agent，一个持续学习的代理框架。关键点：代理可以在与用户交互过程中自我改进，更新自身知识库和行为策略。为什么重要：“可成长”是当前代理的痛点——静态模型无法适应动态环境，Hermes Agent 提供了开源的增量学习方案。
@@ -496,7 +496,7 @@ Nous Research 开源 Hermes Agent，一个持续学习的代理框架。关键�
 
 ### OpenViking：面向 AI 代理的上下文数据库
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-05-23/opensource-06.jpg)
 
 
 字节跳动开源 OpenViking，为代理统一管理内存、资源和技能。关键点：提供结构化上下文存储，支持将长期记忆与临时对话分离，并内置资源调度。为什么重要：代理的“记忆碎片化”是导致任务失败的常见原因，OpenViking 试图成为代理的专用“操作系统层”。
@@ -505,7 +505,7 @@ Nous Research 开源 Hermes Agent，一个持续学习的代理框架。关键�
 
 ### CLI-Anything：让所有软件原生支持代理
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-23/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-23/opensource-07.jpg)
 
 
 HKUDS 项目 CLI-Anything 将任意桌面应用转化为 CLI 接口，使得 AI 代理可以通过命令调用它们。关键点：无需修改原软件代码，通过自动提取 GUI 元素生成 CLI。为什么重要：它解决了代理无法直接操作现有 GUI 软件的难题，扩展了代理的“肢体”范围。

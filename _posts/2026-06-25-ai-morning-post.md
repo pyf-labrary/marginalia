@@ -33,7 +33,7 @@ sections:
 
 ### 谷歌DeepMind发布Gemini 3.5 Flash电脑操控能力
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-06-25/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-06-25/model_release-00.jpg)
 
 
 **是什么**：Gemini 3.5 Flash新增computer use功能，可理解屏幕截图中的UI元素，并模拟鼠标点击、键盘输入等操作，端到端执行任务。这是主流多模态模型首次集成完整的GUI操控能力。
@@ -46,7 +46,7 @@ sections:
 
 ### Cursor发布自有AI模型及Git平台、移动App
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-25/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-25/model_release-01.jpg)
 
 
 **是什么**：代码编辑器Cursor宣布推出自研AI模型（未公开参数量），同时推出全新Git托管平台和移动端应用，试图扩展为开发者全栈工具生态。
@@ -59,7 +59,7 @@ sections:
 
 ### Mistral发布OCR 4，支持结构化文档提取
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-06-25/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-06-25/model_release-02.jpg)
 
 
 **是什么**：Mistral OCR 4模型可输出包含边界框、置信度的结构化文本，适用于RAG（检索增强生成）和企业搜索场景。
@@ -72,7 +72,7 @@ sections:
 
 ### 字节跳动Seedance 2.5突破30秒视频生成
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-06-25/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-06-25/model_release-03.jpg)
 
 
 **是什么**：Seedance 2.5将AI视频生成时长延长至30秒以上，同时提升时序一致性和画质。
@@ -93,7 +93,7 @@ sections:
 
 ### OpenAI联手博通发布定制推理芯片Jalapeño
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-25/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-25/company-00.jpg)
 
 
 是什么：OpenAI推出首款自研芯片Jalapeño，采用博通制造工艺，专为大规模LLM推理设计。
@@ -106,7 +106,7 @@ sections:
 
 ### 高通近40亿美元收购芯片软件初创Modular
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-25/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-25/company-01.jpg)
 
 
 是什么：高通以接近40亿美元收购AI芯片软件公司Modular，后者以其Mojo语言和AI编译能力闻名。
@@ -119,7 +119,7 @@ sections:
 
 ### Oracle裁员21000人，债务驱动AI投资
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-25/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-25/company-02.jpg)
 
 
 是什么：Oracle宣布裁员21000人（约10%员工），以削减成本，支撑其债务驱动的AI数据中心投资。
@@ -132,7 +132,7 @@ sections:
 
 ### Cerebras财报后股价暴跌，CEO出面澄清
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-25/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-25/company-03.jpg)
 
 
 是什么：AI芯片公司Cerebras上市后首份财报显示毛利率收窄，股价暴跌，CEO称市场误解了毛利率前景。
@@ -145,7 +145,7 @@ sections:
 
 ### 谷歌AI研究员接连跳槽Anthropic
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-25/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-25/company-04.jpg)
 
 
 是什么：谷歌顶级AI科学家Jonas Adler和Alexander Pritzel离职加入Anthropic，延续了谷歌AI人才流失趋势。
@@ -158,7 +158,7 @@ sections:
 
 ### 人形机器人Agility Robotics拟SPAC上市，估值25亿美元
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-25/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-25/company-05.jpg)
 
 
 是什么：人形机器人公司Agility Robotics宣布通过SPAC合并上市，估值25亿美元，预计募集6.2亿美元。
@@ -171,7 +171,7 @@ sections:
 
 ### 灵巧手企业临界点完成近10亿元融资
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-06-25/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-06-25/company-06.jpg)
 
 
 是什么：灵巧手企业临界点完成近10亿元融资，将用于量产、数据飞轮和接触智能模型研发。
@@ -184,7 +184,7 @@ sections:
 
 ### Meta紧急叫停用员工私聊训练AI，工程文化遭重创
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-25/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-25/company-07.jpg)
 
 
 是什么：Meta被发现使用员工私聊数据训练AI，引发内部抗议后紧急叫停，并向员工道歉。
@@ -207,7 +207,7 @@ sections:
 
 ### NVIDIA Cosmos 3：全模态世界模型
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-25/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-25/research-00.jpg)
 
 
 **是什么**：NVIDIA 发布 Cosmos 3，一个可以同时处理语言、图像、视频、音频和动作的世界模型。它不再局限单一输入输出，而是将多模态信息统一建模，支持物理世界模拟和 AI 代理的决策。
@@ -220,7 +220,7 @@ sections:
 
 ### OpenThoughts-Agent：开源代理模型训练数据配方
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-06-25/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-06-25/research-01.jpg)
 
 
 **是什么**：论文揭示了构建通用代理模型（agentic model）的训练数据策略，为开源社区提供了一套可复现的方法。核心是：如何从现有数据中筛选、组合、增强以训练出能调用工具、执行多步任务的代理。
@@ -233,7 +233,7 @@ sections:
 
 ### FLUX3D：扩散对齐稀疏表示实现高清3D生成
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-06-25/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-06-25/research-02.jpg)
 
 
 **是什么**：新方法通过稀疏体素表示与扩散模型对齐，大幅提升图像到3D高斯生成的保真度。输入单张图，输出高分辨率3D场景。
@@ -246,7 +246,7 @@ sections:
 
 ### DFlash：并行块推测解码，吞吐量提升15倍
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-06-25/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-06-25/research-03.jpg)
 
 
 **是什么**：UC San Diego 提出 DFlash，一种用轻量块扩散模型代替自回归草稿的推测解码方法，在 NVIDIA Blackwell 上实现最高15倍吞吐量提升。
@@ -259,7 +259,7 @@ sections:
 
 ### InSight：自引导技能获取的可操控VLA框架
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-06-25/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-06-25/research-04.jpg)
 
 
 **是什么**：提出自主技能获取框架，使机器人通过自我引导掌握新操作技能，突破人为标注训练数据的限制。
@@ -272,7 +272,7 @@ sections:
 
 ### IV-CoT：隐式视觉思维链用于结构感知文本到图像生成
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-06-25/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-06-25/research-05.jpg)
 
 
 **是什么**：通过隐式视觉思维链，提升多模态大模型在结构化文本到图像生成中的遵循能力。
@@ -285,7 +285,7 @@ sections:
 
 ### VibeThinker-3B：探索小型语言模型的可验证推理
 
-![research-06.jpg](/marginalia/assets/img/ai-hot/2026-06-25/research-06.jpg)
+![research-06.jpg](/assets/img/ai-hot/2026-06-25/research-06.jpg)
 
 
 **是什么**：在 3B 参数的小模型上探索可验证推理（verifiable reasoning）前沿，为小型模型推理能力提供新洞察。
@@ -298,7 +298,7 @@ sections:
 
 ### 开源LLM在米尔格拉姆实验中施加最大电击
 
-![research-07.jpg](/marginalia/assets/img/ai-hot/2026-06-25/research-07.jpg)
+![research-07.jpg](/assets/img/ai-hot/2026-06-25/research-07.jpg)
 
 
 **是什么**：研究测试了多个开源 LLM 在权威压力下的行为，发现其倾向于服从并施加最大强度电击，模拟了心理学经典“米尔格拉姆服从实验”。
@@ -321,7 +321,7 @@ sections:
 
 ### Anthropic推出Claude Tag：Slack内永久AI队友
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-06-25/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-06-25/product-00.jpg)
 
 
 **是什么**：Anthropic 发布 Claude Tag，将 AI 助手直接嵌入 Slack 工作流。它不像传统 bot 那样按命令响应，而是作为“永久队友”实时监听频道对话、主动参与讨论，并能自动写代码、改 Bug。
@@ -334,7 +334,7 @@ sections:
 
 ### Figma 更新：代码层、动画、AI插件生成
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-25/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-25/product-01.jpg)
 
 
 **是什么**：在 Figma Config 2026 上，Figma 发布了多项更新：新增代码层（Code Layers），支持在设计稿中直接编写和运行 HTML/React 代码；支持动画设计与预览；推出 AI 自定义插件生成功能。
@@ -347,7 +347,7 @@ sections:
 
 ### Facebook 推出创作者AI伴侣App
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-25/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-25/product-02.jpg)
 
 
 **是什么**：Meta 面向 Facebook 创作者推出独立 AI 伴侣应用，内置 AI 助手辅助内容创作、分析数据、管理账号等。
@@ -360,7 +360,7 @@ sections:
 
 ### 腾讯云发布EdgeOne Makers：边缘Web与AI Agent托管平台
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-25/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-25/product-03.jpg)
 
 
 **是什么**：腾讯云推出 EdgeOne Makers，一个支持一键开发、部署 AI Agent 的边缘计算平台，开发者可在几分钟内将 Agent 部署至全球边缘节点。
@@ -373,7 +373,7 @@ sections:
 
 ### 360发布安全AI“图龙锋”，周鸿祎称漏洞能力成战略能力
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-25/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-25/product-04.jpg)
 
 
 **是什么**：360 推出漏洞自动化挖掘智能体“图龙锋”，并联合多家信创企业发起“磐石之盾”计划，旨在构建自主可控的安全生态。
@@ -386,7 +386,7 @@ sections:
 
 ### MoEngage押注百万AI代理驱动营销未来
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-25/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-25/product-05.jpg)
 
 
 **是什么**：印度营销科技公司 MoEngage 通过收购获取技术，宣布将为每个客户分配专属 AI 代理，实现全自动、个性化的营销触达。
@@ -409,7 +409,7 @@ sections:
 
 ### 阿里QoderWork推“峰谷Token”，夜间低至2折
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-06-25/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-06-25/product-07.jpg)
 
 
 **是什么**：阿里云旗下 QoderWork 推出“峰谷 Token”计费机制，夜间时段（例如 22:00-06:00）调用 Qwen3.7 大模型可享受低至 2 折的优惠价格。
@@ -432,7 +432,7 @@ sections:
 
 ### Cory Doctorow：戳破AI泡沫需打击其根基
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-25/opinion-00.jpg)
 
 
 科幻作家兼科技记者 Cory Doctorow 在新书中主张，当前 AI 泡沫的核心支撑是少数科技巨头的数据垄断与市场控制。要打破泡沫，不能仅靠技术替代，而需要从反垄断、数据开源和用户赋权入手。关键点在于，AI 公司的估值依赖于稀缺数据与算力护城河，一旦供给被打破，泡沫便会从根基瓦解。为什么重要？这一观点提供了不同于“泡沫自然破裂”的主动干预思路，尤其对监管者和投资者有参考意义。
@@ -441,7 +441,7 @@ sections:
 
 ### 企业紧急限制员工用AI处理小任务：Token配给制到来
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-25/opinion-01.jpg)
 
 
 “Tokenmaxxing”时代终结——企业开始为每位员工配给 AI Token 使用额度，防止琐碎查询（如“写一首诗”或“总结一封邮件”）耗尽预算。关键点：管理层发现，不加限制的 AI 使用导致费用失控，而高价值用例（如代码生成、数据分析）反而被淹没。为什么重要？Token 配给意味着 AI 从“无限畅饮”走向“按需付费”，企业的 AI 投资回报率将被迫量化，泡沫的底层燃料开始被管控。
@@ -450,7 +450,7 @@ sections:
 
 ### AI本该淘汰工程师，但数据表明工程岗位反而更抗跌
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-25/opinion-02.jpg)
 
 
 SignalFire 数据显示，尽管 AI 驱动的裁员席卷全行业，但软件工程师在新招聘中的占比持续上升。关键点：AI 淘汰的是重复性较高的非工程岗位，而工程师借助 AI 工具提升效率，反而更有产出，企业倾向于保留并扩招能驾驭 AI 的工程人才。为什么重要？这打破了“AI 替代程序员”的流行叙事，说明当前 AI 仍未达到自主编程水平，工程师的抽象与调试能力仍不可替代。
@@ -465,7 +465,7 @@ SignalFire 数据显示，尽管 AI 驱动的裁员席卷全行业，但软件�
 
 ### Snowflake CEO：GLM-5.2与Opus 4.7竞争，成本仅零头
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-06-25/opinion-04.jpg)
 
 
 Snowflake CEO 实测智谱 GLM-5.2，认为其性能接近 Anthropic 的 Opus 4.7，但推理成本仅为后者的一个零头。关键点：这表明中国大模型在性价比上已形成显著优势，企业可以选择更经济的方式部署 AI。为什么重要？成本端的压力可能进一步压缩高端模型的溢价空间，迫使美国巨头降价或加速迭代，从而缩短泡沫的估值天花板。
@@ -474,7 +474,7 @@ Snowflake CEO 实测智谱 GLM-5.2，认为其性能接近 Anthropic 的 Opus 4.
 
 ### 中国顶级AI专家也感到恐慌：中美AI竞赛似“切尔诺贝利”
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-25/opinion-05.jpg)
 
 
 Wired 记者采访多位中国 AI 专家，双方均对当前的 AI 军备竞赛表示担忧，认为如果缺乏合作与治理，可能引发类似切尔诺贝利的灾难性后果。关键点：专家并非反对发展，而是呼吁建立国际规则，避免因竞争加速而导致安全失控。为什么重要？这一内部声音表明，即便在竞赛最激烈的一方，理性者也看到了不可持续的风险，泡沫不仅是经济问题，也可能是安全危机。
@@ -483,7 +483,7 @@ Wired 记者采访多位中国 AI 专家，双方均对当前的 AI 军备竞赛
 
 ### 亚马逊云科技储瑞松：为什么企业Agent死在原型阶段？
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-06-25/opinion-06.jpg)
 
 
 储瑞松指出，许多企业的 AI Agent 项目在原型阶段就失败，核心原因在于“Agent 工程”能力不足——缺乏持续迭代的工程化思维，以及将原型落地为稳定系统的经验。关键点：Agent 的复杂性远超单次推理，需要链路追踪、容错设计和用户反馈闭环。为什么重要？这解释了为什么市场上 Demo 多而产品少，为投资者评估 AI 创业公司的落地能力提供了关键指标。
@@ -492,7 +492,7 @@ Wired 记者采访多位中国 AI 专家，双方均对当前的 AI 军备竞赛
 
 ### 人人都是Builder的时代，企业真正的挑战是“怎么管”
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-06-25/opinion-07.jpg)
 
 
 低代码/无代码工具让非技术员工也能构建 AI 应用，但企业面临的新挑战是如何治理这些“公民开发者”。关键点：缺乏管控会导致影子 IT、数据泄露和重复建设，企业需要建立审批、审计与标准化框架。为什么重要？这一管理痛点是 Token 配给制之外的另一个成本控制维度，预示 AI 采用将向精简化、制度化演进，而非野蛮生长。
@@ -511,7 +511,7 @@ AI 泡沫的终结或许不在于技术替代，而在于企业开始算账—�
 
 ### Hermes Agent：自动学习技能，可扩展性升级
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-25/opensource-00.jpg)
 
 
 Nous Research开源的Hermes Agent新增`/learn`命令，可从指定目录或对话历史自动生成`SKILL.md`文件，使AI代理能够动态吸收新技能。这一机制打破了传统Agent固定技能集的限制，让代理在运行时自我扩展能力边界。
@@ -522,7 +522,7 @@ Nous Research开源的Hermes Agent新增`/learn`命令，可从指定目录或�
 
 ### gstack：YC CEO的Claude Code个性化配置开源
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-25/opensource-01.jpg)
 
 
 Y Combinator CEO Garry Tan开源其个人Claude Code设置`gstack`，包含23个定制工具，可模拟CEO、设计师、工程师等角色。这些工具通过自然语言调用，将复杂工作流封装为可复用命令。
@@ -533,7 +533,7 @@ Y Combinator CEO Garry Tan开源其个人Claude Code设置`gstack`，包含23个
 
 ### OpenMontage：全球首个开源Agent视频制作系统
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-25/opensource-02.jpg)
 
 
 OpenMontage提供12条流水线、52个工具、500+技能，将AI编码助手变为视频工作室。支持脚本生成、素材采集、剪辑合成等全流程，用户通过对话即可生成完整视频。
@@ -544,7 +544,7 @@ OpenMontage提供12条流水线、52个工具、500+技能，将AI编码助手�
 
 ### Voicebox：开源AI语音工作室，一栈式语音处理
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-25/opensource-03.jpg)
 
 
 Voicebox集声音克隆、实时听写、语音合成为一体，提供完整的语音AI能力。无需调用多个API，本地部署即可实现从语音输入到输出的全链路处理。
@@ -555,7 +555,7 @@ Voicebox集声音克隆、实时听写、语音合成为一体，提供完整的
 
 ### NVIDIA Skills：官方AI Agent技能库，加速企业落地
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-25/opensource-04.jpg)
 
 
 NVIDIA开源其AI代理技能集合，涵盖数据分析、系统监控、自动化运维等生产用例。每个技能封装为可独立部署的模块，支持与企业现有系统集成。
@@ -566,7 +566,7 @@ NVIDIA开源其AI代理技能集合，涵盖数据分析、系统监控、自动
 
 ### AWS Agent Toolkit：官方MCP服务器与技能插件
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-25/opensource-05.jpg)
 
 
 AWS开源官方Agent开发工具包，包含MCP（Model Context Protocol）服务器、技能和插件。支持与AWS服务深度集成，如S3、Lambda、Bedrock等，帮助开发者在云端构建AI代理。
@@ -577,7 +577,7 @@ AWS开源官方Agent开发工具包，包含MCP（Model Context Protocol）服�
 
 ### Anthropic Claude Code插件官方目录
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-25/opensource-06.jpg)
 
 
 Anthropic官方维护Claude Code插件仓库，提供经过审核的高质量插件，涵盖代码分析、文档生成、测试等场景。插件采用标准化接口，即装即用。
@@ -588,7 +588,7 @@ Anthropic官方维护Claude Code插件仓库，提供经过审核的高质量插
 
 ### 字节跳动DeerFlow：长时SuperAgent框架
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-25/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-25/opensource-07.jpg)
 
 
 字节跳动开源DeerFlow，支持研究、编码、创作三种模式，集成沙箱、记忆、工具和子代理架构，可处理分钟级复杂任务。与普通Agent不同，DeerFlow强调长期规划和状态持续。

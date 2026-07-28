@@ -39,7 +39,7 @@ OpenAI宣称其最新推理模型成功证伪（disprove）了Erdős问题中关
 
 ### Cohere开源Command A+：218B稀疏MoE，双卡可跑
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-22/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-22/model_release-01.jpg)
 
 
 Cohere正式开源Command A+，一个2180亿参数的稀疏MoE模型，激活参数约60B。支持48种语言，可在两张H100上运行推理，是Cohere迄今为止最强的开源模型。关键点：采用了动态路由和跨语言对齐技术，在代码、推理和多轮对话上相比Command A有显著提升。为什么重要：在Llama、Qwen等闭源或半开源主导的格局下，Cohere用“两个卡能跑的218B”降低了企业部署超大规模模型的门槛，尤其适合多语言场景。对产品经理而言，这意味着可以以更低成本获得接近GPT-4级别（部分benchmark）的多语言能力。
@@ -48,7 +48,7 @@ Cohere正式开源Command A+，一个2180亿参数的稀疏MoE模型，激活参
 
 ### 阿里Qwen3.7-Max登顶国产榜首，1M上下文窗口
 
-![model_release-02.jpg](/marginalia/assets/img/ai-hot/2026-05-22/model_release-02.jpg)
+![model_release-02.jpg](/assets/img/ai-hot/2026-05-22/model_release-02.jpg)
 
 
 阿里云发布Qwen3.7-Max，拥有100万token上下文窗口，在Artificial Analysis的国产模型评测中排名第一，全球综合前五。关键点：基于MoE架构，在长文档理解、复杂推理和金融场景中表现突出，支持多模态输入但本次未强调图像能力。为什么重要：国产大模型在顶尖基准上的竞争已进入“百万上下文+MoE”阶段，Qwen3.7-Max的排名意味着中国模型厂商在国际评估中首次占据头部位置，对投资人和技术选型者来说，这是评估国产替代可行性的重要参照。
@@ -57,7 +57,7 @@ Cohere正式开源Command A+，一个2180亿参数的稀疏MoE模型，激活参
 
 ### 字节跳动开源Lance：3B参数统一图像视频理解与生成
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-05-22/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-05-22/model_release-03.jpg)
 
 
 字节跳动智能创作实验室开源Lance，一个3B参数的原生多模态模型，同时支持图像/视频的理解、生成与编辑。关键点：采用统一的transformer架构而非组合式管线，在COCO Caption、VideoInstruct等基准上达到同类体量最优。为什么重要：3B参数意味着消费级GPU即可微调和部署，统一架构简化了多模态应用开发。对产品经理来说，这开辟了“端到端视频理解+生成”的低成本可能性，尤其在短视频和搜索场景中。
@@ -66,7 +66,7 @@ Cohere正式开源Command A+，一个2180亿参数的稀疏MoE模型，激活参
 
 ### 腾讯混元Hy-MT2：指令遵循能力提升，翻译小程序同步上线
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-05-22/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-05-22/model_release-04.jpg)
 
 
 腾讯混元发布新一代翻译模型Hy-MT2，在WMT等权威评测中BLEU分数提升显著，尤其擅长处理长难句和领域术语。关键点：模型采用混合对齐训练，指令遵循能力比上一代提升30%以上；同时上线“腾讯Hy翻译”微信小程序，支持端侧部署。为什么重要：翻译模型本身的突破不算大新闻，但结合小程序上线，表明腾讯在尝试将高质量翻译能力直接嵌入日常场景，对出海和内容本地化团队有实际价值。
@@ -85,7 +85,7 @@ SpaceX IPO文件首次披露xAI 2025年亏损64亿美元，并计划购买28亿�
 
 ### SpaceX IPO曝光：xAI亏损64亿，买28亿涡轮机
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-22/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-22/company-00.jpg)
 
 
 **是什么**：SpaceX提交IPO申请，首次公开旗下xAI财务数据——2025年亏损64亿美元，并计划购买28亿美元天然气轮机用于AI数据中心。文件还披露与Anthropic签订了价值150亿美元/年的算力供应协议。
@@ -98,7 +98,7 @@ SpaceX IPO文件首次披露xAI 2025年亏损64亿美元，并计划购买28亿�
 
 ### Anthropic预计下季度盈利，年化营收超百亿
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-22/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-22/company-01.jpg)
 
 
 **是什么**：Anthropic向投资者表示，Q2营收将达109亿美元，并实现首个盈利季度，成为继OpenAI之后第二个迈入盈利的AI实验室。
@@ -111,7 +111,7 @@ SpaceX IPO文件首次披露xAI 2025年亏损64亿美元，并计划购买28亿�
 
 ### OpenAI加速IPO进程，或9月上市
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-22/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-22/company-02.jpg)
 
 
 **是什么**：在马斯克诉讼败诉后，OpenAI重新推进IPO计划，最快本周提交保密文件，目标9月上市。
@@ -124,7 +124,7 @@ SpaceX IPO文件首次披露xAI 2025年亏损64亿美元，并计划购买28亿�
 
 ### Nvidia财报创纪录，持仓430亿美元AI初创
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-22/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-22/company-03.jpg)
 
 
 **是什么**：Nvidia Q1营收再创新高，同时披露持有数百家AI初创公司共计430亿美元股权，覆盖模型、工具、算力基础设施等赛道。
@@ -137,7 +137,7 @@ SpaceX IPO文件首次披露xAI 2025年亏损64亿美元，并计划购买28亿�
 
 ### GitHub确认3800仓库遭VSCode恶意扩展攻击
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-22/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-22/company-04.jpg)
 
 
 **是什么**：GitHub确认一起安全事件，恶意VSCode扩展导致3800个仓库代码泄露，目前正在进行深度调查。
@@ -150,7 +150,7 @@ SpaceX IPO文件首次披露xAI 2025年亏损64亿美元，并计划购买28亿�
 
 ### Meta裁员10%，聚焦AI研发
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-22/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-22/company-05.jpg)
 
 
 **是什么**：据内部消息，Meta计划裁减约10%员工，将资源集中投向AI和元宇宙。此次裁员预计影响约1.5万人，主要涉及非核心业务和中间管理层。
@@ -163,7 +163,7 @@ SpaceX IPO文件首次披露xAI 2025年亏损64亿美元，并计划购买28亿�
 
 ### Intuit裁员3000人，全面转向AI
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-05-22/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-05-22/company-06.jpg)
 
 
 **是什么**：Intuit宣布裁减3000名员工（约10%），将资源重新聚焦于人工智能技术，包括税务、会计产品的AI化升级。
@@ -176,7 +176,7 @@ SpaceX IPO文件首次披露xAI 2025年亏损64亿美元，并计划购买28亿�
 
 ### 神秘AI初创Hark获7亿美元A轮，打造通用AI界面
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-22/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-22/company-07.jpg)
 
 
 **是什么**：神秘AI创业公司Hark完成7亿美元A轮融资，计划推出首个多模态模型和硬件设备，构建个人AI平台。
@@ -199,7 +199,7 @@ SpaceX IPO文件首次披露xAI 2025年亏损64亿美元，并计划购买28亿�
 
 ### AI首次实现中国风光发电普查，成果登Nature
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-05-22/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-05-22/research-00.jpg)
 
 
 **是什么**：北京大学与阿里达摩院合作，利用AI模型首次完成了中国全境风能、太阳能发电潜力的高精度普查，相关论文发表于《自然》杂志。
@@ -228,7 +228,7 @@ SpaceX IPO文件首次披露xAI 2025年亏损64亿美元，并计划购买28亿�
 
 ### Google I/O 2026：Agentic AI 重塑搜索
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-22/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-22/product-00.jpg)
 
 
 Google 在 I/O 大会上宣布将用 AI agent 彻底改造搜索体验，同时推出 Gemini Spark 等一系列 agent 产品。**是什么**：传统搜索返回链接列表，新搜索能理解复杂指令、调用工具、分步骤执行任务。**关键点**：Gemini Spark 是面向终端的轻量 agent，可嵌入搜索、地图、Gmail；搜索将集成多步骤推理（如“规划周末短途游并订好酒店和餐厅”）。**为什么重要**：这是 Google 搜索有史以来最大的架构变更，从“索引网页”转向“执行任务”。若成功，将剥夺大量垂直应用（旅游、购物、预约）的流量入口地位。
@@ -237,7 +237,7 @@ Google 在 I/O 大会上宣布将用 AI agent 彻底改造搜索体验，同时�
 
 ### Spotify × 环球音乐：AI 翻唱商业化协议
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-22/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-22/product-01.jpg)
 
 
 Spotify 与环球音乐达成协议，允许 Premium 订阅用户用 AI 创作歌曲翻唱和混音，参与的原创艺术家获得收入分成。**是什么**：用户上传原曲后，AI 生成不同风格（如爵士、摇滚、电音）的翻唱版本，平台按播放量向版权方分成。**关键点**：这是主流唱片公司首次全面授权 AI 翻唱并明确分成比例；Spotify 承担版权合规责任，艺术家可选择是否加入。**为什么重要**：为 AI 音乐生成提供了商业落地的版权框架，可能成为行业范本。用户创作不再游走在侵权边缘，平台能获得新增长曲线。
@@ -246,7 +246,7 @@ Spotify 与环球音乐达成协议，允许 Premium 订阅用户用 AI 创作�
 
 ### Figure AI 人形机器人 24 小时直播搬运包裹
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-22/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-22/product-02.jpg)
 
 
 Figure AI 的人形机器人开启 24/7 直播，在仓库中连续演示包裹分拣、搬运、堆叠等任务，引发广泛关注。**是什么**：一台人形机器人在固定仓库场景中不间断作业，全程对外直播。**关键点**：直播无剪辑，展示真实成功率与故障恢复；机器人已具备自主规划路径、避障和自适应抓取能力。**为什么重要**：将人形机器人的训练和部署透明化，用“活广告”建立公众信任，同时倒逼产品稳定性。带货能力远超宣传片——网友亲眼见证一个机器人在 8 小时内处理 300+ 包裹，出错率低于 2%。
@@ -255,7 +255,7 @@ Figure AI 的人形机器人开启 24/7 直播，在仓库中连续演示包裹�
 
 ### Anthropic 推出 Claude Code 例程，简化重复任务
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-22/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-22/product-03.jpg)
 
 
 Anthropic 发布“Routines”功能，允许用户为 Claude Code 创建可复用的指令模板。**是什么**：本质是智能体工作流的预设化——用户保存一段 prompt，包含上下文、工具链、输出格式，后续一键调用。**关键点**：支持条件分支与循环，可串联多个 API 调用；模板可分享给团队。**为什么重要**：降低 agent 编程门槛，将“写一次 prompt”升级为“维护一个流程库”。对开发者而言，日常 PR 审查、代码重构、测试生成可固化为多条 routines，提升 3-5 倍效率。
@@ -264,7 +264,7 @@ Anthropic 发布“Routines”功能，允许用户为 Claude Code 创建可复�
 
 ### DeepSeek 开发编码 Agent“DeepSeek Code”，对标 Claude Code
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-22/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-22/product-04.jpg)
 
 
 DeepSeek 正在构建自主编码代理，计划与 Claude Code 和 OpenAI Codex 竞争。**是什么**：一款类似 Claude Code 的终端内编码助手，能理解代码库、自动生成代码、执行调试。**关键点**：专注于开源生态，可能内置 DeepSeek Coder 系列模型；目前尚未公开预览。**为什么重要**：编码 agent 是 AI 产品化最拥挤的赛道之一，DeepSeek 的入局将加剧价格与性能竞争。若其延续开源策略，可能迫使 Anthropic 和 OpenAI 降低 Claude Code 和 Codex 的收费门槛。
@@ -273,7 +273,7 @@ DeepSeek 正在构建自主编码代理，计划与 Claude Code 和 OpenAI Codex
 
 ### 谷歌推出 Agent 兼容性审计，查验网站 llms.txt
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-22/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-22/product-05.jpg)
 
 
 Google 开始测试新的 agentic browsing audit，检查网站是否支持 llms.txt 和 agent 兼容性。**是什么**：llms.txt 协议让网站为 AI agent 提供结构化内容清单；Google 的审计工具会扫描站点并给出评分。**关键点**：审计结果可能影响网站在 agent 搜索中的排名；目前仅面向部分 SaaS 网站开放。**为什么重要**：这是 Google 在 agent 时代重建“索引与排名”权威的第一步。网站运营者若忽视 agent 兼容性，可能在下一轮搜索变革中失去流量。
@@ -282,7 +282,7 @@ Google 开始测试新的 agentic browsing audit，检查网站是否支持 llms
 
 ### Spotify 推出 AI 播客 Q&A 和个人简报生成
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-22/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-22/product-06.jpg)
 
 
 Spotify 新增 AI 问答和日/周简报生成功能，并发布桌面应用用于创建个人播客，类似 NotebookLM。**是什么**：用户可对播客内容提问（如“这集讲了哪三个关键观点？”），AI 即时回答；也可生成每日/每周音频简报。**关键点**：简报支持个性化定制话题；个人播客生成功能基于用户上传的文档或链接。**为什么重要**：播客从“被动收听”进化为“可交互、可检索、可重混”，提升长尾内容利用率。这可能是 Spotify 对抗 Apple Podcasts 和 AI 原生知识产品（如 NotebookLM）的关键差异化。
@@ -291,7 +291,7 @@ Spotify 新增 AI 问答和日/周简报生成功能，并发布桌面应用用�
 
 ### Cloudflare 与 Stripe 联手，让 AI Agent 自主创建账户和购买域名
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-05-22/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-05-22/product-07.jpg)
 
 
 两家公司推出新协议，允许 AI Agent 通过 API 自主完成账户注册、域名购买和部署等操作。**是什么**：过去 agent 只能查询信息，现在可执行身份验证、支付、资源创建等真实世界操作。**关键点**：Cloudflare 提供域名注册和 CDN 部署接口，Stripe 提供支付与身份验证；agent 需提前绑定开发者账户并设置预算上限。**为什么重要**：打通了 agent 自主完成“从想法到上线”的最后一步。未来开发者只需对 agent 说“帮我建一个小型电商站”，agent 就能注册域名、部署后端、开通支付，全程无需人工操作。
@@ -310,7 +310,7 @@ Spotify 新增 AI 问答和日/周简报生成功能，并发布桌面应用用�
 
 ### 黄仁勋：AI Agent将带来2000亿美元CPU新市场
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-22/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-22/opinion-00.jpg)
 
 
 **是什么**：黄仁勋在TechCrunch采访中预测，专为AI代理（agentic）设计的CPU将创造2000亿美元的新市场，这独立于现有的GPU需求。
@@ -323,7 +323,7 @@ Spotify 新增 AI 问答和日/周简报生成功能，并发布桌面应用用�
 
 ### 特朗普推迟AI安全行政令，担忧阻碍领先
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-05-22/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-05-22/opinion-01.jpg)
 
 
 **是什么**：特朗普总统推迟签署要求AI模型上市前进行安全审查的行政令，理由是其语言“可能成为障碍”。
@@ -336,7 +336,7 @@ Spotify 新增 AI 问答和日/周简报生成功能，并发布桌面应用用�
 
 ### LinkedIn新政策难阻AI垃圾内容，平台失控？
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-22/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-22/opinion-02.jpg)
 
 
 **是什么**：The Decoder发表评论，认为LinkedIn宣布的应对AI生成低质内容的新政策只是承认平台已失去对信息流的控制。
@@ -359,7 +359,7 @@ Spotify 新增 AI 问答和日/周简报生成功能，并发布桌面应用用�
 
 ### BBC揭露：谷歌AI正被操纵，搜索巨头悄然反击
 
-![opinion-04.jpg](/marginalia/assets/img/ai-hot/2026-05-22/opinion-04.jpg)
+![opinion-04.jpg](/assets/img/ai-hot/2026-05-22/opinion-04.jpg)
 
 
 **是什么**：BBC报道称，谷歌的AI搜索结果正遭受大量恶意操纵，搜索团队正在采取隐蔽手段对抗。
@@ -392,7 +392,7 @@ Spotify 新增 AI 问答和日/周简报生成功能，并发布桌面应用用�
 
 ### OpenAI 开源 Symphony，定义自主编码 Agent 编排规范
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-05-22/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-05-22/opensource-00.jpg)
 
 
 **是什么 / 关键点 / 为什么重要**
@@ -403,7 +403,7 @@ OpenAI 发布了 Symphony SPEC，一个面向自主编码智能体编排的开�
 
 ### Karpathy 开源 autoresearch：单 GPU 自动跑科研
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-05-22/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-05-22/opensource-01.jpg)
 
 
 **是什么 / 关键点 / 为什么重要**
@@ -414,7 +414,7 @@ Andrej Karpathy 发布 autoresearch，一个让 AI 代理自动在单 GPU 上运
 
 ### 火山引擎开源 OpenViking：专为 AI Agent 设计的上下文数据库
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-05-22/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-05-22/opensource-02.jpg)
 
 
 **是什么 / 关键点 / 为什么重要**

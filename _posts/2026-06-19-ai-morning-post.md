@@ -43,7 +43,7 @@ sections:
 
 ### GLM-5.2：开源纯文本模型的新标杆
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-06-19/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-06-19/model_release-01.jpg)
 
 
 **是什么**：中国 AI 实验室 Z.ai 发布 GLM-5.2，面向订阅用户先开放，随后将全面开源模型权重。该模型被评测方认为是目前最强大的开源纯文本大语言模型。
@@ -66,7 +66,7 @@ sections:
 
 ### Anthropic新模型Fable 5遭白宫下令下架，出口管制升级
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-06-19/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-06-19/company-00.jpg)
 
 
 美国白宫以国家安全为由要求Anthropic下架刚发布的Claude Fable 5，并限制韩国SK Telecom对该模型的访问权限。Anthropic正面临出口管制合规挑战，模型目前暂不可用。此举标志着出口管制从硬件向基础模型层延伸，未来任何高于一定能力阈值的开源或闭源模型都可能被美国视为战略物资。  
@@ -74,7 +74,7 @@ sections:
 
 ### OpenAI IPO前连挖两位大将：Transformer发明人Noam Shazeer加入
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-06-19/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-06-19/company-01.jpg)
 
 
 OpenAI从Google DeepMind挖来Gemini联合负责人Noam Shazeer（Transformer论文合著者之一），并聘用前特朗普政府AI政策官员Dean Ball。两人将在OpenAI预计于2026年下半年进行的IPO前强化人才储备与技术战略。关键点在于：Shazeer的加入可能加速GPT-5的多模态与长上下文能力，而Dean Ball则有助于应对日益复杂的监管环境。  
@@ -82,7 +82,7 @@ OpenAI从Google DeepMind挖来Gemini联合负责人Noam Shazeer（Transformer论
 
 ### FERC政策：AI数据中心获政府特许绿色通道加速接入电网
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-06-19/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-06-19/company-02.jpg)
 
 
 联邦能源监管委员会FERC下令电网运营商为大型AI数据中心设立快速并网通道，以白宫科技政策办公室认定的“重要项目”为优先。但该指令未解决区域电力供应短缺的根本问题，业界质疑此举可能导致民用用户电价上升。  
@@ -90,7 +90,7 @@ OpenAI从Google DeepMind挖来Gemini联合负责人Noam Shazeer（Transformer论
 
 ### AI推理独角兽Baseten再融资15亿美元，估值超130亿
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-06-19/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-06-19/company-03.jpg)
 
 
 AI推理基础设施初创Baseten据报接近完成新一轮15亿美元融资，估值达130亿美元。这距离其上一轮大规模融资仅数月。Baseten主打优化大模型推理成本，该赛道持续吸引资本关注，反映市场对高性价比推理吞吐量的需求仍远未满足。  
@@ -98,7 +98,7 @@ AI推理基础设施初创Baseten据报接近完成新一轮15亿美元融资，
 
 ### AWS拟向外部数据中心出售自研AI芯片，直接挑战Nvidia
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-06-19/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-06-19/company-04.jpg)
 
 
 Amazon AWS正谈判将其自研AI芯片（Trainium / Inferentia）销售给其他数据中心运营商，CEO Andy Jassy称这代表约500亿美元的市场机会。若成行，这将是AWS从自用转向芯片供应商的重大转变，直接与Nvidia在服务器端芯片市场展开竞争。  
@@ -106,7 +106,7 @@ Amazon AWS正谈判将其自研AI芯片（Trainium / Inferentia）销售给其�
 
 ### 世界模型初创Odyssey获14.5亿美元估值，亚马逊领投
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-06-19/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-06-19/company-05.jpg)
 
 
 专注世界模型（World Model）的AI初创Odyssey完成新一轮融资，估值达14.5亿美元，投资方包括Amazon及其他知名机构。世界模型被视为实现通用具身智能的关键基础设施之一，该轮融资显示资本对该技术路径的信心。  
@@ -114,7 +114,7 @@ Amazon AWS正谈判将其自研AI芯片（Trainium / Inferentia）销售给其�
 
 ### 通用智能体初创General Intuition拟融资3亿美元，估值20亿
 
-![company-06.jpg](/marginalia/assets/img/ai-hot/2026-06-19/company-06.jpg)
+![company-06.jpg](/assets/img/ai-hot/2026-06-19/company-06.jpg)
 
 
 利用游戏抓取平台Medal的用户数据训练世界模型的General Intuition，正在谈判新一轮3亿美元融资，估值约20亿美元。该公司的方法“从人类游戏行为中学习物理与因果规律”区别于传统合成数据，但用户数据隐私与协议问题仍是潜在风险。  
@@ -122,7 +122,7 @@ Amazon AWS正谈判将其自研AI芯片（Trainium / Inferentia）销售给其�
 
 ### Snap因成本分拆AI视频团队，独立公司Dotmo专注视频生成
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-06-19/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-06-19/company-07.jpg)
 
 
 Snap继续剥离非核心业务，将其AI视频团队独立为新公司Dotmo，后者将全力投入AI视频生成技术。Snap近期财报显示成本压力持续，而独立运营或能让Dotmo更灵活地寻找商业化路径与外部融资。  
@@ -140,7 +140,7 @@ Snap继续剥离非核心业务，将其AI视频团队独立为新公司Dotmo，
 
 ### Nature两研究：AI诊断追上医生，但有时效性隐患
 
-![research-00.jpg](/marginalia/assets/img/ai-hot/2026-06-19/research-00.jpg)
+![research-00.jpg](/assets/img/ai-hot/2026-06-19/research-00.jpg)
 
 
 **是什么：**《Nature》同日发表两篇研究，分别从影像分析和电子病历角度评估AI诊断能力。其中一项在皮肤病变分类、胸部X光判读等任务上达到甚至超过专科医生水平；另一项则测试了模型在部署后的长期表现。
@@ -153,7 +153,7 @@ Snap继续剥离非核心业务，将其AI视频团队独立为新公司Dotmo，
 
 ### Subquadratic打破上下文限制，推出1200万token窗口
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-06-19/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-06-19/research-01.jpg)
 
 
 **是什么：** Subquadratic团队提出新架构，将LLM上下文窗口提升至1200万token，是此前业界最先进水平（如GPT-4 128K）的近100倍。该架构基于注意力机制的次二次复杂度变体，不依赖近似或稀疏化。
@@ -166,7 +166,7 @@ Snap继续剥离非核心业务，将其AI视频团队独立为新公司Dotmo，
 
 ### 何恺明组全本科生团队发文：258M参数即可高质量文生图
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-06-19/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-06-19/research-02.jpg)
 
 
 **是什么：** 何恺明与五位MIT本科生合作提出新模型，仅258M参数（约为Stable Diffusion 3.5的1/10）即可生成高质量图像，在COCO Captions上达到FID 9.2，接近主流大模型水平。
@@ -179,7 +179,7 @@ Snap继续剥离非核心业务，将其AI视频团队独立为新公司Dotmo，
 
 ### 地理空间AI模型ABot-Earth0.5登顶HuggingFace论文榜
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-06-19/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-06-19/research-03.jpg)
 
 
 **是什么：** 地理空间AI模型ABot-Earth0.5在HuggingFace论文榜单上同时获得“最受欢迎”“最多下载”“最多引用”三榜第一。模型可理解卫星影像、地图和三维地理数据，并直接导出至Unity引擎进行交互开发。
@@ -192,7 +192,7 @@ Snap继续剥离非核心业务，将其AI视频团队独立为新公司Dotmo，
 
 ### MosaicLeaks基准测试：研究型AI agent的保密能力堪忧
 
-![research-04.jpg](/marginalia/assets/img/ai-hot/2026-06-19/research-04.jpg)
+![research-04.jpg](/assets/img/ai-hot/2026-06-19/research-04.jpg)
 
 
 **是什么：** ServiceNow发布MosaicLeaks基准，专门测试研究型AI agent在对话中泄露敏感信息（如内部数据、未公开技术细节）的倾向。测试涵盖50个场景，模拟agent被询问超出权限的内容。
@@ -205,7 +205,7 @@ Snap继续剥离非核心业务，将其AI视频团队独立为新公司Dotmo，
 
 ### HuggingFace新评测：多种微调方法能否超越LoRA？
 
-![research-05.jpg](/marginalia/assets/img/ai-hot/2026-06-19/research-05.jpg)
+![research-05.jpg](/assets/img/ai-hot/2026-06-19/research-05.jpg)
 
 
 **是什么：** HuggingFace发布PEFT（参数高效微调）新评测，比较LoRA、DoRA、VeRA、LoRA+、MoRA以及随机投影方法在8个NLP任务上的表现。LLM基础模型统一使用Llama 3 8B。
@@ -218,7 +218,7 @@ Snap继续剥离非核心业务，将其AI视频团队独立为新公司Dotmo，
 
 ### Allen AI发布MolmoMotion：用自然语言引导3D运动预测
 
-![research-06.jpg](/marginalia/assets/img/ai-hot/2026-06-19/research-06.jpg)
+![research-06.jpg](/assets/img/ai-hot/2026-06-19/research-06.jpg)
 
 
 **是什么：** Allen AI提出MolmoMotion，一个多模态模型，输入一段自然语言（如“一只猫从桌上一跃而下，落地后小跑两步”）和初始场景3D状态，可生成后续的3D运动轨迹（包括关节角度、位移速度）。
@@ -247,7 +247,7 @@ OpenAI为ChatGPT Enterprise推出更细粒度的消费控制功能和用量分�
 
 ### Google 新智能音箱 Home Speaker 预售，100美元Gemini驱动
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-06-19/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-06-19/product-01.jpg)
 
 
 时隔六年，Google发布全新Home Speaker，核心卖点是Gemini AI助手，而非硬件升级。售价100美元，6月25日出货。与上一代相比，它不再依赖“Hey Google”唤醒词即可进行自然对话，并能调用日历、地图等谷歌服务完成复杂任务。重要之处在于，这是Google首次将Gemini以专用硬件形态打入家庭场景，直接对标Amazon Echo与Apple HomePod的AI能力，将竞争从智能家居控制拉向“AI伴侣”层面。
@@ -256,7 +256,7 @@ OpenAI为ChatGPT Enterprise推出更细粒度的消费控制功能和用量分�
 
 ### Midjourney 跨界医疗：推出全身超声扫描仪与自有水疗中心
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-06-19/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-06-19/product-02.jpg)
 
 
 以AI图像生成闻名的Midjourney突然发布第二个产品线——医疗全身超声扫描仪，并同步开设品牌水疗中心，宣称要“融合技术与身心疗愈”。这款扫描仪使用AI辅助成像，面向预防医学与健康监测，而非临床诊断。为什么重要？Midjourney正在完成从“工具品牌”到“生活方式品牌”的跃迁，这不仅是业务多元化，更试探AI公司能否在中产健康消费领域建立信任。产品能否兑现技术承诺尚待验证，但营销叙事已成功破圈。
@@ -265,7 +265,7 @@ OpenAI为ChatGPT Enterprise推出更细粒度的消费控制功能和用量分�
 
 ### Adobe 为 Photoshop、Premiere 等融入 AI Agent 功能
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-06-19/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-06-19/product-03.jpg)
 
 
 Adobe宣布在Creative Cloud全系产品中集成AI Agent，用户可通过自然语言指令完成复杂创作任务，例如“将这段视频的色调调成赛博朋克风格”或“把这张图中的人物抠出并替换背景”。关键点是，Agent不仅执行单步操作，还能串联多个工具和工作流，意味着设计过程从“手动点击”走向“对话式编排”。对于产品经理和设计师，这直接降低了专业软件的学习曲线，但也可能冲击现有插件生态。
@@ -274,7 +274,7 @@ Adobe宣布在Creative Cloud全系产品中集成AI Agent，用户可通过自�
 
 ### Claude Code 新增 Artifacts 功能，团队可分享实时编码页面
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-06-19/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-06-19/product-04.jpg)
 
 
 Anthropic为Claude Code引入Artifacts，允许开发者在对话中创建并分享实时交互页面，类似Cursor的预览功能但更侧重于协作。团队可在一个编码会话中产出可运行的HTML/JS页面，并链接分享给同事。为什么重要？这补上了AI编码工具在“协作输出”环节的短板，让AI生成的代码不仅仅停留在终端，还能快速变成可验证的原型。对于远程团队，它可能成为比Figma更轻量的设计沟通工具。
@@ -283,7 +283,7 @@ Anthropic为Claude Code引入Artifacts，允许开发者在对话中创建并分
 
 ### Cursor 1.5T模型弃用Kimi基座，马斯克600亿股票收购后首刀指向GitHub
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-06-19/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-06-19/product-05.jpg)
 
 
 Cursor最新1.5T模型不再使用Kimi作为基座，同时有消息称马斯克以600亿美元股票收购Cursor后，计划用其直接挑战GitHub的代码托管与协作业务。这一变化意味着Cursor正在摆脱对第三方模型依赖，转向自有训练栈，同时收购后的战略方向从工具转向平台。对于开发者社区，Cursor与GitHub的潜在竞争可能重塑代码协作的格局——但600亿估值是否合理，还需看实际装机转化。
@@ -292,7 +292,7 @@ Cursor最新1.5T模型不再使用Kimi作为基座，同时有消息称马斯克
 
 ### Pixi iOS应用将文字消息变身交互式AR，挑战动图贴图
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-06-19/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-06-19/product-06.jpg)
 
 
 初创公司Pixi发布iOS应用，利用AR技术将普通文本消息（如“生日快乐”“加油”）转为可交互的3D体验，用户可在空间中旋转、缩放、触碰触发特效。定位是“下一代动图贴纸”。为什么重要？它把AR门槛降到“发一条消息”，无需建模或编程，可能成为社交产品中的新表达方式。但挑战在于用户习惯迁移——动图贴纸已是成熟品类，AR能否带来足够差异化的体验值得观察。
@@ -301,7 +301,7 @@ Cursor最新1.5T模型不再使用Kimi作为基座，同时有消息称马斯克
 
 ### Chrome发布WebMCP标准提案，为Agent提供原生Web操作能力
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-06-19/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-06-19/product-07.jpg)
 
 
 Google Chrome启动WebMCP Origin Trial，旨在让AI Agent能通过标准协议原生操作浏览器（如点击、输入、滚动、读取DOM），类似MCP（模型上下文协议）但专门针对Web环境。关键点在于，这是浏览器层面为Agent自动化背书，一旦标准化，将大幅降低RPA和网页爬虫的开发成本。对于产品经理，这意味着“浏览器即Agent执行环境”的愿景更近一步，但也带来安全与合规的新议题。
@@ -318,7 +318,7 @@ Google Chrome启动WebMCP Origin Trial，旨在让AI Agent能通过标准协议�
 
 ### 桑德斯7万亿AI公有化：业界震荡
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-06-19/opinion-00.jpg)
 
 
 美国参议员Bernie Sanders公布了一项7万亿美元的AI基金计划，主张通过政府主导的方式让美国公众掌握AI产业控制权。该计划要求科技巨头交出核心算法与基础设施，转由公共信托管理。OpenAI、Google等公司强烈反对，称这将扼杀创新。 **关键点**：这是迄今最大规模的AI公共投资提案，金额相当于美国年度GDP的1/4；方案若落地，将彻底改变AI公司的商业模式和资本结构。 **为什么重要**：它把“AI属于谁”从学术辩论推入立法战场，标志着美国内部对AI集中化的信任危机已经达到临界点。
@@ -327,7 +327,7 @@ Google Chrome启动WebMCP Origin Trial，旨在让AI Agent能通过标准协议�
 
 ### G7警告：不能接受美国随时切断AI服务
 
-![opinion-01.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opinion-01.jpg)
+![opinion-01.jpg](/assets/img/ai-hot/2026-06-19/opinion-01.jpg)
 
 
 法国总统马克龙和印度总理莫迪在G7峰会上公开表示，Anthropic“黑屏事件”加剧了各国对美国AI供应可靠性的担忧。他们认为，依赖美国单方面控制的关键AI基础设施存在地缘政治风险，呼吁建立多边治理机制。 **关键点**：“黑屏事件”指Anthropic在上周因合规审查短暂关闭了部分海外API接口；马克龙强调“主权AI”不是选项而是必需品。 **为什么重要**：AI正从商业服务转变为战略性资源，盟友国家开始要求“不可切断”的AI供给保障，这将推动区域化AI基础设施建设。
@@ -336,7 +336,7 @@ Google Chrome启动WebMCP Origin Trial，旨在让AI Agent能通过标准协议�
 
 ### Yann LeCun警告：OpenAI等面临巨大泡沫
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-06-19/opinion-02.jpg)
 
 
 Meta AI负责人Yann LeCun在采访中表示，当前AI投资热潮本质上是泡沫，OpenAI和Anthropic等实验室需要根本性的新技术突破才能支撑现有估值。他认为，单纯扩大模型参数规模已经无法带来同等回报。 **关键点**：LeCun以“巨大泡沫爆炸”形容，暗示调整不可避免；他同时批评了“AGI即将到来”的叙事，认为行业被过度炒作。 **为什么重要**：作为反对通用AI快速实现的代表性人物，LeCun的警告可能影响风投对AI实验室的估值逻辑，尤其是那些尚未盈利的头部玩家。
@@ -345,7 +345,7 @@ Meta AI负责人Yann LeCun在采访中表示，当前AI投资热潮本质上是�
 
 ### NEA合伙人：AI ROI大考已来，账单即将到期
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-06-19/opinion-03.jpg)
 
 
 NEA合伙人Tiffany Luck在访谈中指出，企业正在经历AI投资回报率的残酷检验。Token消耗狂潮（Tokenmaxxing）后，CTO们开始追问投入产出比。她认为个人AI代理（personal AI agents）和合理的度量框架是下一阶段的关键。 **关键点**：Luck提到“ROI Reckoning”，即企业不会再为没有明确商业价值的AI功能买单；投资方向从通用模型转向垂直场景，尤其是个人代理。 **为什么重要**：这代表了VC对AI投资的最新判断——市场正在从“赌未来”转向“算现值”，对初创公司意味着融资门槛显著提高。
@@ -360,7 +360,7 @@ NEA合伙人Tiffany Luck在访谈中指出，企业正在经历AI投资回报率
 
 ### Stratechery专访：AI重塑电商推荐与分发
 
-![opinion-05.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opinion-05.jpg)
+![opinion-05.jpg](/assets/img/ai-hot/2026-06-19/opinion-05.jpg)
 
 
 Stratechery与电商专家Michael Morton深度对话，讨论AI如何改变推荐算法和商品分发逻辑。Morton认为传统电商的“搜索+广告”模型正在被“意图预测+动态定价”取代，同时无人驾驶配送与不可证伪的利空论点（如“AI会摧毁一切”）让行业决策变得复杂。 **关键点**：AI可以实时模拟用户决策树的每个分支，但核心瓶颈不是算法，而是数据所有权；Morton指出“不可证伪的悲观论”会误导战略判断。 **为什么重要**：电商产品经理需要区分真正的技术机会与概念噪音，这篇文章提供了对抗“FUD”（恐惧、不确定、怀疑）的框架。
@@ -369,7 +369,7 @@ Stratechery与电商专家Michael Morton深度对话，讨论AI如何改变推�
 
 ### 分析师：高级黑客能力的AI模型很快成为常态
 
-![opinion-06.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opinion-06.jpg)
+![opinion-06.jpg](/assets/img/ai-hot/2026-06-19/opinion-06.jpg)
 
 
 Ars Technica分析指出，具备先进网络攻击能力的AI模型将不可避免地问世。无论是通过开源模型微调还是越狱通用模型，攻击方获取能力的门槛正快速降低。监管努力（如模型安全评估法案）可能难以阻止。 **关键点**：当前已有针对特定漏洞的AI辅助攻击工具，未来可能出现自主规划、多阶段攻击的agentic模型。 **为什么重要**：对安全从业者和CTO来说，这意味着防御体系的设计必须假设AI驱动的攻击是常态，而非特例。
@@ -378,7 +378,7 @@ Ars Technica分析指出，具备先进网络攻击能力的AI模型将不可避
 
 ### 社交媒体允许用户自定义算法：AI推荐进入用户主导时代
 
-![opinion-07.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opinion-07.jpg)
+![opinion-07.jpg](/assets/img/ai-hot/2026-06-19/opinion-07.jpg)
 
 
 Threads、Instagram、TikTok相继推出用户可直接控制推荐算法的功能，允许调整内容来源、类型权重甚至关闭AI推荐。平台从“被动接受”转向“主动定制”。 **关键点**：这是对监管压力和用户隐私担忧的回应；但完全自定义可能降低内容发现效率。 **为什么重要**：产品经理需要思考：当用户能控制算法后，平台的增长引擎如何重构？推荐系统的核心价值从“猜你喜欢”变成“帮你选”。
@@ -397,7 +397,7 @@ Threads、Instagram、TikTok相继推出用户可直接控制推荐算法的功�
 
 ### Continue：开源编码Agent框架获广泛关注
 
-![opensource-00.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opensource-00.jpg)
+![opensource-00.jpg](/assets/img/ai-hot/2026-06-19/opensource-00.jpg)
 
 
 **是什么**：Continue 是一款开源 AI 编码助手，定位为 Claude Code 等商业工具的替代品。
@@ -410,7 +410,7 @@ Threads、Instagram、TikTok相继推出用户可直接控制推荐算法的功�
 
 ### UI-TARS-desktop：字节跳动开源桌面多模态AI Agent栈
 
-![opensource-01.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opensource-01.jpg)
+![opensource-01.jpg](/assets/img/ai-hot/2026-06-19/opensource-01.jpg)
 
 
 **是什么**：字节跳动开源 UI-TARS-desktop，这是一套从模型到 Agent 基础设施的完整开源栈，专门面向桌面端多模态交互场景。
@@ -423,7 +423,7 @@ Threads、Instagram、TikTok相继推出用户可直接控制推荐算法的功�
 
 ### Superpowers：为编码Agent提供可组合技能框架
 
-![opensource-02.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opensource-02.jpg)
+![opensource-02.jpg](/assets/img/ai-hot/2026-06-19/opensource-02.jpg)
 
 
 **是什么**：Superpowers 是一套 Agent 软件开发方法论，核心是一组可组合技能（composable skills），旨在提升 AI 编码能力。
@@ -436,7 +436,7 @@ Threads、Instagram、TikTok相继推出用户可直接控制推荐算法的功�
 
 ### OpenMontage：Agent驱动的自动化视频生产系统
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-06-19/opensource-03.jpg)
 
 
 **是什么**：OpenMontage 号称世界首个开源 agentic 视频制作系统，包含 52 个工具和 500 多个技能。
@@ -449,7 +449,7 @@ Threads、Instagram、TikTok相继推出用户可直接控制推荐算法的功�
 
 ### RAGFlow：领先的检索增强生成引擎全面开源
 
-![opensource-04.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opensource-04.jpg)
+![opensource-04.jpg](/assets/img/ai-hot/2026-06-19/opensource-04.jpg)
 
 
 **是什么**：RAGFlow 将前沿 RAG（检索增强生成）技术与 Agent 能力深度结合，为 LLM 提供高质量上下文层。
@@ -462,7 +462,7 @@ Threads、Instagram、TikTok相继推出用户可直接控制推荐算法的功�
 
 ### RD-Agent：微软开源AI驱动的研发自动化工具
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-06-19/opensource-05.jpg)
 
 
 **是什么**：Microsoft RD-Agent 是一款专注于数据与模型研发自动化的工具，旨在加速工业级 AI 研究。
@@ -475,7 +475,7 @@ Threads、Instagram、TikTok相继推出用户可直接控制推荐算法的功�
 
 ### VoxCPM2：无需分词器的多语言高质量语音合成
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-06-19/opensource-06.jpg)
 
 
 **是什么**：OpenBMB 发布 VoxCPM2，支持多语言语音生成、创意声音设计和逼真语音克隆，且无需传统 Tokenizer。
@@ -488,7 +488,7 @@ Threads、Instagram、TikTok相继推出用户可直接控制推荐算法的功�
 
 ### Netflix开源工具：砍掉90%冗余Token，年省70万美元
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-06-19/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-06-19/opensource-07.jpg)
 
 
 **是什么**：Netflix 开源了一款 AI Token 优化工具，通过消除冗余词元（如重复的标点、无用格式、无效上下文），大幅降低 API 调用成本。

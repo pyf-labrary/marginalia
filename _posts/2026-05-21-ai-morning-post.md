@@ -33,7 +33,7 @@ sections:
 
 ### Gemini 3.5 Flash：速度4倍、成本减半，即日可用
 
-![model_release-00.jpg](/marginalia/assets/img/ai-hot/2026-05-21/model_release-00.jpg)
+![model_release-00.jpg](/assets/img/ai-hot/2026-05-21/model_release-00.jpg)
 
 
 **是什么**：Google在I/O 2026上正式发布Gemini 3.5 Flash，声称推理速度提升4倍，API成本较前代降低50%，在编程和智能体（agentic）基准测试上超越上一代模型。即日起全球可用。**关键点**：速度提升直接降低了用户延迟敏感型应用的调用门槛，成本减半则可能引发新一轮价格战。**为什么重要**：对于开发者和B端客户，Flash系列本就主打低成本、高吞吐，Gemini 3.5 Flash的升级意味着更多实时对话、代码补全和Agent编排场景可以商业落地，Google试图用“性价比”挤压竞争对手——尤其是Claude和GPT-4o mini的市场空间。
@@ -42,7 +42,7 @@ sections:
 
 ### Gemini Omni：从任意输入到视频生成，多模态再进一步
 
-![model_release-01.jpg](/marginalia/assets/img/ai-hot/2026-05-21/model_release-01.jpg)
+![model_release-01.jpg](/assets/img/ai-hot/2026-05-21/model_release-01.jpg)
 
 
 **是什么**：Google发布Gemini Omni，一个能从文本、图像、音频甚至视频输入生成任意输出内容（包括视频）的全能模型。**关键点**：它是Google多模态能力的“天花板”产品，首次实现了“输入视频→输出视频”的端到端生成，意味着用户可以直接用一段视频作为Prompt生成新视频，而不必经过文本中间态。**为什么重要**：这标志着基础模型从“多模态理解”跨入“多模态原生生成”，对游戏、短视频、虚拟制作等行业可能产生结构性冲击。Gemini Omni与Flash形成高低搭配：Flash跑量和跑敏捷，Omni探索边界。投资者应关注后续API定价——如果成本可控，它可能重定义AI内容生产流程。
@@ -57,7 +57,7 @@ sections:
 
 ### Stable Audio 3.0：6分钟歌曲，开源权重可本地运行
 
-![model_release-03.jpg](/marginalia/assets/img/ai-hot/2026-05-21/model_release-03.jpg)
+![model_release-03.jpg](/assets/img/ai-hot/2026-05-21/model_release-03.jpg)
 
 
 **是什么**：Stability AI发布Stable Audio 3.0，支持生成最长6分钟的音乐作品，同时发布小型模型版本并开放权重，允许本地部署。**关键点**：6分钟意味着从“片段生成”跨越到“歌曲级创作”，并且开放权重让音乐AI真正进入可复现、可定制的阶段。小型模型能跑在消费级GPU上。**为什么重要**：开源策略延续了Stability AI在图像领域的路线，进一步挤压闭源音乐生成工具（如MusicLM）的空间。对于BGM、游戏配乐、个人创作者，这是成本最低的AI音乐选项。但版权合规和音频质量仍是商用前的门槛。
@@ -66,7 +66,7 @@ sections:
 
 ### Deepseek 开发代码工具 Deepseek Code，直指Claude Code
 
-![model_release-04.jpg](/marginalia/assets/img/ai-hot/2026-05-21/model_release-04.jpg)
+![model_release-04.jpg](/assets/img/ai-hot/2026-05-21/model_release-04.jpg)
 
 
 **是什么**：Deepseek正在构建类似Claude Code和OpenAI Codex的AI编程助手，内部项目代号Deepseek Code，意图进入开发者工具市场。**关键点**：目前尚无具体发布时间或demo，但此举表明Deepseek从“基础模型供应商”向“应用层工具”延伸。**为什么重要**：开发者工具是一个黏性极强的入口，如果Deepseek Code能复用其模型在代码基准上的优势（如DeepSeek-Coder系列），并在价格或本地部署上做差异化，可能威胁当前Claude Code的份额。对中国开发者市场，Deepseek Code可能成为GitHub Copilot之外的国产替代选项。
@@ -85,7 +85,7 @@ OpenAI在扫清马斯克诉讼障碍后，加速推进IPO，窗口或定于九�
 
 ### OpenAI加速推进IPO，或于九月上市
 
-![company-00.jpg](/marginalia/assets/img/ai-hot/2026-05-21/company-00.jpg)
+![company-00.jpg](/assets/img/ai-hot/2026-05-21/company-00.jpg)
 
 
 马斯克诉讼案败诉后，OpenAI恢复IPO筹备。据知情人士透露，公司正与投行密集接洽，目标是在2026年9月完成上市。若成行，这将是今年最受瞩目的科技IPO之一。OpenAI目前估值未公开，但此前在一级市场已超1500亿美元。关键点在于：上市将为OpenAI提供更稳定的融资渠道，同时让早期投资者和员工获得流动性。但也意味着将面临更严格的财务披露和季度业绩压力。
@@ -93,7 +93,7 @@ OpenAI在扫清马斯克诉讼障碍后，加速推进IPO，窗口或定于九�
 
 ### GitHub 遭恶意VSCode扩展入侵，3800个仓库受影响
 
-![company-01.jpg](/marginalia/assets/img/ai-hot/2026-05-21/company-01.jpg)
+![company-01.jpg](/assets/img/ai-hot/2026-05-21/company-01.jpg)
 
 
 GitHub确认一次安全事件：攻击者通过恶意VSCode扩展获取了内部访问权限，导致约3800个私有仓库被暴露。GitHub表示已撤销恶意扩展并加强审查流程，但未披露受影响的具体数据。对于技术从业者，这起事件再次敲响警钟：开发工具链的供应链攻击正变得越来越隐蔽。建议团队审计正在使用的VSCode扩展权限，尤其是那些可访问GitHub令牌的扩展。
@@ -101,7 +101,7 @@ GitHub确认一次安全事件：攻击者通过恶意VSCode扩展获取了内�
 
 ### NVIDIA 财报再创纪录，披露持有43亿美元初创公司股份
 
-![company-02.jpg](/marginalia/assets/img/ai-hot/2026-05-21/company-02.jpg)
+![company-02.jpg](/assets/img/ai-hot/2026-05-21/company-02.jpg)
 
 
 NVIDIA最新季度营收再创新高，同时首次公开披露其持有的大量AI初创公司股权，总额达430亿美元。这意味着NVIDIA不仅是算力供应商，也是AI生态的“影子VC”。从投资角度看，NVIDIA对自家芯片依赖性强的企业进行战略投资，既锁定了客户，又分享了成长收益。但投资者需关注这种“既是裁判又是球员”的潜在利益冲突。
@@ -109,7 +109,7 @@ NVIDIA最新季度营收再创新高，同时首次公开披露其持有的大�
 
 ### xAI 亏损64亿美元，SpaceX IPO文件曝光财务状况
 
-![company-03.jpg](/marginalia/assets/img/ai-hot/2026-05-21/company-03.jpg)
+![company-03.jpg](/assets/img/ai-hot/2026-05-21/company-03.jpg)
 
 
 SpaceX的IPO文件意外展示了旗下xAI的财务情况：2025年亏损64亿美元，收入远不及烧钱速度。xAI计划大规模扩张Grok模型训练，同时面临数据中心发电机诉讼。尽管巨额亏损，xAI依然获得Anthropic每月12.5亿美元的算力订单，表明其自有算力资源已成为稀缺资产。对投资人而言，需要判断xAI能否将算力优势转化为可持续的商业模型。
@@ -117,7 +117,7 @@ SpaceX的IPO文件意外展示了旗下xAI的财务情况：2025年亏损64亿�
 
 ### Anthropic 将每月向xAI支付12.5亿美元计算资源费用
 
-![company-04.jpg](/marginalia/assets/img/ai-hot/2026-05-21/company-04.jpg)
+![company-04.jpg](/assets/img/ai-hot/2026-05-21/company-04.jpg)
 
 
 据TechCrunch报道，Anthropic与xAI签署协议，每月支付12.5亿美元购买其算力。这笔交易总额惊人，2026年将达150亿美元，远超许多AI公司营收。关键在于，这反映了前沿AI训练的算力需求已经大到单一云厂商难以满足，跨公司算力交易成为新常态。同时，也给xAI带来了稳定的现金流，抵消部分亏损。Anthropic则借此绕过微软Azure等竞对云平台的限制。
@@ -125,7 +125,7 @@ SpaceX的IPO文件意外展示了旗下xAI的财务情况：2025年亏损64亿�
 
 ### Andrej Karpathy 离开OpenAI加入Anthropic
 
-![company-05.jpg](/marginalia/assets/img/ai-hot/2026-05-21/company-05.jpg)
+![company-05.jpg](/assets/img/ai-hot/2026-05-21/company-05.jpg)
 
 
 知名AI研究员Andrej Karpathy选择离开OpenAI，加入Anthropic重返前沿大模型研发。Karpathy此前在OpenAI担任重要角色，后短暂离开创业。这次加盟Anthropic，被解读为对OpenAI当前技术路线的不同看法。对于行业观察者，这进一步印证了Anthropic正在快速吸纳顶级人才，与OpenAI形成正面竞争。
@@ -138,7 +138,7 @@ Google的AI水印技术SynthID获得OpenAI和Nvidia官方支持，作为内容�
 
 ### Mistral AI 收购 AI 初创公司 Emmi AI
 
-![company-07.jpg](/marginalia/assets/img/ai-hot/2026-05-21/company-07.jpg)
+![company-07.jpg](/assets/img/ai-hot/2026-05-21/company-07.jpg)
 
 
 法国AI领军者Mistral AI宣布收购Emmi AI，以增强其在企业AI应用层的能力。Emmi AI专注于低代码AI集成工具，收购后Mistral将加速垂直行业解决方案的落地。对于欧洲AI生态，这是一次典型的“基础模型公司向下游应用延伸”的策略，类似微软收购Nuance的逻辑。
@@ -164,7 +164,7 @@ Google的AI水印技术SynthID获得OpenAI和Nvidia官方支持，作为内容�
 
 ### NVIDIA发布Nemotron-Labs-Diffusion：三模式语言模型
 
-![research-01.jpg](/marginalia/assets/img/ai-hot/2026-05-21/research-01.jpg)
+![research-01.jpg](/assets/img/ai-hot/2026-05-21/research-01.jpg)
 
 
 **是什么**：NVIDIA发布的Nemotron-Labs-Diffusion支持自回归、扩散并行和自推测解码三种模式，在同等计算资源下生成6倍token。  
@@ -175,7 +175,7 @@ Google的AI水印技术SynthID获得OpenAI和Nvidia官方支持，作为内容�
 
 ### 两个AI科研助手成功完成药物重定位任务
 
-![research-02.jpg](/marginalia/assets/img/ai-hot/2026-05-21/research-02.jpg)
+![research-02.jpg](/assets/img/ai-hot/2026-05-21/research-02.jpg)
 
 
 **是什么**：两个AI工具各自独立完成假设生成与数据分析，在药物重定位任务中展现出潜力。  
@@ -186,7 +186,7 @@ Google的AI水印技术SynthID获得OpenAI和Nvidia官方支持，作为内容�
 
 ### AI智能体修复局部漏洞但缺乏系统理解
 
-![research-03.jpg](/marginalia/assets/img/ai-hot/2026-05-21/research-03.jpg)
+![research-03.jpg](/assets/img/ai-hot/2026-05-21/research-03.jpg)
 
 
 **是什么**：基准测试显示AI智能体能够独立修复代码漏洞，但在理解系统范围影响方面表现不佳。  
@@ -205,7 +205,7 @@ Google的AI水印技术SynthID获得OpenAI和Nvidia官方支持，作为内容�
 
 ### Google搜索全面Agent化：AI代理永久在线执行任务
 
-![product-00.jpg](/marginalia/assets/img/ai-hot/2026-05-21/product-00.jpg)
+![product-00.jpg](/assets/img/ai-hot/2026-05-21/product-00.jpg)
 
 
 Google在I/O 2026宣布搜索升级为Agent驱动，用户可创建后台代理，设定监控数据、自动下单、定期报告等长期任务。代理持续运行，在后台感知环境变化并自主行动。这意味着搜索从“你问它答”变成“你设它做”——用户不再需要主动查询，代理替你盯盘、比价、填表。这背后依赖Gemini的推理能力和长上下文，但真正突破在于“永久在线”和“可执行”的范式切换。
@@ -214,7 +214,7 @@ Google在I/O 2026宣布搜索升级为Agent驱动，用户可创建后台代理�
 
 ### Google发布Antigravity 2.0：独立的Agent原生平台
 
-![product-01.jpg](/marginalia/assets/img/ai-hot/2026-05-21/product-01.jpg)
+![product-01.jpg](/assets/img/ai-hot/2026-05-21/product-01.jpg)
 
 
 Antigravity 2.0作为独立桌面应用发布，提供CLI、SDK、托管执行和企业级支持，全面替代此前Gemini CLI。这是Google首个专为代理（agent）设计的原生平台：开发者可用CLI创建、调试、部署代理，SDK支持Python/TypeScript，托管服务自动处理扩缩容与持久化。对于技术团队，这意味着Agent开发门槛大幅降低——不再需要自行管理基础设施，一个命令即可上线永久运行的AI worker。
@@ -223,7 +223,7 @@ Antigravity 2.0作为独立桌面应用发布，提供CLI、SDK、托管执行�
 
 ### Google Genie世界模型结合街景，生成可探索实景世界
 
-![product-02.jpg](/marginalia/assets/img/ai-hot/2026-05-21/product-02.jpg)
+![product-02.jpg](/assets/img/ai-hot/2026-05-21/product-02.jpg)
 
 
 DeepMind将Genie世界模型与Google街景数据结合，创造基于真实地点的交互式3D模拟。用户可进入任意街景位置，自由行走、改变视角、与物体交互。这对游戏开发、机器人训练、虚拟旅游有直接价值：开发者不用手动建模，AI自动从真实场景中生成可探索的虚拟世界。本质上，这是世界模型从演示demo走向实用产品的重要一步。
@@ -232,7 +232,7 @@ DeepMind将Genie世界模型与Google街景数据结合，创造基于真实地�
 
 ### Google发布AI智能眼镜，语音交互加持Gemini
 
-![product-03.jpg](/marginalia/assets/img/ai-hot/2026-05-21/product-03.jpg)
+![product-03.jpg](/assets/img/ai-hot/2026-05-21/product-03.jpg)
 
 
 Google推出音频智能眼镜，支持语音命令直接唤醒Gemini，可实时翻译、导航、搜索，外形与普通眼镜接近，对标Meta Ray-Ban。关键差异在于：Google眼镜默认集成Gemini Live，可进行多轮对话和跨应用操作。对开发者而言，这意味着语音交互+视觉AI（眼镜内置摄像头）的软硬件入口正在成形，应用场景从“翻译器”延伸到“AI副驾”。
@@ -241,7 +241,7 @@ Google推出音频智能眼镜，支持语音命令直接唤醒Gemini，可实�
 
 ### Figma 加入AI助手，自然语言驱动设计
 
-![product-04.jpg](/marginalia/assets/img/ai-hot/2026-05-21/product-04.jpg)
+![product-04.jpg](/assets/img/ai-hot/2026-05-21/product-04.jpg)
 
 
 Figma发布AI agent，用户可通过自然语言指令直接生成界面、编辑元素，并自动化重复任务（如批量改样式、生成组件变体）。这是设计工具从“手动拖拽”到“口语化操控”的转折。产品经理和设计师可通过一句话快速产出线框图，开发者可要求AI生成符合设计系统的代码片段。值得关注的是Figma强调“人工确认”环节，避免完全自动化带来的失控风险。
@@ -250,7 +250,7 @@ Figma发布AI agent，用户可通过自然语言指令直接生成界面、编�
 
 ### Anthropic 推出Routines for Claude Code，自动化工作流
 
-![product-05.jpg](/marginalia/assets/img/ai-hot/2026-05-21/product-05.jpg)
+![product-05.jpg](/assets/img/ai-hot/2026-05-21/product-05.jpg)
 
 
 Anthropic发布Claude Code的Routines功能：用户可录制并保存一组开发操作（如代码审查、测试生成、文件重构），之后一键重复执行。这实质上是把Claude Code从一个对话助手升级为可配置的自动化Worker。对于开发者，Routines可将高频重复的编码工作流委托给AI，同时保持对每个步骤的控制。这与Google的Agent化思路类似，但更聚焦代码场景，且强调“可回放”。
@@ -259,7 +259,7 @@ Anthropic发布Claude Code的Routines功能：用户可录制并保存一组开�
 
 ### Google Gmail 新增AI语音搜索，对话式检索邮件
 
-![product-06.jpg](/marginalia/assets/img/ai-hot/2026-05-21/product-06.jpg)
+![product-06.jpg](/assets/img/ai-hot/2026-05-21/product-06.jpg)
 
 
 Gmail引入语音AI搜索，用户可用自然语言查找邮件，例如“帮我找出上周三和财务部关于预算的邮件”或“显示所有带附件的未读邮件”。基于Gemini，支持多轮对话和上下文理解。这是搜索入口从文本转向语音的自然延伸，也意味着Google将其核心Agent能力嵌入高频应用——收发邮件，从而提高用户粘性和数据闭环。
@@ -268,7 +268,7 @@ Gmail引入语音AI搜索，用户可用自然语言查找邮件，例如“帮�
 
 ### Cloudflare Workflows V2 支持5万并发工作流
 
-![product-07.jpg](/marginalia/assets/img/ai-hot/2026-05-21/product-07.jpg)
+![product-07.jpg](/assets/img/ai-hot/2026-05-21/product-07.jpg)
 
 
 Cloudflare推出Workflows V2，实现确定性执行和5万并发工作流，适合大规模AI任务编排（如批量数据流水线、Agent多步骤协同）。核心升级：1）内置重试和持久化，保证每个任务不丢；2）支持条件分支和循环，可编排复杂AI agent逻辑。对于工程团队，这意味着可以用较低成本运行海量AI worker，而无需管理消息队列和状态存储。
@@ -285,7 +285,7 @@ Cloudflare推出Workflows V2，实现确定性执行和5万并发工作流，适
 
 ### LinkedIn承认AI垃圾信息失控，平台治理形同虚设
 
-![opinion-00.jpg](/marginalia/assets/img/ai-hot/2026-05-21/opinion-00.jpg)
+![opinion-00.jpg](/assets/img/ai-hot/2026-05-21/opinion-00.jpg)
 
 
 LinkedIn 宣布推出新政策打击 AI 生成的低质量内容，包括降低“纯 AI 生成帖”的推荐权重，并要求用户标注 AI 辅助创作内容。然而，这一举措被业内解读为变相的认输——平台已无法有效区分人机内容，信息流正在被自动生成的“垃圾”内容淹没。
@@ -308,7 +308,7 @@ LinkedIn 宣布推出新政策打击 AI 生成的低质量内容，包括降低�
 
 ### DeepMind CEO称AI裁员很蠢，应扩大业务而非缩减人力
 
-![opinion-02.jpg](/marginalia/assets/img/ai-hot/2026-05-21/opinion-02.jpg)
+![opinion-02.jpg](/assets/img/ai-hot/2026-05-21/opinion-02.jpg)
 
 
 DeepMind 联合创始人兼 CEO Demis Hassabis 在采访中直言：用 AI 替代人类员工是短视行为。他认为公司应利用 AI 提升的生产力去开拓新业务、创造新岗位，而非简单地裁员降本。他批评当前企业“成本优先”的思路忽略了长期创新潜力。
@@ -321,7 +321,7 @@ DeepMind 联合创始人兼 CEO Demis Hassabis 在采访中直言：用 AI 替�
 
 ### AI成本过高：模型涨价引发开发者担忧
 
-![opinion-03.jpg](/marginalia/assets/img/ai-hot/2026-05-21/opinion-03.jpg)
+![opinion-03.jpg](/assets/img/ai-hot/2026-05-21/opinion-03.jpg)
 
 
 近一周内，包括 Gemini 3.5 Flash 在内的多款模型宣布涨价，涨幅在 20%–50% 不等。开发者社区普遍感到焦虑——AI 推理成本非但未如预期下降，反而因训练复杂度提升而持续攀升。小团队和个人开发者开始重新评估依赖 API 的性价比。
@@ -372,7 +372,7 @@ DeepMind 联合创始人兼 CEO Demis Hassabis 在采访中直言：用 AI 替�
 
 ### CLI-Anything：让所有软件变成Agent原生接口
 
-![opensource-03.jpg](/marginalia/assets/img/ai-hot/2026-05-21/opensource-03.jpg)
+![opensource-03.jpg](/assets/img/ai-hot/2026-05-21/opensource-03.jpg)
 
 
 **是什么：** CLI-Anything 通过命令行接口将各种软件改造为AI agent可以调用的原生接口，打通agent与任意软件间的交互通道。
@@ -395,7 +395,7 @@ DeepMind 联合创始人兼 CEO Demis Hassabis 在采访中直言：用 AI 替�
 
 ### agentmemory：AI编码代理持久化记忆库
 
-![opensource-05.jpg](/marginalia/assets/img/ai-hot/2026-05-21/opensource-05.jpg)
+![opensource-05.jpg](/assets/img/ai-hot/2026-05-21/opensource-05.jpg)
 
 
 **是什么：** agentmemory 是一个基于基准测试第一的持久化记忆方案，专为AI编码代理提供长期记忆能力。
@@ -408,7 +408,7 @@ DeepMind 联合创始人兼 CEO Demis Hassabis 在采访中直言：用 AI 替�
 
 ### CloakBrowser：防检测隐身浏览器，通过所有bot测试
 
-![opensource-06.jpg](/marginalia/assets/img/ai-hot/2026-05-21/opensource-06.jpg)
+![opensource-06.jpg](/assets/img/ai-hot/2026-05-21/opensource-06.jpg)
 
 
 **是什么：** CloakBrowser 是一款基于Chromium的隐身浏览器，能够绕过所有主流bot检测机制，可作为Playwright的直接替代品。
@@ -421,7 +421,7 @@ DeepMind 联合创始人兼 CEO Demis Hassabis 在采访中直言：用 AI 替�
 
 ### RTK (Rust Token Killer)：减少LLM token消耗60-90%
 
-![opensource-07.jpg](/marginalia/assets/img/ai-hot/2026-05-21/opensource-07.jpg)
+![opensource-07.jpg](/assets/img/ai-hot/2026-05-21/opensource-07.jpg)
 
 
 **是什么：** RTK 是一个纯Rust编写的CLI代理，通过缓存和压缩技术大幅降低常见开发命令（如git log、cat等）在LLM调用中的token消耗。

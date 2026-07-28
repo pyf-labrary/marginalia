@@ -6,12 +6,12 @@ permalink: /apps/
 wide: true
 ---
 
-互动应用集合。和 [Showcases](/marginalia/showcases/) 的"静态 deck"不同，这里的每一个都是带后端逻辑或重交互的 SPA。配图均为应用实际界面截图。
+互动应用集合。和 [Showcases](/showcases/) 的"静态 deck"不同，这里的每一个都是带后端逻辑或重交互的 SPA。配图均为应用实际界面截图。
 
 <ul class="cover-list" role="list">
 
 <li class="cover-row">
-<a class="cover-media" href="https://github.com/pyf-labrary/model-arena"><img src="/marginalia/assets/img/site/covers/model-arena.jpg" alt="Model Arena 排名页：17 个模型的通过/无瑕通过/答对三列并排，附耗时与 token 条形图" loading="lazy"></a>
+<a class="cover-media" href="https://github.com/pyf-labrary/model-arena"><img src="/assets/img/site/covers/model-arena.jpg" alt="Model Arena 排名页：17 个模型的通过/无瑕通过/答对三列并排，附耗时与 token 条形图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## Model Arena · 工具调用测评场
 
@@ -19,7 +19,7 @@ wide: true
 
 题库跑在一个自包含的样例工作区上，**标准答案由生成器从数据结构实算、再回磁盘对账**（不一致直接报错退出），所以判分可以全自动。工作区里处处埋雷——大小写变体文件名、更长的近似标记、`.bak` 备份、归档区的假模块、一个故意返回过期缓存值的工具——每个雷对应一类真实的 agent 失败模式。
 
-仓库带了 2026-07-25 那次 **17 模型实测的全部原始数据**，每道题保留模型原始回答与完整工具调用序列，可以用别的判据 `--rescore` 复判而不必重跑。相关的两个发现写在[这篇文章](/marginalia/posts/2026-07-25-model-arena/)里：同一个模型换条通道走分数能差一倍；「畸形工具调用」看着像模型不行、其实不是。
+仓库带了 2026-07-25 那次 **17 模型实测的全部原始数据**，每道题保留模型原始回答与完整工具调用序列，可以用别的判据 `--rescore` 复判而不必重跑。相关的两个发现写在[这篇文章](/posts/2026-07-25-model-arena/)里：同一个模型换条通道走分数能差一倍；「畸形工具调用」看着像模型不行、其实不是。
 
 → [源代码](https://github.com/pyf-labrary/model-arena)（MIT 开源）
 
@@ -30,7 +30,7 @@ wide: true
 </li>
 
 <li class="cover-row">
-<a class="cover-media" href="https://github.com/pyf-labrary/smart-toolbox"><img src="/marginalia/assets/img/site/covers/smart-toolbox.jpg" alt="智能工具箱界面拼贴：首页计时组、运行中圆形进度盘、编辑串联步骤" loading="lazy"></a>
+<a class="cover-media" href="https://github.com/pyf-labrary/smart-toolbox"><img src="/assets/img/site/covers/smart-toolbox.jpg" alt="智能工具箱界面拼贴：首页计时组、运行中圆形进度盘、编辑串联步骤" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 智能工具箱 · Smart Toolbox
 
@@ -47,7 +47,7 @@ wide: true
 </li>
 
 <li class="cover-row">
-<a class="cover-media" href="https://dashboard.ssbx.site/"><img src="/marginalia/assets/img/site/covers/bodhi-web.jpg" alt="BODHI 制片人预览板实际界面：左侧导航 + 镜次面板里一格格电影级镜头卡，每张标着选用 take 和单镜花费" loading="lazy"></a>
+<a class="cover-media" href="https://dashboard.ssbx.site/"><img src="/assets/img/site/covers/bodhi-web.jpg" alt="BODHI 制片人预览板实际界面：左侧导航 + 镜次面板里一格格电影级镜头卡，每张标着选用 take 和单镜花费" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## BODHI 制片人预览板 (bodhi-web)
 
@@ -65,7 +65,7 @@ wide: true
 </li>
 
 <li class="cover-row">
-<a class="cover-media" href="https://github.com/pyf-labrary/fanbox-web"><img src="/marginalia/assets/img/site/covers/fanbox-web.jpg" alt="翻箱 Web 版实际界面：左侧文件网格 + 底部内嵌终端正在跑命令" loading="lazy"></a>
+<a class="cover-media" href="https://github.com/pyf-labrary/fanbox-web"><img src="/assets/img/site/covers/fanbox-web.jpg" alt="翻箱 Web 版实际界面：左侧文件网格 + 底部内嵌终端正在跑命令" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## 翻箱 Web 版 (fork 花叔作品)
 
@@ -82,7 +82,7 @@ wide: true
 </li>
 
 <li class="cover-row">
-<a class="cover-media" href="https://tty.panyifeng.xyz/"><img src="/marginalia/assets/img/site/covers/claude-web-terminal.jpg" alt="Claude Web Terminal 实际界面：浏览器里的 Claude Code 多窗口会话" loading="lazy"></a>
+<a class="cover-media" href="https://tty.panyifeng.xyz/"><img src="/assets/img/site/covers/claude-web-terminal.jpg" alt="Claude Web Terminal 实际界面：浏览器里的 Claude Code 多窗口会话" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## Claude Web Terminal
 
@@ -98,7 +98,7 @@ wide: true
 </li>
 
 <li class="cover-row">
-<a class="cover-media" href="https://eng.panyifeng.xyz/"><img src="/marginalia/assets/img/site/covers/english-interview.jpg" alt="English Interview Drill 实际界面" loading="lazy"></a>
+<a class="cover-media" href="https://eng.panyifeng.xyz/"><img src="/assets/img/site/covers/english-interview.jpg" alt="English Interview Drill 实际界面" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## English Interview · Drill
 
@@ -114,7 +114,7 @@ wide: true
 </li>
 
 <li class="cover-row">
-<a class="cover-media" href="https://pyf-labrary.github.io/cue/"><img src="/marginalia/assets/img/site/covers/cue.jpg" alt="Cue 影视配乐入门实际界面：情绪光谱" loading="lazy"></a>
+<a class="cover-media" href="https://pyf-labrary.github.io/cue/"><img src="/assets/img/site/covers/cue.jpg" alt="Cue 影视配乐入门实际界面：情绪光谱" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## Cue · 影视配乐入门
 
