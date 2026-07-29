@@ -1,17 +1,22 @@
 {
- "generated": "2026-07-29",
+ "generated": "2026-07-30",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 49.65,
+   "score": 50.97,
    "days": 26,
    "latest": {
-    "date": "2026-07-29",
-    "url": "/posts/2026-07-28-ai-morning-post/#product",
-    "title": "阿里 Qoder 推出国内首个实时语音交互智能体"
+    "date": "2026-07-30",
+    "url": "/posts/2026-07-29-ai-morning-post/#research",
+    "title": "AI智能体可绕过生物安全筛查生成风险方案"
    },
    "links": [
+    {
+     "date": "2026-07-30",
+     "url": "/posts/2026-07-29-ai-morning-post/#research",
+     "title": "AI智能体可绕过生物安全筛查生成风险方案"
+    },
     {
      "date": "2026-07-29",
      "url": "/posts/2026-07-28-ai-morning-post/#product",
@@ -46,24 +51,24 @@
      "date": "2026-07-20",
      "url": "/posts/2026-07-19-ai-morning-post/#model-release",
      "title": "商汤发布原生多模态智能体基座U1 Pro"
-    },
-    {
-     "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#product",
-     "title": "Vertu推出6880美元AI Agent手机，实测表现"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 39.32,
+   "score": 40.97,
    "days": 28,
    "latest": {
-    "date": "2026-07-29",
-    "url": "/posts/2026-07-28-ai-morning-post/#company",
-    "title": "OpenAI代理越狱HuggingFace：技术细节全公开"
+    "date": "2026-07-30",
+    "url": "/posts/2026-07-29-ai-morning-post/#company",
+    "title": "OpenAI自主AI代理入侵Hugging Face"
    },
    "links": [
+    {
+     "date": "2026-07-30",
+     "url": "/posts/2026-07-29-ai-morning-post/#company",
+     "title": "OpenAI自主AI代理入侵Hugging Face"
+    },
     {
      "date": "2026-07-29",
      "url": "/posts/2026-07-28-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-07-23",
      "url": "/posts/2026-07-22-ai-morning-post/#company",
      "title": "OpenAI 模型逃逸沙箱，黑进 Hugging Face 真实系统"
-    },
-    {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#company",
-     "title": "OpenAI 自曝预发布模型导致 Hugging Face 安全事件"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 21.77,
+   "score": 21.26,
    "days": 24,
    "latest": {
-    "date": "2026-07-29",
-    "url": "/posts/2026-07-28-ai-morning-post/#research",
-    "title": "Anthropic 发现互联网密码算法新漏洞"
+    "date": "2026-07-30",
+    "url": "/posts/2026-07-29-ai-morning-post/#opinion",
+    "title": "黄仁勋首推开源引爆论战：Anthropic员工催CUDA开源"
    },
    "links": [
+    {
+     "date": "2026-07-30",
+     "url": "/posts/2026-07-29-ai-morning-post/#opinion",
+     "title": "黄仁勋首推开源引爆论战：Anthropic员工催CUDA开源"
+    },
     {
      "date": "2026-07-29",
      "url": "/posts/2026-07-28-ai-morning-post/#research",
@@ -150,17 +155,12 @@
      "date": "2026-07-18",
      "url": "/posts/2026-07-17-ai-morning-post/#opensource",
      "title": "Anthropic开源知识工作插件库：让Claude变身领域专家"
-    },
-    {
-     "date": "2026-07-17",
-     "url": "/posts/2026-07-16-ai-morning-post/#opinion",
-     "title": "Anthropic加速推动各州AI监管立法"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 15.52,
+   "score": 14.77,
    "days": 17,
    "latest": {
     "date": "2026-07-29",
@@ -212,8 +212,8 @@
   },
   {
    "name": "Claude",
-   "score": 15.16,
-   "days": 18,
+   "score": 14.03,
+   "days": 17,
    "latest": {
     "date": "2026-07-29",
     "url": "/posts/2026-07-28-ai-morning-post/#product",
@@ -264,7 +264,7 @@
   },
   {
    "name": "Meta",
-   "score": 13.87,
+   "score": 12.97,
    "days": 22,
    "latest": {
     "date": "2026-07-29",
@@ -316,7 +316,7 @@
   },
   {
    "name": "NVIDIA",
-   "score": 13.32,
+   "score": 12.65,
    "days": 16,
    "latest": {
     "date": "2026-07-28",
@@ -368,7 +368,7 @@
   },
   {
    "name": "Google",
-   "score": 12.52,
+   "score": 11.71,
    "days": 17,
    "latest": {
     "date": "2026-07-28",
@@ -420,8 +420,8 @@
   },
   {
    "name": "芯片",
-   "score": 11.77,
-   "days": 20,
+   "score": 11.0,
+   "days": 19,
    "latest": {
     "date": "2026-07-29",
     "url": "/posts/2026-07-28-ai-morning-post/#company",
@@ -471,9 +471,165 @@
    ]
   },
   {
+   "name": "腾讯",
+   "score": 8.26,
+   "days": 14,
+   "latest": {
+    "date": "2026-07-30",
+    "url": "/posts/2026-07-29-ai-morning-post/#opensource",
+    "title": "腾讯混元开源 AngelSpec，投机解码加速推理"
+   },
+   "links": [
+    {
+     "date": "2026-07-30",
+     "url": "/posts/2026-07-29-ai-morning-post/#opensource",
+     "title": "腾讯混元开源 AngelSpec，投机解码加速推理"
+    },
+    {
+     "date": "2026-07-25",
+     "url": "/posts/2026-07-24-ai-morning-post/#company",
+     "title": "腾讯混元合并多模态与大语言模型团队"
+    },
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#product",
+     "title": "腾讯地图联合义乌推出 AI 导航找店"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#product",
+     "title": "腾讯发布三大具身基座模型，工业实测成功率超 95%"
+    },
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#product",
+     "title": "腾讯发布具身智能全栈方案，ADP 4.0出海"
+    },
+    {
+     "date": "2026-07-18",
+     "url": "/posts/2026-07-17-ai-morning-post/#model-release",
+     "title": "WAIC 2026：腾讯混元Hy3大模型首秀"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#company",
+     "title": "腾讯洽购Manus，估值约20亿美元"
+    },
+    {
+     "date": "2026-07-11",
+     "url": "/posts/2026-07-10-ai-morning-post/#company",
+     "title": "腾讯拟收购Manus多数股权"
+    }
+   ]
+  },
+  {
+   "name": "算力",
+   "score": 8.03,
+   "days": 12,
+   "latest": {
+    "date": "2026-07-30",
+    "url": "/posts/2026-07-29-ai-morning-post/#company",
+    "title": "Recursive Superintelligence与亚马逊签署4.1亿美元算力协议"
+   },
+   "links": [
+    {
+     "date": "2026-07-30",
+     "url": "/posts/2026-07-29-ai-morning-post/#company",
+     "title": "Recursive Superintelligence与亚马逊签署4.1亿美元算力协议"
+    },
+    {
+     "date": "2026-07-27",
+     "url": "/posts/2026-07-26-ai-morning-post/#company",
+     "title": "DeepSeek暂停融资，内部称中美计算力差距大"
+    },
+    {
+     "date": "2026-07-23",
+     "url": "/posts/2026-07-22-ai-morning-post/#company",
+     "title": "Anthropic 与 AMD 签 50 亿美元芯片协议，部署 2 吉瓦算力"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#company",
+     "title": "多家AI相关公司发布亮眼半年报，算力需求拉动增长"
+    },
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#company",
+     "title": "Meta拟卖算力，Anthropic或成首批客户"
+    },
+    {
+     "date": "2026-07-18",
+     "url": "/posts/2026-07-17-ai-morning-post/#company",
+     "title": "Meta拟将过剩AI算力卖给Anthropic"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#company",
+     "title": "中国首个十万卡国产算力集群落成，全精度覆盖"
+    },
+    {
+     "date": "2026-07-11",
+     "url": "/posts/2026-07-10-ai-morning-post/#opinion",
+     "title": "Nvidia沦为自创算力市场的受害者"
+    }
+   ]
+  },
+  {
+   "name": "Hugging Face",
+   "score": 7.97,
+   "days": 12,
+   "latest": {
+    "date": "2026-07-30",
+    "url": "/posts/2026-07-29-ai-morning-post/#opensource",
+    "title": "Hugging Face 开源 speech-to-speech，构建本地语音代理"
+   },
+   "links": [
+    {
+     "date": "2026-07-30",
+     "url": "/posts/2026-07-29-ai-morning-post/#opensource",
+     "title": "Hugging Face 开源 speech-to-speech，构建本地语音代理"
+    },
+    {
+     "date": "2026-07-27",
+     "url": "/posts/2026-07-26-ai-morning-post/#company",
+     "title": "OpenAI自主黑客事件：Hugging Face CEO呼吁彻底透明"
+    },
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#company",
+     "title": "OpenAI 测试模型突破沙盒，真实攻击 Hugging Face"
+    },
+    {
+     "date": "2026-07-23",
+     "url": "/posts/2026-07-22-ai-morning-post/#company",
+     "title": "OpenAI 模型逃逸沙箱，黑进 Hugging Face 真实系统"
+    },
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#company",
+     "title": "OpenAI 自曝预发布模型导致 Hugging Face 安全事件"
+    },
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#company",
+     "title": "Hugging Face 遭 AI 代理攻击，用 AI 自卫反击"
+    },
+    {
+     "date": "2026-07-13",
+     "url": "/posts/2026-07-12-ai-morning-post/#opensource",
+     "title": "Hugging Face开源语音到语音Agent框架"
+    },
+    {
+     "date": "2026-07-12",
+     "url": "/posts/2026-07-11-ai-morning-post/#opinion",
+     "title": "Hugging Face CEO：开源AI比以往更重要"
+    }
+   ]
+  },
+  {
    "name": "世界模型",
-   "score": 7.9,
-   "days": 15,
+   "score": 7.32,
+   "days": 14,
    "latest": {
     "date": "2026-07-29",
     "url": "/posts/2026-07-28-ai-morning-post/#research",
@@ -523,112 +679,8 @@
    ]
   },
   {
-   "name": "腾讯",
-   "score": 7.77,
-   "days": 13,
-   "latest": {
-    "date": "2026-07-25",
-    "url": "/posts/2026-07-24-ai-morning-post/#company",
-    "title": "腾讯混元合并多模态与大语言模型团队"
-   },
-   "links": [
-    {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#company",
-     "title": "腾讯混元合并多模态与大语言模型团队"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#product",
-     "title": "腾讯地图联合义乌推出 AI 导航找店"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#product",
-     "title": "腾讯发布三大具身基座模型，工业实测成功率超 95%"
-    },
-    {
-     "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#product",
-     "title": "腾讯发布具身智能全栈方案，ADP 4.0出海"
-    },
-    {
-     "date": "2026-07-18",
-     "url": "/posts/2026-07-17-ai-morning-post/#model-release",
-     "title": "WAIC 2026：腾讯混元Hy3大模型首秀"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#company",
-     "title": "腾讯洽购Manus，估值约20亿美元"
-    },
-    {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#company",
-     "title": "腾讯拟收购Manus多数股权"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#opensource",
-     "title": "腾讯云 Cube Sandbox 支持 Arm 架构：解锁Agent多架构算力"
-    }
-   ]
-  },
-  {
-   "name": "算力",
-   "score": 7.55,
-   "days": 12,
-   "latest": {
-    "date": "2026-07-27",
-    "url": "/posts/2026-07-26-ai-morning-post/#company",
-    "title": "DeepSeek暂停融资，内部称中美计算力差距大"
-   },
-   "links": [
-    {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#company",
-     "title": "DeepSeek暂停融资，内部称中美计算力差距大"
-    },
-    {
-     "date": "2026-07-23",
-     "url": "/posts/2026-07-22-ai-morning-post/#company",
-     "title": "Anthropic 与 AMD 签 50 亿美元芯片协议，部署 2 吉瓦算力"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#company",
-     "title": "多家AI相关公司发布亮眼半年报，算力需求拉动增长"
-    },
-    {
-     "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#company",
-     "title": "Meta拟卖算力，Anthropic或成首批客户"
-    },
-    {
-     "date": "2026-07-18",
-     "url": "/posts/2026-07-17-ai-morning-post/#company",
-     "title": "Meta拟将过剩AI算力卖给Anthropic"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#company",
-     "title": "中国首个十万卡国产算力集群落成，全精度覆盖"
-    },
-    {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#opinion",
-     "title": "Nvidia沦为自创算力市场的受害者"
-    },
-    {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#opinion",
-     "title": "Nvidia成为自己创造的算力市场的受害者"
-    }
-   ]
-  },
-  {
    "name": "ChatGPT",
-   "score": 7.55,
+   "score": 7.23,
    "days": 8,
    "latest": {
     "date": "2026-07-29",
@@ -679,101 +731,54 @@
    ]
   },
   {
-   "name": "Hugging Face",
-   "score": 7.39,
+   "name": "百度",
+   "score": 5.48,
    "days": 11,
    "latest": {
-    "date": "2026-07-27",
-    "url": "/posts/2026-07-26-ai-morning-post/#company",
-    "title": "OpenAI自主黑客事件：Hugging Face CEO呼吁彻底透明"
+    "date": "2026-07-30",
+    "url": "/posts/2026-07-29-ai-morning-post/#product",
+    "title": "百度萝卜快跑抢滩香港右舵无人出租车市场"
    },
    "links": [
     {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#company",
-     "title": "OpenAI自主黑客事件：Hugging Face CEO呼吁彻底透明"
-    },
-    {
-     "date": "2026-07-24",
-     "url": "/posts/2026-07-23-ai-morning-post/#company",
-     "title": "OpenAI 测试模型突破沙盒，真实攻击 Hugging Face"
+     "date": "2026-07-30",
+     "url": "/posts/2026-07-29-ai-morning-post/#product",
+     "title": "百度萝卜快跑抢滩香港右舵无人出租车市场"
     },
     {
      "date": "2026-07-23",
-     "url": "/posts/2026-07-22-ai-morning-post/#company",
-     "title": "OpenAI 模型逃逸沙箱，黑进 Hugging Face 真实系统"
+     "url": "/posts/2026-07-22-ai-morning-post/#model-release",
+     "title": "百度文心助手任务 Agent 首登国际榜首"
     },
     {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#company",
-     "title": "OpenAI 自曝预发布模型导致 Hugging Face 安全事件"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#company",
-     "title": "Hugging Face 遭 AI 代理攻击，用 AI 自卫反击"
-    },
-    {
-     "date": "2026-07-13",
-     "url": "/posts/2026-07-12-ai-morning-post/#opensource",
-     "title": "Hugging Face开源语音到语音Agent框架"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#opinion",
-     "title": "Hugging Face CEO：开源AI比以往更重要"
-    },
-    {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#opinion",
-     "title": "Hugging Face CEO：开源AI从未如此关键"
-    }
-   ]
-  },
-  {
-   "name": "开源模型",
-   "score": 5.55,
-   "days": 7,
-   "latest": {
-    "date": "2026-07-29",
-    "url": "/posts/2026-07-28-ai-morning-post/#model-release",
-    "title": "月之暗面开源Kimi K3：全球最大开源模型易主"
-   },
-   "links": [
-    {
-     "date": "2026-07-29",
-     "url": "/posts/2026-07-28-ai-morning-post/#model-release",
-     "title": "月之暗面开源Kimi K3：全球最大开源模型易主"
-    },
-    {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#opinion",
-     "title": "美国对中国开源模型：拆解而非围堵"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#opinion",
-     "title": "MIT 技术评论：中国开源模型让特朗普AI团队内部分裂"
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#product",
+     "title": "百度秒哒 3.5 版本升级，占据 AI 无代码平台 33% 份额"
     },
     {
      "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#model-release",
-     "title": "英国 AISI：开源模型网络安全性能已达四个月前前沿水平"
+     "url": "/posts/2026-07-18-ai-morning-post/#product",
+     "title": "百度秒哒3.5发布，中国市场第一"
     },
     {
-     "date": "2026-07-18",
-     "url": "/posts/2026-07-17-ai-morning-post/#model-release",
-     "title": "Mira Murati团队发布首个开源模型Inkling"
+     "date": "2026-07-17",
+     "url": "/posts/2026-07-16-ai-morning-post/#company",
+     "title": "Apple Intelligence 获准在华上线，接入阿里和百度 AI"
     },
     {
-     "date": "2026-07-14",
-     "url": "/posts/2026-07-13-ai-morning-post/#model-release",
-     "title": "德国联合体发布Soofi S：30B开源模型双语封顶"
+     "date": "2026-07-16",
+     "url": "/posts/2026-07-15-ai-morning-post/#product",
+     "title": "百度搭子入选 WAIC 2026 镇馆之宝"
     },
     {
-     "date": "2026-07-10",
-     "url": "/posts/2026-07-09-ai-morning-post/#opinion",
-     "title": "开源模型赢Token流量，Anthropic却赚走大部分利润"
+     "date": "2026-07-11",
+     "url": "/posts/2026-07-10-ai-morning-post/#product",
+     "title": "百度搭子升级企业版，日均提问增 20 倍"
+    },
+    {
+     "date": "2026-07-08",
+     "url": "/posts/2026-07-07-ai-morning-post/#company",
+     "title": "百度基础模型研发部换帅，孙天祥接任"
     }
    ]
   }
