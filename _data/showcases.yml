@@ -10,12 +10,12 @@
   description: StudioBinder 导演公开课中文配音+中文字幕版的在线剧场：154 集 / 28 小时，分镜头语言、光色声、剪辑节奏、叙事结构、导演个案研究五类，按循序渐进的学习序排好。首页总览 + 类别页剧场；自建播放器（非浏览器原生）：剧集清单、进度记忆、倍速、字幕字号四档、下载、键盘快捷键；视频从家庭 NAS 经内网直连透传。
 - slug: bodhi-e01-making
   image: /assets/img/site/covers/bodhi-e01-making.jpg
-  title: 一个人，一支模型剧组 · 恒伽达 AI 制作复盘
+  title: 一个人，一支模型剧组 · 恒伽达尊者 AI 制作复盘
   url: https://ftp.ssbx.site/showcases/bodhi-e01-making/
   external: true
   date: 2026-06-20
   tags: [佛经, 短剧, AIGC, deck, 工具链]
-  description: 30 页制作复盘：AI 电影导演要练的九种技能、从灵感/剧本到人物/场景/分镜/视频/声音的完整工具链，以及 E01《恒伽达》在制片人预览板里的真实数据复盘——122 镜 / 16:40 / ¥1673（视频生成占 90% 成本）/ 全 AI 零真人。外链托管，跳转打开。
+  description: 30 页制作复盘：AI 电影导演要练的九种技能、从灵感/剧本到人物/场景/分镜/视频/声音的完整工具链，以及 E01《恒伽达尊者》在制片人预览板里的真实数据复盘——122 镜 / 16:40 / ¥1673（视频生成占 90% 成本）/ 全 AI 零真人。外链托管，跳转打开。
 - slug: arm
   image: /assets/img/site/covers/arm.jpg
   title: 智能体分层治理模型 · ARM
@@ -48,12 +48,12 @@
   description: 六章 29 个主题的导演大师课：景别 / 运镜 / 蒙太奇 / 构图 / 光影 / 色彩 / 调度 / 风格作者，AI 生成剧照背景 + 循环运镜视频 + 影厅级 BGM。
 - slug: bodhi-pitch
   image: /assets/img/site/covers/bodhi-pitch.jpg
-  title: 恒伽达 · BODHI 项目 Pitch Deck
+  title: 恒伽达尊者 · BODHI 项目 Pitch Deck
   url: https://ftp.ssbx.site/bodhi/docs/pitch-v2/
   external: true
   date: 2026-05-14
   tags: [佛经, 短剧, AIGC, deck]
-  description: S01·E01《恒伽达》立项手册：从《贤愚经》原典出发，七页覆盖原典 / 剧情 / 佛理 / 人物 / 场景 / 样片。
+  description: S01·E01《恒伽达尊者》立项手册：从《贤愚经》原典出发，七页覆盖原典 / 剧情 / 佛理 / 人物 / 场景 / 样片。
 - slug: claude-april-2026
   image: /assets/img/site/covers/claude-april-2026.jpg
   title: Claude · April 2026
