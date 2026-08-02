@@ -52,17 +52,17 @@ wide: true
 </li>
 
 <li class="cover-row" data-cats="佛经 · 短剧">
-<a class="cover-media" href="https://ftp.ssbx.site/showcases/bodhi-e01-making/"><img src="/assets/img/site/covers/bodhi-e01-making.jpg" alt="恒伽达 AI 制作复盘 deck 封面截图" loading="lazy"></a>
+<a class="cover-media" href="https://ftp.ssbx.site/showcases/bodhi-e01-making/"><img src="/assets/img/site/covers/bodhi-e01-making.jpg" alt="恒伽达尊者 AI 制作复盘 deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
-## 一个人，一支「模型剧组」· 恒伽达 AI 制作复盘
+## 一个人，一支「模型剧组」· 恒伽达尊者 AI 制作复盘
 
-30 页制作分享：一个人如何借一套 AI 工具链扮演整支剧组，做出一集 16 分钟的佛经故事电视剧。三部分——**AI 电影导演要练的九种技能**（叙事改编 / 镜头反向设计 / prompt 工程与多模型调度 / 角色一致性管控 / 声音设计 / 工程化追溯 / 成本管控 / 合规 / 跨职能调度）；**从灵感到成片的完整工具链**（剧本 8 件产出 → 人物 face-lock → 道具场景 → 分镜 → Seedance 2.0 三通道视频 → 5 轨声音 → 后期合规）；**E01《恒伽达》真实数据复盘**——122 镜 / 16:40 / ¥1673（视频生成占 90% 成本）/ 838 次工具调用 / 全 AI 零真人，在自建「制片人预览板」dashboard 里逐镜核对。暖金电影调、键盘翻页、本地字体零外链。外链托管，跳转打开。
+30 页制作分享：一个人如何借一套 AI 工具链扮演整支剧组，做出一集 16 分钟的佛经故事电视剧。三部分——**AI 电影导演要练的九种技能**（叙事改编 / 镜头反向设计 / prompt 工程与多模型调度 / 角色一致性管控 / 声音设计 / 工程化追溯 / 成本管控 / 合规 / 跨职能调度）；**从灵感到成片的完整工具链**（剧本 8 件产出 → 人物 face-lock → 道具场景 → 分镜 → Seedance 2.0 三通道视频 → 5 轨声音 → 后期合规）；**E01《恒伽达尊者》真实数据复盘**——122 镜 / 16:40 / ¥1673（视频生成占 90% 成本）/ 838 次工具调用 / 全 AI 零真人，在自建「制片人预览板」dashboard 里逐镜核对。暖金电影调、键盘翻页、本地字体零外链。外链托管，跳转打开。
 
 → [打开 Showcase](https://ftp.ssbx.site/showcases/bodhi-e01-making/)
 
 *整理时间：2026-06-20。*
 
-<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:bodhi-e01-making" data-title="一个人，一支模型剧组 · 恒伽达 AI 制作复盘" data-url="https://ftp.ssbx.site/showcases/bodhi-e01-making/"></div>
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:bodhi-e01-making" data-title="一个人，一支模型剧组 · 恒伽达尊者 AI 制作复盘" data-url="https://ftp.ssbx.site/showcases/bodhi-e01-making/"></div>
 </div>
 </li>
 
@@ -127,17 +127,17 @@ wide: true
 </li>
 
 <li class="cover-row" data-cats="佛经 · 短剧">
-<a class="cover-media" href="https://ftp.ssbx.site/bodhi/docs/pitch-v2/"><img src="/assets/img/site/covers/bodhi-pitch.jpg" alt="恒伽达 Pitch Deck 封面截图" loading="lazy"></a>
+<a class="cover-media" href="https://ftp.ssbx.site/bodhi/docs/pitch-v2/"><img src="/assets/img/site/covers/bodhi-pitch.jpg" alt="恒伽达尊者 Pitch Deck 封面截图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
-## 恒伽达 · BODHI 项目 Pitch Deck
+## 恒伽达尊者 · BODHI 项目 Pitch Deck
 
-S01·E01《恒伽达》立项手册：从《贤愚经》原典出发，七页 deck 覆盖原典 / 剧情 / 佛理 / 人物 / 场景 / 样片——一个"被命运保护得杀不死"的青年最终被前世善业牵回佛前的故事。外链托管，跳转打开。
+S01·E01《恒伽达尊者》立项手册：从《贤愚经》原典出发，七页 deck 覆盖原典 / 剧情 / 佛理 / 人物 / 场景 / 样片——一个"被命运保护得杀不死"的青年最终被前世善业牵回佛前的故事。外链托管，跳转打开。
 
 → [打开 Pitch Deck](https://ftp.ssbx.site/bodhi/docs/pitch-v2/)
 
 *整理时间：2026-05-09。*
 
-<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:bodhi-pitch" data-title="恒伽达 · BODHI 项目 Pitch Deck" data-url="https://ftp.ssbx.site/bodhi/docs/pitch-v2/"></div>
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:bodhi-pitch" data-title="恒伽达尊者 · BODHI 项目 Pitch Deck" data-url="https://ftp.ssbx.site/bodhi/docs/pitch-v2/"></div>
 </div>
 </li>
 

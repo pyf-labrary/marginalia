@@ -52,7 +52,7 @@ Generate only in-game art sprites:
 bash tools/gen_art_assets.sh
 ```
 
-`tools/gen_art_assets.sh` uses `~/claw/bin/img-dreamina-intl`, skips files that already exist, then fills any remaining pickup/fauna gaps with `tools/make_missing_art.py` and normalizes PNG alpha with `tools/make_sprite_alpha.py`.
+`tools/gen_art_assets.sh` uses `~/bin/image/img-dreamina-intl`, skips files that already exist, then fills any remaining pickup/fauna gaps with `tools/make_missing_art.py` and normalizes PNG alpha with `tools/make_sprite_alpha.py`.
 
 Generate or refresh the 24-icon atlas with `gpt-image-2`:
 
@@ -60,7 +60,7 @@ Generate or refresh the 24-icon atlas with `gpt-image-2`:
 bash tools/gen_sprite_atlas.sh
 ```
 
-`tools/gen_sprite_atlas.sh` skips existing atlas files, calls `~/claw/bin/img-openai --backend wdt --model gpt-image-2`, then splits the 4x6 sheet with `tools/split_sprite_atlas.py`.
+`tools/gen_sprite_atlas.sh` skips existing atlas files, calls `~/bin/image/img-openai --backend wdt --model gpt-image-2`, then splits the 4x6 sheet with `tools/split_sprite_atlas.py`.
 
 Selective generation:
 
