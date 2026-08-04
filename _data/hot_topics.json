@@ -1,17 +1,22 @@
 {
- "generated": "2026-08-03",
+ "generated": "2026-08-05",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 47.19,
-   "days": 25,
+   "score": 41.97,
+   "days": 24,
    "latest": {
-    "date": "2026-08-03",
-    "url": "/posts/2026-08-02-ai-morning-post/#research",
-    "title": "AI 编码 Agent 能改科研代码，难判科学对错"
+    "date": "2026-08-05",
+    "url": "/posts/2026-08-04-ai-morning-post/#company",
+    "title": "英伟达领衔 120+ 企业发布 SAFE 指南，针对 AI Agent 攻击"
    },
    "links": [
+    {
+     "date": "2026-08-05",
+     "url": "/posts/2026-08-04-ai-morning-post/#company",
+     "title": "英伟达领衔 120+ 企业发布 SAFE 指南，针对 AI Agent 攻击"
+    },
     {
      "date": "2026-08-03",
      "url": "/posts/2026-08-02-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-07-27",
      "url": "/posts/2026-07-26-ai-morning-post/#opensource",
      "title": "阿里开源代码审查工具，混合架构结合LLM Agent"
-    },
-    {
-     "date": "2026-07-26",
-     "url": "/posts/2026-07-25-ai-morning-post/#company",
-     "title": "Cognition收购Poke，强化AI Agent人格化"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 35.29,
-   "days": 26,
+   "score": 34.55,
+   "days": 25,
    "latest": {
-    "date": "2026-08-03",
-    "url": "/posts/2026-08-02-ai-morning-post/#research",
-    "title": "OpenAI 官宣：AI 破解十项数学难题"
+    "date": "2026-08-05",
+    "url": "/posts/2026-08-04-ai-morning-post/#company",
+    "title": "苹果诉 OpenAI 窃密案升级，双方亮出证据"
    },
    "links": [
+    {
+     "date": "2026-08-05",
+     "url": "/posts/2026-08-04-ai-morning-post/#company",
+     "title": "苹果诉 OpenAI 窃密案升级，双方亮出证据"
+    },
     {
      "date": "2026-08-03",
      "url": "/posts/2026-08-02-ai-morning-post/#research",
@@ -98,24 +103,24 @@
      "date": "2026-07-26",
      "url": "/posts/2026-07-25-ai-morning-post/#company",
      "title": "OpenAI模型在Hugging Face黑客事件中失控"
-    },
-    {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#company",
-     "title": "菲尔兹奖得主雅各布·齐默曼宣布加入 OpenAI"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 19.06,
-   "days": 22,
+   "score": 18.13,
+   "days": 21,
    "latest": {
-    "date": "2026-08-02",
-    "url": "/posts/2026-08-01-ai-morning-post/#company",
-    "title": "OpenAI IPO推迟，Anthropic却要加速上市"
+    "date": "2026-08-05",
+    "url": "/posts/2026-08-04-ai-morning-post/#company",
+    "title": "Anthropic 百亿算力押注，Volta 何以入局"
    },
    "links": [
+    {
+     "date": "2026-08-05",
+     "url": "/posts/2026-08-04-ai-morning-post/#company",
+     "title": "Anthropic 百亿算力押注，Volta 何以入局"
+    },
     {
      "date": "2026-08-02",
      "url": "/posts/2026-08-01-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-07-23",
      "url": "/posts/2026-07-22-ai-morning-post/#company",
      "title": "Anthropic 版权和解获批，仅 350 名作者选择退出"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#opensource",
-     "title": "Anthropic 开源 Agent Skills 库，推动标准化"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 11.81,
-   "days": 17,
+   "score": 11.29,
+   "days": 16,
    "latest": {
-    "date": "2026-07-29",
-    "url": "/posts/2026-07-28-ai-morning-post/#product",
-    "title": "阿里 Qoder 推出国内首个实时语音交互智能体"
+    "date": "2026-08-05",
+    "url": "/posts/2026-08-04-ai-morning-post/#model-release",
+    "title": "阿里 Qwen3.8 双版本齐发，海外平台发布当日接入"
    },
    "links": [
+    {
+     "date": "2026-08-05",
+     "url": "/posts/2026-08-04-ai-morning-post/#model-release",
+     "title": "阿里 Qwen3.8 双版本齐发，海外平台发布当日接入"
+    },
     {
      "date": "2026-07-29",
      "url": "/posts/2026-07-28-ai-morning-post/#product",
@@ -202,18 +207,13 @@
      "date": "2026-07-22",
      "url": "/posts/2026-07-21-ai-morning-post/#model-release",
      "title": "阿里发布Qwen图像与语音模型：一段话生成信息图，支持多语言TTS"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#model-release",
-     "title": "阿里巴巴开源 Qwen 3.8，对标 Kimi K3"
     }
    ]
   },
   {
    "name": "NVIDIA",
-   "score": 10.94,
-   "days": 15,
+   "score": 9.61,
+   "days": 14,
    "latest": {
     "date": "2026-08-03",
     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
@@ -263,9 +263,61 @@
    ]
   },
   {
+   "name": "芯片",
+   "score": 8.97,
+   "days": 16,
+   "latest": {
+    "date": "2026-08-05",
+    "url": "/posts/2026-08-04-ai-morning-post/#company",
+    "title": "谷歌将数十亿美元 Anthropic 芯片风险移出表外"
+   },
+   "links": [
+    {
+     "date": "2026-08-05",
+     "url": "/posts/2026-08-04-ai-morning-post/#company",
+     "title": "谷歌将数十亿美元 Anthropic 芯片风险移出表外"
+    },
+    {
+     "date": "2026-08-02",
+     "url": "/posts/2026-08-01-ai-morning-post/#company",
+     "title": "NVIDIA Vera Rubin登场：从芯片卷到电网"
+    },
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#company",
+     "title": "Ilya Sutskever的SSI与英伟达达成投资与芯片迁移合作"
+    },
+    {
+     "date": "2026-07-28",
+     "url": "/posts/2026-07-27-ai-morning-post/#company",
+     "title": "NVIDIA 利用 Vera CPU 加速下一代芯片设计"
+    },
+    {
+     "date": "2026-07-25",
+     "url": "/posts/2026-07-24-ai-morning-post/#company",
+     "title": "AI 芯片初创公司 Etched 估值破百亿美元"
+    },
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#company",
+     "title": "AI 芯片初创 Etched 估值达 103 亿美元"
+    },
+    {
+     "date": "2026-07-23",
+     "url": "/posts/2026-07-22-ai-morning-post/#company",
+     "title": "Anthropic 与 AMD 签 50 亿美元芯片协议，部署 2 吉瓦算力"
+    },
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#company",
+     "title": "Google 开发 Frozen v2 芯片，将 Gemini 架构直接集成于硅片"
+    }
+   ]
+  },
+  {
    "name": "Meta",
-   "score": 10.42,
-   "days": 19,
+   "score": 8.9,
+   "days": 18,
    "latest": {
     "date": "2026-08-02",
     "url": "/posts/2026-08-01-ai-morning-post/#company",
@@ -315,9 +367,61 @@
    ]
   },
   {
-   "name": "Claude",
-   "score": 10.29,
+   "name": "腾讯",
+   "score": 8.81,
    "days": 15,
+   "latest": {
+    "date": "2026-08-05",
+    "url": "/posts/2026-08-04-ai-morning-post/#model-release",
+    "title": "腾讯混元 Hy ASR 3.0：让语音识别懂上下文"
+   },
+   "links": [
+    {
+     "date": "2026-08-05",
+     "url": "/posts/2026-08-04-ai-morning-post/#model-release",
+     "title": "腾讯混元 Hy ASR 3.0：让语音识别懂上下文"
+    },
+    {
+     "date": "2026-08-03",
+     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
+     "title": "腾讯云开源 Agent Memory 记忆中枢"
+    },
+    {
+     "date": "2026-07-31",
+     "url": "/posts/2026-07-30-ai-morning-post/#opensource",
+     "title": "腾讯 AngelSpec：投机解码的统一训练框架"
+    },
+    {
+     "date": "2026-07-30",
+     "url": "/posts/2026-07-29-ai-morning-post/#opensource",
+     "title": "腾讯混元开源 AngelSpec，投机解码加速推理"
+    },
+    {
+     "date": "2026-07-25",
+     "url": "/posts/2026-07-24-ai-morning-post/#company",
+     "title": "腾讯混元合并多模态与大语言模型团队"
+    },
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#product",
+     "title": "腾讯地图联合义乌推出 AI 导航找店"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#product",
+     "title": "腾讯发布三大具身基座模型，工业实测成功率超 95%"
+    },
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#product",
+     "title": "腾讯发布具身智能全栈方案，ADP 4.0出海"
+    }
+   ]
+  },
+  {
+   "name": "Claude",
+   "score": 8.52,
+   "days": 13,
    "latest": {
     "date": "2026-07-29",
     "url": "/posts/2026-07-28-ai-morning-post/#product",
@@ -367,9 +471,61 @@
    ]
   },
   {
+   "name": "算力",
+   "score": 8.16,
+   "days": 11,
+   "latest": {
+    "date": "2026-08-05",
+    "url": "/posts/2026-08-04-ai-morning-post/#company",
+    "title": "Anthropic 百亿算力押注，Volta 何以入局"
+   },
+   "links": [
+    {
+     "date": "2026-08-05",
+     "url": "/posts/2026-08-04-ai-morning-post/#company",
+     "title": "Anthropic 百亿算力押注，Volta 何以入局"
+    },
+    {
+     "date": "2026-08-02",
+     "url": "/posts/2026-08-01-ai-morning-post/#product",
+     "title": "Siri AI 或对重度用户收费：Apple 想把 AI 算力装进 iCloud+"
+    },
+    {
+     "date": "2026-07-30",
+     "url": "/posts/2026-07-29-ai-morning-post/#company",
+     "title": "Recursive Superintelligence与亚马逊签署4.1亿美元算力协议"
+    },
+    {
+     "date": "2026-07-27",
+     "url": "/posts/2026-07-26-ai-morning-post/#company",
+     "title": "DeepSeek暂停融资，内部称中美计算力差距大"
+    },
+    {
+     "date": "2026-07-23",
+     "url": "/posts/2026-07-22-ai-morning-post/#company",
+     "title": "Anthropic 与 AMD 签 50 亿美元芯片协议，部署 2 吉瓦算力"
+    },
+    {
+     "date": "2026-07-20",
+     "url": "/posts/2026-07-19-ai-morning-post/#company",
+     "title": "多家AI相关公司发布亮眼半年报，算力需求拉动增长"
+    },
+    {
+     "date": "2026-07-19",
+     "url": "/posts/2026-07-18-ai-morning-post/#company",
+     "title": "Meta拟卖算力，Anthropic或成首批客户"
+    },
+    {
+     "date": "2026-07-18",
+     "url": "/posts/2026-07-17-ai-morning-post/#company",
+     "title": "Meta拟将过剩AI算力卖给Anthropic"
+    }
+   ]
+  },
+  {
    "name": "Google",
-   "score": 9.52,
-   "days": 15,
+   "score": 8.06,
+   "days": 13,
    "latest": {
     "date": "2026-08-03",
     "url": "/posts/2026-08-02-ai-morning-post/#company",
@@ -419,113 +575,9 @@
    ]
   },
   {
-   "name": "芯片",
-   "score": 9.19,
-   "days": 16,
-   "latest": {
-    "date": "2026-08-02",
-    "url": "/posts/2026-08-01-ai-morning-post/#company",
-    "title": "NVIDIA Vera Rubin登场：从芯片卷到电网"
-   },
-   "links": [
-    {
-     "date": "2026-08-02",
-     "url": "/posts/2026-08-01-ai-morning-post/#company",
-     "title": "NVIDIA Vera Rubin登场：从芯片卷到电网"
-    },
-    {
-     "date": "2026-07-29",
-     "url": "/posts/2026-07-28-ai-morning-post/#company",
-     "title": "Ilya Sutskever的SSI与英伟达达成投资与芯片迁移合作"
-    },
-    {
-     "date": "2026-07-28",
-     "url": "/posts/2026-07-27-ai-morning-post/#company",
-     "title": "NVIDIA 利用 Vera CPU 加速下一代芯片设计"
-    },
-    {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#company",
-     "title": "AI 芯片初创公司 Etched 估值破百亿美元"
-    },
-    {
-     "date": "2026-07-24",
-     "url": "/posts/2026-07-23-ai-morning-post/#company",
-     "title": "AI 芯片初创 Etched 估值达 103 亿美元"
-    },
-    {
-     "date": "2026-07-23",
-     "url": "/posts/2026-07-22-ai-morning-post/#company",
-     "title": "Anthropic 与 AMD 签 50 亿美元芯片协议，部署 2 吉瓦算力"
-    },
-    {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#company",
-     "title": "Google 开发 Frozen v2 芯片，将 Gemini 架构直接集成于硅片"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#company",
-     "title": "谷歌被曝开发 Gemini 专用芯片 Frozen v2"
-    }
-   ]
-  },
-  {
-   "name": "腾讯",
-   "score": 7.97,
-   "days": 15,
-   "latest": {
-    "date": "2026-08-03",
-    "url": "/posts/2026-08-02-ai-morning-post/#opensource",
-    "title": "腾讯云开源 Agent Memory 记忆中枢"
-   },
-   "links": [
-    {
-     "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
-     "title": "腾讯云开源 Agent Memory 记忆中枢"
-    },
-    {
-     "date": "2026-07-31",
-     "url": "/posts/2026-07-30-ai-morning-post/#opensource",
-     "title": "腾讯 AngelSpec：投机解码的统一训练框架"
-    },
-    {
-     "date": "2026-07-30",
-     "url": "/posts/2026-07-29-ai-morning-post/#opensource",
-     "title": "腾讯混元开源 AngelSpec，投机解码加速推理"
-    },
-    {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#company",
-     "title": "腾讯混元合并多模态与大语言模型团队"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#product",
-     "title": "腾讯地图联合义乌推出 AI 导航找店"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#product",
-     "title": "腾讯发布三大具身基座模型，工业实测成功率超 95%"
-    },
-    {
-     "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#product",
-     "title": "腾讯发布具身智能全栈方案，ADP 4.0出海"
-    },
-    {
-     "date": "2026-07-18",
-     "url": "/posts/2026-07-17-ai-morning-post/#model-release",
-     "title": "WAIC 2026：腾讯混元Hy3大模型首秀"
-    }
-   ]
-  },
-  {
    "name": "Hugging Face",
-   "score": 7.19,
-   "days": 12,
+   "score": 6.29,
+   "days": 11,
    "latest": {
     "date": "2026-08-03",
     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
@@ -575,60 +627,8 @@
    ]
   },
   {
-   "name": "算力",
-   "score": 7.1,
-   "days": 11,
-   "latest": {
-    "date": "2026-08-02",
-    "url": "/posts/2026-08-01-ai-morning-post/#product",
-    "title": "Siri AI 或对重度用户收费：Apple 想把 AI 算力装进 iCloud+"
-   },
-   "links": [
-    {
-     "date": "2026-08-02",
-     "url": "/posts/2026-08-01-ai-morning-post/#product",
-     "title": "Siri AI 或对重度用户收费：Apple 想把 AI 算力装进 iCloud+"
-    },
-    {
-     "date": "2026-07-30",
-     "url": "/posts/2026-07-29-ai-morning-post/#company",
-     "title": "Recursive Superintelligence与亚马逊签署4.1亿美元算力协议"
-    },
-    {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#company",
-     "title": "DeepSeek暂停融资，内部称中美计算力差距大"
-    },
-    {
-     "date": "2026-07-23",
-     "url": "/posts/2026-07-22-ai-morning-post/#company",
-     "title": "Anthropic 与 AMD 签 50 亿美元芯片协议，部署 2 吉瓦算力"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#company",
-     "title": "多家AI相关公司发布亮眼半年报，算力需求拉动增长"
-    },
-    {
-     "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#company",
-     "title": "Meta拟卖算力，Anthropic或成首批客户"
-    },
-    {
-     "date": "2026-07-18",
-     "url": "/posts/2026-07-17-ai-morning-post/#company",
-     "title": "Meta拟将过剩AI算力卖给Anthropic"
-    },
-    {
-     "date": "2026-07-12",
-     "url": "/posts/2026-07-11-ai-morning-post/#company",
-     "title": "中国首个十万卡国产算力集群落成，全精度覆盖"
-    }
-   ]
-  },
-  {
    "name": "ChatGPT",
-   "score": 6.94,
+   "score": 6.23,
    "days": 9,
    "latest": {
     "date": "2026-08-03",
@@ -680,8 +680,8 @@
   },
   {
    "name": "世界模型",
-   "score": 6.23,
-   "days": 12,
+   "score": 5.29,
+   "days": 11,
    "latest": {
     "date": "2026-07-31",
     "url": "/posts/2026-07-30-ai-morning-post/#opinion",
@@ -732,7 +732,7 @@
   },
   {
    "name": "Kimi K3",
-   "score": 5.81,
+   "score": 5.23,
    "days": 7,
    "latest": {
     "date": "2026-08-03",
