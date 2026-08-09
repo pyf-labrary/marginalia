@@ -1,17 +1,22 @@
 {
- "generated": "2026-08-09",
+ "generated": "2026-08-10",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 44.0,
+   "score": 42.9,
    "days": 23,
    "latest": {
-    "date": "2026-08-09",
-    "url": "/posts/2026-08-08-ai-morning-post/#research",
-    "title": "AI Agent 一次任务耗能 ≈ 600 次聊天"
+    "date": "2026-08-10",
+    "url": "/posts/2026-08-09-ai-morning-post/#product",
+    "title": "OpenChamber：面向 Agent 的集成开发环境"
    },
    "links": [
+    {
+     "date": "2026-08-10",
+     "url": "/posts/2026-08-09-ai-morning-post/#product",
+     "title": "OpenChamber：面向 Agent 的集成开发环境"
+    },
     {
      "date": "2026-08-09",
      "url": "/posts/2026-08-08-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-07-30",
      "url": "/posts/2026-07-29-ai-morning-post/#research",
      "title": "AI智能体可绕过生物安全筛查生成风险方案"
-    },
-    {
-     "date": "2026-07-29",
-     "url": "/posts/2026-07-28-ai-morning-post/#product",
-     "title": "阿里 Qoder 推出国内首个实时语音交互智能体"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 30.81,
+   "score": 29.45,
    "days": 24,
    "latest": {
-    "date": "2026-08-09",
-    "url": "/posts/2026-08-08-ai-morning-post/#model-release",
-    "title": "OpenAI 首次自曝 Astra 触最高风险线"
+    "date": "2026-08-10",
+    "url": "/posts/2026-08-09-ai-morning-post/#opinion",
+    "title": "OpenAI 意外攻击 Hugging Face 时间线曝光"
    },
    "links": [
+    {
+     "date": "2026-08-10",
+     "url": "/posts/2026-08-09-ai-morning-post/#opinion",
+     "title": "OpenAI 意外攻击 Hugging Face 时间线曝光"
+    },
     {
      "date": "2026-08-09",
      "url": "/posts/2026-08-08-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-07-29",
      "url": "/posts/2026-07-28-ai-morning-post/#company",
      "title": "OpenAI代理越狱HuggingFace：技术细节全公开"
-    },
-    {
-     "date": "2026-07-28",
-     "url": "/posts/2026-07-27-ai-morning-post/#company",
-     "title": "德里高等法院驳回印度新闻机构对 OpenAI 的版权禁令"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 15.65,
+   "score": 15.45,
    "days": 19,
    "latest": {
-    "date": "2026-08-09",
-    "url": "/posts/2026-08-08-ai-morning-post/#company",
-    "title": "字节跳动被曝训练 10 万亿参数模型，对标 Anthropic"
+    "date": "2026-08-10",
+    "url": "/posts/2026-08-09-ai-morning-post/#product",
+    "title": "Anthropic 将 Claude Code Auto Mode 设为默认"
    },
    "links": [
+    {
+     "date": "2026-08-10",
+     "url": "/posts/2026-08-09-ai-morning-post/#product",
+     "title": "Anthropic 将 Claude Code Auto Mode 设为默认"
+    },
     {
      "date": "2026-08-09",
      "url": "/posts/2026-08-08-ai-morning-post/#company",
@@ -150,17 +155,12 @@
      "date": "2026-07-29",
      "url": "/posts/2026-07-28-ai-morning-post/#research",
      "title": "Anthropic 发现互联网密码算法新漏洞"
-    },
-    {
-     "date": "2026-07-28",
-     "url": "/posts/2026-07-27-ai-morning-post/#opinion",
-     "title": "Anthropic 坚定闭源：安全责任压倒开放承诺"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 10.52,
+   "score": 9.84,
    "days": 15,
    "latest": {
     "date": "2026-08-09",
@@ -212,8 +212,8 @@
   },
   {
    "name": "Meta",
-   "score": 9.97,
-   "days": 17,
+   "score": 9.23,
+   "days": 16,
    "latest": {
     "date": "2026-08-09",
     "url": "/posts/2026-08-08-ai-morning-post/#model-release",
@@ -264,8 +264,8 @@
   },
   {
    "name": "芯片",
-   "score": 8.45,
-   "days": 14,
+   "score": 7.87,
+   "days": 13,
    "latest": {
     "date": "2026-08-08",
     "url": "/posts/2026-08-07-ai-morning-post/#company",
@@ -315,9 +315,61 @@
    ]
   },
   {
+   "name": "Claude",
+   "score": 7.03,
+   "days": 13,
+   "latest": {
+    "date": "2026-08-10",
+    "url": "/posts/2026-08-09-ai-morning-post/#product",
+    "title": "Claude Code 会话间可互相通信共享上下文"
+   },
+   "links": [
+    {
+     "date": "2026-08-10",
+     "url": "/posts/2026-08-09-ai-morning-post/#product",
+     "title": "Claude Code 会话间可互相通信共享上下文"
+    },
+    {
+     "date": "2026-08-09",
+     "url": "/posts/2026-08-08-ai-morning-post/#product",
+     "title": "Claude Code 默认开启 Auto Mode，跨会话上下文打通"
+    },
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#product",
+     "title": "Claude 共享聊天链接被谷歌索引导致私密对话泄露"
+    },
+    {
+     "date": "2026-07-28",
+     "url": "/posts/2026-07-27-ai-morning-post/#product",
+     "title": "Claude 共享聊天链接被搜索引擎索引，隐私风险暴露"
+    },
+    {
+     "date": "2026-07-27",
+     "url": "/posts/2026-07-26-ai-morning-post/#opensource",
+     "title": "Awesome Claude Skills：Claude工作流自定义资源合集"
+    },
+    {
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#product",
+     "title": "Claude语音模式全平台升级至最强模型"
+    },
+    {
+     "date": "2026-07-25",
+     "url": "/posts/2026-07-24-ai-morning-post/#product",
+     "title": "Claude 语音模式升级：跨平台强模型加持"
+    },
+    {
+     "date": "2026-07-24",
+     "url": "/posts/2026-07-23-ai-morning-post/#model-release",
+     "title": "Anthropic 升级 Claude 语音模式：更强模型 + 任务执行"
+    }
+   ]
+  },
+  {
    "name": "腾讯",
-   "score": 7.39,
-   "days": 12,
+   "score": 6.87,
+   "days": 11,
    "latest": {
     "date": "2026-08-08",
     "url": "/posts/2026-08-07-ai-morning-post/#opensource",
@@ -368,7 +420,7 @@
   },
   {
    "name": "NVIDIA",
-   "score": 7.16,
+   "score": 6.65,
    "days": 11,
    "latest": {
     "date": "2026-08-03",
@@ -419,61 +471,61 @@
    ]
   },
   {
-   "name": "Claude",
-   "score": 6.81,
-   "days": 13,
+   "name": "Hugging Face",
+   "score": 6.19,
+   "days": 11,
    "latest": {
-    "date": "2026-08-09",
-    "url": "/posts/2026-08-08-ai-morning-post/#product",
-    "title": "Claude Code 默认开启 Auto Mode，跨会话上下文打通"
+    "date": "2026-08-10",
+    "url": "/posts/2026-08-09-ai-morning-post/#opinion",
+    "title": "OpenAI 意外攻击 Hugging Face 时间线曝光"
    },
    "links": [
     {
+     "date": "2026-08-10",
+     "url": "/posts/2026-08-09-ai-morning-post/#opinion",
+     "title": "OpenAI 意外攻击 Hugging Face 时间线曝光"
+    },
+    {
      "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#product",
-     "title": "Claude Code 默认开启 Auto Mode，跨会话上下文打通"
+     "url": "/posts/2026-08-08-ai-morning-post/#company",
+     "title": "OpenAI 误攻 Hugging Face 事件完整时间线披露"
     },
     {
-     "date": "2026-07-29",
-     "url": "/posts/2026-07-28-ai-morning-post/#product",
-     "title": "Claude 共享聊天链接被谷歌索引导致私密对话泄露"
+     "date": "2026-08-03",
+     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
+     "title": "Hugging Face 开源本地语音 Agent 框架"
     },
     {
-     "date": "2026-07-28",
-     "url": "/posts/2026-07-27-ai-morning-post/#product",
-     "title": "Claude 共享聊天链接被搜索引擎索引，隐私风险暴露"
+     "date": "2026-07-30",
+     "url": "/posts/2026-07-29-ai-morning-post/#opensource",
+     "title": "Hugging Face 开源 speech-to-speech，构建本地语音代理"
     },
     {
      "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#opensource",
-     "title": "Awesome Claude Skills：Claude工作流自定义资源合集"
-    },
-    {
-     "date": "2026-07-26",
-     "url": "/posts/2026-07-25-ai-morning-post/#product",
-     "title": "Claude语音模式全平台升级至最强模型"
-    },
-    {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#product",
-     "title": "Claude 语音模式升级：跨平台强模型加持"
+     "url": "/posts/2026-07-26-ai-morning-post/#company",
+     "title": "OpenAI自主黑客事件：Hugging Face CEO呼吁彻底透明"
     },
     {
      "date": "2026-07-24",
-     "url": "/posts/2026-07-23-ai-morning-post/#model-release",
-     "title": "Anthropic 升级 Claude 语音模式：更强模型 + 任务执行"
+     "url": "/posts/2026-07-23-ai-morning-post/#company",
+     "title": "OpenAI 测试模型突破沙盒，真实攻击 Hugging Face"
     },
     {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#product",
-     "title": "Claude Code 改用 Rust 版 Bun，启动再提速 10%"
+     "date": "2026-07-23",
+     "url": "/posts/2026-07-22-ai-morning-post/#company",
+     "title": "OpenAI 模型逃逸沙箱，黑进 Hugging Face 真实系统"
+    },
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#company",
+     "title": "OpenAI 自曝预发布模型导致 Hugging Face 安全事件"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 6.52,
-   "days": 10,
+   "score": 6.0,
+   "days": 9,
    "latest": {
     "date": "2026-08-09",
     "url": "/posts/2026-08-08-ai-morning-post/#opensource",
@@ -524,8 +576,8 @@
   },
   {
    "name": "算力",
-   "score": 6.16,
-   "days": 10,
+   "score": 5.71,
+   "days": 9,
    "latest": {
     "date": "2026-08-05",
     "url": "/posts/2026-08-04-ai-morning-post/#company",
@@ -576,7 +628,7 @@
   },
   {
    "name": "Kimi K3",
-   "score": 6.03,
+   "score": 5.68,
    "days": 9,
    "latest": {
     "date": "2026-08-09",
@@ -628,7 +680,7 @@
   },
   {
    "name": "ChatGPT",
-   "score": 5.81,
+   "score": 5.42,
    "days": 10,
    "latest": {
     "date": "2026-08-09",
@@ -679,61 +731,9 @@
    ]
   },
   {
-   "name": "Hugging Face",
-   "score": 5.65,
-   "days": 11,
-   "latest": {
-    "date": "2026-08-09",
-    "url": "/posts/2026-08-08-ai-morning-post/#company",
-    "title": "OpenAI 误攻 Hugging Face 事件完整时间线披露"
-   },
-   "links": [
-    {
-     "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#company",
-     "title": "OpenAI 误攻 Hugging Face 事件完整时间线披露"
-    },
-    {
-     "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
-     "title": "Hugging Face 开源本地语音 Agent 框架"
-    },
-    {
-     "date": "2026-07-30",
-     "url": "/posts/2026-07-29-ai-morning-post/#opensource",
-     "title": "Hugging Face 开源 speech-to-speech，构建本地语音代理"
-    },
-    {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#company",
-     "title": "OpenAI自主黑客事件：Hugging Face CEO呼吁彻底透明"
-    },
-    {
-     "date": "2026-07-24",
-     "url": "/posts/2026-07-23-ai-morning-post/#company",
-     "title": "OpenAI 测试模型突破沙盒，真实攻击 Hugging Face"
-    },
-    {
-     "date": "2026-07-23",
-     "url": "/posts/2026-07-22-ai-morning-post/#company",
-     "title": "OpenAI 模型逃逸沙箱，黑进 Hugging Face 真实系统"
-    },
-    {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#company",
-     "title": "OpenAI 自曝预发布模型导致 Hugging Face 安全事件"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#company",
-     "title": "Hugging Face 遭 AI 代理攻击，用 AI 自卫反击"
-    }
-   ]
-  },
-  {
    "name": "字节",
-   "score": 5.19,
-   "days": 7,
+   "score": 4.94,
+   "days": 6,
    "latest": {
     "date": "2026-08-09",
     "url": "/posts/2026-08-08-ai-morning-post/#company",
@@ -769,11 +769,6 @@
      "date": "2026-07-31",
      "url": "/posts/2026-07-30-ai-morning-post/#company",
      "title": "字节跳动重组 AI 业务：豆包、飞书、火山引擎整合"
-    },
-    {
-     "date": "2026-07-11",
-     "url": "/posts/2026-07-10-ai-morning-post/#product",
-     "title": "字节跳动发布 10 亿参数 AI 华语歌模型"
     }
    ]
   }
