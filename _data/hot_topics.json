@@ -1,17 +1,22 @@
 {
- "generated": "2026-08-17",
+ "generated": "2026-08-19",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 35.39,
-   "days": 19,
+   "score": 34.03,
+   "days": 18,
    "latest": {
-    "date": "2026-08-17",
-    "url": "/posts/2026-08-16-ai-morning-post/#research",
-    "title": "Anthropic 拆解多智能体协作的常见模式与问题"
+    "date": "2026-08-19",
+    "url": "/posts/2026-08-18-ai-morning-post/#opensource",
+    "title": "Anthropic 开源网络安全 Agent 技能库"
    },
    "links": [
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
+     "title": "Anthropic 开源网络安全 Agent 技能库"
+    },
     {
      "date": "2026-08-17",
      "url": "/posts/2026-08-16-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-08-05",
      "url": "/posts/2026-08-04-ai-morning-post/#company",
      "title": "英伟达领衔 120+ 企业发布 SAFE 指南，针对 AI Agent 攻击"
-    },
-    {
-     "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#research",
-     "title": "AI 编码 Agent 能改科研代码，难判科学对错"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 23.74,
+   "score": 22.58,
    "days": 20,
    "latest": {
-    "date": "2026-08-17",
-    "url": "/posts/2026-08-16-ai-morning-post/#company",
-    "title": "OpenAI 解散灾难性风险安全团队"
+    "date": "2026-08-19",
+    "url": "/posts/2026-08-18-ai-morning-post/#company",
+    "title": "英伟达 15 亿美元押注软银数据中心，绑定 OpenAI 算力"
    },
    "links": [
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#company",
+     "title": "英伟达 15 亿美元押注软银数据中心，绑定 OpenAI 算力"
+    },
     {
      "date": "2026-08-17",
      "url": "/posts/2026-08-16-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-08-05",
      "url": "/posts/2026-08-04-ai-morning-post/#company",
      "title": "苹果诉 OpenAI 窃密案升级，双方亮出证据"
-    },
-    {
-     "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#research",
-     "title": "OpenAI 官宣：AI 破解十项数学难题"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 14.29,
-   "days": 16,
+   "score": 14.52,
+   "days": 15,
    "latest": {
-    "date": "2026-08-17",
-    "url": "/posts/2026-08-16-ai-morning-post/#company",
-    "title": "Anthropic 生物武器过滤器失守近一年"
+    "date": "2026-08-19",
+    "url": "/posts/2026-08-18-ai-morning-post/#company",
+    "title": "Anthropic 年化营收飙至 650 亿美元，IPO 前亮底牌"
    },
    "links": [
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#company",
+     "title": "Anthropic 年化营收飙至 650 亿美元，IPO 前亮底牌"
+    },
     {
      "date": "2026-08-17",
      "url": "/posts/2026-08-16-ai-morning-post/#company",
@@ -150,18 +155,13 @@
      "date": "2026-08-05",
      "url": "/posts/2026-08-04-ai-morning-post/#company",
      "title": "Anthropic 百亿算力押注，Volta 何以入局"
-    },
-    {
-     "date": "2026-08-02",
-     "url": "/posts/2026-08-01-ai-morning-post/#company",
-     "title": "OpenAI IPO推迟，Anthropic却要加速上市"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 9.71,
-   "days": 13,
+   "score": 8.55,
+   "days": 12,
    "latest": {
     "date": "2026-08-16",
     "url": "/posts/2026-08-15-ai-morning-post/#model-release",
@@ -212,14 +212,19 @@
   },
   {
    "name": "阿里",
-   "score": 7.9,
+   "score": 7.58,
    "days": 14,
    "latest": {
-    "date": "2026-08-16",
-    "url": "/posts/2026-08-15-ai-morning-post/#model-release",
-    "title": "阿里开源 Qwen3.8-27B：家用显卡就能跑的大模型"
+    "date": "2026-08-19",
+    "url": "/posts/2026-08-18-ai-morning-post/#model-release",
+    "title": "阿里发布 AI 音乐模型 HappyShrimp"
    },
    "links": [
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#model-release",
+     "title": "阿里发布 AI 音乐模型 HappyShrimp"
+    },
     {
      "date": "2026-08-16",
      "url": "/posts/2026-08-15-ai-morning-post/#model-release",
@@ -254,24 +259,24 @@
      "date": "2026-07-28",
      "url": "/posts/2026-07-27-ai-morning-post/#opensource",
      "title": "阿里巴巴开源代码审查工具open-code-review"
-    },
-    {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#opensource",
-     "title": "阿里开源代码审查工具，混合架构结合LLM Agent"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 7.32,
+   "score": 7.39,
    "days": 12,
    "latest": {
-    "date": "2026-08-17",
-    "url": "/posts/2026-08-16-ai-morning-post/#product",
-    "title": "Claude系统提示词正式公开"
+    "date": "2026-08-19",
+    "url": "/posts/2026-08-18-ai-morning-post/#product",
+    "title": "Claude Code 新增 /design，终端里直接画 UI"
    },
    "links": [
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#product",
+     "title": "Claude Code 新增 /design，终端里直接画 UI"
+    },
     {
      "date": "2026-08-17",
      "url": "/posts/2026-08-16-ai-morning-post/#product",
@@ -306,18 +311,65 @@
      "date": "2026-07-28",
      "url": "/posts/2026-07-27-ai-morning-post/#product",
      "title": "Claude 共享聊天链接被搜索引擎索引，隐私风险暴露"
+    }
+   ]
+  },
+  {
+   "name": "ChatGPT",
+   "score": 5.13,
+   "days": 10,
+   "latest": {
+    "date": "2026-08-19",
+    "url": "/posts/2026-08-18-ai-morning-post/#product",
+    "title": "ChatGPT 青少年版上线，AI 开始抢未成年入口"
+   },
+   "links": [
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#product",
+     "title": "ChatGPT 青少年版上线，AI 开始抢未成年入口"
     },
     {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#opensource",
-     "title": "Awesome Claude Skills：Claude工作流自定义资源合集"
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#product",
+     "title": "记忆时间线：ChatGPT 开始记住你的每一次操作"
+    },
+    {
+     "date": "2026-08-11",
+     "url": "/posts/2026-08-10-ai-morning-post/#company",
+     "title": "OpenAI 收购 NextSlide，PPT 生成接入 ChatGPT"
+    },
+    {
+     "date": "2026-08-09",
+     "url": "/posts/2026-08-08-ai-morning-post/#company",
+     "title": "OpenAI 收购演示文稿初创 NextSlide，团队并入 ChatGPT"
+    },
+    {
+     "date": "2026-08-03",
+     "url": "/posts/2026-08-02-ai-morning-post/#opinion",
+     "title": "ChatGPT 育儿：Altman 的“酷用例”争议"
+    },
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#product",
+     "title": "ChatGPT 更新：禁止直接克隆作家风格"
+    },
+    {
+     "date": "2026-07-28",
+     "url": "/posts/2026-07-27-ai-morning-post/#product",
+     "title": "ChatGPT 开始阻止直接模仿作家风格的请求"
+    },
+    {
+     "date": "2026-07-26",
+     "url": "/posts/2026-07-25-ai-morning-post/#product",
+     "title": "ChatGPT新增个人健康助手功能"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 5.65,
-   "days": 8,
+   "score": 4.87,
+   "days": 7,
    "latest": {
     "date": "2026-08-16",
     "url": "/posts/2026-08-15-ai-morning-post/#research",
@@ -358,70 +410,87 @@
      "date": "2026-07-22",
      "url": "/posts/2026-07-21-ai-morning-post/#model-release",
      "title": "Google发布三款Gemini Flash模型：3.5 Pro继续缺席"
-    },
-    {
-     "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#opensource",
-     "title": "Google发布Android Skills库，助力AI理解Android开发"
     }
    ]
   },
   {
-   "name": "ChatGPT",
-   "score": 4.77,
-   "days": 9,
+   "name": "SpaceX",
+   "score": 4.13,
+   "days": 3,
    "latest": {
-    "date": "2026-08-16",
-    "url": "/posts/2026-08-15-ai-morning-post/#product",
-    "title": "记忆时间线：ChatGPT 开始记住你的每一次操作"
+    "date": "2026-08-17",
+    "url": "/posts/2026-08-16-ai-morning-post/#company",
+    "title": "SpaceX 正式完成对 Cursor 的收购"
    },
    "links": [
     {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#product",
-     "title": "记忆时间线：ChatGPT 开始记住你的每一次操作"
+     "date": "2026-08-17",
+     "url": "/posts/2026-08-16-ai-morning-post/#company",
+     "title": "SpaceX 正式完成对 Cursor 的收购"
     },
     {
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#company",
+     "title": "SpaceX 吞下 Cursor：火箭公司开始写代码"
+    },
+    {
+     "date": "2026-08-02",
+     "url": "/posts/2026-08-01-ai-morning-post/#company",
+     "title": "SpaceX给xAI补电：AI基建的合规账还没算清"
+    }
+   ]
+  },
+  {
+   "name": "字节",
+   "score": 3.94,
+   "days": 7,
+   "latest": {
+    "date": "2026-08-11",
+    "url": "/posts/2026-08-10-ai-morning-post/#model-release",
+    "title": "字节Seed发布SeedRealtime，原生音视频全双工模型"
+   },
+   "links": [
+    {
      "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#company",
-     "title": "OpenAI 收购 NextSlide，PPT 生成接入 ChatGPT"
+     "url": "/posts/2026-08-10-ai-morning-post/#model-release",
+     "title": "字节Seed发布SeedRealtime，原生音视频全双工模型"
     },
     {
      "date": "2026-08-09",
      "url": "/posts/2026-08-08-ai-morning-post/#company",
-     "title": "OpenAI 收购演示文稿初创 NextSlide，团队并入 ChatGPT"
+     "title": "字节跳动被曝训练 10 万亿参数模型，对标 Anthropic"
+    },
+    {
+     "date": "2026-08-08",
+     "url": "/posts/2026-08-07-ai-morning-post/#company",
+     "title": "字节跳动被曝训练10万亿参数大模型，对标Anthropic"
+    },
+    {
+     "date": "2026-08-05",
+     "url": "/posts/2026-08-04-ai-morning-post/#opensource",
+     "title": "字节跳动开源DeerFlow：长时SuperAgent框架"
     },
     {
      "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#opinion",
-     "title": "ChatGPT 育儿：Altman 的“酷用例”争议"
+     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
+     "title": "字节开源 deer-flow：长任务 SuperAgent"
     },
     {
-     "date": "2026-07-29",
-     "url": "/posts/2026-07-28-ai-morning-post/#product",
-     "title": "ChatGPT 更新：禁止直接克隆作家风格"
+     "date": "2026-08-02",
+     "url": "/posts/2026-08-01-ai-morning-post/#model-release",
+     "title": "字节 Seedance 2.5 登场：30 秒视频自动配乐"
     },
     {
-     "date": "2026-07-28",
-     "url": "/posts/2026-07-27-ai-morning-post/#product",
-     "title": "ChatGPT 开始阻止直接模仿作家风格的请求"
-    },
-    {
-     "date": "2026-07-26",
-     "url": "/posts/2026-07-25-ai-morning-post/#product",
-     "title": "ChatGPT新增个人健康助手功能"
-    },
-    {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#research",
-     "title": "ChatGPT 健康建议：付费墙背后的医疗不平等"
+     "date": "2026-07-31",
+     "url": "/posts/2026-07-30-ai-morning-post/#company",
+     "title": "字节跳动重组 AI 业务：豆包、飞书、火山引擎整合"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 4.45,
-   "days": 11,
+   "score": 3.55,
+   "days": 10,
    "latest": {
     "date": "2026-08-08",
     "url": "/posts/2026-08-07-ai-morning-post/#company",
@@ -471,8 +540,92 @@
    ]
   },
   {
-   "name": "SpaceX",
-   "score": 4.45,
+   "name": "DeepSeek",
+   "score": 3.52,
+   "days": 6,
+   "latest": {
+    "date": "2026-08-16",
+    "url": "/posts/2026-08-15-ai-morning-post/#opensource",
+    "title": "DeepSeek 开源 Harness：模型工具全是插件"
+   },
+   "links": [
+    {
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#opensource",
+     "title": "DeepSeek 开源 Harness：模型工具全是插件"
+    },
+    {
+     "date": "2026-08-11",
+     "url": "/posts/2026-08-10-ai-morning-post/#opinion",
+     "title": "DeepSeek 涨价30倍仍是最便宜模型，底气何在"
+    },
+    {
+     "date": "2026-08-09",
+     "url": "/posts/2026-08-08-ai-morning-post/#model-release",
+     "title": "DeepSeek 涨价，Meta 用骨折价反击"
+    },
+    {
+     "date": "2026-08-08",
+     "url": "/posts/2026-08-07-ai-morning-post/#company",
+     "title": "DeepSeek拟上调API价格，Meta低价新模型“数据税”换市场"
+    },
+    {
+     "date": "2026-07-28",
+     "url": "/posts/2026-07-27-ai-morning-post/#company",
+     "title": "DeepSeek 主动叫停第二轮百亿融资"
+    },
+    {
+     "date": "2026-07-27",
+     "url": "/posts/2026-07-26-ai-morning-post/#company",
+     "title": "DeepSeek暂停融资，内部称中美计算力差距大"
+    }
+   ]
+  },
+  {
+   "name": "算力",
+   "score": 3.42,
+   "days": 6,
+   "latest": {
+    "date": "2026-08-19",
+    "url": "/posts/2026-08-18-ai-morning-post/#company",
+    "title": "英伟达 15 亿美元押注软银数据中心，绑定 OpenAI 算力"
+   },
+   "links": [
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#company",
+     "title": "英伟达 15 亿美元押注软银数据中心，绑定 OpenAI 算力"
+    },
+    {
+     "date": "2026-08-05",
+     "url": "/posts/2026-08-04-ai-morning-post/#company",
+     "title": "Anthropic 百亿算力押注，Volta 何以入局"
+    },
+    {
+     "date": "2026-08-02",
+     "url": "/posts/2026-08-01-ai-morning-post/#product",
+     "title": "Siri AI 或对重度用户收费：Apple 想把 AI 算力装进 iCloud+"
+    },
+    {
+     "date": "2026-07-30",
+     "url": "/posts/2026-07-29-ai-morning-post/#company",
+     "title": "Recursive Superintelligence与亚马逊签署4.1亿美元算力协议"
+    },
+    {
+     "date": "2026-07-27",
+     "url": "/posts/2026-07-26-ai-morning-post/#company",
+     "title": "DeepSeek暂停融资，内部称中美计算力差距大"
+    },
+    {
+     "date": "2026-07-23",
+     "url": "/posts/2026-07-22-ai-morning-post/#company",
+     "title": "Anthropic 与 AMD 签 50 亿美元芯片协议，部署 2 吉瓦算力"
+    }
+   ]
+  },
+  {
+   "name": "Cursor",
+   "score": 3.35,
    "days": 3,
    "latest": {
     "date": "2026-08-17",
@@ -491,62 +644,15 @@
      "title": "SpaceX 吞下 Cursor：火箭公司开始写代码"
     },
     {
-     "date": "2026-08-02",
-     "url": "/posts/2026-08-01-ai-morning-post/#company",
-     "title": "SpaceX给xAI补电：AI基建的合规账还没算清"
-    }
-   ]
-  },
-  {
-   "name": "字节",
-   "score": 4.39,
-   "days": 7,
-   "latest": {
-    "date": "2026-08-11",
-    "url": "/posts/2026-08-10-ai-morning-post/#model-release",
-    "title": "字节Seed发布SeedRealtime，原生音视频全双工模型"
-   },
-   "links": [
-    {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#model-release",
-     "title": "字节Seed发布SeedRealtime，原生音视频全双工模型"
-    },
-    {
-     "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#company",
-     "title": "字节跳动被曝训练 10 万亿参数模型，对标 Anthropic"
-    },
-    {
-     "date": "2026-08-08",
-     "url": "/posts/2026-08-07-ai-morning-post/#company",
-     "title": "字节跳动被曝训练10万亿参数大模型，对标Anthropic"
-    },
-    {
-     "date": "2026-08-05",
-     "url": "/posts/2026-08-04-ai-morning-post/#opensource",
-     "title": "字节跳动开源DeerFlow：长时SuperAgent框架"
-    },
-    {
-     "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
-     "title": "字节开源 deer-flow：长任务 SuperAgent"
-    },
-    {
-     "date": "2026-08-02",
-     "url": "/posts/2026-08-01-ai-morning-post/#model-release",
-     "title": "字节 Seedance 2.5 登场：30 秒视频自动配乐"
-    },
-    {
-     "date": "2026-07-31",
-     "url": "/posts/2026-07-30-ai-morning-post/#company",
-     "title": "字节跳动重组 AI 业务：豆包、飞书、火山引擎整合"
+     "date": "2026-07-28",
+     "url": "/posts/2026-07-27-ai-morning-post/#research",
+     "title": "Cursor 实验：廉价模型处理大部分编码，前沿模型规划"
     }
    ]
   },
   {
    "name": "NVIDIA",
-   "score": 4.16,
+   "score": 3.32,
    "days": 8,
    "latest": {
     "date": "2026-08-11",
@@ -593,157 +699,6 @@
      "date": "2026-07-21",
      "url": "/posts/2026-07-20-ai-morning-post/#model-release",
      "title": "NVIDIA 推出 Cosmos 3 Edge，专为边缘设备和实时推理优化"
-    }
-   ]
-  },
-  {
-   "name": "腾讯",
-   "score": 4.0,
-   "days": 9,
-   "latest": {
-    "date": "2026-08-08",
-    "url": "/posts/2026-08-07-ai-morning-post/#opensource",
-    "title": "腾讯云开源 Agent Memory v2.0：团队记忆资产化"
-   },
-   "links": [
-    {
-     "date": "2026-08-08",
-     "url": "/posts/2026-08-07-ai-morning-post/#opensource",
-     "title": "腾讯云开源 Agent Memory v2.0：团队记忆资产化"
-    },
-    {
-     "date": "2026-08-05",
-     "url": "/posts/2026-08-04-ai-morning-post/#model-release",
-     "title": "腾讯混元 Hy ASR 3.0：让语音识别懂上下文"
-    },
-    {
-     "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
-     "title": "腾讯云开源 Agent Memory 记忆中枢"
-    },
-    {
-     "date": "2026-07-31",
-     "url": "/posts/2026-07-30-ai-morning-post/#opensource",
-     "title": "腾讯 AngelSpec：投机解码的统一训练框架"
-    },
-    {
-     "date": "2026-07-30",
-     "url": "/posts/2026-07-29-ai-morning-post/#opensource",
-     "title": "腾讯混元开源 AngelSpec，投机解码加速推理"
-    },
-    {
-     "date": "2026-07-25",
-     "url": "/posts/2026-07-24-ai-morning-post/#company",
-     "title": "腾讯混元合并多模态与大语言模型团队"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#product",
-     "title": "腾讯地图联合义乌推出 AI 导航找店"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#product",
-     "title": "腾讯发布三大具身基座模型，工业实测成功率超 95%"
-    }
-   ]
-  },
-  {
-   "name": "DeepSeek",
-   "score": 3.97,
-   "days": 7,
-   "latest": {
-    "date": "2026-08-16",
-    "url": "/posts/2026-08-15-ai-morning-post/#opensource",
-    "title": "DeepSeek 开源 Harness：模型工具全是插件"
-   },
-   "links": [
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 Harness：模型工具全是插件"
-    },
-    {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#opinion",
-     "title": "DeepSeek 涨价30倍仍是最便宜模型，底气何在"
-    },
-    {
-     "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#model-release",
-     "title": "DeepSeek 涨价，Meta 用骨折价反击"
-    },
-    {
-     "date": "2026-08-08",
-     "url": "/posts/2026-08-07-ai-morning-post/#company",
-     "title": "DeepSeek拟上调API价格，Meta低价新模型“数据税”换市场"
-    },
-    {
-     "date": "2026-07-28",
-     "url": "/posts/2026-07-27-ai-morning-post/#company",
-     "title": "DeepSeek 主动叫停第二轮百亿融资"
-    },
-    {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#company",
-     "title": "DeepSeek暂停融资，内部称中美计算力差距大"
-    },
-    {
-     "date": "2026-07-19",
-     "url": "/posts/2026-07-18-ai-morning-post/#company",
-     "title": "DeepSeek估值3500亿，竟被安徽箱包公司泄密"
-    }
-   ]
-  },
-  {
-   "name": "MCP",
-   "score": 3.81,
-   "days": 8,
-   "latest": {
-    "date": "2026-08-17",
-    "url": "/posts/2026-08-16-ai-morning-post/#opinion",
-    "title": "MCP 走向无状态，开发者灵魂拷问：这不就是 API？"
-   },
-   "links": [
-    {
-     "date": "2026-08-17",
-     "url": "/posts/2026-08-16-ai-morning-post/#opinion",
-     "title": "MCP 走向无状态，开发者灵魂拷问：这不就是 API？"
-    },
-    {
-     "date": "2026-08-08",
-     "url": "/posts/2026-08-07-ai-morning-post/#opensource",
-     "title": "AWS 发布官方 Agent Toolkit：MCP 与 Skills 双轨支持"
-    },
-    {
-     "date": "2026-07-31",
-     "url": "/posts/2026-07-30-ai-morning-post/#opinion",
-     "title": "MCP协议新规让企业放下顾虑：无状态架构消除规模化瓶颈。同时——AI合规漏洞、数据烧钱竞赛、本体论重归视野——行业正在从“能跑就行”转向“确定性优先”。"
-    },
-    {
-     "date": "2026-07-30",
-     "url": "/posts/2026-07-29-ai-morning-post/#company",
-     "title": "MCP网关创业公司Runlayer起诉Rippling抄袭"
-    },
-    {
-     "date": "2026-07-29",
-     "url": "/posts/2026-07-28-ai-morning-post/#company",
-     "title": "MCP网关创企Runlayer起诉Rippling抄袭"
-    },
-    {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#opensource",
-     "title": "Prefect 发布 FastMCP：Pythonic 的 MCP 服务器构建框架"
-    },
-    {
-     "date": "2026-07-21",
-     "url": "/posts/2026-07-20-ai-morning-post/#product",
-     "title": "MCP 协议升级：无状态会话 ID 降低使用门槛"
-    },
-    {
-     "date": "2026-07-20",
-     "url": "/posts/2026-07-19-ai-morning-post/#opensource",
-     "title": "AWS 发布官方 Agent Toolkit for AWS，支持 MCP"
     }
    ]
   }
