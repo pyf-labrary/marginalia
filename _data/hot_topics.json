@@ -56,8 +56,8 @@
   },
   {
    "name": "OpenAI",
-   "score": 23.23,
-   "days": 22,
+   "score": 25.55,
+   "days": 23,
    "latest": {
     "date": "2026-08-19",
     "url": "/posts/2026-08-18-ai-morning-post/#company",
@@ -80,6 +80,11 @@
      "title": "英伟达减持 OpenAI，转押 SpaceX 与英特尔"
     },
     {
+     "date": "2026-08-12",
+     "url": "/posts/2026-08-11-ai-morning-post/#model-release",
+     "title": "OpenAI发布GPT-5.6 Cyber，Daybreak窗口前移"
+    },
+    {
      "date": "2026-08-11",
      "url": "/posts/2026-08-10-ai-morning-post/#model-release",
      "title": "OpenAI发布GPT-5.6-Cyber，专攻漏洞攻防"
@@ -98,11 +103,6 @@
      "date": "2026-08-08",
      "url": "/posts/2026-08-07-ai-morning-post/#company",
      "title": "OpenAI反击苹果：离职安全漏洞反伤指控可信度"
-    },
-    {
-     "date": "2026-08-07",
-     "url": "/posts/2026-08-06-ai-morning-post/#company",
-     "title": "微软约七成 AI 收入来自 OpenAI"
     }
    ]
   },
@@ -160,8 +160,8 @@
   },
   {
    "name": "Meta",
-   "score": 10.94,
-   "days": 14,
+   "score": 11.71,
+   "days": 15,
    "latest": {
     "date": "2026-08-16",
     "url": "/posts/2026-08-15-ai-morning-post/#model-release",
@@ -172,6 +172,11 @@
      "date": "2026-08-16",
      "url": "/posts/2026-08-15-ai-morning-post/#model-release",
      "title": "Meta 开源 Glimmer：和自家闭源路线同时下注"
+    },
+    {
+     "date": "2026-08-12",
+     "url": "/posts/2026-08-11-ai-morning-post/#model-release",
+     "title": "Meta开源Muse Glimmer，押注端侧agent生态"
     },
     {
      "date": "2026-08-11",
@@ -202,11 +207,6 @@
      "date": "2026-08-02",
      "url": "/posts/2026-08-01-ai-morning-post/#company",
      "title": "微软赚翻、Meta告急：同一天财报，两个世界"
-    },
-    {
-     "date": "2026-07-29",
-     "url": "/posts/2026-07-28-ai-morning-post/#product",
-     "title": "Meta AI 聊天机器人入驻 Threads 私信"
     }
    ]
   },
@@ -264,8 +264,8 @@
   },
   {
    "name": "Claude",
-   "score": 6.39,
-   "days": 11,
+   "score": 7.94,
+   "days": 12,
    "latest": {
     "date": "2026-08-17",
     "url": "/posts/2026-08-16-ai-morning-post/#product",
@@ -281,6 +281,11 @@
      "date": "2026-08-16",
      "url": "/posts/2026-08-15-ai-morning-post/#opinion",
      "title": "Codex 与 Claude Code 负责人公开互怼"
+    },
+    {
+     "date": "2026-08-12",
+     "url": "/posts/2026-08-11-ai-morning-post/#research",
+     "title": "Claude 将数学证明边界推进到 67.2%"
     },
     {
      "date": "2026-08-11",
@@ -306,11 +311,6 @@
      "date": "2026-07-28",
      "url": "/posts/2026-07-27-ai-morning-post/#product",
      "title": "Claude 共享聊天链接被搜索引擎索引，隐私风险暴露"
-    },
-    {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#opensource",
-     "title": "Awesome Claude Skills：Claude工作流自定义资源合集"
     }
    ]
   },
