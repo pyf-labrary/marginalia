@@ -4,8 +4,8 @@
  "topics": [
   {
    "name": "Agent",
-   "score": 33.03,
-   "days": 18,
+   "score": 34.29,
+   "days": 19,
    "latest": {
     "date": "2026-08-19",
     "url": "/posts/2026-08-18-ai-morning-post/#research",
@@ -56,8 +56,8 @@
   },
   {
    "name": "OpenAI",
-   "score": 21.58,
-   "days": 20,
+   "score": 22.0,
+   "days": 21,
    "latest": {
     "date": "2026-08-19",
     "url": "/posts/2026-08-18-ai-morning-post/#company",
@@ -316,8 +316,8 @@
   },
   {
    "name": "Google",
-   "score": 5.87,
-   "days": 8,
+   "score": 6.29,
+   "days": 9,
    "latest": {
     "date": "2026-08-19",
     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
@@ -350,6 +350,11 @@
      "title": "Reddit CEO 质疑 Google AI 概览价值，或终止授权"
     },
     {
+     "date": "2026-08-01",
+     "url": "/posts/2026-07-31-ai-morning-post/#product",
+     "title": "Google 用 AI 修 Chrome 漏洞，六月修复量超过去两年总和"
+    },
+    {
      "date": "2026-07-28",
      "url": "/posts/2026-07-27-ai-morning-post/#company",
      "title": "Google 与 Reddit 反爬虫诉讼意外败诉"
@@ -358,11 +363,58 @@
      "date": "2026-07-25",
      "url": "/posts/2026-07-24-ai-morning-post/#company",
      "title": "Google 首次出现负现金流季度，AI 支出激增"
+    }
+   ]
+  },
+  {
+   "name": "DeepSeek",
+   "score": 4.94,
+   "days": 8,
+   "latest": {
+    "date": "2026-08-19",
+    "url": "/posts/2026-08-18-ai-morning-post/#research",
+    "title": "DeepSeek 缓存暴涨 11 倍：长上下文开始收\"存储税\""
+   },
+   "links": [
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#research",
+     "title": "DeepSeek 缓存暴涨 11 倍：长上下文开始收\"存储税\""
     },
     {
-     "date": "2026-07-22",
-     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
-     "title": "Google发布三款Gemini Flash模型：3.5 Pro继续缺席"
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#opensource",
+     "title": "DeepSeek 开源 Harness：模型工具全是插件"
+    },
+    {
+     "date": "2026-08-11",
+     "url": "/posts/2026-08-10-ai-morning-post/#opinion",
+     "title": "DeepSeek 涨价30倍仍是最便宜模型，底气何在"
+    },
+    {
+     "date": "2026-08-09",
+     "url": "/posts/2026-08-08-ai-morning-post/#model-release",
+     "title": "DeepSeek 涨价，Meta 用骨折价反击"
+    },
+    {
+     "date": "2026-08-08",
+     "url": "/posts/2026-08-07-ai-morning-post/#company",
+     "title": "DeepSeek拟上调API价格，Meta低价新模型“数据税”换市场"
+    },
+    {
+     "date": "2026-08-01",
+     "url": "/posts/2026-07-31-ai-morning-post/#research",
+     "title": "蒸馏 DeepSeek 到 GPT-OSS，审查不随能力迁移"
+    },
+    {
+     "date": "2026-07-28",
+     "url": "/posts/2026-07-27-ai-morning-post/#company",
+     "title": "DeepSeek 主动叫停第二轮百亿融资"
+    },
+    {
+     "date": "2026-07-27",
+     "url": "/posts/2026-07-26-ai-morning-post/#company",
+     "title": "DeepSeek暂停融资，内部称中美计算力差距大"
     }
    ]
   },
@@ -467,53 +519,6 @@
      "date": "2026-07-24",
      "url": "/posts/2026-07-23-ai-morning-post/#company",
      "title": "AI 芯片初创 Etched 估值达 103 亿美元"
-    }
-   ]
-  },
-  {
-   "name": "DeepSeek",
-   "score": 4.52,
-   "days": 7,
-   "latest": {
-    "date": "2026-08-19",
-    "url": "/posts/2026-08-18-ai-morning-post/#research",
-    "title": "DeepSeek 缓存暴涨 11 倍：长上下文开始收\"存储税\""
-   },
-   "links": [
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#research",
-     "title": "DeepSeek 缓存暴涨 11 倍：长上下文开始收\"存储税\""
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 Harness：模型工具全是插件"
-    },
-    {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#opinion",
-     "title": "DeepSeek 涨价30倍仍是最便宜模型，底气何在"
-    },
-    {
-     "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#model-release",
-     "title": "DeepSeek 涨价，Meta 用骨折价反击"
-    },
-    {
-     "date": "2026-08-08",
-     "url": "/posts/2026-08-07-ai-morning-post/#company",
-     "title": "DeepSeek拟上调API价格，Meta低价新模型“数据税”换市场"
-    },
-    {
-     "date": "2026-07-28",
-     "url": "/posts/2026-07-27-ai-morning-post/#company",
-     "title": "DeepSeek 主动叫停第二轮百亿融资"
-    },
-    {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#company",
-     "title": "DeepSeek暂停融资，内部称中美计算力差距大"
     }
    ]
   },
