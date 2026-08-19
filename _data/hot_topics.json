@@ -4,8 +4,8 @@
  "topics": [
   {
    "name": "Agent",
-   "score": 37.23,
-   "days": 21,
+   "score": 38.84,
+   "days": 22,
    "latest": {
     "date": "2026-08-19",
     "url": "/posts/2026-08-18-ai-morning-post/#research",
@@ -28,6 +28,11 @@
      "title": "持久化环境：AI 智能体的“身体”来了"
     },
     {
+     "date": "2026-08-13",
+     "url": "/posts/2026-08-12-ai-morning-post/#product",
+     "title": "Discovered Materials：智能体加速新材料发现"
+    },
+    {
      "date": "2026-08-11",
      "url": "/posts/2026-08-10-ai-morning-post/#model-release",
      "title": "Meta开源30B Agent模型Muse Glimmer，单卡可跑"
@@ -46,11 +51,6 @@
      "date": "2026-08-08",
      "url": "/posts/2026-08-07-ai-morning-post/#model-release",
      "title": "LFM2.5-2.6B：端侧 Agent 的轻量路线"
-    },
-    {
-     "date": "2026-08-07",
-     "url": "/posts/2026-08-06-ai-morning-post/#opensource",
-     "title": "Channels SDK：Agent 不再为每个平台重写一遍"
     }
    ]
   },
