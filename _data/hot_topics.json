@@ -264,8 +264,8 @@
   },
   {
    "name": "Claude",
-   "score": 8.77,
-   "days": 13,
+   "score": 9.19,
+   "days": 14,
    "latest": {
     "date": "2026-08-17",
     "url": "/posts/2026-08-16-ai-morning-post/#product",
@@ -308,9 +308,9 @@
      "title": "Claude Code 默认开启 Auto Mode，跨会话上下文打通"
     },
     {
-     "date": "2026-07-29",
-     "url": "/posts/2026-07-28-ai-morning-post/#product",
-     "title": "Claude 共享聊天链接被谷歌索引导致私密对话泄露"
+     "date": "2026-08-01",
+     "url": "/posts/2026-07-31-ai-morning-post/#opensource",
+     "title": "claude-account：Claude Code 账号一键切换"
     }
    ]
   },
@@ -362,14 +362,14 @@
     {
      "date": "2026-08-01",
      "url": "/posts/2026-07-31-ai-morning-post/#research",
-     "title": "蒸馏 DeepSeek 到 GPT-OSS，审查不随能力迁移"
+     "title": "实验：蒸馏 DeepSeek 不迁移审查机制"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 6.29,
-   "days": 9,
+   "score": 5.87,
+   "days": 8,
    "latest": {
     "date": "2026-08-19",
     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
@@ -402,11 +402,6 @@
      "title": "Reddit CEO 质疑 Google AI 概览价值，或终止授权"
     },
     {
-     "date": "2026-08-01",
-     "url": "/posts/2026-07-31-ai-morning-post/#product",
-     "title": "Google 用 AI 修 Chrome 漏洞，六月修复量超过去两年总和"
-    },
-    {
      "date": "2026-07-28",
      "url": "/posts/2026-07-27-ai-morning-post/#company",
      "title": "Google 与 Reddit 反爬虫诉讼意外败诉"
@@ -415,6 +410,11 @@
      "date": "2026-07-25",
      "url": "/posts/2026-07-24-ai-morning-post/#company",
      "title": "Google 首次出现负现金流季度，AI 支出激增"
+    },
+    {
+     "date": "2026-07-22",
+     "url": "/posts/2026-07-21-ai-morning-post/#model-release",
+     "title": "Google发布三款Gemini Flash模型：3.5 Pro继续缺席"
     }
    ]
   },
@@ -686,7 +686,7 @@
     {
      "date": "2026-08-01",
      "url": "/posts/2026-07-31-ai-morning-post/#research",
-     "title": "GPT-5.6 Sol 参与否定 Maxwell 猜想"
+     "title": "GPT-5.6 Sol 协助推翻 Maxwell 猜想？"
     },
     {
      "date": "2026-07-27",
