@@ -4,7 +4,7 @@
  "topics": [
   {
    "name": "Agent",
-   "score": 41.48,
+   "score": 40.9,
    "days": 24,
    "latest": {
     "date": "2026-08-19",
@@ -160,7 +160,7 @@
   },
   {
    "name": "Meta",
-   "score": 12.55,
+   "score": 11.97,
    "days": 16,
    "latest": {
     "date": "2026-08-16",
@@ -205,8 +205,8 @@
     },
     {
      "date": "2026-08-06",
-     "url": "/posts/2026-08-05-ai-morning-post/#model-release",
-     "title": "Meta 发布 Muse Code 与 Muse Spark 1.2"
+     "url": "/posts/2026-08-05-ai-morning-post/#company",
+     "title": "Wired 曝 Meta 广告现 AI 生成儿童虐待图片"
     }
    ]
   },
@@ -555,6 +555,58 @@
    ]
   },
   {
+   "name": "开源模型",
+   "score": 4.61,
+   "days": 8,
+   "latest": {
+    "date": "2026-08-19",
+    "url": "/posts/2026-08-18-ai-morning-post/#model-release",
+    "title": "Z.ai 开源模型引发安全担忧"
+   },
+   "links": [
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#model-release",
+     "title": "Z.ai 开源模型引发安全担忧"
+    },
+    {
+     "date": "2026-08-09",
+     "url": "/posts/2026-08-08-ai-morning-post/#model-release",
+     "title": "MiniMax 2K 开源模型在路上"
+    },
+    {
+     "date": "2026-08-07",
+     "url": "/posts/2026-08-06-ai-morning-post/#model-release",
+     "title": "Qwen3.8 Max 登顶 Agentic Index，开源模型首次问鼎"
+    },
+    {
+     "date": "2026-08-06",
+     "url": "/posts/2026-08-05-ai-morning-post/#research",
+     "title": "便宜两个数量级，开源模型叫板前沿闭源"
+    },
+    {
+     "date": "2026-08-03",
+     "url": "/posts/2026-08-02-ai-morning-post/#model-release",
+     "title": "AMD 发布 Instella-MoE：16B 完全开源模型"
+    },
+    {
+     "date": "2026-07-29",
+     "url": "/posts/2026-07-28-ai-morning-post/#model-release",
+     "title": "月之暗面开源Kimi K3：全球最大开源模型易主"
+    },
+    {
+     "date": "2026-07-27",
+     "url": "/posts/2026-07-26-ai-morning-post/#opinion",
+     "title": "美国对中国开源模型：拆解而非围堵"
+    },
+    {
+     "date": "2026-07-21",
+     "url": "/posts/2026-07-20-ai-morning-post/#opinion",
+     "title": "MIT 技术评论：中国开源模型让特朗普AI团队内部分裂"
+    }
+   ]
+  },
+  {
    "name": "芯片",
    "score": 4.55,
    "days": 11,
@@ -692,58 +744,6 @@
      "date": "2026-07-27",
      "url": "/posts/2026-07-26-ai-morning-post/#model-release",
      "title": "Anthropic Opus 5 半价击败 Fable 5 与 GPT-5.6 Sol"
-    }
-   ]
-  },
-  {
-   "name": "Hugging Face",
-   "score": 4.06,
-   "days": 10,
-   "latest": {
-    "date": "2026-08-19",
-    "url": "/posts/2026-08-18-ai-morning-post/#opensource",
-    "title": "NVIDIA 开源 TensorRT Model Connect，两命令部署 Hugging Face 模型"
-   },
-   "links": [
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
-     "title": "NVIDIA 开源 TensorRT Model Connect，两命令部署 Hugging Face 模型"
-    },
-    {
-     "date": "2026-08-10",
-     "url": "/posts/2026-08-09-ai-morning-post/#opinion",
-     "title": "OpenAI 意外攻击 Hugging Face 时间线曝光"
-    },
-    {
-     "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#company",
-     "title": "OpenAI 误攻 Hugging Face 事件完整时间线披露"
-    },
-    {
-     "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
-     "title": "Hugging Face 开源本地语音 Agent 框架"
-    },
-    {
-     "date": "2026-07-30",
-     "url": "/posts/2026-07-29-ai-morning-post/#opensource",
-     "title": "Hugging Face 开源 speech-to-speech，构建本地语音代理"
-    },
-    {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#company",
-     "title": "OpenAI自主黑客事件：Hugging Face CEO呼吁彻底透明"
-    },
-    {
-     "date": "2026-07-24",
-     "url": "/posts/2026-07-23-ai-morning-post/#company",
-     "title": "OpenAI 测试模型突破沙盒，真实攻击 Hugging Face"
-    },
-    {
-     "date": "2026-07-23",
-     "url": "/posts/2026-07-22-ai-morning-post/#company",
-     "title": "OpenAI 模型逃逸沙箱，黑进 Hugging Face 真实系统"
     }
    ]
   }
