@@ -1,17 +1,22 @@
 {
- "generated": "2026-08-23",
+ "generated": "2026-08-24",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 40.35,
-   "days": 27,
+   "score": 43.74,
+   "days": 28,
    "latest": {
-    "date": "2026-08-23",
-    "url": "/posts/2026-08-22-ai-morning-post/#opensource",
-    "title": "ruflo 开源：Agent 元框架与多智能体 swarm 的一次打包"
+    "date": "2026-08-24",
+    "url": "/posts/2026-08-23-ai-morning-post/#research",
+    "title": "AI 智能体「技能」（Skills）为何有效、何时失效"
    },
    "links": [
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#research",
+     "title": "AI 智能体「技能」（Skills）为何有效、何时失效"
+    },
     {
      "date": "2026-08-23",
      "url": "/posts/2026-08-22-ai-morning-post/#opensource",
@@ -46,24 +51,24 @@
      "date": "2026-08-17",
      "url": "/posts/2026-08-16-ai-morning-post/#research",
      "title": "Anthropic 拆解多智能体协作的常见模式与问题"
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#product",
-     "title": "持久化环境：AI 智能体的“身体”来了"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 23.45,
+   "score": 23.77,
    "days": 23,
    "latest": {
-    "date": "2026-08-23",
-    "url": "/posts/2026-08-22-ai-morning-post/#company",
-    "title": "OpenAI 下调 GPT-5.6 Sol API 定价超 20%"
+    "date": "2026-08-24",
+    "url": "/posts/2026-08-23-ai-morning-post/#opinion",
+    "title": "OpenAI 反转：从反对 SB 53 到呼吁加强"
    },
    "links": [
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#opinion",
+     "title": "OpenAI 反转：从反对 SB 53 到呼吁加强"
+    },
     {
      "date": "2026-08-23",
      "url": "/posts/2026-08-22-ai-morning-post/#company",
@@ -98,18 +103,65 @@
      "date": "2026-08-14",
      "url": "/posts/2026-08-13-ai-morning-post/#company",
      "title": "OpenAI 押注 Cerebras，GPT-5.6 推理提速"
+    }
+   ]
+  },
+  {
+   "name": "Anthropic",
+   "score": 15.35,
+   "days": 19,
+   "latest": {
+    "date": "2026-08-24",
+    "url": "/posts/2026-08-23-ai-morning-post/#company",
+    "title": "Anthropic最强模型叫好不叫座，性价比成为新战场"
+   },
+   "links": [
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#company",
+     "title": "Anthropic最强模型叫好不叫座，性价比成为新战场"
     },
     {
-     "date": "2026-08-12",
-     "url": "/posts/2026-08-11-ai-morning-post/#model-release",
-     "title": "OpenAI发布GPT-5.6 Cyber，Daybreak窗口前移"
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#opinion",
+     "title": "Anthropic 光环消退：AI 圈信仰开始转移"
+    },
+    {
+     "date": "2026-08-22",
+     "url": "/posts/2026-08-21-ai-morning-post/#company",
+     "title": "Anthropic调整数据保留政策以安抚企业客户"
+    },
+    {
+     "date": "2026-08-21",
+     "url": "/posts/2026-08-20-ai-morning-post/#opensource",
+     "title": "Anthropic 官方发布 Claude Code 插件目录"
+    },
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#company",
+     "title": "Anthropic 年化收入达 650 亿美元，IPO 底牌曝光"
+    },
+    {
+     "date": "2026-08-17",
+     "url": "/posts/2026-08-16-ai-morning-post/#company",
+     "title": "Anthropic 生物武器过滤器失守近一年"
+    },
+    {
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#company",
+     "title": "OpenAI 与 Anthropic 开打价格战"
+    },
+    {
+     "date": "2026-08-15",
+     "url": "/posts/2026-08-14-ai-morning-post/#product",
+     "title": "Anthropic 官方发布 Claude Code 最佳实践"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 15.9,
-   "days": 16,
+   "score": 15.03,
+   "days": 15,
    "latest": {
     "date": "2026-08-23",
     "url": "/posts/2026-08-22-ai-morning-post/#model-release",
@@ -159,67 +211,20 @@
    ]
   },
   {
-   "name": "Anthropic",
-   "score": 15.19,
-   "days": 18,
-   "latest": {
-    "date": "2026-08-23",
-    "url": "/posts/2026-08-22-ai-morning-post/#opinion",
-    "title": "Anthropic 光环消退：AI 圈信仰开始转移"
-   },
-   "links": [
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#opinion",
-     "title": "Anthropic 光环消退：AI 圈信仰开始转移"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#company",
-     "title": "Anthropic调整数据保留政策以安抚企业客户"
-    },
-    {
-     "date": "2026-08-21",
-     "url": "/posts/2026-08-20-ai-morning-post/#opensource",
-     "title": "Anthropic 官方发布 Claude Code 插件目录"
-    },
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#company",
-     "title": "Anthropic 年化收入达 650 亿美元，IPO 底牌曝光"
-    },
-    {
-     "date": "2026-08-17",
-     "url": "/posts/2026-08-16-ai-morning-post/#company",
-     "title": "Anthropic 生物武器过滤器失守近一年"
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#company",
-     "title": "OpenAI 与 Anthropic 开打价格战"
-    },
-    {
-     "date": "2026-08-15",
-     "url": "/posts/2026-08-14-ai-morning-post/#product",
-     "title": "Anthropic 官方发布 Claude Code 最佳实践"
-    },
-    {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#company",
-     "title": "Anthropic 联手麦格理与 GIC 建数据中心平台"
-    }
-   ]
-  },
-  {
    "name": "Claude",
-   "score": 11.35,
+   "score": 11.65,
    "days": 17,
    "latest": {
-    "date": "2026-08-23",
-    "url": "/posts/2026-08-22-ai-morning-post/#product",
-    "title": "Claude Code 被曝测试 reduced effort 强度"
+    "date": "2026-08-24",
+    "url": "/posts/2026-08-23-ai-morning-post/#product",
+    "title": "Claude Code被曝测试降低effort，质量风险引讨论"
    },
    "links": [
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#product",
+     "title": "Claude Code被曝测试降低effort，质量风险引讨论"
+    },
     {
      "date": "2026-08-23",
      "url": "/posts/2026-08-22-ai-morning-post/#product",
@@ -254,18 +259,13 @@
      "date": "2026-08-14",
      "url": "/posts/2026-08-13-ai-morning-post/#opinion",
      "title": "Claude 水印新功能惹恼用户"
-    },
-    {
-     "date": "2026-08-12",
-     "url": "/posts/2026-08-11-ai-morning-post/#research",
-     "title": "Claude 将数学证明边界推进到 67.2%"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 7.23,
-   "days": 9,
+   "score": 6.74,
+   "days": 8,
    "latest": {
     "date": "2026-08-22",
     "url": "/posts/2026-08-21-ai-morning-post/#product",
@@ -316,7 +316,7 @@
   },
   {
    "name": "DeepSeek",
-   "score": 6.84,
+   "score": 6.45,
    "days": 12,
    "latest": {
     "date": "2026-08-23",
@@ -368,8 +368,8 @@
   },
   {
    "name": "阿里",
-   "score": 6.84,
-   "days": 12,
+   "score": 6.32,
+   "days": 11,
    "latest": {
     "date": "2026-08-19",
     "url": "/posts/2026-08-18-ai-morning-post/#model-release",
@@ -420,8 +420,8 @@
   },
   {
    "name": "ChatGPT",
-   "score": 6.45,
-   "days": 11,
+   "score": 5.97,
+   "days": 10,
    "latest": {
     "date": "2026-08-22",
     "url": "/posts/2026-08-21-ai-morning-post/#research",
@@ -471,9 +471,61 @@
    ]
   },
   {
+   "name": "OpenRouter",
+   "score": 5.77,
+   "days": 8,
+   "latest": {
+    "date": "2026-08-24",
+    "url": "/posts/2026-08-23-ai-morning-post/#opinion",
+    "title": "OpenRouter 数据：AI 的最大客户是 AI"
+   },
+   "links": [
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#opinion",
+     "title": "OpenRouter 数据：AI 的最大客户是 AI"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#model-release",
+     "title": "神秘 Ox Alpha 突袭 OpenRouter，性能超 Fable 5"
+    },
+    {
+     "date": "2026-08-22",
+     "url": "/posts/2026-08-21-ai-morning-post/#model-release",
+     "title": "神秘模型 Ox Alpha 现身 OpenRouter"
+    },
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#company",
+     "title": "Stripe 70 亿美元收购 OpenRouter，AI 分发格局生变"
+    },
+    {
+     "date": "2026-08-18",
+     "url": "/posts/2026-08-17-ai-morning-post/#company",
+     "title": "Stripe 拟超 70 亿美元收购 AI 网关 OpenRouter"
+    },
+    {
+     "date": "2026-08-17",
+     "url": "/posts/2026-08-16-ai-morning-post/#company",
+     "title": "Stripe 以 70 亿美元收购 OpenRouter"
+    },
+    {
+     "date": "2026-08-03",
+     "url": "/posts/2026-08-02-ai-morning-post/#company",
+     "title": "OpenRouter 周榜：中国模型包揽前五"
+    },
+    {
+     "date": "2026-07-28",
+     "url": "/posts/2026-07-27-ai-morning-post/#model-release",
+     "title": "小米 MiMo-V2.5 登顶 OpenRouter 全球调用量双榜"
+    }
+   ]
+  },
+  {
    "name": "芯片",
-   "score": 6.03,
-   "days": 9,
+   "score": 5.65,
+   "days": 8,
    "latest": {
     "date": "2026-08-23",
     "url": "/posts/2026-08-22-ai-morning-post/#company",
@@ -523,55 +575,60 @@
    ]
   },
   {
-   "name": "OpenRouter",
-   "score": 5.0,
-   "days": 7,
+   "name": "腾讯",
+   "score": 5.52,
+   "days": 9,
    "latest": {
-    "date": "2026-08-23",
-    "url": "/posts/2026-08-22-ai-morning-post/#model-release",
-    "title": "神秘 Ox Alpha 突袭 OpenRouter，性能超 Fable 5"
+    "date": "2026-08-24",
+    "url": "/posts/2026-08-23-ai-morning-post/#opensource",
+    "title": "腾讯开源 AI 红队平台，全栈安全从口号变代码"
    },
    "links": [
     {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI 红队平台，全栈安全从口号变代码"
+    },
+    {
      "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#model-release",
-     "title": "神秘 Ox Alpha 突袭 OpenRouter，性能超 Fable 5"
+     "url": "/posts/2026-08-22-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI-Infra-Guard：红队测评工具首次覆盖全栈"
     },
     {
      "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#model-release",
-     "title": "神秘模型 Ox Alpha 现身 OpenRouter"
+     "url": "/posts/2026-08-21-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI-Infra-Guard：给智能体做「全栈红队」"
     },
     {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#company",
-     "title": "Stripe 70 亿美元收购 OpenRouter，AI 分发格局生变"
+     "date": "2026-08-12",
+     "url": "/posts/2026-08-11-ai-morning-post/#product",
+     "title": "腾讯混元 WorldClaw：用 Agentic 方式生成 3D 开放世界"
     },
     {
-     "date": "2026-08-18",
-     "url": "/posts/2026-08-17-ai-morning-post/#company",
-     "title": "Stripe 拟超 70 亿美元收购 AI 网关 OpenRouter"
+     "date": "2026-08-08",
+     "url": "/posts/2026-08-07-ai-morning-post/#opensource",
+     "title": "腾讯云开源 Agent Memory v2.0：团队记忆资产化"
     },
     {
-     "date": "2026-08-17",
-     "url": "/posts/2026-08-16-ai-morning-post/#company",
-     "title": "Stripe 以 70 亿美元收购 OpenRouter"
+     "date": "2026-08-05",
+     "url": "/posts/2026-08-04-ai-morning-post/#model-release",
+     "title": "腾讯混元 Hy ASR 3.0：让语音识别懂上下文"
     },
     {
      "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#company",
-     "title": "OpenRouter 周榜：中国模型包揽前五"
+     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
+     "title": "腾讯云开源 Agent Memory 记忆中枢"
     },
     {
-     "date": "2026-07-28",
-     "url": "/posts/2026-07-27-ai-morning-post/#model-release",
-     "title": "小米 MiMo-V2.5 登顶 OpenRouter 全球调用量双榜"
+     "date": "2026-07-31",
+     "url": "/posts/2026-07-30-ai-morning-post/#opensource",
+     "title": "腾讯 AngelSpec：投机解码的统一训练框架"
     }
    ]
   },
   {
    "name": "OpenViking",
-   "score": 4.9,
+   "score": 4.71,
    "days": 6,
    "latest": {
     "date": "2026-08-23",
@@ -612,60 +669,8 @@
    ]
   },
   {
-   "name": "腾讯",
-   "score": 4.87,
-   "days": 9,
-   "latest": {
-    "date": "2026-08-23",
-    "url": "/posts/2026-08-22-ai-morning-post/#opensource",
-    "title": "腾讯开源 AI-Infra-Guard：红队测评工具首次覆盖全栈"
-   },
-   "links": [
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI-Infra-Guard：红队测评工具首次覆盖全栈"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI-Infra-Guard：给智能体做「全栈红队」"
-    },
-    {
-     "date": "2026-08-12",
-     "url": "/posts/2026-08-11-ai-morning-post/#product",
-     "title": "腾讯混元 WorldClaw：用 Agentic 方式生成 3D 开放世界"
-    },
-    {
-     "date": "2026-08-08",
-     "url": "/posts/2026-08-07-ai-morning-post/#opensource",
-     "title": "腾讯云开源 Agent Memory v2.0：团队记忆资产化"
-    },
-    {
-     "date": "2026-08-05",
-     "url": "/posts/2026-08-04-ai-morning-post/#model-release",
-     "title": "腾讯混元 Hy ASR 3.0：让语音识别懂上下文"
-    },
-    {
-     "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
-     "title": "腾讯云开源 Agent Memory 记忆中枢"
-    },
-    {
-     "date": "2026-07-31",
-     "url": "/posts/2026-07-30-ai-morning-post/#opensource",
-     "title": "腾讯 AngelSpec：投机解码的统一训练框架"
-    },
-    {
-     "date": "2026-07-30",
-     "url": "/posts/2026-07-29-ai-morning-post/#opensource",
-     "title": "腾讯混元开源 AngelSpec，投机解码加速推理"
-    }
-   ]
-  },
-  {
    "name": "Grok",
-   "score": 4.81,
+   "score": 4.61,
    "days": 6,
    "latest": {
     "date": "2026-08-22",
@@ -706,44 +711,39 @@
    ]
   },
   {
-   "name": "GPT-5.6 Sol",
-   "score": 4.39,
-   "days": 6,
+   "name": "人形机器人",
+   "score": 4.32,
+   "days": 5,
    "latest": {
-    "date": "2026-08-23",
-    "url": "/posts/2026-08-22-ai-morning-post/#company",
-    "title": "OpenAI 下调 GPT-5.6 Sol API 定价超 20%"
+    "date": "2026-08-24",
+    "url": "/posts/2026-08-23-ai-morning-post/#company",
+    "title": "博士团队押注双足人形机器人一体化大脑，全自主开卡丁车"
    },
    "links": [
     {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#company",
+     "title": "博士团队押注双足人形机器人一体化大脑，全自主开卡丁车"
+    },
+    {
      "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#company",
-     "title": "OpenAI 下调 GPT-5.6 Sol API 定价超 20%"
+     "url": "/posts/2026-08-22-ai-morning-post/#product",
+     "title": "人形机器人完成自主乒乓球对局"
     },
     {
      "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#model-release",
-     "title": "DeepSeek V4 Pro 以成本优势挑战 GPT-5.6 Sol"
+     "url": "/posts/2026-08-18-ai-morning-post/#company",
+     "title": "人形机器人公司宇树科技今日上市"
     },
     {
-     "date": "2026-08-18",
-     "url": "/posts/2026-08-17-ai-morning-post/#model-release",
-     "title": "GPT-5.6 Sol 降价 50%，Roboflow 称其为最强视觉模型"
+     "date": "2026-08-02",
+     "url": "/posts/2026-08-01-ai-morning-post/#model-release",
+     "title": "DeepMind 发布 Gemini Robotics 2，通吃桌面臂到人形机器人"
     },
     {
-     "date": "2026-08-07",
-     "url": "/posts/2026-08-06-ai-morning-post/#model-release",
-     "title": "GPT-5.6 Sol 性能提升，Luna 向免费用开放"
-    },
-    {
-     "date": "2026-08-01",
-     "url": "/posts/2026-07-31-ai-morning-post/#research",
-     "title": "GPT-5.6 Sol 协助推翻 Maxwell 猜想？"
-    },
-    {
-     "date": "2026-07-27",
-     "url": "/posts/2026-07-26-ai-morning-post/#model-release",
-     "title": "Anthropic Opus 5 半价击败 Fable 5 与 GPT-5.6 Sol"
+     "date": "2026-07-31",
+     "url": "/posts/2026-07-30-ai-morning-post/#company",
+     "title": "德塔智能成立半年融六轮，人形机器人基础模型公司估值猛涨"
     }
    ]
   }
