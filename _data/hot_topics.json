@@ -1,17 +1,22 @@
 {
- "generated": "2026-08-27",
+ "generated": "2026-08-28",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 46.97,
+   "score": 50.1,
    "days": 28,
    "latest": {
-    "date": "2026-08-27",
-    "url": "/posts/2026-08-26-ai-morning-post/#product",
-    "title": "「豆包工作」+飞书：企业 Agent 的形态雏形"
+    "date": "2026-08-28",
+    "url": "/posts/2026-08-27-ai-morning-post/#product",
+    "title": "Anthropic 新硬件标准：Agent 与物理设备的安全交互"
    },
    "links": [
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#product",
+     "title": "Anthropic 新硬件标准：Agent 与物理设备的安全交互"
+    },
     {
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#product",
@@ -46,24 +51,24 @@
      "date": "2026-08-21",
      "url": "/posts/2026-08-20-ai-morning-post/#product",
      "title": "Binance 上线 Agent OS，AI Agent 可直接下单交易"
-    },
-    {
-     "date": "2026-08-20",
-     "url": "/posts/2026-08-19-ai-morning-post/#research",
-     "title": "Agent 该配多少记忆？"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 27.71,
+   "score": 26.94,
    "days": 23,
    "latest": {
-    "date": "2026-08-27",
-    "url": "/posts/2026-08-26-ai-morning-post/#company",
-    "title": "OpenAI 公布 HF 安全事件报告：agent 被无意训练出作弊行为"
+    "date": "2026-08-28",
+    "url": "/posts/2026-08-27-ai-morning-post/#research",
+    "title": "OpenAI 千名学生研究：ChatGPT 提升原创性"
    },
    "links": [
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#research",
+     "title": "OpenAI 千名学生研究：ChatGPT 提升原创性"
+    },
     {
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-08-19",
      "url": "/posts/2026-08-18-ai-morning-post/#company",
      "title": "OpenAI 重设安全协议，AI 代理越界致训练暂停"
-    },
-    {
-     "date": "2026-08-17",
-     "url": "/posts/2026-08-16-ai-morning-post/#company",
-     "title": "OpenAI 解散灾难性风险安全团队"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 14.65,
+   "score": 15.71,
    "days": 20,
    "latest": {
-    "date": "2026-08-27",
-    "url": "/posts/2026-08-26-ai-morning-post/#company",
-    "title": "Anthropic 与 Nscale 签 45 亿美元算力大单，继续「吃算力」"
+    "date": "2026-08-28",
+    "url": "/posts/2026-08-27-ai-morning-post/#product",
+    "title": "Anthropic 新硬件标准：Agent 与物理设备的安全交互"
    },
    "links": [
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#product",
+     "title": "Anthropic 新硬件标准：Agent 与物理设备的安全交互"
+    },
     {
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#company",
@@ -150,18 +155,13 @@
      "date": "2026-08-19",
      "url": "/posts/2026-08-18-ai-morning-post/#company",
      "title": "Anthropic 年化收入达 650 亿美元，IPO 底牌曝光"
-    },
-    {
-     "date": "2026-08-17",
-     "url": "/posts/2026-08-16-ai-morning-post/#company",
-     "title": "Anthropic 生物武器过滤器失守近一年"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 14.58,
-   "days": 15,
+   "score": 13.74,
+   "days": 14,
    "latest": {
     "date": "2026-08-27",
     "url": "/posts/2026-08-26-ai-morning-post/#company",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Claude",
-   "score": 12.58,
+   "score": 12.9,
    "days": 16,
    "latest": {
-    "date": "2026-08-27",
-    "url": "/posts/2026-08-26-ai-morning-post/#product",
-    "title": "Claude 共享记忆：Chat 与 Cowork 终于打通"
+    "date": "2026-08-28",
+    "url": "/posts/2026-08-27-ai-morning-post/#opinion",
+    "title": "Claude、Codex 在企业网络安装“无主代码”"
    },
    "links": [
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#opinion",
+     "title": "Claude、Codex 在企业网络安装“无主代码”"
+    },
     {
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#product",
@@ -254,24 +259,24 @@
      "date": "2026-08-17",
      "url": "/posts/2026-08-16-ai-morning-post/#product",
      "title": "Claude系统提示词正式公开"
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#opinion",
-     "title": "Codex 与 Claude Code 负责人公开互怼"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 9.77,
+   "score": 10.16,
    "days": 12,
    "latest": {
-    "date": "2026-08-27",
-    "url": "/posts/2026-08-26-ai-morning-post/#model-release",
-    "title": "阿里开源 Qwen3.8-Flash：6B 激活，性能对标顶级旗舰"
+    "date": "2026-08-28",
+    "url": "/posts/2026-08-27-ai-morning-post/#product",
+    "title": "阿里 Qoder：自然语言就是新的编程语言"
    },
    "links": [
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#product",
+     "title": "阿里 Qoder：自然语言就是新的编程语言"
+    },
     {
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#model-release",
@@ -306,24 +311,24 @@
      "date": "2026-08-09",
      "url": "/posts/2026-08-08-ai-morning-post/#company",
      "title": "Apple 智能可配合阿里千问模型工作"
-    },
-    {
-     "date": "2026-08-08",
-     "url": "/posts/2026-08-07-ai-morning-post/#model-release",
-     "title": "阿里 Wan 3.0 公测：文档和 PPT 也能变视频"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 8.58,
+   "score": 9.13,
    "days": 9,
    "latest": {
-    "date": "2026-08-27",
-    "url": "/posts/2026-08-26-ai-morning-post/#company",
-    "title": "OpenAI 自研芯片 Jalapeño 曝光，推理基准超 Blackwell"
+    "date": "2026-08-28",
+    "url": "/posts/2026-08-27-ai-morning-post/#opinion",
+    "title": "特朗普拟征芯片税：AI 行业的“供给冲击”"
    },
    "links": [
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#opinion",
+     "title": "特朗普拟征芯片税：AI 行业的“供给冲击”"
+    },
     {
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#company",
@@ -358,24 +363,24 @@
      "date": "2026-08-05",
      "url": "/posts/2026-08-04-ai-morning-post/#company",
      "title": "谷歌将数十亿美元 Anthropic 芯片风险移出表外"
-    },
-    {
-     "date": "2026-08-02",
-     "url": "/posts/2026-08-01-ai-morning-post/#company",
-     "title": "NVIDIA Vera Rubin登场：从芯片卷到电网"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 6.9,
+   "score": 7.52,
    "days": 9,
    "latest": {
-    "date": "2026-08-27",
-    "url": "/posts/2026-08-26-ai-morning-post/#product",
-    "title": "ChatGPT for Teachers 覆盖 55 个美国学区"
+    "date": "2026-08-28",
+    "url": "/posts/2026-08-27-ai-morning-post/#research",
+    "title": "OpenAI 千名学生研究：ChatGPT 提升原创性"
    },
    "links": [
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#research",
+     "title": "OpenAI 千名学生研究：ChatGPT 提升原创性"
+    },
     {
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#product",
@@ -410,17 +415,12 @@
      "date": "2026-08-09",
      "url": "/posts/2026-08-08-ai-morning-post/#company",
      "title": "OpenAI 收购演示文稿初创 NextSlide，团队并入 ChatGPT"
-    },
-    {
-     "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#opinion",
-     "title": "ChatGPT 育儿：Altman 的“酷用例”争议"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 6.55,
+   "score": 6.23,
    "days": 8,
    "latest": {
     "date": "2026-08-25",
@@ -472,7 +472,7 @@
   },
   {
    "name": "DeepSeek",
-   "score": 6.26,
+   "score": 5.9,
    "days": 11,
    "latest": {
     "date": "2026-08-27",
@@ -523,8 +523,55 @@
    ]
   },
   {
+   "name": "人形机器人",
+   "score": 5.45,
+   "days": 7,
+   "latest": {
+    "date": "2026-08-27",
+    "url": "/posts/2026-08-26-ai-morning-post/#company",
+    "title": "软银拟 60 亿美元估值收购人形机器人公司 1X 多数股权"
+   },
+   "links": [
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#company",
+     "title": "软银拟 60 亿美元估值收购人形机器人公司 1X 多数股权"
+    },
+    {
+     "date": "2026-08-26",
+     "url": "/posts/2026-08-25-ai-morning-post/#opinion",
+     "title": "人形机器人：从竞技场跑进日常"
+    },
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#company",
+     "title": "博士团队押注双足人形机器人一体化大脑，全自主开卡丁车"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#product",
+     "title": "人形机器人完成自主乒乓球对局"
+    },
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#company",
+     "title": "人形机器人公司宇树科技今日上市"
+    },
+    {
+     "date": "2026-08-02",
+     "url": "/posts/2026-08-01-ai-morning-post/#model-release",
+     "title": "DeepMind 发布 Gemini Robotics 2，通吃桌面臂到人形机器人"
+    },
+    {
+     "date": "2026-07-31",
+     "url": "/posts/2026-07-30-ai-morning-post/#company",
+     "title": "德塔智能成立半年融六轮，人形机器人基础模型公司估值猛涨"
+    }
+   ]
+  },
+  {
    "name": "字节",
-   "score": 5.77,
+   "score": 5.42,
    "days": 11,
    "latest": {
     "date": "2026-08-27",
@@ -575,55 +622,8 @@
    ]
   },
   {
-   "name": "人形机器人",
-   "score": 5.71,
-   "days": 7,
-   "latest": {
-    "date": "2026-08-27",
-    "url": "/posts/2026-08-26-ai-morning-post/#company",
-    "title": "软银拟 60 亿美元估值收购人形机器人公司 1X 多数股权"
-   },
-   "links": [
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#company",
-     "title": "软银拟 60 亿美元估值收购人形机器人公司 1X 多数股权"
-    },
-    {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#opinion",
-     "title": "人形机器人：从竞技场跑进日常"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#company",
-     "title": "博士团队押注双足人形机器人一体化大脑，全自主开卡丁车"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#product",
-     "title": "人形机器人完成自主乒乓球对局"
-    },
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#company",
-     "title": "人形机器人公司宇树科技今日上市"
-    },
-    {
-     "date": "2026-08-02",
-     "url": "/posts/2026-08-01-ai-morning-post/#model-release",
-     "title": "DeepMind 发布 Gemini Robotics 2，通吃桌面臂到人形机器人"
-    },
-    {
-     "date": "2026-07-31",
-     "url": "/posts/2026-07-30-ai-morning-post/#company",
-     "title": "德塔智能成立半年融六轮，人形机器人基础模型公司估值猛涨"
-    }
-   ]
-  },
-  {
    "name": "腾讯",
-   "score": 5.55,
+   "score": 5.19,
    "days": 10,
    "latest": {
     "date": "2026-08-27",
@@ -675,7 +675,7 @@
   },
   {
    "name": "具身智能",
-   "score": 5.29,
+   "score": 5.1,
    "days": 5,
    "latest": {
     "date": "2026-08-27",
@@ -712,7 +712,7 @@
   },
   {
    "name": "算力",
-   "score": 5.26,
+   "score": 4.97,
    "days": 7,
    "latest": {
     "date": "2026-08-27",
