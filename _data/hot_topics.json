@@ -1,17 +1,22 @@
 {
- "generated": "2026-08-29",
+ "generated": "2026-08-30",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 48.0,
+   "score": 50.06,
    "days": 28,
    "latest": {
-    "date": "2026-08-29",
-    "url": "/posts/2026-08-28-ai-morning-post/#product",
-    "title": "持久 AI 代理：Agent 从任务型走向常驻型"
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#research",
+    "title": "谷歌 WikiSkill：让 Agent 记住错误并改进"
    },
    "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#research",
+     "title": "谷歌 WikiSkill：让 Agent 记住错误并改进"
+    },
     {
      "date": "2026-08-29",
      "url": "/posts/2026-08-28-ai-morning-post/#product",
@@ -46,24 +51,24 @@
      "date": "2026-08-23",
      "url": "/posts/2026-08-22-ai-morning-post/#opensource",
      "title": "ruflo 开源：Agent 元框架与多智能体 swarm 的一次打包"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#model-release",
-     "title": "Meta 开源可本地部署的视觉智能体模型"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 27.13,
-   "days": 23,
+   "score": 27.52,
+   "days": 24,
    "latest": {
-    "date": "2026-08-29",
-    "url": "/posts/2026-08-28-ai-morning-post/#company",
-    "title": "OpenAI 因 SpaceX 收购 Cursor 终止模型供应"
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#company",
+    "title": "OpenAI 切断 Cursor，直指马斯克违约前科"
    },
    "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#company",
+     "title": "OpenAI 切断 Cursor，直指马斯克违约前科"
+    },
     {
      "date": "2026-08-29",
      "url": "/posts/2026-08-28-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-08-23",
      "url": "/posts/2026-08-22-ai-morning-post/#company",
      "title": "OpenAI 下调 GPT-5.6 Sol API 定价超 20%"
-    },
-    {
-     "date": "2026-08-20",
-     "url": "/posts/2026-08-19-ai-morning-post/#model-release",
-     "title": "OpenAI发布GPT-5.6 Luna，Replit同步免费"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 17.74,
+   "score": 20.65,
    "days": 20,
    "latest": {
-    "date": "2026-08-29",
-    "url": "/posts/2026-08-28-ai-morning-post/#company",
-    "title": "法官裁定五角大楼对 Anthropic 黑名单违法"
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#company",
+    "title": "美法院判五角大楼将 Anthropic 列黑名单违法"
    },
    "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#company",
+     "title": "美法院判五角大楼将 Anthropic 列黑名单违法"
+    },
     {
      "date": "2026-08-29",
      "url": "/posts/2026-08-28-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-08-22",
      "url": "/posts/2026-08-21-ai-morning-post/#company",
      "title": "Anthropic调整数据保留政策以安抚企业客户"
-    },
-    {
-     "date": "2026-08-21",
-     "url": "/posts/2026-08-20-ai-morning-post/#opensource",
-     "title": "Anthropic 官方发布 Claude Code 插件目录"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 15.97,
-   "days": 15,
+   "score": 17.1,
+   "days": 16,
    "latest": {
-    "date": "2026-08-29",
-    "url": "/posts/2026-08-28-ai-morning-post/#company",
-    "title": "Meta 印度高管跳槽 OpenAI 掌管东南亚业务"
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#company",
+    "title": "Meta 高管 Sandhya Devanathan 加盟 OpenAI"
    },
    "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#company",
+     "title": "Meta 高管 Sandhya Devanathan 加盟 OpenAI"
+    },
     {
      "date": "2026-08-29",
      "url": "/posts/2026-08-28-ai-morning-post/#company",
@@ -202,24 +207,24 @@
      "date": "2026-08-16",
      "url": "/posts/2026-08-15-ai-morning-post/#model-release",
      "title": "Meta 开源 Glimmer：和自家闭源路线同时下注"
-    },
-    {
-     "date": "2026-08-14",
-     "url": "/posts/2026-08-13-ai-morning-post/#opinion",
-     "title": "德国维权组织就 Meta AI 眼镜提起诉讼"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 13.26,
-   "days": 17,
+   "score": 13.58,
+   "days": 18,
    "latest": {
-    "date": "2026-08-29",
-    "url": "/posts/2026-08-28-ai-morning-post/#opensource",
-    "title": "Anthropic 发布官方 Claude Code 插件目录"
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#opensource",
+    "title": "Anthropic 官方发布 Claude Code 插件目录"
    },
    "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#opensource",
+     "title": "Anthropic 官方发布 Claude Code 插件目录"
+    },
     {
      "date": "2026-08-29",
      "url": "/posts/2026-08-28-ai-morning-post/#opensource",
@@ -254,76 +259,24 @@
      "date": "2026-08-22",
      "url": "/posts/2026-08-21-ai-morning-post/#product",
      "title": "MiniMax Design 做视频生成：类 Claude Code 的交互切入创意市场"
-    },
-    {
-     "date": "2026-08-21",
-     "url": "/posts/2026-08-20-ai-morning-post/#opensource",
-     "title": "Anthropic 官方发布 Claude Code 插件目录"
-    }
-   ]
-  },
-  {
-   "name": "芯片",
-   "score": 9.71,
-   "days": 10,
-   "latest": {
-    "date": "2026-08-29",
-    "url": "/posts/2026-08-28-ai-morning-post/#company",
-    "title": "Lambda 获 10 亿美元债务融资买芯片"
-   },
-   "links": [
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#company",
-     "title": "Lambda 获 10 亿美元债务融资买芯片"
-    },
-    {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#opinion",
-     "title": "特朗普拟征芯片税：AI 行业的“供给冲击”"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#company",
-     "title": "OpenAI 自研芯片 Jalapeño 曝光，推理基准超 Blackwell"
-    },
-    {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#company",
-     "title": "OpenAI 自研推理芯片 Jalapeño 首曝成绩"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#company",
-     "title": "Waymo 自研芯片，降低对英伟达依赖"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#company",
-     "title": "Waymo自研芯片削减对英伟达依赖"
-    },
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#company",
-     "title": "AI 芯片创企 Etched 估值一月翻倍至 210 亿美元"
-    },
-    {
-     "date": "2026-08-08",
-     "url": "/posts/2026-08-07-ai-morning-post/#company",
-     "title": "AMD收购Taalas，把AI模型直接“烧”进芯片"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 9.65,
-   "days": 12,
+   "score": 11.13,
+   "days": 13,
    "latest": {
-    "date": "2026-08-28",
-    "url": "/posts/2026-08-27-ai-morning-post/#product",
-    "title": "阿里 Qoder：自然语言就是新的编程语言"
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#research",
+    "title": "智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash 架构趋同"
    },
    "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#research",
+     "title": "智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash 架构趋同"
+    },
     {
      "date": "2026-08-28",
      "url": "/posts/2026-08-27-ai-morning-post/#product",
@@ -358,17 +311,64 @@
      "date": "2026-08-11",
      "url": "/posts/2026-08-10-ai-morning-post/#company",
      "title": "阿里云数据中心交付周期缩短至 100 天"
+    }
+   ]
+  },
+  {
+   "name": "芯片",
+   "score": 10.26,
+   "days": 11,
+   "latest": {
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#company",
+    "title": "Lambda 举债 10 亿美元买芯片租给微软"
+   },
+   "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#company",
+     "title": "Lambda 举债 10 亿美元买芯片租给微软"
     },
     {
-     "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#company",
-     "title": "Apple 智能可配合阿里千问模型工作"
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#company",
+     "title": "Lambda 获 10 亿美元债务融资买芯片"
+    },
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#opinion",
+     "title": "特朗普拟征芯片税：AI 行业的“供给冲击”"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#company",
+     "title": "OpenAI 自研芯片 Jalapeño 曝光，推理基准超 Blackwell"
+    },
+    {
+     "date": "2026-08-26",
+     "url": "/posts/2026-08-25-ai-morning-post/#company",
+     "title": "OpenAI 自研推理芯片 Jalapeño 首曝成绩"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#company",
+     "title": "Waymo 自研芯片，降低对英伟达依赖"
+    },
+    {
+     "date": "2026-08-22",
+     "url": "/posts/2026-08-21-ai-morning-post/#company",
+     "title": "Waymo自研芯片削减对英伟达依赖"
+    },
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#company",
+     "title": "AI 芯片创企 Etched 估值一月翻倍至 210 亿美元"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 7.16,
+   "score": 6.81,
    "days": 9,
    "latest": {
     "date": "2026-08-28",
@@ -419,9 +419,165 @@
    ]
   },
   {
+   "name": "Google",
+   "score": 6.58,
+   "days": 9,
+   "latest": {
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#opinion",
+    "title": "Agent 时代，为什么有人重新造 Google？"
+   },
+   "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#opinion",
+     "title": "Agent 时代，为什么有人重新造 Google？"
+    },
+    {
+     "date": "2026-08-25",
+     "url": "/posts/2026-08-24-ai-morning-post/#research",
+     "title": "Google 研究 ME-POIs：让地点嵌入理解“使用方式”"
+    },
+    {
+     "date": "2026-08-22",
+     "url": "/posts/2026-08-21-ai-morning-post/#product",
+     "title": "Google 推出“优先来源”按钮：让读者手动扶一把内容网站"
+    },
+    {
+     "date": "2026-08-21",
+     "url": "/posts/2026-08-20-ai-morning-post/#product",
+     "title": "Google 给出版方一个“优先信源”按钮，对抗 AI 搜索分流"
+    },
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
+     "title": "Google 开源零配置 P2P Agent 网格 SAM"
+    },
+    {
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#research",
+     "title": "Google 让同态加密私有 AI 走向实用"
+    },
+    {
+     "date": "2026-08-11",
+     "url": "/posts/2026-08-10-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 仓库，为编码代理立标准"
+    },
+    {
+     "date": "2026-08-09",
+     "url": "/posts/2026-08-08-ai-morning-post/#opensource",
+     "title": "Agent Skills：Google 与 Anthropic 同时押注的新范式"
+    }
+   ]
+  },
+  {
+   "name": "腾讯",
+   "score": 6.42,
+   "days": 10,
+   "latest": {
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#model-release",
+    "title": "腾讯混元 Hy4 preview 开源，主打长程任务"
+   },
+   "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#model-release",
+     "title": "腾讯混元 Hy4 preview 开源，主打长程任务"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#opensource",
+     "title": "腾讯混元 Hy4 preview 开源，WorkBuddy 实测：能干活，但得盯着"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#opinion",
+     "title": "AI To B 战火烧到办公，腾讯阿里字节混战"
+    },
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI 红队平台，全栈安全从口号变代码"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI-Infra-Guard：红队测评工具首次覆盖全栈"
+    },
+    {
+     "date": "2026-08-22",
+     "url": "/posts/2026-08-21-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI-Infra-Guard：给智能体做「全栈红队」"
+    },
+    {
+     "date": "2026-08-12",
+     "url": "/posts/2026-08-11-ai-morning-post/#product",
+     "title": "腾讯混元 WorldClaw：用 Agentic 方式生成 3D 开放世界"
+    },
+    {
+     "date": "2026-08-08",
+     "url": "/posts/2026-08-07-ai-morning-post/#opensource",
+     "title": "腾讯云开源 Agent Memory v2.0：团队记忆资产化"
+    }
+   ]
+  },
+  {
+   "name": "Hugging Face",
+   "score": 6.03,
+   "days": 9,
+   "latest": {
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#opensource",
+    "title": "Hugging Face 开源 399 美元双足机器人 Microduck"
+   },
+   "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#opensource",
+     "title": "Hugging Face 开源 399 美元双足机器人 Microduck"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#company",
+     "title": "英伟达拟130亿美元收购 Hugging Face"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#company",
+     "title": "英伟达 129 亿美元收购 Hugging Face，开源平台易主"
+    },
+    {
+     "date": "2026-08-26",
+     "url": "/posts/2026-08-25-ai-morning-post/#company",
+     "title": "曝 Hugging Face 或以 130 亿美元被收购"
+    },
+    {
+     "date": "2026-08-25",
+     "url": "/posts/2026-08-24-ai-morning-post/#company",
+     "title": "Hugging Face 的 130 亿美元抉择"
+    },
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
+     "title": "NVIDIA 开源 TensorRT Model Connect，两命令部署 Hugging Face 模型"
+    },
+    {
+     "date": "2026-08-10",
+     "url": "/posts/2026-08-09-ai-morning-post/#opinion",
+     "title": "OpenAI 意外攻击 Hugging Face 时间线曝光"
+    },
+    {
+     "date": "2026-08-09",
+     "url": "/posts/2026-08-08-ai-morning-post/#company",
+     "title": "OpenAI 误攻 Hugging Face 事件完整时间线披露"
+    }
+   ]
+  },
+  {
    "name": "人形机器人",
-   "score": 6.19,
-   "days": 8,
+   "score": 5.87,
+   "days": 7,
    "latest": {
     "date": "2026-08-29",
     "url": "/posts/2026-08-28-ai-morning-post/#company",
@@ -462,121 +618,12 @@
      "date": "2026-08-02",
      "url": "/posts/2026-08-01-ai-morning-post/#model-release",
      "title": "DeepMind 发布 Gemini Robotics 2，通吃桌面臂到人形机器人"
-    },
-    {
-     "date": "2026-07-31",
-     "url": "/posts/2026-07-30-ai-morning-post/#company",
-     "title": "德塔智能成立半年融六轮，人形机器人基础模型公司估值猛涨"
-    }
-   ]
-  },
-  {
-   "name": "Google",
-   "score": 5.9,
-   "days": 8,
-   "latest": {
-    "date": "2026-08-25",
-    "url": "/posts/2026-08-24-ai-morning-post/#research",
-    "title": "Google 研究 ME-POIs：让地点嵌入理解“使用方式”"
-   },
-   "links": [
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#research",
-     "title": "Google 研究 ME-POIs：让地点嵌入理解“使用方式”"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#product",
-     "title": "Google 推出“优先来源”按钮：让读者手动扶一把内容网站"
-    },
-    {
-     "date": "2026-08-21",
-     "url": "/posts/2026-08-20-ai-morning-post/#product",
-     "title": "Google 给出版方一个“优先信源”按钮，对抗 AI 搜索分流"
-    },
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
-     "title": "Google 开源零配置 P2P Agent 网格 SAM"
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#research",
-     "title": "Google 让同态加密私有 AI 走向实用"
-    },
-    {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 仓库，为编码代理立标准"
-    },
-    {
-     "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#opensource",
-     "title": "Agent Skills：Google 与 Anthropic 同时押注的新范式"
-    },
-    {
-     "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#company",
-     "title": "Reddit CEO 质疑 Google AI 概览价值，或终止授权"
-    }
-   ]
-  },
-  {
-   "name": "腾讯",
-   "score": 5.81,
-   "days": 10,
-   "latest": {
-    "date": "2026-08-29",
-    "url": "/posts/2026-08-28-ai-morning-post/#opensource",
-    "title": "腾讯混元 Hy4 preview 开源，WorkBuddy 实测：能干活，但得盯着"
-   },
-   "links": [
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#opensource",
-     "title": "腾讯混元 Hy4 preview 开源，WorkBuddy 实测：能干活，但得盯着"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#opinion",
-     "title": "AI To B 战火烧到办公，腾讯阿里字节混战"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI 红队平台，全栈安全从口号变代码"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI-Infra-Guard：红队测评工具首次覆盖全栈"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI-Infra-Guard：给智能体做「全栈红队」"
-    },
-    {
-     "date": "2026-08-12",
-     "url": "/posts/2026-08-11-ai-morning-post/#product",
-     "title": "腾讯混元 WorldClaw：用 Agentic 方式生成 3D 开放世界"
-    },
-    {
-     "date": "2026-08-08",
-     "url": "/posts/2026-08-07-ai-morning-post/#opensource",
-     "title": "腾讯云开源 Agent Memory v2.0：团队记忆资产化"
-    },
-    {
-     "date": "2026-08-05",
-     "url": "/posts/2026-08-04-ai-morning-post/#model-release",
-     "title": "腾讯混元 Hy ASR 3.0：让语音识别懂上下文"
     }
    ]
   },
   {
    "name": "算力",
-   "score": 5.65,
+   "score": 5.35,
    "days": 7,
    "latest": {
     "date": "2026-08-29",
@@ -623,7 +670,7 @@
   },
   {
    "name": "DeepSeek",
-   "score": 5.55,
+   "score": 5.19,
    "days": 11,
    "latest": {
     "date": "2026-08-27",
@@ -674,106 +721,44 @@
    ]
   },
   {
-   "name": "Hugging Face",
-   "score": 5.29,
-   "days": 8,
+   "name": "智谱",
+   "score": 5.13,
+   "days": 6,
    "latest": {
-    "date": "2026-08-29",
-    "url": "/posts/2026-08-28-ai-morning-post/#company",
-    "title": "英伟达拟130亿美元收购 Hugging Face"
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#research",
+    "title": "智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash 架构趋同"
    },
    "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#research",
+     "title": "智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash 架构趋同"
+    },
     {
      "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#company",
-     "title": "英伟达拟130亿美元收购 Hugging Face"
+     "url": "/posts/2026-08-28-ai-morning-post/#model-release",
+     "title": "智谱 GLM-5.3-Flash：国产算力的普惠落点"
+    },
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#model-release",
+     "title": "智谱 GLM-5.3-Flash：开源模型甩开英伟达枷锁"
     },
     {
      "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#company",
-     "title": "英伟达 129 亿美元收购 Hugging Face，开源平台易主"
+     "url": "/posts/2026-08-26-ai-morning-post/#model-release",
+     "title": "智谱 GLM-5.3-Flash 揭面：神秘 Ox Alpha 即开源新王牌"
     },
     {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#company",
-     "title": "曝 Hugging Face 或以 130 亿美元被收购"
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#model-release",
+     "title": "神秘模型Ox Alpha：社区靠Tokenizer猜出智谱？"
     },
     {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#company",
-     "title": "Hugging Face 的 130 亿美元抉择"
-    },
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
-     "title": "NVIDIA 开源 TensorRT Model Connect，两命令部署 Hugging Face 模型"
-    },
-    {
-     "date": "2026-08-10",
-     "url": "/posts/2026-08-09-ai-morning-post/#opinion",
-     "title": "OpenAI 意外攻击 Hugging Face 时间线曝光"
-    },
-    {
-     "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#company",
-     "title": "OpenAI 误攻 Hugging Face 事件完整时间线披露"
-    },
-    {
-     "date": "2026-08-03",
-     "url": "/posts/2026-08-02-ai-morning-post/#opensource",
-     "title": "Hugging Face 开源本地语音 Agent 框架"
-    }
-   ]
-  },
-  {
-   "name": "字节",
-   "score": 5.06,
-   "days": 11,
-   "latest": {
-    "date": "2026-08-27",
-    "url": "/posts/2026-08-26-ai-morning-post/#opinion",
-    "title": "AI To B 战火烧到办公，腾讯阿里字节混战"
-   },
-   "links": [
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#opinion",
-     "title": "AI To B 战火烧到办公，腾讯阿里字节混战"
-    },
-    {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#product",
-     "title": "豆包工作发布，字节把Agent搬进飞书"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#opensource",
-     "title": "字节跳动开源 deer-flow：长时任务 SuperAgent 框架"
-    },
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#research",
-     "title": "字节与清华发布 CUDA Agent，用强化学习生成超越编译器的 GPU 内核"
-    },
-    {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#model-release",
-     "title": "字节Seed发布SeedRealtime，原生音视频全双工模型"
-    },
-    {
-     "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#company",
-     "title": "字节跳动被曝训练 10 万亿参数模型，对标 Anthropic"
-    },
-    {
-     "date": "2026-08-08",
-     "url": "/posts/2026-08-07-ai-morning-post/#company",
-     "title": "字节跳动被曝训练10万亿参数大模型，对标Anthropic"
-    },
-    {
-     "date": "2026-08-05",
-     "url": "/posts/2026-08-04-ai-morning-post/#opensource",
-     "title": "字节跳动开源DeerFlow：长时SuperAgent框架"
+     "date": "2026-08-15",
+     "url": "/posts/2026-08-14-ai-morning-post/#model-release",
+     "title": "智谱发布 GLM-5.3：前沿编码与新涌现的网络攻防能力"
     }
    ]
   }
