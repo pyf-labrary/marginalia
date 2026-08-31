@@ -1,17 +1,22 @@
 {
- "generated": "2026-08-30",
+ "generated": "2026-08-31",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 50.06,
+   "score": 53.13,
    "days": 28,
    "latest": {
-    "date": "2026-08-30",
-    "url": "/posts/2026-08-29-ai-morning-post/#research",
-    "title": "谷歌 WikiSkill：让 Agent 记住错误并改进"
+    "date": "2026-08-31",
+    "url": "/posts/2026-08-30-ai-morning-post/#research",
+    "title": "Google WikiSkill：给 AI Agent 装上「错题本」"
    },
    "links": [
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#research",
+     "title": "Google WikiSkill：给 AI Agent 装上「错题本」"
+    },
     {
      "date": "2026-08-30",
      "url": "/posts/2026-08-29-ai-morning-post/#research",
@@ -46,18 +51,13 @@
      "date": "2026-08-24",
      "url": "/posts/2026-08-23-ai-morning-post/#research",
      "title": "AI 智能体「技能」（Skills）为何有效、何时失效"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#opensource",
-     "title": "ruflo 开源：Agent 元框架与多智能体 swarm 的一次打包"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 27.52,
-   "days": 24,
+   "score": 25.81,
+   "days": 23,
    "latest": {
     "date": "2026-08-30",
     "url": "/posts/2026-08-29-ai-morning-post/#company",
@@ -108,14 +108,19 @@
   },
   {
    "name": "Anthropic",
-   "score": 20.65,
-   "days": 20,
+   "score": 21.61,
+   "days": 21,
    "latest": {
-    "date": "2026-08-30",
-    "url": "/posts/2026-08-29-ai-morning-post/#company",
-    "title": "美法院判五角大楼将 Anthropic 列黑名单违法"
+    "date": "2026-08-31",
+    "url": "/posts/2026-08-30-ai-morning-post/#product",
+    "title": "Anthropic 开放 MHS：Agent 控制物理设备的「通用语言」"
    },
    "links": [
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#product",
+     "title": "Anthropic 开放 MHS：Agent 控制物理设备的「通用语言」"
+    },
     {
      "date": "2026-08-30",
      "url": "/posts/2026-08-29-ai-morning-post/#company",
@@ -150,17 +155,64 @@
      "date": "2026-08-23",
      "url": "/posts/2026-08-22-ai-morning-post/#opinion",
      "title": "Anthropic 光环消退：AI 圈信仰开始转移"
+    }
+   ]
+  },
+  {
+   "name": "Claude",
+   "score": 17.84,
+   "days": 18,
+   "latest": {
+    "date": "2026-08-31",
+    "url": "/posts/2026-08-30-ai-morning-post/#research",
+    "title": "Claude 训练 Claude，4 美元/小时跑赢 150 美元人类研究员"
+   },
+   "links": [
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#research",
+     "title": "Claude 训练 Claude，4 美元/小时跑赢 150 美元人类研究员"
     },
     {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#company",
-     "title": "Anthropic调整数据保留政策以安抚企业客户"
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#opensource",
+     "title": "Anthropic 官方发布 Claude Code 插件目录"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#opensource",
+     "title": "Anthropic 发布官方 Claude Code 插件目录"
+    },
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#opinion",
+     "title": "Claude、Codex 在企业网络安装“无主代码”"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#product",
+     "title": "Claude 共享记忆：Chat 与 Cowork 终于打通"
+    },
+    {
+     "date": "2026-08-25",
+     "url": "/posts/2026-08-24-ai-morning-post/#opensource",
+     "title": "llm-anthropic 0.27 发布：接入 Claude 新能力"
+    },
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#product",
+     "title": "Claude Code被曝测试降低effort，质量风险引讨论"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#product",
+     "title": "Claude Code 被曝测试 reduced effort 强度"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 17.1,
+   "score": 16.16,
    "days": 16,
    "latest": {
     "date": "2026-08-30",
@@ -211,67 +263,20 @@
    ]
   },
   {
-   "name": "Claude",
-   "score": 13.58,
-   "days": 18,
-   "latest": {
-    "date": "2026-08-30",
-    "url": "/posts/2026-08-29-ai-morning-post/#opensource",
-    "title": "Anthropic 官方发布 Claude Code 插件目录"
-   },
-   "links": [
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#opensource",
-     "title": "Anthropic 官方发布 Claude Code 插件目录"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#opensource",
-     "title": "Anthropic 发布官方 Claude Code 插件目录"
-    },
-    {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#opinion",
-     "title": "Claude、Codex 在企业网络安装“无主代码”"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#product",
-     "title": "Claude 共享记忆：Chat 与 Cowork 终于打通"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#opensource",
-     "title": "llm-anthropic 0.27 发布：接入 Claude 新能力"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#product",
-     "title": "Claude Code被曝测试降低effort，质量风险引讨论"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#product",
-     "title": "Claude Code 被曝测试 reduced effort 强度"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#product",
-     "title": "MiniMax Design 做视频生成：类 Claude Code 的交互切入创意市场"
-    }
-   ]
-  },
-  {
    "name": "阿里",
-   "score": 11.13,
-   "days": 13,
+   "score": 11.55,
+   "days": 14,
    "latest": {
-    "date": "2026-08-30",
-    "url": "/posts/2026-08-29-ai-morning-post/#research",
-    "title": "智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash 架构趋同"
+    "date": "2026-08-31",
+    "url": "/posts/2026-08-30-ai-morning-post/#product",
+    "title": "阿里 Qoder 发布：编程不再是程序员专属"
    },
    "links": [
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#product",
+     "title": "阿里 Qoder 发布：编程不再是程序员专属"
+    },
     {
      "date": "2026-08-30",
      "url": "/posts/2026-08-29-ai-morning-post/#research",
@@ -306,17 +311,12 @@
      "date": "2026-08-16",
      "url": "/posts/2026-08-15-ai-morning-post/#model-release",
      "title": "阿里开源 Qwen3.8-27B：家用显卡就能跑的大模型"
-    },
-    {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#company",
-     "title": "阿里云数据中心交付周期缩短至 100 天"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 10.26,
+   "score": 9.77,
    "days": 11,
    "latest": {
     "date": "2026-08-30",
@@ -367,8 +367,112 @@
    ]
   },
   {
+   "name": "Google",
+   "score": 7.23,
+   "days": 10,
+   "latest": {
+    "date": "2026-08-31",
+    "url": "/posts/2026-08-30-ai-morning-post/#opensource",
+    "title": "Google 开源 Agent Skills 库"
+   },
+   "links": [
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 库"
+    },
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#opinion",
+     "title": "Agent 时代，为什么有人重新造 Google？"
+    },
+    {
+     "date": "2026-08-25",
+     "url": "/posts/2026-08-24-ai-morning-post/#research",
+     "title": "Google 研究 ME-POIs：让地点嵌入理解“使用方式”"
+    },
+    {
+     "date": "2026-08-22",
+     "url": "/posts/2026-08-21-ai-morning-post/#product",
+     "title": "Google 推出“优先来源”按钮：让读者手动扶一把内容网站"
+    },
+    {
+     "date": "2026-08-21",
+     "url": "/posts/2026-08-20-ai-morning-post/#product",
+     "title": "Google 给出版方一个“优先信源”按钮，对抗 AI 搜索分流"
+    },
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
+     "title": "Google 开源零配置 P2P Agent 网格 SAM"
+    },
+    {
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#research",
+     "title": "Google 让同态加密私有 AI 走向实用"
+    },
+    {
+     "date": "2026-08-11",
+     "url": "/posts/2026-08-10-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 仓库，为编码代理立标准"
+    }
+   ]
+  },
+  {
+   "name": "腾讯",
+   "score": 7.06,
+   "days": 11,
+   "latest": {
+    "date": "2026-08-31",
+    "url": "/posts/2026-08-30-ai-morning-post/#model-release",
+    "title": "腾讯 Hy4 预览版：开源权重进入 770B 时代"
+   },
+   "links": [
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#model-release",
+     "title": "腾讯 Hy4 预览版：开源权重进入 770B 时代"
+    },
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#model-release",
+     "title": "腾讯混元 Hy4 preview 开源，主打长程任务"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#opensource",
+     "title": "腾讯混元 Hy4 preview 开源，WorkBuddy 实测：能干活，但得盯着"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#opinion",
+     "title": "AI To B 战火烧到办公，腾讯阿里字节混战"
+    },
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI 红队平台，全栈安全从口号变代码"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI-Infra-Guard：红队测评工具首次覆盖全栈"
+    },
+    {
+     "date": "2026-08-22",
+     "url": "/posts/2026-08-21-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI-Infra-Guard：给智能体做「全栈红队」"
+    },
+    {
+     "date": "2026-08-12",
+     "url": "/posts/2026-08-11-ai-morning-post/#product",
+     "title": "腾讯混元 WorldClaw：用 Agentic 方式生成 3D 开放世界"
+    }
+   ]
+  },
+  {
    "name": "ChatGPT",
-   "score": 6.81,
+   "score": 6.45,
    "days": 9,
    "latest": {
     "date": "2026-08-28",
@@ -419,112 +523,8 @@
    ]
   },
   {
-   "name": "Google",
-   "score": 6.58,
-   "days": 9,
-   "latest": {
-    "date": "2026-08-30",
-    "url": "/posts/2026-08-29-ai-morning-post/#opinion",
-    "title": "Agent 时代，为什么有人重新造 Google？"
-   },
-   "links": [
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#opinion",
-     "title": "Agent 时代，为什么有人重新造 Google？"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#research",
-     "title": "Google 研究 ME-POIs：让地点嵌入理解“使用方式”"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#product",
-     "title": "Google 推出“优先来源”按钮：让读者手动扶一把内容网站"
-    },
-    {
-     "date": "2026-08-21",
-     "url": "/posts/2026-08-20-ai-morning-post/#product",
-     "title": "Google 给出版方一个“优先信源”按钮，对抗 AI 搜索分流"
-    },
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
-     "title": "Google 开源零配置 P2P Agent 网格 SAM"
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#research",
-     "title": "Google 让同态加密私有 AI 走向实用"
-    },
-    {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 仓库，为编码代理立标准"
-    },
-    {
-     "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#opensource",
-     "title": "Agent Skills：Google 与 Anthropic 同时押注的新范式"
-    }
-   ]
-  },
-  {
-   "name": "腾讯",
-   "score": 6.42,
-   "days": 10,
-   "latest": {
-    "date": "2026-08-30",
-    "url": "/posts/2026-08-29-ai-morning-post/#model-release",
-    "title": "腾讯混元 Hy4 preview 开源，主打长程任务"
-   },
-   "links": [
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#model-release",
-     "title": "腾讯混元 Hy4 preview 开源，主打长程任务"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#opensource",
-     "title": "腾讯混元 Hy4 preview 开源，WorkBuddy 实测：能干活，但得盯着"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#opinion",
-     "title": "AI To B 战火烧到办公，腾讯阿里字节混战"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI 红队平台，全栈安全从口号变代码"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI-Infra-Guard：红队测评工具首次覆盖全栈"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI-Infra-Guard：给智能体做「全栈红队」"
-    },
-    {
-     "date": "2026-08-12",
-     "url": "/posts/2026-08-11-ai-morning-post/#product",
-     "title": "腾讯混元 WorldClaw：用 Agentic 方式生成 3D 开放世界"
-    },
-    {
-     "date": "2026-08-08",
-     "url": "/posts/2026-08-07-ai-morning-post/#opensource",
-     "title": "腾讯云开源 Agent Memory v2.0：团队记忆资产化"
-    }
-   ]
-  },
-  {
    "name": "Hugging Face",
-   "score": 6.03,
+   "score": 5.74,
    "days": 9,
    "latest": {
     "date": "2026-08-30",
@@ -576,7 +576,7 @@
   },
   {
    "name": "人形机器人",
-   "score": 5.87,
+   "score": 5.61,
    "days": 7,
    "latest": {
     "date": "2026-08-29",
@@ -623,7 +623,7 @@
   },
   {
    "name": "算力",
-   "score": 5.35,
+   "score": 5.06,
    "days": 7,
    "latest": {
     "date": "2026-08-29",
@@ -669,9 +669,51 @@
    ]
   },
   {
+   "name": "智谱",
+   "score": 4.94,
+   "days": 6,
+   "latest": {
+    "date": "2026-08-30",
+    "url": "/posts/2026-08-29-ai-morning-post/#research",
+    "title": "智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash 架构趋同"
+   },
+   "links": [
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#research",
+     "title": "智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash 架构趋同"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#model-release",
+     "title": "智谱 GLM-5.3-Flash：国产算力的普惠落点"
+    },
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#model-release",
+     "title": "智谱 GLM-5.3-Flash：开源模型甩开英伟达枷锁"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#model-release",
+     "title": "智谱 GLM-5.3-Flash 揭面：神秘 Ox Alpha 即开源新王牌"
+    },
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#model-release",
+     "title": "神秘模型Ox Alpha：社区靠Tokenizer猜出智谱？"
+    },
+    {
+     "date": "2026-08-15",
+     "url": "/posts/2026-08-14-ai-morning-post/#model-release",
+     "title": "智谱发布 GLM-5.3：前沿编码与新涌现的网络攻防能力"
+    }
+   ]
+  },
+  {
    "name": "DeepSeek",
-   "score": 5.19,
-   "days": 11,
+   "score": 4.81,
+   "days": 10,
    "latest": {
     "date": "2026-08-27",
     "url": "/posts/2026-08-26-ai-morning-post/#opensource",
@@ -717,48 +759,6 @@
      "date": "2026-08-09",
      "url": "/posts/2026-08-08-ai-morning-post/#model-release",
      "title": "DeepSeek 涨价，Meta 用骨折价反击"
-    }
-   ]
-  },
-  {
-   "name": "智谱",
-   "score": 5.13,
-   "days": 6,
-   "latest": {
-    "date": "2026-08-30",
-    "url": "/posts/2026-08-29-ai-morning-post/#research",
-    "title": "智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash 架构趋同"
-   },
-   "links": [
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#research",
-     "title": "智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash 架构趋同"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#model-release",
-     "title": "智谱 GLM-5.3-Flash：国产算力的普惠落点"
-    },
-    {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#model-release",
-     "title": "智谱 GLM-5.3-Flash：开源模型甩开英伟达枷锁"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#model-release",
-     "title": "智谱 GLM-5.3-Flash 揭面：神秘 Ox Alpha 即开源新王牌"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#model-release",
-     "title": "神秘模型Ox Alpha：社区靠Tokenizer猜出智谱？"
-    },
-    {
-     "date": "2026-08-15",
-     "url": "/posts/2026-08-14-ai-morning-post/#model-release",
-     "title": "智谱发布 GLM-5.3：前沿编码与新涌现的网络攻防能力"
     }
    ]
   }
