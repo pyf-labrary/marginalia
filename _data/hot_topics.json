@@ -1,17 +1,22 @@
 {
- "generated": "2026-09-01",
+ "generated": "2026-09-02",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 57.06,
+   "score": 60.94,
    "days": 28,
    "latest": {
-    "date": "2026-09-01",
-    "url": "/posts/2026-08-31-ai-morning-post/#research",
-    "title": "Meta一年实验：Agent无法取代员工"
+    "date": "2026-09-02",
+    "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+    "title": "谷歌 Gemini 引入智能体式视频理解"
    },
    "links": [
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+     "title": "谷歌 Gemini 引入智能体式视频理解"
+    },
     {
      "date": "2026-09-01",
      "url": "/posts/2026-08-31-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-08-26",
      "url": "/posts/2026-08-25-ai-morning-post/#company",
      "title": "NVIDIA Groq 3 LPX 量产，面向智能体推理场景"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#opinion",
-     "title": "OpenAI 押注“为一切造 Agent”，用户会买单吗"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 25.06,
+   "score": 25.45,
    "days": 23,
    "latest": {
-    "date": "2026-09-01",
-    "url": "/posts/2026-08-31-ai-morning-post/#product",
-    "title": "OpenAI 按效果付费：AI 计价开始看产出"
+    "date": "2026-09-02",
+    "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+    "title": "OpenAI 预告 Astra：首个“关键”安全级网络模型"
    },
    "links": [
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+     "title": "OpenAI 预告 Astra：首个“关键”安全级网络模型"
+    },
     {
      "date": "2026-09-01",
      "url": "/posts/2026-08-31-ai-morning-post/#product",
@@ -98,24 +103,24 @@
      "date": "2026-08-25",
      "url": "/posts/2026-08-24-ai-morning-post/#opinion",
      "title": "OpenAI 押注“为一切造 Agent”，用户会买单吗"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#opinion",
-     "title": "OpenAI 反转：从反对 SB 53 到呼吁加强"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 20.48,
-   "days": 20,
+   "score": 22.42,
+   "days": 21,
    "latest": {
-    "date": "2026-08-31",
-    "url": "/posts/2026-08-30-ai-morning-post/#product",
-    "title": "Anthropic 开放 MHS：Agent 控制物理设备的「通用语言」"
+    "date": "2026-09-02",
+    "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+    "title": "Anthropic 发布 Claude Fable 5.1：降价与减限"
    },
    "links": [
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+     "title": "Anthropic 发布 Claude Fable 5.1：降价与减限"
+    },
     {
      "date": "2026-08-31",
      "url": "/posts/2026-08-30-ai-morning-post/#product",
@@ -150,24 +155,24 @@
      "date": "2026-08-24",
      "url": "/posts/2026-08-23-ai-morning-post/#company",
      "title": "Anthropic最强模型叫好不叫座，性价比成为新战场"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#opinion",
-     "title": "Anthropic 光环消退：AI 圈信仰开始转移"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 18.0,
-   "days": 19,
+   "score": 18.13,
+   "days": 20,
    "latest": {
-    "date": "2026-09-01",
-    "url": "/posts/2026-08-31-ai-morning-post/#opinion",
-    "title": "Claude Code拒用AGENTS.md引发开发者抗议"
+    "date": "2026-09-02",
+    "url": "/posts/2026-09-01-ai-morning-post/#product",
+    "title": "Anthropic 向监管与媒体开放 Claude 文本检测"
    },
    "links": [
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#product",
+     "title": "Anthropic 向监管与媒体开放 Claude 文本检测"
+    },
     {
      "date": "2026-09-01",
      "url": "/posts/2026-08-31-ai-morning-post/#opinion",
@@ -202,17 +207,12 @@
      "date": "2026-08-25",
      "url": "/posts/2026-08-24-ai-morning-post/#opensource",
      "title": "llm-anthropic 0.27 发布：接入 Claude 新能力"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#product",
-     "title": "Claude Code被曝测试降低effort，质量风险引讨论"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 17.19,
+   "score": 16.23,
    "days": 16,
    "latest": {
     "date": "2026-09-01",
@@ -264,14 +264,19 @@
   },
   {
    "name": "阿里",
-   "score": 10.94,
-   "days": 14,
+   "score": 11.32,
+   "days": 15,
    "latest": {
-    "date": "2026-08-31",
-    "url": "/posts/2026-08-30-ai-morning-post/#product",
-    "title": "阿里 Qoder 发布：编程不再是程序员专属"
+    "date": "2026-09-02",
+    "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+    "title": "阿里开源 Qwen3.8-27B，登顶开源榜但 Agent 适配待补"
    },
    "links": [
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+     "title": "阿里开源 Qwen3.8-27B，登顶开源榜但 Agent 适配待补"
+    },
     {
      "date": "2026-08-31",
      "url": "/posts/2026-08-30-ai-morning-post/#product",
@@ -306,17 +311,12 @@
      "date": "2026-08-19",
      "url": "/posts/2026-08-18-ai-morning-post/#model-release",
      "title": "阿里发布 AI 音乐模型 HappyShrimp"
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#model-release",
-     "title": "阿里开源 Qwen3.8-27B：家用显卡就能跑的大模型"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 9.26,
+   "score": 8.81,
    "days": 10,
    "latest": {
     "date": "2026-08-30",
@@ -368,14 +368,19 @@
   },
   {
    "name": "Google",
-   "score": 6.84,
+   "score": 7.42,
    "days": 10,
    "latest": {
-    "date": "2026-08-31",
-    "url": "/posts/2026-08-30-ai-morning-post/#opensource",
-    "title": "Google 开源 Agent Skills 库"
+    "date": "2026-09-02",
+    "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+    "title": "Google 发布 TimesFM-3：330M 参数的时序预测基础模型"
    },
    "links": [
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+     "title": "Google 发布 TimesFM-3：330M 参数的时序预测基础模型"
+    },
     {
      "date": "2026-08-31",
      "url": "/posts/2026-08-30-ai-morning-post/#opensource",
@@ -410,18 +415,65 @@
      "date": "2026-08-16",
      "url": "/posts/2026-08-15-ai-morning-post/#research",
      "title": "Google 让同态加密私有 AI 走向实用"
+    }
+   ]
+  },
+  {
+   "name": "Hugging Face",
+   "score": 7.1,
+   "days": 10,
+   "latest": {
+    "date": "2026-09-02",
+    "url": "/posts/2026-09-01-ai-morning-post/#opensource",
+    "title": "Hugging Face 发布 200+ WebGPU Kernel，浏览器跑 AI 再进一步"
+   },
+   "links": [
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#opensource",
+     "title": "Hugging Face 发布 200+ WebGPU Kernel，浏览器跑 AI 再进一步"
     },
     {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 仓库，为编码代理立标准"
+     "date": "2026-09-01",
+     "url": "/posts/2026-08-31-ai-morning-post/#opinion",
+     "title": "Hugging Face黑客事件暗示OpenAI文化问题"
+    },
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#opensource",
+     "title": "Hugging Face 开源 399 美元双足机器人 Microduck"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#company",
+     "title": "英伟达拟130亿美元收购 Hugging Face"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#company",
+     "title": "英伟达 129 亿美元收购 Hugging Face，开源平台易主"
+    },
+    {
+     "date": "2026-08-26",
+     "url": "/posts/2026-08-25-ai-morning-post/#company",
+     "title": "曝 Hugging Face 或以 130 亿美元被收购"
+    },
+    {
+     "date": "2026-08-25",
+     "url": "/posts/2026-08-24-ai-morning-post/#company",
+     "title": "Hugging Face 的 130 亿美元抉择"
+    },
+    {
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
+     "title": "NVIDIA 开源 TensorRT Model Connect，两命令部署 Hugging Face 模型"
     }
    ]
   },
   {
    "name": "腾讯",
-   "score": 6.68,
-   "days": 11,
+   "score": 6.26,
+   "days": 10,
    "latest": {
     "date": "2026-08-31",
     "url": "/posts/2026-08-30-ai-morning-post/#model-release",
@@ -471,61 +523,9 @@
    ]
   },
   {
-   "name": "Hugging Face",
-   "score": 6.45,
-   "days": 10,
-   "latest": {
-    "date": "2026-09-01",
-    "url": "/posts/2026-08-31-ai-morning-post/#opinion",
-    "title": "Hugging Face黑客事件暗示OpenAI文化问题"
-   },
-   "links": [
-    {
-     "date": "2026-09-01",
-     "url": "/posts/2026-08-31-ai-morning-post/#opinion",
-     "title": "Hugging Face黑客事件暗示OpenAI文化问题"
-    },
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#opensource",
-     "title": "Hugging Face 开源 399 美元双足机器人 Microduck"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#company",
-     "title": "英伟达拟130亿美元收购 Hugging Face"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#company",
-     "title": "英伟达 129 亿美元收购 Hugging Face，开源平台易主"
-    },
-    {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#company",
-     "title": "曝 Hugging Face 或以 130 亿美元被收购"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#company",
-     "title": "Hugging Face 的 130 亿美元抉择"
-    },
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
-     "title": "NVIDIA 开源 TensorRT Model Connect，两命令部署 Hugging Face 模型"
-    },
-    {
-     "date": "2026-08-10",
-     "url": "/posts/2026-08-09-ai-morning-post/#opinion",
-     "title": "OpenAI 意外攻击 Hugging Face 时间线曝光"
-    }
-   ]
-  },
-  {
    "name": "ChatGPT",
-   "score": 6.1,
-   "days": 9,
+   "score": 5.71,
+   "days": 8,
    "latest": {
     "date": "2026-08-28",
     "url": "/posts/2026-08-27-ai-morning-post/#research",
@@ -576,7 +576,7 @@
   },
   {
    "name": "人形机器人",
-   "score": 5.32,
+   "score": 5.1,
    "days": 6,
    "latest": {
     "date": "2026-08-29",
@@ -617,8 +617,50 @@
    ]
   },
   {
+   "name": "GitHub",
+   "score": 4.9,
+   "days": 6,
+   "latest": {
+    "date": "2026-09-02",
+    "url": "/posts/2026-09-01-ai-morning-post/#opensource",
+    "title": "架构图 Agent archify 走红 GitHub"
+   },
+   "links": [
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#opensource",
+     "title": "架构图 Agent archify 走红 GitHub"
+    },
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#opensource",
+     "title": "MoneyPrinterTurbo 再登 GitHub 热榜"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#product",
+     "title": "Cursor Origin 发布：GitHub 老玩法还够用吗"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#opensource",
+     "title": "GPT-Image-2 提示词模板库登 GitHub 热榜"
+    },
+    {
+     "date": "2026-08-26",
+     "url": "/posts/2026-08-25-ai-morning-post/#opensource",
+     "title": "GitHub热榜被Agent工具刷屏"
+    },
+    {
+     "date": "2026-08-18",
+     "url": "/posts/2026-08-17-ai-morning-post/#company",
+     "title": "GitHub 连续故障引发不满，开发者讨论迁移"
+    }
+   ]
+  },
+  {
    "name": "智谱",
-   "score": 4.74,
+   "score": 4.55,
    "days": 6,
    "latest": {
     "date": "2026-08-30",
@@ -660,7 +702,7 @@
   },
   {
    "name": "算力",
-   "score": 4.74,
+   "score": 4.48,
    "days": 6,
    "latest": {
     "date": "2026-08-29",
@@ -697,58 +739,6 @@
      "date": "2026-08-05",
      "url": "/posts/2026-08-04-ai-morning-post/#company",
      "title": "Anthropic 百亿算力押注，Volta 何以入局"
-    }
-   ]
-  },
-  {
-   "name": "DeepSeek",
-   "score": 4.48,
-   "days": 10,
-   "latest": {
-    "date": "2026-08-27",
-    "url": "/posts/2026-08-26-ai-morning-post/#opensource",
-    "title": "DeepSeek 开源 Harness，把编排层从智能体里“拎”出来"
-   },
-   "links": [
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 Harness，把编排层从智能体里“拎”出来"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#model-release",
-     "title": "DeepSeek 发 Flash 视觉模型，对标 Opus 4.8"
-    },
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#research",
-     "title": "DeepSeek 缓存暴涨 11 倍：长上下文开始收\"存储税\""
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 Harness：模型工具全是插件"
-    },
-    {
-     "date": "2026-08-15",
-     "url": "/posts/2026-08-14-ai-morning-post/#company",
-     "title": "DeepSeek更新API定价策略，开发者成本结构生变"
-    },
-    {
-     "date": "2026-08-14",
-     "url": "/posts/2026-08-13-ai-morning-post/#model-release",
-     "title": "DeepSeek 发布 V4 Pro 0813，API 同步降价"
-    },
-    {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#opinion",
-     "title": "DeepSeek 涨价30倍仍是最便宜模型，底气何在"
-    },
-    {
-     "date": "2026-08-09",
-     "url": "/posts/2026-08-08-ai-morning-post/#model-release",
-     "title": "DeepSeek 涨价，Meta 用骨折价反击"
     }
    ]
   }
