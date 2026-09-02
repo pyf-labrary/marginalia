@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>折 · FOLD</title>
+<meta name="description" content="一张纸，一个动作：沿格线把纸折过去，折成目标的样子。层叠、翻面、双面印色与镂空，一条规则长出的解谜。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>折<small>FOLD</small></h1>
+    <span class="tag">一张纸，一个动作。</span>
+    <span class="sp"></span>
+    <span class="kbd">拖动纸的一侧越过格线即折叠<b>Z</b>撤销<b>R</b>重来<b>H</b>提示<b>M</b>静音</span>
+  </header>
+  <div id="stage">
+    <canvas id="c"></canvas>
+    <div id="toast"></div>
+    <div id="win"><div class="box">
+      <div class="seal">成</div>
+      <h3 id="winTitle">折成</h3>
+      <div class="stars" id="winStars"></div>
+      <p id="winSub"></p>
+      <div class="btns"><button id="winReplay">重折 <small>R</small></button><button class="primary" id="winNext">下一张 <small>N</small></button></div>
+    </div></div>
+  </div>
+  <aside>
+    <div>
+      <h2>目标</h2>
+      <div class="card" style="margin-top:8px"><canvas id="target"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="stat"><span>已折</span><b id="sMoves">0</b></div>
+      <div class="stat"><span>最少</span><b id="sPar">–<i>折</i></b></div>
+      <div class="stat"><span>纸</span><b id="sSize" style="font-size:16px">–</b></div>
+    </div>
+    <div class="btns">
+      <button id="bUndo">撤销 <small>Z</small></button>
+      <button id="bReset">重来 <small>R</small></button>
+      <button id="bHint">提示 <small>H</small></button>
+      <button id="bMute">静音 <small>M</small></button>
+    </div>
+    <div class="chap" id="chapText"></div>
+  </aside>
+  <footer id="levels"></footer>
+</div>
+<script src="js/model.js"></script>
+<script src="js/levels.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/render.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
