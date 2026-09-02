@@ -1,17 +1,22 @@
 {
- "generated": "2026-09-02",
+ "generated": "2026-09-03",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 60.94,
-   "days": 28,
+   "score": 58.77,
+   "days": 29,
    "latest": {
-    "date": "2026-09-02",
-    "url": "/posts/2026-09-01-ai-morning-post/#model-release",
-    "title": "谷歌 Gemini 引入智能体式视频理解"
+    "date": "2026-09-03",
+    "url": "/posts/2026-09-02-ai-morning-post/#research",
+    "title": "AWS 发布 Aws-Bench：给云上 Agent 一把度量尺"
    },
    "links": [
+    {
+     "date": "2026-09-03",
+     "url": "/posts/2026-09-02-ai-morning-post/#research",
+     "title": "AWS 发布 Aws-Bench：给云上 Agent 一把度量尺"
+    },
     {
      "date": "2026-09-02",
      "url": "/posts/2026-09-01-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#product",
      "title": "「豆包工作」+飞书：企业 Agent 的形态雏形"
-    },
-    {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#company",
-     "title": "NVIDIA Groq 3 LPX 量产，面向智能体推理场景"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 25.45,
-   "days": 23,
+   "score": 24.84,
+   "days": 24,
    "latest": {
-    "date": "2026-09-02",
-    "url": "/posts/2026-09-01-ai-morning-post/#model-release",
-    "title": "OpenAI 预告 Astra：首个“关键”安全级网络模型"
+    "date": "2026-09-03",
+    "url": "/posts/2026-09-02-ai-morning-post/#opinion",
+    "title": "美国政府站到 OpenAI 一边"
    },
    "links": [
+    {
+     "date": "2026-09-03",
+     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
+     "title": "美国政府站到 OpenAI 一边"
+    },
     {
      "date": "2026-09-02",
      "url": "/posts/2026-09-01-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-08-26",
      "url": "/posts/2026-08-25-ai-morning-post/#company",
      "title": "OpenAI 自研推理芯片 Jalapeño 首曝成绩"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#opinion",
-     "title": "OpenAI 押注“为一切造 Agent”，用户会买单吗"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 22.42,
-   "days": 21,
+   "score": 22.26,
+   "days": 22,
    "latest": {
-    "date": "2026-09-02",
-    "url": "/posts/2026-09-01-ai-morning-post/#model-release",
-    "title": "Anthropic 发布 Claude Fable 5.1：降价与减限"
+    "date": "2026-09-03",
+    "url": "/posts/2026-09-02-ai-morning-post/#opinion",
+    "title": "Anthropic 向监管与媒体开放检测工具"
    },
    "links": [
+    {
+     "date": "2026-09-03",
+     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
+     "title": "Anthropic 向监管与媒体开放检测工具"
+    },
     {
      "date": "2026-09-02",
      "url": "/posts/2026-09-01-ai-morning-post/#model-release",
@@ -150,17 +155,12 @@
      "date": "2026-08-25",
      "url": "/posts/2026-08-24-ai-morning-post/#company",
      "title": "Anthropic 最强模型，也叫好不叫座"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#company",
-     "title": "Anthropic最强模型叫好不叫座，性价比成为新战场"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 18.13,
+   "score": 17.23,
    "days": 20,
    "latest": {
     "date": "2026-09-02",
@@ -212,7 +212,7 @@
   },
   {
    "name": "Meta",
-   "score": 16.23,
+   "score": 15.26,
    "days": 16,
    "latest": {
     "date": "2026-09-01",
@@ -264,8 +264,8 @@
   },
   {
    "name": "阿里",
-   "score": 11.32,
-   "days": 15,
+   "score": 10.65,
+   "days": 14,
    "latest": {
     "date": "2026-09-02",
     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
@@ -316,7 +316,7 @@
   },
   {
    "name": "芯片",
-   "score": 8.81,
+   "score": 8.35,
    "days": 10,
    "latest": {
     "date": "2026-08-30",
@@ -368,7 +368,7 @@
   },
   {
    "name": "Google",
-   "score": 7.42,
+   "score": 7.03,
    "days": 10,
    "latest": {
     "date": "2026-09-02",
@@ -420,7 +420,7 @@
   },
   {
    "name": "Hugging Face",
-   "score": 7.1,
+   "score": 6.77,
    "days": 10,
    "latest": {
     "date": "2026-09-02",
@@ -472,7 +472,7 @@
   },
   {
    "name": "腾讯",
-   "score": 6.26,
+   "score": 5.9,
    "days": 10,
    "latest": {
     "date": "2026-08-31",
@@ -524,7 +524,7 @@
   },
   {
    "name": "ChatGPT",
-   "score": 5.71,
+   "score": 5.39,
    "days": 8,
    "latest": {
     "date": "2026-08-28",
@@ -576,7 +576,7 @@
   },
   {
    "name": "人形机器人",
-   "score": 5.1,
+   "score": 4.87,
    "days": 6,
    "latest": {
     "date": "2026-08-29",
@@ -617,8 +617,55 @@
    ]
   },
   {
+   "name": "DeepMind",
+   "score": 4.81,
+   "days": 7,
+   "latest": {
+    "date": "2026-09-03",
+    "url": "/posts/2026-09-02-ai-morning-post/#opinion",
+    "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
+   },
+   "links": [
+    {
+     "date": "2026-09-03",
+     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
+     "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#opinion",
+     "title": "DeepMind 新负责人：前沿领先是唯一目标"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#product",
+     "title": "DeepMind AI 科学家：从辅助写作到闭环科研"
+    },
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#research",
+     "title": "DeepMind 试点双盲评估：让偏见无处下手"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#company",
+     "title": "DeepMind 联手游戏工作室，推进 AI 原生玩法"
+    },
+    {
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#company",
+     "title": "谷歌肢解 DeepMind：布林亲自下场"
+    },
+    {
+     "date": "2026-08-07",
+     "url": "/posts/2026-08-06-ai-morning-post/#company",
+     "title": "DeepMind 创始管理层正式谢幕"
+    }
+   ]
+  },
+  {
    "name": "GitHub",
-   "score": 4.9,
+   "score": 4.71,
    "days": 6,
    "latest": {
     "date": "2026-09-02",
@@ -660,7 +707,7 @@
   },
   {
    "name": "智谱",
-   "score": 4.55,
+   "score": 4.35,
    "days": 6,
    "latest": {
     "date": "2026-08-30",
@@ -697,48 +744,6 @@
      "date": "2026-08-15",
      "url": "/posts/2026-08-14-ai-morning-post/#model-release",
      "title": "智谱发布 GLM-5.3：前沿编码与新涌现的网络攻防能力"
-    }
-   ]
-  },
-  {
-   "name": "算力",
-   "score": 4.48,
-   "days": 6,
-   "latest": {
-    "date": "2026-08-29",
-    "url": "/posts/2026-08-28-ai-morning-post/#model-release",
-    "title": "智谱 GLM-5.3-Flash：国产算力的普惠落点"
-   },
-   "links": [
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#model-release",
-     "title": "智谱 GLM-5.3-Flash：国产算力的普惠落点"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#company",
-     "title": "Anthropic 与 Nscale 签 45 亿美元算力大单，继续「吃算力」"
-    },
-    {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#opinion",
-     "title": "OpenAI 的算力账：全栈如何把智能变便宜"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#company",
-     "title": "内存短缺致英伟达AI服务器涨价15%，算力成本向谁传导？"
-    },
-    {
-     "date": "2026-08-12",
-     "url": "/posts/2026-08-11-ai-morning-post/#research",
-     "title": "算力账单之外，还有一笔水费"
-    },
-    {
-     "date": "2026-08-05",
-     "url": "/posts/2026-08-04-ai-morning-post/#company",
-     "title": "Anthropic 百亿算力押注，Volta 何以入局"
     }
    ]
   }
