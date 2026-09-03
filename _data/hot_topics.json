@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-03",
+ "generated": "2026-09-04",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 58.77,
-   "days": 29,
+   "score": 55.55,
+   "days": 28,
    "latest": {
     "date": "2026-09-03",
     "url": "/posts/2026-09-02-ai-morning-post/#research",
@@ -56,14 +56,19 @@
   },
   {
    "name": "OpenAI",
-   "score": 24.84,
+   "score": 24.06,
    "days": 24,
    "latest": {
-    "date": "2026-09-03",
-    "url": "/posts/2026-09-02-ai-morning-post/#opinion",
-    "title": "美国政府站到 OpenAI 一边"
+    "date": "2026-09-04",
+    "url": "/posts/2026-09-03-ai-morning-post/#company",
+    "title": "OpenAI终止与Cursor合作，马斯克影子下的10亿美元生意告吹"
    },
    "links": [
+    {
+     "date": "2026-09-04",
+     "url": "/posts/2026-09-03-ai-morning-post/#company",
+     "title": "OpenAI终止与Cursor合作，马斯克影子下的10亿美元生意告吹"
+    },
     {
      "date": "2026-09-03",
      "url": "/posts/2026-09-02-ai-morning-post/#opinion",
@@ -98,24 +103,24 @@
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#company",
      "title": "OpenAI 公布 HF 安全事件报告：agent 被无意训练出作弊行为"
-    },
-    {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#company",
-     "title": "OpenAI 自研推理芯片 Jalapeño 首曝成绩"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 22.26,
+   "score": 22.0,
    "days": 22,
    "latest": {
-    "date": "2026-09-03",
-    "url": "/posts/2026-09-02-ai-morning-post/#opinion",
-    "title": "Anthropic 向监管与媒体开放检测工具"
+    "date": "2026-09-04",
+    "url": "/posts/2026-09-03-ai-morning-post/#company",
+    "title": "Anthropic双重补血：150亿美元信贷 + 35亿美元算力"
    },
    "links": [
+    {
+     "date": "2026-09-04",
+     "url": "/posts/2026-09-03-ai-morning-post/#company",
+     "title": "Anthropic双重补血：150亿美元信贷 + 35亿美元算力"
+    },
     {
      "date": "2026-09-03",
      "url": "/posts/2026-09-02-ai-morning-post/#opinion",
@@ -150,17 +155,12 @@
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#company",
      "title": "Anthropic 与 Nscale 签 45 亿美元算力大单，继续「吃算力」"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#company",
-     "title": "Anthropic 最强模型，也叫好不叫座"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 17.23,
+   "score": 16.32,
    "days": 20,
    "latest": {
     "date": "2026-09-02",
@@ -212,7 +212,7 @@
   },
   {
    "name": "Meta",
-   "score": 15.26,
+   "score": 14.29,
    "days": 16,
    "latest": {
     "date": "2026-09-01",
@@ -264,8 +264,8 @@
   },
   {
    "name": "阿里",
-   "score": 10.65,
-   "days": 14,
+   "score": 10.0,
+   "days": 13,
    "latest": {
     "date": "2026-09-02",
     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
@@ -316,8 +316,8 @@
   },
   {
    "name": "芯片",
-   "score": 8.35,
-   "days": 10,
+   "score": 7.87,
+   "days": 9,
    "latest": {
     "date": "2026-08-30",
     "url": "/posts/2026-08-29-ai-morning-post/#company",
@@ -368,7 +368,7 @@
   },
   {
    "name": "Google",
-   "score": 7.03,
+   "score": 6.65,
    "days": 10,
    "latest": {
     "date": "2026-09-02",
@@ -420,7 +420,7 @@
   },
   {
    "name": "Hugging Face",
-   "score": 6.77,
+   "score": 6.45,
    "days": 10,
    "latest": {
     "date": "2026-09-02",
@@ -471,9 +471,51 @@
    ]
   },
   {
-   "name": "腾讯",
+   "name": "算力",
    "score": 5.9,
-   "days": 10,
+   "days": 6,
+   "latest": {
+    "date": "2026-09-04",
+    "url": "/posts/2026-09-03-ai-morning-post/#company",
+    "title": "Anthropic双重补血：150亿美元信贷 + 35亿美元算力"
+   },
+   "links": [
+    {
+     "date": "2026-09-04",
+     "url": "/posts/2026-09-03-ai-morning-post/#company",
+     "title": "Anthropic双重补血：150亿美元信贷 + 35亿美元算力"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#model-release",
+     "title": "智谱 GLM-5.3-Flash：国产算力的普惠落点"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#company",
+     "title": "Anthropic 与 Nscale 签 45 亿美元算力大单，继续「吃算力」"
+    },
+    {
+     "date": "2026-08-26",
+     "url": "/posts/2026-08-25-ai-morning-post/#opinion",
+     "title": "OpenAI 的算力账：全栈如何把智能变便宜"
+    },
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#company",
+     "title": "内存短缺致英伟达AI服务器涨价15%，算力成本向谁传导？"
+    },
+    {
+     "date": "2026-08-12",
+     "url": "/posts/2026-08-11-ai-morning-post/#research",
+     "title": "算力账单之外，还有一笔水费"
+    }
+   ]
+  },
+  {
+   "name": "腾讯",
+   "score": 5.48,
+   "days": 9,
    "latest": {
     "date": "2026-08-31",
     "url": "/posts/2026-08-30-ai-morning-post/#model-release",
@@ -524,7 +566,7 @@
   },
   {
    "name": "ChatGPT",
-   "score": 5.39,
+   "score": 5.06,
    "days": 8,
    "latest": {
     "date": "2026-08-28",
@@ -576,7 +618,7 @@
   },
   {
    "name": "人形机器人",
-   "score": 4.87,
+   "score": 4.65,
    "days": 6,
    "latest": {
     "date": "2026-08-29",
@@ -618,7 +660,7 @@
   },
   {
    "name": "DeepMind",
-   "score": 4.81,
+   "score": 4.58,
    "days": 7,
    "latest": {
     "date": "2026-09-03",
@@ -665,7 +707,7 @@
   },
   {
    "name": "GitHub",
-   "score": 4.71,
+   "score": 4.52,
    "days": 6,
    "latest": {
     "date": "2026-09-02",
@@ -702,48 +744,6 @@
      "date": "2026-08-18",
      "url": "/posts/2026-08-17-ai-morning-post/#company",
      "title": "GitHub 连续故障引发不满，开发者讨论迁移"
-    }
-   ]
-  },
-  {
-   "name": "智谱",
-   "score": 4.35,
-   "days": 6,
-   "latest": {
-    "date": "2026-08-30",
-    "url": "/posts/2026-08-29-ai-morning-post/#research",
-    "title": "智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash 架构趋同"
-   },
-   "links": [
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#research",
-     "title": "智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash 架构趋同"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#model-release",
-     "title": "智谱 GLM-5.3-Flash：国产算力的普惠落点"
-    },
-    {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#model-release",
-     "title": "智谱 GLM-5.3-Flash：开源模型甩开英伟达枷锁"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#model-release",
-     "title": "智谱 GLM-5.3-Flash 揭面：神秘 Ox Alpha 即开源新王牌"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#model-release",
-     "title": "神秘模型Ox Alpha：社区靠Tokenizer猜出智谱？"
-    },
-    {
-     "date": "2026-08-15",
-     "url": "/posts/2026-08-14-ai-morning-post/#model-release",
-     "title": "智谱发布 GLM-5.3：前沿编码与新涌现的网络攻防能力"
     }
    ]
   }
