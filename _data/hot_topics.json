@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-04",
+ "generated": "2026-09-05",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 55.55,
-   "days": 28,
+   "score": 52.29,
+   "days": 27,
    "latest": {
     "date": "2026-09-03",
     "url": "/posts/2026-09-02-ai-morning-post/#research",
@@ -56,7 +56,7 @@
   },
   {
    "name": "OpenAI",
-   "score": 24.06,
+   "score": 22.52,
    "days": 24,
    "latest": {
     "date": "2026-09-04",
@@ -108,7 +108,7 @@
   },
   {
    "name": "Anthropic",
-   "score": 22.0,
+   "score": 20.84,
    "days": 22,
    "latest": {
     "date": "2026-09-04",
@@ -160,7 +160,7 @@
   },
   {
    "name": "Claude",
-   "score": 16.32,
+   "score": 15.42,
    "days": 20,
    "latest": {
     "date": "2026-09-02",
@@ -212,8 +212,8 @@
   },
   {
    "name": "Meta",
-   "score": 14.29,
-   "days": 16,
+   "score": 13.29,
+   "days": 15,
    "latest": {
     "date": "2026-09-01",
     "url": "/posts/2026-08-31-ai-morning-post/#research",
@@ -264,7 +264,7 @@
   },
   {
    "name": "阿里",
-   "score": 10.0,
+   "score": 9.42,
    "days": 13,
    "latest": {
     "date": "2026-09-02",
@@ -316,7 +316,7 @@
   },
   {
    "name": "芯片",
-   "score": 7.87,
+   "score": 7.45,
    "days": 9,
    "latest": {
     "date": "2026-08-30",
@@ -368,7 +368,7 @@
   },
   {
    "name": "Google",
-   "score": 6.65,
+   "score": 6.26,
    "days": 10,
    "latest": {
     "date": "2026-09-02",
@@ -420,7 +420,7 @@
   },
   {
    "name": "Hugging Face",
-   "score": 6.45,
+   "score": 6.13,
    "days": 10,
    "latest": {
     "date": "2026-09-02",
@@ -472,7 +472,7 @@
   },
   {
    "name": "算力",
-   "score": 5.9,
+   "score": 5.65,
    "days": 6,
    "latest": {
     "date": "2026-09-04",
@@ -514,7 +514,7 @@
   },
   {
    "name": "腾讯",
-   "score": 5.48,
+   "score": 5.19,
    "days": 9,
    "latest": {
     "date": "2026-08-31",
@@ -566,7 +566,7 @@
   },
   {
    "name": "ChatGPT",
-   "score": 5.06,
+   "score": 4.74,
    "days": 8,
    "latest": {
     "date": "2026-08-28",
@@ -618,7 +618,7 @@
   },
   {
    "name": "人形机器人",
-   "score": 4.65,
+   "score": 4.42,
    "days": 6,
    "latest": {
     "date": "2026-08-29",
@@ -660,7 +660,7 @@
   },
   {
    "name": "DeepMind",
-   "score": 4.58,
+   "score": 4.35,
    "days": 7,
    "latest": {
     "date": "2026-09-03",
@@ -707,7 +707,7 @@
   },
   {
    "name": "GitHub",
-   "score": 4.52,
+   "score": 4.32,
    "days": 6,
    "latest": {
     "date": "2026-09-02",
