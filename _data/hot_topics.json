@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-05",
+ "generated": "2026-09-06",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 52.29,
-   "days": 27,
+   "score": 49.19,
+   "days": 26,
    "latest": {
     "date": "2026-09-03",
     "url": "/posts/2026-09-02-ai-morning-post/#research",
@@ -56,8 +56,8 @@
   },
   {
    "name": "OpenAI",
-   "score": 22.52,
-   "days": 24,
+   "score": 20.9,
+   "days": 23,
    "latest": {
     "date": "2026-09-04",
     "url": "/posts/2026-09-03-ai-morning-post/#company",
@@ -108,14 +108,19 @@
   },
   {
    "name": "Anthropic",
-   "score": 20.84,
+   "score": 20.65,
    "days": 22,
    "latest": {
-    "date": "2026-09-04",
-    "url": "/posts/2026-09-03-ai-morning-post/#company",
-    "title": "Anthropic双重补血：150亿美元信贷 + 35亿美元算力"
+    "date": "2026-09-06",
+    "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+    "title": "Anthropic 与 Google 同日公开 Agent Skills"
    },
    "links": [
+    {
+     "date": "2026-09-06",
+     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+     "title": "Anthropic 与 Google 同日公开 Agent Skills"
+    },
     {
      "date": "2026-09-04",
      "url": "/posts/2026-09-03-ai-morning-post/#company",
@@ -150,17 +155,12 @@
      "date": "2026-08-28",
      "url": "/posts/2026-08-27-ai-morning-post/#product",
      "title": "Anthropic 新硬件标准：Agent 与物理设备的安全交互"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#company",
-     "title": "Anthropic 与 Nscale 签 45 亿美元算力大单，继续「吃算力」"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 15.42,
+   "score": 14.52,
    "days": 20,
    "latest": {
     "date": "2026-09-02",
@@ -212,8 +212,8 @@
   },
   {
    "name": "Meta",
-   "score": 13.29,
-   "days": 15,
+   "score": 12.29,
+   "days": 14,
    "latest": {
     "date": "2026-09-01",
     "url": "/posts/2026-08-31-ai-morning-post/#research",
@@ -264,8 +264,8 @@
   },
   {
    "name": "阿里",
-   "score": 9.42,
-   "days": 13,
+   "score": 8.81,
+   "days": 12,
    "latest": {
     "date": "2026-09-02",
     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
@@ -316,7 +316,7 @@
   },
   {
    "name": "芯片",
-   "score": 7.45,
+   "score": 7.03,
    "days": 9,
    "latest": {
     "date": "2026-08-30",
@@ -368,14 +368,19 @@
   },
   {
    "name": "Google",
-   "score": 6.26,
-   "days": 10,
+   "score": 6.87,
+   "days": 11,
    "latest": {
-    "date": "2026-09-02",
-    "url": "/posts/2026-09-01-ai-morning-post/#model-release",
-    "title": "Google 发布 TimesFM-3：330M 参数的时序预测基础模型"
+    "date": "2026-09-06",
+    "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+    "title": "Anthropic 与 Google 同日公开 Agent Skills"
    },
    "links": [
+    {
+     "date": "2026-09-06",
+     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+     "title": "Anthropic 与 Google 同日公开 Agent Skills"
+    },
     {
      "date": "2026-09-02",
      "url": "/posts/2026-09-01-ai-morning-post/#model-release",
@@ -410,17 +415,12 @@
      "date": "2026-08-19",
      "url": "/posts/2026-08-18-ai-morning-post/#opensource",
      "title": "Google 开源零配置 P2P Agent 网格 SAM"
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#research",
-     "title": "Google 让同态加密私有 AI 走向实用"
     }
    ]
   },
   {
    "name": "Hugging Face",
-   "score": 6.13,
+   "score": 5.81,
    "days": 10,
    "latest": {
     "date": "2026-09-02",
@@ -472,7 +472,7 @@
   },
   {
    "name": "算力",
-   "score": 5.65,
+   "score": 5.39,
    "days": 6,
    "latest": {
     "date": "2026-09-04",
@@ -513,8 +513,55 @@
    ]
   },
   {
+   "name": "DeepMind",
+   "score": 5.1,
+   "days": 7,
+   "latest": {
+    "date": "2026-09-06",
+    "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+    "title": "DeepMind 开源 WeatherNext 2 全球天气模型代码"
+   },
+   "links": [
+    {
+     "date": "2026-09-06",
+     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+     "title": "DeepMind 开源 WeatherNext 2 全球天气模型代码"
+    },
+    {
+     "date": "2026-09-03",
+     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
+     "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#opinion",
+     "title": "DeepMind 新负责人：前沿领先是唯一目标"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#product",
+     "title": "DeepMind AI 科学家：从辅助写作到闭环科研"
+    },
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#research",
+     "title": "DeepMind 试点双盲评估：让偏见无处下手"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#company",
+     "title": "DeepMind 联手游戏工作室，推进 AI 原生玩法"
+    },
+    {
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#company",
+     "title": "谷歌肢解 DeepMind：布林亲自下场"
+    }
+   ]
+  },
+  {
    "name": "腾讯",
-   "score": 5.19,
+   "score": 4.9,
    "days": 9,
    "latest": {
     "date": "2026-08-31",
@@ -566,7 +613,7 @@
   },
   {
    "name": "ChatGPT",
-   "score": 4.74,
+   "score": 4.42,
    "days": 8,
    "latest": {
     "date": "2026-08-28",
@@ -618,7 +665,7 @@
   },
   {
    "name": "人形机器人",
-   "score": 4.42,
+   "score": 4.19,
    "days": 6,
    "latest": {
     "date": "2026-08-29",
@@ -659,55 +706,8 @@
    ]
   },
   {
-   "name": "DeepMind",
-   "score": 4.35,
-   "days": 7,
-   "latest": {
-    "date": "2026-09-03",
-    "url": "/posts/2026-09-02-ai-morning-post/#opinion",
-    "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
-   },
-   "links": [
-    {
-     "date": "2026-09-03",
-     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
-     "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#opinion",
-     "title": "DeepMind 新负责人：前沿领先是唯一目标"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#product",
-     "title": "DeepMind AI 科学家：从辅助写作到闭环科研"
-    },
-    {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#research",
-     "title": "DeepMind 试点双盲评估：让偏见无处下手"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#company",
-     "title": "DeepMind 联手游戏工作室，推进 AI 原生玩法"
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#company",
-     "title": "谷歌肢解 DeepMind：布林亲自下场"
-    },
-    {
-     "date": "2026-08-07",
-     "url": "/posts/2026-08-06-ai-morning-post/#company",
-     "title": "DeepMind 创始管理层正式谢幕"
-    }
-   ]
-  },
-  {
    "name": "GitHub",
-   "score": 4.32,
+   "score": 4.13,
    "days": 6,
    "latest": {
     "date": "2026-09-02",
