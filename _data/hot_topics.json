@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-08",
+ "generated": "2026-09-09",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 45.84,
-   "days": 25,
+   "score": 43.06,
+   "days": 24,
    "latest": {
     "date": "2026-09-07",
     "url": "/posts/2026-09-06-ai-morning-post/#opensource",
@@ -55,9 +55,61 @@
    ]
   },
   {
+   "name": "OpenAI",
+   "score": 18.45,
+   "days": 22,
+   "latest": {
+    "date": "2026-09-09",
+    "url": "/posts/2026-09-08-ai-morning-post/#research",
+    "title": "OpenAI 宣称破解纳维-斯托克斯难题，引学界质疑"
+   },
+   "links": [
+    {
+     "date": "2026-09-09",
+     "url": "/posts/2026-09-08-ai-morning-post/#research",
+     "title": "OpenAI 宣称破解纳维-斯托克斯难题，引学界质疑"
+    },
+    {
+     "date": "2026-09-08",
+     "url": "/posts/2026-09-07-ai-morning-post/#opensource",
+     "title": "OpenAI 公开 Codex Skills 目录：代理技能生态起势"
+    },
+    {
+     "date": "2026-09-04",
+     "url": "/posts/2026-09-03-ai-morning-post/#company",
+     "title": "OpenAI终止与Cursor合作，马斯克影子下的10亿美元生意告吹"
+    },
+    {
+     "date": "2026-09-03",
+     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
+     "title": "美国政府站到 OpenAI 一边"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+     "title": "OpenAI 预告 Astra：首个“关键”安全级网络模型"
+    },
+    {
+     "date": "2026-09-01",
+     "url": "/posts/2026-08-31-ai-morning-post/#product",
+     "title": "OpenAI 按效果付费：AI 计价开始看产出"
+    },
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#company",
+     "title": "OpenAI 切断 Cursor，直指马斯克违约前科"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#company",
+     "title": "OpenAI 因 SpaceX 收购 Cursor 终止模型供应"
+    }
+   ]
+  },
+  {
    "name": "Anthropic",
-   "score": 19.23,
-   "days": 21,
+   "score": 18.1,
+   "days": 20,
    "latest": {
     "date": "2026-09-07",
     "url": "/posts/2026-09-06-ai-morning-post/#opensource",
@@ -107,61 +159,9 @@
    ]
   },
   {
-   "name": "OpenAI",
-   "score": 18.81,
-   "days": 22,
-   "latest": {
-    "date": "2026-09-08",
-    "url": "/posts/2026-09-07-ai-morning-post/#opensource",
-    "title": "OpenAI 公开 Codex Skills 目录：代理技能生态起势"
-   },
-   "links": [
-    {
-     "date": "2026-09-08",
-     "url": "/posts/2026-09-07-ai-morning-post/#opensource",
-     "title": "OpenAI 公开 Codex Skills 目录：代理技能生态起势"
-    },
-    {
-     "date": "2026-09-04",
-     "url": "/posts/2026-09-03-ai-morning-post/#company",
-     "title": "OpenAI终止与Cursor合作，马斯克影子下的10亿美元生意告吹"
-    },
-    {
-     "date": "2026-09-03",
-     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
-     "title": "美国政府站到 OpenAI 一边"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
-     "title": "OpenAI 预告 Astra：首个“关键”安全级网络模型"
-    },
-    {
-     "date": "2026-09-01",
-     "url": "/posts/2026-08-31-ai-morning-post/#product",
-     "title": "OpenAI 按效果付费：AI 计价开始看产出"
-    },
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#company",
-     "title": "OpenAI 切断 Cursor，直指马斯克违约前科"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#company",
-     "title": "OpenAI 因 SpaceX 收购 Cursor 终止模型供应"
-    },
-    {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#research",
-     "title": "OpenAI 千名学生研究：ChatGPT 提升原创性"
-    }
-   ]
-  },
-  {
    "name": "Claude",
-   "score": 13.65,
-   "days": 20,
+   "score": 12.71,
+   "days": 19,
    "latest": {
     "date": "2026-09-07",
     "url": "/posts/2026-09-06-ai-morning-post/#opensource",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Meta",
-   "score": 11.45,
-   "days": 13,
+   "score": 11.68,
+   "days": 14,
    "latest": {
-    "date": "2026-09-07",
-    "url": "/posts/2026-09-06-ai-morning-post/#model-release",
-    "title": "Meta 发布实时音频模型：给 AI 助手装上「常开听觉」"
+    "date": "2026-09-09",
+    "url": "/posts/2026-09-08-ai-morning-post/#opinion",
+    "title": "Meta 下架\"脱衣\"AI 广告，为何总是慢半拍？"
    },
    "links": [
+    {
+     "date": "2026-09-09",
+     "url": "/posts/2026-09-08-ai-morning-post/#opinion",
+     "title": "Meta 下架\"脱衣\"AI 广告，为何总是慢半拍？"
+    },
     {
      "date": "2026-09-07",
      "url": "/posts/2026-09-06-ai-morning-post/#model-release",
@@ -254,17 +259,12 @@
      "date": "2026-08-23",
      "url": "/posts/2026-08-22-ai-morning-post/#model-release",
      "title": "Meta 开源本地 agent 模型，支持视觉与工具调用"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#model-release",
-     "title": "Meta 开源可本地部署的视觉智能体模型"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 8.65,
+   "score": 8.13,
    "days": 11,
    "latest": {
     "date": "2026-09-07",
@@ -316,7 +316,7 @@
   },
   {
    "name": "芯片",
-   "score": 6.19,
+   "score": 5.84,
    "days": 8,
    "latest": {
     "date": "2026-08-30",
@@ -368,7 +368,7 @@
   },
   {
    "name": "Google",
-   "score": 6.0,
+   "score": 5.61,
    "days": 10,
    "latest": {
     "date": "2026-09-06",
@@ -419,9 +419,61 @@
    ]
   },
   {
+   "name": "DeepMind",
+   "score": 5.42,
+   "days": 8,
+   "latest": {
+    "date": "2026-09-09",
+    "url": "/posts/2026-09-08-ai-morning-post/#research",
+    "title": "DeepMind 发布 AlphaGenome Atlas，覆盖 90 亿 DNA 变异"
+   },
+   "links": [
+    {
+     "date": "2026-09-09",
+     "url": "/posts/2026-09-08-ai-morning-post/#research",
+     "title": "DeepMind 发布 AlphaGenome Atlas，覆盖 90 亿 DNA 变异"
+    },
+    {
+     "date": "2026-09-06",
+     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+     "title": "DeepMind 开源 WeatherNext 2 全球天气模型代码"
+    },
+    {
+     "date": "2026-09-03",
+     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
+     "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#opinion",
+     "title": "DeepMind 新负责人：前沿领先是唯一目标"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#product",
+     "title": "DeepMind AI 科学家：从辅助写作到闭环科研"
+    },
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#research",
+     "title": "DeepMind 试点双盲评估：让偏见无处下手"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#company",
+     "title": "DeepMind 联手游戏工作室，推进 AI 原生玩法"
+    },
+    {
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#company",
+     "title": "谷歌肢解 DeepMind：布林亲自下场"
+    }
+   ]
+  },
+  {
    "name": "Hugging Face",
-   "score": 5.13,
-   "days": 9,
+   "score": 4.81,
+   "days": 8,
    "latest": {
     "date": "2026-09-02",
     "url": "/posts/2026-09-01-ai-morning-post/#opensource",
@@ -472,7 +524,7 @@
   },
   {
    "name": "算力",
-   "score": 4.87,
+   "score": 4.61,
    "days": 6,
    "latest": {
     "date": "2026-09-04",
@@ -514,7 +566,7 @@
   },
   {
    "name": "GitHub",
-   "score": 4.71,
+   "score": 4.48,
    "days": 7,
    "latest": {
     "date": "2026-09-07",
@@ -560,55 +612,8 @@
    ]
   },
   {
-   "name": "DeepMind",
-   "score": 4.65,
-   "days": 7,
-   "latest": {
-    "date": "2026-09-06",
-    "url": "/posts/2026-09-05-ai-morning-post/#opensource",
-    "title": "DeepMind 开源 WeatherNext 2 全球天气模型代码"
-   },
-   "links": [
-    {
-     "date": "2026-09-06",
-     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
-     "title": "DeepMind 开源 WeatherNext 2 全球天气模型代码"
-    },
-    {
-     "date": "2026-09-03",
-     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
-     "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#opinion",
-     "title": "DeepMind 新负责人：前沿领先是唯一目标"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#product",
-     "title": "DeepMind AI 科学家：从辅助写作到闭环科研"
-    },
-    {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#research",
-     "title": "DeepMind 试点双盲评估：让偏见无处下手"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#company",
-     "title": "DeepMind 联手游戏工作室，推进 AI 原生玩法"
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#company",
-     "title": "谷歌肢解 DeepMind：布林亲自下场"
-    }
-   ]
-  },
-  {
    "name": "腾讯",
-   "score": 4.32,
+   "score": 4.06,
    "days": 8,
    "latest": {
     "date": "2026-08-31",
@@ -660,7 +665,7 @@
   },
   {
    "name": "Agent Skills",
-   "score": 3.9,
+   "score": 3.71,
    "days": 6,
    "latest": {
     "date": "2026-09-07",
@@ -701,49 +706,44 @@
    ]
   },
   {
-   "name": "ChatGPT",
-   "score": 3.74,
-   "days": 7,
+   "name": "人形机器人",
+   "score": 3.52,
+   "days": 6,
    "latest": {
-    "date": "2026-08-28",
-    "url": "/posts/2026-08-27-ai-morning-post/#research",
-    "title": "OpenAI 千名学生研究：ChatGPT 提升原创性"
+    "date": "2026-08-29",
+    "url": "/posts/2026-08-28-ai-morning-post/#company",
+    "title": "优必选中报：人形机器人收入同比增 1445%"
    },
    "links": [
     {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#research",
-     "title": "OpenAI 千名学生研究：ChatGPT 提升原创性"
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#company",
+     "title": "优必选中报：人形机器人收入同比增 1445%"
     },
     {
      "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#product",
-     "title": "ChatGPT for Teachers 覆盖 55 个美国学区"
+     "url": "/posts/2026-08-26-ai-morning-post/#company",
+     "title": "软银拟 60 亿美元估值收购人形机器人公司 1X 多数股权"
     },
     {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#research",
-     "title": "研究：ChatGPT发布后三成新网页由AI撰写"
+     "date": "2026-08-26",
+     "url": "/posts/2026-08-25-ai-morning-post/#opinion",
+     "title": "人形机器人：从竞技场跑进日常"
     },
     {
-     "date": "2026-08-21",
-     "url": "/posts/2026-08-20-ai-morning-post/#product",
-     "title": "ChatGPT 接入 Apple Messages，可代用户发短信"
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#company",
+     "title": "博士团队押注双足人形机器人一体化大脑，全自主开卡丁车"
     },
     {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#product",
-     "title": "记忆时间线：ChatGPT 开始记住你的每一次操作"
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#product",
+     "title": "人形机器人完成自主乒乓球对局"
     },
     {
-     "date": "2026-08-14",
-     "url": "/posts/2026-08-13-ai-morning-post/#opinion",
-     "title": "OpenAI 报告：组织如何实际使用 ChatGPT"
-    },
-    {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#company",
-     "title": "OpenAI 收购 NextSlide，PPT 生成接入 ChatGPT"
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#company",
+     "title": "人形机器人公司宇树科技今日上市"
     }
    ]
   }
