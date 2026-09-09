@@ -1,17 +1,22 @@
 {
- "generated": "2026-09-09",
+ "generated": "2026-09-10",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 43.06,
+   "score": 42.32,
    "days": 24,
    "latest": {
-    "date": "2026-09-07",
-    "url": "/posts/2026-09-06-ai-morning-post/#opensource",
-    "title": "NVIDIA 开源 SkillSpector：给 Agent 技能做安全体检"
+    "date": "2026-09-10",
+    "url": "/posts/2026-09-09-ai-morning-post/#product",
+    "title": "百度搭子接入小度：Agent 从管家走向“办事与创造”"
    },
    "links": [
+    {
+     "date": "2026-09-10",
+     "url": "/posts/2026-09-09-ai-morning-post/#product",
+     "title": "百度搭子接入小度：Agent 从管家走向“办事与创造”"
+    },
     {
      "date": "2026-09-07",
      "url": "/posts/2026-09-06-ai-morning-post/#opensource",
@@ -46,24 +51,24 @@
      "date": "2026-08-29",
      "url": "/posts/2026-08-28-ai-morning-post/#product",
      "title": "持久 AI 代理：Agent 从任务型走向常驻型"
-    },
-    {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#product",
-     "title": "Anthropic 新硬件标准：Agent 与物理设备的安全交互"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 18.45,
+   "score": 19.0,
    "days": 22,
    "latest": {
-    "date": "2026-09-09",
-    "url": "/posts/2026-09-08-ai-morning-post/#research",
-    "title": "OpenAI 宣称破解纳维-斯托克斯难题，引学界质疑"
+    "date": "2026-09-10",
+    "url": "/posts/2026-09-09-ai-morning-post/#research",
+    "title": "OpenAI代理88小时产出Navier-Stokes候选解，研究诚信成焦点"
    },
    "links": [
+    {
+     "date": "2026-09-10",
+     "url": "/posts/2026-09-09-ai-morning-post/#research",
+     "title": "OpenAI代理88小时产出Navier-Stokes候选解，研究诚信成焦点"
+    },
     {
      "date": "2026-09-09",
      "url": "/posts/2026-09-08-ai-morning-post/#research",
@@ -98,18 +103,13 @@
      "date": "2026-08-30",
      "url": "/posts/2026-08-29-ai-morning-post/#company",
      "title": "OpenAI 切断 Cursor，直指马斯克违约前科"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#company",
-     "title": "OpenAI 因 SpaceX 收购 Cursor 终止模型供应"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 18.1,
-   "days": 20,
+   "score": 17.0,
+   "days": 19,
    "latest": {
     "date": "2026-09-07",
     "url": "/posts/2026-09-06-ai-morning-post/#opensource",
@@ -160,8 +160,8 @@
   },
   {
    "name": "Claude",
-   "score": 12.71,
-   "days": 19,
+   "score": 11.77,
+   "days": 18,
    "latest": {
     "date": "2026-09-07",
     "url": "/posts/2026-09-06-ai-morning-post/#opensource",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Meta",
-   "score": 11.68,
+   "score": 11.77,
    "days": 14,
    "latest": {
-    "date": "2026-09-09",
-    "url": "/posts/2026-09-08-ai-morning-post/#opinion",
-    "title": "Meta 下架\"脱衣\"AI 广告，为何总是慢半拍？"
+    "date": "2026-09-10",
+    "url": "/posts/2026-09-09-ai-morning-post/#product",
+    "title": "Meta发布个人AI代理Muse：不只是聊天，而是“替你办事”"
    },
    "links": [
+    {
+     "date": "2026-09-10",
+     "url": "/posts/2026-09-09-ai-morning-post/#product",
+     "title": "Meta发布个人AI代理Muse：不只是聊天，而是“替你办事”"
+    },
     {
      "date": "2026-09-09",
      "url": "/posts/2026-09-08-ai-morning-post/#opinion",
@@ -254,18 +259,13 @@
      "date": "2026-08-26",
      "url": "/posts/2026-08-25-ai-morning-post/#product",
      "title": "Meta付费AI助手Hatch即将上线，新模型Watermelon十月发布"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#model-release",
-     "title": "Meta 开源本地 agent 模型，支持视觉与工具调用"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 8.13,
-   "days": 11,
+   "score": 7.55,
+   "days": 10,
    "latest": {
     "date": "2026-09-07",
     "url": "/posts/2026-09-06-ai-morning-post/#research",
@@ -315,8 +315,60 @@
    ]
   },
   {
+   "name": "Google",
+   "score": 6.19,
+   "days": 10,
+   "latest": {
+    "date": "2026-09-10",
+    "url": "/posts/2026-09-09-ai-morning-post/#research",
+    "title": "Google AI天气模型升级：学会吃原始卫星数据"
+   },
+   "links": [
+    {
+     "date": "2026-09-10",
+     "url": "/posts/2026-09-09-ai-morning-post/#research",
+     "title": "Google AI天气模型升级：学会吃原始卫星数据"
+    },
+    {
+     "date": "2026-09-06",
+     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+     "title": "Anthropic 与 Google 同日公开 Agent Skills"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+     "title": "Google 发布 TimesFM-3：330M 参数的时序预测基础模型"
+    },
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 库"
+    },
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#opinion",
+     "title": "Agent 时代，为什么有人重新造 Google？"
+    },
+    {
+     "date": "2026-08-25",
+     "url": "/posts/2026-08-24-ai-morning-post/#research",
+     "title": "Google 研究 ME-POIs：让地点嵌入理解“使用方式”"
+    },
+    {
+     "date": "2026-08-22",
+     "url": "/posts/2026-08-21-ai-morning-post/#product",
+     "title": "Google 推出“优先来源”按钮：让读者手动扶一把内容网站"
+    },
+    {
+     "date": "2026-08-21",
+     "url": "/posts/2026-08-20-ai-morning-post/#product",
+     "title": "Google 给出版方一个“优先信源”按钮，对抗 AI 搜索分流"
+    }
+   ]
+  },
+  {
    "name": "芯片",
-   "score": 5.84,
+   "score": 5.48,
    "days": 8,
    "latest": {
     "date": "2026-08-30",
@@ -367,60 +419,8 @@
    ]
   },
   {
-   "name": "Google",
-   "score": 5.61,
-   "days": 10,
-   "latest": {
-    "date": "2026-09-06",
-    "url": "/posts/2026-09-05-ai-morning-post/#opensource",
-    "title": "Anthropic 与 Google 同日公开 Agent Skills"
-   },
-   "links": [
-    {
-     "date": "2026-09-06",
-     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
-     "title": "Anthropic 与 Google 同日公开 Agent Skills"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
-     "title": "Google 发布 TimesFM-3：330M 参数的时序预测基础模型"
-    },
-    {
-     "date": "2026-08-31",
-     "url": "/posts/2026-08-30-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 库"
-    },
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#opinion",
-     "title": "Agent 时代，为什么有人重新造 Google？"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#research",
-     "title": "Google 研究 ME-POIs：让地点嵌入理解“使用方式”"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#product",
-     "title": "Google 推出“优先来源”按钮：让读者手动扶一把内容网站"
-    },
-    {
-     "date": "2026-08-21",
-     "url": "/posts/2026-08-20-ai-morning-post/#product",
-     "title": "Google 给出版方一个“优先信源”按钮，对抗 AI 搜索分流"
-    },
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#opensource",
-     "title": "Google 开源零配置 P2P Agent 网格 SAM"
-    }
-   ]
-  },
-  {
    "name": "DeepMind",
-   "score": 5.42,
+   "score": 5.16,
    "days": 8,
    "latest": {
     "date": "2026-09-09",
@@ -472,7 +472,7 @@
   },
   {
    "name": "Hugging Face",
-   "score": 4.81,
+   "score": 4.55,
    "days": 8,
    "latest": {
     "date": "2026-09-02",
@@ -524,7 +524,7 @@
   },
   {
    "name": "算力",
-   "score": 4.61,
+   "score": 4.35,
    "days": 6,
    "latest": {
     "date": "2026-09-04",
@@ -566,7 +566,7 @@
   },
   {
    "name": "GitHub",
-   "score": 4.48,
+   "score": 4.26,
    "days": 7,
    "latest": {
     "date": "2026-09-07",
@@ -613,7 +613,7 @@
   },
   {
    "name": "腾讯",
-   "score": 4.06,
+   "score": 3.81,
    "days": 8,
    "latest": {
     "date": "2026-08-31",
@@ -665,8 +665,8 @@
   },
   {
    "name": "Agent Skills",
-   "score": 3.71,
-   "days": 6,
+   "score": 3.48,
+   "days": 5,
    "latest": {
     "date": "2026-09-07",
     "url": "/posts/2026-09-06-ai-morning-post/#opensource",
@@ -697,17 +697,12 @@
      "date": "2026-08-24",
      "url": "/posts/2026-08-23-ai-morning-post/#opensource",
      "title": "Agent Skills 霸榜 GitHub Trending，智能体技能包要站上 C 位"
-    },
-    {
-     "date": "2026-08-11",
-     "url": "/posts/2026-08-10-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 仓库，为编码代理立标准"
     }
    ]
   },
   {
    "name": "人形机器人",
-   "score": 3.52,
+   "score": 3.29,
    "days": 6,
    "latest": {
     "date": "2026-08-29",
