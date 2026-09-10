@@ -1,17 +1,22 @@
 {
- "generated": "2026-09-10",
+ "generated": "2026-09-11",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 42.32,
-   "days": 24,
+   "score": 48.71,
+   "days": 25,
    "latest": {
-    "date": "2026-09-10",
-    "url": "/posts/2026-09-09-ai-morning-post/#product",
-    "title": "百度搭子接入小度：Agent 从管家走向“办事与创造”"
+    "date": "2026-09-11",
+    "url": "/posts/2026-09-10-ai-morning-post/#model-release",
+    "title": "MiniCPM5-2B：小模型开始抢 Agent 入口"
    },
    "links": [
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#model-release",
+     "title": "MiniCPM5-2B：小模型开始抢 Agent 入口"
+    },
     {
      "date": "2026-09-10",
      "url": "/posts/2026-09-09-ai-morning-post/#product",
@@ -46,24 +51,24 @@
      "date": "2026-08-30",
      "url": "/posts/2026-08-29-ai-morning-post/#research",
      "title": "谷歌 WikiSkill：让 Agent 记住错误并改进"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#product",
-     "title": "持久 AI 代理：Agent 从任务型走向常驻型"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 19.0,
+   "score": 23.65,
    "days": 22,
    "latest": {
-    "date": "2026-09-10",
-    "url": "/posts/2026-09-09-ai-morning-post/#research",
-    "title": "OpenAI代理88小时产出Navier-Stokes候选解，研究诚信成焦点"
+    "date": "2026-09-11",
+    "url": "/posts/2026-09-10-ai-morning-post/#company",
+    "title": "Astra 需求压垮系统，OpenAI 暂停 Pro 订阅"
    },
    "links": [
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#company",
+     "title": "Astra 需求压垮系统，OpenAI 暂停 Pro 订阅"
+    },
     {
      "date": "2026-09-10",
      "url": "/posts/2026-09-09-ai-morning-post/#research",
@@ -98,24 +103,24 @@
      "date": "2026-09-01",
      "url": "/posts/2026-08-31-ai-morning-post/#product",
      "title": "OpenAI 按效果付费：AI 计价开始看产出"
-    },
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#company",
-     "title": "OpenAI 切断 Cursor，直指马斯克违约前科"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 17.0,
-   "days": 19,
+   "score": 17.97,
+   "days": 20,
    "latest": {
-    "date": "2026-09-07",
-    "url": "/posts/2026-09-06-ai-morning-post/#opensource",
-    "title": "Anthropic 开源 Agent Skills 官方仓库：Claude 技能有了标准形态"
+    "date": "2026-09-11",
+    "url": "/posts/2026-09-10-ai-morning-post/#company",
+    "title": "Anthropic 点名阿里、Moonshot、DeepSeek 蒸馏"
    },
    "links": [
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#company",
+     "title": "Anthropic 点名阿里、Moonshot、DeepSeek 蒸馏"
+    },
     {
      "date": "2026-09-07",
      "url": "/posts/2026-09-06-ai-morning-post/#opensource",
@@ -150,18 +155,65 @@
      "date": "2026-08-30",
      "url": "/posts/2026-08-29-ai-morning-post/#company",
      "title": "美法院判五角大楼将 Anthropic 列黑名单违法"
+    }
+   ]
+  },
+  {
+   "name": "Meta",
+   "score": 12.0,
+   "days": 14,
+   "latest": {
+    "date": "2026-09-11",
+    "url": "/posts/2026-09-10-ai-morning-post/#product",
+    "title": "Meta 的 Muse 冲到美国 App 榜第二"
+   },
+   "links": [
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#product",
+     "title": "Meta 的 Muse 冲到美国 App 榜第二"
+    },
+    {
+     "date": "2026-09-10",
+     "url": "/posts/2026-09-09-ai-morning-post/#product",
+     "title": "Meta发布个人AI代理Muse：不只是聊天，而是“替你办事”"
+    },
+    {
+     "date": "2026-09-09",
+     "url": "/posts/2026-09-08-ai-morning-post/#opinion",
+     "title": "Meta 下架\"脱衣\"AI 广告，为何总是慢半拍？"
+    },
+    {
+     "date": "2026-09-07",
+     "url": "/posts/2026-09-06-ai-morning-post/#model-release",
+     "title": "Meta 发布实时音频模型：给 AI 助手装上「常开听觉」"
+    },
+    {
+     "date": "2026-09-01",
+     "url": "/posts/2026-08-31-ai-morning-post/#research",
+     "title": "Meta一年实验：Agent无法取代员工"
+    },
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#company",
+     "title": "Meta 高管 Sandhya Devanathan 加盟 OpenAI"
     },
     {
      "date": "2026-08-29",
      "url": "/posts/2026-08-28-ai-morning-post/#company",
-     "title": "法官裁定五角大楼对 Anthropic 黑名单违法"
+     "title": "Meta 印度高管跳槽 OpenAI 掌管东南亚业务"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#company",
+     "title": "Meta 裁 60% 换 AI agent 计划失败，agent 还搞破坏"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 11.77,
-   "days": 18,
+   "score": 10.9,
+   "days": 17,
    "latest": {
     "date": "2026-09-07",
     "url": "/posts/2026-09-06-ai-morning-post/#opensource",
@@ -211,67 +263,20 @@
    ]
   },
   {
-   "name": "Meta",
-   "score": 11.77,
-   "days": 14,
-   "latest": {
-    "date": "2026-09-10",
-    "url": "/posts/2026-09-09-ai-morning-post/#product",
-    "title": "Meta发布个人AI代理Muse：不只是聊天，而是“替你办事”"
-   },
-   "links": [
-    {
-     "date": "2026-09-10",
-     "url": "/posts/2026-09-09-ai-morning-post/#product",
-     "title": "Meta发布个人AI代理Muse：不只是聊天，而是“替你办事”"
-    },
-    {
-     "date": "2026-09-09",
-     "url": "/posts/2026-09-08-ai-morning-post/#opinion",
-     "title": "Meta 下架\"脱衣\"AI 广告，为何总是慢半拍？"
-    },
-    {
-     "date": "2026-09-07",
-     "url": "/posts/2026-09-06-ai-morning-post/#model-release",
-     "title": "Meta 发布实时音频模型：给 AI 助手装上「常开听觉」"
-    },
-    {
-     "date": "2026-09-01",
-     "url": "/posts/2026-08-31-ai-morning-post/#research",
-     "title": "Meta一年实验：Agent无法取代员工"
-    },
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#company",
-     "title": "Meta 高管 Sandhya Devanathan 加盟 OpenAI"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#company",
-     "title": "Meta 印度高管跳槽 OpenAI 掌管东南亚业务"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#company",
-     "title": "Meta 裁 60% 换 AI agent 计划失败，agent 还搞破坏"
-    },
-    {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#product",
-     "title": "Meta付费AI助手Hatch即将上线，新模型Watermelon十月发布"
-    }
-   ]
-  },
-  {
    "name": "阿里",
-   "score": 7.55,
-   "days": 10,
+   "score": 8.1,
+   "days": 11,
    "latest": {
-    "date": "2026-09-07",
-    "url": "/posts/2026-09-06-ai-morning-post/#research",
-    "title": "循环 Transformer 重返焦点，阿里此前已下注"
+    "date": "2026-09-11",
+    "url": "/posts/2026-09-10-ai-morning-post/#company",
+    "title": "Anthropic 点名阿里、Moonshot、DeepSeek 蒸馏"
    },
    "links": [
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#company",
+     "title": "Anthropic 点名阿里、Moonshot、DeepSeek 蒸馏"
+    },
     {
      "date": "2026-09-07",
      "url": "/posts/2026-09-06-ai-morning-post/#research",
@@ -306,17 +311,64 @@
      "date": "2026-08-26",
      "url": "/posts/2026-08-25-ai-morning-post/#product",
      "title": "阿里Meoo打通AI生成App全链路，一句话产出双端应用"
+    }
+   ]
+  },
+  {
+   "name": "DeepMind",
+   "score": 5.9,
+   "days": 9,
+   "latest": {
+    "date": "2026-09-11",
+    "url": "/posts/2026-09-10-ai-morning-post/#opinion",
+    "title": "DeepMind 前公关：曾有不能说的词"
+   },
+   "links": [
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#opinion",
+     "title": "DeepMind 前公关：曾有不能说的词"
     },
     {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#model-release",
-     "title": "阿里Wan3.0正式上线，中文视频生成进入30秒时代"
+     "date": "2026-09-09",
+     "url": "/posts/2026-09-08-ai-morning-post/#research",
+     "title": "DeepMind 发布 AlphaGenome Atlas，覆盖 90 亿 DNA 变异"
+    },
+    {
+     "date": "2026-09-06",
+     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+     "title": "DeepMind 开源 WeatherNext 2 全球天气模型代码"
+    },
+    {
+     "date": "2026-09-03",
+     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
+     "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#opinion",
+     "title": "DeepMind 新负责人：前沿领先是唯一目标"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#product",
+     "title": "DeepMind AI 科学家：从辅助写作到闭环科研"
+    },
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#research",
+     "title": "DeepMind 试点双盲评估：让偏见无处下手"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#company",
+     "title": "DeepMind 联手游戏工作室，推进 AI 原生玩法"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 6.19,
+   "score": 5.81,
    "days": 10,
    "latest": {
     "date": "2026-09-10",
@@ -367,8 +419,45 @@
    ]
   },
   {
+   "name": "世界模型",
+   "score": 5.35,
+   "days": 5,
+   "latest": {
+    "date": "2026-09-11",
+    "url": "/posts/2026-09-10-ai-morning-post/#model-release",
+    "title": "高德 ABot-Earth 0.7：城市级 3D 世界模型"
+   },
+   "links": [
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#model-release",
+     "title": "高德 ABot-Earth 0.7：城市级 3D 世界模型"
+    },
+    {
+     "date": "2026-09-05",
+     "url": "/posts/2026-09-04-ai-morning-post/#model-release",
+     "title": "李飞飞团队发布 Atlas：世界模型从“看”走向“动”"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#research",
+     "title": "清华 AIR：参数冻结下的世界模型自进化"
+    },
+    {
+     "date": "2026-08-25",
+     "url": "/posts/2026-08-24-ai-morning-post/#research",
+     "title": "生数科技提出通用世界模型五级发展路线"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#research",
+     "title": "忽略人类信念，世界模型会预测错行为"
+    }
+   ]
+  },
+  {
    "name": "芯片",
-   "score": 5.48,
+   "score": 5.13,
    "days": 8,
    "latest": {
     "date": "2026-08-30",
@@ -419,60 +508,102 @@
    ]
   },
   {
-   "name": "DeepMind",
-   "score": 5.16,
-   "days": 8,
+   "name": "算力",
+   "score": 5.06,
+   "days": 6,
    "latest": {
-    "date": "2026-09-09",
-    "url": "/posts/2026-09-08-ai-morning-post/#research",
-    "title": "DeepMind 发布 AlphaGenome Atlas，覆盖 90 亿 DNA 变异"
+    "date": "2026-09-11",
+    "url": "/posts/2026-09-10-ai-morning-post/#company",
+    "title": "微软算力告急：数据中心容量要扩两倍以上"
    },
    "links": [
     {
-     "date": "2026-09-09",
-     "url": "/posts/2026-09-08-ai-morning-post/#research",
-     "title": "DeepMind 发布 AlphaGenome Atlas，覆盖 90 亿 DNA 变异"
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#company",
+     "title": "微软算力告急：数据中心容量要扩两倍以上"
     },
     {
-     "date": "2026-09-06",
-     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
-     "title": "DeepMind 开源 WeatherNext 2 全球天气模型代码"
-    },
-    {
-     "date": "2026-09-03",
-     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
-     "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#opinion",
-     "title": "DeepMind 新负责人：前沿领先是唯一目标"
+     "date": "2026-09-04",
+     "url": "/posts/2026-09-03-ai-morning-post/#company",
+     "title": "Anthropic双重补血：150亿美元信贷 + 35亿美元算力"
     },
     {
      "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#product",
-     "title": "DeepMind AI 科学家：从辅助写作到闭环科研"
+     "url": "/posts/2026-08-28-ai-morning-post/#model-release",
+     "title": "智谱 GLM-5.3-Flash：国产算力的普惠落点"
     },
     {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#research",
-     "title": "DeepMind 试点双盲评估：让偏见无处下手"
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#company",
+     "title": "Anthropic 与 Nscale 签 45 亿美元算力大单，继续「吃算力」"
+    },
+    {
+     "date": "2026-08-26",
+     "url": "/posts/2026-08-25-ai-morning-post/#opinion",
+     "title": "OpenAI 的算力账：全栈如何把智能变便宜"
+    },
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#company",
+     "title": "内存短缺致英伟达AI服务器涨价15%，算力成本向谁传导？"
+    }
+   ]
+  },
+  {
+   "name": "腾讯",
+   "score": 4.52,
+   "days": 8,
+   "latest": {
+    "date": "2026-09-11",
+    "url": "/posts/2026-09-10-ai-morning-post/#opensource",
+    "title": "腾讯 teamai-cli：把 AI 塞进团队协作"
+   },
+   "links": [
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#opensource",
+     "title": "腾讯 teamai-cli：把 AI 塞进团队协作"
+    },
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#model-release",
+     "title": "腾讯 Hy4 预览版：开源权重进入 770B 时代"
+    },
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#model-release",
+     "title": "腾讯混元 Hy4 preview 开源，主打长程任务"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#opensource",
+     "title": "腾讯混元 Hy4 preview 开源，WorkBuddy 实测：能干活，但得盯着"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#opinion",
+     "title": "AI To B 战火烧到办公，腾讯阿里字节混战"
+    },
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI 红队平台，全栈安全从口号变代码"
     },
     {
      "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#company",
-     "title": "DeepMind 联手游戏工作室，推进 AI 原生玩法"
+     "url": "/posts/2026-08-22-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI-Infra-Guard：红队测评工具首次覆盖全栈"
     },
     {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#company",
-     "title": "谷歌肢解 DeepMind：布林亲自下场"
+     "date": "2026-08-22",
+     "url": "/posts/2026-08-21-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI-Infra-Guard：给智能体做「全栈红队」"
     }
    ]
   },
   {
    "name": "Hugging Face",
-   "score": 4.55,
+   "score": 4.29,
    "days": 8,
    "latest": {
     "date": "2026-09-02",
@@ -523,50 +654,8 @@
    ]
   },
   {
-   "name": "算力",
-   "score": 4.35,
-   "days": 6,
-   "latest": {
-    "date": "2026-09-04",
-    "url": "/posts/2026-09-03-ai-morning-post/#company",
-    "title": "Anthropic双重补血：150亿美元信贷 + 35亿美元算力"
-   },
-   "links": [
-    {
-     "date": "2026-09-04",
-     "url": "/posts/2026-09-03-ai-morning-post/#company",
-     "title": "Anthropic双重补血：150亿美元信贷 + 35亿美元算力"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#model-release",
-     "title": "智谱 GLM-5.3-Flash：国产算力的普惠落点"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#company",
-     "title": "Anthropic 与 Nscale 签 45 亿美元算力大单，继续「吃算力」"
-    },
-    {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#opinion",
-     "title": "OpenAI 的算力账：全栈如何把智能变便宜"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#company",
-     "title": "内存短缺致英伟达AI服务器涨价15%，算力成本向谁传导？"
-    },
-    {
-     "date": "2026-08-12",
-     "url": "/posts/2026-08-11-ai-morning-post/#research",
-     "title": "算力账单之外，还有一笔水费"
-    }
-   ]
-  },
-  {
    "name": "GitHub",
-   "score": 4.26,
+   "score": 4.03,
    "days": 7,
    "latest": {
     "date": "2026-09-07",
@@ -612,133 +701,49 @@
    ]
   },
   {
-   "name": "腾讯",
-   "score": 3.81,
-   "days": 8,
+   "name": "ChatGPT",
+   "score": 3.87,
+   "days": 7,
    "latest": {
-    "date": "2026-08-31",
-    "url": "/posts/2026-08-30-ai-morning-post/#model-release",
-    "title": "腾讯 Hy4 预览版：开源权重进入 770B 时代"
+    "date": "2026-09-11",
+    "url": "/posts/2026-09-10-ai-morning-post/#product",
+    "title": "ChatGPT 走向金融前台，内置行情与研报数据"
    },
    "links": [
     {
-     "date": "2026-08-31",
-     "url": "/posts/2026-08-30-ai-morning-post/#model-release",
-     "title": "腾讯 Hy4 预览版：开源权重进入 770B 时代"
-    },
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#model-release",
-     "title": "腾讯混元 Hy4 preview 开源，主打长程任务"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#opensource",
-     "title": "腾讯混元 Hy4 preview 开源，WorkBuddy 实测：能干活，但得盯着"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#opinion",
-     "title": "AI To B 战火烧到办公，腾讯阿里字节混战"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI 红队平台，全栈安全从口号变代码"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI-Infra-Guard：红队测评工具首次覆盖全栈"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI-Infra-Guard：给智能体做「全栈红队」"
-    },
-    {
-     "date": "2026-08-12",
-     "url": "/posts/2026-08-11-ai-morning-post/#product",
-     "title": "腾讯混元 WorldClaw：用 Agentic 方式生成 3D 开放世界"
-    }
-   ]
-  },
-  {
-   "name": "Agent Skills",
-   "score": 3.48,
-   "days": 5,
-   "latest": {
-    "date": "2026-09-07",
-    "url": "/posts/2026-09-06-ai-morning-post/#opensource",
-    "title": "Anthropic 开源 Agent Skills 官方仓库：Claude 技能有了标准形态"
-   },
-   "links": [
-    {
-     "date": "2026-09-07",
-     "url": "/posts/2026-09-06-ai-morning-post/#opensource",
-     "title": "Anthropic 开源 Agent Skills 官方仓库：Claude 技能有了标准形态"
-    },
-    {
-     "date": "2026-09-06",
-     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
-     "title": "Anthropic 与 Google 同日公开 Agent Skills"
-    },
-    {
-     "date": "2026-08-31",
-     "url": "/posts/2026-08-30-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 库"
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#product",
+     "title": "ChatGPT 走向金融前台，内置行情与研报数据"
     },
     {
      "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#opensource",
-     "title": "Anthropic 官方插件目录，Agent Skills 迎来官方秩序"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#opensource",
-     "title": "Agent Skills 霸榜 GitHub Trending，智能体技能包要站上 C 位"
-    }
-   ]
-  },
-  {
-   "name": "人形机器人",
-   "score": 3.29,
-   "days": 6,
-   "latest": {
-    "date": "2026-08-29",
-    "url": "/posts/2026-08-28-ai-morning-post/#company",
-    "title": "优必选中报：人形机器人收入同比增 1445%"
-   },
-   "links": [
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#company",
-     "title": "优必选中报：人形机器人收入同比增 1445%"
+     "url": "/posts/2026-08-27-ai-morning-post/#research",
+     "title": "OpenAI 千名学生研究：ChatGPT 提升原创性"
     },
     {
      "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#company",
-     "title": "软银拟 60 亿美元估值收购人形机器人公司 1X 多数股权"
+     "url": "/posts/2026-08-26-ai-morning-post/#product",
+     "title": "ChatGPT for Teachers 覆盖 55 个美国学区"
     },
     {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#opinion",
-     "title": "人形机器人：从竞技场跑进日常"
+     "date": "2026-08-22",
+     "url": "/posts/2026-08-21-ai-morning-post/#research",
+     "title": "研究：ChatGPT发布后三成新网页由AI撰写"
     },
     {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#company",
-     "title": "博士团队押注双足人形机器人一体化大脑，全自主开卡丁车"
+     "date": "2026-08-21",
+     "url": "/posts/2026-08-20-ai-morning-post/#product",
+     "title": "ChatGPT 接入 Apple Messages，可代用户发短信"
     },
     {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#product",
-     "title": "人形机器人完成自主乒乓球对局"
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#product",
+     "title": "记忆时间线：ChatGPT 开始记住你的每一次操作"
     },
     {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#company",
-     "title": "人形机器人公司宇树科技今日上市"
+     "date": "2026-08-14",
+     "url": "/posts/2026-08-13-ai-morning-post/#opinion",
+     "title": "OpenAI 报告：组织如何实际使用 ChatGPT"
     }
    ]
   }
