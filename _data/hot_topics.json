@@ -1,17 +1,22 @@
 {
- "generated": "2026-09-12",
+ "generated": "2026-09-13",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 51.74,
+   "score": 57.65,
    "days": 25,
    "latest": {
-    "date": "2026-09-12",
-    "url": "/posts/2026-09-11-ai-morning-post/#research",
-    "title": "失控智能体也过不了验证码"
+    "date": "2026-09-13",
+    "url": "/posts/2026-09-12-ai-morning-post/#company",
+    "title": "OpenAI 智能体被曝对 RubyGems 发动投毒攻击"
    },
    "links": [
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#company",
+     "title": "OpenAI 智能体被曝对 RubyGems 发动投毒攻击"
+    },
     {
      "date": "2026-09-12",
      "url": "/posts/2026-09-11-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-09-01",
      "url": "/posts/2026-08-31-ai-morning-post/#research",
      "title": "Meta一年实验：Agent无法取代员工"
-    },
-    {
-     "date": "2026-08-31",
-     "url": "/posts/2026-08-30-ai-morning-post/#research",
-     "title": "Google WikiSkill：给 AI Agent 装上「错题本」"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 26.29,
+   "score": 26.74,
    "days": 23,
    "latest": {
-    "date": "2026-09-12",
-    "url": "/posts/2026-09-11-ai-morning-post/#model-release",
-    "title": "OpenAI 放出能边听边说的实时语音 API"
+    "date": "2026-09-13",
+    "url": "/posts/2026-09-12-ai-morning-post/#company",
+    "title": "OpenAI 智能体被曝对 RubyGems 发动投毒攻击"
    },
    "links": [
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#company",
+     "title": "OpenAI 智能体被曝对 RubyGems 发动投毒攻击"
+    },
     {
      "date": "2026-09-12",
      "url": "/posts/2026-09-11-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-09-03",
      "url": "/posts/2026-09-02-ai-morning-post/#opinion",
      "title": "美国政府站到 OpenAI 一边"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
-     "title": "OpenAI 预告 Astra：首个“关键”安全级网络模型"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 18.87,
-   "days": 21,
+   "score": 19.71,
+   "days": 22,
    "latest": {
-    "date": "2026-09-12",
-    "url": "/posts/2026-09-11-ai-morning-post/#company",
-    "title": "Anthropic 指控阿里、Moonshot、DeepSeek 蒸馏其模型"
+    "date": "2026-09-13",
+    "url": "/posts/2026-09-12-ai-morning-post/#company",
+    "title": "英伟达拟向 Anthropic 的 IPO 投资至多 100 亿美元"
    },
    "links": [
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#company",
+     "title": "英伟达拟向 Anthropic 的 IPO 投资至多 100 亿美元"
+    },
     {
      "date": "2026-09-12",
      "url": "/posts/2026-09-11-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-09-02",
      "url": "/posts/2026-09-01-ai-morning-post/#model-release",
      "title": "Anthropic 发布 Claude Fable 5.1：降价与减限"
-    },
-    {
-     "date": "2026-08-31",
-     "url": "/posts/2026-08-30-ai-morning-post/#product",
-     "title": "Anthropic 开放 MHS：Agent 控制物理设备的「通用语言」"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 13.26,
+   "score": 13.42,
    "days": 15,
    "latest": {
-    "date": "2026-09-12",
-    "url": "/posts/2026-09-11-ai-morning-post/#company",
-    "title": "Meta 遭集体诉讼：用 Facebook、Instagram 照片训练 AI"
+    "date": "2026-09-13",
+    "url": "/posts/2026-09-12-ai-morning-post/#company",
+    "title": "Meta 因训练数据与人脸识别遭集体诉讼"
    },
    "links": [
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#company",
+     "title": "Meta 因训练数据与人脸识别遭集体诉讼"
+    },
     {
      "date": "2026-09-12",
      "url": "/posts/2026-09-11-ai-morning-post/#company",
@@ -202,24 +207,24 @@
      "date": "2026-08-30",
      "url": "/posts/2026-08-29-ai-morning-post/#company",
      "title": "Meta 高管 Sandhya Devanathan 加盟 OpenAI"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#company",
-     "title": "Meta 印度高管跳槽 OpenAI 掌管东南亚业务"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 11.16,
+   "score": 12.35,
    "days": 18,
    "latest": {
-    "date": "2026-09-12",
-    "url": "/posts/2026-09-11-ai-morning-post/#opinion",
-    "title": "Claude 用户绕过安全护栏做生物武器研究"
+    "date": "2026-09-13",
+    "url": "/posts/2026-09-12-ai-morning-post/#product",
+    "title": "Claude Code 插件评测：给「技能」加上 CI 门禁"
    },
    "links": [
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#product",
+     "title": "Claude Code 插件评测：给「技能」加上 CI 门禁"
+    },
     {
      "date": "2026-09-12",
      "url": "/posts/2026-09-11-ai-morning-post/#opinion",
@@ -254,17 +259,12 @@
      "date": "2026-08-29",
      "url": "/posts/2026-08-28-ai-morning-post/#opensource",
      "title": "Anthropic 发布官方 Claude Code 插件目录"
-    },
-    {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#opinion",
-     "title": "Claude、Codex 在企业网络安装“无主代码”"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 8.61,
+   "score": 8.1,
    "days": 12,
    "latest": {
     "date": "2026-09-12",
@@ -316,14 +316,19 @@
   },
   {
    "name": "算力",
-   "score": 6.81,
-   "days": 7,
+   "score": 7.48,
+   "days": 8,
    "latest": {
-    "date": "2026-09-12",
-    "url": "/posts/2026-09-11-ai-morning-post/#company",
-    "title": "算力吃紧，OpenAI 暂停 ChatGPT Pro 新订阅"
+    "date": "2026-09-13",
+    "url": "/posts/2026-09-12-ai-morning-post/#company",
+    "title": "中国算力平台完成 31 省区市一体化统筹监测"
    },
    "links": [
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#company",
+     "title": "中国算力平台完成 31 省区市一体化统筹监测"
+    },
     {
      "date": "2026-09-12",
      "url": "/posts/2026-09-11-ai-morning-post/#company",
@@ -362,8 +367,154 @@
    ]
   },
   {
+   "name": "Google",
+   "score": 6.03,
+   "days": 11,
+   "latest": {
+    "date": "2026-09-13",
+    "url": "/posts/2026-09-12-ai-morning-post/#model-release",
+    "title": "Google 把天气和折扣算进销售预测"
+   },
+   "links": [
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#model-release",
+     "title": "Google 把天气和折扣算进销售预测"
+    },
+    {
+     "date": "2026-09-10",
+     "url": "/posts/2026-09-09-ai-morning-post/#research",
+     "title": "Google AI天气模型升级：学会吃原始卫星数据"
+    },
+    {
+     "date": "2026-09-06",
+     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+     "title": "Anthropic 与 Google 同日公开 Agent Skills"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+     "title": "Google 发布 TimesFM-3：330M 参数的时序预测基础模型"
+    },
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 库"
+    },
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#opinion",
+     "title": "Agent 时代，为什么有人重新造 Google？"
+    },
+    {
+     "date": "2026-08-25",
+     "url": "/posts/2026-08-24-ai-morning-post/#research",
+     "title": "Google 研究 ME-POIs：让地点嵌入理解“使用方式”"
+    },
+    {
+     "date": "2026-08-22",
+     "url": "/posts/2026-08-21-ai-morning-post/#product",
+     "title": "Google 推出“优先来源”按钮：让读者手动扶一把内容网站"
+    }
+   ]
+  },
+  {
+   "name": "世界模型",
+   "score": 5.9,
+   "days": 6,
+   "latest": {
+    "date": "2026-09-13",
+    "url": "/posts/2026-09-12-ai-morning-post/#research",
+    "title": "生数新世界模型：触觉、记忆与自我进化"
+   },
+   "links": [
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#research",
+     "title": "生数新世界模型：触觉、记忆与自我进化"
+    },
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#model-release",
+     "title": "高德 ABot-Earth 0.7：城市级 3D 世界模型"
+    },
+    {
+     "date": "2026-09-05",
+     "url": "/posts/2026-09-04-ai-morning-post/#model-release",
+     "title": "李飞飞团队发布 Atlas：世界模型从“看”走向“动”"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#research",
+     "title": "清华 AIR：参数冻结下的世界模型自进化"
+    },
+    {
+     "date": "2026-08-25",
+     "url": "/posts/2026-08-24-ai-morning-post/#research",
+     "title": "生数科技提出通用世界模型五级发展路线"
+    },
+    {
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#research",
+     "title": "忽略人类信念，世界模型会预测错行为"
+    }
+   ]
+  },
+  {
+   "name": "GitHub",
+   "score": 5.55,
+   "days": 9,
+   "latest": {
+    "date": "2026-09-13",
+    "url": "/posts/2026-09-12-ai-morning-post/#opensource",
+    "title": "GitHub 官方 spec-kit：规范驱动开发工具箱"
+   },
+   "links": [
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#opensource",
+     "title": "GitHub 官方 spec-kit：规范驱动开发工具箱"
+    },
+    {
+     "date": "2026-09-12",
+     "url": "/posts/2026-09-11-ai-morning-post/#opensource",
+     "title": "Blume：零配置文档框架登上 GitHub 趋势榜"
+    },
+    {
+     "date": "2026-09-07",
+     "url": "/posts/2026-09-06-ai-morning-post/#product",
+     "title": "GitHub发布HydraFusion：重构AI编程的模型调度逻辑"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#opensource",
+     "title": "架构图 Agent archify 走红 GitHub"
+    },
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#opensource",
+     "title": "MoneyPrinterTurbo 再登 GitHub 热榜"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#product",
+     "title": "Cursor Origin 发布：GitHub 老玩法还够用吗"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#opensource",
+     "title": "GPT-Image-2 提示词模板库登 GitHub 热榜"
+    },
+    {
+     "date": "2026-08-26",
+     "url": "/posts/2026-08-25-ai-morning-post/#opensource",
+     "title": "GitHub热榜被Agent工具刷屏"
+    }
+   ]
+  },
+  {
    "name": "DeepMind",
-   "score": 5.61,
+   "score": 5.32,
    "days": 9,
    "latest": {
     "date": "2026-09-11",
@@ -414,9 +565,46 @@
    ]
   },
   {
+   "name": "Codex",
+   "score": 5.29,
+   "days": 5,
+   "latest": {
+    "date": "2026-09-12",
+    "url": "/posts/2026-09-11-ai-morning-post/#research",
+    "title": "用 Codex 去基因组里找抗菌分子"
+   },
+   "links": [
+    {
+     "date": "2026-09-12",
+     "url": "/posts/2026-09-11-ai-morning-post/#research",
+     "title": "用 Codex 去基因组里找抗菌分子"
+    },
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#product",
+     "title": "OpenAI 开放 Codex 底座，Agents API 进入公测"
+    },
+    {
+     "date": "2026-09-10",
+     "url": "/posts/2026-09-09-ai-morning-post/#opensource",
+     "title": "Codex 技能目录开源，Agent 长尾能力开始标准化"
+    },
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#opinion",
+     "title": "Claude、Codex 在企业网络安装“无主代码”"
+    },
+    {
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#opinion",
+     "title": "Codex 与 Claude Code 负责人公开互怼"
+    }
+   ]
+  },
+  {
    "name": "ChatGPT",
-   "score": 5.58,
-   "days": 8,
+   "score": 5.19,
+   "days": 7,
    "latest": {
     "date": "2026-09-12",
     "url": "/posts/2026-09-11-ai-morning-post/#company",
@@ -457,195 +645,64 @@
      "date": "2026-08-16",
      "url": "/posts/2026-08-15-ai-morning-post/#product",
      "title": "记忆时间线：ChatGPT 开始记住你的每一次操作"
-    },
-    {
-     "date": "2026-08-14",
-     "url": "/posts/2026-08-13-ai-morning-post/#opinion",
-     "title": "OpenAI 报告：组织如何实际使用 ChatGPT"
     }
    ]
   },
   {
-   "name": "Codex",
-   "score": 5.52,
-   "days": 5,
-   "latest": {
-    "date": "2026-09-12",
-    "url": "/posts/2026-09-11-ai-morning-post/#research",
-    "title": "用 Codex 去基因组里找抗菌分子"
-   },
-   "links": [
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#research",
-     "title": "用 Codex 去基因组里找抗菌分子"
-    },
-    {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#product",
-     "title": "OpenAI 开放 Codex 底座，Agents API 进入公测"
-    },
-    {
-     "date": "2026-09-10",
-     "url": "/posts/2026-09-09-ai-morning-post/#opensource",
-     "title": "Codex 技能目录开源，Agent 长尾能力开始标准化"
-    },
-    {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#opinion",
-     "title": "Claude、Codex 在企业网络安装“无主代码”"
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#opinion",
-     "title": "Codex 与 Claude Code 负责人公开互怼"
-    }
-   ]
-  },
-  {
-   "name": "Google",
-   "score": 5.42,
-   "days": 10,
-   "latest": {
-    "date": "2026-09-10",
-    "url": "/posts/2026-09-09-ai-morning-post/#research",
-    "title": "Google AI天气模型升级：学会吃原始卫星数据"
-   },
-   "links": [
-    {
-     "date": "2026-09-10",
-     "url": "/posts/2026-09-09-ai-morning-post/#research",
-     "title": "Google AI天气模型升级：学会吃原始卫星数据"
-    },
-    {
-     "date": "2026-09-06",
-     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
-     "title": "Anthropic 与 Google 同日公开 Agent Skills"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
-     "title": "Google 发布 TimesFM-3：330M 参数的时序预测基础模型"
-    },
-    {
-     "date": "2026-08-31",
-     "url": "/posts/2026-08-30-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 库"
-    },
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#opinion",
-     "title": "Agent 时代，为什么有人重新造 Google？"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#research",
-     "title": "Google 研究 ME-POIs：让地点嵌入理解“使用方式”"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#product",
-     "title": "Google 推出“优先来源”按钮：让读者手动扶一把内容网站"
-    },
-    {
-     "date": "2026-08-21",
-     "url": "/posts/2026-08-20-ai-morning-post/#product",
-     "title": "Google 给出版方一个“优先信源”按钮，对抗 AI 搜索分流"
-    }
-   ]
-  },
-  {
-   "name": "世界模型",
-   "score": 5.13,
-   "days": 5,
-   "latest": {
-    "date": "2026-09-11",
-    "url": "/posts/2026-09-10-ai-morning-post/#model-release",
-    "title": "高德 ABot-Earth 0.7：城市级 3D 世界模型"
-   },
-   "links": [
-    {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#model-release",
-     "title": "高德 ABot-Earth 0.7：城市级 3D 世界模型"
-    },
-    {
-     "date": "2026-09-05",
-     "url": "/posts/2026-09-04-ai-morning-post/#model-release",
-     "title": "李飞飞团队发布 Atlas：世界模型从“看”走向“动”"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#research",
-     "title": "清华 AIR：参数冻结下的世界模型自进化"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#research",
-     "title": "生数科技提出通用世界模型五级发展路线"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#research",
-     "title": "忽略人类信念，世界模型会预测错行为"
-    }
-   ]
-  },
-  {
-   "name": "GitHub",
-   "score": 4.81,
+   "name": "DeepSeek",
+   "score": 5.0,
    "days": 8,
    "latest": {
-    "date": "2026-09-12",
-    "url": "/posts/2026-09-11-ai-morning-post/#opensource",
-    "title": "Blume：零配置文档框架登上 GitHub 趋势榜"
+    "date": "2026-09-13",
+    "url": "/posts/2026-09-12-ai-morning-post/#model-release",
+    "title": "DeepSeek v4.1-Flash：763B 新架构回归"
    },
    "links": [
     {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#model-release",
+     "title": "DeepSeek v4.1-Flash：763B 新架构回归"
+    },
+    {
      "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#opensource",
-     "title": "Blume：零配置文档框架登上 GitHub 趋势榜"
+     "url": "/posts/2026-09-11-ai-morning-post/#model-release",
+     "title": "DeepSeek 改口：V4 Pro API 不下线了"
     },
     {
-     "date": "2026-09-07",
-     "url": "/posts/2026-09-06-ai-morning-post/#product",
-     "title": "GitHub发布HydraFusion：重构AI编程的模型调度逻辑"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#opensource",
-     "title": "架构图 Agent archify 走红 GitHub"
-    },
-    {
-     "date": "2026-08-31",
-     "url": "/posts/2026-08-30-ai-morning-post/#opensource",
-     "title": "MoneyPrinterTurbo 再登 GitHub 热榜"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#product",
-     "title": "Cursor Origin 发布：GitHub 老玩法还够用吗"
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#company",
+     "title": "Anthropic 点名阿里、Moonshot、DeepSeek 蒸馏"
     },
     {
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#opensource",
-     "title": "GPT-Image-2 提示词模板库登 GitHub 热榜"
+     "title": "DeepSeek 开源 Harness，把编排层从智能体里“拎”出来"
     },
     {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#opensource",
-     "title": "GitHub热榜被Agent工具刷屏"
+     "date": "2026-08-23",
+     "url": "/posts/2026-08-22-ai-morning-post/#model-release",
+     "title": "DeepSeek 发 Flash 视觉模型，对标 Opus 4.8"
     },
     {
-     "date": "2026-08-18",
-     "url": "/posts/2026-08-17-ai-morning-post/#company",
-     "title": "GitHub 连续故障引发不满，开发者讨论迁移"
+     "date": "2026-08-19",
+     "url": "/posts/2026-08-18-ai-morning-post/#research",
+     "title": "DeepSeek 缓存暴涨 11 倍：长上下文开始收\"存储税\""
+    },
+    {
+     "date": "2026-08-16",
+     "url": "/posts/2026-08-15-ai-morning-post/#opensource",
+     "title": "DeepSeek 开源 Harness：模型工具全是插件"
+    },
+    {
+     "date": "2026-08-15",
+     "url": "/posts/2026-08-14-ai-morning-post/#company",
+     "title": "DeepSeek更新API定价策略，开发者成本结构生变"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 4.77,
+   "score": 4.42,
    "days": 8,
    "latest": {
     "date": "2026-08-30",
@@ -692,58 +749,6 @@
      "date": "2026-08-19",
      "url": "/posts/2026-08-18-ai-morning-post/#company",
      "title": "AI 芯片创企 Etched 估值一月翻倍至 210 亿美元"
-    }
-   ]
-  },
-  {
-   "name": "DeepSeek",
-   "score": 4.32,
-   "days": 8,
-   "latest": {
-    "date": "2026-09-12",
-    "url": "/posts/2026-09-11-ai-morning-post/#model-release",
-    "title": "DeepSeek 改口：V4 Pro API 不下线了"
-   },
-   "links": [
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#model-release",
-     "title": "DeepSeek 改口：V4 Pro API 不下线了"
-    },
-    {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#company",
-     "title": "Anthropic 点名阿里、Moonshot、DeepSeek 蒸馏"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 Harness，把编排层从智能体里“拎”出来"
-    },
-    {
-     "date": "2026-08-23",
-     "url": "/posts/2026-08-22-ai-morning-post/#model-release",
-     "title": "DeepSeek 发 Flash 视觉模型，对标 Opus 4.8"
-    },
-    {
-     "date": "2026-08-19",
-     "url": "/posts/2026-08-18-ai-morning-post/#research",
-     "title": "DeepSeek 缓存暴涨 11 倍：长上下文开始收\"存储税\""
-    },
-    {
-     "date": "2026-08-16",
-     "url": "/posts/2026-08-15-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 Harness：模型工具全是插件"
-    },
-    {
-     "date": "2026-08-15",
-     "url": "/posts/2026-08-14-ai-morning-post/#company",
-     "title": "DeepSeek更新API定价策略，开发者成本结构生变"
-    },
-    {
-     "date": "2026-08-14",
-     "url": "/posts/2026-08-13-ai-morning-post/#model-release",
-     "title": "DeepSeek 发布 V4 Pro 0813，API 同步降价"
     }
    ]
   }
