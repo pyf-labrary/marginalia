@@ -1,17 +1,22 @@
 {
- "generated": "2026-09-18",
+ "generated": "2026-09-19",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 76.16,
+   "score": 80.0,
    "days": 24,
    "latest": {
-    "date": "2026-09-18",
-    "url": "/posts/2026-09-17-ai-morning-post/#model-release",
-    "title": "Gemini 3.8 Live：边说话边推理的语音 Agent"
+    "date": "2026-09-19",
+    "url": "/posts/2026-09-18-ai-morning-post/#model-release",
+    "title": "Gemini 3.8 Live：语音 Agent 的「沉默时刻」"
    },
    "links": [
+    {
+     "date": "2026-09-19",
+     "url": "/posts/2026-09-18-ai-morning-post/#model-release",
+     "title": "Gemini 3.8 Live：语音 Agent 的「沉默时刻」"
+    },
     {
      "date": "2026-09-18",
      "url": "/posts/2026-09-17-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-09-11",
      "url": "/posts/2026-09-10-ai-morning-post/#model-release",
      "title": "MiniCPM5-2B：小模型开始抢 Agent 入口"
-    },
-    {
-     "date": "2026-09-10",
-     "url": "/posts/2026-09-09-ai-morning-post/#product",
-     "title": "百度搭子接入小度：Agent 从管家走向“办事与创造”"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 32.87,
+   "score": 36.13,
    "days": 24,
    "latest": {
-    "date": "2026-09-18",
-    "url": "/posts/2026-09-17-ai-morning-post/#company",
-    "title": "OpenAI 洽谈新融资，估值或超 1.2 万亿美元"
+    "date": "2026-09-19",
+    "url": "/posts/2026-09-18-ai-morning-post/#company",
+    "title": "传 OpenAI 在深圳试制无屏 AI 硬件，2027 年上市"
    },
    "links": [
+    {
+     "date": "2026-09-19",
+     "url": "/posts/2026-09-18-ai-morning-post/#company",
+     "title": "传 OpenAI 在深圳试制无屏 AI 硬件，2027 年上市"
+    },
     {
      "date": "2026-09-18",
      "url": "/posts/2026-09-17-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-09-12",
      "url": "/posts/2026-09-11-ai-morning-post/#model-release",
      "title": "OpenAI 放出能边听边说的实时语音 API"
-    },
-    {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#company",
-     "title": "Astra 需求压垮系统，OpenAI 暂停 Pro 订阅"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 23.19,
-   "days": 23,
+   "score": 25.9,
+   "days": 24,
    "latest": {
-    "date": "2026-09-18",
-    "url": "/posts/2026-09-17-ai-morning-post/#company",
-    "title": "谷歌、英伟达、Anthropic 组队为数据中心找电"
+    "date": "2026-09-19",
+    "url": "/posts/2026-09-18-ai-morning-post/#company",
+    "title": "Anthropic 计划年底前建成 5 吉瓦算力"
    },
    "links": [
+    {
+     "date": "2026-09-19",
+     "url": "/posts/2026-09-18-ai-morning-post/#company",
+     "title": "Anthropic 计划年底前建成 5 吉瓦算力"
+    },
     {
      "date": "2026-09-18",
      "url": "/posts/2026-09-17-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-09-12",
      "url": "/posts/2026-09-11-ai-morning-post/#company",
      "title": "Anthropic 指控阿里、Moonshot、DeepSeek 蒸馏其模型"
-    },
-    {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#company",
-     "title": "Anthropic 点名阿里、Moonshot、DeepSeek 蒸馏"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 18.13,
-   "days": 20,
+   "score": 20.13,
+   "days": 21,
    "latest": {
-    "date": "2026-09-18",
-    "url": "/posts/2026-09-17-ai-morning-post/#company",
-    "title": "Anthropic：Claude 已主导公司 26% 的研发工作"
+    "date": "2026-09-19",
+    "url": "/posts/2026-09-18-ai-morning-post/#research",
+    "title": "三名研究员用 Claude 攻进 OpenAI 内部"
    },
    "links": [
+    {
+     "date": "2026-09-19",
+     "url": "/posts/2026-09-18-ai-morning-post/#research",
+     "title": "三名研究员用 Claude 攻进 OpenAI 内部"
+    },
     {
      "date": "2026-09-18",
      "url": "/posts/2026-09-17-ai-morning-post/#company",
@@ -202,17 +207,12 @@
      "date": "2026-09-12",
      "url": "/posts/2026-09-11-ai-morning-post/#opinion",
      "title": "Claude 用户绕过安全护栏做生物武器研究"
-    },
-    {
-     "date": "2026-09-07",
-     "url": "/posts/2026-09-06-ai-morning-post/#opensource",
-     "title": "Anthropic 开源 Agent Skills 官方仓库：Claude 技能有了标准形态"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 14.23,
+   "score": 13.32,
    "days": 16,
    "latest": {
     "date": "2026-09-17",
@@ -264,14 +264,19 @@
   },
   {
    "name": "阿里",
-   "score": 10.29,
-   "days": 14,
+   "score": 10.71,
+   "days": 15,
    "latest": {
-    "date": "2026-09-18",
-    "url": "/posts/2026-09-17-ai-morning-post/#opensource",
-    "title": "阿里开源 open-code-review"
+    "date": "2026-09-19",
+    "url": "/posts/2026-09-18-ai-morning-post/#opensource",
+    "title": "阿里开源 open-code-review：确定性流水线加 LLM"
    },
    "links": [
+    {
+     "date": "2026-09-19",
+     "url": "/posts/2026-09-18-ai-morning-post/#opensource",
+     "title": "阿里开源 open-code-review：确定性流水线加 LLM"
+    },
     {
      "date": "2026-09-18",
      "url": "/posts/2026-09-17-ai-morning-post/#opensource",
@@ -306,17 +311,64 @@
      "date": "2026-09-07",
      "url": "/posts/2026-09-06-ai-morning-post/#research",
      "title": "循环 Transformer 重返焦点，阿里此前已下注"
+    }
+   ]
+  },
+  {
+   "name": "算力",
+   "score": 7.19,
+   "days": 10,
+   "latest": {
+    "date": "2026-09-19",
+    "url": "/posts/2026-09-18-ai-morning-post/#company",
+    "title": "Anthropic 计划年底前建成 5 吉瓦算力"
+   },
+   "links": [
+    {
+     "date": "2026-09-19",
+     "url": "/posts/2026-09-18-ai-morning-post/#company",
+     "title": "Anthropic 计划年底前建成 5 吉瓦算力"
     },
     {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
-     "title": "阿里开源 Qwen3.8-27B，登顶开源榜但 Agent 适配待补"
+     "date": "2026-09-14",
+     "url": "/posts/2026-09-13-ai-morning-post/#company",
+     "title": "算力拉动 PCB 与光通信，产业链加速代际跃迁"
+    },
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#company",
+     "title": "中国算力平台完成 31 省区市一体化统筹监测"
+    },
+    {
+     "date": "2026-09-12",
+     "url": "/posts/2026-09-11-ai-morning-post/#company",
+     "title": "算力吃紧，OpenAI 暂停 ChatGPT Pro 新订阅"
+    },
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#company",
+     "title": "微软算力告急：数据中心容量要扩两倍以上"
+    },
+    {
+     "date": "2026-09-04",
+     "url": "/posts/2026-09-03-ai-morning-post/#company",
+     "title": "Anthropic双重补血：150亿美元信贷 + 35亿美元算力"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#model-release",
+     "title": "智谱 GLM-5.3-Flash：国产算力的普惠落点"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#company",
+     "title": "Anthropic 与 Nscale 签 45 亿美元算力大单，继续「吃算力」"
     }
    ]
   },
   {
    "name": "DeepMind",
-   "score": 6.74,
+   "score": 6.39,
    "days": 11,
    "latest": {
     "date": "2026-09-17",
@@ -367,60 +419,8 @@
    ]
   },
   {
-   "name": "算力",
-   "score": 6.58,
-   "days": 9,
-   "latest": {
-    "date": "2026-09-14",
-    "url": "/posts/2026-09-13-ai-morning-post/#company",
-    "title": "算力拉动 PCB 与光通信，产业链加速代际跃迁"
-   },
-   "links": [
-    {
-     "date": "2026-09-14",
-     "url": "/posts/2026-09-13-ai-morning-post/#company",
-     "title": "算力拉动 PCB 与光通信，产业链加速代际跃迁"
-    },
-    {
-     "date": "2026-09-13",
-     "url": "/posts/2026-09-12-ai-morning-post/#company",
-     "title": "中国算力平台完成 31 省区市一体化统筹监测"
-    },
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#company",
-     "title": "算力吃紧，OpenAI 暂停 ChatGPT Pro 新订阅"
-    },
-    {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#company",
-     "title": "微软算力告急：数据中心容量要扩两倍以上"
-    },
-    {
-     "date": "2026-09-04",
-     "url": "/posts/2026-09-03-ai-morning-post/#company",
-     "title": "Anthropic双重补血：150亿美元信贷 + 35亿美元算力"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#model-release",
-     "title": "智谱 GLM-5.3-Flash：国产算力的普惠落点"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#company",
-     "title": "Anthropic 与 Nscale 签 45 亿美元算力大单，继续「吃算力」"
-    },
-    {
-     "date": "2026-08-26",
-     "url": "/posts/2026-08-25-ai-morning-post/#opinion",
-     "title": "OpenAI 的算力账：全栈如何把智能变便宜"
-    }
-   ]
-  },
-  {
    "name": "GPT-6 Astra",
-   "score": 6.55,
+   "score": 6.29,
    "days": 8,
    "latest": {
     "date": "2026-09-18",
@@ -472,7 +472,7 @@
   },
   {
    "name": "Codex",
-   "score": 6.13,
+   "score": 5.87,
    "days": 6,
    "latest": {
     "date": "2026-09-17",
@@ -513,8 +513,60 @@
    ]
   },
   {
+   "name": "腾讯",
+   "score": 5.42,
+   "days": 10,
+   "latest": {
+    "date": "2026-09-19",
+    "url": "/posts/2026-09-18-ai-morning-post/#opensource",
+    "title": "腾讯开源 BrowserSkill：让 Agent 用你的真实浏览器"
+   },
+   "links": [
+    {
+     "date": "2026-09-19",
+     "url": "/posts/2026-09-18-ai-morning-post/#opensource",
+     "title": "腾讯开源 BrowserSkill：让 Agent 用你的真实浏览器"
+    },
+    {
+     "date": "2026-09-18",
+     "url": "/posts/2026-09-17-ai-morning-post/#opensource",
+     "title": "腾讯开源 WeKnora"
+    },
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#opensource",
+     "title": "腾讯 teamai-cli：把 AI 塞进团队协作"
+    },
+    {
+     "date": "2026-08-31",
+     "url": "/posts/2026-08-30-ai-morning-post/#model-release",
+     "title": "腾讯 Hy4 预览版：开源权重进入 770B 时代"
+    },
+    {
+     "date": "2026-08-30",
+     "url": "/posts/2026-08-29-ai-morning-post/#model-release",
+     "title": "腾讯混元 Hy4 preview 开源，主打长程任务"
+    },
+    {
+     "date": "2026-08-29",
+     "url": "/posts/2026-08-28-ai-morning-post/#opensource",
+     "title": "腾讯混元 Hy4 preview 开源，WorkBuddy 实测：能干活，但得盯着"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#opinion",
+     "title": "AI To B 战火烧到办公，腾讯阿里字节混战"
+    },
+    {
+     "date": "2026-08-24",
+     "url": "/posts/2026-08-23-ai-morning-post/#opensource",
+     "title": "腾讯开源 AI 红队平台，全栈安全从口号变代码"
+    }
+   ]
+  },
+  {
    "name": "世界模型",
-   "score": 5.52,
+   "score": 5.23,
    "days": 7,
    "latest": {
     "date": "2026-09-15",
@@ -561,7 +613,7 @@
   },
   {
    "name": "芯片",
-   "score": 5.48,
+   "score": 5.06,
    "days": 9,
    "latest": {
     "date": "2026-09-17",
@@ -613,7 +665,7 @@
   },
   {
    "name": "GitHub",
-   "score": 4.97,
+   "score": 4.68,
    "days": 9,
    "latest": {
     "date": "2026-09-14",
@@ -664,86 +716,34 @@
    ]
   },
   {
-   "name": "Google",
-   "score": 4.03,
-   "days": 9,
-   "latest": {
-    "date": "2026-09-13",
-    "url": "/posts/2026-09-12-ai-morning-post/#model-release",
-    "title": "Google 把天气和折扣算进销售预测"
-   },
-   "links": [
-    {
-     "date": "2026-09-13",
-     "url": "/posts/2026-09-12-ai-morning-post/#model-release",
-     "title": "Google 把天气和折扣算进销售预测"
-    },
-    {
-     "date": "2026-09-10",
-     "url": "/posts/2026-09-09-ai-morning-post/#research",
-     "title": "Google AI天气模型升级：学会吃原始卫星数据"
-    },
-    {
-     "date": "2026-09-06",
-     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
-     "title": "Anthropic 与 Google 同日公开 Agent Skills"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
-     "title": "Google 发布 TimesFM-3：330M 参数的时序预测基础模型"
-    },
-    {
-     "date": "2026-08-31",
-     "url": "/posts/2026-08-30-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 库"
-    },
-    {
-     "date": "2026-08-30",
-     "url": "/posts/2026-08-29-ai-morning-post/#opinion",
-     "title": "Agent 时代，为什么有人重新造 Google？"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#research",
-     "title": "Google 研究 ME-POIs：让地点嵌入理解“使用方式”"
-    },
-    {
-     "date": "2026-08-22",
-     "url": "/posts/2026-08-21-ai-morning-post/#product",
-     "title": "Google 推出“优先来源”按钮：让读者手动扶一把内容网站"
-    }
-   ]
-  },
-  {
-   "name": "MoE",
+   "name": "Gemini 3.8 Live",
    "score": 3.81,
    "days": 4,
    "latest": {
-    "date": "2026-09-18",
-    "url": "/posts/2026-09-17-ai-morning-post/#opensource",
-    "title": "colibri：纯 C 零依赖跑前沿 MoE"
+    "date": "2026-09-19",
+    "url": "/posts/2026-09-18-ai-morning-post/#model-release",
+    "title": "Gemini 3.8 Live：语音 Agent 的「沉默时刻」"
    },
    "links": [
     {
+     "date": "2026-09-19",
+     "url": "/posts/2026-09-18-ai-morning-post/#model-release",
+     "title": "Gemini 3.8 Live：语音 Agent 的「沉默时刻」"
+    },
+    {
      "date": "2026-09-18",
-     "url": "/posts/2026-09-17-ai-morning-post/#opensource",
-     "title": "colibri：纯 C 零依赖跑前沿 MoE"
+     "url": "/posts/2026-09-17-ai-morning-post/#model-release",
+     "title": "Gemini 3.8 Live：边说话边推理的语音 Agent"
     },
     {
      "date": "2026-09-17",
-     "url": "/posts/2026-09-16-ai-morning-post/#opensource",
-     "title": "colibri：纯 C 引擎，把 MoE 权重留在磁盘上"
+     "url": "/posts/2026-09-16-ai-morning-post/#model-release",
+     "title": "谷歌发 Gemini 3.8 Live，语音 Agent 开始拼单位成本"
     },
     {
      "date": "2026-09-16",
-     "url": "/posts/2026-09-15-ai-morning-post/#opensource",
-     "title": "colibri：纯 C 把前沿 MoE 模型塞进你自己的机器"
-    },
-    {
-     "date": "2026-09-15",
-     "url": "/posts/2026-09-14-ai-morning-post/#opensource",
-     "title": "colibri：纯 C 跑前沿 MoE，专家权重从磁盘流式读"
+     "url": "/posts/2026-09-15-ai-morning-post/#model-release",
+     "title": "谷歌 Gemini 3.8 Live：语音 Agent 进入生产级"
     }
    ]
   }
