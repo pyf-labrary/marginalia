@@ -1,17 +1,22 @@
 {
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 80.0,
+   "score": 85.77,
    "days": 24,
    "latest": {
-    "date": "2026-09-19",
-    "url": "/posts/2026-09-18-ai-morning-post/#model-release",
-    "title": "Gemini 3.8 Live：语音 Agent 的「沉默时刻」"
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#research",
+    "title": "DeepMind 让智能体在梦里复盘失败"
    },
    "links": [
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#research",
+     "title": "DeepMind 让智能体在梦里复盘失败"
+    },
     {
      "date": "2026-09-19",
      "url": "/posts/2026-09-18-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-09-12",
      "url": "/posts/2026-09-11-ai-morning-post/#research",
      "title": "失控智能体也过不了验证码"
-    },
-    {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#model-release",
-     "title": "MiniCPM5-2B：小模型开始抢 Agent 入口"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 36.13,
-   "days": 24,
+   "score": 36.29,
+   "days": 25,
    "latest": {
-    "date": "2026-09-19",
-    "url": "/posts/2026-09-18-ai-morning-post/#company",
-    "title": "传 OpenAI 在深圳试制无屏 AI 硬件，2027 年上市"
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#company",
+    "title": "研究员借 Claude 72 小时内攻入 OpenAI 内部系统"
    },
    "links": [
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#company",
+     "title": "研究员借 Claude 72 小时内攻入 OpenAI 内部系统"
+    },
     {
      "date": "2026-09-19",
      "url": "/posts/2026-09-18-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-09-13",
      "url": "/posts/2026-09-12-ai-morning-post/#company",
      "title": "OpenAI 智能体被曝对 RubyGems 发动投毒攻击"
-    },
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#model-release",
-     "title": "OpenAI 放出能边听边说的实时语音 API"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 25.9,
+   "score": 27.45,
    "days": 24,
    "latest": {
-    "date": "2026-09-19",
-    "url": "/posts/2026-09-18-ai-morning-post/#company",
-    "title": "Anthropic 计划年底前建成 5 吉瓦算力"
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#company",
+    "title": "Anthropic 被曝运营一间生物学实验室"
    },
    "links": [
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#company",
+     "title": "Anthropic 被曝运营一间生物学实验室"
+    },
     {
      "date": "2026-09-19",
      "url": "/posts/2026-09-18-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-09-13",
      "url": "/posts/2026-09-12-ai-morning-post/#company",
      "title": "英伟达拟向 Anthropic 的 IPO 投资至多 100 亿美元"
-    },
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#company",
-     "title": "Anthropic 指控阿里、Moonshot、DeepSeek 蒸馏其模型"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 20.13,
+   "score": 23.0,
    "days": 21,
    "latest": {
-    "date": "2026-09-19",
-    "url": "/posts/2026-09-18-ai-morning-post/#research",
-    "title": "三名研究员用 Claude 攻进 OpenAI 内部"
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#research",
+    "title": "Claude 承担 Anthropic 约 26% 的研发，最高 3 万 Agent 并行"
    },
    "links": [
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#research",
+     "title": "Claude 承担 Anthropic 约 26% 的研发，最高 3 万 Agent 并行"
+    },
     {
      "date": "2026-09-19",
      "url": "/posts/2026-09-18-ai-morning-post/#research",
@@ -202,24 +207,24 @@
      "date": "2026-09-13",
      "url": "/posts/2026-09-12-ai-morning-post/#product",
      "title": "Claude Code 插件评测：给「技能」加上 CI 门禁"
-    },
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#opinion",
-     "title": "Claude 用户绕过安全护栏做生物武器研究"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 13.32,
+   "score": 13.35,
    "days": 16,
    "latest": {
-    "date": "2026-09-17",
-    "url": "/posts/2026-09-16-ai-morning-post/#company",
-    "title": "Meta 推 AI 订阅计划 Meta One"
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#product",
+    "title": "Meta 发布 Muse for Mac：能读你文件、邮件、日历的桌面 Agent"
    },
    "links": [
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#product",
+     "title": "Meta 发布 Muse for Mac：能读你文件、邮件、日历的桌面 Agent"
+    },
     {
      "date": "2026-09-17",
      "url": "/posts/2026-09-16-ai-morning-post/#company",
@@ -254,24 +259,24 @@
      "date": "2026-09-09",
      "url": "/posts/2026-09-08-ai-morning-post/#opinion",
      "title": "Meta 下架\"脱衣\"AI 广告，为何总是慢半拍？"
-    },
-    {
-     "date": "2026-09-07",
-     "url": "/posts/2026-09-06-ai-morning-post/#model-release",
-     "title": "Meta 发布实时音频模型：给 AI 助手装上「常开听觉」"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 10.71,
-   "days": 15,
+   "score": 11.1,
+   "days": 16,
    "latest": {
-    "date": "2026-09-19",
-    "url": "/posts/2026-09-18-ai-morning-post/#opensource",
-    "title": "阿里开源 open-code-review：确定性流水线加 LLM"
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#model-release",
+    "title": "阿里开源医疗模型，覆盖近 150 种疾病"
    },
    "links": [
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#model-release",
+     "title": "阿里开源医疗模型，覆盖近 150 种疾病"
+    },
     {
      "date": "2026-09-19",
      "url": "/posts/2026-09-18-ai-morning-post/#opensource",
@@ -306,17 +311,116 @@
      "date": "2026-09-11",
      "url": "/posts/2026-09-10-ai-morning-post/#company",
      "title": "Anthropic 点名阿里、Moonshot、DeepSeek 蒸馏"
+    }
+   ]
+  },
+  {
+   "name": "GPT-6 Astra",
+   "score": 8.03,
+   "days": 9,
+   "latest": {
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#research",
+    "title": "机械臂安全基准：GPT-6 Astra 与 Claude Fable 双双未过"
+   },
+   "links": [
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#research",
+     "title": "机械臂安全基准：GPT-6 Astra 与 Claude Fable 双双未过"
+    },
+    {
+     "date": "2026-09-18",
+     "url": "/posts/2026-09-17-ai-morning-post/#research",
+     "title": "GPT-6 Astra 十小时破译 83 年纳粹密电"
+    },
+    {
+     "date": "2026-09-17",
+     "url": "/posts/2026-09-16-ai-morning-post/#model-release",
+     "title": "OpenAI 发布 GPT-6 Astra，直指编程与电脑操作"
+    },
+    {
+     "date": "2026-09-15",
+     "url": "/posts/2026-09-14-ai-morning-post/#model-release",
+     "title": "Perplexity 把生产系统交给 GPT-6 Astra 托管"
+    },
+    {
+     "date": "2026-09-14",
+     "url": "/posts/2026-09-13-ai-morning-post/#model-release",
+     "title": "GPT-6 Astra 进生产系统：从写代码到改生产、见客户"
+    },
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#model-release",
+     "title": "GPT-6 Astra：空间推理出现阶跃"
+    },
+    {
+     "date": "2026-09-10",
+     "url": "/posts/2026-09-09-ai-morning-post/#model-release",
+     "title": "GPT-6 Astra：模型能力开始按岗位定义"
     },
     {
      "date": "2026-09-07",
-     "url": "/posts/2026-09-06-ai-morning-post/#research",
-     "title": "循环 Transformer 重返焦点，阿里此前已下注"
+     "url": "/posts/2026-09-06-ai-morning-post/#model-release",
+     "title": "GPT-6 Astra 开发者版：提示词、禁用词与内部提速"
+    }
+   ]
+  },
+  {
+   "name": "DeepMind",
+   "score": 7.03,
+   "days": 12,
+   "latest": {
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#research",
+    "title": "DeepMind 让智能体在梦里复盘失败"
+   },
+   "links": [
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#research",
+     "title": "DeepMind 让智能体在梦里复盘失败"
+    },
+    {
+     "date": "2026-09-17",
+     "url": "/posts/2026-09-16-ai-morning-post/#company",
+     "title": "DeepMind 成立跨学科研究所，追问 AGI 的大问题"
+    },
+    {
+     "date": "2026-09-16",
+     "url": "/posts/2026-09-15-ai-morning-post/#research",
+     "title": "DeepMind 实验首现 AI 智能体「举报」作弊同伴"
+    },
+    {
+     "date": "2026-09-15",
+     "url": "/posts/2026-09-14-ai-morning-post/#research",
+     "title": "DeepMind 首次观察到智能体「吹哨」"
+    },
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#opinion",
+     "title": "DeepMind 前公关：曾有不能说的词"
+    },
+    {
+     "date": "2026-09-09",
+     "url": "/posts/2026-09-08-ai-morning-post/#research",
+     "title": "DeepMind 发布 AlphaGenome Atlas，覆盖 90 亿 DNA 变异"
+    },
+    {
+     "date": "2026-09-06",
+     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+     "title": "DeepMind 开源 WeatherNext 2 全球天气模型代码"
+    },
+    {
+     "date": "2026-09-03",
+     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
+     "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
     }
    ]
   },
   {
    "name": "算力",
-   "score": 7.19,
+   "score": 6.77,
    "days": 10,
    "latest": {
     "date": "2026-09-19",
@@ -367,119 +471,20 @@
    ]
   },
   {
-   "name": "DeepMind",
-   "score": 6.39,
-   "days": 11,
-   "latest": {
-    "date": "2026-09-17",
-    "url": "/posts/2026-09-16-ai-morning-post/#company",
-    "title": "DeepMind 成立跨学科研究所，追问 AGI 的大问题"
-   },
-   "links": [
-    {
-     "date": "2026-09-17",
-     "url": "/posts/2026-09-16-ai-morning-post/#company",
-     "title": "DeepMind 成立跨学科研究所，追问 AGI 的大问题"
-    },
-    {
-     "date": "2026-09-16",
-     "url": "/posts/2026-09-15-ai-morning-post/#research",
-     "title": "DeepMind 实验首现 AI 智能体「举报」作弊同伴"
-    },
-    {
-     "date": "2026-09-15",
-     "url": "/posts/2026-09-14-ai-morning-post/#research",
-     "title": "DeepMind 首次观察到智能体「吹哨」"
-    },
-    {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#opinion",
-     "title": "DeepMind 前公关：曾有不能说的词"
-    },
-    {
-     "date": "2026-09-09",
-     "url": "/posts/2026-09-08-ai-morning-post/#research",
-     "title": "DeepMind 发布 AlphaGenome Atlas，覆盖 90 亿 DNA 变异"
-    },
-    {
-     "date": "2026-09-06",
-     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
-     "title": "DeepMind 开源 WeatherNext 2 全球天气模型代码"
-    },
-    {
-     "date": "2026-09-03",
-     "url": "/posts/2026-09-02-ai-morning-post/#opinion",
-     "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#opinion",
-     "title": "DeepMind 新负责人：前沿领先是唯一目标"
-    }
-   ]
-  },
-  {
-   "name": "GPT-6 Astra",
-   "score": 6.29,
-   "days": 8,
-   "latest": {
-    "date": "2026-09-18",
-    "url": "/posts/2026-09-17-ai-morning-post/#research",
-    "title": "GPT-6 Astra 十小时破译 83 年纳粹密电"
-   },
-   "links": [
-    {
-     "date": "2026-09-18",
-     "url": "/posts/2026-09-17-ai-morning-post/#research",
-     "title": "GPT-6 Astra 十小时破译 83 年纳粹密电"
-    },
-    {
-     "date": "2026-09-17",
-     "url": "/posts/2026-09-16-ai-morning-post/#model-release",
-     "title": "OpenAI 发布 GPT-6 Astra，直指编程与电脑操作"
-    },
-    {
-     "date": "2026-09-15",
-     "url": "/posts/2026-09-14-ai-morning-post/#model-release",
-     "title": "Perplexity 把生产系统交给 GPT-6 Astra 托管"
-    },
-    {
-     "date": "2026-09-14",
-     "url": "/posts/2026-09-13-ai-morning-post/#model-release",
-     "title": "GPT-6 Astra 进生产系统：从写代码到改生产、见客户"
-    },
-    {
-     "date": "2026-09-13",
-     "url": "/posts/2026-09-12-ai-morning-post/#model-release",
-     "title": "GPT-6 Astra：空间推理出现阶跃"
-    },
-    {
-     "date": "2026-09-10",
-     "url": "/posts/2026-09-09-ai-morning-post/#model-release",
-     "title": "GPT-6 Astra：模型能力开始按岗位定义"
-    },
-    {
-     "date": "2026-09-07",
-     "url": "/posts/2026-09-06-ai-morning-post/#model-release",
-     "title": "GPT-6 Astra 开发者版：提示词、禁用词与内部提速"
-    },
-    {
-     "date": "2026-09-05",
-     "url": "/posts/2026-09-04-ai-morning-post/#model-release",
-     "title": "GPT-6 Astra：更强更贵，但单任务更省"
-    }
-   ]
-  },
-  {
    "name": "Codex",
-   "score": 5.87,
-   "days": 6,
+   "score": 6.61,
+   "days": 7,
    "latest": {
-    "date": "2026-09-17",
-    "url": "/posts/2026-09-16-ai-morning-post/#opinion",
-    "title": "Codex 已经接管 OpenAI 的软件工厂"
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#product",
+    "title": "Unity 官方插件接入 Claude Code 与 Codex，防 Agent 用过时教程"
    },
    "links": [
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#product",
+     "title": "Unity 官方插件接入 Claude Code 与 Codex，防 Agent 用过时教程"
+    },
     {
      "date": "2026-09-17",
      "url": "/posts/2026-09-16-ai-morning-post/#opinion",
@@ -514,14 +519,19 @@
   },
   {
    "name": "腾讯",
-   "score": 5.42,
-   "days": 10,
+   "score": 6.06,
+   "days": 11,
    "latest": {
-    "date": "2026-09-19",
-    "url": "/posts/2026-09-18-ai-morning-post/#opensource",
-    "title": "腾讯开源 BrowserSkill：让 Agent 用你的真实浏览器"
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#opensource",
+    "title": "腾讯开源 BrowserSkill：让 Agent 用你的已登录浏览器"
    },
    "links": [
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#opensource",
+     "title": "腾讯开源 BrowserSkill：让 Agent 用你的已登录浏览器"
+    },
     {
      "date": "2026-09-19",
      "url": "/posts/2026-09-18-ai-morning-post/#opensource",
@@ -556,17 +566,12 @@
      "date": "2026-08-27",
      "url": "/posts/2026-08-26-ai-morning-post/#opinion",
      "title": "AI To B 战火烧到办公，腾讯阿里字节混战"
-    },
-    {
-     "date": "2026-08-24",
-     "url": "/posts/2026-08-23-ai-morning-post/#opensource",
-     "title": "腾讯开源 AI 红队平台，全栈安全从口号变代码"
     }
    ]
   },
   {
    "name": "世界模型",
-   "score": 5.23,
+   "score": 4.94,
    "days": 7,
    "latest": {
     "date": "2026-09-15",
@@ -613,7 +618,7 @@
   },
   {
    "name": "芯片",
-   "score": 5.06,
+   "score": 4.65,
    "days": 9,
    "latest": {
     "date": "2026-09-17",
@@ -664,86 +669,71 @@
    ]
   },
   {
-   "name": "GitHub",
-   "score": 4.68,
-   "days": 9,
-   "latest": {
-    "date": "2026-09-14",
-    "url": "/posts/2026-09-13-ai-morning-post/#opensource",
-    "title": "spec-kit：GitHub 把「先写规范」做成工具"
-   },
-   "links": [
-    {
-     "date": "2026-09-14",
-     "url": "/posts/2026-09-13-ai-morning-post/#opensource",
-     "title": "spec-kit：GitHub 把「先写规范」做成工具"
-    },
-    {
-     "date": "2026-09-13",
-     "url": "/posts/2026-09-12-ai-morning-post/#opensource",
-     "title": "GitHub 官方 spec-kit：规范驱动开发工具箱"
-    },
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#opensource",
-     "title": "Blume：零配置文档框架登上 GitHub 趋势榜"
-    },
-    {
-     "date": "2026-09-07",
-     "url": "/posts/2026-09-06-ai-morning-post/#product",
-     "title": "GitHub发布HydraFusion：重构AI编程的模型调度逻辑"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#opensource",
-     "title": "架构图 Agent archify 走红 GitHub"
-    },
-    {
-     "date": "2026-08-31",
-     "url": "/posts/2026-08-30-ai-morning-post/#opensource",
-     "title": "MoneyPrinterTurbo 再登 GitHub 热榜"
-    },
-    {
-     "date": "2026-08-29",
-     "url": "/posts/2026-08-28-ai-morning-post/#product",
-     "title": "Cursor Origin 发布：GitHub 老玩法还够用吗"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#opensource",
-     "title": "GPT-Image-2 提示词模板库登 GitHub 热榜"
-    }
-   ]
-  },
-  {
-   "name": "Gemini 3.8 Live",
-   "score": 3.81,
+   "name": "RSI",
+   "score": 4.58,
    "days": 4,
    "latest": {
-    "date": "2026-09-19",
-    "url": "/posts/2026-09-18-ai-morning-post/#model-release",
-    "title": "Gemini 3.8 Live：语音 Agent 的「沉默时刻」"
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#research",
+    "title": "智谱 GLM 团队长文谈 RSI：GLM-5.3 摸到门槛"
    },
    "links": [
     {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#research",
+     "title": "智谱 GLM 团队长文谈 RSI：GLM-5.3 摸到门槛"
+    },
+    {
      "date": "2026-09-19",
-     "url": "/posts/2026-09-18-ai-morning-post/#model-release",
-     "title": "Gemini 3.8 Live：语音 Agent 的「沉默时刻」"
+     "url": "/posts/2026-09-18-ai-morning-post/#research",
+     "title": "智谱：GLM-5.3 摸到 RSI 的门槛"
     },
     {
      "date": "2026-09-18",
      "url": "/posts/2026-09-17-ai-morning-post/#model-release",
-     "title": "Gemini 3.8 Live：边说话边推理的语音 Agent"
+     "title": "智谱公布 RSI 首个成果：GLM 参与构建 GLM"
     },
     {
-     "date": "2026-09-17",
-     "url": "/posts/2026-09-16-ai-morning-post/#model-release",
-     "title": "谷歌发 Gemini 3.8 Live，语音 Agent 开始拼单位成本"
+     "date": "2026-09-15",
+     "url": "/posts/2026-09-14-ai-morning-post/#research",
+     "title": "openJiuwen 发布双维度 RSI 框架"
+    }
+   ]
+  },
+  {
+   "name": "Gemini",
+   "score": 4.52,
+   "days": 5,
+   "latest": {
+    "date": "2026-09-20",
+    "url": "/posts/2026-09-19-ai-morning-post/#model-release",
+    "title": "Qwen3.8-Omni-Flash：多模态追平 Gemini，价格更低"
+   },
+   "links": [
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#model-release",
+     "title": "Qwen3.8-Omni-Flash：多模态追平 Gemini，价格更低"
     },
     {
      "date": "2026-09-16",
-     "url": "/posts/2026-09-15-ai-morning-post/#model-release",
-     "title": "谷歌 Gemini 3.8 Live：语音 Agent 进入生产级"
+     "url": "/posts/2026-09-15-ai-morning-post/#product",
+     "title": "苹果 iOS 27 上线：Siri 换 Gemini，欧盟先被挡在门外"
+    },
+    {
+     "date": "2026-09-07",
+     "url": "/posts/2026-09-06-ai-morning-post/#model-release",
+     "title": "Lyria 3.5 进 Gemini：音乐生成从工具变成对话"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#model-release",
+     "title": "谷歌 Gemini 引入智能体式视频理解"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#opinion",
+     "title": "谷歌 Gemini 有品牌混乱问题，AI 行业也一样"
     }
    ]
   }
