@@ -138,6 +138,9 @@ h2 em{font-style:normal;color:var(--gold)}
 
 /* S6 */
 .row3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.playlink{display:inline-flex;align-self:flex-start;gap:18px;align-items:baseline;margin-top:56px;padding:18px 30px;border:1.5px solid rgba(232,176,74,.7);border-radius:10px;color:var(--gold2);font-size:30px;font-weight:700;text-decoration:none}
+.playlink span{font-family:var(--mono);font-size:20px;font-weight:400;color:var(--ink2)}
+.playlink:hover{background:rgba(232,176,74,.12)}
 .find{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;margin-top:40px}
 
 /* S7 编码 */
@@ -316,7 +319,7 @@ table.tier tr.me td{background:rgba(232,176,74,.08)}
   <div class="l">
     <div class="kick">Junqi · Neural AI <b>2026 · 09</b></div>
     <h1>教神经网络<br>下<em>四国暗棋</em></h1>
-    <p class="dek">4049 局 QQ 复盘，一张家用显卡，训练 37 分钟。它在浏览器里陪你下完一整局，想一手四十来毫秒，不联网。</p>
+    <p class="dek">4049 局 QQ 复盘，一张家用显卡，训练 37 分钟。它在浏览器里陪你下完一整局，想一手三十来毫秒，不联网。</p>
     <div class="meta">
       <div><b>69 万</b>个训练局面</div>
       <div><b>498 万</b>参数</div>
@@ -648,13 +651,13 @@ table.tier tr.me td{background:rgba(232,176,74,.08)}
 <section class="slide" data-title="浏览器">
   <div class="kick">13 <b>部署</b></div>
   <h2>搬进浏览器：<em>不联网</em>也能下</h2>
-  <p class="dek">模型、推理库、布局库都是本地文件，网页打开就能下。第一次加载约 34 MB，之后走浏览器缓存。</p>
+  <p class="dek">模型、推理库、布局库都是本地文件，网页打开就能下。第一次加载约 8 MB（压缩后），之后走浏览器缓存。</p>
   <div class="body">
     <div class="web">
       <div class="flow">
-        <div class="step"><div class="no">1</div><div><h4>PyTorch → ONNX</h4><p>训练好的权重导出成 20 MB 的 ONNX 文件，输入是展开好的浮点特征</p></div></div>
+        <div class="step"><div class="no">1</div><div><h4>PyTorch → ONNX → int8</h4><p>导出成 20 MB 的 ONNX，再把权重量化成 8 位整数，缩到 5.4 MB。547 个局面里首选走法和原版 99.1% 一致</p></div></div>
         <div class="step"><div class="no">2</div><div><h4>特征编码用 JS 重写一遍</h4><p>和 Python 版逐位比对，最大误差 1.4×10⁻⁶，网页里的局面和训练时一模一样</p></div></div>
-        <div class="step"><div class="no">3</div><div><h4><span class="t" data-tip="微软的推理库编译成 WebAssembly，在浏览器里直接跑 ONNX 模型，不需要服务器。">onnxruntime-web</span> 单线程推理</h4><p>多线程要服务器配额外的安全响应头，静态托管给不了；单线程实测一手 43 毫秒</p></div></div>
+        <div class="step"><div class="no">3</div><div><h4><span class="t" data-tip="微软的推理库编译成 WebAssembly，在浏览器里直接跑 ONNX 模型，不需要服务器。">onnxruntime-web</span> 单线程推理</h4><p>多线程要服务器配额外的安全响应头，静态托管给不了；单线程实测一手 30 毫秒</p></div></div>
         <div class="step"><div class="no">4</div><div><h4>开局布局从 7308 套经典布局里抽</h4><p>模型只学了走子，没学布局。你也能在「经典库」里翻、换子、存成自己的</p></div></div>
       </div>
       <div>
@@ -706,6 +709,7 @@ table.tier tr.me td{background:rgba(232,176,74,.08)}
     <div><b>37<small style="font-size:30px"> 分钟</small></b><span>训练时长</span></div>
     <div><b>100:0</b><span>对原来的引擎</span></div>
   </div>
+  <a class="playlink" href="https://game.panyifeng.xyz/junqi/" target="_blank" rel="noopener">和它下一局 <span>game.panyifeng.xyz/junqi</span></a>
 </section>
 
 <div id="tip"></div>
