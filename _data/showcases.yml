@@ -1,5 +1,12 @@
 # Showcase 索引数据 —— 供首页卡片 / 搜索 / 归档页使用。
 # showcases.md 仍是人读的详细介绍页；这里是机器可读的目录。
+- slug: junqi-ai
+  image: /assets/img/site/covers/junqi-ai.jpg
+  title: 四国军棋神经网络
+  url: /showcases/junqi-ai/
+  date: 2026-09-24
+  tags: [游戏设计, 神经网络, 四国军棋, 模仿学习, Transformer]
+  description: 用 4049 局 QQ 游戏复盘给四国暗棋训练神经网络对手：逆向 .jgs 复盘格式、逐手重放校验、130 token 局面编码与暗子排除法、498 万参数 Transformer 家用显卡训练 37 分钟、浏览器内 ONNX 推理。含一整局真实对局的自动播放复盘与胜率曲线。
 - slug: studiobinder-zh
   image: /assets/img/site/covers/studiobinder-zh.jpg
   title: 电影导演技巧公开课 · StudioBinder 中文版

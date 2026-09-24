@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>四国军棋神经网络</title>
+<meta name="description" content="从 4049 局 QQ 复盘训练一个四国军棋神经网络：数据、逆向、编码、模型、训练、对战与浏览器部署，附一局自动播放的真实对局。">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{
+  --bg:#16180f; --bg2:#1d2014; --panel:#252919; --panel2:#2c3120; --line:#3a3f28; --line2:#4a5033;
+  --ink:#efe9d2; --ink2:#c2bca1; --ink3:#8d8870;
+  --gold:#e8b04a; --gold2:#f3cf7a;
+  --orange:#f08c1e; --green:#9cc846; --blue:#4a93cc; --purple:#b46ac4; --red:#e2603f;
+  --paper:#f3ecd6; --paper-ink:#24220f;
+  --serif:"JQSerif","Noto Serif CJK SC","Source Han Serif SC",serif;
+  --sans:"JQSans","Noto Sans CJK SC","Source Han Sans SC",sans-serif;
+  --mono:"JQMono","DejaVu Sans Mono",monospace;
+  /* 棋盘（取自游戏 style.css） */
+  --rail:#ccd0b8; --rail-edge:#8e9270; --road:#b2c95f; --camp:#c08040; --slot:#9aa374;
+  --p-orange:#d56d00; --p-orange-hi:#f08c1e; --p-orange-lo:#a04f00;
+  --p-purple:#8d439d; --p-purple-hi:#ac5cbd; --p-purple-lo:#662c74;
+  --p-green:#7fae2a; --p-green-hi:#9cc846; --p-green-lo:#5b7f16;
+  --p-blue:#25689c; --p-blue-hi:#3d87c0; --p-blue-lo:#164a75;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#0e0f09;overflow:hidden}
+body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#deck{position:relative;width:1920px;height:1080px;flex:none;transform-origin:center center;background:var(--bg);overflow:hidden}
+.slide{position:absolute;inset:0;padding:92px 128px 96px;opacity:0;visibility:hidden;transition:opacity .35s ease;display:flex;flex-direction:column}
+.slide.on{opacity:1;visibility:visible}
+.slide::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(1200px 700px at 88% 8%, rgba(232,176,74,.07), transparent 60%),
+    radial-gradient(900px 600px at 0% 100%, rgba(156,200,70,.05), transparent 60%)}
+.slide > *{position:relative}
+
+/* 通用排版 */
+.kick{font-family:var(--mono);font-size:18px;letter-spacing:.24em;color:var(--gold);text-transform:uppercase;display:flex;gap:18px;align-items:center}
+.kick b{color:var(--ink3);font-weight:400}
+h1,h2{font-family:var(--serif);font-weight:900;letter-spacing:.01em;color:var(--ink)}
+h2{font-size:64px;line-height:1.18;margin-top:22px}
+h2 em{font-style:normal;color:var(--gold)}
+.dek{font-size:27px;line-height:1.7;color:var(--ink2);margin-top:22px;max-width:1340px}
+.dek b{color:var(--ink);font-weight:700}
+.body{flex:1;min-height:0;margin-top:48px}
+.mono{font-family:var(--mono)}
+.muted{color:var(--ink3)}
+.gold{color:var(--gold)}
+.note{font-size:21px;line-height:1.7;color:var(--ink3)}
+.note b{color:var(--ink2);font-weight:500}
+.t{border-bottom:1px dashed rgba(232,176,74,.6);cursor:help}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:30px 32px}
+.card h3{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.3;color:var(--ink)}
+.card p{font-size:21px;line-height:1.7;color:var(--ink2);margin-top:12px}
+.card .lab{font-family:var(--mono);font-size:15px;letter-spacing:.16em;color:var(--ink3);text-transform:uppercase}
+.card.hot{border-color:rgba(232,176,74,.7);background:linear-gradient(180deg,#322c18,#272414)}
+.tag{display:inline-block;font-family:var(--mono);font-size:15px;letter-spacing:.08em;padding:4px 10px;border-radius:5px;border:1px solid var(--line2);color:var(--ink2);margin:10px 8px 0 0}
+.tag.y{border-color:rgba(232,176,74,.6);color:var(--gold2)}
+
+.big{font-family:var(--sans);font-weight:700;letter-spacing:-.01em;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.stat .big{font-size:84px}
+.stat .cap{font-size:21px;color:var(--ink2);margin-top:14px;line-height:1.5}
+
+.frame{border-radius:12px;overflow:hidden;border:1px solid var(--line2);box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.frame img{display:block;width:100%;height:auto}
+.figcap{font-size:17px;color:var(--ink3);margin-top:12px;font-family:var(--mono);letter-spacing:.04em}
+
+/* 页脚 */
+#chrome{position:absolute;left:0;right:0;bottom:0;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 128px;z-index:20;pointer-events:none;font-family:var(--mono);font-size:15px;letter-spacing:.14em;color:var(--ink3)}
+#bar{position:absolute;left:0;bottom:0;height:3px;background:var(--gold);transition:width .35s;z-index:21}
+#chrome .hint{opacity:.7}
+
+/* 封面 */
+.cover{padding:0;display:grid;grid-template-columns:840px 1fr}
+.cover .l{padding:120px 0 96px 128px;display:flex;flex-direction:column;z-index:2}
+.cover h1{font-size:104px;line-height:1.12;margin-top:40px}
+.cover h1 em{font-style:normal;color:var(--gold)}
+.cover .dek{font-size:28px;max-width:640px;margin-top:36px}
+.cover .meta{margin-top:auto;display:flex;gap:44px}
+.cover .meta div{font-size:18px;color:var(--ink3);line-height:1.6}
+.cover .meta b{display:block;font-family:var(--sans);font-size:34px;color:var(--ink);font-weight:700}
+.cover .r{position:relative;overflow:hidden}
+.cover .r img{position:absolute;left:0;top:50%;transform:translateY(-50%);width:1180px;opacity:.92;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 18%);mask-image:linear-gradient(90deg,transparent 0,#000 18%)}
+.cover .r .cap{position:absolute;right:56px;bottom:72px;font-family:var(--mono);font-size:15px;letter-spacing:.1em;color:var(--ink2);background:rgba(22,24,15,.8);padding:8px 14px;border-radius:6px}
+
+/* S2 对比 */
+.cmp{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.cmp .card{display:flex;flex-direction:column;min-height:300px}
+.cmp .yr{font-family:var(--mono);font-size:17px;color:var(--ink3);margin-top:auto;padding-top:18px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.facts .f{border-top:2px solid var(--line2);padding-top:22px}
+.facts .f b{font-family:var(--sans);font-size:44px;color:var(--gold);font-weight:700;display:block;line-height:1}
+.facts .f span{display:block;font-size:21px;line-height:1.65;color:var(--ink2);margin-top:14px}
+
+/* S3 两条路 */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.two .card{padding:38px 40px}
+.two ul{list-style:none;margin-top:22px}
+.two li{font-size:22px;line-height:1.6;color:var(--ink2);padding:12px 0 12px 30px;position:relative;border-top:1px solid var(--line)}
+.two li::before{content:"";position:absolute;left:4px;top:24px;width:10px;height:10px;border-radius:2px;background:var(--ink3)}
+.two .hot li::before{background:var(--gold)}
+.two li b{color:var(--ink);font-weight:500}
+
+/* S4 漏斗 */
+.funnel{display:flex;flex-direction:column;gap:14px}
+.fr{display:grid;grid-template-columns:330px 1fr 250px;align-items:center;gap:26px}
+.fr .n{font-size:22px;color:var(--ink2);text-align:right;line-height:1.35}
+.fr .n small{display:block;font-size:16px;color:var(--ink3)}
+.fr .trk{height:58px;background:var(--bg2);border-radius:8px;position:relative;overflow:hidden}
+.fr .fill{position:absolute;left:0;top:0;bottom:0;border-radius:8px;background:linear-gradient(90deg,#6d5a2a,var(--gold))}
+.fr .fill.dim{background:linear-gradient(90deg,#3d4228,#59603c)}
+.fr .v{font-family:var(--sans);font-size:34px;font-weight:700;color:var(--ink)}
+.fr .v small{font-size:17px;color:var(--ink3);font-weight:400;margin-left:8px}
+
+/* S5 字节图 */
+.hexwrap{display:grid;grid-template-columns:1fr 520px;gap:40px}
+.hex{background:#11130b;border:1px solid var(--line);border-radius:12px;padding:26px 30px;font-family:var(--mono);font-size:21px;line-height:1.9}
+.hex .row{display:flex;gap:22px;white-space:nowrap}
+.hex .off{color:var(--ink3);width:92px;flex:none}
+.hex .by span{padding:2px 3px;border-radius:4px}
+.hex .sec{font-size:15px;letter-spacing:.14em;color:var(--ink3);margin:14px 0 4px;font-family:var(--mono)}
+.hex .sec:first-child{margin-top:0}
+.h-hd{background:rgba(232,176,74,.22);color:var(--gold2)}
+.h-ct{background:rgba(74,147,204,.28);color:#bfe0fa}
+.h-cl{background:rgba(240,140,30,.28);color:#ffd2a0}
+.h-nm{background:rgba(141,136,112,.35);color:transparent;text-shadow:0 0 9px rgba(239,233,210,.55)}
+.h-ly{background:rgba(156,200,70,.26);color:#e3f5b8}
+.h-ev{background:rgba(180,106,196,.3);color:#f0d2f7}
+.legend{display:flex;flex-direction:column;gap:18px}
+.legend .it{display:grid;grid-template-columns:22px 1fr;gap:16px;align-items:start}
+.legend .sw{width:22px;height:22px;border-radius:5px;margin-top:5px}
+.legend .it div{font-size:21px;line-height:1.6;color:var(--ink2)}
+.legend .it b{color:var(--ink);font-weight:500}
+
+/* S6 */
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.find{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;margin-top:40px}
+
+/* S7 编码 */
+.enc{display:grid;grid-template-columns:560px 1fr;gap:56px;align-items:start}
+.tokens{display:grid;grid-template-columns:repeat(13,1fr);gap:6px}
+.tokens i{display:block;aspect-ratio:1;border-radius:4px;background:var(--panel2);border:1px solid var(--line)}
+.tokens i.o{background:rgba(240,140,30,.55);border-color:var(--orange)}
+.tokens i.g{background:rgba(156,200,70,.5);border-color:var(--green)}
+.tokens i.p{background:rgba(180,106,196,.5);border-color:var(--purple)}
+.tokens i.b{background:rgba(74,147,204,.5);border-color:var(--blue)}
+.tokens i.x{background:var(--gold);border-color:var(--gold2)}
+.dims{display:flex;height:74px;border-radius:10px;overflow:hidden;border:1px solid var(--line2)}
+.dims div{display:flex;flex-direction:column;justify-content:center;padding:0 16px;font-size:17px;color:var(--paper-ink);line-height:1.25;border-right:2px solid var(--bg)}
+.dims div b{font-family:var(--mono);font-size:22px}
+.dimtxt{display:grid;grid-template-columns:1fr;gap:10px;margin-top:28px}
+.dimtxt div{font-size:20px;line-height:1.65;color:var(--ink2)}
+.dimtxt div b{color:var(--ink);font-weight:500}
+
+/* S8 推断 */
+.infer{display:flex;flex-direction:column;gap:22px}
+.st{display:grid;grid-template-columns:420px 1fr 90px;gap:30px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px 28px}
+.st .ev{font-size:22px;line-height:1.5;color:var(--ink)}
+.st .ev small{display:block;font-size:17px;color:var(--ink3);margin-top:4px}
+.chips{display:flex;gap:8px;flex-wrap:nowrap}
+.chips span{font-family:var(--serif);font-weight:700;font-size:20px;padding:8px 9px;border-radius:6px;background:var(--p-orange);color:#fff;border:1px solid var(--p-orange-lo);white-space:nowrap}
+.chips span.x{background:transparent;color:var(--ink3);border-color:var(--line2);text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px;opacity:.55}
+.st .cnt{font-family:var(--sans);font-size:44px;font-weight:700;color:var(--gold);text-align:right}
+
+/* S9 模型 */
+.arch{display:grid;grid-template-columns:300px 60px 420px 60px 1fr;align-items:center}
+.arch .blk{background:var(--panel);border:1px solid var(--line2);border-radius:14px;padding:26px 28px}
+.arch .blk h4{font-family:var(--serif);font-size:27px;font-weight:700}
+.arch .blk p{font-size:19px;line-height:1.6;color:var(--ink2);margin-top:10px}
+.arch .arr{text-align:center;font-family:var(--mono);font-size:34px;color:var(--gold)}
+.arch .stack{display:flex;flex-direction:column;gap:9px}
+.arch .stack div{height:34px;border-radius:7px;background:linear-gradient(90deg,#3b3f27,#4b5132);border:1px solid var(--line2);font-family:var(--mono);font-size:15px;color:var(--ink2);display:flex;align-items:center;padding:0 16px;letter-spacing:.06em}
+.arch .heads{display:flex;flex-direction:column;gap:22px}
+.arch .heads .blk.hot{border-color:rgba(232,176,74,.7)}
+.kv{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:52px}
+
+/* S10 */
+.train{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.cfg{list-style:none}
+.cfg li{display:grid;grid-template-columns:200px 1fr;gap:20px;font-size:22px;line-height:1.5;padding:16px 0;border-top:1px solid var(--line)}
+.cfg li span:first-child{color:var(--ink3);font-size:19px;padding-top:2px}
+.cfg li b{font-family:var(--mono);font-weight:700;color:var(--ink)}
+table.tier{width:100%;border-collapse:collapse;font-size:20px}
+table.tier th{font-family:var(--mono);font-size:14px;letter-spacing:.14em;color:var(--ink3);font-weight:400;text-align:left;padding:0 12px 14px}
+table.tier td{padding:18px 12px;border-top:1px solid var(--line);color:var(--ink2);line-height:1.5;vertical-align:top}
+table.tier td:first-child{color:var(--ink);font-weight:500;width:290px}
+table.tier tr.me td{background:rgba(232,176,74,.08)}
+
+/* S11 曲线 */
+.charts{display:grid;grid-template-columns:1.25fr 1fr;gap:40px}
+.chart h4{font-family:var(--serif);font-size:26px;font-weight:700}
+.chart .sub{font-size:18px;color:var(--ink3);margin-top:6px}
+.chart svg{display:block;margin-top:18px;overflow:visible}
+.chart .ax{stroke:var(--line2);stroke-width:1}
+.chart .grid{stroke:var(--line);stroke-width:1}
+.chart .tk{fill:var(--ink3);font-family:var(--mono);font-size:15px}
+.chart .base{stroke:var(--ink3);stroke-width:1.5;stroke-dasharray:6 6}
+.chart .baselab{fill:var(--ink3);font-size:16px}
+.chart .ln{fill:none;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.chart .dt{stroke:var(--bg);stroke-width:3}
+.chart .endlab{font-family:var(--mono);font-size:18px;font-weight:700;fill:var(--ink)}
+.chart .cross{stroke:var(--ink2);stroke-width:1;opacity:0}
+.chart .rd{font-family:var(--mono);font-size:16px;fill:var(--ink)}
+.lg{display:flex;gap:26px;margin-top:14px;font-size:18px;color:var(--ink2)}
+.lg i{display:inline-block;width:22px;height:4px;border-radius:2px;vertical-align:middle;margin-right:8px}
+
+/* S12 */
+.versus{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
+.score{font-family:var(--sans);font-weight:700;font-size:210px;line-height:.9;color:var(--ink);letter-spacing:-.02em}
+.score em{font-style:normal;color:var(--gold)}
+.bars{display:flex;flex-direction:column;gap:22px;margin-top:10px}
+.bars .b{display:grid;grid-template-columns:220px 1fr 110px;gap:18px;align-items:center;font-size:20px;color:var(--ink2)}
+.bars .trk{height:30px;background:var(--bg2);border-radius:6px;overflow:hidden}
+.bars .trk div{height:100%;border-radius:6px}
+.bars .v{font-family:var(--sans);font-size:26px;font-weight:700;color:var(--ink);text-align:right}
+
+/* S13 复盘 */
+.rp{padding:64px 96px 76px;display:grid;grid-template-columns:900px 1fr;gap:56px}
+.rp .brd{position:relative;background:#3b3e21;border-radius:16px;border:1px solid var(--line2);height:900px}
+.rp svg#rp-svg{width:100%;height:100%;display:block;overflow:visible}
+.rp .side{display:flex;flex-direction:column;min-height:0}
+.rp h2{font-size:52px;margin-top:14px}
+.rp .dek{font-size:21px;margin-top:14px;line-height:1.65}
+.seats{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin-top:22px}
+.seats div{font-size:19px;color:var(--ink2);display:flex;align-items:center;gap:10px}
+.seats i{width:18px;height:12px;border-radius:3px;display:inline-block}
+.seats b{color:var(--ink);font-weight:500}
+.wp{margin-top:24px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 22px 10px}
+.wp .hd{display:flex;justify-content:space-between;align-items:baseline}
+.wp .hd span{font-size:17px;color:var(--ink3)}
+.wp .hd b{font-family:var(--sans);font-size:34px;color:var(--gold)}
+.wp svg{display:block;width:100%;cursor:pointer}
+.log{margin-top:20px;flex:1;min-height:0;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;overflow:hidden;
+  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 40%);mask-image:linear-gradient(180deg,transparent 0,#000 40%)}
+.log div{font-size:19px;line-height:1.5;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.log div.hit{color:var(--ink2)}
+.log div.now{color:var(--ink);font-weight:500}
+.log div.now.hit{color:var(--gold2)}
+.log div i{font-style:normal;font-family:var(--mono);font-size:16px;color:var(--ink3);display:inline-block;width:50px}
+.ctl{display:flex;gap:12px;margin-top:18px;align-items:center}
+.ctl button{font-family:var(--sans);font-size:18px;color:var(--ink);background:var(--panel2);border:1px solid var(--line2);border-radius:8px;padding:9px 18px;cursor:pointer}
+.ctl button:hover{border-color:var(--gold)}
+.ctl button.on{background:var(--gold);color:var(--paper-ink);border-color:var(--gold)}
+.ctl .pos{font-family:var(--mono);font-size:18px;color:var(--ink3);margin-left:auto}
+/* 棋盘（取自游戏 style.css，字体换本地子集） */
+.road{stroke:var(--road);stroke-width:.065;fill:none;opacity:.95}
+.rail{stroke:var(--rail-edge);stroke-width:.115;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.rail-tie{stroke:var(--rail);stroke-width:.075;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.cell-camp{fill:#3f4223;stroke:var(--camp);stroke-width:.10}
+.cell-slot{fill:rgba(0,0,0,.12);stroke:var(--slot);stroke-width:.018;opacity:.28}
+.cell-hq{fill:rgba(0,0,0,.16);stroke:var(--camp);stroke-width:.032;opacity:.6}
+.cell-slot.nine{fill:#3f4223;stroke:var(--rail);stroke-width:.055;opacity:.9}
+.cell-hit{fill:transparent}
+.piece rect.body{stroke-width:.022}
+.piece.orange rect.body{fill:var(--p-orange);stroke:var(--p-orange-lo)}
+.piece.purple rect.body{fill:var(--p-purple);stroke:var(--p-purple-lo)}
+.piece.green rect.body{fill:var(--p-green);stroke:var(--p-green-lo)}
+.piece.blue rect.body{fill:var(--p-blue);stroke:var(--p-blue-lo)}
+.piece line.hi{stroke-width:.028;opacity:.75}
+.piece.orange line.hi{stroke:var(--p-orange-hi)} .piece.purple line.hi{stroke:var(--p-purple-hi)}
+.piece.green line.hi{stroke:var(--p-green-hi)} .piece.blue line.hi{stroke:var(--p-blue-hi)}
+.piece text{fill:#fff;text-anchor:middle;dominant-baseline:central;pointer-events:none;font-family:var(--serif);font-weight:700}
+.piece text.two{font-size:.40px;letter-spacing:.005px}
+.piece text.one{font-size:.48px}
+.piece.last-moved rect.body{stroke:#ffe14d;stroke-width:.05}
+.piece.flag-shown rect.body{stroke:#ffd400;stroke-width:.06}
+.piece.dead{opacity:0;transition:opacity .3s}
+.route-line{stroke:#ffe14d;stroke-width:.09;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
+.route-arrow{fill:#ffe14d;stroke:rgba(0,0,0,.45);stroke-width:.015}
+.fx-boom{fill:none;stroke:#ff9a3a;stroke-width:.085;opacity:.9}
+.fx-text{font-size:.55px;font-weight:900;fill:#ffe14d;stroke:#6b1200;stroke-width:.045;paint-order:stroke;text-anchor:middle;font-family:var(--serif)}
+.brd .over{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.brd .over div{font-family:var(--serif);font-weight:900;font-size:64px;color:var(--gold2);background:rgba(22,24,15,.82);padding:18px 44px;border-radius:14px;border:1px solid var(--gold);opacity:0;transition:opacity .4s}
+.brd .over.on div{opacity:1}
+
+/* S14 */
+.web{display:grid;grid-template-columns:1fr 760px;gap:56px;align-items:start}
+.flow{display:flex;flex-direction:column;gap:16px}
+.flow .step{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px 26px}
+.flow .step .no{font-family:var(--mono);font-size:30px;font-weight:700;color:var(--gold)}
+.flow .step h4{font-family:var(--serif);font-size:25px;font-weight:700}
+.flow .step p{font-size:19px;line-height:1.6;color:var(--ink2);margin-top:6px}
+
+/* S15 */
+.next{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.lst{list-style:none}
+.lst li{display:grid;grid-template-columns:56px 1fr;gap:14px;padding:18px 0;border-top:1px solid var(--line);font-size:22px;line-height:1.6;color:var(--ink2)}
+.lst li b{color:var(--ink);font-weight:500}
+.lst li span.n{font-family:var(--mono);font-size:22px;color:var(--gold);font-weight:700}
+.lst.lim li span.n{color:var(--red)}
+
+/* 结尾 */
+.end{justify-content:center}
+.end h2{font-size:96px}
+.endstats{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;margin-top:72px}
+.endstats div{border-top:2px solid var(--gold);padding-top:22px}
+.endstats b{display:block;font-family:var(--sans);font-size:58px;font-weight:700;color:var(--ink);line-height:1}
+.endstats span{display:block;font-size:20px;color:var(--ink2);margin-top:14px}
+
+/* 术语浮层 */
+#tip{position:absolute;z-index:40;max-width:440px;background:var(--paper);color:var(--paper-ink);font-size:19px;line-height:1.6;padding:14px 18px;border-radius:10px;box-shadow:0 18px 40px rgba(0,0,0,.45);pointer-events:none;opacity:0;transition:opacity .15s}
+#tip.on{opacity:1}
+#tip::after{content:"";position:absolute;left:var(--cx,50%);top:100%;border:9px solid transparent;border-top-color:var(--paper);transform:translateX(-50%)}
+#tip.below::after{top:auto;bottom:100%;border-top-color:transparent;border-bottom-color:var(--paper)}
+</style>
+</head>
+<body>
+<div id="viewport"><div id="deck">
+
+<!-- 01 封面 -->
+<section class="slide cover" data-title="封面">
+  <div class="l">
+    <div class="kick">Junqi · Neural AI <b>2026 · 09</b></div>
+    <h1>教神经网络<br>下<em>四国暗棋</em></h1>
+    <p class="dek">4049 局 QQ 复盘，一张家用显卡，训练 37 分钟。它在浏览器里陪你下完一整局，想一手四十来毫秒，不联网。</p>
+    <div class="meta">
+      <div><b>69 万</b>个训练局面</div>
+      <div><b>498 万</b>参数</div>
+      <div><b>100 : 0</b>对旧引擎</div>
+    </div>
+  </div>
+  <div class="r">
+    <img src="img/play.jpg" alt="游戏实机截图：四国大战中盘，北东西三家是神经网络">
+    <div class="cap">实机截图 · 南方是你，其余三家都是神经网络</div>
+  </div>
+</section>
+
+<!-- 02 难在哪 -->
+<section class="slide" data-title="难在哪">
+  <div class="kick">01 <b>为什么难</b></div>
+  <h2>四国军棋难在<em>看不见</em>，又是<em>四个人</em></h2>
+  <p class="dek">棋类 AI 的里程碑大多是两人对局、双方看得见全部棋子。四国军棋两样都不占，开源世界里几乎没有像样的 AI。</p>
+  <div class="body">
+    <div class="cmp">
+      <div class="card"><div class="lab">围棋</div><h3>双方全看得见</h3><p>两个人，信息完全公开，搜索能算到底。</p><div class="yr">AlphaGo · 2016</div></div>
+      <div class="card"><div class="lab">德州扑克</div><h3>看不见底牌</h3><p>有隐藏信息，但一手牌几轮下注就结束。</p><div class="yr">Pluribus · 2019</div></div>
+      <div class="card"><div class="lab">Stratego 陆战棋</div><h3>暗子，两个人</h3><p>和军棋最像：棋子背面朝上，碰了才知道大小。</p><div class="yr">DeepNash · 2022</div></div>
+      <div class="card hot"><div class="lab" style="color:var(--gold)">四国军棋</div><h3>暗子，四个人，两两结盟</h3><p>要猜三家的暗子，还要和一个不能说话的队友配合。</p><div class="yr" style="color:var(--gold)">这个项目</div></div>
+    </div>
+    <div class="facts">
+      <div class="f"><b>100</b><span>四家各 25 子，开局全部背面朝上。能看到的只有「谁碰了谁、谁赢了」</span></div>
+      <div class="f"><b>162</b><span>一局中位数 162 手（4151 局 QQ 复盘实测），四家轮流，每家要走四十来手</span></div>
+      <div class="f"><b>54</b><span>轮到你时平均有 54 种合法走法，工兵在铁路上能一口气跑很远</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 两条路 -->
+<section class="slide" data-title="路线">
+  <div class="kick">02 <b>路线</b></div>
+  <h2>先<em>模仿人</em>，以后再和自己下</h2>
+  <p class="dek">训练棋类 AI 有两条路。数据现成、算力有限的时候，先走第一条。</p>
+  <div class="body">
+    <div class="two">
+      <div class="card hot">
+        <div class="lab" style="color:var(--gold)">这次做的</div>
+        <h3><span class="t" data-tip="Behavior Cloning：把人类对局里每个局面和那一手配成一道题，训练网络去猜人会走哪步。">模仿学习</span>（行为克隆）</h3>
+        <ul>
+          <li><b>学什么：</b>给一个局面，猜人类高手下一步走哪</li>
+          <li><b>要什么：</b>大量对局记录，算力要求低，一张消费级显卡就够</li>
+          <li><b>上限：</b>大致是数据里那些人的水平</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="lab">下一步</div>
+        <h3><span class="t" data-tip="Reinforcement Learning：模型自己和自己下，赢了强化这些走法，输了削弱。AlphaZero、DeepNash 都是这条路。">强化学习</span>（自对弈）</h3>
+        <ul>
+          <li><b>学什么：</b>自己跟自己下，按输赢调整</li>
+          <li><b>要什么：</b>海量对局模拟，算力是主要成本</li>
+          <li><b>上限：</b>可以超过人，也可能学出人看不懂的怪招</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note" style="margin-top:34px">微软的麻将 AI Suphx 就是先用人类牌谱做监督学习，再上强化学习。<b>模仿学习的模型正好当自对弈的起点</b>，从随机乱走开始会贵得多。</p>
+  </div>
+</section>
+
+<!-- 04 数据 -->
+<section class="slide" data-title="数据">
+  <div class="kick">03 <b>数据</b></div>
+  <h2>复盘从哪来</h2>
+  <p class="dek">QQ 游戏每局可以存一个 <span class="mono gold">.jgs</span> 复盘文件。玩家在网盘、论坛和 QQ 群里分享了很多年，一压缩包动辄几百局。</p>
+  <div class="body">
+    <div class="funnel">
+      <div class="fr"><div class="n">收集到的压缩包<small>网盘 · 论坛 · QQ 群</small></div><div class="trk" style="background:none;border:1.5px dashed var(--line2)"></div><div class="v">44<small>个</small></div></div>
+      <div class="fr"><div class="n">解压、按内容去重<small>QQ 整局 + 联众 + 布局文件</small></div><div class="trk"><div class="fill dim" style="width:100%"></div></div><div class="v">6122<small>份</small></div></div>
+      <div class="fr"><div class="n">QQ 整局复盘<small>四家布局 + 每一手</small></div><div class="trk"><div class="fill" style="width:67.8%"></div></div><div class="v">4151<small>局</small></div></div>
+      <div class="fr"><div class="n">引擎逐手重放全对<small>规则、结果都对得上</small></div><div class="trk"><div class="fill" style="width:66.9%"></div></div><div class="v">4094<small>局</small></div></div>
+      <div class="fr"><div class="n">进入训练集<small>四人局，每手一个样本</small></div><div class="trk"><div class="fill" style="width:66.1%"></div></div><div class="v">4049<small>局</small></div></div>
+    </div>
+    <div class="row3" style="margin-top:44px">
+      <div class="stat"><div class="big">69<span style="font-size:44px"> 万</span></div><div class="cap">训练局面，其中 10% 的对局留作验证集</div></div>
+      <div class="stat"><div class="big">171</div><div class="cap">平均每局手数。1 万局大约能凑出 170 万个样本</div></div>
+      <div class="stat"><div class="big">7308</div><div class="cap">套经典布局，来自「一万个经典军棋布局」合集，去重后给 AI 开局用</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 逆向 -->
+<section class="slide" data-title="逆向格式">
+  <div class="kick">04 <b>拆文件</b></div>
+  <h2>把 QQ 的复盘文件拆开</h2>
+  <p class="dek">.jgs 是没有公开文档的二进制格式。下面是一局真实复盘的开头几十个字节（昵称和 QQ 号已打码）。</p>
+  <div class="body">
+    <div class="hexwrap">
+      <div class="hex">
+        <div class="sec">文件头</div>
+        <div class="row"><span class="off">0x0000</span><span class="by"><span class="h-hd">51 51 47 61 6D 65 20 4A 51 53</span> 00 00 01 00 01 00</span></div>
+        <div class="row"><span class="off">0x0010</span><span class="by">8C 01 C6 0D 01 00 01 00 FF 04 <span class="h-ct">39 01</span> 89 75 64 00</span></div>
+        <div class="sec">第一家（黄方）· 88 字节</div>
+        <div class="row"><span class="off">0x0020</span><span class="by"><span class="h-cl">00</span> 00 00 00 00 00 00 00 <span class="h-nm">A1 BE C8 BA D3 A2 A1 BF</span></span></div>
+        <div class="row"><span class="off">0x0030</span><span class="by"><span class="h-nm">53 4B 59 00 00 00 00 00 00 00 00 00</span> <span class="h-ly">05 0D 09 06</span></span></div>
+        <div class="row"><span class="off">0x0040</span><span class="by"><span class="h-ly">0B 07 00 0D 00 09 0B 0A 00 04 04 08 00 0C 00 07</span></span></div>
+        <div class="row"><span class="off">0x0050</span><span class="by"><span class="h-ly">08 0D 03 03 0B 0A 0C 03 02 0C</span> 00 00 <span class="h-nm">DD D5 BD 02</span></span></div>
+        <div class="sec">走子事件 · 每条 10 字节</div>
+        <div class="row"><span class="off">0x019C</span><span class="by"><span class="h-ev">5F 18 0C 08 0C 07</span> 00 00 00 00 <span class="h-ev">5F 10 07 03 07 04</span></span></div>
+      </div>
+      <div class="legend">
+        <div class="it"><i class="sw h-hd"></i><div><b>文件头</b> 「QQGame JQS」，用来认出这是 QQ 军棋复盘</div></div>
+        <div class="it"><i class="sw h-ct"></i><div><b>事件数</b> 小端 <span class="mono">0x0139</span>，这局一共 313 个事件</div></div>
+        <div class="it"><i class="sw h-cl"></i><div><b>颜色</b> 黄 0 · 蓝 1 · 绿 2 · 紫 3，决定这家坐哪个方位</div></div>
+        <div class="it"><i class="sw h-ly"></i><div><b>布局</b> 6 行 × 5 列兵种码，第一行 <span class="mono">05 0D 09 06 0B</span> 就是「司令 工兵 团长 军长 连长」，0 是行营空位</div></div>
+        <div class="it"><i class="sw h-ev"></i><div><b>走子</b> <span class="mono">5F</span> 开头，后跟碰子结果、起点、终点。坐标在一张 17×17 的全局网格上，四家的布局要按方位转 0°/90°/180°/270° 对上</div></div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:26px">字段布局参考了开源项目 myjgs 的头文件；坐标怎么旋转、碰子结果几位代表什么，是拿自己的引擎逐手重放对出来的。</p>
+  </div>
+</section>
+
+<!-- 06 校验 -->
+<section class="slide" data-title="重放校验">
+  <div class="kick">05 <b>校验</b></div>
+  <h2>用自己的引擎把 <em>69 万手</em>逐手重放</h2>
+  <p class="dek">每一手都要在自家引擎里走一遍：起点必须有子、走法必须合法、碰子结果必须和 QQ 记下的一致。对不上的整局不要。</p>
+  <div class="body">
+    <div class="row3">
+      <div class="card"><div class="big" style="font-size:72px">697,590</div><p>手重放完毕，覆盖 4151 局</p></div>
+      <div class="card"><div class="big" style="font-size:72px">3</div><p>手走法不合法，属于文件截断或损坏</p></div>
+      <div class="card"><div class="big" style="font-size:72px">6</div><p>次碰子结果不一致，原因是某家退出后 QQ 仍把它的子留在棋盘上</p></div>
+    </div>
+    <div class="find">
+      <div class="card hot">
+        <div class="lab" style="color:var(--gold)">重放揪出的规则差异</div>
+        <h3 style="margin-top:12px">炸弹撞上军旗：QQ 判扛旗，炸弹也没了</h3>
+        <p>我们原来的规则是炸弹扛旗后留在原地。复盘里 17 局都是炸弹和军旗一起消失，于是改了游戏规则，和 QQ 对齐。</p>
+      </div>
+      <div class="card">
+        <div class="lab">为什么非做不可</div>
+        <h3 style="margin-top:12px">规则不一致，学到的东西就用不上</h3>
+        <p>模型是在自家引擎里下棋的。训练数据只要有一处和引擎规则对不上，它学到的「经验」在游戏里就会走出非法着法，或者算错局面。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 编码 -->
+<section class="slide" data-title="局面编码">
+  <div class="kick">06 <b>编码</b></div>
+  <h2>一个局面 = <em>130 个 token</em></h2>
+  <p class="dek">棋盘上 129 个格子各算一个 token，再加 1 个全局 token。每个格子只写<b>走子方能知道的信息</b>，别人的暗子是什么，模型看不到。</p>
+  <div class="body">
+    <div class="enc">
+      <div>
+        <div class="tokens" id="tokgrid"></div>
+        <div class="lg" style="margin-top:18px"><span><i style="background:var(--orange)"></i>自己</span><span><i style="background:var(--green)"></i>对家</span><span><i style="background:var(--purple)"></i>下家</span><span><i style="background:var(--blue)"></i>上家</span><span><i style="background:var(--gold)"></i>全局</span></div>
+      </div>
+      <div>
+        <div class="lab mono" style="font-size:15px;letter-spacing:.16em;color:var(--ink3)">每个格子 28 维</div>
+        <div class="dims" style="margin-top:14px">
+          <div style="flex:5;background:#e9c982"><b>5</b>归属</div>
+          <div style="flex:12;background:#f3cf7a"><b>12</b>可能是哪种子</div>
+          <div style="flex:3;background:#c9d7a3"><b>3</b>状态</div>
+          <div style="flex:8;background:#b9cfe0"><b>8</b>最近 4 手</div>
+        </div>
+        <div class="dimtxt">
+          <div><b>归属：</b>空格、自己、下家、对家、上家，按相对位置记</div>
+          <div><b>可能是哪种子：</b>12 种兵种各一位，还没被排除的记 1（下一页细讲）</div>
+          <div><b>状态：</b>动过没有、走铁路拐过弯没有、是不是亮出来的军旗</div>
+          <div><b>最近 4 手：</b>这格是不是最近几手的起点或终点</div>
+        </div>
+        <div class="card" style="margin-top:30px;padding:24px 28px">
+          <p style="margin-top:0"><b style="color:var(--ink)">视角旋转：</b>不管轮到哪家，都把棋盘转到「走子方坐南」。四个座位共用一套权重，数据量等于翻了四倍。全局 token 另记 15 个数：多少步没吃子、第几步、各家死活、谁亮了旗、各家剩几个子。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 推断 -->
+<section class="slide" data-title="排除法">
+  <div class="kick">07 <b>推断</b></div>
+  <h2>看不见的子，<em>用排除法</em>缩小范围</h2>
+  <p class="dek">人下暗棋靠记：这个子动过，就不是地雷；它吃了我的师长还活着，就只能是司令或军长。编码时替模型把这些排除做完。</p>
+  <div class="body">
+    <div class="infer">
+      <div class="st"><div class="ev">开局，敌方第一排的一个暗子<small>什么都没发生</small></div>
+        <div class="chips"><span>司令</span><span>军长</span><span>师长</span><span>旅长</span><span>团长</span><span>营长</span><span>连长</span><span>排长</span><span>工兵</span><span class="x">地雷</span><span class="x">炸弹</span><span class="x">军旗</span></div><div class="cnt">9</div></div>
+      <div class="st"><div class="ev">它吃掉了我方师长，自己没事<small>炸弹会同归于尽，比师长小的会撞死</small></div>
+        <div class="chips"><span>司令</span><span>军长</span><span class="x">师长</span><span class="x">旅长</span><span class="x">团长</span><span class="x">营长</span><span class="x">连长</span><span class="x">排长</span><span class="x">工兵</span><span class="x">地雷</span><span class="x">炸弹</span><span class="x">军旗</span></div><div class="cnt">2</div></div>
+      <div class="st"><div class="ev">它这一家的司令阵亡、亮了军旗<small>司令已经死了，它不可能再是司令</small></div>
+        <div class="chips"><span class="x">司令</span><span>军长</span><span class="x">师长</span><span class="x">旅长</span><span class="x">团长</span><span class="x">营长</span><span class="x">连长</span><span class="x">排长</span><span class="x">工兵</span><span class="x">地雷</span><span class="x">炸弹</span><span class="x">军旗</span></div><div class="cnt">1</div></div>
+    </div>
+    <p class="note" style="margin-top:30px">第一排排除地雷、炸弹、军旗，是因为布局规则不允许它们放在那里。<b>自检：69 万个局面里，每个暗子的真实兵种从来没被错误排除过</b>（0 违例）。</p>
+  </div>
+</section>
+
+<!-- 09 模型 -->
+<section class="slide" data-title="模型">
+  <div class="kick">08 <b>模型</b></div>
+  <h2>一个 500 万参数的小 <span class="t" data-tip="一种神经网络结构，GPT 用的也是它。核心是自注意力：每个格子都能「看」其他所有格子，适合棋盘这种关系很密的输入。">Transformer</span></h2>
+  <p class="dek">130 个 token 一起进网络，每个格子都能看到其他所有格子。输出两样东西：下一手走哪、这局大概会怎样。</p>
+  <div class="body">
+    <div class="arch">
+      <div class="blk"><h4>130 × 28</h4><p>129 个格子 + 1 个全局，逐格投影到 256 维</p></div>
+      <div class="arr">→</div>
+      <div class="stack">
+        <div>自注意力 · 第 1 层 · 8 头</div><div>自注意力 · 第 2 层</div><div>自注意力 · 第 3 层</div>
+        <div>自注意力 · 第 4 层</div><div>自注意力 · 第 5 层</div><div>自注意力 · 第 6 层 · 前馈 1024</div>
+      </div>
+      <div class="arr">→</div>
+      <div class="heads">
+        <div class="blk hot"><h4>走法头</h4><p>对每个合法走法，用「起点格 × 终点格」做双线性打分，再在合法走法里做 softmax。非法走法根本不参与</p></div>
+        <div class="blk"><h4>价值头</h4><p>负 / 和 / 胜 三分类：站在走子方看，这局最后会怎样</p></div>
+      </div>
+    </div>
+    <div class="kv">
+      <div class="stat"><div class="big" style="font-size:64px">4.98M</div><div class="cap">参数</div></div>
+      <div class="stat"><div class="big" style="font-size:64px">20 MB</div><div class="cap">导出成 ONNX 文件</div></div>
+      <div class="stat"><div class="big" style="font-size:64px">7.4 ms</div><div class="cap">CPU 上想一手（Node 实测）</div></div>
+      <div class="stat"><div class="big" style="font-size:64px">1 : 0.25</div><div class="cap">损失函数里走法与价值的权重</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 训练 -->
+<section class="slide" data-title="训练">
+  <div class="kick">09 <b>训练</b></div>
+  <h2>家里一张 5060 Ti，<em>37 分钟</em></h2>
+  <p class="dek">不租云，用家里那台 PC 上的 RTX 5060 Ti 16G。整个数据集 818 MB，一次搬进显存，训练时不用再读硬盘。</p>
+  <div class="body">
+    <div class="train">
+      <ul class="cfg">
+        <li><span>数据</span><span><b>818 MB</b>，69 万样本整块放进显存</span></li>
+        <li><span>精度</span><span><b><span class="t" data-tip="一种 16 位浮点格式，比 32 位省一半显存、算得更快，精度对这类任务够用。">bf16</span></b> 混合精度</span></li>
+        <li><span>批大小</span><span><b>512</b> 个局面一批</span></li>
+        <li><span>优化器</span><span><b>AdamW</b>，学习率 3e-4，余弦退火</span></li>
+        <li><span>时长</span><span><b>10 轮 × 220 秒</b>，约 37 分钟</span></li>
+      </ul>
+      <table class="tier">
+        <tr><th>要做的事</th><th>够用的卡</th></tr>
+        <tr class="me"><td>这次：4000 局模仿学习</td><td>RTX 5060 Ti 16G 就够，显存还有富余</td></tr>
+        <tr><td>1 万局以上模仿学习</td><td>同一张卡，训练时间按数据量线性增加</td></tr>
+        <tr><td>自对弈强化学习</td><td>瓶颈在模拟多少局，4090 / 5090 更快，用不着 H100</td></tr>
+      </table>
+    </div>
+    <div class="row3" style="margin-top:56px">
+      <div class="stat"><div class="big">220<span style="font-size:40px"> 秒</span></div><div class="cap">一轮：61.8 万个训练局面全过一遍，再测一遍验证集</div></div>
+      <div class="stat"><div class="big">10<span style="font-size:40px"> 轮</span></div><div class="cap">第 8 轮以后首选命中基本不再涨，再训意义不大</div></div>
+      <div class="stat"><div class="big">0<span style="font-size:40px"> 元</span></div><div class="cap">云 GPU 费用。显卡是家里本来就有的</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 曲线 -->
+<section class="slide" data-title="训练曲线">
+  <div class="kick">10 <b>结果</b></div>
+  <h2>猜中人类走法：<em>35.3%</em></h2>
+  <p class="dek">在没参与训练的约 400 局验证集上，让模型猜「人实际走了哪步」。平均每步有 54 种走法，乱猜只能中 1.9%，原来的启发式引擎中 9.1%。</p>
+  <div class="body">
+    <div class="charts">
+      <div class="chart" id="ch-acc">
+        <h4>验证集命中率</h4><div class="sub">每轮训练后测一次 · 鼠标移上去看数值</div>
+        <svg width="860" height="440"></svg>
+        <div class="lg"><span><i style="background:var(--gold)"></i>前三命中（前三个首选里有人走的那步）</span><span><i style="background:var(--blue)"></i>首选命中</span></div>
+      </div>
+      <div class="chart" id="ch-loss">
+        <h4>验证集走法损失</h4><div class="sub">交叉熵，越低越好</div>
+        <svg width="660" height="440"></svg>
+        <p class="note" style="margin-top:16px">价值头（猜输赢那部分）第 5 轮以后开始轻微过拟合，验证损失从 0.779 回升到 0.805，数据还不够多。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 对战 -->
+<section class="slide" data-title="对战">
+  <div class="kick">11 <b>对战</b></div>
+  <h2>对原来的引擎：<em>100 局全胜</em></h2>
+  <p class="dek">神经网络执南北，引擎执东西，布局取验证集里的真人布局；同一组布局两边各执一次，抵消布局好坏的运气。</p>
+  <div class="body">
+    <div class="versus">
+      <div>
+        <div class="score">100<em>:</em>0</div>
+        <p class="note" style="margin-top:28px">50 组布局 × 换边，平均每局 108 手。这个比分只能说明<b>原来的引擎太弱，已经不够当标尺</b>，下一把尺子得是真人。</p>
+      </div>
+      <div class="bars">
+        <div class="lab mono" style="font-size:15px;letter-spacing:.16em;color:var(--ink3)">猜中人类实际走法（首选）</div>
+        <div class="b"><span>神经网络</span><div class="trk"><div style="width:100%;background:var(--gold)"></div></div><span class="v">35.3%</span></div>
+        <div class="b"><span>原来的启发式引擎</span><div class="trk"><div style="width:25.8%;background:var(--ink3)"></div></div><span class="v">9.1%</span></div>
+        <div class="b"><span>随机乱走</span><div class="trk"><div style="width:5.4%;background:var(--line2)"></div></div><span class="v">1.9%</span></div>
+      </div>
+    </div>
+    <div class="row3" style="margin-top:64px">
+      <div class="stat"><div class="big">50 × 2</div><div class="cap">组真人布局，每组两边各执一次</div></div>
+      <div class="stat"><div class="big">108</div><div class="cap">平均每局手数，人类对局平均是 171 手</div></div>
+      <div class="stat"><div class="big">7.4<span style="font-size:40px"> ms</span></div><div class="cap">神经网络想一手的时间（Node，CPU 单线程）</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 自动复盘 -->
+<section class="slide rp" data-title="整局复盘" id="s-replay">
+  <div class="brd">
+    <svg id="rp-svg" viewBox="-8.55 -8.55 17.1 17.1" xmlns="http://www.w3.org/2000/svg">
+      <g id="layer-lines"></g><g id="layer-cells"></g><g id="layer-route"></g><g id="layer-pieces"></g><g id="layer-fx"></g>
+    </svg>
+    <div class="over" id="rp-over"><div></div></div>
+  </div>
+  <div class="side">
+    <div class="kick">12 <b>看一整局</b></div>
+    <h2>它下完的<em>一整局</em></h2>
+    <p class="dek">真实对局，从第一手到扛旗，全明视角自动播放。开局它被引擎的两个司令连吃好几子，胜率估计一路跌到 10%；第 79 手北方军长扛下东方军旗，第 87 手南方工兵扛下西方军旗。</p>
+    <div class="seats">
+      <div><i style="background:var(--p-orange)"></i>南 · <b>神经网络</b></div>
+      <div><i style="background:var(--p-green)"></i>北 · <b>神经网络</b></div>
+      <div><i style="background:var(--p-purple)"></i>东 · 原来的引擎</div>
+      <div><i style="background:var(--p-blue)"></i>西 · 原来的引擎</div>
+    </div>
+    <div class="wp">
+      <div class="hd"><span>神经网络对南北方胜率的估计 · 点曲线可跳转</span><b id="rp-wp">—</b></div>
+      <svg id="rp-chart" viewBox="0 0 700 170" height="170"></svg>
+    </div>
+    <div class="log" id="rp-log"></div>
+    <div class="ctl">
+      <button id="rp-play" class="on">暂停</button>
+      <button id="rp-restart">从头</button>
+      <button id="rp-speed">1×</button>
+      <span class="pos" id="rp-pos">0 / 87</span>
+    </div>
+  </div>
+</section>
+
+<!-- 14 浏览器 -->
+<section class="slide" data-title="浏览器">
+  <div class="kick">13 <b>部署</b></div>
+  <h2>搬进浏览器：<em>不联网</em>也能下</h2>
+  <p class="dek">模型、推理库、布局库都是本地文件，网页打开就能下。第一次加载约 34 MB，之后走浏览器缓存。</p>
+  <div class="body">
+    <div class="web">
+      <div class="flow">
+        <div class="step"><div class="no">1</div><div><h4>PyTorch → ONNX</h4><p>训练好的权重导出成 20 MB 的 ONNX 文件，输入是展开好的浮点特征</p></div></div>
+        <div class="step"><div class="no">2</div><div><h4>特征编码用 JS 重写一遍</h4><p>和 Python 版逐位比对，最大误差 1.4×10⁻⁶，网页里的局面和训练时一模一样</p></div></div>
+        <div class="step"><div class="no">3</div><div><h4><span class="t" data-tip="微软的推理库编译成 WebAssembly，在浏览器里直接跑 ONNX 模型，不需要服务器。">onnxruntime-web</span> 单线程推理</h4><p>多线程要服务器配额外的安全响应头，静态托管给不了；单线程实测一手 43 毫秒</p></div></div>
+        <div class="step"><div class="no">4</div><div><h4>开局布局从 7308 套经典布局里抽</h4><p>模型只学了走子，没学布局。你也能在「经典库」里翻、换子、存成自己的</p></div></div>
+      </div>
+      <div>
+        <div class="frame"><img src="img/setup.jpg" alt="游戏布局阶段截图：右侧面板显示经典库 318 / 7308"></div>
+        <div class="figcap">布局阶段 · 经典库第 318 / 7308 套</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 还差什么 -->
+<section class="slide" data-title="还差什么">
+  <div class="kick">14 <b>下一步</b></div>
+  <h2>现在它还只是个<em>像人的新手</em></h2>
+  <p class="dek">它学会的是「大多数人在这个局面会怎么走」，还没学会怎么赢。</p>
+  <div class="body">
+    <div class="next">
+      <div>
+        <div class="lab mono" style="font-size:15px;letter-spacing:.16em;color:var(--red)">局限</div>
+        <ul class="lst lim" style="margin-top:12px">
+          <li><span class="n">×</span><span><b>只会模仿：</b>首选命中 35%，水平上限就是复盘里的那些玩家</span></li>
+          <li><span class="n">×</span><span><b>猜输赢不准：</b>价值头 4000 局就开始过拟合，胜率估计只能参考</span></li>
+          <li><span class="n">×</span><span><b>不会自己布局：</b>开局靠从布局库里抽</span></li>
+          <li><span class="n">×</span><span><b>没和真人大规模下过：</b>只赢过一个弱引擎</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="lab mono" style="font-size:15px;letter-spacing:.16em;color:var(--gold)">计划</div>
+        <ul class="lst" style="margin-top:12px">
+          <li><span class="n">01</span><span><b>数据到 1 万局以上：</b>QQ 群文件批量下载的机器人已经写好，等进群</span></li>
+          <li><span class="n">02</span><span><b>自对弈强化学习：</b>用现在的模型当起点，让它自己和自己下</span></li>
+          <li><span class="n">03</span><span><b>布局网络：</b>学会根据对手习惯自己排兵</span></li>
+          <li><span class="n">04</span><span><b>推断 + 搜索：</b>先猜暗子是什么，再在心里往后推几步</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 结尾 -->
+<section class="slide end" data-title="结尾">
+  <div class="kick">Junqi · Neural AI</div>
+  <h2>一张显卡，<em>两天</em></h2>
+  <p class="dek">从翻网盘找复盘，到在浏览器里和它下完一局。</p>
+  <div class="endstats">
+    <div><b>4151</b><span>局 QQ 复盘</span></div>
+    <div><b>69万</b><span>个训练局面</span></div>
+    <div><b>498万</b><span>参数</span></div>
+    <div><b>37<small style="font-size:30px"> 分钟</small></b><span>训练时长</span></div>
+    <div><b>100:0</b><span>对原来的引擎</span></div>
+  </div>
+</section>
+
+<div id="tip"></div>
+<div id="chrome"><span id="stitle">四国军棋神经网络</span><span class="hint">← → 翻页</span><span id="pageno">01 / 16</span></div>
+<div id="bar"></div>
+</div></div>
+
+<script>
+/* ---------- 翻页 + 缩放 ---------- */
+(() => {
+  const deck = document.getElementById('deck');
+  const slides = [...deck.querySelectorAll('.slide')];
+  let cur = 0, scale = 1;
+  function fit() {
+    scale = Math.min(innerWidth / 1920, innerHeight / 1080);
+    deck.style.transform = `scale(${scale})`;
+  }
+  function go(i) {
+    i = Math.max(0, Math.min(slides.length - 1, i));
+    slides[cur].classList.remove('on'); cur = i; slides[cur].classList.add('on');
+    document.getElementById('pageno').textContent = String(cur + 1).padStart(2, '0') + ' / ' + slides.length;
+    document.getElementById('stitle').textContent = '四国军棋神经网络 · ' + (slides[cur].dataset.title || '');
+    document.getElementById('bar').style.width = ((cur + 1) / slides.length * 100) + '%';
+    history.replaceState(null, '', '#' + (cur + 1));
+    document.dispatchEvent(new CustomEvent('slide', { detail: { el: slides[cur], index: cur } }));
+  }
+  window.__deck = { go, get cur() { return cur; }, get scale() { return scale; }, slides };
+  addEventListener('resize', fit); fit();
+  addEventListener('keydown', e => {
+    if (['ArrowRight', 'PageDown', ' ', 'Enter'].includes(e.key)) { e.preventDefault(); go(cur + 1); }
+    else if (['ArrowLeft', 'PageUp', 'Backspace'].includes(e.key)) { e.preventDefault(); go(cur - 1); }
+    else if (e.key === 'Home') go(0); else if (e.key === 'End') go(slides.length - 1);
+  });
+  // 点击翻页：右半下一页、左半上一页；按钮、图表、棋盘和有选区时不翻
+  let down = null;
+  deck.addEventListener('pointerdown', e => { down = [e.clientX, e.clientY]; });
+  deck.addEventListener('click', e => {
+    if (e.target.closest('button,a,svg,.wp,.t,.ctl,.brd')) return;
+    if (down && Math.hypot(e.clientX - down[0], e.clientY - down[1]) > 6) return;
+    if (String(getSelection())) return;
+    const r = deck.getBoundingClientRect();
+    go(e.clientX - r.left > r.width / 2 ? cur + 1 : cur - 1);
+  });
+  const h = parseInt(location.hash.slice(1), 10);
+  slides[0].classList.add('on');
+  go(h > 0 ? h - 1 : 0);
+  addEventListener('hashchange', () => { const n = parseInt(location.hash.slice(1), 10); if (n > 0) go(n - 1); });
+
+  /* ---------- 术语浮层（在缩放容器里换算坐标） ---------- */
+  const tip = document.getElementById('tip');
+  deck.addEventListener('mouseover', e => {
+    const t = e.target.closest('.t'); if (!t) return;
+    tip.textContent = t.dataset.tip; tip.classList.add('on');
+    const dr = deck.getBoundingClientRect(), r = t.getBoundingClientRect();
+    const x = (r.left + r.width / 2 - dr.left) / scale, top = (r.top - dr.top) / scale, bot = (r.bottom - dr.top) / scale;
+    const w = tip.offsetWidth, hh = tip.offsetHeight;
+    let left = Math.max(40, Math.min(1920 - 40 - w, x - w / 2));
+    const below = top - hh - 16 < 30;
+    tip.classList.toggle('below', below);
+    tip.style.left = left + 'px'; tip.style.top = (below ? bot + 16 : top - hh - 16) + 'px';
+    tip.style.setProperty('--cx', (x - left) + 'px');
+  });
+  deck.addEventListener('mouseout', e => { if (e.target.closest('.t')) tip.classList.remove('on'); });
+
+  /* ---------- 07 页 token 示意 ---------- */
+  const tg = document.getElementById('tokgrid');
+  const cls = i => i === 129 ? 'x' : i < 30 ? 'b' : i < 60 ? 'g' : i < 90 ? 'p' : i < 120 ? 'o' : '';
+  for (let i = 0; i < 130; i++) { const d = document.createElement('i'); d.className = cls(i); tg.appendChild(d); }
+})();
+
+/* ---------- 11 页训练曲线（数据取自 runs/bc1/log.jsonl） ---------- */
+(() => {
+  const NS = 'http://www.w3.org/2000/svg';
+  const top1 = [24.98, 27.51, 28.81, 30.91, 32.48, 33.88, 34.68, 35.22, 35.35, 35.33];
+  const top3 = [46.46, 49.80, 52.02, 54.65, 57.14, 59.13, 60.23, 60.74, 61.00, 61.09];
+  const loss = [2.767, 2.644, 2.559, 2.482, 2.385, 2.318, 2.280, 2.261, 2.251, 2.250];
+  const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); p && p.appendChild(e); return e; };
+  function chart(sel, series, { ymin, ymax, yticks, fmt, bases = [], W, H }) {
+    const svg = document.querySelector(sel + ' svg');
+    const L = 64, R = 70, T = 16, B = 44, iw = W - L - R, ih = H - T - B;
+    const X = i => L + i / 9 * iw, Y = v => T + (1 - (v - ymin) / (ymax - ymin)) * ih;
+    for (const t of yticks) { el('line', { x1: L, x2: L + iw, y1: Y(t), y2: Y(t), class: 'grid' }, svg); el('text', { x: L - 12, y: Y(t) + 5, 'text-anchor': 'end', class: 'tk' }, svg).textContent = fmt(t); }
+    for (let i = 0; i < 10; i++) el('text', { x: X(i), y: T + ih + 30, 'text-anchor': 'middle', class: 'tk' }, svg).textContent = i + 1;
+    el('text', { x: L + iw, y: T + ih + 30, 'text-anchor': 'end', class: 'tk', dx: 52 }, svg).textContent = '轮';
+    for (const b of bases) { el('line', { x1: L, x2: L + iw, y1: Y(b.v), y2: Y(b.v), class: 'base' }, svg); el('text', { x: L + 10, y: Y(b.v) - 10, class: 'baselab' }, svg).textContent = b.label; }
+    for (const s of series) {
+      el('path', { d: s.d.map((v, i) => (i ? 'L' : 'M') + X(i) + ',' + Y(v)).join(''), class: 'ln', stroke: s.c }, svg);
+      s.d.forEach((v, i) => el('circle', { cx: X(i), cy: Y(v), r: 6, fill: s.c, class: 'dt' }, svg));
+      el('text', { x: X(9) + 14, y: Y(s.d[9]) + 6, class: 'endlab' }, svg).textContent = fmt(s.d[9]);
+    }
+    // 悬停读数
+    const cross = el('line', { y1: T, y2: T + ih, class: 'cross' }, svg);
+    const rd = el('text', { class: 'rd', y: T + 4 }, svg);
+    const hit = el('rect', { x: L, y: T, width: iw, height: ih, fill: 'transparent' }, svg);
+    hit.addEventListener('mousemove', e => {
+      const p = svg.getBoundingClientRect(), sx = (e.clientX - p.left) / p.width * W;
+      const i = Math.max(0, Math.min(9, Math.round((sx - L) / iw * 9)));
+      cross.setAttribute('x1', X(i)); cross.setAttribute('x2', X(i)); cross.style.opacity = 1;
+      rd.setAttribute('x', Math.min(X(i) + 12, L + iw - 220)); rd.textContent = `第 ${i + 1} 轮 · ` + series.map(s => s.name + ' ' + fmt(s.d[i])).join(' · ');
+    });
+    hit.addEventListener('mouseleave', () => { cross.style.opacity = 0; rd.textContent = ''; });
+  }
+  chart('#ch-acc', [{ d: top3, c: '#e8b04a', name: '前三' }, { d: top1, c: '#4a93cc', name: '首选' }],
+    { ymin: 0, ymax: 70, yticks: [0, 10, 20, 30, 40, 50, 60, 70], fmt: v => (Math.round(v * 10) / 10) + '%', W: 860, H: 440,
+      bases: [{ v: 9.1, label: '原来的引擎 9.1%' }, { v: 1.9, label: '随机乱走 1.9%' }] });
+  chart('#ch-loss', [{ d: loss, c: '#4a93cc', name: '损失' }],
+    { ymin: 2.2, ymax: 2.8, yticks: [2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8], fmt: v => v.toFixed(2), W: 660, H: 440 });
+})();
+</script>
+<script type="module" src="js/replay-slide.js"></script>
+</body>
+</html>

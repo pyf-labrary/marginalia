@@ -13,6 +13,27 @@ wide: true
 
 <ul class="cover-list" role="list">
 
+<li class="cover-row" data-cats="游戏设计">
+<a class="cover-media" href="/showcases/junqi-ai/"><img src="/assets/img/site/covers/junqi-ai.jpg" alt="四国军棋神经网络 deck 第 13 页：一整局自动复盘，左侧棋盘，右侧胜率曲线与逐手战报" loading="lazy"></a>
+<div class="cover-body" markdown="1">
+## 四国军棋神经网络
+
+给四国暗棋训练一个神经网络对手的全过程，16 页。数据来自网上散落多年的 **QQ 游戏 .jgs 复盘**：44 个压缩包去重后得到 4151 局，逐手用自家引擎重放校验（69.8 万手，只有 9 处对不上，还顺带揪出一条和 QQ 不一致的炸弹扛旗规则），最后 4049 局、**69 万个局面**进训练集。
+
+局面编码成 130 个 token，每格只写走子方能知道的信息，敌方暗子用排除法缩小成「还可能是哪几种」。模型是一个 **498 万参数**的小 Transformer，家里一张 RTX 5060 Ti 训练 37 分钟。验证集上猜中人类实际走法 35.3%（原来的启发式引擎 9.1%），和旧引擎对下 100 局全胜。
+
+第 13 页是**一整局真实对局的自动复盘**：神经网络执南北、旧引擎执东西，从第一手播到扛下两面军旗，旁边一条胜率曲线实时走，可以点曲线跳到任意一手。开局它被两个司令连吃好几子，胜率估计跌到 10%，后面翻盘。
+
+模型导出 20MB 的 ONNX，在浏览器里单线程推理，一手约 43 毫秒，不联网也能下。最后一页老实写了局限：它现在只是个像人的新手。
+
+→ [打开 Showcase](/showcases/junqi-ai/)
+
+*整理时间：2026-09-24。*
+
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:junqi-ai" data-title="四国军棋神经网络" data-url="/showcases/junqi-ai/"></div>
+</div>
+</li>
+
 <li class="cover-row" data-cats="影视 · 导演">
 <a class="cover-media" href="https://ftp.ssbx.site/showcases/studiobinder-zh/"><img src="/assets/img/site/covers/studiobinder-zh.jpg" alt="导演技巧公开课在线剧场首屏截图：暗调片场主视觉与五个类别卡" loading="lazy"></a>
 <div class="cover-body" markdown="1">
