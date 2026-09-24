@@ -1,17 +1,22 @@
 {
- "generated": "2026-09-23",
+ "generated": "2026-09-24",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 85.23,
+   "score": 91.55,
    "days": 24,
    "latest": {
-    "date": "2026-09-23",
-    "url": "/posts/2026-09-22-ai-morning-post/#company",
-    "title": "PayPal 接入 Meta Muse，Agent 可以直接结账"
+    "date": "2026-09-24",
+    "url": "/posts/2026-09-23-ai-morning-post/#research",
+    "title": "DeepSeek 公开 Agent 训练论文，梁文锋署名"
    },
    "links": [
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#research",
+     "title": "DeepSeek 公开 Agent 训练论文，梁文锋署名"
+    },
     {
      "date": "2026-09-23",
      "url": "/posts/2026-09-22-ai-morning-post/#company",
@@ -46,24 +51,24 @@
      "date": "2026-09-17",
      "url": "/posts/2026-09-16-ai-morning-post/#model-release",
      "title": "谷歌发 Gemini 3.8 Live，语音 Agent 开始拼单位成本"
-    },
-    {
-     "date": "2026-09-16",
-     "url": "/posts/2026-09-15-ai-morning-post/#model-release",
-     "title": "谷歌 Gemini 3.8 Live：语音 Agent 进入生产级"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 37.42,
+   "score": 38.35,
    "days": 25,
    "latest": {
-    "date": "2026-09-23",
-    "url": "/posts/2026-09-22-ai-morning-post/#model-release",
-    "title": "OpenAI 发布 GPT-6 Sol 与 Luna，价格直接砍半"
+    "date": "2026-09-24",
+    "url": "/posts/2026-09-23-ai-morning-post/#company",
+    "title": "BC 省起诉 OpenAI，要求重建校园"
    },
    "links": [
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#company",
+     "title": "BC 省起诉 OpenAI，要求重建校园"
+    },
     {
      "date": "2026-09-23",
      "url": "/posts/2026-09-22-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-09-16",
      "url": "/posts/2026-09-15-ai-morning-post/#opinion",
      "title": "AEF-1 出炉，OpenAI 转向支持强制审查"
-    },
-    {
-     "date": "2026-09-15",
-     "url": "/posts/2026-09-14-ai-morning-post/#company",
-     "title": "OpenAI 花 3 亿美元买下一家手机影像公司"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 27.9,
+   "score": 29.32,
    "days": 24,
    "latest": {
-    "date": "2026-09-23",
-    "url": "/posts/2026-09-22-ai-morning-post/#model-release",
-    "title": "Anthropic 发布 Opus 5.5，运行成本降四成"
+    "date": "2026-09-24",
+    "url": "/posts/2026-09-23-ai-morning-post/#company",
+    "title": "Anthropic 建实验室，Claude 筛出 ART 酶系统"
    },
    "links": [
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#company",
+     "title": "Anthropic 建实验室，Claude 筛出 ART 酶系统"
+    },
     {
      "date": "2026-09-23",
      "url": "/posts/2026-09-22-ai-morning-post/#model-release",
@@ -150,24 +155,24 @@
      "date": "2026-09-17",
      "url": "/posts/2026-09-16-ai-morning-post/#product",
      "title": "Anthropic 把 Claude Chat 与 Cowork 合并成一个 Claude"
-    },
-    {
-     "date": "2026-09-16",
-     "url": "/posts/2026-09-15-ai-morning-post/#company",
-     "title": "Anthropic 两季盈利，备战纳斯达克超级 IPO"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 21.35,
+   "score": 21.16,
    "days": 20,
    "latest": {
-    "date": "2026-09-23",
-    "url": "/posts/2026-09-22-ai-morning-post/#company",
-    "title": "Anthropic 建生物实验室，让 Claude 指挥机器人"
+    "date": "2026-09-24",
+    "url": "/posts/2026-09-23-ai-morning-post/#company",
+    "title": "Anthropic 建实验室，Claude 筛出 ART 酶系统"
    },
    "links": [
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#company",
+     "title": "Anthropic 建实验室，Claude 筛出 ART 酶系统"
+    },
     {
      "date": "2026-09-23",
      "url": "/posts/2026-09-22-ai-morning-post/#company",
@@ -202,24 +207,24 @@
      "date": "2026-09-16",
      "url": "/posts/2026-09-15-ai-morning-post/#company",
      "title": "英伟达内部限用 Claude，对外仍在踩油门"
-    },
-    {
-     "date": "2026-09-15",
-     "url": "/posts/2026-09-14-ai-morning-post/#company",
-     "title": "Claude 进入财务顾问的工作台"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 14.74,
-   "days": 17,
+   "score": 16.9,
+   "days": 18,
    "latest": {
-    "date": "2026-09-23",
-    "url": "/posts/2026-09-22-ai-morning-post/#company",
-    "title": "亚马逊封禁 Meta 的 Muse"
+    "date": "2026-09-24",
+    "url": "/posts/2026-09-23-ai-morning-post/#product",
+    "title": "Meta 发布无摄像头 AI 眼镜，Muse 智能体上镜"
    },
    "links": [
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#product",
+     "title": "Meta 发布无摄像头 AI 眼镜，Muse 智能体上镜"
+    },
     {
      "date": "2026-09-23",
      "url": "/posts/2026-09-22-ai-morning-post/#company",
@@ -254,24 +259,24 @@
      "date": "2026-09-13",
      "url": "/posts/2026-09-12-ai-morning-post/#company",
      "title": "Meta 因训练数据与人脸识别遭集体诉讼"
-    },
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#company",
-     "title": "Meta 遭集体诉讼：用 Facebook、Instagram 照片训练 AI"
     }
    ]
   },
   {
    "name": "阿里",
-   "score": 11.16,
+   "score": 12.39,
    "days": 17,
    "latest": {
-    "date": "2026-09-23",
-    "url": "/posts/2026-09-22-ai-morning-post/#model-release",
-    "title": "阿里 Qwen 开源 7B 图像模型 Qwen-Image-2.1"
+    "date": "2026-09-24",
+    "url": "/posts/2026-09-23-ai-morning-post/#product",
+    "title": "千问办公接入阿里云上的 Salesforce"
    },
    "links": [
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#product",
+     "title": "千问办公接入阿里云上的 Salesforce"
+    },
     {
      "date": "2026-09-23",
      "url": "/posts/2026-09-22-ai-morning-post/#model-release",
@@ -306,24 +311,24 @@
      "date": "2026-09-15",
      "url": "/posts/2026-09-14-ai-morning-post/#opensource",
      "title": "阿里开源 open-code-review：确定性流水线加 LLM Agent"
-    },
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#company",
-     "title": "Anthropic 指控阿里、Moonshot、DeepSeek 蒸馏其模型"
     }
    ]
   },
   {
    "name": "腾讯",
-   "score": 9.68,
-   "days": 11,
+   "score": 10.23,
+   "days": 12,
    "latest": {
-    "date": "2026-09-23",
-    "url": "/posts/2026-09-22-ai-morning-post/#model-release",
-    "title": "腾讯混元发布 Hy Image3.5 preview"
+    "date": "2026-09-24",
+    "url": "/posts/2026-09-23-ai-morning-post/#product",
+    "title": "零跑用腾讯 WorkBuddy 开发，40+ 场景提效九成"
    },
    "links": [
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#product",
+     "title": "零跑用腾讯 WorkBuddy 开发，40+ 场景提效九成"
+    },
     {
      "date": "2026-09-23",
      "url": "/posts/2026-09-22-ai-morning-post/#model-release",
@@ -358,17 +363,64 @@
      "date": "2026-09-11",
      "url": "/posts/2026-09-10-ai-morning-post/#opensource",
      "title": "腾讯 teamai-cli：把 AI 塞进团队协作"
+    }
+   ]
+  },
+  {
+   "name": "Muse",
+   "score": 8.35,
+   "days": 8,
+   "latest": {
+    "date": "2026-09-24",
+    "url": "/posts/2026-09-23-ai-morning-post/#product",
+    "title": "Meta 发布无摄像头 AI 眼镜，Muse 智能体上镜"
+   },
+   "links": [
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#product",
+     "title": "Meta 发布无摄像头 AI 眼镜，Muse 智能体上镜"
     },
     {
-     "date": "2026-08-31",
-     "url": "/posts/2026-08-30-ai-morning-post/#model-release",
-     "title": "腾讯 Hy4 预览版：开源权重进入 770B 时代"
+     "date": "2026-09-23",
+     "url": "/posts/2026-09-22-ai-morning-post/#company",
+     "title": "亚马逊封禁 Meta 的 Muse"
+    },
+    {
+     "date": "2026-09-22",
+     "url": "/posts/2026-09-21-ai-morning-post/#company",
+     "title": "亚马逊封杀 Meta 智能体 Muse 下单"
+    },
+    {
+     "date": "2026-09-21",
+     "url": "/posts/2026-09-20-ai-morning-post/#product",
+     "title": "Meta 的 Muse 更像监控工具而非助手"
+    },
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#product",
+     "title": "Meta 发布 Muse for Mac：能读你文件、邮件、日历的桌面 Agent"
+    },
+    {
+     "date": "2026-09-12",
+     "url": "/posts/2026-09-11-ai-morning-post/#product",
+     "title": "Meta 智能体应用 Muse 冲上美国 App 榜第二"
+    },
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#product",
+     "title": "Meta 的 Muse 冲到美国 App 榜第二"
+    },
+    {
+     "date": "2026-09-09",
+     "url": "/posts/2026-09-08-ai-morning-post/#product",
+     "title": "Muse 想要你的数据，但用户凭什么给它？"
     }
    ]
   },
   {
    "name": "GPT-6 Astra",
-   "score": 8.03,
+   "score": 7.68,
    "days": 10,
    "latest": {
     "date": "2026-09-22",
@@ -420,7 +472,7 @@
   },
   {
    "name": "Gemini",
-   "score": 7.71,
+   "score": 7.35,
    "days": 8,
    "latest": {
     "date": "2026-09-23",
@@ -471,8 +523,55 @@
    ]
   },
   {
-   "name": "Codex",
+   "name": "世界模型",
    "score": 6.68,
+   "days": 7,
+   "latest": {
+    "date": "2026-09-24",
+    "url": "/posts/2026-09-23-ai-morning-post/#model-release",
+    "title": "PixVerse R2：实时世界模型想做「全科生」"
+   },
+   "links": [
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#model-release",
+     "title": "PixVerse R2：实时世界模型想做「全科生」"
+    },
+    {
+     "date": "2026-09-21",
+     "url": "/posts/2026-09-20-ai-morning-post/#opinion",
+     "title": "世界模型公司集体捂盖子，没人说得清在建什么"
+    },
+    {
+     "date": "2026-09-15",
+     "url": "/posts/2026-09-14-ai-morning-post/#model-release",
+     "title": "具脑磐石发布类脑认知世界模型 Cog-WM 1.0"
+    },
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#research",
+     "title": "生数新世界模型：触觉、记忆与自我进化"
+    },
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#model-release",
+     "title": "高德 ABot-Earth 0.7：城市级 3D 世界模型"
+    },
+    {
+     "date": "2026-09-05",
+     "url": "/posts/2026-09-04-ai-morning-post/#model-release",
+     "title": "李飞飞团队发布 Atlas：世界模型从“看”走向“动”"
+    },
+    {
+     "date": "2026-09-02",
+     "url": "/posts/2026-09-01-ai-morning-post/#research",
+     "title": "清华 AIR：参数冻结下的世界模型自进化"
+    }
+   ]
+  },
+  {
+   "name": "Codex",
+   "score": 6.35,
    "days": 8,
    "latest": {
     "date": "2026-09-21",
@@ -523,55 +622,8 @@
    ]
   },
   {
-   "name": "Muse",
-   "score": 6.61,
-   "days": 7,
-   "latest": {
-    "date": "2026-09-23",
-    "url": "/posts/2026-09-22-ai-morning-post/#company",
-    "title": "亚马逊封禁 Meta 的 Muse"
-   },
-   "links": [
-    {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#company",
-     "title": "亚马逊封禁 Meta 的 Muse"
-    },
-    {
-     "date": "2026-09-22",
-     "url": "/posts/2026-09-21-ai-morning-post/#company",
-     "title": "亚马逊封杀 Meta 智能体 Muse 下单"
-    },
-    {
-     "date": "2026-09-21",
-     "url": "/posts/2026-09-20-ai-morning-post/#product",
-     "title": "Meta 的 Muse 更像监控工具而非助手"
-    },
-    {
-     "date": "2026-09-20",
-     "url": "/posts/2026-09-19-ai-morning-post/#product",
-     "title": "Meta 发布 Muse for Mac：能读你文件、邮件、日历的桌面 Agent"
-    },
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#product",
-     "title": "Meta 智能体应用 Muse 冲上美国 App 榜第二"
-    },
-    {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#product",
-     "title": "Meta 的 Muse 冲到美国 App 榜第二"
-    },
-    {
-     "date": "2026-09-09",
-     "url": "/posts/2026-09-08-ai-morning-post/#product",
-     "title": "Muse 想要你的数据，但用户凭什么给它？"
-    }
-   ]
-  },
-  {
    "name": "算力",
-   "score": 6.45,
+   "score": 6.03,
    "days": 10,
    "latest": {
     "date": "2026-09-22",
@@ -622,8 +674,55 @@
    ]
   },
   {
+   "name": "ChatGPT",
+   "score": 5.9,
+   "days": 7,
+   "latest": {
+    "date": "2026-09-24",
+    "url": "/posts/2026-09-23-ai-morning-post/#product",
+    "title": "ChatGPT 手机端上线语音 Agent，可操作邮件日历"
+   },
+   "links": [
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#product",
+     "title": "ChatGPT 手机端上线语音 Agent，可操作邮件日历"
+    },
+    {
+     "date": "2026-09-22",
+     "url": "/posts/2026-09-21-ai-morning-post/#product",
+     "title": "Meta Muse 下载量跑赢同期 ChatGPT"
+    },
+    {
+     "date": "2026-09-21",
+     "url": "/posts/2026-09-20-ai-morning-post/#opinion",
+     "title": "ChatGPT 借广告采集器知道你上了哪些网站"
+    },
+    {
+     "date": "2026-09-12",
+     "url": "/posts/2026-09-11-ai-morning-post/#company",
+     "title": "算力吃紧，OpenAI 暂停 ChatGPT Pro 新订阅"
+    },
+    {
+     "date": "2026-09-11",
+     "url": "/posts/2026-09-10-ai-morning-post/#product",
+     "title": "ChatGPT 走向金融前台，内置行情与研报数据"
+    },
+    {
+     "date": "2026-08-28",
+     "url": "/posts/2026-08-27-ai-morning-post/#research",
+     "title": "OpenAI 千名学生研究：ChatGPT 提升原创性"
+    },
+    {
+     "date": "2026-08-27",
+     "url": "/posts/2026-08-26-ai-morning-post/#product",
+     "title": "ChatGPT for Teachers 覆盖 55 个美国学区"
+    }
+   ]
+  },
+  {
    "name": "DeepMind",
-   "score": 5.87,
+   "score": 5.52,
    "days": 11,
    "latest": {
     "date": "2026-09-20",
@@ -670,95 +769,6 @@
      "date": "2026-09-03",
      "url": "/posts/2026-09-02-ai-morning-post/#opinion",
      "title": "DeepMind 新负责人：前沿 AI 领先是唯一命题"
-    }
-   ]
-  },
-  {
-   "name": "ChatGPT",
-   "score": 5.19,
-   "days": 6,
-   "latest": {
-    "date": "2026-09-22",
-    "url": "/posts/2026-09-21-ai-morning-post/#product",
-    "title": "Meta Muse 下载量跑赢同期 ChatGPT"
-   },
-   "links": [
-    {
-     "date": "2026-09-22",
-     "url": "/posts/2026-09-21-ai-morning-post/#product",
-     "title": "Meta Muse 下载量跑赢同期 ChatGPT"
-    },
-    {
-     "date": "2026-09-21",
-     "url": "/posts/2026-09-20-ai-morning-post/#opinion",
-     "title": "ChatGPT 借广告采集器知道你上了哪些网站"
-    },
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#company",
-     "title": "算力吃紧，OpenAI 暂停 ChatGPT Pro 新订阅"
-    },
-    {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#product",
-     "title": "ChatGPT 走向金融前台，内置行情与研报数据"
-    },
-    {
-     "date": "2026-08-28",
-     "url": "/posts/2026-08-27-ai-morning-post/#research",
-     "title": "OpenAI 千名学生研究：ChatGPT 提升原创性"
-    },
-    {
-     "date": "2026-08-27",
-     "url": "/posts/2026-08-26-ai-morning-post/#product",
-     "title": "ChatGPT for Teachers 覆盖 55 个美国学区"
-    }
-   ]
-  },
-  {
-   "name": "世界模型",
-   "score": 5.0,
-   "days": 7,
-   "latest": {
-    "date": "2026-09-21",
-    "url": "/posts/2026-09-20-ai-morning-post/#opinion",
-    "title": "世界模型公司集体捂盖子，没人说得清在建什么"
-   },
-   "links": [
-    {
-     "date": "2026-09-21",
-     "url": "/posts/2026-09-20-ai-morning-post/#opinion",
-     "title": "世界模型公司集体捂盖子，没人说得清在建什么"
-    },
-    {
-     "date": "2026-09-15",
-     "url": "/posts/2026-09-14-ai-morning-post/#model-release",
-     "title": "具脑磐石发布类脑认知世界模型 Cog-WM 1.0"
-    },
-    {
-     "date": "2026-09-13",
-     "url": "/posts/2026-09-12-ai-morning-post/#research",
-     "title": "生数新世界模型：触觉、记忆与自我进化"
-    },
-    {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#model-release",
-     "title": "高德 ABot-Earth 0.7：城市级 3D 世界模型"
-    },
-    {
-     "date": "2026-09-05",
-     "url": "/posts/2026-09-04-ai-morning-post/#model-release",
-     "title": "李飞飞团队发布 Atlas：世界模型从“看”走向“动”"
-    },
-    {
-     "date": "2026-09-02",
-     "url": "/posts/2026-09-01-ai-morning-post/#research",
-     "title": "清华 AIR：参数冻结下的世界模型自进化"
-    },
-    {
-     "date": "2026-08-25",
-     "url": "/posts/2026-08-24-ai-morning-post/#research",
-     "title": "生数科技提出通用世界模型五级发展路线"
     }
    ]
   }
