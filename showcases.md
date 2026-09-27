@@ -14,21 +14,23 @@ wide: true
 <ul class="cover-list" role="list">
 
 <li class="cover-row" data-cats="Claude · LLM">
-<a class="cover-media" href="https://ftp.ssbx.site/showcases/opus55-video/"><img src="/assets/img/site/covers/opus55-video.jpg" alt="代码出片 deck 封面：左侧标题，右侧是十二张社区作品截帧拼成的斜向马赛克" loading="lazy"></a>
+<a class="cover-media" href="https://ftp.ssbx.site/showcases/opus55-video/"><img src="/assets/img/site/covers/opus55-video.jpg" alt="代码出片 deck 封面：左侧标题与 126 帖、61 支原片等数字，右侧是中英文区作品截帧拼成的马赛克" loading="lazy"></a>
 <div class="cover-body" markdown="1">
-## 代码出片 · Opus 5.5 发布后五天的社区动画
+## 代码出片 · Opus 5.5 发布后五天的中英文区动画
 
-Claude Opus 5.5 在 9 月 22 日发布，之后五天 X 上冒出一大批「模型写代码、逐帧渲染、ffmpeg 编码」做出来的动画。用 Grok 的 X 搜索抓了 **82 条帖子**，再逐条回查原帖（81 条在，1 条已删），归成七类：动态图形样片、产品宣传片、科普讲解、音乐 MV、3D 游戏与物理、shader 生成艺术、复盘与模型对照。
+Claude Opus 5.5 在 9 月 22 日发布，之后五天 X 上冒出一大批「模型写代码、逐帧渲染、ffmpeg 编码」做出来的动画。用 Grok 的 X 搜索分两轮抓了英文区 82 条、中文区 44 条，**共 126 条帖子**，逐条回查原帖（125 条在，1 条已删）。
 
-挑了九个细讲，**每个都能在页内直接播放原片**，下方镜头条点一下跳到对应时间：157 万浏览的 **15 秒动效简历**和那句被复制几百遍的提示词；同一台机器上 Opus 对 GPT-6 Astra，Opus 自己打开了 Blender；241 万浏览的 P(Doom) MV 和它被换了三次画风的仓库；7 分钟讲 DeepSeek KV cache 的自写 3B1B 式引擎；模型自己量响度、跑 Whisper 验收的 42 词像素短片；19400 块刚体多米诺；一个 shader 撑完 4 分钟的无限城市。
+英文区留了三支百万级爆款细讲：157 万浏览的 15 秒动效简历和那句被复制几百遍的提示词，同一台机器上 Opus 对 GPT-6 Astra，241 万浏览的 P(Doom) MV。中文区细讲十一个：宝玉四行提示词出的 12 分钟 Transformer 课，WY 用 1% 周额度做的五千年线稿史，Axton 把 83 秒真人口播改成线稿动画，歸藏把产品片经验写成 skill 一周出四条，92 万浏览、被评「AE 动效设计师天塌了」的 14 秒 UI 形变，海辛的中秋拼贴，还有鹈鹕骑车、雨夜便利店这类 3D 网页。
 
-后半部分是通用工作流、从 $0 到 $3000 的账单对数图、和别家模型比的六份证言（结论不一致），以及专业动效人的反对意见：同一句提示词跑出来的片子越来越像，音乐是最常被点名的短板。
+**61 支原片全长都能在页内播放**，案例页下方镜头条点一下跳到对应时间；末尾四面视频墙按浏览量排好，点任一格弹出大窗放原片。
+
+后半部分是通用工作流、从 $0 到 $3000 的账单图、和别家模型比的证言（结论不一致），以及两边的反对意见：同一句提示词跑出来的片子越来越像，音乐最常被点名，中文区也有人直说「没有提示词和素材，出来的就是廉价版」。
 
 → [打开 Showcase](https://ftp.ssbx.site/showcases/opus55-video/)
 
 *整理时间：2026-09-27。*
 
-<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:opus55-video" data-title="代码出片 · Opus 5.5 发布后五天的社区动画" data-url="https://ftp.ssbx.site/showcases/opus55-video/"></div>
+<div class="mg-card-react" data-mg-react data-mode="compact" data-slug="showcase:opus55-video" data-title="代码出片 · Opus 5.5 发布后五天的中英文区动画" data-url="https://ftp.ssbx.site/showcases/opus55-video/"></div>
 </div>
 </li>
 

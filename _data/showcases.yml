@@ -2,12 +2,12 @@
 # showcases.md 仍是人读的详细介绍页；这里是机器可读的目录。
 - slug: opus55-video
   image: /assets/img/site/covers/opus55-video.jpg
-  title: 代码出片 · Opus 5.5 发布后五天的社区动画
+  title: 代码出片 · Opus 5.5 发布后五天的中英文区动画
   url: https://ftp.ssbx.site/showcases/opus55-video/
   external: true
   date: 2026-09-27
   tags: [Claude, Opus 5.5, 动画, 动态图形, 代码生成视频]
-  description: Claude Opus 5.5 发布后五天，X 上 82 支「模型写代码逐帧渲染」的动画：七个内容大类，九个精选案例可直接播放原片（动效简历样片、Opus 对 GPT-6 Astra、P(Doom) MV、3B1B 式科普、19400 块多米诺、shader 城市等），外加工作流、从 $0 到 $3000 的成本图、模型对照与反对意见。外链托管，跳转打开。
+  description: Claude Opus 5.5 发布后五天，X 上中英文区 126 条「模型写代码逐帧渲染」的动画帖。三支百万级英文爆款、十一个中文区案例细讲（宝玉 12 分钟 Transformer 课、歸藏的产品片 skill、92 万浏览的 14 秒 UI 形变、海辛的中秋拼贴等），61 支原片全长可在页内播放，另有四面视频墙、工作流、成本图和反对意见。外链托管，跳转打开。
 - slug: junqi-ai
   image: /assets/img/site/covers/junqi-ai.jpg
   title: 四国军棋神经网络
