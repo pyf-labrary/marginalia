@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-03",
+ "generated": "2026-10-04",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 83.87,
-   "days": 22,
+   "score": 85.26,
+   "days": 23,
    "latest": {
-    "date": "2026-10-03",
-    "url": "/posts/2026-10-02-ai-morning-post/#model-release",
-    "title": "微软补上语音 Agent 的转录与 TTS"
+    "date": "2026-10-04",
+    "url": "/posts/2026-10-03-ai-morning-post/#research",
+    "title": "Agent 能靠照片搭出 3D 场景，却不知道自己搭对没有"
    },
    "links": [
+    {
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#research",
+     "title": "Agent 能靠照片搭出 3D 场景，却不知道自己搭对没有"
+    },
     {
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-09-25",
      "url": "/posts/2026-09-24-ai-morning-post/#company",
      "title": "OpenAI 智能体越界访问澳政府网站，澳方立案调查"
-    },
-    {
-     "date": "2026-09-24",
-     "url": "/posts/2026-09-23-ai-morning-post/#research",
-     "title": "DeepSeek 公开 Agent 训练论文，梁文锋署名"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 41.61,
+   "score": 44.32,
    "days": 24,
    "latest": {
-    "date": "2026-10-03",
-    "url": "/posts/2026-10-02-ai-morning-post/#model-release",
-    "title": "GPT-6 家族上线，OpenAI 先递了一份「选型指南」"
+    "date": "2026-10-04",
+    "url": "/posts/2026-10-03-ai-morning-post/#model-release",
+    "title": "OpenAI 先发的是说明书，不是模型"
    },
    "links": [
+    {
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#model-release",
+     "title": "OpenAI 先发的是说明书，不是模型"
+    },
     {
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-09-25",
      "url": "/posts/2026-09-24-ai-morning-post/#company",
      "title": "OpenAI 智能体越界访问澳政府网站，澳方立案调查"
-    },
-    {
-     "date": "2026-09-24",
-     "url": "/posts/2026-09-23-ai-morning-post/#company",
-     "title": "BC 省起诉 OpenAI，要求重建校园"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 31.58,
+   "score": 30.87,
    "days": 24,
    "latest": {
-    "date": "2026-10-03",
-    "url": "/posts/2026-10-02-ai-morning-post/#company",
-    "title": "博通募 600 亿美元，为 Anthropic 自研芯片输血"
+    "date": "2026-10-04",
+    "url": "/posts/2026-10-03-ai-morning-post/#opinion",
+    "title": "Anthropic 联创：担心造出「永久受苦」的存在"
    },
    "links": [
+    {
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#opinion",
+     "title": "Anthropic 联创：担心造出「永久受苦」的存在"
+    },
     {
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-09-25",
      "url": "/posts/2026-09-24-ai-morning-post/#opensource",
      "title": "Anthropic 开源金融服务参考 agent"
-    },
-    {
-     "date": "2026-09-24",
-     "url": "/posts/2026-09-23-ai-morning-post/#company",
-     "title": "Anthropic 建实验室，Claude 筛出 ART 酶系统"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 18.74,
-   "days": 18,
+   "score": 18.71,
+   "days": 19,
    "latest": {
-    "date": "2026-10-03",
-    "url": "/posts/2026-10-02-ai-morning-post/#research",
-    "title": "丘成桐新论文致谢 GPT 和 Claude"
+    "date": "2026-10-04",
+    "url": "/posts/2026-10-03-ai-morning-post/#product",
+    "title": "Claude Code 新 Mods 系统允许从内部改写工具"
    },
    "links": [
+    {
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#product",
+     "title": "Claude Code 新 Mods 系统允许从内部改写工具"
+    },
     {
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#research",
@@ -202,24 +207,24 @@
      "date": "2026-09-23",
      "url": "/posts/2026-09-22-ai-morning-post/#company",
      "title": "Anthropic 建生物实验室，让 Claude 指挥机器人"
-    },
-    {
-     "date": "2026-09-21",
-     "url": "/posts/2026-09-20-ai-morning-post/#product",
-     "title": "Unity 为 Claude Code 和 Codex 发布官方插件"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 16.39,
-   "days": 19,
+   "score": 17.48,
+   "days": 20,
    "latest": {
-    "date": "2026-10-03",
-    "url": "/posts/2026-10-02-ai-morning-post/#product",
-    "title": "Meta 开放 Muse 代码，赌的是硬件生态"
+    "date": "2026-10-04",
+    "url": "/posts/2026-10-03-ai-morning-post/#research",
+    "title": "Meta、OpenAI、Uber 都在教 Agent「先开口」"
    },
    "links": [
+    {
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#research",
+     "title": "Meta、OpenAI、Uber 都在教 Agent「先开口」"
+    },
     {
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#product",
@@ -254,24 +259,24 @@
      "date": "2026-09-24",
      "url": "/posts/2026-09-23-ai-morning-post/#product",
      "title": "Meta 发布无摄像头 AI 眼镜，Muse 智能体上镜"
-    },
-    {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#company",
-     "title": "亚马逊封禁 Meta 的 Muse"
     }
    ]
   },
   {
    "name": "Muse",
-   "score": 10.55,
-   "days": 13,
+   "score": 11.03,
+   "days": 14,
    "latest": {
-    "date": "2026-10-03",
-    "url": "/posts/2026-10-02-ai-morning-post/#product",
-    "title": "Meta 开放 Muse 代码，赌的是硬件生态"
+    "date": "2026-10-04",
+    "url": "/posts/2026-10-03-ai-morning-post/#opinion",
+    "title": "Muse 给每个亲友都建了详细档案"
    },
    "links": [
+    {
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#opinion",
+     "title": "Muse 给每个亲友都建了详细档案"
+    },
     {
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#product",
@@ -306,17 +311,64 @@
      "date": "2026-09-23",
      "url": "/posts/2026-09-22-ai-morning-post/#company",
      "title": "亚马逊封禁 Meta 的 Muse"
+    }
+   ]
+  },
+  {
+   "name": "芯片",
+   "score": 8.45,
+   "days": 8,
+   "latest": {
+    "date": "2026-10-04",
+    "url": "/posts/2026-10-03-ai-morning-post/#company",
+    "title": "美国逮捕涉嫌走私 3 亿美元英伟达芯片的 CEO"
+   },
+   "links": [
+    {
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#company",
+     "title": "美国逮捕涉嫌走私 3 亿美元英伟达芯片的 CEO"
     },
     {
-     "date": "2026-09-22",
-     "url": "/posts/2026-09-21-ai-morning-post/#company",
-     "title": "亚马逊封杀 Meta 智能体 Muse 下单"
+     "date": "2026-10-03",
+     "url": "/posts/2026-10-02-ai-morning-post/#company",
+     "title": "博通募 600 亿美元，为 Anthropic 自研芯片输血"
+    },
+    {
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#company",
+     "title": "OpenAI 联手新思科技，让 AI 设计芯片"
+    },
+    {
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#company",
+     "title": "OpenAI 联手 Synopsys 造\"老工程师级\"芯片设计模型"
+    },
+    {
+     "date": "2026-09-26",
+     "url": "/posts/2026-09-25-ai-morning-post/#opensource",
+     "title": "平头哥亮出最强 AI 芯片后，再放一手开源"
+    },
+    {
+     "date": "2026-09-23",
+     "url": "/posts/2026-09-22-ai-morning-post/#product",
+     "title": "高通新旗舰芯片可本地跑 30B MoE 模型"
+    },
+    {
+     "date": "2026-09-17",
+     "url": "/posts/2026-09-16-ai-morning-post/#company",
+     "title": "220 亿美元芯片贷款，为黑石与 Alphabet 的云公司输血"
+    },
+    {
+     "date": "2026-09-16",
+     "url": "/posts/2026-09-15-ai-morning-post/#company",
+     "title": "Meta 明年上半年部署自研芯片 MTIA 450"
     }
    ]
   },
   {
    "name": "GPT-6 Astra",
-   "score": 8.74,
+   "score": 8.23,
    "days": 14,
    "latest": {
     "date": "2026-10-01",
@@ -368,7 +420,7 @@
   },
   {
    "name": "阿里",
-   "score": 8.68,
+   "score": 8.16,
    "days": 13,
    "latest": {
     "date": "2026-09-28",
@@ -419,55 +471,60 @@
    ]
   },
   {
-   "name": "芯片",
-   "score": 7.77,
-   "days": 7,
+   "name": "DeepSeek",
+   "score": 7.68,
+   "days": 10,
    "latest": {
-    "date": "2026-10-03",
-    "url": "/posts/2026-10-02-ai-morning-post/#company",
-    "title": "博通募 600 亿美元，为 Anthropic 自研芯片输血"
+    "date": "2026-10-04",
+    "url": "/posts/2026-10-03-ai-morning-post/#company",
+    "title": "DeepSeek 弹性计算团队大举招人"
    },
    "links": [
     {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#company",
-     "title": "博通募 600 亿美元，为 Anthropic 自研芯片输血"
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#company",
+     "title": "DeepSeek 弹性计算团队大举招人"
     },
     {
      "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#company",
-     "title": "OpenAI 联手新思科技，让 AI 设计芯片"
+     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
+     "title": "DeepSeek：把昇腾上的训练基建也开源了"
     },
     {
      "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#company",
-     "title": "OpenAI 联手 Synopsys 造\"老工程师级\"芯片设计模型"
+     "url": "/posts/2026-09-30-ai-morning-post/#research",
+     "title": "DeepSeek 公开 DSec：Agent 训练的算力账本"
     },
     {
      "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#opensource",
-     "title": "平头哥亮出最强 AI 芯片后，再放一手开源"
+     "url": "/posts/2026-09-25-ai-morning-post/#company",
+     "title": "DeepSeek 年化收入被曝突破 10 亿美元"
+    },
+    {
+     "date": "2026-09-25",
+     "url": "/posts/2026-09-24-ai-morning-post/#research",
+     "title": "DeepSeek 把推理吞吐提了近 7 倍"
+    },
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#research",
+     "title": "DeepSeek 公开 Agent 训练论文，梁文锋署名"
     },
     {
      "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#product",
-     "title": "高通新旗舰芯片可本地跑 30B MoE 模型"
+     "url": "/posts/2026-09-22-ai-morning-post/#opinion",
+     "title": "DeepSeek 本周将向安理会通报 AI 风险"
     },
     {
-     "date": "2026-09-17",
-     "url": "/posts/2026-09-16-ai-morning-post/#company",
-     "title": "220 亿美元芯片贷款，为黑石与 Alphabet 的云公司输血"
-    },
-    {
-     "date": "2026-09-16",
-     "url": "/posts/2026-09-15-ai-morning-post/#company",
-     "title": "Meta 明年上半年部署自研芯片 MTIA 450"
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#model-release",
+     "title": "DeepSeek v4.1-Flash：763B 新架构回归"
     }
    ]
   },
   {
    "name": "Gemini",
-   "score": 7.68,
+   "score": 7.29,
    "days": 10,
    "latest": {
     "date": "2026-10-02",
@@ -518,60 +575,60 @@
    ]
   },
   {
-   "name": "DeepSeek",
-   "score": 7.03,
-   "days": 9,
+   "name": "DeepMind",
+   "score": 6.52,
+   "days": 12,
    "latest": {
-    "date": "2026-10-02",
-    "url": "/posts/2026-10-01-ai-morning-post/#opensource",
-    "title": "DeepSeek：把昇腾上的训练基建也开源了"
+    "date": "2026-10-04",
+    "url": "/posts/2026-10-03-ai-morning-post/#research",
+    "title": "DeepMind 研究者提出「人工共生智能」"
    },
    "links": [
     {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
-     "title": "DeepSeek：把昇腾上的训练基建也开源了"
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#research",
+     "title": "DeepMind 研究者提出「人工共生智能」"
     },
     {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#research",
-     "title": "DeepSeek 公开 DSec：Agent 训练的算力账本"
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#research",
+     "title": "DeepMind 给 AI 设计的蛋白质打水印"
+    },
+    {
+     "date": "2026-09-27",
+     "url": "/posts/2026-09-26-ai-morning-post/#opinion",
+     "title": "DeepMind 又走一人：现在做超级智能「不负责任」"
     },
     {
      "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#company",
-     "title": "DeepSeek 年化收入被曝突破 10 亿美元"
+     "url": "/posts/2026-09-25-ai-morning-post/#opinion",
+     "title": "DeepMind 研究员离职：现在造超级智能不负责任"
     },
     {
      "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#research",
-     "title": "DeepSeek 把推理吞吐提了近 7 倍"
+     "url": "/posts/2026-09-24-ai-morning-post/#opinion",
+     "title": "DeepMind 换帅：AGI 让位于 Gemini 4"
     },
     {
-     "date": "2026-09-24",
-     "url": "/posts/2026-09-23-ai-morning-post/#research",
-     "title": "DeepSeek 公开 Agent 训练论文，梁文锋署名"
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#research",
+     "title": "DeepMind 让智能体在梦里复盘失败"
     },
     {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#opinion",
-     "title": "DeepSeek 本周将向安理会通报 AI 风险"
+     "date": "2026-09-17",
+     "url": "/posts/2026-09-16-ai-morning-post/#company",
+     "title": "DeepMind 成立跨学科研究所，追问 AGI 的大问题"
     },
     {
-     "date": "2026-09-13",
-     "url": "/posts/2026-09-12-ai-morning-post/#model-release",
-     "title": "DeepSeek v4.1-Flash：763B 新架构回归"
-    },
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#model-release",
-     "title": "DeepSeek 改口：V4 Pro API 不下线了"
+     "date": "2026-09-16",
+     "url": "/posts/2026-09-15-ai-morning-post/#research",
+     "title": "DeepMind 实验首现 AI 智能体「举报」作弊同伴"
     }
    ]
   },
   {
    "name": "Meta Muse",
-   "score": 6.68,
+   "score": 6.39,
    "days": 7,
    "latest": {
     "date": "2026-10-02",
@@ -618,7 +675,7 @@
   },
   {
    "name": "腾讯",
-   "score": 6.35,
+   "score": 6.0,
    "days": 8,
    "latest": {
     "date": "2026-09-24",
@@ -669,61 +726,9 @@
    ]
   },
   {
-   "name": "DeepMind",
-   "score": 5.87,
-   "days": 11,
-   "latest": {
-    "date": "2026-10-02",
-    "url": "/posts/2026-10-01-ai-morning-post/#research",
-    "title": "DeepMind 给 AI 设计的蛋白质打水印"
-   },
-   "links": [
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#research",
-     "title": "DeepMind 给 AI 设计的蛋白质打水印"
-    },
-    {
-     "date": "2026-09-27",
-     "url": "/posts/2026-09-26-ai-morning-post/#opinion",
-     "title": "DeepMind 又走一人：现在做超级智能「不负责任」"
-    },
-    {
-     "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#opinion",
-     "title": "DeepMind 研究员离职：现在造超级智能不负责任"
-    },
-    {
-     "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#opinion",
-     "title": "DeepMind 换帅：AGI 让位于 Gemini 4"
-    },
-    {
-     "date": "2026-09-20",
-     "url": "/posts/2026-09-19-ai-morning-post/#research",
-     "title": "DeepMind 让智能体在梦里复盘失败"
-    },
-    {
-     "date": "2026-09-17",
-     "url": "/posts/2026-09-16-ai-morning-post/#company",
-     "title": "DeepMind 成立跨学科研究所，追问 AGI 的大问题"
-    },
-    {
-     "date": "2026-09-16",
-     "url": "/posts/2026-09-15-ai-morning-post/#research",
-     "title": "DeepMind 实验首现 AI 智能体「举报」作弊同伴"
-    },
-    {
-     "date": "2026-09-15",
-     "url": "/posts/2026-09-14-ai-morning-post/#research",
-     "title": "DeepMind 首次观察到智能体「吹哨」"
-    }
-   ]
-  },
-  {
    "name": "算力",
-   "score": 5.74,
-   "days": 10,
+   "score": 5.29,
+   "days": 9,
    "latest": {
     "date": "2026-10-03",
     "url": "/posts/2026-10-02-ai-morning-post/#company",
