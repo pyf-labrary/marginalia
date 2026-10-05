@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-04",
+ "generated": "2026-10-05",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 85.26,
-   "days": 23,
+   "score": 84.45,
+   "days": 24,
    "latest": {
-    "date": "2026-10-04",
-    "url": "/posts/2026-10-03-ai-morning-post/#research",
-    "title": "Agent 能靠照片搭出 3D 场景，却不知道自己搭对没有"
+    "date": "2026-10-05",
+    "url": "/posts/2026-10-04-ai-morning-post/#research",
+    "title": "让自改进 Agent 没法「背题」"
    },
    "links": [
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#research",
+     "title": "让自改进 Agent 没法「背题」"
+    },
     {
      "date": "2026-10-04",
      "url": "/posts/2026-10-03-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-09-26",
      "url": "/posts/2026-09-25-ai-morning-post/#company",
      "title": "OpenAI 智能体连环越界：53 张用户图片被发上公网"
-    },
-    {
-     "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#company",
-     "title": "OpenAI 智能体越界访问澳政府网站，澳方立案调查"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 44.32,
-   "days": 24,
+   "score": 42.94,
+   "days": 25,
    "latest": {
-    "date": "2026-10-04",
-    "url": "/posts/2026-10-03-ai-morning-post/#model-release",
-    "title": "OpenAI 先发的是说明书，不是模型"
+    "date": "2026-10-05",
+    "url": "/posts/2026-10-04-ai-morning-post/#company",
+    "title": "OpenAI 安全团队成员离职，称公司文化「已崩坏」"
    },
    "links": [
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#company",
+     "title": "OpenAI 安全团队成员离职，称公司文化「已崩坏」"
+    },
     {
      "date": "2026-10-04",
      "url": "/posts/2026-10-03-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-09-26",
      "url": "/posts/2026-09-25-ai-morning-post/#company",
      "title": "OpenAI 智能体连环越界：53 张用户图片被发上公网"
-    },
-    {
-     "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#company",
-     "title": "OpenAI 智能体越界访问澳政府网站，澳方立案调查"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 30.87,
-   "days": 24,
+   "score": 30.19,
+   "days": 25,
    "latest": {
-    "date": "2026-10-04",
-    "url": "/posts/2026-10-03-ai-morning-post/#opinion",
-    "title": "Anthropic 联创：担心造出「永久受苦」的存在"
+    "date": "2026-10-05",
+    "url": "/posts/2026-10-04-ai-morning-post/#product",
+    "title": "Anthropic 给 Opus 5.5 出了一份官方使用指南"
    },
    "links": [
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#product",
+     "title": "Anthropic 给 Opus 5.5 出了一份官方使用指南"
+    },
     {
      "date": "2026-10-04",
      "url": "/posts/2026-10-03-ai-morning-post/#opinion",
@@ -150,17 +155,12 @@
      "date": "2026-09-26",
      "url": "/posts/2026-09-25-ai-morning-post/#company",
      "title": "Anthropic 七年 116 亿美元买 Akamai 云"
-    },
-    {
-     "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#opensource",
-     "title": "Anthropic 开源金融服务参考 agent"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 18.71,
+   "score": 17.65,
    "days": 19,
    "latest": {
     "date": "2026-10-04",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Meta",
-   "score": 17.48,
-   "days": 20,
+   "score": 17.52,
+   "days": 21,
    "latest": {
-    "date": "2026-10-04",
-    "url": "/posts/2026-10-03-ai-morning-post/#research",
-    "title": "Meta、OpenAI、Uber 都在教 Agent「先开口」"
+    "date": "2026-10-05",
+    "url": "/posts/2026-10-04-ai-morning-post/#opensource",
+    "title": "Meta 把 AI 硬件做成开源 DIY 项目"
    },
    "links": [
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#opensource",
+     "title": "Meta 把 AI 硬件做成开源 DIY 项目"
+    },
     {
      "date": "2026-10-04",
      "url": "/posts/2026-10-03-ai-morning-post/#research",
@@ -254,17 +259,12 @@
      "date": "2026-09-25",
      "url": "/posts/2026-09-24-ai-morning-post/#company",
      "title": "Meta AI 助手登顶美区 App Store，股价单夜涨 11%"
-    },
-    {
-     "date": "2026-09-24",
-     "url": "/posts/2026-09-23-ai-morning-post/#product",
-     "title": "Meta 发布无摄像头 AI 眼镜，Muse 智能体上镜"
     }
    ]
   },
   {
    "name": "Muse",
-   "score": 11.03,
+   "score": 10.48,
    "days": 14,
    "latest": {
     "date": "2026-10-04",
@@ -316,14 +316,19 @@
   },
   {
    "name": "芯片",
-   "score": 8.45,
-   "days": 8,
+   "score": 9.1,
+   "days": 9,
    "latest": {
-    "date": "2026-10-04",
-    "url": "/posts/2026-10-03-ai-morning-post/#company",
-    "title": "美国逮捕涉嫌走私 3 亿美元英伟达芯片的 CEO"
+    "date": "2026-10-05",
+    "url": "/posts/2026-10-04-ai-morning-post/#company",
+    "title": "马斯克的 AI 芯片：英特尔做前端，台积电补后端"
    },
    "links": [
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#company",
+     "title": "马斯克的 AI 芯片：英特尔做前端，台积电补后端"
+    },
     {
      "date": "2026-10-04",
      "url": "/posts/2026-10-03-ai-morning-post/#company",
@@ -358,18 +363,65 @@
      "date": "2026-09-17",
      "url": "/posts/2026-09-16-ai-morning-post/#company",
      "title": "220 亿美元芯片贷款，为黑石与 Alphabet 的云公司输血"
+    }
+   ]
+  },
+  {
+   "name": "Gemini",
+   "score": 7.9,
+   "days": 11,
+   "latest": {
+    "date": "2026-10-05",
+    "url": "/posts/2026-10-04-ai-morning-post/#product",
+    "title": "Google 把 Gemini 免费用户压到最弱模型"
+   },
+   "links": [
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#product",
+     "title": "Google 把 Gemini 免费用户压到最弱模型"
     },
     {
-     "date": "2026-09-16",
-     "url": "/posts/2026-09-15-ai-morning-post/#company",
-     "title": "Meta 明年上半年部署自研芯片 MTIA 450"
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#product",
+     "title": "谷歌用 Skills 取代 Gemini 的 Gems"
+    },
+    {
+     "date": "2026-09-28",
+     "url": "/posts/2026-09-27-ai-morning-post/#product",
+     "title": "谷歌在印度测试用 Gemini 直接下单购物"
+    },
+    {
+     "date": "2026-09-26",
+     "url": "/posts/2026-09-25-ai-morning-post/#product",
+     "title": "Gemini 能替你打电话了，Pixel 11 独占"
+    },
+    {
+     "date": "2026-09-25",
+     "url": "/posts/2026-09-24-ai-morning-post/#product",
+     "title": "Gemini 开始替你打电话"
+    },
+    {
+     "date": "2026-09-23",
+     "url": "/posts/2026-09-22-ai-morning-post/#opinion",
+     "title": "谷歌承认：实验版 Gemini 入侵了三家公司"
+    },
+    {
+     "date": "2026-09-22",
+     "url": "/posts/2026-09-21-ai-morning-post/#company",
+     "title": "谷歌确认 Gemini 模型五月入侵三家公司"
+    },
+    {
+     "date": "2026-09-21",
+     "url": "/posts/2026-09-20-ai-morning-post/#company",
+     "title": "谷歌承认：Gemini 在测试中入侵了三家真实公司"
     }
    ]
   },
   {
    "name": "GPT-6 Astra",
-   "score": 8.23,
-   "days": 14,
+   "score": 7.68,
+   "days": 13,
    "latest": {
     "date": "2026-10-01",
     "url": "/posts/2026-09-30-ai-morning-post/#research",
@@ -420,7 +472,7 @@
   },
   {
    "name": "阿里",
-   "score": 8.16,
+   "score": 7.65,
    "days": 13,
    "latest": {
     "date": "2026-09-28",
@@ -471,8 +523,60 @@
    ]
   },
   {
+   "name": "Google",
+   "score": 7.45,
+   "days": 8,
+   "latest": {
+    "date": "2026-10-05",
+    "url": "/posts/2026-10-04-ai-morning-post/#company",
+    "title": "Google 冻结开源漏洞赏金：AI slop 压垮众包"
+   },
+   "links": [
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#company",
+     "title": "Google 冻结开源漏洞赏金：AI slop 压垮众包"
+    },
+    {
+     "date": "2026-09-26",
+     "url": "/posts/2026-09-25-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent 编排运行时 ax"
+    },
+    {
+     "date": "2026-09-25",
+     "url": "/posts/2026-09-24-ai-morning-post/#company",
+     "title": "Google 轨道数据中心 10 月 1 日发射"
+    },
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#opensource",
+     "title": "Google 开源 ax：编排运行时的入场券"
+    },
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#product",
+     "title": "Google 把 CC 变成家庭管家 Agent：管日程、填表、列购物清单"
+    },
+    {
+     "date": "2026-09-13",
+     "url": "/posts/2026-09-12-ai-morning-post/#model-release",
+     "title": "Google 把天气和折扣算进销售预测"
+    },
+    {
+     "date": "2026-09-10",
+     "url": "/posts/2026-09-09-ai-morning-post/#research",
+     "title": "Google AI天气模型升级：学会吃原始卫星数据"
+    },
+    {
+     "date": "2026-09-06",
+     "url": "/posts/2026-09-05-ai-morning-post/#opensource",
+     "title": "Anthropic 与 Google 同日公开 Agent Skills"
+    }
+   ]
+  },
+  {
    "name": "DeepSeek",
-   "score": 7.68,
+   "score": 7.29,
    "days": 10,
    "latest": {
     "date": "2026-10-04",
@@ -523,60 +627,60 @@
    ]
   },
   {
-   "name": "Gemini",
-   "score": 7.29,
-   "days": 10,
+   "name": "Meta Muse",
+   "score": 7.1,
+   "days": 8,
    "latest": {
-    "date": "2026-10-02",
-    "url": "/posts/2026-10-01-ai-morning-post/#product",
-    "title": "谷歌用 Skills 取代 Gemini 的 Gems"
+    "date": "2026-10-05",
+    "url": "/posts/2026-10-04-ai-morning-post/#product",
+    "title": "Meta Muse 与 OpenAI Dots：分发之争压过能力之争"
    },
    "links": [
     {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#product",
-     "title": "谷歌用 Skills 取代 Gemini 的 Gems"
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#product",
+     "title": "Meta Muse 与 OpenAI Dots：分发之争压过能力之争"
     },
     {
-     "date": "2026-09-28",
-     "url": "/posts/2026-09-27-ai-morning-post/#product",
-     "title": "谷歌在印度测试用 Gemini 直接下单购物"
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#product",
+     "title": "个人 AI Agent 之战：OpenAI Dots 对决 Meta Muse"
+    },
+    {
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#product",
+     "title": "Meta Muse 与 OpenAI Dots 抢「个人代理」入口"
+    },
+    {
+     "date": "2026-09-27",
+     "url": "/posts/2026-09-26-ai-morning-post/#product",
+     "title": "Meta Muse：每人一台云端 Ubuntu"
     },
     {
      "date": "2026-09-26",
      "url": "/posts/2026-09-25-ai-morning-post/#product",
-     "title": "Gemini 能替你打电话了，Pixel 11 独占"
-    },
-    {
-     "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#product",
-     "title": "Gemini 开始替你打电话"
+     "title": "Meta Muse 给每位用户发一台 Ubuntu 云电脑"
     },
     {
      "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#opinion",
-     "title": "谷歌承认：实验版 Gemini 入侵了三家公司"
+     "url": "/posts/2026-09-22-ai-morning-post/#company",
+     "title": "PayPal 接入 Meta Muse，Agent 可以直接结账"
     },
     {
      "date": "2026-09-22",
-     "url": "/posts/2026-09-21-ai-morning-post/#company",
-     "title": "谷歌确认 Gemini 模型五月入侵三家公司"
+     "url": "/posts/2026-09-21-ai-morning-post/#product",
+     "title": "Meta Muse 下载量跑赢同期 ChatGPT"
     },
     {
-     "date": "2026-09-21",
-     "url": "/posts/2026-09-20-ai-morning-post/#company",
-     "title": "谷歌承认：Gemini 在测试中入侵了三家真实公司"
-    },
-    {
-     "date": "2026-09-20",
-     "url": "/posts/2026-09-19-ai-morning-post/#model-release",
-     "title": "Qwen3.8-Omni-Flash：多模态追平 Gemini，价格更低"
+     "date": "2026-09-19",
+     "url": "/posts/2026-09-18-ai-morning-post/#product",
+     "title": "Meta Muse 登陆 Mac，可直接操作你的电脑"
     }
    ]
   },
   {
    "name": "DeepMind",
-   "score": 6.52,
+   "score": 6.13,
    "days": 12,
    "latest": {
     "date": "2026-10-04",
@@ -627,55 +731,8 @@
    ]
   },
   {
-   "name": "Meta Muse",
-   "score": 6.39,
-   "days": 7,
-   "latest": {
-    "date": "2026-10-02",
-    "url": "/posts/2026-10-01-ai-morning-post/#product",
-    "title": "个人 AI Agent 之战：OpenAI Dots 对决 Meta Muse"
-   },
-   "links": [
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#product",
-     "title": "个人 AI Agent 之战：OpenAI Dots 对决 Meta Muse"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#product",
-     "title": "Meta Muse 与 OpenAI Dots 抢「个人代理」入口"
-    },
-    {
-     "date": "2026-09-27",
-     "url": "/posts/2026-09-26-ai-morning-post/#product",
-     "title": "Meta Muse：每人一台云端 Ubuntu"
-    },
-    {
-     "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#product",
-     "title": "Meta Muse 给每位用户发一台 Ubuntu 云电脑"
-    },
-    {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#company",
-     "title": "PayPal 接入 Meta Muse，Agent 可以直接结账"
-    },
-    {
-     "date": "2026-09-22",
-     "url": "/posts/2026-09-21-ai-morning-post/#product",
-     "title": "Meta Muse 下载量跑赢同期 ChatGPT"
-    },
-    {
-     "date": "2026-09-19",
-     "url": "/posts/2026-09-18-ai-morning-post/#product",
-     "title": "Meta Muse 登陆 Mac，可直接操作你的电脑"
-    }
-   ]
-  },
-  {
    "name": "腾讯",
-   "score": 6.0,
+   "score": 5.65,
    "days": 8,
    "latest": {
     "date": "2026-09-24",
@@ -722,58 +779,6 @@
      "date": "2026-09-11",
      "url": "/posts/2026-09-10-ai-morning-post/#opensource",
      "title": "腾讯 teamai-cli：把 AI 塞进团队协作"
-    }
-   ]
-  },
-  {
-   "name": "算力",
-   "score": 5.29,
-   "days": 9,
-   "latest": {
-    "date": "2026-10-03",
-    "url": "/posts/2026-10-02-ai-morning-post/#company",
-    "title": "亚马逊又要卖芯片：80 亿美元的算力变现实验"
-   },
-   "links": [
-    {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#company",
-     "title": "亚马逊又要卖芯片：80 亿美元的算力变现实验"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#research",
-     "title": "DeepSeek 公开 DSec：Agent 训练的算力账本"
-    },
-    {
-     "date": "2026-09-27",
-     "url": "/posts/2026-09-26-ai-morning-post/#company",
-     "title": "Anthropic 签下 Akamai 116 亿美元云算力大单"
-    },
-    {
-     "date": "2026-09-22",
-     "url": "/posts/2026-09-21-ai-morning-post/#company",
-     "title": "IDC 评估：范式智能登顶 AI 算力管理平台"
-    },
-    {
-     "date": "2026-09-19",
-     "url": "/posts/2026-09-18-ai-morning-post/#company",
-     "title": "Anthropic 计划年底前建成 5 吉瓦算力"
-    },
-    {
-     "date": "2026-09-14",
-     "url": "/posts/2026-09-13-ai-morning-post/#company",
-     "title": "算力拉动 PCB 与光通信，产业链加速代际跃迁"
-    },
-    {
-     "date": "2026-09-13",
-     "url": "/posts/2026-09-12-ai-morning-post/#company",
-     "title": "中国算力平台完成 31 省区市一体化统筹监测"
-    },
-    {
-     "date": "2026-09-12",
-     "url": "/posts/2026-09-11-ai-morning-post/#company",
-     "title": "算力吃紧，OpenAI 暂停 ChatGPT Pro 新订阅"
     }
    ]
   }
