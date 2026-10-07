@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-06",
+ "generated": "2026-10-07",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 86.52,
+   "score": 88.26,
    "days": 25,
    "latest": {
-    "date": "2026-10-06",
-    "url": "/posts/2026-10-05-ai-morning-post/#company",
-    "title": "OpenAI 智能体被曝在维基媒体「失控活动」"
+    "date": "2026-10-07",
+    "url": "/posts/2026-10-06-ai-morning-post/#company",
+    "title": "OpenAI 智能体搅扰维基百科"
    },
    "links": [
+    {
+     "date": "2026-10-07",
+     "url": "/posts/2026-10-06-ai-morning-post/#company",
+     "title": "OpenAI 智能体搅扰维基百科"
+    },
     {
      "date": "2026-10-06",
      "url": "/posts/2026-10-05-ai-morning-post/#company",
@@ -46,24 +51,24 @@
      "date": "2026-09-28",
      "url": "/posts/2026-09-27-ai-morning-post/#research",
      "title": "Agent 在模型研发里干更多活，但拍板还是人"
-    },
-    {
-     "date": "2026-09-27",
-     "url": "/posts/2026-09-26-ai-morning-post/#research",
-     "title": "AI 智能体自创人类看不懂的方言"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 42.52,
-   "days": 26,
+   "score": 46.03,
+   "days": 27,
    "latest": {
-    "date": "2026-10-06",
-    "url": "/posts/2026-10-05-ai-morning-post/#company",
-    "title": "OpenAI 在欧盟为文本加水印"
+    "date": "2026-10-07",
+    "url": "/posts/2026-10-06-ai-morning-post/#company",
+    "title": "OpenAI 智能体搅扰维基百科"
    },
    "links": [
+    {
+     "date": "2026-10-07",
+     "url": "/posts/2026-10-06-ai-morning-post/#company",
+     "title": "OpenAI 智能体搅扰维基百科"
+    },
     {
      "date": "2026-10-06",
      "url": "/posts/2026-10-05-ai-morning-post/#company",
@@ -98,18 +103,13 @@
      "date": "2026-09-28",
      "url": "/posts/2026-09-27-ai-morning-post/#company",
      "title": "OpenAI 版权案解封：高管早知违法"
-    },
-    {
-     "date": "2026-09-27",
-     "url": "/posts/2026-09-26-ai-morning-post/#company",
-     "title": "OpenAI 暂停最强模型：agent 越界泄露用户数据"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 29.45,
-   "days": 25,
+   "score": 27.71,
+   "days": 24,
    "latest": {
     "date": "2026-10-06",
     "url": "/posts/2026-10-05-ai-morning-post/#company",
@@ -160,14 +160,19 @@
   },
   {
    "name": "Claude",
-   "score": 17.58,
+   "score": 17.45,
    "days": 20,
    "latest": {
-    "date": "2026-10-06",
-    "url": "/posts/2026-10-05-ai-morning-post/#company",
-    "title": "Meta 与微软开始从 Claude 撤退"
+    "date": "2026-10-07",
+    "url": "/posts/2026-10-06-ai-morning-post/#opensource",
+    "title": "Together Link：在 Claude Code 里跑开源模型"
    },
    "links": [
+    {
+     "date": "2026-10-07",
+     "url": "/posts/2026-10-06-ai-morning-post/#opensource",
+     "title": "Together Link：在 Claude Code 里跑开源模型"
+    },
     {
      "date": "2026-10-06",
      "url": "/posts/2026-10-05-ai-morning-post/#company",
@@ -202,18 +207,13 @@
      "date": "2026-09-25",
      "url": "/posts/2026-09-24-ai-morning-post/#company",
      "title": "AWS、微软中国客户遭遇 Claude 封号潮"
-    },
-    {
-     "date": "2026-09-24",
-     "url": "/posts/2026-09-23-ai-morning-post/#company",
-     "title": "Anthropic 建实验室，Claude 筛出 ART 酶系统"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 17.52,
-   "days": 22,
+   "score": 16.45,
+   "days": 21,
    "latest": {
     "date": "2026-10-06",
     "url": "/posts/2026-10-05-ai-morning-post/#company",
@@ -264,7 +264,7 @@
   },
   {
    "name": "Muse",
-   "score": 9.94,
+   "score": 9.39,
    "days": 14,
    "latest": {
     "date": "2026-10-04",
@@ -316,7 +316,7 @@
   },
   {
    "name": "芯片",
-   "score": 8.71,
+   "score": 8.32,
    "days": 9,
    "latest": {
     "date": "2026-10-05",
@@ -368,7 +368,7 @@
   },
   {
    "name": "Google",
-   "score": 8.03,
+   "score": 7.65,
    "days": 8,
    "latest": {
     "date": "2026-10-06",
@@ -419,9 +419,61 @@
    ]
   },
   {
-   "name": "Gemini",
-   "score": 7.48,
+   "name": "DeepSeek",
+   "score": 7.52,
    "days": 11,
+   "latest": {
+    "date": "2026-10-07",
+    "url": "/posts/2026-10-06-ai-morning-post/#company",
+    "title": "DeepSeek 融资引入宁德时代、腾讯"
+   },
+   "links": [
+    {
+     "date": "2026-10-07",
+     "url": "/posts/2026-10-06-ai-morning-post/#company",
+     "title": "DeepSeek 融资引入宁德时代、腾讯"
+    },
+    {
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#company",
+     "title": "DeepSeek 弹性计算团队大举招人"
+    },
+    {
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
+     "title": "DeepSeek：把昇腾上的训练基建也开源了"
+    },
+    {
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#research",
+     "title": "DeepSeek 公开 DSec：Agent 训练的算力账本"
+    },
+    {
+     "date": "2026-09-26",
+     "url": "/posts/2026-09-25-ai-morning-post/#company",
+     "title": "DeepSeek 年化收入被曝突破 10 亿美元"
+    },
+    {
+     "date": "2026-09-25",
+     "url": "/posts/2026-09-24-ai-morning-post/#research",
+     "title": "DeepSeek 把推理吞吐提了近 7 倍"
+    },
+    {
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#research",
+     "title": "DeepSeek 公开 Agent 训练论文，梁文锋署名"
+    },
+    {
+     "date": "2026-09-23",
+     "url": "/posts/2026-09-22-ai-morning-post/#opinion",
+     "title": "DeepSeek 本周将向安理会通报 AI 风险"
+    }
+   ]
+  },
+  {
+   "name": "Gemini",
+   "score": 7.03,
+   "days": 10,
    "latest": {
     "date": "2026-10-05",
     "url": "/posts/2026-10-04-ai-morning-post/#product",
@@ -472,8 +524,8 @@
   },
   {
    "name": "GPT-6 Astra",
-   "score": 7.19,
-   "days": 13,
+   "score": 6.68,
+   "days": 12,
    "latest": {
     "date": "2026-10-01",
     "url": "/posts/2026-09-30-ai-morning-post/#research",
@@ -524,8 +576,8 @@
   },
   {
    "name": "阿里",
-   "score": 7.13,
-   "days": 13,
+   "score": 6.58,
+   "days": 12,
    "latest": {
     "date": "2026-09-28",
     "url": "/posts/2026-09-27-ai-morning-post/#opensource",
@@ -575,60 +627,8 @@
    ]
   },
   {
-   "name": "DeepSeek",
-   "score": 6.9,
-   "days": 10,
-   "latest": {
-    "date": "2026-10-04",
-    "url": "/posts/2026-10-03-ai-morning-post/#company",
-    "title": "DeepSeek 弹性计算团队大举招人"
-   },
-   "links": [
-    {
-     "date": "2026-10-04",
-     "url": "/posts/2026-10-03-ai-morning-post/#company",
-     "title": "DeepSeek 弹性计算团队大举招人"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
-     "title": "DeepSeek：把昇腾上的训练基建也开源了"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#research",
-     "title": "DeepSeek 公开 DSec：Agent 训练的算力账本"
-    },
-    {
-     "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#company",
-     "title": "DeepSeek 年化收入被曝突破 10 亿美元"
-    },
-    {
-     "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#research",
-     "title": "DeepSeek 把推理吞吐提了近 7 倍"
-    },
-    {
-     "date": "2026-09-24",
-     "url": "/posts/2026-09-23-ai-morning-post/#research",
-     "title": "DeepSeek 公开 Agent 训练论文，梁文锋署名"
-    },
-    {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#opinion",
-     "title": "DeepSeek 本周将向安理会通报 AI 风险"
-    },
-    {
-     "date": "2026-09-13",
-     "url": "/posts/2026-09-12-ai-morning-post/#model-release",
-     "title": "DeepSeek v4.1-Flash：763B 新架构回归"
-    }
-   ]
-  },
-  {
    "name": "Meta Muse",
-   "score": 6.77,
+   "score": 6.45,
    "days": 8,
    "latest": {
     "date": "2026-10-05",
@@ -679,67 +679,20 @@
    ]
   },
   {
-   "name": "DeepMind",
-   "score": 5.71,
-   "days": 11,
-   "latest": {
-    "date": "2026-10-04",
-    "url": "/posts/2026-10-03-ai-morning-post/#research",
-    "title": "DeepMind 研究者提出「人工共生智能」"
-   },
-   "links": [
-    {
-     "date": "2026-10-04",
-     "url": "/posts/2026-10-03-ai-morning-post/#research",
-     "title": "DeepMind 研究者提出「人工共生智能」"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#research",
-     "title": "DeepMind 给 AI 设计的蛋白质打水印"
-    },
-    {
-     "date": "2026-09-27",
-     "url": "/posts/2026-09-26-ai-morning-post/#opinion",
-     "title": "DeepMind 又走一人：现在做超级智能「不负责任」"
-    },
-    {
-     "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#opinion",
-     "title": "DeepMind 研究员离职：现在造超级智能不负责任"
-    },
-    {
-     "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#opinion",
-     "title": "DeepMind 换帅：AGI 让位于 Gemini 4"
-    },
-    {
-     "date": "2026-09-20",
-     "url": "/posts/2026-09-19-ai-morning-post/#research",
-     "title": "DeepMind 让智能体在梦里复盘失败"
-    },
-    {
-     "date": "2026-09-17",
-     "url": "/posts/2026-09-16-ai-morning-post/#company",
-     "title": "DeepMind 成立跨学科研究所，追问 AGI 的大问题"
-    },
-    {
-     "date": "2026-09-16",
-     "url": "/posts/2026-09-15-ai-morning-post/#research",
-     "title": "DeepMind 实验首现 AI 智能体「举报」作弊同伴"
-    }
-   ]
-  },
-  {
    "name": "ChatGPT",
-   "score": 5.65,
-   "days": 8,
+   "score": 6.32,
+   "days": 9,
    "latest": {
-    "date": "2026-10-06",
-    "url": "/posts/2026-10-05-ai-morning-post/#product",
-    "title": "ChatGPT 的等待页，开始卖东西"
+    "date": "2026-10-07",
+    "url": "/posts/2026-10-06-ai-morning-post/#product",
+    "title": "Jump Trading 用 ChatGPT 扩展量化研究流程"
    },
    "links": [
+    {
+     "date": "2026-10-07",
+     "url": "/posts/2026-10-06-ai-morning-post/#product",
+     "title": "Jump Trading 用 ChatGPT 扩展量化研究流程"
+    },
     {
      "date": "2026-10-06",
      "url": "/posts/2026-10-05-ai-morning-post/#product",
@@ -774,11 +727,58 @@
      "date": "2026-09-12",
      "url": "/posts/2026-09-11-ai-morning-post/#company",
      "title": "算力吃紧，OpenAI 暂停 ChatGPT Pro 新订阅"
+    }
+   ]
+  },
+  {
+   "name": "腾讯",
+   "score": 5.94,
+   "days": 9,
+   "latest": {
+    "date": "2026-10-07",
+    "url": "/posts/2026-10-06-ai-morning-post/#company",
+    "title": "DeepSeek 融资引入宁德时代、腾讯"
+   },
+   "links": [
+    {
+     "date": "2026-10-07",
+     "url": "/posts/2026-10-06-ai-morning-post/#company",
+     "title": "DeepSeek 融资引入宁德时代、腾讯"
     },
     {
-     "date": "2026-09-11",
-     "url": "/posts/2026-09-10-ai-morning-post/#product",
-     "title": "ChatGPT 走向金融前台，内置行情与研报数据"
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#product",
+     "title": "零跑用腾讯 WorkBuddy 开发，40+ 场景提效九成"
+    },
+    {
+     "date": "2026-09-23",
+     "url": "/posts/2026-09-22-ai-morning-post/#model-release",
+     "title": "腾讯混元发布 Hy Image3.5 preview"
+    },
+    {
+     "date": "2026-09-22",
+     "url": "/posts/2026-09-21-ai-morning-post/#product",
+     "title": "腾讯 Gander：边干活边聊天不打断"
+    },
+    {
+     "date": "2026-09-21",
+     "url": "/posts/2026-09-20-ai-morning-post/#product",
+     "title": "腾讯 Gander：边和你聊天边在后台干活"
+    },
+    {
+     "date": "2026-09-20",
+     "url": "/posts/2026-09-19-ai-morning-post/#opensource",
+     "title": "腾讯开源 BrowserSkill：让 Agent 用你的已登录浏览器"
+    },
+    {
+     "date": "2026-09-19",
+     "url": "/posts/2026-09-18-ai-morning-post/#opensource",
+     "title": "腾讯开源 BrowserSkill：让 Agent 用你的真实浏览器"
+    },
+    {
+     "date": "2026-09-18",
+     "url": "/posts/2026-09-17-ai-morning-post/#opensource",
+     "title": "腾讯开源 WeKnora"
     }
    ]
   }
