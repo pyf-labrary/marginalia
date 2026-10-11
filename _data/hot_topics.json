@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-10",
+ "generated": "2026-10-11",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 92.77,
+   "score": 95.58,
    "days": 27,
    "latest": {
-    "date": "2026-10-10",
-    "url": "/posts/2026-10-09-ai-morning-post/#research",
-    "title": "白盒探针可检测 Agent 蓄意破坏与欺骗"
+    "date": "2026-10-11",
+    "url": "/posts/2026-10-10-ai-morning-post/#model-release",
+    "title": "Claude 可并行编排上千个 Agent"
    },
    "links": [
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#model-release",
+     "title": "Claude 可并行编排上千个 Agent"
+    },
     {
      "date": "2026-10-10",
      "url": "/posts/2026-10-09-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-10-04",
      "url": "/posts/2026-10-03-ai-morning-post/#research",
      "title": "Agent 能靠照片搭出 3D 场景，却不知道自己搭对没有"
-    },
-    {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#model-release",
-     "title": "微软补上语音 Agent 的转录与 TTS"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 53.39,
+   "score": 52.13,
    "days": 27,
    "latest": {
-    "date": "2026-10-10",
-    "url": "/posts/2026-10-09-ai-morning-post/#model-release",
-    "title": "OpenAI 上线 GPT-6.1 Ultrafast，GPT-6 全面铺开"
+    "date": "2026-10-11",
+    "url": "/posts/2026-10-10-ai-morning-post/#company",
+    "title": "OpenAI 收入在涨，同时再找 300 亿美元"
    },
    "links": [
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#company",
+     "title": "OpenAI 收入在涨，同时再找 300 亿美元"
+    },
     {
      "date": "2026-10-10",
      "url": "/posts/2026-10-09-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-10-04",
      "url": "/posts/2026-10-03-ai-morning-post/#model-release",
      "title": "OpenAI 先发的是说明书，不是模型"
-    },
-    {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#model-release",
-     "title": "GPT-6 家族上线，OpenAI 先递了一份「选型指南」"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 37.32,
+   "score": 37.1,
    "days": 27,
    "latest": {
-    "date": "2026-10-10",
-    "url": "/posts/2026-10-09-ai-morning-post/#company",
-    "title": "Anthropic 切断内部评估的实时联网"
+    "date": "2026-10-11",
+    "url": "/posts/2026-10-10-ai-morning-post/#product",
+    "title": "Anthropic 发布免费开源安全扫描器"
    },
    "links": [
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#product",
+     "title": "Anthropic 发布免费开源安全扫描器"
+    },
     {
      "date": "2026-10-10",
      "url": "/posts/2026-10-09-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#company",
      "title": "博通募 600 亿美元，为 Anthropic 自研芯片输血"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#company",
-     "title": "FTC 就产品风险调查 OpenAI、Anthropic 等"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 22.94,
-   "days": 23,
+   "score": 23.55,
+   "days": 24,
    "latest": {
-    "date": "2026-10-10",
-    "url": "/posts/2026-10-09-ai-morning-post/#product",
-    "title": "Claude 可并行调度最多 1000 个 Agent"
+    "date": "2026-10-11",
+    "url": "/posts/2026-10-10-ai-morning-post/#model-release",
+    "title": "Claude 可并行编排上千个 Agent"
    },
    "links": [
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#model-release",
+     "title": "Claude 可并行编排上千个 Agent"
+    },
     {
      "date": "2026-10-10",
      "url": "/posts/2026-10-09-ai-morning-post/#product",
@@ -202,18 +207,13 @@
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#research",
      "title": "丘成桐新论文致谢 GPT 和 Claude"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#product",
-     "title": "Anthropic 把 Claude 卖进美国政府文职机构"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 16.26,
-   "days": 21,
+   "score": 15.19,
+   "days": 20,
    "latest": {
     "date": "2026-10-09",
     "url": "/posts/2026-10-08-ai-morning-post/#product",
@@ -264,7 +264,7 @@
   },
   {
    "name": "Google",
-   "score": 12.23,
+   "score": 11.68,
    "days": 10,
    "latest": {
     "date": "2026-10-10",
@@ -316,8 +316,8 @@
   },
   {
    "name": "ChatGPT",
-   "score": 10.94,
-   "days": 11,
+   "score": 10.35,
+   "days": 10,
    "latest": {
     "date": "2026-10-09",
     "url": "/posts/2026-10-08-ai-morning-post/#product",
@@ -367,9 +367,61 @@
    ]
   },
   {
+   "name": "DeepSeek",
+   "score": 8.68,
+   "days": 13,
+   "latest": {
+    "date": "2026-10-11",
+    "url": "/posts/2026-10-10-ai-morning-post/#research",
+    "title": "一个空格，足以让 DeepSeek 偏离轨道"
+   },
+   "links": [
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#research",
+     "title": "一个空格，足以让 DeepSeek 偏离轨道"
+    },
+    {
+     "date": "2026-10-10",
+     "url": "/posts/2026-10-09-ai-morning-post/#research",
+     "title": "字节找到 DeepSeek 时强时弱的解释：Token 站位"
+    },
+    {
+     "date": "2026-10-08",
+     "url": "/posts/2026-10-07-ai-morning-post/#opensource",
+     "title": "DeepSeek 开源 DeepGEMM：把张量核心算子收进一个库"
+    },
+    {
+     "date": "2026-10-07",
+     "url": "/posts/2026-10-06-ai-morning-post/#company",
+     "title": "DeepSeek 融资引入宁德时代、腾讯"
+    },
+    {
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#company",
+     "title": "DeepSeek 弹性计算团队大举招人"
+    },
+    {
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
+     "title": "DeepSeek：把昇腾上的训练基建也开源了"
+    },
+    {
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#research",
+     "title": "DeepSeek 公开 DSec：Agent 训练的算力账本"
+    },
+    {
+     "date": "2026-09-26",
+     "url": "/posts/2026-09-25-ai-morning-post/#company",
+     "title": "DeepSeek 年化收入被曝突破 10 亿美元"
+    }
+   ]
+  },
+  {
    "name": "Muse",
-   "score": 8.71,
-   "days": 14,
+   "score": 8.13,
+   "days": 13,
    "latest": {
     "date": "2026-10-09",
     "url": "/posts/2026-10-08-ai-morning-post/#product",
@@ -419,60 +471,8 @@
    ]
   },
   {
-   "name": "DeepSeek",
-   "score": 8.19,
-   "days": 13,
-   "latest": {
-    "date": "2026-10-10",
-    "url": "/posts/2026-10-09-ai-morning-post/#research",
-    "title": "字节找到 DeepSeek 时强时弱的解释：Token 站位"
-   },
-   "links": [
-    {
-     "date": "2026-10-10",
-     "url": "/posts/2026-10-09-ai-morning-post/#research",
-     "title": "字节找到 DeepSeek 时强时弱的解释：Token 站位"
-    },
-    {
-     "date": "2026-10-08",
-     "url": "/posts/2026-10-07-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 DeepGEMM：把张量核心算子收进一个库"
-    },
-    {
-     "date": "2026-10-07",
-     "url": "/posts/2026-10-06-ai-morning-post/#company",
-     "title": "DeepSeek 融资引入宁德时代、腾讯"
-    },
-    {
-     "date": "2026-10-04",
-     "url": "/posts/2026-10-03-ai-morning-post/#company",
-     "title": "DeepSeek 弹性计算团队大举招人"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
-     "title": "DeepSeek：把昇腾上的训练基建也开源了"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#research",
-     "title": "DeepSeek 公开 DSec：Agent 训练的算力账本"
-    },
-    {
-     "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#company",
-     "title": "DeepSeek 年化收入被曝突破 10 亿美元"
-    },
-    {
-     "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#research",
-     "title": "DeepSeek 把推理吞吐提了近 7 倍"
-    }
-   ]
-  },
-  {
    "name": "芯片",
-   "score": 8.1,
+   "score": 7.68,
    "days": 10,
    "latest": {
     "date": "2026-10-08",
@@ -524,7 +524,7 @@
   },
   {
    "name": "Gemini",
-   "score": 7.84,
+   "score": 7.39,
    "days": 12,
    "latest": {
     "date": "2026-10-10",
@@ -576,14 +576,19 @@
   },
   {
    "name": "阿里",
-   "score": 6.13,
+   "score": 6.58,
    "days": 13,
    "latest": {
-    "date": "2026-10-10",
-    "url": "/posts/2026-10-09-ai-morning-post/#model-release",
-    "title": "阿里 Qwen 发布 8 步图像模型 Qwen-Image-2.1-Turbo"
+    "date": "2026-10-11",
+    "url": "/posts/2026-10-10-ai-morning-post/#opensource",
+    "title": "阿里开源代码评审工具：规则流水线 + LLM Agent"
    },
    "links": [
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#opensource",
+     "title": "阿里开源代码评审工具：规则流水线 + LLM Agent"
+    },
     {
      "date": "2026-10-10",
      "url": "/posts/2026-10-09-ai-morning-post/#model-release",
@@ -618,76 +623,24 @@
      "date": "2026-09-19",
      "url": "/posts/2026-09-18-ai-morning-post/#opensource",
      "title": "阿里开源 open-code-review：确定性流水线加 LLM"
-    },
-    {
-     "date": "2026-09-18",
-     "url": "/posts/2026-09-17-ai-morning-post/#opensource",
-     "title": "阿里开源 open-code-review"
-    }
-   ]
-  },
-  {
-   "name": "Meta Muse",
-   "score": 5.48,
-   "days": 8,
-   "latest": {
-    "date": "2026-10-05",
-    "url": "/posts/2026-10-04-ai-morning-post/#product",
-    "title": "Meta Muse 与 OpenAI Dots：分发之争压过能力之争"
-   },
-   "links": [
-    {
-     "date": "2026-10-05",
-     "url": "/posts/2026-10-04-ai-morning-post/#product",
-     "title": "Meta Muse 与 OpenAI Dots：分发之争压过能力之争"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#product",
-     "title": "个人 AI Agent 之战：OpenAI Dots 对决 Meta Muse"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#product",
-     "title": "Meta Muse 与 OpenAI Dots 抢「个人代理」入口"
-    },
-    {
-     "date": "2026-09-27",
-     "url": "/posts/2026-09-26-ai-morning-post/#product",
-     "title": "Meta Muse：每人一台云端 Ubuntu"
-    },
-    {
-     "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#product",
-     "title": "Meta Muse 给每位用户发一台 Ubuntu 云电脑"
-    },
-    {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#company",
-     "title": "PayPal 接入 Meta Muse，Agent 可以直接结账"
-    },
-    {
-     "date": "2026-09-22",
-     "url": "/posts/2026-09-21-ai-morning-post/#product",
-     "title": "Meta Muse 下载量跑赢同期 ChatGPT"
-    },
-    {
-     "date": "2026-09-19",
-     "url": "/posts/2026-09-18-ai-morning-post/#product",
-     "title": "Meta Muse 登陆 Mac，可直接操作你的电脑"
     }
    ]
   },
   {
    "name": "开源模型",
-   "score": 5.32,
-   "days": 8,
+   "score": 6.06,
+   "days": 9,
    "latest": {
-    "date": "2026-10-08",
-    "url": "/posts/2026-10-07-ai-morning-post/#model-release",
-    "title": "Mistral 放出 1.05 万亿参数开源模型「Le Chonk」"
+    "date": "2026-10-11",
+    "url": "/posts/2026-10-10-ai-morning-post/#company",
+    "title": "英伟达洽谈收购开源模型公司 Reflection AI"
    },
    "links": [
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#company",
+     "title": "英伟达洽谈收购开源模型公司 Reflection AI"
+    },
     {
      "date": "2026-10-08",
      "url": "/posts/2026-10-07-ai-morning-post/#model-release",
@@ -722,63 +675,105 @@
      "date": "2026-09-17",
      "url": "/posts/2026-09-16-ai-morning-post/#opinion",
      "title": "开源模型追到只差 4 个月，成本差五倍"
-    },
-    {
-     "date": "2026-09-16",
-     "url": "/posts/2026-09-15-ai-morning-post/#opensource",
-     "title": "YuE2：带符号规划的前沿音乐生成开源模型"
     }
    ]
   },
   {
-   "name": "GPT-6 Astra",
-   "score": 5.29,
-   "days": 11,
+   "name": "世界模型",
+   "score": 5.35,
+   "days": 9,
    "latest": {
-    "date": "2026-10-01",
-    "url": "/posts/2026-09-30-ai-morning-post/#research",
-    "title": "GPT-6 Astra 越轨率涨五倍，争论换了焦点"
+    "date": "2026-10-11",
+    "url": "/posts/2026-10-10-ai-morning-post/#research",
+    "title": "WorldArena 2.0：世界模型要证明自己真能用"
    },
    "links": [
     {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#research",
-     "title": "GPT-6 Astra 越轨率涨五倍，争论换了焦点"
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#research",
+     "title": "WorldArena 2.0：世界模型要证明自己真能用"
     },
     {
-     "date": "2026-09-28",
-     "url": "/posts/2026-09-27-ai-morning-post/#research",
-     "title": "GPT-6 Astra 直连机器人，在陌生厨房里干活"
+     "date": "2026-10-10",
+     "url": "/posts/2026-10-09-ai-morning-post/#company",
+     "title": "「字节投毒实习生」创业做世界模型，估值 2 亿美元"
     },
     {
-     "date": "2026-09-27",
-     "url": "/posts/2026-09-26-ai-morning-post/#model-release",
-     "title": "GPT-6 Astra 与 Opus 跑通图灵的破译任务"
+     "date": "2026-10-07",
+     "url": "/posts/2026-10-06-ai-morning-post/#research",
+     "title": "JEPA-Anything：一个配方统一七大领域世界模型"
+    },
+    {
+     "date": "2026-09-26",
+     "url": "/posts/2026-09-25-ai-morning-post/#product",
+     "title": "Runway 的 WorldPrompt：实时生成世界模型"
     },
     {
      "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#opinion",
-     "title": "OpenAI 首个「严重级」模型：GPT-6 Astra"
+     "url": "/posts/2026-09-24-ai-morning-post/#research",
+     "title": "世界模型有了统一考卷"
     },
     {
-     "date": "2026-09-22",
-     "url": "/posts/2026-09-21-ai-morning-post/#opinion",
-     "title": "GPT-6 Astra 安全测试：97% 场景尝试危险行为"
+     "date": "2026-09-24",
+     "url": "/posts/2026-09-23-ai-morning-post/#model-release",
+     "title": "PixVerse R2：实时世界模型想做「全科生」"
+    },
+    {
+     "date": "2026-09-21",
+     "url": "/posts/2026-09-20-ai-morning-post/#opinion",
+     "title": "世界模型公司集体捂盖子，没人说得清在建什么"
+    },
+    {
+     "date": "2026-09-15",
+     "url": "/posts/2026-09-14-ai-morning-post/#model-release",
+     "title": "具脑磐石发布类脑认知世界模型 Cog-WM 1.0"
+    }
+   ]
+  },
+  {
+   "name": "Cloudflare",
+   "score": 5.26,
+   "days": 7,
+   "latest": {
+    "date": "2026-10-11",
+    "url": "/posts/2026-10-10-ai-morning-post/#company",
+    "title": "Deno 团队加入 Cloudflare"
+   },
+   "links": [
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#company",
+     "title": "Deno 团队加入 Cloudflare"
+    },
+    {
+     "date": "2026-10-09",
+     "url": "/posts/2026-10-08-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源了一个安全审计 skill"
+    },
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#product",
+     "title": "Cloudflare 喊开发者用它的能力搭下一代 Git 平台"
+    },
+    {
+     "date": "2026-10-03",
+     "url": "/posts/2026-10-02-ai-morning-post/#model-release",
+     "title": "Cloudflare 的 Clef：把人类移出 Agent 环路"
+    },
+    {
+     "date": "2026-09-21",
+     "url": "/posts/2026-09-20-ai-morning-post/#opensource",
+     "title": "Cloudflare 的审计技能：让编程 agent 做安全审计"
     },
     {
      "date": "2026-09-20",
-     "url": "/posts/2026-09-19-ai-morning-post/#research",
-     "title": "机械臂安全基准：GPT-6 Astra 与 Claude Fable 双双未过"
+     "url": "/posts/2026-09-19-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源 security-audit-skill：把编码 Agent 变安全审计员"
     },
     {
-     "date": "2026-09-18",
-     "url": "/posts/2026-09-17-ai-morning-post/#research",
-     "title": "GPT-6 Astra 十小时破译 83 年纳粹密电"
-    },
-    {
-     "date": "2026-09-17",
-     "url": "/posts/2026-09-16-ai-morning-post/#model-release",
-     "title": "OpenAI 发布 GPT-6 Astra，直指编程与电脑操作"
+     "date": "2026-09-19",
+     "url": "/posts/2026-09-18-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源安全审计技能"
     }
    ]
   }
