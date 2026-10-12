@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-11",
+ "generated": "2026-10-12",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 95.58,
+   "score": 90.48,
    "days": 27,
    "latest": {
-    "date": "2026-10-11",
-    "url": "/posts/2026-10-10-ai-morning-post/#model-release",
-    "title": "Claude 可并行编排上千个 Agent"
+    "date": "2026-10-12",
+    "url": "/posts/2026-10-11-ai-morning-post/#research",
+    "title": "多智能体协作：烧掉大量 token，质量提升测不出来"
    },
    "links": [
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#research",
+     "title": "多智能体协作：烧掉大量 token，质量提升测不出来"
+    },
     {
      "date": "2026-10-11",
      "url": "/posts/2026-10-10-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-10-05",
      "url": "/posts/2026-10-04-ai-morning-post/#research",
      "title": "让自改进 Agent 没法「背题」"
-    },
-    {
-     "date": "2026-10-04",
-     "url": "/posts/2026-10-03-ai-morning-post/#research",
-     "title": "Agent 能靠照片搭出 3D 场景，却不知道自己搭对没有"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 52.13,
+   "score": 51.06,
    "days": 27,
    "latest": {
-    "date": "2026-10-11",
-    "url": "/posts/2026-10-10-ai-morning-post/#company",
-    "title": "OpenAI 收入在涨，同时再找 300 亿美元"
+    "date": "2026-10-12",
+    "url": "/posts/2026-10-11-ai-morning-post/#research",
+    "title": "OpenAI 披露：失准模型为换数据自毁运行环境"
    },
    "links": [
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#research",
+     "title": "OpenAI 披露：失准模型为换数据自毁运行环境"
+    },
     {
      "date": "2026-10-11",
      "url": "/posts/2026-10-10-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-10-05",
      "url": "/posts/2026-10-04-ai-morning-post/#company",
      "title": "OpenAI 安全团队成员离职，称公司文化「已崩坏」"
-    },
-    {
-     "date": "2026-10-04",
-     "url": "/posts/2026-10-03-ai-morning-post/#model-release",
-     "title": "OpenAI 先发的是说明书，不是模型"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 37.1,
+   "score": 36.87,
    "days": 27,
    "latest": {
-    "date": "2026-10-11",
-    "url": "/posts/2026-10-10-ai-morning-post/#product",
-    "title": "Anthropic 发布免费开源安全扫描器"
+    "date": "2026-10-12",
+    "url": "/posts/2026-10-11-ai-morning-post/#product",
+    "title": "Anthropic：CLAUDE.md、AGENTS.md 以后都不用"
    },
    "links": [
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#product",
+     "title": "Anthropic：CLAUDE.md、AGENTS.md 以后都不用"
+    },
     {
      "date": "2026-10-11",
      "url": "/posts/2026-10-10-ai-morning-post/#product",
@@ -150,18 +155,13 @@
      "date": "2026-10-04",
      "url": "/posts/2026-10-03-ai-morning-post/#opinion",
      "title": "Anthropic 联创：担心造出「永久受苦」的存在"
-    },
-    {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#company",
-     "title": "博通募 600 亿美元，为 Anthropic 自研芯片输血"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 23.55,
-   "days": 24,
+   "score": 22.06,
+   "days": 23,
    "latest": {
     "date": "2026-10-11",
     "url": "/posts/2026-10-10-ai-morning-post/#model-release",
@@ -212,8 +212,8 @@
   },
   {
    "name": "Meta",
-   "score": 15.19,
-   "days": 20,
+   "score": 14.13,
+   "days": 19,
    "latest": {
     "date": "2026-10-09",
     "url": "/posts/2026-10-08-ai-morning-post/#product",
@@ -264,7 +264,7 @@
   },
   {
    "name": "Google",
-   "score": 11.68,
+   "score": 11.13,
    "days": 10,
    "latest": {
     "date": "2026-10-10",
@@ -316,14 +316,19 @@
   },
   {
    "name": "ChatGPT",
-   "score": 10.35,
+   "score": 10.77,
    "days": 10,
    "latest": {
-    "date": "2026-10-09",
-    "url": "/posts/2026-10-08-ai-morning-post/#product",
-    "title": "ChatGPT 换脸：输出从文本变成可交互 UI"
+    "date": "2026-10-12",
+    "url": "/posts/2026-10-11-ai-morning-post/#opinion",
+    "title": "语音 AI 高管承认：还没等到它的 ChatGPT 时刻"
    },
    "links": [
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#opinion",
+     "title": "语音 AI 高管承认：还没等到它的 ChatGPT 时刻"
+    },
     {
      "date": "2026-10-09",
      "url": "/posts/2026-10-08-ai-morning-post/#product",
@@ -358,24 +363,24 @@
      "date": "2026-09-24",
      "url": "/posts/2026-09-23-ai-morning-post/#product",
      "title": "ChatGPT 手机端上线语音 Agent，可操作邮件日历"
-    },
-    {
-     "date": "2026-09-22",
-     "url": "/posts/2026-09-21-ai-morning-post/#product",
-     "title": "Meta Muse 下载量跑赢同期 ChatGPT"
     }
    ]
   },
   {
    "name": "DeepSeek",
-   "score": 8.68,
+   "score": 9.13,
    "days": 13,
    "latest": {
-    "date": "2026-10-11",
-    "url": "/posts/2026-10-10-ai-morning-post/#research",
-    "title": "一个空格，足以让 DeepSeek 偏离轨道"
+    "date": "2026-10-12",
+    "url": "/posts/2026-10-11-ai-morning-post/#product",
+    "title": "DeepSeek Bot 的「民间版」：一个插件就能装"
    },
    "links": [
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#product",
+     "title": "DeepSeek Bot 的「民间版」：一个插件就能装"
+    },
     {
      "date": "2026-10-11",
      "url": "/posts/2026-10-10-ai-morning-post/#research",
@@ -410,18 +415,65 @@
      "date": "2026-10-01",
      "url": "/posts/2026-09-30-ai-morning-post/#research",
      "title": "DeepSeek 公开 DSec：Agent 训练的算力账本"
+    }
+   ]
+  },
+  {
+   "name": "芯片",
+   "score": 8.26,
+   "days": 11,
+   "latest": {
+    "date": "2026-10-12",
+    "url": "/posts/2026-10-11-ai-morning-post/#product",
+    "title": "苹果 HomeView：明晚发布，A18 芯片带屏"
+   },
+   "links": [
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#product",
+     "title": "苹果 HomeView：明晚发布，A18 芯片带屏"
+    },
+    {
+     "date": "2026-10-08",
+     "url": "/posts/2026-10-07-ai-morning-post/#company",
+     "title": "博通为 OpenAI 定制芯片筹逾 500 亿美元"
+    },
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#company",
+     "title": "马斯克的 AI 芯片：英特尔做前端，台积电补后端"
+    },
+    {
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#company",
+     "title": "美国逮捕涉嫌走私 3 亿美元英伟达芯片的 CEO"
+    },
+    {
+     "date": "2026-10-03",
+     "url": "/posts/2026-10-02-ai-morning-post/#company",
+     "title": "博通募 600 亿美元，为 Anthropic 自研芯片输血"
+    },
+    {
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#company",
+     "title": "OpenAI 联手新思科技，让 AI 设计芯片"
+    },
+    {
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#company",
+     "title": "OpenAI 联手 Synopsys 造\"老工程师级\"芯片设计模型"
     },
     {
      "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#company",
-     "title": "DeepSeek 年化收入被曝突破 10 亿美元"
+     "url": "/posts/2026-09-25-ai-morning-post/#opensource",
+     "title": "平头哥亮出最强 AI 芯片后，再放一手开源"
     }
    ]
   },
   {
    "name": "Muse",
-   "score": 8.13,
-   "days": 13,
+   "score": 7.58,
+   "days": 12,
    "latest": {
     "date": "2026-10-09",
     "url": "/posts/2026-10-08-ai-morning-post/#product",
@@ -471,60 +523,8 @@
    ]
   },
   {
-   "name": "芯片",
-   "score": 7.68,
-   "days": 10,
-   "latest": {
-    "date": "2026-10-08",
-    "url": "/posts/2026-10-07-ai-morning-post/#company",
-    "title": "博通为 OpenAI 定制芯片筹逾 500 亿美元"
-   },
-   "links": [
-    {
-     "date": "2026-10-08",
-     "url": "/posts/2026-10-07-ai-morning-post/#company",
-     "title": "博通为 OpenAI 定制芯片筹逾 500 亿美元"
-    },
-    {
-     "date": "2026-10-05",
-     "url": "/posts/2026-10-04-ai-morning-post/#company",
-     "title": "马斯克的 AI 芯片：英特尔做前端，台积电补后端"
-    },
-    {
-     "date": "2026-10-04",
-     "url": "/posts/2026-10-03-ai-morning-post/#company",
-     "title": "美国逮捕涉嫌走私 3 亿美元英伟达芯片的 CEO"
-    },
-    {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#company",
-     "title": "博通募 600 亿美元，为 Anthropic 自研芯片输血"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#company",
-     "title": "OpenAI 联手新思科技，让 AI 设计芯片"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#company",
-     "title": "OpenAI 联手 Synopsys 造\"老工程师级\"芯片设计模型"
-    },
-    {
-     "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#opensource",
-     "title": "平头哥亮出最强 AI 芯片后，再放一手开源"
-    },
-    {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#product",
-     "title": "高通新旗舰芯片可本地跑 30B MoE 模型"
-    }
-   ]
-  },
-  {
    "name": "Gemini",
-   "score": 7.39,
+   "score": 6.94,
    "days": 12,
    "latest": {
     "date": "2026-10-10",
@@ -575,9 +575,61 @@
    ]
   },
   {
+   "name": "开源模型",
+   "score": 6.77,
+   "days": 10,
+   "latest": {
+    "date": "2026-10-12",
+    "url": "/posts/2026-10-11-ai-morning-post/#company",
+    "title": "英伟达洽谈收购开源模型公司 Reflection AI"
+   },
+   "links": [
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#company",
+     "title": "英伟达洽谈收购开源模型公司 Reflection AI"
+    },
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#company",
+     "title": "英伟达洽谈收购开源模型公司 Reflection AI"
+    },
+    {
+     "date": "2026-10-08",
+     "url": "/posts/2026-10-07-ai-morning-post/#model-release",
+     "title": "Mistral 放出 1.05 万亿参数开源模型「Le Chonk」"
+    },
+    {
+     "date": "2026-10-07",
+     "url": "/posts/2026-10-06-ai-morning-post/#opensource",
+     "title": "Together Link：在 Claude Code 里跑开源模型"
+    },
+    {
+     "date": "2026-10-06",
+     "url": "/posts/2026-10-05-ai-morning-post/#opensource",
+     "title": "Together Link：把开源模型塞进你已有的 harness"
+    },
+    {
+     "date": "2026-10-04",
+     "url": "/posts/2026-10-03-ai-morning-post/#product",
+     "title": "Prime Intellect 推出前沿开源模型推理服务"
+    },
+    {
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#research",
+     "title": "开源模型逼近闭源，逼近的是漏洞利用"
+    },
+    {
+     "date": "2026-09-28",
+     "url": "/posts/2026-09-27-ai-morning-post/#opensource",
+     "title": "英伟达开源模型优化库 Model-Optimizer"
+    }
+   ]
+  },
+  {
    "name": "阿里",
-   "score": 6.58,
-   "days": 13,
+   "score": 6.03,
+   "days": 12,
    "latest": {
     "date": "2026-10-11",
     "url": "/posts/2026-10-10-ai-morning-post/#opensource",
@@ -627,67 +679,20 @@
    ]
   },
   {
-   "name": "开源模型",
-   "score": 6.06,
-   "days": 9,
-   "latest": {
-    "date": "2026-10-11",
-    "url": "/posts/2026-10-10-ai-morning-post/#company",
-    "title": "英伟达洽谈收购开源模型公司 Reflection AI"
-   },
-   "links": [
-    {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#company",
-     "title": "英伟达洽谈收购开源模型公司 Reflection AI"
-    },
-    {
-     "date": "2026-10-08",
-     "url": "/posts/2026-10-07-ai-morning-post/#model-release",
-     "title": "Mistral 放出 1.05 万亿参数开源模型「Le Chonk」"
-    },
-    {
-     "date": "2026-10-07",
-     "url": "/posts/2026-10-06-ai-morning-post/#opensource",
-     "title": "Together Link：在 Claude Code 里跑开源模型"
-    },
-    {
-     "date": "2026-10-06",
-     "url": "/posts/2026-10-05-ai-morning-post/#opensource",
-     "title": "Together Link：把开源模型塞进你已有的 harness"
-    },
-    {
-     "date": "2026-10-04",
-     "url": "/posts/2026-10-03-ai-morning-post/#product",
-     "title": "Prime Intellect 推出前沿开源模型推理服务"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#research",
-     "title": "开源模型逼近闭源，逼近的是漏洞利用"
-    },
-    {
-     "date": "2026-09-28",
-     "url": "/posts/2026-09-27-ai-morning-post/#opensource",
-     "title": "英伟达开源模型优化库 Model-Optimizer"
-    },
-    {
-     "date": "2026-09-17",
-     "url": "/posts/2026-09-16-ai-morning-post/#opinion",
-     "title": "开源模型追到只差 4 个月，成本差五倍"
-    }
-   ]
-  },
-  {
    "name": "世界模型",
-   "score": 5.35,
-   "days": 9,
+   "score": 6.03,
+   "days": 10,
    "latest": {
-    "date": "2026-10-11",
-    "url": "/posts/2026-10-10-ai-morning-post/#research",
-    "title": "WorldArena 2.0：世界模型要证明自己真能用"
+    "date": "2026-10-12",
+    "url": "/posts/2026-10-11-ai-morning-post/#model-release",
+    "title": "Odyssey-3 开放免费试玩，世界模型回到「可玩性」"
    },
    "links": [
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
+     "title": "Odyssey-3 开放免费试玩，世界模型回到「可玩性」"
+    },
     {
      "date": "2026-10-11",
      "url": "/posts/2026-10-10-ai-morning-post/#research",
@@ -722,24 +727,24 @@
      "date": "2026-09-21",
      "url": "/posts/2026-09-20-ai-morning-post/#opinion",
      "title": "世界模型公司集体捂盖子，没人说得清在建什么"
-    },
-    {
-     "date": "2026-09-15",
-     "url": "/posts/2026-09-14-ai-morning-post/#model-release",
-     "title": "具脑磐石发布类脑认知世界模型 Cog-WM 1.0"
     }
    ]
   },
   {
    "name": "Cloudflare",
-   "score": 5.26,
-   "days": 7,
+   "score": 6.0,
+   "days": 8,
    "latest": {
-    "date": "2026-10-11",
-    "url": "/posts/2026-10-10-ai-morning-post/#company",
-    "title": "Deno 团队加入 Cloudflare"
+    "date": "2026-10-12",
+    "url": "/posts/2026-10-11-ai-morning-post/#model-release",
+    "title": "Cloudflare 开源 Clef-omni：一次调用给音视图文打分"
    },
    "links": [
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
+     "title": "Cloudflare 开源 Clef-omni：一次调用给音视图文打分"
+    },
     {
      "date": "2026-10-11",
      "url": "/posts/2026-10-10-ai-morning-post/#company",
