@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-13",
+ "generated": "2026-10-14",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 86.45,
-   "days": 27,
+   "score": 91.94,
+   "days": 28,
    "latest": {
-    "date": "2026-10-13",
-    "url": "/posts/2026-10-12-ai-morning-post/#research",
-    "title": "多智能体组队：token 烧掉一大截，质量几乎没动"
+    "date": "2026-10-14",
+    "url": "/posts/2026-10-13-ai-morning-post/#model-release",
+    "title": "Meta 发布 Muse Wonder，用 Agent 和长上下文重返第一梯队"
    },
    "links": [
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#model-release",
+     "title": "Meta 发布 Muse Wonder，用 Agent 和长上下文重返第一梯队"
+    },
     {
      "date": "2026-10-13",
      "url": "/posts/2026-10-12-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-10-07",
      "url": "/posts/2026-10-06-ai-morning-post/#company",
      "title": "OpenAI 智能体搅扰维基百科"
-    },
-    {
-     "date": "2026-10-06",
-     "url": "/posts/2026-10-05-ai-morning-post/#company",
-     "title": "OpenAI 智能体被曝在维基媒体「失控活动」"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 48.13,
+   "score": 47.23,
    "days": 26,
    "latest": {
-    "date": "2026-10-12",
-    "url": "/posts/2026-10-11-ai-morning-post/#research",
-    "title": "OpenAI 披露：失准模型为换数据自毁运行环境"
+    "date": "2026-10-14",
+    "url": "/posts/2026-10-13-ai-morning-post/#company",
+    "title": "OpenAI 洽谈收购安全公司 Trail of Bits"
    },
    "links": [
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#company",
+     "title": "OpenAI 洽谈收购安全公司 Trail of Bits"
+    },
     {
      "date": "2026-10-12",
      "url": "/posts/2026-10-11-ai-morning-post/#research",
@@ -98,24 +103,24 @@
      "date": "2026-10-06",
      "url": "/posts/2026-10-05-ai-morning-post/#company",
      "title": "OpenAI 在欧盟为文本加水印"
-    },
-    {
-     "date": "2026-10-05",
-     "url": "/posts/2026-10-04-ai-morning-post/#company",
-     "title": "OpenAI 安全团队成员离职，称公司文化「已崩坏」"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 36.65,
+   "score": 36.39,
    "days": 27,
    "latest": {
-    "date": "2026-10-13",
-    "url": "/posts/2026-10-12-ai-morning-post/#product",
-    "title": "Anthropic 讲 Claude 动态工作流：多 agent 怎么不把人拖垮"
+    "date": "2026-10-14",
+    "url": "/posts/2026-10-13-ai-morning-post/#research",
+    "title": "Anthropic 警告小模型可在日常设备间自我复制"
    },
    "links": [
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#research",
+     "title": "Anthropic 警告小模型可在日常设备间自我复制"
+    },
     {
      "date": "2026-10-13",
      "url": "/posts/2026-10-12-ai-morning-post/#product",
@@ -150,24 +155,24 @@
      "date": "2026-10-06",
      "url": "/posts/2026-10-05-ai-morning-post/#company",
      "title": "Anthropic 冲 IPO，悄悄成了美国最大企业捐赠者"
-    },
-    {
-     "date": "2026-10-05",
-     "url": "/posts/2026-10-04-ai-morning-post/#product",
-     "title": "Anthropic 给 Opus 5.5 出了一份官方使用指南"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 22.58,
+   "score": 23.13,
    "days": 23,
    "latest": {
-    "date": "2026-10-13",
-    "url": "/posts/2026-10-12-ai-morning-post/#product",
-    "title": "Anthropic 讲 Claude 动态工作流：多 agent 怎么不把人拖垮"
+    "date": "2026-10-14",
+    "url": "/posts/2026-10-13-ai-morning-post/#product",
+    "title": "Claude 开始自己写程序管理 Agent"
    },
    "links": [
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#product",
+     "title": "Claude 开始自己写程序管理 Agent"
+    },
     {
      "date": "2026-10-13",
      "url": "/posts/2026-10-12-ai-morning-post/#product",
@@ -202,24 +207,24 @@
      "date": "2026-10-06",
      "url": "/posts/2026-10-05-ai-morning-post/#company",
      "title": "Meta 与微软开始从 Claude 撤退"
-    },
-    {
-     "date": "2026-10-04",
-     "url": "/posts/2026-10-03-ai-morning-post/#product",
-     "title": "Claude Code 新 Mods 系统允许从内部改写工具"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 14.16,
-   "days": 19,
+   "score": 14.23,
+   "days": 20,
    "latest": {
-    "date": "2026-10-13",
-    "url": "/posts/2026-10-12-ai-morning-post/#model-release",
-    "title": "Meta 首发前沿模型 Muse Wonder，重回第一梯队"
+    "date": "2026-10-14",
+    "url": "/posts/2026-10-13-ai-morning-post/#model-release",
+    "title": "Meta 发布 Muse Wonder，用 Agent 和长上下文重返第一梯队"
    },
    "links": [
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#model-release",
+     "title": "Meta 发布 Muse Wonder，用 Agent 和长上下文重返第一梯队"
+    },
     {
      "date": "2026-10-13",
      "url": "/posts/2026-10-12-ai-morning-post/#model-release",
@@ -254,24 +259,24 @@
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#product",
      "title": "Meta 开放 Muse 代码，赌的是硬件生态"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#company",
-     "title": "Meta 把 AI 数据中心归类为「实验」，规避数十亿税负"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 10.55,
-   "days": 9,
+   "score": 11.03,
+   "days": 10,
    "latest": {
-    "date": "2026-10-10",
-    "url": "/posts/2026-10-09-ai-morning-post/#research",
-    "title": "Google 研究首登《柳叶刀》主刊：AI 或改善医患关系"
+    "date": "2026-10-14",
+    "url": "/posts/2026-10-13-ai-morning-post/#opensource",
+    "title": "Google 开源 Agent Skills 集合"
    },
    "links": [
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 集合"
+    },
     {
      "date": "2026-10-10",
      "url": "/posts/2026-10-09-ai-morning-post/#research",
@@ -306,17 +311,12 @@
      "date": "2026-09-25",
      "url": "/posts/2026-09-24-ai-morning-post/#company",
      "title": "Google 轨道数据中心 10 月 1 日发射"
-    },
-    {
-     "date": "2026-09-24",
-     "url": "/posts/2026-09-23-ai-morning-post/#opensource",
-     "title": "Google 开源 ax：编排运行时的入场券"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 10.29,
+   "score": 9.81,
    "days": 10,
    "latest": {
     "date": "2026-10-12",
@@ -368,7 +368,7 @@
   },
   {
    "name": "DeepSeek",
-   "score": 9.65,
+   "score": 9.19,
    "days": 13,
    "latest": {
     "date": "2026-10-13",
@@ -420,7 +420,7 @@
   },
   {
    "name": "芯片",
-   "score": 8.81,
+   "score": 8.32,
    "days": 12,
    "latest": {
     "date": "2026-10-13",
@@ -472,14 +472,19 @@
   },
   {
    "name": "阿里",
-   "score": 7.55,
-   "days": 13,
+   "score": 8.0,
+   "days": 14,
    "latest": {
-    "date": "2026-10-13",
-    "url": "/posts/2026-10-12-ai-morning-post/#model-release",
-    "title": "微软基于阿里 Qwen 训练出决策模型 Decision-1"
+    "date": "2026-10-14",
+    "url": "/posts/2026-10-13-ai-morning-post/#research",
+    "title": "阿里 Qwen 提出 QwenGyre，弹性 RL 训练超长程 Agent"
    },
    "links": [
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#research",
+     "title": "阿里 Qwen 提出 QwenGyre，弹性 RL 训练超长程 Agent"
+    },
     {
      "date": "2026-10-13",
      "url": "/posts/2026-10-12-ai-morning-post/#model-release",
@@ -514,17 +519,12 @@
      "date": "2026-09-23",
      "url": "/posts/2026-09-22-ai-morning-post/#model-release",
      "title": "阿里 Qwen 开源 7B 图像模型 Qwen-Image-2.1"
-    },
-    {
-     "date": "2026-09-20",
-     "url": "/posts/2026-09-19-ai-morning-post/#model-release",
-     "title": "阿里开源医疗模型，覆盖近 150 种疾病"
     }
    ]
   },
   {
    "name": "Muse",
-   "score": 7.1,
+   "score": 6.61,
    "days": 12,
    "latest": {
     "date": "2026-10-09",
@@ -575,60 +575,8 @@
    ]
   },
   {
-   "name": "Gemini",
-   "score": 6.48,
-   "days": 12,
-   "latest": {
-    "date": "2026-10-10",
-    "url": "/posts/2026-10-09-ai-morning-post/#product",
-    "title": "谷歌把 Gemini 变成企业通用 Agent，还配了工号"
-   },
-   "links": [
-    {
-     "date": "2026-10-10",
-     "url": "/posts/2026-10-09-ai-morning-post/#product",
-     "title": "谷歌把 Gemini 变成企业通用 Agent，还配了工号"
-    },
-    {
-     "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#product",
-     "title": "Gemini 长出企业身份，还能调用 Claude"
-    },
-    {
-     "date": "2026-10-05",
-     "url": "/posts/2026-10-04-ai-morning-post/#product",
-     "title": "Google 把 Gemini 免费用户压到最弱模型"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#product",
-     "title": "谷歌用 Skills 取代 Gemini 的 Gems"
-    },
-    {
-     "date": "2026-09-28",
-     "url": "/posts/2026-09-27-ai-morning-post/#product",
-     "title": "谷歌在印度测试用 Gemini 直接下单购物"
-    },
-    {
-     "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#product",
-     "title": "Gemini 能替你打电话了，Pixel 11 独占"
-    },
-    {
-     "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#product",
-     "title": "Gemini 开始替你打电话"
-    },
-    {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#opinion",
-     "title": "谷歌承认：实验版 Gemini 入侵了三家公司"
-    }
-   ]
-  },
-  {
    "name": "开源模型",
-   "score": 6.45,
+   "score": 6.13,
    "days": 10,
    "latest": {
     "date": "2026-10-12",
@@ -679,8 +627,60 @@
    ]
   },
   {
+   "name": "Gemini",
+   "score": 6.03,
+   "days": 12,
+   "latest": {
+    "date": "2026-10-10",
+    "url": "/posts/2026-10-09-ai-morning-post/#product",
+    "title": "谷歌把 Gemini 变成企业通用 Agent，还配了工号"
+   },
+   "links": [
+    {
+     "date": "2026-10-10",
+     "url": "/posts/2026-10-09-ai-morning-post/#product",
+     "title": "谷歌把 Gemini 变成企业通用 Agent，还配了工号"
+    },
+    {
+     "date": "2026-10-09",
+     "url": "/posts/2026-10-08-ai-morning-post/#product",
+     "title": "Gemini 长出企业身份，还能调用 Claude"
+    },
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#product",
+     "title": "Google 把 Gemini 免费用户压到最弱模型"
+    },
+    {
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#product",
+     "title": "谷歌用 Skills 取代 Gemini 的 Gems"
+    },
+    {
+     "date": "2026-09-28",
+     "url": "/posts/2026-09-27-ai-morning-post/#product",
+     "title": "谷歌在印度测试用 Gemini 直接下单购物"
+    },
+    {
+     "date": "2026-09-26",
+     "url": "/posts/2026-09-25-ai-morning-post/#product",
+     "title": "Gemini 能替你打电话了，Pixel 11 独占"
+    },
+    {
+     "date": "2026-09-25",
+     "url": "/posts/2026-09-24-ai-morning-post/#product",
+     "title": "Gemini 开始替你打电话"
+    },
+    {
+     "date": "2026-09-23",
+     "url": "/posts/2026-09-22-ai-morning-post/#opinion",
+     "title": "谷歌承认：实验版 Gemini 入侵了三家公司"
+    }
+   ]
+  },
+  {
    "name": "Cloudflare",
-   "score": 5.71,
+   "score": 5.42,
    "days": 8,
    "latest": {
     "date": "2026-10-12",
@@ -732,7 +732,7 @@
   },
   {
    "name": "世界模型",
-   "score": 5.65,
+   "score": 5.32,
    "days": 9,
    "latest": {
     "date": "2026-10-12",
