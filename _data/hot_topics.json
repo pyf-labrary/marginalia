@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-17",
+ "generated": "2026-10-18",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 99.35,
+   "score": 95.23,
    "days": 28,
    "latest": {
-    "date": "2026-10-17",
-    "url": "/posts/2026-10-16-ai-morning-post/#model-release",
-    "title": "英伟达开源 120B 多模态智能体模型"
+    "date": "2026-10-18",
+    "url": "/posts/2026-10-17-ai-morning-post/#opinion",
+    "title": "失控 Agent 从个案变成清单"
    },
    "links": [
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#opinion",
+     "title": "失控 Agent 从个案变成清单"
+    },
     {
      "date": "2026-10-17",
      "url": "/posts/2026-10-16-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-10-11",
      "url": "/posts/2026-10-10-ai-morning-post/#model-release",
      "title": "Claude 可并行编排上千个 Agent"
-    },
-    {
-     "date": "2026-10-10",
-     "url": "/posts/2026-10-09-ai-morning-post/#research",
-     "title": "白盒探针可检测 Agent 蓄意破坏与欺骗"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 50.39,
+   "score": 50.32,
    "days": 26,
    "latest": {
-    "date": "2026-10-17",
-    "url": "/posts/2026-10-16-ai-morning-post/#model-release",
-    "title": "OpenAI 的 Rosalind 学术计划"
+    "date": "2026-10-18",
+    "url": "/posts/2026-10-17-ai-morning-post/#company",
+    "title": "Replit 把默认模型换成 OpenAI"
    },
    "links": [
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#company",
+     "title": "Replit 把默认模型换成 OpenAI"
+    },
     {
      "date": "2026-10-17",
      "url": "/posts/2026-10-16-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-10-10",
      "url": "/posts/2026-10-09-ai-morning-post/#model-release",
      "title": "OpenAI 上线 GPT-6.1 Ultrafast，GPT-6 全面铺开"
-    },
-    {
-     "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#company",
-     "title": "OpenAI 的年化收入，比传言的 700 亿少 200 亿"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 43.61,
+   "score": 43.06,
    "days": 27,
    "latest": {
-    "date": "2026-10-17",
-    "url": "/posts/2026-10-16-ai-morning-post/#company",
-    "title": "Anthropic 季营收 168 亿美元，IPO 前夜的两种读法"
+    "date": "2026-10-18",
+    "url": "/posts/2026-10-17-ai-morning-post/#company",
+    "title": "Anthropic：员工变「资深」，会议变多"
    },
    "links": [
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#company",
+     "title": "Anthropic：员工变「资深」，会议变多"
+    },
     {
      "date": "2026-10-17",
      "url": "/posts/2026-10-16-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-10-11",
      "url": "/posts/2026-10-10-ai-morning-post/#product",
      "title": "Anthropic 发布免费开源安全扫描器"
-    },
-    {
-     "date": "2026-10-10",
-     "url": "/posts/2026-10-09-ai-morning-post/#company",
-     "title": "Anthropic 切断内部评估的实时联网"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 24.65,
+   "score": 27.1,
    "days": 23,
    "latest": {
-    "date": "2026-10-17",
-    "url": "/posts/2026-10-16-ai-morning-post/#research",
-    "title": "Claude 做数学考古，追出 ECDSA 曲线参数来源"
+    "date": "2026-10-18",
+    "url": "/posts/2026-10-17-ai-morning-post/#research",
+    "title": "Claude 半小时解开 25 年 ECDSA 曲线起源悬案"
    },
    "links": [
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#research",
+     "title": "Claude 半小时解开 25 年 ECDSA 曲线起源悬案"
+    },
     {
      "date": "2026-10-17",
      "url": "/posts/2026-10-16-ai-morning-post/#research",
@@ -202,24 +207,24 @@
      "date": "2026-10-10",
      "url": "/posts/2026-10-09-ai-morning-post/#product",
      "title": "Claude 可并行调度最多 1000 个 Agent"
-    },
-    {
-     "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#product",
-     "title": "Gemini 长出企业身份，还能调用 Claude"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 15.19,
-   "days": 21,
+   "score": 15.26,
+   "days": 22,
    "latest": {
-    "date": "2026-10-17",
-    "url": "/posts/2026-10-16-ai-morning-post/#model-release",
-    "title": "Meta 把 816B 开源，还让它跑在 Mac 上"
+    "date": "2026-10-18",
+    "url": "/posts/2026-10-17-ai-morning-post/#opinion",
+    "title": "Meta 改条款，省的是授权费"
    },
    "links": [
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#opinion",
+     "title": "Meta 改条款，省的是授权费"
+    },
     {
      "date": "2026-10-17",
      "url": "/posts/2026-10-16-ai-morning-post/#model-release",
@@ -254,24 +259,24 @@
      "date": "2026-10-08",
      "url": "/posts/2026-10-07-ai-morning-post/#product",
      "title": "Meta 上线 AI 工具，拦截隐蔽引流的违法广告"
-    },
-    {
-     "date": "2026-10-06",
-     "url": "/posts/2026-10-05-ai-morning-post/#company",
-     "title": "Meta 与微软开始从 Claude 撤退"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 10.35,
-   "days": 11,
+   "score": 10.81,
+   "days": 12,
    "latest": {
-    "date": "2026-10-17",
-    "url": "/posts/2026-10-16-ai-morning-post/#product",
-    "title": "ChatGPT 成为完整的 Chrome 助手"
+    "date": "2026-10-18",
+    "url": "/posts/2026-10-17-ai-morning-post/#product",
+    "title": "ChatGPT 变成 Chrome 浏览器助手，能读能操作标签页"
    },
    "links": [
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#product",
+     "title": "ChatGPT 变成 Chrome 浏览器助手，能读能操作标签页"
+    },
     {
      "date": "2026-10-17",
      "url": "/posts/2026-10-16-ai-morning-post/#product",
@@ -306,24 +311,24 @@
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#product",
      "title": "ChatGPT 能虚拟试衣了，购物入口再进一步"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#product",
-     "title": "ChatGPT 能替你「试穿」衣服了"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 10.32,
-   "days": 11,
+   "score": 10.74,
+   "days": 12,
    "latest": {
-    "date": "2026-10-15",
-    "url": "/posts/2026-10-14-ai-morning-post/#research",
-    "title": "Google 工程师：能自我改进的 AI 还差得远"
+    "date": "2026-10-18",
+    "url": "/posts/2026-10-17-ai-morning-post/#model-release",
+    "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
    },
    "links": [
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
+    },
     {
      "date": "2026-10-15",
      "url": "/posts/2026-10-14-ai-morning-post/#research",
@@ -358,17 +363,12 @@
      "date": "2026-10-05",
      "url": "/posts/2026-10-04-ai-morning-post/#company",
      "title": "Google 冻结开源漏洞赏金：AI slop 压垮众包"
-    },
-    {
-     "date": "2026-09-26",
-     "url": "/posts/2026-09-25-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent 编排运行时 ax"
     }
    ]
   },
   {
    "name": "DeepSeek",
-   "score": 7.84,
+   "score": 7.39,
    "days": 13,
    "latest": {
     "date": "2026-10-13",
@@ -419,8 +419,60 @@
    ]
   },
   {
+   "name": "ElevenLabs",
+   "score": 6.68,
+   "days": 9,
+   "latest": {
+    "date": "2026-10-18",
+    "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+    "title": "VoiceStudio：完全本地的开源 ElevenLabs 替代"
+   },
+   "links": [
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的开源 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-17",
+     "url": "/posts/2026-10-16-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-13",
+     "url": "/posts/2026-10-12-ai-morning-post/#opensource",
+     "title": "VoiceStudio：本地的 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
+    },
+    {
+     "date": "2026-10-03",
+     "url": "/posts/2026-10-02-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 开源替代"
+    },
+    {
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#company",
+     "title": "ElevenLabs 估值翻倍至 220 亿美元"
+    },
+    {
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#company",
+     "title": "ElevenLabs 估值翻倍至 220 亿美元"
+    }
+   ]
+  },
+  {
    "name": "算力",
-   "score": 7.0,
+   "score": 6.65,
    "days": 9,
    "latest": {
     "date": "2026-10-16",
@@ -471,8 +523,107 @@
    ]
   },
   {
+   "name": "MoE",
+   "score": 6.58,
+   "days": 8,
+   "latest": {
+    "date": "2026-10-18",
+    "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+    "title": "阶跃星辰开放 Step 5 Preview 权重：600B MoE"
+   },
+   "links": [
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+     "title": "阶跃星辰开放 Step 5 Preview 权重：600B MoE"
+    },
+    {
+     "date": "2026-10-16",
+     "url": "/posts/2026-10-15-ai-morning-post/#model-release",
+     "title": "Meta 开源 Muse Spark：前沿 MoE 跑进 Mac"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
+     "title": "Liquid AI 开源 LFM2.5：24B MoE、2B 激活，主打端侧 Agent"
+    },
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
+     "title": "Janas：把 MoE 专家层从 SSD 流式读进来"
+    },
+    {
+     "date": "2026-10-09",
+     "url": "/posts/2026-10-08-ai-morning-post/#model-release",
+     "title": "JetBrains 开源 Mellum2.1：12B MoE 编码智能体模型"
+    },
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#model-release",
+     "title": "Aleph Alpha 开源 78B 英德 MoE，每个 token 只激活 3.46B"
+    },
+    {
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
+     "title": "Olmo-core 3：把大 MoE 的训练基建开放出来"
+    },
+    {
+     "date": "2026-09-23",
+     "url": "/posts/2026-09-22-ai-morning-post/#product",
+     "title": "高通新旗舰芯片可本地跑 30B MoE 模型"
+    }
+   ]
+  },
+  {
+   "name": "Gemini 4 Argon",
+   "score": 6.48,
+   "days": 7,
+   "latest": {
+    "date": "2026-10-18",
+    "url": "/posts/2026-10-17-ai-morning-post/#model-release",
+    "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
+   },
+   "links": [
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
+    },
+    {
+     "date": "2026-10-17",
+     "url": "/posts/2026-10-16-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：谷歌想用一个模型统一机器人"
+    },
+    {
+     "date": "2026-10-16",
+     "url": "/posts/2026-10-15-ai-morning-post/#model-release",
+     "title": "谷歌想让 Gemini 4 Argon 成为机器人的唯一模型"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon 正式 GA：Vals Index 登顶，长输出成新战场"
+    },
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#model-release",
+     "title": "谷歌 Gemini 4 Argon 全球上线，免费用户被留在门外"
+    },
+    {
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：能力拉满，门禁也拉满"
+    },
+    {
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：拿了第一，但拿不到"
+    }
+   ]
+  },
+  {
    "name": "芯片",
-   "score": 6.81,
+   "score": 6.42,
    "days": 10,
    "latest": {
     "date": "2026-10-13",
@@ -523,60 +674,60 @@
    ]
   },
   {
-   "name": "阿里",
-   "score": 6.23,
-   "days": 11,
+   "name": "VoiceStudio",
+   "score": 5.97,
+   "days": 8,
    "latest": {
-    "date": "2026-10-14",
-    "url": "/posts/2026-10-13-ai-morning-post/#research",
-    "title": "阿里 Qwen 提出 QwenGyre，弹性 RL 训练超长程 Agent"
+    "date": "2026-10-18",
+    "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+    "title": "VoiceStudio：完全本地的开源 ElevenLabs 替代"
    },
    "links": [
     {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#research",
-     "title": "阿里 Qwen 提出 QwenGyre，弹性 RL 训练超长程 Agent"
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的开源 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-17",
+     "url": "/posts/2026-10-16-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代"
     },
     {
      "date": "2026-10-13",
-     "url": "/posts/2026-10-12-ai-morning-post/#model-release",
-     "title": "微软基于阿里 Qwen 训练出决策模型 Decision-1"
+     "url": "/posts/2026-10-12-ai-morning-post/#opensource",
+     "title": "VoiceStudio：本地的 ElevenLabs 替代"
     },
     {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#opensource",
-     "title": "阿里开源代码评审工具：规则流水线 + LLM Agent"
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
     },
     {
-     "date": "2026-10-10",
-     "url": "/posts/2026-10-09-ai-morning-post/#model-release",
-     "title": "阿里 Qwen 发布 8 步图像模型 Qwen-Image-2.1-Turbo"
+     "date": "2026-10-03",
+     "url": "/posts/2026-10-02-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 开源替代"
     },
     {
-     "date": "2026-09-28",
-     "url": "/posts/2026-09-27-ai-morning-post/#opensource",
-     "title": "阿里巴巴开源 AI 代码评审工具 OpenCodeReview"
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
+     "title": "VoiceStudio：不联网的语音工作台"
     },
     {
-     "date": "2026-09-27",
-     "url": "/posts/2026-09-26-ai-morning-post/#opensource",
-     "title": "阿里开源 AI 代码评审工具 OpenCodeReview"
-    },
-    {
-     "date": "2026-09-24",
-     "url": "/posts/2026-09-23-ai-morning-post/#product",
-     "title": "千问办公接入阿里云上的 Salesforce"
-    },
-    {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#model-release",
-     "title": "阿里 Qwen 开源 7B 图像模型 Qwen-Image-2.1"
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 开源替代"
     }
    ]
   },
   {
    "name": "MIT",
-   "score": 6.13,
+   "score": 5.81,
    "days": 10,
    "latest": {
     "date": "2026-10-17",
@@ -623,152 +774,6 @@
      "date": "2026-09-24",
      "url": "/posts/2026-09-23-ai-morning-post/#opinion",
      "title": "MIT 科技评论：AI 正在被优化成「作弊高手」"
-    }
-   ]
-  },
-  {
-   "name": "ElevenLabs",
-   "score": 5.97,
-   "days": 8,
-   "latest": {
-    "date": "2026-10-17",
-    "url": "/posts/2026-10-16-ai-morning-post/#opensource",
-    "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-   },
-   "links": [
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-13",
-     "url": "/posts/2026-10-12-ai-morning-post/#opensource",
-     "title": "VoiceStudio：本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    },
-    {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 开源替代"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#company",
-     "title": "ElevenLabs 估值翻倍至 220 亿美元"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#company",
-     "title": "ElevenLabs 估值翻倍至 220 亿美元"
-    },
-    {
-     "date": "2026-09-25",
-     "url": "/posts/2026-09-24-ai-morning-post/#opinion",
-     "title": "ElevenLabs CEO：AI 接电话时该告知对方"
-    }
-   ]
-  },
-  {
-   "name": "MoE",
-   "score": 5.9,
-   "days": 8,
-   "latest": {
-    "date": "2026-10-16",
-    "url": "/posts/2026-10-15-ai-morning-post/#model-release",
-    "title": "Meta 开源 Muse Spark：前沿 MoE 跑进 Mac"
-   },
-   "links": [
-    {
-     "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#model-release",
-     "title": "Meta 开源 Muse Spark：前沿 MoE 跑进 Mac"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
-     "title": "Liquid AI 开源 LFM2.5：24B MoE、2B 激活，主打端侧 Agent"
-    },
-    {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
-     "title": "Janas：把 MoE 专家层从 SSD 流式读进来"
-    },
-    {
-     "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#model-release",
-     "title": "JetBrains 开源 Mellum2.1：12B MoE 编码智能体模型"
-    },
-    {
-     "date": "2026-10-05",
-     "url": "/posts/2026-10-04-ai-morning-post/#model-release",
-     "title": "Aleph Alpha 开源 78B 英德 MoE，每个 token 只激活 3.46B"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
-     "title": "Olmo-core 3：把大 MoE 的训练基建开放出来"
-    },
-    {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#product",
-     "title": "高通新旗舰芯片可本地跑 30B MoE 模型"
-    },
-    {
-     "date": "2026-09-18",
-     "url": "/posts/2026-09-17-ai-morning-post/#opensource",
-     "title": "colibri：纯 C 零依赖跑前沿 MoE"
-    }
-   ]
-  },
-  {
-   "name": "Gemini 4 Argon",
-   "score": 5.71,
-   "days": 6,
-   "latest": {
-    "date": "2026-10-17",
-    "url": "/posts/2026-10-16-ai-morning-post/#model-release",
-    "title": "Gemini 4 Argon：谷歌想用一个模型统一机器人"
-   },
-   "links": [
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：谷歌想用一个模型统一机器人"
-    },
-    {
-     "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#model-release",
-     "title": "谷歌想让 Gemini 4 Argon 成为机器人的唯一模型"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon 正式 GA：Vals Index 登顶，长输出成新战场"
-    },
-    {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#model-release",
-     "title": "谷歌 Gemini 4 Argon 全球上线，免费用户被留在门外"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：能力拉满，门禁也拉满"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：拿了第一，但拿不到"
     }
    ]
   }
