@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-19",
+ "generated": "2026-10-20",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 90.35,
+   "score": 85.65,
    "days": 28,
    "latest": {
-    "date": "2026-10-19",
-    "url": "/posts/2026-10-18-ai-morning-post/#research",
-    "title": "混合推理智能体：在潜空间思考，用文本行动"
+    "date": "2026-10-20",
+    "url": "/posts/2026-10-19-ai-morning-post/#model-release",
+    "title": "英伟达开源代理模型：把 Agent 塞进企业和 PC"
    },
    "links": [
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#model-release",
+     "title": "英伟达开源代理模型：把 Agent 塞进企业和 PC"
+    },
     {
      "date": "2026-10-19",
      "url": "/posts/2026-10-18-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-10-13",
      "url": "/posts/2026-10-12-ai-morning-post/#research",
      "title": "多智能体组队：token 烧掉一大截，质量几乎没动"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#research",
-     "title": "多智能体协作：烧掉大量 token，质量提升测不出来"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 49.26,
+   "score": 49.39,
    "days": 26,
    "latest": {
-    "date": "2026-10-19",
-    "url": "/posts/2026-10-18-ai-morning-post/#company",
-    "title": "OpenAI 再披露四起模型越界事件"
+    "date": "2026-10-20",
+    "url": "/posts/2026-10-19-ai-morning-post/#company",
+    "title": "OpenAI 拟融 300 亿美元，估值超 1.4 万亿"
    },
    "links": [
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#company",
+     "title": "OpenAI 拟融 300 亿美元，估值超 1.4 万亿"
+    },
     {
      "date": "2026-10-19",
      "url": "/posts/2026-10-18-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-10-12",
      "url": "/posts/2026-10-11-ai-morning-post/#research",
      "title": "OpenAI 披露：失准模型为换数据自毁运行环境"
-    },
-    {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#company",
-     "title": "OpenAI 收入在涨，同时再找 300 亿美元"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 42.52,
+   "score": 47.06,
    "days": 27,
    "latest": {
-    "date": "2026-10-19",
-    "url": "/posts/2026-10-18-ai-morning-post/#company",
-    "title": "Anthropic 把 5% 股份划进公共利益基金"
+    "date": "2026-10-20",
+    "url": "/posts/2026-10-19-ai-morning-post/#model-release",
+    "title": "Anthropic 新模型：卖点是“读懂你没说出口的”"
    },
    "links": [
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#model-release",
+     "title": "Anthropic 新模型：卖点是“读懂你没说出口的”"
+    },
     {
      "date": "2026-10-19",
      "url": "/posts/2026-10-18-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-10-13",
      "url": "/posts/2026-10-12-ai-morning-post/#product",
      "title": "Anthropic 讲 Claude 动态工作流：多 agent 怎么不把人拖垮"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#product",
-     "title": "Anthropic：CLAUDE.md、AGENTS.md 以后都不用"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 28.52,
+   "score": 28.9,
    "days": 23,
    "latest": {
-    "date": "2026-10-19",
-    "url": "/posts/2026-10-18-ai-morning-post/#company",
-    "title": "Replit 把默认模型从 Claude 换成了 OpenAI"
+    "date": "2026-10-20",
+    "url": "/posts/2026-10-19-ai-morning-post/#research",
+    "title": "把 Claude 丢到荒岛 30 小时，它开始“玩耍”"
    },
    "links": [
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#research",
+     "title": "把 Claude 丢到荒岛 30 小时，它开始“玩耍”"
+    },
     {
      "date": "2026-10-19",
      "url": "/posts/2026-10-18-ai-morning-post/#company",
@@ -202,24 +207,24 @@
      "date": "2026-10-13",
      "url": "/posts/2026-10-12-ai-morning-post/#product",
      "title": "Anthropic 讲 Claude 动态工作流：多 agent 怎么不把人拖垮"
-    },
-    {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#model-release",
-     "title": "Claude 可并行编排上千个 Agent"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 17.29,
+   "score": 17.19,
    "days": 23,
    "latest": {
-    "date": "2026-10-19",
-    "url": "/posts/2026-10-18-ai-morning-post/#model-release",
-    "title": "Meta 与苹果的「美国最强开源模型」，编码上被中国模型压过"
+    "date": "2026-10-20",
+    "url": "/posts/2026-10-19-ai-morning-post/#model-release",
+    "title": "Meta 与苹果的开源合作，编码基准输给国产"
    },
    "links": [
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#model-release",
+     "title": "Meta 与苹果的开源合作，编码基准输给国产"
+    },
     {
      "date": "2026-10-19",
      "url": "/posts/2026-10-18-ai-morning-post/#model-release",
@@ -254,17 +259,12 @@
      "date": "2026-10-13",
      "url": "/posts/2026-10-12-ai-morning-post/#model-release",
      "title": "Meta 首发前沿模型 Muse Wonder，重回第一梯队"
-    },
-    {
-     "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#product",
-     "title": "Meta 的 Muse 上 iPad，移动端一个月就扩"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 10.23,
+   "score": 9.65,
    "days": 12,
    "latest": {
     "date": "2026-10-18",
@@ -316,8 +316,8 @@
   },
   {
    "name": "Google",
-   "score": 10.13,
-   "days": 12,
+   "score": 9.48,
+   "days": 11,
    "latest": {
     "date": "2026-10-18",
     "url": "/posts/2026-10-17-ai-morning-post/#model-release",
@@ -367,8 +367,60 @@
    ]
   },
   {
+   "name": "VoiceStudio",
+   "score": 7.42,
+   "days": 10,
+   "latest": {
+    "date": "2026-10-20",
+    "url": "/posts/2026-10-19-ai-morning-post/#opensource",
+    "title": "VoiceStudio：本地运行的语音克隆工具"
+   },
+   "links": [
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#opensource",
+     "title": "VoiceStudio：本地运行的语音克隆工具"
+    },
+    {
+     "date": "2026-10-19",
+     "url": "/posts/2026-10-18-ai-morning-post/#opensource",
+     "title": "VoiceStudio：本地的 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的开源 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-17",
+     "url": "/posts/2026-10-16-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-13",
+     "url": "/posts/2026-10-12-ai-morning-post/#opensource",
+     "title": "VoiceStudio：本地的 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
+    },
+    {
+     "date": "2026-10-03",
+     "url": "/posts/2026-10-02-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 开源替代"
+    }
+   ]
+  },
+  {
    "name": "ElevenLabs",
-   "score": 7.35,
+   "score": 7.0,
    "days": 10,
    "latest": {
     "date": "2026-10-19",
@@ -419,8 +471,164 @@
    ]
   },
   {
-   "name": "DeepSeek",
+   "name": "MoE",
+   "score": 7.0,
+   "days": 9,
+   "latest": {
+    "date": "2026-10-20",
+    "url": "/posts/2026-10-19-ai-morning-post/#model-release",
+    "title": "MiniMax M3.1 Flash：428B MoE，激活约 23B"
+   },
+   "links": [
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#model-release",
+     "title": "MiniMax M3.1 Flash：428B MoE，激活约 23B"
+    },
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+     "title": "阶跃星辰开放 Step 5 Preview 权重：600B MoE"
+    },
+    {
+     "date": "2026-10-16",
+     "url": "/posts/2026-10-15-ai-morning-post/#model-release",
+     "title": "Meta 开源 Muse Spark：前沿 MoE 跑进 Mac"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
+     "title": "Liquid AI 开源 LFM2.5：24B MoE、2B 激活，主打端侧 Agent"
+    },
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
+     "title": "Janas：把 MoE 专家层从 SSD 流式读进来"
+    },
+    {
+     "date": "2026-10-09",
+     "url": "/posts/2026-10-08-ai-morning-post/#model-release",
+     "title": "JetBrains 开源 Mellum2.1：12B MoE 编码智能体模型"
+    },
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#model-release",
+     "title": "Aleph Alpha 开源 78B 英德 MoE，每个 token 只激活 3.46B"
+    },
+    {
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
+     "title": "Olmo-core 3：把大 MoE 的训练基建开放出来"
+    }
+   ]
+  },
+  {
+   "name": "Gemini 4 Argon",
+   "score": 6.97,
+   "days": 8,
+   "latest": {
+    "date": "2026-10-20",
+    "url": "/posts/2026-10-19-ai-morning-post/#model-release",
+    "title": "Gemini 4 Argon：谷歌押注“最棘手问题”"
+   },
+   "links": [
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：谷歌押注“最棘手问题”"
+    },
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
+    },
+    {
+     "date": "2026-10-17",
+     "url": "/posts/2026-10-16-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：谷歌想用一个模型统一机器人"
+    },
+    {
+     "date": "2026-10-16",
+     "url": "/posts/2026-10-15-ai-morning-post/#model-release",
+     "title": "谷歌想让 Gemini 4 Argon 成为机器人的唯一模型"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon 正式 GA：Vals Index 登顶，长输出成新战场"
+    },
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#model-release",
+     "title": "谷歌 Gemini 4 Argon 全球上线，免费用户被留在门外"
+    },
+    {
+     "date": "2026-10-02",
+     "url": "/posts/2026-10-01-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：能力拉满，门禁也拉满"
+    },
+    {
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：拿了第一，但拿不到"
+    }
+   ]
+  },
+  {
+   "name": "算力",
    "score": 6.94,
+   "days": 9,
+   "latest": {
+    "date": "2026-10-20",
+    "url": "/posts/2026-10-19-ai-morning-post/#company",
+    "title": "Anthropic 再谈 450 亿美元算力大单"
+   },
+   "links": [
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#company",
+     "title": "Anthropic 再谈 450 亿美元算力大单"
+    },
+    {
+     "date": "2026-10-16",
+     "url": "/posts/2026-10-15-ai-morning-post/#opinion",
+     "title": "黄仁勋：中国 AI 公司算力很缺，但仍在拼命做成"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#company",
+     "title": "黄仁勋承诺向欧洲投 20 亿美元，另拨 2.5 亿算力给英国"
+    },
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#company",
+     "title": "Tom Brown 借政界关系撮合每月 12.5 亿美元算力大单"
+    },
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#company",
+     "title": "被曝靠政界关系撮合 SpaceX 巨额算力单"
+    },
+    {
+     "date": "2026-10-03",
+     "url": "/posts/2026-10-02-ai-morning-post/#company",
+     "title": "亚马逊又要卖芯片：80 亿美元的算力变现实验"
+    },
+    {
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#research",
+     "title": "DeepSeek 公开 DSec：Agent 训练的算力账本"
+    },
+    {
+     "date": "2026-09-27",
+     "url": "/posts/2026-09-26-ai-morning-post/#company",
+     "title": "Anthropic 签下 Akamai 116 亿美元云算力大单"
+    }
+   ]
+  },
+  {
+   "name": "DeepSeek",
+   "score": 6.48,
    "days": 13,
    "latest": {
     "date": "2026-10-13",
@@ -471,211 +679,8 @@
    ]
   },
   {
-   "name": "VoiceStudio",
-   "score": 6.71,
-   "days": 9,
-   "latest": {
-    "date": "2026-10-19",
-    "url": "/posts/2026-10-18-ai-morning-post/#opensource",
-    "title": "VoiceStudio：本地的 ElevenLabs 替代"
-   },
-   "links": [
-    {
-     "date": "2026-10-19",
-     "url": "/posts/2026-10-18-ai-morning-post/#opensource",
-     "title": "VoiceStudio：本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的开源 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-13",
-     "url": "/posts/2026-10-12-ai-morning-post/#opensource",
-     "title": "VoiceStudio：本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    },
-    {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 开源替代"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
-     "title": "VoiceStudio：不联网的语音工作台"
-    }
-   ]
-  },
-  {
-   "name": "MoE",
-   "score": 6.29,
-   "days": 8,
-   "latest": {
-    "date": "2026-10-18",
-    "url": "/posts/2026-10-17-ai-morning-post/#opensource",
-    "title": "阶跃星辰开放 Step 5 Preview 权重：600B MoE"
-   },
-   "links": [
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
-     "title": "阶跃星辰开放 Step 5 Preview 权重：600B MoE"
-    },
-    {
-     "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#model-release",
-     "title": "Meta 开源 Muse Spark：前沿 MoE 跑进 Mac"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
-     "title": "Liquid AI 开源 LFM2.5：24B MoE、2B 激活，主打端侧 Agent"
-    },
-    {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
-     "title": "Janas：把 MoE 专家层从 SSD 流式读进来"
-    },
-    {
-     "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#model-release",
-     "title": "JetBrains 开源 Mellum2.1：12B MoE 编码智能体模型"
-    },
-    {
-     "date": "2026-10-05",
-     "url": "/posts/2026-10-04-ai-morning-post/#model-release",
-     "title": "Aleph Alpha 开源 78B 英德 MoE，每个 token 只激活 3.46B"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#opensource",
-     "title": "Olmo-core 3：把大 MoE 的训练基建开放出来"
-    },
-    {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#product",
-     "title": "高通新旗舰芯片可本地跑 30B MoE 模型"
-    }
-   ]
-  },
-  {
-   "name": "算力",
-   "score": 6.26,
-   "days": 8,
-   "latest": {
-    "date": "2026-10-16",
-    "url": "/posts/2026-10-15-ai-morning-post/#opinion",
-    "title": "黄仁勋：中国 AI 公司算力很缺，但仍在拼命做成"
-   },
-   "links": [
-    {
-     "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#opinion",
-     "title": "黄仁勋：中国 AI 公司算力很缺，但仍在拼命做成"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#company",
-     "title": "黄仁勋承诺向欧洲投 20 亿美元，另拨 2.5 亿算力给英国"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#company",
-     "title": "Tom Brown 借政界关系撮合每月 12.5 亿美元算力大单"
-    },
-    {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#company",
-     "title": "被曝靠政界关系撮合 SpaceX 巨额算力单"
-    },
-    {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#company",
-     "title": "亚马逊又要卖芯片：80 亿美元的算力变现实验"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#research",
-     "title": "DeepSeek 公开 DSec：Agent 训练的算力账本"
-    },
-    {
-     "date": "2026-09-27",
-     "url": "/posts/2026-09-26-ai-morning-post/#company",
-     "title": "Anthropic 签下 Akamai 116 亿美元云算力大单"
-    },
-    {
-     "date": "2026-09-22",
-     "url": "/posts/2026-09-21-ai-morning-post/#company",
-     "title": "IDC 评估：范式智能登顶 AI 算力管理平台"
-    }
-   ]
-  },
-  {
-   "name": "Gemini 4 Argon",
-   "score": 6.23,
-   "days": 7,
-   "latest": {
-    "date": "2026-10-18",
-    "url": "/posts/2026-10-17-ai-morning-post/#model-release",
-    "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
-   },
-   "links": [
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：谷歌想用一个模型统一机器人"
-    },
-    {
-     "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#model-release",
-     "title": "谷歌想让 Gemini 4 Argon 成为机器人的唯一模型"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon 正式 GA：Vals Index 登顶，长输出成新战场"
-    },
-    {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#model-release",
-     "title": "谷歌 Gemini 4 Argon 全球上线，免费用户被留在门外"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：能力拉满，门禁也拉满"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：拿了第一，但拿不到"
-    }
-   ]
-  },
-  {
    "name": "芯片",
-   "score": 6.03,
+   "score": 5.65,
    "days": 10,
    "latest": {
     "date": "2026-10-13",
@@ -727,7 +732,7 @@
   },
   {
    "name": "开源模型",
-   "score": 5.61,
+   "score": 5.32,
    "days": 9,
    "latest": {
     "date": "2026-10-19",
