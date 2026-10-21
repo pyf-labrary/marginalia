@@ -1,4 +1,11 @@
 # Apps 索引数据 —— 供首页卡片 / 搜索 / 归档页使用。
+- slug: babel
+  image: /assets/img/site/covers/babel.jpg
+  title: 登塔 · Babel
+  url: /apps/#babel
+  date: 2026-10-21
+  tags: [Android, 英语, 雅思, 游戏化, 离线]
+  description: 从初中词汇练到雅思 7 分的 Android 英语 App：入塔试炼定级，七区二十八段位，答题战斗爬塔、跨区打守门战，FSRS 复习。完全离线，APK 直接下载。
 - slug: model-arena
   image: /assets/img/site/covers/model-arena.jpg
   title: Model Arena · 工具调用测评场
