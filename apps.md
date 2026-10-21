@@ -11,6 +11,25 @@ wide: true
 <ul class="cover-list" role="list">
 
 <li class="cover-row">
+<a class="cover-media" href="https://ftp.ssbx.site/apps/babel/babel-0.1.0.apk"><img src="/assets/img/site/covers/babel.jpg" alt="登塔 Babel 四张真机截图：塔图上的楼层节点、词汇卡牌战、段位揭晓页的六维雷达、能力曲线页" loading="lazy"></a>
+<div class="cover-body" markdown="1">
+## 登塔 · Babel {#babel}
+
+> 从初中词汇一路练到雅思 7 分的 Android 英语 App。水平分七个区、二十八个段位，每天打几场答题战斗往塔上爬，跨区要先赢守门战。完全离线，不用注册。
+
+第一次打开先做「入塔试炼」：50 个词选认识或不认识（里面混了假词，防瞎猜）、12 道随答题调整难度的语法题、两篇阅读、两段听力，约 18 分钟，测完给出六项能力分、起始段位和预估雅思分。之后每答一题都会更新能力分，出题挑你大约有七八成把握的那一档；收进卡册的词按 FSRS 排复习。曲线页画能力分走势、六维雷达和雅思四项预估。
+
+题库：ECDICT 的 8324 个词按中考、高考、四六级、雅思标签和词频切成七区，另有 1482 道语法、阅读、听力题，配 21 篇阅读短文和 21 段听力。现在每个区先铺了前 3 层，整座塔规划是 84 层。口语和写作还没做，这两项先用词汇和语法成绩推一个估计值。
+
+→ [下载 APK](https://ftp.ssbx.site/apps/babel/babel-0.1.0.apk)（0.1.0，51MB，Android 8.0 及以上。侧装安装，手机会提示来自未知来源）
+
+技术栈：Kotlin + Jetpack Compose。能力分、段位、复习间隔这些数值逻辑都在纯 Kotlin 层，带单测。题库是预制的 SQLite，随安装包分发；进度存在另一个库里，可以导出成 JSON，换手机后导入。题目和短文由 DeepSeek 生成，再让模型独立答一遍核对答案；单词和听力音频（9103 条）用 Edge TTS 预先合成。App 只申请振动权限，没有联网权限。
+
+*上线时间：2026-10-21。*
+</div>
+</li>
+
+<li class="cover-row">
 <a class="cover-media" href="https://github.com/pyf-labrary/model-arena"><img src="/assets/img/site/covers/model-arena.jpg" alt="Model Arena 排名页：17 个模型的通过/无瑕通过/答对三列并排，附耗时与 token 条形图" loading="lazy"></a>
 <div class="cover-body" markdown="1">
 ## Model Arena · 工具调用测评场
