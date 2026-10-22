@@ -23,6 +23,8 @@ wide: true
 
 → [下载 APK](https://ftp.ssbx.site/apps/babel/babel-0.1.0.apk)（0.1.0，51MB，Android 8.0 及以上。侧装安装，手机会提示来自未知来源）
 
+→ [网页版](https://game.panyifeng.xyz/babel/)（2026-10-22 起，手机浏览器直接玩，进度存在浏览器里，和 App 的备份文件互通）
+
 技术栈：Kotlin + Jetpack Compose。能力分、段位、复习间隔这些数值逻辑都在纯 Kotlin 层，带单测。题库是预制的 SQLite，随安装包分发；进度存在另一个库里，可以导出成 JSON，换手机后导入。题目和短文由 DeepSeek 生成，再让模型独立答一遍核对答案；单词和听力音频（9103 条）用 Edge TTS 预先合成。App 只申请振动权限，没有联网权限。
 
 *上线时间：2026-10-21。*
