@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-22",
+ "generated": "2026-10-23",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 84.26,
+   "score": 83.71,
    "days": 28,
    "latest": {
-    "date": "2026-10-22",
-    "url": "/posts/2026-10-21-ai-morning-post/#model-release",
-    "title": "MiniMax M3.1 Flash：Agent 榜第一，成本低 88 倍"
+    "date": "2026-10-23",
+    "url": "/posts/2026-10-22-ai-morning-post/#research",
+    "title": "OpenAI 智能体 32 分钟完成鼠脑分析"
    },
    "links": [
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#research",
+     "title": "OpenAI 智能体 32 分钟完成鼠脑分析"
+    },
     {
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-10-16",
      "url": "/posts/2026-10-15-ai-morning-post/#model-release",
      "title": "英伟达 Nemotron 3.5 Super VL：120B 做常驻 Agent"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
-     "title": "Meta 发布 Muse Wonder：百万上下文 Agent 模型，定价 4/20 美元"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 48.55,
+   "score": 49.52,
    "days": 27,
    "latest": {
-    "date": "2026-10-22",
-    "url": "/posts/2026-10-21-ai-morning-post/#company",
-    "title": "OpenAI 买下一支生物团队，agent 往实验室里走"
+    "date": "2026-10-23",
+    "url": "/posts/2026-10-22-ai-morning-post/#model-release",
+    "title": "OpenAI 开放决策 API，先把价格定下来"
    },
    "links": [
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#model-release",
+     "title": "OpenAI 开放决策 API，先把价格定下来"
+    },
     {
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-10-16",
      "url": "/posts/2026-10-15-ai-morning-post/#company",
      "title": "OpenAI 工程师涉嫌在保密会议室装窃听设备被捕"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
-     "title": "传 OpenAI 年内至少发一款新模型，旗舰仍待对齐打磨"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 47.0,
+   "score": 47.32,
    "days": 27,
    "latest": {
-    "date": "2026-10-22",
-    "url": "/posts/2026-10-21-ai-morning-post/#company",
-    "title": "Anthropic 的算力难题，撞上了 IPO 时间表"
+    "date": "2026-10-23",
+    "url": "/posts/2026-10-22-ai-morning-post/#product",
+    "title": "Anthropic 推出常驻智能体 Claude Duet"
    },
    "links": [
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#product",
+     "title": "Anthropic 推出常驻智能体 Claude Duet"
+    },
     {
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#company",
@@ -150,18 +155,13 @@
      "date": "2026-10-16",
      "url": "/posts/2026-10-15-ai-morning-post/#company",
      "title": "Anthropic 季度营收 168 亿美元，估值预期却被下调"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#research",
-     "title": "Anthropic 警告：小模型可借 IoT 设备自我复制成新型蠕虫"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 28.03,
-   "days": 24,
+   "score": 26.55,
+   "days": 23,
    "latest": {
     "date": "2026-10-22",
     "url": "/posts/2026-10-21-ai-morning-post/#research",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Meta",
-   "score": 17.97,
+   "score": 17.81,
    "days": 23,
    "latest": {
-    "date": "2026-10-22",
-    "url": "/posts/2026-10-21-ai-morning-post/#company",
-    "title": "Meta 领到 250 亿美元罚单，计数方式是重点"
+    "date": "2026-10-23",
+    "url": "/posts/2026-10-22-ai-morning-post/#company",
+    "title": "Meta 创设新股类为 AI 基建融资"
    },
    "links": [
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#company",
+     "title": "Meta 创设新股类为 AI 基建融资"
+    },
     {
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#company",
@@ -254,24 +259,24 @@
      "date": "2026-10-16",
      "url": "/posts/2026-10-15-ai-morning-post/#model-release",
      "title": "Meta 开源 Muse Spark：前沿 MoE 跑进 Mac"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
-     "title": "Meta 发布 Muse Wonder：百万上下文 Agent 模型，定价 4/20 美元"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 11.39,
-   "days": 12,
+   "score": 11.81,
+   "days": 13,
    "latest": {
-    "date": "2026-10-22",
-    "url": "/posts/2026-10-21-ai-morning-post/#company",
-    "title": "ChatGPT 广告扩到 26 国，10 万广告主已入场"
+    "date": "2026-10-23",
+    "url": "/posts/2026-10-22-ai-morning-post/#company",
+    "title": "ChatGPT 广告扩展至 26 国，广告主超 10 万"
    },
    "links": [
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#company",
+     "title": "ChatGPT 广告扩展至 26 国，广告主超 10 万"
+    },
     {
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#company",
@@ -306,24 +311,24 @@
      "date": "2026-10-08",
      "url": "/posts/2026-10-07-ai-morning-post/#model-release",
      "title": "GPT-6 上线，ChatGPT 改成「智能 UI」"
-    },
-    {
-     "date": "2026-10-07",
-     "url": "/posts/2026-10-06-ai-morning-post/#product",
-     "title": "Jump Trading 用 ChatGPT 扩展量化研究流程"
     }
    ]
   },
   {
    "name": "DeepSeek",
-   "score": 9.52,
+   "score": 9.9,
    "days": 15,
    "latest": {
-    "date": "2026-10-22",
-    "url": "/posts/2026-10-21-ai-morning-post/#opinion",
-    "title": "中国抗议美国封杀 DeepSeek，国内仍在屏蔽三家"
+    "date": "2026-10-23",
+    "url": "/posts/2026-10-22-ai-morning-post/#company",
+    "title": "DeepSeek 被曝融资 150 亿美元"
    },
    "links": [
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#company",
+     "title": "DeepSeek 被曝融资 150 亿美元"
+    },
     {
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#opinion",
@@ -358,17 +363,12 @@
      "date": "2026-10-08",
      "url": "/posts/2026-10-07-ai-morning-post/#opensource",
      "title": "DeepSeek 开源 DeepGEMM：把张量核心算子收进一个库"
-    },
-    {
-     "date": "2026-10-07",
-     "url": "/posts/2026-10-06-ai-morning-post/#company",
-     "title": "DeepSeek 融资引入宁德时代、腾讯"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 9.32,
+   "score": 8.71,
    "days": 12,
    "latest": {
     "date": "2026-10-22",
@@ -420,7 +420,7 @@
   },
   {
    "name": "算力",
-   "score": 8.16,
+   "score": 7.77,
    "days": 10,
    "latest": {
     "date": "2026-10-22",
@@ -472,8 +472,8 @@
   },
   {
    "name": "MoE",
-   "score": 7.32,
-   "days": 10,
+   "score": 6.94,
+   "days": 9,
    "latest": {
     "date": "2026-10-21",
     "url": "/posts/2026-10-20-ai-morning-post/#model-release",
@@ -524,7 +524,7 @@
   },
   {
    "name": "ElevenLabs",
-   "score": 7.26,
+   "score": 6.87,
    "days": 11,
    "latest": {
     "date": "2026-10-21",
@@ -576,7 +576,7 @@
   },
   {
    "name": "VoiceStudio",
-   "score": 6.77,
+   "score": 6.45,
    "days": 10,
    "latest": {
     "date": "2026-10-20",
@@ -628,7 +628,7 @@
   },
   {
    "name": "Gemini 4 Argon",
-   "score": 6.39,
+   "score": 6.1,
    "days": 8,
    "latest": {
     "date": "2026-10-20",
@@ -679,101 +679,101 @@
    ]
   },
   {
-   "name": "芯片",
-   "score": 4.87,
+   "name": "Gemini",
+   "score": 5.13,
    "days": 10,
    "latest": {
-    "date": "2026-10-13",
-    "url": "/posts/2026-10-12-ai-morning-post/#company",
-    "title": "微软自研 Maia 芯片拟 2027 年冲到吉瓦级"
+    "date": "2026-10-23",
+    "url": "/posts/2026-10-22-ai-morning-post/#product",
+    "title": "谷歌为每个 Gemini 代理配独立微 VM"
    },
    "links": [
     {
-     "date": "2026-10-13",
-     "url": "/posts/2026-10-12-ai-morning-post/#company",
-     "title": "微软自研 Maia 芯片拟 2027 年冲到吉瓦级"
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#product",
+     "title": "谷歌为每个 Gemini 代理配独立微 VM"
     },
     {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#product",
-     "title": "苹果 HomeView：明晚发布，A18 芯片带屏"
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#product",
+     "title": "Gemini 个人上下文进车机"
     },
     {
-     "date": "2026-10-08",
-     "url": "/posts/2026-10-07-ai-morning-post/#company",
-     "title": "博通为 OpenAI 定制芯片筹逾 500 亿美元"
+     "date": "2026-10-19",
+     "url": "/posts/2026-10-18-ai-morning-post/#model-release",
+     "title": "四个 Gemini agent 通关《我的世界》：长程协作的压力测试"
+    },
+    {
+     "date": "2026-10-10",
+     "url": "/posts/2026-10-09-ai-morning-post/#product",
+     "title": "谷歌把 Gemini 变成企业通用 Agent，还配了工号"
+    },
+    {
+     "date": "2026-10-09",
+     "url": "/posts/2026-10-08-ai-morning-post/#product",
+     "title": "Gemini 长出企业身份，还能调用 Claude"
     },
     {
      "date": "2026-10-05",
-     "url": "/posts/2026-10-04-ai-morning-post/#company",
-     "title": "马斯克的 AI 芯片：英特尔做前端，台积电补后端"
-    },
-    {
-     "date": "2026-10-04",
-     "url": "/posts/2026-10-03-ai-morning-post/#company",
-     "title": "美国逮捕涉嫌走私 3 亿美元英伟达芯片的 CEO"
-    },
-    {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#company",
-     "title": "博通募 600 亿美元，为 Anthropic 自研芯片输血"
+     "url": "/posts/2026-10-04-ai-morning-post/#product",
+     "title": "Google 把 Gemini 免费用户压到最弱模型"
     },
     {
      "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#company",
-     "title": "OpenAI 联手新思科技，让 AI 设计芯片"
+     "url": "/posts/2026-10-01-ai-morning-post/#product",
+     "title": "谷歌用 Skills 取代 Gemini 的 Gems"
     },
     {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#company",
-     "title": "OpenAI 联手 Synopsys 造\"老工程师级\"芯片设计模型"
+     "date": "2026-09-28",
+     "url": "/posts/2026-09-27-ai-morning-post/#product",
+     "title": "谷歌在印度测试用 Gemini 直接下单购物"
     }
    ]
   },
   {
-   "name": "字节",
-   "score": 4.81,
+   "name": "Cloudflare",
+   "score": 4.97,
    "days": 7,
    "latest": {
-    "date": "2026-10-21",
-    "url": "/posts/2026-10-20-ai-morning-post/#company",
-    "title": "零一万物联创黄文灏离开字节 Seed"
+    "date": "2026-10-23",
+    "url": "/posts/2026-10-22-ai-morning-post/#opensource",
+    "title": "Cloudflare 把安全审计写成技能"
    },
    "links": [
     {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#company",
-     "title": "零一万物联创黄文灏离开字节 Seed"
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
+     "title": "Cloudflare 把安全审计写成技能"
     },
     {
-     "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#company",
-     "title": "字节 Seed 单独设立大模型安全与对齐部门"
-    },
-    {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#company",
-     "title": "字节 Seed 新设大模型安全与对齐部门"
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源 Clef：给 Agent 的判断装一个可审计的开关"
     },
     {
      "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#research",
-     "title": "字节新论文：不要分词器，直接读字节反而更强"
+     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
+     "title": "Cloudflare 开源 Clef-omni：一次调用给音视图文打分"
     },
     {
-     "date": "2026-10-10",
-     "url": "/posts/2026-10-09-ai-morning-post/#company",
-     "title": "「字节投毒实习生」创业做世界模型，估值 2 亿美元"
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#company",
+     "title": "Deno 团队加入 Cloudflare"
     },
     {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#opensource",
-     "title": "字节开源 deer-flow：长程 SuperAgent 框架"
+     "date": "2026-10-09",
+     "url": "/posts/2026-10-08-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源了一个安全审计 skill"
     },
     {
-     "date": "2026-09-23",
-     "url": "/posts/2026-09-22-ai-morning-post/#product",
-     "title": "字节发布 Dramagic：短剧从剧本到成片全流水线"
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#product",
+     "title": "Cloudflare 喊开发者用它的能力搭下一代 Git 平台"
+    },
+    {
+     "date": "2026-10-03",
+     "url": "/posts/2026-10-02-ai-morning-post/#model-release",
+     "title": "Cloudflare 的 Clef：把人类移出 Agent 环路"
     }
    ]
   }
