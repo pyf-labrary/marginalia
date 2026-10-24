@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-24",
+ "generated": "2026-10-25",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 85.23,
+   "score": 86.16,
    "days": 28,
    "latest": {
-    "date": "2026-10-24",
-    "url": "/posts/2026-10-23-ai-morning-post/#research",
-    "title": "EpiSEM-Bench：当安全事实缺证据，Agent 会怎么做"
+    "date": "2026-10-25",
+    "url": "/posts/2026-10-24-ai-morning-post/#research",
+    "title": "OpenAI：隔离环境里的智能体自己找到了信道"
    },
    "links": [
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#research",
+     "title": "OpenAI：隔离环境里的智能体自己找到了信道"
+    },
     {
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-10-18",
      "url": "/posts/2026-10-17-ai-morning-post/#opinion",
      "title": "失控 Agent 从个案变成清单"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#model-release",
-     "title": "英伟达开源 120B 多模态智能体模型"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 51.52,
+   "score": 52.48,
    "days": 27,
    "latest": {
-    "date": "2026-10-24",
-    "url": "/posts/2026-10-23-ai-morning-post/#model-release",
-    "title": "OpenAI 把「决策」单独做成 API"
+    "date": "2026-10-25",
+    "url": "/posts/2026-10-24-ai-morning-post/#company",
+    "title": "OpenAI 切断前沿模型的实时联网训练"
    },
    "links": [
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#company",
+     "title": "OpenAI 切断前沿模型的实时联网训练"
+    },
     {
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-10-18",
      "url": "/posts/2026-10-17-ai-morning-post/#company",
      "title": "Replit 把默认模型换成 OpenAI"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#model-release",
-     "title": "OpenAI 的 Rosalind 学术计划"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 46.65,
+   "score": 47.06,
    "days": 27,
    "latest": {
-    "date": "2026-10-24",
-    "url": "/posts/2026-10-23-ai-morning-post/#company",
-    "title": "Anthropic 与 Hg：模型公司开始自己做交付"
+    "date": "2026-10-25",
+    "url": "/posts/2026-10-24-ai-morning-post/#model-release",
+    "title": "Anthropic 预告未发布模型：能力与对齐同时占优"
    },
    "links": [
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#model-release",
+     "title": "Anthropic 预告未发布模型：能力与对齐同时占优"
+    },
     {
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-10-18",
      "url": "/posts/2026-10-17-ai-morning-post/#company",
      "title": "Anthropic：员工变「资深」，会议变多"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#company",
-     "title": "Anthropic 季营收 168 亿美元，IPO 前夜的两种读法"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 27.1,
+   "score": 26.58,
    "days": 23,
    "latest": {
-    "date": "2026-10-24",
-    "url": "/posts/2026-10-23-ai-morning-post/#product",
-    "title": "Claude 一边写代码，一边给出安全证明"
+    "date": "2026-10-25",
+    "url": "/posts/2026-10-24-ai-morning-post/#opensource",
+    "title": "Anthropic 开源知识工作插件库，把 Claude 变成岗位专家"
    },
    "links": [
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
+     "title": "Anthropic 开源知识工作插件库，把 Claude 变成岗位专家"
+    },
     {
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#product",
@@ -202,18 +207,13 @@
      "date": "2026-10-17",
      "url": "/posts/2026-10-16-ai-morning-post/#research",
      "title": "Claude 做数学考古，追出 ECDSA 曲线参数来源"
-    },
-    {
-     "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#opensource",
-     "title": "Anthropic 官方 Claude Code 插件目录上线"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 17.65,
-   "days": 23,
+   "score": 16.58,
+   "days": 22,
    "latest": {
     "date": "2026-10-24",
     "url": "/posts/2026-10-23-ai-morning-post/#research",
@@ -264,7 +264,7 @@
   },
   {
    "name": "ChatGPT",
-   "score": 11.16,
+   "score": 10.58,
    "days": 12,
    "latest": {
     "date": "2026-10-23",
@@ -316,8 +316,8 @@
   },
   {
    "name": "Google",
-   "score": 11.06,
-   "days": 12,
+   "score": 10.29,
+   "days": 11,
    "latest": {
     "date": "2026-10-24",
     "url": "/posts/2026-10-23-ai-morning-post/#research",
@@ -368,8 +368,8 @@
   },
   {
    "name": "DeepSeek",
-   "score": 10.29,
-   "days": 15,
+   "score": 9.68,
+   "days": 14,
    "latest": {
     "date": "2026-10-24",
     "url": "/posts/2026-10-23-ai-morning-post/#company",
@@ -420,14 +420,19 @@
   },
   {
    "name": "算力",
-   "score": 8.39,
-   "days": 11,
+   "score": 8.97,
+   "days": 12,
    "latest": {
-    "date": "2026-10-24",
-    "url": "/posts/2026-10-23-ai-morning-post/#opinion",
-    "title": "欧盟成员国批准“数字征用”，隐私让位于算力"
+    "date": "2026-10-25",
+    "url": "/posts/2026-10-24-ai-morning-post/#product",
+    "title": "汽车行业 AI 基座：算力与数据开始“公用事业化”"
    },
    "links": [
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#product",
+     "title": "汽车行业 AI 基座：算力与数据开始“公用事业化”"
+    },
     {
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#opinion",
@@ -462,17 +467,12 @@
      "date": "2026-10-12",
      "url": "/posts/2026-10-11-ai-morning-post/#company",
      "title": "Tom Brown 借政界关系撮合每月 12.5 亿美元算力大单"
-    },
-    {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#company",
-     "title": "被曝靠政界关系撮合 SpaceX 巨额算力单"
     }
    ]
   },
   {
    "name": "MoE",
-   "score": 7.61,
+   "score": 7.26,
    "days": 10,
    "latest": {
     "date": "2026-10-24",
@@ -523,9 +523,61 @@
    ]
   },
   {
+   "name": "Cloudflare",
+   "score": 6.42,
+   "days": 9,
+   "latest": {
+    "date": "2026-10-25",
+    "url": "/posts/2026-10-24-ai-morning-post/#opensource",
+    "title": "Cloudflare 开源安全审计技能，让编码 Agent 当审计员"
+   },
+   "links": [
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源安全审计技能，让编码 Agent 当审计员"
+    },
+    {
+     "date": "2026-10-24",
+     "url": "/posts/2026-10-23-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源了一个「安全审计」Skill"
+    },
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
+     "title": "Cloudflare 把安全审计写成技能"
+    },
+    {
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源 Clef：给 Agent 的判断装一个可审计的开关"
+    },
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
+     "title": "Cloudflare 开源 Clef-omni：一次调用给音视图文打分"
+    },
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#company",
+     "title": "Deno 团队加入 Cloudflare"
+    },
+    {
+     "date": "2026-10-09",
+     "url": "/posts/2026-10-08-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源了一个安全审计 skill"
+    },
+    {
+     "date": "2026-10-05",
+     "url": "/posts/2026-10-04-ai-morning-post/#product",
+     "title": "Cloudflare 喊开发者用它的能力搭下一代 Git 平台"
+    }
+   ]
+  },
+  {
    "name": "ElevenLabs",
-   "score": 6.48,
-   "days": 11,
+   "score": 6.06,
+   "days": 10,
    "latest": {
     "date": "2026-10-21",
     "url": "/posts/2026-10-20-ai-morning-post/#model-release",
@@ -576,7 +628,7 @@
   },
   {
    "name": "VoiceStudio",
-   "score": 6.13,
+   "score": 5.81,
    "days": 10,
    "latest": {
     "date": "2026-10-20",
@@ -627,119 +679,72 @@
    ]
   },
   {
-   "name": "Gemini 4 Argon",
+   "name": "TTS",
    "score": 5.81,
    "days": 8,
    "latest": {
-    "date": "2026-10-20",
-    "url": "/posts/2026-10-19-ai-morning-post/#model-release",
-    "title": "Gemini 4 Argon：谷歌押注“最棘手问题”"
+    "date": "2026-10-25",
+    "url": "/posts/2026-10-24-ai-morning-post/#opensource",
+    "title": "OpenBMB 开源 VoxCPM2：无分词器的多语种 TTS"
    },
    "links": [
     {
-     "date": "2026-10-20",
-     "url": "/posts/2026-10-19-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：谷歌押注“最棘手问题”"
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
+     "title": "OpenBMB 开源 VoxCPM2：无分词器的多语种 TTS"
     },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：谷歌想用一个模型统一机器人"
-    },
-    {
-     "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#model-release",
-     "title": "谷歌想让 Gemini 4 Argon 成为机器人的唯一模型"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon 正式 GA：Vals Index 登顶，长输出成新战场"
-    },
-    {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#model-release",
-     "title": "谷歌 Gemini 4 Argon 全球上线，免费用户被留在门外"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：能力拉满，门禁也拉满"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：拿了第一，但拿不到"
-    }
-   ]
-  },
-  {
-   "name": "Cloudflare",
-   "score": 5.71,
-   "days": 8,
-   "latest": {
-    "date": "2026-10-24",
-    "url": "/posts/2026-10-23-ai-morning-post/#opensource",
-    "title": "Cloudflare 开源了一个「安全审计」Skill"
-   },
-   "links": [
     {
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#opensource",
-     "title": "Cloudflare 开源了一个「安全审计」Skill"
+     "title": "31M 参数的 TTS，笔记本 CPU 上 7ms 出声"
     },
     {
      "date": "2026-10-23",
      "url": "/posts/2026-10-22-ai-morning-post/#opensource",
-     "title": "Cloudflare 把安全审计写成技能"
+     "title": "31M 参数的端侧 TTS，7ms 起播"
     },
     {
      "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
-     "title": "Cloudflare 开源 Clef：给 Agent 的判断装一个可审计的开关"
+     "url": "/posts/2026-10-21-ai-morning-post/#model-release",
+     "title": "Mistral Voxtral 3：转写、TTS 和语音 Agent SDK 一起给"
     },
     {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
-     "title": "Cloudflare 开源 Clef-omni：一次调用给音视图文打分"
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#opensource",
+     "title": "OmniVoice：600+ 语种的高质量语音克隆 TTS"
     },
     {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#company",
-     "title": "Deno 团队加入 Cloudflare"
-    },
-    {
-     "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#opensource",
-     "title": "Cloudflare 开源了一个安全审计 skill"
-    },
-    {
-     "date": "2026-10-05",
-     "url": "/posts/2026-10-04-ai-morning-post/#product",
-     "title": "Cloudflare 喊开发者用它的能力搭下一代 Git 平台"
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
+     "title": "OpenBMB 开源 VoxCPM2：无 tokenizer 的多语种 TTS"
     },
     {
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#model-release",
-     "title": "Cloudflare 的 Clef：把人类移出 Agent 环路"
+     "title": "微软补上语音 Agent 的转录与 TTS"
+    },
+    {
+     "date": "2026-10-01",
+     "url": "/posts/2026-09-30-ai-morning-post/#research",
+     "title": "TTS 评测有了统一榜单"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 5.1,
-   "days": 10,
+   "score": 5.71,
+   "days": 11,
    "latest": {
-    "date": "2026-10-24",
-    "url": "/posts/2026-10-23-ai-morning-post/#opensource",
-    "title": "智源 FlagOS 2.2：让模型适配多种芯片"
+    "date": "2026-10-25",
+    "url": "/posts/2026-10-24-ai-morning-post/#company",
+    "title": "亿铸科技完成超 10 亿元融资，3D DRAM 存算一体芯片已流片"
    },
    "links": [
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#company",
+     "title": "亿铸科技完成超 10 亿元融资，3D DRAM 存算一体芯片已流片"
+    },
     {
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#opensource",
@@ -774,11 +779,6 @@
      "date": "2026-10-03",
      "url": "/posts/2026-10-02-ai-morning-post/#company",
      "title": "博通募 600 亿美元，为 Anthropic 自研芯片输血"
-    },
-    {
-     "date": "2026-10-02",
-     "url": "/posts/2026-10-01-ai-morning-post/#company",
-     "title": "OpenAI 联手新思科技，让 AI 设计芯片"
     }
    ]
   }
