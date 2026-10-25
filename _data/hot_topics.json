@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-25",
+ "generated": "2026-10-26",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 86.16,
+   "score": 85.74,
    "days": 28,
    "latest": {
-    "date": "2026-10-25",
-    "url": "/posts/2026-10-24-ai-morning-post/#research",
-    "title": "OpenAI：隔离环境里的智能体自己找到了信道"
+    "date": "2026-10-26",
+    "url": "/posts/2026-10-25-ai-morning-post/#research",
+    "title": "Anthropic：单 Agent 现在胜过多子 Agent"
    },
    "links": [
+    {
+     "date": "2026-10-26",
+     "url": "/posts/2026-10-25-ai-morning-post/#research",
+     "title": "Anthropic：单 Agent 现在胜过多子 Agent"
+    },
     {
      "date": "2026-10-25",
      "url": "/posts/2026-10-24-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-10-19",
      "url": "/posts/2026-10-18-ai-morning-post/#research",
      "title": "混合推理智能体：在潜空间思考，用文本行动"
-    },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#opinion",
-     "title": "失控 Agent 从个案变成清单"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 52.48,
+   "score": 50.42,
    "days": 27,
    "latest": {
-    "date": "2026-10-25",
-    "url": "/posts/2026-10-24-ai-morning-post/#company",
-    "title": "OpenAI 切断前沿模型的实时联网训练"
+    "date": "2026-10-26",
+    "url": "/posts/2026-10-25-ai-morning-post/#company",
+    "title": "OpenAI 最高九折抢客户，企业市场开始拼价格"
    },
    "links": [
+    {
+     "date": "2026-10-26",
+     "url": "/posts/2026-10-25-ai-morning-post/#company",
+     "title": "OpenAI 最高九折抢客户，企业市场开始拼价格"
+    },
     {
      "date": "2026-10-25",
      "url": "/posts/2026-10-24-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-10-19",
      "url": "/posts/2026-10-18-ai-morning-post/#company",
      "title": "OpenAI 再披露四起模型越界事件"
-    },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#company",
-     "title": "Replit 把默认模型换成 OpenAI"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 47.06,
+   "score": 47.32,
    "days": 27,
    "latest": {
-    "date": "2026-10-25",
-    "url": "/posts/2026-10-24-ai-morning-post/#model-release",
-    "title": "Anthropic 预告未发布模型：能力与对齐同时占优"
+    "date": "2026-10-26",
+    "url": "/posts/2026-10-25-ai-morning-post/#research",
+    "title": "Anthropic：单 Agent 现在胜过多子 Agent"
    },
    "links": [
+    {
+     "date": "2026-10-26",
+     "url": "/posts/2026-10-25-ai-morning-post/#research",
+     "title": "Anthropic：单 Agent 现在胜过多子 Agent"
+    },
     {
      "date": "2026-10-25",
      "url": "/posts/2026-10-24-ai-morning-post/#model-release",
@@ -150,24 +155,24 @@
      "date": "2026-10-19",
      "url": "/posts/2026-10-18-ai-morning-post/#company",
      "title": "Anthropic 把 5% 股份划进公共利益基金"
-    },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#company",
-     "title": "Anthropic：员工变「资深」，会议变多"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 26.58,
-   "days": 23,
+   "score": 26.16,
+   "days": 24,
    "latest": {
-    "date": "2026-10-25",
-    "url": "/posts/2026-10-24-ai-morning-post/#opensource",
-    "title": "Anthropic 开源知识工作插件库，把 Claude 变成岗位专家"
+    "date": "2026-10-26",
+    "url": "/posts/2026-10-25-ai-morning-post/#opensource",
+    "title": "Anthropic 开源知识工作插件库，按角色和团队定制 Claude"
    },
    "links": [
+    {
+     "date": "2026-10-26",
+     "url": "/posts/2026-10-25-ai-morning-post/#opensource",
+     "title": "Anthropic 开源知识工作插件库，按角色和团队定制 Claude"
+    },
     {
      "date": "2026-10-25",
      "url": "/posts/2026-10-24-ai-morning-post/#opensource",
@@ -202,18 +207,13 @@
      "date": "2026-10-18",
      "url": "/posts/2026-10-17-ai-morning-post/#research",
      "title": "Claude 半小时解开 25 年 ECDSA 曲线起源悬案"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#research",
-     "title": "Claude 做数学考古，追出 ECDSA 曲线参数来源"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 16.58,
-   "days": 22,
+   "score": 15.61,
+   "days": 21,
    "latest": {
     "date": "2026-10-24",
     "url": "/posts/2026-10-23-ai-morning-post/#research",
@@ -264,7 +264,7 @@
   },
   {
    "name": "ChatGPT",
-   "score": 10.58,
+   "score": 10.0,
    "days": 12,
    "latest": {
     "date": "2026-10-23",
@@ -316,8 +316,8 @@
   },
   {
    "name": "Google",
-   "score": 10.29,
-   "days": 11,
+   "score": 9.68,
+   "days": 10,
    "latest": {
     "date": "2026-10-24",
     "url": "/posts/2026-10-23-ai-morning-post/#research",
@@ -368,8 +368,8 @@
   },
   {
    "name": "DeepSeek",
-   "score": 9.68,
-   "days": 14,
+   "score": 9.1,
+   "days": 13,
    "latest": {
     "date": "2026-10-24",
     "url": "/posts/2026-10-23-ai-morning-post/#company",
@@ -420,7 +420,7 @@
   },
   {
    "name": "算力",
-   "score": 8.97,
+   "score": 8.52,
    "days": 12,
    "latest": {
     "date": "2026-10-25",
@@ -471,8 +471,60 @@
    ]
   },
   {
+   "name": "Cloudflare",
+   "score": 7.1,
+   "days": 10,
+   "latest": {
+    "date": "2026-10-26",
+    "url": "/posts/2026-10-25-ai-morning-post/#opensource",
+    "title": "Cloudflare 开源安全审计技能，结果要机器可读"
+   },
+   "links": [
+    {
+     "date": "2026-10-26",
+     "url": "/posts/2026-10-25-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源安全审计技能，结果要机器可读"
+    },
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源安全审计技能，让编码 Agent 当审计员"
+    },
+    {
+     "date": "2026-10-24",
+     "url": "/posts/2026-10-23-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源了一个「安全审计」Skill"
+    },
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
+     "title": "Cloudflare 把安全审计写成技能"
+    },
+    {
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源 Clef：给 Agent 的判断装一个可审计的开关"
+    },
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
+     "title": "Cloudflare 开源 Clef-omni：一次调用给音视图文打分"
+    },
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#company",
+     "title": "Deno 团队加入 Cloudflare"
+    },
+    {
+     "date": "2026-10-09",
+     "url": "/posts/2026-10-08-ai-morning-post/#opensource",
+     "title": "Cloudflare 开源了一个安全审计 skill"
+    }
+   ]
+  },
+  {
    "name": "MoE",
-   "score": 7.26,
+   "score": 6.9,
    "days": 10,
    "latest": {
     "date": "2026-10-24",
@@ -523,60 +575,8 @@
    ]
   },
   {
-   "name": "Cloudflare",
-   "score": 6.42,
-   "days": 9,
-   "latest": {
-    "date": "2026-10-25",
-    "url": "/posts/2026-10-24-ai-morning-post/#opensource",
-    "title": "Cloudflare 开源安全审计技能，让编码 Agent 当审计员"
-   },
-   "links": [
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
-     "title": "Cloudflare 开源安全审计技能，让编码 Agent 当审计员"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#opensource",
-     "title": "Cloudflare 开源了一个「安全审计」Skill"
-    },
-    {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
-     "title": "Cloudflare 把安全审计写成技能"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
-     "title": "Cloudflare 开源 Clef：给 Agent 的判断装一个可审计的开关"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
-     "title": "Cloudflare 开源 Clef-omni：一次调用给音视图文打分"
-    },
-    {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#company",
-     "title": "Deno 团队加入 Cloudflare"
-    },
-    {
-     "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#opensource",
-     "title": "Cloudflare 开源了一个安全审计 skill"
-    },
-    {
-     "date": "2026-10-05",
-     "url": "/posts/2026-10-04-ai-morning-post/#product",
-     "title": "Cloudflare 喊开发者用它的能力搭下一代 Git 平台"
-    }
-   ]
-  },
-  {
    "name": "ElevenLabs",
-   "score": 6.06,
+   "score": 5.71,
    "days": 10,
    "latest": {
     "date": "2026-10-21",
@@ -627,60 +627,8 @@
    ]
   },
   {
-   "name": "VoiceStudio",
-   "score": 5.81,
-   "days": 10,
-   "latest": {
-    "date": "2026-10-20",
-    "url": "/posts/2026-10-19-ai-morning-post/#opensource",
-    "title": "VoiceStudio：本地运行的语音克隆工具"
-   },
-   "links": [
-    {
-     "date": "2026-10-20",
-     "url": "/posts/2026-10-19-ai-morning-post/#opensource",
-     "title": "VoiceStudio：本地运行的语音克隆工具"
-    },
-    {
-     "date": "2026-10-19",
-     "url": "/posts/2026-10-18-ai-morning-post/#opensource",
-     "title": "VoiceStudio：本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的开源 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-13",
-     "url": "/posts/2026-10-12-ai-morning-post/#opensource",
-     "title": "VoiceStudio：本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    },
-    {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 开源替代"
-    }
-   ]
-  },
-  {
    "name": "TTS",
-   "score": 5.81,
+   "score": 5.55,
    "days": 8,
    "latest": {
     "date": "2026-10-25",
@@ -731,9 +679,61 @@
    ]
   },
   {
+   "name": "VoiceStudio",
+   "score": 5.48,
+   "days": 10,
+   "latest": {
+    "date": "2026-10-20",
+    "url": "/posts/2026-10-19-ai-morning-post/#opensource",
+    "title": "VoiceStudio：本地运行的语音克隆工具"
+   },
+   "links": [
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#opensource",
+     "title": "VoiceStudio：本地运行的语音克隆工具"
+    },
+    {
+     "date": "2026-10-19",
+     "url": "/posts/2026-10-18-ai-morning-post/#opensource",
+     "title": "VoiceStudio：本地的 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的开源 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-17",
+     "url": "/posts/2026-10-16-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-13",
+     "url": "/posts/2026-10-12-ai-morning-post/#opensource",
+     "title": "VoiceStudio：本地的 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
+    },
+    {
+     "date": "2026-10-03",
+     "url": "/posts/2026-10-02-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 开源替代"
+    }
+   ]
+  },
+  {
    "name": "芯片",
-   "score": 5.71,
-   "days": 11,
+   "score": 5.26,
+   "days": 10,
    "latest": {
     "date": "2026-10-25",
     "url": "/posts/2026-10-24-ai-morning-post/#company",
