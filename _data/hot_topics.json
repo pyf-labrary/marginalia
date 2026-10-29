@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-28",
+ "generated": "2026-10-29",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 77.52,
-   "days": 27,
+   "score": 76.71,
+   "days": 28,
    "latest": {
-    "date": "2026-10-27",
-    "url": "/posts/2026-10-26-ai-morning-post/#product",
-    "title": "Nace AI 发布 Drex，把「搜索」做成 Agent 的专用组件"
+    "date": "2026-10-29",
+    "url": "/posts/2026-10-28-ai-morning-post/#model-release",
+    "title": "蚂蚁百灵开源 Ling-3.1-flash，押注个人智能体"
    },
    "links": [
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#model-release",
+     "title": "蚂蚁百灵开源 Ling-3.1-flash，押注个人智能体"
+    },
     {
      "date": "2026-10-27",
      "url": "/posts/2026-10-26-ai-morning-post/#product",
@@ -46,24 +51,24 @@
      "date": "2026-10-21",
      "url": "/posts/2026-10-20-ai-morning-post/#research",
      "title": "AI Agent 评测：方法、问题与生态的系统梳理"
-    },
-    {
-     "date": "2026-10-20",
-     "url": "/posts/2026-10-19-ai-morning-post/#model-release",
-     "title": "英伟达开源代理模型：把 Agent 塞进企业和 PC"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 47.23,
-   "days": 27,
+   "score": 49.26,
+   "days": 28,
    "latest": {
-    "date": "2026-10-28",
-    "url": "/posts/2026-10-27-ai-morning-post/#company",
-    "title": "报道称 OpenAI 计划采购谷歌 AI 芯片"
+    "date": "2026-10-29",
+    "url": "/posts/2026-10-28-ai-morning-post/#company",
+    "title": "微软单季从 OpenAI 相关安排录得 100 亿美元收入"
    },
    "links": [
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#company",
+     "title": "微软单季从 OpenAI 相关安排录得 100 亿美元收入"
+    },
     {
      "date": "2026-10-28",
      "url": "/posts/2026-10-27-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#company",
      "title": "OpenAI 买下一支生物团队，agent 往实验室里走"
-    },
-    {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#company",
-     "title": "OpenAI 买下一家生物医药公司，Rosalind 想进实验室"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 45.03,
-   "days": 27,
+   "score": 47.58,
+   "days": 28,
    "latest": {
-    "date": "2026-10-28",
-    "url": "/posts/2026-10-27-ai-morning-post/#company",
-    "title": "Anthropic 递交招股书：史上最大 AI IPO，也是最能亏的"
+    "date": "2026-10-29",
+    "url": "/posts/2026-10-28-ai-morning-post/#company",
+    "title": "Anthropic 冲刺 IPO：招股书自曝风险，亚马逊成大赢家"
    },
    "links": [
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#company",
+     "title": "Anthropic 冲刺 IPO：招股书自曝风险，亚马逊成大赢家"
+    },
     {
      "date": "2026-10-28",
      "url": "/posts/2026-10-27-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#company",
      "title": "Anthropic 的算力难题，撞上了 IPO 时间表"
-    },
-    {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#company",
-     "title": "Anthropic 算力告急：供应商同时是对手"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 23.23,
-   "days": 22,
+   "score": 22.87,
+   "days": 23,
    "latest": {
-    "date": "2026-10-26",
-    "url": "/posts/2026-10-25-ai-morning-post/#opensource",
-    "title": "Anthropic 开源知识工作插件库，按角色和团队定制 Claude"
+    "date": "2026-10-29",
+    "url": "/posts/2026-10-28-ai-morning-post/#product",
+    "title": "Claude for Legal：先核验引证，再交给律师"
    },
    "links": [
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#product",
+     "title": "Claude for Legal：先核验引证，再交给律师"
+    },
     {
      "date": "2026-10-26",
      "url": "/posts/2026-10-25-ai-morning-post/#opensource",
@@ -202,24 +207,24 @@
      "date": "2026-10-19",
      "url": "/posts/2026-10-18-ai-morning-post/#company",
      "title": "Replit 把默认模型从 Claude 换成了 OpenAI"
-    },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#research",
-     "title": "Claude 半小时解开 25 年 ECDSA 曲线起源悬案"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 16.74,
-   "days": 21,
+   "score": 16.81,
+   "days": 22,
    "latest": {
-    "date": "2026-10-28",
-    "url": "/posts/2026-10-27-ai-morning-post/#company",
-    "title": "Meta AI 总监离职创业，要做 AI 版 Office"
+    "date": "2026-10-29",
+    "url": "/posts/2026-10-28-ai-morning-post/#company",
+    "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
    },
    "links": [
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#company",
+     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
+    },
     {
      "date": "2026-10-28",
      "url": "/posts/2026-10-27-ai-morning-post/#company",
@@ -254,17 +259,12 @@
      "date": "2026-10-20",
      "url": "/posts/2026-10-19-ai-morning-post/#model-release",
      "title": "Meta 与苹果的开源合作，编码基准输给国产"
-    },
-    {
-     "date": "2026-10-19",
-     "url": "/posts/2026-10-18-ai-morning-post/#model-release",
-     "title": "Meta 与苹果的「美国最强开源模型」，编码上被中国模型压过"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 11.84,
+   "score": 11.16,
    "days": 13,
    "latest": {
     "date": "2026-10-28",
@@ -315,8 +315,60 @@
    ]
   },
   {
-   "name": "DeepSeek",
+   "name": "Google",
    "score": 9.03,
+   "days": 11,
+   "latest": {
+    "date": "2026-10-29",
+    "url": "/posts/2026-10-28-ai-morning-post/#product",
+    "title": "Google 把 Gemini 和搜索交了出去"
+   },
+   "links": [
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#product",
+     "title": "Google 把 Gemini 和搜索交了出去"
+    },
+    {
+     "date": "2026-10-24",
+     "url": "/posts/2026-10-23-ai-morning-post/#research",
+     "title": "TorchTPU：Google 与 Meta 让 PyTorch 原生跑上 TPU"
+    },
+    {
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
+     "title": "Google 开源 TorchTPU，PyTorch 原生跑上 TPU"
+    },
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#research",
+     "title": "Google 工程师：能自我改进的 AI 还差得远"
+    },
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 集合"
+    },
+    {
+     "date": "2026-10-10",
+     "url": "/posts/2026-10-09-ai-morning-post/#research",
+     "title": "Google 研究首登《柳叶刀》主刊：AI 或改善医患关系"
+    },
+    {
+     "date": "2026-10-09",
+     "url": "/posts/2026-10-08-ai-morning-post/#product",
+     "title": "Google 用 Foresight 打 Granola，主打离线"
+    }
+   ]
+  },
+  {
+   "name": "DeepSeek",
+   "score": 8.48,
    "days": 14,
    "latest": {
     "date": "2026-10-27",
@@ -367,67 +419,20 @@
    ]
   },
   {
-   "name": "Google",
-   "score": 8.58,
-   "days": 10,
-   "latest": {
-    "date": "2026-10-24",
-    "url": "/posts/2026-10-23-ai-morning-post/#research",
-    "title": "TorchTPU：Google 与 Meta 让 PyTorch 原生跑上 TPU"
-   },
-   "links": [
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#research",
-     "title": "TorchTPU：Google 与 Meta 让 PyTorch 原生跑上 TPU"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
-     "title": "Google 开源 TorchTPU，PyTorch 原生跑上 TPU"
-    },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#research",
-     "title": "Google 工程师：能自我改进的 AI 还差得远"
-    },
-    {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 集合"
-    },
-    {
-     "date": "2026-10-10",
-     "url": "/posts/2026-10-09-ai-morning-post/#research",
-     "title": "Google 研究首登《柳叶刀》主刊：AI 或改善医患关系"
-    },
-    {
-     "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#product",
-     "title": "Google 用 Foresight 打 Granola，主打离线"
-    },
-    {
-     "date": "2026-10-08",
-     "url": "/posts/2026-10-07-ai-morning-post/#model-release",
-     "title": "Google 开源 EmbeddingGemma 2：740M 多模态嵌入"
-    }
-   ]
-  },
-  {
    "name": "算力",
-   "score": 7.61,
-   "days": 11,
+   "score": 8.19,
+   "days": 12,
    "latest": {
-    "date": "2026-10-25",
-    "url": "/posts/2026-10-24-ai-morning-post/#product",
-    "title": "汽车行业 AI 基座：算力与数据开始“公用事业化”"
+    "date": "2026-10-29",
+    "url": "/posts/2026-10-28-ai-morning-post/#company",
+    "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
    },
    "links": [
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#company",
+     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
+    },
     {
      "date": "2026-10-25",
      "url": "/posts/2026-10-24-ai-morning-post/#product",
@@ -462,17 +467,12 @@
      "date": "2026-10-15",
      "url": "/posts/2026-10-14-ai-morning-post/#company",
      "title": "黄仁勋承诺向欧洲投 20 亿美元，另拨 2.5 亿算力给英国"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#company",
-     "title": "Tom Brown 借政界关系撮合每月 12.5 亿美元算力大单"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 7.48,
+   "score": 7.0,
    "days": 11,
    "latest": {
     "date": "2026-10-28",
@@ -524,7 +524,7 @@
   },
   {
    "name": "Cloudflare",
-   "score": 7.35,
+   "score": 6.97,
    "days": 11,
    "latest": {
     "date": "2026-10-27",
@@ -576,7 +576,7 @@
   },
   {
    "name": "MoE",
-   "score": 6.19,
+   "score": 5.84,
    "days": 10,
    "latest": {
     "date": "2026-10-24",
@@ -628,7 +628,7 @@
   },
   {
    "name": "ElevenLabs",
-   "score": 6.0,
+   "score": 5.61,
    "days": 11,
    "latest": {
     "date": "2026-10-28",
@@ -680,7 +680,7 @@
   },
   {
    "name": "VoiceStudio",
-   "score": 5.84,
+   "score": 5.48,
    "days": 11,
    "latest": {
     "date": "2026-10-28",
@@ -731,54 +731,54 @@
    ]
   },
   {
-   "name": "TTS",
-   "score": 5.03,
+   "name": "世界模型",
+   "score": 5.06,
    "days": 8,
    "latest": {
-    "date": "2026-10-25",
-    "url": "/posts/2026-10-24-ai-morning-post/#opensource",
-    "title": "OpenBMB 开源 VoxCPM2：无分词器的多语种 TTS"
+    "date": "2026-10-29",
+    "url": "/posts/2026-10-28-ai-morning-post/#model-release",
+    "title": "Genie 4：世界模型开始有声音，也开始能对话"
    },
    "links": [
     {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#model-release",
+     "title": "Genie 4：世界模型开始有声音，也开始能对话"
+    },
+    {
+     "date": "2026-10-28",
+     "url": "/posts/2026-10-27-ai-morning-post/#model-release",
+     "title": "Genie 4：世界模型从「能看」到「能操控」"
+    },
+    {
      "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
-     "title": "OpenBMB 开源 VoxCPM2：无分词器的多语种 TTS"
+     "url": "/posts/2026-10-24-ai-morning-post/#research",
+     "title": "Kyutai 开源 CADRE：世界模型压进 230 毫秒"
     },
     {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#opensource",
-     "title": "31M 参数的 TTS，笔记本 CPU 上 7ms 出声"
+     "date": "2026-10-19",
+     "url": "/posts/2026-10-18-ai-morning-post/#model-release",
+     "title": "VAST 开源 EdenLive：世界模型开始要求「实时」"
     },
     {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
-     "title": "31M 参数的端侧 TTS，7ms 起播"
+     "date": "2026-10-12",
+     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
+     "title": "Odyssey-3 开放免费试玩，世界模型回到「可玩性」"
     },
     {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#model-release",
-     "title": "Mistral Voxtral 3：转写、TTS 和语音 Agent SDK 一起给"
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#research",
+     "title": "WorldArena 2.0：世界模型要证明自己真能用"
     },
     {
-     "date": "2026-10-20",
-     "url": "/posts/2026-10-19-ai-morning-post/#opensource",
-     "title": "OmniVoice：600+ 语种的高质量语音克隆 TTS"
+     "date": "2026-10-10",
+     "url": "/posts/2026-10-09-ai-morning-post/#company",
+     "title": "「字节投毒实习生」创业做世界模型，估值 2 亿美元"
     },
     {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
-     "title": "OpenBMB 开源 VoxCPM2：无 tokenizer 的多语种 TTS"
-    },
-    {
-     "date": "2026-10-03",
-     "url": "/posts/2026-10-02-ai-morning-post/#model-release",
-     "title": "微软补上语音 Agent 的转录与 TTS"
-    },
-    {
-     "date": "2026-10-01",
-     "url": "/posts/2026-09-30-ai-morning-post/#research",
-     "title": "TTS 评测有了统一榜单"
+     "date": "2026-10-07",
+     "url": "/posts/2026-10-06-ai-morning-post/#research",
+     "title": "JEPA-Anything：一个配方统一七大领域世界模型"
     }
    ]
   }
