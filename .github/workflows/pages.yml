@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # 10-25 起 ubuntu-latest＝26.04，setup-ruby 没有 3.1 的包，构建全挂
     timeout-minutes: 15
     steps:
       - name: Checkout
