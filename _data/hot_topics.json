@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-29",
+ "generated": "2026-10-30",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 76.71,
-   "days": 28,
+   "score": 79.77,
+   "days": 29,
    "latest": {
-    "date": "2026-10-29",
-    "url": "/posts/2026-10-28-ai-morning-post/#model-release",
-    "title": "蚂蚁百灵开源 Ling-3.1-flash，押注个人智能体"
+    "date": "2026-10-30",
+    "url": "/posts/2026-10-29-ai-morning-post/#company",
+    "title": "一个个人 Agent，估值 12.5 亿美元"
    },
    "links": [
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#company",
+     "title": "一个个人 Agent，估值 12.5 亿美元"
+    },
     {
      "date": "2026-10-29",
      "url": "/posts/2026-10-28-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#model-release",
      "title": "MiniMax M3.1 Flash：Agent 榜第一，成本低 88 倍"
-    },
-    {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#research",
-     "title": "AI Agent 评测：方法、问题与生态的系统梳理"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 49.26,
-   "days": 28,
+   "score": 49.13,
+   "days": 29,
    "latest": {
-    "date": "2026-10-29",
-    "url": "/posts/2026-10-28-ai-morning-post/#company",
-    "title": "微软单季从 OpenAI 相关安排录得 100 亿美元收入"
+    "date": "2026-10-30",
+    "url": "/posts/2026-10-29-ai-morning-post/#company",
+    "title": "153 亿美元，OpenAI 系资本买下 ADT"
    },
    "links": [
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#company",
+     "title": "153 亿美元，OpenAI 系资本买下 ADT"
+    },
     {
      "date": "2026-10-29",
      "url": "/posts/2026-10-28-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-10-23",
      "url": "/posts/2026-10-22-ai-morning-post/#model-release",
      "title": "OpenAI 开放决策 API，先把价格定下来"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#company",
-     "title": "OpenAI 买下一支生物团队，agent 往实验室里走"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 47.58,
-   "days": 28,
+   "score": 46.97,
+   "days": 29,
    "latest": {
-    "date": "2026-10-29",
-    "url": "/posts/2026-10-28-ai-morning-post/#company",
-    "title": "Anthropic 冲刺 IPO：招股书自曝风险，亚马逊成大赢家"
+    "date": "2026-10-30",
+    "url": "/posts/2026-10-29-ai-morning-post/#research",
+    "title": "Anthropic：AI 造 AI 已覆盖 26% 的研发流程"
    },
    "links": [
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#research",
+     "title": "Anthropic：AI 造 AI 已覆盖 26% 的研发流程"
+    },
     {
      "date": "2026-10-29",
      "url": "/posts/2026-10-28-ai-morning-post/#company",
@@ -150,17 +155,12 @@
      "date": "2026-10-23",
      "url": "/posts/2026-10-22-ai-morning-post/#product",
      "title": "Anthropic 推出常驻智能体 Claude Duet"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#company",
-     "title": "Anthropic 的算力难题，撞上了 IPO 时间表"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 22.87,
+   "score": 21.48,
    "days": 23,
    "latest": {
     "date": "2026-10-29",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Meta",
-   "score": 16.81,
-   "days": 22,
+   "score": 16.84,
+   "days": 23,
    "latest": {
-    "date": "2026-10-29",
-    "url": "/posts/2026-10-28-ai-morning-post/#company",
-    "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
+    "date": "2026-10-30",
+    "url": "/posts/2026-10-29-ai-morning-post/#product",
+    "title": "Meta 低调上线 AI 穿搭应用 Style Sketch"
    },
    "links": [
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#product",
+     "title": "Meta 低调上线 AI 穿搭应用 Style Sketch"
+    },
     {
      "date": "2026-10-29",
      "url": "/posts/2026-10-28-ai-morning-post/#company",
@@ -254,17 +259,12 @@
      "date": "2026-10-21",
      "url": "/posts/2026-10-20-ai-morning-post/#model-release",
      "title": "Meta 开源 Muse Spark，还拉上苹果做本地运行"
-    },
-    {
-     "date": "2026-10-20",
-     "url": "/posts/2026-10-19-ai-morning-post/#model-release",
-     "title": "Meta 与苹果的开源合作，编码基准输给国产"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 11.16,
+   "score": 10.48,
    "days": 13,
    "latest": {
     "date": "2026-10-28",
@@ -316,14 +316,19 @@
   },
   {
    "name": "Google",
-   "score": 9.03,
-   "days": 11,
+   "score": 9.45,
+   "days": 12,
    "latest": {
-    "date": "2026-10-29",
-    "url": "/posts/2026-10-28-ai-morning-post/#product",
-    "title": "Google 把 Gemini 和搜索交了出去"
+    "date": "2026-10-30",
+    "url": "/posts/2026-10-29-ai-morning-post/#product",
+    "title": "Google 把 Android 交给第三方 Agent"
    },
    "links": [
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#product",
+     "title": "Google 把 Android 交给第三方 Agent"
+    },
     {
      "date": "2026-10-29",
      "url": "/posts/2026-10-28-ai-morning-post/#product",
@@ -358,24 +363,24 @@
      "date": "2026-10-10",
      "url": "/posts/2026-10-09-ai-morning-post/#research",
      "title": "Google 研究首登《柳叶刀》主刊：AI 或改善医患关系"
-    },
-    {
-     "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#product",
-     "title": "Google 用 Foresight 打 Granola，主打离线"
     }
    ]
   },
   {
    "name": "DeepSeek",
-   "score": 8.48,
-   "days": 14,
+   "score": 8.94,
+   "days": 15,
    "latest": {
-    "date": "2026-10-27",
-    "url": "/posts/2026-10-26-ai-morning-post/#opensource",
-    "title": "1. DeepSeek 开源 DeepInfer：把运行链路也交出来"
+    "date": "2026-10-30",
+    "url": "/posts/2026-10-29-ai-morning-post/#opensource",
+    "title": "DeepSeek 开源 DeepInfer：把推理优化做成公共品"
    },
    "links": [
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
+     "title": "DeepSeek 开源 DeepInfer：把推理优化做成公共品"
+    },
     {
      "date": "2026-10-27",
      "url": "/posts/2026-10-26-ai-morning-post/#opensource",
@@ -410,17 +415,12 @@
      "date": "2026-10-12",
      "url": "/posts/2026-10-11-ai-morning-post/#product",
      "title": "DeepSeek Bot 的「民间版」：一个插件就能装"
-    },
-    {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#research",
-     "title": "一个空格，足以让 DeepSeek 偏离轨道"
     }
    ]
   },
   {
    "name": "算力",
-   "score": 8.19,
+   "score": 7.74,
    "days": 12,
    "latest": {
     "date": "2026-10-29",
@@ -472,14 +472,19 @@
   },
   {
    "name": "芯片",
-   "score": 7.0,
-   "days": 11,
+   "score": 7.52,
+   "days": 12,
    "latest": {
-    "date": "2026-10-28",
-    "url": "/posts/2026-10-27-ai-morning-post/#company",
-    "title": "报道称 OpenAI 计划采购谷歌 AI 芯片"
+    "date": "2026-10-30",
+    "url": "/posts/2026-10-29-ai-morning-post/#opinion",
+    "title": "针对黄仁勋的间谍图谋与芯片管制的执行面"
    },
    "links": [
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opinion",
+     "title": "针对黄仁勋的间谍图谋与芯片管制的执行面"
+    },
     {
      "date": "2026-10-28",
      "url": "/posts/2026-10-27-ai-morning-post/#company",
@@ -514,17 +519,12 @@
      "date": "2026-10-05",
      "url": "/posts/2026-10-04-ai-morning-post/#company",
      "title": "马斯克的 AI 芯片：英特尔做前端，台积电补后端"
-    },
-    {
-     "date": "2026-10-04",
-     "url": "/posts/2026-10-03-ai-morning-post/#company",
-     "title": "美国逮捕涉嫌走私 3 亿美元英伟达芯片的 CEO"
     }
    ]
   },
   {
    "name": "Cloudflare",
-   "score": 6.97,
+   "score": 6.58,
    "days": 11,
    "latest": {
     "date": "2026-10-27",
@@ -575,8 +575,60 @@
    ]
   },
   {
+   "name": "VoiceStudio",
+   "score": 6.13,
+   "days": 12,
+   "latest": {
+    "date": "2026-10-30",
+    "url": "/posts/2026-10-29-ai-morning-post/#opensource",
+    "title": "VoiceStudio：全本地语音工作室"
+   },
+   "links": [
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
+     "title": "VoiceStudio：全本地语音工作室"
+    },
+    {
+     "date": "2026-10-28",
+     "url": "/posts/2026-10-27-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
+    },
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#opensource",
+     "title": "VoiceStudio：本地运行的语音克隆工具"
+    },
+    {
+     "date": "2026-10-19",
+     "url": "/posts/2026-10-18-ai-morning-post/#opensource",
+     "title": "VoiceStudio：本地的 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的开源 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-17",
+     "url": "/posts/2026-10-16-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
+     "title": "VoiceStudio：完全本地的 ElevenLabs 替代"
+    },
+    {
+     "date": "2026-10-13",
+     "url": "/posts/2026-10-12-ai-morning-post/#opensource",
+     "title": "VoiceStudio：本地的 ElevenLabs 替代"
+    }
+   ]
+  },
+  {
    "name": "MoE",
-   "score": 5.84,
+   "score": 5.48,
    "days": 10,
    "latest": {
     "date": "2026-10-24",
@@ -627,8 +679,60 @@
    ]
   },
   {
+   "name": "MIT",
+   "score": 5.39,
+   "days": 10,
+   "latest": {
+    "date": "2026-10-30",
+    "url": "/posts/2026-10-29-ai-morning-post/#opinion",
+    "title": "MIT 科技评论：监控要发生在动作之前"
+   },
+   "links": [
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opinion",
+     "title": "MIT 科技评论：监控要发生在动作之前"
+    },
+    {
+     "date": "2026-10-27",
+     "url": "/posts/2026-10-26-ai-morning-post/#opinion",
+     "title": "MIT 科技评论：只盯 AI 灾难，会忽视日常伤害"
+    },
+    {
+     "date": "2026-10-26",
+     "url": "/posts/2026-10-25-ai-morning-post/#opensource",
+     "title": "Cognition 把 Devin 的漏洞修复拆成 3 个 MIT 技能"
+    },
+    {
+     "date": "2026-10-17",
+     "url": "/posts/2026-10-16-ai-morning-post/#opinion",
+     "title": "MIT 教授：聊天机器人不该说「我」"
+    },
+    {
+     "date": "2026-10-16",
+     "url": "/posts/2026-10-15-ai-morning-post/#opinion",
+     "title": "MIT 研究者：AI 拿下数学后，正在追赶整个科学"
+    },
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#opinion",
+     "title": "MIT 科技评论：开放模型的收益能否盖过风险"
+    },
+    {
+     "date": "2026-10-10",
+     "url": "/posts/2026-10-09-ai-morning-post/#opinion",
+     "title": "MIT 科技评论：我们太相信 AI 会说「不」"
+    },
+    {
+     "date": "2026-10-09",
+     "url": "/posts/2026-10-08-ai-morning-post/#opinion",
+     "title": "MIT 科技评论：机器人突破短期内改变不了你的生活"
+    }
+   ]
+  },
+  {
    "name": "ElevenLabs",
-   "score": 5.61,
+   "score": 5.23,
    "days": 11,
    "latest": {
     "date": "2026-10-28",
@@ -675,110 +779,6 @@
      "date": "2026-10-12",
      "url": "/posts/2026-10-11-ai-morning-post/#opensource",
      "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    }
-   ]
-  },
-  {
-   "name": "VoiceStudio",
-   "score": 5.48,
-   "days": 11,
-   "latest": {
-    "date": "2026-10-28",
-    "url": "/posts/2026-10-27-ai-morning-post/#opensource",
-    "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-   },
-   "links": [
-    {
-     "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    },
-    {
-     "date": "2026-10-20",
-     "url": "/posts/2026-10-19-ai-morning-post/#opensource",
-     "title": "VoiceStudio：本地运行的语音克隆工具"
-    },
-    {
-     "date": "2026-10-19",
-     "url": "/posts/2026-10-18-ai-morning-post/#opensource",
-     "title": "VoiceStudio：本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的开源 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-13",
-     "url": "/posts/2026-10-12-ai-morning-post/#opensource",
-     "title": "VoiceStudio：本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    }
-   ]
-  },
-  {
-   "name": "世界模型",
-   "score": 5.06,
-   "days": 8,
-   "latest": {
-    "date": "2026-10-29",
-    "url": "/posts/2026-10-28-ai-morning-post/#model-release",
-    "title": "Genie 4：世界模型开始有声音，也开始能对话"
-   },
-   "links": [
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#model-release",
-     "title": "Genie 4：世界模型开始有声音，也开始能对话"
-    },
-    {
-     "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#model-release",
-     "title": "Genie 4：世界模型从「能看」到「能操控」"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#research",
-     "title": "Kyutai 开源 CADRE：世界模型压进 230 毫秒"
-    },
-    {
-     "date": "2026-10-19",
-     "url": "/posts/2026-10-18-ai-morning-post/#model-release",
-     "title": "VAST 开源 EdenLive：世界模型开始要求「实时」"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
-     "title": "Odyssey-3 开放免费试玩，世界模型回到「可玩性」"
-    },
-    {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#research",
-     "title": "WorldArena 2.0：世界模型要证明自己真能用"
-    },
-    {
-     "date": "2026-10-10",
-     "url": "/posts/2026-10-09-ai-morning-post/#company",
-     "title": "「字节投毒实习生」创业做世界模型，估值 2 亿美元"
-    },
-    {
-     "date": "2026-10-07",
-     "url": "/posts/2026-10-06-ai-morning-post/#research",
-     "title": "JEPA-Anything：一个配方统一七大领域世界模型"
     }
    ]
   }
