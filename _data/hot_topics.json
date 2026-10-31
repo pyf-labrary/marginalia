@@ -1,17 +1,22 @@
 {
- "generated": "2026-10-30",
+ "generated": "2026-10-31",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 79.77,
+   "score": 83.32,
    "days": 29,
    "latest": {
-    "date": "2026-10-30",
-    "url": "/posts/2026-10-29-ai-morning-post/#company",
-    "title": "一个个人 Agent，估值 12.5 亿美元"
+    "date": "2026-10-31",
+    "url": "/posts/2026-10-30-ai-morning-post/#research",
+    "title": "多 Agent 协作，自主跑完一次量子自旋实验"
    },
    "links": [
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#research",
+     "title": "多 Agent 协作，自主跑完一次量子自旋实验"
+    },
     {
      "date": "2026-10-30",
      "url": "/posts/2026-10-29-ai-morning-post/#company",
@@ -46,24 +51,24 @@
      "date": "2026-10-23",
      "url": "/posts/2026-10-22-ai-morning-post/#research",
      "title": "OpenAI 智能体 32 分钟完成鼠脑分析"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#model-release",
-     "title": "MiniMax M3.1 Flash：Agent 榜第一，成本低 88 倍"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 49.13,
+   "score": 50.68,
    "days": 29,
    "latest": {
-    "date": "2026-10-30",
-    "url": "/posts/2026-10-29-ai-morning-post/#company",
-    "title": "153 亿美元，OpenAI 系资本买下 ADT"
+    "date": "2026-10-31",
+    "url": "/posts/2026-10-30-ai-morning-post/#company",
+    "title": "OpenAI 支持的 Thrive 153 亿美元收购 ADT"
    },
    "links": [
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#company",
+     "title": "OpenAI 支持的 Thrive 153 亿美元收购 ADT"
+    },
     {
      "date": "2026-10-30",
      "url": "/posts/2026-10-29-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#model-release",
      "title": "OpenAI 把「决策」单独做成 API"
-    },
-    {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#model-release",
-     "title": "OpenAI 开放决策 API，先把价格定下来"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 46.97,
+   "score": 47.23,
    "days": 29,
    "latest": {
-    "date": "2026-10-30",
-    "url": "/posts/2026-10-29-ai-morning-post/#research",
-    "title": "Anthropic：AI 造 AI 已覆盖 26% 的研发流程"
+    "date": "2026-10-31",
+    "url": "/posts/2026-10-30-ai-morning-post/#company",
+    "title": "Anthropic IPO 后或获高收益垃圾评级"
    },
    "links": [
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#company",
+     "title": "Anthropic IPO 后或获高收益垃圾评级"
+    },
     {
      "date": "2026-10-30",
      "url": "/posts/2026-10-29-ai-morning-post/#research",
@@ -150,24 +155,24 @@
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#company",
      "title": "Anthropic 与 Hg：模型公司开始自己做交付"
-    },
-    {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#product",
-     "title": "Anthropic 推出常驻智能体 Claude Duet"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 21.48,
-   "days": 23,
+   "score": 22.1,
+   "days": 24,
    "latest": {
-    "date": "2026-10-29",
-    "url": "/posts/2026-10-28-ai-morning-post/#product",
-    "title": "Claude for Legal：先核验引证，再交给律师"
+    "date": "2026-10-31",
+    "url": "/posts/2026-10-30-ai-morning-post/#model-release",
+    "title": "Claude 新版本曝光：Fable 与 Opus 双线"
    },
    "links": [
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#model-release",
+     "title": "Claude 新版本曝光：Fable 与 Opus 双线"
+    },
     {
      "date": "2026-10-29",
      "url": "/posts/2026-10-28-ai-morning-post/#product",
@@ -202,24 +207,24 @@
      "date": "2026-10-20",
      "url": "/posts/2026-10-19-ai-morning-post/#research",
      "title": "把 Claude 丢到荒岛 30 小时，它开始“玩耍”"
-    },
-    {
-     "date": "2026-10-19",
-     "url": "/posts/2026-10-18-ai-morning-post/#company",
-     "title": "Replit 把默认模型从 Claude 换成了 OpenAI"
     }
    ]
   },
   {
    "name": "Meta",
    "score": 16.84,
-   "days": 23,
+   "days": 24,
    "latest": {
-    "date": "2026-10-30",
-    "url": "/posts/2026-10-29-ai-morning-post/#product",
-    "title": "Meta 低调上线 AI 穿搭应用 Style Sketch"
+    "date": "2026-10-31",
+    "url": "/posts/2026-10-30-ai-morning-post/#product",
+    "title": "Meta 低调上线 AI 时尚应用 Style Sketch"
    },
    "links": [
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#product",
+     "title": "Meta 低调上线 AI 时尚应用 Style Sketch"
+    },
     {
      "date": "2026-10-30",
      "url": "/posts/2026-10-29-ai-morning-post/#product",
@@ -254,17 +259,64 @@
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#company",
      "title": "Meta 领到 250 亿美元罚单，计数方式是重点"
+    }
+   ]
+  },
+  {
+   "name": "Google",
+   "score": 9.84,
+   "days": 13,
+   "latest": {
+    "date": "2026-10-31",
+    "url": "/posts/2026-10-30-ai-morning-post/#company",
+    "title": "Reddit 转向强制登录，反击 Google AI 搜索截流"
+   },
+   "links": [
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#company",
+     "title": "Reddit 转向强制登录，反击 Google AI 搜索截流"
     },
     {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#model-release",
-     "title": "Meta 开源 Muse Spark，还拉上苹果做本地运行"
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#product",
+     "title": "Google 把 Android 交给第三方 Agent"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#product",
+     "title": "Google 把 Gemini 和搜索交了出去"
+    },
+    {
+     "date": "2026-10-24",
+     "url": "/posts/2026-10-23-ai-morning-post/#research",
+     "title": "TorchTPU：Google 与 Meta 让 PyTorch 原生跑上 TPU"
+    },
+    {
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
+     "title": "Google 开源 TorchTPU，PyTorch 原生跑上 TPU"
+    },
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#model-release",
+     "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#research",
+     "title": "Google 工程师：能自我改进的 AI 还差得远"
+    },
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 集合"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 10.48,
+   "score": 9.81,
    "days": 13,
    "latest": {
     "date": "2026-10-28",
@@ -315,61 +367,9 @@
    ]
   },
   {
-   "name": "Google",
-   "score": 9.45,
-   "days": 12,
-   "latest": {
-    "date": "2026-10-30",
-    "url": "/posts/2026-10-29-ai-morning-post/#product",
-    "title": "Google 把 Android 交给第三方 Agent"
-   },
-   "links": [
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#product",
-     "title": "Google 把 Android 交给第三方 Agent"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#product",
-     "title": "Google 把 Gemini 和搜索交了出去"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#research",
-     "title": "TorchTPU：Google 与 Meta 让 PyTorch 原生跑上 TPU"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
-     "title": "Google 开源 TorchTPU，PyTorch 原生跑上 TPU"
-    },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#research",
-     "title": "Google 工程师：能自我改进的 AI 还差得远"
-    },
-    {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 集合"
-    },
-    {
-     "date": "2026-10-10",
-     "url": "/posts/2026-10-09-ai-morning-post/#research",
-     "title": "Google 研究首登《柳叶刀》主刊：AI 或改善医患关系"
-    }
-   ]
-  },
-  {
    "name": "DeepSeek",
-   "score": 8.94,
-   "days": 15,
+   "score": 8.29,
+   "days": 14,
    "latest": {
     "date": "2026-10-30",
     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
@@ -420,8 +420,8 @@
   },
   {
    "name": "算力",
-   "score": 7.74,
-   "days": 12,
+   "score": 7.26,
+   "days": 11,
    "latest": {
     "date": "2026-10-29",
     "url": "/posts/2026-10-28-ai-morning-post/#company",
@@ -472,8 +472,8 @@
   },
   {
    "name": "芯片",
-   "score": 7.52,
-   "days": 12,
+   "score": 6.97,
+   "days": 11,
    "latest": {
     "date": "2026-10-30",
     "url": "/posts/2026-10-29-ai-morning-post/#opinion",
@@ -524,7 +524,7 @@
   },
   {
    "name": "Cloudflare",
-   "score": 6.58,
+   "score": 6.19,
    "days": 11,
    "latest": {
     "date": "2026-10-27",
@@ -576,8 +576,8 @@
   },
   {
    "name": "VoiceStudio",
-   "score": 6.13,
-   "days": 12,
+   "score": 5.71,
+   "days": 11,
    "latest": {
     "date": "2026-10-30",
     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
@@ -627,8 +627,45 @@
    ]
   },
   {
+   "name": "百度",
+   "score": 5.16,
+   "days": 5,
+   "latest": {
+    "date": "2026-10-31",
+    "url": "/posts/2026-10-30-ai-morning-post/#product",
+    "title": "百度 APP 四项 AI 升级，搜索 API 打到 4.9 元"
+   },
+   "links": [
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#product",
+     "title": "百度 APP 四项 AI 升级，搜索 API 打到 4.9 元"
+    },
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited-OCR：长文档一次解析"
+    },
+    {
+     "date": "2026-10-28",
+     "url": "/posts/2026-10-27-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited OCR 2：一次解析任意页数文档"
+    },
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited-OCR，主打一次性长文档解析"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited-OCR：把长文档解析压成\"一次\""
+    }
+   ]
+  },
+  {
    "name": "MoE",
-   "score": 5.48,
+   "score": 5.13,
    "days": 10,
    "latest": {
     "date": "2026-10-24",
@@ -680,7 +717,7 @@
   },
   {
    "name": "MIT",
-   "score": 5.39,
+   "score": 5.06,
    "days": 10,
    "latest": {
     "date": "2026-10-30",
@@ -727,58 +764,6 @@
      "date": "2026-10-09",
      "url": "/posts/2026-10-08-ai-morning-post/#opinion",
      "title": "MIT 科技评论：机器人突破短期内改变不了你的生活"
-    }
-   ]
-  },
-  {
-   "name": "ElevenLabs",
-   "score": 5.23,
-   "days": 11,
-   "latest": {
-    "date": "2026-10-28",
-    "url": "/posts/2026-10-27-ai-morning-post/#opensource",
-    "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-   },
-   "links": [
-    {
-     "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    },
-    {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#model-release",
-     "title": "ElevenLabs 加码 speech-to-speech"
-    },
-    {
-     "date": "2026-10-19",
-     "url": "/posts/2026-10-18-ai-morning-post/#opensource",
-     "title": "VoiceStudio：本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的开源 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-13",
-     "url": "/posts/2026-10-12-ai-morning-post/#opensource",
-     "title": "VoiceStudio：本地的 ElevenLabs 替代"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#opensource",
-     "title": "VoiceStudio：完全本地的 ElevenLabs 替代品"
     }
    ]
   }
