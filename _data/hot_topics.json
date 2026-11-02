@@ -1,17 +1,22 @@
 {
- "generated": "2026-11-01",
+ "generated": "2026-11-02",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 84.06,
+   "score": 79.42,
    "days": 29,
    "latest": {
-    "date": "2026-11-01",
-    "url": "/posts/2026-10-31-ai-morning-post/#product",
-    "title": "DoorDash：外部 AI 智能体至今只下了几百单"
+    "date": "2026-11-02",
+    "url": "/posts/2026-11-01-ai-morning-post/#opensource",
+    "title": "DeepSeek 开源 Router-Worker 编程 Agent"
    },
    "links": [
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
+     "title": "DeepSeek 开源 Router-Worker 编程 Agent"
+    },
     {
      "date": "2026-11-01",
      "url": "/posts/2026-10-31-ai-morning-post/#product",
@@ -46,24 +51,24 @@
      "date": "2026-10-25",
      "url": "/posts/2026-10-24-ai-morning-post/#research",
      "title": "OpenAI：隔离环境里的智能体自己找到了信道"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#research",
-     "title": "EpiSEM-Bench：当安全事实缺证据，Agent 会怎么做"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 49.35,
+   "score": 49.23,
    "days": 29,
    "latest": {
-    "date": "2026-11-01",
-    "url": "/posts/2026-10-31-ai-morning-post/#company",
-    "title": "OpenAI 只募到目标的三分之一"
+    "date": "2026-11-02",
+    "url": "/posts/2026-11-01-ai-morning-post/#company",
+    "title": "OpenAI 下调融资目标"
    },
    "links": [
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#company",
+     "title": "OpenAI 下调融资目标"
+    },
     {
      "date": "2026-11-01",
      "url": "/posts/2026-10-31-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-10-26",
      "url": "/posts/2026-10-25-ai-morning-post/#company",
      "title": "OpenAI 最高九折抢客户，企业市场开始拼价格"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#company",
-     "title": "OpenAI 切断前沿模型的实时联网训练"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 47.45,
+   "score": 46.65,
    "days": 29,
    "latest": {
-    "date": "2026-11-01",
-    "url": "/posts/2026-10-31-ai-morning-post/#company",
-    "title": "Anthropic 的 9000 亿美元：招股书里的远期承诺"
+    "date": "2026-11-02",
+    "url": "/posts/2026-11-01-ai-morning-post/#company",
+    "title": "Anthropic 封禁“训练更大模型”的用户"
    },
    "links": [
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#company",
+     "title": "Anthropic 封禁“训练更大模型”的用户"
+    },
     {
      "date": "2026-11-01",
      "url": "/posts/2026-10-31-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-10-26",
      "url": "/posts/2026-10-25-ai-morning-post/#research",
      "title": "Anthropic：单 Agent 现在胜过多子 Agent"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#model-release",
-     "title": "Anthropic 预告未发布模型：能力与对齐同时占优"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 22.61,
+   "score": 22.06,
    "days": 24,
    "latest": {
-    "date": "2026-11-01",
-    "url": "/posts/2026-10-31-ai-morning-post/#model-release",
-    "title": "Claude 取消 5 小时限制，Ultra 先解封"
+    "date": "2026-11-02",
+    "url": "/posts/2026-11-01-ai-morning-post/#company",
+    "title": "Anthropic 再收紧：禁止 Claude 逆向与克隆游戏"
    },
    "links": [
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#company",
+     "title": "Anthropic 再收紧：禁止 Claude 逆向与克隆游戏"
+    },
     {
      "date": "2026-11-01",
      "url": "/posts/2026-10-31-ai-morning-post/#model-release",
@@ -202,18 +207,13 @@
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#research",
      "title": "Claude 从头设计蛋白结合体，瞄准蝎毒"
-    },
-    {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#model-release",
-     "title": "Claude 新模型动向：调试不再套模板"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 15.74,
-   "days": 23,
+   "score": 14.74,
+   "days": 22,
    "latest": {
     "date": "2026-10-31",
     "url": "/posts/2026-10-30-ai-morning-post/#product",
@@ -264,14 +264,19 @@
   },
   {
    "name": "ChatGPT",
-   "score": 11.1,
+   "score": 12.35,
    "days": 13,
    "latest": {
-    "date": "2026-11-01",
-    "url": "/posts/2026-10-31-ai-morning-post/#product",
-    "title": "Parameter Labs 披露可接管 ChatGPT 账号的漏洞"
+    "date": "2026-11-02",
+    "url": "/posts/2026-11-01-ai-morning-post/#company",
+    "title": "ChatGPT 与 Codex 额度合并，无限提示成历史"
    },
    "links": [
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#company",
+     "title": "ChatGPT 与 Codex 额度合并，无限提示成历史"
+    },
     {
      "date": "2026-11-01",
      "url": "/posts/2026-10-31-ai-morning-post/#product",
@@ -306,24 +311,24 @@
      "date": "2026-10-17",
      "url": "/posts/2026-10-16-ai-morning-post/#product",
      "title": "ChatGPT 成为完整的 Chrome 助手"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#opinion",
-     "title": "语音 AI 高管承认：还没等到它的 ChatGPT 时刻"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 10.19,
-   "days": 14,
+   "score": 10.52,
+   "days": 15,
    "latest": {
-    "date": "2026-11-01",
-    "url": "/posts/2026-10-31-ai-morning-post/#product",
-    "title": "Google 首个太空数据中心上线，在轨跑 Gemma 4 写诗"
+    "date": "2026-11-02",
+    "url": "/posts/2026-11-01-ai-morning-post/#research",
+    "title": "Google 让视频 AI 学会“该出手时才出手”"
    },
    "links": [
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#research",
+     "title": "Google 让视频 AI 学会“该出手时才出手”"
+    },
     {
      "date": "2026-11-01",
      "url": "/posts/2026-10-31-ai-morning-post/#product",
@@ -358,24 +363,24 @@
      "date": "2026-10-18",
      "url": "/posts/2026-10-17-ai-morning-post/#model-release",
      "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#research",
-     "title": "Google 工程师：能自我改进的 AI 还差得远"
     }
    ]
   },
   {
    "name": "DeepSeek",
-   "score": 7.74,
-   "days": 13,
+   "score": 8.26,
+   "days": 14,
    "latest": {
-    "date": "2026-10-30",
-    "url": "/posts/2026-10-29-ai-morning-post/#opensource",
-    "title": "DeepSeek 开源 DeepInfer：把推理优化做成公共品"
+    "date": "2026-11-02",
+    "url": "/posts/2026-11-01-ai-morning-post/#opensource",
+    "title": "DeepSeek 开源 Router-Worker 编程 Agent"
    },
    "links": [
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
+     "title": "DeepSeek 开源 Router-Worker 编程 Agent"
+    },
     {
      "date": "2026-10-30",
      "url": "/posts/2026-10-29-ai-morning-post/#opensource",
@@ -410,18 +415,117 @@
      "date": "2026-10-13",
      "url": "/posts/2026-10-12-ai-morning-post/#company",
      "title": "DeepSeek 二轮融资规模翻倍至约 1000 亿元"
+    }
+   ]
+  },
+  {
+   "name": "算力",
+   "score": 7.39,
+   "days": 11,
+   "latest": {
+    "date": "2026-11-02",
+    "url": "/posts/2026-11-01-ai-morning-post/#company",
+    "title": "OpenAI 考虑把数据中心改名为“AI 算力校园”"
+   },
+   "links": [
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#company",
+     "title": "OpenAI 考虑把数据中心改名为“AI 算力校园”"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#company",
+     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
+    },
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#product",
+     "title": "汽车行业 AI 基座：算力与数据开始“公用事业化”"
+    },
+    {
+     "date": "2026-10-24",
+     "url": "/posts/2026-10-23-ai-morning-post/#opinion",
+     "title": "欧盟成员国批准“数字征用”，隐私让位于算力"
+    },
+    {
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#company",
+     "title": "Anthropic 的算力难题，撞上了 IPO 时间表"
+    },
+    {
+     "date": "2026-10-21",
+     "url": "/posts/2026-10-20-ai-morning-post/#company",
+     "title": "Anthropic 算力告急：供应商同时是对手"
+    },
+    {
+     "date": "2026-10-20",
+     "url": "/posts/2026-10-19-ai-morning-post/#company",
+     "title": "Anthropic 再谈 450 亿美元算力大单"
+    },
+    {
+     "date": "2026-10-16",
+     "url": "/posts/2026-10-15-ai-morning-post/#opinion",
+     "title": "黄仁勋：中国 AI 公司算力很缺，但仍在拼命做成"
+    }
+   ]
+  },
+  {
+   "name": "世界模型",
+   "score": 7.0,
+   "days": 10,
+   "latest": {
+    "date": "2026-11-02",
+    "url": "/posts/2026-11-01-ai-morning-post/#company",
+    "title": "西湖大学成立世界模型研究中心"
+   },
+   "links": [
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#company",
+     "title": "西湖大学成立世界模型研究中心"
+    },
+    {
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#research",
+     "title": "世界模型第一次进了芯片设计流程"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#model-release",
+     "title": "Genie 4：世界模型开始有声音，也开始能对话"
+    },
+    {
+     "date": "2026-10-28",
+     "url": "/posts/2026-10-27-ai-morning-post/#model-release",
+     "title": "Genie 4：世界模型从「能看」到「能操控」"
+    },
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#research",
+     "title": "Kyutai 开源 CADRE：世界模型压进 230 毫秒"
+    },
+    {
+     "date": "2026-10-19",
+     "url": "/posts/2026-10-18-ai-morning-post/#model-release",
+     "title": "VAST 开源 EdenLive：世界模型开始要求「实时」"
     },
     {
      "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#product",
-     "title": "DeepSeek Bot 的「民间版」：一个插件就能装"
+     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
+     "title": "Odyssey-3 开放免费试玩，世界模型回到「可玩性」"
+    },
+    {
+     "date": "2026-10-11",
+     "url": "/posts/2026-10-10-ai-morning-post/#research",
+     "title": "WorldArena 2.0：世界模型要证明自己真能用"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 7.45,
-   "days": 11,
+   "score": 6.87,
+   "days": 10,
    "latest": {
     "date": "2026-11-01",
     "url": "/posts/2026-10-31-ai-morning-post/#research",
@@ -471,61 +575,9 @@
    ]
   },
   {
-   "name": "算力",
-   "score": 6.84,
-   "days": 11,
-   "latest": {
-    "date": "2026-10-29",
-    "url": "/posts/2026-10-28-ai-morning-post/#company",
-    "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
-   },
-   "links": [
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#company",
-     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#product",
-     "title": "汽车行业 AI 基座：算力与数据开始“公用事业化”"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#opinion",
-     "title": "欧盟成员国批准“数字征用”，隐私让位于算力"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#company",
-     "title": "Anthropic 的算力难题，撞上了 IPO 时间表"
-    },
-    {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#company",
-     "title": "Anthropic 算力告急：供应商同时是对手"
-    },
-    {
-     "date": "2026-10-20",
-     "url": "/posts/2026-10-19-ai-morning-post/#company",
-     "title": "Anthropic 再谈 450 亿美元算力大单"
-    },
-    {
-     "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#opinion",
-     "title": "黄仁勋：中国 AI 公司算力很缺，但仍在拼命做成"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#company",
-     "title": "黄仁勋承诺向欧洲投 20 亿美元，另拨 2.5 亿算力给英国"
-    }
-   ]
-  },
-  {
    "name": "Cloudflare",
-   "score": 5.81,
-   "days": 11,
+   "score": 5.39,
+   "days": 10,
    "latest": {
     "date": "2026-10-27",
     "url": "/posts/2026-10-26-ai-morning-post/#opensource",
@@ -576,8 +628,8 @@
   },
   {
    "name": "VoiceStudio",
-   "score": 5.32,
-   "days": 10,
+   "score": 4.97,
+   "days": 9,
    "latest": {
     "date": "2026-10-30",
     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
@@ -627,60 +679,8 @@
    ]
   },
   {
-   "name": "世界模型",
-   "score": 5.29,
-   "days": 9,
-   "latest": {
-    "date": "2026-11-01",
-    "url": "/posts/2026-10-31-ai-morning-post/#research",
-    "title": "世界模型第一次进了芯片设计流程"
-   },
-   "links": [
-    {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#research",
-     "title": "世界模型第一次进了芯片设计流程"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#model-release",
-     "title": "Genie 4：世界模型开始有声音，也开始能对话"
-    },
-    {
-     "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#model-release",
-     "title": "Genie 4：世界模型从「能看」到「能操控」"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#research",
-     "title": "Kyutai 开源 CADRE：世界模型压进 230 毫秒"
-    },
-    {
-     "date": "2026-10-19",
-     "url": "/posts/2026-10-18-ai-morning-post/#model-release",
-     "title": "VAST 开源 EdenLive：世界模型开始要求「实时」"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
-     "title": "Odyssey-3 开放免费试玩，世界模型回到「可玩性」"
-    },
-    {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#research",
-     "title": "WorldArena 2.0：世界模型要证明自己真能用"
-    },
-    {
-     "date": "2026-10-10",
-     "url": "/posts/2026-10-09-ai-morning-post/#company",
-     "title": "「字节投毒实习生」创业做世界模型，估值 2 亿美元"
-    }
-   ]
-  },
-  {
    "name": "百度",
-   "score": 4.97,
+   "score": 4.77,
    "days": 5,
    "latest": {
     "date": "2026-10-31",
@@ -716,54 +716,54 @@
    ]
   },
   {
-   "name": "MoE",
-   "score": 4.74,
+   "name": "MIT",
+   "score": 4.42,
    "days": 9,
    "latest": {
-    "date": "2026-10-24",
-    "url": "/posts/2026-10-23-ai-morning-post/#model-release",
-    "title": "Kimi K3.1 Pro：2.8T MoE，1M 上下文，11 月开权重"
+    "date": "2026-10-30",
+    "url": "/posts/2026-10-29-ai-morning-post/#opinion",
+    "title": "MIT 科技评论：监控要发生在动作之前"
    },
    "links": [
     {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#model-release",
-     "title": "Kimi K3.1 Pro：2.8T MoE，1M 上下文，11 月开权重"
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opinion",
+     "title": "MIT 科技评论：监控要发生在动作之前"
     },
     {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#model-release",
-     "title": "MiniMax M3.1 Flash：428B MoE，价格再探底"
+     "date": "2026-10-27",
+     "url": "/posts/2026-10-26-ai-morning-post/#opinion",
+     "title": "MIT 科技评论：只盯 AI 灾难，会忽视日常伤害"
     },
     {
-     "date": "2026-10-20",
-     "url": "/posts/2026-10-19-ai-morning-post/#model-release",
-     "title": "MiniMax M3.1 Flash：428B MoE，激活约 23B"
+     "date": "2026-10-26",
+     "url": "/posts/2026-10-25-ai-morning-post/#opensource",
+     "title": "Cognition 把 Devin 的漏洞修复拆成 3 个 MIT 技能"
     },
     {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
-     "title": "阶跃星辰开放 Step 5 Preview 权重：600B MoE"
+     "date": "2026-10-17",
+     "url": "/posts/2026-10-16-ai-morning-post/#opinion",
+     "title": "MIT 教授：聊天机器人不该说「我」"
     },
     {
      "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#model-release",
-     "title": "Meta 开源 Muse Spark：前沿 MoE 跑进 Mac"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#model-release",
-     "title": "Liquid AI 开源 LFM2.5：24B MoE、2B 激活，主打端侧 Agent"
+     "url": "/posts/2026-10-15-ai-morning-post/#opinion",
+     "title": "MIT 研究者：AI 拿下数学后，正在追赶整个科学"
     },
     {
      "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
-     "title": "Janas：把 MoE 专家层从 SSD 流式读进来"
+     "url": "/posts/2026-10-13-ai-morning-post/#opinion",
+     "title": "MIT 科技评论：开放模型的收益能否盖过风险"
+    },
+    {
+     "date": "2026-10-10",
+     "url": "/posts/2026-10-09-ai-morning-post/#opinion",
+     "title": "MIT 科技评论：我们太相信 AI 会说「不」"
     },
     {
      "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#model-release",
-     "title": "JetBrains 开源 Mellum2.1：12B MoE 编码智能体模型"
+     "url": "/posts/2026-10-08-ai-morning-post/#opinion",
+     "title": "MIT 科技评论：机器人突破短期内改变不了你的生活"
     }
    ]
   }
