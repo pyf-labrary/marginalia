@@ -1,17 +1,22 @@
 {
- "generated": "2026-11-02",
+ "generated": "2026-11-03",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 79.42,
+   "score": 78.06,
    "days": 29,
    "latest": {
-    "date": "2026-11-02",
-    "url": "/posts/2026-11-01-ai-morning-post/#opensource",
-    "title": "DeepSeek 开源 Router-Worker 编程 Agent"
+    "date": "2026-11-03",
+    "url": "/posts/2026-11-02-ai-morning-post/#research",
+    "title": "50 个智能体过一夜，自己发明了分工制度"
    },
    "links": [
+    {
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#research",
+     "title": "50 个智能体过一夜，自己发明了分工制度"
+    },
     {
      "date": "2026-11-02",
      "url": "/posts/2026-11-01-ai-morning-post/#opensource",
@@ -46,24 +51,24 @@
      "date": "2026-10-26",
      "url": "/posts/2026-10-25-ai-morning-post/#research",
      "title": "Anthropic：单 Agent 现在胜过多子 Agent"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#research",
-     "title": "OpenAI：隔离环境里的智能体自己找到了信道"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 49.23,
+   "score": 48.97,
    "days": 29,
    "latest": {
-    "date": "2026-11-02",
-    "url": "/posts/2026-11-01-ai-morning-post/#company",
-    "title": "OpenAI 下调融资目标"
+    "date": "2026-11-03",
+    "url": "/posts/2026-11-02-ai-morning-post/#company",
+    "title": "OpenAI 推 Grid Protectors，数据中心改叫「AI 算力园区」"
    },
    "links": [
+    {
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#company",
+     "title": "OpenAI 推 Grid Protectors，数据中心改叫「AI 算力园区」"
+    },
     {
      "date": "2026-11-02",
      "url": "/posts/2026-11-01-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-10-27",
      "url": "/posts/2026-10-26-ai-morning-post/#product",
      "title": "OpenAI 一次放出多个落地案例，重点不在模型"
-    },
-    {
-     "date": "2026-10-26",
-     "url": "/posts/2026-10-25-ai-morning-post/#company",
-     "title": "OpenAI 最高九折抢客户，企业市场开始拼价格"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 46.65,
+   "score": 46.87,
    "days": 29,
    "latest": {
-    "date": "2026-11-02",
-    "url": "/posts/2026-11-01-ai-morning-post/#company",
-    "title": "Anthropic 封禁“训练更大模型”的用户"
+    "date": "2026-11-03",
+    "url": "/posts/2026-11-02-ai-morning-post/#company",
+    "title": "Anthropic 递交 IPO，亏损 230 亿美元"
    },
    "links": [
+    {
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#company",
+     "title": "Anthropic 递交 IPO，亏损 230 亿美元"
+    },
     {
      "date": "2026-11-02",
      "url": "/posts/2026-11-01-ai-morning-post/#company",
@@ -150,18 +155,13 @@
      "date": "2026-10-27",
      "url": "/posts/2026-10-26-ai-morning-post/#company",
      "title": "Anthropic 正式递交 IPO 招股书"
-    },
-    {
-     "date": "2026-10-26",
-     "url": "/posts/2026-10-25-ai-morning-post/#research",
-     "title": "Anthropic：单 Agent 现在胜过多子 Agent"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 22.06,
-   "days": 24,
+   "score": 20.58,
+   "days": 23,
    "latest": {
     "date": "2026-11-02",
     "url": "/posts/2026-11-01-ai-morning-post/#company",
@@ -212,8 +212,8 @@
   },
   {
    "name": "Meta",
-   "score": 14.74,
-   "days": 22,
+   "score": 13.74,
+   "days": 21,
    "latest": {
     "date": "2026-10-31",
     "url": "/posts/2026-10-30-ai-morning-post/#product",
@@ -264,14 +264,19 @@
   },
   {
    "name": "ChatGPT",
-   "score": 12.35,
-   "days": 13,
+   "score": 12.61,
+   "days": 14,
    "latest": {
-    "date": "2026-11-02",
-    "url": "/posts/2026-11-01-ai-morning-post/#company",
-    "title": "ChatGPT 与 Codex 额度合并，无限提示成历史"
+    "date": "2026-11-03",
+    "url": "/posts/2026-11-02-ai-morning-post/#product",
+    "title": "ChatGPT 合并 Chat 与 Work，Pro 额度翻倍"
    },
    "links": [
+    {
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#product",
+     "title": "ChatGPT 合并 Chat 与 Work，Pro 额度翻倍"
+    },
     {
      "date": "2026-11-02",
      "url": "/posts/2026-11-01-ai-morning-post/#company",
@@ -306,17 +311,12 @@
      "date": "2026-10-18",
      "url": "/posts/2026-10-17-ai-morning-post/#product",
      "title": "ChatGPT 变成 Chrome 浏览器助手，能读能操作标签页"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#product",
-     "title": "ChatGPT 成为完整的 Chrome 助手"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 10.52,
+   "score": 9.81,
    "days": 15,
    "latest": {
     "date": "2026-11-02",
@@ -367,67 +367,20 @@
    ]
   },
   {
-   "name": "DeepSeek",
-   "score": 8.26,
-   "days": 14,
-   "latest": {
-    "date": "2026-11-02",
-    "url": "/posts/2026-11-01-ai-morning-post/#opensource",
-    "title": "DeepSeek 开源 Router-Worker 编程 Agent"
-   },
-   "links": [
-    {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 Router-Worker 编程 Agent"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 DeepInfer：把推理优化做成公共品"
-    },
-    {
-     "date": "2026-10-27",
-     "url": "/posts/2026-10-26-ai-morning-post/#opensource",
-     "title": "1. DeepSeek 开源 DeepInfer：把运行链路也交出来"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#company",
-     "title": "DeepSeek 拿近千亿，出钱的是产业资本"
-    },
-    {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#company",
-     "title": "DeepSeek 被曝融资 150 亿美元"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#opinion",
-     "title": "中国抗议美国封杀 DeepSeek，国内仍在屏蔽三家"
-    },
-    {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#opinion",
-     "title": "联邦机构要清掉的不只是 DeepSeek"
-    },
-    {
-     "date": "2026-10-13",
-     "url": "/posts/2026-10-12-ai-morning-post/#company",
-     "title": "DeepSeek 二轮融资规模翻倍至约 1000 亿元"
-    }
-   ]
-  },
-  {
    "name": "算力",
-   "score": 7.39,
-   "days": 11,
+   "score": 8.97,
+   "days": 12,
    "latest": {
-    "date": "2026-11-02",
-    "url": "/posts/2026-11-01-ai-morning-post/#company",
-    "title": "OpenAI 考虑把数据中心改名为“AI 算力校园”"
+    "date": "2026-11-03",
+    "url": "/posts/2026-11-02-ai-morning-post/#model-release",
+    "title": "美团 LongCat-2.5：1.6 万亿参数跑在国产算力上"
    },
    "links": [
+    {
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#model-release",
+     "title": "美团 LongCat-2.5：1.6 万亿参数跑在国产算力上"
+    },
     {
      "date": "2026-11-02",
      "url": "/posts/2026-11-01-ai-morning-post/#company",
@@ -462,17 +415,64 @@
      "date": "2026-10-20",
      "url": "/posts/2026-10-19-ai-morning-post/#company",
      "title": "Anthropic 再谈 450 亿美元算力大单"
+    }
+   ]
+  },
+  {
+   "name": "DeepSeek",
+   "score": 8.71,
+   "days": 14,
+   "latest": {
+    "date": "2026-11-03",
+    "url": "/posts/2026-11-02-ai-morning-post/#company",
+    "title": "DeepSeek 融资细节曝光：vivo、美团在列"
+   },
+   "links": [
+    {
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#company",
+     "title": "DeepSeek 融资细节曝光：vivo、美团在列"
     },
     {
-     "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#opinion",
-     "title": "黄仁勋：中国 AI 公司算力很缺，但仍在拼命做成"
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
+     "title": "DeepSeek 开源 Router-Worker 编程 Agent"
+    },
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
+     "title": "DeepSeek 开源 DeepInfer：把推理优化做成公共品"
+    },
+    {
+     "date": "2026-10-27",
+     "url": "/posts/2026-10-26-ai-morning-post/#opensource",
+     "title": "1. DeepSeek 开源 DeepInfer：把运行链路也交出来"
+    },
+    {
+     "date": "2026-10-24",
+     "url": "/posts/2026-10-23-ai-morning-post/#company",
+     "title": "DeepSeek 拿近千亿，出钱的是产业资本"
+    },
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#company",
+     "title": "DeepSeek 被曝融资 150 亿美元"
+    },
+    {
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#opinion",
+     "title": "中国抗议美国封杀 DeepSeek，国内仍在屏蔽三家"
+    },
+    {
+     "date": "2026-10-21",
+     "url": "/posts/2026-10-20-ai-morning-post/#opinion",
+     "title": "联邦机构要清掉的不只是 DeepSeek"
     }
    ]
   },
   {
    "name": "世界模型",
-   "score": 7.0,
+   "score": 6.65,
    "days": 10,
    "latest": {
     "date": "2026-11-02",
@@ -524,8 +524,8 @@
   },
   {
    "name": "芯片",
-   "score": 6.87,
-   "days": 10,
+   "score": 6.45,
+   "days": 9,
    "latest": {
     "date": "2026-11-01",
     "url": "/posts/2026-10-31-ai-morning-post/#research",
@@ -575,8 +575,55 @@
    ]
   },
   {
+   "name": "Agent Skills",
+   "score": 5.06,
+   "days": 7,
+   "latest": {
+    "date": "2026-11-03",
+    "url": "/posts/2026-11-02-ai-morning-post/#opensource",
+    "title": "Anthropic 公开 Agent Skills 官方仓库"
+   },
+   "links": [
+    {
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#opensource",
+     "title": "Anthropic 公开 Agent Skills 官方仓库"
+    },
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
+     "title": "Agent Skills 成为 GitHub 新风口"
+    },
+    {
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#opensource",
+     "title": "Anthropic 公开 Agent Skills 官方仓库"
+    },
+    {
+     "date": "2026-10-24",
+     "url": "/posts/2026-10-23-ai-morning-post/#opensource",
+     "title": "Anthropic 把 Agent Skills 交给基金会"
+    },
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
+     "title": "Anthropic 把 Agent Skills 交了出去"
+    },
+    {
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+     "title": "Agent Skills 社区框架混战：Superpowers、ECC 等"
+    },
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 集合"
+    }
+   ]
+  },
+  {
    "name": "Cloudflare",
-   "score": 5.39,
+   "score": 5.03,
    "days": 10,
    "latest": {
     "date": "2026-10-27",
@@ -628,7 +675,7 @@
   },
   {
    "name": "VoiceStudio",
-   "score": 4.97,
+   "score": 4.68,
    "days": 9,
    "latest": {
     "date": "2026-10-30",
@@ -680,7 +727,7 @@
   },
   {
    "name": "百度",
-   "score": 4.77,
+   "score": 4.58,
    "days": 5,
    "latest": {
     "date": "2026-10-31",
@@ -712,58 +759,6 @@
      "date": "2026-10-15",
      "url": "/posts/2026-10-14-ai-morning-post/#opensource",
      "title": "百度开源 Unlimited-OCR：把长文档解析压成\"一次\""
-    }
-   ]
-  },
-  {
-   "name": "MIT",
-   "score": 4.42,
-   "days": 9,
-   "latest": {
-    "date": "2026-10-30",
-    "url": "/posts/2026-10-29-ai-morning-post/#opinion",
-    "title": "MIT 科技评论：监控要发生在动作之前"
-   },
-   "links": [
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#opinion",
-     "title": "MIT 科技评论：监控要发生在动作之前"
-    },
-    {
-     "date": "2026-10-27",
-     "url": "/posts/2026-10-26-ai-morning-post/#opinion",
-     "title": "MIT 科技评论：只盯 AI 灾难，会忽视日常伤害"
-    },
-    {
-     "date": "2026-10-26",
-     "url": "/posts/2026-10-25-ai-morning-post/#opensource",
-     "title": "Cognition 把 Devin 的漏洞修复拆成 3 个 MIT 技能"
-    },
-    {
-     "date": "2026-10-17",
-     "url": "/posts/2026-10-16-ai-morning-post/#opinion",
-     "title": "MIT 教授：聊天机器人不该说「我」"
-    },
-    {
-     "date": "2026-10-16",
-     "url": "/posts/2026-10-15-ai-morning-post/#opinion",
-     "title": "MIT 研究者：AI 拿下数学后，正在追赶整个科学"
-    },
-    {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#opinion",
-     "title": "MIT 科技评论：开放模型的收益能否盖过风险"
-    },
-    {
-     "date": "2026-10-10",
-     "url": "/posts/2026-10-09-ai-morning-post/#opinion",
-     "title": "MIT 科技评论：我们太相信 AI 会说「不」"
-    },
-    {
-     "date": "2026-10-09",
-     "url": "/posts/2026-10-08-ai-morning-post/#opinion",
-     "title": "MIT 科技评论：机器人突破短期内改变不了你的生活"
     }
    ]
   }
