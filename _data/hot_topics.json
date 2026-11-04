@@ -1,17 +1,22 @@
 {
- "generated": "2026-11-03",
+ "generated": "2026-11-04",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 78.06,
+   "score": 78.84,
    "days": 29,
    "latest": {
-    "date": "2026-11-03",
-    "url": "/posts/2026-11-02-ai-morning-post/#research",
-    "title": "50 个智能体过一夜，自己发明了分工制度"
+    "date": "2026-11-04",
+    "url": "/posts/2026-11-03-ai-morning-post/#model-release",
+    "title": "Soniox STT v6：让语音 Agent 边听边说"
    },
    "links": [
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#model-release",
+     "title": "Soniox STT v6：让语音 Agent 边听边说"
+    },
     {
      "date": "2026-11-03",
      "url": "/posts/2026-11-02-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-10-27",
      "url": "/posts/2026-10-26-ai-morning-post/#product",
      "title": "Nace AI 发布 Drex，把「搜索」做成 Agent 的专用组件"
-    },
-    {
-     "date": "2026-10-26",
-     "url": "/posts/2026-10-25-ai-morning-post/#research",
-     "title": "Anthropic：单 Agent 现在胜过多子 Agent"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 48.97,
+   "score": 46.9,
    "days": 29,
    "latest": {
-    "date": "2026-11-03",
-    "url": "/posts/2026-11-02-ai-morning-post/#company",
-    "title": "OpenAI 推 Grid Protectors，数据中心改叫「AI 算力园区」"
+    "date": "2026-11-04",
+    "url": "/posts/2026-11-03-ai-morning-post/#company",
+    "title": "OpenAI 补课：IPO 前先补政府关系"
    },
    "links": [
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#company",
+     "title": "OpenAI 补课：IPO 前先补政府关系"
+    },
     {
      "date": "2026-11-03",
      "url": "/posts/2026-11-02-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-10-28",
      "url": "/posts/2026-10-27-ai-morning-post/#company",
      "title": "报道称 OpenAI 计划采购谷歌 AI 芯片"
-    },
-    {
-     "date": "2026-10-27",
-     "url": "/posts/2026-10-26-ai-morning-post/#product",
-     "title": "OpenAI 一次放出多个落地案例，重点不在模型"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 46.87,
+   "score": 46.03,
    "days": 29,
    "latest": {
-    "date": "2026-11-03",
-    "url": "/posts/2026-11-02-ai-morning-post/#company",
-    "title": "Anthropic 递交 IPO，亏损 230 亿美元"
+    "date": "2026-11-04",
+    "url": "/posts/2026-11-03-ai-morning-post/#company",
+    "title": "Anthropic 把 RSI 写进招股书"
    },
    "links": [
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#company",
+     "title": "Anthropic 把 RSI 写进招股书"
+    },
     {
      "date": "2026-11-03",
      "url": "/posts/2026-11-02-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-10-28",
      "url": "/posts/2026-10-27-ai-morning-post/#company",
      "title": "Anthropic 递交招股书：史上最大 AI IPO，也是最能亏的"
-    },
-    {
-     "date": "2026-10-27",
-     "url": "/posts/2026-10-26-ai-morning-post/#company",
-     "title": "Anthropic 正式递交 IPO 招股书"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 20.58,
-   "days": 23,
+   "score": 21.16,
+   "days": 24,
    "latest": {
-    "date": "2026-11-02",
-    "url": "/posts/2026-11-01-ai-morning-post/#company",
-    "title": "Anthropic 再收紧：禁止 Claude 逆向与克隆游戏"
+    "date": "2026-11-04",
+    "url": "/posts/2026-11-03-ai-morning-post/#product",
+    "title": "零 Rust 经验的团队，用 Claude 重写了核心 API"
    },
    "links": [
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#product",
+     "title": "零 Rust 经验的团队，用 Claude 重写了核心 API"
+    },
     {
      "date": "2026-11-02",
      "url": "/posts/2026-11-01-ai-morning-post/#company",
@@ -202,18 +207,13 @@
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#product",
      "title": "Claude 一边写代码，一边给出安全证明"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#research",
-     "title": "Claude 从头设计蛋白结合体，瞄准蝎毒"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 13.74,
-   "days": 21,
+   "score": 12.84,
+   "days": 20,
    "latest": {
     "date": "2026-10-31",
     "url": "/posts/2026-10-30-ai-morning-post/#product",
@@ -264,14 +264,19 @@
   },
   {
    "name": "ChatGPT",
-   "score": 12.61,
-   "days": 14,
+   "score": 12.84,
+   "days": 15,
    "latest": {
-    "date": "2026-11-03",
-    "url": "/posts/2026-11-02-ai-morning-post/#product",
-    "title": "ChatGPT 合并 Chat 与 Work，Pro 额度翻倍"
+    "date": "2026-11-04",
+    "url": "/posts/2026-11-03-ai-morning-post/#opensource",
+    "title": "100 美元的 ChatGPT，价值不在省钱"
    },
    "links": [
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#opensource",
+     "title": "100 美元的 ChatGPT，价值不在省钱"
+    },
     {
      "date": "2026-11-03",
      "url": "/posts/2026-11-02-ai-morning-post/#product",
@@ -306,18 +311,65 @@
      "date": "2026-10-21",
      "url": "/posts/2026-10-20-ai-morning-post/#product",
      "title": "ChatGPT 新增对话锁定"
+    }
+   ]
+  },
+  {
+   "name": "算力",
+   "score": 10.48,
+   "days": 13,
+   "latest": {
+    "date": "2026-11-04",
+    "url": "/posts/2026-11-03-ai-morning-post/#product",
+    "title": "双 11 卖词元：算力第一次像消费品"
+   },
+   "links": [
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#product",
+     "title": "双 11 卖词元：算力第一次像消费品"
     },
     {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#product",
-     "title": "ChatGPT 变成 Chrome 浏览器助手，能读能操作标签页"
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#model-release",
+     "title": "美团 LongCat-2.5：1.6 万亿参数跑在国产算力上"
+    },
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#company",
+     "title": "OpenAI 考虑把数据中心改名为“AI 算力校园”"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#company",
+     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
+    },
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#product",
+     "title": "汽车行业 AI 基座：算力与数据开始“公用事业化”"
+    },
+    {
+     "date": "2026-10-24",
+     "url": "/posts/2026-10-23-ai-morning-post/#opinion",
+     "title": "欧盟成员国批准“数字征用”，隐私让位于算力"
+    },
+    {
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#company",
+     "title": "Anthropic 的算力难题，撞上了 IPO 时间表"
+    },
+    {
+     "date": "2026-10-21",
+     "url": "/posts/2026-10-20-ai-morning-post/#company",
+     "title": "Anthropic 算力告急：供应商同时是对手"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 9.81,
-   "days": 15,
+   "score": 9.0,
+   "days": 14,
    "latest": {
     "date": "2026-11-02",
     "url": "/posts/2026-11-01-ai-morning-post/#research",
@@ -367,60 +419,8 @@
    ]
   },
   {
-   "name": "算力",
-   "score": 8.97,
-   "days": 12,
-   "latest": {
-    "date": "2026-11-03",
-    "url": "/posts/2026-11-02-ai-morning-post/#model-release",
-    "title": "美团 LongCat-2.5：1.6 万亿参数跑在国产算力上"
-   },
-   "links": [
-    {
-     "date": "2026-11-03",
-     "url": "/posts/2026-11-02-ai-morning-post/#model-release",
-     "title": "美团 LongCat-2.5：1.6 万亿参数跑在国产算力上"
-    },
-    {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#company",
-     "title": "OpenAI 考虑把数据中心改名为“AI 算力校园”"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#company",
-     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#product",
-     "title": "汽车行业 AI 基座：算力与数据开始“公用事业化”"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#opinion",
-     "title": "欧盟成员国批准“数字征用”，隐私让位于算力"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#company",
-     "title": "Anthropic 的算力难题，撞上了 IPO 时间表"
-    },
-    {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#company",
-     "title": "Anthropic 算力告急：供应商同时是对手"
-    },
-    {
-     "date": "2026-10-20",
-     "url": "/posts/2026-10-19-ai-morning-post/#company",
-     "title": "Anthropic 再谈 450 亿美元算力大单"
-    }
-   ]
-  },
-  {
    "name": "DeepSeek",
-   "score": 8.71,
+   "score": 8.19,
    "days": 14,
    "latest": {
     "date": "2026-11-03",
@@ -472,14 +472,19 @@
   },
   {
    "name": "世界模型",
-   "score": 6.65,
-   "days": 10,
+   "score": 7.29,
+   "days": 11,
    "latest": {
-    "date": "2026-11-02",
-    "url": "/posts/2026-11-01-ai-morning-post/#company",
-    "title": "西湖大学成立世界模型研究中心"
+    "date": "2026-11-04",
+    "url": "/posts/2026-11-03-ai-morning-post/#research",
+    "title": "百度把世界模型开上路"
    },
    "links": [
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#research",
+     "title": "百度把世界模型开上路"
+    },
     {
      "date": "2026-11-02",
      "url": "/posts/2026-11-01-ai-morning-post/#company",
@@ -514,18 +519,13 @@
      "date": "2026-10-12",
      "url": "/posts/2026-10-11-ai-morning-post/#model-release",
      "title": "Odyssey-3 开放免费试玩，世界模型回到「可玩性」"
-    },
-    {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#research",
-     "title": "WorldArena 2.0：世界模型要证明自己真能用"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 6.45,
-   "days": 9,
+   "score": 6.06,
+   "days": 8,
    "latest": {
     "date": "2026-11-01",
     "url": "/posts/2026-10-31-ai-morning-post/#research",
@@ -575,8 +575,50 @@
    ]
   },
   {
+   "name": "百度",
+   "score": 5.39,
+   "days": 6,
+   "latest": {
+    "date": "2026-11-04",
+    "url": "/posts/2026-11-03-ai-morning-post/#research",
+    "title": "百度把世界模型开上路"
+   },
+   "links": [
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#research",
+     "title": "百度把世界模型开上路"
+    },
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#product",
+     "title": "百度 APP 四项 AI 升级，搜索 API 打到 4.9 元"
+    },
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited-OCR：长文档一次解析"
+    },
+    {
+     "date": "2026-10-28",
+     "url": "/posts/2026-10-27-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited OCR 2：一次解析任意页数文档"
+    },
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited-OCR，主打一次性长文档解析"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited-OCR：把长文档解析压成\"一次\""
+    }
+   ]
+  },
+  {
    "name": "Agent Skills",
-   "score": 5.06,
+   "score": 4.84,
    "days": 7,
    "latest": {
     "date": "2026-11-03",
@@ -623,8 +665,8 @@
   },
   {
    "name": "Cloudflare",
-   "score": 5.03,
-   "days": 10,
+   "score": 4.61,
+   "days": 9,
    "latest": {
     "date": "2026-10-27",
     "url": "/posts/2026-10-26-ai-morning-post/#opensource",
@@ -675,7 +717,7 @@
   },
   {
    "name": "VoiceStudio",
-   "score": 4.68,
+   "score": 4.39,
    "days": 9,
    "latest": {
     "date": "2026-10-30",
@@ -722,43 +764,6 @@
      "date": "2026-10-13",
      "url": "/posts/2026-10-12-ai-morning-post/#opensource",
      "title": "VoiceStudio：本地的 ElevenLabs 替代"
-    }
-   ]
-  },
-  {
-   "name": "百度",
-   "score": 4.58,
-   "days": 5,
-   "latest": {
-    "date": "2026-10-31",
-    "url": "/posts/2026-10-30-ai-morning-post/#product",
-    "title": "百度 APP 四项 AI 升级，搜索 API 打到 4.9 元"
-   },
-   "links": [
-    {
-     "date": "2026-10-31",
-     "url": "/posts/2026-10-30-ai-morning-post/#product",
-     "title": "百度 APP 四项 AI 升级，搜索 API 打到 4.9 元"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited-OCR：长文档一次解析"
-    },
-    {
-     "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited OCR 2：一次解析任意页数文档"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited-OCR，主打一次性长文档解析"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited-OCR：把长文档解析压成\"一次\""
     }
    ]
   }
