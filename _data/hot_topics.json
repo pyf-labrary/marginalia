@@ -1,17 +1,22 @@
 {
- "generated": "2026-11-05",
+ "generated": "2026-11-06",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 78.45,
+   "score": 81.13,
    "days": 29,
    "latest": {
-    "date": "2026-11-05",
-    "url": "/posts/2026-11-04-ai-morning-post/#product",
-    "title": "DeepMind 用 Antigravity 做化学信息学智能体"
+    "date": "2026-11-06",
+    "url": "/posts/2026-11-05-ai-morning-post/#research",
+    "title": "真实工作任务上，没有 Agent 超过 12 分"
    },
    "links": [
+    {
+     "date": "2026-11-06",
+     "url": "/posts/2026-11-05-ai-morning-post/#research",
+     "title": "真实工作任务上，没有 Agent 超过 12 分"
+    },
     {
      "date": "2026-11-05",
      "url": "/posts/2026-11-04-ai-morning-post/#product",
@@ -46,24 +51,24 @@
      "date": "2026-10-30",
      "url": "/posts/2026-10-29-ai-morning-post/#company",
      "title": "一个个人 Agent，估值 12.5 亿美元"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#model-release",
-     "title": "蚂蚁百灵开源 Ling-3.1-flash，押注个人智能体"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 47.81,
+   "score": 48.52,
    "days": 29,
    "latest": {
-    "date": "2026-11-05",
-    "url": "/posts/2026-11-04-ai-morning-post/#company",
-    "title": "OpenAI 买下 Pierre，目标是版本控制层"
+    "date": "2026-11-06",
+    "url": "/posts/2026-11-05-ai-morning-post/#company",
+    "title": "Brockman：OpenAI 最快 2027 年具备 IPO 条件"
    },
    "links": [
+    {
+     "date": "2026-11-06",
+     "url": "/posts/2026-11-05-ai-morning-post/#company",
+     "title": "Brockman：OpenAI 最快 2027 年具备 IPO 条件"
+    },
     {
      "date": "2026-11-05",
      "url": "/posts/2026-11-04-ai-morning-post/#company",
@@ -98,17 +103,12 @@
      "date": "2026-10-30",
      "url": "/posts/2026-10-29-ai-morning-post/#company",
      "title": "153 亿美元，OpenAI 系资本买下 ADT"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#company",
-     "title": "微软单季从 OpenAI 相关安排录得 100 亿美元收入"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 45.16,
+   "score": 42.29,
    "days": 29,
    "latest": {
     "date": "2026-11-05",
@@ -160,14 +160,19 @@
   },
   {
    "name": "Claude",
-   "score": 19.65,
+   "score": 20.16,
    "days": 23,
    "latest": {
-    "date": "2026-11-04",
-    "url": "/posts/2026-11-03-ai-morning-post/#product",
-    "title": "零 Rust 经验的团队，用 Claude 重写了核心 API"
+    "date": "2026-11-06",
+    "url": "/posts/2026-11-05-ai-morning-post/#company",
+    "title": "Claude Code 产品负责人 Cat Wu 跳槽 OpenAI"
    },
    "links": [
+    {
+     "date": "2026-11-06",
+     "url": "/posts/2026-11-05-ai-morning-post/#company",
+     "title": "Claude Code 产品负责人 Cat Wu 跳槽 OpenAI"
+    },
     {
      "date": "2026-11-04",
      "url": "/posts/2026-11-03-ai-morning-post/#product",
@@ -202,24 +207,24 @@
      "date": "2026-10-25",
      "url": "/posts/2026-10-24-ai-morning-post/#opensource",
      "title": "Anthropic 开源知识工作插件库，把 Claude 变成岗位专家"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#product",
-     "title": "Claude 一边写代码，一边给出安全证明"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 12.97,
-   "days": 20,
+   "score": 14.13,
+   "days": 21,
    "latest": {
-    "date": "2026-11-05",
-    "url": "/posts/2026-11-04-ai-morning-post/#company",
-    "title": "Meta 收下 Conductor，买的是并行调度"
+    "date": "2026-11-06",
+    "url": "/posts/2026-11-05-ai-morning-post/#company",
+    "title": "Meta 收购 Conductor，买的是调度层"
    },
    "links": [
+    {
+     "date": "2026-11-06",
+     "url": "/posts/2026-11-05-ai-morning-post/#company",
+     "title": "Meta 收购 Conductor，买的是调度层"
+    },
     {
      "date": "2026-11-05",
      "url": "/posts/2026-11-04-ai-morning-post/#company",
@@ -254,18 +259,13 @@
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#research",
      "title": "TorchTPU：Google 与 Meta 让 PyTorch 原生跑上 TPU"
-    },
-    {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#company",
-     "title": "Meta 创设新股类为 AI 基建融资"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 12.0,
-   "days": 14,
+   "score": 11.19,
+   "days": 13,
    "latest": {
     "date": "2026-11-04",
     "url": "/posts/2026-11-03-ai-morning-post/#opensource",
@@ -316,7 +316,7 @@
   },
   {
    "name": "算力",
-   "score": 10.94,
+   "score": 10.35,
    "days": 14,
    "latest": {
     "date": "2026-11-05",
@@ -368,7 +368,7 @@
   },
   {
    "name": "Google",
-   "score": 8.35,
+   "score": 7.77,
    "days": 13,
    "latest": {
     "date": "2026-11-02",
@@ -420,8 +420,8 @@
   },
   {
    "name": "DeepSeek",
-   "score": 7.68,
-   "days": 14,
+   "score": 7.13,
+   "days": 13,
    "latest": {
     "date": "2026-11-03",
     "url": "/posts/2026-11-02-ai-morning-post/#company",
@@ -472,8 +472,8 @@
   },
   {
    "name": "世界模型",
-   "score": 6.9,
-   "days": 11,
+   "score": 6.48,
+   "days": 10,
    "latest": {
     "date": "2026-11-04",
     "url": "/posts/2026-11-03-ai-morning-post/#research",
@@ -524,7 +524,7 @@
   },
   {
    "name": "芯片",
-   "score": 6.74,
+   "score": 6.39,
    "days": 9,
    "latest": {
     "date": "2026-11-05",
@@ -576,7 +576,7 @@
   },
   {
    "name": "MoE",
-   "score": 5.45,
+   "score": 5.1,
    "days": 9,
    "latest": {
     "date": "2026-11-05",
@@ -628,7 +628,7 @@
   },
   {
    "name": "百度",
-   "score": 5.16,
+   "score": 4.94,
    "days": 6,
    "latest": {
     "date": "2026-11-04",
@@ -670,7 +670,7 @@
   },
   {
    "name": "Agent Skills",
-   "score": 4.61,
+   "score": 4.39,
    "days": 7,
    "latest": {
     "date": "2026-11-03",
@@ -716,54 +716,39 @@
    ]
   },
   {
-   "name": "Cloudflare",
-   "score": 4.32,
-   "days": 9,
+   "name": "GitHub",
+   "score": 4.19,
+   "days": 5,
    "latest": {
-    "date": "2026-10-27",
-    "url": "/posts/2026-10-26-ai-morning-post/#opensource",
-    "title": "4. Cloudflare 开源安全审计 Skill：让发现可被验证"
+    "date": "2026-11-06",
+    "url": "/posts/2026-11-05-ai-morning-post/#opensource",
+    "title": "GitHub 开源 spec-kit：先写规格，再让 Agent 写代码"
    },
    "links": [
     {
-     "date": "2026-10-27",
-     "url": "/posts/2026-10-26-ai-morning-post/#opensource",
-     "title": "4. Cloudflare 开源安全审计 Skill：让发现可被验证"
+     "date": "2026-11-06",
+     "url": "/posts/2026-11-05-ai-morning-post/#opensource",
+     "title": "GitHub 开源 spec-kit：先写规格，再让 Agent 写代码"
     },
     {
-     "date": "2026-10-26",
-     "url": "/posts/2026-10-25-ai-morning-post/#opensource",
-     "title": "Cloudflare 开源安全审计技能，结果要机器可读"
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
+     "title": "Agent Skills 成为 GitHub 新风口"
     },
     {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
-     "title": "Cloudflare 开源安全审计技能，让编码 Agent 当审计员"
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#opensource",
+     "title": "GitHub 开源 spec-kit，规范驱动开发落地为工具"
     },
     {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#opensource",
-     "title": "Cloudflare 开源了一个「安全审计」Skill"
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
+     "title": "GitHub 开源 spec-kit：规范驱动开发的入门套件"
     },
     {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
-     "title": "Cloudflare 把安全审计写成技能"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
-     "title": "Cloudflare 开源 Clef：给 Agent 的判断装一个可审计的开关"
-    },
-    {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#model-release",
-     "title": "Cloudflare 开源 Clef-omni：一次调用给音视图文打分"
-    },
-    {
-     "date": "2026-10-11",
-     "url": "/posts/2026-10-10-ai-morning-post/#company",
-     "title": "Deno 团队加入 Cloudflare"
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#opinion",
+     "title": "GitHub 年度报告：提交量新高，但这个指标开始失真"
     }
    ]
   }
