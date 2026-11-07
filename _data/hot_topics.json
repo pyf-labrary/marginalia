@@ -1,17 +1,22 @@
 {
- "generated": "2026-11-06",
+ "generated": "2026-11-07",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 81.13,
+   "score": 81.81,
    "days": 29,
    "latest": {
-    "date": "2026-11-06",
-    "url": "/posts/2026-11-05-ai-morning-post/#research",
-    "title": "真实工作任务上，没有 Agent 超过 12 分"
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#research",
+    "title": "Axiom 用 AI Agent 形式化验证 Stacks Project"
    },
    "links": [
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#research",
+     "title": "Axiom 用 AI Agent 形式化验证 Stacks Project"
+    },
     {
      "date": "2026-11-06",
      "url": "/posts/2026-11-05-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-10-31",
      "url": "/posts/2026-10-30-ai-morning-post/#research",
      "title": "多 Agent 协作，自主跑完一次量子自旋实验"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#company",
-     "title": "一个个人 Agent，估值 12.5 亿美元"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 48.52,
+   "score": 49.26,
    "days": 29,
    "latest": {
-    "date": "2026-11-06",
-    "url": "/posts/2026-11-05-ai-morning-post/#company",
-    "title": "Brockman：OpenAI 最快 2027 年具备 IPO 条件"
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#company",
+    "title": "OpenAI 再融 110 亿美元，估值站上 1.25 万亿"
    },
    "links": [
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#company",
+     "title": "OpenAI 再融 110 亿美元，估值站上 1.25 万亿"
+    },
     {
      "date": "2026-11-06",
      "url": "/posts/2026-11-05-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-10-31",
      "url": "/posts/2026-10-30-ai-morning-post/#company",
      "title": "OpenAI 支持的 Thrive 153 亿美元收购 ADT"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#company",
-     "title": "153 亿美元，OpenAI 系资本买下 ADT"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 42.29,
+   "score": 41.32,
    "days": 29,
    "latest": {
-    "date": "2026-11-05",
-    "url": "/posts/2026-11-04-ai-morning-post/#company",
-    "title": "Anthropic 的算力账本：越卖越不赚钱"
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#company",
+    "title": "Anthropic 下周启动 IPO 路演，高估值遇阻"
    },
    "links": [
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#company",
+     "title": "Anthropic 下周启动 IPO 路演，高估值遇阻"
+    },
     {
      "date": "2026-11-05",
      "url": "/posts/2026-11-04-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-10-30",
      "url": "/posts/2026-10-29-ai-morning-post/#research",
      "title": "Anthropic：AI 造 AI 已覆盖 26% 的研发流程"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#company",
-     "title": "Anthropic 冲刺 IPO：招股书自曝风险，亚马逊成大赢家"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 20.16,
+   "score": 19.61,
    "days": 23,
    "latest": {
-    "date": "2026-11-06",
-    "url": "/posts/2026-11-05-ai-morning-post/#company",
-    "title": "Claude Code 产品负责人 Cat Wu 跳槽 OpenAI"
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#product",
+    "title": "Claude 接上银行账户，个人财务成了 Agent 的试金石"
    },
    "links": [
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#product",
+     "title": "Claude 接上银行账户，个人财务成了 Agent 的试金石"
+    },
     {
      "date": "2026-11-06",
      "url": "/posts/2026-11-05-ai-morning-post/#company",
@@ -202,24 +207,24 @@
      "date": "2026-10-26",
      "url": "/posts/2026-10-25-ai-morning-post/#opensource",
      "title": "Anthropic 开源知识工作插件库，按角色和团队定制 Claude"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
-     "title": "Anthropic 开源知识工作插件库，把 Claude 变成岗位专家"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 14.13,
+   "score": 14.16,
    "days": 21,
    "latest": {
-    "date": "2026-11-06",
-    "url": "/posts/2026-11-05-ai-morning-post/#company",
-    "title": "Meta 收购 Conductor，买的是调度层"
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#product",
+    "title": "Meta 给 Muse 加了 Spaces 和视频头像"
    },
    "links": [
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#product",
+     "title": "Meta 给 Muse 加了 Spaces 和视频头像"
+    },
     {
      "date": "2026-11-06",
      "url": "/posts/2026-11-05-ai-morning-post/#company",
@@ -254,24 +259,24 @@
      "date": "2026-10-27",
      "url": "/posts/2026-10-26-ai-morning-post/#company",
      "title": "Meta 拟发售最高 950 亿美元股票，输血 AI 基建"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#research",
-     "title": "TorchTPU：Google 与 Meta 让 PyTorch 原生跑上 TPU"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 11.19,
+   "score": 11.32,
    "days": 13,
    "latest": {
-    "date": "2026-11-04",
-    "url": "/posts/2026-11-03-ai-morning-post/#opensource",
-    "title": "100 美元的 ChatGPT，价值不在省钱"
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#opinion",
+    "title": "当 ChatGPT 出现在刑事案卷里"
    },
    "links": [
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#opinion",
+     "title": "当 ChatGPT 出现在刑事案卷里"
+    },
     {
      "date": "2026-11-04",
      "url": "/posts/2026-11-03-ai-morning-post/#opensource",
@@ -306,24 +311,24 @@
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#company",
      "title": "ChatGPT 广告扩到 26 国，10 万广告主已入场"
-    },
-    {
-     "date": "2026-10-21",
-     "url": "/posts/2026-10-20-ai-morning-post/#product",
-     "title": "ChatGPT 新增对话锁定"
     }
    ]
   },
   {
    "name": "算力",
-   "score": 10.35,
-   "days": 14,
+   "score": 10.77,
+   "days": 15,
    "latest": {
-    "date": "2026-11-05",
-    "url": "/posts/2026-11-04-ai-morning-post/#company",
-    "title": "Anthropic 的算力账本：越卖越不赚钱"
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#company",
+    "title": "微软逐步停用甲骨文 AI 算力，卡在芯片代次上"
    },
    "links": [
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#company",
+     "title": "微软逐步停用甲骨文 AI 算力，卡在芯片代次上"
+    },
     {
      "date": "2026-11-05",
      "url": "/posts/2026-11-04-ai-morning-post/#company",
@@ -358,24 +363,24 @@
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#opinion",
      "title": "欧盟成员国批准“数字征用”，隐私让位于算力"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#company",
-     "title": "Anthropic 的算力难题，撞上了 IPO 时间表"
     }
    ]
   },
   {
    "name": "Google",
-   "score": 7.77,
+   "score": 8.1,
    "days": 13,
    "latest": {
-    "date": "2026-11-02",
-    "url": "/posts/2026-11-01-ai-morning-post/#research",
-    "title": "Google 让视频 AI 学会“该出手时才出手”"
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#opensource",
+    "title": "Google 开源 Agent Skills 集合"
    },
    "links": [
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 集合"
+    },
     {
      "date": "2026-11-02",
      "url": "/posts/2026-11-01-ai-morning-post/#research",
@@ -410,18 +415,65 @@
      "date": "2026-10-22",
      "url": "/posts/2026-10-21-ai-morning-post/#opensource",
      "title": "Google 开源 TorchTPU，PyTorch 原生跑上 TPU"
+    }
+   ]
+  },
+  {
+   "name": "芯片",
+   "score": 8.0,
+   "days": 9,
+   "latest": {
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#company",
+    "title": "微软逐步停用甲骨文 AI 算力，卡在芯片代次上"
+   },
+   "links": [
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#company",
+     "title": "微软逐步停用甲骨文 AI 算力，卡在芯片代次上"
     },
     {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#model-release",
-     "title": "Gemini 4 Argon：Google 的“接近前沿”是个微妙措辞"
+     "date": "2026-11-05",
+     "url": "/posts/2026-11-04-ai-morning-post/#company",
+     "title": "后摩智能完成数十亿元 B 轮，端侧芯片进入兑现期"
+    },
+    {
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#research",
+     "title": "世界模型第一次进了芯片设计流程"
+    },
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opinion",
+     "title": "针对黄仁勋的间谍图谋与芯片管制的执行面"
+    },
+    {
+     "date": "2026-10-28",
+     "url": "/posts/2026-10-27-ai-morning-post/#company",
+     "title": "报道称 OpenAI 计划采购谷歌 AI 芯片"
+    },
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#company",
+     "title": "亿铸科技完成超 10 亿元融资，3D DRAM 存算一体芯片已流片"
+    },
+    {
+     "date": "2026-10-24",
+     "url": "/posts/2026-10-23-ai-morning-post/#opensource",
+     "title": "智源 FlagOS 2.2：让模型适配多种芯片"
+    },
+    {
+     "date": "2026-10-13",
+     "url": "/posts/2026-10-12-ai-morning-post/#company",
+     "title": "微软自研 Maia 芯片拟 2027 年冲到吉瓦级"
     }
    ]
   },
   {
    "name": "DeepSeek",
-   "score": 7.13,
-   "days": 13,
+   "score": 6.61,
+   "days": 12,
    "latest": {
     "date": "2026-11-03",
     "url": "/posts/2026-11-02-ai-morning-post/#company",
@@ -472,7 +524,7 @@
   },
   {
    "name": "世界模型",
-   "score": 6.48,
+   "score": 6.13,
    "days": 10,
    "latest": {
     "date": "2026-11-04",
@@ -523,60 +575,154 @@
    ]
   },
   {
-   "name": "芯片",
-   "score": 6.39,
-   "days": 9,
+   "name": "百度",
+   "score": 5.71,
+   "days": 7,
    "latest": {
-    "date": "2026-11-05",
-    "url": "/posts/2026-11-04-ai-morning-post/#company",
-    "title": "后摩智能完成数十亿元 B 轮，端侧芯片进入兑现期"
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#model-release",
+    "title": "百度开源 ERNIE 5.5 Flash Base：开源的是“基础”"
    },
    "links": [
     {
-     "date": "2026-11-05",
-     "url": "/posts/2026-11-04-ai-morning-post/#company",
-     "title": "后摩智能完成数十亿元 B 轮，端侧芯片进入兑现期"
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#model-release",
+     "title": "百度开源 ERNIE 5.5 Flash Base：开源的是“基础”"
     },
     {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#research",
-     "title": "世界模型第一次进了芯片设计流程"
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#research",
+     "title": "百度把世界模型开上路"
+    },
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#product",
+     "title": "百度 APP 四项 AI 升级，搜索 API 打到 4.9 元"
     },
     {
      "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#opinion",
-     "title": "针对黄仁勋的间谍图谋与芯片管制的执行面"
+     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited-OCR：长文档一次解析"
     },
     {
      "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#company",
-     "title": "报道称 OpenAI 计划采购谷歌 AI 芯片"
+     "url": "/posts/2026-10-27-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited OCR 2：一次解析任意页数文档"
     },
     {
      "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#company",
-     "title": "亿铸科技完成超 10 亿元融资，3D DRAM 存算一体芯片已流片"
+     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited-OCR，主打一次性长文档解析"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited-OCR：把长文档解析压成\"一次\""
+    }
+   ]
+  },
+  {
+   "name": "Agent Skills",
+   "score": 5.16,
+   "days": 8,
+   "latest": {
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#opensource",
+    "title": "Google 开源 Agent Skills 集合"
+   },
+   "links": [
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 集合"
+    },
+    {
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#opensource",
+     "title": "Anthropic 公开 Agent Skills 官方仓库"
+    },
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
+     "title": "Agent Skills 成为 GitHub 新风口"
+    },
+    {
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#opensource",
+     "title": "Anthropic 公开 Agent Skills 官方仓库"
     },
     {
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#opensource",
-     "title": "智源 FlagOS 2.2：让模型适配多种芯片"
+     "title": "Anthropic 把 Agent Skills 交给基金会"
     },
     {
-     "date": "2026-10-13",
-     "url": "/posts/2026-10-12-ai-morning-post/#company",
-     "title": "微软自研 Maia 芯片拟 2027 年冲到吉瓦级"
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
+     "title": "Anthropic 把 Agent Skills 交了出去"
     },
     {
-     "date": "2026-10-12",
-     "url": "/posts/2026-10-11-ai-morning-post/#product",
-     "title": "苹果 HomeView：明晚发布，A18 芯片带屏"
+     "date": "2026-10-18",
+     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
+     "title": "Agent Skills 社区框架混战：Superpowers、ECC 等"
+    },
+    {
+     "date": "2026-10-14",
+     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 集合"
+    }
+   ]
+  },
+  {
+   "name": "Vercel",
+   "score": 4.97,
+   "days": 7,
+   "latest": {
+    "date": "2026-11-07",
+    "url": "/posts/2026-11-06-ai-morning-post/#opensource",
+    "title": "Vercel 开源 agent-desktop 与 agent-browser"
+   },
+   "links": [
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#opensource",
+     "title": "Vercel 开源 agent-desktop 与 agent-browser"
+    },
+    {
+     "date": "2026-11-06",
+     "url": "/posts/2026-11-05-ai-morning-post/#opensource",
+     "title": "Vercel agent-desktop：把桌面操作封装成工具"
+    },
+    {
+     "date": "2026-11-05",
+     "url": "/posts/2026-11-04-ai-morning-post/#opensource",
+     "title": "Vercel Labs 的 fx：用 Zig 写嵌入式智能体"
+    },
+    {
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#opensource",
+     "title": "Vercel Labs 开源 agent-desktop，让智能体操作桌面"
+    },
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
+     "title": "Vercel 让编码智能体不再“一崩全丢”"
+    },
+    {
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
+     "title": "Vercel 的 durable-harness：让编码 Agent 崩溃后接着跑"
+    },
+    {
+     "date": "2026-10-15",
+     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
+     "title": "Vercel 开源 npx skills：Agent 技能有了分发层"
     }
    ]
   },
   {
    "name": "MoE",
-   "score": 5.1,
+   "score": 4.74,
    "days": 9,
    "latest": {
     "date": "2026-11-05",
@@ -623,132 +769,6 @@
      "date": "2026-10-14",
      "url": "/posts/2026-10-13-ai-morning-post/#opensource",
      "title": "Janas：把 MoE 专家层从 SSD 流式读进来"
-    }
-   ]
-  },
-  {
-   "name": "百度",
-   "score": 4.94,
-   "days": 6,
-   "latest": {
-    "date": "2026-11-04",
-    "url": "/posts/2026-11-03-ai-morning-post/#research",
-    "title": "百度把世界模型开上路"
-   },
-   "links": [
-    {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#research",
-     "title": "百度把世界模型开上路"
-    },
-    {
-     "date": "2026-10-31",
-     "url": "/posts/2026-10-30-ai-morning-post/#product",
-     "title": "百度 APP 四项 AI 升级，搜索 API 打到 4.9 元"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited-OCR：长文档一次解析"
-    },
-    {
-     "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited OCR 2：一次解析任意页数文档"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited-OCR，主打一次性长文档解析"
-    },
-    {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited-OCR：把长文档解析压成\"一次\""
-    }
-   ]
-  },
-  {
-   "name": "Agent Skills",
-   "score": 4.39,
-   "days": 7,
-   "latest": {
-    "date": "2026-11-03",
-    "url": "/posts/2026-11-02-ai-morning-post/#opensource",
-    "title": "Anthropic 公开 Agent Skills 官方仓库"
-   },
-   "links": [
-    {
-     "date": "2026-11-03",
-     "url": "/posts/2026-11-02-ai-morning-post/#opensource",
-     "title": "Anthropic 公开 Agent Skills 官方仓库"
-    },
-    {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
-     "title": "Agent Skills 成为 GitHub 新风口"
-    },
-    {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#opensource",
-     "title": "Anthropic 公开 Agent Skills 官方仓库"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#opensource",
-     "title": "Anthropic 把 Agent Skills 交给基金会"
-    },
-    {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
-     "title": "Anthropic 把 Agent Skills 交了出去"
-    },
-    {
-     "date": "2026-10-18",
-     "url": "/posts/2026-10-17-ai-morning-post/#opensource",
-     "title": "Agent Skills 社区框架混战：Superpowers、ECC 等"
-    },
-    {
-     "date": "2026-10-14",
-     "url": "/posts/2026-10-13-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 集合"
-    }
-   ]
-  },
-  {
-   "name": "GitHub",
-   "score": 4.19,
-   "days": 5,
-   "latest": {
-    "date": "2026-11-06",
-    "url": "/posts/2026-11-05-ai-morning-post/#opensource",
-    "title": "GitHub 开源 spec-kit：先写规格，再让 Agent 写代码"
-   },
-   "links": [
-    {
-     "date": "2026-11-06",
-     "url": "/posts/2026-11-05-ai-morning-post/#opensource",
-     "title": "GitHub 开源 spec-kit：先写规格，再让 Agent 写代码"
-    },
-    {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
-     "title": "Agent Skills 成为 GitHub 新风口"
-    },
-    {
-     "date": "2026-10-31",
-     "url": "/posts/2026-10-30-ai-morning-post/#opensource",
-     "title": "GitHub 开源 spec-kit，规范驱动开发落地为工具"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
-     "title": "GitHub 开源 spec-kit：规范驱动开发的入门套件"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#opinion",
-     "title": "GitHub 年度报告：提交量新高，但这个指标开始失真"
     }
    ]
   }
