@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-12",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 82.06,
-   "days": 29,
+   "score": 77.0,
+   "days": 28,
    "latest": {
     "date": "2026-11-11",
     "url": "/posts/2026-11-10-ai-morning-post/#product",
@@ -55,67 +55,20 @@
    ]
   },
   {
-   "name": "OpenAI",
-   "score": 42.68,
-   "days": 29,
-   "latest": {
-    "date": "2026-11-11",
-    "url": "/posts/2026-11-10-ai-morning-post/#company",
-    "title": "OpenAI 收购旅游初创 Odessia"
-   },
-   "links": [
-    {
-     "date": "2026-11-11",
-     "url": "/posts/2026-11-10-ai-morning-post/#company",
-     "title": "OpenAI 收购旅游初创 Odessia"
-    },
-    {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#company",
-     "title": "OpenAI 给自己装了急停开关"
-    },
-    {
-     "date": "2026-11-09",
-     "url": "/posts/2026-11-08-ai-morning-post/#company",
-     "title": "OpenAI 融资 110 亿美元，估值定在 1.25 万亿"
-    },
-    {
-     "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#company",
-     "title": "OpenAI 再融 110 亿，估值 1.25 万亿"
-    },
-    {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#company",
-     "title": "OpenAI 再融 110 亿美元，估值站上 1.25 万亿"
-    },
-    {
-     "date": "2026-11-06",
-     "url": "/posts/2026-11-05-ai-morning-post/#company",
-     "title": "Brockman：OpenAI 最快 2027 年具备 IPO 条件"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "/posts/2026-11-04-ai-morning-post/#company",
-     "title": "OpenAI 买下 Pierre，目标是版本控制层"
-    },
-    {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#company",
-     "title": "OpenAI 补课：IPO 前先补政府关系"
-    }
-   ]
-  },
-  {
    "name": "Anthropic",
-   "score": 42.0,
+   "score": 43.23,
    "days": 29,
    "latest": {
-    "date": "2026-11-11",
-    "url": "/posts/2026-11-10-ai-morning-post/#model-release",
-    "title": "Anthropic 双版本：把安全策略做成产品线"
+    "date": "2026-11-12",
+    "url": "/posts/2026-11-11-ai-morning-post/#company",
+    "title": "Anthropic 路演：七位联创人均套现 2.5 亿美元"
    },
    "links": [
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#company",
+     "title": "Anthropic 路演：七位联创人均套现 2.5 亿美元"
+    },
     {
      "date": "2026-11-11",
      "url": "/posts/2026-11-10-ai-morning-post/#model-release",
@@ -150,24 +103,76 @@
      "date": "2026-11-04",
      "url": "/posts/2026-11-03-ai-morning-post/#company",
      "title": "Anthropic 把 RSI 写进招股书"
+    }
+   ]
+  },
+  {
+   "name": "OpenAI",
+   "score": 43.0,
+   "days": 30,
+   "latest": {
+    "date": "2026-11-12",
+    "url": "/posts/2026-11-11-ai-morning-post/#company",
+    "title": "OpenAI 单季营收首次破 100 亿美元"
+   },
+   "links": [
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#company",
+     "title": "OpenAI 单季营收首次破 100 亿美元"
     },
     {
-     "date": "2026-11-03",
-     "url": "/posts/2026-11-02-ai-morning-post/#company",
-     "title": "Anthropic 递交 IPO，亏损 230 亿美元"
+     "date": "2026-11-11",
+     "url": "/posts/2026-11-10-ai-morning-post/#company",
+     "title": "OpenAI 收购旅游初创 Odessia"
+    },
+    {
+     "date": "2026-11-10",
+     "url": "/posts/2026-11-09-ai-morning-post/#company",
+     "title": "OpenAI 给自己装了急停开关"
+    },
+    {
+     "date": "2026-11-09",
+     "url": "/posts/2026-11-08-ai-morning-post/#company",
+     "title": "OpenAI 融资 110 亿美元，估值定在 1.25 万亿"
+    },
+    {
+     "date": "2026-11-08",
+     "url": "/posts/2026-11-07-ai-morning-post/#company",
+     "title": "OpenAI 再融 110 亿，估值 1.25 万亿"
+    },
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#company",
+     "title": "OpenAI 再融 110 亿美元，估值站上 1.25 万亿"
+    },
+    {
+     "date": "2026-11-06",
+     "url": "/posts/2026-11-05-ai-morning-post/#company",
+     "title": "Brockman：OpenAI 最快 2027 年具备 IPO 条件"
+    },
+    {
+     "date": "2026-11-05",
+     "url": "/posts/2026-11-04-ai-morning-post/#company",
+     "title": "OpenAI 买下 Pierre，目标是版本控制层"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 20.81,
+   "score": 20.35,
    "days": 23,
    "latest": {
-    "date": "2026-11-11",
-    "url": "/posts/2026-11-10-ai-morning-post/#product",
-    "title": "Anthropic 把 Claude 做成了一套办公套件"
+    "date": "2026-11-12",
+    "url": "/posts/2026-11-11-ai-morning-post/#product",
+    "title": "Claude 杀入办公套件：从代写到代你出席"
    },
    "links": [
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#product",
+     "title": "Claude 杀入办公套件：从代写到代你出席"
+    },
     {
      "date": "2026-11-11",
      "url": "/posts/2026-11-10-ai-morning-post/#product",
@@ -202,18 +207,13 @@
      "date": "2026-11-02",
      "url": "/posts/2026-11-01-ai-morning-post/#company",
      "title": "Anthropic 再收紧：禁止 Claude 逆向与克隆游戏"
-    },
-    {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#model-release",
-     "title": "Claude 取消 5 小时限制，Ultra 先解封"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 15.48,
-   "days": 23,
+   "score": 14.45,
+   "days": 22,
    "latest": {
     "date": "2026-11-11",
     "url": "/posts/2026-11-10-ai-morning-post/#product",
@@ -264,14 +264,19 @@
   },
   {
    "name": "ChatGPT",
-   "score": 9.84,
-   "days": 12,
+   "score": 10.26,
+   "days": 13,
    "latest": {
-    "date": "2026-11-11",
-    "url": "/posts/2026-11-10-ai-morning-post/#product",
-    "title": "ChatGPT 变成企业黄页，商家可以入驻了"
+    "date": "2026-11-12",
+    "url": "/posts/2026-11-11-ai-morning-post/#product",
+    "title": "ChatGPT 上线商家主页，向搜索广告再走一步"
    },
    "links": [
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#product",
+     "title": "ChatGPT 上线商家主页，向搜索广告再走一步"
+    },
     {
      "date": "2026-11-11",
      "url": "/posts/2026-11-10-ai-morning-post/#product",
@@ -306,17 +311,12 @@
      "date": "2026-10-28",
      "url": "/posts/2026-10-27-ai-morning-post/#product",
      "title": "Oracle 应用进 ChatGPT，入口比模型更值钱"
-    },
-    {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#company",
-     "title": "ChatGPT 广告扩展至 26 国，广告主超 10 万"
     }
    ]
   },
   {
    "name": "算力",
-   "score": 9.16,
+   "score": 8.61,
    "days": 14,
    "latest": {
     "date": "2026-11-08",
@@ -367,8 +367,112 @@
    ]
   },
   {
+   "name": "世界模型",
+   "score": 8.13,
+   "days": 10,
+   "latest": {
+    "date": "2026-11-12",
+    "url": "/posts/2026-11-11-ai-morning-post/#opensource",
+    "title": "MBZUAI 开源 PAN 2：290 亿参数的世界模型"
+   },
+   "links": [
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#opensource",
+     "title": "MBZUAI 开源 PAN 2：290 亿参数的世界模型"
+    },
+    {
+     "date": "2026-11-09",
+     "url": "/posts/2026-11-08-ai-morning-post/#opinion",
+     "title": "资本正在撤离「世界模型」"
+    },
+    {
+     "date": "2026-11-08",
+     "url": "/posts/2026-11-07-ai-morning-post/#model-release",
+     "title": "中国版 Cosmos 再交卷：世界模型仍缺评测口径"
+    },
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#research",
+     "title": "百度把世界模型开上路"
+    },
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#company",
+     "title": "西湖大学成立世界模型研究中心"
+    },
+    {
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#research",
+     "title": "世界模型第一次进了芯片设计流程"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#model-release",
+     "title": "Genie 4：世界模型开始有声音，也开始能对话"
+    },
+    {
+     "date": "2026-10-28",
+     "url": "/posts/2026-10-27-ai-morning-post/#model-release",
+     "title": "Genie 4：世界模型从「能看」到「能操控」"
+    }
+   ]
+  },
+  {
+   "name": "芯片",
+   "score": 7.97,
+   "days": 9,
+   "latest": {
+    "date": "2026-11-12",
+    "url": "/posts/2026-11-11-ai-morning-post/#company",
+    "title": "英国 Fractile 融资 7.2 亿美元，押注 AI 专用芯片"
+   },
+   "links": [
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#company",
+     "title": "英国 Fractile 融资 7.2 亿美元，押注 AI 专用芯片"
+    },
+    {
+     "date": "2026-11-10",
+     "url": "/posts/2026-11-09-ai-morning-post/#company",
+     "title": "Google 一年四款 TPU，开始按场景切分芯片"
+    },
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#company",
+     "title": "微软逐步停用甲骨文 AI 算力，卡在芯片代次上"
+    },
+    {
+     "date": "2026-11-05",
+     "url": "/posts/2026-11-04-ai-morning-post/#company",
+     "title": "后摩智能完成数十亿元 B 轮，端侧芯片进入兑现期"
+    },
+    {
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#research",
+     "title": "世界模型第一次进了芯片设计流程"
+    },
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opinion",
+     "title": "针对黄仁勋的间谍图谋与芯片管制的执行面"
+    },
+    {
+     "date": "2026-10-28",
+     "url": "/posts/2026-10-27-ai-morning-post/#company",
+     "title": "报道称 OpenAI 计划采购谷歌 AI 芯片"
+    },
+    {
+     "date": "2026-10-25",
+     "url": "/posts/2026-10-24-ai-morning-post/#company",
+     "title": "亿铸科技完成超 10 亿元融资，3D DRAM 存算一体芯片已流片"
+    }
+   ]
+  },
+  {
    "name": "Google",
-   "score": 8.06,
+   "score": 7.58,
    "days": 13,
    "latest": {
     "date": "2026-11-10",
@@ -420,7 +524,7 @@
   },
   {
    "name": "百度",
-   "score": 7.61,
+   "score": 7.26,
    "days": 9,
    "latest": {
     "date": "2026-11-11",
@@ -471,119 +575,20 @@
    ]
   },
   {
-   "name": "世界模型",
-   "score": 7.48,
-   "days": 9,
-   "latest": {
-    "date": "2026-11-09",
-    "url": "/posts/2026-11-08-ai-morning-post/#opinion",
-    "title": "资本正在撤离「世界模型」"
-   },
-   "links": [
-    {
-     "date": "2026-11-09",
-     "url": "/posts/2026-11-08-ai-morning-post/#opinion",
-     "title": "资本正在撤离「世界模型」"
-    },
-    {
-     "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#model-release",
-     "title": "中国版 Cosmos 再交卷：世界模型仍缺评测口径"
-    },
-    {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#research",
-     "title": "百度把世界模型开上路"
-    },
-    {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#company",
-     "title": "西湖大学成立世界模型研究中心"
-    },
-    {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#research",
-     "title": "世界模型第一次进了芯片设计流程"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#model-release",
-     "title": "Genie 4：世界模型开始有声音，也开始能对话"
-    },
-    {
-     "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#model-release",
-     "title": "Genie 4：世界模型从「能看」到「能操控」"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#research",
-     "title": "Kyutai 开源 CADRE：世界模型压进 230 毫秒"
-    }
-   ]
-  },
-  {
-   "name": "芯片",
-   "score": 7.39,
-   "days": 9,
-   "latest": {
-    "date": "2026-11-10",
-    "url": "/posts/2026-11-09-ai-morning-post/#company",
-    "title": "Google 一年四款 TPU，开始按场景切分芯片"
-   },
-   "links": [
-    {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#company",
-     "title": "Google 一年四款 TPU，开始按场景切分芯片"
-    },
-    {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#company",
-     "title": "微软逐步停用甲骨文 AI 算力，卡在芯片代次上"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "/posts/2026-11-04-ai-morning-post/#company",
-     "title": "后摩智能完成数十亿元 B 轮，端侧芯片进入兑现期"
-    },
-    {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#research",
-     "title": "世界模型第一次进了芯片设计流程"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#opinion",
-     "title": "针对黄仁勋的间谍图谋与芯片管制的执行面"
-    },
-    {
-     "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#company",
-     "title": "报道称 OpenAI 计划采购谷歌 AI 芯片"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#company",
-     "title": "亿铸科技完成超 10 亿元融资，3D DRAM 存算一体芯片已流片"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#opensource",
-     "title": "智源 FlagOS 2.2：让模型适配多种芯片"
-    }
-   ]
-  },
-  {
    "name": "Agent Skills",
-   "score": 6.0,
-   "days": 10,
+   "score": 6.68,
+   "days": 11,
    "latest": {
-    "date": "2026-11-10",
-    "url": "/posts/2026-11-09-ai-morning-post/#opensource",
-    "title": "Anthropic 开源 Agent Skills 仓库"
+    "date": "2026-11-12",
+    "url": "/posts/2026-11-11-ai-morning-post/#opensource",
+    "title": "Anthropic 开源 Agent Skills 仓库，冲上热榜"
    },
    "links": [
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#opensource",
+     "title": "Anthropic 开源 Agent Skills 仓库，冲上热榜"
+    },
     {
      "date": "2026-11-10",
      "url": "/posts/2026-11-09-ai-morning-post/#opensource",
@@ -618,17 +623,49 @@
      "date": "2026-10-24",
      "url": "/posts/2026-10-23-ai-morning-post/#opensource",
      "title": "Anthropic 把 Agent Skills 交给基金会"
+    }
+   ]
+  },
+  {
+   "name": "Muse",
+   "score": 5.77,
+   "days": 5,
+   "latest": {
+    "date": "2026-11-11",
+    "url": "/posts/2026-11-10-ai-morning-post/#product",
+    "title": "Meta 的 Muse 上了手表，语音成了主入口"
+   },
+   "links": [
+    {
+     "date": "2026-11-11",
+     "url": "/posts/2026-11-10-ai-morning-post/#product",
+     "title": "Meta 的 Muse 上了手表，语音成了主入口"
     },
     {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
-     "title": "Anthropic 把 Agent Skills 交了出去"
+     "date": "2026-11-08",
+     "url": "/posts/2026-11-07-ai-morning-post/#product",
+     "title": "Meta 给 Muse agent 加了“房间”"
+    },
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#product",
+     "title": "Meta 给 Muse 加了 Spaces 和视频头像"
+    },
+    {
+     "date": "2026-11-06",
+     "url": "/posts/2026-11-05-ai-morning-post/#product",
+     "title": "Meta 的 Muse 化身能视频通话了"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#company",
+     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
     }
    ]
   },
   {
    "name": "Vercel",
-   "score": 6.0,
+   "score": 5.71,
    "days": 9,
    "latest": {
     "date": "2026-11-11",
@@ -679,45 +716,8 @@
    ]
   },
   {
-   "name": "Muse",
-   "score": 6.0,
-   "days": 5,
-   "latest": {
-    "date": "2026-11-11",
-    "url": "/posts/2026-11-10-ai-morning-post/#product",
-    "title": "Meta 的 Muse 上了手表，语音成了主入口"
-   },
-   "links": [
-    {
-     "date": "2026-11-11",
-     "url": "/posts/2026-11-10-ai-morning-post/#product",
-     "title": "Meta 的 Muse 上了手表，语音成了主入口"
-    },
-    {
-     "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#product",
-     "title": "Meta 给 Muse agent 加了“房间”"
-    },
-    {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#product",
-     "title": "Meta 给 Muse 加了 Spaces 和视频头像"
-    },
-    {
-     "date": "2026-11-06",
-     "url": "/posts/2026-11-05-ai-morning-post/#product",
-     "title": "Meta 的 Muse 化身能视频通话了"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#company",
-     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
-    }
-   ]
-  },
-  {
    "name": "NVIDIA",
-   "score": 5.61,
+   "score": 5.35,
    "days": 7,
    "latest": {
     "date": "2026-11-10",
