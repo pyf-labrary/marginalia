@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-12",
+ "generated": "2026-11-13",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 77.0,
-   "days": 28,
+   "score": 71.71,
+   "days": 27,
    "latest": {
     "date": "2026-11-11",
     "url": "/posts/2026-11-10-ai-morning-post/#product",
@@ -55,67 +55,20 @@
    ]
   },
   {
-   "name": "Anthropic",
-   "score": 43.23,
-   "days": 29,
-   "latest": {
-    "date": "2026-11-12",
-    "url": "/posts/2026-11-11-ai-morning-post/#company",
-    "title": "Anthropic 路演：七位联创人均套现 2.5 亿美元"
-   },
-   "links": [
-    {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#company",
-     "title": "Anthropic 路演：七位联创人均套现 2.5 亿美元"
-    },
-    {
-     "date": "2026-11-11",
-     "url": "/posts/2026-11-10-ai-morning-post/#model-release",
-     "title": "Anthropic 双版本：把安全策略做成产品线"
-    },
-    {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#model-release",
-     "title": "Anthropic 一次发两个模型：Fable 5.2 与 Mythos 5.2"
-    },
-    {
-     "date": "2026-11-09",
-     "url": "/posts/2026-11-08-ai-morning-post/#company",
-     "title": "Anthropic 顶着科技股抛售推进感恩节前 IPO"
-    },
-    {
-     "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#model-release",
-     "title": "传 Anthropic 内部模型领先 Opus 5.5 三个月"
-    },
-    {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#company",
-     "title": "Anthropic 下周启动 IPO 路演，高估值遇阻"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "/posts/2026-11-04-ai-morning-post/#company",
-     "title": "Anthropic 的算力账本：越卖越不赚钱"
-    },
-    {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#company",
-     "title": "Anthropic 把 RSI 写进招股书"
-    }
-   ]
-  },
-  {
    "name": "OpenAI",
-   "score": 43.0,
+   "score": 44.16,
    "days": 30,
    "latest": {
-    "date": "2026-11-12",
-    "url": "/posts/2026-11-11-ai-morning-post/#company",
-    "title": "OpenAI 单季营收首次破 100 亿美元"
+    "date": "2026-11-13",
+    "url": "/posts/2026-11-12-ai-morning-post/#company",
+    "title": "台积电拟向 Anthropic 与 OpenAI 各投 10 亿美元"
    },
    "links": [
+    {
+     "date": "2026-11-13",
+     "url": "/posts/2026-11-12-ai-morning-post/#company",
+     "title": "台积电拟向 Anthropic 与 OpenAI 各投 10 亿美元"
+    },
     {
      "date": "2026-11-12",
      "url": "/posts/2026-11-11-ai-morning-post/#company",
@@ -150,24 +103,76 @@
      "date": "2026-11-06",
      "url": "/posts/2026-11-05-ai-morning-post/#company",
      "title": "Brockman：OpenAI 最快 2027 年具备 IPO 条件"
+    }
+   ]
+  },
+  {
+   "name": "Anthropic",
+   "score": 43.39,
+   "days": 29,
+   "latest": {
+    "date": "2026-11-13",
+    "url": "/posts/2026-11-12-ai-morning-post/#company",
+    "title": "Anthropic 启动 IPO 路演，估值缩水约 6000 亿美元"
+   },
+   "links": [
+    {
+     "date": "2026-11-13",
+     "url": "/posts/2026-11-12-ai-morning-post/#company",
+     "title": "Anthropic 启动 IPO 路演，估值缩水约 6000 亿美元"
+    },
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#company",
+     "title": "Anthropic 路演：七位联创人均套现 2.5 亿美元"
+    },
+    {
+     "date": "2026-11-11",
+     "url": "/posts/2026-11-10-ai-morning-post/#model-release",
+     "title": "Anthropic 双版本：把安全策略做成产品线"
+    },
+    {
+     "date": "2026-11-10",
+     "url": "/posts/2026-11-09-ai-morning-post/#model-release",
+     "title": "Anthropic 一次发两个模型：Fable 5.2 与 Mythos 5.2"
+    },
+    {
+     "date": "2026-11-09",
+     "url": "/posts/2026-11-08-ai-morning-post/#company",
+     "title": "Anthropic 顶着科技股抛售推进感恩节前 IPO"
+    },
+    {
+     "date": "2026-11-08",
+     "url": "/posts/2026-11-07-ai-morning-post/#model-release",
+     "title": "传 Anthropic 内部模型领先 Opus 5.5 三个月"
+    },
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#company",
+     "title": "Anthropic 下周启动 IPO 路演，高估值遇阻"
     },
     {
      "date": "2026-11-05",
      "url": "/posts/2026-11-04-ai-morning-post/#company",
-     "title": "OpenAI 买下 Pierre，目标是版本控制层"
+     "title": "Anthropic 的算力账本：越卖越不赚钱"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 20.35,
+   "score": 19.94,
    "days": 23,
    "latest": {
-    "date": "2026-11-12",
-    "url": "/posts/2026-11-11-ai-morning-post/#product",
-    "title": "Claude 杀入办公套件：从代写到代你出席"
+    "date": "2026-11-13",
+    "url": "/posts/2026-11-12-ai-morning-post/#product",
+    "title": "Claude 坐进会议室，办公套件的墙开始松"
    },
    "links": [
+    {
+     "date": "2026-11-13",
+     "url": "/posts/2026-11-12-ai-morning-post/#product",
+     "title": "Claude 坐进会议室，办公套件的墙开始松"
+    },
     {
      "date": "2026-11-12",
      "url": "/posts/2026-11-11-ai-morning-post/#product",
@@ -202,11 +207,6 @@
      "date": "2026-11-04",
      "url": "/posts/2026-11-03-ai-morning-post/#product",
      "title": "零 Rust 经验的团队，用 Claude 重写了核心 API"
-    },
-    {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#company",
-     "title": "Anthropic 再收紧：禁止 Claude 逆向与克隆游戏"
     }
    ]
   },
@@ -215,11 +215,16 @@
    "score": 14.45,
    "days": 22,
    "latest": {
-    "date": "2026-11-11",
-    "url": "/posts/2026-11-10-ai-morning-post/#product",
-    "title": "Meta 的 Muse 上了手表，语音成了主入口"
+    "date": "2026-11-13",
+    "url": "/posts/2026-11-12-ai-morning-post/#opensource",
+    "title": "Meta 开源 astryx，设计系统开始面向 agent"
    },
    "links": [
+    {
+     "date": "2026-11-13",
+     "url": "/posts/2026-11-12-ai-morning-post/#opensource",
+     "title": "Meta 开源 astryx，设计系统开始面向 agent"
+    },
     {
      "date": "2026-11-11",
      "url": "/posts/2026-11-10-ai-morning-post/#product",
@@ -254,17 +259,12 @@
      "date": "2026-10-31",
      "url": "/posts/2026-10-30-ai-morning-post/#product",
      "title": "Meta 低调上线 AI 时尚应用 Style Sketch"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#product",
-     "title": "Meta 低调上线 AI 穿搭应用 Style Sketch"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 10.26,
+   "score": 9.65,
    "days": 13,
    "latest": {
     "date": "2026-11-12",
@@ -316,7 +316,7 @@
   },
   {
    "name": "算力",
-   "score": 8.61,
+   "score": 8.06,
    "days": 14,
    "latest": {
     "date": "2026-11-08",
@@ -367,8 +367,60 @@
    ]
   },
   {
+   "name": "百度",
+   "score": 7.9,
+   "days": 10,
+   "latest": {
+    "date": "2026-11-13",
+    "url": "/posts/2026-11-12-ai-morning-post/#model-release",
+    "title": "百度文心开源：快、省、开放权重"
+   },
+   "links": [
+    {
+     "date": "2026-11-13",
+     "url": "/posts/2026-11-12-ai-morning-post/#model-release",
+     "title": "百度文心开源：快、省、开放权重"
+    },
+    {
+     "date": "2026-11-11",
+     "url": "/posts/2026-11-10-ai-morning-post/#research",
+     "title": "百度 ERNIE Evolve：自动科研系统刷新公开纪录"
+    },
+    {
+     "date": "2026-11-10",
+     "url": "/posts/2026-11-09-ai-morning-post/#research",
+     "title": "百度披露 ERNIE Evolve：自动研究进入产品研发链条"
+    },
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#model-release",
+     "title": "百度开源 ERNIE 5.5 Flash Base：开源的是“基础”"
+    },
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#research",
+     "title": "百度把世界模型开上路"
+    },
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#product",
+     "title": "百度 APP 四项 AI 升级，搜索 API 打到 4.9 元"
+    },
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited-OCR：长文档一次解析"
+    },
+    {
+     "date": "2026-10-28",
+     "url": "/posts/2026-10-27-ai-morning-post/#opensource",
+     "title": "百度开源 Unlimited OCR 2：一次解析任意页数文档"
+    }
+   ]
+  },
+  {
    "name": "世界模型",
-   "score": 8.13,
+   "score": 7.74,
    "days": 10,
    "latest": {
     "date": "2026-11-12",
@@ -420,7 +472,7 @@
   },
   {
    "name": "芯片",
-   "score": 7.97,
+   "score": 7.58,
    "days": 9,
    "latest": {
     "date": "2026-11-12",
@@ -471,9 +523,61 @@
    ]
   },
   {
+   "name": "Agent Skills",
+   "score": 7.29,
+   "days": 11,
+   "latest": {
+    "date": "2026-11-13",
+    "url": "/posts/2026-11-12-ai-morning-post/#opensource",
+    "title": "Anthropic 公开 Agent Skills 实现代码"
+   },
+   "links": [
+    {
+     "date": "2026-11-13",
+     "url": "/posts/2026-11-12-ai-morning-post/#opensource",
+     "title": "Anthropic 公开 Agent Skills 实现代码"
+    },
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#opensource",
+     "title": "Anthropic 开源 Agent Skills 仓库，冲上热榜"
+    },
+    {
+     "date": "2026-11-10",
+     "url": "/posts/2026-11-09-ai-morning-post/#opensource",
+     "title": "Anthropic 开源 Agent Skills 仓库"
+    },
+    {
+     "date": "2026-11-08",
+     "url": "/posts/2026-11-07-ai-morning-post/#opensource",
+     "title": "谷歌开源 Agent Skills，把自己整个产品栈交出去"
+    },
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 集合"
+    },
+    {
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#opensource",
+     "title": "Anthropic 公开 Agent Skills 官方仓库"
+    },
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
+     "title": "Agent Skills 成为 GitHub 新风口"
+    },
+    {
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#opensource",
+     "title": "Anthropic 公开 Agent Skills 官方仓库"
+    }
+   ]
+  },
+  {
    "name": "Google",
-   "score": 7.58,
-   "days": 13,
+   "score": 7.06,
+   "days": 12,
    "latest": {
     "date": "2026-11-10",
     "url": "/posts/2026-11-09-ai-morning-post/#company",
@@ -523,112 +627,8 @@
    ]
   },
   {
-   "name": "百度",
-   "score": 7.26,
-   "days": 9,
-   "latest": {
-    "date": "2026-11-11",
-    "url": "/posts/2026-11-10-ai-morning-post/#research",
-    "title": "百度 ERNIE Evolve：自动科研系统刷新公开纪录"
-   },
-   "links": [
-    {
-     "date": "2026-11-11",
-     "url": "/posts/2026-11-10-ai-morning-post/#research",
-     "title": "百度 ERNIE Evolve：自动科研系统刷新公开纪录"
-    },
-    {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#research",
-     "title": "百度披露 ERNIE Evolve：自动研究进入产品研发链条"
-    },
-    {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#model-release",
-     "title": "百度开源 ERNIE 5.5 Flash Base：开源的是“基础”"
-    },
-    {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#research",
-     "title": "百度把世界模型开上路"
-    },
-    {
-     "date": "2026-10-31",
-     "url": "/posts/2026-10-30-ai-morning-post/#product",
-     "title": "百度 APP 四项 AI 升级，搜索 API 打到 4.9 元"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited-OCR：长文档一次解析"
-    },
-    {
-     "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited OCR 2：一次解析任意页数文档"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited-OCR，主打一次性长文档解析"
-    }
-   ]
-  },
-  {
-   "name": "Agent Skills",
-   "score": 6.68,
-   "days": 11,
-   "latest": {
-    "date": "2026-11-12",
-    "url": "/posts/2026-11-11-ai-morning-post/#opensource",
-    "title": "Anthropic 开源 Agent Skills 仓库，冲上热榜"
-   },
-   "links": [
-    {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#opensource",
-     "title": "Anthropic 开源 Agent Skills 仓库，冲上热榜"
-    },
-    {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#opensource",
-     "title": "Anthropic 开源 Agent Skills 仓库"
-    },
-    {
-     "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#opensource",
-     "title": "谷歌开源 Agent Skills，把自己整个产品栈交出去"
-    },
-    {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 集合"
-    },
-    {
-     "date": "2026-11-03",
-     "url": "/posts/2026-11-02-ai-morning-post/#opensource",
-     "title": "Anthropic 公开 Agent Skills 官方仓库"
-    },
-    {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
-     "title": "Agent Skills 成为 GitHub 新风口"
-    },
-    {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#opensource",
-     "title": "Anthropic 公开 Agent Skills 官方仓库"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#opensource",
-     "title": "Anthropic 把 Agent Skills 交给基金会"
-    }
-   ]
-  },
-  {
    "name": "Muse",
-   "score": 5.77,
+   "score": 5.55,
    "days": 5,
    "latest": {
     "date": "2026-11-11",
@@ -665,7 +665,7 @@
   },
   {
    "name": "Vercel",
-   "score": 5.71,
+   "score": 5.42,
    "days": 9,
    "latest": {
     "date": "2026-11-11",
@@ -716,49 +716,54 @@
    ]
   },
   {
-   "name": "NVIDIA",
-   "score": 5.35,
-   "days": 7,
+   "name": "DeepSeek",
+   "score": 5.1,
+   "days": 9,
    "latest": {
-    "date": "2026-11-10",
-    "url": "/posts/2026-11-09-ai-morning-post/#research",
-    "title": "NVIDIA 在 CoRL 展示精细操作仿真"
+    "date": "2026-11-13",
+    "url": "/posts/2026-11-12-ai-morning-post/#product",
+    "title": "豆包工作接入 Kimi、GLM、DeepSeek：模型变成货架商品"
    },
    "links": [
     {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#research",
-     "title": "NVIDIA 在 CoRL 展示精细操作仿真"
+     "date": "2026-11-13",
+     "url": "/posts/2026-11-12-ai-morning-post/#product",
+     "title": "豆包工作接入 Kimi、GLM、DeepSeek：模型变成货架商品"
     },
     {
-     "date": "2026-11-09",
-     "url": "/posts/2026-11-08-ai-morning-post/#opensource",
-     "title": "NVIDIA 给 Agent 加一层语义骨架"
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#company",
+     "title": "DeepSeek 融资细节曝光：vivo、美团在列"
     },
     {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#opensource",
-     "title": "NVIDIA 开源 Model-Optimizer：优化技术收进一个盒子"
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
+     "title": "DeepSeek 开源 Router-Worker 编程 Agent"
     },
     {
-     "date": "2026-11-05",
-     "url": "/posts/2026-11-04-ai-morning-post/#research",
-     "title": "NVIDIA 三项优化让单机 MoE 推理快 42.5%"
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
+     "title": "DeepSeek 开源 DeepInfer：把推理优化做成公共品"
     },
     {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#model-release",
-     "title": "NVIDIA 万圣节放出 Nemotron 主题模型"
+     "date": "2026-10-27",
+     "url": "/posts/2026-10-26-ai-morning-post/#opensource",
+     "title": "1. DeepSeek 开源 DeepInfer：把运行链路也交出来"
     },
     {
-     "date": "2026-10-19",
-     "url": "/posts/2026-10-18-ai-morning-post/#research",
-     "title": "NVIDIA 结构化数据模型：零训练做表格预测"
+     "date": "2026-10-24",
+     "url": "/posts/2026-10-23-ai-morning-post/#company",
+     "title": "DeepSeek 拿近千亿，出钱的是产业资本"
     },
     {
-     "date": "2026-10-15",
-     "url": "/posts/2026-10-14-ai-morning-post/#opensource",
-     "title": "NVIDIA 开源 PersonaPlex：给全双工语音加上\"人设\""
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#company",
+     "title": "DeepSeek 被曝融资 150 亿美元"
+    },
+    {
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#opinion",
+     "title": "中国抗议美国封杀 DeepSeek，国内仍在屏蔽三家"
     }
    ]
   }
