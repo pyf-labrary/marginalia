@@ -1,17 +1,22 @@
 {
- "generated": "2026-11-13",
+ "generated": "2026-11-14",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 71.71,
+   "score": 68.84,
    "days": 27,
    "latest": {
-    "date": "2026-11-11",
-    "url": "/posts/2026-11-10-ai-morning-post/#product",
-    "title": "千问办公 2.0：多人和多个 Agent 同处一个工作空间"
+    "date": "2026-11-14",
+    "url": "/posts/2026-11-13-ai-morning-post/#model-release",
+    "title": "Google 发布 Gemini 4 Hydrogen，主打高速智能体"
    },
    "links": [
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#model-release",
+     "title": "Google 发布 Gemini 4 Hydrogen，主打高速智能体"
+    },
     {
      "date": "2026-11-11",
      "url": "/posts/2026-11-10-ai-morning-post/#product",
@@ -46,24 +51,24 @@
      "date": "2026-11-05",
      "url": "/posts/2026-11-04-ai-morning-post/#product",
      "title": "DeepMind 用 Antigravity 做化学信息学智能体"
-    },
-    {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#model-release",
-     "title": "Soniox STT v6：让语音 Agent 边听边说"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 44.16,
+   "score": 44.13,
    "days": 30,
    "latest": {
-    "date": "2026-11-13",
-    "url": "/posts/2026-11-12-ai-morning-post/#company",
-    "title": "台积电拟向 Anthropic 与 OpenAI 各投 10 亿美元"
+    "date": "2026-11-14",
+    "url": "/posts/2026-11-13-ai-morning-post/#product",
+    "title": "Daybreak：OpenAI 进入网络安全市场"
    },
    "links": [
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#product",
+     "title": "Daybreak：OpenAI 进入网络安全市场"
+    },
     {
      "date": "2026-11-13",
      "url": "/posts/2026-11-12-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-11-07",
      "url": "/posts/2026-11-06-ai-morning-post/#company",
      "title": "OpenAI 再融 110 亿美元，估值站上 1.25 万亿"
-    },
-    {
-     "date": "2026-11-06",
-     "url": "/posts/2026-11-05-ai-morning-post/#company",
-     "title": "Brockman：OpenAI 最快 2027 年具备 IPO 条件"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 43.39,
+   "score": 41.48,
    "days": 29,
    "latest": {
-    "date": "2026-11-13",
-    "url": "/posts/2026-11-12-ai-morning-post/#company",
-    "title": "Anthropic 启动 IPO 路演，估值缩水约 6000 亿美元"
+    "date": "2026-11-14",
+    "url": "/posts/2026-11-13-ai-morning-post/#company",
+    "title": "Anthropic IPO获6倍超额认购"
    },
    "links": [
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#company",
+     "title": "Anthropic IPO获6倍超额认购"
+    },
     {
      "date": "2026-11-13",
      "url": "/posts/2026-11-12-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-11-07",
      "url": "/posts/2026-11-06-ai-morning-post/#company",
      "title": "Anthropic 下周启动 IPO 路演，高估值遇阻"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "/posts/2026-11-04-ai-morning-post/#company",
-     "title": "Anthropic 的算力账本：越卖越不赚钱"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 19.94,
+   "score": 19.58,
    "days": 23,
    "latest": {
-    "date": "2026-11-13",
-    "url": "/posts/2026-11-12-ai-morning-post/#product",
-    "title": "Claude 坐进会议室，办公套件的墙开始松"
+    "date": "2026-11-14",
+    "url": "/posts/2026-11-13-ai-morning-post/#product",
+    "title": "Claude for Manufacturing：把模型接进工厂软件"
    },
    "links": [
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#product",
+     "title": "Claude for Manufacturing：把模型接进工厂软件"
+    },
     {
      "date": "2026-11-13",
      "url": "/posts/2026-11-12-ai-morning-post/#product",
@@ -202,18 +207,13 @@
      "date": "2026-11-06",
      "url": "/posts/2026-11-05-ai-morning-post/#company",
      "title": "Claude Code 产品负责人 Cat Wu 跳槽 OpenAI"
-    },
-    {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#product",
-     "title": "零 Rust 经验的团队，用 Claude 重写了核心 API"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 14.45,
-   "days": 22,
+   "score": 13.45,
+   "days": 21,
    "latest": {
     "date": "2026-11-13",
     "url": "/posts/2026-11-12-ai-morning-post/#opensource",
@@ -264,7 +264,7 @@
   },
   {
    "name": "ChatGPT",
-   "score": 9.65,
+   "score": 9.03,
    "days": 13,
    "latest": {
     "date": "2026-11-12",
@@ -315,19 +315,133 @@
    ]
   },
   {
-   "name": "算力",
-   "score": 8.06,
-   "days": 14,
+   "name": "Google",
+   "score": 8.58,
+   "days": 12,
    "latest": {
-    "date": "2026-11-08",
-    "url": "/posts/2026-11-07-ai-morning-post/#company",
-    "title": "微软收尾 Oracle 的 AI 算力租约"
+    "date": "2026-11-14",
+    "url": "/posts/2026-11-13-ai-morning-post/#model-release",
+    "title": "Google 发布 Gemini 4 Hydrogen，主打高速智能体"
    },
    "links": [
     {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#model-release",
+     "title": "Google 发布 Gemini 4 Hydrogen，主打高速智能体"
+    },
+    {
+     "date": "2026-11-10",
+     "url": "/posts/2026-11-09-ai-morning-post/#company",
+     "title": "Google 一年四款 TPU，开始按场景切分芯片"
+    },
+    {
+     "date": "2026-11-09",
+     "url": "/posts/2026-11-08-ai-morning-post/#product",
+     "title": "Google 的编码 Agent：先写规格，再写代码"
+    },
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 集合"
+    },
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#research",
+     "title": "Google 让视频 AI 学会“该出手时才出手”"
+    },
+    {
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#product",
+     "title": "Google 首个太空数据中心上线，在轨跑 Gemma 4 写诗"
+    },
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#company",
+     "title": "Reddit 转向强制登录，反击 Google AI 搜索截流"
+    },
+    {
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#product",
+     "title": "Google 把 Android 交给第三方 Agent"
+    }
+   ]
+  },
+  {
+   "name": "世界模型",
+   "score": 8.35,
+   "days": 11,
+   "latest": {
+    "date": "2026-11-14",
+    "url": "/posts/2026-11-13-ai-morning-post/#research",
+    "title": "40 亿参数，六项评测第一：西湖大学押注“概念世界模型”"
+   },
+   "links": [
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#research",
+     "title": "40 亿参数，六项评测第一：西湖大学押注“概念世界模型”"
+    },
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#opensource",
+     "title": "MBZUAI 开源 PAN 2：290 亿参数的世界模型"
+    },
+    {
+     "date": "2026-11-09",
+     "url": "/posts/2026-11-08-ai-morning-post/#opinion",
+     "title": "资本正在撤离「世界模型」"
+    },
+    {
      "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#company",
-     "title": "微软收尾 Oracle 的 AI 算力租约"
+     "url": "/posts/2026-11-07-ai-morning-post/#model-release",
+     "title": "中国版 Cosmos 再交卷：世界模型仍缺评测口径"
+    },
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#research",
+     "title": "百度把世界模型开上路"
+    },
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#company",
+     "title": "西湖大学成立世界模型研究中心"
+    },
+    {
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#research",
+     "title": "世界模型第一次进了芯片设计流程"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#model-release",
+     "title": "Genie 4：世界模型开始有声音，也开始能对话"
+    }
+   ]
+  },
+  {
+   "name": "芯片",
+   "score": 8.19,
+   "days": 10,
+   "latest": {
+    "date": "2026-11-14",
+    "url": "/posts/2026-11-13-ai-morning-post/#research",
+    "title": "禁售芯片的指纹，出现在最强模型里"
+   },
+   "links": [
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#research",
+     "title": "禁售芯片的指纹，出现在最强模型里"
+    },
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#company",
+     "title": "英国 Fractile 融资 7.2 亿美元，押注 AI 专用芯片"
+    },
+    {
+     "date": "2026-11-10",
+     "url": "/posts/2026-11-09-ai-morning-post/#company",
+     "title": "Google 一年四款 TPU，开始按场景切分芯片"
     },
     {
      "date": "2026-11-07",
@@ -337,39 +451,29 @@
     {
      "date": "2026-11-05",
      "url": "/posts/2026-11-04-ai-morning-post/#company",
-     "title": "Anthropic 的算力账本：越卖越不赚钱"
+     "title": "后摩智能完成数十亿元 B 轮，端侧芯片进入兑现期"
     },
     {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#product",
-     "title": "双 11 卖词元：算力第一次像消费品"
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#research",
+     "title": "世界模型第一次进了芯片设计流程"
     },
     {
-     "date": "2026-11-03",
-     "url": "/posts/2026-11-02-ai-morning-post/#model-release",
-     "title": "美团 LongCat-2.5：1.6 万亿参数跑在国产算力上"
+     "date": "2026-10-30",
+     "url": "/posts/2026-10-29-ai-morning-post/#opinion",
+     "title": "针对黄仁勋的间谍图谋与芯片管制的执行面"
     },
     {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#company",
-     "title": "OpenAI 考虑把数据中心改名为“AI 算力校园”"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#company",
-     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
-    },
-    {
-     "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#product",
-     "title": "汽车行业 AI 基座：算力与数据开始“公用事业化”"
+     "date": "2026-10-28",
+     "url": "/posts/2026-10-27-ai-morning-post/#company",
+     "title": "报道称 OpenAI 计划采购谷歌 AI 芯片"
     }
    ]
   },
   {
    "name": "百度",
-   "score": 7.9,
-   "days": 10,
+   "score": 7.48,
+   "days": 9,
    "latest": {
     "date": "2026-11-13",
     "url": "/posts/2026-11-12-ai-morning-post/#model-release",
@@ -419,76 +523,19 @@
    ]
   },
   {
-   "name": "世界模型",
-   "score": 7.74,
-   "days": 10,
+   "name": "算力",
+   "score": 7.45,
+   "days": 13,
    "latest": {
-    "date": "2026-11-12",
-    "url": "/posts/2026-11-11-ai-morning-post/#opensource",
-    "title": "MBZUAI 开源 PAN 2：290 亿参数的世界模型"
+    "date": "2026-11-08",
+    "url": "/posts/2026-11-07-ai-morning-post/#company",
+    "title": "微软收尾 Oracle 的 AI 算力租约"
    },
    "links": [
-    {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#opensource",
-     "title": "MBZUAI 开源 PAN 2：290 亿参数的世界模型"
-    },
-    {
-     "date": "2026-11-09",
-     "url": "/posts/2026-11-08-ai-morning-post/#opinion",
-     "title": "资本正在撤离「世界模型」"
-    },
     {
      "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#model-release",
-     "title": "中国版 Cosmos 再交卷：世界模型仍缺评测口径"
-    },
-    {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#research",
-     "title": "百度把世界模型开上路"
-    },
-    {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#company",
-     "title": "西湖大学成立世界模型研究中心"
-    },
-    {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#research",
-     "title": "世界模型第一次进了芯片设计流程"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#model-release",
-     "title": "Genie 4：世界模型开始有声音，也开始能对话"
-    },
-    {
-     "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#model-release",
-     "title": "Genie 4：世界模型从「能看」到「能操控」"
-    }
-   ]
-  },
-  {
-   "name": "芯片",
-   "score": 7.58,
-   "days": 9,
-   "latest": {
-    "date": "2026-11-12",
-    "url": "/posts/2026-11-11-ai-morning-post/#company",
-    "title": "英国 Fractile 融资 7.2 亿美元，押注 AI 专用芯片"
-   },
-   "links": [
-    {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#company",
-     "title": "英国 Fractile 融资 7.2 亿美元，押注 AI 专用芯片"
-    },
-    {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#company",
-     "title": "Google 一年四款 TPU，开始按场景切分芯片"
+     "url": "/posts/2026-11-07-ai-morning-post/#company",
+     "title": "微软收尾 Oracle 的 AI 算力租约"
     },
     {
      "date": "2026-11-07",
@@ -498,33 +545,38 @@
     {
      "date": "2026-11-05",
      "url": "/posts/2026-11-04-ai-morning-post/#company",
-     "title": "后摩智能完成数十亿元 B 轮，端侧芯片进入兑现期"
+     "title": "Anthropic 的算力账本：越卖越不赚钱"
     },
     {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#research",
-     "title": "世界模型第一次进了芯片设计流程"
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#product",
+     "title": "双 11 卖词元：算力第一次像消费品"
     },
     {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#opinion",
-     "title": "针对黄仁勋的间谍图谋与芯片管制的执行面"
+     "date": "2026-11-03",
+     "url": "/posts/2026-11-02-ai-morning-post/#model-release",
+     "title": "美团 LongCat-2.5：1.6 万亿参数跑在国产算力上"
     },
     {
-     "date": "2026-10-28",
-     "url": "/posts/2026-10-27-ai-morning-post/#company",
-     "title": "报道称 OpenAI 计划采购谷歌 AI 芯片"
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#company",
+     "title": "OpenAI 考虑把数据中心改名为“AI 算力校园”"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#company",
+     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
     },
     {
      "date": "2026-10-25",
-     "url": "/posts/2026-10-24-ai-morning-post/#company",
-     "title": "亿铸科技完成超 10 亿元融资，3D DRAM 存算一体芯片已流片"
+     "url": "/posts/2026-10-24-ai-morning-post/#product",
+     "title": "汽车行业 AI 基座：算力与数据开始“公用事业化”"
     }
    ]
   },
   {
    "name": "Agent Skills",
-   "score": 7.29,
+   "score": 6.94,
    "days": 11,
    "latest": {
     "date": "2026-11-13",
@@ -575,60 +627,112 @@
    ]
   },
   {
-   "name": "Google",
-   "score": 7.06,
-   "days": 12,
+   "name": "Gemini",
+   "score": 5.74,
+   "days": 8,
    "latest": {
-    "date": "2026-11-10",
-    "url": "/posts/2026-11-09-ai-morning-post/#company",
-    "title": "Google 一年四款 TPU，开始按场景切分芯片"
+    "date": "2026-11-14",
+    "url": "/posts/2026-11-13-ai-morning-post/#product",
+    "title": "Gemini 智能眼镜 395 美元起，强调隐私"
    },
    "links": [
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#product",
+     "title": "Gemini 智能眼镜 395 美元起，强调隐私"
+    },
+    {
+     "date": "2026-11-13",
+     "url": "/posts/2026-11-12-ai-morning-post/#product",
+     "title": "Gemini 眼镜 395 美元开卖，隐私被摆到台前"
+    },
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#opinion",
+     "title": "13 岁女孩向 Gemini 倾诉，监控数周未预警"
+    },
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#opinion",
+     "title": "皮查伊：算力先留给 Gemini，云生意往后排"
+    },
+    {
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#product",
+     "title": "Google 把 Gemini 和搜索交了出去"
+    },
+    {
+     "date": "2026-10-23",
+     "url": "/posts/2026-10-22-ai-morning-post/#product",
+     "title": "谷歌为每个 Gemini 代理配独立微 VM"
+    },
+    {
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#product",
+     "title": "Gemini 个人上下文进车机"
+    },
+    {
+     "date": "2026-10-19",
+     "url": "/posts/2026-10-18-ai-morning-post/#model-release",
+     "title": "四个 Gemini agent 通关《我的世界》：长程协作的压力测试"
+    }
+   ]
+  },
+  {
+   "name": "TPU",
+   "score": 5.65,
+   "days": 8,
+   "latest": {
+    "date": "2026-11-14",
+    "url": "/posts/2026-11-13-ai-morning-post/#opensource",
+    "title": "PyTorch 原生跑上 TPU"
+   },
+   "links": [
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#opensource",
+     "title": "PyTorch 原生跑上 TPU"
+    },
+    {
+     "date": "2026-11-13",
+     "url": "/posts/2026-11-12-ai-morning-post/#opensource",
+     "title": "PyTorch 原生跑上 TPU，选框架和选硬件解耦"
+    },
+    {
+     "date": "2026-11-11",
+     "url": "/posts/2026-11-10-ai-morning-post/#company",
+     "title": "谷歌 TPU 路线开始分化"
+    },
     {
      "date": "2026-11-10",
      "url": "/posts/2026-11-09-ai-morning-post/#company",
      "title": "Google 一年四款 TPU，开始按场景切分芯片"
     },
     {
-     "date": "2026-11-09",
-     "url": "/posts/2026-11-08-ai-morning-post/#product",
-     "title": "Google 的编码 Agent：先写规格，再写代码"
-    },
-    {
      "date": "2026-11-07",
      "url": "/posts/2026-11-06-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 集合"
-    },
-    {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#research",
-     "title": "Google 让视频 AI 学会“该出手时才出手”"
-    },
-    {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#product",
-     "title": "Google 首个太空数据中心上线，在轨跑 Gemma 4 写诗"
+     "title": "TorchTPU 开源：PyTorch 原生支持 TPU"
     },
     {
      "date": "2026-10-31",
-     "url": "/posts/2026-10-30-ai-morning-post/#company",
-     "title": "Reddit 转向强制登录，反击 Google AI 搜索截流"
+     "url": "/posts/2026-10-30-ai-morning-post/#product",
+     "title": "谷歌首颗数据中心卫星上线，TPU 在轨跑 Gemma 4"
     },
     {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#product",
-     "title": "Google 把 Android 交给第三方 Agent"
+     "date": "2026-10-24",
+     "url": "/posts/2026-10-23-ai-morning-post/#research",
+     "title": "TorchTPU：Google 与 Meta 让 PyTorch 原生跑上 TPU"
     },
     {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#product",
-     "title": "Google 把 Gemini 和搜索交了出去"
+     "date": "2026-10-22",
+     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
+     "title": "Google 开源 TorchTPU，PyTorch 原生跑上 TPU"
     }
    ]
   },
   {
    "name": "Muse",
-   "score": 5.55,
+   "score": 5.32,
    "days": 5,
    "latest": {
     "date": "2026-11-11",
@@ -660,110 +764,6 @@
      "date": "2026-10-29",
      "url": "/posts/2026-10-28-ai-morning-post/#company",
      "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
-    }
-   ]
-  },
-  {
-   "name": "Vercel",
-   "score": 5.42,
-   "days": 9,
-   "latest": {
-    "date": "2026-11-11",
-    "url": "/posts/2026-11-10-ai-morning-post/#opensource",
-    "title": "Vercel 的 agent-browser：给 Agent 一个浏览器 CLI"
-   },
-   "links": [
-    {
-     "date": "2026-11-11",
-     "url": "/posts/2026-11-10-ai-morning-post/#opensource",
-     "title": "Vercel 的 agent-browser：给 Agent 一个浏览器 CLI"
-    },
-    {
-     "date": "2026-11-09",
-     "url": "/posts/2026-11-08-ai-morning-post/#opensource",
-     "title": "Vercel 把浏览器做成 Agent 的 CLI"
-    },
-    {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#opensource",
-     "title": "Vercel 开源 agent-desktop 与 agent-browser"
-    },
-    {
-     "date": "2026-11-06",
-     "url": "/posts/2026-11-05-ai-morning-post/#opensource",
-     "title": "Vercel agent-desktop：把桌面操作封装成工具"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "/posts/2026-11-04-ai-morning-post/#opensource",
-     "title": "Vercel Labs 的 fx：用 Zig 写嵌入式智能体"
-    },
-    {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#opensource",
-     "title": "Vercel Labs 开源 agent-desktop，让智能体操作桌面"
-    },
-    {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#opensource",
-     "title": "Vercel 让编码智能体不再“一崩全丢”"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#opensource",
-     "title": "Vercel 的 durable-harness：让编码 Agent 崩溃后接着跑"
-    }
-   ]
-  },
-  {
-   "name": "DeepSeek",
-   "score": 5.1,
-   "days": 9,
-   "latest": {
-    "date": "2026-11-13",
-    "url": "/posts/2026-11-12-ai-morning-post/#product",
-    "title": "豆包工作接入 Kimi、GLM、DeepSeek：模型变成货架商品"
-   },
-   "links": [
-    {
-     "date": "2026-11-13",
-     "url": "/posts/2026-11-12-ai-morning-post/#product",
-     "title": "豆包工作接入 Kimi、GLM、DeepSeek：模型变成货架商品"
-    },
-    {
-     "date": "2026-11-03",
-     "url": "/posts/2026-11-02-ai-morning-post/#company",
-     "title": "DeepSeek 融资细节曝光：vivo、美团在列"
-    },
-    {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 Router-Worker 编程 Agent"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
-     "title": "DeepSeek 开源 DeepInfer：把推理优化做成公共品"
-    },
-    {
-     "date": "2026-10-27",
-     "url": "/posts/2026-10-26-ai-morning-post/#opensource",
-     "title": "1. DeepSeek 开源 DeepInfer：把运行链路也交出来"
-    },
-    {
-     "date": "2026-10-24",
-     "url": "/posts/2026-10-23-ai-morning-post/#company",
-     "title": "DeepSeek 拿近千亿，出钱的是产业资本"
-    },
-    {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#company",
-     "title": "DeepSeek 被曝融资 150 亿美元"
-    },
-    {
-     "date": "2026-10-22",
-     "url": "/posts/2026-10-21-ai-morning-post/#opinion",
-     "title": "中国抗议美国封杀 DeepSeek，国内仍在屏蔽三家"
     }
    ]
   }
