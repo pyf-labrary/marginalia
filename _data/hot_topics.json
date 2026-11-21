@@ -1,17 +1,22 @@
 {
- "generated": "2026-11-20",
+ "generated": "2026-11-21",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 66.68,
+   "score": 68.13,
    "days": 26,
    "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#model-release",
-    "title": "Gemini 4 Neon：中端定价，编程 Agent 榜首"
+    "date": "2026-11-21",
+    "url": "/posts/2026-11-20-ai-morning-post/#model-release",
+    "title": "DaisyRose-27B：只做 RL 的编程 Agent，翻倍之后仍是 12%"
    },
    "links": [
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#model-release",
+     "title": "DaisyRose-27B：只做 RL 的编程 Agent，翻倍之后仍是 12%"
+    },
     {
      "date": "2026-11-20",
      "url": "/posts/2026-11-19-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-11-11",
      "url": "/posts/2026-11-10-ai-morning-post/#product",
      "title": "千问办公 2.0：多人和多个 Agent 同处一个工作空间"
-    },
-    {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#model-release",
-     "title": "Meta 把 Agent 的输入价打到每百万 token 10 美分"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 43.26,
+   "score": 42.42,
    "days": 30,
    "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#product",
-    "title": "OpenAI 用 Codex 给 ChatGPT 做性能体检"
+    "date": "2026-11-21",
+    "url": "/posts/2026-11-20-ai-morning-post/#company",
+    "title": "甲骨文称已筹齐履行 OpenAI 合同所需资金"
    },
    "links": [
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#company",
+     "title": "甲骨文称已筹齐履行 OpenAI 合同所需资金"
+    },
     {
      "date": "2026-11-20",
      "url": "/posts/2026-11-19-ai-morning-post/#product",
@@ -98,24 +103,24 @@
      "date": "2026-11-14",
      "url": "/posts/2026-11-13-ai-morning-post/#product",
      "title": "Daybreak：OpenAI 进入网络安全市场"
-    },
-    {
-     "date": "2026-11-13",
-     "url": "/posts/2026-11-12-ai-morning-post/#company",
-     "title": "台积电拟向 Anthropic 与 OpenAI 各投 10 亿美元"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 33.77,
+   "score": 32.45,
    "days": 29,
    "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#company",
-    "title": "Anthropic 首日涨 33%，创始人套现近 20 亿美元"
+    "date": "2026-11-21",
+    "url": "/posts/2026-11-20-ai-morning-post/#company",
+    "title": "Anthropic 登陆纳斯达克，募资约 935 亿美元"
    },
    "links": [
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#company",
+     "title": "Anthropic 登陆纳斯达克，募资约 935 亿美元"
+    },
     {
      "date": "2026-11-20",
      "url": "/posts/2026-11-19-ai-morning-post/#company",
@@ -150,18 +155,13 @@
      "date": "2026-11-14",
      "url": "/posts/2026-11-13-ai-morning-post/#company",
      "title": "Anthropic IPO获6倍超额认购"
-    },
-    {
-     "date": "2026-11-13",
-     "url": "/posts/2026-11-12-ai-morning-post/#company",
-     "title": "Anthropic 启动 IPO 路演，估值缩水约 6000 亿美元"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 18.03,
-   "days": 22,
+   "score": 16.97,
+   "days": 21,
    "latest": {
     "date": "2026-11-20",
     "url": "/posts/2026-11-19-ai-morning-post/#opensource",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Meta",
-   "score": 10.26,
+   "score": 12.55,
    "days": 16,
    "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#company",
-    "title": "Meta 内部聊天曝光：agent Muse 串对话、泄露私人数据"
+    "date": "2026-11-21",
+    "url": "/posts/2026-11-20-ai-morning-post/#company",
+    "title": "AI 数据中心排放创新高，Meta 重审 2030 净零目标"
    },
    "links": [
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#company",
+     "title": "AI 数据中心排放创新高，Meta 重审 2030 净零目标"
+    },
     {
      "date": "2026-11-20",
      "url": "/posts/2026-11-19-ai-morning-post/#company",
@@ -254,17 +259,64 @@
      "date": "2026-11-06",
      "url": "/posts/2026-11-05-ai-morning-post/#company",
      "title": "Meta 收购 Conductor，买的是调度层"
+    }
+   ]
+  },
+  {
+   "name": "世界模型",
+   "score": 9.23,
+   "days": 14,
+   "latest": {
+    "date": "2026-11-21",
+    "url": "/posts/2026-11-20-ai-morning-post/#opensource",
+    "title": "华为云把具身世界模型连同底座一起开源"
+   },
+   "links": [
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#opensource",
+     "title": "华为云把具身世界模型连同底座一起开源"
     },
     {
-     "date": "2026-11-05",
-     "url": "/posts/2026-11-04-ai-morning-post/#company",
-     "title": "Meta 收下 Conductor，买的是并行调度"
+     "date": "2026-11-20",
+     "url": "/posts/2026-11-19-ai-morning-post/#model-release",
+     "title": "Genie 4 开放：世界模型开始有「可组合性」"
+    },
+    {
+     "date": "2026-11-18",
+     "url": "/posts/2026-11-17-ai-morning-post/#research",
+     "title": "智源发布 PhysCapBench：给世界模型一把物理标尺"
+    },
+    {
+     "date": "2026-11-17",
+     "url": "/posts/2026-11-16-ai-morning-post/#opinion",
+     "title": "李飞飞谈世界模型：机器人缺的不是算力"
+    },
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#research",
+     "title": "40 亿参数，六项评测第一：西湖大学押注“概念世界模型”"
+    },
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#opensource",
+     "title": "MBZUAI 开源 PAN 2：290 亿参数的世界模型"
+    },
+    {
+     "date": "2026-11-09",
+     "url": "/posts/2026-11-08-ai-morning-post/#opinion",
+     "title": "资本正在撤离「世界模型」"
+    },
+    {
+     "date": "2026-11-08",
+     "url": "/posts/2026-11-07-ai-morning-post/#model-release",
+     "title": "中国版 Cosmos 再交卷：世界模型仍缺评测口径"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 9.39,
+   "score": 8.84,
    "days": 14,
    "latest": {
     "date": "2026-11-20",
@@ -316,8 +368,8 @@
   },
   {
    "name": "算力",
-   "score": 9.39,
-   "days": 13,
+   "score": 8.81,
+   "days": 12,
    "latest": {
     "date": "2026-11-20",
     "url": "/posts/2026-11-19-ai-morning-post/#model-release",
@@ -368,7 +420,7 @@
   },
   {
    "name": "阿里",
-   "score": 9.16,
+   "score": 8.77,
    "days": 10,
    "latest": {
     "date": "2026-11-20",
@@ -419,61 +471,9 @@
    ]
   },
   {
-   "name": "世界模型",
-   "score": 8.71,
-   "days": 13,
-   "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#model-release",
-    "title": "Genie 4 开放：世界模型开始有「可组合性」"
-   },
-   "links": [
-    {
-     "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#model-release",
-     "title": "Genie 4 开放：世界模型开始有「可组合性」"
-    },
-    {
-     "date": "2026-11-18",
-     "url": "/posts/2026-11-17-ai-morning-post/#research",
-     "title": "智源发布 PhysCapBench：给世界模型一把物理标尺"
-    },
-    {
-     "date": "2026-11-17",
-     "url": "/posts/2026-11-16-ai-morning-post/#opinion",
-     "title": "李飞飞谈世界模型：机器人缺的不是算力"
-    },
-    {
-     "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#research",
-     "title": "40 亿参数，六项评测第一：西湖大学押注“概念世界模型”"
-    },
-    {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#opensource",
-     "title": "MBZUAI 开源 PAN 2：290 亿参数的世界模型"
-    },
-    {
-     "date": "2026-11-09",
-     "url": "/posts/2026-11-08-ai-morning-post/#opinion",
-     "title": "资本正在撤离「世界模型」"
-    },
-    {
-     "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#model-release",
-     "title": "中国版 Cosmos 再交卷：世界模型仍缺评测口径"
-    },
-    {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#research",
-     "title": "百度把世界模型开上路"
-    }
-   ]
-  },
-  {
    "name": "ChatGPT",
-   "score": 8.42,
-   "days": 13,
+   "score": 7.77,
+   "days": 12,
    "latest": {
     "date": "2026-11-20",
     "url": "/posts/2026-11-19-ai-morning-post/#product",
@@ -524,14 +524,19 @@
   },
   {
    "name": "Gemini",
-   "score": 6.94,
+   "score": 7.55,
    "days": 10,
    "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#product",
-    "title": "Gemini 拿到 Mac 的操作权"
+    "date": "2026-11-21",
+    "url": "/posts/2026-11-20-ai-morning-post/#product",
+    "title": "Gemini 开始替你操作 Mac"
    },
    "links": [
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#product",
+     "title": "Gemini 开始替你操作 Mac"
+    },
     {
      "date": "2026-11-20",
      "url": "/posts/2026-11-19-ai-morning-post/#product",
@@ -566,24 +571,24 @@
      "date": "2026-11-04",
      "url": "/posts/2026-11-03-ai-morning-post/#opinion",
      "title": "皮查伊：算力先留给 Gemini，云生意往后排"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#product",
-     "title": "Google 把 Gemini 和搜索交了出去"
     }
    ]
   },
   {
    "name": "Perplexity",
-   "score": 6.81,
-   "days": 7,
+   "score": 7.52,
+   "days": 8,
    "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#research",
-    "title": "Perplexity 把「判断」拆成独立模型"
+    "date": "2026-11-21",
+    "url": "/posts/2026-11-20-ai-morning-post/#product",
+    "title": "Perplexity 用一个端点路由所有模型"
    },
    "links": [
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#product",
+     "title": "Perplexity 用一个端点路由所有模型"
+    },
     {
      "date": "2026-11-20",
      "url": "/posts/2026-11-19-ai-morning-post/#research",
@@ -623,7 +628,7 @@
   },
   {
    "name": "百度",
-   "score": 6.19,
+   "score": 5.81,
    "days": 10,
    "latest": {
     "date": "2026-11-15",
@@ -674,60 +679,55 @@
    ]
   },
   {
-   "name": "Google",
-   "score": 5.74,
-   "days": 11,
+   "name": "Muse",
+   "score": 5.71,
+   "days": 7,
    "latest": {
-    "date": "2026-11-14",
-    "url": "/posts/2026-11-13-ai-morning-post/#model-release",
-    "title": "Google 发布 Gemini 4 Hydrogen，主打高速智能体"
+    "date": "2026-11-21",
+    "url": "/posts/2026-11-20-ai-morning-post/#product",
+    "title": "Meta 的 Muse 把不同用户的对话搞混了"
    },
    "links": [
     {
-     "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#model-release",
-     "title": "Google 发布 Gemini 4 Hydrogen，主打高速智能体"
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#product",
+     "title": "Meta 的 Muse 把不同用户的对话搞混了"
     },
     {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#company",
-     "title": "Google 一年四款 TPU，开始按场景切分芯片"
+     "date": "2026-11-20",
+     "url": "/posts/2026-11-19-ai-morning-post/#company",
+     "title": "Meta 内部聊天曝光：agent Muse 串对话、泄露私人数据"
     },
     {
-     "date": "2026-11-09",
-     "url": "/posts/2026-11-08-ai-morning-post/#product",
-     "title": "Google 的编码 Agent：先写规格，再写代码"
+     "date": "2026-11-11",
+     "url": "/posts/2026-11-10-ai-morning-post/#product",
+     "title": "Meta 的 Muse 上了手表，语音成了主入口"
+    },
+    {
+     "date": "2026-11-08",
+     "url": "/posts/2026-11-07-ai-morning-post/#product",
+     "title": "Meta 给 Muse agent 加了“房间”"
     },
     {
      "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#opensource",
-     "title": "Google 开源 Agent Skills 集合"
+     "url": "/posts/2026-11-06-ai-morning-post/#product",
+     "title": "Meta 给 Muse 加了 Spaces 和视频头像"
     },
     {
-     "date": "2026-11-02",
-     "url": "/posts/2026-11-01-ai-morning-post/#research",
-     "title": "Google 让视频 AI 学会“该出手时才出手”"
+     "date": "2026-11-06",
+     "url": "/posts/2026-11-05-ai-morning-post/#product",
+     "title": "Meta 的 Muse 化身能视频通话了"
     },
     {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#product",
-     "title": "Google 首个太空数据中心上线，在轨跑 Gemma 4 写诗"
-    },
-    {
-     "date": "2026-10-31",
-     "url": "/posts/2026-10-30-ai-morning-post/#company",
-     "title": "Reddit 转向强制登录，反击 Google AI 搜索截流"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#product",
-     "title": "Google 把 Android 交给第三方 Agent"
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#company",
+     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
     }
    ]
   },
   {
    "name": "腾讯",
-   "score": 5.71,
+   "score": 5.45,
    "days": 6,
    "latest": {
     "date": "2026-11-19",
