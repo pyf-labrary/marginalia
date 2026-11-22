@@ -1,17 +1,22 @@
 {
- "generated": "2026-11-21",
+ "generated": "2026-11-22",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 68.13,
+   "score": 68.61,
    "days": 26,
    "latest": {
-    "date": "2026-11-21",
-    "url": "/posts/2026-11-20-ai-morning-post/#model-release",
-    "title": "DaisyRose-27B：只做 RL 的编程 Agent，翻倍之后仍是 12%"
+    "date": "2026-11-22",
+    "url": "/posts/2026-11-21-ai-morning-post/#model-release",
+    "title": "OpenAI 发布 GPT-Live-1.1，语音 Agent 待机费降价"
    },
    "links": [
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#model-release",
+     "title": "OpenAI 发布 GPT-Live-1.1，语音 Agent 待机费降价"
+    },
     {
      "date": "2026-11-21",
      "url": "/posts/2026-11-20-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-11-14",
      "url": "/posts/2026-11-13-ai-morning-post/#model-release",
      "title": "Google 发布 Gemini 4 Hydrogen，主打高速智能体"
-    },
-    {
-     "date": "2026-11-11",
-     "url": "/posts/2026-11-10-ai-morning-post/#product",
-     "title": "千问办公 2.0：多人和多个 Agent 同处一个工作空间"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 42.42,
+   "score": 41.58,
    "days": 30,
    "latest": {
-    "date": "2026-11-21",
-    "url": "/posts/2026-11-20-ai-morning-post/#company",
-    "title": "甲骨文称已筹齐履行 OpenAI 合同所需资金"
+    "date": "2026-11-22",
+    "url": "/posts/2026-11-21-ai-morning-post/#model-release",
+    "title": "OpenAI 发布 GPT-Live-1.1，语音 Agent 待机费降价"
    },
    "links": [
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#model-release",
+     "title": "OpenAI 发布 GPT-Live-1.1，语音 Agent 待机费降价"
+    },
     {
      "date": "2026-11-21",
      "url": "/posts/2026-11-20-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-11-15",
      "url": "/posts/2026-11-14-ai-morning-post/#company",
      "title": "OpenAI 解散机器人团队，赌通用模型能直接驱动本体"
-    },
-    {
-     "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#product",
-     "title": "Daybreak：OpenAI 进入网络安全市场"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 32.45,
+   "score": 31.19,
    "days": 29,
    "latest": {
-    "date": "2026-11-21",
-    "url": "/posts/2026-11-20-ai-morning-post/#company",
-    "title": "Anthropic 登陆纳斯达克，募资约 935 亿美元"
+    "date": "2026-11-22",
+    "url": "/posts/2026-11-21-ai-morning-post/#company",
+    "title": "Anthropic 推进 810 亿美元 IPO"
    },
    "links": [
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#company",
+     "title": "Anthropic 推进 810 亿美元 IPO"
+    },
     {
      "date": "2026-11-21",
      "url": "/posts/2026-11-20-ai-morning-post/#company",
@@ -150,17 +155,12 @@
      "date": "2026-11-15",
      "url": "/posts/2026-11-14-ai-morning-post/#company",
      "title": "Anthropic 冲击创纪录 IPO，Amodei 提前给市场打预防针"
-    },
-    {
-     "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#company",
-     "title": "Anthropic IPO获6倍超额认购"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 16.97,
+   "score": 15.97,
    "days": 21,
    "latest": {
     "date": "2026-11-20",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Meta",
-   "score": 12.55,
+   "score": 12.77,
    "days": 16,
    "latest": {
-    "date": "2026-11-21",
-    "url": "/posts/2026-11-20-ai-morning-post/#company",
-    "title": "AI 数据中心排放创新高，Meta 重审 2030 净零目标"
+    "date": "2026-11-22",
+    "url": "/posts/2026-11-21-ai-morning-post/#company",
+    "title": "Meta 考虑放弃 2030 净零目标，AI 数据中心排放创纪录"
    },
    "links": [
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#company",
+     "title": "Meta 考虑放弃 2030 净零目标，AI 数据中心排放创纪录"
+    },
     {
      "date": "2026-11-21",
      "url": "/posts/2026-11-20-ai-morning-post/#company",
@@ -254,24 +259,24 @@
      "date": "2026-11-07",
      "url": "/posts/2026-11-06-ai-morning-post/#product",
      "title": "Meta 给 Muse 加了 Spaces 和视频头像"
-    },
-    {
-     "date": "2026-11-06",
-     "url": "/posts/2026-11-05-ai-morning-post/#company",
-     "title": "Meta 收购 Conductor，买的是调度层"
     }
    ]
   },
   {
    "name": "世界模型",
-   "score": 9.23,
-   "days": 14,
+   "score": 9.71,
+   "days": 15,
    "latest": {
-    "date": "2026-11-21",
-    "url": "/posts/2026-11-20-ai-morning-post/#opensource",
-    "title": "华为云把具身世界模型连同底座一起开源"
+    "date": "2026-11-22",
+    "url": "/posts/2026-11-21-ai-morning-post/#opensource",
+    "title": "华为云开源具身世界模型 CloudRobo-WM1.2"
    },
    "links": [
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#opensource",
+     "title": "华为云开源具身世界模型 CloudRobo-WM1.2"
+    },
     {
      "date": "2026-11-21",
      "url": "/posts/2026-11-20-ai-morning-post/#opensource",
@@ -306,17 +311,64 @@
      "date": "2026-11-09",
      "url": "/posts/2026-11-08-ai-morning-post/#opinion",
      "title": "资本正在撤离「世界模型」"
+    }
+   ]
+  },
+  {
+   "name": "阿里",
+   "score": 9.39,
+   "days": 11,
+   "latest": {
+    "date": "2026-11-22",
+    "url": "/posts/2026-11-21-ai-morning-post/#model-release",
+    "title": "阿里 Qwen4 Max 上线 Together AI，限时七折"
+   },
+   "links": [
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#model-release",
+     "title": "阿里 Qwen4 Max 上线 Together AI，限时七折"
     },
     {
-     "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#model-release",
-     "title": "中国版 Cosmos 再交卷：世界模型仍缺评测口径"
+     "date": "2026-11-20",
+     "url": "/posts/2026-11-19-ai-morning-post/#company",
+     "title": "阿里云外部收入增 64%，AI 收入连续 13 季三位数增长"
+    },
+    {
+     "date": "2026-11-19",
+     "url": "/posts/2026-11-18-ai-morning-post/#opensource",
+     "title": "阿里 open-code-review：该确定的交给规则，该判断的交给模型"
+    },
+    {
+     "date": "2026-11-18",
+     "url": "/posts/2026-11-17-ai-morning-post/#model-release",
+     "title": "阿里 Qwen4-Max：单任务成本降 58%"
+    },
+    {
+     "date": "2026-11-17",
+     "url": "/posts/2026-11-16-ai-morning-post/#opensource",
+     "title": "阿里开源代码审查工具，混合架构 + 行级注释"
+    },
+    {
+     "date": "2026-11-16",
+     "url": "/posts/2026-11-15-ai-morning-post/#opensource",
+     "title": "阿里开源代码审查工具：确定性流水线 + LLM Agent"
+    },
+    {
+     "date": "2026-11-15",
+     "url": "/posts/2026-11-14-ai-morning-post/#opensource",
+     "title": "阿里开源 open-code-review：规则与模型各干各的"
+    },
+    {
+     "date": "2026-11-13",
+     "url": "/posts/2026-11-12-ai-morning-post/#product",
+     "title": "阿里「快乐虾米」上线 App，AI 音乐走到 C 端"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 8.84,
+   "score": 8.29,
    "days": 14,
    "latest": {
     "date": "2026-11-20",
@@ -368,7 +420,7 @@
   },
   {
    "name": "算力",
-   "score": 8.81,
+   "score": 8.29,
    "days": 12,
    "latest": {
     "date": "2026-11-20",
@@ -419,61 +471,61 @@
    ]
   },
   {
-   "name": "阿里",
-   "score": 8.77,
+   "name": "Gemini",
+   "score": 8.16,
    "days": 10,
    "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#company",
-    "title": "阿里云外部收入增 64%，AI 收入连续 13 季三位数增长"
+    "date": "2026-11-22",
+    "url": "/posts/2026-11-21-ai-morning-post/#product",
+    "title": "Gemini 在你工作时后台操作 Mac"
    },
    "links": [
     {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#product",
+     "title": "Gemini 在你工作时后台操作 Mac"
+    },
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#product",
+     "title": "Gemini 开始替你操作 Mac"
+    },
+    {
      "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#company",
-     "title": "阿里云外部收入增 64%，AI 收入连续 13 季三位数增长"
+     "url": "/posts/2026-11-19-ai-morning-post/#product",
+     "title": "Gemini 拿到 Mac 的操作权"
     },
     {
      "date": "2026-11-19",
-     "url": "/posts/2026-11-18-ai-morning-post/#opensource",
-     "title": "阿里 open-code-review：该确定的交给规则，该判断的交给模型"
+     "url": "/posts/2026-11-18-ai-morning-post/#product",
+     "title": "谷歌给 Gemini 和 AI 搜索加隐私开关与无痕模式"
     },
     {
      "date": "2026-11-18",
-     "url": "/posts/2026-11-17-ai-morning-post/#model-release",
-     "title": "阿里 Qwen4-Max：单任务成本降 58%"
+     "url": "/posts/2026-11-17-ai-morning-post/#product",
+     "title": "Gemini 把两个开关拆开了，但你换到的不全是自由"
     },
     {
-     "date": "2026-11-17",
-     "url": "/posts/2026-11-16-ai-morning-post/#opensource",
-     "title": "阿里开源代码审查工具，混合架构 + 行级注释"
-    },
-    {
-     "date": "2026-11-16",
-     "url": "/posts/2026-11-15-ai-morning-post/#opensource",
-     "title": "阿里开源代码审查工具：确定性流水线 + LLM Agent"
-    },
-    {
-     "date": "2026-11-15",
-     "url": "/posts/2026-11-14-ai-morning-post/#opensource",
-     "title": "阿里开源 open-code-review：规则与模型各干各的"
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#product",
+     "title": "Gemini 智能眼镜 395 美元起，强调隐私"
     },
     {
      "date": "2026-11-13",
      "url": "/posts/2026-11-12-ai-morning-post/#product",
-     "title": "阿里「快乐虾米」上线 App，AI 音乐走到 C 端"
+     "title": "Gemini 眼镜 395 美元开卖，隐私被摆到台前"
     },
     {
-     "date": "2026-11-11",
-     "url": "/posts/2026-11-10-ai-morning-post/#company",
-     "title": "阿里申请平头哥独立赴港上市"
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#opinion",
+     "title": "13 岁女孩向 Gemini 倾诉，监控数周未预警"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 7.77,
-   "days": 12,
+   "score": 7.23,
+   "days": 11,
    "latest": {
     "date": "2026-11-20",
     "url": "/posts/2026-11-19-ai-morning-post/#product",
@@ -523,61 +575,9 @@
    ]
   },
   {
-   "name": "Gemini",
-   "score": 7.55,
-   "days": 10,
-   "latest": {
-    "date": "2026-11-21",
-    "url": "/posts/2026-11-20-ai-morning-post/#product",
-    "title": "Gemini 开始替你操作 Mac"
-   },
-   "links": [
-    {
-     "date": "2026-11-21",
-     "url": "/posts/2026-11-20-ai-morning-post/#product",
-     "title": "Gemini 开始替你操作 Mac"
-    },
-    {
-     "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#product",
-     "title": "Gemini 拿到 Mac 的操作权"
-    },
-    {
-     "date": "2026-11-19",
-     "url": "/posts/2026-11-18-ai-morning-post/#product",
-     "title": "谷歌给 Gemini 和 AI 搜索加隐私开关与无痕模式"
-    },
-    {
-     "date": "2026-11-18",
-     "url": "/posts/2026-11-17-ai-morning-post/#product",
-     "title": "Gemini 把两个开关拆开了，但你换到的不全是自由"
-    },
-    {
-     "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#product",
-     "title": "Gemini 智能眼镜 395 美元起，强调隐私"
-    },
-    {
-     "date": "2026-11-13",
-     "url": "/posts/2026-11-12-ai-morning-post/#product",
-     "title": "Gemini 眼镜 395 美元开卖，隐私被摆到台前"
-    },
-    {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#opinion",
-     "title": "13 岁女孩向 Gemini 倾诉，监控数周未预警"
-    },
-    {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#opinion",
-     "title": "皮查伊：算力先留给 Gemini，云生意往后排"
-    }
-   ]
-  },
-  {
    "name": "Perplexity",
-   "score": 7.52,
-   "days": 8,
+   "score": 7.16,
+   "days": 7,
    "latest": {
     "date": "2026-11-21",
     "url": "/posts/2026-11-20-ai-morning-post/#product",
@@ -618,17 +618,111 @@
      "date": "2026-11-07",
      "url": "/posts/2026-11-06-ai-morning-post/#product",
      "title": "Perplexity 的 Agent 不再等你提问"
+    }
+   ]
+  },
+  {
+   "name": "Google",
+   "score": 6.84,
+   "days": 11,
+   "latest": {
+    "date": "2026-11-22",
+    "url": "/posts/2026-11-21-ai-morning-post/#product",
+    "title": "Google 首页拿掉了搜索按钮"
+   },
+   "links": [
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#product",
+     "title": "Google 首页拿掉了搜索按钮"
     },
     {
-     "date": "2026-10-23",
-     "url": "/posts/2026-10-22-ai-morning-post/#research",
-     "title": "Perplexity 与英伟达提出 JOLT 训练法"
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#model-release",
+     "title": "Google 发布 Gemini 4 Hydrogen，主打高速智能体"
+    },
+    {
+     "date": "2026-11-10",
+     "url": "/posts/2026-11-09-ai-morning-post/#company",
+     "title": "Google 一年四款 TPU，开始按场景切分芯片"
+    },
+    {
+     "date": "2026-11-09",
+     "url": "/posts/2026-11-08-ai-morning-post/#product",
+     "title": "Google 的编码 Agent：先写规格，再写代码"
+    },
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#opensource",
+     "title": "Google 开源 Agent Skills 集合"
+    },
+    {
+     "date": "2026-11-02",
+     "url": "/posts/2026-11-01-ai-morning-post/#research",
+     "title": "Google 让视频 AI 学会“该出手时才出手”"
+    },
+    {
+     "date": "2026-11-01",
+     "url": "/posts/2026-10-31-ai-morning-post/#product",
+     "title": "Google 首个太空数据中心上线，在轨跑 Gemma 4 写诗"
+    },
+    {
+     "date": "2026-10-31",
+     "url": "/posts/2026-10-30-ai-morning-post/#company",
+     "title": "Reddit 转向强制登录，反击 Google AI 搜索截流"
+    }
+   ]
+  },
+  {
+   "name": "腾讯",
+   "score": 6.19,
+   "days": 7,
+   "latest": {
+    "date": "2026-11-22",
+    "url": "/posts/2026-11-21-ai-morning-post/#model-release",
+    "title": "腾讯混元 Hy4 开源，姚顺雨团队回应参数质疑"
+   },
+   "links": [
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#model-release",
+     "title": "腾讯混元 Hy4 开源，姚顺雨团队回应参数质疑"
+    },
+    {
+     "date": "2026-11-19",
+     "url": "/posts/2026-11-18-ai-morning-post/#opensource",
+     "title": "腾讯 LoopForge：把编码 Agent 塞进交付流水线"
+    },
+    {
+     "date": "2026-11-17",
+     "url": "/posts/2026-11-16-ai-morning-post/#opensource",
+     "title": "腾讯 LoopForge：给编码 agent 加人工审批闸门"
+    },
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#company",
+     "title": "腾讯云AI全球业务负责人李牧青离职"
+    },
+    {
+     "date": "2026-11-10",
+     "url": "/posts/2026-11-09-ai-morning-post/#model-release",
+     "title": "腾讯混元 Hy4 开源，评测重点落在“交付”"
+    },
+    {
+     "date": "2026-11-09",
+     "url": "/posts/2026-11-08-ai-morning-post/#product",
+     "title": "腾讯的 Agent 牌面，WorkBuddy 只是其中一张"
+    },
+    {
+     "date": "2026-11-05",
+     "url": "/posts/2026-11-04-ai-morning-post/#model-release",
+     "title": "腾讯混元 Hy4：视觉理解 + 0.3 元定价"
     }
    ]
   },
   {
    "name": "百度",
-   "score": 5.81,
+   "score": 5.42,
    "days": 10,
    "latest": {
     "date": "2026-11-15",
@@ -675,95 +769,6 @@
      "date": "2026-10-30",
      "url": "/posts/2026-10-29-ai-morning-post/#opensource",
      "title": "百度开源 Unlimited-OCR：长文档一次解析"
-    }
-   ]
-  },
-  {
-   "name": "Muse",
-   "score": 5.71,
-   "days": 7,
-   "latest": {
-    "date": "2026-11-21",
-    "url": "/posts/2026-11-20-ai-morning-post/#product",
-    "title": "Meta 的 Muse 把不同用户的对话搞混了"
-   },
-   "links": [
-    {
-     "date": "2026-11-21",
-     "url": "/posts/2026-11-20-ai-morning-post/#product",
-     "title": "Meta 的 Muse 把不同用户的对话搞混了"
-    },
-    {
-     "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#company",
-     "title": "Meta 内部聊天曝光：agent Muse 串对话、泄露私人数据"
-    },
-    {
-     "date": "2026-11-11",
-     "url": "/posts/2026-11-10-ai-morning-post/#product",
-     "title": "Meta 的 Muse 上了手表，语音成了主入口"
-    },
-    {
-     "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#product",
-     "title": "Meta 给 Muse agent 加了“房间”"
-    },
-    {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#product",
-     "title": "Meta 给 Muse 加了 Spaces 和视频头像"
-    },
-    {
-     "date": "2026-11-06",
-     "url": "/posts/2026-11-05-ai-morning-post/#product",
-     "title": "Meta 的 Muse 化身能视频通话了"
-    },
-    {
-     "date": "2026-10-29",
-     "url": "/posts/2026-10-28-ai-morning-post/#company",
-     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
-    }
-   ]
-  },
-  {
-   "name": "腾讯",
-   "score": 5.45,
-   "days": 6,
-   "latest": {
-    "date": "2026-11-19",
-    "url": "/posts/2026-11-18-ai-morning-post/#opensource",
-    "title": "腾讯 LoopForge：把编码 Agent 塞进交付流水线"
-   },
-   "links": [
-    {
-     "date": "2026-11-19",
-     "url": "/posts/2026-11-18-ai-morning-post/#opensource",
-     "title": "腾讯 LoopForge：把编码 Agent 塞进交付流水线"
-    },
-    {
-     "date": "2026-11-17",
-     "url": "/posts/2026-11-16-ai-morning-post/#opensource",
-     "title": "腾讯 LoopForge：给编码 agent 加人工审批闸门"
-    },
-    {
-     "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#company",
-     "title": "腾讯云AI全球业务负责人李牧青离职"
-    },
-    {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#model-release",
-     "title": "腾讯混元 Hy4 开源，评测重点落在“交付”"
-    },
-    {
-     "date": "2026-11-09",
-     "url": "/posts/2026-11-08-ai-morning-post/#product",
-     "title": "腾讯的 Agent 牌面，WorkBuddy 只是其中一张"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "/posts/2026-11-04-ai-morning-post/#model-release",
-     "title": "腾讯混元 Hy4：视觉理解 + 0.3 元定价"
     }
    ]
   }
