@@ -1,17 +1,22 @@
 {
- "generated": "2026-11-22",
+ "generated": "2026-11-23",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 68.61,
+   "score": 65.03,
    "days": 26,
    "latest": {
-    "date": "2026-11-22",
-    "url": "/posts/2026-11-21-ai-morning-post/#model-release",
-    "title": "OpenAI 发布 GPT-Live-1.1，语音 Agent 待机费降价"
+    "date": "2026-11-23",
+    "url": "/posts/2026-11-22-ai-morning-post/#opinion",
+    "title": "智能体要互认，先得解决「你是谁」"
    },
    "links": [
+    {
+     "date": "2026-11-23",
+     "url": "/posts/2026-11-22-ai-morning-post/#opinion",
+     "title": "智能体要互认，先得解决「你是谁」"
+    },
     {
      "date": "2026-11-22",
      "url": "/posts/2026-11-21-ai-morning-post/#model-release",
@@ -46,24 +51,24 @@
      "date": "2026-11-15",
      "url": "/posts/2026-11-14-ai-morning-post/#company",
      "title": "中金与蚂蚁共建财富管理智能体"
-    },
-    {
-     "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#model-release",
-     "title": "Google 发布 Gemini 4 Hydrogen，主打高速智能体"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 41.58,
+   "score": 39.77,
    "days": 30,
    "latest": {
-    "date": "2026-11-22",
-    "url": "/posts/2026-11-21-ai-morning-post/#model-release",
-    "title": "OpenAI 发布 GPT-Live-1.1，语音 Agent 待机费降价"
+    "date": "2026-11-23",
+    "url": "/posts/2026-11-22-ai-morning-post/#product",
+    "title": "OpenAI 做手机：目前还只是传闻"
    },
    "links": [
+    {
+     "date": "2026-11-23",
+     "url": "/posts/2026-11-22-ai-morning-post/#product",
+     "title": "OpenAI 做手机：目前还只是传闻"
+    },
     {
      "date": "2026-11-22",
      "url": "/posts/2026-11-21-ai-morning-post/#model-release",
@@ -98,24 +103,24 @@
      "date": "2026-11-16",
      "url": "/posts/2026-11-15-ai-morning-post/#research",
      "title": "OpenAI 上线科学博客，GPT-6 参与标准模型格点定义"
-    },
-    {
-     "date": "2026-11-15",
-     "url": "/posts/2026-11-14-ai-morning-post/#company",
-     "title": "OpenAI 解散机器人团队，赌通用模型能直接驱动本体"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 31.19,
+   "score": 30.03,
    "days": 29,
    "latest": {
-    "date": "2026-11-22",
-    "url": "/posts/2026-11-21-ai-morning-post/#company",
-    "title": "Anthropic 推进 810 亿美元 IPO"
+    "date": "2026-11-23",
+    "url": "/posts/2026-11-22-ai-morning-post/#company",
+    "title": "Anthropic 创纪录 IPO 落地，上市首日 Claude 降级"
    },
    "links": [
+    {
+     "date": "2026-11-23",
+     "url": "/posts/2026-11-22-ai-morning-post/#company",
+     "title": "Anthropic 创纪录 IPO 落地，上市首日 Claude 降级"
+    },
     {
      "date": "2026-11-22",
      "url": "/posts/2026-11-21-ai-morning-post/#company",
@@ -150,24 +155,24 @@
      "date": "2026-11-16",
      "url": "/posts/2026-11-15-ai-morning-post/#model-release",
      "title": "Anthropic：过时的提示习惯正在拖慢 Opus 5.5"
-    },
-    {
-     "date": "2026-11-15",
-     "url": "/posts/2026-11-14-ai-morning-post/#company",
-     "title": "Anthropic 冲击创纪录 IPO，Amodei 提前给市场打预防针"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 15.97,
+   "score": 15.9,
    "days": 21,
    "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#opensource",
-    "title": "Anthropic 开源 Claude Code 安全审查 Action"
+    "date": "2026-11-23",
+    "url": "/posts/2026-11-22-ai-morning-post/#company",
+    "title": "Anthropic 创纪录 IPO 落地，上市首日 Claude 降级"
    },
    "links": [
+    {
+     "date": "2026-11-23",
+     "url": "/posts/2026-11-22-ai-morning-post/#company",
+     "title": "Anthropic 创纪录 IPO 落地，上市首日 Claude 降级"
+    },
     {
      "date": "2026-11-20",
      "url": "/posts/2026-11-19-ai-morning-post/#opensource",
@@ -202,18 +207,13 @@
      "date": "2026-11-13",
      "url": "/posts/2026-11-12-ai-morning-post/#product",
      "title": "Claude 坐进会议室，办公套件的墙开始松"
-    },
-    {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#product",
-     "title": "Claude 杀入办公套件：从代写到代你出席"
     }
    ]
   },
   {
    "name": "Meta",
-   "score": 12.77,
-   "days": 16,
+   "score": 12.0,
+   "days": 15,
    "latest": {
     "date": "2026-11-22",
     "url": "/posts/2026-11-21-ai-morning-post/#company",
@@ -264,7 +264,7 @@
   },
   {
    "name": "世界模型",
-   "score": 9.71,
+   "score": 9.16,
    "days": 15,
    "latest": {
     "date": "2026-11-22",
@@ -316,7 +316,7 @@
   },
   {
    "name": "阿里",
-   "score": 9.39,
+   "score": 8.97,
    "days": 11,
    "latest": {
     "date": "2026-11-22",
@@ -367,61 +367,113 @@
    ]
   },
   {
-   "name": "芯片",
-   "score": 8.29,
-   "days": 14,
+   "name": "Gemini",
+   "score": 8.81,
+   "days": 11,
    "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#company",
-    "title": "英伟达停供 H200，中国厂商遭遇芯片与云双重断供"
+    "date": "2026-11-23",
+    "url": "/posts/2026-11-22-ai-morning-post/#product",
+    "title": "Gemini 的工具库：先检索，再加载"
    },
    "links": [
     {
+     "date": "2026-11-23",
+     "url": "/posts/2026-11-22-ai-morning-post/#product",
+     "title": "Gemini 的工具库：先检索，再加载"
+    },
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#product",
+     "title": "Gemini 在你工作时后台操作 Mac"
+    },
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#product",
+     "title": "Gemini 开始替你操作 Mac"
+    },
+    {
      "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#company",
-     "title": "英伟达停供 H200，中国厂商遭遇芯片与云双重断供"
+     "url": "/posts/2026-11-19-ai-morning-post/#product",
+     "title": "Gemini 拿到 Mac 的操作权"
     },
     {
      "date": "2026-11-19",
-     "url": "/posts/2026-11-18-ai-morning-post/#opinion",
-     "title": "英伟达丑闻与对华芯片谈判缠在一起"
+     "url": "/posts/2026-11-18-ai-morning-post/#product",
+     "title": "谷歌给 Gemini 和 AI 搜索加隐私开关与无痕模式"
     },
     {
-     "date": "2026-11-17",
-     "url": "/posts/2026-11-16-ai-morning-post/#company",
-     "title": "通研院孵化 AGI 芯片公司，半年连融数亿元"
-    },
-    {
-     "date": "2026-11-15",
-     "url": "/posts/2026-11-14-ai-morning-post/#company",
-     "title": "研究称中国最强模型训练于被禁英伟达芯片"
+     "date": "2026-11-18",
+     "url": "/posts/2026-11-17-ai-morning-post/#product",
+     "title": "Gemini 把两个开关拆开了，但你换到的不全是自由"
     },
     {
      "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#research",
-     "title": "禁售芯片的指纹，出现在最强模型里"
+     "url": "/posts/2026-11-13-ai-morning-post/#product",
+     "title": "Gemini 智能眼镜 395 美元起，强调隐私"
     },
     {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#company",
-     "title": "英国 Fractile 融资 7.2 亿美元，押注 AI 专用芯片"
+     "date": "2026-11-13",
+     "url": "/posts/2026-11-12-ai-morning-post/#product",
+     "title": "Gemini 眼镜 395 美元开卖，隐私被摆到台前"
+    }
+   ]
+  },
+  {
+   "name": "Perplexity",
+   "score": 7.87,
+   "days": 8,
+   "latest": {
+    "date": "2026-11-23",
+    "url": "/posts/2026-11-22-ai-morning-post/#product",
+    "title": "Perplexity 把搜索做成常驻哨兵"
+   },
+   "links": [
+    {
+     "date": "2026-11-23",
+     "url": "/posts/2026-11-22-ai-morning-post/#product",
+     "title": "Perplexity 把搜索做成常驻哨兵"
     },
     {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#company",
-     "title": "Google 一年四款 TPU，开始按场景切分芯片"
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#product",
+     "title": "Perplexity 用一个端点路由所有模型"
+    },
+    {
+     "date": "2026-11-20",
+     "url": "/posts/2026-11-19-ai-morning-post/#research",
+     "title": "Perplexity 把「判断」拆成独立模型"
+    },
+    {
+     "date": "2026-11-18",
+     "url": "/posts/2026-11-17-ai-morning-post/#company",
+     "title": "Perplexity 年化收入破 10 亿美元，一年增长 4 倍"
+    },
+    {
+     "date": "2026-11-15",
+     "url": "/posts/2026-11-14-ai-morning-post/#model-release",
+     "title": "Perplexity 的 Decider v1.3：不写句子，直接给概率"
+    },
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#model-release",
+     "title": "Perplexity 开源 Decider v1.3：返回概率而不是文本"
+    },
+    {
+     "date": "2026-11-08",
+     "url": "/posts/2026-11-07-ai-morning-post/#product",
+     "title": "Perplexity 把问答做成了常驻进程"
     },
     {
      "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#company",
-     "title": "微软逐步停用甲骨文 AI 算力，卡在芯片代次上"
+     "url": "/posts/2026-11-06-ai-morning-post/#product",
+     "title": "Perplexity 的 Agent 不再等你提问"
     }
    ]
   },
   {
    "name": "算力",
-   "score": 8.29,
-   "days": 12,
+   "score": 7.74,
+   "days": 11,
    "latest": {
     "date": "2026-11-20",
     "url": "/posts/2026-11-19-ai-morning-post/#model-release",
@@ -471,60 +523,60 @@
    ]
   },
   {
-   "name": "Gemini",
-   "score": 8.16,
-   "days": 10,
+   "name": "芯片",
+   "score": 7.71,
+   "days": 13,
    "latest": {
-    "date": "2026-11-22",
-    "url": "/posts/2026-11-21-ai-morning-post/#product",
-    "title": "Gemini 在你工作时后台操作 Mac"
+    "date": "2026-11-20",
+    "url": "/posts/2026-11-19-ai-morning-post/#company",
+    "title": "英伟达停供 H200，中国厂商遭遇芯片与云双重断供"
    },
    "links": [
     {
-     "date": "2026-11-22",
-     "url": "/posts/2026-11-21-ai-morning-post/#product",
-     "title": "Gemini 在你工作时后台操作 Mac"
-    },
-    {
-     "date": "2026-11-21",
-     "url": "/posts/2026-11-20-ai-morning-post/#product",
-     "title": "Gemini 开始替你操作 Mac"
-    },
-    {
      "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#product",
-     "title": "Gemini 拿到 Mac 的操作权"
+     "url": "/posts/2026-11-19-ai-morning-post/#company",
+     "title": "英伟达停供 H200，中国厂商遭遇芯片与云双重断供"
     },
     {
      "date": "2026-11-19",
-     "url": "/posts/2026-11-18-ai-morning-post/#product",
-     "title": "谷歌给 Gemini 和 AI 搜索加隐私开关与无痕模式"
+     "url": "/posts/2026-11-18-ai-morning-post/#opinion",
+     "title": "英伟达丑闻与对华芯片谈判缠在一起"
     },
     {
-     "date": "2026-11-18",
-     "url": "/posts/2026-11-17-ai-morning-post/#product",
-     "title": "Gemini 把两个开关拆开了，但你换到的不全是自由"
+     "date": "2026-11-17",
+     "url": "/posts/2026-11-16-ai-morning-post/#company",
+     "title": "通研院孵化 AGI 芯片公司，半年连融数亿元"
+    },
+    {
+     "date": "2026-11-15",
+     "url": "/posts/2026-11-14-ai-morning-post/#company",
+     "title": "研究称中国最强模型训练于被禁英伟达芯片"
     },
     {
      "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#product",
-     "title": "Gemini 智能眼镜 395 美元起，强调隐私"
-    },
-    {
-     "date": "2026-11-13",
-     "url": "/posts/2026-11-12-ai-morning-post/#product",
-     "title": "Gemini 眼镜 395 美元开卖，隐私被摆到台前"
+     "url": "/posts/2026-11-13-ai-morning-post/#research",
+     "title": "禁售芯片的指纹，出现在最强模型里"
     },
     {
      "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#opinion",
-     "title": "13 岁女孩向 Gemini 倾诉，监控数周未预警"
+     "url": "/posts/2026-11-11-ai-morning-post/#company",
+     "title": "英国 Fractile 融资 7.2 亿美元，押注 AI 专用芯片"
+    },
+    {
+     "date": "2026-11-10",
+     "url": "/posts/2026-11-09-ai-morning-post/#company",
+     "title": "Google 一年四款 TPU，开始按场景切分芯片"
+    },
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#company",
+     "title": "微软逐步停用甲骨文 AI 算力，卡在芯片代次上"
     }
    ]
   },
   {
    "name": "ChatGPT",
-   "score": 7.23,
+   "score": 6.74,
    "days": 11,
    "latest": {
     "date": "2026-11-20",
@@ -575,56 +627,9 @@
    ]
   },
   {
-   "name": "Perplexity",
-   "score": 7.16,
-   "days": 7,
-   "latest": {
-    "date": "2026-11-21",
-    "url": "/posts/2026-11-20-ai-morning-post/#product",
-    "title": "Perplexity 用一个端点路由所有模型"
-   },
-   "links": [
-    {
-     "date": "2026-11-21",
-     "url": "/posts/2026-11-20-ai-morning-post/#product",
-     "title": "Perplexity 用一个端点路由所有模型"
-    },
-    {
-     "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#research",
-     "title": "Perplexity 把「判断」拆成独立模型"
-    },
-    {
-     "date": "2026-11-18",
-     "url": "/posts/2026-11-17-ai-morning-post/#company",
-     "title": "Perplexity 年化收入破 10 亿美元，一年增长 4 倍"
-    },
-    {
-     "date": "2026-11-15",
-     "url": "/posts/2026-11-14-ai-morning-post/#model-release",
-     "title": "Perplexity 的 Decider v1.3：不写句子，直接给概率"
-    },
-    {
-     "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#model-release",
-     "title": "Perplexity 开源 Decider v1.3：返回概率而不是文本"
-    },
-    {
-     "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#product",
-     "title": "Perplexity 把问答做成了常驻进程"
-    },
-    {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#product",
-     "title": "Perplexity 的 Agent 不再等你提问"
-    }
-   ]
-  },
-  {
    "name": "Google",
-   "score": 6.84,
-   "days": 11,
+   "score": 6.26,
+   "days": 10,
    "latest": {
     "date": "2026-11-22",
     "url": "/posts/2026-11-21-ai-morning-post/#product",
@@ -675,7 +680,7 @@
   },
   {
    "name": "腾讯",
-   "score": 6.19,
+   "score": 5.9,
    "days": 7,
    "latest": {
     "date": "2026-11-22",
@@ -721,54 +726,49 @@
    ]
   },
   {
-   "name": "百度",
-   "score": 5.42,
-   "days": 10,
+   "name": "Muse",
+   "score": 5.13,
+   "days": 7,
    "latest": {
-    "date": "2026-11-15",
-    "url": "/posts/2026-11-14-ai-morning-post/#product",
-    "title": "百度词元所首日：Token 被当成商品挂牌"
+    "date": "2026-11-21",
+    "url": "/posts/2026-11-20-ai-morning-post/#product",
+    "title": "Meta 的 Muse 把不同用户的对话搞混了"
    },
    "links": [
     {
-     "date": "2026-11-15",
-     "url": "/posts/2026-11-14-ai-morning-post/#product",
-     "title": "百度词元所首日：Token 被当成商品挂牌"
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#product",
+     "title": "Meta 的 Muse 把不同用户的对话搞混了"
     },
     {
-     "date": "2026-11-13",
-     "url": "/posts/2026-11-12-ai-morning-post/#model-release",
-     "title": "百度文心开源：快、省、开放权重"
+     "date": "2026-11-20",
+     "url": "/posts/2026-11-19-ai-morning-post/#company",
+     "title": "Meta 内部聊天曝光：agent Muse 串对话、泄露私人数据"
     },
     {
      "date": "2026-11-11",
-     "url": "/posts/2026-11-10-ai-morning-post/#research",
-     "title": "百度 ERNIE Evolve：自动科研系统刷新公开纪录"
+     "url": "/posts/2026-11-10-ai-morning-post/#product",
+     "title": "Meta 的 Muse 上了手表，语音成了主入口"
     },
     {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#research",
-     "title": "百度披露 ERNIE Evolve：自动研究进入产品研发链条"
+     "date": "2026-11-08",
+     "url": "/posts/2026-11-07-ai-morning-post/#product",
+     "title": "Meta 给 Muse agent 加了“房间”"
     },
     {
      "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#model-release",
-     "title": "百度开源 ERNIE 5.5 Flash Base：开源的是“基础”"
+     "url": "/posts/2026-11-06-ai-morning-post/#product",
+     "title": "Meta 给 Muse 加了 Spaces 和视频头像"
     },
     {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#research",
-     "title": "百度把世界模型开上路"
+     "date": "2026-11-06",
+     "url": "/posts/2026-11-05-ai-morning-post/#product",
+     "title": "Meta 的 Muse 化身能视频通话了"
     },
     {
-     "date": "2026-10-31",
-     "url": "/posts/2026-10-30-ai-morning-post/#product",
-     "title": "百度 APP 四项 AI 升级，搜索 API 打到 4.9 元"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#opensource",
-     "title": "百度开源 Unlimited-OCR：长文档一次解析"
+     "date": "2026-10-29",
+     "url": "/posts/2026-10-28-ai-morning-post/#company",
+     "title": "Meta 财报背后的赌注：Muse 模型与算力开支"
     }
    ]
   }
