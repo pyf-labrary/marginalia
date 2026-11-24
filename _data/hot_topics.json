@@ -1,17 +1,22 @@
 {
- "generated": "2026-11-23",
+ "generated": "2026-11-24",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 65.03,
+   "score": 64.68,
    "days": 26,
    "latest": {
-    "date": "2026-11-23",
-    "url": "/posts/2026-11-22-ai-morning-post/#opinion",
-    "title": "智能体要互认，先得解决「你是谁」"
+    "date": "2026-11-24",
+    "url": "/posts/2026-11-23-ai-morning-post/#research",
+    "title": "DeepMind：智能体团队＋形式化验证，搜索更快的量子算法"
    },
    "links": [
+    {
+     "date": "2026-11-24",
+     "url": "/posts/2026-11-23-ai-morning-post/#research",
+     "title": "DeepMind：智能体团队＋形式化验证，搜索更快的量子算法"
+    },
     {
      "date": "2026-11-23",
      "url": "/posts/2026-11-22-ai-morning-post/#opinion",
@@ -46,24 +51,24 @@
      "date": "2026-11-16",
      "url": "/posts/2026-11-15-ai-morning-post/#model-release",
      "title": "美团 1.6 万亿参数智能体模型，全程没碰英伟达"
-    },
-    {
-     "date": "2026-11-15",
-     "url": "/posts/2026-11-14-ai-morning-post/#company",
-     "title": "中金与蚂蚁共建财富管理智能体"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 39.77,
+   "score": 39.13,
    "days": 30,
    "latest": {
-    "date": "2026-11-23",
-    "url": "/posts/2026-11-22-ai-morning-post/#product",
-    "title": "OpenAI 做手机：目前还只是传闻"
+    "date": "2026-11-24",
+    "url": "/posts/2026-11-23-ai-morning-post/#company",
+    "title": "加州起诉 OpenAI，模型输出进入产品责任范畴"
    },
    "links": [
+    {
+     "date": "2026-11-24",
+     "url": "/posts/2026-11-23-ai-morning-post/#company",
+     "title": "加州起诉 OpenAI，模型输出进入产品责任范畴"
+    },
     {
      "date": "2026-11-23",
      "url": "/posts/2026-11-22-ai-morning-post/#product",
@@ -98,24 +103,24 @@
      "date": "2026-11-17",
      "url": "/posts/2026-11-16-ai-morning-post/#company",
      "title": "加州总检察长起诉 OpenAI，直指失控 agent"
-    },
-    {
-     "date": "2026-11-16",
-     "url": "/posts/2026-11-15-ai-morning-post/#research",
-     "title": "OpenAI 上线科学博客，GPT-6 参与标准模型格点定义"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 30.03,
+   "score": 30.87,
    "days": 29,
    "latest": {
-    "date": "2026-11-23",
-    "url": "/posts/2026-11-22-ai-morning-post/#company",
-    "title": "Anthropic 创纪录 IPO 落地，上市首日 Claude 降级"
+    "date": "2026-11-24",
+    "url": "/posts/2026-11-23-ai-morning-post/#company",
+    "title": "Anthropic 吃算力，xAI 转向「租而非建」"
    },
    "links": [
+    {
+     "date": "2026-11-24",
+     "url": "/posts/2026-11-23-ai-morning-post/#company",
+     "title": "Anthropic 吃算力，xAI 转向「租而非建」"
+    },
     {
      "date": "2026-11-23",
      "url": "/posts/2026-11-22-ai-morning-post/#company",
@@ -150,18 +155,13 @@
      "date": "2026-11-17",
      "url": "/posts/2026-11-16-ai-morning-post/#research",
      "title": "Anthropic：agent 记忆的关键是知道该忘什么"
-    },
-    {
-     "date": "2026-11-16",
-     "url": "/posts/2026-11-15-ai-morning-post/#model-release",
-     "title": "Anthropic：过时的提示习惯正在拖慢 Opus 5.5"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 15.9,
-   "days": 21,
+   "score": 14.9,
+   "days": 20,
    "latest": {
     "date": "2026-11-23",
     "url": "/posts/2026-11-22-ai-morning-post/#company",
@@ -212,7 +212,7 @@
   },
   {
    "name": "Meta",
-   "score": 12.0,
+   "score": 11.29,
    "days": 15,
    "latest": {
     "date": "2026-11-22",
@@ -263,9 +263,61 @@
    ]
   },
   {
+   "name": "算力",
+   "score": 10.23,
+   "days": 11,
+   "latest": {
+    "date": "2026-11-24",
+    "url": "/posts/2026-11-23-ai-morning-post/#company",
+    "title": "英伟达联手 Paradromics，把算力接进脑机接口"
+   },
+   "links": [
+    {
+     "date": "2026-11-24",
+     "url": "/posts/2026-11-23-ai-morning-post/#company",
+     "title": "英伟达联手 Paradromics，把算力接进脑机接口"
+    },
+    {
+     "date": "2026-11-20",
+     "url": "/posts/2026-11-19-ai-morning-post/#model-release",
+     "title": "范式 Phai：国产算力跑通全链路训练"
+    },
+    {
+     "date": "2026-11-18",
+     "url": "/posts/2026-11-17-ai-morning-post/#company",
+     "title": "英伟达放弃中国市场，美国同步收紧远程算力"
+    },
+    {
+     "date": "2026-11-17",
+     "url": "/posts/2026-11-16-ai-morning-post/#opinion",
+     "title": "算力管制从硬件延伸到「租用」"
+    },
+    {
+     "date": "2026-11-08",
+     "url": "/posts/2026-11-07-ai-morning-post/#company",
+     "title": "微软收尾 Oracle 的 AI 算力租约"
+    },
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#company",
+     "title": "微软逐步停用甲骨文 AI 算力，卡在芯片代次上"
+    },
+    {
+     "date": "2026-11-05",
+     "url": "/posts/2026-11-04-ai-morning-post/#company",
+     "title": "Anthropic 的算力账本：越卖越不赚钱"
+    },
+    {
+     "date": "2026-11-04",
+     "url": "/posts/2026-11-03-ai-morning-post/#product",
+     "title": "双 11 卖词元：算力第一次像消费品"
+    }
+   ]
+  },
+  {
    "name": "世界模型",
-   "score": 9.16,
-   "days": 15,
+   "score": 8.58,
+   "days": 14,
    "latest": {
     "date": "2026-11-22",
     "url": "/posts/2026-11-21-ai-morning-post/#opensource",
@@ -316,7 +368,7 @@
   },
   {
    "name": "阿里",
-   "score": 8.97,
+   "score": 8.55,
    "days": 11,
    "latest": {
     "date": "2026-11-22",
@@ -368,7 +420,7 @@
   },
   {
    "name": "Gemini",
-   "score": 8.81,
+   "score": 8.42,
    "days": 11,
    "latest": {
     "date": "2026-11-23",
@@ -420,7 +472,7 @@
   },
   {
    "name": "Perplexity",
-   "score": 7.87,
+   "score": 7.55,
    "days": 8,
    "latest": {
     "date": "2026-11-23",
@@ -471,61 +523,61 @@
    ]
   },
   {
-   "name": "算力",
-   "score": 7.74,
-   "days": 11,
+   "name": "ChatGPT",
+   "score": 7.26,
+   "days": 12,
    "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#model-release",
-    "title": "范式 Phai：国产算力跑通全链路训练"
+    "date": "2026-11-24",
+    "url": "/posts/2026-11-23-ai-morning-post/#product",
+    "title": "ChatGPT 更新：把「少出错」当成产品指标"
    },
    "links": [
     {
+     "date": "2026-11-24",
+     "url": "/posts/2026-11-23-ai-morning-post/#product",
+     "title": "ChatGPT 更新：把「少出错」当成产品指标"
+    },
+    {
      "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#model-release",
-     "title": "范式 Phai：国产算力跑通全链路训练"
+     "url": "/posts/2026-11-19-ai-morning-post/#product",
+     "title": "OpenAI 用 Codex 给 ChatGPT 做性能体检"
     },
     {
      "date": "2026-11-18",
-     "url": "/posts/2026-11-17-ai-morning-post/#company",
-     "title": "英伟达放弃中国市场，美国同步收紧远程算力"
+     "url": "/posts/2026-11-17-ai-morning-post/#product",
+     "title": "ChatGPT 开始按岗位卖，一次接入 30 多个插件"
     },
     {
      "date": "2026-11-17",
-     "url": "/posts/2026-11-16-ai-morning-post/#opinion",
-     "title": "算力管制从硬件延伸到「租用」"
+     "url": "/posts/2026-11-16-ai-morning-post/#product",
+     "title": "ChatGPT 上线新图像分类器围堵 CSAM"
     },
     {
-     "date": "2026-11-08",
-     "url": "/posts/2026-11-07-ai-morning-post/#company",
-     "title": "微软收尾 Oracle 的 AI 算力租约"
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#product",
+     "title": "ChatGPT 上线商家主页，向搜索广告再走一步"
+    },
+    {
+     "date": "2026-11-11",
+     "url": "/posts/2026-11-10-ai-morning-post/#product",
+     "title": "ChatGPT 变成企业黄页，商家可以入驻了"
     },
     {
      "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#company",
-     "title": "微软逐步停用甲骨文 AI 算力，卡在芯片代次上"
-    },
-    {
-     "date": "2026-11-05",
-     "url": "/posts/2026-11-04-ai-morning-post/#company",
-     "title": "Anthropic 的算力账本：越卖越不赚钱"
+     "url": "/posts/2026-11-06-ai-morning-post/#opinion",
+     "title": "当 ChatGPT 出现在刑事案卷里"
     },
     {
      "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#product",
-     "title": "双 11 卖词元：算力第一次像消费品"
-    },
-    {
-     "date": "2026-11-03",
-     "url": "/posts/2026-11-02-ai-morning-post/#model-release",
-     "title": "美团 LongCat-2.5：1.6 万亿参数跑在国产算力上"
+     "url": "/posts/2026-11-03-ai-morning-post/#opensource",
+     "title": "100 美元的 ChatGPT，价值不在省钱"
     }
    ]
   },
   {
    "name": "芯片",
-   "score": 7.71,
-   "days": 13,
+   "score": 7.16,
+   "days": 12,
    "latest": {
     "date": "2026-11-20",
     "url": "/posts/2026-11-19-ai-morning-post/#company",
@@ -575,60 +627,8 @@
    ]
   },
   {
-   "name": "ChatGPT",
-   "score": 6.74,
-   "days": 11,
-   "latest": {
-    "date": "2026-11-20",
-    "url": "/posts/2026-11-19-ai-morning-post/#product",
-    "title": "OpenAI 用 Codex 给 ChatGPT 做性能体检"
-   },
-   "links": [
-    {
-     "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#product",
-     "title": "OpenAI 用 Codex 给 ChatGPT 做性能体检"
-    },
-    {
-     "date": "2026-11-18",
-     "url": "/posts/2026-11-17-ai-morning-post/#product",
-     "title": "ChatGPT 开始按岗位卖，一次接入 30 多个插件"
-    },
-    {
-     "date": "2026-11-17",
-     "url": "/posts/2026-11-16-ai-morning-post/#product",
-     "title": "ChatGPT 上线新图像分类器围堵 CSAM"
-    },
-    {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#product",
-     "title": "ChatGPT 上线商家主页，向搜索广告再走一步"
-    },
-    {
-     "date": "2026-11-11",
-     "url": "/posts/2026-11-10-ai-morning-post/#product",
-     "title": "ChatGPT 变成企业黄页，商家可以入驻了"
-    },
-    {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#opinion",
-     "title": "当 ChatGPT 出现在刑事案卷里"
-    },
-    {
-     "date": "2026-11-04",
-     "url": "/posts/2026-11-03-ai-morning-post/#opensource",
-     "title": "100 美元的 ChatGPT，价值不在省钱"
-    },
-    {
-     "date": "2026-11-03",
-     "url": "/posts/2026-11-02-ai-morning-post/#product",
-     "title": "ChatGPT 合并 Chat 与 Work，Pro 额度翻倍"
-    }
-   ]
-  },
-  {
    "name": "Google",
-   "score": 6.26,
+   "score": 5.87,
    "days": 10,
    "latest": {
     "date": "2026-11-22",
@@ -680,7 +680,7 @@
   },
   {
    "name": "腾讯",
-   "score": 5.9,
+   "score": 5.61,
    "days": 7,
    "latest": {
     "date": "2026-11-22",
@@ -727,7 +727,7 @@
   },
   {
    "name": "Muse",
-   "score": 5.13,
+   "score": 4.84,
    "days": 7,
    "latest": {
     "date": "2026-11-21",
