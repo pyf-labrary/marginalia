@@ -1,17 +1,22 @@
 {
- "generated": "2026-11-26",
+ "generated": "2026-11-27",
  "window_days": 30,
  "topics": [
   {
    "name": "Agent",
-   "score": 57.39,
-   "days": 25,
+   "score": 60.48,
+   "days": 26,
    "latest": {
-    "date": "2026-11-25",
-    "url": "/posts/2026-11-24-ai-morning-post/#research",
-    "title": "给多智能体协作补一个开放式基准"
+    "date": "2026-11-27",
+    "url": "/posts/2026-11-26-ai-morning-post/#product",
+    "title": "Snowflake 让数据开发走向 Agent 自主执行"
    },
    "links": [
+    {
+     "date": "2026-11-27",
+     "url": "/posts/2026-11-26-ai-morning-post/#product",
+     "title": "Snowflake 让数据开发走向 Agent 自主执行"
+    },
     {
      "date": "2026-11-25",
      "url": "/posts/2026-11-24-ai-morning-post/#research",
@@ -46,24 +51,24 @@
      "date": "2026-11-19",
      "url": "/posts/2026-11-18-ai-morning-post/#research",
      "title": "OpenAI：编码 Agent 已能加速研究，但前沿参差不齐"
-    },
-    {
-     "date": "2026-11-18",
-     "url": "/posts/2026-11-17-ai-morning-post/#product",
-     "title": "Gemini Tasks 放开，智能体能替你打电话和下单"
     }
    ]
   },
   {
    "name": "OpenAI",
-   "score": 36.19,
+   "score": 35.68,
    "days": 29,
    "latest": {
-    "date": "2026-11-26",
-    "url": "/posts/2026-11-25-ai-morning-post/#company",
-    "title": "OpenAI 用“不看数据”换企业信任"
+    "date": "2026-11-27",
+    "url": "/posts/2026-11-26-ai-morning-post/#company",
+    "title": "OpenAI 承诺不查看企业敏感数据"
    },
    "links": [
+    {
+     "date": "2026-11-27",
+     "url": "/posts/2026-11-26-ai-morning-post/#company",
+     "title": "OpenAI 承诺不查看企业敏感数据"
+    },
     {
      "date": "2026-11-26",
      "url": "/posts/2026-11-25-ai-morning-post/#company",
@@ -98,24 +103,24 @@
      "date": "2026-11-19",
      "url": "/posts/2026-11-18-ai-morning-post/#model-release",
      "title": "OpenAI 双发 GPT-6.2：Astra 降价，Sol 补齐性价比"
-    },
-    {
-     "date": "2026-11-18",
-     "url": "/posts/2026-11-17-ai-morning-post/#model-release",
-     "title": "OpenAI 双发 GPT-6.2 Astra 与 Sol"
     }
    ]
   },
   {
    "name": "Anthropic",
-   "score": 32.58,
+   "score": 32.39,
    "days": 29,
    "latest": {
-    "date": "2026-11-26",
-    "url": "/posts/2026-11-25-ai-morning-post/#company",
-    "title": "Anthropic 股价跌破发行价"
+    "date": "2026-11-27",
+    "url": "/posts/2026-11-26-ai-morning-post/#company",
+    "title": "Anthropic 上市破发，套现与挖角同时到来"
    },
    "links": [
+    {
+     "date": "2026-11-27",
+     "url": "/posts/2026-11-26-ai-morning-post/#company",
+     "title": "Anthropic 上市破发，套现与挖角同时到来"
+    },
     {
      "date": "2026-11-26",
      "url": "/posts/2026-11-25-ai-morning-post/#company",
@@ -150,17 +155,12 @@
      "date": "2026-11-20",
      "url": "/posts/2026-11-19-ai-morning-post/#company",
      "title": "Anthropic 首日涨 33%，创始人套现近 20 亿美元"
-    },
-    {
-     "date": "2026-11-19",
-     "url": "/posts/2026-11-18-ai-morning-post/#company",
-     "title": "Anthropic 以每股 83 美元定价，估值 1.5 万亿美元"
     }
    ]
   },
   {
    "name": "Claude",
-   "score": 14.03,
+   "score": 13.1,
    "days": 20,
    "latest": {
     "date": "2026-11-26",
@@ -212,14 +212,19 @@
   },
   {
    "name": "Meta",
-   "score": 11.81,
+   "score": 12.0,
    "days": 16,
    "latest": {
-    "date": "2026-11-26",
-    "url": "/posts/2026-11-25-ai-morning-post/#company",
-    "title": "亚马逊与 Meta 谈解除 Muse 封锁"
+    "date": "2026-11-27",
+    "url": "/posts/2026-11-26-ai-morning-post/#product",
+    "title": "Meta 购物 Agent Muse 遭遇监管与平台阻力"
    },
    "links": [
+    {
+     "date": "2026-11-27",
+     "url": "/posts/2026-11-26-ai-morning-post/#product",
+     "title": "Meta 购物 Agent Muse 遭遇监管与平台阻力"
+    },
     {
      "date": "2026-11-26",
      "url": "/posts/2026-11-25-ai-morning-post/#company",
@@ -254,17 +259,12 @@
      "date": "2026-11-11",
      "url": "/posts/2026-11-10-ai-morning-post/#product",
      "title": "Meta 的 Muse 上了手表，语音成了主入口"
-    },
-    {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#model-release",
-     "title": "Meta 把 Agent 的输入价打到每百万 token 10 美分"
     }
    ]
   },
   {
    "name": "算力",
-   "score": 11.1,
+   "score": 10.48,
    "days": 13,
    "latest": {
     "date": "2026-11-26",
@@ -316,7 +316,7 @@
   },
   {
    "name": "Gemini",
-   "score": 8.65,
+   "score": 8.23,
    "days": 12,
    "latest": {
     "date": "2026-11-26",
@@ -367,8 +367,112 @@
    ]
   },
   {
+   "name": "世界模型",
+   "score": 8.0,
+   "days": 14,
+   "latest": {
+    "date": "2026-11-27",
+    "url": "/posts/2026-11-26-ai-morning-post/#product",
+    "title": "小米 HAD 推送新版本，引入因果链与车端世界模型"
+   },
+   "links": [
+    {
+     "date": "2026-11-27",
+     "url": "/posts/2026-11-26-ai-morning-post/#product",
+     "title": "小米 HAD 推送新版本，引入因果链与车端世界模型"
+    },
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#opensource",
+     "title": "华为云开源具身世界模型 CloudRobo-WM1.2"
+    },
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#opensource",
+     "title": "华为云把具身世界模型连同底座一起开源"
+    },
+    {
+     "date": "2026-11-20",
+     "url": "/posts/2026-11-19-ai-morning-post/#model-release",
+     "title": "Genie 4 开放：世界模型开始有「可组合性」"
+    },
+    {
+     "date": "2026-11-18",
+     "url": "/posts/2026-11-17-ai-morning-post/#research",
+     "title": "智源发布 PhysCapBench：给世界模型一把物理标尺"
+    },
+    {
+     "date": "2026-11-17",
+     "url": "/posts/2026-11-16-ai-morning-post/#opinion",
+     "title": "李飞飞谈世界模型：机器人缺的不是算力"
+    },
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#research",
+     "title": "40 亿参数，六项评测第一：西湖大学押注“概念世界模型”"
+    },
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#opensource",
+     "title": "MBZUAI 开源 PAN 2：290 亿参数的世界模型"
+    }
+   ]
+  },
+  {
+   "name": "芯片",
+   "score": 7.55,
+   "days": 13,
+   "latest": {
+    "date": "2026-11-27",
+    "url": "/posts/2026-11-26-ai-morning-post/#opinion",
+    "title": "芯片管制与反蒸馏开始显效"
+   },
+   "links": [
+    {
+     "date": "2026-11-27",
+     "url": "/posts/2026-11-26-ai-morning-post/#opinion",
+     "title": "芯片管制与反蒸馏开始显效"
+    },
+    {
+     "date": "2026-11-25",
+     "url": "/posts/2026-11-24-ai-morning-post/#company",
+     "title": "亚马逊 75 亿美元买 Decart，用软件补芯片的课"
+    },
+    {
+     "date": "2026-11-20",
+     "url": "/posts/2026-11-19-ai-morning-post/#company",
+     "title": "英伟达停供 H200，中国厂商遭遇芯片与云双重断供"
+    },
+    {
+     "date": "2026-11-19",
+     "url": "/posts/2026-11-18-ai-morning-post/#opinion",
+     "title": "英伟达丑闻与对华芯片谈判缠在一起"
+    },
+    {
+     "date": "2026-11-17",
+     "url": "/posts/2026-11-16-ai-morning-post/#company",
+     "title": "通研院孵化 AGI 芯片公司，半年连融数亿元"
+    },
+    {
+     "date": "2026-11-15",
+     "url": "/posts/2026-11-14-ai-morning-post/#company",
+     "title": "研究称中国最强模型训练于被禁英伟达芯片"
+    },
+    {
+     "date": "2026-11-14",
+     "url": "/posts/2026-11-13-ai-morning-post/#research",
+     "title": "禁售芯片的指纹，出现在最强模型里"
+    },
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#company",
+     "title": "英国 Fractile 融资 7.2 亿美元，押注 AI 专用芯片"
+    }
+   ]
+  },
+  {
    "name": "阿里",
-   "score": 7.71,
+   "score": 7.29,
    "days": 11,
    "latest": {
     "date": "2026-11-22",
@@ -419,164 +523,8 @@
    ]
   },
   {
-   "name": "世界模型",
-   "score": 7.55,
-   "days": 14,
-   "latest": {
-    "date": "2026-11-22",
-    "url": "/posts/2026-11-21-ai-morning-post/#opensource",
-    "title": "华为云开源具身世界模型 CloudRobo-WM1.2"
-   },
-   "links": [
-    {
-     "date": "2026-11-22",
-     "url": "/posts/2026-11-21-ai-morning-post/#opensource",
-     "title": "华为云开源具身世界模型 CloudRobo-WM1.2"
-    },
-    {
-     "date": "2026-11-21",
-     "url": "/posts/2026-11-20-ai-morning-post/#opensource",
-     "title": "华为云把具身世界模型连同底座一起开源"
-    },
-    {
-     "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#model-release",
-     "title": "Genie 4 开放：世界模型开始有「可组合性」"
-    },
-    {
-     "date": "2026-11-18",
-     "url": "/posts/2026-11-17-ai-morning-post/#research",
-     "title": "智源发布 PhysCapBench：给世界模型一把物理标尺"
-    },
-    {
-     "date": "2026-11-17",
-     "url": "/posts/2026-11-16-ai-morning-post/#opinion",
-     "title": "李飞飞谈世界模型：机器人缺的不是算力"
-    },
-    {
-     "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#research",
-     "title": "40 亿参数，六项评测第一：西湖大学押注“概念世界模型”"
-    },
-    {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#opensource",
-     "title": "MBZUAI 开源 PAN 2：290 亿参数的世界模型"
-    },
-    {
-     "date": "2026-11-09",
-     "url": "/posts/2026-11-08-ai-morning-post/#opinion",
-     "title": "资本正在撤离「世界模型」"
-    }
-   ]
-  },
-  {
-   "name": "ChatGPT",
-   "score": 7.19,
-   "days": 13,
-   "latest": {
-    "date": "2026-11-25",
-    "url": "/posts/2026-11-24-ai-morning-post/#product",
-    "title": "ChatGPT 更新：重点在少出错"
-   },
-   "links": [
-    {
-     "date": "2026-11-25",
-     "url": "/posts/2026-11-24-ai-morning-post/#product",
-     "title": "ChatGPT 更新：重点在少出错"
-    },
-    {
-     "date": "2026-11-24",
-     "url": "/posts/2026-11-23-ai-morning-post/#product",
-     "title": "ChatGPT 更新：把「少出错」当成产品指标"
-    },
-    {
-     "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#product",
-     "title": "OpenAI 用 Codex 给 ChatGPT 做性能体检"
-    },
-    {
-     "date": "2026-11-18",
-     "url": "/posts/2026-11-17-ai-morning-post/#product",
-     "title": "ChatGPT 开始按岗位卖，一次接入 30 多个插件"
-    },
-    {
-     "date": "2026-11-17",
-     "url": "/posts/2026-11-16-ai-morning-post/#product",
-     "title": "ChatGPT 上线新图像分类器围堵 CSAM"
-    },
-    {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#product",
-     "title": "ChatGPT 上线商家主页，向搜索广告再走一步"
-    },
-    {
-     "date": "2026-11-11",
-     "url": "/posts/2026-11-10-ai-morning-post/#product",
-     "title": "ChatGPT 变成企业黄页，商家可以入驻了"
-    },
-    {
-     "date": "2026-11-07",
-     "url": "/posts/2026-11-06-ai-morning-post/#opinion",
-     "title": "当 ChatGPT 出现在刑事案卷里"
-    }
-   ]
-  },
-  {
-   "name": "芯片",
-   "score": 7.16,
-   "days": 13,
-   "latest": {
-    "date": "2026-11-25",
-    "url": "/posts/2026-11-24-ai-morning-post/#company",
-    "title": "亚马逊 75 亿美元买 Decart，用软件补芯片的课"
-   },
-   "links": [
-    {
-     "date": "2026-11-25",
-     "url": "/posts/2026-11-24-ai-morning-post/#company",
-     "title": "亚马逊 75 亿美元买 Decart，用软件补芯片的课"
-    },
-    {
-     "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#company",
-     "title": "英伟达停供 H200，中国厂商遭遇芯片与云双重断供"
-    },
-    {
-     "date": "2026-11-19",
-     "url": "/posts/2026-11-18-ai-morning-post/#opinion",
-     "title": "英伟达丑闻与对华芯片谈判缠在一起"
-    },
-    {
-     "date": "2026-11-17",
-     "url": "/posts/2026-11-16-ai-morning-post/#company",
-     "title": "通研院孵化 AGI 芯片公司，半年连融数亿元"
-    },
-    {
-     "date": "2026-11-15",
-     "url": "/posts/2026-11-14-ai-morning-post/#company",
-     "title": "研究称中国最强模型训练于被禁英伟达芯片"
-    },
-    {
-     "date": "2026-11-14",
-     "url": "/posts/2026-11-13-ai-morning-post/#research",
-     "title": "禁售芯片的指纹，出现在最强模型里"
-    },
-    {
-     "date": "2026-11-12",
-     "url": "/posts/2026-11-11-ai-morning-post/#company",
-     "title": "英国 Fractile 融资 7.2 亿美元，押注 AI 专用芯片"
-    },
-    {
-     "date": "2026-11-10",
-     "url": "/posts/2026-11-09-ai-morning-post/#company",
-     "title": "Google 一年四款 TPU，开始按场景切分芯片"
-    }
-   ]
-  },
-  {
    "name": "Perplexity",
-   "score": 6.9,
+   "score": 6.58,
    "days": 8,
    "latest": {
     "date": "2026-11-23",
@@ -627,8 +575,154 @@
    ]
   },
   {
+   "name": "ChatGPT",
+   "score": 6.55,
+   "days": 12,
+   "latest": {
+    "date": "2026-11-25",
+    "url": "/posts/2026-11-24-ai-morning-post/#product",
+    "title": "ChatGPT 更新：重点在少出错"
+   },
+   "links": [
+    {
+     "date": "2026-11-25",
+     "url": "/posts/2026-11-24-ai-morning-post/#product",
+     "title": "ChatGPT 更新：重点在少出错"
+    },
+    {
+     "date": "2026-11-24",
+     "url": "/posts/2026-11-23-ai-morning-post/#product",
+     "title": "ChatGPT 更新：把「少出错」当成产品指标"
+    },
+    {
+     "date": "2026-11-20",
+     "url": "/posts/2026-11-19-ai-morning-post/#product",
+     "title": "OpenAI 用 Codex 给 ChatGPT 做性能体检"
+    },
+    {
+     "date": "2026-11-18",
+     "url": "/posts/2026-11-17-ai-morning-post/#product",
+     "title": "ChatGPT 开始按岗位卖，一次接入 30 多个插件"
+    },
+    {
+     "date": "2026-11-17",
+     "url": "/posts/2026-11-16-ai-morning-post/#product",
+     "title": "ChatGPT 上线新图像分类器围堵 CSAM"
+    },
+    {
+     "date": "2026-11-12",
+     "url": "/posts/2026-11-11-ai-morning-post/#product",
+     "title": "ChatGPT 上线商家主页，向搜索广告再走一步"
+    },
+    {
+     "date": "2026-11-11",
+     "url": "/posts/2026-11-10-ai-morning-post/#product",
+     "title": "ChatGPT 变成企业黄页，商家可以入驻了"
+    },
+    {
+     "date": "2026-11-07",
+     "url": "/posts/2026-11-06-ai-morning-post/#opinion",
+     "title": "当 ChatGPT 出现在刑事案卷里"
+    }
+   ]
+  },
+  {
+   "name": "CLI-Anything",
+   "score": 6.19,
+   "days": 7,
+   "latest": {
+    "date": "2026-11-27",
+    "url": "/posts/2026-11-26-ai-morning-post/#opensource",
+    "title": "CLI-Anything：把存量软件批量变成 Agent 接口"
+   },
+   "links": [
+    {
+     "date": "2026-11-27",
+     "url": "/posts/2026-11-26-ai-morning-post/#opensource",
+     "title": "CLI-Anything：把存量软件批量变成 Agent 接口"
+    },
+    {
+     "date": "2026-11-26",
+     "url": "/posts/2026-11-25-ai-morning-post/#opensource",
+     "title": "CLI-Anything：把现有软件变成 agent 的原生接口"
+    },
+    {
+     "date": "2026-11-25",
+     "url": "/posts/2026-11-24-ai-morning-post/#opensource",
+     "title": "CLI-Anything：让所有软件都成为 agent 的工具"
+    },
+    {
+     "date": "2026-11-23",
+     "url": "/posts/2026-11-22-ai-morning-post/#opensource",
+     "title": "CLI-Anything：让软件对 agent 原生可用"
+    },
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#opensource",
+     "title": "港大 CLI-Anything：让所有软件「Agent 原生」"
+    },
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#opensource",
+     "title": "CLI-Anything：把命令行当成通用 Agent 接口"
+    },
+    {
+     "date": "2026-11-20",
+     "url": "/posts/2026-11-19-ai-morning-post/#opensource",
+     "title": "CLI-Anything：把命令行工具变成 agent 原生"
+    }
+   ]
+  },
+  {
+   "name": "SWE-bench",
+   "score": 6.16,
+   "days": 7,
+   "latest": {
+    "date": "2026-11-27",
+    "url": "/posts/2026-11-26-ai-morning-post/#opensource",
+    "title": "100 行代码，SWE-bench 过 74%"
+   },
+   "links": [
+    {
+     "date": "2026-11-27",
+     "url": "/posts/2026-11-26-ai-morning-post/#opensource",
+     "title": "100 行代码，SWE-bench 过 74%"
+    },
+    {
+     "date": "2026-11-26",
+     "url": "/posts/2026-11-25-ai-morning-post/#opensource",
+     "title": "mini-swe-agent：约 100 行代码，SWE-bench 超 74%"
+    },
+    {
+     "date": "2026-11-25",
+     "url": "/posts/2026-11-24-ai-morning-post/#opensource",
+     "title": "100 行的 agent 在 SWE-bench 拿到 74%"
+    },
+    {
+     "date": "2026-11-23",
+     "url": "/posts/2026-11-22-ai-morning-post/#opensource",
+     "title": "100 行代码的 agent，SWE-bench 破 74%"
+    },
+    {
+     "date": "2026-11-22",
+     "url": "/posts/2026-11-21-ai-morning-post/#opensource",
+     "title": "100 行代码的 mini-swe-agent，SWE-bench 超 74%"
+    },
+    {
+     "date": "2026-11-21",
+     "url": "/posts/2026-11-20-ai-morning-post/#opensource",
+     "title": "mini-swe-agent：100 行代码，SWE-bench 超 74%"
+    },
+    {
+     "date": "2026-11-19",
+     "url": "/posts/2026-11-18-ai-morning-post/#research",
+     "title": "Qwen3.8 编码 LoRA：SWE-bench Pro 通过率从 39% 升到 65%"
+    }
+   ]
+  },
+  {
    "name": "Muse",
-   "score": 6.23,
+   "score": 5.87,
    "days": 9,
    "latest": {
     "date": "2026-11-26",
@@ -675,100 +769,6 @@
      "date": "2026-11-06",
      "url": "/posts/2026-11-05-ai-morning-post/#product",
      "title": "Meta 的 Muse 化身能视频通话了"
-    }
-   ]
-  },
-  {
-   "name": "Cursor",
-   "score": 5.68,
-   "days": 8,
-   "latest": {
-    "date": "2026-11-26",
-    "url": "/posts/2026-11-25-ai-morning-post/#opensource",
-    "title": "Cursor 开放插件规范，并开源官方插件集"
-   },
-   "links": [
-    {
-     "date": "2026-11-26",
-     "url": "/posts/2026-11-25-ai-morning-post/#opensource",
-     "title": "Cursor 开放插件规范，并开源官方插件集"
-    },
-    {
-     "date": "2026-11-25",
-     "url": "/posts/2026-11-24-ai-morning-post/#opensource",
-     "title": "Cursor 开放插件规范，官方插件库上线"
-    },
-    {
-     "date": "2026-11-22",
-     "url": "/posts/2026-11-21-ai-morning-post/#opensource",
-     "title": "Cursor 开源官方插件规范与首批插件"
-    },
-    {
-     "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#opensource",
-     "title": "Cursor 开源插件规范与官方插件集"
-    },
-    {
-     "date": "2026-11-19",
-     "url": "/posts/2026-11-18-ai-morning-post/#product",
-     "title": "Snapchat 让开发者用 Claude Code、Cursor 做 AR 滤镜"
-    },
-    {
-     "date": "2026-11-01",
-     "url": "/posts/2026-10-31-ai-morning-post/#product",
-     "title": "Cursor 市场上的 Claude Code 扩展被植入后门近 12 小时"
-    },
-    {
-     "date": "2026-10-31",
-     "url": "/posts/2026-10-30-ai-morning-post/#company",
-     "title": "Anthropic 官方 Cursor 扩展被植入后门 12 小时"
-    },
-    {
-     "date": "2026-10-30",
-     "url": "/posts/2026-10-29-ai-morning-post/#product",
-     "title": "Cursor 把编码 Agent 做成 SDK"
-    }
-   ]
-  },
-  {
-   "name": "CLI-Anything",
-   "score": 5.39,
-   "days": 6,
-   "latest": {
-    "date": "2026-11-26",
-    "url": "/posts/2026-11-25-ai-morning-post/#opensource",
-    "title": "CLI-Anything：把现有软件变成 agent 的原生接口"
-   },
-   "links": [
-    {
-     "date": "2026-11-26",
-     "url": "/posts/2026-11-25-ai-morning-post/#opensource",
-     "title": "CLI-Anything：把现有软件变成 agent 的原生接口"
-    },
-    {
-     "date": "2026-11-25",
-     "url": "/posts/2026-11-24-ai-morning-post/#opensource",
-     "title": "CLI-Anything：让所有软件都成为 agent 的工具"
-    },
-    {
-     "date": "2026-11-23",
-     "url": "/posts/2026-11-22-ai-morning-post/#opensource",
-     "title": "CLI-Anything：让软件对 agent 原生可用"
-    },
-    {
-     "date": "2026-11-22",
-     "url": "/posts/2026-11-21-ai-morning-post/#opensource",
-     "title": "港大 CLI-Anything：让所有软件「Agent 原生」"
-    },
-    {
-     "date": "2026-11-21",
-     "url": "/posts/2026-11-20-ai-morning-post/#opensource",
-     "title": "CLI-Anything：把命令行当成通用 Agent 接口"
-    },
-    {
-     "date": "2026-11-20",
-     "url": "/posts/2026-11-19-ai-morning-post/#opensource",
-     "title": "CLI-Anything：把命令行工具变成 agent 原生"
     }
    ]
   }
